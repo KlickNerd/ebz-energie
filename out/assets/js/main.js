@@ -49,6 +49,33 @@
     counters.forEach(function(el){ co.observe(el); });
   }
 
+  /* Reviews-Slider: Pfeile, Autoplay (Pause bei Hover), reduced-motion-sicher */
+  document.querySelectorAll(".rev-slider").forEach(function(s){
+    var track = s.querySelector(".rev-track");
+    if(!track) return;
+    function step(){
+      var card = track.querySelector(".rev-card");
+      return card ? card.offsetWidth + 22 : track.clientWidth;
+    }
+    var prev = s.querySelector(".rev-prev"), next = s.querySelector(".rev-next");
+    if(prev) prev.addEventListener("click", function(){ track.scrollBy({left:-step(),behavior:"smooth"}); });
+    if(next) next.addEventListener("click", function(){ track.scrollBy({left:step(),behavior:"smooth"}); });
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(!reduce){
+      var timer = setInterval(tick, 5000);
+      function tick(){
+        if(document.hidden) return;
+        if(track.scrollLeft + track.clientWidth >= track.scrollWidth - 4){
+          track.scrollTo({left:0, behavior:"smooth"});
+        } else {
+          track.scrollBy({left:step(), behavior:"smooth"});
+        }
+      }
+      s.addEventListener("mouseenter", function(){ clearInterval(timer); });
+      s.addEventListener("mouseleave", function(){ clearInterval(timer); timer = setInterval(tick, 5000); });
+    }
+  });
+
   /* Sticky Mobile-CTA erst nach dem Hero zeigen */
   var sticky = document.querySelector(".sticky-cta");
   var hero = document.querySelector(".hero");

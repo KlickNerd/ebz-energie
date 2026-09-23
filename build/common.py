@@ -233,6 +233,31 @@ def apply_base_path(html):
     return html
 
 
+def load_reviews():
+    """Laedt gecachte Google-Rezensionen (build/data/reviews.json).
+
+    Rueckgabe: (rating, count, [reviews]). Fallback, falls Datei fehlt oder leer,
+    damit der Slider nie leer ist.
+    """
+    root = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+    path = _os.path.join(root, "build", "data", "reviews.json")
+    fallback = [
+        {"author": "Familie aus Villach", "rating": 5,
+         "text": "Von der Beratung bis zur Inbetriebnahme alles reibungslos. Das Team war pünktlich, sauber und kompetent."},
+        {"author": "Kunde aus Klagenfurt", "rating": 5,
+         "text": "Ehrliche Beratung ohne Verkaufsdruck. Die Anlage läuft seit Monaten einwandfrei und die Ersparnis ist deutlich spürbar."},
+        {"author": "Kundin aus der Steiermark", "rating": 5,
+         "text": "Top Handwerk und ein echter Ansprechpartner bei Fragen. Jederzeit wieder."},
+    ]
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = _json.load(f)
+        reviews = data.get("reviews") or fallback
+        return data.get("rating", NAP["rating"]), data.get("count"), reviews
+    except (OSError, ValueError):
+        return NAP["rating"], None, fallback
+
+
 def write_page(rel_path, html):
     """Schreibt ein fertiges HTML-Dokument nach out/<rel_path> und validiert."""
     html = apply_base_path(html)

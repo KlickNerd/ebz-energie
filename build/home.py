@@ -10,7 +10,7 @@ aber an die verbindlichen Fakten (85 % statt 90 %, 4,9 statt 5,0, Finanzierung
 statt Leasing, Projektbericht statt Ertragsprognose).
 """
 
-from common import CLAIMS, NAP, IMG, faq_jsonld, u, write_page
+from common import CLAIMS, NAP, IMG, faq_jsonld, u, write_page, load_reviews
 from layout import page
 import components as C
 
@@ -22,6 +22,7 @@ DESC = ("EBZ Energie macht Ihr Zuhause zum Kraftwerk: Photovoltaik, Speicher, W�
 
 
 def build():
+    _rating, _count, _reviews = load_reviews()
     body = "".join([
         C.hero(
             eyebrow="Photovoltaik · Speicher · Wärmepumpe · Kärnten und Steiermark",
@@ -160,11 +161,7 @@ def build():
                 ("⌂", "Regional verwurzelt", "Zuhause in Villach, im Einsatz für Kärnten und die Steiermark."),
             ],
         ),
-        C.reviews_block([
-            ("Von der Beratung bis zur Inbetriebnahme alles reibungslos. Das Team war pünktlich, sauber und kompetent.", "Familie aus Villach"),
-            ("Ehrliche Beratung ohne Verkaufsdruck. Die Anlage läuft seit Monaten einwandfrei und die Ersparnis ist deutlich spürbar.", "Kunde aus Klagenfurt"),
-            ("Top Handwerk und ein echter Ansprechpartner bei Fragen. Jederzeit wieder.", "Kundin aus der Steiermark"),
-        ]),
+        C.reviews_slider(_reviews, rating=_rating, count=_count),
         C.founder_block(
             "Wir verkaufen keine Module, wir bauen Unabhängigkeit. Jedes System planen wir so, dass "
             "es zu Ihrem Dach, Ihrem Verbrauch und Ihrem Budget passt. Das ist unser Anspruch bei jedem Projekt."

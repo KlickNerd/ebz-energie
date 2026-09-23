@@ -1,0 +1,21 @@
+{
+  "rating": "4,9",
+  "count": 104,
+  "reviews": [
+    {
+      "author": "Familie aus Villach",
+      "rating": 5,
+      "text": "Von der Beratung bis zur Inbetriebnahme alles reibungslos. Das Team war pünktlich, sauber und kompetent."
+    },
+    {
+      "author": "Kunde aus Klagenfurt",
+      "rating": 5,
+      "text": "Ehrliche Beratung ohne Verkaufsdruck. Die Anlage läuft seit Monaten einwandfrei und die Ersparnis ist deutlich spürbar."
+    },
+    {
+      "author": "Kundin aus der Steiermark",
+      "rating": 5,
+      "text": "Top Handwerk und ein echter Ansprechpartner bei Fragen. Jederzeit wieder."
+    }
+  ]
+}

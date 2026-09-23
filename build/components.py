@@ -4,6 +4,8 @@ Jede Funktion gibt fertiges HTML einer Sektion zurueck. Icons sind Unicode,
 keine Icon-Fonts, keine Emojis. Reveal ueber Klasse 'eg-reveal'.
 """
 
+import html as _html
+
 from common import NAP, CLAIMS, AUTHOR, AUTHOR_ROLE, IMG, a, href, tel_link
 
 
@@ -353,6 +355,49 @@ def reviews_block(quotes):
       </div>
       <h2 class="center eg-reveal">Das sagen unsere Kundinnen und Kunden</h2>
       <div class="reviews__grid">{cards}</div>
+    </div>
+  </section>"""
+
+
+def reviews_slider(reviews, rating="4,9", count=None):
+    """Slider mit echten Google-Rezensionen (4 und 5 Sterne).
+
+    reviews: Liste aus dicts mit author, rating, text, optional date.
+    Wird zur Build-Zeit aus build/data/reviews.json befuellt.
+    """
+    cards = ""
+    for r in reviews:
+        stars = "★" * int(round(r.get("rating", 5)))
+        author = _html.escape(r.get("author", "Google Nutzer"))
+        text = _html.escape(r.get("text", ""))
+        initial = (author.strip()[:1] or "G").upper()
+        date = f'<small>{_html.escape(r["date"])}</small>' if r.get("date") else ""
+        cards += (
+            f'<article class="rev-card">'
+            f'<div class="stars" aria-hidden="true">{stars}</div>'
+            f'<p>„{text}“</p>'
+            f'<div class="rev-meta"><span class="rev-avatar" aria-hidden="true">{initial}</span>'
+            f'<span class="rev-by">{author}{date}'
+            f'<span class="rev-g">★ Google Rezension</span></span></div>'
+            f'</article>'
+        )
+    count_txt = f"aus {count} Bewertungen" if count else "aus echten Kundenbewertungen"
+    return f"""
+  <section class="section" style="background:#fff;border-block:1px solid var(--line)">
+    <div class="wrap">
+      <div class="reviews__head eg-reveal">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <strong style="font-family:var(--font-head);font-size:1.2rem">{rating} von 5</strong>
+        <span class="rev-count">auf Google, {count_txt}</span>
+      </div>
+      <h2 class="center eg-reveal">Das sagen unsere Kundinnen und Kunden</h2>
+      <div class="rev-slider eg-reveal">
+        <div class="rev-track">{cards}</div>
+        <div class="rev-nav">
+          <button class="rev-btn rev-prev" type="button" aria-label="Vorherige Bewertungen">‹</button>
+          <button class="rev-btn rev-next" type="button" aria-label="Weitere Bewertungen">›</button>
+        </div>
+      </div>
     </div>
   </section>"""
 

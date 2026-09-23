@@ -6,7 +6,7 @@ Lokal: Kaernten, Steiermark, Villach (verlinkt auf Detailseiten).
 FAQ aus echten People-also-ask (Stand DataForSEO 2026-09).
 """
 
-from common import CLAIMS, NAP, IMG, faq_jsonld, u, write_page
+from common import CLAIMS, NAP, IMG, faq_jsonld, u, write_page, load_reviews
 from layout import page
 import components as C
 
@@ -18,6 +18,7 @@ DESC = ("Photovoltaikanlage vom Fachbetrieb EBZ Energie: Planung, Montage und Se
 
 
 def build():
+    _rating, _count, _reviews = load_reviews()
     body = "".join([
         C.hero(
             eyebrow="Photovoltaik in Kärnten und der Steiermark",
@@ -154,11 +155,7 @@ def build():
                 ("⌂", "Regional verwurzelt", "Zuhause in Villach, im Einsatz für Kärnten und die Steiermark."),
             ],
         ),
-        C.reviews_block([
-            ("Von der Beratung bis zur Inbetriebnahme alles reibungslos. Das Team war pünktlich, sauber und kompetent.", "Familie aus Villach"),
-            ("Ehrliche Beratung ohne Verkaufsdruck. Die Anlage läuft seit Monaten einwandfrei und die Ersparnis ist deutlich spürbar.", "Kunde aus Klagenfurt"),
-            ("Top Handwerk und ein echter Ansprechpartner bei Fragen. Jederzeit wieder.", "Kundin aus der Steiermark"),
-        ]),
+        C.reviews_slider(_reviews, rating=_rating, count=_count),
         C.founder_block(
             "Wir liefern keine Anlage von der Stange. Wir planen jedes System so, dass es zu Ihrem "
             "Dach, Ihrem Verbrauch und Ihrem Budget passt. Das ist unser Anspruch bei jedem Projekt."
