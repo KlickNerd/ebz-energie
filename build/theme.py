@@ -496,26 +496,37 @@ JS = r"""
   document.querySelectorAll(".rev-slider").forEach(function(s){
     var track = s.querySelector(".rev-track");
     if(!track) return;
+    var nav = s.querySelector(".rev-nav");
+    function scrollable(){ return track.scrollWidth - track.clientWidth > 4; }
     function step(){
       var card = track.querySelector(".rev-card");
       return card ? card.offsetWidth + 22 : track.clientWidth;
     }
+    // Nav nur zeigen, wenn es etwas zu scrollen gibt
+    function syncNav(){ if(nav) nav.style.display = scrollable() ? "flex" : "none"; }
+    syncNav();
+    window.addEventListener("resize", syncNav);
+
     var prev = s.querySelector(".rev-prev"), next = s.querySelector(".rev-next");
     if(prev) prev.addEventListener("click", function(){ track.scrollBy({left:-step(),behavior:"smooth"}); });
     if(next) next.addEventListener("click", function(){ track.scrollBy({left:step(),behavior:"smooth"}); });
+
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if(!reduce){
-      var timer = setInterval(tick, 5000);
+      var timer = null;
+      function start(){ if(!timer && scrollable()) timer = setInterval(tick, 5000); }
+      function stop(){ if(timer){ clearInterval(timer); timer = null; } }
       function tick(){
-        if(document.hidden) return;
+        if(document.hidden || !scrollable()) return;
         if(track.scrollLeft + track.clientWidth >= track.scrollWidth - 4){
           track.scrollTo({left:0, behavior:"smooth"});
         } else {
           track.scrollBy({left:step(), behavior:"smooth"});
         }
       }
-      s.addEventListener("mouseenter", function(){ clearInterval(timer); });
-      s.addEventListener("mouseleave", function(){ clearInterval(timer); timer = setInterval(tick, 5000); });
+      start();
+      s.addEventListener("mouseenter", stop);
+      s.addEventListener("mouseleave", start);
     }
   });
 
