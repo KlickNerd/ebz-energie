@@ -665,6 +665,33 @@ def about_section(eyebrow, h2, paragraphs, values, quote, badge=None,
   </section>"""
 
 
+def founder_story(eyebrow, h2, paragraphs, quote, name, role, badge=None,
+                  cta=("kontakt", "Persönlich beraten lassen")):
+    """Warmer Gruender-Block mit Geschichte: Portrait links, Story + Zitat rechts."""
+    ps = "".join(f"<p>{p}</p>" for p in paragraphs)
+    badge_html = (f'<span class="fstory__badge"><span aria-hidden="true">⌂</span>{badge}</span>'
+                  if badge else "")
+    return f"""
+  <section class="section">
+    <div class="wrap">
+      <div class="fstory eg-reveal">
+        <div class="fstory__media">
+          <img src="{IMG['mario']}" alt="{name}, {role}" loading="lazy" width="300" height="300">
+          {badge_html}
+        </div>
+        <div>
+          <p class="eyebrow">{eyebrow}</p>
+          <h2>{h2}</h2>
+          {ps}
+          <blockquote>„{quote}“</blockquote>
+          <cite>{name}<small>{role}</small></cite>
+          <div class="hero__cta" style="margin-top:22px">{a(cta[0], cta[1], cls='btn btn--primary')}</div>
+        </div>
+      </div>
+    </div>
+  </section>"""
+
+
 def founder_block(quote):
     return f"""
   <section class="section">

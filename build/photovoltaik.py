@@ -203,6 +203,28 @@ def build():
             anchor="gewerbe",
             cta=("kontakt", "Gewerbe-Beratung anfragen"),
         ),
+        # Menschlicher Anker: Mario und was Photovoltaik fuer ihn bedeutet
+        C.founder_story(
+            eyebrow="Ein Wort von Mario Zintl",
+            h2="Warum Photovoltaik für mich mehr ist als Technik",
+            paragraphs=[
+                ("Ich bin in Villach aufgewachsen. Die Region, die Menschen, die Berge: Das ist mein "
+                 "Zuhause. Als ich mit Photovoltaik begonnen habe, ging es mir nie nur um Module auf "
+                 "Dächern. Es ging darum, dass Familien und Betriebe hier ihre Energie selbst in der "
+                 "Hand haben."),
+                ("Photovoltaik bedeutet für mich Unabhängigkeit. Von steigenden Preisen und von "
+                 "Entscheidungen, die anderswo getroffen werden. Wenn eine Kundin nach der Inbetriebnahme "
+                 "zum ersten Mal sieht, wie viel Strom ihr eigenes Dach liefert, dann ist das der Moment, "
+                 "für den ich das mache."),
+                ("Deshalb plane ich jede Anlage so, als wäre es meine eigene. Ehrlich beraten, sauber "
+                 "gebaut und danach erreichbar bleiben. Das ist kein Marketing, das ist einfach, wie wir "
+                 "bei EBZ arbeiten."),
+            ],
+            quote="Wir verkaufen keine Module, wir bauen Unabhängigkeit.",
+            name="Mario Zintl",
+            role="Geschäftsführung EBZ Energie GmbH",
+            badge="Gebürtiger Villacher",
+        ),
         # 6. Warum EBZ
         C.why_section(
             eyebrow="Warum EBZ Energie",
