@@ -225,59 +225,93 @@ def split_section(left, right):
   </section>"""
 
 
+# Icons der PV-Infografik (dekorativ, aria-hidden). Farben = Tokens petrol/amber.
+_PV_ICONS = {
+    "sun": ('<svg viewBox="0 0 64 64" aria-hidden="true">'
+            '<g stroke="#f5a623" stroke-width="3" stroke-linecap="round">'
+            '<line x1="19" y1="4" x2="19" y2="10"/><line x1="7" y1="9" x2="11" y2="13"/>'
+            '<line x1="31" y1="9" x2="27" y2="13"/><line x1="4" y1="21" x2="10" y2="21"/></g>'
+            '<circle cx="19" cy="21" r="8" fill="#f5a623"/>'
+            '<g transform="rotate(-8 40 44)"><rect x="26" y="33" width="31" height="23" rx="2" fill="#0e4d64"/>'
+            '<g stroke="#2c6e86" stroke-width="1.5"><line x1="36.3" y1="33" x2="36.3" y2="56"/>'
+            '<line x1="46.6" y1="33" x2="46.6" y2="56"/><line x1="26" y1="40.6" x2="57" y2="40.6"/>'
+            '<line x1="26" y1="48.3" x2="57" y2="48.3"/></g></g></svg>'),
+    "inv": ('<svg viewBox="0 0 64 64" aria-hidden="true">'
+            '<rect x="12" y="12" width="40" height="40" rx="9" fill="none" stroke="#0e4d64" stroke-width="3"/>'
+            '<path d="M19 34 q6.5 -13 13 0 t13 0" fill="none" stroke="#0e4d64" stroke-width="3" stroke-linecap="round"/>'
+            '<line x1="19" y1="42" x2="45" y2="42" stroke="#0e4d64" stroke-width="3" stroke-linecap="round"/></svg>'),
+    "house": ('<svg viewBox="0 0 64 64" aria-hidden="true">'
+              '<path d="M11 31 L32 13 L53 31" fill="none" stroke="#0e4d64" stroke-width="3" stroke-linejoin="round"/>'
+              '<path d="M16 28 V51 H48 V28" fill="none" stroke="#0e4d64" stroke-width="3" stroke-linejoin="round"/>'
+              '<rect x="34" y="37" width="9" height="14" fill="#f5a623"/>'
+              '<rect x="22" y="37" width="8" height="8" fill="#9fbcc6"/></svg>'),
+    "flash": ('<svg viewBox="0 0 64 64" aria-hidden="true">'
+              '<rect x="15" y="12" width="34" height="40" rx="9" fill="#fff5e2" stroke="#f5a623" stroke-width="3"/>'
+              '<path d="M35 17 L24 37 H31.5 L29 47 L41 29 H33.5 Z" fill="#f5a623"/></svg>'),
+    "clock": ('<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="#f5a623"/>'
+              '<g stroke="#0a3a4d" stroke-width="3" stroke-linecap="round"><line x1="24" y1="24" x2="24" y2="13"/>'
+              '<line x1="24" y1="24" x2="31" y2="28"/></g></svg>'),
+}
+
+_PV_STEPS = [
+    ("sun", "Solarmodule", "erzeugen Gleichstrom"),
+    ("inv", "Wechselrichter", "macht Wechselstrom"),
+    ("house", "Haus oder Betrieb", "verbraucht den Strom"),
+    ("flash", "Überschuss", "speichern oder einspeisen"),
+]
+
+_PV_ARIA = ("Solarmodule erzeugen Gleichstrom, der Wechselrichter macht Wechselstrom, "
+            "Haus oder Betrieb verbraucht den Strom, Ueberschuss wird gespeichert oder eingespeist.")
+
+
+def _pv_steps(with_arrows=True):
+    arrow = '<div class="pvflow__arrow" aria-hidden="true">→</div>' if with_arrows else ""
+    parts = []
+    for n, (ic, title, sub) in enumerate(_PV_STEPS, 1):
+        parts.append(f'<div class="pvflow__step"><div class="pvflow__icon">{_PV_ICONS[ic]}</div>'
+                     f'<div class="pvflow__num" aria-hidden="true">{n}</div>'
+                     f'<h3>{title}</h3><p>{sub}</p></div>')
+    return arrow.join(parts)
+
+
+def _pv_note(title, text):
+    return (f'<div class="pvflow__note"><span class="ic" aria-hidden="true">{_PV_ICONS["clock"]}</span>'
+            f'<div><h4>{title}</h4><p>{text}</p></div></div>')
+
+
 def pv_flow(eyebrow, h2, note_title, note_text, signature="EBZ Energie · Photovoltaik einfach erklärt"):
-    """Infografik 'Von der Sonne zur Steckdose' als responsive Inline-SVG/HTML.
-
-    Echter Text (Screenreader/SEO), Icons dekorativ (aria-hidden).
-    """
-    ic_sun = ('<svg viewBox="0 0 64 64" aria-hidden="true">'
-              '<g stroke="#f5a623" stroke-width="3" stroke-linecap="round">'
-              '<line x1="19" y1="4" x2="19" y2="10"/><line x1="7" y1="9" x2="11" y2="13"/>'
-              '<line x1="31" y1="9" x2="27" y2="13"/><line x1="4" y1="21" x2="10" y2="21"/></g>'
-              '<circle cx="19" cy="21" r="8" fill="#f5a623"/>'
-              '<g transform="rotate(-8 40 44)"><rect x="26" y="33" width="31" height="23" rx="2" fill="#0e4d64"/>'
-              '<g stroke="#2c6e86" stroke-width="1.5"><line x1="36.3" y1="33" x2="36.3" y2="56"/>'
-              '<line x1="46.6" y1="33" x2="46.6" y2="56"/><line x1="26" y1="40.6" x2="57" y2="40.6"/>'
-              '<line x1="26" y1="48.3" x2="57" y2="48.3"/></g></g></svg>')
-    ic_inv = ('<svg viewBox="0 0 64 64" aria-hidden="true">'
-              '<rect x="12" y="12" width="40" height="40" rx="9" fill="none" stroke="#0e4d64" stroke-width="3"/>'
-              '<path d="M19 34 q6.5 -13 13 0 t13 0" fill="none" stroke="#0e4d64" stroke-width="3" stroke-linecap="round"/>'
-              '<line x1="19" y1="42" x2="45" y2="42" stroke="#0e4d64" stroke-width="3" stroke-linecap="round"/></svg>')
-    ic_house = ('<svg viewBox="0 0 64 64" aria-hidden="true">'
-                '<path d="M11 31 L32 13 L53 31" fill="none" stroke="#0e4d64" stroke-width="3" stroke-linejoin="round"/>'
-                '<path d="M16 28 V51 H48 V28" fill="none" stroke="#0e4d64" stroke-width="3" stroke-linejoin="round"/>'
-                '<rect x="34" y="37" width="9" height="14" fill="#f5a623"/>'
-                '<rect x="22" y="37" width="8" height="8" fill="#9fbcc6"/></svg>')
-    ic_flash = ('<svg viewBox="0 0 64 64" aria-hidden="true">'
-                '<rect x="15" y="12" width="34" height="40" rx="9" fill="#fff5e2" stroke="#f5a623" stroke-width="3"/>'
-                '<path d="M35 17 L24 37 H31.5 L29 47 L41 29 H33.5 Z" fill="#f5a623"/></svg>')
-    ic_clock = ('<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="#f5a623"/>'
-                '<g stroke="#0a3a4d" stroke-width="3" stroke-linecap="round"><line x1="24" y1="24" x2="24" y2="13"/>'
-                '<line x1="24" y1="24" x2="31" y2="28"/></g></svg>')
-    arrow = '<div class="pvflow__arrow" aria-hidden="true">→</div>'
-
-    def step(n, icon, title, sub):
-        return (f'<div class="pvflow__step"><div class="pvflow__icon">{icon}</div>'
-                f'<div class="pvflow__num" aria-hidden="true">{n}</div>'
-                f'<h3>{title}</h3><p>{sub}</p></div>')
-
-    flow = (step(1, ic_sun, "Solarmodule", "erzeugen Gleichstrom") + arrow +
-            step(2, ic_inv, "Wechselrichter", "macht Wechselstrom") + arrow +
-            step(3, ic_house, "Haus oder Betrieb", "verbraucht den Strom") + arrow +
-            step(4, ic_flash, "Überschuss", "speichern oder einspeisen"))
-
+    """Infografik 'Von der Sonne zur Steckdose' als eigenstaendige Karte (4 in einer Reihe)."""
     return f"""
   <section class="section">
     <div class="wrap">
       <div class="pvflow-card eg-reveal">
         <p class="eyebrow">{eyebrow}</p>
         <h2 style="margin-bottom:6px">{h2}</h2>
-        <div class="pvflow" role="img" aria-label="{h2}: Solarmodule erzeugen Gleichstrom, der Wechselrichter macht Wechselstrom, Haus oder Betrieb verbraucht den Strom, Ueberschuss wird gespeichert oder eingespeist.">{flow}</div>
-        <div class="pvflow__note">
-          <span class="ic" aria-hidden="true">{ic_clock}</span>
-          <div><h4>{note_title}</h4><p>{note_text}</p></div>
-        </div>
+        <div class="pvflow" role="img" aria-label="{h2}: {_PV_ARIA}">{_pv_steps(True)}</div>
+        {_pv_note(note_title, note_text)}
         <p class="pvflow__sig">{signature}</p>
+      </div>
+    </div>
+  </section>"""
+
+
+def pv_explainer(eyebrow, h2, paragraphs, note_title, note_text, flow_title="Von der Sonne zur Steckdose"):
+    """Definition + Infografik in EINER kompakten Sektion: Text links, 2x2-Kacheln rechts."""
+    ps = "".join(f"<p>{p}</p>" for p in paragraphs)
+    return f"""
+  <section class="section" style="background:#fff;border-block:1px solid var(--line)">
+    <div class="wrap">
+      <div class="explainer">
+        <div class="explainer__text eg-reveal">
+          <p class="eyebrow">{eyebrow}</p>
+          <h2>{h2}</h2>
+          {ps}
+        </div>
+        <div class="explainer__visual eg-reveal">
+          <p class="explainer__label">{flow_title}</p>
+          <div class="pvflow" role="img" aria-label="{flow_title}: {_PV_ARIA}">{_pv_steps(False)}</div>
+          {_pv_note(note_title, note_text)}
+        </div>
       </div>
     </div>
   </section>"""

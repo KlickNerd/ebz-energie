@@ -45,8 +45,8 @@ def build():
             ("bis zu 85 %", "weniger Stromkosten"),
             ("4 bis 6 Jahre", "typische Amortisation"),
         ]),
-        # Kurze Definition (GEO / informative Besucher)
-        C.text_block(
+        # Kurze Definition + Infografik in EINER kompakten Sektion (GEO / informative Besucher)
+        C.pv_explainer(
             eyebrow="Kurz erklärt",
             h2="Was ist Photovoltaik?",
             paragraphs=[
@@ -57,10 +57,6 @@ def build():
                  "teuren Strom aus dem Netz. Überschüsse speichert ein Batteriespeicher für den "
                  "Abend oder sie fließen ins Netz."),
             ],
-        ),
-        C.pv_flow(
-            eyebrow="Von der Sonne zur Steckdose",
-            h2="So wird Sonnenlicht zu nutzbarem Strom",
             note_title="Am Abend und bei wenig Sonne",
             note_text="Ein Batteriespeicher kann den Sonnenstrom später liefern. Sonst kommt Strom aus dem Netz.",
         ),
