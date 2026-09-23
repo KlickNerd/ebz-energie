@@ -225,6 +225,19 @@ def split_section(left, right):
   </section>"""
 
 
+def text_block(eyebrow, h2, paragraphs, max_w="70ch"):
+    """Kurzer, zentrierter Textabschnitt (z. B. Definition), gut fuer GEO/Snippets."""
+    ps = "".join(f'<p class="lead">{p}</p>' for p in paragraphs)
+    return f"""
+  <section class="section--tight section">
+    <div class="wrap" style="max-width:820px;text-align:center">
+      <p class="eyebrow eg-reveal">{eyebrow}</p>
+      <h2 class="eg-reveal">{h2}</h2>
+      <div class="eg-reveal" style="max-width:{max_w};margin-inline:auto">{ps}</div>
+    </div>
+  </section>"""
+
+
 def audience_split(eyebrow, h2, intro, left, right):
     """Zielgruppen-Weiche Eigenheim/Gewerbe. left/right: dict img, alt, title, bullets, cta."""
     def card(c):

@@ -45,6 +45,19 @@ def build():
             ("bis zu 85 %", "weniger Stromkosten"),
             ("4 bis 6 Jahre", "typische Amortisation"),
         ]),
+        # Kurze Definition (GEO / informative Besucher)
+        C.text_block(
+            eyebrow="Kurz erklärt",
+            h2="Was ist Photovoltaik?",
+            paragraphs=[
+                ("Photovoltaik bezeichnet die Umwandlung von Sonnenlicht in elektrischen Strom. "
+                 "Solarmodule auf Ihrem Dach erzeugen aus Licht Gleichstrom, ein Wechselrichter "
+                 "macht daraus den Wechselstrom, den Ihr Haushalt oder Betrieb nutzt."),
+                ("So produzieren Sie Ihren eigenen Strom, verbrauchen ihn direkt und kaufen weniger "
+                 "teuren Strom aus dem Netz. Überschüsse speichert ein Batteriespeicher für den "
+                 "Abend oder sie fließen ins Netz."),
+            ],
+        ),
         # 2. Abholen: Eigenheim oder Gewerbe
         C.audience_split(
             eyebrow="Für wen planen wir?",
