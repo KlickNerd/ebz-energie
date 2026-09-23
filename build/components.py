@@ -225,8 +225,28 @@ def split_section(left, right):
   </section>"""
 
 
+def audience_split(eyebrow, h2, intro, left, right):
+    """Zielgruppen-Weiche Eigenheim/Gewerbe. left/right: dict img, alt, title, bullets, cta."""
+    def card(c):
+        li = "".join(f"<li>{b}</li>" for b in c["bullets"])
+        cta = a(c["cta"][0], c["cta"][1], cls="btn btn--primary")
+        return (f'<article class="aud-card eg-reveal">'
+                f'<img class="aud-card__media" src="{c["img"]}" alt="{c["alt"]}" loading="lazy" width="560" height="350">'
+                f'<div class="aud-card__body"><h3>{c["title"]}</h3>'
+                f'<ul class="checklist">{li}</ul>{cta}</div></article>')
+    return f"""
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">{eyebrow}</p>
+      <h2 class="center eg-reveal">{h2}</h2>
+      <p class="lead center eg-reveal" style="max-width:66ch;margin-inline:auto">{intro}</p>
+      <div class="audience" style="margin-top:36px">{card(left)}{card(right)}</div>
+    </div>
+  </section>"""
+
+
 def media_text(eyebrow, h2, paragraphs, img, alt, bullets=None, reverse=False,
-               cta=None, dark=False):
+               cta=None, dark=False, anchor=None):
     """Bild-Text-Block (alternierend). paragraphs: Liste aus HTML-Absaetzen."""
     rev = " mediatext--reverse" if reverse else ""
     ps = "".join(f"<p>{p}</p>" for p in paragraphs)
@@ -237,8 +257,9 @@ def media_text(eyebrow, h2, paragraphs, img, alt, bullets=None, reverse=False,
     if cta:
         cta_html = '<div class="hero__cta" style="margin-top:22px">' + a(cta[0], cta[1], cls="btn btn--primary") + "</div>"
     sec_cls = "section dark" if dark else "section"
+    anchor_attr = f' id="{anchor}"' if anchor else ""
     return f"""
-  <section class="{sec_cls}">
+  <section class="{sec_cls}"{anchor_attr}>
     <div class="wrap">
       <div class="mediatext{rev}">
         <div class="mediatext__media eg-reveal">

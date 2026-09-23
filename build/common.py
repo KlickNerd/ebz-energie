@@ -105,6 +105,11 @@ IMG = {
     # Projekteigene Bilder (nicht aus wp-content), liegen in build/static/img/
     "team_mission": "/assets/img/team-ebz-mission.jpg",
     "logo": "/assets/img/ebz-logo.png",  # weisses Wortmark + Amber-Mark (fuer dunkle Leiste)
+    # Higgsfield-generierte Szenen (keine erfundenen Team-Fotos), build/static/img/
+    "gen_hero": "/assets/img/pv-hero-roof.jpg",
+    "gen_eigenheim": "/assets/img/pv-eigenheim.jpg",
+    "gen_gewerbe": "/assets/img/pv-gewerbe.jpg",
+    "gen_detail": "/assets/img/pv-montage-detail.jpg",
 }
 
 # Quelle -> Zielpfad fuer den Bild-Download (build/fetch_images.py nutzt das).

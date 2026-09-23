@@ -256,6 +256,21 @@ p{margin:0 0 1rem}
 .panel--dark .checklist li::before{color:var(--amber);background:rgba(245,166,35,.2)}
 @media(max-width:760px){.split{grid-template-columns:1fr}}
 
+/* --- Audience split (Eigenheim / Gewerbe) ------------------------------ */
+.audience{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.aud-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;
+  transition:transform .2s ease,box-shadow .2s ease}
+.aud-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--amber);
+  transform:scaleX(0);transform-origin:left;transition:transform .25s ease;z-index:1}
+.aud-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.aud-card:hover::before{transform:scaleX(1)}
+.aud-card__media{aspect-ratio:16/10;object-fit:cover;width:100%}
+.aud-card__body{padding:28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.aud-card h3{margin:0;font-size:1.5rem}
+.aud-card>.aud-card__body>.btn{margin-top:auto;align-self:flex-start}
+@media(max-width:760px){.audience{grid-template-columns:1fr}}
+
 /* --- Media + Text block ------------------------------------------------- */
 .mediatext{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:center}
 .mediatext__media img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;
