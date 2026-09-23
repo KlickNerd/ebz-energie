@@ -376,7 +376,7 @@ p{margin:0 0 1rem}
   padding:clamp(26px,3vw,40px);box-shadow:var(--shadow-sm)}
 .prose-panel--dark{background:linear-gradient(160deg,var(--petrol),var(--petrol-3));color:#fff;border:0}
 .prose-panel--dark h3{color:#fff}
-.prose-panel--dark p{color:#e4eef1}
+.prose-panel.prose-panel--dark p{color:#e4eef1}
 .prose-panel .ic{width:54px;height:54px;border-radius:15px;background:rgba(245,166,35,.16);
   color:var(--amber-2);display:grid;place-items:center;font-size:1.5rem;margin-bottom:16px}
 .prose-panel--dark .ic{background:var(--amber);color:var(--petrol-3)}
