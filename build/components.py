@@ -676,10 +676,10 @@ def founder_story(eyebrow, h2, paragraphs, quote, name, role, badge=None,
     <div class="wrap">
       <div class="fstory eg-reveal">
         <div class="fstory__media">
-          <img src="{IMG['mario']}" alt="{name}, {role}" loading="lazy" width="300" height="300">
+          <img src="{IMG['mario']}" alt="{name}, {role}" loading="lazy" width="325" height="307">
           {badge_html}
         </div>
-        <div>
+        <div class="fstory__text">
           <p class="eyebrow">{eyebrow}</p>
           <h2>{h2}</h2>
           {ps}

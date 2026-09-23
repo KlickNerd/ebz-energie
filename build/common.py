@@ -91,7 +91,7 @@ IMG = {
     "hero_home": "/assets/img/hero-photovoltaik-villach.jpg",
     "team_quer": "/assets/img/team-fachbetrieb.jpg",
     "team_beratung": "/assets/img/team-beratung.jpg",
-    "mario": "/assets/img/mario-zintl.png",
+    "mario": "/assets/img/mario-zintl-freigestellt.png",  # echter Freisteller, 2K (Higgsfield)
     "eg_drohne": "/assets/img/energiegemeinschaft-ort.jpg",
     "gewerbe_dach": "/assets/img/gewerbe-dach-ooe.jpg",
     "pv_card": "/assets/img/photovoltaik-anlage.jpg",
