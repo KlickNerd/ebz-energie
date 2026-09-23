@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # 1. und 15. jedes Monats (ca. alle zwei Wochen): Reviews frisch ziehen + deployen
+    - cron: '0 5 1,15 * *'
 
 permissions:
   contents: read

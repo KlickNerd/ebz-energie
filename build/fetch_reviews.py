@@ -14,9 +14,12 @@ Ohne Zugangsdaten wird die vorhandene reviews.json unveraendert gelassen.
 import base64
 import json
 import os
+import re
 import subprocess
 import sys
 import time
+
+MIN_CHARS = 40  # nur aussagekraeftige Rezensionen (wie bei Reinwald)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "build", "data", "reviews.json")
@@ -89,16 +92,29 @@ def main():
     total = result.get("reviews_count") or (result.get("rating") or {}).get("votes_count")
     items = result.get("items") or []
 
+    def clean(s):
+        # Gedankenstriche in echten Zitaten auf ASCII-Bindestrich normalisieren
+        # (sonst schlaegt die Dash-Validierung an), Whitespace glaetten.
+        s = re.sub(r"[–—]", "-", str(s))
+        s = re.sub(r"[ \t]+", " ", s).strip()
+        return s
+
+    def truncate(s, n=220):
+        s = s.strip()
+        if len(s) <= n:
+            return s
+        return re.sub(r"\s+\S*$", "", s[:n]).rstrip() + "…"
+
     reviews = []
     for it in items:
         rv = (it.get("rating") or {}).get("value")
-        text = (it.get("review_text") or "").strip()
-        if rv and rv >= 4 and text:
+        text = clean(it.get("review_text") or "")
+        if rv and rv >= 4 and len(text) >= MIN_CHARS:
             reviews.append({
                 "author": it.get("profile_name") or "Google Nutzer",
                 "rating": int(rv),
-                "text": text,
-                "date": it.get("timestamp", "")[:10],
+                "text": truncate(text),
+                "date": (it.get("timestamp") or "")[:10],
             })
 
     data = {
