@@ -166,8 +166,8 @@ p{margin:0 0 1rem}
   max-width:var(--wrap);margin-inline:auto;padding:8px 20px}
 .kpi{padding:26px 18px;text-align:center}
 .kpi b{display:block;font-family:var(--font-head);font-weight:800;
-  font-size:clamp(1.7rem,3vw,2.4rem);color:var(--petrol)}
-.kpi span{color:var(--muted);font-size:.95rem}
+  font-size:clamp(1.45rem,2.4vw,1.95rem);line-height:1.2;color:var(--petrol)}
+.kpi span{color:var(--muted);font-size:.92rem}
 @media(max-width:720px){.kpis__grid{grid-template-columns:1fr 1fr}}
 
 /* --- Dark "what" section + Hub SVG -------------------------------------- */
