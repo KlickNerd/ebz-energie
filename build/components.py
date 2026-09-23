@@ -375,6 +375,45 @@ def reviews_block(quotes):
   </section>"""
 
 
+def prose_panels(eyebrow, h2, panels):
+    """Mission/Vision o.ae. als Prosa-Panels. panels: (icon, title, [absaetze], dark)."""
+    cards = ""
+    for ic, title, paras, dark in panels:
+        cls = "prose-panel prose-panel--dark" if dark else "prose-panel"
+        ps = "".join(f"<p>{p}</p>" for p in paras)
+        cards += (f'<div class="{cls} eg-reveal"><div class="ic" aria-hidden="true">{ic}</div>'
+                  f'<h3>{title}</h3>{ps}</div>')
+    return f"""
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">{eyebrow}</p>
+      <h2 class="center eg-reveal">{h2}</h2>
+      <div class="prose-panels" style="margin-top:32px">{cards}</div>
+    </div>
+  </section>"""
+
+
+def facts_panel(eyebrow, h2, intro, rows, actions=None):
+    """EBZ auf einen Blick: konkrete Fakten fuer EEAT. rows: (label, value_html)."""
+    items = "".join(f"<div><dt>{lbl}</dt><dd>{val}</dd></div>" for lbl, val in rows)
+    act = ""
+    if actions:
+        act = ('<div class="facts-actions">'
+               + "".join(f'<a class="btn btn--ghost" href="{href_}"{ext}>{lbl}</a>'
+                         for lbl, href_, ext in actions)
+               + "</div>")
+    return f"""
+  <section class="section" style="background:#fff;border-block:1px solid var(--line)">
+    <div class="wrap" style="max-width:920px">
+      <p class="eyebrow center eg-reveal">{eyebrow}</p>
+      <h2 class="center eg-reveal">{h2}</h2>
+      <p class="lead center eg-reveal" style="max-width:64ch;margin-inline:auto">{intro}</p>
+      <dl class="facts eg-reveal" style="margin-top:32px">{items}</dl>
+      {act}
+    </div>
+  </section>"""
+
+
 def gallery(eyebrow, h2, intro, items):
     """Bildergalerie fuer Einblicke (Team + Projekte). items: (img, alt, caption)."""
     tiles = "".join(

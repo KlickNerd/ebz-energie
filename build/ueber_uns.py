@@ -9,7 +9,7 @@ Verbote: kein "Subunternehmer" (positiv: festangestellte Fachkraefte), nur
 Triglavstrasse 15, keine Gedankenstriche, keine erfundenen Zahlen.
 """
 
-from common import NAP, IMG, faq_jsonld, u, write_page, load_reviews
+from common import NAP, IMG, EMAIL, faq_jsonld, u, href, tel_link, write_page, load_reviews
 from layout import page
 import components as C
 
@@ -44,7 +44,11 @@ def build():
             paragraphs=[
                 ("Angefangen hat alles mit einer einfachen Überzeugung: Gute Energie soll leistbar "
                  "sein und in der Region bleiben. Aus dieser Idee ist EBZ Energie gewachsen, ein "
-                 "Fachbetrieb aus Villach, der heute die ganze Energiewende aus einer Hand begleitet."),
+                 "Fachbetrieb aus Villach, geführt von Mario Zintl, einem gebürtigen Villacher."),
+                ("Was mit Photovoltaik begann, ist heute die ganze Energiewende aus einer Hand: Strom "
+                 "vom eigenen Dach, Speicher für den Abend, die Wärmepumpe fürs Heizen, ein "
+                 "Energiemanagement, das alles steuert, und die Energiegemeinschaft, mit der Sie Strom "
+                 "mit Nachbarn und Verwandten teilen."),
                 ("Wir sind keine anonyme Kette, sondern Ihre Nachbarn. Ein festangestelltes Team aus "
                  "zertifizierten Fachkräften, das selbst plant, selbst montiert und auch nach der "
                  "Inbetriebnahme für Sie da ist. Mit einem Handschlag, auf den Sie sich verlassen können."),
@@ -55,6 +59,23 @@ def build():
                 "Photovoltaik, Speicher, Wärmepumpe, Energiemanagement und Energiegemeinschaft",
                 "Ehrliche Beratung, ohne Verkaufsdruck",
                 "Ein Ansprechpartner, von der ersten Idee bis zum laufenden Service",
+            ],
+        ),
+        C.prose_panels(
+            eyebrow="Was uns antreibt",
+            h2="Mission und Vision",
+            panels=[
+                ("⌖", "Unsere Mission", [
+                    "Wir machen saubere Energie leistbar und einfach. Jede Familie und jeder Betrieb "
+                    "in der Region soll den eigenen Strom nutzen und unabhängiger von steigenden Preisen werden.",
+                    "Dafür liefern wir alles aus einer Hand, beraten ehrlich und bleiben ansprechbar, "
+                    "wenn es darauf ankommt.",
+                ], True),
+                ("☀", "Unsere Vision", [
+                    "Eine Region, die ihre Energie selbst erzeugt, speichert und teilt. Wir wollen dazu "
+                    "beitragen, dass Kärnten und die Steiermark ein Stück unabhängiger werden.",
+                    "Haus für Haus, Dach für Dach, Nachbarschaft für Nachbarschaft.",
+                ], False),
             ],
         ),
         C.gallery(
@@ -107,6 +128,28 @@ def build():
                 ("€", "Faire Festpreise", "Transparente Fixangebote ohne Kleingedrucktes. Sie wissen immer, woran Sie sind."),
                 ("⌂", "Aus Ihrer Nähe", "Zuhause in Villach, mit kurzen Wegen zu Netzbetreibern und Behörden in Kärnten und der Steiermark."),
                 ("☀", "Da, auch nach der Montage", "Fragen nach der Inbetriebnahme? Wir bleiben Ihr Ansprechpartner. Versprochen."),
+            ],
+        ),
+        C.facts_panel(
+            eyebrow="EBZ auf einen Blick",
+            h2="Fakten und Kontakt",
+            intro="Alle wichtigen Angaben zu EBZ Energie auf einen Blick. Rechtliche Details finden Sie im Impressum.",
+            rows=[
+                ("Firmierung", "EBZ Energie GmbH"),
+                ("Geschäftsführung", "Mario Zintl"),
+                ("Adresse", f"{NAP['street']}, {NAP['zip']} {NAP['city']}"),
+                ("Telefon", tel_link()),
+                ("E-Mail", f'<a href="mailto:{EMAIL}">{EMAIL}</a>'),
+                ("Öffnungszeiten", NAP["hours"]),
+                ("Einzugsgebiet", "Kärnten und Steiermark, Referenzen in 6 Bundesländern"),
+                ("Google-Bewertung", "4,9 von 5 aus über 100 Bewertungen"),
+                ("Erfahrung", "300+ dokumentierte Projekte"),
+                ("Garantie", "bis zu 30 Jahre Leistungs-, mind. 10 Jahre Produktgarantie"),
+            ],
+            actions=[
+                ("Auf Google Maps ansehen", "https://www.google.com/maps?cid=15592511037270601677",
+                 ' target="_blank" rel="noopener"'),
+                ("Zum Impressum", href("impressum"), ""),
             ],
         ),
         C.reviews_slider(_reviews, rating=_rating, count=_count),
