@@ -162,11 +162,6 @@ def build():
             ],
         ),
         C.reviews_slider(_reviews, rating=_rating, count=_count),
-        C.image_banner(
-            img=IMG["team_mission"],
-            alt="EBZ Energie: Ihre Energie, unsere Mission. Photovoltaik, Speicher, "
-                "Energiegemeinschaften, Finanzierung ab 0 Anzahlung und komplette Förderabwicklung.",
-        ),
         C.about_section(
             eyebrow="Über EBZ Energie",
             h2="Ihr Energie-Fachbetrieb aus Villach",
@@ -189,9 +184,9 @@ def build():
                 "dass es zu Ihrem Dach, Ihrem Verbrauch und Ihrem Budget passt.",
                 "Mario Zintl", "Geschäftsführung EBZ Energie GmbH",
             ),
-            badge=("300+", "Projekte in 6 Bundesländern"),
-            img=IMG["team_quer"],
-            img_alt="Das Team von EBZ Energie, Photovoltaik-Fachbetrieb aus Villach",
+            img=IMG["team_mission"],
+            img_alt="EBZ Energie: Ihre Energie, unsere Mission. Das Team des "
+                    "Photovoltaik-Fachbetriebs aus Villach.",
         ),
         C.regions_section(
             eyebrow="Unser Einzugsgebiet",

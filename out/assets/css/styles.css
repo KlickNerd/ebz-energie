@@ -366,7 +366,7 @@ p{margin:0 0 1rem}
 .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,4vw,56px);align-items:center}
 .about-media{position:relative}
 .about-media img{border-radius:calc(var(--radius) + 4px);box-shadow:var(--shadow);
-  width:100%;aspect-ratio:4/3;object-fit:cover}
+  width:100%;height:auto;display:block}
 .about-media__badge{position:absolute;left:-16px;bottom:22px;background:#fff;border-radius:14px;
   padding:14px 18px;box-shadow:var(--shadow);display:flex;gap:10px;align-items:center}
 .about-media__badge b{font-family:var(--font-head);font-size:1.5rem;color:var(--petrol);
