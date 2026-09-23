@@ -4,9 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  schedule:
-    # 1. und 15. jedes Monats (ca. alle zwei Wochen): Reviews frisch ziehen + deployen
-    - cron: '0 5 1,15 * *'
 
 permissions:
   contents: read
@@ -25,11 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Google-Rezensionen aktualisieren (falls Secrets gesetzt)
-        env:
-          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
-          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
-        run: python3 build/fetch_reviews.py || echo "Rezensionen-Fetch uebersprungen"
+      # Kein Review-Fetch hier: der Deploy nutzt die eingecheckte
+      # build/data/reviews.json (kein API-Call, keine Kosten pro Push).
       - name: Website bauen (mit Base-Path fuer Projektseite)
         env:
           EBZ_BASE: /ebz-energie
