@@ -14,6 +14,10 @@ import re as _re
 # Kanonische Domain (fuer canonical/OG/JSON-LD). Interne Links bleiben relativ.
 BASE = "https://ebz-photovoltaik.at"
 
+# Optionaler Pfad-Praefix fuer Deploys in einem Unterverzeichnis (z. B. GitHub
+# Pages Projektseite "/ebz-energie"). Lokal leer -> alle Links bleiben ab "/".
+BASE_PATH = _os.environ.get("EBZ_BASE", "").rstrip("/")
+
 # --- Verbindliche NAP-Daten (nur diese Adresse ist gueltig) ---------------
 TEL_DISPLAY = "+43 650 220 26 26"
 TEL_HREF = "tel:+436502202626"
@@ -216,8 +220,22 @@ def validate(html, path=""):
     return errors
 
 
+def apply_base_path(html):
+    """Setzt BASE_PATH vor alle root-relativen href/src (fuer Unterverzeichnis-Deploy).
+
+    Vollstaendige URLs (https://), Anker (#) und tel:/mailto: bleiben unberuehrt,
+    weil diese nicht mit href="/ bzw. src="/ beginnen.
+    """
+    if not BASE_PATH:
+        return html
+    html = html.replace('href="/', f'href="{BASE_PATH}/')
+    html = html.replace('src="/', f'src="{BASE_PATH}/')
+    return html
+
+
 def write_page(rel_path, html):
     """Schreibt ein fertiges HTML-Dokument nach out/<rel_path> und validiert."""
+    html = apply_base_path(html)
     root = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
     out_path = _os.path.join(root, "out", rel_path)
     _os.makedirs(_os.path.dirname(out_path), exist_ok=True)

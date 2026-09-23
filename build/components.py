@@ -165,6 +165,55 @@ def split_section(left, right):
   </section>"""
 
 
+def media_text(eyebrow, h2, paragraphs, img, alt, bullets=None, reverse=False,
+               cta=None, dark=False):
+    """Bild-Text-Block (alternierend). paragraphs: Liste aus HTML-Absaetzen."""
+    rev = " mediatext--reverse" if reverse else ""
+    ps = "".join(f"<p>{p}</p>" for p in paragraphs)
+    checklist = ""
+    if bullets:
+        checklist = '<ul class="checklist">' + "".join(f"<li>{b}</li>" for b in bullets) + "</ul>"
+    cta_html = ""
+    if cta:
+        cta_html = '<div class="hero__cta" style="margin-top:22px">' + a(cta[0], cta[1], cls="btn btn--primary") + "</div>"
+    sec_cls = "section dark" if dark else "section"
+    return f"""
+  <section class="{sec_cls}">
+    <div class="wrap">
+      <div class="mediatext{rev}">
+        <div class="mediatext__media eg-reveal">
+          <img src="{img}" alt="{alt}" loading="lazy" width="620" height="465">
+        </div>
+        <div class="eg-reveal">
+          <p class="eyebrow">{eyebrow}</p>
+          <h2>{h2}</h2>
+          {ps}{checklist}{cta_html}
+        </div>
+      </div>
+    </div>
+  </section>"""
+
+
+def price_cards(eyebrow, h2, intro, items, note):
+    """items: Liste aus dicts mit keys size, price, price_sub, features (Liste)."""
+    cards = ""
+    for it in items:
+        feats = "".join(f"<li>{x}</li>" for x in it["features"])
+        cards += (f'<div class="price-card eg-reveal"><span class="price-card__size">{it["size"]}</span>'
+                  f'<span class="price-card__price">{it["price"]}<small>{it["price_sub"]}</small></span>'
+                  f'<ul>{feats}</ul></div>')
+    return f"""
+  <section class="section" style="background:#fff;border-block:1px solid var(--line)">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">{eyebrow}</p>
+      <h2 class="center eg-reveal">{h2}</h2>
+      <p class="lead center eg-reveal" style="max-width:70ch;margin-inline:auto">{intro}</p>
+      <div class="cards" style="margin-top:36px">{cards}</div>
+      <p class="form-note center eg-reveal" style="margin-top:22px">{note}</p>
+    </div>
+  </section>"""
+
+
 def steps_section(eyebrow, h2, steps):
     """steps: Liste aus (title, text, zeit)."""
     items = ""

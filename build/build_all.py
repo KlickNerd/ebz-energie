@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import theme
 import home
+import photovoltaik
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "out")
@@ -37,10 +38,22 @@ def write_favicon():
 
 
 def write_meta_files():
-    """robots.txt + Basis-Dateien fuer den Static-Deploy."""
+    """robots.txt + Basis-Dateien fuer den Static-Deploy.
+
+    Im Unterverzeichnis-Deploy (EBZ_BASE gesetzt, z. B. GitHub Pages Preview)
+    wird die gesamte Seite auf noindex gestellt, damit die Preview-URL nicht
+    mit der spaeteren Live-Domain konkurriert (Duplicate Content).
+    """
+    if os.environ.get("EBZ_BASE"):
+        robots = "User-agent: *\nDisallow: /\n"
+    else:
+        robots = "User-agent: *\nAllow: /\nSitemap: https://ebz-photovoltaik.at/sitemap.xml\n"
     with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as f:
-        f.write("User-agent: *\nAllow: /\nSitemap: https://ebz-photovoltaik.at/sitemap.xml\n")
-    print("[OK ] robots.txt")
+        f.write(robots)
+    # .nojekyll: verhindert Jekyll-Verarbeitung auf GitHub Pages
+    with open(os.path.join(OUT, ".nojekyll"), "w", encoding="utf-8") as f:
+        f.write("")
+    print("[OK ] robots.txt + .nojekyll")
 
 
 def main():
@@ -50,6 +63,7 @@ def main():
     write_meta_files()
     errors = 0
     errors += len(home.build())
+    errors += len(photovoltaik.build())
     print("=== Fertig ===")
     if errors:
         print(f"ACHTUNG: {errors} Validierungsfehler. Bitte beheben.")
