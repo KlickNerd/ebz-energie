@@ -147,6 +147,19 @@ p{margin:0 0 1rem}
 @media(max-width:900px){.hero__inner{grid-template-columns:1fr;gap:32px}
   .hero__media{order:-1}.hero__float{left:12px}}
 
+/* --- Page hero (Unterseiten) ------------------------------------------- */
+.page-hero{position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:linear-gradient(135deg,var(--petrol-2),var(--petrol-3));
+  padding:clamp(56px,8vw,112px) 20px}
+.page-hero::before{content:"";position:absolute;inset:0;opacity:.35;
+  background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+  background-size:44px 44px;mask-image:radial-gradient(circle at 50% 0%,#000,transparent 72%)}
+.page-hero__inner{position:relative;max-width:820px;margin-inline:auto}
+.page-hero h1{color:#fff}
+.page-hero .lead{color:#c6dbe2}
+.page-hero__cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+
 /* --- KPI-Strip ---------------------------------------------------------- */
 .kpis{background:#fff;border-bottom:1px solid var(--line)}
 .kpis__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;

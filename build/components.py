@@ -39,6 +39,22 @@ def hero(eyebrow, h1, lead, badges, img, img_alt, float_num=None, float_label=No
   </section>"""
 
 
+def page_hero(eyebrow, h1, lead, cta=("kontakt", "Kostenlose Beratung"), cta2=None):
+    """Schlanker, zentrierter Seiten-Hero fuer Unterseiten (dunkel)."""
+    btns = a(cta[0], cta[1], cls="btn btn--primary btn--lg")
+    if cta2:
+        btns += a(cta2[0], cta2[1], cls="btn btn--light btn--lg")
+    return f"""
+  <section class="page-hero">
+    <div class="page-hero__inner eg-reveal">
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{h1}</h1>
+      <p class="lead">{lead}</p>
+      <div class="page-hero__cta">{btns}</div>
+    </div>
+  </section>"""
+
+
 def kpis(items):
     """items: Liste aus (zahl, label). Zahl kann '300+' o. reine Zahl mit data-count sein."""
     cells = ""

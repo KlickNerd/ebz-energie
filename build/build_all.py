@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import theme
 import home
 import photovoltaik
+import ueber_uns
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "out")
@@ -80,6 +81,7 @@ def main():
     errors = 0
     errors += len(home.build())
     errors += len(photovoltaik.build())
+    errors += len(ueber_uns.build())
     print("=== Fertig ===")
     if errors:
         print(f"ACHTUNG: {errors} Validierungsfehler. Bitte beheben.")
