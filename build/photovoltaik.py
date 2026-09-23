@@ -136,10 +136,10 @@ def build():
             eyebrow="So einfach läuft es ab",
             h2="Von der Beratung bis zum eigenen Sonnenstrom",
             steps=[
-                ("Beratung", "Wir besprechen Ihren Verbrauch, Ihr Dach und Ihre Ziele. Kostenlos und unverbindlich.", "Tag 1"),
-                ("Projektbericht", "Sie erhalten einen Projektbericht mit 3D-Belegplan und Statikreport.", "wenige Tage"),
-                ("Montage", "Zertifizierte Fachkräfte montieren Ihre Anlage sauber und termintreu.", "1 bis 4 Tage"),
-                ("Inbetriebnahme", "Wir kümmern uns um Anmeldung, Zählertausch und Übergabe.", "danach"),
+                ("Beratung", "Wir besprechen Ihren Verbrauch, Ihr Dach und Ihre Ziele. Kostenlos und unverbindlich.", ""),
+                ("Projektbericht", "Sie erhalten einen Projektbericht mit 3D-Belegplan und Statikreport.", ""),
+                ("Montage", "Zertifizierte Fachkräfte montieren Ihre Anlage sauber und termintreu.", ""),
+                ("Inbetriebnahme", "Wir kümmern uns um Anmeldung, Zählertausch und Übergabe.", ""),
             ],
         ),
         C.why_section(

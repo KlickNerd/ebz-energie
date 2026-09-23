@@ -104,10 +104,10 @@ def build():
             eyebrow="So einfach geht es",
             h2="In vier Schritten zur eigenen Energieversorgung",
             steps=[
-                ("Beratung", "Wir analysieren Verbrauch, Dach und Ziele. Kostenlos und unverbindlich.", "Tag 1"),
-                ("Planung mit 3D", "Sie erhalten ein Fixangebot samt Projektbericht mit 3D-Belegplan und Statikreport.", "rund 1 Woche"),
-                ("Förderung und Behörden", "EBZ Energie übernimmt Förderanträge, Anmeldung und Behördenwege.", "läuft mit"),
-                ("Montage", "Zertifizierte Fachkräfte montieren und nehmen Ihre Anlage in Betrieb.", "1 bis 4 Tage"),
+                ("Beratung", "Wir analysieren Verbrauch, Dach und Ziele. Kostenlos und unverbindlich.", ""),
+                ("Planung mit 3D", "Sie erhalten ein Fixangebot samt Projektbericht mit 3D-Belegplan und Statikreport.", ""),
+                ("Förderung und Behörden", "EBZ Energie übernimmt Förderanträge, Anmeldung und Behördenwege.", ""),
+                ("Montage", "Zertifizierte Fachkräfte montieren und nehmen Ihre Anlage in Betrieb.", ""),
             ],
         ),
         C.media_text(
