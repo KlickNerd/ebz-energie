@@ -86,13 +86,19 @@ def build():
         ),
         C.problem_compare(
             eyebrow="Warum sich der Umstieg lohnt",
-            h2="Weniger Netzbezug, mehr Unabhängigkeit",
-            intro=("Den größten Teil Ihres Sonnenstroms verbrauchen Sie direkt im Haus. "
-                   "Was Sie selbst nutzen, müssen Sie nicht teuer aus dem Netz kaufen."),
+            h2="Weniger zukaufen, mehr Unabhängigkeit",
+            intro=("Je mehr Strom und Wärme Sie selbst erzeugen, speichern und nutzen, desto weniger "
+                   "müssen Sie teuer dazukaufen. Genau dafür sorgt das EBZ System."),
             bars=[
-                ("Energiekosten ohne eigene Anlage", 100, "bad", "voller Netzbezug"),
+                ("Energiekosten ohne eigenes System", 100, "bad", "voller Zukauf"),
                 ("Energiekosten mit dem EBZ System", 15, "good", "bis zu 85 % weniger*"),
             ],
+            aside=("So entsteht Ihre Unabhängigkeit", [
+                ("☀", "Selbst erzeugen", "Photovoltaik liefert Ihren Strom direkt vom Dach."),
+                ("▮", "Selbst speichern", "Der Speicher macht Sonnenstrom auch am Abend nutzbar."),
+                ("♨", "Selbst heizen", "Die Wärmepumpe heizt mit Ihrem eigenen Strom."),
+                ("⚙", "Automatisch steuern", "Das Energiemanagement holt das Maximum heraus."),
+            ]),
         ),
         C.steps_section(
             eyebrow="So einfach geht es",

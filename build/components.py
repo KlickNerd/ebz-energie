@@ -125,22 +125,37 @@ def hub_section(eyebrow, h2, lead, points):
   </section>"""
 
 
-def problem_compare(eyebrow, h2, intro, bars):
-    """bars: Liste aus (label, prozent, 'bad'|'good', wert_text)."""
+def problem_compare(eyebrow, h2, intro, bars, aside=None):
+    """bars: Liste aus (label, prozent, 'bad'|'good', wert_text).
+
+    aside (optional): (titel, [(icon, fett, text), ...]) rendert rechts eine
+    dunkle Karte, damit die Sektion ausgewogen wirkt (Zweispalter).
+    """
     rows = ""
     for label, pct, kind, val in bars:
         rows += (f'<div class="bar eg-reveal"><div class="bar__top"><span>{label}</span>'
                  f'<span>{val}</span></div>'
                  f'<div class="bar__track"><div class="bar__fill bar__fill--{kind}" '
                  f'style="--w:{pct}%"></div></div></div>')
+    left = (f'<div class="eg-reveal"><p class="eyebrow">{eyebrow}</p><h2>{h2}</h2>'
+            f'<p class="lead">{intro}</p><div class="compare">{rows}</div></div>')
+
+    if aside:
+        title, items = aside
+        li = "".join(
+            f'<li><span class="ic" aria-hidden="true">{ic}</span>'
+            f'<span><b>{b}</b><span>{t}</span></span></li>'
+            for ic, b, t in items
+        )
+        aside_html = (f'<div class="compare-aside eg-reveal"><h3>{title}</h3>'
+                      f'<ul class="flowlist">{li}</ul></div>')
+        inner = f'<div class="compare-grid">{left}{aside_html}</div>'
+    else:
+        inner = left
+
     return f"""
   <section class="section">
-    <div class="wrap">
-      <p class="eyebrow eg-reveal">{eyebrow}</p>
-      <h2 class="eg-reveal">{h2}</h2>
-      <p class="lead eg-reveal">{intro}</p>
-      <div class="compare">{rows}</div>
-    </div>
+    <div class="wrap">{inner}</div>
   </section>"""
 
 
