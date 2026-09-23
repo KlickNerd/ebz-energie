@@ -1,21 +1,498 @@
 {
   "rating": "4,9",
-  "count": 104,
+  "count": 111,
   "reviews": [
     {
-      "author": "Familie aus Villach",
+      "author": "Holm Hüttenwirt",
       "rating": 5,
-      "text": "Von der Beratung bis zur Inbetriebnahme alles reibungslos. Das Team war pünktlich, sauber und kompetent."
+      "text": "Sehr gute Beratung und kurzfristige Zusendung eines wettbewerbsfähigen Angebotes, welches die besprochenen Komponenten enthielt. Danke.",
+      "date": "2026-09-17"
     },
     {
-      "author": "Kunde aus Klagenfurt",
+      "author": "Andrei Gligor",
       "rating": 5,
-      "text": "Ehrliche Beratung ohne Verkaufsdruck. Die Anlage läuft seit Monaten einwandfrei und die Ersparnis ist deutlich spürbar."
+      "text": "Absolut empfehlenswert! 👍\n\nVon der ersten Beratung bis zur fertigen Umsetzung unserer 15-kWp-Photovoltaikanlage auf dem Flachdach inklusive Sigenergy-Speicher war alles äußerst professionell und perfekt organisiert.…",
+      "date": "2026-09-01"
     },
     {
-      "author": "Kundin aus der Steiermark",
+      "author": "Gerd Tischner",
       "rating": 5,
-      "text": "Top Handwerk und ein echter Ansprechpartner bei Fragen. Jederzeit wieder."
+      "text": "Klare Empfehlung eine PV-Anlage mit der Fa. EBZ zu realisieren.\nVon der Erstbesichtigung, Angebotslegung und Ausführung bis hin zur Förderabwicklung einfach top.\nAlles perfekt gepasst. Professionelle Montage.…",
+      "date": "2026-07-20"
+    },
+    {
+      "author": "Melanie Zechmann",
+      "rating": 5,
+      "text": "Top Beratung und Organisation. In kürzester Zeit projektiert und umgesetzt. Ein großes Dankeschön an EBZ",
+      "date": "2026-07-02"
+    },
+    {
+      "author": "Michael Krumpl",
+      "rating": 5,
+      "text": "Kompetente, pünktliche und reibungslose Abwicklung von A bis Z. Seriöse Firma mit Handschlagsqualität, die ich auf jeden Fall weiter empfehlen kann.",
+      "date": "2026-06-11"
+    },
+    {
+      "author": "Gottfried Marhan",
+      "rating": 5,
+      "text": "Kompetente Beratung und Planung, professionelle Umsetzung durch das Montage- und Elektroinstallationsteam, Einhaltung der Termine und Kosten",
+      "date": "2026-05-13"
+    },
+    {
+      "author": "Michael Riegler",
+      "rating": 5,
+      "text": "Verlässlich, freundlich und sehr gute Beratung - Top!",
+      "date": "2026-04-09"
+    },
+    {
+      "author": "Andrea M. Loe",
+      "rating": 5,
+      "text": "Sehr zu empfehlen.\nGute Beratung, tolles Team.",
+      "date": "2026-03-27"
+    },
+    {
+      "author": "Andreas Zwatz",
+      "rating": 5,
+      "text": "Sehr zufrieden mit der gesamten Abwicklung. Absolute Empfehlung!",
+      "date": "2026-03-23"
+    },
+    {
+      "author": "Peter Paul Sivec",
+      "rating": 5,
+      "text": "Sehr zufrieden mit der gesamten Abwicklung - vom Erstgespräch bis zur Inbetriebnahme lief alles reibungslos. Die Kommunikation war top, das Team arbeitete professionell und sauber. Klare Empfehlung!",
+      "date": "2026-03-20"
+    },
+    {
+      "author": "Reinhold Kogelnig",
+      "rating": 5,
+      "text": "Sehr freundliche , schnelle und kompetente Beratung ,Planung und Ausführung . Sehr empfehlenswert!",
+      "date": "2026-03-13"
+    },
+    {
+      "author": "Nico Jerney",
+      "rating": 5,
+      "text": "Sehr gute Beratung, schnelle Ausführung, einfach top bin sehr zufrieden",
+      "date": "2026-03-01"
+    },
+    {
+      "author": "Andreas Schwab",
+      "rating": 5,
+      "text": "Von der ersten Beratung bis zur finalen Inbetriebnahme lief alles absolut professionell und reibungslos. Die Planung war transparent, die Umsetzung termingerecht und technisch einwandfrei. Besonders überzeugt haben mich…",
+      "date": "2026-02-23"
+    },
+    {
+      "author": "peter hirnschall",
+      "rating": 5,
+      "text": "Wir haben uns letztes Jahr (2025) dazu entschlossen, eine PV-Anlage zu erstehen. Dabei landeten wir bei der Firma EBZ Energie GmbH und waren schlussendlich mit der Abwicklung und dem wirklich tollen und umfangreichen…",
+      "date": "2026-01-24"
+    },
+    {
+      "author": "Tom Stenger",
+      "rating": 5,
+      "text": "Mit EBZ Energie habe ich durchweg sehr positive Erfahrungen bei der Erweiterung meiner bestehenden 5-kWp-PV-Anlage gemacht. Ziel war die Skalierung um weitere 20 kWp inklusive Batteriespeicher sowie…",
+      "date": "2026-01-12"
+    },
+    {
+      "author": "Gerd Nussbaumer",
+      "rating": 5,
+      "text": "Es hat alles sehr gut geklappt die PV anlage wurde promot montiert und ich bin sehr zufrieden vielen dank an alle mfg gerd Motel55",
+      "date": "2025-10-22"
+    },
+    {
+      "author": "Markus Bainschab",
+      "rating": 5,
+      "text": "Sehr gute Beratung und rasche Umsetzung. Sehr zu empfehlen!",
+      "date": "2025-07-27"
+    },
+    {
+      "author": "Kerstin Grubelnig",
+      "rating": 5,
+      "text": "Gute und genaue Beratung, rasche Abwicklung.\nPreis Leistung in Ordnung.\nAnträge werden von der Firma gemacht-keine bzw wenig Bürokratie für den Kunden.\nWir sind zufrieden.👍\nWürden die Firma auf jedenfall weiterempfehlen.",
+      "date": "2025-06-02"
+    },
+    {
+      "author": "Gerd Müller",
+      "rating": 5,
+      "text": "Seriöse, kompetente Firma. Preis/Leistung top!",
+      "date": "2025-05-28"
+    },
+    {
+      "author": "Markus Unegg",
+      "rating": 5,
+      "text": "Top Qualität und Beratung.\nDie Montage einfach perfekt",
+      "date": "2025-05-25"
+    },
+    {
+      "author": "Bartl Martin",
+      "rating": 5,
+      "text": "Ich bin sehr zufrieden mit der Anlage, leichte Montage ,ladet auch bei Tageslicht nicht viel aber doch ein bisschen, der Service ging sehr schnell Daumen hoch",
+      "date": "2025-05-23"
+    },
+    {
+      "author": "Günther Treiber",
+      "rating": 5,
+      "text": "Wir waren sehr zufrieden. Kompetente Abwicklung. Vielen Dank.",
+      "date": "2025-05-23"
+    },
+    {
+      "author": "Rene Mertlitz",
+      "rating": 5,
+      "text": "Ausführung und Beratung Top!! Super Team!! In 5 Wochen von der Beratung bis zur Fertigstellung.",
+      "date": "2025-04-05"
+    },
+    {
+      "author": "Karin Wiener",
+      "rating": 5,
+      "text": "Nach langer Überlegung unsererseits schließlich alles unkompliziert, schnell und professionell erledigt.\nVielen Dank dafür!",
+      "date": "2025-03-21"
+    },
+    {
+      "author": "Manfred Strohmayer",
+      "rating": 5,
+      "text": "War mit der Arbeit sehr zufriedenstellend!\nWerde sie sicher weiterempfehlen!",
+      "date": "2025-03-20"
+    },
+    {
+      "author": "johannes stani",
+      "rating": 5,
+      "text": "Vielen Dank für die fachliche Beratung und Unterstützung und kompetente Montage! Auf meine Wünsche wurde Rücksicht genommen.Bin sehr froh,\nmich für EBZ Energie entschieden zu haben.\nGute Geschäfte weiterhin!",
+      "date": "2025-03-14"
+    },
+    {
+      "author": "Andreas N.",
+      "rating": 5,
+      "text": "Durchführung der Beratung und PV-Montage im September/Oktober 2024. Sehr kompetente Beratung vor Ort durch Hrn. Zintl. War stets für Fragen erreichbar. Montage lief problemlos. Gutes Preis-Leistungsverhältnis. Haben uns…",
+      "date": "2025-03-03"
+    },
+    {
+      "author": "Wolfgang Leditzky",
+      "rating": 5,
+      "text": "Bin sehr zufrieden mit der Photovoltaikanlage. Auch die Monteure haben sauber gearbeitet. Reibungslose Abwicklung durch Herrn Zintl. Kann nur die Firma weiterempfehlen!",
+      "date": "2025-02-16"
+    },
+    {
+      "author": "Sabine Mente",
+      "rating": 5,
+      "text": "Kompetente Beratung bzw. Planung der Anlage und tolle Unterstützung bei der Abwicklung mit den Behörden. Beurteilung der Wirtschaftlichkeit der Anlage erst in ein paar Monaten möglich. Geplante, im Jahr 2024 zugrunde…",
+      "date": "2025-02-14"
+    },
+    {
+      "author": "Mario Pachernig",
+      "rating": 5,
+      "text": "Reibungslose Abwicklung der Förderung\nTop Monteure, Elektriker und vor allem top Chef der Herr Zintl.\nEine super Zusammenarbeit zwischen Firma und Kunde, alles verständlich erklärt und bei Fragen immer erreichbar.…",
+      "date": "2025-01-19"
+    },
+    {
+      "author": "Anton Riepl",
+      "rating": 5,
+      "text": "Tolle Firma, zuverlässig, sehr bemüht...vor allem Herr Zintl Mario, super Erstberatung und bis zur Inbetriebnahme sehr bemüht...alles super geklappt...diese Firma ist zu hundert Prozent zum weiterempfehlen, top.",
+      "date": "2024-12-20"
+    },
+    {
+      "author": "Kurt Sattlegger",
+      "rating": 5,
+      "text": "herzlichen Dank, sehr informativ, werde 2025 mein Vorhaben umsetzen",
+      "date": "2024-11-15"
+    },
+    {
+      "author": "Marina Fischer",
+      "rating": 5,
+      "text": "Allumfassende Zufriedenheit mit der Beratung, Durchführung und Erreichbarkeit von Herrn Mario Zintl und daher 100%ige Empfehlung für ihn und die Firma EBZ ENERGIE GmbH.",
+      "date": "2024-11-10"
+    },
+    {
+      "author": "Elmar Hepperger",
+      "rating": 5,
+      "text": "Zuverlässig, kompetent, perfekte zufriedenstellende Ausführung!!!",
+      "date": "2024-10-17"
+    },
+    {
+      "author": "Christian Korotaj",
+      "rating": 5,
+      "text": "Haben ende Dezember 2023 den Vertrag unterschrieben,sind am 08.03.2024 mit der PV-Anlage ans Netz gegangen.Es ging alles sehr schnell,sämtliche Ansuchen und Anträge sind von der Firma EBZ erledigt worden . Wir können…",
+      "date": "2024-07-29"
+    },
+    {
+      "author": "Elisabeth Kniest",
+      "rating": 5,
+      "text": "Bin restlos begeistert! Super Preis/Leistungsverhältnis, transparentes Angebot, bei Kontaktaufnahme stets zuvorkommend, spitzenmäßige Monteure. Herr Zintl ist jederzeit erreichbar. Auch nach Beendigung des Auftrags…",
+      "date": "2024-07-27"
+    },
+    {
+      "author": "Mariano Mikl",
+      "rating": 5,
+      "text": "Super Service! Freundlich, zeitlich flexibel! Gerne wieder!",
+      "date": "2024-06-12"
+    },
+    {
+      "author": "Michael Singer",
+      "rating": 5,
+      "text": "Super Abwicklung. Von der Planung bis zur Finalisierung. Sehr empfehlenswert!",
+      "date": "2024-06-01"
+    },
+    {
+      "author": "josip misc",
+      "rating": 5,
+      "text": "Sehr gutes Preis-Leistungs-Verhältnis! Wir entschieden uns für eine 15KW Photovoltaik Anlage und 10er Speicher, ausgestattet mit Glas-Glas-Modulen, und wir sind absolut zufrieden. Das Preis/Leistungverhältnis ist sehr…",
+      "date": "2024-04-16"
+    },
+    {
+      "author": "Johann Bramboeck",
+      "rating": 5,
+      "text": "Gute Erstberatung über Anschaffung einer PV",
+      "date": "2024-04-09"
+    },
+    {
+      "author": "Martin Schäfer",
+      "rating": 5,
+      "text": "Sehr schöner Schauraum... kompetente Beratung... sehr zum empfehlen.",
+      "date": "2024-04-05"
+    },
+    {
+      "author": "franz leithner",
+      "rating": 5,
+      "text": "Sehr freundliches Geschäftslokal, mitten in Villach, professionelles Personal.",
+      "date": "2024-04-05"
+    },
+    {
+      "author": "Alexander Lipautz",
+      "rating": 5,
+      "text": "Nette und kompetente Beratungsgespräche\nQualitative hochwertige Produkte wurden verbaut\nSchnelles und flexibles reagieren auf Anfragen\nVielen Dank",
+      "date": "2024-03-20"
+    },
+    {
+      "author": "Erich Hermann",
+      "rating": 5,
+      "text": "Schnelle und freundliche Beratung. Sehr bemüht und Ideenreich. Die Kommunikation war vorbildlich und kompetent. Für mich Note 1+",
+      "date": "2024-03-15"
+    },
+    {
+      "author": "Sylvia Röthy",
+      "rating": 5,
+      "text": "Kurzfristig vereinbarter Termin vor Ort wurde pünktlich eingehalten.\nDie Beratung war kompetent, ausführlich und freundlich.\nMeine Fragen wurden verständlich beantwortet.\nDas übersichtliche, detaillierte, schriftliche…",
+      "date": "2024-01-27"
+    },
+    {
+      "author": "Christian Guntsche",
+      "rating": 5,
+      "text": "Hr. Zintl ist fachlich sehr kompetent. Er nimmt sich die Zeit, für eine detaillierte Beratung, sag dir aber auch ehrlich, ob sich die Kosten und der Aufwand sich rentieren. Er steht auch mit Tipps und Rat zur Seite.…",
+      "date": "2024-01-25"
+    },
+    {
+      "author": "ernst stank",
+      "rating": 5,
+      "text": "Bin sowohl mit der Beratung als auch mit der Abwicklung des Vorhabens sehr zufrieden und kann die Firma nur weiter empfehlen.",
+      "date": "2024-01-09"
+    },
+    {
+      "author": "Mario Pittino",
+      "rating": 5,
+      "text": "Verlässlich und professionell, absolut Empfehlenswert!\n\nVon der Beratung bis zur Fertigstellung des Projektes gibt es keinerlei Kritik! Bei Rückfragen war Hr. Zintl jederzeit erreichbar. Die gesamte Abwicklung…",
+      "date": "2023-12-28"
+    },
+    {
+      "author": "Gerwin Hofer",
+      "rating": 5,
+      "text": "Jederzeit erreichbar. Kümmert sich um alle Anliegen. Kann man nur\nweiterempfehlen.",
+      "date": "2023-12-22"
+    },
+    {
+      "author": "Karl REDNAK",
+      "rating": 5,
+      "text": "Die Montage der Panele dauerte genau 2 Tage. Absolut genaue, geschulte und seriöse Monteure. Auch die Elektroinstallation dauerte 2 volle Tage. Diese wurde von einem Elektro Meister perfekt durchgeführt. Der Kontakt mit…",
+      "date": "2023-12-16"
+    },
+    {
+      "author": "Stefan Szirch",
+      "rating": 5,
+      "text": "Nach schriftlicher Kontaktaufnahme über die Webseite von EBZ-Energie wurde ich tags darauf telefonisch kontaktiert. Nach der Besichtigung, die in relativ kurzer Zeit nach der Kontaktaufnahme stattfand, wurden mir…",
+      "date": "2023-12-08"
+    },
+    {
+      "author": "Katherin Raser",
+      "rating": 5,
+      "text": "Eine sehr kompetente Firma. Es wurde alles eingehalten wie besprochen und auch die Abwicklung der Förderungen funktionierte reibungslos. Man hat sich gut beraten und betreut gefühlt bis zur Fertigstellung und darüber…",
+      "date": "2023-12-02"
+    },
+    {
+      "author": "Sylvia Röckel",
+      "rating": 5,
+      "text": "Beratung top , Termine uns Preise genau eingehalten wie vereinbart, bei Fragen sofort erreichbar, Anträge für Förderungen perfekt abgewickelt, würde sofort wieder EBZ wählen",
+      "date": "2023-11-27"
+    },
+    {
+      "author": "Helmut Wirnsberger",
+      "rating": 5,
+      "text": "Ich habe eine sehr gute Erfahrung mit EZB gemacht. Es wurden alle Termine eingehalten. Meine Anlage auf dem Dach funktioniert und ich bin rundum zufrieden",
+      "date": "2023-11-25"
+    },
+    {
+      "author": "Max Luschin",
+      "rating": 5,
+      "text": "Sehr freundliche und kompetente Beratung, sowie perfekt Ausführung.\nGerne wieder!",
+      "date": "2023-11-24"
+    },
+    {
+      "author": "Martin Taupe",
+      "rating": 5,
+      "text": "Sehr sehr bemüht, um den Kunden seine Wünsche zu erfüllen, alles perfekt geplant und umgesetzt. Termine werden eingehalten, die Zusagen werden genauestens und perfekt verwirklicht, alles in allem würde ich gerne mehr…",
+      "date": "2023-10-17"
+    },
+    {
+      "author": "Otmar Egger",
+      "rating": 5,
+      "text": "Die Abwicklung und Einbau der Photovoltaikanlage ist ohne Verzögerungen und hoch professionell zur vollsten Zufriedenheit\ndurchgeführt worden. Ich kann die Firma EBZ Energie nur weiter\nempfehlen.",
+      "date": "2023-09-26"
+    },
+    {
+      "author": "Corinna Seiner",
+      "rating": 5,
+      "text": "Ein Beratungstermin wurde online gebucht, innerhalb einer Woche war die Besichtigung vor Ort. Eine sehr kompetente und ehrliche Aufklärung bzw Beratung, das schriftliche Angebot war schon am nächsten Tag im Mail…",
+      "date": "2023-07-20"
+    },
+    {
+      "author": "Werner Steschütz",
+      "rating": 5,
+      "text": "Fachmann der sich super auskennt und einem alles genauestens erklären kann. Werde meine Anlage sehr wahrscheinlich über Herren Zintl welcher der Chef ist errichten lassen.",
+      "date": "2023-07-19"
+    },
+    {
+      "author": "Karl-Heinz Wimmer",
+      "rating": 4,
+      "text": "Fachlich perfekte Beratung in kürzester Zeit. Fundiertes PV-Angebot mit aussagekräftigen Beilagen. Vielen Dank!",
+      "date": "2023-06-22"
+    },
+    {
+      "author": "Thomas Knapp",
+      "rating": 5,
+      "text": "Perfekte Abwicklung, höflich, nett.. sehr Empfehlenswert… sehr sehr zufrieden!",
+      "date": "2023-05-19"
+    },
+    {
+      "author": "Bruno Sablatnig",
+      "rating": 5,
+      "text": "Nach schriftlicher Kontaktaufnahme unsererseits wurden wir sofort telefonisch kontaktiert und eine Besichtigung vor Ort vereinbart. Ausführliches und sehr freundliches Beratungsgespräch und am Tag darauf kam ein sehr…",
+      "date": "2023-04-23"
+    },
+    {
+      "author": "Schaller Christine",
+      "rating": 5,
+      "text": "Wir waren mit der Beratung sehr zufrieden. Können EBZ Energie nur weiterempfehlen.",
+      "date": "2023-03-30"
+    },
+    {
+      "author": "Margit Imhof-errath",
+      "rating": 5,
+      "text": "Sehr kompetente und nette fachliche Beratung",
+      "date": "2023-03-29"
+    },
+    {
+      "author": "Gerald Zwittnig",
+      "rating": 5,
+      "text": "Super Beratung, sehr seriös, unkompliziert bis jetzt!",
+      "date": "2023-02-06"
+    },
+    {
+      "author": "Henry Cwix",
+      "rating": 5,
+      "text": "Obwohl Photovoltaikanlagen derzeit boomen, habe ich innerhalb kürzester Zeit einen Beratungstermin bekommen.",
+      "date": "2022-12-13"
+    },
+    {
+      "author": "Dr. Smolle Markus",
+      "rating": 5,
+      "text": "Ausgezeichnete und fachlich kompetente Beratung, pünktlich und professionell.",
+      "date": "2022-10-05"
+    },
+    {
+      "author": "Alexandra Malle",
+      "rating": 5,
+      "text": "Sehr kompetente und freundliche Beratung....schnelle und umfassende Erstellung des Angebots",
+      "date": "2022-09-14"
+    },
+    {
+      "author": "Rupert Kamnig",
+      "rating": 5,
+      "text": "Sehr kompetente und realistische Einschätzung der Lage!",
+      "date": "2022-08-23"
+    },
+    {
+      "author": "Max Luschin",
+      "rating": 5,
+      "text": "Sehr freundliche und kompetente Beratung.",
+      "date": "2022-08-08"
+    },
+    {
+      "author": "Gerald Wallner",
+      "rating": 5,
+      "text": "Wirklich kompetenter und sympatischer Partner! Zuverlässig unkompliziert und schnell!\nWürde jederzeit wieder einen Auftrag an EBZ Energie vergeben!\nHerzlichen Dank für die tolle Zusammenarbeit!",
+      "date": "2022-07-13"
+    },
+    {
+      "author": "Sabine Tomasini",
+      "rating": 5,
+      "text": "War mit der kompetenten Beratung von EZB Energie, mysolar, Hrn. Zirnl sehr zufrieden. Tomasini",
+      "date": "2022-06-30"
+    },
+    {
+      "author": "Hannes Knes",
+      "rating": 5,
+      "text": "Super Beratung, schnelle Reaktion und hat sein Fachgebiet sehr gut im Griff. Vielen Dank für die Beratung. Hannes Knes",
+      "date": "2022-06-23"
+    },
+    {
+      "author": "Dirk Bock",
+      "rating": 5,
+      "text": "Freundliche, kompetente und vor allem zeitnahe Beratung. Zugesagte Termine wurden eingehalten.\nWir sind sehr zufrieden.",
+      "date": "2022-05-25"
+    },
+    {
+      "author": "Karl Klein",
+      "rating": 5,
+      "text": "Tolle Beratung und unkomplizierte Abwicklung; kann ich nur weiterempfehlen!",
+      "date": "2022-05-23"
+    },
+    {
+      "author": "Manuel Fian",
+      "rating": 5,
+      "text": "Mehrere Angebote in kürzester Zeit erhalten.\nSehr gute Beratung und man wird steht's auf den laufenden gehalten bezüglich Liefertermin, Zählerumbau, Förderung etc.\nDanke an Hrn. Zintl!",
+      "date": "2022-05-21"
+    },
+    {
+      "author": "MJ",
+      "rating": 5,
+      "text": "Danke für freundliche und kompetente Beratung!!",
+      "date": "2022-05-18"
+    },
+    {
+      "author": "Erna Kienleitner",
+      "rating": 4,
+      "text": "Sehr kompetente und verständliche Beratung, die uns die Entscheidung für das PV-Projekt jedenfalls erleichtern wird!",
+      "date": "2022-05-11"
+    },
+    {
+      "author": "Johann Susnjar",
+      "rating": 5,
+      "text": "Sehr schnelle und kompetente Beratung. Kümmert sich auch noch nach der Bestellung intensiv um den Kunden. Kann ich auf alle Fälle weiter empfehlen.",
+      "date": "2022-04-24"
+    },
+    {
+      "author": "Georg Dreihann",
+      "rating": 5,
+      "text": "Sehr kompetente Erklärung der Materie und Umsetzung bis zum Offert das in Preis und Leistung überzeugt hat.",
+      "date": "2022-04-21"
+    },
+    {
+      "author": "Rudy Kuhn",
+      "rating": 5,
+      "text": "Vielen Dank für die gute Beratung und auch für die Geduld, wenn es auf unserer Seite etwas länger gedauert hat, bis wir die Entscheidung abschließend getroffen haben. Nun hoffen wir auf eine baldige Montage und…",
+      "date": "2022-04-21"
+    },
+    {
+      "author": "Michael Runda",
+      "rating": 5,
+      "text": "Preis/Leistung sehr gut\nDas Angebot wahr sehr detailliert und verständlich.",
+      "date": "2022-04-11"
     }
   ]
 }
