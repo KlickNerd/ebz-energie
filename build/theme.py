@@ -297,10 +297,17 @@ p{margin:0 0 1rem}
 
 /* --- Why grid ----------------------------------------------------------- */
 .why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.why__item{display:flex;gap:14px;align-items:flex-start}
-.why__ic{flex:0 0 auto;width:48px;height:48px;border-radius:13px;
-  background:var(--bg);color:var(--petrol);display:grid;place-items:center;font-size:1.4rem}
-.why__item h3{font-size:1.15rem;margin:0 0 4px}
+.why__item{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:30px 28px;box-shadow:var(--shadow-sm);
+  display:flex;flex-direction:column;gap:14px;
+  transition:transform .2s ease,box-shadow .2s ease}
+.why__item::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:var(--amber);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.why__item:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.why__item:hover::before{transform:scaleX(1)}
+.why__ic{flex:0 0 auto;width:56px;height:56px;border-radius:15px;
+  background:rgba(245,166,35,.14);color:var(--amber-2);display:grid;place-items:center;font-size:1.55rem}
+.why__item h3{font-size:1.2rem;margin:0}
 .why__item p{margin:0;color:var(--muted)}
 @media(max-width:820px){.why{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.why{grid-template-columns:1fr}}
