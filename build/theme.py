@@ -452,6 +452,27 @@ p{margin:0 0 1rem}
 .finalcta p{color:#4a3600;max-width:60ch;margin-inline:auto}
 .finalcta .btn--dark{margin-top:8px}
 
+/* --- CTA band (Abschluss) ---------------------------------------------- */
+.cta-band{position:relative;overflow:hidden;border-radius:calc(var(--radius) + 8px);
+  background:linear-gradient(150deg,var(--petrol),var(--petrol-3));color:#fff;
+  padding:clamp(44px,6vw,76px) clamp(24px,4vw,64px);text-align:center;box-shadow:var(--shadow)}
+.cta-band::before{content:"";position:absolute;inset:0;opacity:.4;
+  background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+  background-size:44px 44px;mask-image:radial-gradient(circle at 50% 0%,#000,transparent 72%)}
+.cta-band::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+  right:-90px;top:-120px;background:radial-gradient(circle,rgba(245,166,35,.22),transparent 70%)}
+.cta-band__inner{position:relative;max-width:780px;margin-inline:auto}
+.cta-band .eyebrow{color:var(--amber)}
+.cta-band h2{color:#fff}
+.cta-band .lead{color:#c6dbe2;max-width:60ch;margin-inline:auto}
+.cta-band__btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.cta-band__trust{list-style:none;margin:30px 0 0;padding:26px 0 0;display:flex;flex-wrap:wrap;
+  gap:12px 28px;justify-content:center;color:#c6dbe2;font-weight:600;font-size:.95rem;
+  border-top:1px solid rgba(255,255,255,.14)}
+.cta-band__trust li{display:inline-flex;align-items:center;gap:8px}
+.cta-band__trust .s{color:var(--amber);font-size:1.05rem}
+
 /* --- Sticky mobile CTA -------------------------------------------------- */
 .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;gap:10px;
   padding:10px 14px;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);

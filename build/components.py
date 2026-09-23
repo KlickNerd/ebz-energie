@@ -577,14 +577,34 @@ def linkgrid_section(h2, links):
   </section>"""
 
 
-def finalcta(h2, text, cta=("kontakt", "Jetzt Beratung sichern")):
+def finalcta(h2, text, cta=("kontakt", "Kostenlose Beratung"),
+             eyebrow="Kostenlose Erstberatung", trust=None):
+    if trust is None:
+        trust = [
+            (f"{NAP['rating']} auf Google", True),
+            ("300+ Projekte", False),
+            ("Kostenlos und unverbindlich", False),
+            ("Antwort in einem Werktag", False),
+        ]
+    _star, _check = "★", "✓"
+    trust_html = "".join(
+        f'<li><span class="s" aria-hidden="true">{_star if star else _check}</span>{t}</li>'
+        for t, star in trust
+    )
     return f"""
   <section class="section">
     <div class="wrap">
-      <div class="finalcta eg-reveal">
-        <h2>{h2}</h2>
-        <p>{text}</p>
-        {a(cta[0], cta[1], cls='btn btn--dark btn--lg')}
+      <div class="cta-band eg-reveal">
+        <div class="cta-band__inner">
+          <p class="eyebrow">{eyebrow}</p>
+          <h2>{h2}</h2>
+          <p class="lead">{text}</p>
+          <div class="cta-band__btns">
+            {a(cta[0], cta[1], cls='btn btn--primary btn--lg')}
+            {tel_link(cls='btn btn--light btn--lg', label='☎ ' + NAP['phone_display'])}
+          </div>
+          <ul class="cta-band__trust">{trust_html}</ul>
+        </div>
       </div>
     </div>
   </section>"""
