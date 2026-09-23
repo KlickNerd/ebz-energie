@@ -378,6 +378,18 @@ p{margin:0 0 1rem}
 .imgbanner a:hover{transform:translateY(-3px)}
 .imgbanner img{width:100%;height:auto;display:block}
 
+/* --- Gallery (Einblicke) ------------------------------------------------ */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery figure{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-sm);aspect-ratio:4/3;transition:transform .2s ease}
+.gallery figure:hover{transform:translateY(-3px)}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 14px;color:#fff;
+  font-family:var(--font-head);font-weight:600;font-size:.98rem;
+  background:linear-gradient(to top,rgba(8,46,61,.85),transparent)}
+@media(max-width:820px){.gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.gallery{grid-template-columns:1fr}}
+
 /* --- About (Ueber uns) -------------------------------------------------- */
 .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,4vw,56px);align-items:center}
 .about-media{position:relative}

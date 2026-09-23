@@ -375,6 +375,24 @@ def reviews_block(quotes):
   </section>"""
 
 
+def gallery(eyebrow, h2, intro, items):
+    """Bildergalerie fuer Einblicke (Team + Projekte). items: (img, alt, caption)."""
+    tiles = "".join(
+        f'<figure class="eg-reveal"><img src="{img}" alt="{alt}" loading="lazy" '
+        f'width="480" height="360"><figcaption>{cap}</figcaption></figure>'
+        for img, alt, cap in items
+    )
+    return f"""
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">{eyebrow}</p>
+      <h2 class="center eg-reveal">{h2}</h2>
+      <p class="lead center eg-reveal" style="max-width:66ch;margin-inline:auto">{intro}</p>
+      <div class="gallery" style="margin-top:36px">{tiles}</div>
+    </div>
+  </section>"""
+
+
 def reviews_slider(reviews, rating="4,9", count=None):
     """Slider mit echten Google-Rezensionen (4 und 5 Sterne).
 
