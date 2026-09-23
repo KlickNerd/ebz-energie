@@ -250,6 +250,19 @@ p{margin:0 0 1rem}
 .price-card li{display:flex;gap:10px;align-items:flex-start;color:var(--muted)}
 .price-card li::before{content:"\2713";color:var(--amber-2);font-weight:800;flex:0 0 auto}
 
+/* --- Reference cards (Aus der Praxis) ----------------------------------- */
+.card__specs{color:var(--muted);font-size:.95rem;margin:0}
+.card__result{margin-top:auto;padding-top:12px;font-family:var(--font-head);font-weight:800;
+  color:var(--petrol);font-size:1.5rem;line-height:1.1}
+.card__result small{display:block;font-family:var(--font-body);font-weight:600;
+  font-size:.85rem;color:var(--muted);margin-top:2px}
+
+/* --- Region columns (Einzugsgebiet) ------------------------------------ */
+.regions{columns:2;gap:16px;list-style:none;margin:16px 0 0;padding:0}
+.regions li{break-inside:avoid;padding:5px 0;color:var(--muted)}
+.regions li::before{content:"\25f7";color:var(--amber-2);margin-right:8px}
+@media(max-width:520px){.regions{columns:1}}
+
 /* --- Steps -------------------------------------------------------------- */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
 .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px}

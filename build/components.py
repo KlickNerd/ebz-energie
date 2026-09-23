@@ -214,6 +214,53 @@ def price_cards(eyebrow, h2, intro, items, note):
   </section>"""
 
 
+def reference_cards(eyebrow, h2, intro, items):
+    """Referenzprojekte mit Zahlen. items: dict img, alt, title, specs, result, result_sub.
+
+    Bild und Zahlen muessen zum selben Projekt gehoeren (CLAUDE.md).
+    """
+    cards = ""
+    for it in items:
+        cards += f"""
+        <article class="card eg-reveal">
+          <img class="card__media" src="{it['img']}" alt="{it['alt']}" loading="lazy" width="400" height="250">
+          <div class="card__body">
+            <h3>{it['title']}</h3>
+            <p class="card__specs">{it['specs']}</p>
+            <p class="card__result">{it['result']}<small>{it['result_sub']}</small></p>
+          </div>
+        </article>"""
+    cta = a("referenzen", 'Alle Referenzen ansehen <span aria-hidden="true">→</span>', cls="btn btn--ghost")
+    return f"""
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">{eyebrow}</p>
+      <h2 class="center eg-reveal">{h2}</h2>
+      <p class="lead center eg-reveal" style="max-width:70ch;margin-inline:auto">{intro}</p>
+      <div class="cards" style="margin-top:36px">{cards}</div>
+      <div class="center eg-reveal" style="margin-top:28px">{cta}</div>
+    </div>
+  </section>"""
+
+
+def regions_section(eyebrow, h2, intro, kaernten, steiermark, note=None):
+    """Einzugsgebiet: zwei Panels mit Ortslisten."""
+    def col(title, orte):
+        li = "".join(f"<li>{o}</li>" for o in orte)
+        return f'<div class="panel eg-reveal"><h3>{title}</h3><ul class="regions">{li}</ul></div>'
+    n = f'<p class="form-note center eg-reveal" style="margin-top:22px">{note}</p>' if note else ""
+    return f"""
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">{eyebrow}</p>
+      <h2 class="center eg-reveal">{h2}</h2>
+      <p class="lead center eg-reveal" style="max-width:70ch;margin-inline:auto">{intro}</p>
+      <div class="split" style="margin-top:32px">{col('Kärnten', kaernten)}{col('Steiermark', steiermark)}</div>
+      {n}
+    </div>
+  </section>"""
+
+
 def steps_section(eyebrow, h2, steps):
     """steps: Liste aus (title, text, zeit)."""
     items = ""
