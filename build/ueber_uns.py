@@ -65,7 +65,7 @@ def build():
             eyebrow="Was uns antreibt",
             h2="Mission und Vision",
             panels=[
-                ("⌖", "Unsere Mission", [
+                ("◎", "Unsere Mission", [
                     "Wir machen saubere Energie leistbar und einfach. Jede Familie und jeder Betrieb "
                     "in der Region soll den eigenen Strom nutzen und unabhängiger von steigenden Preisen werden.",
                     "Dafür liefern wir alles aus einer Hand, beraten ehrlich und bleiben ansprechbar, "
