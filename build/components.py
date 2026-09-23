@@ -402,6 +402,23 @@ def reviews_slider(reviews, rating="4,9", count=None):
   </section>"""
 
 
+def image_banner(img, alt, link_key="kontakt", link_label="Kostenlose Beratung sichern"):
+    """Branded Creative als klickbares Banner (Bild vollstaendig sichtbar, nicht beschnitten)."""
+    return f"""
+  <section class="section--tight section">
+    <div class="wrap">
+      <div class="imgbanner eg-reveal">
+        <a href="{href(link_key)}" aria-label="{link_label}">
+          <img src="{img}" alt="{alt}" loading="lazy" width="1536" height="1024">
+        </a>
+        <div class="center" style="margin-top:22px">
+          {a(link_key, link_label, cls='btn btn--primary btn--lg')}
+        </div>
+      </div>
+    </div>
+  </section>"""
+
+
 def about_section(eyebrow, h2, paragraphs, values, quote, badge=None,
                   img=None, img_alt="", cta=("ueber_uns", "Mehr über uns")):
     """Ausfuehrlicher Ueber-uns-Block (Teambild, Story, Werte, Gruender-Zitat, CTA).

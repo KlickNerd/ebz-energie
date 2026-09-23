@@ -102,6 +102,8 @@ IMG = {
     "foerderung": "/assets/img/foerderung.jpg",
     "ref_villach": "/assets/img/referenz-villach.jpg",
     "ref_krumpendorf": "/assets/img/referenz-krumpendorf.jpg",
+    # Projekteigenes Bild (nicht aus wp-content), liegt in build/static/img/
+    "team_mission": "/assets/img/team-ebz-mission.jpg",
 }
 
 # Quelle -> Zielpfad fuer den Bild-Download (build/fetch_images.py nutzt das).

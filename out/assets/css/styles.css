@@ -355,6 +355,13 @@ p{margin:0 0 1rem}
 @media(max-width:640px){.founder{grid-template-columns:1fr;text-align:center}
   .founder img{margin-inline:auto}}
 
+/* --- Image banner (branded Creative) ----------------------------------- */
+.imgbanner{max-width:1040px;margin-inline:auto}
+.imgbanner a{display:block;border-radius:calc(var(--radius) + 4px);overflow:hidden;
+  box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease}
+.imgbanner a:hover{transform:translateY(-3px)}
+.imgbanner img{width:100%;height:auto;display:block}
+
 /* --- About (Ueber uns) -------------------------------------------------- */
 .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,4vw,56px);align-items:center}
 .about-media{position:relative}

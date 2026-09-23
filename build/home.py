@@ -162,6 +162,11 @@ def build():
             ],
         ),
         C.reviews_slider(_reviews, rating=_rating, count=_count),
+        C.image_banner(
+            img=IMG["team_mission"],
+            alt="EBZ Energie: Ihre Energie, unsere Mission. Photovoltaik, Speicher, "
+                "Energiegemeinschaften, Finanzierung ab 0 Anzahlung und komplette Förderabwicklung.",
+        ),
         C.about_section(
             eyebrow="Über EBZ Energie",
             h2="Ihr Energie-Fachbetrieb aus Villach",

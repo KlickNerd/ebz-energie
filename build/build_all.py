@@ -37,6 +37,21 @@ def write_favicon():
     print("[OK ] assets/img/favicon.svg")
 
 
+def copy_static():
+    """Kopiert projekteigene Bilder aus build/static/img/ nach out/assets/img/."""
+    import shutil
+    src = os.path.join(ROOT, "build", "static", "img")
+    dst = os.path.join(OUT, "assets", "img")
+    if not os.path.isdir(src):
+        return
+    os.makedirs(dst, exist_ok=True)
+    for name in os.listdir(src):
+        if name.startswith("."):
+            continue
+        shutil.copy2(os.path.join(src, name), os.path.join(dst, name))
+        print(f"[OK ] assets/img/{name} (static)")
+
+
 def write_meta_files():
     """robots.txt + Basis-Dateien fuer den Static-Deploy.
 
@@ -60,6 +75,7 @@ def main():
     print("=== EBZ Website Build ===")
     theme.write_assets()
     write_favicon()
+    copy_static()
     write_meta_files()
     errors = 0
     errors += len(home.build())
