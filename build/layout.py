@@ -4,7 +4,7 @@ page(...) baut ein vollstaendiges HTML5-Dokument. Header und Footer sind
 seitenuebergreifend identisch (eine Quelle) und werden hier gepflegt.
 """
 
-from common import (BASE, NAP, S, a, href, tel_link, u,
+from common import (BASE, NAP, S, IMG, a, href, tel_link, u,
                     localbusiness_jsonld)
 
 FONTS = (
@@ -44,9 +44,8 @@ def _header():
     return f"""
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="{href('home')}">
-        <span class="brand__mark" aria-hidden="true">☀</span>
-        <span>EBZ Energie<small>Photovoltaik aus Villach</small></span>
+      <a class="brand" href="{href('home')}" aria-label="EBZ Energie Startseite">
+        <img class="brand__logo" src="{IMG['logo']}" alt="EBZ Energie" width="969" height="223">
       </a>
       <button class="nav-toggle" aria-label="Menü" aria-controls="nav" aria-expanded="false">
         <span></span>
@@ -66,9 +65,8 @@ def _footer():
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="{href('home')}">
-            <span class="brand__mark" aria-hidden="true">☀</span>
-            <span>EBZ Energie</span>
+          <a class="brand" href="{href('home')}" aria-label="EBZ Energie Startseite">
+            <img class="brand__logo" src="{IMG['logo']}" alt="EBZ Energie" width="969" height="223">
           </a>
           <p>Ihr Photovoltaik-Fachbetrieb aus Villach. Planung, Montage und Service
           aus einer Hand für Kärnten, die Steiermark und ganz Österreich.</p>

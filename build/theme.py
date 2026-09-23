@@ -64,36 +64,31 @@ p{margin:0 0 1rem}
 .btn--lg{padding:18px 32px;font-size:1.05rem}
 
 /* --- Header ------------------------------------------------------------- */
-.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(10,46,61,.92);
+  backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.1)}
 .site-header__inner{display:flex;align-items:center;gap:24px;
   min-height:72px;max-width:var(--wrap);margin-inline:auto;padding-inline:20px}
-.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-head);
-  font-weight:800;font-size:1.25rem;color:var(--petrol);text-decoration:none;flex:0 0 auto}
-.brand__mark{width:34px;height:34px;border-radius:9px;
-  background:linear-gradient(135deg,var(--petrol),var(--petrol-2));color:var(--amber);
-  display:grid;place-items:center;font-size:1.1rem}
-.brand small{display:block;font-family:var(--font-body);font-weight:600;
-  font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.brand{display:flex;align-items:center;text-decoration:none;flex:0 0 auto}
+.brand__logo{height:38px;width:auto;display:block}
 .nav{margin-left:auto;display:flex;align-items:center;gap:4px}
-.nav a{font-family:var(--font-head);font-weight:600;font-size:.98rem;color:var(--ink);
+.nav a{font-family:var(--font-head);font-weight:600;font-size:.98rem;color:#eaf2f4;
   text-decoration:none;padding:9px 12px;border-radius:9px;white-space:nowrap}
-.nav a:hover{background:var(--bg);color:var(--petrol)}
+.nav a:hover{background:rgba(255,255,255,.1);color:#fff}
 .nav__has{position:relative}
 .nav__menu{position:absolute;top:calc(100% + 6px);left:0;min-width:240px;
-  background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
-  padding:8px;display:none;flex-direction:column;gap:2px}
+  background:var(--petrol-2);border:1px solid rgba(255,255,255,.14);border-radius:14px;
+  box-shadow:var(--shadow);padding:8px;display:none;flex-direction:column;gap:2px}
 .nav__has:hover .nav__menu,.nav__has:focus-within .nav__menu{display:flex}
 .nav__menu a{font-weight:600;font-size:.92rem}
 .header-cta{display:flex;align-items:center;gap:12px;flex:0 0 auto}
-.header-phone{font-family:var(--font-head);font-weight:700;color:var(--petrol);
+.header-phone{font-family:var(--font-head);font-weight:700;color:#fff;
   text-decoration:none;white-space:nowrap}
 .header-phone span{display:block;font-family:var(--font-body);font-weight:600;
-  font-size:.68rem;color:var(--muted)}
-.nav-toggle{display:none;margin-left:auto;width:46px;height:46px;border:1px solid var(--line);
-  border-radius:11px;background:#fff;cursor:pointer;align-items:center;justify-content:center}
+  font-size:.68rem;color:#9fbcc6}
+.nav-toggle{display:none;margin-left:auto;width:46px;height:46px;border:1px solid rgba(255,255,255,.35);
+  border-radius:11px;background:rgba(255,255,255,.08);cursor:pointer;align-items:center;justify-content:center}
 .nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{content:"";display:block;
-  width:22px;height:2px;background:var(--ink);position:relative;transition:.2s}
+  width:22px;height:2px;background:#fff;position:relative;transition:.2s}
 .nav-toggle span::before{position:absolute;top:-7px}
 .nav-toggle span::after{position:absolute;top:7px}
 .nav-open .nav-toggle span{background:transparent}
@@ -103,12 +98,12 @@ p{margin:0 0 1rem}
 @media(max-width:960px){
   .nav-toggle{display:flex}
   .nav{position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:stretch;
-    gap:0;background:#fff;border-bottom:1px solid var(--line);padding:12px 20px 24px;
+    gap:0;background:var(--petrol);border-bottom:1px solid rgba(255,255,255,.12);padding:12px 20px 24px;
     max-height:calc(100dvh - 72px);overflow:auto;transform:translateY(-120%);
     transition:transform .25s ease;box-shadow:var(--shadow)}
   .nav-open .nav{transform:translateY(0)}
-  .nav a{padding:13px 8px;border-radius:8px;border-bottom:1px solid var(--line)}
-  .nav__menu{position:static;display:flex;border:0;box-shadow:none;padding:0 0 0 14px}
+  .nav a{padding:13px 8px;border-radius:8px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .nav__menu{position:static;display:flex;border:0;box-shadow:none;padding:0 0 0 14px;background:transparent}
   .header-cta{margin-left:14px}
   .header-cta .header-phone span{display:none}
   .header-cta .btn{display:none}
