@@ -162,9 +162,31 @@ def build():
             ],
         ),
         C.reviews_slider(_reviews, rating=_rating, count=_count),
-        C.founder_block(
-            "Wir verkaufen keine Module, wir bauen Unabhängigkeit. Jedes System planen wir so, dass "
-            "es zu Ihrem Dach, Ihrem Verbrauch und Ihrem Budget passt. Das ist unser Anspruch bei jedem Projekt."
+        C.about_section(
+            eyebrow="Über EBZ Energie",
+            h2="Ihr Energie-Fachbetrieb aus Villach",
+            paragraphs=[
+                ("EBZ Energie ist Ihr Partner für die Energiewende in Kärnten und der Steiermark. "
+                 "Wir planen und montieren komplette Systeme aus Photovoltaik, Speicher, Wärmepumpe "
+                 "und Energiemanagement, alles aus einer Hand."),
+                ("Hinter jeder Anlage stehen über 300 dokumentierte Projekte in 6 Bundesländern, "
+                 "zertifizierte Fachkräfte und meisterhaftes Handwerk. Als regionaler Betrieb sind wir "
+                 "vor Ort, wenn Sie uns brauchen, von der ersten Beratung bis zum laufenden Service."),
+            ],
+            values=[
+                ("⌂", "Regional verwurzelt in Villach"),
+                ("☀", "Alles aus einer Hand"),
+                ("✓", "Zertifizierte Fachkräfte"),
+                ("★", "4,9 Sterne auf Google"),
+            ],
+            quote=(
+                "Wir verkaufen keine Module, wir bauen Unabhängigkeit. Jedes System planen wir so, "
+                "dass es zu Ihrem Dach, Ihrem Verbrauch und Ihrem Budget passt.",
+                "Mario Zintl", "Geschäftsführung EBZ Energie GmbH",
+            ),
+            badge=("300+", "Projekte in 6 Bundesländern"),
+            img=IMG["team_quer"],
+            img_alt="Das Team von EBZ Energie, Photovoltaik-Fachbetrieb aus Villach",
         ),
         C.regions_section(
             eyebrow="Unser Einzugsgebiet",

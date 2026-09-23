@@ -402,6 +402,53 @@ def reviews_slider(reviews, rating="4,9", count=None):
   </section>"""
 
 
+def about_section(eyebrow, h2, paragraphs, values, quote, badge=None,
+                  img=None, img_alt="", cta=("ueber_uns", "Mehr über uns")):
+    """Ausfuehrlicher Ueber-uns-Block (Teambild, Story, Werte, Gruender-Zitat, CTA).
+
+    paragraphs: Liste HTML-Absaetze. values: Liste (icon, text). quote: (text, author, role).
+    badge: (zahl, label) fuer das schwebende Badge am Bild. Verlinkt auf die Ueber-uns-Seite.
+    """
+    ps = "".join(f"<p>{p}</p>" for p in paragraphs)
+    vals = "".join(
+        f'<li><span class="ic" aria-hidden="true">{ic}</span><span>{t}</span></li>'
+        for ic, t in values
+    )
+    badge_html = ""
+    if badge:
+        badge_html = (f'<div class="about-media__badge"><span aria-hidden="true">★</span>'
+                      f'<span><b>{badge[0]}</b><small>{badge[1]}</small></span></div>')
+    q_text, q_author, q_role = quote
+    q_img = f'<img src="{IMG["mario"]}" alt="{q_author}, {q_role}" loading="lazy" width="62" height="62">'
+    return f"""
+  <section class="section about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-media eg-reveal">
+          <img src="{img or IMG['team_quer']}" alt="{img_alt}" loading="lazy" width="620" height="465">
+          {badge_html}
+        </div>
+        <div class="eg-reveal">
+          <p class="eyebrow">{eyebrow}</p>
+          <h2>{h2}</h2>
+          {ps}
+          <ul class="about-values">{vals}</ul>
+          <div class="about-quote">
+            {q_img}
+            <div>
+              <blockquote>„{q_text}“</blockquote>
+              <cite>{q_author}<small>{q_role}</small></cite>
+            </div>
+          </div>
+          <div class="hero__cta" style="margin-top:24px">
+            {a(cta[0], cta[1], cls='btn btn--primary')}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>"""
+
+
 def founder_block(quote):
     return f"""
   <section class="section">
