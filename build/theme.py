@@ -175,7 +175,15 @@ p{margin:0 0 1rem}
 .dark h2,.dark h3{color:#fff}
 .dark .lead,.dark p{color:#c6dbe2}
 .hub{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.hub svg{width:100%;height:auto}
+.hub svg{width:100%;height:auto;overflow:visible}
+.hub-spoke{stroke:rgba(245,166,35,.5);stroke-width:2;stroke-linecap:round;
+  stroke-dasharray:2 10;animation:hubflow 1.8s linear infinite}
+@keyframes hubflow{to{stroke-dashoffset:-24}}
+.hub-node{transition:transform .25s ease}
+.hub-node:hover{transform:translateY(-3px)}
+.hub-pulse{transform-box:fill-box;transform-origin:center;
+  animation:hubpulse 3.2s ease-out infinite}
+@keyframes hubpulse{0%{transform:scale(1);opacity:.55}70%{transform:scale(1.9);opacity:0}100%{opacity:0}}
 .hub__list{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 .hub__list li{display:flex;gap:12px;align-items:flex-start}
 .hub__list .ic{flex:0 0 auto;width:38px;height:38px;border-radius:11px;

@@ -46,35 +46,62 @@ def kpis(items):
 
 
 def _hub_svg():
-    # Handgezeichnetes Hub-Diagramm: Zentrum EBZ, Speichen zu Bausteinen.
-    nodes = [
-        (150, 60, "Sonne", "☀"),
-        (260, 130, "Speicher", "▮"),
-        (260, 250, "Wärme", "♨"),
-        (150, 320, "E-Auto", "⌂"),
-        (40, 250, "Netz", "⇄"),
-        (40, 130, "Steuerung", "⚙"),
-    ]
-    cx, cy = 150, 190
+    """Hub-Diagramm: EBZ im Zentrum, sechs Bausteine im Orbit.
+
+    Glow um das Zentrum, feiner Orbit-Ring und fließende Energie-Linien
+    (CSS-Animation ueber .hub-spoke, wird bei prefers-reduced-motion pausiert).
+    """
+    import math
+    cx, cy, R = 220, 220, 150
+    node_r, center_r = 44, 58
+    # angle_deg, label, icon  (im Uhrzeigersinn ab oben)
+    defs = [(-90, "Sonne", "☀"), (-30, "Speicher", "▮"),
+            (30, "Wärme", "♨"), (90, "E-Auto", "⌂"),
+            (150, "Netz", "⇄"), (210, "Steuerung", "⚙")]
+    nodes = []
+    for ang, label, ic in defs:
+        rad = math.radians(ang)
+        nodes.append((cx + R * math.cos(rad), cy + R * math.sin(rad), label, ic))
+
     spokes = "".join(
-        f'<line x1="{cx}" y1="{cy}" x2="{x}" y2="{y}" stroke="rgba(245,166,35,.5)" '
-        f'stroke-width="2" stroke-dasharray="4 5"/>' for x, y, _, _ in nodes
+        f'<line class="hub-spoke" x1="{cx}" y1="{cy}" x2="{x:.0f}" y2="{y:.0f}"/>'
+        for x, y, _, _ in nodes
     )
     dots = ""
     for x, y, label, ic in nodes:
-        dots += (f'<g><circle cx="{x}" cy="{y}" r="30" fill="#0a3a4d" '
-                 f'stroke="rgba(245,166,35,.6)" stroke-width="2"/>'
-                 f'<text x="{x}" y="{y-2}" text-anchor="middle" font-size="18" fill="#f5a623">{ic}</text>'
-                 f'<text x="{x}" y="{y+16}" text-anchor="middle" font-size="9" '
-                 f'font-family="Sora,sans-serif" fill="#c6dbe2">{label}</text></g>')
-    return f"""<svg viewBox="0 0 300 380" role="img" aria-label="EBZ als Zentrum Ihrer Energieversorgung">
+        dots += (
+            f'<g class="hub-node">'
+            f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{node_r}" fill="url(#hubNode)" '
+            f'stroke="rgba(245,166,35,.55)" stroke-width="1.5"/>'
+            f'<text x="{x:.0f}" y="{y-6:.0f}" text-anchor="middle" font-size="24" fill="#f5a623">{ic}</text>'
+            f'<text x="{x:.0f}" y="{y+18:.0f}" text-anchor="middle" font-size="13" '
+            f'font-family="Sora,sans-serif" font-weight="600" fill="#dcebf0">{label}</text></g>')
+
+    return f"""<svg viewBox="0 0 440 440" role="img" aria-label="EBZ Energie als Zentrum Ihrer Energieversorgung mit Photovoltaik, Speicher, Waerme, E-Auto, Netz und Steuerung">
+      <defs>
+        <radialGradient id="hubCenter" cx="50%" cy="42%" r="65%">
+          <stop offset="0%" stop-color="#ffc555"/>
+          <stop offset="100%" stop-color="#f5a623"/>
+        </radialGradient>
+        <radialGradient id="hubNode" cx="50%" cy="35%" r="75%">
+          <stop offset="0%" stop-color="#12586f"/>
+          <stop offset="100%" stop-color="#0a3a4d"/>
+        </radialGradient>
+        <filter id="hubGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="12" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
       {spokes}
-      <circle cx="{cx}" cy="{cy}" r="46" fill="#f5a623"/>
-      <text x="{cx}" y="{cy-4}" text-anchor="middle" font-size="16" font-weight="800"
-        font-family="Sora,sans-serif" fill="#0a3a4d">EBZ</text>
-      <text x="{cx}" y="{cy+14}" text-anchor="middle" font-size="9"
-        font-family="Sora,sans-serif" fill="#0a3a4d">Energie</text>
+      <circle class="hub-pulse" cx="{cx}" cy="{cy}" r="{center_r}" fill="none"
+        stroke="rgba(245,166,35,.5)" stroke-width="2"/>
       {dots}
+      <circle cx="{cx}" cy="{cy}" r="{center_r}" fill="url(#hubCenter)" filter="url(#hubGlow)"/>
+      <text x="{cx}" y="{cy-6}" text-anchor="middle" font-size="22" font-weight="800"
+        font-family="Sora,sans-serif" fill="#0a3a4d">EBZ</text>
+      <text x="{cx}" y="{cy+16}" text-anchor="middle" font-size="12" font-weight="600"
+        font-family="Sora,sans-serif" fill="#0a3a4d">Energie</text>
     </svg>"""
 
 

@@ -124,14 +124,31 @@
   <section class="section dark">
     <div class="wrap">
       <div class="hub">
-        <div class="eg-reveal"><svg viewBox="0 0 300 380" role="img" aria-label="EBZ als Zentrum Ihrer Energieversorgung">
-      <line x1="150" y1="190" x2="150" y2="60" stroke="rgba(245,166,35,.5)" stroke-width="2" stroke-dasharray="4 5"/><line x1="150" y1="190" x2="260" y2="130" stroke="rgba(245,166,35,.5)" stroke-width="2" stroke-dasharray="4 5"/><line x1="150" y1="190" x2="260" y2="250" stroke="rgba(245,166,35,.5)" stroke-width="2" stroke-dasharray="4 5"/><line x1="150" y1="190" x2="150" y2="320" stroke="rgba(245,166,35,.5)" stroke-width="2" stroke-dasharray="4 5"/><line x1="150" y1="190" x2="40" y2="250" stroke="rgba(245,166,35,.5)" stroke-width="2" stroke-dasharray="4 5"/><line x1="150" y1="190" x2="40" y2="130" stroke="rgba(245,166,35,.5)" stroke-width="2" stroke-dasharray="4 5"/>
-      <circle cx="150" cy="190" r="46" fill="#f5a623"/>
-      <text x="150" y="186" text-anchor="middle" font-size="16" font-weight="800"
+        <div class="eg-reveal"><svg viewBox="0 0 440 440" role="img" aria-label="EBZ Energie als Zentrum Ihrer Energieversorgung mit Photovoltaik, Speicher, Waerme, E-Auto, Netz und Steuerung">
+      <defs>
+        <radialGradient id="hubCenter" cx="50%" cy="42%" r="65%">
+          <stop offset="0%" stop-color="#ffc555"/>
+          <stop offset="100%" stop-color="#f5a623"/>
+        </radialGradient>
+        <radialGradient id="hubNode" cx="50%" cy="35%" r="75%">
+          <stop offset="0%" stop-color="#12586f"/>
+          <stop offset="100%" stop-color="#0a3a4d"/>
+        </radialGradient>
+        <filter id="hubGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="12" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <circle cx="220" cy="220" r="150" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
+      <line class="hub-spoke" x1="220" y1="220" x2="220" y2="70"/><line class="hub-spoke" x1="220" y1="220" x2="350" y2="145"/><line class="hub-spoke" x1="220" y1="220" x2="350" y2="295"/><line class="hub-spoke" x1="220" y1="220" x2="220" y2="370"/><line class="hub-spoke" x1="220" y1="220" x2="90" y2="295"/><line class="hub-spoke" x1="220" y1="220" x2="90" y2="145"/>
+      <circle class="hub-pulse" cx="220" cy="220" r="58" fill="none"
+        stroke="rgba(245,166,35,.5)" stroke-width="2"/>
+      <g class="hub-node"><circle cx="220" cy="70" r="44" fill="url(#hubNode)" stroke="rgba(245,166,35,.55)" stroke-width="1.5"/><text x="220" y="64" text-anchor="middle" font-size="24" fill="#f5a623">☀</text><text x="220" y="88" text-anchor="middle" font-size="13" font-family="Sora,sans-serif" font-weight="600" fill="#dcebf0">Sonne</text></g><g class="hub-node"><circle cx="350" cy="145" r="44" fill="url(#hubNode)" stroke="rgba(245,166,35,.55)" stroke-width="1.5"/><text x="350" y="139" text-anchor="middle" font-size="24" fill="#f5a623">▮</text><text x="350" y="163" text-anchor="middle" font-size="13" font-family="Sora,sans-serif" font-weight="600" fill="#dcebf0">Speicher</text></g><g class="hub-node"><circle cx="350" cy="295" r="44" fill="url(#hubNode)" stroke="rgba(245,166,35,.55)" stroke-width="1.5"/><text x="350" y="289" text-anchor="middle" font-size="24" fill="#f5a623">♨</text><text x="350" y="313" text-anchor="middle" font-size="13" font-family="Sora,sans-serif" font-weight="600" fill="#dcebf0">Wärme</text></g><g class="hub-node"><circle cx="220" cy="370" r="44" fill="url(#hubNode)" stroke="rgba(245,166,35,.55)" stroke-width="1.5"/><text x="220" y="364" text-anchor="middle" font-size="24" fill="#f5a623">⌂</text><text x="220" y="388" text-anchor="middle" font-size="13" font-family="Sora,sans-serif" font-weight="600" fill="#dcebf0">E-Auto</text></g><g class="hub-node"><circle cx="90" cy="295" r="44" fill="url(#hubNode)" stroke="rgba(245,166,35,.55)" stroke-width="1.5"/><text x="90" y="289" text-anchor="middle" font-size="24" fill="#f5a623">⇄</text><text x="90" y="313" text-anchor="middle" font-size="13" font-family="Sora,sans-serif" font-weight="600" fill="#dcebf0">Netz</text></g><g class="hub-node"><circle cx="90" cy="145" r="44" fill="url(#hubNode)" stroke="rgba(245,166,35,.55)" stroke-width="1.5"/><text x="90" y="139" text-anchor="middle" font-size="24" fill="#f5a623">⚙</text><text x="90" y="163" text-anchor="middle" font-size="13" font-family="Sora,sans-serif" font-weight="600" fill="#dcebf0">Steuerung</text></g>
+      <circle cx="220" cy="220" r="58" fill="url(#hubCenter)" filter="url(#hubGlow)"/>
+      <text x="220" y="214" text-anchor="middle" font-size="22" font-weight="800"
         font-family="Sora,sans-serif" fill="#0a3a4d">EBZ</text>
-      <text x="150" y="204" text-anchor="middle" font-size="9"
+      <text x="220" y="236" text-anchor="middle" font-size="12" font-weight="600"
         font-family="Sora,sans-serif" fill="#0a3a4d">Energie</text>
-      <g><circle cx="150" cy="60" r="30" fill="#0a3a4d" stroke="rgba(245,166,35,.6)" stroke-width="2"/><text x="150" y="58" text-anchor="middle" font-size="18" fill="#f5a623">☀</text><text x="150" y="76" text-anchor="middle" font-size="9" font-family="Sora,sans-serif" fill="#c6dbe2">Sonne</text></g><g><circle cx="260" cy="130" r="30" fill="#0a3a4d" stroke="rgba(245,166,35,.6)" stroke-width="2"/><text x="260" y="128" text-anchor="middle" font-size="18" fill="#f5a623">▮</text><text x="260" y="146" text-anchor="middle" font-size="9" font-family="Sora,sans-serif" fill="#c6dbe2">Speicher</text></g><g><circle cx="260" cy="250" r="30" fill="#0a3a4d" stroke="rgba(245,166,35,.6)" stroke-width="2"/><text x="260" y="248" text-anchor="middle" font-size="18" fill="#f5a623">♨</text><text x="260" y="266" text-anchor="middle" font-size="9" font-family="Sora,sans-serif" fill="#c6dbe2">Wärme</text></g><g><circle cx="150" cy="320" r="30" fill="#0a3a4d" stroke="rgba(245,166,35,.6)" stroke-width="2"/><text x="150" y="318" text-anchor="middle" font-size="18" fill="#f5a623">⌂</text><text x="150" y="336" text-anchor="middle" font-size="9" font-family="Sora,sans-serif" fill="#c6dbe2">E-Auto</text></g><g><circle cx="40" cy="250" r="30" fill="#0a3a4d" stroke="rgba(245,166,35,.6)" stroke-width="2"/><text x="40" y="248" text-anchor="middle" font-size="18" fill="#f5a623">⇄</text><text x="40" y="266" text-anchor="middle" font-size="9" font-family="Sora,sans-serif" fill="#c6dbe2">Netz</text></g><g><circle cx="40" cy="130" r="30" fill="#0a3a4d" stroke="rgba(245,166,35,.6)" stroke-width="2"/><text x="40" y="128" text-anchor="middle" font-size="18" fill="#f5a623">⚙</text><text x="40" y="146" text-anchor="middle" font-size="9" font-family="Sora,sans-serif" fill="#c6dbe2">Steuerung</text></g>
     </svg></div>
         <div class="eg-reveal">
           <p class="eyebrow">Der EBZ Systemgedanke</p>
