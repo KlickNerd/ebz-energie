@@ -58,6 +58,12 @@ def build():
                  "Abend oder sie fließen ins Netz."),
             ],
         ),
+        C.pv_flow(
+            eyebrow="Von der Sonne zur Steckdose",
+            h2="So wird Sonnenlicht zu nutzbarem Strom",
+            note_title="Am Abend und bei wenig Sonne",
+            note_text="Ein Batteriespeicher kann den Sonnenstrom später liefern. Sonst kommt Strom aus dem Netz.",
+        ),
         # 2. Abholen: Eigenheim oder Gewerbe
         C.audience_split(
             eyebrow="Für wen planen wir?",
@@ -104,26 +110,7 @@ def build():
                 ("✓", "Ohne Aufwand", "Wir kümmern uns um Förderung, Anmeldung und Montage."),
             ]),
         ),
-        # 4. Verstehen
-        C.media_text(
-            eyebrow="So funktioniert Photovoltaik",
-            h2="So wird aus Sonne Ihr eigener Strom",
-            paragraphs=[
-                ("Die Module auf Ihrem Dach wandeln Sonnenlicht in Strom um. Der Wechselrichter macht "
-                 "daraus nutzbaren Haushaltsstrom, den Sie sofort verbrauchen."),
-                ("Was Sie gerade nicht brauchen, speichert ein Batteriespeicher für den Abend. Ein "
-                 "Energiemanagement sorgt dafür, dass möglichst viel Ihres Sonnenstroms im eigenen "
-                 "Haus bleibt, statt günstig ins Netz zu fließen."),
-            ],
-            img=IMG["gen_detail"],
-            alt="Montage von Photovoltaikmodulen auf einem Dach",
-            bullets=[
-                "<b>Module:</b> erzeugen Strom aus Sonnenlicht, auch bei bewölktem Himmel",
-                "<b>Wechselrichter:</b> macht nutzbaren Haushaltsstrom daraus",
-                "<b>Speicher:</b> macht Sonnenstrom am Abend nutzbar",
-                "<b>Energiemanagement:</b> steuert Verbrauch, Speicher und Wärmepumpe",
-            ],
-        ),
+        # 4. Verstehen (Bausteine)
         C.cards_section(
             eyebrow="Alles aus einer Hand",
             h2="Ihre Anlage, komplett gedacht",
