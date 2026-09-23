@@ -23,12 +23,12 @@ def build():
         C.hero(
             eyebrow="Photovoltaik in Kärnten und der Steiermark",
             h1="Photovoltaik vom Fachbetrieb: Ihr eigener Strom vom Dach",
-            lead=("EBZ Energie plant und montiert Ihre Photovoltaikanlage passgenau für Dach, "
-                  "Verbrauch und Budget. So senken Sie Ihre Stromkosten um bis zu 85 % und werden "
-                  "unabhängiger von steigenden Preisen."),
-            badges=[("4,9", "Sterne auf Google"),
-                    ("300+", "Anlagen montiert"),
-                    ("bis zu 30 Jahre", "Leistungsgarantie")],
+            lead=("Wir planen und montieren Ihre Photovoltaikanlage passgenau für Dach, Verbrauch "
+                  "und Budget, mit einem festangestellten Team aus der Region. So senken Sie Ihre "
+                  "Stromkosten um bis zu 85 % und werden unabhängiger von steigenden Preisen."),
+            badges=[("Alles", "aus einer Hand"),
+                    ("Faire", "Finanzierung"),
+                    ("Regional", "aus Villach")],
             img=IMG["hero_home"],
             img_alt="Photovoltaikanlage von EBZ Energie auf einem Einfamilienhaus in Kärnten",
             float_num="4,9",
@@ -70,7 +70,7 @@ def build():
                 {"ic": "▮", "title": "Batteriespeicher", "text": "Sonnenstrom am Abend nutzen und mit Notstrom vorbereitet sein.",
                  "link_key": "batteriespeicher", "link_text": "Zum Speicher"},
                 {"ic": "⌂", "title": "Wallbox", "text": "Laden Sie Ihr E-Auto direkt mit dem eigenen Sonnenstrom.",
-                 "link_key": "waermepumpe", "link_text": "Mehr erfahren"},
+                 "link_key": "balkonkraftwerke", "link_text": "Mehr erfahren"},
                 {"ic": "⚙", "title": "Energiemanagement", "text": "Ein System steuert Anlage, Speicher, Wärmepumpe und Wallbox.",
                  "link_key": "ems", "link_text": "Zum Energiemanagement"},
                 {"ic": "♨", "title": "Wärmepumpe", "text": "Heizen Sie mit Ihrem eigenen Strom statt mit teurem Gas oder Öl.",
@@ -155,6 +155,23 @@ def build():
                 ("⌂", "Regional verwurzelt", "Zuhause in Villach, im Einsatz für Kärnten und die Steiermark."),
             ],
         ),
+        C.reference_cards(
+            eyebrow="Aus der Praxis",
+            h2="Photovoltaikanlagen, die sich rechnen",
+            intro=("Ein paar unserer Projekte mit echten Zahlen. Jede Anlage planen wir individuell, "
+                   "damit sie zu Dach, Verbrauch und Budget passt."),
+            items=[
+                {"img": IMG["ref_villach"], "alt": "Photovoltaikanlage auf einem Einfamilienhaus in Villach",
+                 "title": "Einfamilienhaus, Villach", "specs": "10 kWp Ost-West mit Notstrom, rund 11.000 kWh im Jahr.",
+                 "result": "rund 80 %", "result_sub": "weniger Stromkosten"},
+                {"img": IMG["ref_krumpendorf"], "alt": "Photovoltaikanlage auf einem Mehrparteienhaus in Krumpendorf",
+                 "title": "Mehrparteienhaus, Krumpendorf", "specs": "25 kWp mit 25 kWh Speicher und Notstrom.",
+                 "result": "4 Tage", "result_sub": "Bauzeit"},
+                {"img": IMG["gewerbe_dach"], "alt": "Große Photovoltaikanlage auf einem Gewerbedach in Oberösterreich",
+                 "title": "Gewerbe, Oberösterreich", "specs": "40 kWp Ost-West, 40 kWh Speicher, rund 40.000 kWh im Jahr.",
+                 "result": "13.500 €", "result_sub": "Ersparnis pro Jahr"},
+            ],
+        ),
         C.reviews_slider(_reviews, rating=_rating, count=_count),
         C.founder_block(
             "Wir liefern keine Anlage von der Stange. Wir planen jedes System so, dass es zu Ihrem "
@@ -177,6 +194,8 @@ def build():
                  "was auf Ihrem Dach möglich ist und was es kostet."),
         ),
         C.faq_section([
+            ("Lohnt sich Photovoltaik in Österreich?",
+             "Ja. Durch gestiegene Strompreise, staatliche Förderungen und einen hohen Eigenverbrauch rechnet sich eine Photovoltaikanlage heute schneller als früher, in der Praxis meist innerhalb von 4 bis 6 Jahren. Danach produzieren Sie viele Jahre günstigen eigenen Strom."),
             ("Was kostet eine Photovoltaikanlage mit Speicher?",
              "Eine Komplettanlage mit rund 10 kWp und Speicher liegt typischerweise bei rund 15.000 bis 22.000 € vor Förderung. Der genaue Preis hängt von Dach, Speichergröße und Ausstattung ab."),
             ("Was kostet eine 10 kWp Anlage mit Speicher und Montage?",
@@ -198,6 +217,8 @@ def build():
     ])
 
     faq = faq_jsonld(u(PATH), [
+        ("Lohnt sich Photovoltaik in Oesterreich?",
+         "Ja. Durch gestiegene Strompreise, Foerderungen und hohen Eigenverbrauch rechnet sich eine Anlage meist innerhalb von 4 bis 6 Jahren."),
         ("Was kostet eine Photovoltaikanlage mit Speicher?",
          "Eine Komplettanlage mit rund 10 kWp und Speicher liegt typischerweise bei rund 15.000 bis 22.000 Euro vor Foerderung."),
         ("Ist eine Photovoltaikanlage mit oder ohne Speicher besser?",
