@@ -14,6 +14,7 @@ import home
 import photovoltaik
 import ueber_uns
 import ratgeber
+import finanzierung
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "out")
@@ -110,6 +111,7 @@ def main():
     errors += len(photovoltaik.build())
     errors += len(ueber_uns.build())
     errors += len(ratgeber.build())
+    errors += len(finanzierung.build())
     write_sitemap()
     print("=== Fertig ===")
     if errors:

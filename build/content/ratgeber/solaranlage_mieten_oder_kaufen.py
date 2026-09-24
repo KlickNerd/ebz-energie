@@ -170,7 +170,7 @@ marktübliche Beispielkonditionen, Finanzierungswerte beziehen sich auf die EBZ-
         ["Einspeisevergütung", "Je nach Vertrag beim Anbieter oder verrechnet", "Bei Ihnen", "Bei Ihnen"],
         ["Anschaffung", "0 €", "15.000 bis 22.000 € vor Förderung", "Keine Einmalzahlung nötig"],
         ["Monatliche Kosten", "120 bis 180 €* über 15 bis 25 Jahre", "Keine Rate, 200 bis 400 €* Wartung pro Jahr",
-         "ab 147 €* inkl. Speicher, Laufzeit nach Vereinbarung"],
+         "ab 147 €* inkl. Speicher; Beispiel 25.000 € über 25 Jahre: ab 164 €*"],
         ["Gesamtkosten 20 Jahre", "28.800 bis 43.200 €*, Anlage danach nicht automatisch Ihre",
          "Kaufpreis abzüglich Förderung plus Wartung", "Kaufpreis abzüglich Förderung plus Zinsen und Wartung"],
         ["Flexibilität", "Änderungen nur mit Zustimmung des Anbieters, Hausverkauf mit Vertragsübernahme",
@@ -178,7 +178,7 @@ marktübliche Beispielkonditionen, Finanzierungswerte beziehen sich auf die EBZ-
         ["Wartung und Reparatur", "Im Vertrag enthalten (Ausschlüsse prüfen)",
          "Ihre Sache, abgesichert durch bis zu 30 Jahre Leistungs- und mind. 10 Jahre Produktgarantie",
          "Wie beim Kauf, gleiche Garantien"],
-        ["Bonität", "Prüfung durch den Anbieter", "Keine", "Keine strengen Bonitätsprüfungen, kein Datenbankeintrag"],
+        ["Bonität", "Prüfung durch den Anbieter", "Keine", "Digitale Prüfung in Minuten, 94 % Annahmequote, kein Grundbucheintrag"],
     ],
     hl_cols=(3,),
 )}
@@ -197,11 +197,13 @@ Zahlungsströme unterscheiden sich.</p>
      " Zum Kaufpreis vor Förderung kommen über 20 Jahre 4.000 bis 8.000 Euro für Wartung, Versicherung "
      "und Rücklagen (200 bis 400 Euro pro Jahr). Abzüglich der Förderung, die Sie als Eigentümer erhalten, "
      "bleiben die Gesamtkosten deutlich unter dem Mietmodell. Die Anlage ist ab dem ersten Tag Ihre."),
-    ("Finanzierung: ab 147 Euro pro Monat, Eigentum ab Tag 1",
-     " Keine Einmalzahlung, sondern eine Monatsrate ab 147 Euro inklusive Speicher. Gesamtkosten: "
-     "Kaufpreis abzüglich Förderung plus Zinsen plus Wartung wie beim Kauf. Der Unterschied zur Miete: "
-     "Die Rate endet mit der Laufzeit, die Anlage gehört von Anfang an Ihnen, die Förderung fließt auf "
-     "Ihr Konto."),
+    ("Finanzierung: ab 164 Euro pro Monat bei 25.000 Euro, Eigentum ab Tag 1",
+     " Keine Einmalzahlung, sondern eine fixe Monatsrate: Im repräsentativen Beispiel unseres "
+     "Finanzierungspartners kostet eine 10-kWp-Anlage mit 10-kWh-Speicher (25.000 Euro, abzüglich 3.000 Euro "
+     "Bundesförderung) über 25 Jahre ab 164 Euro im Monat, mit Reststrom rund 185 Euro. Zum Vergleich: "
+     "Ohne PV zahlt ein 4-Personen-Haushalt mit 7.000 kWh heute rund 163 Euro Strom im Monat. Der "
+     "Unterschied zur Miete: Die Rate endet mit der Laufzeit, die Anlage gehört von Anfang an Ihnen, die "
+     "Förderung fließt auf Ihr Konto."),
 ])}
 <p>Der zweite Blick gilt der Ersparnis: Mit Speicher senken unsere Kunden ihre Stromkosten um bis zu
 85 Prozent, beim Kauf ist die Investition typischerweise nach 4 bis 6 Jahren amortisiert. Bei der
@@ -222,10 +224,29 @@ Einspeisevergütung geht auf Ihr Konto, und beim Hausverkauf gehört die Anlage 
   <li><b>Rate ab 147 Euro pro Monat inklusive Speicher*</b>, ohne Anschaffung auf einmal.</li>
   <li><b>Eigentum ab Tag 1</b>, nicht erst am Ende der Laufzeit.</li>
   <li><b>Volle Förderung für Private</b>, weil Sie Eigentümer und Antragsteller sind.</li>
-  <li><b>Keine strengen Bonitätsprüfungen und kein Datenbankeintrag.</b></li>
+  <li><b>0 € Anzahlung und fixe Rate über die gesamte Laufzeit</b> (bis 25 Jahre), also kein Zinsrisiko.</li>
+  <li><b>Kein Grundbucheintrag, kein Banktermin:</b> digitale Finanzierungszusage meist in unter zwei
+  Minuten, 94 Prozent Annahmequote, auch für Selbständige und Pensionisten.</li>
+  <li><b>Kostenlose Sondertilgung jederzeit</b>, wenn Sie früher zurückzahlen wollen.</li>
   <li><b>Gleiche Technik und Garantien wie beim Kauf:</b> bis zu 30 Jahre Leistungsgarantie,
   mindestens 10 Jahre Produktgarantie, montiert von zertifizierten Fachkräften.</li>
 </ul>
+<h3>Zwei repräsentative Beispiele unseres Finanzierungspartners Cloover</h3>
+{A.table(
+    ["", "Kleine Anlage", "Anlage mit Speicher"],
+    [
+        ["Finanzierungsbetrag", "15.000 € (Beispiel 8 kWp)", "25.000 € (10 kWp + 10 kWh)"],
+        ["Abzüglich Bundesförderung (Beispiel)", "900 €", "3.000 €"],
+        ["Laufzeit", "25 Jahre", "25 Jahre"],
+        ["Monatliche Rate", "ab 102 €*", "ab 164 €*"],
+        ["Rate plus Reststrom (rund 25 €)", "rund 127 €*", "rund 185 €*"],
+        ["Stromkosten heute ohne PV (7.000 kWh)", "rund 163 € im Monat", "rund 163 € im Monat"],
+    ],
+    hl_cols=(1, 2),
+)}
+<p><small>*Repräsentative Beispiele aus der Finanzierungsbeilage, Stand September 2026. Rate abhängig von
+Angebot und Laufzeit, Förderhöhe und Zusage variieren. Alle Angaben freibleibend, Finanzierung
+vorbehaltlich Bonitätsprüfung.</small></p>
 <h3>So läuft die Finanzierung bei EBZ Energie ab</h3>
 {A.steps([
     ("Beratung",
@@ -233,8 +254,9 @@ Einspeisevergütung geht auf Ihr Konto, und beim Hausverkauf gehört die Anlage 
      "sich rechnet."),
     ("Projektbericht mit 3D-Belegplan und Statikreport",
      " Sie erhalten ein konkretes Angebot mit den Zahlen für Kauf und Finanzierung nebeneinander."),
-    ("Finanzierung abschließen",
-     " Laufzeit und Rate legen wir gemeinsam fest."),
+    ("Finanzierung digital abschließen",
+     " Sie stellen die Anfrage online bei unserem Partner Cloover, die Zusage kommt meist in unter zwei "
+     "Minuten, ohne Banktermin. Laufzeit (bis 25 Jahre) und Rate legen wir gemeinsam fest."),
     ("Montage und Inbetriebnahme",
      " Unser Team montiert die Anlage und meldet sie beim Netzbetreiber an. Ab jetzt gehört sie Ihnen."),
     ("Förderung auf Ihren Namen",
@@ -268,7 +290,7 @@ neue: höhere Gesamtkosten, keine Förderung und eine Anlage, die Ihnen nach 20 
 gehört. Der Kauf ist wirtschaftlich die stärkste Variante, mit typischer Amortisation in 4 bis 6 Jahren
 und bis zu 85 Prozent geringeren Stromkosten. Wer den Kaufpreis nicht auf einmal binden will, bekommt mit
 der Finanzierung ab 147 Euro pro Monat* denselben Vorteil in Raten: Eigentum ab Tag 1, volle Förderung,
-keine strengen Bonitätsprüfungen.</p>
+fixe Rate ohne Anzahlung und Sondertilgung jederzeit.</p>
 {A.cta("Kauf oder Finanzierung? Wir rechnen beides für Ihr Dach",
        "Kostenlose Beratung, Projektbericht mit 3D-Belegplan und Statikreport, und die Zahlen für Kauf und "
        "Finanzierung nebeneinander, ohne Verkaufsdruck.",
@@ -288,7 +310,7 @@ keine strengen Bonitätsprüfungen.</p>
         "grid": [
             ("Eigentum ab Tag 1", "Auch bei Finanzierung gehört die Anlage sofort Ihnen, nicht erst am Ende der Laufzeit."),
             ("Volle Förderung", "Sie sind Antragsteller, wir bereiten die Anträge vor. Die Auszahlung geht an Sie."),
-            ("Keine strengen Bonitätsprüfungen", "Kein Datenbankeintrag, Laufzeit und Rate nach Ihrem Budget."),
+            ("Fixe Rate, 0 € Anzahlung", "Digitale Zusage in Minuten, kein Grundbucheintrag, Sondertilgung jederzeit kostenlos."),
             ("Bis zu 30 Jahre Leistungsgarantie", "Mindestens 10 Jahre Produktgarantie, 300+ Projekte in 6 Bundesländern."),
         ],
     },
@@ -308,10 +330,11 @@ keine strengen Bonitätsprüfungen.</p>
          "Rückbau durch den Anbieter. Manche Verträge sehen einen kostenlosen Übergang vor. Lassen Sie sich "
          "Restwert und Rückbaukosten vor der Unterschrift schriftlich geben."),
         ("Wie funktioniert die Finanzierung bei EBZ Energie?",
-         "Sie kaufen die Anlage und bezahlen sie in Monatsraten ab 147 Euro inklusive Speicher (Beispielkondition). "
-         "Die Anlage gehört Ihnen ab dem ersten Tag, Sie erhalten als Privatperson die volle Förderung, und "
-         "es gibt keine strengen Bonitätsprüfungen und keinen Datenbankeintrag. Laufzeit und Rate legen wir "
-         "gemeinsam fest."),
+         "Sie kaufen die Anlage und bezahlen sie in fixen Monatsraten über unseren Finanzierungspartner Cloover: "
+         "0 Euro Anzahlung, Laufzeit bis 25 Jahre, im repräsentativen Beispiel ab 164 Euro im Monat für 10 kWp "
+         "mit 10-kWh-Speicher. Die Anlage gehört Ihnen ab dem ersten Tag, Sie erhalten als Privatperson die "
+         "volle Förderung, die Zusage kommt digital in wenigen Minuten ohne Grundbucheintrag, und Sondertilgungen "
+         "sind jederzeit kostenlos."),
         ("Wie hoch ist die monatliche Miete für eine Solaranlage mit Speicher?",
          "Marktüblich sind 120 bis 180 Euro pro Monat für ein Einfamilienhaus mit 8 bis 10 kWp und Speicher. "
          "Kleinere Anlagen beginnen bei rund 80 Euro, Pakete mit Wallbox können 200 Euro und mehr kosten. "

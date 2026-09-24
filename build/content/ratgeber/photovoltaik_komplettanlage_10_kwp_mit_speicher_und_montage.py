@@ -276,7 +276,7 @@ einer Hand liefert und auch nach der Inbetriebnahme erreichbar bleibt.</p>
          "danach liefert die Anlage noch rund 20 Jahre nahezu kostenlosen Strom."),
         ("Kann ich die Komplettanlage finanzieren?",
          "Ja, ab 147 Euro im Monat inklusive Speicher. Die Anlage gehört Ihnen ab dem ersten Tag, Sie erhalten "
-         "die volle private Förderung, ohne strenge Bonitätsprüfung und ohne Datenbankeintrag."),
+         "die volle private Förderung, mit digitaler Bonitätsprüfung in Minuten und ohne Grundbucheintrag."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team hat über 300 Photovoltaikanlagen "

@@ -717,7 +717,7 @@ def finance_band():
           <h2>Ihre Anlage gehört Ihnen ab dem ersten Tag</h2>
           <p class="lead">Sie finanzieren Ihre Photovoltaikanlage bequem in monatlichen Raten
           und bleiben trotzdem von Beginn an Eigentümer. Volle Förderung für Privatpersonen,
-          keine strengen Bonitätsprüfungen und kein Datenbankeintrag.</p>
+          0 € Anzahlung, fixe Rate über die gesamte Laufzeit und kein Grundbucheintrag.</p>
           <div class="hero__cta">{a('finanzierung', 'Finanzierung ansehen', cls='btn btn--primary')}</div>
         </div>
         <div class="finance__price">

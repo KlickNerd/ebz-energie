@@ -218,8 +218,7 @@ Industrie lohnt sich alle paar Jahre eine professionelle Reinigung.</p>
         ("Finanzierung: ab 147 Euro im Monat", "finanzierung", f"""
 <p>Sie müssen die Investition nicht auf einmal stemmen. EBZ Energie bietet eine
 {a('finanzierung', 'Finanzierung ab 147 Euro pro Monat')} inklusive Speicher. Die Anlage gehört Ihnen
-ab dem ersten Tag, Sie erhalten die volle Förderung als Privatperson, und es gibt keine strengen
-Bonitätsprüfungen und keinen Datenbankeintrag. Da die monatliche Rate in vielen Fällen unter der
+ab dem ersten Tag, Sie erhalten die volle Förderung als Privatperson, und die Bonitätsprüfung läuft digital in Minuten, ohne Grundbucheintrag. Da die monatliche Rate in vielen Fällen unter der
 bisherigen Stromrechnung liegt, sparen Sie ab dem ersten Monat.</p>
 {A.cta("Preis, Förderung und Rate für Ihr Haus",
        "Wir erstellen Ihnen ein transparentes Angebot mit Projektbericht, 3D-Belegplan und Statikreport "
@@ -287,8 +286,7 @@ eingespielt. Was genau eine Komplettanlage umfasst, lesen Sie im Ratgeber
          "um 3.000 bis 6.500 Euro."),
         ("Kann ich die Anlage finanzieren, statt sie zu kaufen?",
          "Ja. EBZ Energie bietet eine Finanzierung ab 147 Euro im Monat inklusive Speicher. Die Anlage gehört "
-         "Ihnen ab dem ersten Tag, Sie erhalten die volle private Förderung, es gibt keine strengen "
-         "Bonitätsprüfungen und keinen Datenbankeintrag. Die Rate liegt oft unter der bisherigen "
+         "Ihnen ab dem ersten Tag, Sie erhalten die volle private Förderung, die Bonitätsprüfung läuft digital in Minuten, ohne Grundbucheintrag. Die Rate liegt oft unter der bisherigen "
          "Stromrechnung."),
     ],
 

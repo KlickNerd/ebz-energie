@@ -50,6 +50,26 @@ CLAIMS = {
     "richtpreis_10kwp": "rund 15.000 bis 22.000 € vor Förderung",
 }
 
+# Finanzierung (Quelle: Finanzierungsbeilage "powered by Cloover", Stand September 2026).
+# Repraesentative Beispiele, Rate abhaengig von Angebot und Laufzeit; vorbehaltlich Bonitaetspruefung.
+FINANZIERUNG = {
+    "partner": "Cloover",
+    "anzahlung": "0 €",
+    "zusage": "unter 2 Minuten",
+    "annahmequote": "94 %",
+    "laufzeit_max": "25 Jahre",
+    "beispiel_klein": {"betrag": "15.000 €", "anlage": "8 kWp", "foerderung": "900 €",
+                       "rate": "ab 102 €", "gesamt": "rund 127 €"},
+    "beispiel_gross": {"betrag": "25.000 €", "anlage": "10 kWp + 10 kWh Speicher", "foerderung": "3.000 €",
+                       "rate": "ab 164 €", "gesamt": "rund 185 €"},
+    "strom_heute": "163 €",       # 7.000 kWh x 28 ct / 12
+    "strom_mit_pv": "20 bis 30 €",  # Reststrom bei bis zu 80 % Eigenbedarfsdeckung
+    "fussnote": ("*Repräsentative Beispiele aus der Finanzierungsbeilage, Stand September 2026: Laufzeit 25 Jahre, "
+                 "Rate abhängig von Angebot und Laufzeit, Förderung als Beispiel des Bundes-Investitionszuschusses, "
+                 "Stromkosten mit 7.000 kWh pro Jahr und 28 ct/kWh. Alle Angaben freibleibend, Finanzierung "
+                 "vorbehaltlich Bonitätsprüfung."),
+}
+
 AUTHOR = "Mario Zintl"
 AUTHOR_ROLE = "Geschäftsführung EBZ Energie GmbH"
 
