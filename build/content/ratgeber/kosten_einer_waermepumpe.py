@@ -183,7 +183,7 @@ Stromverbrauch hängt von zwei Größen ab:</p>
   12.000 kWh Wärme pro Jahr, ein älteres, ungedämmtes Gebäude 20.000 kWh und mehr.</li>
   <li><b>Jahresarbeitszahl (JAZ):</b> Sie gibt an, wie viel Wärme pro eingesetzter Kilowattstunde Strom
   entsteht. JAZ 4 bedeutet: 1 kWh Strom ergibt 4 kWh Wärme. Moderne Geräte erreichen je nach Typ und
-  Einsatzort eine JAZ von 3,5 bis 5.</li>
+  Einsatzort eine JAZ von 3 bis 5.</li>
 </ul>
 {A.box_dark("Rechenbeispiel Einfamilienhaus*",
     "Wärmebedarf 12.000 kWh/Jahr, JAZ 4,0: Die Wärmepumpe verbraucht 3.000 kWh Strom pro Jahr. Bei "

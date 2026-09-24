@@ -88,6 +88,29 @@
   });
 
   /* Sticky Mobile-CTA erst nach dem Hero zeigen */
+  // Ratgeber-Hub: Live-Filter ueber Titel, Beschreibung und Cluster
+  var rgInput = document.querySelector(".rg-search input");
+  var rgRoot = document.querySelector(".rg-root");
+  if(rgInput && rgRoot){
+    var cards = Array.prototype.slice.call(rgRoot.querySelectorAll(".rg-card"));
+    var sections = Array.prototype.slice.call(rgRoot.querySelectorAll(".rg-section"));
+    var norm = function(s){ return (s || "").toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss"); };
+    cards.forEach(function(c){ c.dataset.q = norm(c.textContent); });
+    var apply = function(){
+      var q = norm(rgInput.value.trim());
+      if(!q){ rgRoot.classList.remove("rg-filtering","rg-nothing"); cards.forEach(function(c){ c.classList.remove("is-hidden"); }); sections.forEach(function(s){ s.classList.remove("is-empty"); }); return; }
+      rgRoot.classList.add("rg-filtering");
+      var words = q.split(/\s+/), any = false;
+      cards.forEach(function(c){
+        var hit = words.every(function(w){ return c.dataset.q.indexOf(w) !== -1; });
+        c.classList.toggle("is-hidden", !hit); if(hit) any = true;
+      });
+      sections.forEach(function(s){ s.classList.toggle("is-empty", !s.querySelector(".rg-card:not(.is-hidden)")); });
+      rgRoot.classList.toggle("rg-nothing", !any);
+    };
+    rgInput.addEventListener("input", apply);
+  }
+
   var sticky = document.querySelector(".sticky-cta");
   var hero = document.querySelector(".hero");
   if(sticky && hero && "IntersectionObserver" in window){

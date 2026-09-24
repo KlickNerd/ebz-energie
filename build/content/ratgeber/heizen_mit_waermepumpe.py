@@ -17,7 +17,7 @@ ARTICLE = {
     "slug": "heizen-mit-waermepumpe",
     "path": "/heizen-mit-waermepumpe/",
     "title": "Heizen mit Wärmepumpe: Funktion, Kosten, Förderung | EBZ",
-    "description": ("Heizen mit Wärmepumpe erklärt: JAZ 3,5 bis 5, rund 3.000 kWh Strom pro Jahr im "
+    "description": ("Heizen mit Wärmepumpe erklärt: JAZ 3 bis 5, rund 3.000 kWh Strom pro Jahr im "
                     "Einfamilienhaus, 840 € Ersparnis gegenüber Gas. Arten, Kosten, Förderung."),
     "eyebrow": "Wärmepumpe · Grundlagen",
     "crumb_label": "Heizen mit Wärmepumpe",
@@ -89,7 +89,7 @@ nutzbares Temperaturniveau anzuheben, und zwar deutlich weniger, als sie an Wär
 Wärme pro eingesetzter Kilowattstunde Strom über ein ganzes Jahr entsteht. JAZ 4,0 bedeutet, aus 1 kWh
 Strom werden 4 kWh Wärme, drei Viertel davon liefert die Umwelt. Zum Vergleich: Eine Gasheizung
 erzeugt aus 1 kWh Gas bestenfalls 0,95 kWh Wärme. Moderne Wärmepumpen erreichen je nach Typ, Standort
-und Gebäude eine JAZ von 3,5 bis 5.</p>
+und Gebäude eine JAZ von 3 bis 5.</p>
 <p>Der zweite entscheidende Faktor ist die <b>Vorlauftemperatur</b>: Je niedriger das Heizsystem sie
 braucht, desto effizienter arbeitet die Wärmepumpe. Fußbodenheizungen mit 30 bis 35 °C sind ideal,
 Heizkörper brauchen höhere Temperaturen und senken die Effizienz etwas, bleiben aber deutlich besser

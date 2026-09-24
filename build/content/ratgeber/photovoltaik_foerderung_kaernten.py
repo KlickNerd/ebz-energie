@@ -24,7 +24,7 @@ ARTICLE = {
     "h1": "Photovoltaik-Förderung Kärnten 2026: 3.000 Euro Landespauschale plus Bundesförderung",
     "lead": ("Kärnten fördert 2026 neue private PV-Anlagen mit Speicher pauschal mit 3.000 Euro, ohne "
              "Anrechnung der EAG-Bundesförderung. Für eine typische 8-kWp-Anlage mit 8-kWh-Speicher sind "
-             "damit rund 5.700 bis 5.900 Euro Gesamtförderung realistisch."),
+             "damit rund 5.760 Euro Gesamtförderung realistisch."),
     "chips": [
         "Land Kärnten: <b>3.000 €</b> Pauschale",
         "Speicher-Nachrüstung: <b>1.000 €</b>",
@@ -48,7 +48,7 @@ ARTICLE = {
         "EAG-Calls ab 23. April, 16. Juni und 8. Oktober 2026 (Antrag vor Inbetriebnahme). "
         "Landesbudget: rund 40 Millionen Euro.",
         "Rechenbeispiel 8 kWp mit 8 kWh Speicher: 3.000 Euro Land plus 2.400 Euro Bund plus "
-        "Made-in-Europe-Bonus, in Summe rund 5.700 bis 5.900 Euro oder etwa 32 Prozent der Kosten.",
+        "Made-in-Europe-Bonus, in Summe rund 5.760 Euro oder etwa 32 Prozent der Kosten.",
     ],
     "kpis": [
         ("3.000 €", "Landespauschale für PV ab 5 kWp mit Speicher"),
@@ -171,9 +171,9 @@ EAG-Investitionszuschuss. Eine typische 8-kWp-Anlage mit 8-kWh-Speicher kostet i
     [
         ["EAG-Bund, PV-Anlage", "8 kWp × 150 €/kWp", "1.200 €"],
         ["EAG-Bund, Speicher", "8 kWh × 150 €/kWh", "1.200 €"],
-        ["Made-in-Europe-Bonus", "10 % je Komponente auf den EAG-Zuschuss", "rund 360 bis 480 €"],
+        ["Made-in-Europe-Bonus", "10 % je Komponente auf den EAG-Zuschuss", "rund 360 €"],
         ["Land Kärnten", "Pauschale PV mit Speicher", "3.000 €"],
-        ["<b>Gesamtförderung</b>", "rund 32 % von 18.000 €", "<b>rund 5.700 bis 5.900 €</b>"],
+        ["<b>Gesamtförderung</b>", "rund 32 % von 18.000 €", "<b>rund 5.760 €</b>"],
     ],
     hl_cols=(2,),
 )}
@@ -242,7 +242,7 @@ falsch macht, verliert eine der beiden Förderungen.</p>
 
     "faq": [
         ("Wie hoch ist die maximale Photovoltaik-Förderung in Kärnten 2026?",
-         "Für eine private 8-kWp-Anlage mit 8-kWh-Speicher sind rund 5.700 bis 5.900 Euro realistisch: 3.000 Euro "
+         "Für eine private 8-kWp-Anlage mit 8-kWh-Speicher sind rund 5.760 Euro realistisch: 3.000 Euro "
          "Landespauschale plus 2.400 Euro EAG-Bundesförderung plus Made-in-Europe-Bonus. Bei einer 12-kWp-Anlage "
          "mit 10-kWh-Speicher steigt die Gesamtförderung auf rund 6.600 bis 6.800 Euro. Gemeindeförderungen "
          "können den Betrag weiter erhöhen."),

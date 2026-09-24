@@ -50,35 +50,97 @@ def load_articles():
     return arts
 
 
+CLUSTER_INTRO = {
+    "Förderungen": "Bund, alle neun Bundesländer, Speicher, Wärmepumpe und Energiemanagement: Beträge, Fristen und die richtige Reihenfolge der Anträge.",
+    "Wärmepumpe und Heizen": "Kosten, Funktionsweise, Altbau-Eignung und die Kombination mit Photovoltaik.",
+    "Speicher und Notstrom": "Nachrüsten, Wirtschaftlichkeit, Notstrom bei Stromausfall und Balkonkraftwerke.",
+    "Energiegemeinschaft": "Strom mit Nachbarn teilen: Beitritt, Kosten, Netzentgelt-Rabatt und die Lage in Kärnten und der Steiermark.",
+    "Smart Meter und Stromtarife": "Digitaler Zähler, dynamische Tarife, ElWG und der aktuelle OeMAG-Marktpreis.",
+    "Photovoltaik": "Grundlagen, Kosten, Komplettanlagen und Finanzierungsmodelle.",
+}
+CLUSTER_ANCHOR = {
+    "Förderungen": "foerderungen", "Wärmepumpe und Heizen": "waermepumpe",
+    "Speicher und Notstrom": "speicher", "Energiegemeinschaft": "energiegemeinschaft",
+    "Smart Meter und Stromtarife": "smart-meter", "Photovoltaik": "photovoltaik",
+}
+# Einstieg: die vier meistgesuchten Themen (handverlesen)
+FEATURED = ["kosten-einer-solaranlage", "photovoltaik-foerderung-oesterreich-2026",
+            "energiegemeinschaft", "kosten-einer-waermepumpe"]
+
+
+def _card(art, cluster, big=False):
+    img = IMG.get(art.get("hero_img"), art.get("hero_img")) if art.get("hero_img") else IMG["pv_card"]
+    title = art["h1"] if len(art["h1"]) <= 72 else art["title"].split("|")[0].strip()
+    prose = "".join(h for _h2, _id, h in art["sections"])
+    minutes = article.reading_minutes(art["lead"] + prose)
+    y, m, _d = art["date_modified"].split("-")
+    return f"""
+        <a class="rg-card" href="{art['path']}">
+          <div class="rg-card__media"><img src="{img}" alt="{art.get('hero_alt', title)}" loading="lazy" width="480" height="270"></div>
+          <div class="rg-card__body">
+            <span class="rg-card__tag">{cluster}</span>
+            <h3>{title}</h3>
+            <p>{art['description']}</p>
+            <div class="rg-card__meta"><span><b>{minutes} Min.</b> Lesezeit</span><span>Stand {m}/{y}</span></div>
+          </div>
+        </a>"""
+
+
 def build_hub(arts):
-    """Uebersichtsseite /ratgeber/: Cluster-Sektionen mit Karten (neueste zuerst)."""
+    """Uebersichtsseite /ratgeber/: Suche, Cluster-Navigation, Einstiegs-Themen, Cluster-Sektionen."""
     groups = {}
+    by_slug = {}
     for art in arts:
-        groups.setdefault(art.get("cluster") or cluster_of(art["slug"]), []).append(art)
+        cl = art.get("cluster") or cluster_of(art["slug"])
+        groups.setdefault(cl, []).append(art)
+        by_slug[art["slug"]] = (art, cl)
+
+    nav = "".join(
+        f'<li><a href="#{CLUSTER_ANCHOR[name]}">{name} <b>{len(groups[name])}</b></a></li>'
+        for name, _k in CLUSTERS if groups.get(name)
+    )
+    featured = "".join(_card(*by_slug[s], big=True) for s in FEATURED if s in by_slug)
+
     sections = ""
     for name, _keys in CLUSTERS:
-        items = sorted(groups.get(name, []), key=lambda x: x["date_modified"], reverse=True)
+        items = groups.get(name)
         if not items:
             continue
-        cards = []
-        for art in items:
-            img = IMG.get(art.get("hero_img"), art.get("hero_img")) if art.get("hero_img") else IMG["pv_card"]
-            cards.append({
-                "img": img, "alt": art.get("hero_alt", art["h1"]),
-                "title": art["h1"] if len(art["h1"]) <= 70 else art["title"].split("|")[0].strip(),
-                "text": art["description"],
-                "link_key": art["path"], "link_text": "Ratgeber lesen",
-            })
-        sections += C.cards_section("Ratgeber", name, "", cards, with_media=True)
+        items = sorted(items, key=lambda x: (x["date_modified"], x["h1"]), reverse=True)
+        cards = "".join(_card(art, name) for art in items)
+        sections += f"""
+  <section class="rg-section" id="{CLUSTER_ANCHOR[name]}">
+    <div class="wrap">
+      <div class="rg-head eg-reveal">
+        <div><h2>{name}</h2><p>{CLUSTER_INTRO.get(name, "")}</p></div>
+        <span class="rg-count">{len(items)} Ratgeber</span>
+      </div>
+      <div class="rg-grid">{cards}</div>
+    </div>
+  </section>"""
 
     total = len(arts)
-    body = C.page_hero(
-        eyebrow="Wissen aus der Praxis",
-        h1="Ratgeber: Photovoltaik, Speicher, Wärmepumpe und Förderungen",
-        lead=(f"{total} Ratgeber mit konkreten Zahlen, Fristen und Beispielen aus über 300 Projekten. "
-              "Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH."),
-        cta=("kontakt", "Kostenlose Beratung"),
-    ) + sections + C.finalcta(
+    body = f"""
+  <section class="rg-hero">
+    <div class="wrap">
+      <p class="eyebrow">Wissen aus der Praxis</p>
+      <h1>Ratgeber: Photovoltaik, Speicher, Wärmepumpe und Förderungen</h1>
+      <p class="lead">{total} Ratgeber mit konkreten Zahlen, Fristen und Rechenbeispielen aus über 300 Projekten.
+      Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
+      <div class="rg-search"><span class="ic" aria-hidden="true">⌕</span>
+        <label for="rg-q" class="visually-hidden" style="position:absolute;left:-9999px">Ratgeber durchsuchen</label>
+        <input id="rg-q" type="search" placeholder="Thema suchen, z. B. Förderung Kärnten, Notstrom, Smart Meter" autocomplete="off"></div>
+      <ul class="rg-nav">{nav}</ul>
+    </div>
+  </section>
+  <div class="rg-root">
+  <section class="rg-featured">
+    <div class="wrap"><div class="rg-grid">{featured}</div></div>
+  </section>
+  {sections}
+  <p class="rg-empty wrap">Kein Ratgeber zu diesem Begriff. Rufen Sie uns an, wir beantworten die Frage direkt.</p>
+  </div>
+""" + C.finalcta(
         "Lieber direkt fragen?",
         "Ein Anruf klärt oft mehr als zehn Artikel. Wir beraten kostenlos und sagen ehrlich, was sich bei Ihnen rechnet.",
     )

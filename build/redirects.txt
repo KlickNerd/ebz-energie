@@ -1,0 +1,34 @@
+# 301-Weiterleitungen fuer den Launch (alte WordPress-URL -> neue URL).
+# Format: alter Pfad  neuer Pfad. Wird beim Hoster-Setup in .htaccess / _redirects uebersetzt.
+
+# Zusammengelegte Ratgeber
+/photovoltaik-landesfoerderungen-in-oesterreich/   /photovoltaik-landesfoerderungen/
+/kosten-von-photovoltaikanlagen-mit-speicher/      /kosten-einer-solaranlage/
+/einspeisetarif-photovoltaik-oesterreich-vergleich/ /einspeisetarif-fuer-photovoltaik/
+/einspeiseverguetung/                              /einspeisetarif-fuer-photovoltaik/
+/pv-anlage-mit-notstrom-nachruesten/               /notstrom/
+/erneuerbare-energien/                             /solarenergie/
+/photovoltaik-oesterreich/                         /solarenergie/
+/photovoltaik-mieten/                              /solaranlage-mieten-oder-kaufen/
+/solaranlage-mit-speicher-mieten/                  /solaranlage-mieten-oder-kaufen/
+/oemag-einspeisetarif-energiegemeinschaft/         /oemag-einspeisetarif/
+/energiegemeinschaft-villach/                      /energiegemeinschaft-villach-klagenfurt/
+
+# Alte Seiten, deren Thema jetzt ein Ratgeber abdeckt
+/foerderung-photovoltaik-kaernten/                 /photovoltaik-foerderung-kaernten/
+/photovoltaik-foerderung-oesterreich/              /photovoltaik-foerderung-oesterreich-2026/
+/pv-anlage-leasen/                                 /finanzierung/
+
+# Geloeschte Inhalte (veraltet oder Produkt nicht mehr im Angebot)
+/marstek-venus/                                    /batteriespeicher/
+/entwicklung-oesterreichischer-strompreisindex-2023/ /marktpreis-2026/
+/zinsfreies-photovoltaik-und-speicherdarlehen-der-ak-kaernten/ /finanzierung/
+/akzeptanz-erneuerbare-energien/                   /solarenergie/
+/professionelle-drohnenaufnahmen-von-ihrem-objekt/ /ueber-uns/
+
+# In Leistungsseiten aufgehende Beitraege (Ziel muss vor Launch gebaut sein)
+/photovoltaik-mit-speicher/                        /batteriespeicher/
+/batteriespeicher-und-photovoltaik/                /batteriespeicher/
+/balkonkraftwerk-mit-speicher/                     /balkonkraftwerke/
+/photovoltaik-beratung/                            /kontakt/
+/energiemangementsystem/                           /energiemanagementsystem/
