@@ -76,8 +76,8 @@ S = {
     "aktuelles": "/aktuelles/",
     "impressum": "/impressum/",
     "datenschutz": "/datenschutz/",
-    "foerderung_at": "/photovoltaik-foerderung-oesterreich/",
-    "foerderung_kaernten": "/foerderung-photovoltaik-kaernten/",
+    "foerderung_at": "/photovoltaik-foerderung-oesterreich-2026/",  # WP-Beitrag; alte Seite /photovoltaik-foerderung-oesterreich/ -> 301
+    "foerderung_kaernten": "/photovoltaik-foerderung-kaernten/",  # WP-Beitrag 2026; alte Seite /foerderung-photovoltaik-kaernten/ -> 301
     "foerderung_steiermark": "/foerderung-photovoltaik-steiermark/",
     "pv_villach": "/photovoltaik-villach/",
     "pv_wolfsberg": "/photovoltaik-wolfsberg/",
@@ -262,7 +262,11 @@ def validate(html, path=""):
         s, e = max(0, m.start() - 25), min(len(html), m.end() + 25)
         errors.append(f"Gedankenstrich: ...{html[s:e]!r}...")
     for term in _FORBIDDEN:
-        if term in html:
+        if term == "5,0":
+            # nur die Bewertung "5,0" (Sterne), nicht "15,00 €" oder "5,05"
+            if _re.search(r"(?<![\d,.])5,0(?![\d])", html):
+                errors.append("Verbotener Begriff: '5,0' (Bewertung, immer 4,9)")
+        elif term in html:
             errors.append(f"Verbotener Begriff: {term!r}")
     # Leasing nur im Kontext erlaubter Slugs
     leftover = _re.sub(r"pv-anlage-leasen", "", html)
