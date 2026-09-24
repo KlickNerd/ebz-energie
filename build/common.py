@@ -171,6 +171,54 @@ def faq_jsonld(page_url, qa_pairs):
     return _json.dumps(data, ensure_ascii=False, indent=None)
 
 
+def breadcrumb_jsonld(items):
+    """BreadcrumbList. items: Liste aus (name, absolute_url)."""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": n, "item": url}
+            for i, (n, url) in enumerate(items)
+        ],
+    }
+    return _json.dumps(data, ensure_ascii=False, indent=None)
+
+
+def article_jsonld(page_url, headline, description, date_published, date_modified, image=None):
+    """Article-Schema fuer Ratgeber: Autor Mario Zintl, Publisher EBZ Energie GmbH.
+
+    Auf der statischen Site gibt es kein SEO-Plugin mehr, daher kollidiert das
+    Schema mit nichts (die alte 'nur FAQPage'-Regel galt fuer WordPress-Bloecke).
+    """
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": page_url.rstrip("/") + "/#article",
+        "mainEntityOfPage": page_url,
+        "headline": headline,
+        "description": description,
+        "inLanguage": "de-AT",
+        "datePublished": date_published,
+        "dateModified": date_modified,
+        "author": {
+            "@type": "Person",
+            "name": AUTHOR,
+            "jobTitle": "Geschäftsführer",
+            "worksFor": {"@type": "Organization", "name": NAP["name"]},
+            "url": BASE + S["ueber_uns"],
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": NAP["name"],
+            "url": BASE + "/",
+            "logo": {"@type": "ImageObject", "url": BASE + IMG["logo"]},
+        },
+    }
+    if image:
+        data["image"] = image if image.startswith("http") else BASE + image
+    return _json.dumps(data, ensure_ascii=False, indent=None)
+
+
 def localbusiness_jsonld():
     """Zentrales LocalBusiness-Schema (auf statischer Site erwuenscht, kein Plugin-Konflikt)."""
     data = {

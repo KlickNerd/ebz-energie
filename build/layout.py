@@ -118,7 +118,8 @@ def _sticky_cta():
 
 
 def page(title, description, path, body, faq_jsonld_str=None,
-         include_business_schema=False, og_image=None):
+         include_business_schema=False, og_image=None, extra_jsonld=None,
+         og_type="website"):
     """Baut ein vollstaendiges HTML-Dokument.
 
     title/description: fuer <title> und Meta.
@@ -126,6 +127,8 @@ def page(title, description, path, body, faq_jsonld_str=None,
     body: HTML der <main>-Sektionen.
     faq_jsonld_str: fertiges FAQPage-JSON (optional).
     include_business_schema: LocalBusiness einbetten (nur Startseite/Kontakt).
+    extra_jsonld: weitere fertige JSON-LD-Strings (z. B. Article, BreadcrumbList).
+    og_type: "website" oder "article" (Ratgeber).
     """
     canonical = BASE + path
     og = BASE + (og_image or "/assets/img/hero-photovoltaik-villach.jpg")
@@ -135,6 +138,8 @@ def page(title, description, path, body, faq_jsonld_str=None,
         schemas += f'\n  <script type="application/ld+json">{localbusiness_jsonld()}</script>'
     if faq_jsonld_str:
         schemas += f'\n  <script type="application/ld+json">{faq_jsonld_str}</script>'
+    for s in (extra_jsonld or []):
+        schemas += f'\n  <script type="application/ld+json">{s}</script>'
 
     return f"""<!doctype html>
 <html lang="de">
@@ -145,7 +150,7 @@ def page(title, description, path, body, faq_jsonld_str=None,
   <meta name="description" content="{description}">
   <link rel="canonical" href="{canonical}">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{og_type}">
   <meta property="og:locale" content="de_AT">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
