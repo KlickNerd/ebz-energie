@@ -18,8 +18,7 @@ ARTICLE = {
     "slug": "energiegemeinschaft-steiermark",
     "path": "/energiegemeinschaft-steiermark/",
     "title": "Energiegemeinschaft Steiermark: 125 €/kWp Bonus | EBZ Energie",
-    "description": ("Energiegemeinschaft in der Steiermark: Landesbonus 125 € je kWp bei EG-Teilnahme, Netzentgelt "
-                    "bis 57 % weniger, Rechenbeispiel mit 10 kWp. Beitritt in 4 bis 8 Wochen mit EBZ Energie."),
+    "description": "Energiegemeinschaft Steiermark: Landesbonus 125 € je kWp bei EG-Teilnahme, Netzentgelt bis 57 % weniger, Rechenbeispiel mit 10 kWp. Beitritt in 4 bis 8 Wochen.",
     "eyebrow": "Energiegemeinschaft · Steiermark",
     "crumb_label": "Energiegemeinschaft Steiermark",
     "h1": "Energiegemeinschaft Steiermark: 125 Euro je kWp Bonus und mehr aus jeder Kilowattstunde",

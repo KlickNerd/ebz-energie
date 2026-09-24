@@ -17,8 +17,7 @@ ARTICLE = {
     "slug": "energiegemeinschaft-kaernten",
     "path": "/energiegemeinschaft-kaernten/",
     "title": "Energiegemeinschaft Kärnten: bis 57 % weniger Netzentgelt | EBZ",
-    "description": ("Energiegemeinschaft in Kärnten: PV-Überschuss an Nachbarn statt für 6,146 ct an die OeMAG. "
-                    "Netzentgelt bis 57 % weniger, Abgaben entfallen, Start in 4 bis 8 Wochen. EBZ Energie, Villach."),
+    "description": "Energiegemeinschaft in Kärnten: PV-Überschuss an Nachbarn statt für 6,146 ct an die OeMAG. Netzentgelt bis 57 % weniger, Start in 4 bis 8 Wochen. EBZ, Villach.",
     "eyebrow": "Energiegemeinschaft · Kärnten",
     "crumb_label": "Energiegemeinschaft Kärnten",
     "h1": "Energiegemeinschaft in Kärnten: Solarstrom teilen statt für 6 Cent einspeisen",

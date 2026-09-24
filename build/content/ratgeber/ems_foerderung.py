@@ -16,10 +16,8 @@ from common import a
 ARTICLE = {
     "slug": "ems-foerderung",
     "path": "/ems-foerderung/",
-    "title": "EMS-Förderung 2026: bis zu 600 € für Ihr Energiemanagement | EBZ Energie",
-    "description": ("Energiemanagement-Förderung 2026 des Klimafonds: 50 % bis 600 € für Haushalte, "
-                    "30 % bis 20.000 € für Betriebe. Voraussetzungen, Ablauf, Fristen und der häufigste "
-                    "Fehler. Von EBZ Energie, Villach."),
+    "title": "EMS-Förderung 2026: bis 600 € vom Klimafonds | EBZ Energie",
+    "description": "Energiemanagement-Förderung 2026: 50 % bis 600 € für Haushalte, 30 % bis 20.000 € für Betriebe. Voraussetzungen, Ablauf, Fristen und der häufigste Fehler.",
     "eyebrow": "Förderung · Energiemanagement",
     "crumb_label": "EMS-Förderung 2026",
     "h1": "Energiemanagement-Förderung 2026: Bis zu 600 Euro für die intelligente Vernetzung Ihrer Anlage",

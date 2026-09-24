@@ -17,8 +17,7 @@ ARTICLE = {
     "slug": "energiegemeinschaft-beitreten",
     "path": "/energiegemeinschaft-beitreten/",
     "title": "Energiegemeinschaft beitreten: 4 Schritte, 4 bis 8 Wochen | EBZ",
-    "description": ("Energiegemeinschaft beitreten: Voraussetzungen (Zählpunkt, Smart Meter, Nahbereich), Ablauf in "
-                    "4 Schritten, Kosten 2 bis 8 € im Monat, Start in 4 bis 8 Wochen. Auch ohne PV-Anlage möglich."),
+    "description": "Energiegemeinschaft beitreten: Voraussetzungen (Zählpunkt, Smart Meter, Nahbereich), 4 Schritte, 2 bis 8 € im Monat, Start in 4 bis 8 Wochen. Auch ohne PV.",
     "eyebrow": "Energiegemeinschaft · Beitritt",
     "crumb_label": "Energiegemeinschaft beitreten",
     "h1": "Energiegemeinschaft beitreten: In vier Schritten und 4 bis 8 Wochen Mitglied",

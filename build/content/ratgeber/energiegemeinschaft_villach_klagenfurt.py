@@ -17,8 +17,7 @@ ARTICLE = {
     "slug": "energiegemeinschaft-villach-klagenfurt",
     "path": "/energiegemeinschaft-villach-klagenfurt/",
     "title": "Energiegemeinschaft Villach & Klagenfurt: Strom teilen | EBZ",
-    "description": ("Energiegemeinschaft in Villach und Klagenfurt: lokal bis 57 % weniger Netzentgelt, Beitritt ohne "
-                    "Lieferantenwechsel, auch ohne eigene PV-Anlage. EBZ Energie betreut Sie direkt vor Ort in Villach."),
+    "description": "Energiegemeinschaft in Villach und Klagenfurt: lokal bis 57 % weniger Netzentgelt, Beitritt ohne Lieferantenwechsel, auch ohne eigene PV. EBZ berät vor Ort.",
     "eyebrow": "Energiegemeinschaft · Villach und Klagenfurt",
     "crumb_label": "Energiegemeinschaft Villach und Klagenfurt",
     "h1": "Energiegemeinschaft in Villach und Klagenfurt: bis zu 57 Prozent weniger Netzentgelt, Ihr Strom bleibt in der Stadt",

@@ -17,9 +17,8 @@ from common import a
 ARTICLE = {
     "slug": "energiegemeinschaft-netzkosten",
     "path": "/energiegemeinschaft-netzkosten/",
-    "title": "Energiegemeinschaft Netzkosten: bis 57 % weniger Netzentgelt | EBZ",
-    "description": ("Netzkosten in der Energiegemeinschaft: Netznutzung und Netzverlust minus 57 % lokal, 28 % regional, "
-                    "Elektrizitätsabgabe 1,5 ct entfällt. Rechenbeispiel: rund 10,5 ct Ersparnis je zugeordneter kWh."),
+    "title": "Energiegemeinschaft Netzkosten: bis 57 % weniger | EBZ",
+    "description": "Netzkosten in der Energiegemeinschaft: Netznutzung und Netzverlust minus 57 % lokal, 28 % regional, Elektrizitätsabgabe entfällt. Rechenbeispiel je kWh.",
     "eyebrow": "Energiegemeinschaft · Netzkosten",
     "crumb_label": "Energiegemeinschaft und Netzkosten",
     "h1": "Energiegemeinschaft und Netzkosten: bis zu 57 Prozent weniger Netzentgelt, Position für Position",

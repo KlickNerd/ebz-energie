@@ -73,6 +73,32 @@ def write_meta_files():
     print("[OK ] robots.txt + .nojekyll")
 
 
+def write_sitemap():
+    """sitemap.xml aus allen gebauten Seiten; lastmod der Ratgeber aus date_modified."""
+    import datetime
+    from common import BASE
+    today = datetime.date.today().isoformat()
+    lastmod = {art["path"]: art["date_modified"] for art in ratgeber.load_articles()}
+    urls = []
+    for dirpath, _dirs, files in os.walk(OUT):
+        if "index.html" not in files:
+            continue
+        rel = os.path.relpath(dirpath, OUT).replace(os.sep, "/")
+        path = "/" if rel == "." else f"/{rel}/"
+        prio = "1.0" if path == "/" else ("0.6" if path in lastmod else "0.8")
+        urls.append((path, lastmod.get(path, today), prio))
+    urls.sort()
+    body = "".join(
+        f"  <url><loc>{BASE}{p}</loc><lastmod>{m}</lastmod><priority>{pr}</priority></url>\n"
+        for p, m, pr in urls
+    )
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n")
+    with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write(xml)
+    print(f"[OK ] sitemap.xml ({len(urls)} URLs)")
+
+
 def main():
     print("=== EBZ Website Build ===")
     theme.write_assets()
@@ -84,6 +110,7 @@ def main():
     errors += len(photovoltaik.build())
     errors += len(ueber_uns.build())
     errors += len(ratgeber.build())
+    write_sitemap()
     print("=== Fertig ===")
     if errors:
         print(f"ACHTUNG: {errors} Validierungsfehler. Bitte beheben.")

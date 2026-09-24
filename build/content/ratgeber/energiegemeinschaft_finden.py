@@ -17,9 +17,7 @@ ARTICLE = {
     "slug": "energiegemeinschaft-finden",
     "path": "/energiegemeinschaft-finden/",
     "title": "Energiegemeinschaft finden: 3 Wege, 11.000+ Gemeinschaften | EBZ",
-    "description": ("Energiegemeinschaft in der Nähe finden: Nahbereich statt Postleitzahl, 3 Suchwege "
-                    "(Netzbetreiber, Plattform, Gemeinde), 5 Prüfpunkte vor dem Beitritt. In Kärnten und der "
-                    "Steiermark übernimmt EBZ die Suche."),
+    "description": "Energiegemeinschaft in der Nähe finden: Nahbereich statt Postleitzahl, 3 Suchwege, 5 Prüfpunkte vor dem Beitritt. In Kärnten und der Steiermark hilft EBZ.",
     "eyebrow": "Energiegemeinschaft · Suche",
     "crumb_label": "Energiegemeinschaft finden",
     "h1": "Energiegemeinschaft finden: Der Nahbereich zählt, nicht die Postleitzahl",
