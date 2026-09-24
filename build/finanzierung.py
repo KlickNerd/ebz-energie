@@ -5,7 +5,7 @@ Botschaft: Kaufen oder finanzieren, in beiden Faellen gehoert die Anlage ab Tag 
 dem Kunden. Kein Mietmodell. Der Begriff "Leasing" darf nicht vorkommen (Validator).
 """
 
-from common import IMG, NAP, FINANZIERUNG as F, faq_jsonld, u, a, write_page, load_reviews
+from common import IMG, NAP, AUTHOR, AUTHOR_ROLE, FINANZIERUNG as F, faq_jsonld, u, a, write_page, load_reviews
 from layout import page
 import components as C
 
@@ -24,9 +24,10 @@ FAQ = [
      "(8 kWp, abzüglich 900 Euro Förderung) ab 102 Euro im Monat, 25.000 Euro (10 kWp mit 10-kWh-Speicher, "
      "abzüglich 3.000 Euro Förderung) ab 164 Euro im Monat. Ihre konkrete Rate steht im Angebot."),
     ("Bekomme ich die Förderung, obwohl ich finanziere?",
-     "Ja. Weil Sie Eigentümer und Antragsteller sind, erhalten Sie als Privatperson die volle Förderung "
-     "auf Ihr Konto. Im Beispiel wird der Bundes-Investitionszuschuss direkt vom Finanzierungsbetrag "
-     "abgezogen."),
+     "Ja, in voller Höhe. Weil Sie Eigentümer und Antragsteller sind, erhalten Sie als Privatperson die "
+     "Bundesförderung und die Landesförderung auf Ihr Konto. Im Beispiel wird der Bundes-Investitionszuschuss "
+     "direkt vom Finanzierungsbetrag abgezogen, Landesförderungen wie die Kärntner Speicherpauschale kommen "
+     "zusätzlich dazu."),
     ("Wie läuft die Bonitätsprüfung ab?",
      "Digital und in wenigen Minuten, ohne Banktermin. Die Finanzierungszusage kommt in der Regel in unter "
      "zwei Minuten, die Annahmequote liegt bei 94 Prozent. Die Vergabe erfolgt vorbehaltlich dieser Prüfung. "
@@ -55,7 +56,7 @@ def build():
             h1="Ihre PV-Anlage: direkt kaufen oder finanzieren. Sie entscheiden.",
             lead=("Keine Anzahlung, eine fixe Monatsrate und eine Anlage, die vom ersten Tag an Ihnen gehört. "
                   "Die Finanzierungszusage kommt digital in wenigen Minuten, die Förderung bleibt bei Ihnen."),
-            badges=[("0 €", "Anzahlung"), ("Fixe Rate", "kein Zinsrisiko"), ("Eigentum", "ab Tag 1")],
+            badges=[("0 €", "Anzahlung"), ("Fixe Rate", "kein Zinsrisiko"), ("Volle Förderung", "trotz Finanzierung")],
             img=IMG["gen_eigenheim"],
             img_alt="Einfamilienhaus mit finanzierter Photovoltaikanlage in Kärnten",
             float_num=rating, float_label=f"Google, {count} Bewertungen" if count else "auf Google",
@@ -105,6 +106,43 @@ def build():
             ],
             note="*Rate abhängig von individuellem Angebot und Laufzeit. Förderhöhe und Zusage variieren.",
         ).replace('<section class="section"', '<section id="beispiele" class="section"', 1),
+        C.media_text(
+            eyebrow="Die wichtigste Frage zuerst",
+            h2="Förderung trotz Finanzierung? Ja, und zwar in voller Höhe.",
+            paragraphs=[
+                ("Viele glauben, wer finanziert, verzichtet auf die Förderung. Das Gegenteil ist der Fall: "
+                 "Weil Sie bei der EBZ-Finanzierung vom ersten Tag an Eigentümer sind, stellen Sie den "
+                 "Förderantrag selbst und die Auszahlung geht auf Ihr Konto. Bei Mietmodellen bekommt der "
+                 "Anbieter die Förderung, bei uns Sie."),
+                ("In den Beispielen oben ist der Bundes-Investitionszuschuss bereits vom Finanzierungsbetrag "
+                 "abgezogen: 900 € bei 8 kWp, 3.000 € bei 10 kWp mit 10-kWh-Speicher. Dazu kommen je nach "
+                 "Bundesland Landesförderungen, in Kärnten etwa 3.000 € Pauschale für Neuanlagen mit Speicher."),
+            ],
+            img=IMG["foerderung"],
+            alt="Beratungsgespräch zur Photovoltaik-Förderung bei Finanzierung",
+            bullets=["Sie sind Eigentümer und Antragsteller, nicht die Bank",
+                     "Bund und Land sind kombinierbar, wir prüfen beides für Ihr Projekt",
+                     "Anträge bereiten wir vor, Fristen und Reihenfolge behalten wir im Blick"],
+            cta=("foerderung_at", "Alle Förderungen 2026 ansehen"),
+            dark=True,
+        ),
+        C.founder_story(
+            eyebrow="Persönliche Beratung vom Inhaber",
+            h2="Mario Zintl rechnet mit Ihnen, nicht für Sie",
+            paragraphs=[
+                ("Ob Kauf oder Finanzierung ist keine Frage, die ein Formular beantwortet. Deshalb nehme ich "
+                 "mir für dieses Gespräch selbst Zeit: Wir schauen uns Ihren Stromverbrauch, Ihr Dach und Ihr "
+                 "Budget an und legen die Zahlen für beide Wege nebeneinander."),
+                ("Manchmal ist die Antwort: kaufen, weil es sich schneller rechnet. Manchmal: finanzieren, "
+                 "weil die Liquidität im Haushalt oder im Betrieb wichtiger ist. Und manchmal sage ich auch, "
+                 "dass eine kleinere Anlage besser passt. Verkaufen kann jeder, ehrlich beraten ist unser "
+                 "Handwerk."),
+            ],
+            quote="Sie sollen nach dem Gespräch nicht überredet sein, sondern wissen, was Sie tun.",
+            name=AUTHOR, role=AUTHOR_ROLE,
+            badge="Villach, Kärnten",
+            cta=("kontakt", "Beratungstermin mit Mario Zintl"),
+        ),
         C.why_section(
             eyebrow="Warum finanzieren?",
             h2="Sechs Gründe, die für die EBZ-Finanzierung sprechen",
