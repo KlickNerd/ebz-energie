@@ -23,7 +23,7 @@ Quelle je Artikel: `<scratchpad>/wp/<slug>.txt` (bereinigter Text des Live-Artik
 - Zeitbezug: Wo die Quelle ein Jahr nennt, bleibt es ("Stand: <Monat Jahr>" aus dem Änderungsdatum der Quelle).
 - Offensichtliche Fehler der Quelle (doppelte Absätze, widersprüchliche Zahlen, Copy-Paste-Reste) bereinigen und im Bericht nennen.
 - Quellen-URLs nur aus der Quelle ("Links im Original") übernehmen, nie ausdenken.
-- EBZ-Fakten: 300+ Projekte, 6 Bundesländer, Amortisation typisch 4 bis 6 Jahre, bis zu 30 Jahre Leistungsgarantie, mind. 10 Jahre Produktgarantie, Richtpreis 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung, festangestelltes Team aus zertifizierten Fachkräften, Montage Kärnten + Steiermark, Geschäftsführer Mario Zintl.
+- EBZ-Fakten: 300+ Projekte, 6 Bundesländer, Amortisation typisch 4 bis 6 Jahre, bis zu 30 Jahre Leistungsgarantie, mind. 10 Jahre Produktgarantie, Richtpreis 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung, zertifizierte Fachkräfte (NIE "festangestellt", "eigenes Montageteam", "eigene Monteure"), Montage Kärnten + Steiermark, Geschäftsführer Mario Zintl.
 
 ## Struktur je Artikel (Optimierung gegenüber der Quelle)
 - `title` ≤ 60 Zeichen mit " | EBZ Energie" oder " | EBZ", `description` 140 bis 160 Zeichen, konkret mit Zahl.

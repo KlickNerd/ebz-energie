@@ -170,7 +170,7 @@ wenigen Wochen {a('/energiegemeinschaft-beitreten/', 'beitreten')}.</p>
         "h2": "Ihr Partner für Photovoltaik und Energiegemeinschaft in der Steiermark: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik, Speicher, Wärmepumpen und Wallboxen in "
-                 "Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. Dazu kommt "
+                 "Kärnten und der Steiermark, mit zertifizierten Fachkräften. Dazu kommt "
                  "die Energiegemeinschaft: Wir nehmen Sie in eine bestehende Gemeinschaft auf oder bauen mit Ihnen eine "
                  "eigene auf, abgerechnet über die Plattform unseres Partners energyfamily. Einzugsgebiet Steiermark: "
                  "Graz und Graz-Umgebung, Leibnitz, Deutschlandsberg, Voitsberg, Weiz, Murtal, Leoben, "

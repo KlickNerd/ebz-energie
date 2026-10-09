@@ -21,7 +21,7 @@ CONTENT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "content"
 CLUSTERS = [
     ("Förderungen", ("foerderung", "sanierungsoffensive", "sauber-heizen", "steuerlich", "landesfoerderungen")),
     ("Wärmepumpe und Heizen", ("waermepumpe", "heizen")),
-    ("Speicher und Notstrom", ("speicher", "notstrom", "marstek")),
+    ("Speicher und Notstrom", ("speicher", "notstrom")),
     ("Energiegemeinschaft", ("energiegemeinschaft", "oemag")),
     ("Smart Meter und Stromtarife", ("smart-meter", "stromtarif", "elwg", "marktpreis", "einspeise")),
     ("Photovoltaik", ()),  # Rest

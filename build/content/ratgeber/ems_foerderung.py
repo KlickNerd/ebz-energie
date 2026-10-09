@@ -234,7 +234,7 @@ registrieren, dann installieren.</p>
         "h2": "Ihr Partner für EMS und Förderung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik, Speicher, Wärmepumpen und "
-                 "Wallboxen in Kärnten und der Steiermark, mit einem festangestellten Team aus "
+                 "Wallboxen in Kärnten und der Steiermark, mit einem Team aus "
                  "zertifizierten Fachkräften. Das Energiemanagementsystem denken wir von Anfang an mit: "
                  "Wir setzen auf Systeme, die den Mindestfunktionsumfang des Klimafonds erfüllen, und "
                  "übernehmen die Förderabwicklung von der Registrierung bis zur Endabrechnung."),

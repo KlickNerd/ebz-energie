@@ -287,7 +287,7 @@ sind noch offen.</p>
         "h2": "Ihr Partner für Förderabwicklung in Kärnten und der Steiermark: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie GmbH aus Villach plant und montiert Photovoltaikanlagen, Speicher und Wärmepumpen in "
-                 "Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und "
+                 "Kärnten und der Steiermark, mit zertifizierten Fachkräften und "
                  "über 300 dokumentierten Projekten in sechs Bundesländern. Wir kennen die Kärntner "
                  "3.000-Euro-Pauschale, den Steirischen Sanierungsbonus, die EAG-Termine und die Gemeindeförderungen "
                  "beider Länder im Detail und übernehmen die komplette Abwicklung: von der strategischen "

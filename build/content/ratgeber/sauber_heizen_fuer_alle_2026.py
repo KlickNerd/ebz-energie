@@ -238,7 +238,7 @@ Anlage gehört dabei ab Tag 1 Ihnen.</p>
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("Antrag, Umsetzungsfrist, Endabrechnung für Registrierte, Landesförderung für alle anderen: "
                  "EBZ Energie aus Villach nimmt Ihnen diesen Weg ab. Als Fachbetrieb für Wärmepumpen und "
-                 "Photovoltaik in Kärnten und der Steiermark begleiten wir Sie mit einem festangestellten Team "
+                 "Photovoltaik in Kärnten und der Steiermark begleiten wir Sie mit einem Team "
                  "aus zertifizierten Fachkräften von der ersten Frage bis zur warmen Stube."),
         "grid": [
             ("Förder-Check", "Wir prüfen, welche Landesförderung für Ihr Projekt aktuell offen ist."),

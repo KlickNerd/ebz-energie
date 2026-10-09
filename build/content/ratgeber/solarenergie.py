@@ -208,8 +208,8 @@ Landwirtschaft oder Industrie lohnt sich alle paar Jahre eine professionelle Rei
 der Anlage und des Wechselrichters im Abstand einiger Jahre sichert den Ertrag, das Monitoring per App
 zeigt Abweichungen sofort.</p>
 {A.cta("Von der Grundlage zur eigenen Anlage",
-       "Kostenlose Beratung, Projektbericht mit 3D-Belegplan und Statikreport und Montage durch unser "
-       "eigenes Team in Kärnten und der Steiermark.",
+       "Kostenlose Beratung, Projektbericht mit 3D-Belegplan und Statikreport und Montage durch "
+       "zertifizierte Fachkräfte in Kärnten und der Steiermark.",
        primary=("kontakt", "Kostenlose Beratung"), secondary=("referenzen", "Referenzen ansehen"))}
 """),
         ("Fazit", "fazit", f"""
@@ -225,7 +225,7 @@ auf den eigenen Verbrauch plant, holt das Maximum aus jedem Quadratmeter Dach.</
         "h2": "Ihr Partner für Photovoltaik: EBZ Energie aus Villach",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie plant und montiert Photovoltaikanlagen, Speicher und Wärmepumpen in Kärnten und der "
-                 "Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und über 300 "
+                 "Steiermark, mit zertifizierten Fachkräften und über 300 "
                  "dokumentierten Projekten in 6 Bundesländern. Jede Anlage wird auf Dach und Verbrauch geplant, "
                  "mit Projektbericht, 3D-Belegplan und Statikreport."),
         "grid": [

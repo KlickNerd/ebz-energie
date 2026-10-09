@@ -225,7 +225,7 @@ Nutzung der Landesförderung, wo es sie gibt.</p>
         "h2": "Ihr Partner für die Speicher-Nachrüstung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik, Batteriespeicher, Wärmepumpen und "
-                 "Energiemanagement in Kärnten und der Steiermark, mit einem festangestellten Team aus "
+                 "Energiemanagement in Kärnten und der Steiermark, mit einem Team aus "
                  "zertifizierten Fachkräften und über 300 dokumentierten Projekten. Bestandsanlagen jeder Marke "
                  "rüsten wir AC-gekoppelt oder mit Hybridwechselrichter nach und übernehmen Anmeldung und "
                  "Förderantrag."),

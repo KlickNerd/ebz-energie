@@ -231,7 +231,7 @@ zu einer klaren Entscheidung.</p>
         "h2": "Ihr Partner für Photovoltaik und Wärmepumpe: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik, Speicher, Wärmepumpen und "
-                 "Energiemanagement in Kärnten und der Steiermark, mit einem festangestellten Team aus "
+                 "Energiemanagement in Kärnten und der Steiermark, mit einem Team aus "
                  "zertifizierten Fachkräften und 300+ dokumentierten Projekten. Sie erhalten ein Gesamtkonzept "
                  "aus einer Hand: Analyse vor Ort, Projektbericht mit 3D-Belegplan und Statikreport, "
                  "Förderabwicklung für beide Systeme, Montage und Service danach."),

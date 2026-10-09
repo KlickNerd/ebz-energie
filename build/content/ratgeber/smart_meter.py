@@ -211,7 +211,7 @@ verbrauchen und speichern, wenn er am günstigsten ist.</p>
         "grid": [
             ("Verbrauchsanalyse", "Kostenlose Auswertung Ihres Verbrauchsprofils und Ihrer Anlage."),
             ("Passendes EMS", "Auswahl und Einbindung eines förderfähigen Energiemanagementsystems."),
-            ("Zertifizierte Fachkräfte", "Installation durch das festangestellte Team aus Villach."),
+            ("Zertifizierte Fachkräfte", "Installation durch zertifizierte Fachkräfte, koordiniert aus Villach."),
             ("Tarifberatung", "Welcher Tarif zu Ihrem Verbrauch passt und wie Sie die Daten nutzen."),
         ],
     },

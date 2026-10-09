@@ -173,7 +173,7 @@ automatisch nutzt, wird aus dem schwankenden Börsenpreis ein klarer Vorteil. Oh
                  "Villach verbindet als herstellerunabhängiger Fachbetrieb Ihre PV-Anlage, Ihren Speicher, "
                  "Ihre Wärmepumpe und Ihre Wallbox über ein Energiemanagementsystem, das den dynamischen "
                  "Tarif automatisch ausnutzt. Planung und Installation übernehmen wir in Kärnten und der "
-                 "Steiermark aus einer Hand, mit einem festangestellten Team aus zertifizierten Fachkräften."),
+                 "Steiermark aus einer Hand, mit zertifizierten Fachkräften."),
         "grid": [
             ("Tarifcheck", "Wir rechnen, ob dynamisch, flexibel oder fix zu Ihrem Profil passt."),
             ("Förderfähiges EMS", "Systeme, die Preissignale verarbeiten und lokal steuern."),

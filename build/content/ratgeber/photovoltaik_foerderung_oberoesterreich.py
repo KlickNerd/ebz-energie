@@ -242,7 +242,7 @@ sind noch offen.</p>
         "h2": "Ihr Partner für Photovoltaik und Förderung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie GmbH aus Villach plant und montiert Photovoltaikanlagen, Speicher und Wärmepumpen in "
-                 "Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. "
+                 "Kärnten und der Steiermark, mit zertifizierten Fachkräften. "
                  "Referenzprojekte gibt es in sechs Bundesländern, darunter eine 40-kWp-Gewerbeanlage in "
                  "Oberösterreich mit Ost-West-Ausrichtung auf Trapezblech und 40-kWh-Speicher: rund 40.000 kWh "
                  "Jahresertrag und 13.500 Euro Ersparnis pro Jahr. Für Projekte außerhalb unseres Montagegebiets "

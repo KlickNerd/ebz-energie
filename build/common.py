@@ -279,7 +279,10 @@ def localbusiness_jsonld():
 # --- Validierung ----------------------------------------------------------
 # Gedankenstriche (en/em/figure/minus). Bindestrich - ist erlaubt.
 _DASH_RE = _re.compile("[‐‒–—―−]")
-_FORBIDDEN = ["Subunternehmer", "Ertragsprognose", "Widmanngasse", "Ackerweg", "90 %", "5,0"]
+_FORBIDDEN = ["Subunternehmer", "Ertragsprognose", "Widmanngasse", "Ackerweg", "90 %", "5,0",
+              # Eigenteam-Claims sind falsch (EBZ arbeitet mit Partnern); erlaubt: "zertifizierte Fachkraefte"
+              "festangestellt", "Festangestellt", "Montageteam", "Montage-Crew", "Montagecrew", "eigenes Team", "eigenem Team",
+              "eigene Monteure", "eigenen Monteuren", "eigenes Montage", "Marstek"]
 
 
 def validate(html, path=""):

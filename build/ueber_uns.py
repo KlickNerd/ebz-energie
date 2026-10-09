@@ -9,7 +9,7 @@ SEO-Rolle (build/seo/ueber_uns.json, Oktober 2026): Title/H1 mit Firmierung "EBZ
 "Photovoltaik-Fachbetrieb aus Villach", Primaer "photovoltaik kaernten firmen". Review-Slider bleibt
 (gemeinsame Komponente), wird nicht erweitert.
 
-Verbote: kein "Subunternehmer" (positiv: festangestellte Fachkraefte), nur
+Verbote: kein "Subunternehmer" (positiv: Fachkraefte), nur
 Triglavstrasse 15, keine Gedankenstriche, keine erfundenen Zahlen (kein Gruendungsjahr ohne Beleg).
 """
 
@@ -20,7 +20,7 @@ import components as C
 PATH = "/ueber-uns/"
 TITLE = "EBZ Energie GmbH: Photovoltaik-Fachbetrieb aus Villach"
 DESC = ("EBZ Energie GmbH, Photovoltaik-Fachbetrieb aus Villach: 300+ Anlagen in Kärnten und der Steiermark, "
-        "4,9 Sterne auf Google, eigenes Team für Planung und Montage.")
+        "4,9 Sterne auf Google, ein fester Ansprechpartner für Planung und Montage.")
 
 FN = "FN 597101 s"
 
@@ -29,16 +29,16 @@ FAQ = [
      "Die EBZ Energie GmbH ist im Firmenbuch unter FN 597101 s eingetragen, Mitglied der Wirtschaftskammer Kärnten "
      "und wird von Mario Zintl geführt, einem gebürtigen Villacher. Der Firmensitz ist die Triglavstraße 15, "
      "9500 Villach; Besuche sind nach Terminvereinbarung Montag bis Freitag von 10 bis 20 Uhr möglich."),
-    ("Montiert EBZ Energie mit eigenem Team?",
-     "Ja. Planung, Dachmontage und Elektrotechnik übernehmen festangestellte, zertifizierte Fachkräfte. So bleibt "
-     "die Qualität bei jedem Projekt in unserer Hand, und Sie haben von der Beratung bis zum Service dieselben "
-     "Ansprechpartner."),
+    ("Wer montiert die Anlagen von EBZ Energie?",
+     "Planung, Dachmontage und Elektrotechnik übernehmen zertifizierte Fachkräfte, die EBZ Energie koordiniert "
+     "und verantwortet. So bleibt die Qualität bei jedem Projekt in unserer Hand, und Sie haben von der Beratung bis "
+     "zum Service denselben Ansprechpartner."),
     ("Welche Qualifikationen hat das Team?",
      "Zertifizierte Fachkräfte für Dachmontage und Elektrotechnik, meisterhaftes Handwerk und Erfahrung aus über "
      "300 dokumentierten Projekten in 6 Bundesländern. Jede Anlage wird mit Projektbericht, 3D-Belegplan und "
      "Statikreport geplant und normgerecht in den Zählerschrank integriert."),
     ("Woran erkenne ich einen seriösen Photovoltaik-Anbieter in Kärnten?",
-     "An prüfbaren Firmendaten (Firmenbuch, Impressum, Kammer), an einem eigenen Montageteam, an einem Projektbericht "
+     "An prüfbaren Firmendaten (Firmenbuch, Impressum, Kammer), an zertifizierten Fachkräften für die Montage, an einem Projektbericht "
      "mit 3D-Belegplan und Statikreport statt einem Pauschalangebot, an schriftlichen Garantien (bis zu 30 Jahre "
      "Leistungs-, mindestens 10 Jahre Produktgarantie), an Referenzen mit Zahlen und an echten Google-Bewertungen."),
     ("Kann ich EBZ Energie in Villach besuchen?",
@@ -85,8 +85,8 @@ def build():
                  "von Mario Zintl, einem gebürtigen Villacher. Eingetragen im Firmenbuch " + FN + ", Mitglied "
                  "der Wirtschaftskammer Kärnten, Aufsichtsbehörde Bezirkshauptmannschaft Villach."),
                 ("Ob Sie uns als Photovoltaik-Fachbetrieb in Kärnten, als Installateur oder auf der Suche nach "
-                 "Photovoltaik-Firmen in Villach gefunden haben: Dahinter steht ein festangestelltes Team aus zertifizierten "
-                 "Fachkräften, das selbst plant, selbst montiert und auch nach der Inbetriebnahme für Sie da ist. "
+                 "Photovoltaik-Firmen in Villach gefunden haben: Dahinter steht ein Team aus zertifizierten "
+                 "Fachkräften, das plant, die Montage koordiniert und auch nach der Inbetriebnahme für Sie da ist. "
                  "Als Komplettanbieter liefern wir die ganze Energiewende aus einer Hand: Strom vom Dach, Speicher, "
                  "Wärmepumpe, Energiemanagement und Energiegemeinschaft."),
             ],
@@ -171,7 +171,7 @@ def build():
             h2="Handwerk mit Handschlagqualität, Fakten zum Nachlesen",
             items=[
                 ("◫", "Prüfbare Firmendaten", "EBZ Energie GmbH, " + FN + ", Mitglied der Wirtschaftskammer Kärnten, Sitz Triglavstraße 15 in Villach. Alles im Impressum."),
-                ("✓", "Festangestelltes Team", "Dieselben Gesichter von der Planung bis zur Montage. Zertifizierte Fachkräfte für Dach und Elektrotechnik, meisterhaftes Handwerk."),
+                ("✓", "Ein Ansprechpartner", "Ein fester Ansprechpartner von der Planung bis zur Übergabe. Zertifizierte Fachkräfte für Dach und Elektrotechnik, meisterhaftes Handwerk."),
                 ("☀", "Glas-Glas-Module mit Garantie", "Bifaziale Glas-Glas-Module mit bis zu 30 Jahren Leistungs- und mindestens 10 Jahren Produktgarantie, schriftlich im Angebot."),
                 ("◇", "Projektbericht statt Pauschale", "Projektbericht mit 3D-Belegplan und Statikreport für Ihr Dach, dazu ein Fixangebot mit Festpreisgarantie."),
                 ("€", "Förderabwicklung inklusive", "Landespauschale Kärnten, Förderung Steiermark, EAG-Zuschuss und Netzanmeldung: wir stellen die Anträge, Sie unterschreiben."),

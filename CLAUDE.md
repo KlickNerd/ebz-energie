@@ -38,6 +38,7 @@ Live-Website gilt: **dieses Dokument** (die Live-Site enthält veraltete Inhalte
 ### Sprach-Verbote (hart)
 - **KEINE Gedankenstriche** (– oder —). Ersatz: Doppelpunkt, Komma, Klammer, neuer Satz. Jede Datei wird darauf validiert.
 - **NIE "Subunternehmer"** erwähnen, auch nicht positiv ("keine Subunternehmer"). Stattdessen: "zertifizierte Fachkräfte", "meisterhaftes Handwerk". (EBZ arbeitet mit Subs, will das nicht thematisieren.)
+- **NIE "eigenes Montageteam", "festangestellte Fachkräfte", "eigene Monteure"** o. ä. behaupten (sachlich falsch, Stand Oktober 2026). Neutral bleiben: "zertifizierte Fachkräfte", "ein fester Ansprechpartner von der Planung bis zur Übergabe".
 - Sie-Form, deutsch, direkt, ohne Marketing-Floskeln. Zahlen konkret statt Superlative.
 - Keine erfundenen Zahlen. Beispielwerte immer mit Sternchen + Fußnote kennzeichnen ("*Beispielkonditionen…", "*Richtwerte…").
 
@@ -89,7 +90,7 @@ Ein IIFE pro Seite: IntersectionObserver für `.eg-reveal` → `.eg-inview` (Rev
 5. Richtpreis-Anker (freigegeben): 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung.
 6. Interne Verlinkung: jede Seite verlinkt in ihr Cluster (Ratgeber ↔ Leistungsseite ↔ Rechner) und auf /referenzen/.
 7. Bilder: nur Mediathek-URLs (nie Base64 in Produktionsdateien), beschreibende deutsche Alt-Texte, `loading="lazy"` außer Hero, width/height-Attribute.
-8. OeMAG-Zahlen aktuell halten: Marktpreis Juli 2026 = 6,146 ct (Untergrenze), Q3-Marktpreis 10,923 ct. Monatlich prüfen (Artikel 18).
+8. OeMAG-Zahlen aktuell halten: Marktpreis September 2026 = 10,168 ct (Juli 2026 = 6,146 ct, Q3-Referenz 10,923 ct). Quelle oem-ag.at/de/marktpreis, monatlich prüfen; zentrale Faktenliste: `build/seo/_fakten_2026-10.md`.
 
 ## 5. Build-Pipeline (liegt in `build/`)
 

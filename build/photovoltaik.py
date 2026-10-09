@@ -305,7 +305,7 @@ def build():
             h2="Warum EBZ: Fachbetrieb aus Villach, 300+ Anlagen, 4,9 Sterne",
             items=[
                 ("☀", "Alles aus einer Hand", "Planung, Montage, Förderung, Netzanmeldung und Service. Ein Ansprechpartner für alles."),
-                ("✓", "Zertifizierte Fachkräfte", "Festangestelltes Team, meisterhaftes Handwerk und sorgfältige Ausführung."),
+                ("✓", "Zertifizierte Fachkräfte", "Meisterhaftes Handwerk und sorgfältige Ausführung."),
                 ("★", "4,9 Sterne auf Google", "Bewertungen von echten Kundinnen und Kunden aus der Region."),
                 ("◉", "300+ Anlagen", "Erfahrung aus über 300 dokumentierten Projekten in 6 Bundesländern."),
                 ("€", "Faire Finanzierung", "Ihre Anlage gehört Ihnen ab Tag 1. Ab 147 € im Monat inklusive Speicher.*"),

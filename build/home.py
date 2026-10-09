@@ -49,7 +49,7 @@ FAQ = [
      "liegt bei rund 1.000 bis 1.100 kWh je kWp. Im Winterhalbjahr liefert eine Anlage typischerweise 25 bis "
      "30 Prozent des Jahresertrags; Module arbeiten bei Kälte sogar effizienter als bei Hitze."),
     ("Woran erkenne ich den richtigen Photovoltaik-Fachbetrieb in Kärnten?",
-     "An einem eigenen, festangestellten Montageteam, an einem Projektbericht mit 3D-Belegplan und Statikreport "
+     "An zertifizierten Fachkräften für Montage und Elektrotechnik, an einem Projektbericht mit 3D-Belegplan und Statikreport "
      "statt einem Pauschalangebot, an schriftlichen Garantien (bis zu 30 Jahre Leistungs-, mindestens 10 Jahre "
      "Produktgarantie), an dokumentierten Referenzen mit Zahlen und an echten Google-Bewertungen. EBZ Energie: "
      "300+ Projekte, 4,9 Sterne."),
@@ -199,7 +199,7 @@ def build():
                    "Dutzende Treffer. Sechs Punkte, an denen Sie "
                    "einen Fachbetrieb von einem Vermittler unterscheiden, mit den Zahlen von EBZ Energie."),
             cards=[
-                {"ic": "✓", "title": "Eigenes Montageteam", "text": "Festangestellte, zertifizierte Fachkräfte für Dach und Elektrotechnik. Dieselben Gesichter von der Planung bis zur Übergabe."},
+                {"ic": "✓", "title": "Zertifizierte Montage", "text": "Zertifizierte Fachkräfte für Dach und Elektrotechnik, ein fester Ansprechpartner von der Planung bis zur Übergabe."},
                 {"ic": "◫", "title": "Projektbericht statt Pauschale", "text": "Projektbericht mit 3D-Belegplan und Statikreport für Ihr Dach, dazu ein Fixangebot. Keine Standardanlage aus dem Katalog."},
                 {"ic": "◇", "title": "Garantien schriftlich", "text": "Leistungsgarantie bis 30 Jahre und Produktgarantie mindestens 10 Jahre auf die Module, im Angebot festgehalten."},
                 {"ic": "€", "title": "Förderung und Netz inklusive", "text": "Landespauschale, EAG-Antrag und Netzanmeldung bei Kärnten Netz oder Energie Klagenfurt übernimmt der Betrieb."},

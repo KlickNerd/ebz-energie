@@ -154,7 +154,7 @@ günstigen Stunden automatisch nutzt.</p>
                  "stimmt als herstellerunabhängiger Fachbetrieb Ihre PV-Anlage, Ihren Speicher und Ihre "
                  "Verbraucher über ein Energiemanagementsystem optimal auf Ihren Tarif ab. Planung und "
                  "Installation übernehmen wir in Kärnten und der Steiermark aus einer Hand, mit einem "
-                 "festangestellten Team aus zertifizierten Fachkräften."),
+                 "Team aus zertifizierten Fachkräften."),
         "grid": [
             ("Neutraler Tarifcheck", "Wir sagen ehrlich, welche Tarifart zu Ihrem Profil passt."),
             ("Förderfähiges EMS", "Systeme, die Preissignale verarbeiten und lokal steuern."),

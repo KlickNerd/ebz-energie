@@ -263,7 +263,7 @@ Bruchteil der bisherigen Kosten.</p>
         "h2": "Ihr Partner für Wärmepumpe und Förderung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Wärmepumpen, Photovoltaik und Speicher in "
-                 "Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. "
+                 "Kärnten und der Steiermark, mit zertifizierten Fachkräften. "
                  "Sie erhalten ein Festpreisangebot mit allen Positionen, wir übernehmen Bundes- und "
                  "Landesförderung und stimmen Wärmepumpe und PV-Anlage von Anfang an aufeinander ab."),
         "grid": [

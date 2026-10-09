@@ -212,12 +212,12 @@ der Planung: Wärmequelle, Vorlauftemperatur, Dämmung und Dimensionierung müss
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("Sie wissen jetzt, wie eine Wärmepumpe funktioniert. Zwischen dem Wissen und der warmen "
                  "Stube liegt die Umsetzung. EBZ Energie aus Villach plant und installiert Wärmepumpen und "
-                 "Photovoltaik in Kärnten und der Steiermark, mit einem festangestellten Team aus "
+                 "Photovoltaik in Kärnten und der Steiermark, mit einem Team aus "
                  "zertifizierten Fachkräften, 300+ dokumentierten Projekten in 6 Bundesländern und bis zu "
                  "30 Jahren Leistungsgarantie."),
         "grid": [
             ("Regionale Expertise", "Wir kennen Bauvorschriften, Netzbetreiber und Förderstellen vor Ort."),
-            ("Zertifizierte Fachkräfte", "Montage durch unser festangestelltes Team, keine Qualitätskompromisse."),
+            ("Zertifizierte Fachkräfte", "Montage durch zertifizierte Fachkräfte, keine Qualitätskompromisse."),
             ("Alles aus einer Hand", "Beratung, Planung, Montage und Förderabwicklung mit einem Ansprechpartner."),
             ("Langfristiger Partner", "Auch nach der Installation für Fragen, Überwachung und Service-Checks da."),
         ],

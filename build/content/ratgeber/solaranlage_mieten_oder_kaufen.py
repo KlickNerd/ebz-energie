@@ -308,7 +308,7 @@ fixe Rate ohne Anzahlung und Sondertilgung jederzeit.</p>
         "h2": "Ihr Partner für Kauf und Finanzierung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und montiert Photovoltaikanlagen, Speicher, Wärmepumpen und "
-                 "Wallboxen in Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten "
+                 "Wallboxen in Kärnten und der Steiermark, mit zertifizierten "
                  "Fachkräften. Wir verkaufen keine Mietverträge: Unsere Kunden werden Eigentümer, entweder "
                  "durch Kauf oder durch die EBZ-Finanzierung ab 147 Euro pro Monat inklusive Speicher*. "
                  "Förderabwicklung, Netzanmeldung und Inbetriebnahme sind in beiden Fällen dabei."),

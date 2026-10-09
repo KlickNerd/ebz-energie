@@ -245,7 +245,7 @@ eingespielt. Was genau eine Komplettanlage umfasst, lesen Sie im Ratgeber
         "h2": "Ihr Partner für Photovoltaik mit klarem Preis: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und montiert Photovoltaikanlagen mit Speicher in Kärnten und der "
-                 "Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und über 300 "
+                 "Steiermark, mit zertifizierten Fachkräften und über 300 "
                  "dokumentierten Projekten. Sie erhalten ein Angebot mit Projektbericht, 3D-Belegplan und "
                  "Statikreport, wir übernehmen Netzzutritt, Förderanträge und Inbetriebnahme."),
         "grid": [

@@ -215,7 +215,7 @@ der Ratgeber {a('/kosten-einer-waermepumpe/', 'Kosten einer Wärmepumpe')}.</p>
         "h2": "Ihr Partner für Wärmepumpe und Förderung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Wärmepumpen und Photovoltaik in Kärnten und "
-                 "der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. Wir "
+                 "der Steiermark, mit zertifizierten Fachkräften. Wir "
                  "analysieren Ihre Situation, prüfen Landes- und Gemeindeförderung und "
                  "übernehmen Unterlagen und fristgerechte Einreichung, bei Registrierten bis zur Endabrechnung."),
         "grid": [

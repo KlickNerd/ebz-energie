@@ -232,7 +232,7 @@ Details offen).</p>
         "h2": "Ihr Partner für Förderung und Photovoltaik: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und montiert Photovoltaikanlagen mit Speicher in Kärnten und der "
-                 "Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und über 300 "
+                 "Steiermark, mit zertifizierten Fachkräften und über 300 "
                  "dokumentierten Projekten. Die Förderabwicklung ist Teil des Pakets: Netzzutritt, Ticketziehung "
                  "im EAG-Call, Landes- und Gemeindeanträge und die Endabrechnung."),
         "grid": [

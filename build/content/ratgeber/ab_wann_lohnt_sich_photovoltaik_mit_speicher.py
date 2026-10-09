@@ -199,7 +199,7 @@ kann die Amortisation um Jahre verlängern.</p>
         "h2": "Ihr Partner für die Wirtschaftlichkeitsrechnung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik mit Speicher in Kärnten und der "
-                 "Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und über 300 "
+                 "Steiermark, mit zertifizierten Fachkräften und über 300 "
                  "dokumentierten Projekten mit typischer Amortisation von 4 bis 6 Jahren. Wir rechnen jedes Projekt "
                  "mit Ihrem Verbrauch durch und schöpfen die Förderungen von Bund und Land aus."),
         "grid": [

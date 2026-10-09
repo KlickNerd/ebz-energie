@@ -228,7 +228,7 @@ def build():
                  "den Mittagsüberschuss ins Netz, bei Balkonkraftwerken meist ohne Vergütung. Ein Speicher mit 1 bis 2 kWh "
                  "fängt diesen Strom auf und gibt ihn abends ab, wenn Herd, Fernseher und Licht laufen. Der "
                  "Eigenverbrauchsanteil steigt so auf 70 bis 80 %.*"),
-                ("Speicher von Anker Solix, Zendure oder Marstek nutzen Lithium-Eisenphosphat-Zellen (LFP), halten 6.000 "
+                ("Speicher von Anker Solix oder Zendure nutzen Lithium-Eisenphosphat-Zellen (LFP), halten 6.000 "
                  "Ladezyklen und mehr und sind per App überwachbar. Aufstellort: frostfrei und trocken, also überdachter "
                  "Balkon, Abstellraum oder Keller. Notstrom liefert ein Standard-System nicht."),
             ],

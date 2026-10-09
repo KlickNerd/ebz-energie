@@ -242,7 +242,7 @@ hinaus:</p>
      "Wir übernehmen alle Förderanträge: Bundesförderung, Landesförderung Kärnten oder Steiermark und "
      "auf Wunsch auch die Förderung für eine Photovoltaikanlage."),
     ("Montage durch zertifizierte Fachkräfte",
-     "Die eigentliche Montage dauert in der Regel 2 bis 4 Tage und erfolgt durch unser festangestelltes "
+     "Die eigentliche Montage dauert in der Regel 2 bis 4 Tage und erfolgt durch unser "
      "Team aus zertifizierten Fachkräften."),
     ("Inbetriebnahme und Übergabe",
      "Wir nehmen die Anlage in Betrieb, erklären alle Funktionen und bleiben Ihr Ansprechpartner für "
@@ -266,7 +266,7 @@ den aktuellen Förderungen von Bund und Land ist der Einstieg so günstig wie se
         "h2": "Ihr Partner für Wärmepumpe und Photovoltaik: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Wärmepumpen, Photovoltaik und Speicher in "
-                 "Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. "
+                 "Kärnten und der Steiermark, mit zertifizierten Fachkräften. "
                  "Wir stimmen Wärmepumpe, PV-Anlage und Speicher aufeinander ab, übernehmen Bundes- und "
                  "Landesförderung und bleiben nach der Inbetriebnahme Ihr Ansprechpartner."),
         "grid": [

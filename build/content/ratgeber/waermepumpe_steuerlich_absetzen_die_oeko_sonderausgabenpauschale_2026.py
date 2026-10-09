@@ -202,7 +202,7 @@ dabei ab Tag 1 Ihnen und die Förderungen bleiben voll erhalten.</p>
         "text": ("Viele Hausbesitzer wissen nicht, dass ihnen die Öko-Sonderausgabenpauschale zusteht, oder "
                  "vergessen das Häkchen im Förderantrag. Wenn EBZ Energie aus Villach Ihre Wärmepumpe installiert "
                  "und die Förderabwicklung übernimmt, achten wir darauf, dass die Zustimmung zur "
-                 "Datenübermittlung erteilt wird. Unser festangestelltes Team aus zertifizierten Fachkräften "
+                 "Datenübermittlung erteilt wird. Unser Team aus zertifizierten Fachkräften "
                  "montiert in Kärnten und der Steiermark."),
         "grid": [
             ("Persönliche Förderberatung", "Gesamtersparnis aus Bund, Land und Steuervorteil in einer Rechnung."),

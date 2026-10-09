@@ -249,7 +249,7 @@ Kosten.</p>
         "h2": "Ihr Partner für die Wärmepumpe im Bestand: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Wärmepumpen, Photovoltaik und Speicher in "
-                 "Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. "
+                 "Kärnten und der Steiermark, mit zertifizierten Fachkräften. "
                  "Der Heizungstausch im Altbau ist unser Alltag: Wir prüfen Heizkörper und Dämmung vor Ort, "
                  "dimensionieren die Anlage auf den tatsächlichen Wärmebedarf und wickeln Bundes- und "
                  "Landesförderung ab."),

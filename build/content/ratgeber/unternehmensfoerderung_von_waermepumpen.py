@@ -212,7 +212,7 @@ Programme im Überblick: {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepu
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("Ob Handwerksbetrieb, Vereinslokal oder landwirtschaftlicher Hof: EBZ Energie aus Villach "
                  "plant und installiert Wärmepumpen und Photovoltaik für Betriebe in Kärnten und der "
-                 "Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und voller "
+                 "Steiermark, mit zertifizierten Fachkräften und voller "
                  "Gewährleistung. Wir kennen die betrieblichen Programme, die De-minimis-Grenzen und die "
                  "Kontakte zu den Förderstellen."),
         "grid": [

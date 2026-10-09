@@ -209,7 +209,7 @@ Sie ehrlich, ob und wie sich der Schritt für Sie lohnt.</p>
         "text": ("Die meisten Nachteile einer Energiegemeinschaft lassen sich mit der richtigen Technik entschärfen. "
                  "EBZ Energie aus Villach plant PV-Anlage, Speicher und Energiemanagementsystem so, dass Erzeugung "
                  "und Verbrauch bestmöglich zusammenpassen, installiert alles aus einer Hand mit einem "
-                 "festangestellten Team aus zertifizierten Fachkräften in Kärnten und der Steiermark und nimmt Sie "
+                 "Team aus zertifizierten Fachkräften in Kärnten und der Steiermark und nimmt Sie "
                  "in eine passende Gemeinschaft auf, abgerechnet über die Plattform unseres Partners energyfamily."),
         "grid": [
             ("Ehrliche Einschätzung", "Wir rechnen Zuordnungsquote und Gebühr vor dem Beitritt durch."),

@@ -156,7 +156,7 @@ sonnenreiche Stunden verschiebt.</p>
         "text": ("Verbrauchsdaten sind gut, automatisierte Ersparnis ist besser. EBZ Energie aus Villach "
                  "verbindet Ihren Smart Meter über ein Energiemanagementsystem mit Ihrer Anlage und "
                  "übernimmt Planung und Installation in Kärnten und der Steiermark aus einer Hand, mit einem "
-                 "festangestellten Team aus zertifizierten Fachkräften. So müssen Sie nicht selbst "
+                 "Team aus zertifizierten Fachkräften. So müssen Sie nicht selbst "
                  "optimieren, das System erledigt es automatisch."),
         "grid": [
             ("Verbrauchsanalyse", "Wir lesen Ihr Profil und finden die größten Sparhebel."),

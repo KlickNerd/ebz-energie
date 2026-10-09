@@ -197,7 +197,7 @@ verkürzt die Amortisation auf den EBZ-typischen Korridor von 4 bis 6 Jahren.</p
         "h2": "Ihr Partner für die Förderabwicklung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik mit Speicher in Kärnten und der "
-                 "Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und über 300 "
+                 "Steiermark, mit zertifizierten Fachkräften und über 300 "
                  "dokumentierten Projekten. Wir planen jede Anlage nach den technischen Förderrichtlinien, ziehen "
                  "das EAG-Ticket am ersten Call-Tag und stellen den Landesantrag in der richtigen Reihenfolge."),
         "grid": [

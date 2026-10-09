@@ -153,7 +153,7 @@ Die Entscheidung ist in der Regel nicht endgültig.</p>
         "text": ("Wir beraten Sie neutral: Wenn Ihr Ziel maximale Ersparnis ist, zeigen wir Ihnen, wie Sie "
                  "mit der Standardkonfiguration, einem passenden Tarif und einem Energiemanagementsystem am "
                  "meisten herausholen. Die Technik dahinter installiert EBZ Energie aus Villach komplett aus "
-                 "einer Hand, mit einem festangestellten Team aus zertifizierten Fachkräften in Kärnten und "
+                 "einer Hand, mit zertifizierten Fachkräften in Kärnten und "
                  "der Steiermark."),
         "grid": [
             ("Neutrale Beratung", "Wir sagen ehrlich, was der Opt-out Sie an Ersparnis kostet."),

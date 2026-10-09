@@ -273,7 +273,7 @@ def build():
             items=[
                 ("☀", "Ein Ansprechpartner für alles", "Beratung, Planung, Montage, Förderung und Anmeldung beim Netzbetreiber aus einer Hand."),
                 ("⌂", "Regionale Nähe", "Zuhause in Villach, im Einsatz in Kärnten und der Steiermark. Wir kennen Netzbetreiber und Landesförderungen."),
-                ("✓", "Zertifizierte Fachkräfte", "Festangestelltes Team, meisterhaftes Handwerk und dachschonende Montage mit Ersatzziegeln statt geflexten Originalziegeln."),
+                ("✓", "Zertifizierte Fachkräfte", "Meisterhaftes Handwerk und dachschonende Montage mit Ersatzziegeln statt geflexten Originalziegeln."),
                 ("◇", "Komponenten mit Garantie", "Führende Hersteller, Leistungsgarantie bis 30 Jahre auf die Module, Produktgarantie 10 Jahre und mehr."),
                 ("★", "4,9 Sterne auf Google", "Bewertungen von echten Kundinnen und Kunden aus der Region."),
                 ("◎", "300+ Projekte", "Erfahrung aus über 300 dokumentierten Anlagen in 6 Bundesländern."),

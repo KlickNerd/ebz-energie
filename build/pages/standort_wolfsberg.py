@@ -121,7 +121,7 @@ def build():
                 ("Der Bezirk Wolfsberg ist für uns Montagegebiet, kein Randgebiet. Für die Erstberatung kommen wir "
                  "von Villach über die Südautobahn A2 kostenlos zu Ihnen ins Lavanttal, schauen uns Dach, "
                  "Zählerschrank und Verbrauch an und planen die Anlage für Ihr Haus, Ihren Hof oder Ihren Betrieb. "
-                 "Montiert wird mit demselben festangestellten Team wie in Villach. Wer „Photovoltaik Kärnten Firmen“ "
+                 "Montiert wird mit denselben zertifizierten Fachkräften wie in Villach. Wer „Photovoltaik Kärnten Firmen“ "
                  "oder „PV Anlage Kärnten“ sucht, findet unseren Firmensitz in Villach; im Lavanttal sind wir "
                  "trotzdem regelmäßig auf den Dächern."),
             ],

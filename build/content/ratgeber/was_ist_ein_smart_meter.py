@@ -155,7 +155,7 @@ automatisch in Entscheidungen übersetzt.</p>
         "text": ("Damit Ihr Smart Meter mehr ist als ein digitaler Zähler, verbindet EBZ Energie aus Villach "
                  "ihn über ein Energiemanagementsystem mit Ihrer PV-Anlage, Ihrem Speicher und Ihrer "
                  "Wärmepumpe. Als herstellerunabhängiger Fachbetrieb übernehmen wir Planung und Installation "
-                 "in Kärnten und der Steiermark aus einer Hand, mit einem festangestellten Team aus "
+                 "in Kärnten und der Steiermark aus einer Hand, mit einem Team aus "
                  "zertifizierten Fachkräften."),
         "grid": [
             ("Verständlich erklärt", "Wir übersetzen Zählerdaten in konkrete Empfehlungen."),

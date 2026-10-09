@@ -257,7 +257,7 @@ der Ratgeber {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderu
         "h2": "Ihr regionaler Partner für Wärmepumpe und Photovoltaik: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach ist Ihr Fachbetrieb für Wärmepumpen und Photovoltaik in Kärnten und "
-                 "der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. Wir kommen zu "
+                 "der Steiermark, mit zertifizierten Fachkräften. Wir kommen zu "
                  "Ihnen, analysieren das Gebäude, planen Wärmepumpe und PV als Gesamtlösung und übernehmen den "
                  "gesamten Förderprozess, aktuell für die Landesförderung, bei Registrierten bis zur Endabrechnung."),
         "grid": [

@@ -48,7 +48,7 @@ FAQ = [
      "Zählertausch und Fertigstellungsmeldung. Eine fixe Frist gibt es nicht; laut einer Kundenbewertung dauerte es bei "
      "einem Projekt fünf Wochen von der Beratung bis zur Fertigstellung."),
     ("Woran erkenne ich einen seriösen Photovoltaik-Anbieter in Villach?",
-     "An einem eigenen Montageteam statt Vermittlung, an einem Projektbericht mit 3D-Belegplan und Statikreport, an "
+     "An zertifizierten Fachkräften und einem festen Ansprechpartner, an einem Projektbericht mit 3D-Belegplan und Statikreport, an "
      "schriftlichen Garantien (bis zu 30 Jahre Leistungs-, mindestens 10 Jahre Produktgarantie), an Referenzen mit "
      "Zahlen und an echten Google-Bewertungen. EBZ Energie: 300+ Projekte, 4,9 Sterne, Firmensitz Triglavstraße 15."),
     ("Lohnt sich ein Speicher in Kärnten?",
@@ -245,12 +245,12 @@ def build():
         C.cards_section(
             eyebrow="Anbieter-Check",
             h2="Woran Sie einen seriösen Photovoltaik-Fachbetrieb in Villach erkennen",
-            intro=("PV-Firma in Villach: EBZ Energie GmbH, Triglavstraße 15, 9500 Villach, festangestelltes "
-                   f"Montageteam, 300+ Projekte, {NAP['rating']} Sterne aus {bew} auf Google, Beratung vor Ort in "
+            intro=("PV-Firma in Villach: EBZ Energie GmbH, Triglavstraße 15, 9500 Villach, zertifizierte "
+                   f"Fachkräfte für die Montage, 300+ Projekte, {NAP['rating']} Sterne aus {bew} auf Google, Beratung vor Ort in "
                    "Villach, Klagenfurt und in ganz Kärnten (Stand Oktober 2026). Bei der Suche nach Photovoltaik-Firmen "
                    "in Villach oder Klagenfurt lohnt es sich, jeden Anbieter an diesen sechs Punkten zu messen."),
             cards=[
-                {"ic": "✓", "title": "Eigenes Montageteam", "text": "Festangestellte, zertifizierte Fachkräfte für Dach und Elektrotechnik statt Vermittlung an Dritte."},
+                {"ic": "✓", "title": "Zertifizierte Montage", "text": "Zertifizierte Fachkräfte für Dach und Elektrotechnik, ein fester Ansprechpartner von der Planung bis zur Übergabe."},
                 {"ic": "◫", "title": "Projektbericht statt Pauschale", "text": "Projektbericht mit 3D-Belegplan und Statikreport für Ihr Dach, dazu ein Fixangebot."},
                 {"ic": "◇", "title": "Garantien schriftlich", "text": "Bis zu 30 Jahre Leistungs- und mindestens 10 Jahre Produktgarantie auf die Module."},
                 {"ic": "€", "title": "Behördenwege inklusive", "text": "Mitteilung an die Gemeinde, Netzanmeldung bei Kärnten Netz, Landespauschale und EAG-Antrag aus einer Hand."},

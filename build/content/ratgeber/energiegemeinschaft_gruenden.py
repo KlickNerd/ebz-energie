@@ -225,7 +225,7 @@ Planung bis zur Installation.</p>
         "text": ("Wir übernehmen zwar nicht die Vereinsgründung, aber das Entscheidende für den Erfolg: eine "
                  "leistungsfähige PV-Anlage, den passenden Speicher und ein Energiemanagementsystem, das Erzeugung "
                  "und Verbrauch abstimmt. EBZ Energie aus Villach installiert alles aus einer Hand, mit einem "
-                 "festangestellten Team aus zertifizierten Fachkräften in Kärnten und der Steiermark, und bindet "
+                 "Team aus zertifizierten Fachkräften in Kärnten und der Steiermark, und bindet "
                  "Ihre Gemeinschaft auf Wunsch an die Abrechnungsplattform unseres Partners energyfamily an."),
         "grid": [
             ("Alles aus einer Hand", "PV, Speicher, Wärmepumpe, Wallbox und EG-Anbindung vom selben Team."),

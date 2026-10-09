@@ -218,7 +218,7 @@ nachrüsten, am günstigsten ist die Funktion aber, wenn sie bei einer Neuanlage
         "h2": "Ihr Partner für Photovoltaik mit Notstrom: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik, Speicher und Notstromlösungen in "
-                 "Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und "
+                 "Kärnten und der Steiermark, mit zertifizierten Fachkräften und "
                  "über 300 dokumentierten Projekten. Wir übernehmen Bedarfsanalyse, Komponentenauswahl, Umbau, "
                  "Anmeldung beim Netzbetreiber und den Testlauf mit simuliertem Netzausfall."),
         "grid": [

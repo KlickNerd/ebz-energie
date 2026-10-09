@@ -226,7 +226,7 @@ Förderung hängt von Projektkosten, Anlagentyp und den aktuellen Bedingungen de
         "h2": "Ihr regionaler Partner in Kärnten und der Steiermark: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Wärmepumpen und Photovoltaik in Kärnten und "
-                 "der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. Wir kennen "
+                 "der Steiermark, mit zertifizierten Fachkräften. Wir kennen "
                  "die Landesprogramme, die Gemeinden mit eigenen Zuschüssen und die Prämien der Energieversorger "
                  "und berechnen für Ihr Projekt die Kombination mit der höchsten Gesamtförderung."),
         "grid": [

@@ -211,7 +211,7 @@ Made-in-Europe-Komponenten mehr. Der Erfolg hängt an der Reihenfolge und an vol
         "h2": "Ihr Partner in Kärnten: EBZ Energie aus Villach",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie plant und installiert Photovoltaik mit Speicher in ganz Kärnten und der Steiermark, "
-                 "mit einem festangestellten Team aus zertifizierten Fachkräften und über 300 dokumentierten "
+                 "mit zertifizierten Fachkräften und über 300 dokumentierten "
                  "Projekten. Wir kennen die Kärntner Landesrichtlinie und die EAG-Calls im Detail und koordinieren "
                  "beide Anträge in der richtigen Reihenfolge."),
         "grid": [

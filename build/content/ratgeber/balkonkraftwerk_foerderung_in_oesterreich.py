@@ -185,7 +185,7 @@ optionalem Speicher oft besser.</p>
         "h2": "Ihr Partner für Photovoltaik und Förderung: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik, Speicher und Balkonkraftwerke in "
-                 "Kärnten und der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und "
+                 "Kärnten und der Steiermark, mit zertifizierten Fachkräften und "
                  "über 300 dokumentierten Projekten. Wir prüfen die Förderfähigkeit Ihres Projekts, beantragen den "
                  "Zählpunkt beim Netzbetreiber und reichen den EAG-Antrag pünktlich im Fördercall ein."),
         "grid": [

@@ -78,8 +78,8 @@ FAQ = [
      "zwei Tage für die Module und zwei Tage für die Elektroinstallation. Dazu kommen Planung, Materialbestellung "
      "und die Abstimmung mit dem Netzbetreiber."),
     ("Woran erkenne ich einen seriösen Photovoltaik-Anbieter?",
-     "An prüfbaren Firmendaten (EBZ Energie GmbH, FN 597101 s, Triglavstraße 15, Villach), an einem eigenen "
-     "Montageteam, an einem Projektbericht mit 3D-Belegplan und Statikreport statt einem Pauschalangebot, an "
+     "An prüfbaren Firmendaten (EBZ Energie GmbH, FN 597101 s, Triglavstraße 15, Villach), an zertifizierten "
+     "Fachkräften für die Montage, an einem Projektbericht mit 3D-Belegplan und Statikreport statt einem Pauschalangebot, an "
      "schriftlichen Garantien (bis zu 30 Jahre Leistungs-, mindestens 10 Jahre Produktgarantie), an Referenzen mit "
      "Zahlen wie auf dieser Seite und an echten Google-Bewertungen (4,9 Sterne)."),
     ("Kann ich eine Referenzanlage besichtigen oder mit einem Kunden sprechen?",
@@ -446,7 +446,7 @@ def build():
             cards=[
                 {"ic": "◫", "title": "Prüfbare Firmendaten", "text": "EBZ Energie GmbH, FN 597101 s, Triglavstraße 15, 9500 Villach, Mitglied der Wirtschaftskammer Kärnten.",
                  "link_key": "ueber_uns", "link_text": "Wer hinter den Anlagen steht"},
-                {"ic": "✓", "title": "Eigenes Montageteam", "text": "Festangestellte, zertifizierte Fachkräfte für Dach und Elektrotechnik, von der Planung bis zur Übergabe."},
+                {"ic": "✓", "title": "Zertifizierte Montage", "text": "Zertifizierte Fachkräfte für Dach und Elektrotechnik, von der Planung bis zur Übergabe."},
                 {"ic": "◇", "title": "Projektbericht statt Pauschale", "text": "Projektbericht mit 3D-Belegplan und Statikreport für Ihr Dach, dazu ein Fixangebot mit Festpreisgarantie."},
                 {"ic": "☀", "title": "Garantien schriftlich", "text": "Glas-Glas-Module mit bis zu 30 Jahren Leistungs- und mindestens 10 Jahren Produktgarantie, im Angebot festgehalten."},
                 {"ic": "◉", "title": "Referenzen mit Zahlen", "text": "Zehn Anlagen mit kWp, Speicher, Ertrag und Ersparnis auf dieser Seite, 300+ Projekte insgesamt."},

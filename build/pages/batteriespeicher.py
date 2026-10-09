@@ -291,7 +291,7 @@ def build():
             h2="Ihr Speicher-Partner in Kärnten und der Steiermark",
             items=[
                 ("☀", "Ein System aus einer Hand", "PV, Speicher, Wechselrichter, Wallbox und Wärmepumpe aufeinander abgestimmt, ein Ansprechpartner."),
-                ("✓", "Zertifizierte Fachkräfte", "Festangestelltes Team, meisterhaftes Handwerk, sauber abgestimmte Komponenten."),
+                ("✓", "Zertifizierte Fachkräfte", "Meisterhaftes Handwerk, sauber abgestimmte Komponenten."),
                 ("★", "4,9 Sterne auf Google", "Bewertungen von echten Kundinnen und Kunden aus der Region."),
                 ("◉", "300+ Projekte", "Über 300 dokumentierte Anlagen in 6 Bundesländern, viele mit Speicher und Notstrom."),
                 ("€", "Förderung und Finanzierung inklusive", "Wir stellen die Anträge bei Bund und Land und bieten Finanzierung ab 147 € im Monat.*"),

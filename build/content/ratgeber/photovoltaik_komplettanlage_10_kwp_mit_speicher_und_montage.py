@@ -221,7 +221,7 @@ gehört Ihnen ab dem ersten Tag, Sie erhalten die volle Förderung als Privatper
 Stromrechnung.</p>
 {A.cta("Jetzt Komplettanlage anfragen",
        "Kostenlose Beratung, Festpreisangebot mit Projektbericht, 3D-Belegplan und Statikreport, Montage "
-       "durch unser eigenes Team in Kärnten und der Steiermark.",
+       "durch zertifizierte Fachkräfte in Kärnten und der Steiermark.",
        primary=("kontakt", "Angebot anfordern"), secondary=("finanzierung", "Zur Finanzierung"))}
 """),
         ("Fazit: Das Standardpaket, das sich rechnet", "fazit", f"""
@@ -237,7 +237,7 @@ einer Hand liefert und auch nach der Inbetriebnahme erreichbar bleibt.</p>
         "h2": "Ihr Partner für die Komplettanlage: EBZ Energie aus Villach",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie plant und montiert Photovoltaik-Komplettanlagen mit Speicher in Kärnten und der "
-                 "Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften und über 300 "
+                 "Steiermark, mit zertifizierten Fachkräften und über 300 "
                  "dokumentierten Projekten in 6 Bundesländern. Von der Dachanalyse über den Projektbericht mit "
                  "3D-Belegplan und Statikreport bis zu Netzzutritt, Förderung und Inbetriebnahme haben Sie "
                  "einen Ansprechpartner."),

@@ -245,7 +245,7 @@ falsch macht, verliert eine der beiden Förderungen.</p>
         "h2": "Ihr Partner für PV-Förderung in Kärnten: EBZ Energie aus Villach",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie GmbH plant und montiert Photovoltaikanlagen, Speicher und Wärmepumpen in ganz "
-                 "Kärnten mit einem festangestellten Team aus "
+                 "Kärnten mit einem Team aus "
                  "zertifizierten Fachkräften. Wir kennen die Kärntner Landesrichtlinie, die EAG-Termine und die "
                  "Gemeindeförderungen im Detail und übernehmen die komplette Förderabwicklung. Referenz vor "
                  "Ort: ein Einfamilienhaus in Villach mit 10 kWp Ost-West-Anlage, Notstromfunktion und rund "

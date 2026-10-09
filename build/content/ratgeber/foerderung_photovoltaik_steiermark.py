@@ -245,7 +245,7 @@ sind noch offen.</p>
         "h2": "Ihr Partner für PV-Förderung in der Steiermark: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie GmbH aus Villach plant und montiert Photovoltaikanlagen, Speicher und Wärmepumpen in "
-                 "Kärnten und der Steiermark mit einem festangestellten Team aus zertifizierten Fachkräften. Wir "
+                 "Kärnten und der Steiermark mit zertifizierten Fachkräften. Wir "
                  "kennen die EAG-Termine, den Steirischen Sanierungsbonus, den Ökofonds und die "
                  "Gemeindeförderungen im Detail und übernehmen die komplette Förderabwicklung von der "
                  "Ticketziehung bis zur Endabrechnung. Die Anlage gehört dabei ab dem ersten Tag Ihnen, auf "
