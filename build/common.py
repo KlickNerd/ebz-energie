@@ -123,7 +123,8 @@ IMG = {
     "pv_card": "/assets/img/photovoltaik-anlage.jpg",
     "speicher": "/assets/img/batteriespeicher.png",
     "waermepumpe": "/assets/img/waermepumpe.jpg",
-    "ems": "/assets/img/energiemanagement.png",
+    "ems": "/assets/img/ems-energiemanagement.jpg",  # Higgsfield: Technikraum mit EMS-Display, Speicher, Wechselrichter
+    "ems_app": "/assets/img/ems-app.jpg",  # Higgsfield: Energiefluss-App am Smartphone
     "balkon": "/assets/img/balkonkraftwerk.jpg",
     "foerderung": "/assets/img/foerderung.jpg",
     "ref_villach": "/assets/img/referenz-villach.jpg",
