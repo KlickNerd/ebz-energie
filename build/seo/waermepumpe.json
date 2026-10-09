@@ -1,0 +1,485 @@
+{
+  "slug": "waermepumpe",
+  "path": "/waermepumpe/",
+  "seitentyp": "leistung",
+  "stand": "2026-10-09",
+  "hinweise": [
+    "kd 0 = DataForSEO liefert fuer dieses Keyword keinen Difficulty-Wert. volume_at 0 = kein AT-Volumen in der Datenbank.",
+    "Die MCP-Antworten enthielten kein cost-Feld. Betrag geschaetzt nach DataForSEO-Preisliste (Labs 0,01 $/Request + 0,0001 $/Item, SERP Advanced 0,002 $/Request, Content Parsing ca. 0,002 $/URL, AI-Volumen ca. 0,01 $/Request).",
+    "Kein GSC-Export vorhanden.",
+    "Pruefen: heizma.at (Platz 4 fuer 'wärmepumpe installateur') schreibt Stand Juli 2026, dass es aktuell keine bundesweite Waermepumpen-Foerderung gibt (Sanierungsoffensive und Sauber Heizen fuer Alle ausgelaufen). Unsere Seite nennt 'bis zu 7.500 € vom Bund'. Vor dem Relaunch mit dem Kunden und den Ratgebern /sauber-heizen-fuer-alle-2026/ und /sanierungsoffensive-2026/ abgleichen."
+  ],
+  "primary": {
+    "keyword": "wärmepumpe",
+    "volume_at": 12100,
+    "kd": 0,
+    "cpc": 2.78,
+    "intent": "transactional 0,78; SERP mit Local Pack (3 Installateure), Shopping-Karussell, Knowledge Graph. Fuer eine Installateurseite ist das Local Pack der Hebel, nicht Platz 1 organisch"
+  },
+  "secondary": [
+    {
+      "keyword": "luftwärmepumpe",
+      "volume_at": 4400,
+      "kd": 0,
+      "intent": "transactional 0,89"
+    },
+    {
+      "keyword": "wärmepumpe kosten",
+      "volume_at": 1600,
+      "kd": 2,
+      "intent": "commercial 0,88 (Ratgeber /kosten-einer-waermepumpe/ existiert, auf der LP nur Preisanker plus Link)"
+    },
+    {
+      "keyword": "luft wasser wärmepumpe",
+      "volume_at": 1300,
+      "kd": 7,
+      "intent": "informational 0,63 laut Intent-Endpoint, Overview sagt transactional"
+    },
+    {
+      "keyword": "wärmepumpe preis",
+      "volume_at": 720,
+      "kd": 0,
+      "intent": "commercial 0,95"
+    },
+    {
+      "keyword": "wärmepumpe kaufen",
+      "volume_at": 390,
+      "kd": 0,
+      "intent": "transactional 1,00"
+    },
+    {
+      "keyword": "wärmepumpe installateur",
+      "volume_at": 260,
+      "kd": 0,
+      "intent": "commercial 0,87, CPC 7,86 € (teuerster Begriff im Cluster)"
+    }
+  ],
+  "semantic": [
+    "Luft-Wasser-Wärmepumpe",
+    "Sole-Wasser-Wärmepumpe (Erdwärme)",
+    "Wasser-Wasser-Wärmepumpe (Grundwasser)",
+    "Tiefenbohrung",
+    "Monoblock",
+    "Split-Gerät",
+    "Hochtemperatur-Wärmepumpe",
+    "Jahresarbeitszahl (JAZ)",
+    "COP",
+    "Vorlauftemperatur",
+    "Heizlast",
+    "Heizkörper",
+    "Fußbodenheizung",
+    "Pufferspeicher",
+    "Warmwasser",
+    "Kühlen mit Wärmepumpe",
+    "Kältemittel R290 (Propan)",
+    "Schallleistung dB(A)",
+    "Aufstellort",
+    "Stromverbrauch kWh pro Jahr",
+    "Wärmepumpenstromtarif",
+    "SG-Ready",
+    "Energiemanagement",
+    "Photovoltaik",
+    "Raus aus Öl und Gas",
+    "Heizungstausch",
+    "Sanierungsoffensive",
+    "Sauber Heizen für Alle",
+    "Land Kärnten Förderung",
+    "Land Steiermark Förderung",
+    "Öko-Sonderausgabenpauschale",
+    "Hersteller (iDM, Ochsner, Lambda, Viessmann, Vaillant, Daikin)",
+    "Altbau",
+    "Lebensdauer",
+    "Garantie",
+    "Wartung",
+    "Villach",
+    "Klagenfurt",
+    "Graz"
+  ],
+  "long_tail": [
+    {
+      "keyword": "wärmepumpe warmwasser",
+      "volume_at": 1300
+    },
+    {
+      "keyword": "luftwärmepumpe kosten",
+      "volume_at": 1300
+    },
+    {
+      "keyword": "wärmepumpe förderung",
+      "volume_at": 720
+    },
+    {
+      "keyword": "wärmepumpe heizkörper",
+      "volume_at": 720
+    },
+    {
+      "keyword": "wärmepumpe stromverbrauch",
+      "volume_at": 590
+    },
+    {
+      "keyword": "wasser wasser wärmepumpe",
+      "volume_at": 590
+    },
+    {
+      "keyword": "wärmepumpe kühlen",
+      "volume_at": 390
+    },
+    {
+      "keyword": "sole-wasser-wärmepumpe",
+      "volume_at": 390
+    },
+    {
+      "keyword": "heizen mit wärmepumpe",
+      "volume_at": 390
+    },
+    {
+      "keyword": "was kostet eine wärmepumpe",
+      "volume_at": 390
+    },
+    {
+      "keyword": "luftwärmepumpe preis",
+      "volume_at": 390
+    },
+    {
+      "keyword": "hochtemperatur wärmepumpe",
+      "volume_at": 320
+    },
+    {
+      "keyword": "wärmepumpe grundwasser",
+      "volume_at": 320
+    },
+    {
+      "keyword": "wärmepumpe preis österreich",
+      "volume_at": 320
+    },
+    {
+      "keyword": "wärmepumpe österreich",
+      "volume_at": 320
+    },
+    {
+      "keyword": "wärmepumpe altbau",
+      "volume_at": 260
+    },
+    {
+      "keyword": "wärmepumpe tiefenbohrung",
+      "volume_at": 260
+    },
+    {
+      "keyword": "wärmepumpe wartung",
+      "volume_at": 210
+    },
+    {
+      "keyword": "wärmepumpe photovoltaik",
+      "volume_at": 210
+    },
+    {
+      "keyword": "wärmepumpen hersteller österreich",
+      "volume_at": 170
+    },
+    {
+      "keyword": "luftwärmepumpe kosten pro monat",
+      "volume_at": 170
+    },
+    {
+      "keyword": "luftwärmepumpe förderung",
+      "volume_at": 170
+    },
+    {
+      "keyword": "gasheizung umrüsten auf wärmepumpe kosten",
+      "volume_at": 110
+    },
+    {
+      "keyword": "wärmepumpe für altbau ohne fußbodenheizung",
+      "volume_at": 90
+    },
+    {
+      "keyword": "raus aus öl und gas förderung",
+      "volume_at": 70
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "volume_at": 30
+    },
+    {
+      "keyword": "wärmepumpe kärnten",
+      "volume_at": 10
+    },
+    {
+      "keyword": "wärmepumpe villach",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Was kostet eine Wärmepumpe komplett mit Installation?",
+    "Was kostet Heizen mit Wärmepumpe im Monat?",
+    "Wie viel Strom verbraucht ein Einfamilienhaus mit Wärmepumpe im Jahr?",
+    "Wie viel Wärme kommt aus 1 kWh Strom einer Wärmepumpe?",
+    "Kann ich eine Wärmepumpe mit normalen Heizkörpern betreiben?",
+    "Welche Wärmepumpe brauche ich bei 2.000 Liter Heizöl?",
+    "Wie lange hält eine Luft-Wärmepumpe?",
+    "Welche Nachteile hat eine Wärmepumpe im Winter?",
+    "Wie funktioniert eine Wärmepumpe im Winter?",
+    "Wo darf eine Wärmepumpe nicht stehen und wie laut ist sie?",
+    "Wann macht eine Wärmepumpe keinen Sinn?",
+    "Welcher Handwerker installiert eine Wärmepumpe?",
+    "Wie hoch sind die Kosten für eine Erdwärmeheizung?",
+    "Kann eine Wärmepumpe auch kühlen?"
+  ],
+  "serp": {
+    "features": [
+      "local_pack",
+      "popular_products (Shopping)",
+      "people_also_ask",
+      "knowledge_graph",
+      "video (YouTube organisch)",
+      "people_also_search",
+      "related_searches",
+      "images (bei 'luftwärmepumpe')"
+    ],
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "viessmann.at",
+        "title": "Wärmepumpe: Kosten von Kauf bis Betrieb",
+        "type": "hersteller"
+      },
+      {
+        "pos": 2,
+        "domain": "viessmann.de",
+        "title": "Funktion der Wärmepumpe einfach erklärt",
+        "type": "hersteller DE"
+      },
+      {
+        "pos": 3,
+        "domain": "klimaaktiv.at",
+        "title": "Topprodukte - die energiesparendsten Geräte in Österreich",
+        "type": "portal (bund)"
+      },
+      {
+        "pos": 4,
+        "domain": "youtube.com",
+        "title": "WOLF erklärt die Wärmepumpe",
+        "type": "video"
+      },
+      {
+        "pos": 5,
+        "domain": "obi.at",
+        "title": "Wärmepumpe: Alles Wissenswerte im Überblick",
+        "type": "ratgeber (handel)"
+      },
+      {
+        "pos": 6,
+        "domain": "idealo.at",
+        "title": "Wärmepumpe (2026) zum Bestpreis",
+        "type": "preisvergleich"
+      },
+      {
+        "pos": 7,
+        "domain": "selfio.de",
+        "title": "Wärmepumpen zum Heizen mit Umweltwärme",
+        "type": "shop DE"
+      },
+      {
+        "pos": 8,
+        "domain": "daikin.at",
+        "title": "Was ist eine Wärmepumpe? Gerätearten & Funktion",
+        "type": "hersteller"
+      },
+      {
+        "pos": 9,
+        "domain": "oekofen.com",
+        "title": "Vor- & Nachteile einer Wärmepumpe im Überblick",
+        "type": "hersteller"
+      },
+      {
+        "pos": 10,
+        "domain": "ikb.at",
+        "title": "Wärmepumpen: Arten, Funktionsweise & Wissenswertes",
+        "type": "versorger"
+      }
+    ],
+    "top10_waermepumpe_installateur": [
+      "waermepumpe-austria.at Mitgliederverzeichnis (verband)",
+      "kocer-heiztech.at (installateur Wien)",
+      "waermepumpen-fachleute.at (verband)",
+      "heizma.at Wien (installateur)",
+      "installateur-service-wien.at",
+      "neubauer-hls.at Graz (installateur)",
+      "rohrli.at",
+      "daibau.at (portal)",
+      "zeiner.wien",
+      "quality-installateur.at"
+    ]
+  },
+  "competitor_outline": [
+    "H2 Was ist eine Wärmepumpe und wie funktioniert sie (Kältekreislauf)",
+    "H2 Arten: Luft-Wasser, Sole-Wasser, Wasser-Wasser, Luft-Luft",
+    "H2 Anschaffungskosten je Wärmequelle, Erschließung, Umbau im Altbau",
+    "H2 Betriebskosten: Stromverbrauch, JAZ, Rechenformel, Wärmepumpenstrom",
+    "H2 Förderung (Bund, Land, Stadt), Förderservice",
+    "H2 Vor- und Nachteile, wann sie keinen Sinn macht",
+    "H2 Kühlen mit Wärmepumpe",
+    "H2 Wartung und Lebensdauer",
+    "H2 Kombination mit Photovoltaik und Speicher",
+    "H2 Welche Lösung passt zu meinem Gebäude",
+    "H2 Ablauf (Telefonat, Besichtigung, Angebot, Installation in 3 bis 5 Tagen)",
+    "H2 FAQ"
+  ],
+  "gaps": [
+    "Lautstärke in dB(A) und Aufstellort fehlen (PAA 'Wo darf eine Wärmepumpe nicht stehen'); Mitbewerber ÖkoFEN hat eigene Absätze dazu",
+    "Kühlfunktion fehlt komplett ('wärmepumpe kühlen' 390)",
+    "Herstellerangaben fehlen: welche Marken EBZ verbaut (iDM 2.400, Ochsner 2.400, Lambda 2.900, 'wärmepumpen hersteller österreich' 170)",
+    "COP neben JAZ, Monoblock gegen Split, Hochtemperatur-Wärmepumpe für Altbau (320) fehlen",
+    "Begriff 'Raus aus Öl und Gas' und Einordnung der Bundesförderung 2026 fehlen bzw. sind zu prüfen",
+    "Kältemittel R290 (Propan) und SG-Ready/EMS-Anbindung fehlen",
+    "Garantie und Lebensdauer in Jahren fehlen als Zahl",
+    "Standorte Klagenfurt und Graz fehlen; Local Pack ist das dominante SERP-Element",
+    "Rechenbeispiel Stromverbrauch (Heizwärmebedarf geteilt durch JAZ mal Strompreis) fehlt, obwohl Heizkosten-Vergleich vorhanden ist"
+  ],
+  "cannibalization": [
+    "/kosten-einer-waermepumpe/ ('wärmepumpe kosten' 1.600)",
+    "/funktionsweise-einer-waermepumpe/",
+    "/heizen-mit-waermepumpe/",
+    "/waermepumpe-im-altbau/",
+    "/waermepumpenfoerderung-in-oesterreich/",
+    "/landesfoerderungen-fuer-die-waermepumpe/",
+    "/photovoltaik-fuer-waermepumpe/",
+    "/sauber-heizen-fuer-alle-2026/",
+    "/sanierungsoffensive-2026/",
+    "/unternehmensfoerderung-von-waermepumpen/",
+    "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "wärmepumpe",
+      "ai_volume": 2855
+    },
+    {
+      "keyword": "was kostet eine wärmepumpe",
+      "ai_volume": 353
+    },
+    {
+      "keyword": "wärmepumpe österreich",
+      "ai_volume": 231
+    },
+    {
+      "keyword": "wärmepumpe nachteile",
+      "ai_volume": 163
+    },
+    {
+      "keyword": "luftwärmepumpe",
+      "ai_volume": 150
+    },
+    {
+      "keyword": "wärmepumpe heizkörper",
+      "ai_volume": 78
+    },
+    {
+      "keyword": "wärmepumpe förderung",
+      "ai_volume": 62
+    },
+    {
+      "keyword": "wärmepumpe lohnt sich",
+      "ai_volume": 60
+    },
+    {
+      "keyword": "luft wasser wärmepumpe",
+      "ai_volume": 50
+    },
+    {
+      "keyword": "wärmepumpe stromverbrauch",
+      "ai_volume": 34
+    },
+    {
+      "keyword": "wärmepumpe photovoltaik",
+      "ai_volume": 30
+    },
+    {
+      "keyword": "wärmepumpe kosten",
+      "ai_volume": 17
+    },
+    {
+      "keyword": "wärmepumpe altbau",
+      "ai_volume": 17
+    },
+    {
+      "keyword": "wärmepumpe hersteller österreich",
+      "ai_volume": 13
+    },
+    {
+      "keyword": "wärmepumpe preis",
+      "ai_volume": 7
+    },
+    {
+      "keyword": "sole-wasser-wärmepumpe",
+      "ai_volume": 6
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "ai_volume": 5
+    },
+    {
+      "keyword": "wärmepumpe kaufen",
+      "ai_volume": 3
+    },
+    {
+      "keyword": "luftwärmepumpe kosten",
+      "ai_volume": 2
+    },
+    {
+      "keyword": "wärmepumpe kärnten",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "wärmepumpe installateur",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Wärmepumpe Kärnten & Steiermark: Kosten, Förderung | EBZ",
+    "h1": "Wärmepumpe vom Fachbetrieb in Kärnten und der Steiermark: heizen mit Strom statt mit Öl und Gas",
+    "description": "Luft-Wasser-Wärmepumpe vom Fachbetrieb in Kärnten und der Steiermark: Kosten ab 12.000 €, Förderung komplett abgewickelt, Kombination mit Photovoltaik.",
+    "h2_outline": [
+      "Was ist eine Wärmepumpe? (Kältekreislauf, JAZ, COP)",
+      "Luft-Wasser, Erdwärme oder Grundwasser: welche Wärmepumpe passt zu Ihrem Grundstück",
+      "Eigenheim oder Betrieb",
+      "Was kostet eine Wärmepumpe? (Preisanker je Typ, Link zum Kosten-Ratgeber)",
+      "Was Sie im Jahr fürs Heizen zahlen (Rechenbeispiel Heizwärmebedarf, JAZ, Strompreis)",
+      "Förderung 2026: Bund, Land Kärnten, Land Steiermark, Steuerbonus (Stand prüfen)",
+      "Heizungstausch im Altbau: Heizkörper, Vorlauftemperatur, Hochtemperatur-Wärmepumpe",
+      "Heizen und kühlen mit Solarstrom: Wärmepumpe, PV, Speicher, EMS",
+      "Lautstärke, Aufstellort und Kältemittel",
+      "Welche Hersteller EBZ verbaut und warum",
+      "Mario Zintl schaut sich Ihren Heizraum selbst an",
+      "Ihr Wärmepumpen-Fachbetrieb aus Villach (Klagenfurt, Wolfsberg, Graz)",
+      "Referenzen",
+      "Ablauf",
+      "Häufige Fragen"
+    ],
+    "faq_add": [
+      "Wie laut ist eine Luft-Wasser-Wärmepumpe und wo darf sie stehen?",
+      "Kann die Wärmepumpe im Sommer auch kühlen?",
+      "Welche Hersteller verbaut EBZ?",
+      "Wie viel Strom verbraucht eine Wärmepumpe im Einfamilienhaus pro Jahr?",
+      "Wie lange hält eine Wärmepumpe und welche Garantie gibt es?",
+      "Wann macht eine Wärmepumpe keinen Sinn?"
+    ],
+    "internal_links": [
+      "/kosten-einer-waermepumpe/ -> Was kostet eine Wärmepumpe im Detail",
+      "/waermepumpenfoerderung-in-oesterreich/ -> Wärmepumpenförderung 2026",
+      "/landesfoerderungen-fuer-die-waermepumpe/ -> Landesförderungen Kärnten und Steiermark",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/funktionsweise-einer-waermepumpe/ -> So funktioniert eine Wärmepumpe",
+      "/photovoltaik-fuer-waermepumpe/ -> Photovoltaik für die Wärmepumpe",
+      "/heizen-mit-waermepumpe/ -> Heizen mit Wärmepumpe",
+      "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/ -> Wärmepumpe steuerlich absetzen",
+      "/energiemanagementsystem/ -> EMS für Wärmepumpe und PV",
+      "/batteriespeicher/ -> Batteriespeicher",
+      "/photovoltaik/ -> Photovoltaikanlage",
+      "/finanzierung/ -> Wärmepumpe finanzieren",
+      "/referenzen/ -> Referenzen"
+    ],
+    "notes": "Die Seite ist inhaltlich stark (Typen, Kosten, Förderung, Altbau, PV-Kombination), zielt im Title aber auf 'Wärmepumpen-Installateur' (260) statt auf 'Wärmepumpe' (12.100) mit regionalem Zusatz. Da die SERP ein Local Pack zeigt, zuerst Title/H1 auf 'Wärmepumpe Kärnten & Steiermark' drehen und Klagenfurt sowie Graz im Text verankern. Dann die Lücken Lautstärke/Aufstellort, Kühlen, Hersteller und Rechenbeispiel zum Stromverbrauch schließen; das sind die PAA-Fragen, die kein Ratgeber abdeckt. Die Förderaussage 'bis zu 7.500 € vom Bund' vor dem Relaunch verifizieren, ein Mitbewerber schreibt Stand Juli 2026 das Gegenteil."
+  },
+  "cost_usd": 0.15
+}

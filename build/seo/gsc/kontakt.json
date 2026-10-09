@@ -1,0 +1,36 @@
+{
+ "old_url": "/kontakt/",
+ "clicks": 25,
+ "impressions": 1110,
+ "ctr": 2.3,
+ "position": 5.1,
+ "top_queries": [
+  [
+   "ebz energie",
+   17,
+   310
+  ],
+  [
+   "ebz energie gmbh",
+   5,
+   228
+  ],
+  [
+   "ebz",
+   0,
+   75
+  ],
+  [
+   "beratung zu photovoltaik glanegg",
+   0,
+   4
+  ]
+ ],
+ "queries_total": 12,
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

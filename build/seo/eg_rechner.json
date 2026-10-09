@@ -1,0 +1,375 @@
+{
+ "slug": "eg_rechner",
+ "path": "/energiegemeinschaft-rechner/",
+ "seitentyp": "rechner",
+ "stand": "2026-10-09",
+ "primary": {
+  "keyword": "energiegemeinschaft rechner",
+  "volume_at": 50,
+  "kd": null,
+  "cpc": 0.89,
+  "intent": "informational 0,34 / navigational 0,30 / commercial 0,19"
+ },
+ "secondary": [
+  {
+   "keyword": "energiegemeinschaft strompreis",
+   "volume_at": 50,
+   "kd": 10,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft vorteile",
+   "volume_at": 30,
+   "kd": 20,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft netzkosten ersparnis",
+   "volume_at": 20,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft einspeisetarif",
+   "volume_at": 20,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft ersparnis",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft lohnt sich",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial"
+  }
+ ],
+ "semantic": [
+  "Zuordnungsquote",
+  "Gleichzeitigkeit von Erzeugung und Verbrauch",
+  "statische und dynamische Zuteilung",
+  "Viertelstundenwerte",
+  "Standardlastprofil",
+  "Arbeitspreis ct/kWh",
+  "Netznutzungsentgelt (bis 57 % lokal, 28 % regional, 64 % Netzebene 4/5)",
+  "Netzverlustentgelt",
+  "Elektrizitätsabgabe (0,10 ct Haushalt)",
+  "Erneuerbaren-Förderbeitrag (0,58 ct)",
+  "Umsatzsteuer 20 %",
+  "Mitgliedsbeitrag (€/Jahr)",
+  "OeMAG-Marktpreis 6,146 ct",
+  "EG-Preis 8 bis 12 ct",
+  "Bezugspreis / Reststrom vom Lieferanten",
+  "Jahresverbrauch 1.927 kWh (1 Person) und 4.725 kWh (4 Personen) laut E-Control",
+  "Betrieb 24.740 kWh (70 % EG-Anteil)",
+  "Eigendeckung",
+  "Netzbezug",
+  "Überschuss",
+  "kWp",
+  "Speicher",
+  "Nahbereich",
+  "E-Control Preisportal",
+  "EDA-Portal Fixkosten",
+  "Benefit-Tool energiegemeinschaften.gv.at",
+  "energyfamily",
+  "Peer-to-Peer",
+  "Bürgerenergiegemeinschaft ohne Netzrabatt"
+ ],
+ "long_tail": [
+  {
+   "keyword": "energiegemeinschaft nachteile",
+   "volume_at": 880
+  },
+  {
+   "keyword": "energiegemeinschaft erfahrungen",
+   "volume_at": 170
+  },
+  {
+   "keyword": "energiegemeinschaft netzkosten",
+   "volume_at": 70
+  },
+  {
+   "keyword": "energiegemeinschaft strompreis",
+   "volume_at": 50
+  },
+  {
+   "keyword": "energiegemeinschaft photovoltaik",
+   "volume_at": 50
+  },
+  {
+   "keyword": "wie funktioniert eine energiegemeinschaft",
+   "volume_at": 50
+  },
+  {
+   "keyword": "energiegemeinschaft abrechnung",
+   "volume_at": 40
+  },
+  {
+   "keyword": "energiegemeinschaft vorteile",
+   "volume_at": 30
+  },
+  {
+   "keyword": "energiegemeinschaft kosten",
+   "volume_at": 30
+  },
+  {
+   "keyword": "energiegemeinschaft vorteile nachteile",
+   "volume_at": 30
+  },
+  {
+   "keyword": "energiegemeinschaft netzkosten ersparnis",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft einspeisetarif",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft speicher",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft ersparnis",
+   "volume_at": 10
+  },
+  {
+   "keyword": "energiegemeinschaft österreich netzkosten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "energiegemeinschaft lohnt sich",
+   "volume_at": 0
+  },
+  {
+   "keyword": "energiegemeinschaft kosten nutzen",
+   "volume_at": 0
+  },
+  {
+   "keyword": "energiegemeinschaft berechnen",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wie viel bringt eine energiegemeinschaft",
+   "volume_at": 0
+  },
+  {
+   "keyword": "energiegemeinschaft sinnvoll",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Wie hoch ist der Strompreis in Energiegemeinschaften?",
+  "Wie gründet man eine Energiegemeinschaft (EEG) in Österreich?",
+  "Wie berechne ich meine Stromkosten in Österreich?",
+  "Ist es möglich, Strom von der EEG zu verschenken?",
+  "Welche Nachteile hat eine Energiegemeinschaft?",
+  "Kann ich meinen Solarstrom an den Nachbarn verkaufen?",
+  "Wie viel Geld bekommt man für 1 kWh Solarstrom?",
+  "Welche Nachteile hat die Nulleinspeisung?",
+  "Wie viel bringt eine Energiegemeinschaft pro Jahr?",
+  "Lohnt sich eine Energiegemeinschaft ohne PV-Anlage?",
+  "Was kostet eine Energiegemeinschaft pro Monat?",
+  "Energiegemeinschaft oder OeMAG-Einspeisung: was bringt mehr?"
+ ],
+ "serp": {
+  "features": [
+   "ai_overview (listet gv.at Benefit-Tool, EEG Vogelweide-Laahen, e-gemeinschaft.at, OurPower, Heimatstrom, EEG Granit, EEG-W4)",
+   "people_also_ask",
+   "related_searches"
+  ],
+  "top10": [
+   {
+    "pos": 1,
+    "domain": "e-gemeinschaft.at",
+    "title": "Online Rechner Ersparnis (TIWAG)",
+    "type": "tool"
+   },
+   {
+    "pos": 2,
+    "domain": "energiegemeinschaften.gv.at",
+    "title": "Wie mitmachen?",
+    "type": "behörde"
+   },
+   {
+    "pos": 3,
+    "domain": "e-gemeinschaft.at",
+    "title": "Online Rechner Ersparnis (vkw)",
+    "type": "tool"
+   },
+   {
+    "pos": 4,
+    "domain": "durchblicker.at",
+    "title": "Energiegemeinschaften in Österreich für Strom & Wärme",
+    "type": "portal"
+   },
+   {
+    "pos": 5,
+    "domain": "regenerative.at",
+    "title": "Photovoltaik, Speicher & Energiegemeinschaften in Tirol",
+    "type": "anbieter"
+   },
+   {
+    "pos": 6,
+    "domain": "netzentgeltrechner.at",
+    "title": "Energiegemeinschafts-Rechner Österreich",
+    "type": "tool"
+   },
+   {
+    "pos": 7,
+    "domain": "energiegemeinschaften.gv.at",
+    "title": "Nahbereichsabfrage für EEGs",
+    "type": "behörde"
+   },
+   {
+    "pos": 8,
+    "domain": "billwise.at",
+    "title": "Wissen zur gemeinschaftlichen Energienutzung",
+    "type": "software"
+   },
+   {
+    "pos": 9,
+    "domain": "energie.gv.at",
+    "title": "Nützliche Links",
+    "type": "behörde"
+   }
+  ]
+ },
+ "competitor_outline": [
+  "H1 Ergebnis prominent: 'Deine Ersparnis: € 158,62 pro Jahr'",
+  "H2 Eingaben: Jahresverbrauch kWh, Anteil EG-Bezug in %, Arbeitspreis netto, Grundpauschale",
+  "H2 Tabelle bisher vs. neu: Arbeitspreis, Netznutzungsentgelt, Netzverlustentgelt, Messleistung, Elektrizitätsabgabe, Förderbeitrag, USt",
+  "H2 Drei Beispiele: 1-Personen-Haushalt, 4-Personen-Haushalt, Büro/Betrieb",
+  "H2 Fußnote mit Quellen (E-Control Q2 2026, Netzbetreiber, Mitgliedsbeitrag)",
+  "H2 Was bringt eine Energiegemeinschaft: Gleichzeitigkeit zählt",
+  "H2 Modelle: Peer-to-Peer, lokale EEG, regionale EEG, österreichweite BEG",
+  "H2 Vorteile vs. Nachteile",
+  "H2 Offizielle Quellen (Koordinationsstelle, E-Control)",
+  "H2 FAQ"
+ ],
+ "gaps": [
+  "Keine ausgerechneten Beispiele (1-Personen-Haushalt, 4-Personen-Haushalt, Betrieb) mit ct/kWh-Zerlegung, obwohl alle Top-Tools genau damit zitiert werden",
+  "Keine 'bisher vs. mit EG'-Tabelle (Arbeitspreis, Netznutzungsentgelt, Netzverlustentgelt, Elektrizitätsabgabe, Erneuerbaren-Förderbeitrag, USt)",
+  "Quellenangabe fehlt (E-Control Preisportal, SNE-VO, Netzbetreiber); Beispielwerte 10 und 14 ct sind erklärt, aber ohne externe Referenz",
+  "Szenario 'ohne eigene PV-Anlage' und 'Energiegemeinschaft oder OeMAG' nicht als eigene Abschnitte (PAA und Keyword-Fragen)",
+  "Begriffe Gleichzeitigkeit, statische/dynamische Zuteilung, Lastprofil, Arbeitspreis, Netznutzungsentgelt fehlen",
+  "Netzebene 4/5 mit 64 % Rabatt (Gewerbe) nicht erwähnt, nur 57 und 28 %",
+  "Keine Links auf /energiegemeinschaft-kosten/, /energiegemeinschaft-nachteile/, /oemag-einspeisetarif/",
+  "Nur 696 Wörter und 3 FAQ"
+ ],
+ "cannibalization": [
+  "/leistungen/energiegemeinschaft/ (gleicher Rechner eingebettet)",
+  "/energiegemeinschaft-kosten/",
+  "/energiegemeinschaft-netzkosten/",
+  "/energiegemeinschaft-nachteile/",
+  "/oemag-einspeisetarif/",
+  "/energiegemeinschaft-privat/"
+ ],
+ "ai_search_volume": [
+  {
+   "keyword": "energiegemeinschaft nachteile",
+   "ai_volume": 48
+  },
+  {
+   "keyword": "energiegemeinschaft sinnvoll",
+   "ai_volume": 34
+  },
+  {
+   "keyword": "energiegemeinschaft kosten",
+   "ai_volume": 28
+  },
+  {
+   "keyword": "energiegemeinschaft strompreis",
+   "ai_volume": 18
+  },
+  {
+   "keyword": "wie viel bringt eine energiegemeinschaft",
+   "ai_volume": 4
+  },
+  {
+   "keyword": "energiegemeinschaft einspeisetarif",
+   "ai_volume": 2
+  },
+  {
+   "keyword": "energiegemeinschaft netzkosten",
+   "ai_volume": 1
+  },
+  {
+   "keyword": "energiegemeinschaft rechner",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft ersparnis",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft lohnt sich",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft kosten nutzen",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft berechnen",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft vorteile",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft erfahrungen",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft zuordnungsquote",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft vs oemag",
+   "ai_volume": 0
+  }
+ ],
+ "recommendation": {
+  "title": "Energiegemeinschaft-Rechner: Ersparnis pro Jahr | EBZ",
+  "h1": "Energiegemeinschaft-Rechner: Was bringt Strom teilen pro Jahr?",
+  "description": "Energiegemeinschaft-Rechner: Ersparnis pro Jahr aus Mehrerlös für PV-Überschuss, günstigerem Bezug und bis zu 57 % weniger Netzentgelt im Nahbereich.",
+  "h2_outline": [
+   "Ihr Vorteil pro Jahr (Rechner)",
+   "So rechnet der Energiegemeinschaft-Rechner: Zuordnungsquote, EG-Preis, Netzentgelt",
+   "Drei Beispiele: 1-Personen-Haushalt, 4-Personen-Haushalt, Betrieb",
+   "Bisher vs. mit Energiegemeinschaft: die Rechnung im Detail (Arbeitspreis, Netznutzungsentgelt, Abgaben)",
+   "Lohnt sich eine Energiegemeinschaft ohne PV-Anlage?",
+   "Energiegemeinschaft oder OeMAG-Einspeisung?",
+   "Häufige Fragen",
+   "Weiterlesen",
+   "Ergebnis prüfen lassen, kostenlos und ehrlich"
+  ],
+  "faq_add": [
+   "Wie hoch ist der Strompreis in einer Energiegemeinschaft?",
+   "Wie viel bringt eine Energiegemeinschaft pro Jahr?",
+   "Lohnt sich eine Energiegemeinschaft ohne eigene PV-Anlage?",
+   "Energiegemeinschaft oder OeMAG: was bringt mehr für meinen Überschuss?",
+   "Was kostet die Teilnahme pro Monat (Mitgliedsbeitrag)?",
+   "Kann ich meinen Solarstrom an den Nachbarn verkaufen?",
+   "Welche Nachteile hat eine Energiegemeinschaft?"
+  ],
+  "internal_links": [
+   "/leistungen/energiegemeinschaft/ -> Energiegemeinschaft beitreten",
+   "/leistungen/energiegemeinschaft-gewerbe/ -> Energiegemeinschaft für Betriebe und Gemeinden",
+   "/energiegemeinschaft-kosten/ -> Kosten und Abrechnung",
+   "/energiegemeinschaft-netzkosten/ -> Netzentgelt-Rabatt nach Netzebene",
+   "/energiegemeinschaft-nachteile/ -> 7 Nachteile ehrlich bewertet",
+   "/oemag-einspeisetarif/ -> OeMAG-Einspeisetarif aktuell",
+   "/energiegemeinschaft-privat/ -> Energiegemeinschaft privat",
+   "/solarrechner/ -> PV-Rechner",
+   "/referenzen/ -> Referenzen"
+  ],
+  "notes": "Das Keyword hat nur 50 Suchen, aber die AI Overview zitiert sieben Rechner mit je einem Satz Beschreibung (Beispielhaushalt, Ersparnis, Fixkosten): zitiert wird, wer transparent rechnet. Die Seite braucht deshalb drei ausgerechnete Beispiele mit ct/kWh-Zerlegung, eine Bisher-vs-EG-Tabelle und Quellenangaben (E-Control, Netzbetreiber), dazu die Abschnitte 'ohne PV' und 'EG oder OeMAG'. Die Defaults (10 ct, 14 ct, 4 €/Monat) sind Beispielwerte mit Sternchen und werden ersetzt, sobald die echten EBZ-Konditionen vorliegen. Der gleiche Rechner steckt in der Privat-LP: die Standalone-Seite bleibt Ziel für 'rechner', 'ersparnis', 'lohnt sich' und wird aus der LP mit diesem Ankertext verlinkt."
+ },
+ "cost_usd": 0.083
+}

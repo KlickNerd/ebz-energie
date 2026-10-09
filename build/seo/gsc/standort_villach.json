@@ -1,0 +1,62 @@
+{
+ "old_url": "/photovoltaik-villach/",
+ "clicks": 35,
+ "impressions": 3130,
+ "ctr": 1.1,
+ "position": 11.0,
+ "top_queries": [
+  [
+   "pv villach",
+   4,
+   36
+  ],
+  [
+   "photovoltaik villach",
+   3,
+   379
+  ],
+  [
+   "ebz energie",
+   3,
+   127
+  ],
+  [
+   "photovoltaik firmen villach",
+   2,
+   62
+  ],
+  [
+   "pv anlage villach",
+   1,
+   73
+  ],
+  [
+   "photovoltaik in der nähe",
+   1,
+   34
+  ],
+  [
+   "photovoltaik anbieter im bezirk klagenfurt / villach",
+   0,
+   219
+  ],
+  [
+   "pv komplettanlage mit speicher inkl. montage in villach und umgebung",
+   0,
+   113
+  ],
+  [
+   "ich wohne in villach, nenne mir 5 pv firmen im umkreis von 20 km mit eigener montage-crew",
+   0,
+   73
+  ]
+ ],
+ "queries_total": 60,
+ "note": "Lange KI-artige Suchanfragen (Conversational Search) mit Impressionen, aber 0 Klicks.",
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

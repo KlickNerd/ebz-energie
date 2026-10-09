@@ -1,0 +1,443 @@
+{
+  "slug": "batteriespeicher",
+  "path": "/batteriespeicher/",
+  "seitentyp": "leistung",
+  "stand": "2026-10-09",
+  "hinweise": [
+    "kd 0 = DataForSEO liefert fuer dieses Keyword keinen Difficulty-Wert. volume_at 0 = kein AT-Volumen in der Datenbank.",
+    "Die MCP-Antworten enthielten kein cost-Feld. Betrag geschaetzt nach DataForSEO-Preisliste (Labs 0,01 $/Request + 0,0001 $/Item, SERP Advanced 0,002 $/Request, Content Parsing ca. 0,002 $/URL, AI-Volumen ca. 0,01 $/Request).",
+    "Kein GSC-Export vorhanden."
+  ],
+  "primary": {
+    "keyword": "batteriespeicher",
+    "volume_at": 4400,
+    "kd": 10,
+    "cpc": 0.73,
+    "intent": "Overview: transactional; Intent-Endpoint: informational 0,50 / transactional 0,42 (gemischt). Alternative mit klarerem Kaufintent: 'pv speicher' 2.900, KD 4, transactional 0,76"
+  },
+  "secondary": [
+    {
+      "keyword": "pv speicher",
+      "volume_at": 2900,
+      "kd": 4,
+      "intent": "transactional 0,76"
+    },
+    {
+      "keyword": "stromspeicher",
+      "volume_at": 1600,
+      "kd": 7,
+      "intent": "informational 0,61 / commercial 0,32"
+    },
+    {
+      "keyword": "photovoltaik speicher",
+      "volume_at": 1300,
+      "kd": 4,
+      "intent": "transactional 0,50 / commercial 0,29"
+    },
+    {
+      "keyword": "stromspeicher förderung österreich 2026",
+      "volume_at": 320,
+      "kd": 4,
+      "intent": "commercial 0,59"
+    },
+    {
+      "keyword": "stromspeicher 10 kwh preis",
+      "volume_at": 320,
+      "kd": 4,
+      "intent": "commercial 0,91"
+    },
+    {
+      "keyword": "photovoltaik speicher nachrüsten",
+      "volume_at": 50,
+      "kd": 0,
+      "intent": "transactional 0,81 (Ratgeber /pv-speicher-nachruesten/ deckt Info-Teil ab)"
+    }
+  ],
+  "semantic": [
+    "Lithium-Eisenphosphat (LFP)",
+    "Hybridwechselrichter",
+    "AC-gekoppelt",
+    "DC-gekoppelt",
+    "Hochvolt",
+    "Niedervolt",
+    "modular erweiterbar",
+    "nutzbare Kapazität kWh",
+    "Entladetiefe",
+    "Wirkungsgrad",
+    "Ladezyklen",
+    "Lebensdauer 15 Jahre",
+    "Garantie 10 Jahre",
+    "Eigenverbrauch 30 auf 80 %",
+    "Autarkie",
+    "Notstrom",
+    "Ersatzstrom",
+    "Faustformel 1 kWh je kWp",
+    "Speichergröße je Jahresverbrauch",
+    "Preis pro kWh",
+    "Preisentwicklung 2026",
+    "EAG-Speicherförderung 150 €/kWh",
+    "Land Kärnten bis 3.000 €",
+    "Fördercall Oktober 2026",
+    "BYD",
+    "Fronius",
+    "Huawei",
+    "Sungrow",
+    "Brandschutz",
+    "Aufstellort (Keller, Garage, Technikraum)",
+    "Energiemanagement (EMS)",
+    "dynamischer Stromtarif",
+    "Netzladen",
+    "Winterbetrieb",
+    "Villach",
+    "Kärnten",
+    "Steiermark"
+  ],
+  "long_tail": [
+    {
+      "keyword": "photovoltaik mit speicher",
+      "volume_at": 1300
+    },
+    {
+      "keyword": "byd batteriespeicher",
+      "volume_at": 880
+    },
+    {
+      "keyword": "fronius batteriespeicher",
+      "volume_at": 720
+    },
+    {
+      "keyword": "batteriespeicher photovoltaik",
+      "volume_at": 590
+    },
+    {
+      "keyword": "speicher photovoltaik",
+      "volume_at": 480
+    },
+    {
+      "keyword": "lfp batteriespeicher",
+      "volume_at": 320
+    },
+    {
+      "keyword": "stromspeicher preis",
+      "volume_at": 320
+    },
+    {
+      "keyword": "stromspeicher förderung",
+      "volume_at": 320
+    },
+    {
+      "keyword": "stromspeicher 20 kwh preis",
+      "volume_at": 260
+    },
+    {
+      "keyword": "batteriespeicher 10 kwh",
+      "volume_at": 210
+    },
+    {
+      "keyword": "stromspeicher photovoltaik",
+      "volume_at": 210
+    },
+    {
+      "keyword": "pv speicher kosten",
+      "volume_at": 170
+    },
+    {
+      "keyword": "stromspeicher kosten",
+      "volume_at": 170
+    },
+    {
+      "keyword": "batteriespeicher 20 kwh",
+      "volume_at": 170
+    },
+    {
+      "keyword": "batteriespeicher förderung",
+      "volume_at": 140
+    },
+    {
+      "keyword": "stromspeicher für zuhause",
+      "volume_at": 140
+    },
+    {
+      "keyword": "stromspeicher kaufen",
+      "volume_at": 90
+    },
+    {
+      "keyword": "stromspeicher nachrüsten",
+      "volume_at": 50
+    },
+    {
+      "keyword": "stromspeicher nachrüsten bei bestehender pv anlage",
+      "volume_at": 50
+    },
+    {
+      "keyword": "stromspeicher förderung steiermark 2026",
+      "volume_at": 50
+    },
+    {
+      "keyword": "batteriespeicher kosten",
+      "volume_at": 40
+    },
+    {
+      "keyword": "kosten batteriespeicher pro kwh",
+      "volume_at": 40
+    },
+    {
+      "keyword": "stromspeicher förderung land kärnten 2026",
+      "volume_at": 30
+    },
+    {
+      "keyword": "notstrom batteriespeicher",
+      "volume_at": 20
+    },
+    {
+      "keyword": "batteriespeicher mit notstromfunktion kosten",
+      "volume_at": 20
+    }
+  ],
+  "questions": [
+    "Wie hoch sind die Kosten pro kWh für einen Batteriespeicher?",
+    "Was kostet ein 10 kWh Stromspeicher mit Einbau?",
+    "Wie lange reicht ein 10 kWh Stromspeicher?",
+    "Wie groß muss ein Batteriespeicher für ein Einfamilienhaus sein?",
+    "Wie viel PV-Speicher ist sinnvoll?",
+    "Was passiert mit dem Strom, wenn der Speicher voll ist?",
+    "Was passiert, wenn der Batteriespeicher zu groß ist?",
+    "Werden Batteriespeicher 2026 billiger?",
+    "Ist ein Stromspeicher ein Batteriespeicher?",
+    "Lohnt sich ein Stromspeicher?",
+    "Wie lange reicht ein 5 kWh Speicher?",
+    "Kann man eine Autobatterie oder das E-Auto als Stromspeicher nutzen?",
+    "Wird in Österreich ein Stromspeicher gefördert und wie hoch ist die Förderung 2026?"
+  ],
+  "serp": {
+    "features": [
+      "popular_products (Shopping-Karussell)",
+      "people_also_ask",
+      "images",
+      "related_searches",
+      "kein local_pack",
+      "kein ai_overview"
+    ],
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "solaredge.com",
+        "title": "DC-Batteriespeicher und Backup für PV",
+        "type": "hersteller"
+      },
+      {
+        "pos": 2,
+        "domain": "solarwatt.de",
+        "title": "Stromspeicher - Preise, Kosten und Nutzen?",
+        "type": "ratgeber (hersteller DE)"
+      },
+      {
+        "pos": 3,
+        "domain": "ewe.de",
+        "title": "Batteriespeicher für PV: Alles, was du wissen musst",
+        "type": "ratgeber (versorger DE)"
+      },
+      {
+        "pos": 4,
+        "domain": "idealo.at",
+        "title": "Stromspeicher (2026) zum Bestpreis",
+        "type": "preisvergleich"
+      },
+      {
+        "pos": 5,
+        "domain": "krone.at",
+        "title": "Warum Batteriespeicher für PV-Anlagen wichtig sind",
+        "type": "advertorial (Krone Sonne)"
+      },
+      {
+        "pos": 6,
+        "domain": "dafi.at",
+        "title": "Batterie Rechner",
+        "type": "anbieter (Rechner)"
+      },
+      {
+        "pos": 7,
+        "domain": "evn.at",
+        "title": "Batteriespeicher Förderung: Alle Infos",
+        "type": "versorger"
+      },
+      {
+        "pos": 8,
+        "domain": "energiesparverband.at",
+        "title": "Stromspeicher (PDF)",
+        "type": "behörde"
+      }
+    ],
+    "top10_pv_speicher": [
+      "pvundsolar.at (shop)",
+      "solardiscount.at (shop)",
+      "adac.de (ratgeber)",
+      "solarhandel24.de (shop)",
+      "tepto.at (shop)",
+      "solarhandel24.at (shop)",
+      "solarspeicher24.de nachrüsten (ratgeber)",
+      "verbund.com speicher (versorger)",
+      "energiesparverband.at",
+      "fronius.com (hersteller)"
+    ]
+  },
+  "competitor_outline": [
+    "H2 Was ist ein Photovoltaik-Speicher und wie funktioniert er (Akku, BMS, Regelung)",
+    "H2 Was bringt ein Speicher: Eigenverbrauch 30 bis 40 % ohne, 61 bis 82 % mit Speicher",
+    "H2 Wann lohnt sich ein Stromspeicher (Abendverbrauch, E-Auto, Wärmepumpe)",
+    "H2 AC- oder DC-Kopplung, Hybridwechselrichter, Nachrüstung",
+    "H2 Welche Speichergröße passt (Tabelle Jahresverbrauch, kWp, kWh)",
+    "H2 Was kostet ein Stromspeicher (Preis pro kWh, Preisentwicklung, schlüsselfertig)",
+    "H2 Förderung 2026 (EAG 150 €/kWh, Land)",
+    "H2 Technologie: LFP, Zyklen, Entladetiefe, Wirkungsgrad, Lebensdauer, Garantie",
+    "H2 Sicherheit und Aufstellort",
+    "H2 Beispieltag mit 8 kWp und 10 kWh",
+    "H2 FAQ"
+  ],
+  "gaps": [
+    "Preis pro kWh als zitierbare Zahl fehlt (PAA-Frage Nummer 1 und 'kosten batteriespeicher pro kwh'); Seite nennt nur Gesamtbeträge",
+    "Faustformel zur Dimensionierung (1 kWh je kWp bzw. 1 bis 1,5 kWh je 1.000 kWh Verbrauch) fehlt; die drei Haushaltsbeispiele sind da, aber keine Regel",
+    "Entladetiefe, Wirkungsgrad, Hochvolt/Niedervolt, modulare Erweiterbarkeit fehlen im Technikabschnitt",
+    "Komponentenmarken (BYD 880, Fronius 720, Huawei) fehlen; Shops und Hersteller dominieren die SERP damit",
+    "Brandschutz und Aufstellort (Keller, Garage, Technikraum) fehlen",
+    "Autarkie als Begriff fehlt",
+    "Netzladen bei dynamischem Stromtarif und EMS-Verknüpfung fehlen (Ratgeber /dynamischer-stromtarif/ existiert, nicht verlinkt)",
+    "Preisentwicklung 2026 ('Werden Batteriespeicher 2026 billiger?') und 'Was passiert, wenn der Speicher voll ist' fehlen",
+    "Fördercall-Termin Oktober 2026 fehlt"
+  ],
+  "cannibalization": [
+    "/pv-speicher-nachruesten/",
+    "/foerderung-fuer-pv-speicher/",
+    "/foerderung-pv-speicher-kaernten/",
+    "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/",
+    "/notstrom/",
+    "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/",
+    "/dynamischer-stromtarif/",
+    "/photovoltaik/ (Sektion 'Mehr vom eigenen Strom mit Batteriespeicher')"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "pv speicher",
+      "ai_volume": 486
+    },
+    {
+      "keyword": "stromspeicher",
+      "ai_volume": 380
+    },
+    {
+      "keyword": "batteriespeicher",
+      "ai_volume": 362
+    },
+    {
+      "keyword": "lohnt sich ein stromspeicher",
+      "ai_volume": 38
+    },
+    {
+      "keyword": "photovoltaik speicher",
+      "ai_volume": 34
+    },
+    {
+      "keyword": "solarspeicher",
+      "ai_volume": 24
+    },
+    {
+      "keyword": "byd batteriespeicher",
+      "ai_volume": 14
+    },
+    {
+      "keyword": "fronius batteriespeicher",
+      "ai_volume": 13
+    },
+    {
+      "keyword": "batteriespeicher photovoltaik",
+      "ai_volume": 12
+    },
+    {
+      "keyword": "stromspeicher photovoltaik",
+      "ai_volume": 12
+    },
+    {
+      "keyword": "batteriespeicher 10 kwh",
+      "ai_volume": 8
+    },
+    {
+      "keyword": "batteriespeicher kosten",
+      "ai_volume": 5
+    },
+    {
+      "keyword": "stromspeicher förderung österreich 2026",
+      "ai_volume": 4
+    },
+    {
+      "keyword": "batteriespeicher förderung",
+      "ai_volume": 3
+    },
+    {
+      "keyword": "pv speicher kosten",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "stromspeicher kosten",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "stromspeicher 10 kwh preis",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik speicher nachrüsten",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "notstrom batteriespeicher",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "kosten batteriespeicher pro kwh",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Batteriespeicher für PV: Größe, Kosten, Förderung | EBZ",
+    "h1": "Batteriespeicher für Ihre PV-Anlage: Sonnenstrom auch am Abend und in der Nacht",
+    "description": "PV-Speicher vom Fachbetrieb in Kärnten und der Steiermark: Eigenverbrauch von 30 auf bis zu 80 %, Notstrom, Nachrüstung, 150 € je kWh Förderung, Preis pro kWh.",
+    "h2_outline": [
+      "Was ist ein Batteriespeicher? (Stromspeicher, PV-Speicher, LFP)",
+      "Neue Anlage mit Speicher oder Speicher nachrüsten (AC- oder DC-Kopplung)",
+      "Von 30 auf bis zu 80 % Eigenverbrauch: was der Speicher ändert",
+      "Welche Speichergröße passt? (Faustformel und drei Haushaltsbeispiele)",
+      "Was kostet ein Batteriespeicher? (Preis pro kWh, 10 kWh schlüsselfertig, Preisentwicklung 2026)",
+      "Förderung 2026: 150 € je kWh vom Bund, Land Kärnten, Fördercall Oktober",
+      "Technik: LFP, Hybridwechselrichter, Entladetiefe, Zyklen, Garantie",
+      "Notstrom und Ersatzstrom",
+      "Speicher mit EMS und dynamischem Tarif laden",
+      "Sicherheit und Aufstellort",
+      "Finanzierung: Ihre Anlage gehört Ihnen ab dem ersten Tag",
+      "Referenzen mit Zahlen",
+      "Ablauf",
+      "Häufige Fragen"
+    ],
+    "faq_add": [
+      "Wie hoch sind die Kosten pro kWh für einen Batteriespeicher?",
+      "Was passiert mit dem Strom, wenn der Speicher voll ist?",
+      "Was passiert, wenn der Speicher zu groß ist?",
+      "Werden Batteriespeicher 2026 billiger?",
+      "Wo wird der Speicher aufgestellt und wie steht es um den Brandschutz?",
+      "Welche Marken verbaut EBZ (BYD, Fronius, Huawei)?"
+    ],
+    "internal_links": [
+      "/pv-speicher-nachruesten/ -> PV-Speicher nachrüsten: Ablauf und Kosten",
+      "/foerderung-fuer-pv-speicher/ -> Speicherförderung 2026 im Detail",
+      "/foerderung-pv-speicher-kaernten/ -> Speicherförderung Land Kärnten",
+      "/notstrom/ -> Notstrom mit Batteriespeicher",
+      "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/ -> Ab wann lohnt sich PV mit Speicher",
+      "/dynamischer-stromtarif/ -> Speicher mit dynamischem Stromtarif laden",
+      "/energiemanagementsystem/ -> Energiemanagement für Speicher und Wärmepumpe",
+      "/photovoltaik/ -> Photovoltaikanlage komplett",
+      "/finanzierung/ -> Speicher mitfinanzieren",
+      "/referenzen/ -> Referenzen"
+    ],
+    "notes": "Die Seite deckt Nutzen, Größe, Technik und Förderung bereits gut ab, verliert aber gegen Shops und Hersteller, weil die SERP für 'batteriespeicher' und 'pv speicher' von Produktdaten lebt: Preis pro kWh, Kapazitätsklassen (5, 10, 20 kWh), Marken, Entladetiefe, Garantie. Zuerst eine Preis-pro-kWh-Angabe mit Sternchen und die Dimensionierungs-Faustformel ergänzen, dann Marken und technische Kennzahlen im Technikabschnitt nennen. 'PV-Speicher' als Synonym in Title, H1 und einer H2 verankern, da es den klareren Kaufintent und das höhere AI-Suchvolumen hat. Förder- und Nachrüst-Ratgeber nur verlinken, nicht noch einmal ausführen."
+  },
+  "cost_usd": 0.12
+}

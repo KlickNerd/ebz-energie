@@ -1,0 +1,36 @@
+{
+ "old_url": "/photovoltaik-wolfsberg/",
+ "clicks": 9,
+ "impressions": 977,
+ "ctr": 0.9,
+ "position": 10.5,
+ "top_queries": [
+  [
+   "photovoltaik wolfsberg",
+   1,
+   110
+  ],
+  [
+   "pva wolfsberg",
+   0,
+   16
+  ],
+  [
+   "pv anlage planen",
+   0,
+   7
+  ],
+  [
+   "photovoltaik installateur",
+   0,
+   3
+  ]
+ ],
+ "queries_total": 20,
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

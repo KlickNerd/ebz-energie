@@ -1,0 +1,5103 @@
+{
+ "stand": "2026-10-09",
+ "location": "Austria",
+ "language": "de",
+ "quelle": "DataForSEO Labs (Google AT)",
+ "ebz": {
+  "organic_keywords_at": 636,
+  "etv": 805.1,
+  "positionen": {
+   "pos_2_3": 2,
+   "pos_4_10": 46,
+   "pos_11_20": 50,
+   "pos_21_30": 55,
+   "pos_31_plus": 175,
+   "hinweis": "Verteilung laut competitors_domain (328 Keywords mit Intersections); ranked_keywords liefert 636 Keywords inkl. Long Tail"
+  },
+  "top_pages": [
+   {
+    "url": "/kosten-einer-waermepumpe/",
+    "etv": 301.0,
+    "keywords": 35,
+    "top_keywords": [
+     {
+      "keyword": "kosten wärmepumpe",
+      "pos": 4,
+      "volume_at": 1600
+     },
+     {
+      "keyword": "wärmepumpe kosten",
+      "pos": 4,
+      "volume_at": 1600
+     },
+     {
+      "keyword": "luftwärmepumpe kosten",
+      "pos": 25,
+      "volume_at": 1300
+     },
+     {
+      "keyword": "was kostet eine wärmepumpe",
+      "pos": 5,
+      "volume_at": 390
+     }
+    ]
+   },
+   {
+    "url": "/oemag-einspeisetarif/",
+    "etv": 139.9,
+    "keywords": 9,
+    "top_keywords": [
+     {
+      "keyword": "ömag marktpreis",
+      "pos": 15,
+      "volume_at": 6600
+     },
+     {
+      "keyword": "ömag einspeisetarif",
+      "pos": 8,
+      "volume_at": 2900
+     },
+     {
+      "keyword": "oemag einspeisetarif aktuell",
+      "pos": 7,
+      "volume_at": 880
+     },
+     {
+      "keyword": "marktpreis ömag",
+      "pos": 20,
+      "volume_at": 720
+     }
+    ]
+   },
+   {
+    "url": "/marktpreis-2026/",
+    "etv": 85.1,
+    "keywords": 8,
+    "top_keywords": [
+     {
+      "keyword": "oemag marktpreis 2026",
+      "pos": 5,
+      "volume_at": 590
+     },
+     {
+      "keyword": "oemag-marktpreis 2026",
+      "pos": 4,
+      "volume_at": 590
+     },
+     {
+      "keyword": "verbund einspeisetarif 2026",
+      "pos": 55,
+      "volume_at": 210
+     },
+     {
+      "keyword": "ömag marktpreis jänner 2026",
+      "pos": 4,
+      "volume_at": 110
+     }
+    ]
+   },
+   {
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/",
+    "etv": 75.9,
+    "keywords": 47,
+    "top_keywords": [
+     {
+      "keyword": "balkonkraftwerk österreich",
+      "pos": 10,
+      "volume_at": 2900
+     },
+     {
+      "keyword": "förderung photovoltaik",
+      "pos": 48,
+      "volume_at": 2400
+     },
+     {
+      "keyword": "photovoltaik förderung",
+      "pos": 41,
+      "volume_at": 2400
+     },
+     {
+      "keyword": "förderung pv-anlage",
+      "pos": 72,
+      "volume_at": 1300
+     }
+    ]
+   },
+   {
+    "url": "/foerderung-photovoltaik-steiermark/",
+    "etv": 66.2,
+    "keywords": 33,
+    "top_keywords": [
+     {
+      "keyword": "fördercall pv 2026",
+      "pos": 20,
+      "volume_at": 1000
+     },
+     {
+      "keyword": "eag förderung 2026",
+      "pos": 13,
+      "volume_at": 480
+     },
+     {
+      "keyword": "pv speicher förderung österreich 2026",
+      "pos": 29,
+      "volume_at": 480
+     },
+     {
+      "keyword": "pv-speicher förderung österreich 2026",
+      "pos": 28,
+      "volume_at": 480
+     }
+    ]
+   },
+   {
+    "url": "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/",
+    "etv": 60.3,
+    "keywords": 4,
+    "top_keywords": [
+     {
+      "keyword": "öko sonderausgabenpauschale",
+      "pos": 5,
+      "volume_at": 590
+     },
+     {
+      "keyword": "öko-sonderausgabenpauschale",
+      "pos": 5,
+      "volume_at": 590
+     },
+     {
+      "keyword": "öko sonderausgabenpauschale 2025",
+      "pos": 7,
+      "volume_at": 110
+     },
+     {
+      "keyword": "öko-sonderausgabenpauschale 2025",
+      "pos": 8,
+      "volume_at": 110
+     }
+    ]
+   },
+   {
+    "url": "/balkonkraftwerk-mit-speicher/",
+    "etv": 55.6,
+    "keywords": 5,
+    "top_keywords": [
+     {
+      "keyword": "balkonkraftwerk",
+      "pos": 56,
+      "volume_at": 18100
+     },
+     {
+      "keyword": "balkonkraftwerk mit speicher",
+      "pos": 55,
+      "volume_at": 8100
+     },
+     {
+      "keyword": "balkon pv anlage mit speicher",
+      "pos": 52,
+      "volume_at": 90
+     },
+     {
+      "keyword": "balkon pv-anlage mit speicher",
+      "pos": 46,
+      "volume_at": 90
+     }
+    ]
+   },
+   {
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/",
+    "etv": 54.7,
+    "keywords": 27,
+    "top_keywords": [
+     {
+      "keyword": "einspeisetarif österreich",
+      "pos": 10,
+      "volume_at": 880
+     },
+     {
+      "keyword": "einspeisetarife österreich",
+      "pos": 13,
+      "volume_at": 880
+     },
+     {
+      "keyword": "einspeisetarif",
+      "pos": 28,
+      "volume_at": 590
+     },
+     {
+      "keyword": "einspeisetarife vergleich",
+      "pos": 11,
+      "volume_at": 480
+     }
+    ]
+   },
+   {
+    "url": "/energiegemeinschaft-nachteile/",
+    "etv": 41.6,
+    "keywords": 2,
+    "top_keywords": [
+     {
+      "keyword": "energiegemeinschaft nachteile",
+      "pos": 5,
+      "volume_at": 880
+     },
+     {
+      "keyword": "energiegemeinschaft erfahrungen",
+      "pos": 31,
+      "volume_at": 170
+     }
+    ]
+   },
+   {
+    "url": "/einspeisetarif-fuer-photovoltaik/",
+    "etv": 37.1,
+    "keywords": 22,
+    "top_keywords": [
+     {
+      "keyword": "oemag marktpreis",
+      "pos": 32,
+      "volume_at": 6600
+     },
+     {
+      "keyword": "oemag einspeisevertrag",
+      "pos": 20,
+      "volume_at": 480
+     },
+     {
+      "keyword": "ömag marktpreis aktuell",
+      "pos": 35,
+      "volume_at": 480
+     },
+     {
+      "keyword": "oemag einspeisetarife",
+      "pos": 22,
+      "volume_at": 390
+     }
+    ]
+   },
+   {
+    "url": "/photovoltaik-foerderung-burgenland/",
+    "etv": 36.8,
+    "keywords": 12,
+    "top_keywords": [
+     {
+      "keyword": "burgenland energie einspeisetarif",
+      "pos": 38,
+      "volume_at": 90
+     },
+     {
+      "keyword": "förderung burgenland heizung",
+      "pos": 31,
+      "volume_at": 90
+     },
+     {
+      "keyword": "förderung heizung burgenland",
+      "pos": 39,
+      "volume_at": 90
+     },
+     {
+      "keyword": "heizung förderung burgenland",
+      "pos": 29,
+      "volume_at": 90
+     }
+    ]
+   },
+   {
+    "url": "/sanierungsoffensive-2026/",
+    "etv": 30.7,
+    "keywords": 35,
+    "top_keywords": [
+     {
+      "keyword": "sanierungsoffensive 2026",
+      "pos": 21,
+      "volume_at": 3600
+     },
+     {
+      "keyword": "sanierungsbonus 2026",
+      "pos": 54,
+      "volume_at": 1000
+     },
+     {
+      "keyword": "förderung heizungstausch 2026",
+      "pos": 63,
+      "volume_at": 720
+     },
+     {
+      "keyword": "förderungen heizungstausch 2026",
+      "pos": 15,
+      "volume_at": 720
+     }
+    ]
+   },
+   {
+    "url": "/photovoltaik-mit-speicher/",
+    "etv": 27.4,
+    "keywords": 26,
+    "top_keywords": [
+     {
+      "keyword": "pv anlage mit speicher",
+      "pos": 51,
+      "volume_at": 3600
+     },
+     {
+      "keyword": "pv speicher",
+      "pos": 68,
+      "volume_at": 2900
+     },
+     {
+      "keyword": "stromspeicher",
+      "pos": 87,
+      "volume_at": 1600
+     },
+     {
+      "keyword": "photovoltaik mit speicher",
+      "pos": 66,
+      "volume_at": 1300
+     }
+    ]
+   },
+   {
+    "url": "/photovoltaik-foerderung-wien/",
+    "etv": 24.4,
+    "keywords": 8,
+    "top_keywords": [
+     {
+      "keyword": "pv-anlage wien",
+      "pos": 25,
+      "volume_at": 480
+     },
+     {
+      "keyword": "förderung sonnenschutz wien 2026",
+      "pos": 31,
+      "volume_at": 210
+     },
+     {
+      "keyword": "förderung photovoltaik wien",
+      "pos": 27,
+      "volume_at": 90
+     },
+     {
+      "keyword": "photovoltaik förderung wien",
+      "pos": 18,
+      "volume_at": 90
+     }
+    ]
+   },
+   {
+    "url": "/foerderung-fuer-pv-speicher/",
+    "etv": 19.3,
+    "keywords": 30,
+    "top_keywords": [
+     {
+      "keyword": "förderung pv anlage",
+      "pos": 85,
+      "volume_at": 1300
+     },
+     {
+      "keyword": "förderung pv speicher",
+      "pos": 50,
+      "volume_at": 1300
+     },
+     {
+      "keyword": "pv speicher förderung",
+      "pos": 55,
+      "volume_at": 1300
+     },
+     {
+      "keyword": "pv anlage förderung",
+      "pos": 73,
+      "volume_at": 590
+     }
+    ]
+   }
+  ],
+  "top3_rankings": [
+   {
+    "keyword": "förderung balkonkraftwerk österreich",
+    "pos": 3,
+    "volume_at": 90,
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "photovoltaik förderung burgenland",
+    "pos": 2,
+    "volume_at": 90,
+    "url": "/photovoltaik-foerderung-burgenland/"
+   },
+   {
+    "keyword": "photovoltaik förderung burgenland 2026",
+    "pos": 2,
+    "volume_at": 90,
+    "url": "/photovoltaik-foerderung-burgenland/"
+   },
+   {
+    "keyword": "pv förderung steiermark",
+    "pos": 3,
+    "volume_at": 90,
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "zuschüsse 2026",
+    "pos": 1,
+    "volume_at": 70,
+    "url": "/photovoltaik-foerderung-wien/"
+   }
+  ],
+  "quick_wins_pos_4_20": [
+   {
+    "keyword": "ömag marktpreis",
+    "pos": 15,
+    "volume_at": 6600,
+    "intent": "informational",
+    "url": "/oemag-einspeisetarif/"
+   },
+   {
+    "keyword": "balkonkraftwerk österreich",
+    "pos": 10,
+    "volume_at": 2900,
+    "intent": "informational",
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "ömag einspeisetarif",
+    "pos": 8,
+    "volume_at": 2900,
+    "intent": "informational",
+    "url": "/oemag-einspeisetarif/"
+   },
+   {
+    "keyword": "kosten wärmepumpe",
+    "pos": 4,
+    "volume_at": 1600,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "wärmepumpe kosten",
+    "pos": 4,
+    "volume_at": 1600,
+    "intent": "commercial",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "pv förderung",
+    "pos": 17,
+    "volume_at": 1300,
+    "intent": "informational",
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "fördercall pv 2026",
+    "pos": 20,
+    "volume_at": 1000,
+    "intent": "transactional",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "einspeisetarif österreich",
+    "pos": 10,
+    "volume_at": 880,
+    "intent": "informational",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "einspeisetarife österreich",
+    "pos": 13,
+    "volume_at": 880,
+    "intent": "informational",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "energiegemeinschaft nachteile",
+    "pos": 5,
+    "volume_at": 880,
+    "intent": "informational",
+    "url": "/energiegemeinschaft-nachteile/"
+   },
+   {
+    "keyword": "oemag einspeisetarif aktuell",
+    "pos": 7,
+    "volume_at": 880,
+    "intent": "informational",
+    "url": "/oemag-einspeisetarif/"
+   },
+   {
+    "keyword": "förderungen heizungstausch 2026",
+    "pos": 15,
+    "volume_at": 720,
+    "intent": "informational",
+    "url": "/sanierungsoffensive-2026/"
+   },
+   {
+    "keyword": "marktpreis ömag",
+    "pos": 20,
+    "volume_at": 720,
+    "intent": "informational",
+    "url": "/oemag-einspeisetarif/"
+   },
+   {
+    "keyword": "oemag einspeisetarif 2026",
+    "pos": 7,
+    "volume_at": 590,
+    "intent": "informational",
+    "url": "/oemag-einspeisetarif/"
+   },
+   {
+    "keyword": "oemag marktpreis 2026",
+    "pos": 5,
+    "volume_at": 590,
+    "intent": "commercial",
+    "url": "/marktpreis-2026/"
+   },
+   {
+    "keyword": "oemag-marktpreis 2026",
+    "pos": 4,
+    "volume_at": 590,
+    "intent": "commercial",
+    "url": "/marktpreis-2026/"
+   },
+   {
+    "keyword": "pv förderung 2025",
+    "pos": 17,
+    "volume_at": 590,
+    "intent": "informational",
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "pv-förderung 2025",
+    "pos": 18,
+    "volume_at": 590,
+    "intent": "informational",
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "öko sonderausgabenpauschale",
+    "pos": 5,
+    "volume_at": 590,
+    "intent": "informational",
+    "url": "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/"
+   },
+   {
+    "keyword": "öko-sonderausgabenpauschale",
+    "pos": 5,
+    "volume_at": 590,
+    "intent": "commercial",
+    "url": "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/"
+   },
+   {
+    "keyword": "eag förderung 2026",
+    "pos": 13,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "einspeisetarife vergleich",
+    "pos": 11,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "oemag einspeisevergütung",
+    "pos": 12,
+    "volume_at": 480,
+    "intent": "informational",
+    "url": "/oemag-einspeisetarif/"
+   },
+   {
+    "keyword": "oemag einspeisevertrag",
+    "pos": 20,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/einspeisetarif-fuer-photovoltaik/"
+   },
+   {
+    "keyword": "oemag marktpreis aktuell",
+    "pos": 15,
+    "volume_at": 480,
+    "intent": "informational",
+    "url": "/oemag-einspeisetarif/"
+   },
+   {
+    "keyword": "förderung nö photovoltaik",
+    "pos": 19,
+    "volume_at": 390,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "förderung photovoltaik nö",
+    "pos": 19,
+    "volume_at": 390,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "förderungen nö photovoltaik",
+    "pos": 17,
+    "volume_at": 390,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "oemag einspeisetarif",
+    "pos": 11,
+    "volume_at": 390,
+    "intent": "informational",
+    "url": "/oemag-einspeisetarif/"
+   },
+   {
+    "keyword": "photovoltaik förderung nö",
+    "pos": 12,
+    "volume_at": 390,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "photovoltaik-förderung nö",
+    "pos": 12,
+    "volume_at": 390,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "pv einspeisetarife",
+    "pos": 16,
+    "volume_at": 390,
+    "intent": "informational",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "was kostet eine wärmepumpe",
+    "pos": 5,
+    "volume_at": 390,
+    "intent": "commercial",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "wärmepumpen zum heizen",
+    "pos": 20,
+    "volume_at": 390,
+    "intent": "transactional",
+    "url": "/heizen-mit-waermepumpe/"
+   },
+   {
+    "keyword": "erdwärmepumpe kosten",
+    "pos": 11,
+    "volume_at": 320,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "pv förderung kärnten",
+    "pos": 18,
+    "volume_at": 320,
+    "intent": "informational",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "wärmepumpen heizen",
+    "pos": 19,
+    "volume_at": 320,
+    "intent": "transactional",
+    "url": "/heizen-mit-waermepumpe/"
+   },
+   {
+    "keyword": "förderung photovoltaik kärnten",
+    "pos": 11,
+    "volume_at": 260,
+    "intent": "informational",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "kärnten förderung photovoltaik",
+    "pos": 17,
+    "volume_at": 260,
+    "intent": "informational",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "oemag marktpreis 2025",
+    "pos": 11,
+    "volume_at": 260,
+    "intent": "informational",
+    "url": "/einspeisetarif-fuer-photovoltaik/"
+   },
+   {
+    "keyword": "photovoltaik förderung kärnten",
+    "pos": 18,
+    "volume_at": 260,
+    "intent": "informational",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "photovoltaik-förderung tirol",
+    "pos": 17,
+    "volume_at": 260,
+    "intent": "commercial",
+    "url": "/photovoltaik-foerderung-tirol/"
+   },
+   {
+    "keyword": "pv speicher förderung österreich",
+    "pos": 16,
+    "volume_at": 260,
+    "intent": "commercial",
+    "url": "/foerderung-fuer-pv-speicher/"
+   },
+   {
+    "keyword": "ömag einspeisetarif 2025",
+    "pos": 6,
+    "volume_at": 260,
+    "intent": "informational",
+    "url": "/einspeisetarif-fuer-photovoltaik/"
+   },
+   {
+    "keyword": "bester einspeisetarif österreich",
+    "pos": 8,
+    "volume_at": 210,
+    "intent": "commercial",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "einspeisetarife österreich vergleich",
+    "pos": 8,
+    "volume_at": 210,
+    "intent": "commercial",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "photovoltaik förderung steiermark",
+    "pos": 6,
+    "volume_at": 210,
+    "intent": "informational",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "photovoltaik förderungen steiermark",
+    "pos": 7,
+    "volume_at": 210,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "pv einspeisetarife österreich",
+    "pos": 14,
+    "volume_at": 210,
+    "intent": "informational",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "pv rechner österreich",
+    "pos": 8,
+    "volume_at": 210,
+    "intent": "commercial",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "steiermark förderung photovoltaik",
+    "pos": 6,
+    "volume_at": 210,
+    "intent": "informational",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "wärmepumpe kosten österreich",
+    "pos": 4,
+    "volume_at": 210,
+    "intent": "commercial",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "einspeisetarif photovoltaik vergleich",
+    "pos": 4,
+    "volume_at": 170,
+    "intent": "commercial",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "einspeisetarif photovoltaik österreich vergleich",
+    "pos": 8,
+    "volume_at": 170,
+    "intent": "commercial",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "energiegemeinschaft finden",
+    "pos": 8,
+    "volume_at": 170,
+    "intent": "navigational",
+    "url": "/energiegemeinschaft-finden/"
+   },
+   {
+    "keyword": "energiegemeinschaft in der nähe",
+    "pos": 17,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/energiegemeinschaft-finden/"
+   },
+   {
+    "keyword": "förderung pv-anlage nö",
+    "pos": 15,
+    "volume_at": 170,
+    "intent": "commercial",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "pv förderung kärnten 2025",
+    "pos": 13,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "pv förderung niederösterreich",
+    "pos": 17,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "pv förderung steiermark 2026",
+    "pos": 7,
+    "volume_at": 170,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "pv komplettanlage mit speicher und montage",
+    "pos": 9,
+    "volume_at": 170,
+    "intent": "transactional",
+    "url": "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/"
+   },
+   {
+    "keyword": "pv speicher förderung niederösterreich",
+    "pos": 9,
+    "volume_at": 170,
+    "intent": "commercial",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "pv-förderung 2025 österreich",
+    "pos": 20,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "pv-förderung kärnten 2025",
+    "pos": 14,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "pv-förderung niederösterreich",
+    "pos": 14,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-niederoesterreich/"
+   },
+   {
+    "keyword": "pv-förderung österreich 2025",
+    "pos": 19,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "pv-komplettanlage mit speicher und montage",
+    "pos": 5,
+    "volume_at": 170,
+    "intent": "commercial",
+    "url": "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/"
+   },
+   {
+    "keyword": "stromspeicher förderung 2025",
+    "pos": 10,
+    "volume_at": 170,
+    "intent": "commercial",
+    "url": "/foerderung-fuer-pv-speicher/"
+   },
+   {
+    "keyword": "bester pv einspeisetarif österreich",
+    "pos": 11,
+    "volume_at": 140,
+    "intent": "commercial",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "kosten für luft wasser wärmepumpe",
+    "pos": 6,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "kosten wärmepumpe einfamilienhaus",
+    "pos": 6,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "kosten wärmepumpe luft wasser",
+    "pos": 11,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "luft wasser wärmepumpe kosten",
+    "pos": 18,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "luft-wasser-wärmepumpe kosten",
+    "pos": 20,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "pv förderung tirol",
+    "pos": 19,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-tirol/"
+   },
+   {
+    "keyword": "sanierungsoffensive 2026 österreich",
+    "pos": 17,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/sanierungsoffensive-2026/"
+   },
+   {
+    "keyword": "was kostet eine wärmepumpe in österreich",
+    "pos": 6,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "wärmepumpe für einfamilienhaus kosten",
+    "pos": 13,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "wärmepumpe kosten einfamilienhaus",
+    "pos": 15,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "ökostrom einspeisetarif",
+    "pos": 18,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "förderung photovoltaik steiermark privat 2026",
+    "pos": 9,
+    "volume_at": 110,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "pv carport österreich",
+    "pos": 13,
+    "volume_at": 110,
+    "intent": "commercial",
+    "url": "/photovoltaik-carport/"
+   },
+   {
+    "keyword": "pv förderung land kärnten",
+    "pos": 20,
+    "volume_at": 110,
+    "intent": "informational",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "pv-carport österreich",
+    "pos": 14,
+    "volume_at": 110,
+    "intent": "commercial",
+    "url": "/photovoltaik-carport/"
+   },
+   {
+    "keyword": "pv-förderung land kärnten",
+    "pos": 20,
+    "volume_at": 110,
+    "intent": "informational",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "strom einspeisetarife österreich",
+    "pos": 13,
+    "volume_at": 110,
+    "intent": "informational",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "öko sonderausgabenpauschale 2025",
+    "pos": 7,
+    "volume_at": 110,
+    "intent": "commercial",
+    "url": "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/"
+   },
+   {
+    "keyword": "öko-sonderausgabenpauschale 2025",
+    "pos": 8,
+    "volume_at": 110,
+    "intent": "informational",
+    "url": "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/"
+   },
+   {
+    "keyword": "ömag marktpreis jänner 2026",
+    "pos": 4,
+    "volume_at": 110,
+    "intent": "informational",
+    "url": "/marktpreis-2026/"
+   },
+   {
+    "keyword": "balkonkraftwerk graz",
+    "pos": 17,
+    "volume_at": 90,
+    "intent": "transactional",
+    "url": "/balkonkraftwerke/"
+   },
+   {
+    "keyword": "balkonkraftwerk österreich erlaubt",
+    "pos": 16,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "balkonkraftwerk österreich gesetz",
+    "pos": 12,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/balkonkraftwerk-foerderung-in-oesterreich/"
+   },
+   {
+    "keyword": "durchblicker strom einspeisen",
+    "pos": 15,
+    "volume_at": 90,
+    "intent": "transactional",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "eag investitionszuschuss 2026",
+    "pos": 14,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "fußbodenheizung bei altbau",
+    "pos": 20,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/waermepumpe-im-altbau/"
+   },
+   {
+    "keyword": "fußbodenheizung für altbau",
+    "pos": 20,
+    "volume_at": 90,
+    "intent": "transactional",
+    "url": "/waermepumpe-im-altbau/"
+   },
+   {
+    "keyword": "fördercall pv 2026 österreich",
+    "pos": 18,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "luft wärmepumpe kosten österreich",
+    "pos": 8,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "luftwärmepumpe kosten österreich",
+    "pos": 6,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "marstek venus e ac",
+    "pos": 4,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/marstek-venus/"
+   },
+   {
+    "keyword": "oemag förderung 2026",
+    "pos": 13,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "opt out smart meter",
+    "pos": 16,
+    "volume_at": 90,
+    "intent": "transactional",
+    "url": "/smart-meter-opt-out/"
+   },
+   {
+    "keyword": "opt-out smart meter",
+    "pos": 10,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/smart-meter-opt-out/"
+   },
+   {
+    "keyword": "photovoltaik burgenland förderung",
+    "pos": 4,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-burgenland/"
+   },
+   {
+    "keyword": "photovoltaik förderung wien",
+    "pos": 18,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-wien/"
+   },
+   {
+    "keyword": "photovoltaik vorarlberg",
+    "pos": 12,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-vorarlberg/"
+   },
+   {
+    "keyword": "photovoltaik-förderung wien",
+    "pos": 18,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-wien/"
+   },
+   {
+    "keyword": "pv anlage set österreich",
+    "pos": 17,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/batteriespeicher-und-photovoltaik/"
+   },
+   {
+    "keyword": "pv einspeisung österreich",
+    "pos": 16,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/einspeiseverguetung/"
+   },
+   {
+    "keyword": "pv förderung oberösterreich 2026",
+    "pos": 18,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-oberoesterreich/"
+   },
+   {
+    "keyword": "pv speicher förderung kärnten",
+    "pos": 8,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "pv speicher nachrüsten österreich",
+    "pos": 8,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/pv-speicher-nachruesten/"
+   },
+   {
+    "keyword": "pv vorarlberg",
+    "pos": 10,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-vorarlberg/"
+   },
+   {
+    "keyword": "pv-anlage set österreich",
+    "pos": 16,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/batteriespeicher-und-photovoltaik/"
+   },
+   {
+    "keyword": "pv-speicher förderung kärnten",
+    "pos": 8,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/foerderung-pv-speicher-kaernten/"
+   },
+   {
+    "keyword": "pv-speicher nachrüsten österreich",
+    "pos": 8,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/pv-speicher-nachruesten/"
+   },
+   {
+    "keyword": "smart meter opt-out",
+    "pos": 9,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/smart-meter-opt-out/"
+   },
+   {
+    "keyword": "solarcarport österreich",
+    "pos": 16,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/photovoltaik-carport/"
+   },
+   {
+    "keyword": "was kostet eine wärmepumpe für ein einfamilienhaus",
+    "pos": 9,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "wien förderung photovoltaik",
+    "pos": 15,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-wien/"
+   },
+   {
+    "keyword": "wien photovoltaik förderung",
+    "pos": 16,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-foerderung-wien/"
+   },
+   {
+    "keyword": "ömag marktpreis mai 2026",
+    "pos": 5,
+    "volume_at": 90,
+    "intent": "commercial",
+    "url": "/marktpreis-2026/"
+   }
+  ],
+  "leistungsseiten_rankings": [
+   {
+    "keyword": "pv-anlagen kärnten",
+    "pos": 8,
+    "volume_at": 70,
+    "intent": "commercial",
+    "url": "/"
+   },
+   {
+    "keyword": "beg kärnten",
+    "pos": 56,
+    "volume_at": 140,
+    "intent": "navigational",
+    "url": "/"
+   },
+   {
+    "keyword": "balkonkraftwerk graz",
+    "pos": 17,
+    "volume_at": 90,
+    "intent": "transactional",
+    "url": "/balkonkraftwerke/"
+   },
+   {
+    "keyword": "balkonkraftwerk gleisdorf",
+    "pos": 28,
+    "volume_at": 210,
+    "intent": "navigational",
+    "url": "/balkonkraftwerke/"
+   },
+   {
+    "keyword": "pv rechner österreich",
+    "pos": 8,
+    "volume_at": 210,
+    "intent": "commercial",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "pv ertragsrechner österreich",
+    "pos": 18,
+    "volume_at": 50,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "pv-ertrag tabelle österreich",
+    "pos": 44,
+    "volume_at": 70,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "pv ertrag tabelle österreich",
+    "pos": 46,
+    "volume_at": 70,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "photovoltaikanlage kosten rechner",
+    "pos": 55,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "photovoltaikanlage kosten-rechner",
+    "pos": 55,
+    "volume_at": 140,
+    "intent": "commercial",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "photovoltaikanlagen kosten rechner",
+    "pos": 56,
+    "volume_at": 140,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "pv anlage berechnen",
+    "pos": 56,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "photovoltaik ertragsrechner",
+    "pos": 57,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "photovoltaik anlage kosten rechner",
+    "pos": 60,
+    "volume_at": 140,
+    "intent": "commercial",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "pv ertragsrechner",
+    "pos": 61,
+    "volume_at": 170,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "photovoltaikanlage berechnen",
+    "pos": 63,
+    "volume_at": 50,
+    "intent": "informational",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "pv anlagen rechner",
+    "pos": 65,
+    "volume_at": 110,
+    "intent": "commercial",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "photovoltaik rechner",
+    "pos": 66,
+    "volume_at": 110,
+    "intent": "transactional",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "pv anlage rechner",
+    "pos": 67,
+    "volume_at": 110,
+    "intent": "commercial",
+    "url": "/ebz-solarrechner/"
+   },
+   {
+    "keyword": "ebz",
+    "pos": 28,
+    "volume_at": 110,
+    "intent": "informational",
+    "url": "/kontakt/"
+   },
+   {
+    "keyword": "pv anlage mieten",
+    "pos": 4,
+    "volume_at": 70,
+    "intent": "commercial",
+    "url": "/photovoltaik-mieten/"
+   },
+   {
+    "keyword": "pv-anlage mieten",
+    "pos": 4,
+    "volume_at": 70,
+    "intent": "commercial",
+    "url": "/photovoltaik-mieten/"
+   },
+   {
+    "keyword": "pv-anlagen mieten",
+    "pos": 5,
+    "volume_at": 70,
+    "intent": "commercial",
+    "url": "/photovoltaik-mieten/"
+   },
+   {
+    "keyword": "eeg villach",
+    "pos": 43,
+    "volume_at": 90,
+    "intent": "informational",
+    "url": "/photovoltaik-villach/"
+   },
+   {
+    "keyword": "pv anlage leasen",
+    "pos": 4,
+    "volume_at": 50,
+    "intent": "commercial",
+    "url": "/pv-anlage-leasen/"
+   }
+  ],
+  "ratgeber_rankt_statt_leistungsseite": [
+   {
+    "keyword": "balkonkraftwerk",
+    "pos": 56,
+    "volume_at": 18100,
+    "intent": "transactional",
+    "url": "/balkonkraftwerk-mit-speicher/"
+   },
+   {
+    "keyword": "balkonkraftwerk mit speicher",
+    "pos": 55,
+    "volume_at": 8100,
+    "intent": "transactional",
+    "url": "/balkonkraftwerk-mit-speicher/"
+   },
+   {
+    "keyword": "wallbox",
+    "pos": 55,
+    "volume_at": 6600,
+    "intent": "transactional",
+    "url": "/wallbox/"
+   },
+   {
+    "keyword": "batteriespeicher",
+    "pos": 69,
+    "volume_at": 4400,
+    "intent": "transactional",
+    "url": "/batteriespeicher-und-photovoltaik/"
+   },
+   {
+    "keyword": "pv anlage mit speicher",
+    "pos": 51,
+    "volume_at": 3600,
+    "intent": "transactional",
+    "url": "/photovoltaik-mit-speicher/"
+   },
+   {
+    "keyword": "pv speicher",
+    "pos": 68,
+    "volume_at": 2900,
+    "intent": "transactional",
+    "url": "/photovoltaik-mit-speicher/"
+   },
+   {
+    "keyword": "stromspeicher",
+    "pos": 87,
+    "volume_at": 1600,
+    "intent": "transactional",
+    "url": "/photovoltaik-mit-speicher/"
+   },
+   {
+    "keyword": "wärmepumpe kosten",
+    "pos": 4,
+    "volume_at": 1600,
+    "intent": "commercial",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "förderung pv speicher",
+    "pos": 50,
+    "volume_at": 1300,
+    "intent": "commercial",
+    "url": "/foerderung-fuer-pv-speicher/"
+   },
+   {
+    "keyword": "luftwärmepumpe kosten",
+    "pos": 25,
+    "volume_at": 1300,
+    "intent": "commercial",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "photovoltaik mit speicher",
+    "pos": 66,
+    "volume_at": 1300,
+    "intent": "transactional",
+    "url": "/photovoltaik-mit-speicher/"
+   },
+   {
+    "keyword": "pv speicher förderung",
+    "pos": 55,
+    "volume_at": 1300,
+    "intent": "commercial",
+    "url": "/foerderung-fuer-pv-speicher/"
+   },
+   {
+    "keyword": "fördercall pv 2026",
+    "pos": 20,
+    "volume_at": 1000,
+    "intent": "transactional",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "sanierungsbonus 2026",
+    "pos": 54,
+    "volume_at": 1000,
+    "intent": "commercial",
+    "url": "/sanierungsoffensive-2026/"
+   },
+   {
+    "keyword": "photovoltaik anlage mit speicher",
+    "pos": 53,
+    "volume_at": 720,
+    "intent": "transactional",
+    "url": "/photovoltaik-mit-speicher/"
+   },
+   {
+    "keyword": "sanierungsoffensive",
+    "pos": 23,
+    "volume_at": 720,
+    "intent": "commercial",
+    "url": "/sanierungsoffensive-2026/"
+   },
+   {
+    "keyword": "batteriespeicher pv",
+    "pos": 79,
+    "volume_at": 590,
+    "intent": "transactional",
+    "url": "/batteriespeicher-und-photovoltaik/"
+   },
+   {
+    "keyword": "oemag marktpreis 2026",
+    "pos": 5,
+    "volume_at": 590,
+    "intent": "commercial",
+    "url": "/marktpreis-2026/"
+   },
+   {
+    "keyword": "oemag-marktpreis 2026",
+    "pos": 4,
+    "volume_at": 590,
+    "intent": "commercial",
+    "url": "/marktpreis-2026/"
+   },
+   {
+    "keyword": "öko-sonderausgabenpauschale",
+    "pos": 5,
+    "volume_at": 590,
+    "intent": "commercial",
+    "url": "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/"
+   },
+   {
+    "keyword": "eag förderung 2026",
+    "pos": 13,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "einspeisetarife vergleich",
+    "pos": 11,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/einspeisetarif-photovoltaik-oesterreich-vergleich/"
+   },
+   {
+    "keyword": "oemag einspeisevertrag",
+    "pos": 20,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/einspeisetarif-fuer-photovoltaik/"
+   },
+   {
+    "keyword": "pv carport",
+    "pos": 52,
+    "volume_at": 480,
+    "intent": "transactional",
+    "url": "/photovoltaik-carport/"
+   },
+   {
+    "keyword": "pv speicher förderung österreich 2026",
+    "pos": 29,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "pv-anlage wien",
+    "pos": 25,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/photovoltaik-foerderung-wien/"
+   },
+   {
+    "keyword": "pv-carports",
+    "pos": 55,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/photovoltaik-carport/"
+   },
+   {
+    "keyword": "pv-speicher förderung österreich 2026",
+    "pos": 28,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "sauber heizen für alle",
+    "pos": 37,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/sauber-heizen-fuer-alle-2026/"
+   },
+   {
+    "keyword": "speicher photovoltaik",
+    "pos": 90,
+    "volume_at": 480,
+    "intent": "transactional",
+    "url": "/photovoltaik-mit-speicher/"
+   },
+   {
+    "keyword": "ömag marktpreis aktuell",
+    "pos": 35,
+    "volume_at": 480,
+    "intent": "commercial",
+    "url": "/einspeisetarif-fuer-photovoltaik/"
+   },
+   {
+    "keyword": "heizung mit wärmepumpe",
+    "pos": 42,
+    "volume_at": 390,
+    "intent": "transactional",
+    "url": "/heizen-mit-waermepumpe/"
+   },
+   {
+    "keyword": "kosten pv anlage mit speicher",
+    "pos": 48,
+    "volume_at": 390,
+    "intent": "commercial",
+    "url": "/kosten-von-photovoltaikanlagen-mit-speicher/"
+   },
+   {
+    "keyword": "photovoltaik speicher kosten",
+    "pos": 39,
+    "volume_at": 390,
+    "intent": "commercial",
+    "url": "/kosten-von-photovoltaikanlagen-mit-speicher/"
+   },
+   {
+    "keyword": "photovoltaikanlage kosten",
+    "pos": 69,
+    "volume_at": 390,
+    "intent": "commercial",
+    "url": "/kosten-einer-solaranlage/"
+   },
+   {
+    "keyword": "pv anlage mit speicher kosten",
+    "pos": 55,
+    "volume_at": 390,
+    "intent": "commercial",
+    "url": "/kosten-von-photovoltaikanlagen-mit-speicher/"
+   },
+   {
+    "keyword": "was kostet eine wärmepumpe",
+    "pos": 5,
+    "volume_at": 390,
+    "intent": "commercial",
+    "url": "/kosten-einer-waermepumpe/"
+   },
+   {
+    "keyword": "wärmepumpen zum heizen",
+    "pos": 20,
+    "volume_at": 390,
+    "intent": "transactional",
+    "url": "/heizen-mit-waermepumpe/"
+   },
+   {
+    "keyword": "wärmepumpenheizung",
+    "pos": 50,
+    "volume_at": 390,
+    "intent": "transactional",
+    "url": "/heizen-mit-waermepumpe/"
+   },
+   {
+    "keyword": "förderung stromspeicher",
+    "pos": 61,
+    "volume_at": 320,
+    "intent": "commercial",
+    "url": "/foerderung-fuer-pv-speicher/"
+   },
+   {
+    "keyword": "kosten solaranlage",
+    "pos": 55,
+    "volume_at": 320,
+    "intent": "commercial",
+    "url": "/kosten-einer-solaranlage/"
+   },
+   {
+    "keyword": "kpc förderung 2026",
+    "pos": 25,
+    "volume_at": 320,
+    "intent": "commercial",
+    "url": "/sanierungsoffensive-2026/"
+   },
+   {
+    "keyword": "photovoltaik komplettanlage 10 kwp mit speicher",
+    "pos": 24,
+    "volume_at": 320,
+    "intent": "transactional",
+    "url": "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/"
+   },
+   {
+    "keyword": "pv fördercall 2026",
+    "pos": 22,
+    "volume_at": 320,
+    "intent": "commercial",
+    "url": "/foerderung-photovoltaik-steiermark/"
+   },
+   {
+    "keyword": "pv speicher förderung 2026",
+    "pos": 41,
+    "volume_at": 320,
+    "intent": "commercial",
+    "url": "/photovoltaik-foerderung-oberoesterreich/"
+   }
+  ]
+ },
+ "competitors_domain_top10": [
+  {
+   "domain": "verbund.com",
+   "intersections": 178,
+   "typ": "EVU"
+  },
+  {
+   "domain": "photovoltaikanlage.at",
+   "intersections": 167,
+   "typ": "Portal"
+  },
+  {
+   "domain": "wko.at",
+   "intersections": 161,
+   "typ": "Kammer"
+  },
+  {
+   "domain": "oesterreich.gv.at",
+   "intersections": 145,
+   "typ": "Behoerde"
+  },
+  {
+   "domain": "orf.at",
+   "intersections": 145,
+   "typ": "Medium"
+  },
+  {
+   "domain": "kleinezeitung.at",
+   "intersections": 143,
+   "typ": "Medium"
+  },
+  {
+   "domain": "evn.at",
+   "intersections": 141,
+   "typ": "EVU"
+  },
+  {
+   "domain": "kwb.net",
+   "intersections": 131,
+   "typ": "Hersteller Heizung"
+  },
+  {
+   "domain": "enerix.at",
+   "intersections": 131,
+   "typ": "PV-Anbieter"
+  }
+ ],
+ "serp_competitors_regional": {
+  "keywords": [
+   "photovoltaik kaernten",
+   "photovoltaik villach",
+   "photovoltaik klagenfurt",
+   "photovoltaik steiermark",
+   "photovoltaik graz",
+   "pv anlage kaernten",
+   "photovoltaik firma kaernten",
+   "photovoltaik anbieter oesterreich",
+   "photovoltaik installateur",
+   "pv anlage mit speicher kosten",
+   "waermepumpe kaernten",
+   "energiegemeinschaft kaernten",
+   "photovoltaik wolfsberg",
+   "photovoltaik spittal",
+   "photovoltaik leoben"
+  ],
+  "anbieter_top": [
+   {
+    "domain": "kaernten-solar.at",
+    "pos": {
+     "pv anlage kaernten": 1,
+     "photovoltaik kaernten": 1
+    }
+   },
+   {
+    "domain": "regenfelder.at",
+    "pos": {
+     "photovoltaik kaernten": 2
+    }
+   },
+   {
+    "domain": "et-plus.at",
+    "pos": {
+     "photovoltaik steiermark": 1
+    }
+   },
+   {
+    "domain": "ebz-photovoltaik.at",
+    "pos": {
+     "photovoltaik steiermark": 3,
+     "pv anlage kaernten": 5,
+     "pv anlage mit speicher kosten": 55
+    }
+   },
+   {
+    "domain": "ewerk-gruppe.at",
+    "pos": {
+     "photovoltaik kaernten": 4
+    }
+   },
+   {
+    "domain": "pvbaustria.at",
+    "pos": {
+     "pv anlage kaernten": 7,
+     "photovoltaik installateur": 4
+    }
+   },
+   {
+    "domain": "hsh-installateur.com",
+    "pos": {
+     "photovoltaik kaernten": 3
+    }
+   },
+   {
+    "domain": "oh-solar.at",
+    "pos": {
+     "photovoltaik installateur": 5
+    }
+   },
+   {
+    "domain": "sunworld.at",
+    "pos": {
+     "pv anlage kaernten": 8
+    }
+   },
+   {
+    "domain": "solardiscount.at",
+    "pos": {
+     "pv anlage mit speicher kosten": 1
+    }
+   },
+   {
+    "domain": "greensolar.at",
+    "pos": {
+     "pv anlage mit speicher kosten": 2
+    }
+   },
+   {
+    "domain": "heizma.at",
+    "pos": {
+     "pv anlage kaernten": 17,
+     "photovoltaik installateur": 11
+    }
+   },
+   {
+    "domain": "solar-now.at",
+    "pos": {
+     "pv anlage mit speicher kosten": 25
+    }
+   },
+   {
+    "domain": "et-plus.at",
+    "pos": {
+     "pv anlage kaernten": 24
+    }
+   }
+  ],
+  "hinweis": "Keywords 'photovoltaik villach/klagenfurt/graz/wolfsberg/spittal/leoben', 'photovoltaik firma kaernten', 'waermepumpe kaernten' lieferten keine Zeilen (kein AT-Volumen in der Labs-Datenbank)."
+ },
+ "competitors_selected": [
+  {
+   "domain": "kaernten-solar.at",
+   "typ": "regionaler PV-Anbieter Kaernten (Klagenfurt), Privat + Gewerbe + Gemeinden",
+   "staerke": "Platz 1 fuer 'photovoltaik kaernten' (70) und 'pv anlage kaernten' (70), Platz 7 'pv klagenfurt' (140); 192 AT-Keywords; Domain-Rank 185; Gemini nennt die Firma als erste Empfehlung in Kaernten (53 MWp installiert, seit 2013)",
+   "organic_keywords_at": 192,
+   "strongest_pages": [
+    {
+     "url": "/photovoltaik-foerderung/",
+     "title": "Photovoltaik Förderung Kärnten I PV-Anlage I Stromspeicher",
+     "etv": 288.0,
+     "keywords": 84,
+     "top_keywords": [
+      {
+       "keyword": "förderung photovoltaik",
+       "pos": 54,
+       "volume_at": 2400
+      },
+      {
+       "keyword": "photovoltaik förderung",
+       "pos": 47,
+       "volume_at": 2400
+      },
+      {
+       "keyword": "förderung pv speicher",
+       "pos": 41,
+       "volume_at": 1300
+      },
+      {
+       "keyword": "förderung pv-anlage",
+       "pos": 56,
+       "volume_at": 1300
+      }
+     ]
+    },
+    {
+     "url": "/",
+     "title": "Kärnten Solar I Dein Photovoltaik Experte aus Kärnten ☀️",
+     "etv": 170.2,
+     "keywords": 30,
+     "top_keywords": [
+      {
+       "keyword": "solar",
+       "pos": 18,
+       "volume_at": 1900
+      },
+      {
+       "keyword": "isolar isolierglaserzeugung",
+       "pos": 50,
+       "volume_at": 480
+      },
+      {
+       "keyword": "isolar klagenfurt",
+       "pos": 50,
+       "volume_at": 390
+      },
+      {
+       "keyword": "kärnten solar",
+       "pos": 1,
+       "volume_at": 320
+      }
+     ]
+    },
+    {
+     "url": "/bifaziale-module/",
+     "title": "Bifaziale Module | Alles was du 2025 darüber wissen musst!",
+     "etv": 18.7,
+     "keywords": 5,
+     "top_keywords": [
+      {
+       "keyword": "bifaziale pv-module",
+       "pos": 2,
+       "volume_at": 110
+      },
+      {
+       "keyword": "photovoltaik-module bifacial",
+       "pos": 37,
+       "volume_at": 110
+      },
+      {
+       "keyword": "pv modul bifacial",
+       "pos": 51,
+       "volume_at": 110
+      },
+      {
+       "keyword": "pv modul bifazial",
+       "pos": 16,
+       "volume_at": 70
+      }
+     ]
+    },
+    {
+     "url": "/stromverbrauch-haushalt_8-energiespartipps/",
+     "title": "Stromverbrauch Haushalt: 8 Energiespartipps für dein ...",
+     "etv": 10.8,
+     "keywords": 32,
+     "top_keywords": [
+      {
+       "keyword": "stromverbrauch haushalt",
+       "pos": 37,
+       "volume_at": 720
+      },
+      {
+       "keyword": "stromverbrauch",
+       "pos": 35,
+       "volume_at": 480
+      },
+      {
+       "keyword": "durchschnittlicher stromverbrauch haushalt",
+       "pos": 44,
+       "volume_at": 320
+      },
+      {
+       "keyword": "durchschnittlicher stromverbrauch im haushalt",
+       "pos": 37,
+       "volume_at": 320
+      }
+     ]
+    },
+    {
+     "url": "/stromspeicher/",
+     "title": "Dein Stromspeicher: Entdecke die Zukunft der Energie ☀️",
+     "etv": 7.7,
+     "keywords": 4,
+     "top_keywords": [
+      {
+       "keyword": "speicher",
+       "pos": 42,
+       "volume_at": 1900
+      },
+      {
+       "keyword": "stromspeicher",
+       "pos": 40,
+       "volume_at": 1600
+      },
+      {
+       "keyword": "strom speichern",
+       "pos": 35,
+       "volume_at": 110
+      },
+      {
+       "keyword": "solarstromspeicher",
+       "pos": 59,
+       "volume_at": 70
+      }
+     ]
+    },
+    {
+     "url": "/balkonkraftwerke/",
+     "title": "Balkonkraftwerke: Lohnt sich die Investition?",
+     "etv": 6.5,
+     "keywords": 3,
+     "top_keywords": [
+      {
+       "keyword": "balkonkraftwerk österreich",
+       "pos": 23,
+       "volume_at": 2900
+      },
+      {
+       "keyword": "balkonkraftwerk österreich erlaubt",
+       "pos": 41,
+       "volume_at": 90
+      },
+      {
+       "keyword": "förderung balkonkraftwerk österreich",
+       "pos": 41,
+       "volume_at": 90
+      }
+     ]
+    }
+   ],
+   "struktur_hinweis": [
+    "/photovoltaik-foerderung/: eine laufend aktualisierte Foerderseite (Land Kaernten + EAG), 84 Keywords, rankt auch fuer 'pv speicher nachruesten oesterreich' Platz 12",
+    "Startseite als Marken- und Standortseite: 'Dein Photovoltaik Experte aus Kaernten', Komplettloesung aus einer Hand, Zahlen (MWp, seit 2013)",
+    "Eigene Projektseite je Referenz (LAM Research Villach, Schwimmbad St. Paul 73 kWp, Volksschule Velden, Siemens Mobility 500 kWp): rankt auf Kundennamen und Orte, liefert zitierbare kWp-Zahlen"
+   ]
+  },
+  {
+   "domain": "enerix.at",
+   "typ": "nationaler PV-Fachbetrieb (Franchise, Standorte Graz, Oberkaernten, Tirol, Ost)",
+   "staerke": "437 AT-Keywords, ETV 1.410, 131 gemeinsame Keywords mit EBZ (hoechste Ueberschneidung unter den Anbietern); Platz 3 'photovoltaik in der naehe' (590) mit Standortseite Graz; Gemini zitiert enerix-Ratgeber fuer Kosten und Foerderung",
+   "organic_keywords_at": 437,
+   "strongest_pages": [
+    {
+     "url": "/ratgeber/oemag-forderung-2025/",
+     "title": "Photovoltaik Förderung 2026 in Österreich: EAG-Guide",
+     "etv": 234.0,
+     "keywords": 41,
+     "top_keywords": [
+      {
+       "keyword": "fördercall pv 2026",
+       "pos": 12,
+       "volume_at": 1000
+      },
+      {
+       "keyword": "pv förderung 2025",
+       "pos": 9,
+       "volume_at": 590
+      },
+      {
+       "keyword": "pv-förderung 2025",
+       "pos": 9,
+       "volume_at": 590
+      },
+      {
+       "keyword": "oemag einspeisetarif 2026",
+       "pos": 31,
+       "volume_at": 590
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/photovoltaik/aufbau-einer-photovoltaikanlage/",
+     "title": "Aufbau einer PV-Anlage: Die komplette Technik im Überblick",
+     "etv": 137.3,
+     "keywords": 15,
+     "top_keywords": [
+      {
+       "keyword": "pv anlagen aufbau",
+       "pos": 3,
+       "volume_at": 140
+      },
+      {
+       "keyword": "solaranlage aufbau",
+       "pos": 3,
+       "volume_at": 140
+      },
+      {
+       "keyword": "solaranlagen aufbau",
+       "pos": 3,
+       "volume_at": 140
+      },
+      {
+       "keyword": "aufbau solaranlage",
+       "pos": 4,
+       "volume_at": 140
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/balkonkraftwerk/",
+     "title": "Balkonkraftwerk 2026 in Österreich: Regeln, Kosten & Ertrag",
+     "etv": 107.6,
+     "keywords": 9,
+     "top_keywords": [
+      {
+       "keyword": "balkonkraftwerk",
+       "pos": 33,
+       "volume_at": 18100
+      },
+      {
+       "keyword": "balkonkraftwerk österreich",
+       "pos": 18,
+       "volume_at": 2900
+      },
+      {
+       "keyword": "photovoltaik balkon",
+       "pos": 22,
+       "volume_at": 390
+      },
+      {
+       "keyword": "balkon solaranlage",
+       "pos": 48,
+       "volume_at": 390
+      }
+     ]
+    },
+    {
+     "url": "/",
+     "title": "Enerix Österreich , Dein Partner für Photovoltaik & mehr",
+     "etv": 98.0,
+     "keywords": 2,
+     "top_keywords": [
+      {
+       "keyword": "enerix",
+       "pos": 1,
+       "volume_at": 320
+      },
+      {
+       "keyword": "solarier",
+       "pos": 38,
+       "volume_at": 320
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/solarstrom-speichern/stromspeicher-ohne-pv-anlage/",
+     "title": "Stromspeicher ohne PV Anlage , Lohnt sich das?",
+     "etv": 86.3,
+     "keywords": 14,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik speicher kosten",
+       "pos": 36,
+       "volume_at": 390
+      },
+      {
+       "keyword": "stromspeicher für zuhause",
+       "pos": 5,
+       "volume_at": 140
+      },
+      {
+       "keyword": "stromspeicher im haus",
+       "pos": 7,
+       "volume_at": 140
+      },
+      {
+       "keyword": "stromspeicher zu hause",
+       "pos": 8,
+       "volume_at": 140
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/photovoltaik/",
+     "title": "Photovoltaik: Kosten, Förderung und Wirtschaftlichkeit",
+     "etv": 81.1,
+     "keywords": 4,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik",
+       "pos": 61,
+       "volume_at": 22200
+      },
+      {
+       "keyword": "photovoltaikanlage",
+       "pos": 51,
+       "volume_at": 8100
+      },
+      {
+       "keyword": "solaranlage",
+       "pos": 61,
+       "volume_at": 5400
+      },
+      {
+       "keyword": "solarstrom",
+       "pos": 32,
+       "volume_at": 2900
+      }
+     ]
+    },
+    {
+     "url": "/standorte/enerix-graz/",
+     "title": "enerix Graz: Photovoltaik & Stromspeicher ☀️",
+     "etv": 74.9,
+     "keywords": 7,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik in der nähe",
+       "pos": 3,
+       "volume_at": 590
+      },
+      {
+       "keyword": "pv anlage in der nähe",
+       "pos": 8,
+       "volume_at": 90
+      },
+      {
+       "keyword": "pv anlagen in der nähe",
+       "pos": 9,
+       "volume_at": 90
+      },
+      {
+       "keyword": "photovoltaik anbieter in meiner nähe",
+       "pos": 10,
+       "volume_at": 90
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/photovoltaik/photovoltaik-inselanlage/",
+     "title": "Photovoltaik-Inselanlage , Strom ohne Netzanschluss",
+     "etv": 69.9,
+     "keywords": 8,
+     "top_keywords": [
+      {
+       "keyword": "pv inselanlage",
+       "pos": 2,
+       "volume_at": 320
+      },
+      {
+       "keyword": "inselanlage pv",
+       "pos": 8,
+       "volume_at": 140
+      },
+      {
+       "keyword": "pv inselanlage mit speicher",
+       "pos": 14,
+       "volume_at": 140
+      },
+      {
+       "keyword": "inselbetrieb pv anlage",
+       "pos": 7,
+       "volume_at": 110
+      }
+     ]
+    }
+   ],
+   "struktur_hinweis": [
+    "/ratgeber/oemag-forderung-2025/ (Title 'Photovoltaik Foerderung 2026 in Oesterreich: EAG-Guide'): 41 Keywords, Platz 4 'oemag foerderung' (480), Platz 12 'foerdercall pv 2026' (1000): Fördercall-Termine, Foerdersaetze als Tabelle, Ticketziehung erklaert",
+    "Ratgeber-Hub mit Technik-Erklaerseiten (Aufbau PV-Anlage Platz 3, Inselanlage Platz 2, Unterkonstruktion Platz 3, Solarzaun, Solardachziegel) plus /hersteller/-Seiten je Marke",
+    "Standortseiten /standorte/enerix-graz/ ranken fuer 'photovoltaik in der naehe', 'pv anlage in der naehe', 'photovoltaik anbieter in meiner naehe' (Platz 3 bis 10)"
+   ]
+  },
+  {
+   "domain": "heizma.at",
+   "typ": "nationaler Anbieter Waermepumpe + PV + Speicher (Wien, Standortseiten je Bundesland)",
+   "staerke": "525 AT-Keywords; staerkste Waermepumpen-Ratgeber Oesterreichs (Lambda 925 ETV, Hersteller-Vergleich Platz 2 bis 4 'waermepumpen oesterreich'); Perplexity zitiert heizma in 3 der 12 Fragen insgesamt 9-mal (Speicher, Waermepumpe, Kaernten-Anbieter); Platz 6 'foerdercall pv 2026' (1000), Platz 6 'sanierungsoffensive 2026' (3600, EBZ Platz 21)",
+   "organic_keywords_at": 525,
+   "strongest_pages": [
+    {
+     "url": "/ratgeber/lambda-waermepumpe",
+     "title": "Lambda Wärmepumpe: Preise 2026, Modelle, Förderung",
+     "etv": 924.5,
+     "keywords": 5,
+     "top_keywords": [
+      {
+       "keyword": "lambda wärmepumpen",
+       "pos": 2,
+       "volume_at": 2900
+      },
+      {
+       "keyword": "lambda",
+       "pos": 2,
+       "volume_at": 2400
+      },
+      {
+       "keyword": "lambda wärmepumpen gmbh",
+       "pos": 6,
+       "volume_at": 260
+      },
+      {
+       "keyword": "lambda wärmepumpe preisliste",
+       "pos": 1,
+       "volume_at": 140
+      }
+     ]
+    },
+    {
+     "url": "/",
+     "title": "Wärmepumpen & PV-Anlagen mit Speicher | Heizma Österreich",
+     "etv": 600.6,
+     "keywords": 9,
+     "top_keywords": [
+      {
+       "keyword": "germa",
+       "pos": 49,
+       "volume_at": 4400
+      },
+      {
+       "keyword": "heizma",
+       "pos": 1,
+       "volume_at": 1600
+      },
+      {
+       "keyword": "thermomatic",
+       "pos": 40,
+       "volume_at": 880
+      },
+      {
+       "keyword": "thermomatic wien",
+       "pos": 63,
+       "volume_at": 590
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/waermepumpen-hersteller-anbieter",
+     "title": "Wärmepumpe Österreich: 10 Hersteller im Vergleich",
+     "etv": 322.0,
+     "keywords": 13,
+     "top_keywords": [
+      {
+       "keyword": "wärmepumpe austria",
+       "pos": 4,
+       "volume_at": 390
+      },
+      {
+       "keyword": "wärmepumpen aus österreich",
+       "pos": 2,
+       "volume_at": 320
+      },
+      {
+       "keyword": "wärmepumpe aus österreich",
+       "pos": 3,
+       "volume_at": 320
+      },
+      {
+       "keyword": "wärmepumpen österreich",
+       "pos": 3,
+       "volume_at": 320
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/sanierungsoffensive-2026",
+     "title": "Sanierungsoffensive 2026: Stand, Alternativen, 2027",
+     "etv": 241.5,
+     "keywords": 27,
+     "top_keywords": [
+      {
+       "keyword": "sanierungsoffensive 2026",
+       "pos": 6,
+       "volume_at": 3600
+      },
+      {
+       "keyword": "sanierungsoffensive",
+       "pos": 9,
+       "volume_at": 720
+      },
+      {
+       "keyword": "förderung heizungstausch 2026",
+       "pos": 12,
+       "volume_at": 720
+      },
+      {
+       "keyword": "raus aus öl und gas 2026",
+       "pos": 8,
+       "volume_at": 590
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber-old/die-funktionsweise-einer-photovoltaikanlage",
+     "title": "Die Funktionsweise einer Photovoltaikanlage",
+     "etv": 198.4,
+     "keywords": 13,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaikanlage",
+       "pos": 9,
+       "volume_at": 8100
+      },
+      {
+       "keyword": "aufbau einer solaranlage",
+       "pos": 4,
+       "volume_at": 140
+      },
+      {
+       "keyword": "pv anlagen aufbau",
+       "pos": 4,
+       "volume_at": 140
+      },
+      {
+       "keyword": "aufbau photovoltaikanlagen",
+       "pos": 3,
+       "volume_at": 110
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/idm-waermepumpe",
+     "title": "iDM Wärmepumpe im Überblick",
+     "etv": 168.4,
+     "keywords": 4,
+     "top_keywords": [
+      {
+       "keyword": "idm wärmepumpe",
+       "pos": 4,
+       "volume_at": 2400
+      },
+      {
+       "keyword": "idm wärmepumpe preis",
+       "pos": 5,
+       "volume_at": 110
+      },
+      {
+       "keyword": "idm wärmepumpen erfahrungen",
+       "pos": 5,
+       "volume_at": 70
+      },
+      {
+       "keyword": "idm wärmepumpe erfahrungen",
+       "pos": 7,
+       "volume_at": 70
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/photovoltaik-foerderung-2026-oesterreich",
+     "title": "PV-Fördercall 2026: 8. bis 22. Oktober, Fördersätze",
+     "etv": 164.7,
+     "keywords": 36,
+     "top_keywords": [
+      {
+       "keyword": "pv förderung 2026",
+       "pos": 12,
+       "volume_at": 1600
+      },
+      {
+       "keyword": "pv förderung österreich 2026",
+       "pos": 8,
+       "volume_at": 1300
+      },
+      {
+       "keyword": "fördercall pv 2026",
+       "pos": 6,
+       "volume_at": 1000
+      },
+      {
+       "keyword": "oemag einspeisetarif 2026",
+       "pos": 62,
+       "volume_at": 590
+      }
+     ]
+    },
+    {
+     "url": "/ratgeber/f%C3%B6rderung-f%C3%BCr-luft-wasser-w%C3%A4rmepumpen-in-wien-2025",
+     "title": "Förderung für Luft-Wasser-Wärmepumpen in Wien 2025",
+     "etv": 110.3,
+     "keywords": 17,
+     "top_keywords": [
+      {
+       "keyword": "wärmepumpe förderung",
+       "pos": 4,
+       "volume_at": 720
+      },
+      {
+       "keyword": "sauber heizen für alle 2025",
+       "pos": 15,
+       "volume_at": 480
+      },
+      {
+       "keyword": "heizungsförderung 2025",
+       "pos": 14,
+       "volume_at": 320
+      },
+      {
+       "keyword": "förderung wärmepumpe wien",
+       "pos": 4,
+       "volume_at": 170
+      }
+     ]
+    }
+   ],
+   "struktur_hinweis": [
+    "Title-Muster 'Thema: Preise 2026, Modelle, Foerderung' bzw. 'PV-Foerdercall 2026: 8. bis 22. Oktober, Foerdersaetze' (Datum und Zahl im Title)",
+    "Hersteller-Ratgeber je Marke (Lambda, iDM, Viessmann, Daikin, Bosch, Ochsner) plus Vergleichsseite '10 Hersteller im Vergleich'",
+    "Foerderseiten je Bundesland und Jahr (/ratgeber/foerderung-fuer-luft-wasser-waermepumpen-in-<land>-2026) und Standortseiten /waermepumpe/wien (Platz 2 'waermepumpe installateur')"
+   ]
+  },
+  {
+   "domain": "solar-now.at",
+   "typ": "nationaler PV-Anbieter (Wien/Niederoesterreich, SolarNow GmbH)",
+   "staerke": "530 AT-Keywords; Platz 1 'photovoltaik in der naehe' (590), Platz 3 'photovoltaik firma', Platz 5 'photovoltaik anbieter', Platz 6 'bester photovoltaik anbieter oesterreich' (alles Startseite); Platz 3 'einspeiseverguetung' (2900) und Platz 10 'oemag marktpreis' (6600); Perplexity zitiert /einspeiseverguetung/ bei der OeMAG-Frage, Gemini /pv-anlage-kosten/",
+   "organic_keywords_at": 530,
+   "strongest_pages": [
+    {
+     "url": "/einspeiseverguetung/",
+     "title": "Einspeisevergütung Österreich 2026: Tarife & Profit-Check",
+     "etv": 903.9,
+     "keywords": 99,
+     "top_keywords": [
+      {
+       "keyword": "ömag",
+       "pos": 15,
+       "volume_at": 8100
+      },
+      {
+       "keyword": "oemag marktpreis",
+       "pos": 16,
+       "volume_at": 6600
+      },
+      {
+       "keyword": "ömag marktpreis",
+       "pos": 20,
+       "volume_at": 6600
+      },
+      {
+       "keyword": "einspeisevergütung",
+       "pos": 3,
+       "volume_at": 2900
+      }
+     ]
+    },
+    {
+     "url": "/",
+     "title": "Photovoltaik Wien & Umgebung | PV-Anlage mit Speicher ...",
+     "etv": 489.1,
+     "keywords": 58,
+     "top_keywords": [
+      {
+       "keyword": "solar",
+       "pos": 31,
+       "volume_at": 1900
+      },
+      {
+       "keyword": "photovoltaik in der nähe",
+       "pos": 1,
+       "volume_at": 590
+      },
+      {
+       "keyword": "solarvie gmbh",
+       "pos": 43,
+       "volume_at": 590
+      },
+      {
+       "keyword": "pv anlagen wien",
+       "pos": 16,
+       "volume_at": 480
+      }
+     ]
+    },
+    {
+     "url": "/pv-foerderung/",
+     "title": "PV Förderung 2026 Österreich: Bis zu 6.300 € Prämie ...",
+     "etv": 56.4,
+     "keywords": 97,
+     "top_keywords": [
+      {
+       "keyword": "förderung photovoltaik",
+       "pos": 59,
+       "volume_at": 2400
+      },
+      {
+       "keyword": "photovoltaik förderung",
+       "pos": 57,
+       "volume_at": 2400
+      },
+      {
+       "keyword": "pv förderung 2026",
+       "pos": 34,
+       "volume_at": 1600
+      },
+      {
+       "keyword": "förderung pv anlage",
+       "pos": 54,
+       "volume_at": 1300
+      }
+     ]
+    },
+    {
+     "url": "/photovoltaik-anbieter-perchtoldsdorf/",
+     "title": "Photovoltaik Anbieter in Perchtoldsdorf | SolarNow ☀️",
+     "etv": 27.4,
+     "keywords": 1,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik anlage anbieter",
+       "pos": 1,
+       "volume_at": 90
+      }
+     ]
+    },
+    {
+     "url": "/pv-anlage-kosten/",
+     "title": "PV Anlage Kosten: Preise, Rechner und Förderung 2026",
+     "etv": 23.9,
+     "keywords": 30,
+     "top_keywords": [
+      {
+       "keyword": "pv anlage kosten",
+       "pos": 39,
+       "volume_at": 590
+      },
+      {
+       "keyword": "photovoltaikanlage kosten",
+       "pos": 13,
+       "volume_at": 390
+      },
+      {
+       "keyword": "kosten pv anlage mit speicher",
+       "pos": 29,
+       "volume_at": 390
+      },
+      {
+       "keyword": "pv anlage mit speicher kosten",
+       "pos": 25,
+       "volume_at": 390
+      }
+     ]
+    },
+    {
+     "url": "/photovoltaik-jobs/",
+     "title": "Photovoltaik Jobs Wien & Niederösterreich | SolarNow",
+     "etv": 12.1,
+     "keywords": 3,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik-jobs",
+       "pos": 7,
+       "volume_at": 320
+      },
+      {
+       "keyword": "pv jobs",
+       "pos": 24,
+       "volume_at": 320
+      },
+      {
+       "keyword": "photovoltaik jobs wien",
+       "pos": 5,
+       "volume_at": 70
+      }
+     ]
+    },
+    {
+     "url": "/pv-rechner/",
+     "title": "PV Rechner: Erträge, Kosten und Amortisation berechnen",
+     "etv": 4.5,
+     "keywords": 4,
+     "top_keywords": [
+      {
+       "keyword": "pv rechner",
+       "pos": 13,
+       "volume_at": 390
+      },
+      {
+       "keyword": "photovoltaik ertragsrechner",
+       "pos": 17,
+       "volume_at": 170
+      },
+      {
+       "keyword": "photovoltaikanlagen kosten rechner",
+       "pos": 11,
+       "volume_at": 140
+      },
+      {
+       "keyword": "photovoltaik-rechner kostenlos",
+       "pos": 29,
+       "volume_at": 70
+      }
+     ]
+    },
+    {
+     "url": "/pv-speicher/",
+     "title": "PV-Speicher nachrüsten Wien | 80% Eigenstrom ☀️ ...",
+     "etv": 3.9,
+     "keywords": 6,
+     "top_keywords": [
+      {
+       "keyword": "speicher für pv anlage nachrüsten",
+       "pos": 22,
+       "volume_at": 110
+      },
+      {
+       "keyword": "speicher für pv-anlage nachrüsten",
+       "pos": 23,
+       "volume_at": 110
+      },
+      {
+       "keyword": "pv speicher nachrüsten österreich",
+       "pos": 10,
+       "volume_at": 90
+      },
+      {
+       "keyword": "pv-speicher nachrüsten österreich",
+       "pos": 10,
+       "volume_at": 90
+      }
+     ]
+    }
+   ],
+   "struktur_hinweis": [
+    "/einspeiseverguetung/ (Title 'Einspeiseverguetung Oesterreich 2026: Tarife & Profit-Check'): 99 Keywords, 904 ETV, deckt oemag, marktpreis, abnahmevertrag, einspeisevertrag ab",
+    "Startseite gezielt auf Anbieter-Suchen optimiert ('Photovoltaik Wien & Umgebung | PV-Anlage mit Speicher'), dazu Orts-Anbieterseiten (/photovoltaik-anbieter-perchtoldsdorf/ Platz 1)",
+    "/pv-foerderung/ mit konkreter Zahl im Title ('Bis zu 6.300 EUR Praemie'), /pv-anlage-kosten/ 'Preise, Rechner und Foerderung 2026', eigener /pv-rechner/ (Platz 13 'pv rechner' 390)"
+   ]
+  },
+  {
+   "domain": "et-plus.at",
+   "typ": "regionaler PV-Anbieter Steiermark (Krottendorf-Gaisfeld, Raum Graz/Voitsberg) mit Kaernten-Seite",
+   "staerke": "Platz 1 'photovoltaik steiermark' (SERP-Competitors, EBZ Platz 3 mit Foerder-Ratgeber), Platz 12 bis 19 'photovoltaik kaernten' / 'pv anlagen kaernten' mit /photovoltaikanlagen-kaernten/; organisch sehr klein (13 AT-Keywords, Domain-Rank 95), aber direkter Montage-Wettbewerber in beiden EBZ-Kernregionen",
+   "organic_keywords_at": 13,
+   "strongest_pages": [
+    {
+     "url": "/",
+     "title": "ET PLUS GmbH Photovoltaik, Stromspeicher und Elektrotechnik",
+     "etv": 1.0,
+     "keywords": 8,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik steiermark",
+       "pos": 1,
+       "volume_at": 0
+      }
+     ]
+    },
+    {
+     "url": "/photovoltaikanlagen-kaernten/",
+     "title": "ET+ Photovoltaik Kaernten: Nachhaltige Energieloesungen",
+     "etv": 1.3,
+     "keywords": 4,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik kaernten",
+       "pos": 12,
+       "volume_at": 70
+      },
+      {
+       "keyword": "pv anlagen kaernten",
+       "pos": 13,
+       "volume_at": 70
+      },
+      {
+       "keyword": "pv anlage kaernten",
+       "pos": 19,
+       "volume_at": 70
+      }
+     ]
+    },
+    {
+     "url": "/kontakt/",
+     "title": "Kontakt",
+     "etv": 0.2,
+     "keywords": 1,
+     "top_keywords": []
+    }
+   ],
+   "struktur_hinweis": [
+    "Eine Bundesland-Seite je Region (/photovoltaikanlagen-kaernten/) mit Zielgruppen Eigenheim + Unternehmen",
+    "Startseite nennt Raum (Graz, Voitsberg) und vier Zielgruppen (Privat, Geschaeft, Landwirte, Gemeinden) im Snippet",
+    "Keine Ratgeber: Sichtbarkeit nur ueber Standortseiten und Local Pack"
+   ]
+  }
+ ],
+ "weitere_domains": [
+  {
+   "domain": "photovoltaikanlage.at",
+   "typ": "Portal/Anbieterverzeichnis mit Ratgeber (ausgeschlossen als Anbieter, aber staerkster Keyword-Overlap)",
+   "hinweis": "167 gemeinsame Keywords mit EBZ, 309 AT-Keywords, ETV 1.070; /einspeiseverguetung (58 Kw, 625 ETV: Platz 11 'oemag' 8100), /foerderung-oesterreich (111 Kw, '160 EUR/kWp' im Title), /anbieter/<firma> Verzeichnisseiten. Pruefen, ob EBZ dort als Anbieter gelistet ist (kostenloser Eintrag = Zitierquelle fuer KI).",
+   "strongest_pages": [
+    {
+     "url": "/einspeiseverguetung",
+     "title": "Einspeisevergütung Österreich 2026",
+     "etv": 625.4,
+     "keywords": 58,
+     "top_keywords": [
+      {
+       "keyword": "ömag",
+       "pos": 11,
+       "volume_at": 8100
+      },
+      {
+       "keyword": "oemag marktpreis",
+       "pos": 10,
+       "volume_at": 6600
+      },
+      {
+       "keyword": "ömag marktpreis",
+       "pos": 13,
+       "volume_at": 6600
+      },
+      {
+       "keyword": "ömag einspeisetarif",
+       "pos": 5,
+       "volume_at": 2900
+      }
+     ]
+    },
+    {
+     "url": "/f%C3%B6rderung-%C3%B6sterreich",
+     "title": "Photovoltaik Förderung 2026 | 160 €/kWp für PV-Anlagen",
+     "etv": 342.7,
+     "keywords": 111,
+     "top_keywords": [
+      {
+       "keyword": "förderung photovoltaik",
+       "pos": 21,
+       "volume_at": 2400
+      },
+      {
+       "keyword": "photovoltaik förderung",
+       "pos": 23,
+       "volume_at": 2400
+      },
+      {
+       "keyword": "pv förderung 2026",
+       "pos": 21,
+       "volume_at": 1600
+      },
+      {
+       "keyword": "pv förderung österreich 2026",
+       "pos": 13,
+       "volume_at": 1300
+      }
+     ]
+    },
+    {
+     "url": "/",
+     "title": "Photovoltaikanlage.at photovoltaikanlage.at",
+     "etv": 117.9,
+     "keywords": 13,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik",
+       "pos": 30,
+       "volume_at": 22200
+      },
+      {
+       "keyword": "photovoltaikanlage",
+       "pos": 28,
+       "volume_at": 8100
+      },
+      {
+       "keyword": "pv anlage",
+       "pos": 56,
+       "volume_at": 5400
+      },
+      {
+       "keyword": "pv anlagen",
+       "pos": 64,
+       "volume_at": 5400
+      }
+     ]
+    },
+    {
+     "url": "/pv-anlage-mit-speicher",
+     "title": "PV-Anlage mit Speicher | Jetzt Angebote kostenlos einholen!",
+     "etv": 34.4,
+     "keywords": 15,
+     "top_keywords": [
+      {
+       "keyword": "pv anlage mit speicher",
+       "pos": 36,
+       "volume_at": 3600
+      },
+      {
+       "keyword": "photovoltaik mit speicher",
+       "pos": 38,
+       "volume_at": 1300
+      },
+      {
+       "keyword": "photovoltaikanlagen mit speicher",
+       "pos": 9,
+       "volume_at": 720
+      },
+      {
+       "keyword": "photovoltaik anlage mit speicher",
+       "pos": 46,
+       "volume_at": 720
+      }
+     ]
+    },
+    {
+     "url": "/anbieter/soly-%C3%B6sterreich",
+     "title": "Soly Austria Operations GmbH",
+     "etv": 27.9,
+     "keywords": 2,
+     "top_keywords": [
+      {
+       "keyword": "soly",
+       "pos": 3,
+       "volume_at": 170
+      },
+      {
+       "keyword": "soly österreich",
+       "pos": 2,
+       "volume_at": 70
+      }
+     ]
+    },
+    {
+     "url": "/anbieter/solpro-gmbh",
+     "title": "Solpro GmbH",
+     "etv": 26.6,
+     "keywords": 2,
+     "top_keywords": [
+      {
+       "keyword": "solpro",
+       "pos": 4,
+       "volume_at": 390
+      },
+      {
+       "keyword": "solpro ebensee",
+       "pos": 18,
+       "volume_at": 260
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "regenfelder.at",
+   "typ": "regionaler Installateur Kaernten (St. Veit/Liebenfels): Solar, Heizung, Bad",
+   "hinweis": "Platz 2 'photovoltaik kaernten' (SERP), /photovoltaik-foerderung-kaernten/ rankt Platz 14 'pv foerderung kaernten' (320) mit Beispielrechnung (8 kWp x 150 EUR + 3.000 EUR Land) im Snippet; sonst 67 Keywords, viele Handwerkerbonus.",
+   "strongest_pages": [
+    {
+     "url": "/",
+     "title": "Installateur REGENFELDER in St. Veit an der Glan",
+     "etv": 39.4,
+     "keywords": 6,
+     "top_keywords": [
+      {
+       "keyword": "altenfelde",
+       "pos": 73,
+       "volume_at": 6600
+      },
+      {
+       "keyword": "marchfelder bioenergie gmbh",
+       "pos": 32,
+       "volume_at": 260
+      },
+      {
+       "keyword": "beneder oberneukirchen",
+       "pos": 42,
+       "volume_at": 170
+      },
+      {
+       "keyword": "grünefeldt",
+       "pos": 37,
+       "volume_at": 170
+      }
+     ]
+    },
+    {
+     "url": "/photovoltaik-foerderung-kaernten/",
+     "title": "PV-Förderung 2026 Kärnten & Österreich: Zuschüsse, ...",
+     "etv": 23.7,
+     "keywords": 45,
+     "top_keywords": [
+      {
+       "keyword": "pv förderung 2026",
+       "pos": 38,
+       "volume_at": 1600
+      },
+      {
+       "keyword": "pv speicher förderung österreich 2026",
+       "pos": 25,
+       "volume_at": 480
+      },
+      {
+       "keyword": "pv-speicher förderung österreich 2026",
+       "pos": 44,
+       "volume_at": 480
+      },
+      {
+       "keyword": "pv förderung kärnten",
+       "pos": 14,
+       "volume_at": 320
+      }
+     ]
+    },
+    {
+     "url": "/foerderung-fuer-handwerkerleistung/",
+     "title": "Förderung für Handwerkerleistungen",
+     "etv": 19.8,
+     "keywords": 9,
+     "top_keywords": [
+      {
+       "keyword": "handwerkerbonus 2026",
+       "pos": 34,
+       "volume_at": 8100
+      },
+      {
+       "keyword": "handwerkerbonus 2026 was wird gefördert",
+       "pos": 43,
+       "volume_at": 480
+      },
+      {
+       "keyword": "handwerkerbonus 2026 beantragen",
+       "pos": 47,
+       "volume_at": 320
+      },
+      {
+       "keyword": "handwerkerbonus 2025 was wird gefördert",
+       "pos": 19,
+       "volume_at": 110
+      }
+     ]
+    },
+    {
+     "url": "/solar/",
+     "title": "Solar & Photovoltaik",
+     "etv": 1.8,
+     "keywords": 4,
+     "top_keywords": [
+      {
+       "keyword": "photovoltaik in der nähe",
+       "pos": 50,
+       "volume_at": 590
+      },
+      {
+       "keyword": "pv anlage in der nähe",
+       "pos": 50,
+       "volume_at": 90
+      },
+      {
+       "keyword": "pv anlagen in der nähe",
+       "pos": 52,
+       "volume_at": 90
+      },
+      {
+       "keyword": "pv-anlagen in der nähe",
+       "pos": 52,
+       "volume_at": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "ausgeschlossen",
+   "typ": "Portale, Vergleichsseiten, EVU aus competitors_domain und SERP",
+   "hinweis": "verbund.com, evn.at, kelag.at, stw.at (EVU); wko.at, oesterreich.gv.at, ktn.gv.at (Behoerden); orf.at, kleinezeitung.at, meinbezirk.at, 5min.at (Medien); otovo.at, heimcheck.com, voltalux.at, herold.at, daibau.at, gecheckt.at (Portale); kwb.net (Heizkessel-Hersteller)."
+  }
+ ],
+ "content_luecken_top10": [
+  {
+   "rang": 1,
+   "keyword_cluster": "photovoltaik in der naehe / pv anlage in der naehe / photovoltaik anbieter in meiner naehe / pv klagenfurt",
+   "volume_at": 910,
+   "intent": "commercial",
+   "cpc": 5.85,
+   "ebz": "kein Ranking (nur /energiegemeinschaft-finden/ Platz 21 fuer 'photovoltaik anbieter in meiner naehe')",
+   "mitbewerber": "solar-now.at Startseite Platz 1, enerix.at /standorte/enerix-graz/ Platz 3, kaernten-solar.at Platz 7 'pv klagenfurt'",
+   "zielseite": "/photovoltaik-villach/, /photovoltaik-wolfsberg/, neue Standortseite Klagenfurt; Startseite mit NAP + 'Fachbetrieb in Ihrer Naehe'"
+  },
+  {
+   "rang": 2,
+   "keyword_cluster": "pv foerderung oesterreich 2026 / eag foerdercall / foerdercall photovoltaik / eag foerdercall 2026 / speicherfoerderung 2026 / eag-investitionszuschuss",
+   "volume_at": 2210,
+   "intent": "informational/commercial",
+   "cpc": 1.05,
+   "ebz": "'foerdercall pv 2026' (1000) Platz 20 mit der STEIERMARK-Seite, 'foerderung photovoltaik 2026' (170) Platz 43 mit /photovoltaik-foerderung-oesterreich-2026/",
+   "mitbewerber": "heizma.at Platz 6 bis 8 (Title mit Call-Datum), enerix.at EAG-Guide Platz 4 bis 12, photovoltaikanlage.at Platz 3 bis 13",
+   "zielseite": "/photovoltaik-foerderung-oesterreich-2026/ als Foerdercall-Hub (Termine 2026/2027, Saetze A bis D als Tabelle, Ticketziehung) und interne Links von allen Bundesland-Seiten"
+  },
+  {
+   "rang": 3,
+   "keyword_cluster": "solaranlage mit speicher / pv anlage mit speicher / photovoltaik mit speicher / pv anlage mit speicher kosten",
+   "volume_at": 5880,
+   "intent": "transactional/commercial",
+   "cpc": 2.07,
+   "ebz": "Platz 51 bis 66 mit Ratgebern (/photovoltaik-mit-speicher/, /kosten-von-photovoltaikanlagen-mit-speicher/), Leistungsseite rankt nicht",
+   "mitbewerber": "photovoltaikanlage.at /pv-anlage-mit-speicher Platz 9 bis 11, solar-now.at /pv-anlage-kosten/ Platz 25 bis 29, verbund.com Platz 3",
+   "zielseite": "/photovoltaik/ (Richtpreis-Box 15.000 bis 22.000 EUR) und /batteriespeicher/, Ratgeber per Canonical/Links auf die Leistungsseite ausrichten"
+  },
+  {
+   "rang": 4,
+   "keyword_cluster": "photovoltaik firmen / photovoltaik firma / photovoltaik anbieter / bester photovoltaik anbieter oesterreich / solartechnik anbieter / solaranlagen-anbieter",
+   "volume_at": 900,
+   "intent": "commercial",
+   "cpc": 4.72,
+   "ebz": "kein Ranking",
+   "mitbewerber": "solar-now.at Startseite Platz 2 bis 8, kaernten-solar.at Startseite Platz 12, enerix.at Ratgeber 'photovoltaik-anbieter' Platz 9 bis 16",
+   "zielseite": "Startseite + /ueber-uns/ ('Fachbetrieb', Zertifikate, 300+ Projekte, 4,9 Sterne) plus Ratgeber 'PV-Anbieter vergleichen: 10 Kriterien' mit Checkliste (deckt die KI-Fan-out-Suchen 'Meisterbetrieb Referenzen Google Bewertungen' ab)"
+  },
+  {
+   "rang": 5,
+   "keyword_cluster": "oemag / oemag einspeisung / oemag abnahmevertrag / oemag einspeisevertrag abschliessen / oemag abrechnung",
+   "volume_at": 9200,
+   "intent": "informational/navigational",
+   "cpc": 3.06,
+   "ebz": "Platz 15 'oemag marktpreis' (6600) und Platz 8 'oemag einspeisetarif' (2900), aber kein Ranking fuer 'oemag' allein und die Vertrags-Keywords",
+   "mitbewerber": "photovoltaikanlage.at /einspeiseverguetung Platz 8 bis 11, solar-now.at /einspeiseverguetung/ Platz 15 bis 19",
+   "zielseite": "/oemag-einspeisetarif/ erweitern: Abschnitt 'OeMAG-Einspeisevertrag abschliessen (Schritt fuer Schritt)', 'Abrechnung', Marktpreis-Tabelle monatlich (September 2026: 10,168 ct)"
+  },
+  {
+   "rang": 6,
+   "keyword_cluster": "waermepumpen foerderung oesterreich 2026 / foerderung waermepumpe 2026 / luft-waermepumpe foerderung / waermepumpe foerderung",
+   "volume_at": 1580,
+   "intent": "commercial",
+   "cpc": 2.94,
+   "ebz": "'waermepumpe foerderung' (720) Platz 64 mit /landesfoerderungen-fuer-die-waermepumpe/, sonst kein Ranking",
+   "mitbewerber": "heizma.at Platz 4 bis 5 (Sanierungsoffensive-Seite und Wien-Foerderseite 2026)",
+   "zielseite": "/waermepumpenfoerderung-in-oesterreich/ auf 2026 aktualisieren (Bund 6.500 EUR, Budgetstand, Kaernten 3.000 EUR + Solarbonus 4.500 EUR, Steiermark) und von /waermepumpe/ verlinken"
+  },
+  {
+   "rang": 7,
+   "keyword_cluster": "installateur waermepumpe / waermepumpe installateur / waermepumpen installateur",
+   "volume_at": 780,
+   "intent": "commercial",
+   "cpc": 7.86,
+   "ebz": "kein Ranking (alter Slug /waermepumpen-installateur/ war genau darauf ausgerichtet)",
+   "mitbewerber": "heizma.at /waermepumpe/wien Platz 2 bis 5",
+   "zielseite": "/waermepumpe/: H1/Title um 'Installateur' ergaenzen, Abschnitt 'Waermepumpen-Installateur in Kaernten und der Steiermark', 301 vom Alt-Slug pruefen"
+  },
+  {
+   "rang": 8,
+   "keyword_cluster": "stromspeicher fuer zuhause / stromspeicher im haus / stromspeicher zu hause / batteriespeicher / photovoltaik speicher kosten",
+   "volume_at": 5210,
+   "intent": "transactional/commercial",
+   "cpc": 1.5,
+   "ebz": "Platz 69 'batteriespeicher' und 84 bis 88 'stromspeicher ...' mit Ratgebern, /batteriespeicher/ rankt fuer kein Keyword",
+   "mitbewerber": "enerix.at /ratgeber/solarstrom-speichern/stromspeicher-ohne-pv-anlage/ Platz 5 bis 8, photovoltaikanlage.at Platz 36",
+   "zielseite": "/batteriespeicher/: Preisspanne je kWh, Eigenverbrauch 30 auf 60 bis 80 Prozent, Nachruesten, Notstrom; Ratgeber /batteriespeicher-und-photovoltaik/ und /photovoltaik-mit-speicher/ zusammenfuehren bzw. auf die LP verlinken"
+  },
+  {
+   "rang": 9,
+   "keyword_cluster": "pv rechner / photovoltaik rechner / pv anlage rechner / photovoltaikanlage kosten rechner",
+   "volume_at": 750,
+   "intent": "informational/commercial",
+   "cpc": 1.92,
+   "ebz": "Platz 8 'pv rechner oesterreich' (210), aber Platz 55 bis 67 fuer die Kurzformen mit /ebz-solarrechner/",
+   "mitbewerber": "solar-now.at /pv-rechner/ Platz 13, verbund.com",
+   "zielseite": "/solarrechner/: Title 'PV-Rechner Oesterreich: Kosten, Ertrag, Amortisation', Ergebnis-Erklaertext mit zitierbaren Richtwerten, Verlinkung von /photovoltaik/ und /kosten-einer-solaranlage/"
+  },
+  {
+   "rang": 10,
+   "keyword_cluster": "photovoltaik montagefirma / pv montagefirma / photovoltaik montagefirmen / pv montagefirmen / pv installation",
+   "volume_at": 1180,
+   "intent": "commercial",
+   "cpc": 2.88,
+   "ebz": "kein Ranking",
+   "mitbewerber": "enerix.at /montagepartner-photovoltaik/ Platz 8 bis 11 (B2B-Seite), enerix Ratgeber 'selbst installieren' Platz 8",
+   "zielseite": "/photovoltaik/ Abschnitt 'Montage durch zertifizierte Fachkraefte' (Ablauf, Bauzeit 1 bis 4 Tage aus Referenzen, Montagesysteme Ziegel/Trapezblech/Blechfalz) plus /referenzen/ mit Montage-Details; Achtung: Teil des Suchvolumens ist B2B (Montagefirma gesucht)"
+  }
+ ],
+ "weitere_luecken": [
+  "solarmodule (1600) / photovoltaik paneele (720) / pv platten (210): enerix Produkt-Ratgeber; fuer EBZ nur als Technik-Abschnitt sinnvoll",
+  "pv inselanlage (320) Platz 2 enerix, pv dachziegel (320), photovoltaik zaun / solarzaun oesterreich (480/170), pv unterkonstruktion (210), flachdach-pv-anlage (140): Nischen-Ratgeber",
+  "brauchwasser waermepumpe (1600), pufferspeicher (1300), kuehlung mit waermepumpe (390), luft waermepumpe stromverbrauch (210), waermepumpen lebensdauer (170): Waermepumpen-Ratgeber-Cluster von heizma",
+  "gewerbespeicher (90) solar-now Platz 11: Abschnitt auf /photovoltaik-gewerbe/",
+  "sanierungsoffensive 2026 (3600): EBZ Platz 21, heizma Platz 6: bestehende Seite aktualisieren (Budget ausgeschoepft, Alternativen 2027)"
+ ],
+ "gap_keywords_raw": [
+  {
+   "keyword": "photovoltaikanlage",
+   "volume_at": 8100,
+   "intent": "transactional",
+   "cpc": 2.78,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 9,
+     "url": "/ratgeber-old/die-funktionsweise-einer-photovoltaikanlage"
+    }
+   ]
+  },
+  {
+   "keyword": "ömag",
+   "volume_at": 8100,
+   "intent": "informational",
+   "cpc": 3.06,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 11,
+     "url": "/einspeiseverguetung"
+    },
+    {
+     "domain": "solar-now",
+     "pos": 15,
+     "url": "/einspeiseverguetung/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv anlage",
+   "volume_at": 5400,
+   "intent": "transactional",
+   "cpc": 3.05,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 16,
+     "url": "/ratgeber/wie-funktioniert-eine-pv-anlage"
+    }
+   ]
+  },
+  {
+   "keyword": "solar",
+   "volume_at": 1900,
+   "intent": "informational",
+   "cpc": 1.58,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "kaernten-solar",
+     "pos": 18,
+     "url": "/"
+    }
+   ]
+  },
+  {
+   "keyword": "solarmodule",
+   "volume_at": 1600,
+   "intent": "transactional",
+   "cpc": 1.02,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 16,
+     "url": "/ratgeber/photovoltaik/solarmodule/"
+    }
+   ]
+  },
+  {
+   "keyword": "brauchwasser wärmepumpe",
+   "volume_at": 1600,
+   "intent": "transactional",
+   "cpc": 0.75,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 9,
+     "url": "/ratgeber/brauchwasser-warmwasser-w%C3%A4rmepumpen-effiziente-warmwasserbereitung-im-%C3%BCberblick"
+    }
+   ]
+  },
+  {
+   "keyword": "pufferspeicher",
+   "volume_at": 1300,
+   "intent": "transactional",
+   "cpc": 0.84,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 19,
+     "url": "/ratgeber/pufferspeicher-waermepumpe"
+    }
+   ]
+  },
+  {
+   "keyword": "pv förderung österreich 2026",
+   "volume_at": 1300,
+   "intent": "informational",
+   "cpc": 1.05,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 8,
+     "url": "/ratgeber/photovoltaik-foerderung-2026-oesterreich"
+    },
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 13,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik paneele",
+   "volume_at": 720,
+   "intent": "transactional",
+   "cpc": 0.75,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 15,
+     "url": "/ratgeber/photovoltaik/solarmodule/"
+    }
+   ]
+  },
+  {
+   "keyword": "wie wärmepumpen funktionieren",
+   "volume_at": 720,
+   "intent": "informational",
+   "cpc": 1.12,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 9,
+     "url": "/ratgeber/waermepumpe/wie-funktioniert-eine-waermepumpe/"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik in der nähe",
+   "volume_at": 590,
+   "intent": "commercial",
+   "cpc": 5.85,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 1,
+     "url": "/"
+    },
+    {
+     "domain": "enerix",
+     "pos": 3,
+     "url": "/standorte/enerix-graz/"
+    }
+   ]
+  },
+  {
+   "keyword": "solaranlage mit speicher",
+   "volume_at": 590,
+   "intent": "transactional",
+   "cpc": 2.07,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 11,
+     "url": "/pv-anlage-mit-speicher"
+    }
+   ]
+  },
+  {
+   "keyword": "oemag einspeisung",
+   "volume_at": 590,
+   "intent": "navigational",
+   "cpc": 2.1,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 8,
+     "url": "/einspeiseverguetung"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik zaun",
+   "volume_at": 480,
+   "intent": "transactional",
+   "cpc": 0.78,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 13,
+     "url": "/ratgeber/photovoltaik/solarzaun/"
+    }
+   ]
+  },
+  {
+   "keyword": "oemag förderung",
+   "volume_at": 480,
+   "intent": "informational",
+   "cpc": 2.07,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 4,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpen förderung österreich 2026",
+   "volume_at": 480,
+   "intent": "commercial",
+   "cpc": 2.94,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 5,
+     "url": "/ratgeber/sanierungsoffensive-2026"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpen zum kühlen",
+   "volume_at": 390,
+   "intent": "transactional",
+   "cpc": 0.84,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 12,
+     "url": "/ratgeber/kuehlen-mit-der-waermepumpe"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpe austria",
+   "volume_at": 390,
+   "intent": "commercial",
+   "cpc": 2.9,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 4,
+     "url": "/ratgeber/waermepumpen-hersteller-anbieter"
+    }
+   ]
+  },
+  {
+   "keyword": "kühlung mit wärmepumpe",
+   "volume_at": 390,
+   "intent": "transactional",
+   "cpc": 0.84,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 6,
+     "url": "/ratgeber/kuehlen-mit-der-waermepumpe"
+    }
+   ]
+  },
+  {
+   "keyword": "pv rechner",
+   "volume_at": 390,
+   "intent": "informational",
+   "cpc": 1.92,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 13,
+     "url": "/pv-rechner/"
+    }
+   ]
+  },
+  {
+   "keyword": "pvt module",
+   "volume_at": 320,
+   "intent": "informational",
+   "cpc": 0.72,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 14,
+     "url": "/ratgeber/pvt-module/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv dachziegel",
+   "volume_at": 320,
+   "intent": "transactional",
+   "cpc": 0.74,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 6,
+     "url": "/ratgeber/photovoltaik/solardachziegel/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv inselanlage",
+   "volume_at": 320,
+   "intent": "commercial",
+   "cpc": 0.74,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 2,
+     "url": "/ratgeber/photovoltaik/photovoltaik-inselanlage/"
+    }
+   ]
+  },
+  {
+   "keyword": "fördercall photovoltaik 2025",
+   "volume_at": 320,
+   "intent": "commercial",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 4,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    },
+    {
+     "domain": "enerix",
+     "pos": 5,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpen österreich",
+   "volume_at": 320,
+   "intent": "commercial",
+   "cpc": 2.51,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 3,
+     "url": "/ratgeber/waermepumpen-hersteller-anbieter"
+    }
+   ]
+  },
+  {
+   "keyword": "heizungsförderung 2025",
+   "volume_at": 320,
+   "intent": "informational",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 14,
+     "url": "/ratgeber/f%C3%B6rderung-f%C3%BCr-luft-wasser-w%C3%A4rmepumpen-in-wien-2025"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpen aus österreich",
+   "volume_at": 320,
+   "intent": "commercial",
+   "cpc": 2.51,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 2,
+     "url": "/ratgeber/waermepumpen-hersteller-anbieter"
+    }
+   ]
+  },
+  {
+   "keyword": "eag fördercall",
+   "volume_at": 260,
+   "intent": "informational",
+   "cpc": 0.24,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 4,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    },
+    {
+     "domain": "enerix",
+     "pos": 5,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    },
+    {
+     "domain": "heizma",
+     "pos": 6,
+     "url": "/ratgeber/photovoltaik-foerderung-2026-oesterreich"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik montagefirma",
+   "volume_at": 260,
+   "intent": "commercial",
+   "cpc": 2.88,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 8,
+     "url": "/montagepartner-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv montagefirmen",
+   "volume_at": 260,
+   "intent": "commercial",
+   "cpc": 2.88,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 9,
+     "url": "/montagepartner-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik montagefirmen",
+   "volume_at": 260,
+   "intent": "commercial",
+   "cpc": 2.88,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 8,
+     "url": "/montagepartner-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv montagefirma",
+   "volume_at": 260,
+   "intent": "commercial",
+   "cpc": 2.88,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 11,
+     "url": "/montagepartner-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "installateur wärmepumpe",
+   "volume_at": 260,
+   "intent": "commercial",
+   "cpc": 7.86,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 5,
+     "url": "/waermepumpe/wien"
+    }
+   ]
+  },
+  {
+   "keyword": "pv fördercall",
+   "volume_at": 260,
+   "intent": "commercial",
+   "cpc": 1.54,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 11,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    }
+   ]
+  },
+  {
+   "keyword": "oemag abnahmevertrag",
+   "volume_at": 260,
+   "intent": "informational",
+   "cpc": 3.6,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 19,
+     "url": "/einspeiseverguetung/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv unterkonstruktion",
+   "volume_at": 210,
+   "intent": "transactional",
+   "cpc": 2.87,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 3,
+     "url": "/ratgeber/pv-unterkonstruktion/"
+    }
+   ]
+  },
+  {
+   "keyword": "sma wechselrichter",
+   "volume_at": 210,
+   "intent": "informational",
+   "cpc": 0.79,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 19,
+     "url": "/hersteller/sma-wechselrichter/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv platten",
+   "volume_at": 210,
+   "intent": "transactional",
+   "cpc": 0.83,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 20,
+     "url": "/ratgeber/photovoltaik/solarmodule/"
+    }
+   ]
+  },
+  {
+   "keyword": "was ist ein smart meter",
+   "volume_at": 210,
+   "intent": "informational",
+   "cpc": 0.43,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 10,
+     "url": "/ratgeber/smart-meter/"
+    }
+   ]
+  },
+  {
+   "keyword": "warmwasser luftwärmepumpe",
+   "volume_at": 210,
+   "intent": "transactional",
+   "cpc": 0.95,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 7,
+     "url": "/ratgeber/brauchwasser-warmwasser-w%C3%A4rmepumpen-effiziente-warmwasserbereitung-im-%C3%BCberblick"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpen testsieger österreich",
+   "volume_at": 210,
+   "intent": "informational",
+   "cpc": 1.91,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 11,
+     "url": "/ratgeber/waermepumpen-hersteller-anbieter"
+    }
+   ]
+  },
+  {
+   "keyword": "luft wärmepumpe stromverbrauch",
+   "volume_at": 210,
+   "intent": "informational",
+   "cpc": 1.34,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 7,
+     "url": "/ratgeber/stromverbrauch-von-w%C3%A4rmepumpen-was-hausbesitzer-unbedingt-wissen-sollten"
+    }
+   ]
+  },
+  {
+   "keyword": "förderung wärmepumpe 2026",
+   "volume_at": 210,
+   "intent": "commercial",
+   "cpc": 2.66,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 5,
+     "url": "/ratgeber/foerderung-fuer-luft-wasser-waermepumpen-in-wien-2026"
+    }
+   ]
+  },
+  {
+   "keyword": "luftwärmepumpe stromverbrauch",
+   "volume_at": 210,
+   "intent": "informational",
+   "cpc": 1.34,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 18,
+     "url": "/ratgeber/stromverbrauch-von-w%C3%A4rmepumpen-was-hausbesitzer-unbedingt-wissen-sollten"
+    }
+   ]
+  },
+  {
+   "keyword": "made in europe bonus",
+   "volume_at": 210,
+   "intent": "commercial",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 11,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik firmen",
+   "volume_at": 170,
+   "intent": "commercial",
+   "cpc": 4.72,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 8,
+     "url": "/"
+    },
+    {
+     "domain": "kaernten-solar",
+     "pos": 12,
+     "url": "/"
+    },
+    {
+     "domain": "enerix",
+     "pos": 16,
+     "url": "/ratgeber/photovoltaik/photovoltaik-anbieter/"
+    },
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 18,
+     "url": "/anbieter"
+    }
+   ]
+  },
+  {
+   "keyword": "ömag pv förderung",
+   "volume_at": 170,
+   "intent": "informational",
+   "cpc": 1.95,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 4,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    }
+   ]
+  },
+  {
+   "keyword": "überspannungsschutz pv-anlage",
+   "volume_at": 170,
+   "intent": "transactional",
+   "cpc": 0.5,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 20,
+     "url": "/ratgeber/ueberspannungsschutz/"
+    }
+   ]
+  },
+  {
+   "keyword": "solarzaun österreich",
+   "volume_at": 170,
+   "intent": "commercial",
+   "cpc": 0.7,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 13,
+     "url": "/ratgeber/photovoltaik/solarzaun/"
+    }
+   ]
+  },
+  {
+   "keyword": "eag ticketziehung",
+   "volume_at": 170,
+   "intent": "transactional",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 11,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    },
+    {
+     "domain": "enerix",
+     "pos": 19,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    }
+   ]
+  },
+  {
+   "keyword": "fundament wärmepumpe",
+   "volume_at": 170,
+   "intent": "transactional",
+   "cpc": 0.19,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 5,
+     "url": "/ratgeber/waermepumpe/waermepumpe-fundament/"
+    }
+   ]
+  },
+  {
+   "keyword": "oemag pv-förderung",
+   "volume_at": 170,
+   "intent": "informational",
+   "cpc": 1.95,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 4,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    }
+   ]
+  },
+  {
+   "keyword": "reinigung photovoltaik",
+   "volume_at": 170,
+   "intent": "commercial",
+   "cpc": 1.63,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 12,
+     "url": "/ratgeber/photovoltaik/reinigung-von-pv/"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpen lebensdauer",
+   "volume_at": 170,
+   "intent": "informational",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 9,
+     "url": "/ratgeber/lebensdauer-waermepumpe"
+    }
+   ]
+  },
+  {
+   "keyword": "luftwärmepumpe kosten pro monat",
+   "volume_at": 170,
+   "intent": "commercial",
+   "cpc": 1.42,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 9,
+     "url": "/ratgeber/vorteile-luft-waermepumpe"
+    }
+   ]
+  },
+  {
+   "keyword": "energiemanager",
+   "volume_at": 170,
+   "intent": "informational",
+   "cpc": 5.15,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 19,
+     "url": "/energiemanager-optima"
+    }
+   ]
+  },
+  {
+   "keyword": "gaspreis österreich prognose",
+   "volume_at": 170,
+   "intent": "informational",
+   "cpc": 1.85,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 5,
+     "url": "/ratgeber/gaspreis-oesterreich-2026"
+    }
+   ]
+  },
+  {
+   "keyword": "gaspreis österreich prognose 2026",
+   "volume_at": 170,
+   "intent": "informational",
+   "cpc": 1.5,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 4,
+     "url": "/ratgeber/gaspreis-oesterreich-2026"
+    }
+   ]
+  },
+  {
+   "keyword": "beste wärmepumpe",
+   "volume_at": 170,
+   "intent": "commercial",
+   "cpc": 2,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 3,
+     "url": "/ratgeber/waermepumpen-hersteller-anbieter"
+    }
+   ]
+  },
+  {
+   "keyword": "eag fördercall 2026",
+   "volume_at": 170,
+   "intent": "commercial",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 5,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    },
+    {
+     "domain": "heizma",
+     "pos": 6,
+     "url": "/ratgeber/photovoltaik-foerderung-2026-oesterreich"
+    }
+   ]
+  },
+  {
+   "keyword": "speicherförderung 2026",
+   "volume_at": 170,
+   "intent": "commercial",
+   "cpc": 1,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 8,
+     "url": "/ratgeber/photovoltaik-foerderung-2026-oesterreich"
+    },
+    {
+     "domain": "solar-now",
+     "pos": 19,
+     "url": "/pv-foerderung/"
+    }
+   ]
+  },
+  {
+   "keyword": "fördercall photovoltaik",
+   "volume_at": 170,
+   "intent": "informational",
+   "cpc": 1.47,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 8,
+     "url": "/ratgeber/photovoltaik-foerderung-2026-oesterreich"
+    }
+   ]
+  },
+  {
+   "keyword": "luft wärmepumpe heizkörper",
+   "volume_at": 170,
+   "intent": "transactional",
+   "cpc": 0.86,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 11,
+     "url": "/ratgeber/welche-heizkoerper-eignen-sich-fuer-waermepumpen"
+    }
+   ]
+  },
+  {
+   "keyword": "luft-wärmepumpe förderung",
+   "volume_at": 170,
+   "intent": "transactional",
+   "cpc": 3.02,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 18,
+     "url": "/ratgeber/foerderung-fuer-luft-wasser-waermepumpen-in-wien-2026"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik firma",
+   "volume_at": 170,
+   "intent": "commercial",
+   "cpc": 4.72,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 3,
+     "url": "/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv klagenfurt",
+   "volume_at": 140,
+   "intent": "informational",
+   "cpc": 2.51,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "kaernten-solar",
+     "pos": 7,
+     "url": "/"
+    }
+   ]
+  },
+  {
+   "keyword": "eag förderung 2025",
+   "volume_at": 140,
+   "intent": "informational",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 3,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    },
+    {
+     "domain": "enerix",
+     "pos": 5,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    }
+   ]
+  },
+  {
+   "keyword": "solartechnik anbieter",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 2,
+     "url": "/"
+    },
+    {
+     "domain": "enerix",
+     "pos": 9,
+     "url": "/ratgeber/photovoltaik/photovoltaik-anbieter/"
+    },
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 20,
+     "url": "/anbieter"
+    }
+   ]
+  },
+  {
+   "keyword": "montagepartner photovoltaik",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 1.26,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 1,
+     "url": "/montagepartner-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik oder solar unterschied",
+   "volume_at": 140,
+   "intent": "informational",
+   "cpc": 0.64,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 6,
+     "url": "/ratgeber/photovoltaik/was-ist-was-solar-vs-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv module reinigen",
+   "volume_at": 140,
+   "intent": "informational",
+   "cpc": 1.6,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 16,
+     "url": "/ratgeber/photovoltaik/reinigung-von-pv/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv zaun österreich",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 1.07,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 17,
+     "url": "/ratgeber/photovoltaik/solarzaun/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv inselanlage mit speicher",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 0.61,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 14,
+     "url": "/ratgeber/photovoltaik/photovoltaik-inselanlage/"
+    }
+   ]
+  },
+  {
+   "keyword": "flachdach-pv-anlage",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 1.06,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 15,
+     "url": "/ratgeber/pv-anlage-flachdach/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv installation",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 5.25,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 8,
+     "url": "/ratgeber/photovoltaik/pv-anlage-selbst-installieren/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv speicher aufstellort brandschutz österreich",
+   "volume_at": 140,
+   "intent": "navigational",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 4,
+     "url": "/ratgeber/solarstrom-speichern/pv-speicher-brand/"
+    }
+   ]
+  },
+  {
+   "keyword": "jahresarbeitszahl wärmepumpe",
+   "volume_at": 140,
+   "intent": "informational",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 5,
+     "url": "/ratgeber/waermepumpe/jahresarbeitszahl-waermepumpe/"
+    }
+   ]
+  },
+  {
+   "keyword": "aufbau solaranlage",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 0.1,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 4,
+     "url": "/ratgeber/photovoltaik/aufbau-einer-photovoltaikanlage/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv anlagen aufbau",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 0.45,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 3,
+     "url": "/ratgeber/photovoltaik/aufbau-einer-photovoltaikanlage/"
+    },
+    {
+     "domain": "heizma",
+     "pos": 4,
+     "url": "/ratgeber-old/die-funktionsweise-einer-photovoltaikanlage"
+    }
+   ]
+  },
+  {
+   "keyword": "eag-investitionszuschuss",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 0.97,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 12,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    },
+    {
+     "domain": "enerix",
+     "pos": 14,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    }
+   ]
+  },
+  {
+   "keyword": "unterschied solar photovoltaik",
+   "volume_at": 140,
+   "intent": "informational",
+   "cpc": 0.64,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 5,
+     "url": "/ratgeber/photovoltaik/was-ist-was-solar-vs-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpe außengerät",
+   "volume_at": 140,
+   "intent": "transactional",
+   "cpc": 0.56,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 3,
+     "url": "/ratgeber/waermepumpe/warmepumpe-aussengeraet/"
+    }
+   ]
+  },
+  {
+   "keyword": "oemag einspeisevertrag abschließen",
+   "volume_at": 140,
+   "intent": "transactional",
+   "cpc": 2.8,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 8,
+     "url": "/einspeiseverguetung"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik anbieter",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 3.51,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 5,
+     "url": "/"
+    },
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 19,
+     "url": "/"
+    }
+   ]
+  },
+  {
+   "keyword": "bester photovoltaik anbieter österreich",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": 3.9,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 6,
+     "url": "/"
+    },
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 10,
+     "url": "/anbieter"
+    }
+   ]
+  },
+  {
+   "keyword": "solaranlagen-anbieter",
+   "volume_at": 140,
+   "intent": "commercial",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 4,
+     "url": "/"
+    }
+   ]
+  },
+  {
+   "keyword": "bifaziale pv-module",
+   "volume_at": 110,
+   "intent": "transactional",
+   "cpc": 0.64,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "kaernten-solar",
+     "pos": 2,
+     "url": "/bifaziale-module/"
+    }
+   ]
+  },
+  {
+   "keyword": "solar pv",
+   "volume_at": 110,
+   "intent": "transactional",
+   "cpc": 2.44,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 20,
+     "url": "/ratgeber/photovoltaik/was-ist-was-solar-vs-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik solarzellen",
+   "volume_at": 110,
+   "intent": "transactional",
+   "cpc": 3.42,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 18,
+     "url": "/ratgeber/photovoltaik/solarmodule/"
+    }
+   ]
+  },
+  {
+   "keyword": "solar photovoltaik",
+   "volume_at": 110,
+   "intent": "transactional",
+   "cpc": 2.44,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 8,
+     "url": "/ratgeber/photovoltaik/was-ist-was-solar-vs-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "balkonkraftwerk speicher nachrüsten",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": 0.55,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 1,
+     "url": "/ratgeber/balkonkraftwerk/balkonkraftwerk-speicher-nachruesten/"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik anlage aufbau",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": 1.49,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 3,
+     "url": "/ratgeber/photovoltaik/aufbau-einer-photovoltaikanlage/"
+    },
+    {
+     "domain": "heizma",
+     "pos": 4,
+     "url": "/ratgeber-old/die-funktionsweise-einer-photovoltaikanlage"
+    }
+   ]
+  },
+  {
+   "keyword": "flachdach solaranlage",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": 1.77,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 18,
+     "url": "/ratgeber/pv-anlage-flachdach/"
+    }
+   ]
+  },
+  {
+   "keyword": "inselbetrieb pv-anlage",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": 0.59,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 7,
+     "url": "/ratgeber/photovoltaik/photovoltaik-inselanlage/"
+    }
+   ]
+  },
+  {
+   "keyword": "unterschied photovoltaik und solar",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 0.14,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 7,
+     "url": "/ratgeber/photovoltaik/was-ist-was-solar-vs-photovoltaik/"
+    }
+   ]
+  },
+  {
+   "keyword": "bauer solar",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": 0.62,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 12,
+     "url": "/hersteller/bauer-solar/"
+    }
+   ]
+  },
+  {
+   "keyword": "wärmepumpe abstand nachbar österreich",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": 2.58,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 2,
+     "url": "/ratgeber/waermepumpe/waermepumpe-abstand/"
+    }
+   ]
+  },
+  {
+   "keyword": "unterkonstruktion pv-anlage",
+   "volume_at": 110,
+   "intent": "transactional",
+   "cpc": 1.92,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 4,
+     "url": "/ratgeber/pv-unterkonstruktion/"
+    }
+   ]
+  },
+  {
+   "keyword": "eag förderung pv",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 0.73,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 6,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    },
+    {
+     "domain": "enerix",
+     "pos": 7,
+     "url": "/ratgeber/oemag-forderung-2025/"
+    },
+    {
+     "domain": "solar-now",
+     "pos": 18,
+     "url": "/pv-foerderung/"
+    }
+   ]
+  },
+  {
+   "keyword": "luft wärmepumpe kühlen",
+   "volume_at": 110,
+   "intent": "transactional",
+   "cpc": 0.84,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 16,
+     "url": "/ratgeber/kuehlen-mit-der-waermepumpe"
+    }
+   ]
+  },
+  {
+   "keyword": "heizungstausch förderung steiermark 2026",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": 2.34,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 11,
+     "url": "/ratgeber/foerderung-fuer-luft-wasser-waermepumpen-in-steiermark-2026"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaik erklärung",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 1.95,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 9,
+     "url": "/ratgeber/wie-funktioniert-eine-pv-anlage"
+    }
+   ]
+  },
+  {
+   "keyword": "oemag fördercall",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 0.65,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 6,
+     "url": "/ratgeber/photovoltaik-foerderung-2026-oesterreich"
+    }
+   ]
+  },
+  {
+   "keyword": "niedertemperatur-heizkörper für wärmepumpe",
+   "volume_at": 110,
+   "intent": "transactional",
+   "cpc": 0.54,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 4,
+     "url": "/ratgeber/welche-heizkoerper-eignen-sich-fuer-waermepumpen"
+    }
+   ]
+  },
+  {
+   "keyword": "cop wert wärmepumpe",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 0.5,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 6,
+     "url": "/ratgeber/cop-und-scop-wert-waermepumpe"
+    }
+   ]
+  },
+  {
+   "keyword": "wie funktioniert photovoltaik",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 0.57,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 15,
+     "url": "/ratgeber/wie-funktioniert-eine-pv-anlage"
+    }
+   ]
+  },
+  {
+   "keyword": "zuschüsse oberösterreich 2026",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 0.77,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 7,
+     "url": "/ratgeber/foerderung-fuer-luft-wasser-waermepumpen-in-oberoesterreich-2026"
+    }
+   ]
+  },
+  {
+   "keyword": "kesseltausch förderung 2026 österreich",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 2.35,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 5,
+     "url": "/ratgeber/sanierungsoffensive-2026"
+    }
+   ]
+  },
+  {
+   "keyword": "vaillant wärmepumpe preis",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": 1.09,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 7,
+     "url": "/ratgeber/vaillant-waermepumpe"
+    }
+   ]
+  },
+  {
+   "keyword": "brauchwasser",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": 0.18,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "heizma",
+     "pos": 19,
+     "url": "/ratgeber/brauchwasser-warmwasser-w%C3%A4rmepumpen-effiziente-warmwasserbereitung-im-%C3%BCberblick"
+    }
+   ]
+  },
+  {
+   "keyword": "ömag abrechnung",
+   "volume_at": 110,
+   "intent": "informational",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 10,
+     "url": "/einspeiseverguetung"
+    },
+    {
+     "domain": "solar-now",
+     "pos": 16,
+     "url": "/einspeiseverguetung/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv speicher förderung österreich 2025",
+   "volume_at": 110,
+   "intent": "commercial",
+   "cpc": null,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 7,
+     "url": "/f%C3%B6rderung-%C3%B6sterreich"
+    }
+   ]
+  },
+  {
+   "keyword": "pv kraftwerk",
+   "volume_at": 90,
+   "intent": "informational",
+   "cpc": 1.37,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "kaernten-solar",
+     "pos": 13,
+     "url": "/buergerkraftwerk/"
+    }
+   ]
+  },
+  {
+   "keyword": "installation von pv anlagen",
+   "volume_at": 90,
+   "intent": "commercial",
+   "cpc": 1.01,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 19,
+     "url": "/ratgeber/photovoltaik/pv-anlage-selbst-installieren/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv anlage in der nähe",
+   "volume_at": 90,
+   "intent": "commercial",
+   "cpc": 7.78,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "solar-now",
+     "pos": 2,
+     "url": "/"
+    },
+    {
+     "domain": "enerix",
+     "pos": 8,
+     "url": "/standorte/enerix-graz/"
+    }
+   ]
+  },
+  {
+   "keyword": "pv speicher nachrüsten ohne elektriker",
+   "volume_at": 90,
+   "intent": "commercial",
+   "cpc": 0.91,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 7,
+     "url": "/ratgeber/solarstrom-speichern/stromspeicher-nachruesten/"
+    }
+   ]
+  },
+  {
+   "keyword": "inselanlage mit speicher",
+   "volume_at": 90,
+   "intent": "commercial",
+   "cpc": 0.57,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 4,
+     "url": "/ratgeber/photovoltaik/photovoltaik-inselanlage/"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaikanlage anbieter",
+   "volume_at": 90,
+   "intent": "commercial",
+   "cpc": 4.84,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "photovoltaikanlage",
+     "pos": 3,
+     "url": "/"
+    },
+    {
+     "domain": "solar-now",
+     "pos": 5,
+     "url": "/"
+    },
+    {
+     "domain": "enerix",
+     "pos": 9,
+     "url": "/ratgeber/photovoltaik/photovoltaik-anbieter/"
+    }
+   ]
+  },
+  {
+   "keyword": "bidirektionale wallbox österreich",
+   "volume_at": 90,
+   "intent": "transactional",
+   "cpc": 0.91,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 12,
+     "url": "/ratgeber/solarstrom-speichern/bidirektionales-laden/"
+    }
+   ]
+  },
+  {
+   "keyword": "photovoltaikanlage reinigen",
+   "volume_at": 90,
+   "intent": "informational",
+   "cpc": 2.41,
+   "ebz_pos": null,
+   "competitors": [
+    {
+     "domain": "enerix",
+     "pos": 19,
+     "url": "/ratgeber/photovoltaik/reinigung-von-pv/"
+    }
+   ]
+  }
+ ],
+ "cost_usd": {
+  "hinweis": "Der MCP-Wrapper gibt fuer DataForSEO-Labs-Antworten kein cost-Feld zurueck. Schaetzung nach Listenpreis: 0,01 USD je Request + 0,0001 USD je Ergebniszeile.",
+  "calls": [
+   {
+    "tool": "ranked_keywords ebz-photovoltaik.at",
+    "rows": 636,
+    "cost_est": 0.0736
+   },
+   {
+    "tool": "competitors_domain x3 (je 10 Zeilen, 2 Filter-Calls mit Fehler 40501 nicht gezaehlt)",
+    "rows": 30,
+    "cost_est": 0.033
+   },
+   {
+    "tool": "serp_competitors (15 Keywords)",
+    "rows": 60,
+    "cost_est": 0.016
+   },
+   {
+    "tool": "domain_intersection x7 (kaernten-solar 12, regenfelder 5, et-plus 0, enerix 133, heizma 117, photovoltaikanlage 47, solar-now 31)",
+    "rows": 345,
+    "cost_est": 0.1045
+   },
+   {
+    "tool": "ranked_keywords Mitbewerber x7 (192, 67, 13, 300, 300, 300, 300)",
+    "rows": 1472,
+    "cost_est": 0.2172
+   }
+  ],
+  "summe_est": 0.444
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "old_url": "/",
+ "clicks": 442,
+ "impressions": 19300,
+ "ctr": 2.3,
+ "position": 11.5,
+ "top_queries": [
+  [
+   "ebz energie",
+   78,
+   371
+  ],
+  [
+   "ebz energie gmbh",
+   69,
+   250
+  ],
+  [
+   "ebz",
+   21,
+   1224
+  ],
+  [
+   "pv anlage kärnten",
+   8,
+   645
+  ],
+  [
+   "photovoltaik villach",
+   7,
+   637
+  ],
+  [
+   "photovoltaik kärnten firmen",
+   7,
+   459
+  ],
+  [
+   "pv villach",
+   7,
+   101
+  ],
+  [
+   "photovoltaik kärnten",
+   4,
+   937
+  ],
+  [
+   "photovoltaik firmen villach",
+   4,
+   259
+  ],
+  [
+   "photovoltaikanlage kärnten",
+   2,
+   378
+  ]
+ ],
+ "queries_total": 315,
+ "note": "Startseite traegt heute das regionale Kopf-Keyword (photovoltaik kaernten/villach), nicht /photovoltaik/.",
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

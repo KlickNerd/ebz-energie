@@ -1,0 +1,65 @@
+{
+ "clicks": 7690,
+ "impressions": 896000,
+ "ctr": 0.9,
+ "position": 14.3,
+ "top_queries": [
+  [
+   "einspeisetarif vergleich",
+   137,
+   3350
+  ],
+  [
+   "ebz energie",
+   126,
+   372
+  ],
+  [
+   "balkonkraftwerk österreich",
+   103,
+   13653
+  ],
+  [
+   "ebz energie gmbh",
+   78,
+   250
+  ],
+  [
+   "balkonkraftwerk förderung österreich",
+   70,
+   882
+  ],
+  [
+   "einspeisetarif photovoltaik vergleich",
+   66,
+   1951
+  ],
+  [
+   "oemag marktpreis 2026",
+   61,
+   7054
+  ],
+  [
+   "förderung balkonkraftwerk österreich",
+   58,
+   960
+  ],
+  [
+   "balkonkraftwerk österreich förderung",
+   51,
+   851
+  ],
+  [
+   "einspeisetarife österreich vergleich",
+   44,
+   2311
+  ]
+ ],
+ "queries_total": 1000,
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

@@ -1,0 +1,397 @@
+{
+ "slug": "solarrechner",
+ "path": "/solarrechner/",
+ "seitentyp": "rechner",
+ "stand": "2026-10-09",
+ "primary": {
+  "keyword": "pv rechner österreich",
+  "volume_at": 210,
+  "kd": 10,
+  "cpc": 1.21,
+  "intent": "commercial (Overview) / informational 0,70 (Intent-API)"
+ },
+ "secondary": [
+  {
+   "keyword": "pv rechner",
+   "volume_at": 390,
+   "kd": null,
+   "intent": "informational mit transactional"
+  },
+  {
+   "keyword": "photovoltaik rechner",
+   "volume_at": 110,
+   "kd": 4,
+   "intent": "transactional (Overview) / informational (Intent-API)"
+  },
+  {
+   "keyword": "pv anlage rechner",
+   "volume_at": 110,
+   "kd": 4,
+   "intent": "commercial/informational"
+  },
+  {
+   "keyword": "pv rechner mit speicher",
+   "volume_at": 90,
+   "kd": 2,
+   "intent": "transactional/commercial"
+  },
+  {
+   "keyword": "solarrechner",
+   "volume_at": 90,
+   "kd": 69,
+   "intent": "transactional"
+  },
+  {
+   "keyword": "photovoltaik rechner kostenlos",
+   "volume_at": 70,
+   "kd": null,
+   "intent": "commercial"
+  }
+ ],
+ "semantic": [
+  "kWp",
+  "kWh/kWp spezifischer Ertrag (950 bis 1.200 kWh/kWp)",
+  "Dachausrichtung (Süd, Ost-West, Azimut)",
+  "Dachneigung",
+  "Dachfläche (5 bis 6 m² je kWp)",
+  "Jahresstromverbrauch",
+  "Eigenverbrauchsquote",
+  "Autarkiegrad",
+  "Speichergröße kWh",
+  "Amortisation",
+  "Rendite",
+  "Wirtschaftlichkeitsberechnung",
+  "Strompreis ct/kWh",
+  "Einspeisung / OeMAG-Marktpreis",
+  "EAG-Investitionszuschuss 150 €/kWp",
+  "Landespauschale Kärnten 3.000 €",
+  "Landesförderung Steiermark",
+  "Made-in-Europe-Bonus",
+  "Lastprofil / Standardlastprofil",
+  "Wärmepumpe",
+  "E-Auto / Wallbox",
+  "Globalstrahlung / Sonnenstunden Kärnten",
+  "PVGIS",
+  "Richtpreis €/kWp (1.800 bis 2.500 €/kWp)",
+  "SonnenKlar PV-Rechner (PV Austria)",
+  "klimaaktiv PV-Rechner",
+  "SUSI Energieinstitut",
+  "kostenlos, ohne Anmeldung",
+  "Projektbericht mit 3D-Belegplan und Statikreport"
+ ],
+ "long_tail": [
+  {
+   "keyword": "pv anlage rechner",
+   "volume_at": 110
+  },
+  {
+   "keyword": "pv speicher rechner",
+   "volume_at": 90
+  },
+  {
+   "keyword": "pv rechner online",
+   "volume_at": 90
+  },
+  {
+   "keyword": "pv anlage berechnen",
+   "volume_at": 90
+  },
+  {
+   "keyword": "pv-ertrag tabelle österreich",
+   "volume_at": 70
+  },
+  {
+   "keyword": "photovoltaik rechner kostenlos",
+   "volume_at": 70
+  },
+  {
+   "keyword": "photovoltaik rechner österreich",
+   "volume_at": 50
+  },
+  {
+   "keyword": "pv ausrichtung rechner",
+   "volume_at": 50
+  },
+  {
+   "keyword": "pv ertrag rechner",
+   "volume_at": 40
+  },
+  {
+   "keyword": "photovoltaik rechner kostenlos österreich",
+   "volume_at": 40
+  },
+  {
+   "keyword": "solaranlage berechnen",
+   "volume_at": 40
+  },
+  {
+   "keyword": "pv anlage rechner österreich",
+   "volume_at": 30
+  },
+  {
+   "keyword": "wirtschaftlichkeit photovoltaik-rechner",
+   "volume_at": 30
+  },
+  {
+   "keyword": "photovoltaik standort prüfen österreich",
+   "volume_at": 30
+  },
+  {
+   "keyword": "pv-ertrag berechnen",
+   "volume_at": 30
+  },
+  {
+   "keyword": "solarrechner österreich",
+   "volume_at": 30
+  },
+  {
+   "keyword": "pv kosten rechner",
+   "volume_at": 20
+  },
+  {
+   "keyword": "pv autarkie rechner mit speicher",
+   "volume_at": 20
+  },
+  {
+   "keyword": "lohnt sich ein pv speicher rechner",
+   "volume_at": 20
+  },
+  {
+   "keyword": "amortisation pv-anlage rechner",
+   "volume_at": 10
+  },
+  {
+   "keyword": "pv rechner mit wärmepumpe",
+   "volume_at": 10
+  },
+  {
+   "keyword": "photovoltaik ertrag berechnen",
+   "volume_at": 10
+  },
+  {
+   "keyword": "solaranlage rechner",
+   "volume_at": 10
+  },
+  {
+   "keyword": "solarrechner kärnten",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv rechner kärnten",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Wie viel kWp brauche ich für mein Haus?",
+  "Wie viel Dachfläche braucht 1 kWp Photovoltaik?",
+  "Wie viel Ertrag bringt 1 kWp in Kärnten oder der Steiermark pro Jahr?",
+  "Wie groß sollte der Speicher zur PV-Anlage sein?",
+  "Wie berechnet man die Amortisation einer PV-Anlage?",
+  "Wie genau ist ein Online-PV-Rechner?",
+  "Welche Förderung berücksichtigt der PV-Rechner (EAG 2026, Land)?",
+  "Berücksichtigt der Rechner Wärmepumpe und E-Auto?",
+  "Ist der PV-Rechner kostenlos und ohne Anmeldung nutzbar?",
+  "Wie berechne ich eine PV-Anlage per Formel?",
+  "Was kostet eine PV-Anlage je kWp in Österreich?",
+  "Hinweis: In beiden SERPs gab es keine People-also-ask-Box; Fragen stammen aus Related Searches ('PV Rechner Dachfläche', 'PV-Anlage berechnen Formel', 'PV Rechner Amortisation', 'kostenlos ohne Anmeldung') und Fragen-Keywords"
+ ],
+ "serp": {
+  "features": [
+   "ai_overview (listet SonnenKlar PV Austria, klimaaktiv, SUSI, photovoltaikrechner.at, solar-now, nfsim, SMA)",
+   "related_searches",
+   "keine people_also_ask"
+  ],
+  "top10": [
+   {
+    "pos": 1,
+    "domain": "ibc-solar.de",
+    "title": "Solaranlagen: Rechner & Kalkulatoren",
+    "type": "hersteller (DE)"
+   },
+   {
+    "pos": 2,
+    "domain": "co2online.de",
+    "title": "Unabhängiger PV-Rechner",
+    "type": "ratgeber (DE)"
+   },
+   {
+    "pos": 3,
+    "domain": "energie.gv.at",
+    "title": "Nützliche Links",
+    "type": "behörde"
+   },
+   {
+    "pos": 4,
+    "domain": "salzburg-ag.at",
+    "title": "Photovoltaik-Leistung pro m² berechnen",
+    "type": "anbieter"
+   },
+   {
+    "pos": 5,
+    "domain": "ibc-solar.at",
+    "title": "Wirtschaftlichkeitsrechner für PV-Anlagen",
+    "type": "hersteller"
+   },
+   {
+    "pos": 6,
+    "domain": "energie-teilen.at",
+    "title": "Rechner",
+    "type": "portal"
+   },
+   {
+    "pos": 7,
+    "domain": "solarbalkon.at",
+    "title": "Grob-Kalkulation Ihres Invest-Ertrages",
+    "type": "shop"
+   },
+   {
+    "pos": 8,
+    "domain": "ertragsrechner.com",
+    "title": "Photovoltaik Ertragsrechner",
+    "type": "tool"
+   },
+   {
+    "pos": 9,
+    "domain": "eon.de",
+    "title": "Solarrechner: Ertrag & Ersparnis",
+    "type": "anbieter (DE)"
+   },
+   {
+    "pos": 10,
+    "domain": "pvbaustria.at / klimaaktiv.at / energieinstitut.at / nfsim.eu / solar-now.at",
+    "title": "Top 5 bei 'pv rechner'",
+    "type": "verband/behörde/tool/anbieter"
+   }
+  ]
+ },
+ "competitor_outline": [
+  "H2 Rechner-Eingaben: Standort oder PLZ, Leistung oder Dachfläche, Ausrichtung, Neigung, Jahresverbrauch, Speicher, Wärmepumpe, E-Auto",
+  "H2 Ergebnis: Ertrag kWh, Eigenverbrauch, Autarkie, Kosten, Förderung, Amortisation",
+  "H2 Photovoltaik vs. Geldanlage: Rendite-Vergleich (solar-now)",
+  "H2 Detailtabelle Jahr für Jahr (Strompreis, Ersparnis, Einspeisung, Sonderkosten, kumuliert)",
+  "H2 Wie funktioniert die Wirtschaftlichkeitsberechnung (Investition, Förderung, Einnahmen, laufende Kosten)",
+  "H2 Was muss ich beim Rechner beachten (Annahmen, Degradation, Strompreis)",
+  "H2 Kosten und Ertrag: €/kWp, kWh/kWp, m² je kWp, Beispielhaushalt",
+  "H2 FAQ"
+ ],
+ "gaps": [
+  "Kein Methodik-Abschnitt: welche Ertragsannahme (kWh/kWp) für Kärnten und Steiermark, welche Eigenverbrauchsquote, welcher Strompreis, welche Förderung 2026 hinterlegt ist",
+  "Keine Beispielrechnungen für 5, 8, 10 und 15 kWp mit und ohne Speicher (Top-Seiten zeigen Tabellen)",
+  "Begriffe Ausrichtung, Neigung, Dachfläche, m² je kWp, Autarkie, Rendite, Wirtschaftlichkeit, Einspeisung fehlen komplett",
+  "Keyword-Varianten 'PV-Rechner' und 'Photovoltaik-Rechner' kommen im Text nicht vor, nur 'Solarrechner' (KD 69, DE-dominiert)",
+  "Vertrauenssignale 'kostenlos, ohne Anmeldung, unverbindlich' nur teilweise ('kostenlos' ja, 'ohne Anmeldung' nein)",
+  "Kein zitierfähiger Definitionsabsatz ('Der EBZ-PV-Rechner ist ...') für die AI Overview, die bisher nur Fremd-Tools listet",
+  "Nur 680 Wörter und 3 FAQ; Top-Seiten bieten Erklärtext, Tabellen und 6 bis 10 FAQ",
+  "Links zu /photovoltaik-foerderung-kaernten/ und /foerderung-photovoltaik-steiermark/ fehlen"
+ ],
+ "cannibalization": [
+  "/kosten-einer-solaranlage/",
+  "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/",
+  "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/",
+  "/energiegemeinschaft-rechner/",
+  "/ebz-solarrechner/ (alter Live-Slug, 301 auf /solarrechner/ setzen)"
+ ],
+ "ai_search_volume": [
+  {
+   "keyword": "pv anlage berechnen",
+   "ai_volume": 4
+  },
+  {
+   "keyword": "pv rechner",
+   "ai_volume": 3
+  },
+  {
+   "keyword": "pv rechner mit speicher",
+   "ai_volume": 3
+  },
+  {
+   "keyword": "pv speicher rechner",
+   "ai_volume": 3
+  },
+  {
+   "keyword": "pv-ertrag berechnen",
+   "ai_volume": 1
+  },
+  {
+   "keyword": "pv rechner österreich",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik rechner",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik rechner österreich",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "solarrechner",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "solarrechner österreich",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "pv anlage rechner",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "pv rechner online",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik rechner kostenlos",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "pv ertrag rechner",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "pv-ertrag tabelle österreich",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "wirtschaftlichkeit photovoltaik-rechner",
+   "ai_volume": 0
+  }
+ ],
+ "recommendation": {
+  "title": "PV-Rechner Österreich: Ertrag, Kosten, Ersparnis | EBZ",
+  "h1": "PV-Rechner für Österreich: Was bringt Photovoltaik auf Ihrem Dach in Kärnten und der Steiermark?",
+  "description": "Kostenloser PV-Rechner für Österreich ohne Anmeldung: kWp, Ertrag, Ersparnis, Richtpreis, Förderung 2026 und Amortisation. Richtwerte aus 300+ Projekten.",
+  "h2_outline": [
+   "Ihr Richtwert in 30 Sekunden (Rechner)",
+   "So rechnet der PV-Rechner: Ertrag in kWh/kWp, Eigenverbrauch, Strompreis, Förderung",
+   "Beispielrechnungen: 5, 8, 10 und 15 kWp mit Speicher",
+   "Welche Förderung ist eingerechnet: EAG 2026, Landespauschale Kärnten, Steiermark",
+   "Vom Richtwert zum Projektbericht mit 3D-Belegplan und Statikreport",
+   "Häufige Fragen",
+   "Weiterlesen",
+   "Ergebnis prüfen lassen, kostenlos und ehrlich"
+  ],
+  "faq_add": [
+   "Wie viel kWp brauche ich für mein Haus?",
+   "Wie viel Dachfläche braucht 1 kWp?",
+   "Wie viel Ertrag bringt 1 kWp in Kärnten oder der Steiermark pro Jahr?",
+   "Wie groß sollte der Speicher zur Anlage sein?",
+   "Wie wird die Amortisation berechnet?",
+   "Ist der PV-Rechner kostenlos und ohne Anmeldung?",
+   "Berücksichtigt der Rechner Wärmepumpe und E-Auto?"
+  ],
+  "internal_links": [
+   "/kosten-einer-solaranlage/ -> Kosten einer Solaranlage 2026",
+   "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ -> 10 kWp mit Speicher: Preis",
+   "/photovoltaik-foerderung-kaernten/ -> Förderung Kärnten 2026",
+   "/foerderung-photovoltaik-steiermark/ -> Förderung Steiermark",
+   "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/ -> Ab wann lohnt sich PV mit Speicher",
+   "/batteriespeicher/ -> Batteriespeicher",
+   "/photovoltaik/ -> Photovoltaikanlage",
+   "/energiegemeinschaft-rechner/ -> Energiegemeinschaft-Rechner",
+   "/referenzen/ -> Referenzen"
+  ],
+  "notes": "'Solarrechner' (90) hat KD 69 und eine SERP voller deutscher Marken; realistisch sind 'pv rechner österreich' (210, KD 10) und 'pv rechner' (390) sowie die Speicher-Varianten (KD 2 bis 4). Die AI Overview beschreibt jeden gelisteten Rechner in einem Satz: die Seite braucht genau so einen Definitionsabsatz plus Methodik und Beispieltabelle, sonst bleibt sie unzitiert. Mit 680 Wörtern ist die Seite zu dünn; zuerst Title/H1 auf PV-Rechner umstellen, dann Methodik, Beispielrechnungen, Förderlogik 2026 und 4 FAQ ergänzen. Alten Slug /ebz-solarrechner/ per 301 auf /solarrechner/ leiten."
+ },
+ "cost_usd": 0.087
+}

@@ -1,0 +1,347 @@
+{
+  "slug": "kontakt",
+  "path": "/kontakt/",
+  "seitentyp": "unternehmen",
+  "stand": "2026-10-09",
+  "primary": {
+    "keyword": "photovoltaik beratung",
+    "volume_at": 30,
+    "kd": 27,
+    "cpc": 6.33,
+    "intent": "commercial 0.92 (Trend 12 Monate: -75 %, Peak Sept. 2025 mit 140)"
+  },
+  "secondary": [
+    {
+      "keyword": "photovoltaik beratung kärnten",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "commercial 0.89"
+    },
+    {
+      "keyword": "pv beratung",
+      "volume_at": 30,
+      "kd": 35,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "pv anlage angebot",
+      "volume_at": 70,
+      "kd": 13,
+      "intent": "commercial 0.92, CPC 8,87 (SERP = Preisvergleichsportale; nur als CTA-Wording 'Angebot anfordern')"
+    },
+    {
+      "keyword": "photovoltaik angebot",
+      "volume_at": 30,
+      "kd": 11,
+      "intent": "commercial 0.88"
+    },
+    {
+      "keyword": "energieberatung villach",
+      "volume_at": 30,
+      "kd": 13,
+      "intent": "commercial (Vorsicht: meist unabhaengige Energieberatung gemeint)"
+    },
+    {
+      "keyword": "photovoltaik firma in der nähe",
+      "volume_at": 50,
+      "kd": 25,
+      "intent": "navigational/commercial (Local Pack, GBP)"
+    }
+  ],
+  "semantic": [
+    "kostenlose Erstberatung",
+    "unverbindlich",
+    "Vor-Ort-Termin",
+    "Angebot anfordern",
+    "Kostenvoranschlag",
+    "Festpreis",
+    "Projektbericht mit 3D-Belegplan und Statikreport",
+    "Dachbesichtigung",
+    "Zählerkasten",
+    "Stromverbrauch kWh pro Jahr",
+    "Stromrechnung",
+    "Anlagengröße kWp",
+    "Speicher",
+    "Wärmepumpe",
+    "Wallbox",
+    "Energiegemeinschaft",
+    "Förderung Kärnten 2026",
+    "Förderung Steiermark",
+    "Finanzierung",
+    "Antwort innerhalb eines Werktags",
+    "Mo bis Fr 10 bis 20 Uhr",
+    "Triglavstraße 15, 9500 Villach",
+    "+43 650 220 26 26",
+    "office@ebz-energie.com",
+    "Villach",
+    "Kärnten",
+    "Steiermark",
+    "Anfahrt",
+    "Parkplatz",
+    "Schauraum",
+    "Google-Bewertung 4,9"
+  ],
+  "long_tail": [
+    {
+      "keyword": "pv anlage angebot",
+      "volume_at": 70
+    },
+    {
+      "keyword": "photovoltaik firma in der nähe",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik firmen in der nähe",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik beratung",
+      "volume_at": 30
+    },
+    {
+      "keyword": "pv beratung",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik angebot",
+      "volume_at": 30
+    },
+    {
+      "keyword": "energieberatung villach",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik anlage angebot",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik beratung kärnten",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik beratung in der nähe",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik angebot österreich",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik angebote vergleichen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "unabhängige beratung photovoltaik",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik beratung villach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv beratung kostenlos",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik angebot einholen",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik kostenlose beratung",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik in der nähe",
+      "volume_at": 590
+    },
+    {
+      "keyword": "energieberatung kärnten",
+      "volume_at": 110
+    }
+  ],
+  "questions": [
+    "Was kostet eine 10 kW Solaranlage mit Speicher und Montage? (PAA)",
+    "Was kostet eine 10 kWp PV-Anlage mit Speicher? (PAA)",
+    "Was kostet eine Photovoltaikanlage für ein Einfamilienhaus in Österreich? (PAA)",
+    "Gibt es 2026 noch eine Photovoltaikförderung? (PAA)",
+    "Wann lohnt sich eine PV-Anlage nicht? (PAA)",
+    "Wie groß sollte eine Photovoltaikanlage für ein Einfamilienhaus sein? (PAA)",
+    "Wie viel Photovoltaik brauche ich, um 4.000 kWh zu erzeugen? (PAA)",
+    "Wer zahlt den besten Einspeisetarif in Österreich? (PAA)",
+    "Photovoltaik Beratung in der Nähe? (Related Search)",
+    "Unabhängige Beratung Photovoltaik? (Related Search)",
+    "Was kostet die Erstberatung? (bereits in FAQ)",
+    "Wie schnell meldet sich EBZ Energie? (bereits in FAQ)",
+    "Was muss ich zum Beratungstermin vorbereiten (Stromrechnung, Dachfoto, Zählerkasten)?",
+    "Wie lange dauert es von der Anfrage bis zum Angebot?"
+  ],
+  "serp": {
+    "features": [
+      "people_also_ask",
+      "local_pack (gemischt AT/DE, kein Kaernten-Anbieter)",
+      "related_searches",
+      "popular_products und Shopping (nur bei 'pv anlage angebot')"
+    ],
+    "query": "photovoltaik beratung (Austria)",
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "www.energie-noe.at",
+        "title": "Ihr Weg zur Photovoltaik-Anlage",
+        "type": "landes-energieberatung"
+      },
+      {
+        "pos": 2,
+        "domain": "greensolar.at",
+        "title": "Photovoltaik-Beratung & Montage - Jetzt informieren",
+        "type": "anbieter (Sterne-Snippet 4,5 / 2.760)"
+      },
+      {
+        "pos": 3,
+        "domain": "www.energieinstitut.at",
+        "title": "Photovoltaik-Beratung: Energieinstitut Vorarlberg",
+        "type": "landes-energieberatung"
+      },
+      {
+        "pos": 4,
+        "domain": "www.verbraucherzentrale.de",
+        "title": "Photovoltaik: Was bei der Planung einer Solaranlage wichtig ist",
+        "type": "verbraucherportal"
+      },
+      {
+        "pos": 5,
+        "domain": "www.energieagentur.tirol",
+        "title": "Photovoltaik: Energieagentur Tirol Energieberatung",
+        "type": "landes-energieberatung"
+      },
+      {
+        "pos": 6,
+        "domain": "sonnenstrom.wien.gv.at",
+        "title": "Beratungsangebote: Wiener Sonnenstrom-Offensive",
+        "type": "behörde"
+      },
+      {
+        "pos": 7,
+        "domain": "www.solarwatt.de",
+        "title": "Photovoltaik Beratung: Alles, was Sie wissen müssen",
+        "type": "hersteller-ratgeber"
+      },
+      {
+        "pos": 8,
+        "domain": "www.evn.at",
+        "title": "EVN Energieberatung",
+        "type": "energieversorger"
+      },
+      {
+        "pos": 9,
+        "domain": "verbraucherzentrale-energieberatung.de",
+        "title": "Photovoltaik",
+        "type": "verbraucherportal"
+      },
+      {
+        "pos": 10,
+        "domain": "www.salzburg-ag.at",
+        "title": "Photovoltaik-Ratgeber: Informationen zu PV",
+        "type": "energieversorger"
+      }
+    ],
+    "serp_pv_anlage_angebot": "Top 10: idealo.de/at (4x), infina.at, obi.at, solarenergie.at (Portal '3 Angebote vergleichen'), solar-now.at (Anbieter Wien, Snippet: 3D-Drohnenplanung, Fixpreisgarantie, 250+ Kunden). Produkt-Shopping-Karussell oben. Kontaktseite passt nicht zu dieser SERP."
+  },
+  "competitor_outline": [
+    "H2 Kostenlose Erstberatung vor Ort: so läuft sie ab (greensolar, energie-noe)",
+    "H2 Was die Beratung beinhaltet: Dach, Lastgang/Verbrauch, Anlagengröße, Förderung, Angebot (energieinstitut)",
+    "H2 Beratungstermin buchen: Telefon, E-Mail, Online-Formular, Video-Call (wien.gv.at)",
+    "H2 Unabhängig, firmen- und produktneutral (Energieagenturen) vs. Fachbetrieb mit Montage (Anbieter)",
+    "H2 Förderung 2026 und Einspeisetarif als Beratungsthemen",
+    "H2 Bewertungen / Sterne-Snippet"
+  ],
+  "gaps": [
+    "Title/H1 tragen das Keyword 'Beratung' nur im Title; H1 'Ihr direkter Draht nach Villach' hat weder 'Photovoltaik' noch 'Beratung'.",
+    "Kein Abschnitt 'Was die kostenlose Beratung beinhaltet' (Dachbesichtigung, Zaehlerkasten, Verbrauchsanalyse, Anlagengroesse, Foerder-Check, Angebot mit Festpreis): Top-3 listen den Inhalt der Beratung als Checkliste.",
+    "Keine Terminwahl-Optionen (Telefon, Vor-Ort, Video-Call, Schauraum) wie bei wien.gv.at und energie-noe.",
+    "Keine Vorbereitungs-Checkliste fuer Kunden (Stromrechnung, Dachfoto, Zaehlerkasten-Foto, Grundriss) als eigene Liste; steht nur in einer FAQ-Antwort.",
+    "Keine Zeitangabe 'Anfrage bis Angebot' (Bewertungen nennen 'Angebot am naechsten Tag', 'Besichtigung innerhalb einer Woche'): das sind belegbare Zahlen fuer Snippet und FAQ.",
+    "Formular ohne Themen-Auswahl (Photovoltaik, Speicher, Waermepumpe, Energiegemeinschaft, Gewerbe) und ohne Bundesland-Feld; PLZ ist optional.",
+    "Anfahrt: nur Maps-Link (cid), keine Anfahrtsbeschreibung, kein Parkplatz-Hinweis, kein Hinweis auf den Schauraum, den Bewertungen erwaehnen.",
+    "JSON-LD enthaelt SolarInstallation + AggregateRating neben FAQPage (nur FAQPage erlaubt).",
+    "Bewertungs-Slider mit ueber 70 Zitaten identisch mit /ueber-uns/ und /referenzen/.",
+    "Formular postet an n8n-Webhook (ebz-kontakt); CLAUDE.md-Commit 1bff90f nennt Umzug auf Make: Ziel-URL pruefen (nicht SEO, aber Lead-kritisch)."
+  ],
+  "cannibalization": [
+    "/photovoltaik-villach/ zielt auf 'photovoltaik villach' (30); Kontaktseite soll 'Beratung Villach/Kärnten' besetzen, nicht die Standort-Keywords",
+    "/solarrechner/ und /energiegemeinschaft-rechner/ decken 'kostenlos berechnen' ab",
+    "/leistungen/energiegemeinschaft/ und EG-LPs nutzen eigene Formulare (WPForms 6891)"
+  ],
+  "ai_search_volume": [],
+  "recommendation": {
+    "title": "Photovoltaik-Beratung in Villach: kostenlos anfragen | EBZ",
+    "h1": "Kostenlose Photovoltaik-Beratung in Villach für Kärnten und die Steiermark",
+    "description": "Kostenlose Photovoltaik-Beratung von EBZ Energie in Villach: Vor-Ort-Termin in Kärnten und Steiermark, Projektbericht mit 3D-Belegplan, Antwort in einem Werktag. Mo bis Fr 10 bis 20 Uhr: +43 650 220 26 26.",
+    "h2_outline": [
+      "Kostenlose Erstberatung anfragen (Formular, bestehend; Themen-Auswahl und Bundesland ergänzen)",
+      "Was die Photovoltaik-Beratung beinhaltet (neu: Dach, Zählerkasten, Verbrauch, Anlagengröße, Speicher, Förder-Check, Festpreis-Angebot)",
+      "So geht es nach Ihrer Anfrage weiter (bestehende 4 Schritte, mit Zeitangaben: Rückruf 1 Werktag, Vor-Ort-Termin innerhalb einer Woche, Angebot wenige Tage)",
+      "So erreichen Sie uns: Telefon, E-Mail, Vor-Ort-Termin, Schauraum Villach (neu: Kanäle als Liste)",
+      "Was Sie zum Termin vorbereiten können (neu: Checkliste)",
+      "Adresse, Öffnungszeiten und Anfahrt (bestehend, um Anfahrt/Parken ergänzen)",
+      "Das sagen Kundinnen und Kunden über die Beratung (3 bis 6 Zitate mit Beratungsbezug)",
+      "Häufige Fragen zur Beratung",
+      "Lieber gleich anrufen? (CTA)"
+    ],
+    "faq_add": [
+      "Was beinhaltet die kostenlose Photovoltaik-Beratung von EBZ Energie?",
+      "Wie lange dauert es von der Anfrage bis zum Angebot?",
+      "Was sollte ich zum Beratungstermin vorbereiten?",
+      "Ist die Beratung unabhängig oder an einen Kauf gebunden?",
+      "Beraten Sie auch zu Förderung und Finanzierung?",
+      "Kann ich auch per Video-Call oder im Schauraum in Villach beraten werden?"
+    ],
+    "internal_links": [
+      "/photovoltaik/ -> Photovoltaik für Eigenheim und Gewerbe",
+      "/photovoltaik-villach/ -> Photovoltaik in Villach",
+      "/referenzen/ -> 300+ Projekte: Referenzen mit echten Zahlen",
+      "/ueber-uns/ -> Wer Sie berät: EBZ Energie GmbH",
+      "/solarrechner/ -> Vorab selbst rechnen: Solarrechner",
+      "/photovoltaik-foerderung-kaernten/ -> Förderung Kärnten 2026",
+      "/foerderung-photovoltaik-steiermark/ -> Förderung Steiermark 2026",
+      "/finanzierung/ -> Finanzierung ab 147 € pro Monat",
+      "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ -> Was kostet eine 10-kWp-Anlage mit Speicher?"
+    ],
+    "notes": "Die Kontaktseite ist technisch sauber, aber nicht auf die einzige Suchabsicht mit Volumen ausgerichtet: 'photovoltaik beratung' (30, commercial) und die lokale Variante 'photovoltaik beratung kaernten' (10). H1 und erster Absatz muessen 'Photovoltaik-Beratung', 'kostenlos', 'Villach' und 'Kaernten/Steiermark' tragen. Dann einen Abschnitt 'Was die Beratung beinhaltet' plus Vorbereitungs-Checkliste ergaenzen (so strukturieren die Top-3) und die aus Bewertungen belegbaren Fristen (Rueckruf am naechsten Tag, Besichtigung innerhalb einer Woche, Angebot am Folgetag) als konkrete Zahlen nennen. 'pv anlage angebot' (70) ist eine Preisvergleichs-SERP und kein Ziel fuer diese Seite; nur das CTA-Wording 'Angebot anfordern' uebernehmen. Die lokalen 'in der Naehe'-Suchen (590 + 50) laufen ueber den Local Pack: GBP-Website auf ebz-photovoltaik.at/kontakt/ oder Startseite stellen und Oeffnungszeiten (GBP zeigt 'Oeffnet Sa um 10:00', Website sagt Mo bis Fr) abgleichen. SolarInstallation/AggregateRating aus dem Block entfernen. GSC: 1.110 Impressionen, 25 Klicks, 22 davon Brand; kein Ranking fuer 'photovoltaik beratung'-Varianten ausser 'beratung zu photovoltaik glanegg' (4 Impr.). Die Seite muss den Beratungs-Intent erst aufbauen; kurzfristig zaehlt die Brand-CTR (Title mit 'kostenlos', Telefon und Oeffnungszeiten)."
+  },
+  "cost_usd": 0.063,
+  "cost_hinweis": "Kostenfelder: Der MCP-Wrapper gibt das API-Feld cost nicht zurueck. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Live Advanced 0,002 $/Request + PAA-Klick, Search Intent anteilig).",
+  "gsc": {
+    "period": "GSC 12 Monate (2025-10-07 bis 2026-10-06), Quelle build/seo/gsc/",
+    "page": {
+      "clicks": 25,
+      "impressions": 1110,
+      "ctr": 2.3,
+      "position": 5.1,
+      "top_queries": [
+        [
+          "ebz energie",
+          17,
+          310
+        ],
+        [
+          "ebz energie gmbh",
+          5,
+          228
+        ],
+        [
+          "ebz",
+          0,
+          75
+        ],
+        [
+          "beratung zu photovoltaik glanegg",
+          0,
+          4
+        ]
+      ],
+      "queries_total": 12
+    },
+    "lesart": "22 von 25 Klicks sind Brand; die Seite ist heute eine reine Brand-Landingpage. 'beratung zu photovoltaik glanegg' (Kaernten) bestaetigt den Beratungs-Intent mit Ortsbezug, aber ohne Rankings fuer 'photovoltaik beratung'. CTR 2,3 % bei Position 5 fuer Brand-Queries ist niedrig: Sitelink/Title-Optimierung."
+  }
+}

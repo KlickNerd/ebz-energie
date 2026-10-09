@@ -1,0 +1,211 @@
+{
+  "slug": "impressum_datenschutz",
+  "path": [
+    "/impressum/",
+    "/datenschutz/"
+  ],
+  "seitentyp": "unternehmen",
+  "stand": "2026-10-09",
+  "primary": {
+    "keyword": "ebz energie gmbh",
+    "volume_at": 0,
+    "kd": null,
+    "cpc": null,
+    "intent": "navigational 0.43 / informational 0.38 (nicht in der AT-Keyword-DB)",
+    "volume_at_note": "Keyword-DB 0, aber GSC: 'ebz energie gmbh' 250 Impressionen / 78 Klicks pro Jahr site-weit"
+  },
+  "secondary": [
+    {
+      "keyword": "ebz energie impressum",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "navigational 0.67 (nicht in DB)"
+    },
+    {
+      "keyword": "ebz energie",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "informational 0.67 (nicht in DB, aber Knowledge Panel vorhanden)"
+    },
+    {
+      "keyword": "ebz",
+      "volume_at": 110,
+      "kd": 21,
+      "intent": "informational; Suggestions zeigen ausschliesslich Fremd-Entitaeten (ebz fernitz 210, ebz hartberg 90, ebz trofaiach 90, ebz bochum): kein Bezug zu EBZ Energie"
+    }
+  ],
+  "semantic": [
+    "EBZ Energie GmbH",
+    "Triglavstraße 15, 9500 Villach",
+    "FN 597101 s",
+    "Landesgericht Klagenfurt",
+    "ATU79039023",
+    "Mario Zintl",
+    "Wirtschaftskammer Kärnten",
+    "Gewerbeordnung",
+    "E-Commerce-Gesetz",
+    "Mediengesetz § 25",
+    "DSGVO",
+    "Verantwortlicher",
+    "Betroffenenrechte",
+    "Kontaktformular",
+    "Google Fonts",
+    "Google Maps",
+    "YouTube",
+    "Hosting",
+    "Server-Logfiles",
+    "Cookies"
+  ],
+  "long_tail": [
+    {
+      "keyword": "ebz energie gmbh",
+      "volume_at": 0
+    },
+    {
+      "keyword": "ebz energie impressum",
+      "volume_at": 0
+    },
+    {
+      "keyword": "ebz energie villach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "ebz photovoltaik",
+      "volume_at": 0
+    },
+    {
+      "keyword": "ebz stellenangebote",
+      "volume_at": 10
+    },
+    {
+      "keyword": "ebz standorte",
+      "volume_at": 10
+    }
+  ],
+  "questions": [],
+  "serp": {
+    "features": [
+      "knowledge_graph (EBZ Energie GmbH, Website ebz-energie.com, 111 Bewertungen 4,9)",
+      "google_reviews",
+      "third_party_reviews (Infobel 98 / 4,9)",
+      "people_also_ask"
+    ],
+    "query": "ebz energie (Austria)",
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "ebz-photovoltaik.at",
+        "title": "Alles zur Photovoltaik Förderung in Kärnten 2026",
+        "type": "eigene_seite"
+      },
+      {
+        "pos": 2,
+        "domain": "ebz-photovoltaik.at",
+        "title": "Datenschutz - EBZ Energie",
+        "type": "eigene_seite /datenschutz/ (rankt wegen NAP-Block)"
+      },
+      {
+        "pos": 3,
+        "domain": "ebz-photovoltaik.at",
+        "title": "Mario Zintl, Autor bei EBZ - Seite 9 von 9",
+        "type": "eigene_seite Autorenarchiv"
+      },
+      {
+        "pos": 4,
+        "domain": "ebz-photovoltaik.at",
+        "title": "Mario Zintl, Autor bei EBZ - Seite 5 von 8",
+        "type": "eigene_seite Autorenarchiv"
+      },
+      {
+        "pos": 5,
+        "domain": "www.gecheckt.at",
+        "title": "EBZ Energie GmbH",
+        "type": "portal"
+      },
+      {
+        "pos": 6,
+        "domain": "www.facebook.com",
+        "title": "EBZ Energie GmbH",
+        "type": "social"
+      },
+      {
+        "pos": 7,
+        "domain": "www.infobel.com",
+        "title": "Ebz Energie Gmbh, Villach, AT",
+        "type": "verzeichnis"
+      },
+      {
+        "pos": 8,
+        "domain": "firmenakte.at",
+        "title": "EBZ Energie GmbH, Villach-St. Ruprecht",
+        "type": "firmenbuch-portal"
+      },
+      {
+        "pos": 9,
+        "domain": "carmendullnig.com",
+        "title": "EBZ Energie GmbH",
+        "type": "portfolio"
+      },
+      {
+        "pos": 10,
+        "domain": "www.herold.at",
+        "title": "EBZ Energie GmbH in 9523 Villach",
+        "type": "verzeichnis"
+      }
+    ]
+  },
+  "competitor_outline": [],
+  "gaps": [
+    "Impressum: 'Firmenbuchgericht (vermutlich Landesgericht Klagenfurt)' ist eine Unsicherheitsformulierung im Rechtstext; verifizieren und 'vermutlich' streichen.",
+    "Impressum enthaelt SolarInstallation + AggregateRating-Schema; laut CLAUDE.md gehoert in die Bloecke nur FAQPage, LocalBusiness kommt zentral vom Plugin.",
+    "/datenschutz/ rankt fuer die Brand-Suche auf Platz 2, weil der NAP-Block dort prominent steht und /ueber-uns/ sowie Startseite die Firmierung nicht im Title/H1 tragen.",
+    "Externe NAP-Abweichungen sichtbar in der Brand-SERP: herold.at 'Maria-Peskoller-Weg 4, 9523 Villach', firmenakte.at '9523 Villach-St. Ruprecht'; Knowledge Panel verweist auf ebz-energie.com statt ebz-photovoltaik.at."
+  ],
+  "cannibalization": [
+    "/ueber-uns/ (soll die Brand-Suche gewinnen)",
+    "/kontakt/ (gleicher NAP-Block)"
+  ],
+  "ai_search_volume": [],
+  "recommendation": {
+    "title": "Impressum | EBZ Energie GmbH, Villach (unveraendert) / Datenschutzerklärung | EBZ Energie GmbH (unveraendert)",
+    "h1": "Impressum / Datenschutzerklärung (unveraendert)",
+    "description": "Bestehende Descriptions beibehalten; beide liegen in der Laenge und nennen Firmierung und Villach.",
+    "h2_outline": [
+      "Impressum: bestehende Struktur beibehalten (Medieninhaber, Gewerbe, Unternehmensgegenstand, Blattlinie, Haftung, Urheberrecht, Bildnachweis, Streitbeilegung)",
+      "Datenschutz: bestehende Struktur beibehalten"
+    ],
+    "faq_add": [],
+    "internal_links": [
+      "/impressum/ -> /ueber-uns/ (Satz 'Mehr ueber das Unternehmen')",
+      "/ueber-uns/ -> /impressum/ (Firmendaten, bereits vorhanden)"
+    ],
+    "notes": "Index-Status: /impressum/ auf index,follow lassen (Rechtsentitaet mit FN, UID und Adresse bestaetigt die NAP fuer Google und LLMs). /datenschutz/ ebenfalls indexierbar lassen; ein noindex wuerde das Brand-Ranking nur auf die naechste Zufallsseite verschieben. Das eigentliche Problem loest /ueber-uns/ (Firmierung in Title, H1 und erstem Absatz) plus 301 der alten Autorenarchive /author/mario-zintl/page/N/ auf /ueber-uns/. Es gibt in Oesterreich keine messbare Suchnachfrage nach 'ebz energie gmbh' oder 'ebz energie impressum'; 'ebz' (110) gehoert anderen Entitaeten (Einkaufszentren Fernitz, Hartberg, Trofaiach; EBZ Bochum). Zwei Pflege-Punkte: 'vermutlich Landesgericht Klagenfurt' im Impressum verifizieren und ersetzen, SolarInstallation/AggregateRating aus dem Impressum-Block entfernen. Externe Korrekturen (herold, firmenakte, GBP-Website) laufen ueber den offenen Punkt 6 der CLAUDE.md. GSC relativiert die DB: 'ebz energie' und 'ebz energie gmbh' bringen zusammen rund 620 Impressionen und 204 Klicks pro Jahr, verteilt auf Startseite, Kontakt und Referenzen. Impressum und Datenschutz sollen diese Klicks nicht abgreifen, sondern als Rechts- und NAP-Anker indexiert bleiben."
+  },
+  "cost_usd": 0.024,
+  "cost_hinweis": "Kostenfelder: Der MCP-Wrapper gibt das API-Feld cost nicht zurueck. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Live Advanced 0,002 $/Request + PAA-Klick, Search Intent anteilig).",
+  "gsc": {
+    "period": "GSC 12 Monate (2025-10-07 bis 2026-10-06), Quelle build/seo/gsc/",
+    "brand_site": {
+      "ebz energie": {
+        "clicks": 126,
+        "impressions": 372,
+        "rank_in_site_queries": 2
+      },
+      "ebz energie gmbh": {
+        "clicks": 78,
+        "impressions": 250,
+        "rank_in_site_queries": 4
+      },
+      "ebz": {
+        "clicks": 21,
+        "impressions": 1224,
+        "home_only": true
+      }
+    },
+    "pages": {
+      "/impressum/": "keine GSC-Datei vorhanden",
+      "/datenschutz/": "keine GSC-Datei vorhanden"
+    },
+    "lesart": "Die Keyword-DB hat die Brand nicht, GSC schon: 'ebz energie' ist die Nr. 2 Suchanfrage der gesamten Site (126 Klicks), 'ebz energie gmbh' Nr. 4 (78 Klicks). Die Brand-Klicks verteilen sich auf Startseite (78+69), /kontakt/ (17+5) und /referenzen/ (16+3). Fuer Impressum/Datenschutz liegen keine Seitendaten vor."
+  }
+}

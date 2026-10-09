@@ -1,0 +1,62 @@
+{
+ "old_url": "/balkonkraftwerke/",
+ "clicks": 151,
+ "impressions": 5790,
+ "ctr": 2.6,
+ "position": 12.4,
+ "top_queries": [
+  [
+   "balkonkraftwerk steiermark",
+   10,
+   515
+  ],
+  [
+   "balkonkraftwerk kärnten",
+   8,
+   357
+  ],
+  [
+   "balkonkraftwerk mit montageservice",
+   4,
+   47
+  ],
+  [
+   "balkonkraftwerk graz",
+   3,
+   192
+  ],
+  [
+   "balkonkraftwerk inkl montage",
+   1,
+   37
+  ],
+  [
+   "balkonkraftwerk graz kaufen",
+   1,
+   21
+  ],
+  [
+   "balkonkraftwerk beratung vor ort",
+   1,
+   8
+  ],
+  [
+   "anker solix montageservice",
+   1,
+   7
+  ],
+  [
+   "wer montiert balkonkraftwerke",
+   1,
+   4
+  ]
+ ],
+ "queries_total": 188,
+ "note": "Regionale Varianten (Steiermark, Kaernten, Graz) und 'Montageservice' sind der Intent.",
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

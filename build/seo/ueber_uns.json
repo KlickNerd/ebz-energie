@@ -1,0 +1,401 @@
+{
+  "slug": "ueber_uns",
+  "path": "/ueber-uns/",
+  "seitentyp": "unternehmen",
+  "stand": "2026-10-09",
+  "primary": {
+    "keyword": "photovoltaik kärnten firmen",
+    "volume_at": 70,
+    "kd": null,
+    "cpc": 2.73,
+    "intent": "commercial (Trend +350 % im Jahresvergleich)"
+  },
+  "secondary": [
+    {
+      "keyword": "ebz energie",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "navigational/informational (Brand, nicht in der Keyword-DB; Google zeigt Knowledge Panel mit 111 Bewertungen 4,9)"
+    },
+    {
+      "keyword": "photovoltaik kärnten",
+      "volume_at": 70,
+      "kd": null,
+      "intent": "commercial 0.56 (Primaer-Keyword von /photovoltaik/, hier nur semantisch)"
+    },
+    {
+      "keyword": "photovoltaik firmen villach",
+      "volume_at": 20,
+      "kd": null,
+      "intent": "navigational/commercial"
+    },
+    {
+      "keyword": "photovoltaik anbieter steiermark",
+      "volume_at": 40,
+      "kd": 14,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "photovoltaik fachbetrieb kärnten",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial 0.93"
+    },
+    {
+      "keyword": "photovoltaik installateur kärnten",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial 0.94"
+    }
+  ],
+  "semantic": [
+    "EBZ Energie GmbH",
+    "Mario Zintl",
+    "Geschäftsführung",
+    "Villach",
+    "Triglavstraße 15",
+    "Kärnten",
+    "Steiermark",
+    "Photovoltaik-Fachbetrieb",
+    "Fachbetrieb",
+    "Firma",
+    "Anbieter",
+    "Komplettanbieter",
+    "zertifizierte Fachkräfte",
+    "Elektromeister",
+    "Glas-Glas-Module",
+    "Speicher",
+    "Notstrom",
+    "Wärmepumpe",
+    "Energiegemeinschaft",
+    "Energiemanagement",
+    "Wallbox",
+    "Förderabwicklung",
+    "Projektbericht mit 3D-Belegplan und Statikreport",
+    "Google-Bewertung 4,9",
+    "111 Bewertungen",
+    "300+ Projekte",
+    "6 Bundesländer",
+    "Firmenbuch FN 597101 s",
+    "Wirtschaftskammer Kärnten",
+    "Schauraum",
+    "Festpreis",
+    "Handschlagqualität"
+  ],
+  "long_tail": [
+    {
+      "keyword": "photovoltaik kärnten firmen",
+      "volume_at": 70
+    },
+    {
+      "keyword": "photovoltaik firmen kärnten",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik firmen villach",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik firmen steiermark",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik anbieter steiermark",
+      "volume_at": 40
+    },
+    {
+      "keyword": "photovoltaik anbieter kärnten",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik anbieter österreich",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik firmen österreich",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik firmen",
+      "volume_at": 170
+    },
+    {
+      "keyword": "photovoltaik firmen in der nähe",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik klagenfurt",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik villach",
+      "volume_at": 30
+    },
+    {
+      "keyword": "solaranlage kärnten",
+      "volume_at": 10
+    },
+    {
+      "keyword": "ebz energie villach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "ebz energie erfahrungen",
+      "volume_at": 0
+    },
+    {
+      "keyword": "ebz energie gmbh",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Welche Solarfirmen sind seriös? (PAA)",
+    "Welche Energieanbieter gibt es in Kärnten? (PAA)",
+    "Welche österreichischen PV-Hersteller gibt es? (PAA Brand-SERP)",
+    "Was kostet eine Photovoltaikanlage für ein Einfamilienhaus in Österreich? (PAA)",
+    "Was kostet eine PV-Anlage inklusive Montage? (PAA Brand-SERP)",
+    "Wie hoch ist die aktuelle PV-Förderung in Kärnten? (PAA Brand-SERP)",
+    "Wer steht hinter EBZ Energie? (bereits in FAQ)",
+    "Wie lange gibt es EBZ Energie schon?",
+    "Wer montiert die Anlage: eigenes Team oder Fremdfirma?",
+    "Ist EBZ Energie ein Elektrofachbetrieb mit Meisterberechtigung?",
+    "Wo kann ich mir Anlagen oder einen Schauraum ansehen?"
+  ],
+  "serp": {
+    "features": [
+      "local_pack (EBZ Platz 3, 111 Bewertungen 4,9)",
+      "people_also_ask",
+      "video (Facebook)",
+      "related_searches (Förderung-lastig)"
+    ],
+    "query": "photovoltaik kärnten (Austria)",
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "www.ktn.gv.at",
+        "title": "Erster Fördercall noch bis 28. Feber 2025 offen",
+        "type": "behörde"
+      },
+      {
+        "pos": 2,
+        "domain": "prosolis.at",
+        "title": "Photovoltaik in Kärnten von ProSolis",
+        "type": "anbieter"
+      },
+      {
+        "pos": 3,
+        "domain": "e-autonom.at",
+        "title": "PV Anlage Kärnten: Mehr Eigenverbrauch. Weniger ...",
+        "type": "anbieter"
+      },
+      {
+        "pos": 4,
+        "domain": "www.verbund.com",
+        "title": "Photovoltaik Förderung Österreich | Stand: Oktober 2026",
+        "type": "energieversorger"
+      },
+      {
+        "pos": 5,
+        "domain": "www.ktn.gv.at",
+        "title": "Förderung Photovoltaik-Anlagen und Stromspeicher",
+        "type": "behörde"
+      },
+      {
+        "pos": 6,
+        "domain": "heizma.at",
+        "title": "PV-Förderung Kärnten 2026: 3.000 € Landespauschale",
+        "type": "ratgeber"
+      },
+      {
+        "pos": 7,
+        "domain": "www.ktn.gv.at",
+        "title": "Kärnten bekommt neue Regeln für Photovoltaikanlagen",
+        "type": "behörde"
+      },
+      {
+        "pos": 8,
+        "domain": "www.mallnitz.gv.at",
+        "title": "Erneuerbare Energie (PDF)",
+        "type": "behörde"
+      },
+      {
+        "pos": 9,
+        "domain": "www.kaernten-solar.at",
+        "title": "Deine Photovoltaikanlage I Eine Investition in die Zukunft",
+        "type": "anbieter"
+      }
+    ],
+    "brand_serp_ebz_energie": {
+      "features": [
+        "knowledge_graph (Website zeigt ebz-energie.com, Adresse Triglavstraße 15, 111 Bewertungen 4,9)",
+        "google_reviews",
+        "third_party_reviews (Infobel 98 Bewertungen 4,9)",
+        "people_also_ask"
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "ebz-photovoltaik.at",
+          "title": "Alles zur Photovoltaik Förderung in Kärnten 2026",
+          "type": "eigene_seite /photovoltaik-foerderung-kaernten/"
+        },
+        {
+          "pos": 2,
+          "domain": "ebz-photovoltaik.at",
+          "title": "Datenschutz - EBZ Energie",
+          "type": "eigene_seite /datenschutz/"
+        },
+        {
+          "pos": 3,
+          "domain": "ebz-photovoltaik.at",
+          "title": "Mario Zintl, Autor bei EBZ - Seite 9 von 9",
+          "type": "eigene_seite Autorenarchiv (thin)"
+        },
+        {
+          "pos": 4,
+          "domain": "ebz-photovoltaik.at",
+          "title": "Mario Zintl, Autor bei EBZ - Seite 5 von 8",
+          "type": "eigene_seite Autorenarchiv (thin)"
+        },
+        {
+          "pos": 5,
+          "domain": "www.gecheckt.at",
+          "title": "EBZ Energie GmbH | Photovoltaikanlage, Solarthermie ...",
+          "type": "portal"
+        },
+        {
+          "pos": 6,
+          "domain": "www.facebook.com",
+          "title": "EBZ Energie GmbH",
+          "type": "social"
+        },
+        {
+          "pos": 7,
+          "domain": "www.infobel.com",
+          "title": "Ebz Energie Gmbh, Villach, AT",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 8,
+          "domain": "firmenakte.at",
+          "title": "EBZ Energie GmbH, Villach-St. Ruprecht (FN 597101s)",
+          "type": "firmenbuch-portal (alte PLZ 9523)"
+        },
+        {
+          "pos": 9,
+          "domain": "carmendullnig.com",
+          "title": "EBZ Energie GmbH",
+          "type": "portfolio"
+        },
+        {
+          "pos": 10,
+          "domain": "www.herold.at",
+          "title": "EBZ Energie GmbH in 9523 Villach",
+          "type": "verzeichnis (alte Adresse Maria-Peskoller-Weg 4)"
+        }
+      ]
+    }
+  },
+  "competitor_outline": [
+    "H2 Photovoltaik in Kärnten: Komplettlösung aus einer Hand (Anbieter-Seiten prosolis, e-autonom, kaernten-solar)",
+    "H2 In 4 Schritten zur PV-Anlage: Erstberatung, Vor-Ort-Analyse, Angebot und Förderung, Installation, Nachbetreuung",
+    "H2 Aktuelle Förderung Kärnten 2026 (Pauschale PV + Speicher, Bund EAG)",
+    "H2 Kostenloses und unverbindliches Angebot",
+    "H2 Bewertungen / Google-Rezensionen (Sterne-Snippets in der SERP)",
+    "H2 Kontakt mit Telefon und E-Mail im Snippet"
+  ],
+  "gaps": [
+    "Brand-Entitaet: Title und H1 nennen weder 'EBZ Energie GmbH' noch 'Photovoltaik-Fachbetrieb'; H1 'Die freundlichen Energie-Handwerker aus Villach' traegt kein Keyword und keine Firmierung. Fuer die Brand-Suche rankt deshalb /datenschutz/ statt /ueber-uns/.",
+    "Keine Firmendaten im Fliesstext (Gruendungsjahr, Firmenbuch FN 597101 s, UID, Mitglied WK Kaernten, Gewerbeberechtigung Elektrotechnik): Mitbewerber-Verzeichnisse (firmenakte, herold, infobel) liefern genau diese Fakten und ranken dafuer.",
+    "Kein Team-Abschnitt mit Namen und Funktionen (Montage, Elektrotechnik, Buero) ausser Mario Zintl; 'Festangestelltes Team' bleibt eine Behauptung ohne Beleg.",
+    "Keine Zertifikate, Partner- oder Herstellerzertifizierungen (z. B. Sigenergy, my-PV, K2, Marzari tauchen nur auf /referenzen/ auf).",
+    "Schauraum in Villach wird in Bewertungen erwaehnt, auf der Seite aber nicht als Besuchsmoeglichkeit mit Adresse/Zeiten herausgestellt.",
+    "Kein Prozess-Abschnitt (Beratung, Vor-Ort-Termin, Projektbericht, Montage, Foerderabwicklung, Service) wie bei den Top-Anbietern; die Kontaktseite hat ihn, Ueber-uns nicht.",
+    "Kein Satz zur Foerderabwicklung, obwohl 7 der 9 organischen Treffer fuer 'photovoltaik kaernten' Foerder-Inhalte sind und Bewertungen die Foerderabwicklung loben.",
+    "JSON-LD enthaelt SolarInstallation + AggregateRating zusaetzlich zur FAQPage; laut CLAUDE.md darf im Block nur FAQPage stehen (LocalBusiness kommt zentral)."
+  ],
+  "cannibalization": [
+    "/photovoltaik/ (Title 'Photovoltaik Kärnten & Steiermark'): zielt auf 'photovoltaik kärnten'; /ueber-uns/ darf nur die Firmen-/Anbieter-Variante besetzen",
+    "/photovoltaik-villach/ (Title 'Photovoltaik Villach: Fachbetrieb vor Ort'): 'photovoltaik villach' und 'photovoltaik firmen villach' gehoeren dorthin",
+    "/kontakt/ teilt Bewertungs-Slider und Firmenfakten 1:1 (Duplicate-Content-Block)",
+    "Startseite / (GSC: traegt 'photovoltaik kärnten firmen' 459 Impr., 'photovoltaik firmen villach' 259 Impr. und die Brand-Klicks); Uebergabe der Firmen-Variante an /ueber-uns/ nur mit klarer interner Verlinkung 'Ueber EBZ Energie' aus Header/Startseite"
+  ],
+  "ai_search_volume": [],
+  "recommendation": {
+    "title": "EBZ Energie GmbH: Photovoltaik-Fachbetrieb aus Villach",
+    "h1": "EBZ Energie GmbH: Ihr Photovoltaik-Fachbetrieb in Villach für Kärnten und die Steiermark",
+    "description": "EBZ Energie GmbH, Photovoltaik-Firma aus Villach: 300+ Anlagen in Kärnten und der Steiermark, 4,9 Sterne aus 111 Google-Bewertungen, eigenes Team für Planung, Montage und Förderabwicklung.",
+    "h2_outline": [
+      "Wer wir sind: Photovoltaik-Fachbetrieb aus Villach (Firmierung, Gründung, Standort, Geschäftsführung)",
+      "Unser Team: Planung, Elektrotechnik und Montage aus einer Hand (Namen, Funktionen, Qualifikationen)",
+      "So arbeiten wir: vom Erstgespräch bis zur Förderabwicklung (6 Schritte mit Zeitangaben)",
+      "Photovoltaik, Speicher, Wärmepumpe, Energiemanagement, Energiegemeinschaft (bestehende Leistungs-Kacheln)",
+      "Zahlen und Fakten: 300+ Projekte, 6 Bundesländer, 4,9 Sterne, Garantien (bestehender KPI-Block)",
+      "Qualität, die man prüfen kann: Glas-Glas-Module, Komponenten-Partner, Garantien, Firmenbuch und WK-Mitgliedschaft",
+      "Das sagen unsere Kundinnen und Kunden (auf 3 bis 6 Zitate kürzen, Rest auf Google verlinken)",
+      "Vor Ort in Kärnten und der Steiermark: Schauraum Villach, Einsatzgebiet, Anfahrt",
+      "Häufige Fragen zu EBZ Energie",
+      "Lernen wir uns kennen? (CTA)"
+    ],
+    "faq_add": [
+      "Seit wann gibt es EBZ Energie und wo ist der Firmensitz?",
+      "Montiert EBZ Energie mit eigenem Team?",
+      "Welche Qualifikationen hat das Team (Elektrotechnik, Meisterbetrieb)?",
+      "Woran erkenne ich einen seriösen Photovoltaik-Anbieter in Kärnten?",
+      "Kann ich den Schauraum in Villach besuchen?",
+      "Übernimmt EBZ Energie die Förderabwicklung?"
+    ],
+    "internal_links": [
+      "/photovoltaik/ -> Photovoltaik in Kärnten und der Steiermark",
+      "/photovoltaik-villach/ -> Photovoltaik in Villach",
+      "/referenzen/ -> 300+ Projekte: unsere Referenzen mit echten Zahlen",
+      "/kontakt/ -> Kostenlose Erstberatung anfragen",
+      "/photovoltaik-foerderung-kaernten/ -> Photovoltaik-Förderung Kärnten 2026",
+      "/foerderung-photovoltaik-steiermark/ -> Photovoltaik-Förderung Steiermark 2026",
+      "/impressum/ -> Firmendaten im Impressum",
+      "/finanzierung/ -> Finanzierung ab 147 € pro Monat"
+    ],
+    "notes": "Die Seite verfehlt ihre wichtigste Aufgabe: Sie ist nicht als Entitaets-Seite der Marke erkennbar. Fuer 'ebz energie' rankt Google /datenschutz/ und zwei Autorenarchive, nicht /ueber-uns/ oder die Startseite. Zuerst Title, H1 und ersten Absatz auf 'EBZ Energie GmbH, Photovoltaik-Fachbetrieb aus Villach' umstellen und harte Firmendaten (Gruendung, FN 597101 s, WK Kaernten, Gewerbe Elektrotechnik, Team) in den Text holen. Zweitens einen Team- und Prozess-Abschnitt ergaenzen, damit 'festangestelltes Team' und 'zertifizierte Fachkraefte' belegt sind (PAA 'Welche Solarfirmen sind serioes?'). Drittens den ueber 70 Zitate langen Bewertungs-Slider auf wenige kuratierte Zitate kuerzen (identischer Block auf /kontakt/). Ausserdem: SolarInstallation- und AggregateRating-Schema aus dem Block entfernen (nur FAQPage erlaubt), Autorenarchive /author/mario-zintl/page/N/ per 301 auf /ueber-uns/ leiten, GBP-Website von ebz-energie.com auf ebz-photovoltaik.at stellen und Alt-Eintraege (herold: Maria-Peskoller-Weg 4, 9523; firmenakte: 9523 Villach-St. Ruprecht) auf Triglavstrasse 15, 9500 korrigieren lassen. GSC bestaetigt: Brand bringt rund 200 Klicks pro Jahr, aber keinen einzigen auf /ueber-uns/ (4 Impressionen); 'photovoltaik kaernten firmen' hat 459 Impressionen bei 7 Klicks auf der Startseite, also Snippet-Potenzial fuer eine Firmen-Seite mit Sternen, Firmierung und Standort im Title."
+  },
+  "cost_usd": 0.051,
+  "cost_hinweis": "Kostenfelder: Der MCP-Wrapper gibt das API-Feld cost nicht zurueck. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Live Advanced 0,002 $/Request + PAA-Klick, Search Intent anteilig).",
+  "gsc": {
+    "period": "GSC 12 Monate (2025-10-07 bis 2026-10-06), Quelle build/seo/gsc/",
+    "page": {
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6,
+      "top_queries": []
+    },
+    "brand_site": {
+      "ebz energie": {
+        "clicks": 126,
+        "impressions": 372
+      },
+      "ebz energie gmbh": {
+        "clicks": 78,
+        "impressions": 250
+      }
+    },
+    "related_on_home": {
+      "photovoltaik kärnten firmen": {
+        "clicks": 7,
+        "impressions": 459
+      },
+      "photovoltaik firmen villach": {
+        "clicks": 4,
+        "impressions": 259
+      },
+      "photovoltaik kärnten": {
+        "clicks": 4,
+        "impressions": 937
+      },
+      "ebz": {
+        "clicks": 21,
+        "impressions": 1224
+      }
+    },
+    "lesart": "Brand-Nachfrage ist real (ca. 620 Impressionen und 204 Klicks pro Jahr fuer 'ebz energie' + 'ebz energie gmbh'), landet aber auf Startseite, /kontakt/ und /referenzen/; /ueber-uns/ hat 4 Impressionen und keine einzige Suchanfrage. 'photovoltaik kaernten firmen' (459 Impressionen, Klicks nur 7) rankt heute ueber die Startseite: Ueber-uns kann die Firmen-Variante uebernehmen, wenn die Startseite intern darauf verlinkt."
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "slug": "balkonkraftwerke",
+  "path": "/balkonkraftwerke/",
+  "seitentyp": "leistung",
+  "stand": "2026-10-09",
+  "primary": {
+    "keyword": "balkonkraftwerk mit speicher",
+    "volume_at": 8100,
+    "kd": 10,
+    "cpc": 1.64,
+    "intent": "transactional (Keyword Overview); Intent-API: commercial 0,39 / informational 0,35. Head-Term 'balkonkraftwerk' (18.100, informational 0,45) ist Shop- und Medien-SERP; EBZ-Differenzierung ist Speicher + Montage."
+  },
+  "secondary": [
+    {
+      "keyword": "balkonkraftwerk",
+      "volume_at": 18100,
+      "kd": 12,
+      "intent": "transactional (Overview) / informational 0,45"
+    },
+    {
+      "keyword": "balkonkraftwerk österreich",
+      "volume_at": 2900,
+      "kd": 10,
+      "intent": "informational 0,65"
+    },
+    {
+      "keyword": "balkonkraftwerk mit speicher österreich",
+      "volume_at": 1300,
+      "kd": 14,
+      "intent": "commercial (Overview) / informational 0,62"
+    },
+    {
+      "keyword": "balkonkraftwerk 800 watt",
+      "volume_at": 880,
+      "kd": null,
+      "intent": "transactional (Overview) / informational 0,57"
+    },
+    {
+      "keyword": "balkonkraftwerk anmelden",
+      "volume_at": 260,
+      "kd": 6,
+      "intent": "transactional 0,95"
+    },
+    {
+      "keyword": "balkonkraftwerk montage",
+      "volume_at": 90,
+      "kd": null,
+      "intent": "commercial 0,48"
+    }
+  ],
+  "semantic": [
+    "800 Watt Einspeisegrenze (Wechselrichter)",
+    "Modulleistung bis 2.000 Wp frei wählbar",
+    "Mikro-Wechselrichter",
+    "bifaziale Module",
+    "Schuko-Stecker vs. Wieland-Stecker",
+    "Meldung an den Netzbetreiber zwei Wochen vor Inbetriebnahme",
+    "Kelag / Kärnten Netz",
+    "Energienetze Steiermark / Energie Steiermark",
+    "E-Control",
+    "Zustimmungsfiktion im Wohnungseigentum seit 1.9.2024 (zwei Monate Widerspruchsfrist)",
+    "Hausverwaltung",
+    "Mieter",
+    "Loggia / Balkongeländer",
+    "Flachdach, Fassade, Garten, Garage",
+    "Halterung / Montagewinkel",
+    "Speicher 1 bis 2 kWh (Anker Solix, Zendure, Marstek, EcoFlow, Solakon)",
+    "Ertrag 600 bis 800 kWh/Jahr, Praxis 350 bis 700 kWh (klimaaktiv)",
+    "Ersparnis rund 180 bis 360 €/Jahr bei 30 ct/kWh",
+    "Grundlast (Kühlschrank, Router, Standby)",
+    "Smart Meter / Nulleinspeisung",
+    "Amortisation",
+    "Komplettset",
+    "Stiftung Warentest 2025 (Testsieger-Suche)",
+    "Umsatzsteuer-Nullsatz",
+    "keine Bundesförderung bis 800 W",
+    "Peer-to-Peer-Strom / Energiegemeinschaft",
+    "Haushaltsstromverbrauch 1.400 bis 5.000 kWh"
+  ],
+  "long_tail": [
+    {
+      "keyword": "balkonkraftwerk mit speicher österreich",
+      "volume_at": 1300
+    },
+    {
+      "keyword": "balkonkraftwerk speicher",
+      "volume_at": 880
+    },
+    {
+      "keyword": "balkonkraftwerk 800 watt",
+      "volume_at": 880
+    },
+    {
+      "keyword": "speicher für balkonkraftwerk",
+      "volume_at": 590
+    },
+    {
+      "keyword": "balkonkraftwerk kaufen",
+      "volume_at": 390
+    },
+    {
+      "keyword": "balkonkraftwerk komplettset österreich",
+      "volume_at": 390
+    },
+    {
+      "keyword": "photovoltaik balkonkraftwerk",
+      "volume_at": 390
+    },
+    {
+      "keyword": "balkonkraftwerk 800 watt testsieger österreich",
+      "volume_at": 390
+    },
+    {
+      "keyword": "wechselrichter balkonkraftwerk",
+      "volume_at": 320
+    },
+    {
+      "keyword": "balkonkraftwerk anmelden",
+      "volume_at": 260
+    },
+    {
+      "keyword": "balkonkraftwerk 2000 watt mit speicher österreich",
+      "volume_at": 260
+    },
+    {
+      "keyword": "balkonkraftwerk 1200 watt erlaubt österreich",
+      "volume_at": 210
+    },
+    {
+      "keyword": "balkonkraftwerk halterung",
+      "volume_at": 210
+    },
+    {
+      "keyword": "wie funktioniert ein balkonkraftwerk",
+      "volume_at": 170
+    },
+    {
+      "keyword": "balkonkraftwerk österreich vorschriften",
+      "volume_at": 170
+    },
+    {
+      "keyword": "balkonkraftwerk anmelden österreich",
+      "volume_at": 170
+    },
+    {
+      "keyword": "speicher für balkonkraftwerk nachrüsten",
+      "volume_at": 140
+    },
+    {
+      "keyword": "balkonkraftwerk 800w",
+      "volume_at": 110
+    },
+    {
+      "keyword": "balkonkraftwerk anmelden österreich formular",
+      "volume_at": 110
+    },
+    {
+      "keyword": "balkonkraftwerk österreich erlaubt",
+      "volume_at": 90
+    },
+    {
+      "keyword": "balkonkraftwerk montage",
+      "volume_at": 90
+    },
+    {
+      "keyword": "balkonkraftwerk graz",
+      "volume_at": 90
+    },
+    {
+      "keyword": "förderung balkonkraftwerk österreich",
+      "volume_at": 90
+    },
+    {
+      "keyword": "balkonkraftwerk steiermark",
+      "volume_at": 50
+    },
+    {
+      "keyword": "kelag balkonkraftwerk anmelden",
+      "volume_at": 50
+    },
+    {
+      "keyword": "balkonkraftwerk förderung",
+      "volume_at": 30
+    },
+    {
+      "keyword": "balkonkraftwerk kärnten",
+      "volume_at": 0
+    },
+    {
+      "keyword": "balkonkraftwerk villach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "balkonkraftwerk installieren lassen",
+      "volume_at": 0
+    },
+    {
+      "keyword": "balkonkraftwerk mit speicher und montage",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Werden Balkonkraftwerke in Österreich gefördert?",
+    "Was ist der Unterschied zwischen Photovoltaik und Balkonkraftwerk?",
+    "Wie viel Strom produziert ein 800 Watt Balkonkraftwerk am Tag?",
+    "Was passiert, wenn man mehr als 800 Watt einspeist?",
+    "Wie viel Geld spart man mit einem Balkonkraftwerk im Jahr?",
+    "Ist ein Balkonkraftwerk wirklich sinnvoll?",
+    "Was passiert, wenn ich zwei Balkonkraftwerke betreibe?",
+    "Wo kann man den Speicher eines Balkonkraftwerks aufstellen?",
+    "Was sind die Nachteile eines Balkonkraftwerks?",
+    "Kann ein Balkonkraftwerk eine Waschmaschine betreiben?",
+    "Kann man ein Balkonkraftwerk an jede Steckdose anschließen?",
+    "Welche Änderungen gibt es ab März 2026 für Balkonkraftwerke?",
+    "Wie funktioniert ein Balkonkraftwerk mit Speicher?",
+    "Muss ich ein Balkonkraftwerk in Österreich anmelden (Kelag, Energie Steiermark)?",
+    "Wieviel Watt darf ein Balkonkraftwerk in Österreich haben (1.200 oder 2.000 Watt Module)?"
+  ],
+  "serp": {
+    "features": [
+      "people_also_ask",
+      "popular_products (Shopping, Sets 415 bis 1.150 €)",
+      "people_also_search",
+      "images",
+      "related_searches",
+      "video (bei 'mit speicher')",
+      "kein local_pack",
+      "kein ai_overview"
+    ],
+    "ebz_rankings": {
+      "balkonkraftwerk": "nicht in den Top 10",
+      "balkonkraftwerk mit speicher": "nicht in den Top 10"
+    },
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "greensolar.at",
+        "title": "Balkonkraftwerk Testsieger kaufen",
+        "type": "shop"
+      },
+      {
+        "pos": 2,
+        "domain": "vattenfall.de",
+        "title": "Aufbau und Funktionsweise eines Balkonkraftwerks",
+        "type": "ratgeber (DE)"
+      },
+      {
+        "pos": 3,
+        "domain": "ndr.de",
+        "title": "Balkonkraftwerk mit und ohne Speicher: Wann lohnt es sich?",
+        "type": "medien (DE)"
+      },
+      {
+        "pos": 4,
+        "domain": "greensolar.at",
+        "title": "Balkonkraftwerk Testsieger kaufen",
+        "type": "shop"
+      },
+      {
+        "pos": 5,
+        "domain": "pv-tec.at",
+        "title": "Balkonkraftwerk Speicher",
+        "type": "shop"
+      },
+      {
+        "pos": 6,
+        "domain": "sonnenstrom.wien.gv.at",
+        "title": "Photovoltaik-Balkonmodule",
+        "type": "behoerde"
+      },
+      {
+        "pos": 7,
+        "domain": "idealo.at",
+        "title": "Balkonkraftwerk | Preisvergleich",
+        "type": "preisvergleich"
+      },
+      {
+        "pos": 8,
+        "domain": "pv-tec.at",
+        "title": "Balkonkraftwerk Speicher",
+        "type": "shop"
+      },
+      {
+        "pos": 9,
+        "domain": "oesterreich.gv.at",
+        "title": "Selbsterzeugung von Strom mit erneuerbaren Energieträgern",
+        "type": "behoerde"
+      },
+      {
+        "pos": 10,
+        "domain": "greensolar.at",
+        "title": "Balkonkraftwerk-Ertrags-Tabelle",
+        "type": "ratgeber (shop)"
+      }
+    ],
+    "top10_primary_balkonkraftwerk_mit_speicher": [
+      "klimaaktiv.at Praxisbeispiel (behoerde)",
+      "youtube Felix Goldbach",
+      "photovoltaikforum.com",
+      "energiemagazin.com Speicher-Test",
+      "priwatt.de (DE shop)",
+      "e4mobility.at (shop)",
+      "josefsteiner.at (shop)",
+      "priwatt.de",
+      "e4mobility.at",
+      "konsument.at (verbraucher)"
+    ]
+  },
+  "competitor_outline": [
+    "H2 Was ist ein Balkonkraftwerk (Plug-in-PV, steckerfertig)",
+    "H2 Maximalleistung 800 Watt in Österreich, Modulleistung frei wählbar",
+    "H2 Bewilligung und Meldung beim Netzbetreiber (zwei Wochen vorher)",
+    "H2 Einspeisung über die Steckdose: Schuko oder Wieland",
+    "H2 Ertragstabelle 800 W und 2.000 W je Monat (kWh, Ersparnis in €)",
+    "H2 Wie viel Strom braucht ein Haushalt (Tabelle nach Personen)",
+    "H2 Lohnt sich ein Balkonkraftwerk / Amortisation",
+    "H2 Ertrag optimieren: Modulleistung, Wechselrichter, Neigung, Ausrichtung, Verschattung, Speicher",
+    "H2 Speicher: Vorteile, Größe, Aufstellort",
+    "H2 Für welche Haushalte und welche Geräte (Grundlast)",
+    "H2 Praxisbeispiel Wohnhaus (19 Haushalte, 350 bis 700 kWh, 800 € + 400 € Montage)",
+    "H2 Rechtliches im Wohnungseigentum (Zustimmungsfiktion seit 1.9.2024)",
+    "H2 Förderung (Bund nein, Länder teilweise, Wien nein)",
+    "H2 Komplettset-Inhalt und Testsieger",
+    "H2 FAQ"
+  ],
+  "gaps": [
+    "Netzbetreiber-Meldung nicht konkret: Kelag/Kärnten Netz 0 Treffer, Energie Steiermark/Energienetze Steiermark 0, 'zwei Wochen' 0. 'balkonkraftwerk anmelden' (260) plus Netzbetreiber-Varianten (Kelag 50, Energie Steiermark 90) sind der stärkste regionale Hebel.",
+    "Modulleistung über 800 Watt nicht erklärt ('2000 Watt' 0, '1200' 0): 'balkonkraftwerk 1200 watt erlaubt österreich' 210, '2000 watt mit speicher österreich' 260, 'österreich erlaubt' 90.",
+    "Keine monatliche Ertragstabelle und keine Haushaltsverbrauch-Tabelle (greensolar rankt damit Platz 10 und wird im AI-Umfeld zitiert).",
+    "Amortisation (0 Treffer) und Kostenanker für Set plus Montage fehlen; klimaaktiv nennt 800 € Set + 400 € Montage.",
+    "Zustimmungsfiktion im Wohnungseigentum seit 1.9.2024 nur angedeutet ('Wohnungseigent' 1 Treffer); oesterreich.gv.at rankt damit.",
+    "Schuko vs. Wieland nicht erklärt (Schuko 0), bifaziale Module nicht erwähnt (0).",
+    "Speicher-Dimensionierung (1 bis 2 kWh) und Aufstellort (PAA) fehlen trotz 50 Speicher-Treffern.",
+    "Keine 'Nachteile'-Sektion (PAA), kein Garage-/Zaun-Montageort (Garage 0).",
+    "GEO: 'balkonkraftwerk österreich' hat 253 AI-Suchen pro Monat, 'balkonkraftwerk' 558. Die Seite hat keinen zitierfähigen Österreich-Definitionsabsatz mit Zahlen (800 W, Meldung, Modulleistung, Ertrag)."
+  ],
+  "cannibalization": [
+    "/balkonkraftwerk-foerderung-in-oesterreich/ (Ratgeber; H2 'Was der Bund fördert' auf der Leistungsseite kürzen und verlinken)",
+    "/smart-meter/ (Zähler-Thema)",
+    "/einspeisetarif-fuer-photovoltaik/",
+    "/photovoltaik/ (Übergang Balkonkraftwerk zu Dachanlage)"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "balkonkraftwerk",
+      "ai_volume": 558
+    },
+    {
+      "keyword": "balkonkraftwerk österreich",
+      "ai_volume": 253
+    },
+    {
+      "keyword": "balkonkraftwerk 800 watt",
+      "ai_volume": 77
+    },
+    {
+      "keyword": "balkonkraftwerk mit speicher",
+      "ai_volume": 74
+    },
+    {
+      "keyword": "balkonkraftwerk speicher",
+      "ai_volume": 74
+    },
+    {
+      "keyword": "speicher für balkonkraftwerk",
+      "ai_volume": 74
+    },
+    {
+      "keyword": "balkonkraftwerk genehmigung",
+      "ai_volume": 15
+    },
+    {
+      "keyword": "wechselrichter balkonkraftwerk",
+      "ai_volume": 12
+    },
+    {
+      "keyword": "balkonkraftwerk anmelden",
+      "ai_volume": 11
+    },
+    {
+      "keyword": "balkonkraftwerk mit speicher österreich",
+      "ai_volume": 11
+    },
+    {
+      "keyword": "balkonkraftwerk montage",
+      "ai_volume": 4
+    },
+    {
+      "keyword": "balkonkraftwerk kaufen",
+      "ai_volume": 2
+    },
+    {
+      "keyword": "balkonkraftwerk lohnt sich",
+      "ai_volume": 2
+    },
+    {
+      "keyword": "balkonkraftwerk testsieger österreich",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "balkonkraftwerk kosten",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "balkonkraftwerk kärnten",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Balkonkraftwerk mit Speicher: Montage in Kärnten | EBZ",
+    "h1": "Balkonkraftwerk mit Speicher: Montage und Anmeldung in Kärnten und der Steiermark",
+    "description": "Balkonkraftwerk bis 800 Watt mit Speicher: Montage und Meldung beim Netzbetreiber (Kelag, Energie Steiermark). 600 bis 800 kWh/Jahr, für Mieter und Eigentümer.",
+    "h2_outline": [
+      "Was ist ein Balkonkraftwerk? (Österreich-Definition: 800 W Einspeisung, Modulleistung frei, Meldung statt Bewilligung)",
+      "Wohnung oder Haus: der passende Einstieg (Mieter, Wohnungseigentum mit Zustimmungsfiktion, Hausbesitzer)",
+      "800 Watt Einspeisegrenze: warum 1.200 oder 2.000 Watt Module trotzdem erlaubt sind",
+      "Anmeldung beim Netzbetreiber: Kelag, Kärnten Netz, Energienetze Steiermark, Fristen",
+      "Ertrag und Ersparnis: Monatstabelle 800 W, Beispiel 2.000 Wp, Haushaltsverbrauch",
+      "Speicher fürs Balkonkraftwerk: Größe, Aufstellort, tagsüber laden, abends verbrauchen",
+      "Was Set und Montage kosten und wann es sich rechnet*",
+      "Fünf Gründe für Montage durch den Fachbetrieb (Sicherheit, Halterung, Schuko oder Wieland)",
+      "Förderung: was der Bund fördert und was nicht (Kurzfassung, Link Ratgeber)",
+      "Vom Balkonkraftwerk zur Dachanlage mit Speicher und Wallbox",
+      "Ablauf",
+      "Häufige Fragen",
+      "Angebot"
+    ],
+    "faq_add": [
+      "Muss ich mein Balkonkraftwerk bei Kelag oder Energie Steiermark anmelden und wie lange vorher?",
+      "Darf ich in Österreich 2.000 Watt Module an einem 800-Watt-Wechselrichter betreiben?",
+      "Wie viel Strom produziert ein 800 Watt Balkonkraftwerk am Tag und im Jahr?",
+      "Was kostet ein Balkonkraftwerk mit Speicher inklusive Montage?",
+      "Wann amortisiert sich ein Balkonkraftwerk?",
+      "Schuko oder Wieland: welchen Stecker braucht ein Balkonkraftwerk?",
+      "Was sind die Nachteile eines Balkonkraftwerks?",
+      "Brauche ich die Zustimmung der anderen Wohnungseigentümer?"
+    ],
+    "internal_links": [
+      "/balkonkraftwerk-foerderung-in-oesterreich/ -> Balkonkraftwerk-Förderung in Österreich",
+      "/smart-meter/ -> Smart Meter und Zähler",
+      "/einspeisetarif-fuer-photovoltaik/ -> Einspeisetarif",
+      "/batteriespeicher/ -> Stromspeicher für die Dachanlage",
+      "/photovoltaik/ -> Photovoltaikanlage fürs Dach",
+      "/photovoltaik-villach/ -> Photovoltaik in Villach",
+      "/referenzen/ -> Referenzen",
+      "/kontakt/ -> Beratung anfragen"
+    ],
+    "notes": "Die Head-Terms (18.100 und 8.100) sind Shop-, Preisvergleich- und Medien-SERPs ohne Local Pack; eine regionale Montage-Seite gewinnt dort nur über die österreichspezifischen Informationsbausteine, die der Wettbewerb liefert: konkrete Netzbetreiber-Meldung (Kelag, Energienetze Steiermark, zwei Wochen), Modulleistung über 800 W, Ertrags- und Verbrauchstabellen, Amortisation, Zustimmungsfiktion. Diese Blöcke zuerst ergänzen, dann Title/H1 auf 'mit Speicher' und 'Montage Kärnten/Steiermark' schärfen. Für GEO einen Definitionsabsatz mit Zahlen an den Anfang setzen ('balkonkraftwerk österreich' hat 253 AI-Suchen)."
+  },
+  "cost_usd": 0.14,
+  "cost_note": "Die MCP-Antworten enthielten kein cost-Feld. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Advanced 0,002 $ + PAA-Klicks, Content Parsing 0,0005 $/URL, AI Keyword Data 0,0002 $/Keyword)."
+}

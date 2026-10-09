@@ -1,0 +1,418 @@
+{
+ "slug": "eg_privat",
+ "path": "/leistungen/energiegemeinschaft/",
+ "seitentyp": "leistung",
+ "stand": "2026-10-09",
+ "primary": {
+  "keyword": "energiegemeinschaft beitreten",
+  "volume_at": 90,
+  "kd": null,
+  "cpc": 1.93,
+  "intent": "transactional (Intent-API 0,999; Overview: navigational mit commercial/transactional)"
+ },
+ "secondary": [
+  {
+   "keyword": "energiegemeinschaft in der nähe",
+   "volume_at": 170,
+   "kd": 41,
+   "intent": "informational/commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft privat",
+   "volume_at": 110,
+   "kd": 22,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft strompreis",
+   "volume_at": 50,
+   "kd": 10,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "pv strom mit nachbarn teilen",
+   "volume_at": 30,
+   "kd": 6,
+   "intent": "transactional"
+  },
+  {
+   "keyword": "energiegemeinschaft mit nachbar",
+   "volume_at": 30,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft anbieter",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial"
+  }
+ ],
+ "semantic": [
+  "Erneuerbare-Energie-Gemeinschaft (EEG)",
+  "Bürgerenergiegemeinschaft (BEG)",
+  "Gemeinschaftliche Erzeugungsanlage (GEA)",
+  "Peer-to-Peer-Vertrag (P2P)",
+  "Eigenversorgungsanlage (EVA)",
+  "Nahbereich (lokal/regional)",
+  "Trafostation",
+  "Umspannwerk",
+  "Netzebene 7 / 6 / 4-5",
+  "Netznutzungsentgelt",
+  "Elektrizitätsabgabe",
+  "Erneuerbaren-Förderbeitrag",
+  "Smart Meter Opt-in",
+  "Viertelstundenwerte",
+  "Zählpunkt",
+  "Teilnahmefaktor",
+  "Mehrfachteilnahme (bis zu 5 Gemeinschaften)",
+  "ebUtilities",
+  "EDA-Portal",
+  "Gemeinschafts-ID",
+  "Nahbereichsabfrage Kärnten Netz / Energie Klagenfurt",
+  "statische und dynamische Zuteilung",
+  "Verein oder Genossenschaft",
+  "Mitgliedsbeitrag",
+  "energyfamily",
+  "OeMAG-Marktpreis 6,146 ct",
+  "ct/kWh",
+  "SNE-VO (E-Control)",
+  "ElWG 2025",
+  "energiegemeinschaften.gv.at Landkarte"
+ ],
+ "long_tail": [
+  {
+   "keyword": "energiegemeinschaft österreich",
+   "volume_at": 1300
+  },
+  {
+   "keyword": "energiegemeinschaft kärnten",
+   "volume_at": 320
+  },
+  {
+   "keyword": "energiegemeinschaft steiermark",
+   "volume_at": 480
+  },
+  {
+   "keyword": "energiegemeinschaft finden",
+   "volume_at": 170
+  },
+  {
+   "keyword": "energiegemeinschaft erfahrungen",
+   "volume_at": 170
+  },
+  {
+   "keyword": "erneuerbare energiegemeinschaft",
+   "volume_at": 140
+  },
+  {
+   "keyword": "energiegemeinschaft familie",
+   "volume_at": 70
+  },
+  {
+   "keyword": "energiegemeinschaft netzkosten",
+   "volume_at": 70
+  },
+  {
+   "keyword": "energiegemeinschaft lavanttal",
+   "volume_at": 70
+  },
+  {
+   "keyword": "energiegemeinschaft villach",
+   "volume_at": 50
+  },
+  {
+   "keyword": "energiegemeinschaft photovoltaik",
+   "volume_at": 50
+  },
+  {
+   "keyword": "wie funktioniert eine energiegemeinschaft",
+   "volume_at": 50
+  },
+  {
+   "keyword": "pv-strom mit nachbarn teilen österreich",
+   "volume_at": 40
+  },
+  {
+   "keyword": "energiegemeinschaft abrechnung",
+   "volume_at": 40
+  },
+  {
+   "keyword": "was ist eine energiegemeinschaft",
+   "volume_at": 40
+  },
+  {
+   "keyword": "lokale energiegemeinschaft",
+   "volume_at": 40
+  },
+  {
+   "keyword": "energiegemeinschaft klagenfurt",
+   "volume_at": 30
+  },
+  {
+   "keyword": "energiegemeinschaft kosten",
+   "volume_at": 30
+  },
+  {
+   "keyword": "energiegemeinschaft vergleich",
+   "volume_at": 30
+  },
+  {
+   "keyword": "beste energiegemeinschaft",
+   "volume_at": 30
+  },
+  {
+   "keyword": "strom teilen österreich",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft einspeisetarif",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft mitmachen",
+   "volume_at": 0
+  },
+  {
+   "keyword": "energiegemeinschaft teilnehmen",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Wie hoch ist der Strompreis in Energiegemeinschaften?",
+  "Welche Änderungen gibt es für bestehende Energiegemeinschaften ab 2026?",
+  "Welche Energiegemeinschaft in Österreich ist die beste?",
+  "Welche Vor- und Nachteile hat eine Energiegemeinschaft?",
+  "Wie hoch ist die Ersparnis für die Netzgebühr durch die Energiegemeinschaft?",
+  "Ist es möglich, PV-Strom in Österreich mit Nachbarn zu teilen?",
+  "Kann ich jeder Energiegemeinschaft beitreten?",
+  "Kann ich Mitglied in mehreren Energiegemeinschaften sein?",
+  "Was bringen Energiegemeinschaften?",
+  "Welche Nachteile hat eine Energiegemeinschaft?",
+  "Wie funktioniert eine Energiegemeinschaft?",
+  "Was ist eine Energiegemeinschaft?",
+  "Wer kann an Energiegemeinschaften teilnehmen?"
+ ],
+ "serp": {
+  "features": [
+   "ai_overview",
+   "people_also_ask",
+   "related_searches",
+   "video (nur 'in der nähe')"
+  ],
+  "top10": [
+   {
+    "pos": 1,
+    "domain": "tinetz.at",
+    "title": "Bürgerenergiegemeinschaften",
+    "type": "netzbetreiber"
+   },
+   {
+    "pos": 2,
+    "domain": "klarkurs.at",
+    "title": "Energiegemeinschaften nach dem Erneuerbaren-Ausbau-Gesetz",
+    "type": "ratgeber (Steuerberatung)"
+   },
+   {
+    "pos": 3,
+    "domain": "umblick.at",
+    "title": "Energiegemeinschaft gründen & Energieberatung",
+    "type": "dienstleister"
+   },
+   {
+    "pos": 4,
+    "domain": "heimatstrom.at",
+    "title": "Webinar zur Energiegemeinschaft",
+    "type": "anbieter"
+   },
+   {
+    "pos": 5,
+    "domain": "eg-austria.at",
+    "title": "Wie funktioniert die Mehrfachteilnahme?",
+    "type": "ratgeber"
+   },
+   {
+    "pos": 6,
+    "domain": "ewr-energie.com",
+    "title": "Bürgerenergiemodelle",
+    "type": "netzbetreiber"
+   },
+   {
+    "pos": 7,
+    "domain": "kommunal.at",
+    "title": "Wie startet man eine Erneuerbare-Energie-Gemeinschaft?",
+    "type": "portal"
+   },
+   {
+    "pos": 8,
+    "domain": "blog.regenerative.at",
+    "title": "Mitglied in verschiedenen Energiegemeinschaften",
+    "type": "anbieter-blog"
+   },
+   {
+    "pos": 9,
+    "domain": "energie-noe.at",
+    "title": "Grundlagen zur Bürgerenergie",
+    "type": "behörde/portal"
+   }
+  ]
+ },
+ "competitor_outline": [
+  "H2 Was ist eine Energiegemeinschaft (EEG, BEG, GEA, P2P, EVA)",
+  "H2 Für wen eignet sich eine EEG",
+  "H2 So funktioniert es (Erzeugung, Verteilung, Überschuss ins Netz)",
+  "H2 Vorteile für Erzeuger und für Verbraucher",
+  "H2 Voraussetzungen: Smart Meter Opt-in, Zählpunkt, Nahbereich, Registrierung ebUtilities",
+  "H2 Nahbereiche: Standort, Lokal, Regional, österreichweit",
+  "H2 Wer kann teilnehmen (Mehrfachteilnahme bis 5 EG, Teilnahmefaktor)",
+  "H2 Finanzielle Anreize: Entfall Förderbeitrag, Elektrizitätsabgabe, reduzierte Netzentgelte",
+  "H2 Schritt für Schritt anmelden",
+  "H2 FAQ"
+ ],
+ "gaps": [
+  "Mehrfachteilnahme und Teilnahmefaktor (bis zu 5 Gemeinschaften) fehlen komplett, obwohl zwei Top-10-Ergebnisse genau darauf ranken",
+  "PAA 'Welche Änderungen ab 2026': ElWG 2025, P2P-Verträge, österreichweite Nutzung ab April 2027, SNE-VO 2027 nicht erwähnt",
+  "Kein Abschnitt 'Energiegemeinschaft in der Nähe finden' (Landkarte energiegemeinschaften.gv.at, Nahbereichsabfrage Kärnten Netz und Energie Klagenfurt verlinken)",
+  "Kein Antwort-Absatz auf 'Wie hoch ist der Strompreis in Energiegemeinschaften' in zitierbarer Form (ct/kWh Spanne, Vergleich zum Haushaltstarif)",
+  "Keine Entscheidungskriterien 'Welche Energiegemeinschaft ist die beste / Vergleich' (Anbieter-Intent)",
+  "Klagenfurt und Lavanttal als Orte fehlen (Suchvolumen 30 und 70), Villach ist vorhanden",
+  "Begriffe GEA, ebUtilities, Genossenschaft fehlen (Fachvokabular der Behördenseiten)"
+ ],
+ "cannibalization": [
+  "/energiegemeinschaft/",
+  "/energiegemeinschaft-beitreten/",
+  "/energiegemeinschaft-privat/",
+  "/energiegemeinschaft-kaernten/",
+  "/energiegemeinschaft-finden/",
+  "/energiegemeinschaft-villach-klagenfurt/",
+  "/energiegemeinschaft-kosten/",
+  "/energiegemeinschaft-netzkosten/"
+ ],
+ "ai_search_volume": [
+  {
+   "keyword": "energiegemeinschaft",
+   "ai_volume": 295
+  },
+  {
+   "keyword": "was ist eine energiegemeinschaft",
+   "ai_volume": 295
+  },
+  {
+   "keyword": "energiegemeinschaft nachteile",
+   "ai_volume": 48
+  },
+  {
+   "keyword": "energiegemeinschaft kosten",
+   "ai_volume": 28
+  },
+  {
+   "keyword": "energiegemeinschaft österreich",
+   "ai_volume": 22
+  },
+  {
+   "keyword": "wie funktioniert eine energiegemeinschaft",
+   "ai_volume": 8
+  },
+  {
+   "keyword": "energiegemeinschaft finden",
+   "ai_volume": 5
+  },
+  {
+   "keyword": "pv strom mit nachbarn teilen",
+   "ai_volume": 4
+  },
+  {
+   "keyword": "energiegemeinschaft beitreten",
+   "ai_volume": 3
+  },
+  {
+   "keyword": "energiegemeinschaft steiermark",
+   "ai_volume": 1
+  },
+  {
+   "keyword": "energiegemeinschaft netzkosten",
+   "ai_volume": 1
+  },
+  {
+   "keyword": "energiegemeinschaft in der nähe",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft kärnten",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft privat",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft anbieter",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft villach",
+   "ai_volume": 0
+  }
+ ],
+ "recommendation": {
+  "title": "Energiegemeinschaft beitreten: Strom teilen mit EBZ",
+  "h1": "Energiegemeinschaft beitreten: Solarstrom mit Nachbarn teilen und bis zu 57 % Netzentgelt sparen",
+  "description": "Energiegemeinschaft beitreten mit EBZ: Überschuss zu 8 bis 12 ct statt 6,146 ct OeMAG, bis zu 57 % weniger Netzentgelt im Nahbereich. Beitritt in 4 Schritten.",
+  "h2_outline": [
+   "Was ist eine Energiegemeinschaft und wer kann beitreten?",
+   "Mit oder ohne PV-Anlage: zwei Wege in die Energiegemeinschaft",
+   "Rechenbeispiel: ein Jahr in einer lokalen Energiegemeinschaft",
+   "Lokal, regional oder österreichweit: wo der Netzentgelt-Rabatt gilt",
+   "Voraussetzungen: Zählpunkt, Smart Meter Opt-in, Nahbereich bei Kärnten Netz und Energie Klagenfurt",
+   "Energiegemeinschaft in Kärnten, der Steiermark oder in Ihrer Nähe finden",
+   "Abrechnung über unseren Partner energyfamily",
+   "Förderung der Anlage, Teilnahme kommt dazu",
+   "Woran Sie eine gute Energiegemeinschaft erkennen und warum EBZ",
+   "Anlagen, die Gemeinschaften tragen (Referenzen)",
+   "In 4 Schritten zur ersten EG-Kilowattstunde (4 bis 8 Wochen)",
+   "Häufige Fragen",
+   "Ratgeber rund um die Energiegemeinschaft",
+   "Eignung in 10 Minuten prüfen lassen"
+  ],
+  "faq_add": [
+   "Wie hoch ist der Strompreis in einer Energiegemeinschaft?",
+   "Kann ich mehreren Energiegemeinschaften beitreten (Mehrfachteilnahme, Teilnahmefaktor)?",
+   "Welche Änderungen gelten für Energiegemeinschaften ab 2026 (ElWG 2025, österreichweites Teilen ab 2027)?",
+   "Woran erkenne ich eine gute Energiegemeinschaft im Vergleich?",
+   "Wie finde ich eine Energiegemeinschaft in meiner Nähe (Landkarte, Nahbereichsabfrage)?",
+   "Ist Strom teilen mit Nachbarn in Österreich erlaubt?"
+  ],
+  "internal_links": [
+   "/energiegemeinschaft-beitreten/ -> Ablauf, Dauer und Unterlagen für den Beitritt",
+   "/energiegemeinschaft-finden/ -> Energiegemeinschaft in der Nähe finden",
+   "/energiegemeinschaft-kaernten/ -> Energiegemeinschaften in Kärnten",
+   "/energiegemeinschaft-villach-klagenfurt/ -> Energiegemeinschaft in Villach und Klagenfurt",
+   "/energiegemeinschaft-nachteile/ -> Vor- und Nachteile ehrlich bewertet",
+   "/energiegemeinschaft-rechner/ -> Vorteil pro Jahr berechnen",
+   "/oemag-einspeisetarif/ -> aktueller OeMAG-Marktpreis",
+   "/smart-meter-opt-out/ -> Smart Meter Opt-in erklärt",
+   "/referenzen/ -> Referenzprojekte"
+  ],
+  "notes": "Die LP ist heute auf das generische 'Energiegemeinschaft' (4.400, informational) ausgerichtet, das der Pillar /energiegemeinschaft/ tragen soll. Primär-Keyword der LP wird 'Energiegemeinschaft beitreten' (90, transactional 0,999), flankiert von 'in der Nähe' (170), 'privat' (110), 'mit Nachbar' und 'PV-Strom mit Nachbarn teilen'. Der Ratgeber /energiegemeinschaft-beitreten/ zielt auf dasselbe Keyword: entweder auf die Prozessfrage (Ablauf, Dauer, Unterlagen) zuspitzen und mit Ankertext 'Energiegemeinschaft beitreten mit EBZ' auf die LP verlinken, oder per 301 in die LP ziehen. Zuerst Title und H1 umstellen, dann den Abschnitt 'EG finden und Nahbereichsabfrage' sowie FAQ zu Mehrfachteilnahme, Strompreis und 2026-Änderungen ergänzen. Search Console: die LP hat in 12 Monaten 96 Impressionen und 1 Klick, der gesamte EG-Traffic läuft über die Ratgeber; ohne eigenes transaktionales Keyword bleibt sie unsichtbar."
+ },
+ "cost_usd": 0.112,
+ "gsc": {
+  "clicks": 1,
+  "impressions": 96,
+  "ctr": 1.0,
+  "position": 6.4,
+  "top_queries": [
+   [
+    "energiegemeinschaften",
+    1,
+    9
+   ],
+   [
+    "energiegemeinschaft im gewerbegebiet",
+    0,
+    3
+   ]
+  ],
+  "note": "LP ohne Sichtbarkeit (alt: /energiegemeinschaften/); der EG-Traffic läuft über die Ratgeber."
+ }
+}

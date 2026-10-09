@@ -1,0 +1,447 @@
+{
+  "slug": "carport",
+  "path": "/photovoltaik-carport/",
+  "seitentyp": "leistung",
+  "stand": "2026-10-09",
+  "primary": {
+    "keyword": "photovoltaik carport",
+    "volume_at": 480,
+    "kd": null,
+    "cpc": 0.95,
+    "intent": "transactional (Keyword Overview); Intent-API: commercial 0,52 / informational 0,45"
+  },
+  "secondary": [
+    {
+      "keyword": "pv carport",
+      "volume_at": 480,
+      "kd": null,
+      "intent": "transactional 0,74"
+    },
+    {
+      "keyword": "solar carport",
+      "volume_at": 320,
+      "kd": null,
+      "intent": "commercial 0,41 / informational 0,32 / transactional 0,27"
+    },
+    {
+      "keyword": "carport mit photovoltaik",
+      "volume_at": 260,
+      "kd": null,
+      "intent": "commercial 0,60 (Trend +86 % Jahr)"
+    },
+    {
+      "keyword": "solarcarport",
+      "volume_at": 210,
+      "kd": null,
+      "intent": "commercial 0,30 (gemischt)"
+    },
+    {
+      "keyword": "pv carport österreich",
+      "volume_at": 110,
+      "kd": 1,
+      "intent": "commercial 0,42"
+    },
+    {
+      "keyword": "photovoltaik carport preise",
+      "volume_at": 70,
+      "kd": 2,
+      "intent": "commercial 0,76"
+    }
+  ],
+  "semantic": [
+    "Solarcarport / Solar-Carport / PV-Carport",
+    "Einzelcarport (15 m², rund 3 kWp)",
+    "Doppelcarport (30 m², 2 Stellplätze, 15 Module, rund 6 bis 6,75 kWp)",
+    "bifaziale Glas-Glas-Module, für Überkopfmontage zugelassen",
+    "Stahlkonstruktion verzinkt und pulverbeschichtet (RAL 7016)",
+    "Aluminium",
+    "Holz",
+    "Fundament",
+    "Schneelast 1,6 bis 2 kN/m²",
+    "Windlast",
+    "wasserdichtes Dach / Regenrinne / Wasserableitung",
+    "Bausatz vs. Komplettset inkl. Montage",
+    "kranfrei aufstellbar",
+    "Wallbox / Ladestation / Solartankstelle",
+    "Speicher 5 bis 10 kWh",
+    "Notstrom",
+    "Ertrag 900 bis 1.200 kWh je kWp (Österreich)",
+    "5 m² Dachfläche je kWp",
+    "Neigung 20 bis 50 Grad, Ost-West",
+    "Kosten 9.000 bis 17.000 € (3 bis 8 kWp), mit Speicher 21.500 bis 27.500 € (Salzburg AG)",
+    "Bausatz 2.400 bis 9.000 €",
+    "Amortisation 10 bis 15 Jahre, mit Eigenverbrauch 8 bis 12",
+    "Bauanzeige / Baubewilligung / Grundgrenze / Höhe 3 m",
+    "Statik beim Nachrüsten (15 bis 25 kg/m²)",
+    "EAG-Investitionszuschuss",
+    "Umsatzsteuer-Nullsatz",
+    "Versicherung (Wohngebäude)",
+    "Mitarbeiter- und Kundenparkplätze (Gewerbe)",
+    "Anbieter AT: Luralux, Sunport, Greenport, stromsparen24, E-Loading Systems"
+  ],
+  "long_tail": [
+    {
+      "keyword": "pv carport",
+      "volume_at": 480
+    },
+    {
+      "keyword": "solar carport",
+      "volume_at": 320
+    },
+    {
+      "keyword": "carport solar",
+      "volume_at": 320
+    },
+    {
+      "keyword": "solar auf carport",
+      "volume_at": 320
+    },
+    {
+      "keyword": "solar für carport",
+      "volume_at": 320
+    },
+    {
+      "keyword": "carport mit photovoltaik",
+      "volume_at": 260
+    },
+    {
+      "keyword": "photovoltaik auf carport",
+      "volume_at": 260
+    },
+    {
+      "keyword": "solarcarport",
+      "volume_at": 210
+    },
+    {
+      "keyword": "pv carport österreich",
+      "volume_at": 110
+    },
+    {
+      "keyword": "carport mit solardach",
+      "volume_at": 110
+    },
+    {
+      "keyword": "carport photovoltaik",
+      "volume_at": 110
+    },
+    {
+      "keyword": "solar carport österreich",
+      "volume_at": 90
+    },
+    {
+      "keyword": "photovoltaik carport preise",
+      "volume_at": 70
+    },
+    {
+      "keyword": "solar carport bausatz",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik carport bausatz",
+      "volume_at": 40
+    },
+    {
+      "keyword": "solar carport komplett",
+      "volume_at": 30
+    },
+    {
+      "keyword": "solarcarport kosten",
+      "volume_at": 20
+    },
+    {
+      "keyword": "solar carport österreich kosten",
+      "volume_at": 20
+    },
+    {
+      "keyword": "solar carport anbieter",
+      "volume_at": 20
+    },
+    {
+      "keyword": "solar carport mit speicher",
+      "volume_at": 20
+    },
+    {
+      "keyword": "carport mit photovoltaik und ladestation",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik carport österreich",
+      "volume_at": 20
+    },
+    {
+      "keyword": "solar carport selber bauen",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik carport nachrüsten",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik carport genehmigung",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik carport förderung",
+      "volume_at": 10
+    },
+    {
+      "keyword": "lohnt sich ein solar carport",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv carport kärnten",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv carport holz",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Wie viel kostet ein Photovoltaik-Carport?",
+    "Ist es erlaubt, eine PV-Anlage auf einem Carport zu installieren?",
+    "Ist ein Solar-Carport sinnvoll?",
+    "Welche Vorschriften gibt es für Carports in Österreich?",
+    "Wie hoch darf ein Carport an der Grundgrenze sein?",
+    "Was darf ich auf meinem Grundstück ohne Genehmigung bauen?",
+    "Was passiert, wenn man keine Bauanzeige macht?",
+    "Welche Änderungen bringt das neue PV-Gesetz 2026 in Österreich?",
+    "Welche Nachteile hat ein Solardach?",
+    "Wie lange hält ein Solardach?",
+    "Lohnt sich ein Solar-Carport ohne E-Auto?",
+    "Kann ich einen bestehenden Carport mit Photovoltaik nachrüsten?",
+    "Wie viel Strom erzeugt ein Solar-Carport pro Jahr?",
+    "Bausatz oder Komplettsystem mit Montage: was ist günstiger?"
+  ],
+  "serp": {
+    "features": [
+      "popular_products (Shopping, 2.800 bis 19.400 €)",
+      "people_also_ask",
+      "images",
+      "local_pack",
+      "video",
+      "related_searches",
+      "people_also_search"
+    ],
+    "local_pack": {
+      "photovoltaik carport (Austria)": [
+        {
+          "name": "Luralux GmbH (Salzburg)",
+          "rating": "5 Sterne",
+          "reviews": 10,
+          "pos": 1
+        },
+        {
+          "name": "Sunport Photovoltaik Carports",
+          "rating": null,
+          "reviews": 0,
+          "pos": 2
+        },
+        {
+          "name": "Dr. Bobinger Solar GmbH",
+          "rating": "5 Sterne",
+          "reviews": 71,
+          "pos": 3
+        }
+      ]
+    },
+    "ebz_rankings": {
+      "photovoltaik carport": "nicht in den Top 10",
+      "pv carport österreich": "nicht in den Top 10"
+    },
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "stromsparen24.at",
+        "title": "PV-Carport 01: Komplettset (2 Stellplätze)",
+        "type": "shop"
+      },
+      {
+        "pos": 2,
+        "domain": "topregal.at",
+        "title": "Solarcarports, Carport-Gestelle für Solarmodule",
+        "type": "shop"
+      },
+      {
+        "pos": 3,
+        "domain": "stromsparen24.at",
+        "title": "PV-Carport 01 (Duplikat)",
+        "type": "shop"
+      },
+      {
+        "pos": 4,
+        "domain": "salzburg-ag.at",
+        "title": "Photovoltaik Carport: Lohnt sich ein Solarcarport?",
+        "type": "ratgeber (versorger)"
+      },
+      {
+        "pos": 5,
+        "domain": "topregal.at",
+        "title": "Solarcarports (Duplikat)",
+        "type": "shop"
+      },
+      {
+        "pos": 6,
+        "domain": "woodstore24.at",
+        "title": "Solarcarport Bausatz",
+        "type": "shop"
+      },
+      {
+        "pos": 7,
+        "domain": "adac.de",
+        "title": "Solar-Carport 2026: Lohnt es sich? Kosten, Ertrag",
+        "type": "ratgeber (DE)"
+      },
+      {
+        "pos": 8,
+        "domain": "e-altamira.at",
+        "title": "Solarcarport VICA für 2 Fahrzeuge",
+        "type": "shop"
+      },
+      {
+        "pos": 9,
+        "domain": "luralux.at",
+        "title": "Photovoltaik Carport Glasdachsysteme",
+        "type": "hersteller"
+      },
+      {
+        "pos": 10,
+        "domain": "greenport.solar",
+        "title": "Carport für Photovoltaik: Bausatz",
+        "type": "hersteller"
+      }
+    ],
+    "top10_sekundaer_pv_carport_oesterreich": [
+      "stromsparen24.at",
+      "e-altamira.at",
+      "topregal.at",
+      "greenport.solar",
+      "easycarport.at (bausatz)",
+      "luralux.at",
+      "sunport.at (hersteller AT)",
+      "stromsparen24.at S2",
+      "e-ls.at (anbieter AT)"
+    ]
+  },
+  "competitor_outline": [
+    "H2 Was ist ein Solar-Carport (Konstruktion, Module, Elektrik)",
+    "H2 Wie viel kostet ein Photovoltaik-Carport (Tabelle nach kWp, mit und ohne Speicher; Komponententabelle)",
+    "H2 Wie viel Strom erzeugt ein Solar-Carport (Einzel 3 kWp rund 3.000 kWh, Doppel 6 kWp rund 6.000 kWh; 900 bis 1.200 kWh/kWp)",
+    "H2 Lohnt sich ein Solar-Carport / Wann rechnet es sich (Beispielrechnung, Amortisation)",
+    "H2 Planung: Statik, Fläche, Dachform, Neigung und Ausrichtung, Material (Holz, Alu, Stahl)",
+    "H2 Bausatz oder Komplettsystem mit Montage (Checkliste: Regenschutz, Vandalismus, modular erweiterbar)",
+    "H2 Wallbox, Speicher und E-Auto laden",
+    "H2 Förderung und Steuer",
+    "H2 Genehmigung / Bauanzeige (Grundgrenze, Höhe)",
+    "H2 Nachrüsten eines bestehenden Carports",
+    "H2 Technische Daten (Schneelast kN/m², Gewicht, Farben, Wasserableitung)",
+    "H2 FAQ"
+  ],
+  "gaps": [
+    "Keine Beispielrechnung und keine Amortisationsangabe (Amortisation 0 Treffer); Salzburg AG und ADAC ranken mit 'Lohnt sich / Wann rechnet sich' plus Zahlen.",
+    "Bausatz vs. Komplettsystem mit Montage wird nicht thematisiert (Bausatz 0 Treffer), obwohl 'bausatz' 90 Vol. und die Hälfte der Top 10 Bausatz-Shops sind. EBZ-Argument: Statik, Elektrik, Netzanmeldung, ein Ansprechpartner.",
+    "Einzel- vs. Doppelcarport als Begriffe fehlen (0 Treffer) trotz 'Stellplätze' 14; Suchende denken in Stellplätzen und Modulanzahl (15 Module, 2 Stellplätze).",
+    "bifaziale Glas-Glas-Module und Überkopfmontage-Zulassung nicht erwähnt (bifazial 0, Glas-Glas 1); alle AT-Hersteller im SERP führen das als Qualitätsmerkmal.",
+    "Wasserdichtes Dach, Regenrinne, Wasserableitung fehlen (0 Treffer); ADAC-Checkliste und stromsparen24 (K2-System) machen es zum Kaufkriterium.",
+    "Gewerbe (Mitarbeiter- und Kundenparkplätze) nur 1 Treffer; stromsparen24 adressiert kleine Betriebe explizit.",
+    "PAA zu Vorschriften (Grundgrenze, Höhe, ohne Genehmigung bauen) nur allgemein beantwortet; Kärntner Bauordnung konkret nennen.",
+    "Versicherung (Wohngebäudeversicherung erweitern) und 'lohnt sich ohne E-Auto?' fehlen im FAQ.",
+    "Ertrag je kWp steht im Text (1.100 kWh), aber ohne Tabelle Einzel/Doppel-Carport kWp zu kWh."
+  ],
+  "cannibalization": [
+    "/kosten-einer-solaranlage/ (Kostenfragen dort, Carport-Preise hier)",
+    "/photovoltaik-foerderung-oesterreich-2026/ (Förderung-Sektion kurz halten)",
+    "/batteriespeicher/",
+    "/notstrom/",
+    "/photovoltaik/ (Hauptleistung)"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "solarcarport",
+      "ai_volume": 30
+    },
+    {
+      "keyword": "photovoltaik carport",
+      "ai_volume": 14
+    },
+    {
+      "keyword": "carport mit photovoltaik",
+      "ai_volume": 14
+    },
+    {
+      "keyword": "photovoltaik auf carport",
+      "ai_volume": 14
+    },
+    {
+      "keyword": "carport photovoltaik",
+      "ai_volume": 14
+    },
+    {
+      "keyword": "solar carport",
+      "ai_volume": 12
+    },
+    {
+      "keyword": "carport solar",
+      "ai_volume": 12
+    },
+    {
+      "keyword": "pv carport",
+      "ai_volume": 5
+    },
+    {
+      "keyword": "pv carport österreich",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik carport preise",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "solar carport bausatz",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Photovoltaik-Carport: Kosten, Statik, Wallbox | EBZ Energie",
+    "h1": "Photovoltaik-Carport (Solarcarport): Ihr Stellplatz wird zum Kraftwerk",
+    "description": "Photovoltaik-Carport für 1 oder 2 Stellplätze: 3 bis 7 kWp, bifaziale Glas-Glas-Module, Wallbox, Speicher, Statik für Schneelast. Komplettsystem mit Montage.",
+    "h2_outline": [
+      "Was ist ein Photovoltaik-Carport? (Solarcarport, PV-Carport, Definition mit Zahlen)",
+      "Einzel- oder Doppelcarport: Stellplätze, Module, kWp und Ertrag (Tabelle)",
+      "Vier Bausteine: Konstruktion, bifaziale Glas-Glas-Module, Wallbox, Speicher und Notstrom",
+      "Statik zuerst: Schneelast und Windlast in Österreich, Nachrüsten bestehender Carports",
+      "Was kostet ein Photovoltaik-Carport? (Tabelle mit und ohne Speicher*, Bausatz vs. Komplettsystem)",
+      "Wann sich ein Solarcarport rechnet: Beispielrechnung und Amortisation*",
+      "Bauanzeige und Vorschriften in Kärnten und der Steiermark (Grundgrenze, Höhe)",
+      "Förderung: der PV-Teil wird gefördert wie jede Dachanlage (Kurzfassung)",
+      "Für Betriebe: Mitarbeiter- und Kundenparkplätze mit Ladepunkten",
+      "Ihr Partner für das Solarcarport in Kärnten und der Steiermark",
+      "Ablauf",
+      "Häufige Fragen",
+      "Angebot mit Festpreis"
+    ],
+    "faq_add": [
+      "Wie viel kostet ein Photovoltaik-Carport für zwei Stellplätze?",
+      "Bausatz oder Komplettsystem mit Montage: was ist sinnvoller?",
+      "Wie viel Strom erzeugt ein Solarcarport pro Jahr?",
+      "Lohnt sich ein Solar-Carport ohne E-Auto?",
+      "Welche Vorschriften gelten für Carports in Kärnten (Grundgrenze, Höhe, Bauanzeige)?",
+      "Kann ich meinen bestehenden Carport mit Photovoltaik nachrüsten?",
+      "Ist das Dach eines PV-Carports wasserdicht?",
+      "Muss ich den Solarcarport versichern?"
+    ],
+    "internal_links": [
+      "/kosten-einer-solaranlage/ -> Kosten einer Solaranlage",
+      "/photovoltaik-foerderung-oesterreich-2026/ -> PV-Förderung Österreich 2026",
+      "/batteriespeicher/ -> Stromspeicher",
+      "/notstrom/ -> Notstrom",
+      "/energiemanagementsystem/ -> Energiemanagementsystem fürs Überschussladen",
+      "/photovoltaik-gewerbe/ -> Photovoltaik für Betriebe",
+      "/referenzen/ -> Referenzen",
+      "/finanzierung/ -> Finanzierung"
+    ],
+    "notes": "Das SERP ist eine Shop- und Bausatz-SERP mit zwei starken Ratgebern (Salzburg AG, ADAC). Die Seite hat Statik und Wallbox gut abgedeckt, verfehlt aber die Kaufentscheidungs-Inhalte: Beispielrechnung und Amortisation, Bausatz vs. Komplettsystem, Einzel-/Doppelcarport-Tabelle (Stellplätze, Module, kWp, kWh), bifaziale Glas-Glas-Module und wasserdichtes Dach. Zuerst Kosten- und Ertragstabelle plus Amortisationsrechnung ergänzen, dann die Bausatz-Abgrenzung als eigenes Verkaufsargument. 'carport mit photovoltaik' wächst um 86 % im Jahr und gehört in H1 oder eine H2."
+  },
+  "cost_usd": 0.09,
+  "cost_note": "Die MCP-Antworten enthielten kein cost-Feld. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Advanced 0,002 $ + PAA-Klicks, Content Parsing 0,0005 $/URL, AI Keyword Data 0,0002 $/Keyword)."
+}

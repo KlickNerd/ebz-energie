@@ -1,0 +1,56 @@
+{
+ "old_url": "/referenzen/",
+ "clicks": 33,
+ "impressions": 1750,
+ "ctr": 1.9,
+ "position": 13.1,
+ "top_queries": [
+  [
+   "ebz energie",
+   16,
+   336
+  ],
+  [
+   "ebz energie gmbh",
+   3,
+   225
+  ],
+  [
+   "ebz",
+   0,
+   56
+  ],
+  [
+   "energiespeicher nachrüsten klagenfurt",
+   0,
+   35
+  ],
+  [
+   "photovoltaik 12 kwp",
+   0,
+   19
+  ],
+  [
+   "photovoltaikanlage kaufen kärnten",
+   0,
+   16
+  ],
+  [
+   "blechdach kärnten",
+   0,
+   15
+  ],
+  [
+   "byd speicher dach pv",
+   0,
+   11
+  ]
+ ],
+ "queries_total": 37,
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

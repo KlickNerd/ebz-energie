@@ -1,0 +1,446 @@
+{
+ "slug": "home",
+ "path": "/",
+ "seitentyp": "unternehmen",
+ "stand": "2026-10-09",
+ "primary": {
+  "keyword": "photovoltaik kärnten",
+  "volume_at": 70,
+  "kd": null,
+  "cpc": 4.43,
+  "intent": "commercial (0,56; Local Pack mit EBZ Energie auf Platz 3)"
+ },
+ "secondary": [
+  {
+   "keyword": "photovoltaik kärnten firmen",
+   "volume_at": 70,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "pv anlage kärnten",
+   "volume_at": 70,
+   "kd": 4,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaik steiermark",
+   "volume_at": 70,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaik klagenfurt",
+   "volume_at": 50,
+   "kd": 28,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaik anbieter",
+   "volume_at": 140,
+   "kd": 21,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "ebz energie",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "navigational/brand (kein AT-Volumen in der Datenbank)"
+  }
+ ],
+ "semantic": [
+  "Fachbetrieb",
+  "Komplettanbieter",
+  "Elektrotechnik-Meisterbetrieb",
+  "zertifizierter PV-Planer",
+  "Förderabwicklung",
+  "Landespauschale Kärnten 3.000 € (PV ab 5 kWp plus Speicher ab 5 kWh)",
+  "EAG-Investitionszuschuss 150 €/kWp und 150 €/kWh",
+  "OeMAG",
+  "Fördercall Oktober 2026",
+  "Made-in-Europe-Bonus",
+  "Kärnten Netz (Netzanmeldung, Zählpunkt)",
+  "Kelag",
+  "Energie Klagenfurt",
+  "Eigenverbrauch",
+  "Autarkie",
+  "Batteriespeicher",
+  "Notstrom",
+  "Wallbox",
+  "Wärmepumpe",
+  "Energiemanagement",
+  "Energiegemeinschaft",
+  "Ost-West-Ausrichtung",
+  "kWp",
+  "kWh",
+  "Amortisation 4 bis 6 Jahre",
+  "Monitoring",
+  "Fronius / Huawei (Marken, falls freigegeben)",
+  "Leistungsgarantie bis 30 Jahre",
+  "Villach, Klagenfurt, Spittal, Wolfsberg, Feldkirchen, Graz",
+  "Google 4,9 Sterne (111 Bewertungen laut Local Pack)",
+  "Projektbericht mit 3D-Belegplan und Statikreport"
+ ],
+ "long_tail": [
+  {
+   "keyword": "photovoltaik förderung kärnten",
+   "volume_at": 260
+  },
+  {
+   "keyword": "pv-förderung kärnten 2026",
+   "volume_at": 210
+  },
+  {
+   "keyword": "bester photovoltaik anbieter österreich",
+   "volume_at": 140
+  },
+  {
+   "keyword": "photovoltaikanlage kaufen",
+   "volume_at": 110
+  },
+  {
+   "keyword": "photovoltaik anbieter in meiner nähe",
+   "volume_at": 90
+  },
+  {
+   "keyword": "pv speicher förderung kärnten",
+   "volume_at": 90
+  },
+  {
+   "keyword": "land kärnten pv förderung antrag",
+   "volume_at": 90
+  },
+  {
+   "keyword": "kelag pv einspeisung tarif",
+   "volume_at": 70
+  },
+  {
+   "keyword": "photovoltaik anbieter steiermark",
+   "volume_at": 40
+  },
+  {
+   "keyword": "photovoltaik villach",
+   "volume_at": 30
+  },
+  {
+   "keyword": "photovoltaik förderung kärnten 2026",
+   "volume_at": 30
+  },
+  {
+   "keyword": "pv villach",
+   "volume_at": 20
+  },
+  {
+   "keyword": "photovoltaik anbieter kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "solaranlage kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "photovoltaik kärnten preise",
+   "volume_at": 10
+  },
+  {
+   "keyword": "wärmepumpe kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "photovoltaik firma kärnten",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik installateur kärnten",
+   "volume_at": 0
+  },
+  {
+   "keyword": "solarfirma kärnten",
+   "volume_at": 0
+  },
+  {
+   "keyword": "ebz photovoltaik",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Was kostet eine Photovoltaikanlage für ein Einfamilienhaus in Österreich?",
+  "Welche Energieanbieter gibt es in Kärnten?",
+  "Was ändert sich 2026 mit Photovoltaik?",
+  "Welche Fördermöglichkeiten gibt es für Photovoltaikanlagen im Land Kärnten?",
+  "Welche Förderungen gibt es 2026 im Land Kärnten?",
+  "Wie hoch ist die Photovoltaikförderung in Kärnten ab 2026?",
+  "Welche Firma ist die beste für Photovoltaik?",
+  "Wer ist der Marktführer für Photovoltaik in Österreich?",
+  "Was kostet eine 10 kW PV-Anlage mit Speicher und Montage?",
+  "Wie hoch sind die Kosten für eine Photovoltaikanlage in Kärnten?",
+  "Wie viel kostet eine Photovoltaikanlage inklusive Montage?",
+  "Wann lohnt sich Solar nicht?"
+ ],
+ "serp": {
+  "features": [
+   "local_pack (EBZ Energie Platz 3, 4,9 Sterne, 111 Bewertungen)",
+   "ai_overview",
+   "people_also_ask",
+   "video",
+   "related_searches",
+   "knowledge_graph und google_reviews (nur 'firmen')"
+  ],
+  "top10": [
+   {
+    "pos": 1,
+    "domain": "pvbaustria.at",
+    "title": "SonnenKlar Förderkompass",
+    "type": "verband"
+   },
+   {
+    "pos": 2,
+    "domain": "prosolis.at",
+    "title": "Photovoltaik in Kärnten von ProSolis",
+    "type": "anbieter"
+   },
+   {
+    "pos": 3,
+    "domain": "ktn.lko.at",
+    "title": "Attraktive Förderungen für Photovoltaik",
+    "type": "portal"
+   },
+   {
+    "pos": 4,
+    "domain": "ktn.gv.at",
+    "title": "Förderung Photovoltaik-Anlagen und Stromspeicher",
+    "type": "behörde"
+   },
+   {
+    "pos": 5,
+    "domain": "heizma.at",
+    "title": "PV-Förderung Kärnten 2026: 3.000 € Landespauschale",
+    "type": "anbieter-ratgeber"
+   },
+   {
+    "pos": 6,
+    "domain": "verbund.com",
+    "title": "Photovoltaik Förderung Österreich",
+    "type": "anbieter"
+   },
+   {
+    "pos": 7,
+    "domain": "e-autonom.at",
+    "title": "PV Anlage Kärnten: Mehr Eigenverbrauch",
+    "type": "anbieter"
+   },
+   {
+    "pos": 8,
+    "domain": "kleinezeitung.at",
+    "title": "Frist läuft ab: PV-Förderung",
+    "type": "news"
+   },
+   {
+    "pos": 9,
+    "domain": "kaernten-solar.at",
+    "title": "Deine Photovoltaikanlage",
+    "type": "anbieter"
+   },
+   {
+    "pos": 10,
+    "domain": "ebz-photovoltaik.at",
+    "title": "Ihr Fachbetrieb für Photovoltaik in Kärnten & der Steiermark (Platz 6 bei 'photovoltaik kärnten firmen')",
+    "type": "eigene Seite"
+   }
+  ]
+ },
+ "competitor_outline": [
+  "H1 Photovoltaik in Kärnten plus USP-Zeile (Meisterbetrieb, Komplettanbieter, Fertigstellung in 3 Monaten)",
+  "H2 Förderungen Bund, Land Kärnten, Gemeinden",
+  "H2 Zielgruppen: Privat, Unternehmen, Energiegemeinschaften",
+  "H2 Referenzprojekte mit kWp und Ort",
+  "H2 Marken und Technik (Fronius, Huawei, SolaX, Sigenergy)",
+  "H2 Erweiterungen: Speicher, Wallbox, Notstrom, Energiemanagement",
+  "H2 In 4 Schritten: Erstberatung, Vor-Ort-Analyse, Angebot mit Förderung, Installation",
+  "H2 Speicher: wann sinnvoll",
+  "H2 Kundenbeispiel mit Zahlen (Investition, Förderung, Ersparnis, Amortisation, Autarkie)",
+  "H2 FAQ (Winter, Wartung, Netzanschluss Kärnten, Förderung 2026)"
+ ],
+ "gaps": [
+  "Das Keyword 'Photovoltaik Kärnten' kommt im Text nicht vor (nur 'Kärnten' und 'Photovoltaik' getrennt); Title und H1 tragen es nicht",
+  "Förderung 2026 ohne Zahlen: Landespauschale 3.000 €, EAG 150 €/kWp, Fördercall Oktober fehlen auf der Startseite",
+  "Netzanmeldung bei Kärnten Netz / Kelag / Energie Klagenfurt nicht erwähnt (PAA 'Welche Energieanbieter gibt es in Kärnten')",
+  "Begriff 'Komplettanbieter' fehlt, Wettbewerber positionieren sich genau so",
+  "Keine Aussage zu Winterertrag und Wartung (häufige FAQ der Top-10)",
+  "Markennamen der Komponenten (Fronius, Huawei) fehlen; nur ergänzen, wenn vom Kunden freigegeben",
+  "Monitoring / App-Steuerung als Leistungsbestandteil nicht benannt"
+ ],
+ "cannibalization": [
+  "/photovoltaik/",
+  "/photovoltaik-villach/",
+  "/photovoltaik-foerderung-kaernten/",
+  "/foerderung-pv-speicher-kaernten/",
+  "/ueber-uns/"
+ ],
+ "ai_search_volume": [
+  {
+   "keyword": "photovoltaikanlage",
+   "ai_volume": 740
+  },
+  {
+   "keyword": "pv anlage mit speicher",
+   "ai_volume": 352
+  },
+  {
+   "keyword": "photovoltaik anbieter",
+   "ai_volume": 15
+  },
+  {
+   "keyword": "pv anlage kärnten",
+   "ai_volume": 10
+  },
+  {
+   "keyword": "photovoltaik steiermark",
+   "ai_volume": 10
+  },
+  {
+   "keyword": "photovoltaik kärnten",
+   "ai_volume": 2
+  },
+  {
+   "keyword": "wärmepumpe kärnten",
+   "ai_volume": 1
+  },
+  {
+   "keyword": "photovoltaik förderung kärnten",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "ebz energie",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "ebz photovoltaik",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik villach",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik kärnten firmen",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik anbieter kärnten",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik klagenfurt",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "bester photovoltaik anbieter österreich",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik fachbetrieb",
+   "ai_volume": 0
+  }
+ ],
+ "recommendation": {
+  "title": "Photovoltaik Kärnten: EBZ Energie, Fachbetrieb Villach",
+  "h1": "Photovoltaik in Kärnten und der Steiermark: Ihr Fachbetrieb für Anlage, Speicher und Wärmepumpe aus einer Hand",
+  "description": "EBZ Energie, Villach: Photovoltaik, Speicher, Wärmepumpe und Energiegemeinschaft aus einer Hand in Kärnten und der Steiermark. 300+ Projekte, 4,9 Sterne.",
+  "h2_outline": [
+   "Alles, was Ihr Zuhause zum Kraftwerk macht (sechs Leistungen)",
+   "Wir denken in Systemen, nicht in Einzelteilen",
+   "Weniger zukaufen, mehr Unabhängigkeit",
+   "In vier Schritten zur eigenen Anlage: Beratung, Projektbericht mit 3D-Belegplan, Förderung und Netzanmeldung bei Kärnten Netz, Montage",
+   "Förderung 2026 in Kärnten und der Steiermark: Landespauschale und EAG-Zuschuss",
+   "Anlagen, die sich rechnen (Referenzen mit Zahlen)",
+   "Ihre Anlage gehört Ihnen ab dem ersten Tag (Finanzierung)",
+   "Ihr Energie-Fachbetrieb aus Villach: Team, Partner, Zahlen",
+   "Das sagen unsere Kundinnen und Kunden (4,9 Sterne)",
+   "Vor Ort in Kärnten und der Steiermark: Villach, Klagenfurt, Spittal, Wolfsberg, Graz",
+   "Beliebte Seiten",
+   "Häufige Fragen",
+   "Jetzt starten"
+  ],
+  "faq_add": [
+   "Was kostet eine Photovoltaikanlage für ein Einfamilienhaus in Kärnten?",
+   "Welche Förderung gibt es 2026 für Photovoltaik in Kärnten (Landespauschale, EAG)?",
+   "Was ändert sich 2026 bei Photovoltaik in Österreich?",
+   "Wie läuft die Netzanmeldung bei Kärnten Netz oder Energie Klagenfurt?",
+   "Lohnt sich Photovoltaik in Kärnten auch im Winter?",
+   "Woran erkenne ich den richtigen Photovoltaik-Fachbetrieb in Kärnten?"
+  ],
+  "internal_links": [
+   "/photovoltaik/ -> Photovoltaikanlage mit Speicher",
+   "/photovoltaik-villach/ -> Photovoltaik in Villach",
+   "/photovoltaik-foerderung-kaernten/ -> PV-Förderung Kärnten 2026",
+   "/foerderung-photovoltaik-steiermark/ -> PV-Förderung Steiermark",
+   "/solarrechner/ -> PV-Rechner",
+   "/leistungen/energiegemeinschaft/ -> Energiegemeinschaft beitreten",
+   "/referenzen/ -> Referenzen",
+   "/finanzierung/ -> Finanzierung ab 147 €/Monat",
+   "/ueber-uns/ -> Über EBZ Energie"
+  ],
+  "notes": "Empfehlung Kopf-Keyword: Die Startseite trägt 'Photovoltaik Kärnten' plus Marke, /photovoltaik/ trägt die Produktbegriffe. Begründung: Die SERP zu 'photovoltaik kärnten' ist eine Firmen-SERP (Local Pack mit EBZ auf Platz 3, Startseiten von kaernten-solar.at, solarertrag.at, sunworld.at), und ebz-photovoltaik.at/ rankt bereits mit der Startseite auf Platz 6 für 'photovoltaik kärnten firmen'. Die Produktbegriffe sind um ein Vielfaches größer und nicht regional: 'photovoltaikanlage' 8.100, 'pv anlage' 5.400, 'pv anlage mit speicher' 3.600 (KD 4, transactional, AI-Volumen 352); dafür ist /photovoltaik/ die richtige Seite. Der aktuelle Title von /photovoltaik/ ('Photovoltaik Kärnten & Steiermark') konkurriert mit der Startseite und sollte auf 'Photovoltaikanlage mit Speicher' umgestellt werden. Auf der Startseite zuerst Title und H1 anpassen, dann Förderzahlen 2026 und Netzanmeldung Kärnten Netz ergänzen; 'ebz energie' hat kein messbares Volumen, die Marke gehört trotzdem in den Title. Search Console bestätigt das: 19.300 Impressionen in 12 Monaten, davon 'photovoltaik kärnten' 937, 'pv anlage kärnten' 645, 'photovoltaik villach' 637, 'photovoltaik kärnten firmen' 459 (alle auf der Startseite, Position 11,5, CTR 2,3 %); die Marke 'ebz energie' bringt 78 Klicks bei 371 Impressionen, obwohl die Keyword-Datenbank kein Volumen kennt."
+ },
+ "cost_usd": 0.097,
+ "gsc": {
+  "clicks": 442,
+  "impressions": 19300,
+  "ctr": 2.3,
+  "position": 11.5,
+  "top_queries": [
+   [
+    "ebz energie",
+    78,
+    371
+   ],
+   [
+    "ebz energie gmbh",
+    69,
+    250
+   ],
+   [
+    "ebz",
+    21,
+    1224
+   ],
+   [
+    "pv anlage kärnten",
+    8,
+    645
+   ],
+   [
+    "photovoltaik villach",
+    7,
+    637
+   ],
+   [
+    "photovoltaik kärnten firmen",
+    7,
+    459
+   ],
+   [
+    "pv villach",
+    7,
+    101
+   ],
+   [
+    "photovoltaik kärnten",
+    4,
+    937
+   ],
+   [
+    "photovoltaik firmen villach",
+    4,
+    259
+   ],
+   [
+    "photovoltaikanlage kärnten",
+    2,
+    378
+   ]
+  ],
+  "note": "Die Startseite sammelt heute bereits die regionalen Impressionen (photovoltaik kärnten 937, pv anlage kärnten 645, photovoltaik villach 637) bei Position 11,5: das Kopf-Keyword gehört auf die Startseite, die CTR von 2,3 % ist der Hebel."
+ }
+}

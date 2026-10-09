@@ -1,0 +1,391 @@
+{
+ "slug": "eg_gewerbe",
+ "path": "/leistungen/energiegemeinschaft-gewerbe/",
+ "seitentyp": "leistung",
+ "stand": "2026-10-09",
+ "primary": {
+  "keyword": "energiegemeinschaft gründen",
+  "volume_at": 390,
+  "kd": 2,
+  "cpc": 0.93,
+  "intent": "transactional (Intent-API 0,999; Overview: informational mit commercial)"
+ },
+ "secondary": [
+  {
+   "keyword": "energiegemeinschaft gründen kosten",
+   "volume_at": 20,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft gründen steiermark",
+   "volume_at": 20,
+   "kd": null,
+   "intent": "transactional"
+  },
+  {
+   "keyword": "energiegemeinschaft gründen kärnten",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "transactional"
+  },
+  {
+   "keyword": "energiegemeinschaft unternehmen",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "energiegemeinschaft gemeinde",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "informational"
+  },
+  {
+   "keyword": "energiegemeinschaft abrechnung",
+   "volume_at": 40,
+   "kd": 29,
+   "intent": "transactional (Intent-API) / informational (Overview)"
+  }
+ ],
+ "semantic": [
+  "Erneuerbare-Energie-Gemeinschaft (EEG)",
+  "Bürgerenergiegemeinschaft (BEG, auch Großunternehmen)",
+  "Gemeinschaftliche Erzeugungsanlage (GEA)",
+  "Eigenversorgungsanlage (EVA, mehrere eigene Standorte)",
+  "KMU-Definition (WKO)",
+  "Verein",
+  "Genossenschaft",
+  "Rechtspersönlichkeit",
+  "Statuten",
+  "ZVR-Zahl",
+  "ebUtilities (Marktpartner-ID)",
+  "EDA-Portal",
+  "Betreibervertrag mit dem Netzbetreiber",
+  "Gemeinschafts-ID",
+  "Netzebene 7 / 6 / 4-5",
+  "Trafostation",
+  "Umspannwerk",
+  "Mittelspannung",
+  "Lastgang / Lastprofil",
+  "Viertelstundenwerte",
+  "mindestens 2 Mitglieder, 5 Zählpunkte (Praxiswert)",
+  "statische und dynamische Zuteilung",
+  "Mitgliedsbeitrag",
+  "Servicekosten je Zählpunkt",
+  "Set-up-Kosten",
+  "Versorgungsinfrastrukturbeitrag",
+  "Elektrizitätsabgabe",
+  "Erneuerbaren-Förderbeitrag",
+  "Klima- und Energiefonds Förder-Call",
+  "Koordinationsstelle energiegemeinschaften.gv.at",
+  "Gemeinnützigkeit",
+  "energyfamily",
+  "Kärnten Netz",
+  "Energie Steiermark smartCOMMUNITY"
+ ],
+ "long_tail": [
+  {
+   "keyword": "gemeinschaftliche erzeugungsanlage",
+   "volume_at": 170
+  },
+  {
+   "keyword": "bürgerenergiegemeinschaft",
+   "volume_at": 170
+  },
+  {
+   "keyword": "regionale energiegemeinschaft",
+   "volume_at": 40
+  },
+  {
+   "keyword": "lokale energiegemeinschaft",
+   "volume_at": 40
+  },
+  {
+   "keyword": "energiegemeinschaft österreich gründen",
+   "volume_at": 40
+  },
+  {
+   "keyword": "energiegemeinschaft abrechnung",
+   "volume_at": 40
+  },
+  {
+   "keyword": "energiegemeinschaft gründen österreich",
+   "volume_at": 30
+  },
+  {
+   "keyword": "eeg energiegemeinschaft",
+   "volume_at": 30
+  },
+  {
+   "keyword": "energiegemeinschaft gründen kosten",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft gründen niederösterreich",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft gründen burgenland",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft gründen steiermark",
+   "volume_at": 20
+  },
+  {
+   "keyword": "eeg abrechnung software",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft speicher",
+   "volume_at": 20
+  },
+  {
+   "keyword": "energiegemeinschaft gründen kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "energiegemeinschaft gründen privat",
+   "volume_at": 10
+  },
+  {
+   "keyword": "energiegemeinschaft förderung",
+   "volume_at": 10
+  },
+  {
+   "keyword": "photovoltaik gewerbe",
+   "volume_at": 10
+  },
+  {
+   "keyword": "photovoltaik gemeinde",
+   "volume_at": 10
+  },
+  {
+   "keyword": "energiegemeinschaft gründen lassen",
+   "volume_at": 0
+  },
+  {
+   "keyword": "energiegemeinschaft landwirtschaft",
+   "volume_at": 0
+  },
+  {
+   "keyword": "energiegemeinschaft gemeinde gründen",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Was kostet die Gründung einer Energiegemeinschaft?",
+  "Kann ich als Privatperson eine Energiegemeinschaft gründen?",
+  "Wie hoch ist die Netzgebühr bei einer Energiegemeinschaft?",
+  "Welche Fördermöglichkeiten gibt es für Energiegemeinschaften?",
+  "Ist es möglich, Strom von der EEG zu verschenken?",
+  "Welche Nachteile hat eine Energiegemeinschaft?",
+  "Kann ich jeder Energiegemeinschaft beitreten?",
+  "Was ist eine Energiegemeinschaft?",
+  "Welche Rechtsform braucht eine Energiegemeinschaft: Verein oder Genossenschaft?",
+  "Wie viele Zählpunkte braucht eine Energiegemeinschaft mindestens?",
+  "Dürfen Großunternehmen an einer Erneuerbaren-Energie-Gemeinschaft teilnehmen?",
+  "Wie lange dauert die Gründung einer Energiegemeinschaft?"
+ ],
+ "serp": {
+  "features": [
+   "ai_overview",
+   "people_also_ask",
+   "related_searches",
+   "images"
+  ],
+  "top10": [
+   {
+    "pos": 1,
+    "domain": "energiesparverband.at",
+    "title": "Erneuerbare Energiegemeinschaften",
+    "type": "behörde"
+   },
+   {
+    "pos": 2,
+    "domain": "smartgyver.at",
+    "title": "Energiegemeinschaften gründen ohne Grübeln (So-Strom)",
+    "type": "magazin/dienstleister"
+   },
+   {
+    "pos": 3,
+    "domain": "leithaland.at",
+    "title": "Erneuerbare Energiegemeinschaften (EEG) gründen (PDF)",
+    "type": "region"
+   },
+   {
+    "pos": 4,
+    "domain": "salzburg-ag.at",
+    "title": "ENOX.share Energiegemeinschaft Österreich",
+    "type": "anbieter/software"
+   },
+   {
+    "pos": 5,
+    "domain": "energiegemeinschaften.gv.at",
+    "title": "Tarifgestaltung",
+    "type": "behörde"
+   },
+   {
+    "pos": 6,
+    "domain": "eeg-premstaetten.at",
+    "title": "Energiegemeinschaft gründen oder erweitern",
+    "type": "energiegemeinschaft"
+   },
+   {
+    "pos": 7,
+    "domain": "linznetz.at",
+    "title": "Bürgerenergiemodelle",
+    "type": "netzbetreiber"
+   },
+   {
+    "pos": 8,
+    "domain": "energie-noe.at",
+    "title": "Bürgerenergie-Modelle in Niederösterreich",
+    "type": "behörde"
+   },
+   {
+    "pos": 9,
+    "domain": "ingenious-minds.at",
+    "title": "Erneuerbare Energiegemeinschaft gründen, EEG selbst machen",
+    "type": "ratgeber"
+   }
+  ]
+ },
+ "competitor_outline": [
+  "H2 Was sind Energiegemeinschaften: GEA, EEG, BEG",
+  "H2 Vorteile (Netzgebühren bis 57 % lokal / 28 % regional, Entfall Abgaben)",
+  "H2 Rechtsform: Verein oder Genossenschaft",
+  "H2 Voraussetzungen: mindestens 2 Mitglieder, 5 Zählpunkte, Erzeugungsanlage, Smart Meter",
+  "H2 Schritte: Verein, Finanzamt, ebUtilities, Betreibervertrag, EDA-Portal, Teilnehmer, Zustimmung",
+  "H2 Was kostet eine Energiegemeinschaft (Set-up, Servicekosten je Zählpunkt)",
+  "H2 Online-Portal und Abrechnung",
+  "H2 Maßgeschneidert für Gemeinden und Unternehmen",
+  "H2 Referenz Gemeinde (Leobersdorf: 70 % Eigendeckung, über 50 % Netzkosten gespart)",
+  "H2 Förderung (Klima- und Energiefonds)",
+  "H2 FAQ"
+ ],
+ "gaps": [
+  "Kosten der Gründung fehlen (Vereinsgründung, Set-up, Servicekosten je Zählpunkt, Mitgliedsbeitrag): PAA 'Was kostet die Gründung' ist unbeantwortet",
+  "Mindestanzahl Zählpunkte und Mitglieder nicht beziffert",
+  "KMU-Grenze: Großunternehmen nur in der Bürgerenergiegemeinschaft, fehlt",
+  "Gründungsschritte in Behördensprache (ebUtilities, ZVR, Statuten) nicht genannt, obwohl EDA und Betreibervertrag vorhanden sind",
+  "Förderung für die Gründung (Klima- und Energiefonds Förder-Call) nicht erwähnt",
+  "Kein Gemeinde-Referenzbeispiel mit Zahlen (Wettbewerb: Leobersdorf mit Eigendeckung und Netzkosten-Ersparnis)",
+  "Eigenversorgungsanlage (EVA) für Betriebe mit mehreren Standorten fehlt (neues Modell seit ElWG 2025)"
+ ],
+ "cannibalization": [
+  "/energiegemeinschaft-gruenden/",
+  "/energiegemeinschaft/",
+  "/energiegemeinschaft-kosten/",
+  "/energiegemeinschaft-netzkosten/",
+  "/photovoltaik-gewerbe/"
+ ],
+ "ai_search_volume": [
+  {
+   "keyword": "energiegemeinschaft gründen",
+   "ai_volume": 5
+  },
+  {
+   "keyword": "bürgerenergiegemeinschaft",
+   "ai_volume": 2
+  },
+  {
+   "keyword": "energiegemeinschaft abrechnung",
+   "ai_volume": 2
+  },
+  {
+   "keyword": "gemeinschaftliche erzeugungsanlage",
+   "ai_volume": 1
+  },
+  {
+   "keyword": "energiegemeinschaft gemeinde",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft unternehmen",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft gewerbe",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft betrieb",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft landwirtschaft",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft gründen kosten",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft rechtsform",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "regionale energiegemeinschaft",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "lokale energiegemeinschaft",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft mehrparteienhaus",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "energiegemeinschaft netzebene",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaik gewerbe",
+   "ai_volume": 0
+  }
+ ],
+ "recommendation": {
+  "title": "Energiegemeinschaft gründen: Betriebe und Gemeinden | EBZ",
+  "h1": "Energiegemeinschaft gründen für Betriebe und Gemeinden: Ihr Dach kann mehr als Eigenverbrauch",
+  "description": "Energiegemeinschaft gründen lassen: EBZ plant für Betriebe und Gemeinden Anlage, Rechtsform, Netzanmeldung und Abrechnung. 8 bis 12 ct für den Überschuss.",
+  "h2_outline": [
+   "Was ist eine Energiegemeinschaft für Betriebe und Gemeinden? (EEG, BEG, GEA, EVA)",
+   "Zwei Ausgangslagen, ein Ziel: Strom bleibt in der Region",
+   "Der Netzanschluss entscheidet über Abschlag und Mitgliederkreis (Netzebene 7, 6, 4/5)",
+   "Metallbetrieb, 100 kWp: Was das Wochenende wert ist",
+   "Energiegemeinschaft gründen in 6 Schritten: Verein, ebUtilities, Betreibervertrag, EDA, Teilnehmer, Start",
+   "Was die Gründung kostet: Vereinsgründung, Servicekosten je Zählpunkt, Mitgliedsbeitrag",
+   "Lastgang statt Bauchgefühl",
+   "Skalierbare Abrechnung über unseren Partner energyfamily",
+   "Förderungen: Klima- und Energiefonds, EAG-Zuschuss, Landesförderung",
+   "Warum Betriebe und Gemeinden mit EBZ planen",
+   "Erzeuger-Dächer, die sich rechnen (Gewerbe OÖ 40 kWp, Gemeinde-Beispiel ergänzen)",
+   "Von der Potenzialanalyse zum laufenden Betrieb",
+   "Häufige Fragen"
+  ],
+  "faq_add": [
+   "Was kostet die Gründung einer Energiegemeinschaft?",
+   "Wie viele Zählpunkte und Mitglieder braucht eine Energiegemeinschaft mindestens?",
+   "Dürfen Großunternehmen an einer EEG teilnehmen oder nur KMU?",
+   "Welche Förderung gibt es für die Gründung (Klima- und Energiefonds)?",
+   "Verein oder Genossenschaft: welche Rechtsform passt für Gemeinde und Betrieb?",
+   "Kann ein Betrieb Strom zwischen mehreren eigenen Standorten teilen (Eigenversorgungsanlage, BEG)?"
+  ],
+  "internal_links": [
+   "/energiegemeinschaft-gruenden/ -> Schritt-für-Schritt-Anleitung zur Gründung",
+   "/photovoltaik-gewerbe/ -> Photovoltaik für Betriebe",
+   "/energiegemeinschaft-kosten/ -> Kosten und Abrechnung",
+   "/energiegemeinschaft-netzkosten/ -> Netzentgelt-Rabatt nach Netzebene",
+   "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft in der Steiermark",
+   "/energiegemeinschaft-kaernten/ -> Energiegemeinschaft in Kärnten",
+   "/referenzen/projekt-gewerbe-oberoesterreich/ -> 40 kWp Gewerbe-Referenz mit 13.500 €/Jahr",
+   "/energiemanagementsystem/ -> Lastmanagement mit EMS",
+   "/referenzen/ -> alle Referenzen"
+  ],
+  "notes": "Für die Zielgruppenbegriffe (Gemeinde, Unternehmen, Betrieb, Gewerbe) gibt es in Österreich kein messbares Volumen; das einzige Kopf-Keyword im Cluster ist 'Energiegemeinschaft gründen' (390, KD 2, transactional). Die Top-10 sind Behörden und Dienstleister mit Gründungsservice (Wien Energie, So-Strom), eine Leistungsseite 'gründen lassen' passt daher. Konflikt mit dem Ratgeber /energiegemeinschaft-gruenden/: Ratgeber auf 'selbst gründen: Schritte, Rechtsform, Kosten' halten, LP auf 'gründen lassen für Betriebe und Gemeinden' mit Leistungsumfang, Kosten und Dauer. Zuerst ergänzen: Gründungskosten, Mindestzahl Zählpunkte, KMU-Grenze, ebUtilities und ZVR, Klima- und Energiefonds-Förderung sowie ein Gemeinde-Referenzbeispiel mit Zahlen."
+ },
+ "cost_usd": 0.094
+}

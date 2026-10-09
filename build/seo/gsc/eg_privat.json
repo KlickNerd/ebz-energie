@@ -1,0 +1,27 @@
+{
+ "old_url": "/energiegemeinschaften/ + /leistungen/energiegemeinschaft/",
+ "clicks": 1,
+ "impressions": 96,
+ "ctr": 1.0,
+ "position": 6.4,
+ "top_queries": [
+  [
+   "energiegemeinschaften",
+   1,
+   9
+  ],
+  [
+   "energiegemeinschaft im gewerbegebiet",
+   0,
+   3
+  ]
+ ],
+ "queries_total": 7,
+ "note": "LPs ohne Sichtbarkeit; Traffic zum Thema laeuft ueber die EG-Ratgeber.",
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

@@ -1,0 +1,347 @@
+{
+  "slug": "ems",
+  "path": "/energiemanagementsystem/",
+  "seitentyp": "leistung",
+  "stand": "2026-10-09",
+  "primary": {
+    "keyword": "energiemanagementsystem",
+    "volume_at": 210,
+    "kd": 23,
+    "cpc": 5.1,
+    "intent": "commercial (Keyword Overview); Intent-API: informational 0,93. SERP gemischt (PV-Ratgeber, B2B/ISO 50001, Software). Seite muss den Begriff mit 'Photovoltaik/Haushalt' qualifizieren."
+  },
+  "secondary": [
+    {
+      "keyword": "energiemanagementsystem photovoltaik",
+      "volume_at": 30,
+      "kd": null,
+      "intent": "commercial 0,55 / informational 0,45"
+    },
+    {
+      "keyword": "energiemanager photovoltaik",
+      "volume_at": 30,
+      "kd": null,
+      "intent": "commercial 0,90"
+    },
+    {
+      "keyword": "energiemanagement photovoltaik",
+      "volume_at": 30,
+      "kd": null,
+      "intent": "informational 0,68"
+    },
+    {
+      "keyword": "energiemanagementsystem privathaushalt",
+      "volume_at": 20,
+      "kd": null,
+      "intent": "commercial 0,90"
+    },
+    {
+      "keyword": "home energy management system",
+      "volume_at": 20,
+      "kd": null,
+      "intent": "commercial 0,89"
+    },
+    {
+      "keyword": "energiemanagementsystem fronius",
+      "volume_at": 20,
+      "kd": null,
+      "intent": "commercial 0,73"
+    }
+  ],
+  "semantic": [
+    "EMS",
+    "HEMS / Home Energy Management System",
+    "Energiemanager",
+    "Eigenverbrauch von rund 30 auf 70 bis 80 %",
+    "Autarkiegrad",
+    "Überschussladen / PV-geführtes Laden",
+    "Wallbox",
+    "Wärmepumpe SG Ready",
+    "Heizstab / Boiler / Warmwasser",
+    "Batteriespeicher",
+    "dynamischer Stromtarif / Börsenstrompreis",
+    "Lastspitzen / Lastmanagement",
+    "Smart Meter",
+    "Modbus / Schnittstellen",
+    "App und Monitoring",
+    "herstellerunabhängig",
+    "Fronius Solar.web / Energiekostenassistent (GEN24)",
+    "Huawei FusionSolar",
+    "SMA Energy",
+    "Kostal",
+    "SMARTFOX",
+    "Solar Manager",
+    "neoom",
+    "Vehicle-to-Home (V2H) / bidirektionales Laden",
+    "Prognose (Wetter, Verbrauch, KI)",
+    "Klimafonds-Förderung EMS 50 %, max. 600 €",
+    "ISO 50001 (Abgrenzung Industrie)",
+    "Energiegemeinschaft",
+    "Amortisation",
+    "Einsparung bis 40 % (Wettbewerbsclaim Heizma)"
+  ],
+  "long_tail": [
+    {
+      "keyword": "energiemanagementsystem photovoltaik",
+      "volume_at": 30
+    },
+    {
+      "keyword": "energiemanagementsystem pv",
+      "volume_at": 30
+    },
+    {
+      "keyword": "energiemanager photovoltaik",
+      "volume_at": 30
+    },
+    {
+      "keyword": "energiemanagement photovoltaik",
+      "volume_at": 30
+    },
+    {
+      "keyword": "energiemanagementsystem privathaushalt",
+      "volume_at": 20
+    },
+    {
+      "keyword": "energiemanagementsystem fronius",
+      "volume_at": 20
+    },
+    {
+      "keyword": "home energy management system",
+      "volume_at": 20
+    },
+    {
+      "keyword": "ems photovoltaik",
+      "volume_at": 10
+    },
+    {
+      "keyword": "energiemanagementsystem huawei",
+      "volume_at": 10
+    },
+    {
+      "keyword": "energiemanagementsystem iso 50001",
+      "volume_at": 10
+    },
+    {
+      "keyword": "energiemanagementsystem test",
+      "volume_at": 10
+    },
+    {
+      "keyword": "energiemanagement system",
+      "volume_at": 10
+    },
+    {
+      "keyword": "energiemanager pv anlage",
+      "volume_at": 0
+    },
+    {
+      "keyword": "energiemanagementsystem app",
+      "volume_at": 0
+    },
+    {
+      "keyword": "energiemanagementsystem haus",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Was ist ein Energiemanagementsystem (EMS)?",
+    "Welche Abkürzung wird für Energiemanagementsystem verwendet?",
+    "Wann braucht man ein Energiemanagementsystem?",
+    "Welches ist das beste Energiemanagementsystem für PV-Anlagen?",
+    "Wie viel kostet ein Home Energy Management System?",
+    "Ist ein Smart Meter für Photovoltaik sinnvoll?",
+    "Gibt es 2026 eine Einspeisebegrenzung für Photovoltaikanlagen?",
+    "Was ist ein Energiemanagementsystem nach ISO 50001 und ist es 2026 für Unternehmen Pflicht?",
+    "Welche Alternativen gibt es zu Solar Manager?",
+    "Funktioniert ein Energiemanager auch ohne PV-Anlage?",
+    "Wie viel kann ich mit einem EMS sparen?",
+    "Welche Wärmepumpen und Wechselrichter sind kompatibel (Fronius, Huawei, SMA)?"
+  ],
+  "serp": {
+    "features": [
+      "ai_overview",
+      "people_also_ask",
+      "knowledge_graph (Wikipedia)",
+      "images",
+      "video (bei 'energiemanagementsystem photovoltaik')",
+      "popular_products (Shopping, EMS-Geräte 429 bis 929 €)",
+      "related_searches (iDM Wärmepumpe PV)"
+    ],
+    "ebz_rankings": {
+      "energiemanagementsystem": "nicht in den Top 10",
+      "energiemanagementsystem photovoltaik": "nicht in den Top 10"
+    },
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "heizma.at",
+        "title": "Energiemanager Wärmepumpe + PV: bis zu 40 % sparen",
+        "type": "ratgeber (anbieter)"
+      },
+      {
+        "pos": 2,
+        "domain": "smartfox.at",
+        "title": "Energiemanagement für Photovoltaik im Haus richtig nutzen",
+        "type": "hersteller"
+      },
+      {
+        "pos": 3,
+        "domain": "weidmueller.at",
+        "title": "Energiemanagementsysteme: Energiekosten reduzieren",
+        "type": "hersteller b2b"
+      },
+      {
+        "pos": 4,
+        "domain": "mgm-elektro.at",
+        "title": "Ein Schlüssel zur nachhaltigen und kosteneffizienten Zukunft",
+        "type": "anbieter blog"
+      },
+      {
+        "pos": 5,
+        "domain": "getapp.at",
+        "title": "Energiemanagement Software",
+        "type": "software-verzeichnis"
+      },
+      {
+        "pos": 6,
+        "domain": "elektrobranche.at",
+        "title": "PV-Anlagen mit Energiemanagement optimal nutzen",
+        "type": "fachmedium"
+      },
+      {
+        "pos": 7,
+        "domain": "bosch-presse.at",
+        "title": "Auf dem Weg in die Energie-Unabhängigkeit",
+        "type": "presse"
+      },
+      {
+        "pos": 8,
+        "domain": "elektrokraft.at",
+        "title": "Energiemanagement Systeme für Industrie & Gewerbe",
+        "type": "anbieter b2b"
+      },
+      {
+        "pos": 9,
+        "domain": "photovoltaik-service.at",
+        "title": "Energiemanagement und Photovoltaik",
+        "type": "anbieter"
+      }
+    ],
+    "top10_sekundaer_energiemanagementsystem_photovoltaik": [
+      "energyunlimited.ch (ratgeber)",
+      "viessmann.at",
+      "youtube",
+      "gussek-haus.de",
+      "aceflex.de",
+      "heizma.at Optima",
+      "elektrobranche.at",
+      "smartfox.at Beste Energiemanager"
+    ]
+  },
+  "competitor_outline": [
+    "H2 Was ist ein Energiemanagementsystem / Energiemanager (Definition, Abkürzung EMS, HEMS)",
+    "H2 Wie funktioniert ein EMS (messen, steuern, visualisieren)",
+    "H2 Was ein EMS konkret steuert (Warmwasser/Heizstab, Wallbox, Wärmepumpe, Speicher)",
+    "H2 Wann lohnt sich ein EMS (Anlagengröße, Speicher, E-Auto, Wärmepumpe, Gewerbe)",
+    "H2 Vorteile und Einsparpotenzial (Eigenverbrauch 30 auf 70 %, bis 40 % Energiekosten)",
+    "H2 EMS-Systeme im Vergleich (Fronius, Huawei, SMA, Kostal, Solar Manager, neoom, SMARTFOX)",
+    "H2 Woran Sie ein gutes EMS erkennen (herstellerunabhängig, Steuerungstiefe, Bedienbarkeit, Nachrüstbarkeit)",
+    "H2 Typische Planungsfehler",
+    "H2 Kosten eines EMS",
+    "H2 Förderung und Wirtschaftlichkeit",
+    "H2 Dynamische Tarife, E-Mobilität, V2H",
+    "H2 Installation durch Meisterbetrieb",
+    "H2 FAQ"
+  ],
+  "gaps": [
+    "Keine Definitions-H2 'Was ist ein Energiemanagementsystem?' (0 Treffer für 'Was ist ein', 'Definition'): Knowledge Graph, AI Overview und PAA Platz 1 fragen genau das. Der H1 ist ein Claim ohne Keyword am Anfang.",
+    "Synonyme fehlen komplett: 'Energiemanager' (0), 'Home Energy Management System'/'HEMS' (0). Die Top 10 verwenden sie durchgehend; 30 + 20 Suchvolumen gehen verloren.",
+    "Kein Herstellername auf der Seite (Fronius 0, Huawei 0, SMA 0) trotz fünfmal 'herstellerunabhängig'. 'energiemanagementsystem fronius' 20 Vol., Huawei 10 Vol.; Wettbewerber listen Kompatibilität.",
+    "Warmwasser/Heizstab als erster und günstigster EMS-Hebel fehlt (Warmwasser 2, Heizstab 0, Boiler 0); SMARTFOX und Smartfox-Vergleich bauen darauf auf.",
+    "Keine 'Wann lohnt sich ein EMS / wann braucht man es'-Sektion (Anlagengröße 3 bis 5 kWp ohne Speicher: Monitoring reicht; mit Speicher, E-Auto, Wärmepumpe: deutlicher Nutzen).",
+    "Kein Vergleich oder Abgrenzung zu Industrie-EMS nach ISO 50001 (PAA, Gewerbe-Zielgruppe der Seite).",
+    "SG Ready, Modbus, V2H/bidirektionales Laden nicht erwähnt; photovoltaik-service.at rankt mit V2H-Tabellen.",
+    "Kostenanker vorhanden (800 bis 1.500 € inkl. Installation), aber nicht als FAQ-Antwort auf 'Wie viel kostet ein Home Energy Management System?' aufbereitet.",
+    "Keine konkrete Einsparungsgröße in Euro pro Jahr (Wettbewerb: bis 40 % Energiekosten, Beispielrechnungen)."
+  ],
+  "cannibalization": [
+    "/ems-lp-2/ (live existierende EMS-Landingpage im gleichen Design: zwei Seiten für dasselbe Keyword, eine muss 301 auf die andere)",
+    "/ems-foerderung/ (Ratgeber Förderung; die H2 'Der Klimafonds zahlt mit' auf der Leistungsseite kürzen und verlinken)",
+    "/dynamischer-stromtarif/ und /flexibler-stromtarif/ (H2 'Strom kaufen, wenn er günstig ist' überschneidet)",
+    "/smart-meter/",
+    "/photovoltaik-fuer-waermepumpe/",
+    "/energiegemeinschaft/ (H2 'Überschuss teilen')"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "energiemanagementsystem",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "energiemanagementsystem fronius",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "energiemanagementsystem photovoltaik",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "energiemanager photovoltaik",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "energiemanagement photovoltaik",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "home energy management system",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "ems photovoltaik",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Energiemanagementsystem (EMS) für Photovoltaik | EBZ Energie",
+    "h1": "Energiemanagementsystem für Ihre Photovoltaik: bis zu 80 % Eigenverbrauch statt 30 %",
+    "description": "Energiemanagementsystem (EMS, Energiemanager) für Eigenheim und Betrieb: steuert PV, Speicher, Wallbox, Wärmepumpe und Warmwasser. Förderung bis 600 €.",
+    "h2_outline": [
+      "Was ist ein Energiemanagementsystem? (Definition, EMS, HEMS, Energiemanager)",
+      "Wie ein EMS arbeitet: messen, entscheiden, steuern",
+      "Ohne EMS arbeitet jede Komponente für sich (Vergleich, bestehende Sektion)",
+      "Sechs Hebel: Eigenverbrauch, Warmwasser und Heizstab, Wallbox, Wärmepumpe SG Ready, dynamische Tarife, Lastspitzen",
+      "Wann sich ein EMS lohnt: Anlagengröße, Speicher, E-Auto, Wärmepumpe",
+      "Kompatibel mit Fronius, Huawei, SMA und weiteren Systemen: herstellerunabhängige Auswahl",
+      "Was ein EMS kostet (800 bis 1.500 € inkl. Installation*) und was es bringt",
+      "Förderung 2026: Klimafonds bis 600 € (Kurzfassung, Link Ratgeber)",
+      "Privat oder Gewerbe: EMS fürs Eigenheim vs. Energiemanagement nach ISO 50001",
+      "Dynamische Tarife, Energiegemeinschaft, V2H: was als Nächstes kommt",
+      "In vier Schritten zum System",
+      "Häufige Fragen",
+      "Kostenlose EMS-Beratung"
+    ],
+    "faq_add": [
+      "Was ist ein Energiemanagementsystem und wofür steht EMS?",
+      "Wann braucht man ein Energiemanagementsystem?",
+      "Wie viel kostet ein Energiemanagementsystem fürs Einfamilienhaus?",
+      "Welche Wechselrichter und Wärmepumpen sind kompatibel?",
+      "Funktioniert ein EMS auch ohne Speicher oder ohne PV?",
+      "Was ist der Unterschied zwischen EMS fürs Haus und ISO 50001?",
+      "Brauche ich einen Smart Meter für das EMS?"
+    ],
+    "internal_links": [
+      "/ems-foerderung/ -> EMS-Förderung 2026 im Detail",
+      "/dynamischer-stromtarif/ -> Dynamischer Stromtarif",
+      "/smart-meter/ -> Smart Meter erklärt",
+      "/photovoltaik-fuer-waermepumpe/ -> Photovoltaik für die Wärmepumpe",
+      "/batteriespeicher/ -> Stromspeicher",
+      "/pv-speicher-nachruesten/ -> Speicher nachrüsten",
+      "/photovoltaik-carport/ -> Photovoltaik-Carport mit Wallbox",
+      "/leistungen/energiegemeinschaft/ -> Energiegemeinschaft",
+      "/referenzen/ -> Referenzen"
+    ],
+    "notes": "Die Seite ist inhaltlich stark, verfehlt aber die Suchbegriffe: Weder Definition noch die Synonyme Energiemanager und HEMS kommen vor, kein einziger Hersteller wird genannt. Zuerst eine Definitions-H2 mit dem Keyword am Anfang einbauen, Synonyme in H1/Description, eine Kompatibilitätsliste (Fronius, Huawei, SMA, Kostal) und den Warmwasser-Hebel ergänzen. Klären, ob /ems-lp-2/ live bleibt: Zwei EMS-Seiten kannibalisieren sich bei nur 210 Suchvolumen. Förderung- und Tarif-Sektionen kürzen und auf die Ratgeber verlinken."
+  },
+  "cost_usd": 0.09,
+  "cost_note": "Die MCP-Antworten enthielten kein cost-Feld. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Advanced 0,002 $ + PAA-Klicks, Content Parsing 0,0005 $/URL, AI Keyword Data 0,0002 $/Keyword)."
+}

@@ -1,0 +1,455 @@
+{
+  "slug": "photovoltaik",
+  "path": "/photovoltaik/",
+  "seitentyp": "leistung",
+  "stand": "2026-10-09",
+  "hinweise": [
+    "kd 0 = DataForSEO liefert fuer dieses Keyword keinen Difficulty-Wert. volume_at 0 = kein AT-Volumen in der Datenbank.",
+    "Die MCP-Antworten enthielten kein cost-Feld. Betrag geschaetzt nach DataForSEO-Preisliste (Labs 0,01 $/Request + 0,0001 $/Item, SERP Advanced 0,002 $/Request, Content Parsing ca. 0,002 $/URL, AI-Volumen ca. 0,01 $/Request).",
+    "Kein GSC-Export unter build/seo/gsc/photovoltaik.json vorhanden, daher keine Ist-Rankings ausgewertet."
+  ],
+  "primary": {
+    "keyword": "photovoltaikanlage",
+    "volume_at": 8100,
+    "kd": 23,
+    "cpc": 2.78,
+    "intent": "transactional 0,43 (commercial 0,29, informational 0,28); 'photovoltaik' (22.200) ist zu 0,90 informational und bleibt Ratgeber-Thema"
+  },
+  "secondary": [
+    {
+      "keyword": "pv anlage",
+      "volume_at": 5400,
+      "kd": 0,
+      "intent": "transactional 0,64"
+    },
+    {
+      "keyword": "photovoltaik mit speicher",
+      "volume_at": 1300,
+      "kd": 4,
+      "intent": "commercial 0,64"
+    },
+    {
+      "keyword": "pv anlage kaufen",
+      "volume_at": 320,
+      "kd": 6,
+      "intent": "transactional 1,00"
+    },
+    {
+      "keyword": "photovoltaik firma",
+      "volume_at": 170,
+      "kd": 19,
+      "intent": "commercial 0,85"
+    },
+    {
+      "keyword": "photovoltaik anbieter",
+      "volume_at": 140,
+      "kd": 21,
+      "intent": "commercial 0,97"
+    },
+    {
+      "keyword": "photovoltaik kärnten",
+      "volume_at": 70,
+      "kd": 0,
+      "intent": "commercial 0,56 (Local Pack in der SERP, EBZ-Startseite aktuell Platz 5)"
+    }
+  ],
+  "semantic": [
+    "Solarmodule",
+    "Glas-Glas-Module",
+    "bifazial",
+    "Wechselrichter",
+    "Hybridwechselrichter",
+    "kWp",
+    "kWh pro kWp Jahresertrag",
+    "Eigenverbrauch",
+    "Autarkie",
+    "Ost-West-Ausrichtung",
+    "Verschattung",
+    "Batteriespeicher",
+    "Notstrom",
+    "Wallbox",
+    "Wärmepumpe",
+    "Einspeisevergütung",
+    "OeMAG Marktpreis",
+    "Netzbetreiber",
+    "Kelag Netz",
+    "Mitteilungspflicht (Dach-PV in Kärnten nicht bewilligungspflichtig)",
+    "EAG-Investitionszuschuss 150 €/kWp (Kategorie A bis 10 kWp)",
+    "Fördercall 8. bis 22. Oktober 2026",
+    "Made-in-Europe-Bonus",
+    "Speicherförderung 150 €/kWh",
+    "Land Kärnten PV-Förderung",
+    "Komplettanlage 10 kWp mit Speicher",
+    "Flachdach",
+    "Trapezblech",
+    "Statik",
+    "Montage",
+    "Monitoring",
+    "Amortisation",
+    "Fronius",
+    "Huawei",
+    "BYD",
+    "Villach",
+    "Klagenfurt",
+    "Graz"
+  ],
+  "long_tail": [
+    {
+      "keyword": "pv anlage mit speicher",
+      "volume_at": 3600
+    },
+    {
+      "keyword": "photovoltaik anlage mit speicher",
+      "volume_at": 720
+    },
+    {
+      "keyword": "photovoltaik in der nähe",
+      "volume_at": 590
+    },
+    {
+      "keyword": "pv anlage kosten",
+      "volume_at": 590
+    },
+    {
+      "keyword": "photovoltaik graz",
+      "volume_at": 480
+    },
+    {
+      "keyword": "photovoltaik anlage kosten",
+      "volume_at": 390
+    },
+    {
+      "keyword": "pv anlage mit speicher kosten",
+      "volume_at": 390
+    },
+    {
+      "keyword": "was kostet eine 10 kwp pv-anlage mit speicher",
+      "volume_at": 320
+    },
+    {
+      "keyword": "photovoltaik komplettanlage 10 kwp mit speicher",
+      "volume_at": 320
+    },
+    {
+      "keyword": "photovoltaik montage",
+      "volume_at": 260
+    },
+    {
+      "keyword": "photovoltaik montagefirma",
+      "volume_at": 260
+    },
+    {
+      "keyword": "pv anlage 10 kwp",
+      "volume_at": 170
+    },
+    {
+      "keyword": "photovoltaik installation",
+      "volume_at": 140
+    },
+    {
+      "keyword": "bester photovoltaik anbieter österreich",
+      "volume_at": 140
+    },
+    {
+      "keyword": "photovoltaik komplettanlage 10 kwp mit speicher und montage",
+      "volume_at": 140
+    },
+    {
+      "keyword": "photovoltaikanlage kaufen",
+      "volume_at": 110
+    },
+    {
+      "keyword": "photovoltaik steiermark",
+      "volume_at": 70
+    },
+    {
+      "keyword": "photovoltaik kärnten firmen",
+      "volume_at": 70
+    },
+    {
+      "keyword": "photovoltaik installateur",
+      "volume_at": 70
+    },
+    {
+      "keyword": "photovoltaik klagenfurt",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik anbieter steiermark",
+      "volume_at": 40
+    },
+    {
+      "keyword": "photovoltaik villach",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaikanlage für einfamilienhaus",
+      "volume_at": 30
+    }
+  ],
+  "questions": [
+    "Wie funktioniert eine Photovoltaikanlage?",
+    "Was kostet eine Photovoltaikanlage für ein Einfamilienhaus in Österreich?",
+    "Wie lange dauert die Anmeldung einer PV-Anlage beim Netzbetreiber?",
+    "Wie viel Strom erzeugt eine PV-Anlage mit 10 kWp pro Jahr?",
+    "Funktioniert Photovoltaik auch ohne Sonne, im Winter und bei Schnee?",
+    "Brauche ich in Kärnten eine Genehmigung für eine Photovoltaikanlage?",
+    "Wie hoch ist die aktuelle PV-Förderung in Kärnten und in der Steiermark?",
+    "Wird in Österreich ein Stromspeicher gefördert?",
+    "Wie groß muss die Anlage sein, um ein E-Auto zu laden?",
+    "Was ist der Unterschied zwischen Solaranlage und Photovoltaik?",
+    "Kann ich einen Speicher später nachrüsten?",
+    "Welche laufenden Kosten hat eine Photovoltaikanlage (Wartung, Reinigung, Versicherung)?"
+  ],
+  "serp": {
+    "features": [
+      "images",
+      "people_also_ask",
+      "people_also_search",
+      "related_searches",
+      "local_pack (nur bei 'photovoltaik kärnten')",
+      "kein ai_overview bei 'photovoltaikanlage'"
+    ],
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "enerix.de",
+        "title": "Photovoltaikanlagen: Dein Leitfaden zur Unabhängigkeit",
+        "type": "ratgeber (anbieter DE)"
+      },
+      {
+        "pos": 2,
+        "domain": "otovo.at",
+        "title": "8 Tipps für den Weg zur eigenen Photovoltaikanlage",
+        "type": "ratgeber (anbieter)"
+      },
+      {
+        "pos": 3,
+        "domain": "salzburg-ag.at",
+        "title": "Was ist Photovoltaik? Grundlagen einfach erklärt",
+        "type": "ratgeber (versorger)"
+      },
+      {
+        "pos": 4,
+        "domain": "wienenergie.at",
+        "title": "Photovoltaik-Strom selber herstellen und speichern",
+        "type": "ratgeber (versorger)"
+      },
+      {
+        "pos": 5,
+        "domain": "elektro-wenger.at",
+        "title": "So funktioniert eine Photovoltaikanlage",
+        "type": "ratgeber (installateur)"
+      },
+      {
+        "pos": 6,
+        "domain": "photovoltaikanlage.at",
+        "title": "PV-Anlage mit Speicher | Jetzt Angebote kostenlos einholen!",
+        "type": "leadportal"
+      },
+      {
+        "pos": 7,
+        "domain": "photovoltaikforum.com",
+        "title": "Photovoltaikforum",
+        "type": "forum"
+      },
+      {
+        "pos": 8,
+        "domain": "idealo.at",
+        "title": "Photovoltaik-Komplettanlage (2026) zum Bestpreis",
+        "type": "preisvergleich"
+      },
+      {
+        "pos": 9,
+        "domain": "auspreiser.at",
+        "title": "Komplett photovoltaikanlage kaufen & Preise vergleichen",
+        "type": "preisvergleich"
+      },
+      {
+        "pos": 10,
+        "domain": "gruenes.haus",
+        "title": "Photovoltaik: Alles, was Sie darüber wissen müssen",
+        "type": "ratgeber"
+      }
+    ],
+    "top10_photovoltaik_kaernten": [
+      "kaernten-solar.at (anbieter)",
+      "kelag.at Blog Genehmigung (versorger)",
+      "ktn.gv.at Förderung (behörde)",
+      "transparenzportal.gv.at",
+      "ebz-photovoltaik.at Startseite (Platz 5)",
+      "kelag.at Photovoltaik",
+      "firmen.wko.at",
+      "prosolis.at Förderung",
+      "solarertrag.at (anbieter)",
+      "e-autonom.at PV Anlage Kärnten (anbieter)"
+    ]
+  },
+  "competitor_outline": [
+    "H2 Was ist eine Photovoltaikanlage und wie funktioniert sie",
+    "H2 Komponenten: Module, Wechselrichter, Speicher, Montagesystem (Satteldach, Flachdach)",
+    "H2 Wie groß sollte die Anlage sein (Stromverbrauch, kWp, Dachfläche)",
+    "H2 Wie viel Strom produziert sie (kWh pro kWp, Ausrichtung, Standort)",
+    "H2 Was kostet eine Photovoltaikanlage (Beispielrechnung 10 kWp mit Speicher)",
+    "H2 Eigenverbrauch steigern: Speicher, Wärmepumpe, E-Auto",
+    "H2 Förderung (EAG, Land, Fördercalls)",
+    "H2 Anmeldung beim Netzbetreiber und Genehmigung",
+    "H2 Laufende Kosten, Wartung, Reinigung, Garantie",
+    "H2 Ablauf in 4 Schritten (Beratung, Vor-Ort-Analyse, Angebot mit Förderung, Montage)",
+    "H2 Referenz mit Zahlen (Investition, Förderung, Ersparnis, Amortisation, Autarkie)",
+    "H2 FAQ"
+  ],
+  "gaps": [
+    "Anmeldung beim Netzbetreiber und Mitteilungspflicht in Kärnten (PAA-Frage, Kelag rankt damit auf Platz 2 für 'photovoltaik kärnten'): auf unserer Seite nur eine FAQ zur Genehmigung, kein Ablaufabsatz",
+    "Laufende Kosten, Wartung, Reinigung und Garantien (Modul, Wechselrichter, Speicher) fehlen komplett",
+    "Ertrag in kWh pro kWp für Kärnten und Steiermark und Dimensionierung (Stromverbrauch zu kWp) als zitierbare Zahl fehlt",
+    "Begriff Autarkie fehlt, obwohl Eigenverbrauch stark besetzt ist",
+    "Komponentenmarken (Fronius, Huawei, BYD) werden nicht genannt; Mitbewerber nutzen sie als Vertrauenssignal",
+    "Standortsignale nur Villach und Wolfsberg verlinkt; Klagenfurt (50) und Graz (480) fehlen im Text",
+    "Fördercall-Termin 8. bis 22. Oktober 2026 und Made-in-Europe-Bonus fehlen",
+    "Winter, Schnee, Carport und Speicher nachrüsten als Nutzerfragen fehlen",
+    "Kommerzielle Modifier 'Anbieter', 'Installateur', 'in der Nähe' kommen im Text nicht vor"
+  ],
+  "cannibalization": [
+    "/ (Startseite rankt für 'photovoltaik kärnten')",
+    "/photovoltaik-villach/",
+    "/photovoltaik-wolfsberg/",
+    "/kosten-einer-solaranlage/",
+    "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/",
+    "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/",
+    "/solarenergie/",
+    "/photovoltaik-foerderung-kaernten/",
+    "/foerderung-photovoltaik-steiermark/",
+    "/solarrechner/"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "pv anlage",
+      "ai_volume": 1247
+    },
+    {
+      "keyword": "photovoltaik",
+      "ai_volume": 916
+    },
+    {
+      "keyword": "photovoltaikanlage",
+      "ai_volume": 740
+    },
+    {
+      "keyword": "solaranlage",
+      "ai_volume": 452
+    },
+    {
+      "keyword": "pv anlage mit speicher",
+      "ai_volume": 352
+    },
+    {
+      "keyword": "was kostet eine 10 kwp pv-anlage mit speicher",
+      "ai_volume": 138
+    },
+    {
+      "keyword": "photovoltaik förderung",
+      "ai_volume": 132
+    },
+    {
+      "keyword": "photovoltaik österreich",
+      "ai_volume": 117
+    },
+    {
+      "keyword": "photovoltaik mit speicher",
+      "ai_volume": 34
+    },
+    {
+      "keyword": "photovoltaik firma",
+      "ai_volume": 29
+    },
+    {
+      "keyword": "photovoltaik kosten",
+      "ai_volume": 20
+    },
+    {
+      "keyword": "photovoltaik lohnt sich",
+      "ai_volume": 18
+    },
+    {
+      "keyword": "photovoltaik anbieter",
+      "ai_volume": 15
+    },
+    {
+      "keyword": "photovoltaik steiermark",
+      "ai_volume": 10
+    },
+    {
+      "keyword": "pv anlage kosten",
+      "ai_volume": 5
+    },
+    {
+      "keyword": "photovoltaik montage",
+      "ai_volume": 5
+    },
+    {
+      "keyword": "photovoltaik komplettanlage 10 kwp mit speicher",
+      "ai_volume": 4
+    },
+    {
+      "keyword": "photovoltaik kärnten",
+      "ai_volume": 2
+    },
+    {
+      "keyword": "photovoltaik villach",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "pv anlage kaufen",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Photovoltaikanlage kaufen in Kärnten & Steiermark | EBZ",
+    "h1": "Photovoltaikanlage vom Fachbetrieb: Ihr eigener Strom vom Dach in Kärnten und der Steiermark",
+    "description": "Photovoltaikanlage mit Speicher vom Fachbetrieb in Kärnten und der Steiermark: 10 kWp ab rund 15.000 €, bis zu 85 % weniger Stromkosten, Förderung inklusive.",
+    "h2_outline": [
+      "Was ist eine Photovoltaikanlage? (Definition, Module, Wechselrichter, Speicher)",
+      "Eigenheim oder Betrieb: welche PV-Anlage passt",
+      "Wie groß soll Ihre Anlage sein? (kWp je Verbrauch, kWh pro kWp in Kärnten und Steiermark)",
+      "Mehr Eigenverbrauch und Autarkie mit Batteriespeicher",
+      "Ihre Anlage, komplett gedacht (Module, Speicher, Wallbox, EMS, Wärmepumpe, Service)",
+      "Was kostet eine Photovoltaikanlage? (10 kWp mit Speicher, Komplettanlage mit Montage)",
+      "Finanzierung: Ihre Anlage gehört Ihnen ab dem ersten Tag",
+      "Förderungen 2026: EAG-Zuschuss, Fördercall Oktober, Land Kärnten und Steiermark",
+      "Anmeldung beim Netzbetreiber und Mitteilungspflicht: so läuft es in Kärnten",
+      "Laufende Kosten, Wartung und Garantien",
+      "Referenzen mit Zahlen",
+      "Warum EBZ: Fachbetrieb aus Villach, 300+ Anlagen, 4,9 Sterne",
+      "Ablauf von der Beratung zum Sonnenstrom",
+      "Häufige Fragen",
+      "Photovoltaik in Ihrer Region (Villach, Klagenfurt, Wolfsberg, Graz)"
+    ],
+    "faq_add": [
+      "Wie lange dauert die Anmeldung einer PV-Anlage beim Netzbetreiber?",
+      "Funktioniert Photovoltaik auch im Winter und bei Schnee?",
+      "Welche laufenden Kosten hat eine Photovoltaikanlage?",
+      "Welche Garantien gibt es auf Module, Wechselrichter und Speicher?",
+      "Kann ich einen Speicher später nachrüsten?",
+      "Wie viel Strom erzeugen 10 kWp in Kärnten pro Jahr?"
+    ],
+    "internal_links": [
+      "/batteriespeicher/ -> Batteriespeicher für Ihre PV-Anlage",
+      "/finanzierung/ -> PV-Anlage finanzieren mit fixer Rate",
+      "/photovoltaik-gewerbe/ -> Photovoltaik für Gewerbe und Landwirtschaft",
+      "/photovoltaik-foerderung-kaernten/ -> PV-Förderung Kärnten 2026",
+      "/foerderung-photovoltaik-steiermark/ -> PV-Förderung Steiermark 2026",
+      "/photovoltaik-foerderung-oesterreich-2026/ -> EAG-Fördercall Oktober 2026",
+      "/kosten-einer-solaranlage/ -> Was kostet eine Solaranlage im Detail",
+      "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ -> Komplettanlage 10 kWp mit Speicher und Montage",
+      "/pv-speicher-nachruesten/ -> Speicher nachrüsten",
+      "/photovoltaik-villach/ -> Photovoltaik Villach",
+      "/photovoltaik-wolfsberg/ -> Photovoltaik Wolfsberg",
+      "/referenzen/ -> Referenzen",
+      "/solarrechner/ -> Solarrechner",
+      "/waermepumpe/ -> Wärmepumpe mit Solarstrom betreiben"
+    ],
+    "notes": "Die Seite ist bereits breit und sauber strukturiert, zielt aber im Title auf das informationale 'Photovoltaik Kärnten & Steiermark' statt auf das transaktionale 'Photovoltaikanlage' (8.100) und 'PV-Anlage kaufen'. Zuerst Title, H1 und Description auf 'Photovoltaikanlage' plus Kauf-Modifier drehen und 'PV-Anlage' als Synonym in H2 und Fließtext verankern. Danach die drei Inhaltslücken schließen, die alle Top-5 haben: Anmeldung beim Netzbetreiber samt Mitteilungspflicht Kärnten, laufende Kosten mit Garantien, Ertrag in kWh pro kWp mit Dimensionierungsregel. Standorte Klagenfurt und Graz textlich ergänzen, damit die Seite den Local-Pack-Suchen zuarbeitet, ohne die Standortseiten Villach und Wolfsberg zu kannibalisieren."
+  },
+  "cost_usd": 0.18
+}

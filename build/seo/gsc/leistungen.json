@@ -1,0 +1,41 @@
+{
+ "old_url": "/leistungen/",
+ "clicks": 16,
+ "impressions": 1210,
+ "ctr": 1.3,
+ "position": 10.1,
+ "top_queries": [
+  [
+   "ebz energie",
+   12,
+   328
+  ],
+  [
+   "ebz energie gmbh",
+   0,
+   217
+  ],
+  [
+   "kühlraum installieren steiermark",
+   0,
+   30
+  ],
+  [
+   "pv-anlage installieren kärnten",
+   0,
+   25
+  ],
+  [
+   "infrarotheizung villach",
+   0,
+   21
+  ]
+ ],
+ "queries_total": 16,
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}

@@ -1,0 +1,1259 @@
+{
+ "stand": "2026-10-09",
+ "modelle": {
+  "chat_gpt": "gpt-5.4 (Antwort-Modell gpt-5.4-2026-03-05), web_search true",
+  "perplexity": "sonar-pro, web_search true",
+  "gemini": "gemini-2.5-flash, web_search true (nur Fragen 1 bis 4)"
+ },
+ "fragen": [
+  {
+   "q": 1,
+   "frage": "Was kostet eine Photovoltaikanlage mit 10 kWp und Speicher in Österreich 2026?"
+  },
+  {
+   "q": 2,
+   "frage": "Welche Photovoltaik-Firma in Kärnten ist empfehlenswert?"
+  },
+  {
+   "q": 3,
+   "frage": "Photovoltaik Villach: welcher Anbieter?"
+  },
+  {
+   "q": 4,
+   "frage": "Wie hoch ist die Photovoltaik-Förderung in Kärnten 2026?"
+  },
+  {
+   "q": 5,
+   "frage": "Lohnt sich ein Batteriespeicher in Österreich?"
+  },
+  {
+   "q": 6,
+   "frage": "Was kostet eine Wärmepumpe in Österreich 2026 und wie hoch ist die Förderung?"
+  },
+  {
+   "q": 7,
+   "frage": "Wie funktioniert eine Energiegemeinschaft in Österreich und was bringt sie?"
+  },
+  {
+   "q": 8,
+   "frage": "Photovoltaik finanzieren oder kaufen: was ist besser?"
+  },
+  {
+   "q": 9,
+   "frage": "Welche Förderung gibt es 2026 für ein Energiemanagementsystem in Österreich?"
+  },
+  {
+   "q": 10,
+   "frage": "Was kostet eine Photovoltaikanlage für ein Gewerbe in Österreich?"
+  },
+  {
+   "q": 11,
+   "frage": "Balkonkraftwerk Österreich: Regeln, Anmeldung, Förderung?"
+  },
+  {
+   "q": 12,
+   "frage": "Welcher OeMAG-Einspeisetarif gilt aktuell?"
+  }
+ ],
+ "antworten": [
+  {
+   "q": 1,
+   "frage": "Was kostet eine Photovoltaikanlage mit 10 kWp und Speicher in Österreich 2026?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.060578,
+   "zahlen": [
+    "18.000 bis 28.000 € brutto schlüsselfertig",
+    "10 kWh Speicher: 20.000 bis 26.000 €",
+    "15 kWh: 23.000 bis 28.000 €",
+    "ohne Speicher 14.000 bis 19.000 €",
+    "Speicher-Aufpreis 5.000 bis 9.000 €",
+    "EAG 150 €/kWp bis 10 kWp, 150 €/kWh Speicher, ca. 3.000 € Zuschuss",
+    "Fördercall 23.04. bis 11.05.2026",
+    "Nullsteuersatz endete 31.03.2025",
+    "Beispiel 22.500 € brutto, effektiv 19.500 €"
+   ],
+   "anbieter": [],
+   "quellen": [
+    "oesterreich.gv.at"
+   ],
+   "ebz": false,
+   "struktur": "Bullet-Liste mit Fettungen, Beispielrechnung, Faustregel; Preis ohne Quelle (Praxis-Korridor), nur Förderung zitiert",
+   "fan_out": [
+    "Österreich 2026 Photovoltaikanlage 10 kWp Speicher Kosten 2026",
+    "EAG Förderung PV Speicher Österreich 2026",
+    "Preisvergleich Photovoltaik Speicher Österreich 10 kWp 2026"
+   ]
+  },
+  {
+   "q": 1,
+   "frage": "Was kostet eine Photovoltaikanlage mit 10 kWp und Speicher in Österreich 2026?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.012885,
+   "zahlen": [
+    "16.000 bis 25.000 € inkl. Montage (10 kWp + 10 kWh)",
+    "ohne Speicher 12.000 bis 18.000 €",
+    "Speicher 5 bis 10 kWh: 4.000 bis 10.000 €",
+    "Komplettpaket 10 kWh: 20.000 bis 25.000 €",
+    "Notstrom ab ca. 23.000 €",
+    "EAG bis 3.000 € (150 €/kWp + 150 €/kWh)",
+    "netto nach Förderung 17.000 bis 22.000 €",
+    "USt-Befreiung bis 35 kWp erwähnt (veraltet)"
+   ],
+   "anbieter": [
+    "Verbund",
+    "Aroundhome",
+    "Infina",
+    "Selectra",
+    "tepto",
+    "pv-komplettanlage.at",
+    "heizma",
+    "verhandelt.at",
+    "solar-now.at"
+   ],
+   "quellen": [
+    "verbund.com",
+    "aroundhome.at",
+    "infina.at",
+    "selectra.at",
+    "tepto.at",
+    "pv-komplettanlage.at",
+    "heizma.at",
+    "verhandelt.at",
+    "solar-now.at"
+   ],
+   "ebz": false,
+   "struktur": "Kurzer Lead-Satz mit Zahl, dann Bullet-Liste, 10 Zitate; Fließtext-Absatz zur Förderung"
+  },
+  {
+   "q": 1,
+   "frage": "Was kostet eine Photovoltaikanlage mit 10 kWp und Speicher in Österreich 2026?",
+   "platform": "gemini",
+   "model": "gemini-2.5-flash",
+   "cost": 0.0374693,
+   "zahlen": [
+    "22.000 bis 28.000 € schlüsselfertig",
+    "nach Förderung ca. 16.836 €",
+    "10 kWh Speicher 8.000 bis 11.000 € inkl. Installation",
+    "EAG bis 140 €/kWp Kat. A, 150 €/kWh Speicher, bis 3.000 €",
+    "Made-in-Europe-Bonus bis 10 %",
+    "Ertrag 9.000 bis 11.000 kWh/Jahr",
+    "Eigenverbrauch 30 % auf bis zu 70 %",
+    "Amortisation 7,9 bis 15 Jahre",
+    "20 % USt seit 01.04.2025"
+   ],
+   "anbieter": [
+    "verhandelt.at",
+    "solar-now.at",
+    "Verbund",
+    "pv-komplettanlage.at",
+    "tepto",
+    "enerix",
+    "photovoltaikanlage.at",
+    "seiner-photovoltaik.at",
+    "Infina"
+   ],
+   "quellen": [
+    "verhandelt.at",
+    "solar-now.at",
+    "verbund.com",
+    "pv-komplettanlage.at",
+    "tepto.at",
+    "enerix.at",
+    "photovoltaikanlage.at",
+    "seiner-photovoltaik.at",
+    "infina.at"
+   ],
+   "ebz": false,
+   "struktur": "Fließtext-Lead mit Zahl, dann fette Zwischenüberschriften + Bullets (Faktoren, Förderung, Wirtschaftlichkeit, USt-Hinweis); Grounding-Zitate satzweise"
+  },
+  {
+   "q": 2,
+   "frage": "Welche Photovoltaik-Firma in Kärnten ist empfehlenswert?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.062633,
+   "zahlen": [
+    "rund 120 PV-Betriebe in Kärnten (WKO)"
+   ],
+   "anbieter": [
+    "EBZ Energie GmbH (Platz 1 der Shortlist)",
+    "Elektrotechnik Mickl",
+    "KILOWATT GmbH",
+    "Make Photovoltaik GmbH",
+    "PTT Photovoltaiktechnik Tillian"
+   ],
+   "quellen": [
+    "firmen.wko.at",
+    "ebz-photovoltaik.at",
+    "elektro-mickl.at",
+    "wko.at (PV-Checkliste PDF)"
+   ],
+   "ebz": true,
+   "ebz_kontext": "EBZ als erste Anlaufstelle genannt: Fachbetrieb Kärnten, aktuelle Projekte, geprüfte Google-Bewertungen auf der Website; Empfehlung EBZ + Mickl zuerst kontaktieren",
+   "struktur": "Nummerierte Liste mit 4 Anbietern + Einschätzung + Checkliste (Vor-Ort-Besichtigung, Ertrags-Prognose, Netzanmeldung, Garantien, Referenzen, Preisaufschlüsselung)",
+   "fan_out": [
+    "Kärnten Photovoltaik Unternehmen Google Bewertungen",
+    "WKO Kärnten Photovoltaik Fachbetriebe",
+    "site:at Kärnten Photovoltaik Meisterbetrieb Referenzen"
+   ]
+  },
+  {
+   "q": 2,
+   "frage": "Welche Photovoltaik-Firma in Kärnten ist empfehlenswert?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.01224,
+   "zahlen": [
+    "mindestens drei Angebote"
+   ],
+   "anbieter": [
+    "SUNWORLD Energietechnik Klagenfurt",
+    "EBZ Photovoltaik Villach",
+    "GK Electrics",
+    "EET Knees",
+    "voltalux (Top 49 PV Anbieter Kärnten)"
+   ],
+   "quellen": [
+    "herold.at",
+    "ebz-photovoltaik.at",
+    "gk-electrics.com",
+    "eet-knees.at",
+    "sunworld.at",
+    "voltalux.at",
+    "heizma.at/photovoltaik/kaernten",
+    "krone.at"
+   ],
+   "ebz": true,
+   "ebz_kontext": "EBZ Photovoltaik in Villach als einer von drei Anbietern für erste Angebotsrunde, Empfehlung SUNWORLD + EBZ + Meisterbetrieb anfragen",
+   "struktur": "Lead-Satz, 3 Anbieter fett, Bullet-Checkliste (Angebote, Referenzen, Garantien, Preis pro kWp / pro kWh)"
+  },
+  {
+   "q": 2,
+   "frage": "Welche Photovoltaik-Firma in Kärnten ist empfehlenswert?",
+   "platform": "gemini",
+   "model": "gemini-2.5-flash",
+   "cost": 0.037591,
+   "zahlen": [
+    "Kärnten Solar: über 53 MWp installiert, seit 2013",
+    "Loibner Bewertung 5 von 5",
+    "KPV Solar Bewertung 9,4",
+    "Green Solar Stiftung Warentest Testsieger Mai 2025"
+   ],
+   "anbieter": [
+    "Kärnten Solar",
+    "Wolfgang Pirker Elektrotechnik",
+    "ProSolis",
+    "Green Solar",
+    "Elektrotechnik Loibner",
+    "KPV Solar",
+    "Solarertrag Florian Guetz"
+   ],
+   "quellen": [
+    "kaernten-solar.at",
+    "elektro-pirker.at",
+    "prosolis.at",
+    "5min.at",
+    "gecheckt.at",
+    "daibau.at",
+    "solarertrag.at"
+   ],
+   "ebz": false,
+   "struktur": "Firmen als fette Zwischenüberschriften mit je 3 bis 4 Bullets (USP-Sätze von den Anbieter-Websites), Abschluss-Rat Angebote vergleichen"
+  },
+  {
+   "q": 3,
+   "frage": "Photovoltaik Villach: welcher Anbieter?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.060518,
+   "zahlen": [
+    "120 PV-Unternehmen Kärnten (WKO)",
+    "2 bis 4 Angebote"
+   ],
+   "anbieter": [
+    "WSB Haustechnik",
+    "HSI Energie GmbH",
+    "VDSG Sonnenstrom Villach (Stadtwerke)",
+    "Solarertrag Florian Guetz",
+    "KIOTO Solar",
+    "Sonnenkraft Villach",
+    "PV-Profis Villach"
+   ],
+   "quellen": [
+    "firmen.wko.at",
+    "heimcheck.com",
+    "transparenzportal.gv.at",
+    "wsb-haustechnik.at",
+    "hsi-ecotech.com",
+    "stw.at",
+    "bezirkstipp.at"
+   ],
+   "ebz": false,
+   "struktur": "3 Schritte (WKO-Liste, Angebote vergleichen, Förderung prüfen), Bullet-Liste Anbieter, Vergleichskriterien (Preis pro kWp, Marken, Speicher, Garantie, Referenzen)"
+  },
+  {
+   "q": 3,
+   "frage": "Photovoltaik Villach: welcher Anbieter?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.012117,
+   "zahlen": [],
+   "anbieter": [
+    "EBZ Energie (zuerst genannt)",
+    "Elektro Palle",
+    "WSB Haustechnik",
+    "PVTechnik24",
+    "enerix Oberkärnten",
+    "VDSG"
+   ],
+   "quellen": [
+    "stw.at",
+    "ebz-photovoltaik.at/photovoltaik/",
+    "pvtechnik24.at",
+    "wlw.de",
+    "hsh-installateur.com",
+    "enerix-solar.at",
+    "pv-anlagen-villach.at",
+    "photovoltaikexperten.at (EWerk)",
+    "ebz-photovoltaik.at/photovoltaik-villach/"
+   ],
+   "ebz": true,
+   "ebz_kontext": "EBZ Energie an erster Stelle: lokaler Anbieter Villach, schlüsselfertig inkl. Planung, Speicher, Förderabwicklung; Empfehlung EBZ, Palle, WSB anfragen; zwei EBZ-URLs zitiert",
+   "struktur": "Bullet-Liste 5 Anbieter mit Einzeiler, Empfehlungsabsatz, Hinweis VDSG"
+  },
+  {
+   "q": 3,
+   "frage": "Photovoltaik Villach: welcher Anbieter?",
+   "platform": "gemini",
+   "model": "gemini-2.5-flash",
+   "cost": 0.036896,
+   "zahlen": [
+    "Solarertrag seit 2010"
+   ],
+   "anbieter": [
+    "Elektrounternehmen K. Maschke",
+    "EBZ Energie (Platz 2)",
+    "VDSG Sonnenstrom Villach",
+    "Strommacher",
+    "Elektro Palle",
+    "Solarertrag",
+    "Installateur Graf"
+   ],
+   "quellen": [
+    "elektro-maschke.at",
+    "ebz-photovoltaik.at/photovoltaik-villach/",
+    "stw.at",
+    "strommacher.at",
+    "pv-anlagen-villach.at",
+    "solarertrag.at",
+    "fritzgraf.at",
+    "enfsolar.com"
+   ],
+   "ebz": true,
+   "ebz_kontext": "EBZ als lokaler Partner Villach: Beratung, Planung, Installation, Stromspeicher, Förderantrag; Standortseite /photovoltaik-villach/ zitiert",
+   "struktur": "Bullet-Liste 7 Anbieter mit 2 bis 3 Sätzen (aus deren Websites), Hinweis auf Verzeichnisse"
+  },
+  {
+   "q": 4,
+   "frage": "Wie hoch ist die Photovoltaik-Förderung in Kärnten 2026?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.058773,
+   "zahlen": [
+    "keine Landesförderung 2026 verifizierbar (FALSCH, veraltet)",
+    "EAG Fördercall 23.04. bis 11.05.2026"
+   ],
+   "anbieter": [],
+   "quellen": [
+    "ktn.gv.at (LVA 2025 PDF, PV-Förderung 2025 PDF)",
+    "oem-ag.at/neues"
+   ],
+   "ebz": false,
+   "struktur": "Fließtext mit Vorbehalt, 2 Bullets Land/Bund; Lücke: keine aktuelle Quelle zum Oktober-Call gefunden",
+   "fan_out": [
+    "Kärnten Photovoltaik Förderung 2026 offiziell",
+    "site:ktn.gv.at Photovoltaik-Anlagenförderung Kärnten 2026 pdf"
+   ]
+  },
+  {
+   "q": 4,
+   "frage": "Wie hoch ist die Photovoltaik-Förderung in Kärnten 2026?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.009903,
+   "zahlen": [
+    "3.000 € pauschal privat",
+    "mind. 5 kWp + mind. 5 kWh Speicher",
+    "errichtet nach 01.01.2026",
+    "max. 50 % der Investitionskosten",
+    "Speicher-Nachrüstung 1.000 € (mind. 5 kWh)",
+    "Fördercall 12.10. bis 31.12.2026"
+   ],
+   "anbieter": [
+    "Kelag (Blog)",
+    "mein-energieberater.at"
+   ],
+   "quellen": [
+    "meinbezirk.at",
+    "transparenzportal.gv.at",
+    "mein-energieberater.at (PDF)",
+    "kelag.at/blog",
+    "kleinezeitung.at",
+    "kaernten.orf.at",
+    "ktn.lko.at",
+    "grosskirchheim.gv.at (PDF)"
+   ],
+   "ebz": false,
+   "struktur": "Lead-Satz mit Zahl fett, Bullet-Voraussetzungen, 2 Kurzabsätze; sehr kompakt (215 Tokens)"
+  },
+  {
+   "q": 4,
+   "frage": "Wie hoch ist die Photovoltaik-Förderung in Kärnten 2026?",
+   "platform": "gemini",
+   "model": "gemini-2.5-flash",
+   "cost": 0.037554,
+   "zahlen": [
+    "2. Fördercall 2026, rund 10 Mio. €",
+    "3.000 € pauschal ab 5 kWp + 5 kWh",
+    "1.000 € Speicher-Nachrüstung",
+    "Antrag 12.10. bis 31.12.2026 online",
+    "EAG Kat. A 150 €/kWp, B 140, C bis 130, D bis 120",
+    "Speicher bis 50 kWh 150 €/kWh",
+    "EAG-Calls 23.04. bis 11.05., 16.06. bis 30.06., 08.10. bis 22.10.2026"
+   ],
+   "anbieter": [
+    "Kärnten Solar (Förderseite zitiert)",
+    "Kelag",
+    "EVN",
+    "Raiffeisen",
+    "dachgold.at"
+   ],
+   "quellen": [
+    "klick-kaernten.at",
+    "meinbezirk.at",
+    "5min.at",
+    "kaernten-solar.at/photovoltaik-foerderung/",
+    "dolomitenstadt.at",
+    "sonnenstrom.wien.gv.at",
+    "raiffeisen.at",
+    "dachgold.at",
+    "kelag.at/blog",
+    "evn.at"
+   ],
+   "ebz": false,
+   "struktur": "Zwei fette Blöcke (Land / Bund) mit verschachtelten Bullets, Zahlen pro Zeile; Regionalmedien dominieren die Zitate"
+  },
+  {
+   "q": 5,
+   "frage": "Lohnt sich ein Batteriespeicher in Österreich?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.06421,
+   "zahlen": [
+    "Haushaltsstrom 22 bis 35 ct/kWh (E-Control)",
+    "SNAP-Netztarif seit April 2026: Apr bis Sep 10 bis 16 Uhr 20 % Nachlass",
+    "Beispiel 5 kWp + 7 kWh"
+   ],
+   "anbieter": [],
+   "quellen": [
+    "e-control.at (4 URLs)",
+    "umweltfoerderung.at"
+   ],
+   "ebz": false,
+   "struktur": "Kurzfazit fett, H3-Abschnitte (Warum, Eher ja, Eher nein, Speziell AT, Fazit, Daumenregel); keine Speicherpreise genannt, nur Behördenquellen",
+   "fan_out": [
+    "Österreich Batteriespeicher Wirtschaftlichkeit Eigenheim 2026 Förderung",
+    "E-Control Strompreis Haushalt 2026 kWh Netzgebühren",
+    "ÖMAG Investitionszuschuss PV Stromspeicher 2026"
+   ]
+  },
+  {
+   "q": 5,
+   "frage": "Lohnt sich ein Batteriespeicher in Österreich?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.01521,
+   "zahlen": [
+    "Eigenverbrauch 30 % auf 60 bis 80 %",
+    "Hausspeicher 4.000 bis 12.000 €",
+    "Richtwert 650 €/kWh netto",
+    "Amortisation 8 bis 14 Jahre",
+    "sinnvoll ab 5 kWp, Verbrauch über 3.500 bis 5.000 kWh",
+    "max. 700 bis 900 €/kWh inkl. Montage",
+    "EFH 8 bis 12 kWp, 4.000 bis 6.000 kWh, 5 bis 10 kWh Speicher"
+   ],
+   "anbieter": [
+    "heizma (5 URLs!)",
+    "Aroundhome",
+    "verhandelt.at",
+    "checkeverything.at",
+    "klimaaktiv"
+   ],
+   "quellen": [
+    "heizma.at/batteriespeicher",
+    "heizma.at/ratgeber/photovoltaik-amortisation-oesterreich",
+    "heizma.at/ratgeber/stromspeicher-nachruesten-pv",
+    "heizma.at/ratgeber/wann-lohnt-sich-eine-pv-anlage",
+    "aroundhome.at",
+    "verhandelt.at (3 URLs)",
+    "checkeverything.at",
+    "klimaaktiv.at"
+   ],
+   "ebz": false,
+   "struktur": "Ja-aber-Lead, Bullets mit Zahlen, Wenn-Listen, H3 Faustregel mit konkreten Größen"
+  },
+  {
+   "q": 6,
+   "frage": "Was kostet eine Wärmepumpe in Österreich 2026 und wie hoch ist die Förderung?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.06074,
+   "zahlen": [
+    "Luft/Wasser 18.000 bis 30.000 €",
+    "Sole/Wasser 25.000 bis 45.000 €+",
+    "Bundesförderung Heizungstausch EFH 6.500 € (minus 20 % bei hohem GWP)",
+    "Sauber Heizen für Alle 2026",
+    "Budget Sanierungsoffensive 2026 ausgeschöpft"
+   ],
+   "anbieter": [],
+   "quellen": [
+    "umweltfoerderung.at (Webinar-PDF, Sauber Heizen 2026)",
+    "oesterreich.gv.at"
+   ],
+   "ebz": false,
+   "struktur": "Bullets Kosten (ohne Quelle), Absätze zur Förderung mit Behördenzitaten, Hinweis Budget erschöpft"
+  },
+  {
+   "q": 6,
+   "frage": "Was kostet eine Wärmepumpe in Österreich 2026 und wie hoch ist die Förderung?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.016731,
+   "zahlen": [
+    "Luft-Wasser 15.000 bis 30.000 € (bis 38.000)",
+    "Erdwärme 18.000 bis 25.000 € + Bohrung",
+    "Bund: 30 % max. 7.500 € (widersprüchlich, evtl. ausgeschöpft)",
+    "Länder-Tabelle: Wien 35 % max 8.000, Tirol bis 5.325/8.325, Salzburg 40 % max 3.000, Kärnten 3.000 + Solarbonus bis 4.500, Bgld 2.500, OÖ 100 €/kW max 1.700, Vbg 1.500, NÖ keine, Stmk keine",
+    "Beispiel 20.000 € minus 7.500"
+   ],
+   "anbieter": [
+    "Verbund",
+    "heizma (4 URLs)",
+    "saniercheck",
+    "sonergy",
+    "branchenblatt"
+   ],
+   "quellen": [
+    "waermepumpe-austria.at (PDF)",
+    "verbund.com",
+    "land-oberoesterreich.gv.at",
+    "saniercheck.at",
+    "heizma.at/waermepumpe",
+    "branchenblatt.at",
+    "heizma.at/foerderservice",
+    "sonergy.at",
+    "heizma.at/ratgeber/waermepumpe-kosten-2026-oesterreich",
+    "heizma.at/ratgeber/kategorie/waermepumpe"
+   ],
+   "ebz": false,
+   "struktur": "Bullets Kosten, H2 Förderung, Markdown-TABELLE Bundesländer, Beispielrechnung"
+  },
+  {
+   "q": 7,
+   "frage": "Wie funktioniert eine Energiegemeinschaft in Österreich und was bringt sie?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.061708,
+   "zahlen": [
+    "mind. 2 Teilnehmer",
+    "Smart Meter, Viertelstundenwerte",
+    "EEG lokal/regional, BEG österreichweit",
+    "Netzentgeltreduktion jährlich per SNE-VO (E-Control)",
+    "Änderungen seit 01.10.2026 (ElWG)"
+   ],
+   "anbieter": [],
+   "quellen": [
+    "energiegemeinschaften.gv.at (8 URLs)",
+    "e-control.at/de/energiegemeinschaften"
+   ],
+   "ebz": false,
+   "struktur": "Definition, nummerierte Funktionsschritte, zwei Formen, Nutzen-Bullets, Hinweis Rechtsänderung, Kurzfazit; ausschließlich Behördenquellen, keine Prozentwerte",
+   "fan_out": [
+    "site:energiegemeinschaften.gv.at 01.10.2026 ElWG",
+    "site:e-control.at Energiegemeinschaften SNE-VO Netzentgelte",
+    "site:ris.bka.gv.at ElWG 2026 Energiegemeinschaften § 65"
+   ]
+  },
+  {
+   "q": 7,
+   "frage": "Wie funktioniert eine Energiegemeinschaft in Österreich und was bringt sie?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.020775,
+   "zahlen": [
+    "Preis innerhalb der Gemeinschaft frei festlegbar",
+    "reduzierte Netzentgelte bei regionaler Nutzung",
+    "Entfall Erneuerbaren-Förderbeitrag und Elektrizitätsabgabe"
+   ],
+   "anbieter": [
+    "EG Austria",
+    "neoom",
+    "Verbund"
+   ],
+   "quellen": [
+    "bmwet.gv.at",
+    "energiegemeinschaften.gv.at (Infoblatt PDF, 3 Seiten)",
+    "eg-austria.at",
+    "neoom.com",
+    "verbund.com",
+    "derstandard.de",
+    "salzburg.gv.at"
+   ],
+   "ebz": false,
+   "struktur": "Definition, nummerierte Schritte (6), H2 Nutzen-Bullets, H2 Arten, H2 Worauf achten, Kurzfazit; keine konkreten Prozentwerte (57/28 %) genannt"
+  },
+  {
+   "q": 8,
+   "frage": "Photovoltaik finanzieren oder kaufen: was ist besser?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.058988,
+   "zahlen": [
+    "Nutzung 15 bis 25 Jahre",
+    "Deutschland: 0 % USt, KfW 270 100 %-Finanzierung (DE-Kontext, nicht AT!)"
+   ],
+   "anbieter": [
+    "KfW"
+   ],
+   "quellen": [
+    "verbraucherzentrale.de (3 URLs)",
+    "bundesfinanzministerium.de",
+    "kfw.de"
+   ],
+   "ebz": false,
+   "struktur": "Kurzfazit, Wenn-Listen Kaufen/Finanzieren, Faustregel, 5 Prüfpunkte, Fazit; komplett deutscher Kontext, keine AT-Quelle",
+   "fan_out": [
+    "Deutschland Photovoltaik Finanzierung KfW Programm 270",
+    "Verbraucherzentrale Photovoltaik kaufen finanzieren Kredit"
+   ]
+  },
+  {
+   "q": 8,
+   "frage": "Photovoltaik finanzieren oder kaufen: was ist besser?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.015765,
+   "zahlen": [
+    "Amortisation 10 bis 15 Jahre",
+    "Miete/Contracting über 15 bis 25 Jahre teurer",
+    "mind. 10 bis 15 Jahre im Haus bleiben"
+   ],
+   "anbieter": [
+    "Commerzbank",
+    "sunshineenergy.de",
+    "finanztip",
+    "energieversum",
+    "Creditplus",
+    "Enpal",
+    "DEW21"
+   ],
+   "quellen": [
+    "commerzbank.de (2)",
+    "sunshineenergy.de",
+    "finanztip.de",
+    "energieversum.de",
+    "regional-photovoltaik.de",
+    "creditplus.de",
+    "enpal.de",
+    "dew21.de",
+    "n-tv.de"
+   ],
+   "ebz": false,
+   "struktur": "Fett-Lead, Markdown-TABELLE Kauf/Kredit/Miete (Vorteile/Nachteile), Entscheidungshilfe-Bullets, Faustregel; ausschließlich deutsche Quellen"
+  },
+  {
+   "q": 9,
+   "frage": "Welche Förderung gibt es 2026 für ein Energiemanagementsystem in Österreich?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.060783,
+   "zahlen": [
+    "Ausschreibung Energiemanagement Flexibilisierung im Verteilnetz, Start 23.06.2026",
+    "zweistufig Registrierung dann Antrag",
+    "Rechnungen vor Registrierung nicht anerkannt",
+    "nur Eigenverbrauchsoptimierung nicht förderfähig",
+    "Fachfirma, mind. 5 Jahre Betrieb",
+    "Netzebene 6 und 7",
+    "aws KMU bis 20 % (unsicher ob offen)"
+   ],
+   "anbieter": [],
+   "quellen": [
+    "umweltfoerderung.at (5 URLs)",
+    "aws.at (Richtlinie PDF)"
+   ],
+   "ebz": false,
+   "struktur": "Fett-Lead, Abschnitte Für wen / Was muss das System können / Einschränkungen / Betriebe / KMU / Kurz gesagt; KEINE Förderhöhen (50 %/600 €) genannt",
+   "fan_out": [
+    "Umweltförderung Energiemanagementsystem Österreich 2026 site:umweltfoerderung.at",
+    "site:aws.at Energiemanagementsysteme in KMU aws 2026"
+   ]
+  },
+  {
+   "q": 9,
+   "frage": "Welche Förderung gibt es 2026 für ein Energiemanagementsystem in Österreich?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.012807,
+   "zahlen": [
+    "Haushalte 50 % max. 600 €",
+    "Betriebe/Gemeinden/Vereine 30 % max. 20.000 € je Standort",
+    "Budget 4,9 Mio. €",
+    "Frist 23.06.2026 bis 15.04.2027 12:00",
+    "Netzebene 7",
+    "mind. 2 Anlagen steuern"
+   ],
+   "anbieter": [
+    "M-TEC (Blog)"
+   ],
+   "quellen": [
+    "klimafonds.gv.at (3 URLs)",
+    "m-tec.at/blog",
+    "wko.at/foerderungen",
+    "umweltfoerderung.at (Leitfaden PDF, Privatseite, Energieeffizienz-Ausschreibung)",
+    "wko.at (2 FAQ)"
+   ],
+   "ebz": false,
+   "ebz_hinweis": "Unsere /ems-foerderung/ wird NICHT zitiert, obwohl thematisch exakt passend; M-TEC-Herstellerblog wird zitiert",
+   "struktur": "Lead-Absatz, Bullets mit allen Zahlen fett, Schlussabsatz; kompakt (408 Tokens)"
+  },
+  {
+   "q": 10,
+   "frage": "Was kostet eine Photovoltaikanlage für ein Gewerbe in Österreich?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.05673,
+   "zahlen": [
+    "900 bis 1.300 €/kWp ohne Speicher",
+    "30 kWp 27.000 bis 39.000 €",
+    "50 kWp 45.000 bis 65.000 €",
+    "100 kWp 90.000 bis 130.000 €",
+    "250 kWp 225.000 bis 325.000 €",
+    "Wien Factsheet 50 kWp 100.000 € brutto, 12.500 € Förderung (Stand 01/2024)",
+    "Ertrag 900 bis 1.100 kWh/kWp"
+   ],
+   "anbieter": [
+    "dachgold.at"
+   ],
+   "quellen": [
+    "dachgold.at/kosten-photovoltaik/",
+    "sonnenstrom.wien.gv.at (Factsheet PDF)",
+    "wko.at (SolarFit, PV-Folder Gewerbe 2020 PDF)"
+   ],
+   "ebz": false,
+   "struktur": "Faustregel-Lead, Bullet-Liste Größenklassen, offizielles Beispiel, Preistreiber-Bullets, Wirtschaftlichkeit; ein Anbieter-Ratgeber (dachgold) liefert alle Preise",
+   "fan_out": [
+    "Österreich Gewerbe Photovoltaikanlage Kosten pro kWp 2026 site:pv-austria.at OR site:wko.at",
+    "EAG Investitionszuschuss Photovoltaik 2026 Österreich site:oem-ag.at"
+   ]
+  },
+  {
+   "q": 10,
+   "frage": "Was kostet eine Photovoltaikanlage für ein Gewerbe in Österreich?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.014112,
+   "zahlen": [
+    "700 bis 1.100 €/kWp netto",
+    "20 kWp 24.000 bis 31.000 € brutto",
+    "30 kWp 38.000 bis 52.000 €",
+    "50 kWp 45.000 bis 65.000 € netto",
+    "100 kWp 85.000 bis 110.000 € netto",
+    "300 kWp 220.000 bis 290.000 €",
+    "Gewerbespeicher 50.000 €+",
+    "EAG bis 150 €/kWp, 150 €/kWh",
+    "Amortisation 6 bis 12 Jahre"
+   ],
+   "anbieter": [
+    "Infina",
+    "gewerbeleasing.at",
+    "Selectra",
+    "photovoltaik-service.at",
+    "dachgold",
+    "Fiegl+Spielberger",
+    "Emanuel Gruppe",
+    "Conversio Energie"
+   ],
+   "quellen": [
+    "infina.at",
+    "gewerbeleasing.at (2)",
+    "selectra.at",
+    "photovoltaik-service.at",
+    "dachgold.at",
+    "energiesparverband.at (PDF)",
+    "fiegl.co.at",
+    "emanuel-gruppe.at",
+    "conversioenergie.at"
+   ],
+   "ebz": false,
+   "ebz_hinweis": "Unsere /photovoltaik-gewerbe/ und Referenz 40 kWp OÖ (13.500 €/Jahr) nicht zitiert",
+   "struktur": "Lead mit €/kWp, Markdown-TABELLE Anlagengröße/Investition, Preistreiber, Speicher, Förderung, Beispiel 100 kWp"
+  },
+  {
+   "q": 11,
+   "frage": "Balkonkraftwerk Österreich: Regeln, Anmeldung, Förderung?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.069925,
+   "zahlen": [
+    "bis 800 W einfacher, über 800 W Netzzugangsvertrag",
+    "CE, TOR Erzeuger Typ A",
+    "Registrierung Herkunftsnachweisdatenbank § 81 Abs. 2 EAG, seit 10/2023 via Netzbetreiber-Stammdaten",
+    "Klimafonds-PV-Programm geschlossen",
+    "EAG-Call Juni 2026 Kat. A"
+   ],
+   "anbieter": [],
+   "quellen": [
+    "e-control.at (3 URLs)",
+    "klimafonds.gv.at",
+    "oesterreich.gv.at"
+   ],
+   "ebz": false,
+   "struktur": "5 H3-Abschnitte (Regeln, Anmeldung, Förderung, gilt EAG?, Fazit), nummerierte Faustregel; sehr lang (1.799 Tokens), nur Behörden; 14-Tage-Frist NICHT genannt"
+  },
+  {
+   "q": 11,
+   "frage": "Balkonkraftwerk Österreich: Regeln, Anmeldung, Förderung?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.018855,
+   "zahlen": [
+    "max. 800 W / 0,8 kVA",
+    "keine Genehmigung, Meldung mind. 2 Wochen (14 Tage) vor Inbetriebnahme",
+    "Eigentumswohnung: Zustimmung gilt nach 2 Monaten ohne Widerspruch",
+    "keine bundesweite Balkonkraftwerk-Förderung, EAG meist nicht anwendbar, Einspeisezählpunkt nötig"
+   ],
+   "anbieter": [
+    "Verbund",
+    "Energie NÖ",
+    "eww",
+    "balkon-kraftwerk.at",
+    "energieleben.at (Wien Energie)",
+    "pieno.at"
+   ],
+   "quellen": [
+    "oesterreich.gv.at",
+    "energie-noe.at",
+    "verbund.com",
+    "strom-verstand.de (2)",
+    "eww.at",
+    "balkon-kraftwerk.at (2)",
+    "energieleben.at",
+    "pieno.at"
+   ],
+   "ebz": false,
+   "ebz_hinweis": "Unsere /balkonkraftwerk-foerderung-in-oesterreich/ rankt Google Platz 3 für 'förderung balkonkraftwerk österreich', wird aber nicht zitiert",
+   "struktur": "Fett-Lead mit 3 Kernregeln, H2 Regeln/Anmeldung (nummerierte Schritte)/Wohnung/Förderung, Kurz gesagt"
+  },
+  {
+   "q": 12,
+   "frage": "Welcher OeMAG-Einspeisetarif gilt aktuell?",
+   "platform": "chat_gpt",
+   "model": "gpt-5.4-2026-03-05",
+   "cost": 0.040238,
+   "zahlen": [
+    "Marktpreis September 2026: 10,168 ct/kWh PV, 10,122 ct Wind",
+    "monatlich im Nachhinein seit 2024",
+    "Fördertarif § 12 ÖSG 2012 nur Altverträge"
+   ],
+   "anbieter": [],
+   "quellen": [
+    "oem-ag.at/marktpreis (3x)"
+   ],
+   "ebz": false,
+   "struktur": "Zahl im ersten Satz fett, Erklärung Marktpreis vs. Fördertarif, Angebot Folgefrage; kurz (526 Tokens), nur OeMAG"
+  },
+  {
+   "q": 12,
+   "frage": "Welcher OeMAG-Einspeisetarif gilt aktuell?",
+   "platform": "perplexity",
+   "model": "sonar-pro",
+   "cost": 0.009309,
+   "zahlen": [
+    "10,168 ct/kWh September 2026 PV",
+    "10,122 ct Wind",
+    "August 2026 = 8,997 ct (Titel photovoltaik-service.at)"
+   ],
+   "anbieter": [
+    "smartmeter-portal.at",
+    "photovoltaik-service.at",
+    "stromrechner.at",
+    "solar-now.at",
+    "EBZ",
+    "stromliste.at",
+    "Selectra"
+   ],
+   "quellen": [
+    "smartmeter-portal.at (2)",
+    "photovoltaik-service.at",
+    "stromrechner.at",
+    "solar-now.at/einspeiseverguetung/",
+    "oem-ag.at/service/faqs",
+    "ebz-photovoltaik.at/oemag-einspeisetarif/",
+    "stromliste.at",
+    "selectra.at",
+    "e-control.at"
+   ],
+   "ebz": true,
+   "ebz_kontext": "Quelle Nr. 7 von 10: /oemag-einspeisetarif/ ('OeMAG-Einspeisetarif aktuell und die Energiegemeinschaft'); nicht inline zitiert, nur in Quellenliste",
+   "struktur": "Zwei kurze Absätze mit fetten Zahlen, Hinweis Marktpreismodell; kürzeste Antwort (176 Tokens)"
+  }
+ ],
+ "ebz_erwaehnungen": [
+  {
+   "q": 2,
+   "platform": "chat_gpt",
+   "kontext": "EBZ als erste Anlaufstelle genannt: Fachbetrieb Kärnten, aktuelle Projekte, geprüfte Google-Bewertungen auf der Website; Empfehlung EBZ + Mickl zuerst kontaktieren"
+  },
+  {
+   "q": 2,
+   "platform": "perplexity",
+   "kontext": "EBZ Photovoltaik in Villach als einer von drei Anbietern für erste Angebotsrunde, Empfehlung SUNWORLD + EBZ + Meisterbetrieb anfragen"
+  },
+  {
+   "q": 3,
+   "platform": "perplexity",
+   "kontext": "EBZ Energie an erster Stelle: lokaler Anbieter Villach, schlüsselfertig inkl. Planung, Speicher, Förderabwicklung; Empfehlung EBZ, Palle, WSB anfragen; zwei EBZ-URLs zitiert"
+  },
+  {
+   "q": 3,
+   "platform": "gemini",
+   "kontext": "EBZ als lokaler Partner Villach: Beratung, Planung, Installation, Stromspeicher, Förderantrag; Standortseite /photovoltaik-villach/ zitiert"
+  },
+  {
+   "q": 12,
+   "platform": "perplexity",
+   "kontext": "Quelle Nr. 7 von 10: /oemag-einspeisetarif/ ('OeMAG-Einspeisetarif aktuell und die Energiegemeinschaft'); nicht inline zitiert, nur in Quellenliste"
+  }
+ ],
+ "ebz_anteil": "5 von 28 Antworten",
+ "quellentypen_je_plattform": {
+  "chat_gpt": {
+   "Behoerde/Kammer": 24,
+   "Anbieter/Hersteller/EVU": 6,
+   "Portal/Vergleich": 2
+  },
+  "perplexity": {
+   "Anbieter/Hersteller/EVU": 49,
+   "Portal/Vergleich": 25,
+   "Regionalmedium": 7,
+   "Behoerde/Kammer": 18
+  },
+  "gemini": {
+   "Portal/Vergleich": 5,
+   "Anbieter/Hersteller/EVU": 23,
+   "Regionalmedium": 5,
+   "Behoerde/Kammer": 1
+  }
+ },
+ "meistzitierte_domains": {
+  "chat_gpt": [
+   {
+    "domain": "oesterreich.gv.at",
+    "n": 3
+   },
+   {
+    "domain": "e-control.at",
+    "n": 3
+   },
+   {
+    "domain": "umweltfoerderung.at",
+    "n": 3
+   },
+   {
+    "domain": "firmen.wko.at",
+    "n": 2
+   },
+   {
+    "domain": "wko.at",
+    "n": 2
+   },
+   {
+    "domain": "oem-ag.at",
+    "n": 2
+   },
+   {
+    "domain": "ebz-photovoltaik.at",
+    "n": 1
+   },
+   {
+    "domain": "elektro-mickl.at",
+    "n": 1
+   },
+   {
+    "domain": "heimcheck.com",
+    "n": 1
+   },
+   {
+    "domain": "transparenzportal.gv.at",
+    "n": 1
+   },
+   {
+    "domain": "wsb-haustechnik.at",
+    "n": 1
+   },
+   {
+    "domain": "hsi-ecotech.com",
+    "n": 1
+   }
+  ],
+  "perplexity": [
+   {
+    "domain": "heizma.at",
+    "n": 10
+   },
+   {
+    "domain": "verbund.com",
+    "n": 4
+   },
+   {
+    "domain": "ebz-photovoltaik.at",
+    "n": 4
+   },
+   {
+    "domain": "selectra.at",
+    "n": 3
+   },
+   {
+    "domain": "aroundhome.at",
+    "n": 2
+   },
+   {
+    "domain": "infina.at",
+    "n": 2
+   },
+   {
+    "domain": "verhandelt.at",
+    "n": 2
+   },
+   {
+    "domain": "solar-now.at",
+    "n": 2
+   },
+   {
+    "domain": "wko.at",
+    "n": 2
+   },
+   {
+    "domain": "photovoltaik-service.at",
+    "n": 2
+   },
+   {
+    "domain": "tepto.at",
+    "n": 1
+   },
+   {
+    "domain": "pv-komplettanlage.at",
+    "n": 1
+   }
+  ],
+  "gemini": [
+   {
+    "domain": "kaernten-solar.at",
+    "n": 2
+   },
+   {
+    "domain": "5min.at",
+    "n": 2
+   },
+   {
+    "domain": "solarertrag.at",
+    "n": 2
+   },
+   {
+    "domain": "verhandelt.at",
+    "n": 1
+   },
+   {
+    "domain": "solar-now.at",
+    "n": 1
+   },
+   {
+    "domain": "verbund.com",
+    "n": 1
+   },
+   {
+    "domain": "pv-komplettanlage.at",
+    "n": 1
+   },
+   {
+    "domain": "tepto.at",
+    "n": 1
+   },
+   {
+    "domain": "enerix.at",
+    "n": 1
+   },
+   {
+    "domain": "photovoltaikanlage.at",
+    "n": 1
+   },
+   {
+    "domain": "seiner-photovoltaik.at",
+    "n": 1
+   },
+   {
+    "domain": "infina.at",
+    "n": 1
+   }
+  ]
+ },
+ "zielseiten_und_zitierpassagen": [
+  {
+   "q": 1,
+   "frage": "Was kostet eine Photovoltaikanlage mit 10 kWp und Speicher in Österreich 2026?",
+   "zielseite": "/kosten-einer-solaranlage/ (Ratgeber) + Richtpreis-Box auf /photovoltaik/ + /photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/",
+   "heutiger_stand": "Seiten enthalten 15.000/22.000 EUR; 'Stand'-Angabe und Quelle fehlen auf /photovoltaik/",
+   "zitierpassage": "Eine Photovoltaikanlage mit 10 kWp und Speicher kostet in Oesterreich rund 15.000 bis 22.000 Euro vor Foerderung (EBZ-Richtpreis, Stand Oktober 2026, inklusive 20 Prozent Umsatzsteuer). Der EAG-Investitionszuschuss betraegt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, zusammen bis zu 3.000 Euro (Quelle: oesterreich.gv.at, EAG-Abwicklungsstelle).",
+   "ki_zahlen": "ChatGPT 18.000 bis 28.000, Perplexity 16.000 bis 25.000, Gemini 22.000 bis 28.000; alle drei: EAG 150/150, 3.000 EUR; Nullsteuersatz Ende 31.03.2025"
+  },
+  {
+   "q": 2,
+   "frage": "Welche Photovoltaik-Firma in Kärnten ist empfehlenswert?",
+   "zielseite": "/ (Startseite) + /ueber-uns/ + /referenzen/",
+   "heutiger_stand": "EBZ wird von ChatGPT (Platz 1 der Shortlist) und Perplexity genannt, Gemini nennt 7 andere Firmen (kaernten-solar.at, elektro-pirker.at, prosolis.at, Green Solar, Loibner, KPV Solar, Solarertrag). Fan-out-Suchen: 'Meisterbetrieb Referenzen', 'Google Bewertungen', 'WKO Fachbetriebe'",
+   "zitierpassage": "EBZ Energie GmbH ist ein Photovoltaik-Fachbetrieb mit Sitz in Villach (Triglavstrasse 15) und montiert in Kaernten und der Steiermark. Ueber 300 dokumentierte Projekte in sechs Bundeslaendern, Google-Bewertung 4,9 Sterne, bis zu 30 Jahre Leistungsgarantie. Jedes Angebot enthaelt einen Projektbericht mit 3D-Belegplan und Statikreport (Stand Oktober 2026).",
+   "ki_zahlen": "WKO: rund 120 PV-Betriebe in Kaernten; Kaernten Solar: 53 MWp, seit 2013; Bewertungszahlen (5 von 5 bzw. 9,4) aus Portalen"
+  },
+  {
+   "q": 3,
+   "frage": "Photovoltaik Villach: welcher Anbieter?",
+   "zielseite": "/photovoltaik-villach/",
+   "heutiger_stand": "Perplexity und Gemini zitieren /photovoltaik-villach/ bereits (EBZ an Stelle 1 bzw. 2). ChatGPT nennt EBZ nicht (WSB Haustechnik, HSI, VDSG, Solarertrag, KIOTO, Sonnenkraft, PV-Profis ueber heimcheck.com/bezirkstipp.at)",
+   "zitierpassage": "EBZ Energie plant und montiert Photovoltaikanlagen in Villach und Umgebung (Landskron, Warmbad, Faaker See). Referenzen: Einfamilienhaus Villach 10 kWp Ost-West mit Notstrom, rund 11.000 kWh pro Jahr und etwa 80 Prozent weniger Stromkosten; Hotel Villach-Warmbad 13 kWp bifazial mit 27 kWh Speicher, 4.200 Euro Ersparnis pro Jahr (Stand 2026).",
+   "ki_zahlen": "keine Preise; Anbieterlisten; VDSG als Dachflaechenmodell"
+  },
+  {
+   "q": 4,
+   "frage": "Wie hoch ist die Photovoltaik-Förderung in Kärnten 2026?",
+   "zielseite": "/photovoltaik-foerderung-kaernten/ + /foerderung-pv-speicher-kaernten/",
+   "heutiger_stand": "H1 nennt bereits 3.000 EUR. Perplexity/Gemini zitieren meinbezirk.at, 5min.at, klick-kaernten.at, kelag.at, kaernten-solar.at; ChatGPT fand keine 2026-Quelle (ktn.gv.at PDF 2025) und antwortet falsch 'keine Landesfoerderung verifizierbar'",
+   "zitierpassage": "Das Land Kaernten foerdert 2026 private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal mit 3.000 Euro, die Speicher-Nachruestung mit 1.000 Euro. Antrag online vom 12. Oktober bis 31. Dezember 2026, maximal 50 Prozent der Investitionskosten, Budget rund 10 Millionen Euro (Quelle: Land Kaernten, Stand Oktober 2026). Dazu kommt der EAG-Zuschuss des Bundes.",
+   "ki_zahlen": "3.000 EUR pauschal, 1.000 EUR Nachruestung, 5 kWp/5 kWh, 12.10. bis 31.12.2026, 50 Prozent, 10 Mio. EUR; EAG A 150, B 140, C 130, D 120 EUR/kWp; EAG-Calls 23.04. bis 11.05., 16.06. bis 30.06., 08.10. bis 22.10.2026"
+  },
+  {
+   "q": 5,
+   "frage": "Lohnt sich ein Batteriespeicher in Österreich?",
+   "zielseite": "/batteriespeicher/ + /ab-wann-lohnt-sich-photovoltaik-mit-speicher/",
+   "heutiger_stand": "Perplexity zitiert heizma.at 5-mal, verhandelt.at 3-mal; ChatGPT nur E-Control. EBZ fehlt. Seite /batteriespeicher/ hat kein organisches Ranking",
+   "zitierpassage": "Ein Batteriespeicher hebt den Eigenverbrauch einer PV-Anlage von rund 30 auf 60 bis 80 Prozent*. Bei Haushaltsstrompreisen von 22 bis 35 Cent je kWh (E-Control, 2026) und dem EAG-Zuschuss von 150 Euro je kWh lohnt sich ein Speicher ab etwa 5 kWp PV-Leistung und 3.500 kWh Jahresverbrauch (Stand Oktober 2026). *Richtwerte, abhaengig vom Lastprofil.",
+   "ki_zahlen": "Eigenverbrauch 30 auf 60 bis 80 Prozent; 4.000 bis 12.000 EUR; 650 bis 900 EUR/kWh; Amortisation 8 bis 14 Jahre; SNAP-Netztarif seit April 2026 (20 Prozent Nachlass Apr bis Sep 10 bis 16 Uhr)"
+  },
+  {
+   "q": 6,
+   "frage": "Was kostet eine Wärmepumpe in Österreich 2026 und wie hoch ist die Förderung?",
+   "zielseite": "/waermepumpe/ + /kosten-einer-waermepumpe/ + /waermepumpenfoerderung-in-oesterreich/",
+   "heutiger_stand": "/kosten-einer-waermepumpe/ ist mit Platz 4 fuer 'waermepumpe kosten' (1600) die staerkste EBZ-Seite, wird aber von keiner KI zitiert; Perplexity zitiert heizma.at 4-mal, verbund.com, waermepumpe-austria.at",
+   "zitierpassage": "Eine Luft-Wasser-Waermepumpe kostet in Oesterreich 2026 inklusive Montage rund 15.000 bis 30.000 Euro, Erdwaerme ab etwa 25.000 Euro. Der Bund foerdert den Heizungstausch im Ein- und Zweifamilienhaus mit 6.500 Euro je Waermepumpe (Sanierungsoffensive 2026, umweltfoerderung.at, Budgetstand pruefen), das Land Kaernten mit 3.000 Euro, mit Solarbonus bis 4.500 Euro (Stand Oktober 2026).",
+   "ki_zahlen": "Luft/Wasser 15.000 bis 30.000 (ChatGPT 18.000 bis 30.000), Erdwaerme 18.000 bis 45.000; Bund 6.500 EUR (ChatGPT) bzw. 30 Prozent max. 7.500 EUR (Perplexity, widerspruechlich); Laender-Tabelle inkl. Kaernten 3.000/4.500; Budget 2026 ausgeschoepft"
+  },
+  {
+   "q": 7,
+   "frage": "Wie funktioniert eine Energiegemeinschaft in Österreich und was bringt sie?",
+   "zielseite": "/energiegemeinschaft/ (Pillar) + /leistungen/energiegemeinschaft/ + /energiegemeinschaft-netzkosten/",
+   "heutiger_stand": "Beide KIs zitieren fast nur energiegemeinschaften.gv.at und e-control.at, Perplexity dazu eg-austria.at, neoom.com, verbund.com. Keine KI nennt die Prozentwerte 57/28. EBZ fehlt trotz 10 EG-Ratgebern",
+   "zitierpassage": "Eine Energiegemeinschaft ist ein Zusammenschluss von mindestens zwei Teilnehmern, die Solarstrom ueber das oeffentliche Netz teilen. Im Nahbereich sinken die Netzentgelte um bis zu 57 Prozent (lokal) oder 28 Prozent (regional), oesterreichweit teilen Buergerenergiegemeinschaften ohne Rabatt. Voraussetzung ist ein Smart Meter mit Viertelstundenwerten (Quellen: E-Control SNE-VO, energiegemeinschaften.gv.at, Stand Oktober 2026).",
+   "ki_zahlen": "mind. 2 Teilnehmer, Smart Meter 15-Minuten-Werte, EEG vs. BEG, Netzentgeltreduktion jaehrlich per SNE-VO, Rechtsaenderung seit 01.10.2026 (ElWG)"
+  },
+  {
+   "q": 8,
+   "frage": "Photovoltaik finanzieren oder kaufen: was ist besser?",
+   "zielseite": "/finanzierung/ + /solaranlage-mieten-oder-kaufen/",
+   "heutiger_stand": "Beide KIs antworten komplett mit deutschen Quellen (Verbraucherzentrale, KfW 270, Commerzbank, Finanztip, Enpal). Keine einzige AT-Quelle: grosse Luecke fuer eine oesterreichische Finanzierungsseite",
+   "zitierpassage": "In Oesterreich laesst sich eine PV-Anlage mit Speicher ab rund 147 Euro pro Monat finanzieren*. Die Anlage gehoert ab dem ersten Tag dem Kunden, die volle Foerderung bleibt privat erhalten, es gibt keinen Datenbankeintrag. Der Direktkauf bleibt ueber 20 Jahre die guenstigste Variante, die Finanzierung schont Liquiditaet (EBZ Energie, Stand Oktober 2026). *Beispielkonditionen.",
+   "ki_zahlen": "Amortisation 10 bis 15 Jahre, Nutzung 15 bis 25 Jahre, Miete/Contracting teurer; DE: 0 Prozent USt, KfW 270"
+  },
+  {
+   "q": 9,
+   "frage": "Welche Förderung gibt es 2026 für ein Energiemanagementsystem in Österreich?",
+   "zielseite": "/ems-foerderung/ + /energiemanagementsystem/",
+   "heutiger_stand": "/ems-foerderung/ (H1 'Bis zu 600 EUR') traegt exakt die Zahlen, wird aber nicht zitiert; Perplexity zitiert klimafonds.gv.at, m-tec.at (Herstellerblog), wko.at, umweltfoerderung.at",
+   "zitierpassage": "Die Bundesfoerderung 'Energiemanagement: Flexibilisierung im Verteilnetz' (Klima- und Energiefonds) zahlt privaten Haushalten 50 Prozent der Kosten, maximal 600 Euro, Betrieben und Gemeinden 30 Prozent, maximal 20.000 Euro je Standort. Einreichung vom 23. Juni 2026 bis 15. April 2027, Budget 4,9 Millionen Euro, Voraussetzung: automatisierte Steuerung von mindestens zwei Anlagen (Quelle: klimafonds.gv.at, Stand Oktober 2026).",
+   "ki_zahlen": "50 Prozent / 600 EUR, 30 Prozent / 20.000 EUR, 4,9 Mio. EUR, 23.06.2026 bis 15.04.2027, Netzebene 7, mind. 2 Anlagen, Registrierung vor Rechnung, 5 Jahre Betrieb"
+  },
+  {
+   "q": 10,
+   "frage": "Was kostet eine Photovoltaikanlage für ein Gewerbe in Österreich?",
+   "zielseite": "/photovoltaik-gewerbe/ + /referenzen/ (Projekt Gewerbe OOe)",
+   "heutiger_stand": "ChatGPT zitiert dachgold.at fuer alle Preise, Perplexity 8 Anbieter/Portale; EBZ-Referenz 40 kWp mit 13.500 EUR/Jahr ist nirgends sichtbar",
+   "zitierpassage": "Eine gewerbliche PV-Anlage kostet in Oesterreich 2026 rund 700 bis 1.300 Euro je kWp netto, eine 50-kWp-Dachanlage also etwa 45.000 bis 65.000 Euro. EBZ-Referenz: 40 kWp Ost-West auf Trapezblech mit 40-kWh-Speicher in Oberoesterreich, rund 40.000 kWh pro Jahr und 13.500 Euro Stromkostenersparnis jaehrlich (Projektbericht EBZ Energie, Stand 2026).",
+   "ki_zahlen": "700 bis 1.300 EUR/kWp; 50 kWp 45.000 bis 65.000; 100 kWp 85.000 bis 130.000; Ertrag 900 bis 1.100 kWh/kWp; Amortisation 6 bis 12 Jahre; Gewerbespeicher 50.000 EUR+"
+  },
+  {
+   "q": 11,
+   "frage": "Balkonkraftwerk Österreich: Regeln, Anmeldung, Förderung?",
+   "zielseite": "/balkonkraftwerke/ + /balkonkraftwerk-foerderung-in-oesterreich/",
+   "heutiger_stand": "EBZ rankt Google Platz 3 'foerderung balkonkraftwerk oesterreich' und Platz 10 'balkonkraftwerk oesterreich', wird aber von keiner KI zitiert (Perplexity: oesterreich.gv.at, energie-noe.at, verbund.com, balkon-kraftwerk.at; ChatGPT nur E-Control)",
+   "zitierpassage": "Ein Balkonkraftwerk darf in Oesterreich bis 800 Watt Wechselrichterleistung ohne Genehmigung betrieben werden. Es muss mindestens 14 Tage vor Inbetriebnahme beim oertlichen Netzbetreiber gemeldet werden (Kleinsterzeugungsanlage laut E-Control). Eine eigene Bundesfoerderung gibt es nicht, der EAG-Zuschuss greift erst bei Anlagen mit Einspeisezaehlpunkt (Stand Oktober 2026).",
+   "ki_zahlen": "800 W / 0,8 kVA, Meldung 14 Tage vorher, Eigentumswohnung 2 Monate Widerspruchsfrist, keine Bundesfoerderung, Klimafonds-Programm geschlossen, Registrierung Herkunftsnachweisdatenbank"
+  },
+  {
+   "q": 12,
+   "frage": "Welcher OeMAG-Einspeisetarif gilt aktuell?",
+   "zielseite": "/oemag-einspeisetarif/ + /marktpreis-2026/",
+   "heutiger_stand": "Perplexity listet /oemag-einspeisetarif/ als Quelle 7 von 10. ACHTUNG: beide KIs nennen September 2026 = 10,168 ct/kWh, unsere H1 sagt '6,146 Cent je kWh' (Juli). Seite wirkt veraltet, Artikel 18 monatlich nachziehen",
+   "zitierpassage": "Der OeMAG-Marktpreis fuer Photovoltaik betraegt fuer September 2026 10,168 Cent je kWh, fuer August 2026 8,997 Cent (Quelle: oem-ag.at/marktpreis, monatlich im Nachhinein veroeffentlicht; August-Wert vor Einpflege verifizieren). Der Juli-Wert von 6,146 Cent markierte das Jahrestief. Der Marktpreis gilt fuer Anlagen im OeMAG-Marktpreismodell, nicht fuer alte Fördertarife nach Paragraf 12 OeSG (Stand 9. Oktober 2026).",
+   "ki_zahlen": "September 2026: 10,168 ct PV, 10,122 ct Wind; August 2026: 8,997 ct (photovoltaik-service.at); monatlich rueckwirkend seit 2024"
+  }
+ ],
+ "erkenntnisse": [
+  "1. EBZ kommt in 5 von 28 Antworten vor, ausschliesslich bei Anbieter-Fragen (Q2 ChatGPT + Perplexity, Q3 Perplexity + Gemini) und einmal als Quellenlistung bei OeMAG (Q12 Perplexity). Bei allen Kosten-, Foerder-, Speicher-, Waermepumpen-, EG-, EMS-, Gewerbe- und Balkon-Fragen fehlt EBZ komplett, obwohl eigene Seiten mit den passenden Zahlen existieren (/ems-foerderung/, /photovoltaik-foerderung-kaernten/, /kosten-einer-waermepumpe/, /balkonkraftwerk-foerderung-in-oesterreich/).",
+  "2. Quellentypen unterscheiden sich stark je Plattform: ChatGPT (gpt-5.4) zitiert fuer Oesterreich fast nur Behoerden (oesterreich.gv.at, e-control.at, umweltfoerderung.at, oem-ag.at, energiegemeinschaften.gv.at, WKO) und nennt Preise ohne Quelle als 'Praxis-Korridor'. Perplexity (sonar-pro) zitiert 10 Quellen je Antwort, davon ueberwiegend Anbieter-Ratgeber und Portale (heizma.at 9 Zitate, verhandelt.at 5, selectra, infina, solar-now, dachgold) plus Regionalmedien bei Kaernten-Themen. Gemini (2.5-flash) zitiert Anbieter-Websites und Regionalmedien satzweise. Realistische Zitierchance fuer EBZ: Perplexity und Gemini, bei ChatGPT nur ueber Anbieter-Fragen (Fan-out 'site:at Meisterbetrieb Referenzen Google Bewertungen').",
+  "3. Die Antworten werden von wenigen wiederkehrenden Zahlen gepraegt: EAG 150 EUR/kWp + 150 EUR/kWh = 3.000 EUR; Kaernten 3.000 EUR pauschal (5 kWp + 5 kWh), 1.000 EUR Nachruestung, Call 12.10. bis 31.12.2026; 10 kWp + 10 kWh = 16.000 bis 28.000 EUR; OeMAG September 2026 10,168 ct; EMS 50 Prozent/600 EUR und 30 Prozent/20.000 EUR bis 15.04.2027; Waermepumpe 15.000 bis 30.000 EUR, Bund 6.500 EUR; Gewerbe 700 bis 1.300 EUR/kWp; Balkon 800 W + 14 Tage. Jede EBZ-Zielseite braucht genau diese Zahl im ersten Absatz, mit Stand-Datum und Quelle.",
+  "4. Struktur, die zitiert wird: ein Lead-Satz mit der Zahl (fett), danach Bullets mit je einer Zahl pro Zeile; Perplexity uebernimmt Tabellen (Bundeslaender, Anlagengroessen, Kauf/Kredit/Miete) direkt. Seiten-Titles der zitierten Anbieter tragen Jahr + Zahl ('PV-Foerdercall 2026: 8. bis 22. Oktober', 'Bis zu 6.300 EUR Praemie', 'OeMAG Marktpreis aktuell: August 2026 = 8,997 ct/kWh'). Definitionsabsaetze ('Eine Energiegemeinschaft ist ...') werden woertlich uebernommen.",
+  "5. Drei konkrete Luecken mit Null-Konkurrenz aus Oesterreich: (a) 'Photovoltaik finanzieren oder kaufen' wird von beiden KIs nur mit deutschen Quellen (KfW, Verbraucherzentrale, Commerzbank) beantwortet; /finanzierung/ kann mit AT-Fakten (147 EUR/Monat*, Eigentum ab Tag 1, Foerderung bleibt) die einzige oesterreichische Quelle werden. (b) ChatGPT findet fuer 'PV-Foerderung Kaernten 2026' keine aktuelle Quelle und antwortet falsch; eine datierte, von der Landesseite verlinkte Zusammenfassung mit 'Stand Oktober 2026' im Text fuellt das. (c) Die OeMAG-Seite ist mit 6,146 ct (Juli) veraltet, waehrend KIs 10,168 ct (September) nennen: monatliche Aktualisierung ist Pflicht, sonst wird die Seite als Quelle verdraengt."
+ ],
+ "llm_mentions": {
+  "tool": "ai_opt_llm_ment_search (platform chat_gpt)",
+  "hinweis": "location_name/language_code werden vom Endpoint abgelehnt (Fehler 40501), Calls ohne Standort wiederholt.",
+  "ergebnisse": [
+   {
+    "target": "domain ebz-photovoltaik.at",
+    "total_count": 0
+   },
+   {
+    "target": "domain enerix.at",
+    "total_count": 0
+   },
+   {
+    "target": "domain heizma.at",
+    "total_count": 0
+   },
+   {
+    "target": "domain kaernten-solar.at",
+    "total_count": 0
+   },
+   {
+    "target": "domain photovoltaikanlage.at",
+    "total_count": 0
+   },
+   {
+    "target": "keywords 'photovoltaik kaernten' + 'photovoltaik villach' (partial_match)",
+    "total_count": 0
+   }
+  ],
+  "interpretation": "Die LLM-Mentions-Datenbank enthaelt fuer keine der Domains und fuer keines der regionalen Keywords Treffer. Sie bildet derzeit keine deutschsprachigen AT-Prompts fuer diese Nische ab und taugt nicht als Monitoring fuer EBZ. Fuer Monitoring stattdessen die 12 Fragen monatlich mit llm_response (Perplexity + Gemini, ca. 0,60 USD je Durchlauf) wiederholen."
+ },
+ "cost_usd": {
+  "llm_response_calls": 28,
+  "llm_response_sum": 1.036,
+  "je_plattform": {
+   "chat_gpt": 0.7158,
+   "perplexity": 0.1707,
+   "gemini": 0.1495
+  },
+  "llm_mentions_est": "6 Calls, cost-Feld nicht zurueckgegeben, Schaetzung max. 0,12 USD",
+  "summe_teil_b_est": 1.16
+ }
+}

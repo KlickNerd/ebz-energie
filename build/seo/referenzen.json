@@ -1,0 +1,381 @@
+{
+  "slug": "referenzen",
+  "path": "/referenzen/",
+  "seitentyp": "unternehmen",
+  "stand": "2026-10-09",
+  "primary": {
+    "keyword": "photovoltaik erfahrungen",
+    "volume_at": 10,
+    "kd": 42,
+    "cpc": null,
+    "intent": "informational 0.66 / commercial 0.34"
+  },
+  "secondary": [
+    {
+      "keyword": "photovoltaik referenzen",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial 0.57 (nicht in DB)"
+    },
+    {
+      "keyword": "pv anlage erfahrungen",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "informational"
+    },
+    {
+      "keyword": "photovoltaik erfahrungsberichte",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "informational 0.63 / commercial 0.37"
+    },
+    {
+      "keyword": "photovoltaik projekte",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "informational 0.51 / commercial 0.49"
+    },
+    {
+      "keyword": "photovoltaik negative erfahrungen",
+      "volume_at": 40,
+      "kd": null,
+      "intent": "informational (nur als FAQ/Vertrauensabschnitt, nicht als Zielkeyword)"
+    },
+    {
+      "keyword": "photovoltaik anbieter vergleich",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "commercial, CPC 11,56"
+    }
+  ],
+  "semantic": [
+    "Referenzanlage",
+    "Erfahrungsbericht",
+    "Projektbericht",
+    "kWp",
+    "kWh Speicher",
+    "Jahresertrag kWh",
+    "Ersparnis € pro Jahr",
+    "Amortisation Jahre",
+    "Eigenverbrauch",
+    "Ost-West-Ausrichtung",
+    "Südausrichtung",
+    "bifaziale Glas-Glas-Module",
+    "Flachdach ballastiert",
+    "Trapezblech",
+    "Bitumendach",
+    "Ziegeldach",
+    "Notstrom (Gatewaybox)",
+    "Wallbox 11 kW",
+    "Warmwasser aus PV-Überschuss (my-PV)",
+    "Sigenergy",
+    "K2 Unterkonstruktion",
+    "Marzari Ersatzziegel",
+    "Einfamilienhaus",
+    "Mehrparteienhaus",
+    "Gewerbe",
+    "Landwirtschaft",
+    "Hotel",
+    "Villach",
+    "Krumpendorf",
+    "Graz",
+    "Oberösterreich",
+    "Burgenland",
+    "Wien",
+    "Niederösterreich",
+    "Bauzeit Tage",
+    "Inbetriebnahme",
+    "Google-Bewertung 4,9",
+    "seriöser Anbieter"
+  ],
+  "long_tail": [
+    {
+      "keyword": "photovoltaik negative erfahrungen",
+      "volume_at": 40
+    },
+    {
+      "keyword": "photovoltaik erfahrungen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv anlage erfahrungen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik erfahrungsberichte",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik projekte",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv anlage erfahrungen forum",
+      "volume_at": 10
+    },
+    {
+      "keyword": "solaranlage erfahrungen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "lohnt sich photovoltaik erfahrungen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik mit speicher erfahrungen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik anbieter vergleich",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik anbieter test",
+      "volume_at": 10
+    },
+    {
+      "keyword": "wärmepumpe mit photovoltaik erfahrungen",
+      "volume_at": 20
+    },
+    {
+      "keyword": "warmwasser mit photovoltaik heizstab erfahrungen",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik referenzen",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik erfahrungen kärnten",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage erfahrungen österreich",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik referenzen österreich",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik 12 kwp",
+      "volume_at": null,
+      "quelle": "GSC 19 Impr."
+    },
+    {
+      "keyword": "photovoltaikanlage kaufen kärnten",
+      "volume_at": null,
+      "quelle": "GSC 16 Impr."
+    },
+    {
+      "keyword": "blechdach kärnten",
+      "volume_at": null,
+      "quelle": "GSC 15 Impr."
+    },
+    {
+      "keyword": "energiespeicher nachrüsten klagenfurt",
+      "volume_at": null,
+      "quelle": "GSC 35 Impr."
+    }
+  ],
+  "questions": [
+    "Welche Solarfirmen sind seriös? (PAA)",
+    "Ist eine Photovoltaikanlage wirklich sinnvoll? (PAA)",
+    "Was ist aktuell die beste PV-Anlage? (PAA)",
+    "Gibt es eine Betrugsmasche im Zusammenhang mit Photovoltaikanlagen? (PAA)",
+    "Lohnt sich Photovoltaik: Erfahrungen? (Related Search)",
+    "Lohnt sich Photovoltaik für ein Einfamilienhaus? (Related Search)",
+    "Lohnt sich Photovoltaik für 2 Personen? (Related Search)",
+    "Was bringt eine 10-kWp-Anlage mit Speicher im Jahr wirklich?",
+    "Wie lange dauert die Montage einer PV-Anlage?",
+    "Wie schnell amortisieren sich die gezeigten Anlagen? (bereits in FAQ)",
+    "Woher stammen die Zahlen zu Ertrag und Ersparnis? (bereits in FAQ)",
+    "Kann ich eine Referenzanlage in meiner Nähe besichtigen oder mit dem Kunden sprechen?"
+  ],
+  "serp": {
+    "features": [
+      "people_also_ask",
+      "people_also_search",
+      "related_searches",
+      "keine lokalen Anbieter in den Top 10, keine Referenzseiten"
+    ],
+    "query": "photovoltaik erfahrungen (Austria)",
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "gruenes.haus",
+        "title": "Photovoltaik lohnt sich nicht? Wir rechnen nach (2026)",
+        "type": "ratgeber"
+      },
+      {
+        "pos": 2,
+        "domain": "www.test.de",
+        "title": "Photovoltaik 2026: Noch lohnt sich die eigene Solaranlage",
+        "type": "verbraucherportal"
+      },
+      {
+        "pos": 3,
+        "domain": "www.elisabethgreen.com",
+        "title": "Meine Erfahrungen mit unserer PV-Anlage",
+        "type": "blog/erfahrungsbericht"
+      },
+      {
+        "pos": 4,
+        "domain": "www.eon.de",
+        "title": "Vor- und Nachteile einer Solaranlage",
+        "type": "energieversorger"
+      },
+      {
+        "pos": 5,
+        "domain": "www.haustechnikdialog.de",
+        "title": "Erfahrung mit Photovoltaik gesucht, zufrieden oder bereut?",
+        "type": "forum"
+      },
+      {
+        "pos": 6,
+        "domain": "www.photovoltaikforum.com",
+        "title": "Willkommen im Photovoltaik Forum!",
+        "type": "forum"
+      },
+      {
+        "pos": 7,
+        "domain": "www.test.de",
+        "title": "Photovoltaik-Anlagen: So erkennen Sie unseriöse Anbieter",
+        "type": "verbraucherportal"
+      },
+      {
+        "pos": 8,
+        "domain": "echtsolar.de",
+        "title": "Photovoltaik-Anbieter Vergleich: Solaranbieter (Ranking)",
+        "type": "vergleichsportal"
+      },
+      {
+        "pos": 9,
+        "domain": "www.agrarheute.com",
+        "title": "Vorsicht, PV-Abzocke: 5 Solar-Betrugsfälle",
+        "type": "fachmedium"
+      },
+      {
+        "pos": 10,
+        "domain": "solar-forum.com",
+        "title": "Solar in Österreich: Nah dran, und doch anders?",
+        "type": "forum"
+      }
+    ]
+  },
+  "competitor_outline": [
+    "H2 Lohnt sich Photovoltaik 2026 noch? (Kosten pro kWp, Rendite, Rechenbeispiel)",
+    "H2 Erfahrungsbericht nach X Jahren: Ertrag, Eigenverbrauch, Stromrechnung vorher/nachher",
+    "H2 Vor- und Nachteile einer Solaranlage",
+    "H2 Woran erkennt man unseriöse Anbieter? (Haustürgeschäfte, Vorkasse, Fantasie-Renditen)",
+    "H2 Anbieter-Vergleich / Ranking nach Bewertungen",
+    "H2 Forum: zufrieden oder bereut?"
+  ],
+  "gaps": [
+    "Kein 'Vorher/Nachher'-Beleg aus Kundensicht: Die Top-SERP lebt von Erfahrungsberichten (Stromrechnung vorher vs. nachher, erstes Betriebsjahr). Unsere Projekte zeigen Planungs-Richtwerte*, aber keine gemessenen Betriebswerte nach 12 Monaten und keine Kundenstimme direkt beim Projekt.",
+    "Kein Abschnitt zu 'Woran erkennen Sie einen serioesen Anbieter' (PAA 'Welche Solarfirmen sind serioes?', test.de Platz 7): genau hier kann eine Referenzseite mit Firmenbuch, Garantien, Festpreis und Besichtigungsmoeglichkeit punkten.",
+    "Kein Vergleich Planung vs. Realitaet (z. B. 'geplant 11.000 kWh, gemessen 11.400 kWh'): waere das staerkste GEO-Zitat.",
+    "Keine Kennzahl-Tabelle ueber alle 10 Projekte (kWp, kWh, Ertrag, Ersparnis, Amortisation) als zitierfaehige Uebersicht; Daten liegen nur in Fliesstext-Listen.",
+    "Keine Projekt-Unterseiten verlinkt (CLAUDE.md nennt /referenzen/projekt-gewerbe-oberoesterreich/), damit fehlt Tiefe pro Projekt.",
+    "Kein Datum/Baujahr je Projekt; Erfahrungsberichte in der SERP sind datiert.",
+    "Bewertungs-Slider ist wortgleich mit /ueber-uns/ und /kontakt/ (ueber 70 Zitate): Duplicate-Block statt projektbezogener Zitate.",
+    "Kein Link zu /ueber-uns/ im Fliesstext und kein Link zu /batteriespeicher/ oder /notstrom/, obwohl 9 von 10 Projekten Speicher und Notstrom haben."
+  ],
+  "cannibalization": [
+    "/photovoltaik-gewerbe/ (Gewerbe-Referenz 40 kWp OOE wird dort ebenfalls als Beispiel genutzt)",
+    "/photovoltaik-villach/ (EFH Villach 10 kWp)",
+    "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/ zielt auf 'lohnt sich photovoltaik' (Related Search); nicht hier doppeln"
+  ],
+  "ai_search_volume": [],
+  "recommendation": {
+    "title": "Photovoltaik-Referenzen: 10 Anlagen mit echten Zahlen | EBZ",
+    "h1": "Photovoltaik-Referenzen und Erfahrungen: 10 Anlagen von EBZ Energie mit Ertrag, Ersparnis und Amortisation",
+    "description": "Photovoltaik-Erfahrungen aus der Praxis: 10 Referenzanlagen von EBZ Energie in Kärnten, Steiermark und 4 weiteren Bundesländern, mit kWp, Speicher, Jahresertrag, Ersparnis und Amortisation.",
+    "h2_outline": [
+      "Zehn Projekte, eine Tabelle: alle Kennzahlen auf einen Blick (neu, oben)",
+      "Gewerbe und Landwirtschaft: wenn Erzeugung und Verbrauch zusammenfallen (bestehend, 3 Projekte)",
+      "Eigenheime und Mehrparteienhäuser: vom Satteldach bis zum Flachdach (bestehend, 7 Projekte, je mit Baujahr und Kundenzitat)",
+      "Planung und Realität: was die Anlagen nach dem ersten Jahr geliefert haben (neu, sobald Messwerte vorliegen)",
+      "Weitere umgesetzte Anlagen (bestehende Galerie)",
+      "Woran Sie eine seriöse Photovoltaik-Firma erkennen (neu: Firmenbuch, Festpreis, Garantien, Besichtigung, keine Vorkasse)",
+      "Was alle Projekte gemeinsam haben (bestehend)",
+      "Häufige Fragen zu unseren Referenzen",
+      "Ihr Dach ist das nächste Projekt (CTA)"
+    ],
+    "faq_add": [
+      "Woran erkenne ich einen seriösen Photovoltaik-Anbieter?",
+      "Kann ich eine Referenzanlage besichtigen oder mit einem Kunden sprechen?",
+      "Wie lange hat die Montage bei den gezeigten Anlagen gedauert?",
+      "Welche negativen Erfahrungen mit Photovoltaik lassen sich durch gute Planung vermeiden?",
+      "Lohnt sich eine 10-kWp-Anlage mit Speicher für ein Einfamilienhaus?"
+    ],
+    "internal_links": [
+      "/ueber-uns/ -> Wer hinter den Anlagen steht: EBZ Energie GmbH",
+      "/photovoltaik/ -> Photovoltaik für Eigenheim und Gewerbe",
+      "/photovoltaik-gewerbe/ -> Photovoltaik für Betriebe",
+      "/batteriespeicher/ -> Batteriespeicher und Notstrom",
+      "/notstrom/ -> Notstrom bei Netzausfall",
+      "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/ -> Ab wann lohnt sich Photovoltaik mit Speicher?",
+      "/solarrechner/ -> Ihre Zahlen in 30 Sekunden berechnen",
+      "/kontakt/ -> Kostenlose Erstberatung anfragen",
+      "/referenzen/projekt-gewerbe-oberoesterreich/ -> Projektseite Gewerbe Oberösterreich",
+      "/pv-speicher-nachruesten/ -> Speicher nachrüsten (GSC-Query 'energiespeicher nachrüsten klagenfurt' landet heute hier)"
+    ],
+    "notes": "Fuer 'Referenzen' gibt es in Oesterreich keine messbare Suchnachfrage; die Seite gewinnt ueber Vertrauen, interne Verlinkung und Zitierbarkeit, nicht ueber Rankings. Die SERP zu 'photovoltaik erfahrungen' ist eine Serioesitaets-SERP (test.de, Betrugswarnungen, Foren). Zuerst eine Kennzahl-Tabelle ueber alle 10 Projekte an den Anfang setzen (GEO-Zitat), jedem Projekt Baujahr und ein projektbezogenes Kundenzitat geben und einen Abschnitt 'Woran Sie einen serioesen Anbieter erkennen' ergaenzen. Danach den generischen 70-Zitate-Slider durch 3 bis 6 projektbezogene Zitate ersetzen und Messwerte nach dem ersten Betriebsjahr nachtragen, sobald sie vorliegen. 'photovoltaik negative erfahrungen' (40) nur als FAQ beantworten, nie als Zielkeyword. GSC: 1.750 Impressionen, 33 Klicks (19 davon Brand), Position 13. Nicht-Brand-Queries sind Projektdetails (12 kWp, Blechdach, BYD-Speicher, Speicher nachruesten Klagenfurt): Dachtyp, kWp und Komponenten je Projekt im Fliesstext und in der Tabelle ausschreiben, Speicher-Nachruestungen auf /pv-speicher-nachruesten/ weiterleiten."
+  },
+  "cost_usd": 0.04,
+  "cost_hinweis": "Kostenfelder: Der MCP-Wrapper gibt das API-Feld cost nicht zurueck. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Live Advanced 0,002 $/Request + PAA-Klick, Search Intent anteilig).",
+  "gsc": {
+    "period": "GSC 12 Monate (2025-10-07 bis 2026-10-06), Quelle build/seo/gsc/",
+    "page": {
+      "clicks": 33,
+      "impressions": 1750,
+      "ctr": 1.9,
+      "position": 13.1,
+      "top_queries": [
+        [
+          "ebz energie",
+          16,
+          336
+        ],
+        [
+          "ebz energie gmbh",
+          3,
+          225
+        ],
+        [
+          "ebz",
+          0,
+          56
+        ],
+        [
+          "energiespeicher nachrüsten klagenfurt",
+          0,
+          35
+        ],
+        [
+          "photovoltaik 12 kwp",
+          0,
+          19
+        ],
+        [
+          "photovoltaikanlage kaufen kärnten",
+          0,
+          16
+        ],
+        [
+          "blechdach kärnten",
+          0,
+          15
+        ],
+        [
+          "byd speicher dach pv",
+          0,
+          11
+        ]
+      ],
+      "queries_total": 37
+    },
+    "lesart": "19 von 33 Klicks sind Brand. Die Nicht-Brand-Impressionen kommen aus Projektdetails (12 kWp, Blechdach, Speicher nachruesten Klagenfurt, BYD): Google liest die Seite als Sammlung konkreter Anlagen. Das stuetzt die Empfehlung Kennzahl-Tabelle + Projekt-Unterseiten statt generischer Erfahrungs-Texte."
+  }
+}

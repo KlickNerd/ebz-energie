@@ -1,0 +1,462 @@
+{
+  "slug": "finanzierung",
+  "path": "/finanzierung/",
+  "seitentyp": "leistung",
+  "stand": "2026-10-09",
+  "hinweise": [
+    "kd 0 = DataForSEO liefert fuer dieses Keyword keinen Difficulty-Wert. volume_at 0 = kein AT-Volumen in der Datenbank.",
+    "Die MCP-Antworten enthielten kein cost-Feld. Betrag geschaetzt nach DataForSEO-Preisliste (Labs 0,01 $/Request + 0,0001 $/Item, SERP Advanced 0,002 $/Request, Content Parsing ca. 0,002 $/URL, AI-Volumen ca. 0,01 $/Request).",
+    "Kein GSC-Export vorhanden.",
+    "Die alte Live-URL /pv-anlage-leasen/ wird in der Google-AI-Overview fuer die Suchanfrage mit dem Begriff aus diesem Slug als Quelle zitiert (Title 'PV-Anlage ... statt kaufen | 0 € Anzahlung | EBZ') und beschreibt dort ein Modell, bei dem die Anlage waehrend der Laufzeit dem Geber gehoert. Das widerspricht der Finanzierungsbotschaft (Eigentum ab Tag 1). 301 auf /finanzierung/ und Inhalt der Zielseite so schreiben, dass die Miet-Vergleichsfrage beantwortet wird.",
+    "Begriffe aus der Mietmodell- und Slug-Familie stehen hier nur als Suchdaten. Fuer den Seitentext gilt die Site-Regel: Modell als 'Mietmodell' oder 'gemietete Anlage' beschreiben.",
+    "Monatsrate: Seite nennt 164 € je Monat fuer 10 kWp mit Speicher, CLAUDE.md nennt 'ab 147 €/Monat inkl. Speicher'. Vor dem Relaunch eine Zahl festlegen und als Beispielkondition mit Sternchen kennzeichnen."
+  ],
+  "primary": {
+    "keyword": "pv anlage finanzieren",
+    "volume_at": 50,
+    "kd": 3,
+    "cpc": 2.85,
+    "intent": "transactional 0,99. Cluster-Volumen: Finanzieren/Kredit rund 250, Mietmodell rund 260, Slug-Begriff rund 160 Suchen je Monat in AT"
+  },
+  "secondary": [
+    {
+      "keyword": "pv anlage mieten",
+      "volume_at": 70,
+      "kd": 2,
+      "intent": "transactional 1,00 (Vergleichsabsatz Kauf, Finanzierung, Mietmodell)"
+    },
+    {
+      "keyword": "photovoltaik mieten",
+      "volume_at": 50,
+      "kd": 19,
+      "intent": "transactional 0,76"
+    },
+    {
+      "keyword": "photovoltaik leasing",
+      "volume_at": 50,
+      "kd": 0,
+      "intent": "commercial 0,91 (nur Suchdatum, Begriff nicht im Seitentext verwenden)"
+    },
+    {
+      "keyword": "pv anlage leasen",
+      "volume_at": 50,
+      "kd": 0,
+      "intent": "transactional 1,00 (alte URL /pv-anlage-leasen/ rankt und wird in AI Overview zitiert)"
+    },
+    {
+      "keyword": "zinsloses darlehen photovoltaik österreich",
+      "volume_at": 30,
+      "kd": 0,
+      "intent": "commercial 0,90"
+    },
+    {
+      "keyword": "photovoltaik finanzierung",
+      "volume_at": 20,
+      "kd": 11,
+      "intent": "commercial 0,93"
+    }
+  ],
+  "semantic": [
+    "Ratenkredit",
+    "Konsumkredit",
+    "Wohnkredit ohne Grundbucheintrag",
+    "Bauspardarlehen",
+    "effektiver Jahreszins",
+    "Fixzins",
+    "Laufzeit 10 bis 25 Jahre",
+    "Sondertilgung",
+    "Bonitätsprüfung",
+    "Eigenkapital",
+    "0 € Anzahlung",
+    "Monatsrate",
+    "Gesamtkosten",
+    "Restschuld",
+    "Eigentum ab Tag 1",
+    "Mietmodell",
+    "Contracting",
+    "Kauf gegen Finanzierung gegen Mietmodell",
+    "EAG-Investitionszuschuss 150 €/kWp",
+    "Speicher 150 €/kWh",
+    "Fördercall Oktober 2026",
+    "Made-in-Europe-Bonus",
+    "Förderung trotz Finanzierung",
+    "Amortisation",
+    "Stromrechnung gegen Rate",
+    "Raiffeisen",
+    "Erste Bank und Sparkasse",
+    "BAWAG",
+    "Cloover",
+    "Hausbank",
+    "Selbständige",
+    "Pensionisten",
+    "Betriebe",
+    "Wärmepumpe finanzieren",
+    "Speicher finanzieren",
+    "Beispielkonditionen"
+  ],
+  "long_tail": [
+    {
+      "keyword": "pv anlage mieten",
+      "volume_at": 70
+    },
+    {
+      "keyword": "photovoltaik leasing",
+      "volume_at": 50
+    },
+    {
+      "keyword": "pv anlage leasen",
+      "volume_at": 50
+    },
+    {
+      "keyword": "pv anlage finanzieren",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik mieten",
+      "volume_at": 50
+    },
+    {
+      "keyword": "finanzierung pv anlage",
+      "volume_at": 50
+    },
+    {
+      "keyword": "solaranlage mieten",
+      "volume_at": 40
+    },
+    {
+      "keyword": "photovoltaik anlage mieten",
+      "volume_at": 40
+    },
+    {
+      "keyword": "zinsloses darlehen photovoltaik österreich",
+      "volume_at": 30
+    },
+    {
+      "keyword": "pv anlage mieten österreich",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik contracting",
+      "volume_at": 30
+    },
+    {
+      "keyword": "pv anlage kredit",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik finanzierung",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik finanzieren",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik kredit",
+      "volume_at": 20
+    },
+    {
+      "keyword": "pv finanzierung",
+      "volume_at": 20
+    },
+    {
+      "keyword": "pv leasing",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik leasing österreich",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik mieten österreich",
+      "volume_at": 20
+    },
+    {
+      "keyword": "wärmepumpe finanzieren",
+      "volume_at": 20
+    },
+    {
+      "keyword": "solaranlage finanzieren",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv anlage 0% finanzierung",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv anlage finanzieren österreich",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv-anlage finanzieren rechner",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik kredit österreich",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik ratenzahlung",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik mieten oder kaufen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv speicher finanzierung",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik ohne anzahlung",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik ohne eigenkapital",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Wie finanziert man am besten eine Photovoltaikanlage?",
+    "Ist es sinnvoll, eine PV-Anlage zu finanzieren?",
+    "Ist es besser, eine Photovoltaikanlage zu finanzieren oder bar zu bezahlen?",
+    "Welche Bank finanziert Photovoltaik?",
+    "Gibt es eine 0 %-Finanzierung für eine Photovoltaikanlage?",
+    "Ist es möglich, eine Photovoltaikanlage ohne Eigenkapital zu finanzieren?",
+    "Gibt es 2026 noch eine Photovoltaikförderung und bekomme ich sie auch bei Finanzierung?",
+    "Wann rentiert sich eine PV-Anlage nicht?",
+    "Was kostet eine Photovoltaikanlage für ein Einfamilienhaus in Österreich?",
+    "PV-Anlage mieten: lohnt sich das und was kostet es?",
+    "Was ist der Unterschied zwischen Finanzierung und Mietmodell beim Eigentum?",
+    "Kann ich die Finanzierung vorzeitig zurückzahlen?"
+  ],
+  "serp": {
+    "features": [
+      "ai_overview (Banken, Kredit, Mietmodell, EAG-Förderung)",
+      "people_also_ask",
+      "related_searches",
+      "people_also_search (bei Mietmodell-Suche)",
+      "video (YouTube bei Mietmodell-Suche)"
+    ],
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "sparkasse.at",
+        "title": "Photovoltaik-Kredit | Erste Sparkasse",
+        "type": "bank"
+      },
+      {
+        "pos": 2,
+        "domain": "infina.at",
+        "title": "Kredit für Photovoltaik: Wie finanziere ich eine PV-Anlage?",
+        "type": "ratgeber (kreditvermittler)"
+      },
+      {
+        "pos": 3,
+        "domain": "regenerative.at",
+        "title": "PV-Anlage finanzieren in Tirol: Kredit, Mietmodell oder Dachvermietung",
+        "type": "anbieter (Raiffeisen)"
+      },
+      {
+        "pos": 4,
+        "domain": "raiffeisen.at",
+        "title": "Förderungen für Photovoltaik-Anlagen",
+        "type": "bank"
+      },
+      {
+        "pos": 5,
+        "domain": "bankaustria.at",
+        "title": "Photovoltaik & Solarenergie Vorteile und Unterschiede",
+        "type": "bank"
+      },
+      {
+        "pos": 6,
+        "domain": "finanztip.de",
+        "title": "PV-Anlage finanzieren: Kredit für Solaranlage (KfW 270)",
+        "type": "ratgeber DE"
+      },
+      {
+        "pos": 7,
+        "domain": "solarwatt.de",
+        "title": "Wie die Finanzierung einer Photovoltaikanlage gelingt",
+        "type": "ratgeber (hersteller DE)"
+      },
+      {
+        "pos": 8,
+        "domain": "bawag.at",
+        "title": "Grüner Konsumkredit für E-Auto, PV & Wohnbau",
+        "type": "bank"
+      },
+      {
+        "pos": 9,
+        "domain": "check24.de",
+        "title": "Photovoltaik finanzieren: Günstige Solarkredite im Vergleich",
+        "type": "vergleichsportal DE"
+      }
+    ],
+    "top10_mietmodell_suche": [
+      "enercapital.de (anbieter DE)",
+      "youtube.com LT1 OÖ (video)",
+      "vkw.at Finanzierung (versorger)",
+      "adac.de Solaranlage mieten (ratgeber)",
+      "raiffeisen.at",
+      "infina.at Kosten und Förderung",
+      "meine-region.at (verzeichnis)",
+      "marchfelderbank.at (bank)",
+      "oesterreich.gv.at Förderaktionen (behörde)"
+    ]
+  },
+  "competitor_outline": [
+    "H2 Was ist eine Photovoltaik-Finanzierung",
+    "H2 Möglichkeiten: Ratenkredit, Bauspardarlehen, Umschuldung, Mietmodell, Contracting",
+    "H2 Kreditrechner (Betrag, Laufzeit, Monatsrate)",
+    "H2 Konditionen: Zinsen (effektiv), Laufzeit, Sicherheiten, Bonität, Eigenkapital",
+    "H2 Förderungen 2026 (EAG 120 bis 150 €/kWp, Speicher 150 €/kWh, Fördercalls, Made-in-Europe-Bonus)",
+    "H2 Kauf oder Mietmodell: Vergleichstabelle und Checkliste",
+    "H2 Worauf beim Vergleich achten (Sondertilgung, Grundbuch, Flexibilität)",
+    "H2 Laufende Kosten einrechnen (Wartung, Versicherung, Steuer)",
+    "H2 FAQ (Amortisation, Eigenkapital, 0 %, Bank)"
+  ],
+  "gaps": [
+    "Vergleichstabelle Kauf, Finanzierung, Mietmodell (Eigentum, Gesamtkosten, Förderung, Wartung, Vertragsende) fehlt; Verbund und Otovo ranken mit genau dieser Tabelle",
+    "Zinssatz und Gesamtkosten werden nicht genannt (effektiver Jahreszins, Summe aller Raten gegen Kaufpreis); Rate ohne Zins wirkt unvollständig und ist nicht als Beispielkondition mit Sternchen gekennzeichnet",
+    "Eigenkapital als Begriff fehlt (PAA 'ohne Eigenkapital finanzieren'), ebenso 'Kredit' als Alternative über die Hausbank",
+    "Ratenrechner fehlt ('pv-anlage finanzieren rechner', Banken bieten ihn)",
+    "Fördercall-Termine 2026 und Made-in-Europe-Bonus fehlen im Förderabsatz",
+    "Wärmepumpe und Speicher mitfinanzieren wird nicht gesagt ('wärmepumpe finanzieren' 20)",
+    "Versicherung und Wartung während der Laufzeit nicht adressiert",
+    "Alte URL /pv-anlage-leasen/ konkurriert mit widersprüchlicher Botschaft und wird in der AI Overview zitiert"
+  ],
+  "cannibalization": [
+    "/pv-anlage-leasen/ (Live-WordPress, 301 nötig)",
+    "/solaranlage-mieten-oder-kaufen/ (Mietmodell-Cluster)",
+    "/kosten-einer-solaranlage/",
+    "/photovoltaik-foerderung-oesterreich-2026/",
+    "/photovoltaik/ (Sektion 'Ihre Anlage gehört Ihnen ab dem ersten Tag')",
+    "/batteriespeicher/ (gleiche Sektion)"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "pv anlage mieten",
+      "ai_volume": 8
+    },
+    {
+      "keyword": "photovoltaik mieten",
+      "ai_volume": 3
+    },
+    {
+      "keyword": "solaranlage mieten",
+      "ai_volume": 3
+    },
+    {
+      "keyword": "photovoltaik mieten oder kaufen",
+      "ai_volume": 3
+    },
+    {
+      "keyword": "pv anlage finanzieren",
+      "ai_volume": 2
+    },
+    {
+      "keyword": "photovoltaik finanzieren",
+      "ai_volume": 2
+    },
+    {
+      "keyword": "photovoltaik finanzierung",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "solaranlage finanzieren",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik leasing",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "pv anlage leasen",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik kredit",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "zinsloses darlehen photovoltaik österreich",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "pv anlage 0% finanzierung",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik ratenzahlung",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik ohne anzahlung",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik finanzierung österreich",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik kredit österreich",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik monatliche rate",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik finanzierung förderung",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik lohnt sich finanzierung",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "PV-Anlage finanzieren: fixe Rate, Eigentum ab Tag 1 | EBZ",
+    "h1": "PV-Anlage finanzieren oder kaufen: fixe Rate, 0 € Anzahlung, Eigentum ab dem ersten Tag",
+    "description": "PV-Anlage finanzieren statt mieten: 0 € Anzahlung, fixe Rate bis 25 Jahre, volle Förderung, Eigentum ab Tag 1. Beispiel 10 kWp mit Speicher inkl. Zins.",
+    "h2_outline": [
+      "Aus der Stromrechnung wird eine Rate, die endet",
+      "Kaufen, finanzieren oder mieten? Der Vergleich in einer Tabelle (Eigentum, Gesamtkosten, Förderung, Wartung)",
+      "So sieht die Monatsrate aus (Beispiel 10 kWp mit Speicher, Zins, Laufzeit, Gesamtkosten, Sternchen)",
+      "Förderung trotz Finanzierung: EAG-Zuschuss, Speicherbonus, Fördercall Oktober 2026",
+      "Konditionen im Klartext: Zins, Laufzeit, Sondertilgung, kein Grundbuch, Bonität ohne Datenbankeintrag",
+      "Auch für Speicher, Wärmepumpe und Betriebe",
+      "Mario Zintl rechnet mit Ihnen, nicht für Sie",
+      "Sechs Gründe für die EBZ-Finanzierung",
+      "Ablauf: Beratung, Online-Anfrage, Zusage in Minuten, Montage",
+      "Was ist mit Wartung, Garantie und Versicherung während der Laufzeit",
+      "Kundenstimmen",
+      "Häufige Fragen",
+      "Weiterlesen"
+    ],
+    "faq_add": [
+      "Wie hoch ist der Zinssatz und was kostet die Finanzierung insgesamt?",
+      "Kann ich ohne Eigenkapital finanzieren?",
+      "Finanzierung oder Kredit bei der Hausbank: was ist der Unterschied?",
+      "Gibt es eine 0 %-Finanzierung für Photovoltaik?",
+      "Kann ich Speicher und Wärmepumpe mitfinanzieren?",
+      "Was passiert bei einem Verkauf des Hauses während der Laufzeit?"
+    ],
+    "internal_links": [
+      "/solaranlage-mieten-oder-kaufen/ -> Solaranlage mieten oder kaufen: der Vergleich",
+      "/kosten-einer-solaranlage/ -> Was kostet eine Solaranlage",
+      "/photovoltaik-foerderung-oesterreich-2026/ -> PV-Förderung Österreich 2026 (Fördercall Oktober)",
+      "/photovoltaik/ -> Photovoltaikanlage",
+      "/batteriespeicher/ -> Batteriespeicher mitfinanzieren",
+      "/waermepumpe/ -> Wärmepumpe mitfinanzieren",
+      "/photovoltaik-gewerbe/ -> Finanzierung für Betriebe",
+      "/solarrechner/ -> Solarrechner",
+      "/referenzen/ -> Referenzen",
+      "/kontakt/ -> Beratung anfragen"
+    ],
+    "notes": "Das Nachfragevolumen ist klein (rund 670 Suchen je Monat über alle drei Cluster), aber hochwertig (CPC bis 18 €) und die SERP ist von Banken besetzt, die Zins, Laufzeit und Rechner zeigen. Unsere Seite argumentiert gut über Eigentum und Förderung, bleibt bei Zins und Gesamtkosten aber stumm und enthält keine Vergleichstabelle Kauf, Finanzierung, Mietmodell, die alle Mitbewerber haben. Zuerst die alte URL /pv-anlage-leasen/ per 301 auf /finanzierung/ leiten und die Mietmodell-Frage auf der Zielseite beantworten, dann Beispielkondition mit Zins, Gesamtkosten und Sternchen ergänzen. Rate 164 € gegen 147 € mit dem Kunden klären."
+  },
+  "cost_usd": 0.09
+}

@@ -1,0 +1,398 @@
+{
+  "slug": "standort_wolfsberg",
+  "path": "/photovoltaik-wolfsberg/",
+  "seitentyp": "standort",
+  "stand": "2026-10-09",
+  "primary": {
+    "keyword": "photovoltaik wolfsberg",
+    "volume_at": 20,
+    "kd": null,
+    "cpc": 2.54,
+    "intent": "commercial 0,57 / informational 0,40"
+  },
+  "secondary": [
+    {
+      "keyword": "photovoltaik lavanttal",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "informational 0,52 / commercial 0,43"
+    },
+    {
+      "keyword": "pv anlage kärnten",
+      "volume_at": 70,
+      "kd": 4,
+      "intent": "commercial 0,39"
+    },
+    {
+      "keyword": "photovoltaik kärnten firmen",
+      "volume_at": 70,
+      "kd": null,
+      "intent": "commercial 0,97"
+    },
+    {
+      "keyword": "photovoltaik st. andrä",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "informational 0,52"
+    },
+    {
+      "keyword": "pv anlage wolfsberg",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "informational 0,48"
+    },
+    {
+      "keyword": "solaranlage wolfsberg",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "informational 0,71"
+    }
+  ],
+  "semantic": [
+    "Lavanttal",
+    "Bezirk Wolfsberg",
+    "St. Andrä",
+    "St. Paul im Lavanttal",
+    "Bad St. Leonhard",
+    "St. Stefan",
+    "Frantschach-St. Gertraud",
+    "Lavamünd",
+    "Ertrag 1.162 kWh je kWp in Wolfsberg, Median Bezirk 1.188 kWh/kWp (PV-Atlas)",
+    "1.887 Sonnenstunden pro Jahr",
+    "Horizontverlust 6 %",
+    "Elektromeisterbetrieb",
+    "Stromspeicher",
+    "Notstrom / Blackout-Vorsorge",
+    "Wallbox",
+    "Energiemanagement",
+    "Energiegemeinschaft",
+    "Landespauschale Kärnten 50 %, max. 3.000 €",
+    "Speicher nachrüsten max. 1.000 € Land Kärnten",
+    "EAG 150 €/kWp und 150 €/kWh",
+    "OeMAG-Marktpreis",
+    "Umsatzsteuer-Nullsatz",
+    "Finanzierungsbeispiel mit Monatsrate",
+    "Satteldach, Flachdach, Trapezblech",
+    "landwirtschaftlicher Betrieb / Stallgebäude",
+    "Firmengebäude",
+    "WKO Firmen A-Z",
+    "Repowering / Erweiterung",
+    "Wartung und Service",
+    "Trina, Fronius, Neoom (Marken im Wettbewerb)"
+  ],
+  "long_tail": [
+    {
+      "keyword": "photovoltaik kärnten förderung",
+      "volume_at": 260
+    },
+    {
+      "keyword": "pv anlage kärnten",
+      "volume_at": 70
+    },
+    {
+      "keyword": "photovoltaik kärnten firmen",
+      "volume_at": 70
+    },
+    {
+      "keyword": "land kärnten pv förderung antrag",
+      "volume_at": 90
+    },
+    {
+      "keyword": "pv förderung kärnten privat",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik murtal",
+      "volume_at": 20
+    },
+    {
+      "keyword": "pv direkt",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik lavanttal",
+      "volume_at": 10
+    },
+    {
+      "keyword": "lr photovoltaik wolfsberg",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik anbieter murtal",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik st. andrä",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage wolfsberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "solaranlage wolfsberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik völkermarkt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik wolfsberg kärnten",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Wie viel kostet eine Photovoltaikanlage inklusive Montage?",
+    "Wie hoch ist die Photovoltaikförderung in Kärnten ab 2026?",
+    "Wie hoch sind die Kosten für eine Photovoltaikanlage in Kärnten?",
+    "Was kostet eine 10 kW PV-Anlage mit Speicher und Montage?",
+    "Wie lange braucht ein 10 kWh Speicher, bis er voll ist?",
+    "Ist eine Photovoltaikanlage ohne Speicher sinnvoll?",
+    "Warum lohnt sich ein Stromspeicher nicht (immer)?",
+    "Was passiert bei einer PV-Anlage, wenn kein Strom abgenommen wird?",
+    "Welche Nachteile hat Photovoltaik mit Speicher?",
+    "Wie viel Ertrag bringt eine PV-Anlage im Lavanttal je kWp?",
+    "Wie weit fährt EBZ Energie für Beratung und Montage (Wolfsberg, St. Andrä, Bad St. Leonhard)?"
+  ],
+  "serp": {
+    "features": [
+      "local_pack",
+      "ai_overview",
+      "people_also_ask",
+      "people_also_search",
+      "images",
+      "related_searches"
+    ],
+    "local_pack": {
+      "photovoltaik wolfsberg (Austria und Wolfsberg)": [
+        {
+          "name": "PV-Direkt",
+          "rating": 3.0,
+          "reviews": 2,
+          "pos": 1
+        },
+        {
+          "name": "enerix Wolfsberg - Photovoltaik & Stromspeicher",
+          "rating": "5 Sterne",
+          "reviews": 5,
+          "pos": 2
+        },
+        {
+          "name": "AMTEC Energy GmbH",
+          "rating": null,
+          "reviews": 0,
+          "pos": 3
+        }
+      ],
+      "photovoltaik lavanttal (Austria)": [
+        {
+          "name": "enerix Wolfsberg",
+          "rating": "5 Sterne",
+          "reviews": 5,
+          "pos": 1
+        },
+        {
+          "name": "Pfeiffer Solar",
+          "rating": 4.7,
+          "reviews": 29,
+          "pos": 2
+        },
+        {
+          "name": "PV-Direkt",
+          "rating": 3.0,
+          "reviews": 2,
+          "pos": 3
+        }
+      ]
+    },
+    "ebz_rankings": {
+      "photovoltaik wolfsberg (Austria)": "organisch Platz 6 (alter Title 'Photovoltaik in Wolfsberg | Jetzt Ihre PV-Anlage planen')",
+      "photovoltaik wolfsberg (Standort Wolfsberg)": "nicht in den Top 10, kein Local-Pack-Eintrag (kein GBP-Standort im Lavanttal)",
+      "photovoltaik lavanttal": "nicht in den Top 10"
+    },
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "firmen.wko.at",
+        "title": "Photovoltaik In Wolfsberg (Bezirk)",
+        "type": "verzeichnis"
+      },
+      {
+        "pos": 2,
+        "domain": "enerix.at",
+        "title": "enerix Wolfsberg: Photovoltaik & Stromspeicher",
+        "type": "anbieter"
+      },
+      {
+        "pos": 3,
+        "domain": "amtec-energy.at",
+        "title": "Professionelle Photovoltaikanlagen für Privat und Gewerbe",
+        "type": "anbieter"
+      },
+      {
+        "pos": 4,
+        "domain": "elektro-dohr.at",
+        "title": "Photovoltaik",
+        "type": "anbieter"
+      },
+      {
+        "pos": 5,
+        "domain": "hartl-melcher.at",
+        "title": "Solaranlagen Wolfsberg",
+        "type": "anbieter"
+      },
+      {
+        "pos": 6,
+        "domain": "ebz-photovoltaik.at",
+        "title": "Photovoltaik in Wolfsberg | Jetzt Ihre PV-Anlage planen",
+        "type": "anbieter (eigene Seite)"
+      },
+      {
+        "pos": 7,
+        "domain": "daibau.at",
+        "title": "Photovoltaik, Wolfsberg - Top 16 Auftragnehmer",
+        "type": "portal"
+      },
+      {
+        "pos": 8,
+        "domain": "etks-elektrotechnik.at",
+        "title": "Photovoltaikanlage-Installation in Wolfsberg",
+        "type": "anbieter"
+      },
+      {
+        "pos": 9,
+        "domain": "wastian.co.at",
+        "title": "Photovoltaik: Elektrotechnik Energietechnik Wolfsberg",
+        "type": "anbieter"
+      },
+      {
+        "pos": 10,
+        "domain": "facebook.com",
+        "title": "CS Elektro- und Energietechnik GmbH | Wolfsberg",
+        "type": "social"
+      }
+    ],
+    "top10_standort_wolfsberg": [
+      "daibau.at St. Andrä (portal)",
+      "cs-elektro.com (anbieter)",
+      "meinbezirk.at (news)",
+      "pk-electrics.at (anbieter)",
+      "pvatlas.at Ertrag Bezirk Wolfsberg (daten)",
+      "facebook AMTEC",
+      "herold.at",
+      "bezirkstipp.at",
+      "pvbaustria.at",
+      "herold.at"
+    ]
+  },
+  "competitor_outline": [
+    "H1 Dein Fachbetrieb für Photovoltaik und Stromspeicher in Wolfsberg und Umgebung (Adresse, Telefon im Hero)",
+    "H2 Leistungen: PV-Anlage, Stromspeicher, Energiemanagement, Wallbox, Energiegemeinschaft, Smart Energy Home",
+    "H2 In drei Schritten zur Energielösung (Beratung, Planung, Montage)",
+    "H2 Team vor Ort (Namen, Zitate)",
+    "H2 Wo wir tätig sind: Wolfsberg, St. Andrä, St. Paul, Bad St. Leonhard, angrenzende Steiermark",
+    "H2 Referenzen in der Nähe mit kWp und kWh (St. Stefan 11,52 kWp/12 kWh, St. Paul 19,36 kWp, Firmendach 42 kWp)",
+    "H2 Darum wir (Region, Meisterqualität, Finanzierung, Versicherung)",
+    "H2 Kundenstimmen aus Wolfsberg",
+    "H2 FAQ (Regionen, Ablauf Beratung, Garantien, Erweiterung bestehender Anlagen, Wartung)",
+    "H2 Kontakt und Öffnungszeiten",
+    "H2 Ertrag je Gemeinde im Bezirk (PV-Atlas Tabelle kWh/kWp, Sonnenstunden)",
+    "H2 Finanzierungsbeispiele mit Monatsrate (AMTEC)"
+  ],
+  "gaps": [
+    "Lavanttal, St. Andrä, St. Paul, Bad St. Leonhard, St. Stefan kommen auf der Seite nicht vor (0 Treffer). Enerix listet genau diese Orte in H2 und FAQ; 'photovoltaik lavanttal' und 'photovoltaik st. andrä' sind Seed-Keywords.",
+    "Keine Referenz aus dem Bezirk Wolfsberg: Die drei Referenzen sind Villach, Krumpendorf, Oberösterreich. Enerix zeigt vier Lavanttal-Projekte mit kWp/kWh.",
+    "Kein Ertragswert für Wolfsberg (1.162 kWh/kWp, Bezirksmedian 1.188 kWh/kWp laut PV-Atlas, der Platz 5 im Standort-SERP hält).",
+    "Wallbox fehlt komplett (0 Treffer), Energiemanagement und Wallbox sind bei Enerix eigene Leistungsblöcke.",
+    "Landwirtschaft (Stallgebäude) und Firmendach-Beispiele fehlen; das Lavanttal ist agrarisch und industriell geprägt.",
+    "Kein Local-Pack-Eintrag in Wolfsberg: Standortseite allein löst das nicht, GBP-Einzugsgebiet und lokale Bewertungen aus dem Lavanttal sind nötig.",
+    "Die PAA-Fragen zu Speicher (ohne Speicher sinnvoll?, 10 kWh voll?, Nachteile mit Speicher) werden im FAQ nicht beantwortet.",
+    "Keine Antwort auf 'Wie viel kostet eine Photovoltaikanlage inklusive Montage?' als FAQ (Richtpreis steht nur im Text).",
+    "Live-Title ist noch der alte ('Jetzt Ihre PV-Anlage planen'); der neue Build-Title muss deployt werden."
+  ],
+  "cannibalization": [
+    "/photovoltaik-villach/ (identischer Kärnten-Block, identische Referenzen und Förderung-Sektion)",
+    "/photovoltaik/ (Hauptleistungsseite)",
+    "/photovoltaik-foerderung-kaernten/ (Förderung-Keywords dort halten)",
+    "/photovoltaik-foerderung-oesterreich-2026/"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "pv anlage kärnten",
+      "ai_volume": 10
+    },
+    {
+      "keyword": "photovoltaik kärnten",
+      "ai_volume": 2
+    },
+    {
+      "keyword": "photovoltaik wolfsberg",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik lavanttal",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "pv anlage wolfsberg",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik st. andrä",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "solaranlage wolfsberg",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik völkermarkt",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Photovoltaik Wolfsberg & Lavanttal: PV mit Speicher | EBZ",
+    "h1": "Photovoltaik in Wolfsberg und im Lavanttal: Planung vor Ort, Montage in wenigen Tagen",
+    "description": "Photovoltaik in Wolfsberg, St. Andrä und im Lavanttal: Kärntner Fachbetrieb, Planung vor Ort, Speicher, Notstrom, Wallbox, Förderung. Montage in 2 bis 4 Tagen.",
+    "h2_outline": [
+      "Warum jetzt ein guter Zeitpunkt für Photovoltaik in Wolfsberg ist (Ertrag 1.100 bis 1.200 kWh je kWp im Bezirk)",
+      "Wolfsberg, St. Andrä, St. Paul, Bad St. Leonhard: unser Einzugsgebiet im Lavanttal",
+      "Was eine PV-Anlage im Lavanttal kostet (10 kWp mit Speicher 15.000 bis 22.000 €)",
+      "Ohne Speicher rund 30 %, mit Speicher bis zu 80 % Eigenverbrauch",
+      "Notstrom: bei Stromausfall weiterlaufen",
+      "Wallbox und E-Auto mit Sonnenstrom laden",
+      "Förderung: EAG, Made-in-Europe-Bonus, Landespauschale Kärnten (Kurzfassung, Link Ratgeber)",
+      "Ihre Anlage gehört Ihnen ab dem ersten Tag",
+      "Eigenheim, Landwirtschaft und Betrieb im Lavanttal",
+      "Referenzen mit Zahlen (sobald möglich ein Projekt aus dem Bezirk Wolfsberg)",
+      "Mario Zintl kommt nach Wolfsberg",
+      "Ablauf von der Beratung bis zur Übergabe",
+      "Häufige Fragen",
+      "Kostenloses Angebot"
+    ],
+    "faq_add": [
+      "Wie viel kostet eine Photovoltaikanlage in Wolfsberg inklusive Montage?",
+      "Wie viel Strom erzeugt eine PV-Anlage im Lavanttal pro kWp?",
+      "Ist eine Photovoltaikanlage ohne Speicher sinnvoll?",
+      "Wie groß sollte der Speicher für ein Einfamilienhaus sein?",
+      "In welchen Orten im Bezirk Wolfsberg montiert EBZ Energie?",
+      "Wie hoch ist die PV-Förderung in Kärnten 2026?",
+      "Brauche ich in Kärnten eine Genehmigung für die PV-Anlage?"
+    ],
+    "internal_links": [
+      "/photovoltaik-foerderung-kaernten/ -> PV-Förderung Kärnten 2026",
+      "/photovoltaik-villach/ -> Photovoltaik in Villach",
+      "/batteriespeicher/ -> Stromspeicher",
+      "/notstrom/ -> Notstrom bei Stromausfall",
+      "/energiemanagementsystem/ -> Energiemanagementsystem",
+      "/photovoltaik-gewerbe/ -> Photovoltaik für Betriebe",
+      "/referenzen/ -> Referenzen",
+      "/finanzierung/ -> Finanzierung ab 147 € im Monat",
+      "/kosten-einer-solaranlage/ -> Kosten einer Solaranlage"
+    ],
+    "notes": "Die Seite rankt bereits organisch Platz 6 (Austria), ist aber im Standort-SERP Wolfsberg unsichtbar und ohne Local Pack. Wichtigste Lücke: Das Lavanttal und seine Orte (St. Andrä, St. Paul, Bad St. Leonhard) kommen nicht vor, obwohl sie Seed-Keywords sind und der Marktführer Enerix sie in H2, FAQ und Referenzen nennt. Zuerst eine Einzugsgebiet-Sektion mit Orten und Ertragswert je kWp einbauen, Wallbox ergänzen, eine Lavanttal-Referenz nachziehen. Parallel GBP-Einzugsgebiet um den Bezirk Wolfsberg erweitern und Bewertungen aus dem Lavanttal sammeln."
+  },
+  "cost_usd": 0.1,
+  "cost_note": "Die MCP-Antworten enthielten kein cost-Feld. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Advanced 0,002 $ + PAA-Klicks, Content Parsing 0,0005 $/URL, AI Keyword Data 0,0002 $/Keyword)."
+}

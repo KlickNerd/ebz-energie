@@ -1,0 +1,492 @@
+{
+  "slug": "pv_gewerbe",
+  "path": "/photovoltaik-gewerbe/",
+  "seitentyp": "leistung",
+  "stand": "2026-10-09",
+  "hinweise": [
+    "kd 0 = DataForSEO liefert fuer dieses Keyword keinen Difficulty-Wert. volume_at 0 = kein AT-Volumen in der Datenbank.",
+    "Die MCP-Antworten enthielten kein cost-Feld. Betrag geschaetzt nach DataForSEO-Preisliste (Labs 0,01 $/Request + 0,0001 $/Item, SERP Advanced 0,002 $/Request, Content Parsing ca. 0,002 $/URL, AI-Volumen ca. 0,01 $/Request).",
+    "Kein GSC-Export vorhanden.",
+    "Der Begriff 'photovoltaik gewerbe' ist in Oesterreich doppeldeutig: ein Teil der SERP behandelt die Gewerbeanmeldung fuer PV-Betreiber (pvbaustria, photovoltaik.sh, solaranlagen-portal.de). Seite muss im ersten Absatz klarstellen: PV fuer Gewerbebetriebe, Landwirtschaft und Hotellerie.",
+    "Alle direkten Gewerbe-Keywords liegen bei 10 bis 20 Suchen je Monat. Reichweite kommt ueber Foerder-, Flachdach-, Speicher- und Agri-PV-Begriffe sowie ueber 'photovoltaik firma/firmen' (je 170)."
+  ],
+  "primary": {
+    "keyword": "photovoltaik gewerbe",
+    "volume_at": 10,
+    "kd": 0,
+    "cpc": 0.0,
+    "intent": "commercial 0,62. Alternative mit eindeutigem Intent: 'photovoltaik für unternehmen' 10, commercial 0,99"
+  },
+  "secondary": [
+    {
+      "keyword": "photovoltaik für unternehmen",
+      "volume_at": 10,
+      "kd": 42,
+      "intent": "commercial 0,99"
+    },
+    {
+      "keyword": "photovoltaik flachdach",
+      "volume_at": 170,
+      "kd": 0,
+      "intent": "informational 0,79 ('pv anlage auf flachdach' 140 ist commercial)"
+    },
+    {
+      "keyword": "eag investitionszuschuss",
+      "volume_at": 140,
+      "kd": 9,
+      "intent": "commercial 0,82"
+    },
+    {
+      "keyword": "gewerbespeicher",
+      "volume_at": 90,
+      "kd": 4,
+      "intent": "transactional 0,55"
+    },
+    {
+      "keyword": "pv anlage 30 kwp",
+      "volume_at": 30,
+      "kd": 0,
+      "intent": "transactional 0,68"
+    },
+    {
+      "keyword": "photovoltaik landwirtschaft",
+      "volume_at": 10,
+      "kd": 0,
+      "intent": "informational 0,75 (AI Overview, Agri-PV-dominiert)"
+    }
+  ],
+  "semantic": [
+    "Lastprofil",
+    "Eigenverbrauchsquote 70 % und mehr ohne Speicher",
+    "Stromgestehungskosten ct/kWh",
+    "Überschusseinspeisung",
+    "Volleinspeisung",
+    "Direktvermarktung",
+    "Lastspitzenkappung (Peak Shaving)",
+    "Gewerbespeicher",
+    "EAG-Investitionszuschuss Kategorie C (20 bis 100 kWp, 130 €/kWp) und D (100 bis 1.000 kWp, 120 €/kWp)",
+    "Fördercall 8. bis 22. Oktober 2026",
+    "Made-in-Europe-Bonus bis 30 %",
+    "Speicherförderung 150 €/kWh",
+    "Elektrizitätsabgabe-Befreiung für Eigenstrom",
+    "Betriebsausgabe",
+    "Abschreibung",
+    "Netzanschluss",
+    "Netzebene",
+    "Trafo",
+    "Flachdach",
+    "Trapezblech",
+    "Bitumen",
+    "Aufständerung",
+    "Ost-West-Belegung",
+    "Glas-Glas bifazial",
+    "Agri-PV",
+    "Freiflächenanlage",
+    "Stalldach",
+    "Lagerhalle",
+    "Kühlhaus",
+    "Hotellerie 24-Stunden-Betrieb",
+    "Produktion",
+    "Logistik",
+    "Wallbox und Ladepark",
+    "Energiegemeinschaft Gewerbe",
+    "EMS",
+    "Contracting (Abgrenzung)",
+    "Finanzierung Liquidität",
+    "Statik",
+    "Projektbericht",
+    "Kärnten",
+    "Steiermark",
+    "Oberösterreich (Referenz 40 kWp, 13.500 €/Jahr)"
+  ],
+  "long_tail": [
+    {
+      "keyword": "agri-photovoltaik",
+      "volume_at": 880
+    },
+    {
+      "keyword": "photovoltaik freiflächenanlage",
+      "volume_at": 260
+    },
+    {
+      "keyword": "photovoltaik firma",
+      "volume_at": 170
+    },
+    {
+      "keyword": "photovoltaik firmen",
+      "volume_at": 170
+    },
+    {
+      "keyword": "photovoltaik flachdach",
+      "volume_at": 170
+    },
+    {
+      "keyword": "agri pv anlage",
+      "volume_at": 170
+    },
+    {
+      "keyword": "eag investitionszuschuss",
+      "volume_at": 140
+    },
+    {
+      "keyword": "pv anlage auf flachdach",
+      "volume_at": 140
+    },
+    {
+      "keyword": "gewerbespeicher",
+      "volume_at": 90
+    },
+    {
+      "keyword": "pv förderung landwirtschaft 2026",
+      "volume_at": 70
+    },
+    {
+      "keyword": "photovoltaik anlage flachdach",
+      "volume_at": 70
+    },
+    {
+      "keyword": "agri pv österreich",
+      "volume_at": 50
+    },
+    {
+      "keyword": "photovoltaik montage trapezblech",
+      "volume_at": 50
+    },
+    {
+      "keyword": "pv anlage 30 kwp",
+      "volume_at": 30
+    },
+    {
+      "keyword": "pv anlage firma",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik unternehmen",
+      "volume_at": 20
+    },
+    {
+      "keyword": "stromspeicher industrie",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik gewerbe",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik für unternehmen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik landwirtschaft",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv anlage landwirtschaft",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik förderung gewerbe",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik förderung unternehmen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik förderung landwirtschaft",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik 30 kwp",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik 50 kwp",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik 100 kwp",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik trapezblech",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik industrie",
+      "volume_at": 10
+    },
+    {
+      "keyword": "batteriespeicher gewerbe",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv anlage gewerbe",
+      "volume_at": 0
+    },
+    {
+      "keyword": "gewerbliche photovoltaikanlage",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik für betriebe",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik hotel",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Lohnt sich Photovoltaik für meinen Betrieb und ab welcher Eigenverbrauchsquote?",
+    "Welche Förderungen gibt es 2026 für gewerbliche PV-Anlagen und Stromspeicher (EAG Kategorie C und D)?",
+    "Wie hoch ist die Einspeisevergütung für gewerbliche PV-Anlagen?",
+    "Sind gewerbliche PV-Anlagen steuerfrei und wie wird die Anlage abgeschrieben?",
+    "Wie viel Strom erzeugen 10 kWp bzw. 100 kWp pro Jahr?",
+    "Wie viel Photovoltaik brauche ich, um 10.000 kWh Strom zu erzeugen?",
+    "Was kostet eine PV-Anlage mit 30, 50 oder 100 kWp für einen Betrieb?",
+    "Brauche ich als Betreiber einer PV-Anlage eine Gewerbeanmeldung?",
+    "Was bringt ein Gewerbespeicher und was ist Lastspitzenkappung?",
+    "Welche Nachteile hat Agri-PV und wann ist das Stalldach die bessere Fläche?",
+    "Was passiert mit dem Überschuss am Wochenende?",
+    "Wie lange dauert die Montage einer Gewerbeanlage?"
+  ],
+  "serp": {
+    "features": [
+      "ai_overview (bei beiden Suchen)",
+      "people_also_ask",
+      "video (bei Landwirtschaft)",
+      "keine Shopping-Elemente",
+      "kein local_pack"
+    ],
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "pvbaustria.at",
+        "title": "Rechtlicher Rahmen | PV&B Austria",
+        "type": "verband (Gewerberecht, falscher Intent)"
+      },
+      {
+        "pos": 2,
+        "domain": "oesterreich.gv.at",
+        "title": "Photovoltaik-Förderaktionen und weitere Umweltförderungen",
+        "type": "behörde"
+      },
+      {
+        "pos": 3,
+        "domain": "photovoltaik.sh",
+        "title": "Photovoltaik: Ist die Gewerbeanmeldung notwendig?",
+        "type": "ratgeber DE (falscher Intent)"
+      },
+      {
+        "pos": 4,
+        "domain": "wko.at",
+        "title": "Photovoltaik für Betriebe: Wirtschaftlichkeit prüfen",
+        "type": "kammer"
+      },
+      {
+        "pos": 5,
+        "domain": "evn.at",
+        "title": "PV-Anlage für Unternehmen: Eigenen Strom erzeugen",
+        "type": "anbieter (versorger)"
+      },
+      {
+        "pos": 6,
+        "domain": "deloitte.com",
+        "title": "Die gemischte Nutzung (betrieblich und privat) von Photovoltaik",
+        "type": "steuerberatung"
+      },
+      {
+        "pos": 7,
+        "domain": "haustec.de",
+        "title": "Solaranlage für Gewerbebetrieb: Die wichtigsten Vorteile",
+        "type": "fachmagazin DE"
+      },
+      {
+        "pos": 8,
+        "domain": "solaranlagen-portal.de",
+        "title": "Steuern, Gewerbe & Abschreibung Ihrer Photovoltaikanlage",
+        "type": "portal DE"
+      },
+      {
+        "pos": 9,
+        "domain": "totalenergies.de",
+        "title": "So nützlich ist eine Solaranlage in der Industrie und Gewerbe",
+        "type": "anbieter DE"
+      }
+    ],
+    "top10_landwirtschaft": [
+      "raiffeisen.at OÖ Landwirte Förderung (bank)",
+      "eww.at Agri-PV (versorger)",
+      "stmk.lko.at Agri-PV PDF (kammer)",
+      "luox-energy.de",
+      "dafne.at (forschung)",
+      "sonnenstrom-bauern.at",
+      "pvbaustria.at",
+      "e-landwirtschaft.at Förderung"
+    ]
+  },
+  "competitor_outline": [
+    "H2 Warum PV im Betrieb anders rechnet (konstanter Tagesverbrauch, Eigenverbrauch 70 % ohne Speicher)",
+    "H2 Kosten je kWp und Stromgestehungskosten in ct/kWh",
+    "H2 Überschuss, Volleinspeisung, Direktvermarktung",
+    "H2 Dach voll belegen: warum größere Anlagen je kWp günstiger sind",
+    "H2 Speicher im Gewerbe nur mit Zusatznutzen (Lastspitzen)",
+    "H2 Förderung: EAG-Kategorien, Fördercalls, Made-in-Europe, Elektrizitätsabgabe",
+    "H2 Steuer: Betriebsausgabe, Abschreibung, gemischte Nutzung",
+    "H2 Contracting als Alternative",
+    "H2 Branchen: Handel, Gewerbe, Industrie, Hotellerie, Transport, Landwirtschaft",
+    "H2 Agri-PV: Kriterien, Förderzuschlag 30 %, Abgrenzung zur Freifläche",
+    "H2 Dachcheck, Statik, Planung, Anlagenpass",
+    "H2 Referenzen und Best Practice"
+  ],
+  "gaps": [
+    "EAG-Kategorien C und D mit 130 bzw. 120 €/kWp und Fördercall-Termin Oktober 2026 fehlen; Seite nennt nur 'EAG-Zuschuss'",
+    "Elektrizitätsabgabe-Befreiung für selbst erzeugten und verbrauchten Strom fehlt (WKO-Argument)",
+    "Steuerliche Einordnung (Betriebsausgabe, Abschreibung, gemischte Nutzung) fehlt komplett; drei Top-10-Ergebnisse behandeln genau das",
+    "Stromgestehungskosten in ct/kWp bzw. ct/kWh und Kosten je kWp für 30, 50, 100 kWp fehlen als zitierbare Zahlen",
+    "Lastspitzenkappung (Peak Shaving) als Nutzen des Gewerbespeichers fehlt",
+    "Volleinspeisung und Direktvermarktung werden nicht erklärt",
+    "Netzanschluss ab 100 kWp (Netzebene, Trafo, Netzbetreiber-Abstimmung) fehlt",
+    "Agri-PV und Freifläche (880 und 260 Suchen) werden nicht eingeordnet, obwohl Landwirtschaft Zielgruppe ist",
+    "Contracting als Alternative wird nicht abgegrenzt (EVN und eww bieten es)",
+    "Branchenbeispiele Logistik, Lagerhalle, Kühlhaus fehlen; Versicherung fehlt",
+    "Erster Absatz klärt die Doppeldeutigkeit 'Gewerbe' nicht"
+  ],
+  "cannibalization": [
+    "/leistungen/energiegemeinschaft-gewerbe/",
+    "/ems-foerderung/",
+    "/energiemanagementsystem/",
+    "/unternehmensfoerderung-von-waermepumpen/",
+    "/photovoltaik/ (Sektion 'Für Ihren Betrieb' und FAQ 'Lohnt sich Photovoltaik auch für Betriebe')",
+    "/referenzen/projekt-gewerbe-oberoesterreich/",
+    "/photovoltaik-foerderung-oesterreich-2026/"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "photovoltaik flachdach",
+      "ai_volume": 34
+    },
+    {
+      "keyword": "eag investitionszuschuss",
+      "ai_volume": 5
+    },
+    {
+      "keyword": "agri-photovoltaik",
+      "ai_volume": 3
+    },
+    {
+      "keyword": "photovoltaik landwirtschaft",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "photovoltaik freiflächenanlage",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "gewerbespeicher",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "photovoltaik förderung landwirtschaft",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "photovoltaik gewerbe",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "pv anlage gewerbe",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik unternehmen",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik für unternehmen",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "gewerbliche photovoltaikanlage",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik für betriebe",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik hotel",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik industrie",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik förderung gewerbe",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik 100 kwp kosten",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik gewerbe kosten",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik abschreibung",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik lastprofil",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Photovoltaik für Gewerbe & Landwirtschaft | EBZ Energie",
+    "h1": "Photovoltaik für Gewerbe, Landwirtschaft und Hotellerie: Strom produzieren, wenn Ihr Betrieb ihn braucht",
+    "description": "Photovoltaik für Betriebe in Kärnten und Steiermark: Auslegung nach Lastprofil, Gewerbespeicher, EAG-Förderung Kategorie C und D. Referenz: 13.500 € im Jahr.",
+    "h2_outline": [
+      "Photovoltaik für Betriebe: was wir meinen und für wen (Gewerbe, Produktion, Landwirtschaft, Hotellerie, Gemeinden)",
+      "Warum Photovoltaik im Gewerbe anders rechnet (Lastprofil, Eigenverbrauch 70 % und mehr, Stromgestehungskosten in ct/kWh)",
+      "Was kostet eine Gewerbeanlage? (Richtwerte je kWp für 30, 50, 100 kWp mit Sternchen)",
+      "Überschuss: Einspeisung, Direktvermarktung, Energiegemeinschaft",
+      "Gewerbespeicher und EMS: Eigenverbrauch und Lastspitzenkappung",
+      "Komponenten für große Dächer (Flachdach, Trapezblech, Ost-West, Glas-Glas)",
+      "Förderungen 2026: EAG Kategorie C und D, Fördercall Oktober, Made-in-Europe-Bonus, Speicher, EMS, Elektrizitätsabgabe",
+      "Steuer und Bilanz: Betriebsausgabe, Abschreibung, gemischte Nutzung (mit Steuerberater)",
+      "Finanzierung statt Contracting: Liquidität bleibt, Anlage gehört Ihnen",
+      "Landwirtschaft: Stalldach, Lagerhalle, Kühlung, Agri-PV eingeordnet",
+      "Netzanschluss und Statik bei Anlagen über 100 kWp",
+      "Referenzen: 40 kWp Oberösterreich, Hotel Villach",
+      "Ablauf von der Besichtigung bis zum Betrieb",
+      "Häufige Fragen"
+    ],
+    "faq_add": [
+      "Welche Förderung gibt es 2026 für Gewerbeanlagen (EAG Kategorie C und D) und wann ist der nächste Fördercall?",
+      "Sind gewerbliche PV-Anlagen steuerfrei und wie werden sie abgeschrieben?",
+      "Brauche ich als PV-Betreiber eine Gewerbeanmeldung?",
+      "Wie hoch ist die Einspeisevergütung für gewerbliche Anlagen?",
+      "Was ist Lastspitzenkappung und wann lohnt sich ein Gewerbespeicher?",
+      "Agri-PV oder Dachanlage: was passt zu meinem landwirtschaftlichen Betrieb?",
+      "Was kostet eine PV-Anlage mit 100 kWp?"
+    ],
+    "internal_links": [
+      "/leistungen/energiegemeinschaft-gewerbe/ -> Energiegemeinschaft für Betriebe und Gemeinden",
+      "/ems-foerderung/ -> EMS-Förderung für Betriebe",
+      "/energiemanagementsystem/ -> Energiemanagementsystem",
+      "/unternehmensfoerderung-von-waermepumpen/ -> Wärmepumpenförderung für Unternehmen",
+      "/photovoltaik-foerderung-oesterreich-2026/ -> EAG-Fördercall Oktober 2026",
+      "/batteriespeicher/ -> Batteriespeicher",
+      "/finanzierung/ -> Finanzierung für Betriebe",
+      "/referenzen/projekt-gewerbe-oberoesterreich/ -> Referenz 40 kWp Gewerbe Oberösterreich",
+      "/referenzen/ -> Referenzen",
+      "/photovoltaik/ -> Photovoltaikanlage",
+      "/waermepumpe/ -> Wärmepumpe im Betrieb"
+    ],
+    "notes": "Die Seite ist strukturell vollständig und argumentiert richtig über Lastprofil und Eigenverbrauch, aber das direkte Suchvolumen für Gewerbe-Begriffe liegt in Österreich bei 10 bis 20 je Monat. Reichweite entsteht nur über die Zahlen, die die Top 10 liefern und uns fehlen: EAG-Kategorien C/D mit €/kWp, Elektrizitätsabgabe, Steuer und Abschreibung, Stromgestehungskosten, Kosten je kWp. Zuerst den Förderabsatz mit Kategorien und Fördercall Oktober 2026 präzisieren, dann Steuer-FAQ und Kosten-Richtwerte ergänzen. Agri-PV (880 Suchen) als Einordnungs-FAQ aufnehmen, nicht als Leistung. Im ersten Absatz klarstellen, dass es um PV für Betriebe geht, nicht um die Gewerbeanmeldung von PV-Betreibern."
+  },
+  "cost_usd": 0.1
+}

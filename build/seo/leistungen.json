@@ -1,0 +1,426 @@
+{
+ "slug": "leistungen",
+ "path": "/leistungen/",
+ "seitentyp": "leistung",
+ "stand": "2026-10-09",
+ "primary": {
+  "keyword": "pv komplettanlage mit speicher und montage",
+  "volume_at": 170,
+  "kd": null,
+  "cpc": 2.66,
+  "intent": "commercial (0,93)"
+ },
+ "secondary": [
+  {
+   "keyword": "pv komplettanlage mit speicher",
+   "volume_at": 260,
+   "kd": 1,
+   "intent": "commercial (0,66)"
+  },
+  {
+   "keyword": "photovoltaik komplettanlage",
+   "volume_at": 110,
+   "kd": null,
+   "intent": "commercial (0,70) / transactional (Overview)"
+  },
+  {
+   "keyword": "photovoltaik anbieter",
+   "volume_at": 140,
+   "kd": 21,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaikanlage mit speicher komplettpaket österreich",
+   "volume_at": 70,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaik komplettanlage mit speicher",
+   "volume_at": 10,
+   "kd": 45,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "pv anlage komplett mit montage",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "transactional"
+  }
+ ],
+ "semantic": [
+  "Komplettanlage",
+  "Komplettpaket",
+  "schlüsselfertig",
+  "Montage und Inbetriebnahme",
+  "PV-Module",
+  "Hybrid-Wechselrichter",
+  "Batteriespeicher (kWh)",
+  "Montagesystem (Aufdach, Indach, Flachdach, Trapezblech)",
+  "Energiemanagementsystem",
+  "Wallbox",
+  "Wärmepumpe",
+  "Notstrom",
+  "kWp",
+  "Faustregel 1 kWp je 1.000 kWh Jahresverbrauch",
+  "5 bis 6 m² Dachfläche je kWp",
+  "Eigenverbrauch",
+  "Autarkie",
+  "Amortisation",
+  "EAG-Investitionszuschuss (OeMAG) 150 €/kWp und 150 €/kWh",
+  "Landesförderung Kärnten 3.000 € / Steiermark",
+  "Netzanmeldung Netzbetreiber",
+  "Richtpreis 10 kWp mit Speicher 15.000 bis 22.000 € vor Förderung",
+  "€/kWp",
+  "Leistungsgarantie bis 30 Jahre",
+  "Produktgarantie 10 Jahre",
+  "Projektbericht mit 3D-Belegplan und Statikreport",
+  "Lastspitzen (Gewerbe)",
+  "Selbstmontage vs. Fachbetrieb",
+  "Fronius / Huawei / BYD (Marken der Wettbewerber)",
+  "Finanzierung ab 147 €/Monat"
+ ],
+ "long_tail": [
+  {
+   "keyword": "pv anlage mit speicher",
+   "volume_at": 3600
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 10 kwp mit speicher",
+   "volume_at": 320
+  },
+  {
+   "keyword": "was kostet eine 10 kwp pv-anlage mit speicher österreich",
+   "volume_at": 210
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 10 kwp mit speicher und montage",
+   "volume_at": 140
+  },
+  {
+   "keyword": "pv-anlage komplettset",
+   "volume_at": 140
+  },
+  {
+   "keyword": "bester photovoltaik anbieter österreich",
+   "volume_at": 140
+  },
+  {
+   "keyword": "photovoltaikanlage kaufen",
+   "volume_at": 110
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 5 kwp mit speicher",
+   "volume_at": 90
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 15 kwp mit speicher",
+   "volume_at": 90
+  },
+  {
+   "keyword": "photovoltaik anlage anbieter",
+   "volume_at": 90
+  },
+  {
+   "keyword": "photovoltaik anbieter in meiner nähe",
+   "volume_at": 90
+  },
+  {
+   "keyword": "pv-anlage 5 kwp mit speicher und montage",
+   "volume_at": 70
+  },
+  {
+   "keyword": "photovoltaikanlage mit speicher komplettpaket österreich",
+   "volume_at": 70
+  },
+  {
+   "keyword": "photovoltaik komplettanlage selbstmontage",
+   "volume_at": 50
+  },
+  {
+   "keyword": "pv-anlage 15 kwp mit speicher österreich",
+   "volume_at": 50
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 20 kwp mit speicher",
+   "volume_at": 40
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 10 kwp mit speicher und montage kosten",
+   "volume_at": 40
+  },
+  {
+   "keyword": "photovoltaikanlage mit speicher komplettpaket preis",
+   "volume_at": 20
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 15 kwp mit speicher und montage",
+   "volume_at": 20
+  },
+  {
+   "keyword": "solaranlage komplettpaket",
+   "volume_at": 10
+  },
+  {
+   "keyword": "pv komplettanlage preis",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik alles aus einer hand",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Wie groß muss der Stromspeicher für ein Einfamilienhaus sein?",
+  "Wie viel kW sollte eine Solaranlage mit einem Speicher haben?",
+  "Wie lange reicht ein 10 kWh Stromspeicher?",
+  "Wann lohnt sich Solar mit Speicher?",
+  "Welche Nachteile hat Photovoltaik mit Speicher?",
+  "Werden Batteriespeicher 2026 billiger?",
+  "Was kostet ein 10 kW Stromspeicher mit Einbau?",
+  "Ist eine Photovoltaikanlage 2026 noch sinnvoll?",
+  "Gibt es 2026 noch eine Photovoltaikförderung?",
+  "Was kostet eine komplette Solaranlage für ein Einfamilienhaus?",
+  "Wie viel Photovoltaik brauche ich, um 10.000 kWh Strom zu erzeugen?",
+  "Ab welcher Größe ist eine Photovoltaikanlage sinnvoll?",
+  "Was ist die 70 %-Regel für Photovoltaikanlagen?"
+ ],
+ "serp": {
+  "features": [
+   "popular_products (Komplettsets 1.300 bis 9.000 €)",
+   "people_also_ask",
+   "people_also_search",
+   "images",
+   "related_searches",
+   "kein ai_overview"
+  ],
+  "top10": [
+   {
+    "pos": 1,
+    "domain": "greensolar.at",
+    "title": "Solaranlage mit Speicher",
+    "type": "shop"
+   },
+   {
+    "pos": 2,
+    "domain": "pv-komplettanlage.at",
+    "title": "PV-Anlage kaufen mit Speicher | Komplettanlage Österreich",
+    "type": "shop mit Montage (NÖ, Wien, Bgld)"
+   },
+   {
+    "pos": 3,
+    "domain": "tepto.at",
+    "title": "Solaranlage mit Speicher kaufen | PV-Anlagen Komplettsets",
+    "type": "shop"
+   },
+   {
+    "pos": 4,
+    "domain": "solardiscount.at",
+    "title": "PV-Komplettanlage kaufen",
+    "type": "shop"
+   },
+   {
+    "pos": 5,
+    "domain": "josefsteiner.at",
+    "title": "Photovoltaik POWER PLUS MAX Komplettanlage 10 kWp",
+    "type": "shop"
+   },
+   {
+    "pos": 6,
+    "domain": "fronius.com",
+    "title": "PV-Anlage mit Speicher für Eigenheime",
+    "type": "hersteller"
+   },
+   {
+    "pos": 7,
+    "domain": "adac.de",
+    "title": "Solaranlage mit und ohne Speicher: Kosten",
+    "type": "ratgeber (DE)"
+   },
+   {
+    "pos": 8,
+    "domain": "eww.at",
+    "title": "Photovoltaik Komplettanlage ist eine individuelle Lösung",
+    "type": "anbieter-magazin"
+   },
+   {
+    "pos": 9,
+    "domain": "efficiency-projects.com",
+    "title": "Photovoltaik Komplettanlage mit Speicher und Montage",
+    "type": "anbieter"
+   }
+  ]
+ },
+ "competitor_outline": [
+  "H2 Was ist eine PV-Komplettanlage mit Speicher (Komponenten: Module, Hybrid-Wechselrichter, Speicher, Montagesystem, EMS)",
+  "H2 Aufgabe des Hybrid-Wechselrichters",
+  "H2 Wie funktioniert der Speicher, welche Kapazität",
+  "H2 Vorteile",
+  "H2 Was kostet eine Komplettanlage mit Speicher und Montage (16.000 bis 30.000 € in Österreich)",
+  "H2 Lohnt sich das",
+  "H2 Welche Anlagengröße passt (Faustregel kWp, m²)",
+  "H2 Förderung EAG/OeMAG und Land",
+  "H2 Montage und Ablauf (1 bis 3 Tage)",
+  "H2 Haushalt vs. Gewerbe",
+  "H2 Garantie",
+  "H2 FAQ"
+ ],
+ "gaps": [
+  "Vokabular 'Komplettpaket', 'schlüsselfertig', 'Hybrid-Wechselrichter' fehlt; die Seite spricht von 'Bausteinen', nicht von der Komplettanlage, nach der gesucht wird",
+  "Keine Komponentenliste einer Komplettanlage (Module, Hybrid-Wechselrichter, Speicher in kWh, Montagesystem, EMS)",
+  "Faustregeln fehlen: 1 kWp je 1.000 kWh Jahresverbrauch, 5 bis 6 m² je kWp, Speichergröße",
+  "Förderzahlen nicht beziffert (EAG 150 €/kWp und 150 €/kWh, Landespauschale Kärnten 3.000 €)",
+  "Kein Abschnitt 'Komplettset zur Selbstmontage vs. Fachbetrieb' (Shops dominieren die SERP, Abgrenzung schafft Relevanz)",
+  "Netzanmeldung und Inbetriebnahme als Leistung nicht genannt",
+  "Preis je kWp als Orientierung fehlt (Richtpreis 15.000 bis 22.000 € ist vorhanden)"
+ ],
+ "cannibalization": [
+  "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/",
+  "/photovoltaik/",
+  "/batteriespeicher/",
+  "/kosten-einer-solaranlage/",
+  "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/"
+ ],
+ "ai_search_volume": [
+  {
+   "keyword": "was kostet eine 10 kwp pv-anlage mit speicher österreich",
+   "ai_volume": 81
+  },
+  {
+   "keyword": "photovoltaik anbieter",
+   "ai_volume": 15
+  },
+  {
+   "keyword": "photovoltaik komplettanlage",
+   "ai_volume": 9
+  },
+  {
+   "keyword": "solaranlage anbieter",
+   "ai_volume": 8
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 10 kwp mit speicher",
+   "ai_volume": 4
+  },
+  {
+   "keyword": "photovoltaik komplettanlage 10 kwp mit speicher und montage",
+   "ai_volume": 4
+  },
+  {
+   "keyword": "photovoltaik komplettanlage mit speicher",
+   "ai_volume": 4
+  },
+  {
+   "keyword": "photovoltaik mit speicher kosten",
+   "ai_volume": 4
+  },
+  {
+   "keyword": "solaranlage komplettpaket",
+   "ai_volume": 1
+  },
+  {
+   "keyword": "pv komplettanlage mit speicher",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "pv komplettanlage mit speicher und montage",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "pv-anlage komplettset",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "photovoltaikanlage mit speicher komplettpaket österreich",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "bester photovoltaik anbieter österreich",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "pv anlage mit speicher kaufen",
+   "ai_volume": 0
+  },
+  {
+   "keyword": "pv komplettanlage preis",
+   "ai_volume": 0
+  }
+ ],
+ "recommendation": {
+  "title": "PV-Komplettanlage mit Speicher und Montage | EBZ Energie",
+  "h1": "PV-Komplettanlage mit Speicher und Montage: ein System, sechs Bausteine von EBZ Energie",
+  "description": "PV-Komplettanlage mit Speicher und Montage aus einer Hand: Photovoltaik, Speicher, Wärmepumpe, EMS, Energiegemeinschaft. 10 kWp mit Speicher ab rund 15.000 €.",
+  "h2_outline": [
+   "Was gehört zu einer PV-Komplettanlage mit Speicher? (Module, Hybrid-Wechselrichter, Speicher, Montagesystem, EMS)",
+   "Wir denken in Systemen, nicht in Einzelteilen",
+   "Alle Leistungen: sechs Bausteine für Zuhause und Betrieb",
+   "Eigenheim oder Betrieb: das System passt sich an",
+   "Was kostet eine Komplettanlage mit Speicher und Montage? (Richtpreis, €/kWp, Förderung 2026)",
+   "Welche Größe passt: Faustregeln für kWp, kWh und Dachfläche",
+   "Komplettset zur Selbstmontage oder Fachbetrieb: der Unterschied",
+   "Ablauf und Dauer: von der Beratung bis zur Netzanmeldung",
+   "Ihr Partner aus der Region",
+   "Das sagen unsere Kundinnen und Kunden",
+   "Ihr Weg in vier Schritten",
+   "Häufige Fragen",
+   "Reden wir über Ihr Projekt"
+  ],
+  "faq_add": [
+   "Was kostet eine PV-Komplettanlage mit Speicher und Montage in Österreich?",
+   "Wie groß muss der Stromspeicher für ein Einfamilienhaus sein?",
+   "Wie viel kWp brauche ich für 4.000 oder 10.000 kWh Jahresverbrauch?",
+   "Wie lange dauert die Montage einer Komplettanlage?",
+   "Gibt es 2026 noch Förderung für PV mit Speicher (EAG, Landespauschale)?",
+   "Komplettset zur Selbstmontage oder Fachbetrieb: was ist der Unterschied?"
+  ],
+  "internal_links": [
+   "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ -> 10 kWp Komplettanlage mit Speicher und Montage: Kosten",
+   "/photovoltaik/ -> Photovoltaikanlage mit Speicher",
+   "/batteriespeicher/ -> Batteriespeicher",
+   "/kosten-einer-solaranlage/ -> Kosten einer Solaranlage 2026",
+   "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/ -> Ab wann lohnt sich PV mit Speicher",
+   "/photovoltaik-foerderung-oesterreich-2026/ -> Förderung 2026",
+   "/solarrechner/ -> PV-Rechner",
+   "/photovoltaik-gewerbe/ -> Photovoltaik für Gewerbe",
+   "/finanzierung/ -> Finanzierung",
+   "/referenzen/ -> Referenzen"
+  ],
+  "notes": "Die SERP zu 'pv komplettanlage mit speicher' ist eine Shop-SERP (Popular Products, Komplettsets ab 1.300 €, Selbstbausätze); die Variante 'mit Speicher und Montage' (170, commercial 0,93) filtert den Selbstbau-Intent heraus und passt zur Leistungsseite, deshalb Primär. Die 10-kWp-Varianten (320 und 140) gehören dem Ratgeber /photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ und werden von /leistungen/ nur verlinkt. Die Seite spricht aktuell von 'Bausteinen' und nennt weder Komplettanlage im Title noch Komponenten oder Faustregeln; zuerst Title/H1 umstellen, dann Komponentenabschnitt, Faustregeln, Förderzahlen 2026 und die Abgrenzung zum Selbstmontage-Set ergänzen. Search Console: 16 Klicks und 1.210 Impressionen in 12 Monaten, fast nur Brand ('ebz energie') und Streutreffer wie 'pv-anlage installieren kärnten': die Seite hat kein eigenes Thema, deshalb lohnt die Umstellung auf 'Komplettanlage mit Speicher und Montage'."
+ },
+ "cost_usd": 0.089,
+ "gsc": {
+  "clicks": 16,
+  "impressions": 1210,
+  "ctr": 1.3,
+  "position": 10.1,
+  "top_queries": [
+   [
+    "ebz energie",
+    12,
+    328
+   ],
+   [
+    "ebz energie gmbh",
+    0,
+    217
+   ],
+   [
+    "kühlraum installieren steiermark",
+    0,
+    30
+   ],
+   [
+    "pv-anlage installieren kärnten",
+    0,
+    25
+   ],
+   [
+    "infrarotheizung villach",
+    0,
+    21
+   ]
+  ],
+  "note": "Nur Brand-Impressionen und Streuquer: die Seite hat heute kein eigenes Keyword-Thema."
+ }
+}

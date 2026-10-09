@@ -1,0 +1,67 @@
+{
+ "old_url": "/photovoltaik-carport/",
+ "clicks": 88,
+ "impressions": 9960,
+ "ctr": 0.9,
+ "position": 28.3,
+ "top_queries": [
+  [
+   "pv carport österreich",
+   10,
+   354
+  ],
+  [
+   "carport mit solardach und wallbox",
+   3,
+   47
+  ],
+  [
+   "pv-carport österreich",
+   3,
+   17
+  ],
+  [
+   "carport mit photovoltaik",
+   2,
+   232
+  ],
+  [
+   "carport solar",
+   2,
+   12
+  ],
+  [
+   "solar carport",
+   1,
+   1109
+  ],
+  [
+   "solarcarport österreich",
+   1,
+   260
+  ],
+  [
+   "solar carport österreich",
+   1,
+   221
+  ],
+  [
+   "carport mit pv anlage",
+   1,
+   76
+  ],
+  [
+   "pv anlage auf carport statik",
+   1,
+   48
+  ]
+ ],
+ "queries_total": 259,
+ "note": "Viele Impressionen (solar carport 1.109) auf Position ~28: Potenzial bei besserem Ranking.",
+ "period": {
+  "from": "2025-10-07",
+  "to": "2026-10-06",
+  "property": "https://ebz-photovoltaik.at/",
+  "note": "Top-10 Suchanfragen je Seite (GSC-UI, 12 Monate); Klicks/Impressionen/CTR/Position = Seitensumme"
+ }
+}
