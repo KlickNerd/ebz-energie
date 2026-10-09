@@ -145,9 +145,9 @@ def build_hub(arts):
         "Ein Anruf klärt oft mehr als zehn Artikel. Wir beraten kostenlos und sagen ehrlich, was sich bei Ihnen rechnet.",
     )
     html = page(
-        "Ratgeber: Photovoltaik, Speicher, Wärmepumpe, Förderung | EBZ Energie",
-        f"{total} Ratgeber von EBZ Energie aus Villach: Photovoltaik-Kosten, Speicher, Wärmepumpe, "
-        "Förderungen in allen Bundesländern, Energiegemeinschaft und Smart Meter. Mit Zahlen, Fristen und Beispielen.",
+        "Ratgeber: PV, Speicher, Wärmepumpe, Förderung | EBZ Energie",
+        f"{total} Ratgeber von EBZ Energie: PV-Kosten, Speicher, Wärmepumpe, Förderungen in allen "
+        "Bundesländern, Energiegemeinschaft und Smart Meter, mit Zahlen und Fristen.",
         "/ratgeber/", body,
     )
     return write_page("ratgeber/index.html", html)

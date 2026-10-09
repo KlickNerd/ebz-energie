@@ -14,6 +14,9 @@
 /oemag-einspeisetarif-energiegemeinschaft/         /oemag-einspeisetarif/
 /energiegemeinschaft-villach/                      /energiegemeinschaft-villach-klagenfurt/
 
+# Slug-Aenderung Leistungsseite (GSC: 4 Klicks in 3 Monaten, kein Risiko)
+/waermepumpen-installateur/                        /waermepumpe/
+
 # Alte Seiten, deren Thema jetzt ein Ratgeber abdeckt
 /foerderung-photovoltaik-kaernten/                 /photovoltaik-foerderung-kaernten/
 /photovoltaik-foerderung-oesterreich/              /photovoltaik-foerderung-oesterreich-2026/
@@ -32,3 +35,15 @@
 /balkonkraftwerk-mit-speicher/                     /balkonkraftwerke/
 /photovoltaik-beratung/                            /kontakt/
 /energiemangementsystem/                           /energiemanagementsystem/
+
+# Alte Referenz-Unterseiten -> Anker auf der neuen Referenzseite
+/referenzen-alt/                                                  /referenzen/
+/referenzen-alt/projekt-gewerbe-oberoesterreich/                  /referenzen/#gewerbe-oberoesterreich
+/referenzen-alt/projekt-pv-anlage-hotel-villach/                  /referenzen/#hotel-villach-warmbad
+/referenzen-alt/projekt-landwirtschaft-im-burgenland/             /referenzen/#landwirtschaft-burgenland
+/referenzen-alt/projekt-stadthaus-in-graz/                        /referenzen/#stadthaus-graz
+/referenzen-alt/projekt-bitumendach-in-niederoesterreich/         /referenzen/#bitumendach-niederoesterreich
+/referenzen-alt/projekt-pv-wien/                                  /referenzen/#wohnhaus-wien
+/referenzen-alt/projekt-pv-am-ossiachersee/                       /referenzen/#einfamilienhaus-ossiachersee
+/referenzen-alt/projekt-flachdach-in-graz/                        /referenzen/#flachdach-graz
+/referenzen/projekt-gewerbe-oberoesterreich/                      /referenzen/#gewerbe-oberoesterreich

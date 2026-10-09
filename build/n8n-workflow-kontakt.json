@@ -1,0 +1,55 @@
+{
+  "name": "EBZ Kontaktformular -> Gmail",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ebz-kontakt",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "https://ebz-photovoltaik.at,https://www.ebz-photovoltaik.at,https://klicknerd.github.io"
+        }
+      },
+      "name": "Webhook Kontaktformular",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "ebz-kontakt"
+    },
+    {
+      "parameters": {
+        "sendTo": "office@ebz-energie.com",
+        "subject": "=Neue Website-Anfrage: {{ $json.body.name }} ({{ $json.body.quelle || 'Website' }})",
+        "emailType": "text",
+        "message": "=Neue Anfrage über ebz-photovoltaik.at\n\nName: {{ $json.body.name }}\nE-Mail: {{ $json.body.email }}\nTelefon: {{ $json.body.tel }}\nPLZ/Ort: {{ $json.body.plz }}\n\nAnliegen:\n{{ $json.body.msg }}\n\nSeite: {{ $json.body.seite }}\nZeit: {{ $json.body.zeit }}",
+        "options": { "replyTo": "={{ $json.body.email }}" }
+      },
+      "name": "Gmail an office@",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [260, 0]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\"ok\": true}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              { "name": "Access-Control-Allow-Origin", "value": "={{ $('Webhook Kontaktformular').item.json.headers.origin || '*' }}" }
+            ]
+          }
+        }
+      },
+      "name": "Antwort 200",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [520, 0]
+    }
+  ],
+  "connections": {
+    "Webhook Kontaktformular": { "main": [[{ "node": "Gmail an office@", "type": "main", "index": 0 }]] },
+    "Gmail an office@": { "main": [[{ "node": "Antwort 200", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" }
+}

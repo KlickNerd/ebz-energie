@@ -111,6 +111,40 @@
     rgInput.addEventListener("input", apply);
   }
 
+  // Rechner-Ergebnis ins Kontaktformular uebernehmen (?anliegen=...)
+  try {
+    var pre = new URLSearchParams(location.search).get("anliegen");
+    var msgEl = document.querySelector("form.js-contact [name=msg]");
+    if(pre && msgEl && !msgEl.value){ msgEl.value = pre + "\n\n"; }
+  } catch(e){}
+
+  // Kontaktformular: JSON-POST an den Webhook, Fallback mailto
+  document.querySelectorAll("form.js-contact").forEach(function(form){
+    var msg = form.querySelector(".form-msg");
+    function show(kind, html){ msg.hidden = false; msg.className = "form-msg form-msg--" + kind; msg.innerHTML = html; }
+    form.addEventListener("submit", function(ev){
+      ev.preventDefault();
+      if(form.querySelector('[name="website"]').value){ return; } // Honeypot
+      var req = ["name","email"], ok = true;
+      req.forEach(function(n){ var el = form.querySelector('[name="'+n+'"]'); var bad = !el.value.trim() || (n==="email" && el.value.indexOf("@")<0); el.classList.toggle("is-invalid", bad); if(bad) ok = false; });
+      var consent = form.querySelector('[name="datenschutz"]');
+      if(consent && !consent.checked){ ok = false; show("err", "Bitte bestätigen Sie die Datenschutzerklärung."); }
+      if(!ok){ if(!consent || consent.checked) show("err", "Bitte Name und eine gültige E-Mail-Adresse angeben."); return; }
+      var data = {};
+      new FormData(form).forEach(function(v, k){ if(k !== "website") data[k] = v; });
+      data.seite = location.href; data.zeit = new Date().toISOString();
+      form.classList.add("is-sending");
+      fetch(form.action, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(data)})
+        .then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); })
+        .then(function(){ form.classList.remove("is-sending"); form.reset();
+          show("ok", "Danke! Ihre Anfrage ist bei uns in Villach angekommen. Wir melden uns innerhalb eines Werktags."); })
+        .catch(function(){ form.classList.remove("is-sending");
+          var mail = form.getAttribute("data-mailto");
+          var body = encodeURIComponent("Name: "+(data.name||"")+"\nE-Mail: "+(data.email||"")+"\nTelefon: "+(data.tel||"")+"\nPLZ/Ort: "+(data.plz||"")+"\n\n"+(data.msg||""));
+          show("err", "Das Formular konnte gerade nicht gesendet werden. Bitte rufen Sie uns an oder <a href=\"mailto:"+mail+"?subject=Beratungsanfrage&body="+body+"\">senden Sie Ihre Anfrage per E-Mail</a>."); });
+    });
+  });
+
   var sticky = document.querySelector(".sticky-cta");
   var hero = document.querySelector(".hero");
   if(sticky && hero && "IntersectionObserver" in window){

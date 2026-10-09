@@ -6,7 +6,7 @@ keine Icon-Fonts, keine Emojis. Reveal ueber Klasse 'eg-reveal'.
 
 import html as _html
 
-from common import NAP, CLAIMS, AUTHOR, AUTHOR_ROLE, IMG, a, href, tel_link
+from common import FORM_ENDPOINT, NAP, CLAIMS, AUTHOR, AUTHOR_ROLE, IMG, a, href, tel_link
 
 
 def hero(eyebrow, h1, lead, badges, img, img_alt, float_num=None, float_label=None,
@@ -732,7 +732,8 @@ def finance_band():
   </section>"""
 
 
-def contact_section(headline, sub, form_note="Wir melden uns innerhalb eines Werktags."):
+def contact_section(headline, sub, form_note="Wir melden uns innerhalb eines Werktags.", page_label=""):
+    """Kontaktsektion mit funktionierendem Formular (JSON-POST an FORM_ENDPOINT, siehe main.js)."""
     return f"""
   <section class="section contact" id="beratung">
     <div class="wrap">
@@ -748,7 +749,11 @@ def contact_section(headline, sub, form_note="Wir melden uns innerhalb eines Wer
             <li><span class="ic" aria-hidden="true">◷</span> {NAP['hours']}</li>
           </ul>
         </div>
-        <form class="form-card eg-reveal" action="#" method="post" novalidate>
+        <form class="form-card eg-reveal js-contact" action="{FORM_ENDPOINT}" method="post" novalidate
+              data-mailto="{NAP['email']}">
+          <input type="hidden" name="quelle" value="{page_label}">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"
+                 style="position:absolute;left:-9999px;opacity:0;height:0">
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
@@ -762,11 +767,18 @@ def contact_section(headline, sub, form_note="Wir melden uns innerhalb eines Wer
             <input id="tel" name="tel" type="tel" autocomplete="tel">
           </div>
           <div class="field">
-            <label for="msg">Ihr Anliegen</label>
-            <textarea id="msg" name="msg" rows="4"></textarea>
+            <label for="plz">PLZ / Ort</label>
+            <input id="plz" name="plz" type="text" autocomplete="postal-code">
           </div>
+          <div class="field">
+            <label for="msg">Ihr Anliegen</label>
+            <textarea id="msg" name="msg" rows="4" placeholder="z. B. Einfamilienhaus, 4 Personen, Interesse an PV mit Speicher"></textarea>
+          </div>
+          <label class="consent"><input type="checkbox" name="datenschutz" required>
+            Ich habe die {a('datenschutz', 'Datenschutzerklärung')} gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung der Anfrage zu.</label>
           <button class="btn btn--primary btn--lg" type="submit" style="width:100%">Beratung anfragen</button>
           <p class="form-note">{form_note}</p>
+          <p class="form-msg" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
     </div>

@@ -70,6 +70,10 @@ FINANZIERUNG = {
                  "vorbehaltlich Bonitätsprüfung."),
 }
 
+# Kontaktformular: POST (JSON) an n8n-Webhook, der per Gmail an office@ weiterleitet.
+# Workflow-Import: build/n8n-workflow-kontakt.json. Fallback im Browser: mailto-Link.
+FORM_ENDPOINT = "https://klicknerds.app.n8n.cloud/webhook/ebz-kontakt"
+
 AUTHOR = "Mario Zintl"
 AUTHOR_ROLE = "Geschäftsführung EBZ Energie GmbH"
 
@@ -79,7 +83,7 @@ S = {
     "home": "/",
     "photovoltaik": "/photovoltaik/",
     "batteriespeicher": "/batteriespeicher/",
-    "waermepumpe": "/waermepumpen-installateur/",
+    "waermepumpe": "/waermepumpe/",  # GSC 07-10/2026: alte URL 4 Klicks, Pos. 19 -> Umzug risikofrei, 301 in redirects.txt
     "balkonkraftwerke": "/balkonkraftwerke/",
     "finanzierung": "/finanzierung/",
     "referenzen": "/referenzen/",
@@ -102,6 +106,8 @@ S = {
     "pv_villach": "/photovoltaik-villach/",
     "pv_wolfsberg": "/photovoltaik-wolfsberg/",
     "marktpreis": "/marktpreis-2026/",
+    "pv_gewerbe": "/photovoltaik-gewerbe/",
+    "carport": "/photovoltaik-carport/",
 }
 
 # --- Bilder ---------------------------------------------------------------
@@ -313,6 +319,9 @@ def apply_base_path(html):
     return html
 
 
+_EMOJI_RE = _re.compile("[\U0001F000-\U0001FAFF\U00002600-\U000027BF\U0001F900-\U0001F9FF\uFE0F]")
+
+
 def load_reviews():
     """Laedt gecachte Google-Rezensionen (build/data/reviews.json).
 
@@ -333,6 +342,8 @@ def load_reviews():
         with open(path, encoding="utf-8") as f:
             data = _json.load(f)
         reviews = data.get("reviews") or fallback
+        for r in reviews:  # Emojis aus echten Rezensionen entfernen (Design-Regel, Text bleibt sonst gleich)
+            r["text"] = _re.sub(r"\s{2,}", " ", _EMOJI_RE.sub("", r.get("text", ""))).strip()
         return data.get("rating", NAP["rating"]), data.get("count"), reviews
     except (OSError, ValueError):
         return NAP["rating"], None, fallback

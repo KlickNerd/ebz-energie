@@ -16,9 +16,7 @@ import components as C
 
 PATH = "/"
 TITLE = "Photovoltaik, Speicher & Wärmepumpe | EBZ Energie Kärnten"
-DESC = ("EBZ Energie macht Ihr Zuhause zum Kraftwerk: Photovoltaik, Speicher, Wärmepumpe, "
-        "Energiemanagement und Energiegemeinschaft aus einer Hand in Kärnten und der Steiermark. "
-        "Bis zu 85 % weniger Stromkosten, 4,9 Sterne, 300+ Projekte.")
+DESC = ("EBZ Energie, Villach: Photovoltaik, Speicher, Wärmepumpe, Energiemanagement und Energiegemeinschaft aus einer Hand in Kärnten und der Steiermark. Bis zu 85 % sparen.")
 
 
 def build():

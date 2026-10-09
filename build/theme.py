@@ -568,6 +568,16 @@ p{margin:0 0 1rem}
 .form-note{font-size:.82rem;color:var(--muted);margin-top:6px}
 @media(max-width:820px){.contact__grid{grid-template-columns:1fr}}
 
+/* --- Formular-Status ---------------------------------------------------- */
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:var(--muted);margin:4px 0 16px;line-height:1.45}
+.consent input{margin-top:4px;accent-color:var(--petrol);flex:0 0 auto}
+.form-msg{margin:14px 0 0;padding:14px 16px;border-radius:12px;font-weight:600}
+.form-msg--ok{background:#e7f6ee;color:#14532d;border:1px solid #bfe6cf}
+.form-msg--err{background:#fdecec;color:#7f1d1d;border:1px solid #f5c2c2}
+.form-msg a{color:inherit}
+.form-card.is-sending button{opacity:.6;pointer-events:none}
+.field input:invalid:not(:placeholder-shown),.field input.is-invalid{border-color:#dc2626}
+
 /* --- FAQ ---------------------------------------------------------------- */
 .faq{max-width:820px;margin-inline:auto;display:grid;gap:12px}
 .acc{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
@@ -729,7 +739,7 @@ p{margin:0 0 1rem}
 .art-sources ul{margin:0;padding-left:1.2em}
 .art-sources a{font-weight:500}
 @media(max-width:980px){
-  .article-grid{grid-template-columns:1fr}
+  .article-grid{grid-template-columns:minmax(0,1fr)}
   .article-aside{position:static}
   .aside-card--toc{display:none}
 }
@@ -796,6 +806,29 @@ p{margin:0 0 1rem}
 @media(max-width:1000px){.rg-grid,.rg-featured .rg-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.rg-grid,.rg-featured .rg-grid{grid-template-columns:1fr}
   .rg-head{flex-direction:column;align-items:flex-start}}
+
+/* --- Rechner (Solar + Energiegemeinschaft) ---------------------------- */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
+.calc .form-card{position:sticky;top:96px}
+.calc .field select{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:11px;font:inherit;background:#fff}
+.calc .field--row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.calc__hint{font-size:.85rem;color:var(--muted);margin:-6px 0 0}
+.calc__res{background:linear-gradient(160deg,var(--petrol),var(--petrol-3));color:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.calc__res h3{color:var(--amber);margin:0 0 6px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.calc__big{font-family:var(--font-head);font-weight:800;font-size:clamp(2.2rem,5vw,3.2rem);line-height:1;margin:0 0 4px}
+.calc__big small{display:block;font-family:var(--font-body);font-weight:600;font-size:1rem;color:#c6dbe2;margin-top:6px}
+.calc__grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
+.calc__grid div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px 14px}
+.calc__grid b{display:block;font-family:var(--font-head);font-size:1.25rem}
+.calc__grid span{font-size:.82rem;color:#c6dbe2}
+.calc__res .btn{width:100%;justify-content:center}
+.calc__res .btn+.btn{margin-top:10px}
+.calc__note{font-size:.82rem;color:#9fbcc6;margin:16px 0 0;line-height:1.5}
+.calc__assume{margin-top:26px}
+.calc__assume summary{cursor:pointer;font-weight:700;color:var(--petrol)}
+.calc__assume ul{color:var(--muted);font-size:.92rem}
+@media(max-width:860px){.calc{grid-template-columns:1fr}.calc .form-card{position:static}}
+@media(max-width:480px){.calc__grid,.calc .field--row{grid-template-columns:1fr}}
 
 /* --- Reveal ------------------------------------------------------------- */
 .eg-reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
@@ -921,6 +954,40 @@ JS = r"""
     };
     rgInput.addEventListener("input", apply);
   }
+
+  // Rechner-Ergebnis ins Kontaktformular uebernehmen (?anliegen=...)
+  try {
+    var pre = new URLSearchParams(location.search).get("anliegen");
+    var msgEl = document.querySelector("form.js-contact [name=msg]");
+    if(pre && msgEl && !msgEl.value){ msgEl.value = pre + "\n\n"; }
+  } catch(e){}
+
+  // Kontaktformular: JSON-POST an den Webhook, Fallback mailto
+  document.querySelectorAll("form.js-contact").forEach(function(form){
+    var msg = form.querySelector(".form-msg");
+    function show(kind, html){ msg.hidden = false; msg.className = "form-msg form-msg--" + kind; msg.innerHTML = html; }
+    form.addEventListener("submit", function(ev){
+      ev.preventDefault();
+      if(form.querySelector('[name="website"]').value){ return; } // Honeypot
+      var req = ["name","email"], ok = true;
+      req.forEach(function(n){ var el = form.querySelector('[name="'+n+'"]'); var bad = !el.value.trim() || (n==="email" && el.value.indexOf("@")<0); el.classList.toggle("is-invalid", bad); if(bad) ok = false; });
+      var consent = form.querySelector('[name="datenschutz"]');
+      if(consent && !consent.checked){ ok = false; show("err", "Bitte bestätigen Sie die Datenschutzerklärung."); }
+      if(!ok){ if(!consent || consent.checked) show("err", "Bitte Name und eine gültige E-Mail-Adresse angeben."); return; }
+      var data = {};
+      new FormData(form).forEach(function(v, k){ if(k !== "website") data[k] = v; });
+      data.seite = location.href; data.zeit = new Date().toISOString();
+      form.classList.add("is-sending");
+      fetch(form.action, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(data)})
+        .then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); })
+        .then(function(){ form.classList.remove("is-sending"); form.reset();
+          show("ok", "Danke! Ihre Anfrage ist bei uns in Villach angekommen. Wir melden uns innerhalb eines Werktags."); })
+        .catch(function(){ form.classList.remove("is-sending");
+          var mail = form.getAttribute("data-mailto");
+          var body = encodeURIComponent("Name: "+(data.name||"")+"\nE-Mail: "+(data.email||"")+"\nTelefon: "+(data.tel||"")+"\nPLZ/Ort: "+(data.plz||"")+"\n\n"+(data.msg||""));
+          show("err", "Das Formular konnte gerade nicht gesendet werden. Bitte rufen Sie uns an oder <a href=\"mailto:"+mail+"?subject=Beratungsanfrage&body="+body+"\">senden Sie Ihre Anfrage per E-Mail</a>."); });
+    });
+  });
 
   var sticky = document.querySelector(".sticky-cta");
   var hero = document.querySelector(".hero");

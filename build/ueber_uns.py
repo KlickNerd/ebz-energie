@@ -15,9 +15,7 @@ import components as C
 
 PATH = "/ueber-uns/"
 TITLE = "Über uns | Die Energie-Handwerker aus Villach | EBZ Energie"
-DESC = ("Lernen Sie EBZ Energie kennen: die freundlichen Energie-Handwerker aus Villach. "
-        "Photovoltaik, Speicher, Wärmepumpe und Energiegemeinschaft aus einer Hand, "
-        "geführt von Mario Zintl. Festangestelltes Team, 300+ Projekte, 4,9 Sterne.")
+DESC = ("EBZ Energie: die freundlichen Energie-Handwerker aus Villach. Photovoltaik, Speicher, Wärmepumpe und Energiegemeinschaft aus einer Hand, 300+ Projekte, 4,9 Sterne.")
 
 
 def build():

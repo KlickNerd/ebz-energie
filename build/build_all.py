@@ -100,6 +100,25 @@ def write_sitemap():
     print(f"[OK ] sitemap.xml ({len(urls)} URLs)")
 
 
+def build_pages():
+    """Baut alle Seitenmodule aus build/pages/*.py (jedes Modul stellt build() bereit)."""
+    import importlib.util
+    pages_dir = os.path.join(ROOT, "build", "pages")
+    errors = []
+    for name in sorted(os.listdir(pages_dir)):
+        if not name.endswith(".py") or name.startswith("_"):
+            continue
+        spec = importlib.util.spec_from_file_location("pages_" + name[:-3], os.path.join(pages_dir, name))
+        mod = importlib.util.module_from_spec(spec)
+        try:
+            spec.loader.exec_module(mod)
+            errors += mod.build() or []
+        except Exception as exc:  # halbfertige Seite blockiert nicht den Build
+            print(f"[ERR] pages/{name}: {type(exc).__name__}: {exc}")
+            errors.append(str(exc))
+    return errors
+
+
 def main():
     print("=== EBZ Website Build ===")
     theme.write_assets()
@@ -112,6 +131,7 @@ def main():
     errors += len(ueber_uns.build())
     errors += len(ratgeber.build())
     errors += len(finanzierung.build())
+    errors += len(build_pages())
     write_sitemap()
     print("=== Fertig ===")
     if errors:
