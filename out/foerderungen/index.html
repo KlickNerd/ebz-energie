@@ -52,330 +52,328 @@
   <main id="main">
 
   <section class="page-hero fhero">
-    <div class="page-hero__inner">
+    <div class="page-hero__inner eg-reveal">
       <p class="eyebrow">Förderungen 2026</p>
-      <h1>Förderungen für Photovoltaik, Speicher und Wärmepumpe</h1>
+      <h1>Welche Förderung bekommen Sie für Photovoltaik, Speicher und Wärmepumpe?</h1>
       <p class="lead">Zwei Klicks, und Sie sehen, was Bund und Land für Ihr Vorhaben zahlen.</p>
-      <div class="ffq">
-        <p class="ffq__label" id="ffq-v">1 · Was planen Sie?</p>
-        <div class="ffq__opts ffq__opts--6" role="group" aria-labelledby="ffq-v"><button type="button" class="ff__opt" data-group="v" data-val="pvsp" aria-pressed="true">PV mit Speicher</button><button type="button" class="ff__opt" data-group="v" data-val="pv" aria-pressed="false">PV ohne Speicher</button><button type="button" class="ff__opt" data-group="v" data-val="sp" aria-pressed="false">Speicher nachrüsten</button><button type="button" class="ff__opt" data-group="v" data-val="wp" aria-pressed="false">Wärmepumpe</button><button type="button" class="ff__opt" data-group="v" data-val="ems" aria-pressed="false">Energiemanagement</button><button type="button" class="ff__opt" data-group="v" data-val="balkon" aria-pressed="false">Balkonkraftwerk</button></div>
-      </div>
-      <div class="ffq">
-        <p class="ffq__label" id="ffq-o">2 · Wo steht das Gebäude?</p>
-        <div class="ffq__opts" role="group" aria-labelledby="ffq-o"><button type="button" class="ff__opt" data-group="o" data-val="ktn" aria-pressed="true">Kärnten</button><button type="button" class="ff__opt" data-group="o" data-val="stmk" aria-pressed="false">Steiermark</button><button type="button" class="ff__opt" data-group="o" data-val="at" aria-pressed="false">Anderes Bundesland</button></div>
-      </div>
     </div>
   </section>
   <section class="ff-wrap" id="finder">
     <div class="wrap">
-      <div class="ff-card" data-v="pvsp" data-o="ktn" aria-live="polite">
+      <div class="ff" data-v="pvsp" data-o="ktn">
+        <div class="ff__step"><span class="ff__n" aria-hidden="true">1</span><span class="ff__q">Was planen Sie?</span>
+          <div class="ff__opts" role="group" aria-label="Was planen Sie?"><button type="button" class="ff__opt" data-group="v" data-val="pvsp" aria-pressed="true"><span class="ic" aria-hidden="true">☀</span>PV mit Speicher</button><button type="button" class="ff__opt" data-group="v" data-val="pv" aria-pressed="false"><span class="ic" aria-hidden="true">◫</span>PV ohne Speicher</button><button type="button" class="ff__opt" data-group="v" data-val="sp" aria-pressed="false"><span class="ic" aria-hidden="true">▮</span>Speicher nachrüsten</button><button type="button" class="ff__opt" data-group="v" data-val="wp" aria-pressed="false"><span class="ic" aria-hidden="true">♨</span>Wärmepumpe</button><button type="button" class="ff__opt" data-group="v" data-val="ems" aria-pressed="false"><span class="ic" aria-hidden="true">◎</span>Energiemanagement</button><button type="button" class="ff__opt" data-group="v" data-val="balkon" aria-pressed="false"><span class="ic" aria-hidden="true">⌂</span>Balkonkraftwerk</button></div></div>
+        <div class="ff__step"><span class="ff__n" aria-hidden="true">2</span><span class="ff__q">Wo steht das Gebäude?</span>
+          <div class="ff__opts" role="group" aria-label="Wo steht das Gebäude?"><button type="button" class="ff__opt" data-group="o" data-val="ktn" aria-pressed="true">Kärnten</button><button type="button" class="ff__opt" data-group="o" data-val="stmk" aria-pressed="false">Steiermark</button><button type="button" class="ff__opt" data-group="o" data-val="at" aria-pressed="false">Anderes Bundesland</button></div></div>
+        <div aria-live="polite">
         <article class="ff-result is-active" data-v="pvsp" data-o="ktn">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">PV mit Speicher in Kärnten</p>
-          <p class="ff-sub">Beispiel: 10 kWp mit 10 kWh Speicher</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>3.000 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Kärnten</span><b>3.000 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>6.000 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>PV mit Speicher in Kärnten</h3>
+            <p class="ff-sum"><b>rund 6.450 €*</b><span>Beispiel: 10 kWp mit 10 kWh Speicher, inklusive Made-in-Europe-Bonus</span></p>
           </div>
-          <p class="ff-hint">Reihenfolge beachten: Bund vor der Montage beantragen, Land danach. Mit Made-in-Europe-Bonus sind bis zu 450 € mehr möglich.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>150 € je kWp bis 10 kWp (darüber 140 bis 120 €) und 150 € je kWh Speicher, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026.</dd></div>
+            <div><dt>Vom Land</dt><dd>3.000 € Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, zusätzlich zum Bund. Antrag nach Fertigstellung, 12. Oktober bis 31. Dezember 2026.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Reihenfolge beachten: Bundesantrag vor der Montage, Landesantrag danach. Beides bereiten wir vor.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20PV%20mit%20Speicher%20in%20K%C3%A4rnten">Förderung für mein Projekt prüfen</a>
-            <a href="/photovoltaik-foerderung-kaernten/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/photovoltaik-foerderung-kaernten/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="pvsp" data-o="stmk">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">PV mit Speicher in der Steiermark</p>
-          <p class="ff-sub">Beispiel: 10 kWp mit 10 kWh Speicher</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>3.000 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Steiermark</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>3.000 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>PV mit Speicher in der Steiermark</h3>
+            <p class="ff-sum"><b>rund 3.450 €*</b><span>Beispiel: 10 kWp mit 10 kWh Speicher, inklusive Made-in-Europe-Bonus</span></p>
           </div>
-          <p class="ff-hint">Die Steiermark hat keine Pauschale; manche Gemeinden zahlen 200 bis 1.000 € dazu. Mit Made-in-Europe-Bonus sind bis zu 450 € mehr möglich.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>150 € je kWp bis 10 kWp (darüber 140 bis 120 €) und 150 € je kWh Speicher, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026.</dd></div>
+            <div><dt>Vom Land</dt><dd>Keine Pauschale. Ökofonds bis 30 % ab 20 kWp, Gemeinden zahlen teils 200 bis 1.000 € oder einen Speicherbonus. Der Sanierungsbonus-Call 2026 ist beendet.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Bundesantrag vor der Montage stellen. Welche Gemeinde zusätzlich fördert, prüfen wir für Sie.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20PV%20mit%20Speicher%20in%20der%20Steiermark">Förderung für mein Projekt prüfen</a>
-            <a href="/foerderung-photovoltaik-steiermark/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/foerderung-photovoltaik-steiermark/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="pvsp" data-o="at">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">PV mit Speicher in anderen Bundesländern</p>
-          <p class="ff-sub">Beispiel: 10 kWp mit 10 kWh Speicher</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>3.000 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Bundesland</span><b>je nach Land</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>ab 3.000 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>PV mit Speicher in anderen Bundesländern</h3>
+            <p class="ff-sum"><b>rund 3.450 €*</b><span>Beispiel: 10 kWp mit 10 kWh Speicher, inklusive Made-in-Europe-Bonus; Landesförderung je nach Bundesland zusätzlich</span></p>
           </div>
-          <p class="ff-hint">Tirol legt bis 125 € je kWp dazu, Oberösterreich, Burgenland und Vorarlberg fördern den Speicher.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>150 € je kWp bis 10 kWp (darüber 140 bis 120 €) und 150 € je kWh Speicher, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026.</dd></div>
+            <div><dt>Vom Land</dt><dd>Tirol bis 125 € je kWp und 100 € je kWh Speicher. Oberösterreich, Burgenland und Vorarlberg haben Speicherprogramme, die sich teils nicht mit dem Bund kombinieren lassen. Sonst gilt der Bund.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Bundesantrag vor der Montage stellen. Montiert wird in Kärnten und der Steiermark; andere Bundesländer prüfen wir auf Anfrage.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20PV%20mit%20Speicher%20in%20anderen%20Bundesl%C3%A4ndern">Förderung für mein Projekt prüfen</a>
-            <a href="/photovoltaik-landesfoerderungen/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/photovoltaik-landesfoerderungen/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="pv" data-o="ktn">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">PV ohne Speicher in Kärnten</p>
-          <p class="ff-sub">Beispiel: 10 kWp ohne Speicher</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>1.500 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Kärnten</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>1.500 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>PV ohne Speicher in Kärnten</h3>
+            <p class="ff-sum"><b>1.500 bis 1.800 €*</b><span>Beispiel: 10 kWp ohne Speicher, je nach Made-in-Europe-Bonus</span></p>
           </div>
-          <p class="ff-hint">Kärnten zahlt die Pauschale nur mit Speicher ab 5 kWh. Mit 10 kWh Speicher wären es im Beispiel 6.000 €.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>150 € je kWp bis 10 kWp, darüber 140 bis 120 €, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026.</dd></div>
+            <div><dt>Vom Land</dt><dd>Die 3.000-€-Pauschale gibt es nur mit Speicher ab 5 kWh. Ohne Speicher bleibt die Bundesförderung.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Mit einem Speicher ab 5 kWh kommen 3.000 € vom Land und 150 € je kWh vom Bund dazu.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20PV%20ohne%20Speicher%20in%20K%C3%A4rnten">Förderung für mein Projekt prüfen</a>
-            <a href="/photovoltaik-foerderung-kaernten/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/photovoltaik-foerderung-kaernten/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="pv" data-o="stmk">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">PV ohne Speicher in der Steiermark</p>
-          <p class="ff-sub">Beispiel: 10 kWp ohne Speicher</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>1.500 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Steiermark</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>1.500 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>PV ohne Speicher in der Steiermark</h3>
+            <p class="ff-sum"><b>1.500 bis 1.800 €*</b><span>Beispiel: 10 kWp ohne Speicher, je nach Made-in-Europe-Bonus</span></p>
           </div>
-          <p class="ff-hint">Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh, im Beispiel mit 10 kWh also 3.000 €.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>150 € je kWp bis 10 kWp, darüber 140 bis 120 €, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026.</dd></div>
+            <div><dt>Vom Land</dt><dd>Keine Pauschale. Ökofonds bis 30 % ab 20 kWp, Gemeinden zahlen teils 200 bis 1.000 €.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20PV%20ohne%20Speicher%20in%20der%20Steiermark">Förderung für mein Projekt prüfen</a>
-            <a href="/foerderung-photovoltaik-steiermark/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/foerderung-photovoltaik-steiermark/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="pv" data-o="at">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">PV ohne Speicher in anderen Bundesländern</p>
-          <p class="ff-sub">Beispiel: 10 kWp ohne Speicher</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>1.500 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Bundesland</span><b>je nach Land</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>ab 1.500 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>PV ohne Speicher in anderen Bundesländern</h3>
+            <p class="ff-sum"><b>1.500 bis 1.800 €*</b><span>Beispiel: 10 kWp ohne Speicher, je nach Made-in-Europe-Bonus</span></p>
           </div>
-          <p class="ff-hint">Tirol legt bis 125 € je kWp dazu. In den meisten anderen Ländern gilt für Dachanlagen die Bundesförderung.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>150 € je kWp bis 10 kWp, darüber 140 bis 120 €, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026.</dd></div>
+            <div><dt>Vom Land</dt><dd>Tirol bis 125 € je kWp. In Burgenland, Niederösterreich, Oberösterreich, Salzburg, Vorarlberg und Wien gilt für Standard-Dachanlagen die Bundesförderung.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh. Montiert wird in Kärnten und der Steiermark; andere Bundesländer prüfen wir auf Anfrage.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20PV%20ohne%20Speicher%20in%20anderen%20Bundesl%C3%A4ndern">Förderung für mein Projekt prüfen</a>
-            <a href="/photovoltaik-landesfoerderungen/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/photovoltaik-landesfoerderungen/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="sp" data-o="ktn">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">Speicher nachrüsten in Kärnten</p>
-          <p class="ff-sub">Speicher ab 5 kWh an einer bestehenden PV-Anlage</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Kärnten</span><b>1.000 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>1.000 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>Speicher nachrüsten in Kärnten</h3>
+            <p class="ff-sum"><b>1.000 €</b><span>Landespauschale für die Nachrüstung ab 5 kWh</span></p>
           </div>
-          <p class="ff-hint">Der Bund fördert 2026 nur Speicher zusammen mit einer neuen oder erweiterten PV-Anlage. Ab 2027 soll die Nachrüstung förderbar werden (laut BMWET geplant).</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>2026 keine Bundesförderung für die reine Nachrüstung: Der Speicherzuschuss gilt nur zusammen mit einer neuen oder erweiterten PV-Anlage. Ab 2027 soll die Nachrüstung laut BMWET förderbar werden.</dd></div>
+            <div><dt>Vom Land</dt><dd>1.000 € pauschal für die Nachrüstung ab 5 kWh an einer bestehenden Anlage. Antrag nach Fertigstellung, bis 31. Dezember 2026.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Speicher, die ab 1. November 2026 in Betrieb gehen, sollen laut BMWET 2027 im neuen Bundessystem beantragbar sein (geplant, nicht beschlossen).</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Speicher%20nachr%C3%BCsten%20in%20K%C3%A4rnten">Förderung für mein Projekt prüfen</a>
-            <a href="/foerderung-pv-speicher-kaernten/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/foerderung-pv-speicher-kaernten/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="sp" data-o="stmk">
-          <span class="ff-badge ff-badge--end">Derzeit keine Förderung</span>
-          <p class="ff-title">Speicher nachrüsten in der Steiermark</p>
-          <p class="ff-sub">Speicher an einer bestehenden PV-Anlage</p>
-
-          <p class="ff-hint">Der Bund fördert 2026 nur Speicher zusammen mit einer neuen oder erweiterten PV-Anlage. Ab 2027 soll die Nachrüstung förderbar werden (laut BMWET geplant). Einzelne Gemeinden zahlen einen Speicherbonus.</p>
-          <div class="ff-actions">
+          <div>
+            <span class="ff-badge ff-badge--end">Derzeit nichts</span>
+            <h3>Speicher nachrüsten in der Steiermark</h3>
+            <p class="ff-sum"><b>Derzeit keine</b><span>2027 soll die Nachrüstung im Bund förderbar werden</span></p>
+          </div>
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>2026 keine Bundesförderung für die reine Nachrüstung: Der Speicherzuschuss gilt nur zusammen mit einer neuen oder erweiterten PV-Anlage. Ab 2027 soll die Nachrüstung laut BMWET förderbar werden.</dd></div>
+            <div><dt>Vom Land</dt><dd>Keine Landesförderung für die Nachrüstung; einzelne Gemeinden zahlen einen Speicherbonus.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Speicher, die ab 1. November 2026 in Betrieb gehen, sollen laut BMWET 2027 im neuen Bundessystem beantragbar sein (geplant, nicht beschlossen).</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Speicher%20nachr%C3%BCsten%20in%20der%20Steiermark">Förderung für mein Projekt prüfen</a>
-            <a href="/foerderung-fuer-pv-speicher/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/foerderung-fuer-pv-speicher/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="sp" data-o="at">
-          <span class="ff-badge ff-badge--part">Bund pausiert, Land läuft</span>
-          <p class="ff-title">Speicher nachrüsten in anderen Bundesländern</p>
-          <p class="ff-sub">Speicher an einer bestehenden PV-Anlage</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Bundesland</span><b>bis 2.250 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>bis 2.250 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--part">Teilweise</span>
+            <h3>Speicher nachrüsten in anderen Bundesländern</h3>
+            <p class="ff-sum"><b>bis 2.250 €</b><span>je nach Bundesland, Höchstwert Oberösterreich</span></p>
           </div>
-          <p class="ff-hint">Höchstwert Oberösterreich (150 € je kWh). Burgenland bis 2.000 €, Tirol bis 1.000 €, Vorarlberg bis 500 €.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>2026 keine Bundesförderung für die reine Nachrüstung: Der Speicherzuschuss gilt nur zusammen mit einer neuen oder erweiterten PV-Anlage. Ab 2027 soll die Nachrüstung laut BMWET förderbar werden.</dd></div>
+            <div><dt>Vom Land</dt><dd>Oberösterreich 150 € je kWh bis 2.250 €, Burgenland 100 € je kWh bis 2.000 €, Tirol 100 € je kWh bis 1.000 €, Vorarlberg VKW-Bonus bis 500 €.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Speicher, die ab 1. November 2026 in Betrieb gehen, sollen laut BMWET 2027 im neuen Bundessystem beantragbar sein (geplant, nicht beschlossen).</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Speicher%20nachr%C3%BCsten%20in%20anderen%20Bundesl%C3%A4ndern">Förderung für mein Projekt prüfen</a>
-            <a href="/foerderung-fuer-pv-speicher/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/foerderung-fuer-pv-speicher/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="wp" data-o="ktn">
-          <span class="ff-badge ff-badge--part">Bund pausiert, Land läuft</span>
-          <p class="ff-title">Wärmepumpe in Kärnten</p>
-          <p class="ff-sub">Anteil an den förderbaren Kosten</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Kärnten</span><b>35 %</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>35 %</b></div>
+          <div>
+            <span class="ff-badge ff-badge--part">Teilweise</span>
+            <h3>Wärmepumpe in Kärnten</h3>
+            <p class="ff-sum"><b>35 %</b><span>der förderbaren Kosten vom Land, der Bund ist derzeit ausgeschöpft</span></p>
           </div>
-          <p class="ff-hint">Die Bundesförderung für Wärmepumpen ist derzeit ausgeschöpft. Kärnten deckelt den Betrag; den aktuellen Stand klären wir vor dem Angebot mit dem Land.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Derzeit nichts: Kesseltausch (bis 7.500 €) und Sauber Heizen für Alle sind ausgeschöpft, neue Registrierungen sind nicht möglich. Ob 2027 ein neues Programm kommt, ist offen.</dd></div>
+            <div><dt>Vom Land</dt><dd>35 % der förderbaren Kosten. Obergrenze laut Richtlinie 6.000 €, laut Berichten 2026 auf 3.000 € angepasst; dazu 1.200 € Kelag-Prämie. Den aktuellen Stand klären wir vor dem Angebot mit dem Land.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Mit Photovoltaik sinken die Heizkosten deutlich. Die Öko-Sonderausgabenpauschale setzt eine ausbezahlte Bundesförderung voraus.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20W%C3%A4rmepumpe%20in%20K%C3%A4rnten">Förderung für mein Projekt prüfen</a>
-            <a href="/landesfoerderungen-fuer-die-waermepumpe/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/landesfoerderungen-fuer-die-waermepumpe/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="wp" data-o="stmk">
-          <span class="ff-badge ff-badge--part">Bund pausiert, Land läuft</span>
-          <p class="ff-title">Wärmepumpe in der Steiermark</p>
-          <p class="ff-sub">Anteil an den förderbaren Kosten</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Steiermark</span><b>35 %</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>35 %</b></div>
+          <div>
+            <span class="ff-badge ff-badge--part">Teilweise</span>
+            <h3>Wärmepumpe in der Steiermark</h3>
+            <p class="ff-sum"><b>35 %</b><span>der förderbaren Kosten vom Land, der Bund ist derzeit ausgeschöpft</span></p>
           </div>
-          <p class="ff-hint">Die Bundesförderung für Wärmepumpen ist derzeit ausgeschöpft. Die Steiermark fördert Eigenheime mit maximal zwei Wohnungen; den Stand klären wir vor dem Angebot.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Derzeit nichts: Kesseltausch (bis 7.500 €) und Sauber Heizen für Alle sind ausgeschöpft, neue Registrierungen sind nicht möglich. Ob 2027 ein neues Programm kommt, ist offen.</dd></div>
+            <div><dt>Vom Land</dt><dd>35 % der förderbaren Kosten für Eigenheime mit maximal zwei Wohnungen, Energieberatung kostenlos. Den aktuellen Stand klären wir vor dem Angebot mit dem Land.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Mit Photovoltaik sinken die Heizkosten deutlich. Die Öko-Sonderausgabenpauschale setzt eine ausbezahlte Bundesförderung voraus.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20W%C3%A4rmepumpe%20in%20der%20Steiermark">Förderung für mein Projekt prüfen</a>
-            <a href="/landesfoerderungen-fuer-die-waermepumpe/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/landesfoerderungen-fuer-die-waermepumpe/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="wp" data-o="at">
-          <span class="ff-badge ff-badge--part">Bund pausiert, Land läuft</span>
-          <p class="ff-title">Wärmepumpe in anderen Bundesländern</p>
-          <p class="ff-sub">je nach Bundesland</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Bundesland</span><b>bis 8.000 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>bis 8.000 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--part">Teilweise</span>
+            <h3>Wärmepumpe in anderen Bundesländern</h3>
+            <p class="ff-sum"><b>bis 8.000 €</b><span>je nach Bundesland, Höchstwert Wien; der Bund ist derzeit ausgeschöpft</span></p>
           </div>
-          <p class="ff-hint">Die Bundesförderung für Wärmepumpen ist derzeit ausgeschöpft. Höchstwert Wien (35 %), Tirol 25 % plus 3.000 €, Salzburg rund 5.000 €.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Derzeit nichts: Kesseltausch (bis 7.500 €) und Sauber Heizen für Alle sind ausgeschöpft, neue Registrierungen sind nicht möglich. Ob 2027 ein neues Programm kommt, ist offen.</dd></div>
+            <div><dt>Vom Land</dt><dd>Wien 35 % bis 8.000 €, Tirol 25 % plus 3.000 € Bonus, Salzburg rund 5.000 €, Burgenland 2.000 €, Oberösterreich bis 1.700 €, Vorarlberg 1.000 €.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Mit Photovoltaik sinken die Heizkosten deutlich. Die Öko-Sonderausgabenpauschale setzt eine ausbezahlte Bundesförderung voraus. Montiert wird in Kärnten und der Steiermark; andere Bundesländer prüfen wir auf Anfrage.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20W%C3%A4rmepumpe%20in%20anderen%20Bundesl%C3%A4ndern">Förderung für mein Projekt prüfen</a>
-            <a href="/landesfoerderungen-fuer-die-waermepumpe/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/landesfoerderungen-fuer-die-waermepumpe/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="ems" data-o="ktn">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">Energiemanagement in Kärnten</p>
-          <p class="ff-sub">50 % der Kosten, für einen Haushalt</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>bis 600 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Kärnten</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>bis 600 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>Energiemanagement in Kärnten</h3>
+            <p class="ff-sum"><b>bis 600 €</b><span>50 % der Kosten für Haushalte</span></p>
           </div>
-          <p class="ff-hint">Erst beim Klimafonds registrieren, dann die Rechnung ausstellen lassen. Betriebe erhalten 30 % bis 20.000 €.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Klima- und Energiefonds: 50 % der Kosten, maximal 600 € je Haushalt (Betriebe 30 % bis 20.000 €). Registrierung vor der Rechnung, Programm bis 15. April 2027.</dd></div>
+            <div><dt>Vom Land</dt><dd>Keine eigene Landesförderung, es gilt der Klimafonds.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Erst registrieren, dann die Rechnung: Wer zuerst die Rechnung hat, verliert die Förderung.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Energiemanagement%20in%20K%C3%A4rnten">Förderung für mein Projekt prüfen</a>
-            <a href="/ems-foerderung/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/ems-foerderung/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="ems" data-o="stmk">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">Energiemanagement in der Steiermark</p>
-          <p class="ff-sub">50 % der Kosten, für einen Haushalt</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>bis 600 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Land Steiermark</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>bis 600 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>Energiemanagement in der Steiermark</h3>
+            <p class="ff-sum"><b>bis 600 €</b><span>50 % der Kosten für Haushalte</span></p>
           </div>
-          <p class="ff-hint">Erst beim Klimafonds registrieren, dann die Rechnung ausstellen lassen. Betriebe erhalten 30 % bis 20.000 €.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Klima- und Energiefonds: 50 % der Kosten, maximal 600 € je Haushalt (Betriebe 30 % bis 20.000 €). Registrierung vor der Rechnung, Programm bis 15. April 2027.</dd></div>
+            <div><dt>Vom Land</dt><dd>Keine eigene Landesförderung. Im Ökofonds gibt es ab 20 kWp einen Bonus von 125 € je kWp für die Einbindung in ein Energiesystem.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Erst registrieren, dann die Rechnung: Wer zuerst die Rechnung hat, verliert die Förderung.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Energiemanagement%20in%20der%20Steiermark">Förderung für mein Projekt prüfen</a>
-            <a href="/ems-foerderung/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/ems-foerderung/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="ems" data-o="at">
-          <span class="ff-badge ff-badge--ok">Läuft</span>
-          <p class="ff-title">Energiemanagement in anderen Bundesländern</p>
-          <p class="ff-sub">50 % der Kosten, für einen Haushalt</p>
-          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>bis 600 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>Bundesland</span><b>0 €</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>bis 600 €</b></div>
+          <div>
+            <span class="ff-badge ff-badge--ok">Läuft</span>
+            <h3>Energiemanagement in anderen Bundesländern</h3>
+            <p class="ff-sum"><b>bis 600 €</b><span>50 % der Kosten für Haushalte</span></p>
           </div>
-          <p class="ff-hint">Erst beim Klimafonds registrieren, dann die Rechnung ausstellen lassen. Betriebe erhalten 30 % bis 20.000 €.</p>
-          <div class="ff-actions">
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Klima- und Energiefonds: 50 % der Kosten, maximal 600 € je Haushalt (Betriebe 30 % bis 20.000 €). Registrierung vor der Rechnung, Programm bis 15. April 2027.</dd></div>
+            <div><dt>Vom Land</dt><dd>Keine eigene Landesförderung, es gilt der Klimafonds.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Erst registrieren, dann die Rechnung: Wer zuerst die Rechnung hat, verliert die Förderung.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Energiemanagement%20in%20anderen%20Bundesl%C3%A4ndern">Förderung für mein Projekt prüfen</a>
-            <a href="/ems-foerderung/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/ems-foerderung/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="balkon" data-o="ktn">
-          <span class="ff-badge ff-badge--end">Derzeit keine Förderung</span>
-          <p class="ff-title">Balkonkraftwerk in Kärnten</p>
-          <p class="ff-sub">Steckeranlage bis 800 Watt</p>
-
-          <p class="ff-hint">Steckeranlagen haben keinen Einspeisezählpunkt und bekommen deshalb keinen Zuschuss. Eine angemeldete Kleinanlage ab rund 3 kWp erhält 150 € je kWp vom Bund.</p>
-          <div class="ff-actions">
+          <div>
+            <span class="ff-badge ff-badge--end">Derzeit nichts</span>
+            <h3>Balkonkraftwerk in Kärnten</h3>
+            <p class="ff-sum"><b>Keine Förderung</b><span>für Steckeranlagen bis 800 Watt</span></p>
+          </div>
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Kein EAG-Zuschuss für Steckeranlagen bis 800 Watt, weil der Einspeisezählpunkt fehlt.</dd></div>
+            <div><dt>Vom Land</dt><dd>Keine Landesförderung; manche Gemeinden zahlen einen Zuschuss.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Wer Förderung will, plant eine angemeldete Kleinanlage ab rund 3 kWp: 150 € je kWp vom Bund.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Balkonkraftwerk%20in%20K%C3%A4rnten">Förderung für mein Projekt prüfen</a>
-            <a href="/balkonkraftwerk-foerderung-in-oesterreich/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/balkonkraftwerk-foerderung-in-oesterreich/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="balkon" data-o="stmk">
-          <span class="ff-badge ff-badge--end">Derzeit keine Förderung</span>
-          <p class="ff-title">Balkonkraftwerk in der Steiermark</p>
-          <p class="ff-sub">Steckeranlage bis 800 Watt</p>
-
-          <p class="ff-hint">Steckeranlagen haben keinen Einspeisezählpunkt und bekommen deshalb keinen Zuschuss. Eine angemeldete Kleinanlage ab rund 3 kWp erhält 150 € je kWp vom Bund.</p>
-          <div class="ff-actions">
+          <div>
+            <span class="ff-badge ff-badge--end">Derzeit nichts</span>
+            <h3>Balkonkraftwerk in der Steiermark</h3>
+            <p class="ff-sum"><b>Keine Förderung</b><span>für Steckeranlagen bis 800 Watt</span></p>
+          </div>
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Kein EAG-Zuschuss für Steckeranlagen bis 800 Watt, weil der Einspeisezählpunkt fehlt.</dd></div>
+            <div><dt>Vom Land</dt><dd>Keine Landesförderung; manche Gemeinden zahlen einen Zuschuss.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Wer Förderung will, plant eine angemeldete Kleinanlage ab rund 3 kWp: 150 € je kWp vom Bund.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Balkonkraftwerk%20in%20der%20Steiermark">Förderung für mein Projekt prüfen</a>
-            <a href="/balkonkraftwerk-foerderung-in-oesterreich/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/balkonkraftwerk-foerderung-in-oesterreich/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
         <article class="ff-result" data-v="balkon" data-o="at">
-          <span class="ff-badge ff-badge--end">Derzeit keine Förderung</span>
-          <p class="ff-title">Balkonkraftwerk in anderen Bundesländern</p>
-          <p class="ff-sub">Steckeranlage bis 800 Watt</p>
-
-          <p class="ff-hint">Steckeranlagen haben keinen Einspeisezählpunkt und bekommen deshalb keinen Zuschuss. Eine angemeldete Kleinanlage ab rund 3 kWp erhält 150 € je kWp vom Bund.</p>
-          <div class="ff-actions">
+          <div>
+            <span class="ff-badge ff-badge--end">Derzeit nichts</span>
+            <h3>Balkonkraftwerk in anderen Bundesländern</h3>
+            <p class="ff-sum"><b>Keine Förderung</b><span>für Steckeranlagen bis 800 Watt</span></p>
+          </div>
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>Kein EAG-Zuschuss für Steckeranlagen bis 800 Watt, weil der Einspeisezählpunkt fehlt.</dd></div>
+            <div><dt>Vom Land</dt><dd>Einzelne Länder und Gemeinden haben budgetierte Zuschüsse, die sich häufig ändern.</dd></div>
+            <div><dt>Unser Tipp</dt><dd>Wer Förderung will, plant eine angemeldete Kleinanlage ab rund 3 kWp: 150 € je kWp vom Bund.</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen=F%C3%B6rderung%20pr%C3%BCfen%3A%20Balkonkraftwerk%20in%20anderen%20Bundesl%C3%A4ndern">Förderung für mein Projekt prüfen</a>
-            <a href="/balkonkraftwerk-foerderung-in-oesterreich/" class="ff-more">Details im Ratgeber <span aria-hidden="true">→</span></a>
+            <a href="/balkonkraftwerk-foerderung-in-oesterreich/" class="btn btn--light">Alle Details im Ratgeber</a>
           </div>
         </article>
+        </div>
+        <p class="ff-foot">*Beispielrechnung, siehe unten. Stand 10. Oktober 2026, Beträge für private Anlagen.</p>
       </div>
-      <p class="ff-foot">Beträge für private Anlagen, ohne Made-in-Europe-Bonus gerechnet. Stand 10. Oktober 2026.</p>
     </div>
   </section>
   <script>
 (function(){
-  var card = document.querySelector(".ff-card"); if(!card) return;
-  var state = {v: card.getAttribute("data-v"), o: card.getAttribute("data-o")};
-  var cards = card.querySelectorAll(".ff-result");
-  var opts = document.querySelectorAll(".ff__opt");
+  var root = document.querySelector(".ff"); if(!root) return;
+  var state = {v: root.getAttribute("data-v"), o: root.getAttribute("data-o")};
+  var cards = root.querySelectorAll(".ff-result");
   function show(){
     cards.forEach(function(c){ c.classList.toggle("is-active", c.getAttribute("data-v") === state.v && c.getAttribute("data-o") === state.o); });
-    opts.forEach(function(b){ b.setAttribute("aria-pressed", String(state[b.getAttribute("data-group")] === b.getAttribute("data-val"))); });
+    root.querySelectorAll(".ff__opt").forEach(function(b){
+      b.setAttribute("aria-pressed", String(state[b.getAttribute("data-group")] === b.getAttribute("data-val")));
+    });
   }
-  function reveal(){
-    var r = card.getBoundingClientRect();
-    if(r.top < window.innerHeight - 220) return;
-    var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({top: window.pageYOffset + r.top - 96, behavior: calm ? "auto" : "smooth"});
-  }
-  opts.forEach(function(b){ b.addEventListener("click", function(){
-    var g = b.getAttribute("data-group");
-    state[g] = b.getAttribute("data-val"); show();
-    if(g === "o") reveal();
-  }); });
+  root.addEventListener("click", function(ev){
+    var b = ev.target.closest(".ff__opt"); if(!b) return;
+    state[b.getAttribute("data-group")] = b.getAttribute("data-val"); show();
+  });
   show();
 })();
 </script>
@@ -414,11 +412,12 @@
           <dl class="fcalc">
             <div><dt>Bund: Photovoltaik, 10 kWp × 150 €</dt><dd>1.500 €</dd></div>
             <div><dt>Bund: Speicher, 10 kWh × 150 €</dt><dd>1.500 €</dd></div>
+            <div><dt>Made-in-Europe-Bonus, falls erfüllt</dt><dd>rund 450 €*</dd></div>
             <div><dt>Land Kärnten: Pauschale</dt><dd>3.000 €</dd></div>
-            <div class="is-sum"><dt>Förderung gesamt</dt><dd>6.000 €</dd></div>
+            <div class="is-sum"><dt>Förderung gesamt</dt><dd>rund 6.450 €*</dd></div>
           </dl>
-          <p class="form-note">Mit Made-in-Europe-Bonus rund 450 € mehr*. Richtpreis der Anlage rund 15.000 bis 22.000 €
-          vor Förderung; Kärnten fördert maximal 50 % der Baukosten.</p>
+          <p class="form-note">Bei einem Richtpreis von rund 15.000 bis 22.000 € vor Förderung. In Kärnten maximal 50 %
+          der Baukosten.</p>
         </div>
         <div class="panel panel--dark eg-reveal">
           <p class="eyebrow" style="color:var(--amber)">Service inklusive</p>
@@ -533,7 +532,7 @@
         </div>
       </div>
     </div>
-  </section><div class="wrap"><p class="form-note" style="padding:8px 0 40px">*Made-in-Europe-Bonus: 10 % je Komponente auf den Bundeszuschuss, im Beispiel rund 450 €, nur wenn Module, Wechselrichter und Speicher die Kriterien erfüllen. Fördersätze und Fristen Stand 10. Oktober 2026, Länderdaten zum Teil Stand Mai bis Juni 2026; Angaben zu 2027 laut BMWET geplant, nicht beschlossen. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p></div>
+  </section><div class="wrap"><p class="form-note" style="padding:8px 0 40px">*Beispielrechnung: 10 kWp × 150 € plus 10 kWh × 150 € ergeben 3.000 € vom Bund; der Made-in-Europe-Bonus (10 % je Komponente, rund 450 € im Beispiel, 300 € ohne Speicher) gilt nur, wenn Module, Wechselrichter und Speicher die Kriterien erfüllen; dazu 3.000 € Landespauschale Kärnten. Fördersätze und Fristen Stand 10. Oktober 2026, Länderdaten zum Teil Stand Mai bis Juni 2026; Angaben zu 2027 laut BMWET geplant, nicht beschlossen. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p></div>
   </main>
 
   <footer class="site-footer">

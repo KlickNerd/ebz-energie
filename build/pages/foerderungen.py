@@ -174,164 +174,186 @@ def _matrix_section():
 
 
 # --- Foerder-Finder ---------------------------------------------------------
-# Zwei Fragen im Hero (Vorhaben, Ort) -> EINE Ergebniskarte mit einer Rechenzeile:
-# Bund + Land = Foerderung. Zahlen sind Auszuege aus der Matrix (gleiche Quellen), ohne
-# Made-in-Europe-Bonus gerechnet. Fristen stehen bewusst nicht in der Karte, sondern in der
-# Statusleiste darunter und in den Ratgebern. Alle 18 Karten stehen im HTML, das Skript blendet
-# nur ein und aus; ohne JavaScript bleibt die Standardkarte sichtbar.
+# Zwei Fragen (Vorhaben, Ort) -> eine Ergebniskarte. Alle Texte sind Auszuege aus der Matrix oben
+# (gleiche Quellen), es entstehen keine neuen Zahlen. Alle 18 Karten stehen im HTML, das Skript
+# blendet nur ein und aus; ohne JavaScript bleibt die Standardkarte sichtbar.
 VORHABEN = [
-    ("pvsp", "PV mit Speicher"),
-    ("pv", "PV ohne Speicher"),
-    ("sp", "Speicher nachrüsten"),
-    ("wp", "Wärmepumpe"),
-    ("ems", "Energiemanagement"),
-    ("balkon", "Balkonkraftwerk"),
+    ("pvsp", "☀", "PV mit Speicher"),
+    ("pv", "◫", "PV ohne Speicher"),
+    ("sp", "▮", "Speicher nachrüsten"),
+    ("wp", "♨", "Wärmepumpe"),
+    ("ems", "◎", "Energiemanagement"),
+    ("balkon", "⌂", "Balkonkraftwerk"),
 ]
-ORTE = [("ktn", "Kärnten", "in Kärnten", "Land Kärnten"),
-        ("stmk", "Steiermark", "in der Steiermark", "Land Steiermark"),
-        ("at", "Anderes Bundesland", "in anderen Bundesländern", "Bundesland")]
+ORTE = [("ktn", "Kärnten", "in Kärnten"), ("stmk", "Steiermark", "in der Steiermark"),
+        ("at", "Anderes Bundesland", "in anderen Bundesländern")]
 
-_BONUS = " Mit Made-in-Europe-Bonus sind bis zu 450 € mehr möglich."
-_SP_BUND = ("Der Bund fördert 2026 nur Speicher zusammen mit einer neuen oder erweiterten PV-Anlage. "
-            "Ab 2027 soll die Nachrüstung förderbar werden (laut BMWET geplant).")
-_WP_BUND = "Die Bundesförderung für Wärmepumpen ist derzeit ausgeschöpft."
-_EMS = "Erst beim Klimafonds registrieren, dann die Rechnung ausstellen lassen. Betriebe erhalten 30 % bis 20.000 €."
-_BALKON = ("Steckeranlagen haben keinen Einspeisezählpunkt und bekommen deshalb keinen Zuschuss. "
-           "Eine angemeldete Kleinanlage ab rund 3 kWp erhält 150 € je kWp vom Bund.")
-_B_PVSP, _B_PV = "Beispiel: 10 kWp mit 10 kWh Speicher", "Beispiel: 10 kWp ohne Speicher"
-_B_SP, _B_WP = "Speicher an einer bestehenden PV-Anlage", "Anteil an den förderbaren Kosten"
-_B_EMS, _B_BALKON = "50 % der Kosten, für einen Haushalt", "Steckeranlage bis 800 Watt"
-
-# (Vorhaben, Ort): (Status, Basis, Bund, Land, Summe, Hinweis, Ratgeber)
-ERGEBNIS = {
-    ("pvsp", "ktn"): ("ok", _B_PVSP, "3.000 €", "3.000 €", "6.000 €",
-                      "Reihenfolge beachten: Bund vor der Montage beantragen, Land danach." + _BONUS, R_KTN),
-    ("pvsp", "stmk"): ("ok", _B_PVSP, "3.000 €", "0 €", "3.000 €",
-                       "Die Steiermark hat keine Pauschale; manche Gemeinden zahlen 200 bis 1.000 € dazu." + _BONUS, R_STMK),
-    ("pvsp", "at"): ("ok", _B_PVSP, "3.000 €", "je nach Land", "ab 3.000 €",
-                     "Tirol legt bis 125 € je kWp dazu, Oberösterreich, Burgenland und Vorarlberg fördern den Speicher.",
-                     R_LAENDER),
-    ("pv", "ktn"): ("ok", _B_PV, "1.500 €", "0 €", "1.500 €",
-                    "Kärnten zahlt die Pauschale nur mit Speicher ab 5 kWh. Mit 10 kWh Speicher wären es im Beispiel 6.000 €.",
-                    R_KTN),
-    ("pv", "stmk"): ("ok", _B_PV, "1.500 €", "0 €", "1.500 €",
-                     "Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh, im Beispiel mit 10 kWh also 3.000 €.", R_STMK),
-    ("pv", "at"): ("ok", _B_PV, "1.500 €", "je nach Land", "ab 1.500 €",
-                   "Tirol legt bis 125 € je kWp dazu. In den meisten anderen Ländern gilt für Dachanlagen die Bundesförderung.",
-                   R_LAENDER),
-    ("sp", "ktn"): ("ok", "Speicher ab 5 kWh an einer bestehenden PV-Anlage", "0 €", "1.000 €", "1.000 €",
-                    _SP_BUND, R_SPEICHER_KTN),
-    ("sp", "stmk"): ("end", _B_SP, "0 €", "0 €", "0 €",
-                     _SP_BUND + " Einzelne Gemeinden zahlen einen Speicherbonus.", R_SPEICHER),
-    ("sp", "at"): ("part", _B_SP, "0 €", "bis 2.250 €", "bis 2.250 €",
-                   "Höchstwert Oberösterreich (150 € je kWh). Burgenland bis 2.000 €, Tirol bis 1.000 €, Vorarlberg bis 500 €.",
-                   R_SPEICHER),
-    ("wp", "ktn"): ("part", _B_WP, "0 €", "35 %", "35 %",
-                    _WP_BUND + " Kärnten deckelt den Betrag; den aktuellen Stand klären wir vor dem Angebot mit dem Land.",
-                    R_WP_LAENDER),
-    ("wp", "stmk"): ("part", _B_WP, "0 €", "35 %", "35 %",
-                     _WP_BUND + " Die Steiermark fördert Eigenheime mit maximal zwei Wohnungen; den Stand klären wir vor dem Angebot.",
-                     R_WP_LAENDER),
-    ("wp", "at"): ("part", "je nach Bundesland", "0 €", "bis 8.000 €", "bis 8.000 €",
-                   _WP_BUND + " Höchstwert Wien (35 %), Tirol 25 % plus 3.000 €, Salzburg rund 5.000 €.", R_WP_LAENDER),
-    ("ems", "ktn"): ("ok", _B_EMS, "bis 600 €", "0 €", "bis 600 €", _EMS, R_EMS),
-    ("ems", "stmk"): ("ok", _B_EMS, "bis 600 €", "0 €", "bis 600 €", _EMS, R_EMS),
-    ("ems", "at"): ("ok", _B_EMS, "bis 600 €", "0 €", "bis 600 €", _EMS, R_EMS),
-    ("balkon", "ktn"): ("end", _B_BALKON, "0 €", "0 €", "0 €", _BALKON, R_BALKON),
-    ("balkon", "stmk"): ("end", _B_BALKON, "0 €", "0 €", "0 €", _BALKON, R_BALKON),
-    ("balkon", "at"): ("end", _B_BALKON, "0 €", "0 €", "0 €", _BALKON, R_BALKON),
+BUND = {
+    "pvsp": ("150 € je kWp bis 10 kWp (darüber 140 bis 120 €) und 150 € je kWh Speicher, plus 10 % Made-in-Europe-Bonus "
+             "je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026."),
+    "pv": ("150 € je kWp bis 10 kWp, darüber 140 bis 120 €, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der "
+           "Inbetriebnahme, aktueller Call bis 22. Oktober 2026."),
+    "sp": ("2026 keine Bundesförderung für die reine Nachrüstung: Der Speicherzuschuss gilt nur zusammen mit einer neuen "
+           "oder erweiterten PV-Anlage. Ab 2027 soll die Nachrüstung laut BMWET förderbar werden."),
+    "wp": ("Derzeit nichts: Kesseltausch (bis 7.500 €) und Sauber Heizen für Alle sind ausgeschöpft, neue Registrierungen "
+           "sind nicht möglich. Ob 2027 ein neues Programm kommt, ist offen."),
+    "ems": ("Klima- und Energiefonds: 50 % der Kosten, maximal 600 € je Haushalt (Betriebe 30 % bis 20.000 €). "
+            "Registrierung vor der Rechnung, Programm bis 15. April 2027."),
+    "balkon": "Kein EAG-Zuschuss für Steckeranlagen bis 800 Watt, weil der Einspeisezählpunkt fehlt.",
 }
-BADGE = {"ok": "Läuft", "part": "Bund pausiert, Land läuft", "end": "Derzeit keine Förderung"}
+_GEMEINDE = "Keine Landesförderung; manche Gemeinden zahlen einen Zuschuss."
+LAND = {
+    ("pvsp", "ktn"): ("3.000 € Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, zusätzlich zum Bund. Antrag nach "
+                      "Fertigstellung, 12. Oktober bis 31. Dezember 2026."),
+    ("pvsp", "stmk"): ("Keine Pauschale. Ökofonds bis 30 % ab 20 kWp, Gemeinden zahlen teils 200 bis 1.000 € oder einen "
+                       "Speicherbonus. Der Sanierungsbonus-Call 2026 ist beendet."),
+    ("pvsp", "at"): ("Tirol bis 125 € je kWp und 100 € je kWh Speicher. Oberösterreich, Burgenland und Vorarlberg haben "
+                     "Speicherprogramme, die sich teils nicht mit dem Bund kombinieren lassen. Sonst gilt der Bund."),
+    ("pv", "ktn"): "Die 3.000-€-Pauschale gibt es nur mit Speicher ab 5 kWh. Ohne Speicher bleibt die Bundesförderung.",
+    ("pv", "stmk"): "Keine Pauschale. Ökofonds bis 30 % ab 20 kWp, Gemeinden zahlen teils 200 bis 1.000 €.",
+    ("pv", "at"): ("Tirol bis 125 € je kWp. In Burgenland, Niederösterreich, Oberösterreich, Salzburg, Vorarlberg und Wien "
+                   "gilt für Standard-Dachanlagen die Bundesförderung."),
+    ("sp", "ktn"): ("1.000 € pauschal für die Nachrüstung ab 5 kWh an einer bestehenden Anlage. Antrag nach Fertigstellung, "
+                    "bis 31. Dezember 2026."),
+    ("sp", "stmk"): "Keine Landesförderung für die Nachrüstung; einzelne Gemeinden zahlen einen Speicherbonus.",
+    ("sp", "at"): ("Oberösterreich 150 € je kWh bis 2.250 €, Burgenland 100 € je kWh bis 2.000 €, Tirol 100 € je kWh bis "
+                   "1.000 €, Vorarlberg VKW-Bonus bis 500 €."),
+    ("wp", "ktn"): ("35 % der förderbaren Kosten. Obergrenze laut Richtlinie 6.000 €, laut Berichten 2026 auf 3.000 € "
+                    "angepasst; dazu 1.200 € Kelag-Prämie. Den aktuellen Stand klären wir vor dem Angebot mit dem Land."),
+    ("wp", "stmk"): ("35 % der förderbaren Kosten für Eigenheime mit maximal zwei Wohnungen, Energieberatung kostenlos. "
+                     "Den aktuellen Stand klären wir vor dem Angebot mit dem Land."),
+    ("wp", "at"): ("Wien 35 % bis 8.000 €, Tirol 25 % plus 3.000 € Bonus, Salzburg rund 5.000 €, Burgenland 2.000 €, "
+                   "Oberösterreich bis 1.700 €, Vorarlberg 1.000 €."),
+    ("ems", "ktn"): "Keine eigene Landesförderung, es gilt der Klimafonds.",
+    ("ems", "stmk"): ("Keine eigene Landesförderung. Im Ökofonds gibt es ab 20 kWp einen Bonus von 125 € je kWp für die "
+                      "Einbindung in ein Energiesystem."),
+    ("ems", "at"): "Keine eigene Landesförderung, es gilt der Klimafonds.",
+    ("balkon", "ktn"): _GEMEINDE,
+    ("balkon", "stmk"): _GEMEINDE,
+    ("balkon", "at"): "Einzelne Länder und Gemeinden haben budgetierte Zuschüsse, die sich häufig ändern.",
+}
+# (Status, Kernzahl, Erlaeuterung)
+_PVSP_SUB = "Beispiel: 10 kWp mit 10 kWh Speicher, inklusive Made-in-Europe-Bonus"
+_PV_SUB = "Beispiel: 10 kWp ohne Speicher, je nach Made-in-Europe-Bonus"
+SUMME = {
+    ("pvsp", "ktn"): ("ok", "rund 6.450 €*", _PVSP_SUB),
+    ("pvsp", "stmk"): ("ok", "rund 3.450 €*", _PVSP_SUB),
+    ("pvsp", "at"): ("ok", "rund 3.450 €*", _PVSP_SUB + "; Landesförderung je nach Bundesland zusätzlich"),
+    ("pv", "ktn"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
+    ("pv", "stmk"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
+    ("pv", "at"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
+    ("sp", "ktn"): ("ok", "1.000 €", "Landespauschale für die Nachrüstung ab 5 kWh"),
+    ("sp", "stmk"): ("end", "Derzeit keine", "2027 soll die Nachrüstung im Bund förderbar werden"),
+    ("sp", "at"): ("part", "bis 2.250 €", "je nach Bundesland, Höchstwert Oberösterreich"),
+    ("wp", "ktn"): ("part", "35 %", "der förderbaren Kosten vom Land, der Bund ist derzeit ausgeschöpft"),
+    ("wp", "stmk"): ("part", "35 %", "der förderbaren Kosten vom Land, der Bund ist derzeit ausgeschöpft"),
+    ("wp", "at"): ("part", "bis 8.000 €", "je nach Bundesland, Höchstwert Wien; der Bund ist derzeit ausgeschöpft"),
+    ("ems", "ktn"): ("ok", "bis 600 €", "50 % der Kosten für Haushalte"),
+    ("ems", "stmk"): ("ok", "bis 600 €", "50 % der Kosten für Haushalte"),
+    ("ems", "at"): ("ok", "bis 600 €", "50 % der Kosten für Haushalte"),
+    ("balkon", "ktn"): ("end", "Keine Förderung", "für Steckeranlagen bis 800 Watt"),
+    ("balkon", "stmk"): ("end", "Keine Förderung", "für Steckeranlagen bis 800 Watt"),
+    ("balkon", "at"): ("end", "Keine Förderung", "für Steckeranlagen bis 800 Watt"),
+}
+_MACHBAR = " Montiert wird in Kärnten und der Steiermark; andere Bundesländer prüfen wir auf Anfrage."
+_SP_2027 = ("Speicher, die ab 1. November 2026 in Betrieb gehen, sollen laut BMWET 2027 im neuen Bundessystem "
+            "beantragbar sein (geplant, nicht beschlossen).")
+_WP_TIPP = ("Mit Photovoltaik sinken die Heizkosten deutlich. Die Öko-Sonderausgabenpauschale setzt eine ausbezahlte "
+            "Bundesförderung voraus.")
+_EMS_TIPP = "Erst registrieren, dann die Rechnung: Wer zuerst die Rechnung hat, verliert die Förderung."
+_BALKON_TIPP = "Wer Förderung will, plant eine angemeldete Kleinanlage ab rund 3 kWp: 150 € je kWp vom Bund."
+TIPP = {
+    ("pvsp", "ktn"): "Reihenfolge beachten: Bundesantrag vor der Montage, Landesantrag danach. Beides bereiten wir vor.",
+    ("pvsp", "stmk"): "Bundesantrag vor der Montage stellen. Welche Gemeinde zusätzlich fördert, prüfen wir für Sie.",
+    ("pvsp", "at"): "Bundesantrag vor der Montage stellen." + _MACHBAR,
+    ("pv", "ktn"): "Mit einem Speicher ab 5 kWh kommen 3.000 € vom Land und 150 € je kWh vom Bund dazu.",
+    ("pv", "stmk"): "Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh.",
+    ("pv", "at"): "Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh." + _MACHBAR,
+    ("sp", "ktn"): _SP_2027, ("sp", "stmk"): _SP_2027, ("sp", "at"): _SP_2027,
+    ("wp", "ktn"): _WP_TIPP, ("wp", "stmk"): _WP_TIPP, ("wp", "at"): _WP_TIPP + _MACHBAR,
+    ("ems", "ktn"): _EMS_TIPP, ("ems", "stmk"): _EMS_TIPP, ("ems", "at"): _EMS_TIPP,
+    ("balkon", "ktn"): _BALKON_TIPP, ("balkon", "stmk"): _BALKON_TIPP, ("balkon", "at"): _BALKON_TIPP,
+}
+DETAIL = {
+    "pvsp": {"ktn": R_KTN, "stmk": R_STMK, "at": R_LAENDER},
+    "pv": {"ktn": R_KTN, "stmk": R_STMK, "at": R_LAENDER},
+    "sp": {"ktn": R_SPEICHER_KTN, "stmk": R_SPEICHER, "at": R_SPEICHER},
+    "wp": {"ktn": R_WP_LAENDER, "stmk": R_WP_LAENDER, "at": R_WP_LAENDER},
+    "ems": {"ktn": R_EMS, "stmk": R_EMS, "at": R_EMS},
+    "balkon": {"ktn": R_BALKON, "stmk": R_BALKON, "at": R_BALKON},
+}
+BADGE = {"ok": ("ok", "Läuft"), "part": ("part", "Teilweise"), "end": ("end", "Derzeit nichts")}
 DEFAULT = ("pvsp", "ktn")
 
 FINDER_JS = """
 (function(){
-  var card = document.querySelector(".ff-card"); if(!card) return;
-  var state = {v: card.getAttribute("data-v"), o: card.getAttribute("data-o")};
-  var cards = card.querySelectorAll(".ff-result");
-  var opts = document.querySelectorAll(".ff__opt");
+  var root = document.querySelector(".ff"); if(!root) return;
+  var state = {v: root.getAttribute("data-v"), o: root.getAttribute("data-o")};
+  var cards = root.querySelectorAll(".ff-result");
   function show(){
     cards.forEach(function(c){ c.classList.toggle("is-active", c.getAttribute("data-v") === state.v && c.getAttribute("data-o") === state.o); });
-    opts.forEach(function(b){ b.setAttribute("aria-pressed", String(state[b.getAttribute("data-group")] === b.getAttribute("data-val"))); });
+    root.querySelectorAll(".ff__opt").forEach(function(b){
+      b.setAttribute("aria-pressed", String(state[b.getAttribute("data-group")] === b.getAttribute("data-val")));
+    });
   }
-  function reveal(){
-    var r = card.getBoundingClientRect();
-    if(r.top < window.innerHeight - 220) return;
-    var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({top: window.pageYOffset + r.top - 96, behavior: calm ? "auto" : "smooth"});
-  }
-  opts.forEach(function(b){ b.addEventListener("click", function(){
-    var g = b.getAttribute("data-group");
-    state[g] = b.getAttribute("data-val"); show();
-    if(g === "o") reveal();
-  }); });
+  root.addEventListener("click", function(ev){
+    var b = ev.target.closest(".ff__opt"); if(!b) return;
+    state[b.getAttribute("data-group")] = b.getAttribute("data-val"); show();
+  });
   show();
 })();
 """
 
 
-def _opts(group, items, active):
-    return "".join(
-        f'<button type="button" class="ff__opt" data-group="{group}" data-val="{val}" '
-        f'aria-pressed="{"true" if val == active else "false"}">{label}</button>'
-        for val, label in items
-    )
-
-
-def _hero_section():
-    return f"""
-  <section class="page-hero fhero">
-    <div class="page-hero__inner">
-      <p class="eyebrow">Förderungen 2026</p>
-      <h1>Förderungen für Photovoltaik, Speicher und Wärmepumpe</h1>
-      <p class="lead">Zwei Klicks, und Sie sehen, was Bund und Land für Ihr Vorhaben zahlen.</p>
-      <div class="ffq">
-        <p class="ffq__label" id="ffq-v">1 · Was planen Sie?</p>
-        <div class="ffq__opts ffq__opts--6" role="group" aria-labelledby="ffq-v">{_opts("v", VORHABEN, DEFAULT[0])}</div>
-      </div>
-      <div class="ffq">
-        <p class="ffq__label" id="ffq-o">2 · Wo steht das Gebäude?</p>
-        <div class="ffq__opts" role="group" aria-labelledby="ffq-o">{_opts("o", [(k, l) for k, l, _p, _n in ORTE], DEFAULT[1])}</div>
-      </div>
-    </div>
-  </section>"""
-
-
 def _finder_section():
     from urllib.parse import quote
+
+    def opts(group, items, active):
+        return "".join(
+            f'<button type="button" class="ff__opt" data-group="{group}" data-val="{val}" '
+            f'aria-pressed="{"true" if val == active else "false"}">{ic}{label}</button>'
+            for val, ic, label in items
+        )
+
+    v_items = [(k, f'<span class="ic" aria-hidden="true">{ic}</span>', label) for k, ic, label in VORHABEN]
+    o_items = [(k, "", label) for k, label, _phrase in ORTE]
     results = ""
-    for vk, vlabel in VORHABEN:
-        for ok_, _olabel, ophrase, landname in ORTE:
-            status, basis, bund, land, summe, hinweis, detail = ERGEBNIS[(vk, ok_)]
+    for vk, _ic, vlabel in VORHABEN:
+        for ok_, _olabel, ophrase in ORTE:
+            status, zahl, sub = SUMME[(vk, ok_)]
+            bcls, btxt = BADGE[status]
             title = f"{vlabel} {ophrase}"
             active = " is-active" if (vk, ok_) == DEFAULT else ""
             anliegen = quote(f"Förderung prüfen: {title}")
-            # Ohne Foerderung keine Rechenzeile: "0 + 0 = 0" hilft niemandem.
-            eq = "" if summe == "0 €" else f"""          <div class="ff-eq">
-            <div class="ff-eq__cell"><span>Bund</span><b>{bund}</b></div>
-            <span class="ff-eq__op" aria-hidden="true">+</span>
-            <div class="ff-eq__cell"><span>{landname}</span><b>{land}</b></div>
-            <span class="ff-eq__op" aria-hidden="true">=</span>
-            <div class="ff-eq__cell ff-eq__cell--sum"><span>Ihre Förderung</span><b>{summe}</b></div>
-          </div>"""
             results += f"""
         <article class="ff-result{active}" data-v="{vk}" data-o="{ok_}">
-          <span class="ff-badge ff-badge--{status}">{BADGE[status]}</span>
-          <p class="ff-title">{title}</p>
-          <p class="ff-sub">{basis}</p>
-{eq}
-          <p class="ff-hint">{hinweis}</p>
-          <div class="ff-actions">
+          <div>
+            <span class="ff-badge ff-badge--{bcls}">{btxt}</span>
+            <h3>{title}</h3>
+            <p class="ff-sum"><b>{zahl}</b><span>{sub}</span></p>
+          </div>
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>{BUND[vk]}</dd></div>
+            <div><dt>Vom Land</dt><dd>{LAND[(vk, ok_)]}</dd></div>
+            <div><dt>Unser Tipp</dt><dd>{TIPP[(vk, ok_)]}</dd></div>
+          </dl>
+          <div class="ff-btns">
             <a class="btn btn--primary" href="/kontakt/?anliegen={anliegen}">Förderung für mein Projekt prüfen</a>
-            {a(detail, 'Details im Ratgeber <span aria-hidden="true">→</span>', cls='ff-more')}
+            {a(DETAIL[vk][ok_], 'Alle Details im Ratgeber', cls='btn btn--light')}
           </div>
         </article>"""
     return f"""
   <section class="ff-wrap" id="finder">
     <div class="wrap">
-      <div class="ff-card" data-v="{DEFAULT[0]}" data-o="{DEFAULT[1]}" aria-live="polite">{results}
+      <div class="ff" data-v="{DEFAULT[0]}" data-o="{DEFAULT[1]}">
+        <div class="ff__step"><span class="ff__n" aria-hidden="true">1</span><span class="ff__q">Was planen Sie?</span>
+          <div class="ff__opts" role="group" aria-label="Was planen Sie?">{opts("v", v_items, DEFAULT[0])}</div></div>
+        <div class="ff__step"><span class="ff__n" aria-hidden="true">2</span><span class="ff__q">Wo steht das Gebäude?</span>
+          <div class="ff__opts" role="group" aria-label="Wo steht das Gebäude?">{opts("o", o_items, DEFAULT[1])}</div></div>
+        <div aria-live="polite">{results}
+        </div>
+        <p class="ff-foot">*Beispielrechnung, siehe unten. {STAND}, Beträge für private Anlagen.</p>
       </div>
-      <p class="ff-foot">Beträge für private Anlagen, ohne Made-in-Europe-Bonus gerechnet. {STAND}.</p>
     </div>
   </section>
   <script>{FINDER_JS}</script>"""
@@ -371,11 +393,12 @@ def _beispiel_section():
           <dl class="fcalc">
             <div><dt>Bund: Photovoltaik, 10 kWp × 150 €</dt><dd>1.500 €</dd></div>
             <div><dt>Bund: Speicher, 10 kWh × 150 €</dt><dd>1.500 €</dd></div>
+            <div><dt>Made-in-Europe-Bonus, falls erfüllt</dt><dd>rund 450 €*</dd></div>
             <div><dt>Land Kärnten: Pauschale</dt><dd>3.000 €</dd></div>
-            <div class="is-sum"><dt>Förderung gesamt</dt><dd>6.000 €</dd></div>
+            <div class="is-sum"><dt>Förderung gesamt</dt><dd>rund 6.450 €*</dd></div>
           </dl>
-          <p class="form-note">Mit Made-in-Europe-Bonus rund 450 € mehr*. Richtpreis der Anlage rund 15.000 bis 22.000 €
-          vor Förderung; Kärnten fördert maximal 50 % der Baukosten.</p>
+          <p class="form-note">Bei einem Richtpreis von rund 15.000 bis 22.000 € vor Förderung. In Kärnten maximal 50 %
+          der Baukosten.</p>
         </div>
         <div class="panel panel--dark eg-reveal">
           <p class="eyebrow" style="color:var(--amber)">Service inklusive</p>
@@ -396,7 +419,14 @@ def _beispiel_section():
 
 def build():
     body = "".join([
-        _hero_section(),
+        f"""
+  <section class="page-hero fhero">
+    <div class="page-hero__inner eg-reveal">
+      <p class="eyebrow">Förderungen 2026</p>
+      <h1>Welche Förderung bekommen Sie für Photovoltaik, Speicher und Wärmepumpe?</h1>
+      <p class="lead">Zwei Klicks, und Sie sehen, was Bund und Land für Ihr Vorhaben zahlen.</p>
+    </div>
+  </section>""",
         _finder_section(),
         _status_section(),
         C.steps_section(
@@ -438,10 +468,11 @@ def build():
             trust=[(f"{NAP['rating']} auf Google", True), ("300+ Projekte", False),
                    ("Anträge inklusive", False), ("Antwort in einem Werktag", False)],
         ),
-        f'<div class="wrap"><p class="form-note" style="padding:8px 0 40px">*Made-in-Europe-Bonus: 10 % je Komponente auf den '
-        f'Bundeszuschuss, im Beispiel rund 450 €, nur wenn Module, Wechselrichter und Speicher die Kriterien erfüllen. '
-        f'Fördersätze und Fristen {STAND}, Länderdaten zum Teil Stand Mai bis Juni 2026; Angaben zu 2027 laut BMWET geplant, '
-        f'nicht beschlossen. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p></div>',
+        f'<div class="wrap"><p class="form-note" style="padding:8px 0 40px">*Beispielrechnung: 10 kWp × 150 € plus '
+        f'10 kWh × 150 € ergeben 3.000 € vom Bund; der Made-in-Europe-Bonus (10 % je Komponente, rund 450 € im Beispiel, '
+        f'300 € ohne Speicher) gilt nur, wenn Module, Wechselrichter und Speicher die Kriterien erfüllen; dazu 3.000 € '
+        f'Landespauschale Kärnten. Fördersätze und Fristen {STAND}, Länderdaten zum Teil Stand Mai bis Juni 2026; Angaben '
+        f'zu 2027 laut BMWET geplant, nicht beschlossen. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p></div>',
     ])
     html = page(TITLE, DESC, PATH, body, faq_jsonld_str=faq_jsonld(u(PATH), FAQ), og_image=IMG["foerderung"])
     return write_page("foerderungen/index.html", html)
