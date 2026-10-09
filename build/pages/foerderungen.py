@@ -101,8 +101,9 @@ FAQ = [
      "Vom Bund derzeit nicht: Sanierungsoffensive mit Kesseltausch (bis 7.500 Euro) und Sauber Heizen für Alle sind "
      "seit Herbst 2026 ausgeschöpft, neue Registrierungen sind nicht möglich; bereits Registrierte können noch "
      "beantragen. Weiter laufen die Landesförderungen (Kärnten 35 Prozent, Steiermark 35 Prozent der förderbaren "
-     "Kosten, Stand beim Land prüfen) und die Öko-Sonderausgabenpauschale mit fünf Jahren je 400 Euro. Ob 2027 ein "
-     "neues Bundesprogramm kommt, ist offen."),
+     "Kosten, Stand beim Land prüfen). Die Öko-Sonderausgabenpauschale (fünf Jahre je 400 Euro) setzt eine ausbezahlte "
+     "Bundesförderung voraus und gilt damit nur für bereits Registrierte. Ob 2027 ein neues Bundesprogramm kommt, "
+     "ist offen."),
     ("Welche Förderungen gibt es für Betriebe und Gemeinden?",
      "PV: EAG-Zuschuss in den Kategorien B bis D (140 bis 120 Euro je kWp, ab 20 kWp im Bieterverfahren) plus "
      "Speicher 150 Euro je kWh; Kärnten fördert betriebliche Eigenverbrauchsanlagen mit bis zu 200 Euro je kWp, die "
@@ -127,8 +128,7 @@ def _cell(text, link_key, link_text="Details"):
 
 
 def _matrix_section():
-    lead = (f"Eine Zeile je Technologie, eine Spalte je Fördergeber; Beträge für private Anlagen ({STAND}), "
-            "Programme für Betriebe stehen in den FAQ.")
+    lead = (f"Fünf Technologien, vier Fördergeber, alle Beträge für private Anlagen ({STAND}).")
     rows = [
         ("Photovoltaik",
          _cell("150 €/kWp bis 10 kWp, darüber 140 bis 120 €/kWp, 10 % Made-in-Europe-Bonus. <b>Läuft:</b> Antrag bis 22.10.2026", R_BUND),
@@ -141,7 +141,7 @@ def _matrix_section():
          _cell("Nur Bund; einzelne Gemeinden zahlen einen Speicherbonus", R_STMK),
          _cell("Oberösterreich 150 €/kWh Nachrüstung bis 2.250 €, Burgenland 100 €/kWh bis 2.000 €, Tirol 100 €/kWh bis 1.000 €, Vorarlberg VKW-Bonus bis 500 €; sonst nur Bund", R_LAENDER)),
         ("Wärmepumpe",
-         _cell("<b>Beendet:</b> Kesseltausch bis 7.500 € und Sauber Heizen für Alle ausgeschöpft. Weiter gültig: Öko-Sonderausgabenpauschale 5 Jahre je 400 €", R_WP_AT),
+         _cell("<b>Beendet:</b> Kesseltausch bis 7.500 € und Sauber Heizen für Alle ausgeschöpft. Die Öko-Sonderausgabenpauschale (5 Jahre je 400 €) setzt eine ausbezahlte Bundesförderung voraus", R_WP_AT),
          _cell("35 % der förderbaren Kosten, Obergrenze 6.000 € laut Richtlinie (laut Berichten 2026: 3.000 €), plus 1.200 € Kelag-Prämie. Stand beim Land prüfen", R_WP_LAENDER),
          _cell("35 % der förderbaren Kosten für Eigenheime mit maximal zwei Wohnungen, Energieberatung kostenlos", R_WP_LAENDER),
          _cell("Wien 35 % bis 8.000 €, Tirol 25 % plus 3.000 € Bonus, Salzburg rund 5.000 €, Burgenland 2.000 €, Vorarlberg 1.000 €, Oberösterreich bis 1.700 €", R_WP_LAENDER)),
@@ -158,153 +158,304 @@ def _matrix_section():
     ]
     table = _table(["Technologie", "Bund (EAG, Klimafonds, KPC)", "Kärnten", "Steiermark", "Andere Bundesländer"], rows)
     return f"""
-  <section class="section" style="background:#fff;border-block:1px solid var(--line)" id="matrix">
+  <section class="section section--tight" style="background:#fff;border-block:1px solid var(--line)" id="matrix">
     <div class="wrap">
-      <p class="eyebrow center eg-reveal">Fördermatrix 2026</p>
-      <h2 class="center eg-reveal">Förderungen nach Technologie und Bundesland: die Matrix</h2>
-      <p class="lead center eg-reveal" style="max-width:72ch;margin-inline:auto">{lead}</p>
-      {table}
-      <p class="form-note center eg-reveal">Quellen: EAG-Abwicklungsstelle, Land Kärnten, Land Steiermark, Klima- und Energiefonds,
-      umweltfoerderung.at, Landesförderstellen (Länderdaten Stand Mai bis Oktober 2026). Änderungen durch die Fördergeber vorbehalten.</p>
+      <p class="eyebrow center eg-reveal">Für alle, die alles sehen wollen</p>
+      <h2 class="center eg-reveal">Die komplette Fördermatrix 2026</h2>
+      <p class="lead center eg-reveal" style="max-width:64ch;margin-inline:auto">{lead}</p>
+      <details class="fall">
+        <summary>Alle Förderungen in einer Tabelle</summary>
+        {table}
+        <p class="form-note center">Quellen: EAG-Abwicklungsstelle, Land Kärnten, Land Steiermark, Klima- und Energiefonds,
+        umweltfoerderung.at, Landesförderstellen (Länderdaten Stand Mai bis Oktober 2026). Änderungen durch die Fördergeber vorbehalten.</p>
+      </details>
+    </div>
+  </section>"""
+
+
+# --- Foerder-Finder ---------------------------------------------------------
+# Zwei Fragen (Vorhaben, Ort) -> eine Ergebniskarte. Alle Texte sind Auszuege aus der Matrix oben
+# (gleiche Quellen), es entstehen keine neuen Zahlen. Alle 18 Karten stehen im HTML, das Skript
+# blendet nur ein und aus; ohne JavaScript bleibt die Standardkarte sichtbar.
+VORHABEN = [
+    ("pvsp", "☀", "PV mit Speicher"),
+    ("pv", "◫", "PV ohne Speicher"),
+    ("sp", "▮", "Speicher nachrüsten"),
+    ("wp", "♨", "Wärmepumpe"),
+    ("ems", "◎", "Energiemanagement"),
+    ("balkon", "⌂", "Balkonkraftwerk"),
+]
+ORTE = [("ktn", "Kärnten", "in Kärnten"), ("stmk", "Steiermark", "in der Steiermark"),
+        ("at", "Anderes Bundesland", "in anderen Bundesländern")]
+
+BUND = {
+    "pvsp": ("150 € je kWp bis 10 kWp (darüber 140 bis 120 €) und 150 € je kWh Speicher, plus 10 % Made-in-Europe-Bonus "
+             "je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026."),
+    "pv": ("150 € je kWp bis 10 kWp, darüber 140 bis 120 €, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der "
+           "Inbetriebnahme, aktueller Call bis 22. Oktober 2026."),
+    "sp": ("2026 keine Bundesförderung für die reine Nachrüstung: Der Speicherzuschuss gilt nur zusammen mit einer neuen "
+           "oder erweiterten PV-Anlage. Ab 2027 soll die Nachrüstung laut BMWET förderbar werden."),
+    "wp": ("Derzeit nichts: Kesseltausch (bis 7.500 €) und Sauber Heizen für Alle sind ausgeschöpft, neue Registrierungen "
+           "sind nicht möglich. Ob 2027 ein neues Programm kommt, ist offen."),
+    "ems": ("Klima- und Energiefonds: 50 % der Kosten, maximal 600 € je Haushalt (Betriebe 30 % bis 20.000 €). "
+            "Registrierung vor der Rechnung, Programm bis 15. April 2027."),
+    "balkon": "Kein EAG-Zuschuss für Steckeranlagen bis 800 Watt, weil der Einspeisezählpunkt fehlt.",
+}
+_GEMEINDE = "Keine Landesförderung; manche Gemeinden zahlen einen Zuschuss."
+LAND = {
+    ("pvsp", "ktn"): ("3.000 € Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, zusätzlich zum Bund. Antrag nach "
+                      "Fertigstellung, 12. Oktober bis 31. Dezember 2026."),
+    ("pvsp", "stmk"): ("Keine Pauschale. Ökofonds bis 30 % ab 20 kWp, Gemeinden zahlen teils 200 bis 1.000 € oder einen "
+                       "Speicherbonus. Der Sanierungsbonus-Call 2026 ist beendet."),
+    ("pvsp", "at"): ("Tirol bis 125 € je kWp und 100 € je kWh Speicher. Oberösterreich, Burgenland und Vorarlberg haben "
+                     "Speicherprogramme, die sich teils nicht mit dem Bund kombinieren lassen. Sonst gilt der Bund."),
+    ("pv", "ktn"): "Die 3.000-€-Pauschale gibt es nur mit Speicher ab 5 kWh. Ohne Speicher bleibt die Bundesförderung.",
+    ("pv", "stmk"): "Keine Pauschale. Ökofonds bis 30 % ab 20 kWp, Gemeinden zahlen teils 200 bis 1.000 €.",
+    ("pv", "at"): ("Tirol bis 125 € je kWp. In Burgenland, Niederösterreich, Oberösterreich, Salzburg, Vorarlberg und Wien "
+                   "gilt für Standard-Dachanlagen die Bundesförderung."),
+    ("sp", "ktn"): ("1.000 € pauschal für die Nachrüstung ab 5 kWh an einer bestehenden Anlage. Antrag nach Fertigstellung, "
+                    "bis 31. Dezember 2026."),
+    ("sp", "stmk"): "Keine Landesförderung für die Nachrüstung; einzelne Gemeinden zahlen einen Speicherbonus.",
+    ("sp", "at"): ("Oberösterreich 150 € je kWh bis 2.250 €, Burgenland 100 € je kWh bis 2.000 €, Tirol 100 € je kWh bis "
+                   "1.000 €, Vorarlberg VKW-Bonus bis 500 €."),
+    ("wp", "ktn"): ("35 % der förderbaren Kosten. Obergrenze laut Richtlinie 6.000 €, laut Berichten 2026 auf 3.000 € "
+                    "angepasst; dazu 1.200 € Kelag-Prämie. Den aktuellen Stand klären wir vor dem Angebot mit dem Land."),
+    ("wp", "stmk"): ("35 % der förderbaren Kosten für Eigenheime mit maximal zwei Wohnungen, Energieberatung kostenlos. "
+                     "Den aktuellen Stand klären wir vor dem Angebot mit dem Land."),
+    ("wp", "at"): ("Wien 35 % bis 8.000 €, Tirol 25 % plus 3.000 € Bonus, Salzburg rund 5.000 €, Burgenland 2.000 €, "
+                   "Oberösterreich bis 1.700 €, Vorarlberg 1.000 €."),
+    ("ems", "ktn"): "Keine eigene Landesförderung, es gilt der Klimafonds.",
+    ("ems", "stmk"): ("Keine eigene Landesförderung. Im Ökofonds gibt es ab 20 kWp einen Bonus von 125 € je kWp für die "
+                      "Einbindung in ein Energiesystem."),
+    ("ems", "at"): "Keine eigene Landesförderung, es gilt der Klimafonds.",
+    ("balkon", "ktn"): _GEMEINDE,
+    ("balkon", "stmk"): _GEMEINDE,
+    ("balkon", "at"): "Einzelne Länder und Gemeinden haben budgetierte Zuschüsse, die sich häufig ändern.",
+}
+# (Status, Kernzahl, Erlaeuterung)
+_PVSP_SUB = "Beispiel: 10 kWp mit 10 kWh Speicher, inklusive Made-in-Europe-Bonus"
+_PV_SUB = "Beispiel: 10 kWp ohne Speicher, je nach Made-in-Europe-Bonus"
+SUMME = {
+    ("pvsp", "ktn"): ("ok", "rund 6.450 €*", _PVSP_SUB),
+    ("pvsp", "stmk"): ("ok", "rund 3.450 €*", _PVSP_SUB),
+    ("pvsp", "at"): ("ok", "rund 3.450 €*", _PVSP_SUB + "; Landesförderung je nach Bundesland zusätzlich"),
+    ("pv", "ktn"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
+    ("pv", "stmk"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
+    ("pv", "at"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
+    ("sp", "ktn"): ("ok", "1.000 €", "Landespauschale für die Nachrüstung ab 5 kWh"),
+    ("sp", "stmk"): ("end", "Derzeit keine", "2027 soll die Nachrüstung im Bund förderbar werden"),
+    ("sp", "at"): ("part", "bis 2.250 €", "je nach Bundesland, Höchstwert Oberösterreich"),
+    ("wp", "ktn"): ("part", "35 %", "der förderbaren Kosten vom Land, der Bund ist derzeit ausgeschöpft"),
+    ("wp", "stmk"): ("part", "35 %", "der förderbaren Kosten vom Land, der Bund ist derzeit ausgeschöpft"),
+    ("wp", "at"): ("part", "bis 8.000 €", "je nach Bundesland, Höchstwert Wien; der Bund ist derzeit ausgeschöpft"),
+    ("ems", "ktn"): ("ok", "bis 600 €", "50 % der Kosten für Haushalte"),
+    ("ems", "stmk"): ("ok", "bis 600 €", "50 % der Kosten für Haushalte"),
+    ("ems", "at"): ("ok", "bis 600 €", "50 % der Kosten für Haushalte"),
+    ("balkon", "ktn"): ("end", "Keine Förderung", "für Steckeranlagen bis 800 Watt"),
+    ("balkon", "stmk"): ("end", "Keine Förderung", "für Steckeranlagen bis 800 Watt"),
+    ("balkon", "at"): ("end", "Keine Förderung", "für Steckeranlagen bis 800 Watt"),
+}
+_MACHBAR = " Montiert wird in Kärnten und der Steiermark; andere Bundesländer prüfen wir auf Anfrage."
+_SP_2027 = ("Speicher, die ab 1. November 2026 in Betrieb gehen, sollen laut BMWET 2027 im neuen Bundessystem "
+            "beantragbar sein (geplant, nicht beschlossen).")
+_WP_TIPP = ("Mit Photovoltaik sinken die Heizkosten deutlich. Die Öko-Sonderausgabenpauschale setzt eine ausbezahlte "
+            "Bundesförderung voraus.")
+_EMS_TIPP = "Erst registrieren, dann die Rechnung: Wer zuerst die Rechnung hat, verliert die Förderung."
+_BALKON_TIPP = "Wer Förderung will, plant eine angemeldete Kleinanlage ab rund 3 kWp: 150 € je kWp vom Bund."
+TIPP = {
+    ("pvsp", "ktn"): "Reihenfolge beachten: Bundesantrag vor der Montage, Landesantrag danach. Beides bereiten wir vor.",
+    ("pvsp", "stmk"): "Bundesantrag vor der Montage stellen. Welche Gemeinde zusätzlich fördert, prüfen wir für Sie.",
+    ("pvsp", "at"): "Bundesantrag vor der Montage stellen." + _MACHBAR,
+    ("pv", "ktn"): "Mit einem Speicher ab 5 kWh kommen 3.000 € vom Land und 150 € je kWh vom Bund dazu.",
+    ("pv", "stmk"): "Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh.",
+    ("pv", "at"): "Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh." + _MACHBAR,
+    ("sp", "ktn"): _SP_2027, ("sp", "stmk"): _SP_2027, ("sp", "at"): _SP_2027,
+    ("wp", "ktn"): _WP_TIPP, ("wp", "stmk"): _WP_TIPP, ("wp", "at"): _WP_TIPP + _MACHBAR,
+    ("ems", "ktn"): _EMS_TIPP, ("ems", "stmk"): _EMS_TIPP, ("ems", "at"): _EMS_TIPP,
+    ("balkon", "ktn"): _BALKON_TIPP, ("balkon", "stmk"): _BALKON_TIPP, ("balkon", "at"): _BALKON_TIPP,
+}
+DETAIL = {
+    "pvsp": {"ktn": R_KTN, "stmk": R_STMK, "at": R_LAENDER},
+    "pv": {"ktn": R_KTN, "stmk": R_STMK, "at": R_LAENDER},
+    "sp": {"ktn": R_SPEICHER_KTN, "stmk": R_SPEICHER, "at": R_SPEICHER},
+    "wp": {"ktn": R_WP_LAENDER, "stmk": R_WP_LAENDER, "at": R_WP_LAENDER},
+    "ems": {"ktn": R_EMS, "stmk": R_EMS, "at": R_EMS},
+    "balkon": {"ktn": R_BALKON, "stmk": R_BALKON, "at": R_BALKON},
+}
+BADGE = {"ok": ("ok", "Läuft"), "part": ("part", "Teilweise"), "end": ("end", "Derzeit nichts")}
+DEFAULT = ("pvsp", "ktn")
+
+FINDER_JS = """
+(function(){
+  var root = document.querySelector(".ff"); if(!root) return;
+  var state = {v: root.getAttribute("data-v"), o: root.getAttribute("data-o")};
+  var cards = root.querySelectorAll(".ff-result");
+  function show(){
+    cards.forEach(function(c){ c.classList.toggle("is-active", c.getAttribute("data-v") === state.v && c.getAttribute("data-o") === state.o); });
+    root.querySelectorAll(".ff__opt").forEach(function(b){
+      b.setAttribute("aria-pressed", String(state[b.getAttribute("data-group")] === b.getAttribute("data-val")));
+    });
+  }
+  root.addEventListener("click", function(ev){
+    var b = ev.target.closest(".ff__opt"); if(!b) return;
+    state[b.getAttribute("data-group")] = b.getAttribute("data-val"); show();
+  });
+  show();
+})();
+"""
+
+
+def _finder_section():
+    from urllib.parse import quote
+
+    def opts(group, items, active):
+        return "".join(
+            f'<button type="button" class="ff__opt" data-group="{group}" data-val="{val}" '
+            f'aria-pressed="{"true" if val == active else "false"}">{ic}{label}</button>'
+            for val, ic, label in items
+        )
+
+    v_items = [(k, f'<span class="ic" aria-hidden="true">{ic}</span>', label) for k, ic, label in VORHABEN]
+    o_items = [(k, "", label) for k, label, _phrase in ORTE]
+    results = ""
+    for vk, _ic, vlabel in VORHABEN:
+        for ok_, _olabel, ophrase in ORTE:
+            status, zahl, sub = SUMME[(vk, ok_)]
+            bcls, btxt = BADGE[status]
+            title = f"{vlabel} {ophrase}"
+            active = " is-active" if (vk, ok_) == DEFAULT else ""
+            anliegen = quote(f"Förderung prüfen: {title}")
+            results += f"""
+        <article class="ff-result{active}" data-v="{vk}" data-o="{ok_}">
+          <div>
+            <span class="ff-badge ff-badge--{bcls}">{btxt}</span>
+            <h3>{title}</h3>
+            <p class="ff-sum"><b>{zahl}</b><span>{sub}</span></p>
+          </div>
+          <dl class="ff-rows">
+            <div><dt>Vom Bund</dt><dd>{BUND[vk]}</dd></div>
+            <div><dt>Vom Land</dt><dd>{LAND[(vk, ok_)]}</dd></div>
+            <div><dt>Unser Tipp</dt><dd>{TIPP[(vk, ok_)]}</dd></div>
+          </dl>
+          <div class="ff-btns">
+            <a class="btn btn--primary" href="/kontakt/?anliegen={anliegen}">Förderung für mein Projekt prüfen</a>
+            {a(DETAIL[vk][ok_], 'Alle Details im Ratgeber', cls='btn btn--light')}
+          </div>
+        </article>"""
+    return f"""
+  <section class="ff-wrap" id="finder">
+    <div class="wrap">
+      <div class="ff" data-v="{DEFAULT[0]}" data-o="{DEFAULT[1]}">
+        <div class="ff__step"><span class="ff__n" aria-hidden="true">1</span><span class="ff__q">Was planen Sie?</span>
+          <div class="ff__opts" role="group" aria-label="Was planen Sie?">{opts("v", v_items, DEFAULT[0])}</div></div>
+        <div class="ff__step"><span class="ff__n" aria-hidden="true">2</span><span class="ff__q">Wo steht das Gebäude?</span>
+          <div class="ff__opts" role="group" aria-label="Wo steht das Gebäude?">{opts("o", o_items, DEFAULT[1])}</div></div>
+        <div aria-live="polite">{results}
+        </div>
+        <p class="ff-foot">*Beispielrechnung, siehe unten. {STAND}, Beträge für private Anlagen.</p>
+      </div>
+    </div>
+  </section>
+  <script>{FINDER_JS}</script>"""
+
+
+def _status_section():
+    return f"""
+  <section class="section section--tight">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">Was läuft gerade</p>
+      <h2 class="center eg-reveal">Förderstatus im Oktober 2026</h2>
+      <div class="fstatus eg-reveal" style="margin-top:28px">
+        <div><b><span class="dot dot--ok"></span>Läuft</b>
+          <p>EAG-Zuschuss des Bundes für PV und Speicher (Antrag bis 22. Oktober 2026), Landespauschale Kärnten
+          (12. Oktober bis 31. Dezember 2026), EMS-Förderung des Klimafonds (bis 15. April 2027).</p></div>
+        <div><b><span class="dot dot--end"></span>Beendet</b>
+          <p>Bundesförderung für Wärmepumpen: Kesseltausch und Sauber Heizen für Alle sind ausgeschöpft.
+          Steirischer Sanierungsbonus: Call 2026 abgeschlossen.</p></div>
+        <div><b><span class="dot dot--plan"></span>Geplant ab 2027</b>
+          <p>Systemförderung für Speicher mit intelligenter Steuerung, Antrag nach der Installation statt im
+          Fördercall (laut BMWET, noch nicht beschlossen).</p></div>
+      </div>
+      <p class="form-note center eg-reveal" style="margin-top:16px">Quellen: EAG-Abwicklungsstelle, Land Kärnten,
+      Klima- und Energiefonds, umweltfoerderung.at, BMWET. {STAND}.</p>
+    </div>
+  </section>"""
+
+
+def _beispiel_section():
+    return f"""
+  <section class="section" id="beispiel">
+    <div class="wrap">
+      <div class="split">
+        <div class="panel eg-reveal">
+          <p class="eyebrow">Ein Beispiel</p>
+          <h2 style="font-size:clamp(1.4rem,2.4vw,1.8rem)">10 kWp mit 10 kWh Speicher in Kärnten</h2>
+          <dl class="fcalc">
+            <div><dt>Bund: Photovoltaik, 10 kWp × 150 €</dt><dd>1.500 €</dd></div>
+            <div><dt>Bund: Speicher, 10 kWh × 150 €</dt><dd>1.500 €</dd></div>
+            <div><dt>Made-in-Europe-Bonus, falls erfüllt</dt><dd>rund 450 €*</dd></div>
+            <div><dt>Land Kärnten: Pauschale</dt><dd>3.000 €</dd></div>
+            <div class="is-sum"><dt>Förderung gesamt</dt><dd>rund 6.450 €*</dd></div>
+          </dl>
+          <p class="form-note">Bei einem Richtpreis von rund 15.000 bis 22.000 € vor Förderung. In Kärnten maximal 50 %
+          der Baukosten.</p>
+        </div>
+        <div class="panel panel--dark eg-reveal">
+          <p class="eyebrow" style="color:var(--amber)">Service inklusive</p>
+          <h2 style="color:#fff;font-size:clamp(1.4rem,2.4vw,1.8rem)">Wir übernehmen die Anträge</h2>
+          <p style="color:#c6dbe2">Sie bleiben Antragsteller, das Geld kommt auf Ihr Konto, auch bei Finanzierung.
+          Den Papierkram machen wir.</p>
+          <ul class="checklist">
+            <li>Förderprüfung vor dem Angebot, Beträge im Projektbericht mit 3D-Belegplan und Statikreport</li>
+            <li>Ticket, Antrag und Fertigstellungsmeldung bereiten wir vor, Sie bestätigen</li>
+            <li>Reihenfolge im Blick: Bund vor der Montage, Land danach</li>
+          </ul>
+          <div class="hero__cta" style="margin-top:22px">{a('kontakt', 'Kostenlose Förderprüfung', cls='btn btn--primary')}</div>
+        </div>
+      </div>
     </div>
   </section>"""
 
 
 def build():
     body = "".join([
-        C.page_hero(
-            eyebrow="Förderungen 2026 · Bund, Kärnten, Steiermark, alle Bundesländer",
-            h1="Förderungen 2026 für Photovoltaik, Speicher, Wärmepumpe und Energiemanagement",
-            lead=("Stand Oktober 2026: Welche Förderung für Photovoltaik, Speicher, Wärmepumpe, Energiemanagement und "
-                  "Balkonkraftwerk läuft, was beendet ist und was 2027 kommt. Bund, Kärnten, Steiermark und alle "
-                  "Bundesländer auf einer Seite, mit Fristen, Beträgen und Links zu den Detail-Ratgebern."),
-            cta=("kontakt", "Förderung für mein Projekt prüfen"),
-            cta2=("#matrix", "Zur Fördermatrix"),
-        ),
-        C.kpis([
-            ("150 €/kWp", "EAG-Bund für PV bis 10 kWp, plus 150 €/kWh Speicher"),
-            ("3.000 €", "Landespauschale Kärnten, 12.10. bis 31.12.2026"),
-            ("bis 600 €", "EMS-Förderung Klimafonds, bis 15.4.2027"),
-            ("beendet", "Wärmepumpe Bund 2026: Mittel ausgeschöpft"),
-        ]),
-        C.cards_section(
-            eyebrow="Was läuft gerade",
-            h2="Förderstatus Oktober 2026: läuft, beendet, geplant",
-            intro=(f"{STAND} laufen drei Förderprogramme: der EAG-Zuschuss des "
-                   "Bundes (150 € je kWp, 150 € je kWh, bis 22. Oktober 2026), der Landes-Call Kärnten "
-                   "(3.000 € Pauschale, 12. Oktober bis 31. Dezember 2026) und die EMS-Förderung des Klimafonds "
-                   "(50 % bis 600 €, bis 15. April 2027). Die Bundesförderung für Wärmepumpen ist ausgeschöpft "
-                   "(Quellen: EAG-Abwicklungsstelle, Land Kärnten, Klimafonds)."),
-            cards=[
-                {"ic": "✓", "title": "Läuft: jetzt einreichen",
-                 "text": ("EAG-Fördercall 3/2026: Antragstellung bis 22. Oktober 2026, letzter Call im bisherigen System. "
-                          "Kärnten: 2. Landes-Call 12. Oktober bis 31. Dezember 2026, Budget rund 10 Mio. €, Antrag nach "
-                          "Fertigstellung. EMS: Klimafonds bis 15. April 2027."),
-                 "link_key": R_BUND, "link_text": "EAG-Fördercall im Detail"},
-                {"ic": "◇", "title": "Beendet: keine neuen Anträge",
-                 "text": ("Sanierungsoffensive 2026 mit Kesseltausch (bis 7.500 €): Mittel ausgeschöpft. Sauber Heizen für "
-                          "Alle 2026: neue Registrierungen nicht mehr möglich, bereits Registrierte können noch beantragen. "
-                          "Steirischer Sanierungsbonus: Call 1. April bis 15. Mai 2026 abgeschlossen."),
-                 "link_key": R_WP_AT, "link_text": "Was für die Wärmepumpe noch gilt"},
-                {"ic": "◔", "title": "Geplant: Systemförderung 2027",
-                 "text": ("Laut BMWET-Eckpunkten vom Oktober 2026 wird der EAG-Zuschuss ab 2027 zur Systemförderung für "
-                          "Speicher plus intelligente Steuerung: Antrag nach Installation, kein Fördercall, Nachrüstung "
-                          "soll förderbar werden. Projekte ab 1. November 2026 sollen 2027 beantragbar sein."),
-                 "link_key": R_EMS, "link_text": "Speicher und EMS 2027"},
-            ],
-        ),
-        _matrix_section(),
-        C.cards_section(
-            eyebrow="Fünf Technologien, fünf Fördertöpfe",
-            h2="Förderung je Technologie: das Wichtigste in drei Sätzen",
-            intro="Je Karte der aktuelle Betrag, die Frist und der Ratgeber mit Rechenbeispiel und Antragsweg.",
-            cards=[
-                {"ic": "☀", "title": "Photovoltaik",
-                 "text": ("Der Bund zahlt 150 € je kWp bis 10 kWp, darüber 140 bis 120 €, plus 10 % Made-in-Europe-Bonus. "
-                          "Kärnten legt 3.000 € Pauschale drauf, wenn ein Speicher ab 5 kWh dabei ist; die Steiermark arbeitet "
-                          "mit Sanierungsbonus, Ökofonds und Gemeinden. Beispiel 10 kWp mit 10 kWh in Kärnten: rund 6.450 €."),
-                 "link_key": R_BUND, "link_text": "PV-Förderung Österreich 2026"},
-                {"ic": "▮", "title": "Stromspeicher",
-                 "text": ("150 € je kWh vom Bund bis 50 kWh, nur gemeinsam mit einer neuen oder erweiterten PV-Anlage. "
-                          "Kärnten fördert die Nachrüstung mit 1.000 € pauschal, Oberösterreich mit 150 € je kWh bis 2.250 €. "
-                          "Ab 2027 soll die Nachrüstung laut BMWET auch im Bund förderbar werden."),
-                 "link_key": R_SPEICHER, "link_text": "Speicherförderung 2026"},
-                {"ic": "♨", "title": "Wärmepumpe",
-                 "text": ("Die Bundesprogramme 2026 (Kesseltausch bis 7.500 €, Sauber Heizen für Alle) sind ausgeschöpft. "
-                          "Weiter laufen die Länder: Kärnten und Steiermark je 35 % der förderbaren Kosten, Wien bis 8.000 €, "
-                          "Tirol bis 18.000 € gesamt. Dazu die Öko-Sonderausgabenpauschale: fünf Jahre je 400 €."),
-                 "link_key": R_WP_LAENDER, "link_text": "Landesförderungen Wärmepumpe"},
-                {"ic": "◎", "title": "Energiemanagement (EMS)",
-                 "text": ("Der Klima- und Energiefonds übernimmt 50 % der Kosten, maximal 600 € je Haushalt; Betriebe erhalten "
-                          "30 % bis 20.000 € je Standort. Bei 800 bis 1.500 € Systemkosten* bleiben oft nur wenige hundert Euro "
-                          "Eigenanteil. Registrierung vor der Rechnung, Programm bis 15. April 2027."),
-                 "link_key": R_EMS, "link_text": "EMS-Förderung 2026"},
-                {"ic": "⌂", "title": "Balkonkraftwerk",
-                 "text": ("Steckeranlagen bis 800 W bekommen keinen EAG-Zuschuss, weil der Einspeisezählpunkt fehlt. "
-                          "Wer Förderung will, plant eine angemeldete Kleinanlage ab rund 3 kWp: 150 € je kWp plus 150 € je kWh Speicher."),
-                 "link_key": R_BALKON, "link_text": "Balkonkraftwerk-Förderung"},
-                {"ic": "€", "title": "Finanzierung und Förderung",
-                 "text": ("Wer finanziert, bekommt die Förderung in voller Höhe, weil die Anlage ab Tag 1 dem Kunden gehört. "
-                          "Der EAG-Zuschuss wird vom Finanzierungsbetrag abgezogen, Landespauschalen kommen auf Ihr Konto."),
-                 "link_key": "finanzierung", "link_text": "PV-Anlage finanzieren"},
-            ],
-        ),
-        _laender_section(),
+        f"""
+  <section class="page-hero fhero">
+    <div class="page-hero__inner eg-reveal">
+      <p class="eyebrow">Förderungen 2026</p>
+      <h1>Welche Förderung bekommen Sie für Photovoltaik, Speicher und Wärmepumpe?</h1>
+      <p class="lead">Zwei Klicks, und Sie sehen, was Bund und Land für Ihr Vorhaben zahlen.</p>
+    </div>
+  </section>""",
+        _finder_section(),
+        _status_section(),
         C.steps_section(
-            eyebrow="Reihenfolge der Anträge",
-            h2="Erst Bund, dann Land: die richtige Reihenfolge im Herbst 2026",
+            eyebrow="So kommen Sie zur Förderung",
+            h2="Vier Schritte, die Reihenfolge entscheidet",
             steps=[
-                ("EAG-Antrag vor Inbetriebnahme",
-                 "Zählpunkt beim Netzbetreiber, Ticket im Fördercall (bis 22. Oktober 2026), Antrag vervollständigen. "
-                 "Montiert wird erst nach der Zusage, sonst verfällt der Bundeszuschuss.",
+                ("Förderung prüfen",
+                 "Wir klären vor dem Angebot, welche Programme zu Dach, Heizung und Bundesland passen.",
+                 "vor dem Angebot"),
+                ("Bund: Antrag vor der Montage",
+                 "Zählpunkt, Ticket, Antrag. Montiert wird erst danach, sonst verfällt der Bundeszuschuss.",
                  "vor der Montage"),
-                ("Landesförderung nach Fertigstellung",
-                 "Kärnten: Antrag über die Förderplattform des Landes zwischen 12. Oktober und 31. Dezember 2026 mit "
-                 "Rechnung und Fertigstellungsmeldung. Bund wird nicht angerechnet.",
+                ("Land: Antrag nach der Fertigstellung",
+                 "Kärnten zahlt nach Rechnung und Fertigstellungsmeldung, ohne den Bund anzurechnen.",
                  "nach der Montage"),
-                ("EMS: Registrierung vor der Rechnung",
-                 "Beim Klima- und Energiefonds registrieren, erst dann die Rechnung für das EMS ausstellen lassen. "
-                 "Wer die Rechnung zuerst hat, verliert die 600 €. Frist 15. April 2027.",
+                ("Energiemanagement: erst registrieren",
+                 "Beim Klimafonds registrieren, dann erst die Rechnung ausstellen lassen.",
                  "vor der Rechnung"),
-                ("Wärmepumpe: Landesstelle klären",
-                 "Ohne Bundesprogramm zählt das Land: Kärnten über das Förderportal des Landes, Steiermark über die "
-                 "Abteilung 15. Deckel, Fristen und Kombinationen klären wir vor dem Angebot.",
-                 "vor dem Heizungstausch"),
             ],
         ),
-        C.media_text(
-            eyebrow="Service inklusive",
-            h2="Wir übernehmen die Anträge: Bund, Land, Klimafonds",
-            paragraphs=[
-                ("Wir prüfen vor dem Angebot, welche Programme zu Dach, Heizung und Bundesland passen, rechnen die Beträge "
-                 "in den Projektbericht mit 3D-Belegplan und Statikreport ein und terminieren Montage und Antrag so, "
-                 "dass keine Frist verfällt."),
-                ("Sie bleiben Antragsteller und bekommen die Auszahlung auf Ihr Konto, auch bei Finanzierung. Wir liefern "
-                 "Zählpunkt, Ticket, Rechnung, Fertigstellungsmeldung und Fotos."),
-            ],
-            img=IMG["foerderung"],
-            alt="Beratungsgespräch zu Förderanträgen für Photovoltaik und Wärmepumpe mit Unterlagen am Tisch",
-            bullets=["Förderprüfung vor dem Angebot, Beträge im Projektbericht ausgewiesen",
-                     "Ticket, Antrag und Fertigstellungsmeldung bereiten wir vor, Sie bestätigen",
-                     "Reihenfolge im Blick: Bund vor der Montage, Land danach",
-                     "Volle Förderung auch bei Finanzierung: die Anlage gehört ab Tag 1 Ihnen"],
-            cta=("kontakt", "Kostenlose Förderprüfung anfragen"),
-            dark=True,
-        ),
+        _beispiel_section(),
+        _matrix_section(),
+        _laender_section(),
         C.faq_section(FAQ),
-        C.linkgrid_section("Weiterlesen: Leistungen und Ratgeber", [
+        C.linkgrid_section("Weiterlesen", [
             ("photovoltaik", "Photovoltaikanlage mit Speicher"),
-            ("batteriespeicher", "Batteriespeicher"),
             ("waermepumpe", "Wärmepumpe"),
-            ("ems", "Energiemanagementsystem"),
-            ("balkonkraftwerke", "Balkonkraftwerke"),
             ("finanzierung", "Finanzierung: Eigentum ab Tag 1"),
-            (R_SANIERUNG, "Sanierungsoffensive 2026: was galt"),
-            (R_SAUBER, "Sauber Heizen für Alle 2026"),
-            (R_WP_BETRIEBE, "Wärmepumpen-Förderung für Betriebe"),
-            (R_WP_STEUER, "Öko-Sonderausgabenpauschale"),
             ("solarrechner", "Solarrechner: Kosten und Ertrag"),
-            ("referenzen", "Referenzen"),
         ]),
         C.contact_section(
             "Welche Förderung passt zu Ihrem Projekt?",
@@ -312,14 +463,16 @@ def build():
             page_label="Förderungen",
         ),
         C.finalcta(
-            "Fristen laufen: EAG bis 22. Oktober, Kärnten bis 31. Dezember",
+            "Förderung prüfen lassen, bevor eine Frist verfällt",
             "Kostenlose Erstberatung mit Förderprüfung. Wir melden uns innerhalb eines Werktags.",
             trust=[(f"{NAP['rating']} auf Google", True), ("300+ Projekte", False),
                    ("Anträge inklusive", False), ("Antwort in einem Werktag", False)],
         ),
-        f'<div class="wrap"><p class="form-note" style="padding:8px 0 40px">*Richtwerte: EMS-Systemkosten marktüblich. '
-        f'Fördersätze und Fristen {STAND}, Länderdaten zum Teil Stand Mai bis Juni 2026; Angaben zu 2027 laut BMWET geplant, '
-        f'nicht beschlossen. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p></div>',
+        f'<div class="wrap"><p class="form-note" style="padding:8px 0 40px">*Beispielrechnung: 10 kWp × 150 € plus '
+        f'10 kWh × 150 € ergeben 3.000 € vom Bund; der Made-in-Europe-Bonus (10 % je Komponente, rund 450 € im Beispiel, '
+        f'300 € ohne Speicher) gilt nur, wenn Module, Wechselrichter und Speicher die Kriterien erfüllen; dazu 3.000 € '
+        f'Landespauschale Kärnten. Fördersätze und Fristen {STAND}, Länderdaten zum Teil Stand Mai bis Juni 2026; Angaben '
+        f'zu 2027 laut BMWET geplant, nicht beschlossen. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p></div>',
     ])
     html = page(TITLE, DESC, PATH, body, faq_jsonld_str=faq_jsonld(u(PATH), FAQ), og_image=IMG["foerderung"])
     return write_page("foerderungen/index.html", html)

@@ -600,6 +600,66 @@ p{margin:0 0 1rem}
 @media(max-width:820px){.linkgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.linkgrid{grid-template-columns:1fr}}
 
+/* --- Foerder-Finder (/foerderungen/) ---------------------------------- */
+.fhero{padding-bottom:clamp(96px,11vw,140px)}
+.fhero h1{font-size:clamp(1.9rem,4vw,2.9rem)}
+.ff-wrap{position:relative;z-index:2;margin-top:clamp(-110px,-9vw,-72px);padding-bottom:clamp(36px,5vw,64px);scroll-margin-top:90px}
+.ff{background:var(--card);border:1px solid var(--line);border-radius:calc(var(--radius) + 6px);box-shadow:var(--shadow);
+  padding:clamp(20px,3.2vw,36px);max-width:1000px;margin-inline:auto}
+.ff__step{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;align-items:center;margin-bottom:22px}
+.ff__n{width:34px;height:34px;border-radius:50%;background:var(--amber);color:#1b1200;font-family:var(--font-head);
+  font-weight:800;display:grid;place-items:center}
+.ff__q{font-family:var(--font-head);font-weight:800;font-size:1.15rem;color:var(--ink)}
+.ff__opts{grid-column:2;display:flex;flex-wrap:wrap;gap:10px}
+.ff__opt{font:inherit;font-family:var(--font-head);font-weight:700;font-size:.95rem;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
+  padding:11px 16px;border-radius:999px;border:2px solid var(--line);background:#fff;color:var(--ink);transition:.15s}
+.ff__opt .ic{color:var(--amber-2)}
+.ff__opt:hover{border-color:var(--petrol)}
+.ff__opt[aria-pressed="true"]{background:var(--petrol);border-color:var(--petrol);color:#fff}
+.ff__opt[aria-pressed="true"] .ic{color:var(--amber)}
+.ff-result{display:none;background:linear-gradient(160deg,var(--petrol),var(--petrol-3));color:#fff;border-radius:var(--radius);
+  padding:clamp(20px,3vw,32px);margin-top:6px}
+.ff-result.is-active{display:grid;grid-template-columns:minmax(0,330px) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:start}
+.ff-result h3{color:#fff;font-size:1.1rem;margin:10px 0 14px}
+.ff-badge{display:inline-block;font-family:var(--font-head);font-weight:700;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;
+  border-radius:999px;padding:5px 12px}
+.ff-badge--ok{background:#1f9d62;color:#fff}
+.ff-badge--part{background:var(--amber);color:#1b1200}
+.ff-badge--end{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.ff-sum b{display:block;font-family:var(--font-head);font-weight:800;font-size:clamp(1.7rem,3.3vw,2.2rem);line-height:1.1;color:var(--amber);text-wrap:balance}
+.ff-sum span{display:block;margin-top:8px;color:#c6dbe2;font-size:.95rem;line-height:1.4}
+.ff-rows{margin:0;display:grid;gap:12px}
+.ff-rows>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px 16px}
+.ff-rows dt{font-family:var(--font-head);font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+.ff-rows dd{margin:4px 0 0;color:#e4eef1;font-size:.97rem;line-height:1.5}
+.ff-btns{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+.ff-foot{font-size:.82rem;color:var(--muted);margin:16px 0 0;text-align:center}
+.fstatus{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1000px;margin-inline:auto}
+.fstatus>div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.fstatus b{display:flex;align-items:center;gap:8px;font-family:var(--font-head);font-weight:800;color:var(--ink);margin-bottom:6px}
+.fstatus .dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto}
+.fstatus .dot--ok{background:#1f9d62}.fstatus .dot--end{background:#9aa9b0}.fstatus .dot--plan{background:var(--amber)}
+.fstatus p{margin:0;color:var(--muted);font-size:.95rem;line-height:1.5}
+.fcalc{margin:14px 0 0;display:grid;gap:0}
+.fcalc>div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line)}
+.fcalc dt{color:var(--muted)}
+.fcalc dd{margin:0;font-weight:700;color:var(--ink);white-space:nowrap}
+.fcalc>div.is-sum{border-bottom:0;padding-top:14px}
+.fcalc>div.is-sum dt{font-family:var(--font-head);font-weight:800;color:var(--ink)}
+.fcalc>div.is-sum dd{font-family:var(--font-head);font-weight:800;font-size:1.5rem;color:var(--petrol)}
+.fall{max-width:var(--wrap);margin-inline:auto}
+.fall summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:100%;
+  margin:22px auto 0;padding:13px 24px;border-radius:999px;border:2px solid var(--line);font-family:var(--font-head);font-weight:700;color:var(--petrol)}
+.fall summary::-webkit-details-marker{display:none}
+.fall summary::after{content:"\002B";color:var(--amber-2);font-size:1.2rem}
+.fall[open] summary::after{content:"\2212"}
+.fall summary:hover{border-color:var(--petrol)}
+@media(max-width:860px){.ff-result.is-active{grid-template-columns:1fr}.fstatus{grid-template-columns:1fr}}
+@media(max-width:560px){.ff__step{grid-template-columns:1fr}.ff__n{display:none}
+  .ff__opts{grid-column:1;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .ff__opt{padding:10px 12px;font-size:.86rem;line-height:1.2;border-radius:14px;text-align:left}
+  .ff-btns .btn{width:100%;justify-content:center}}
+
 /* --- Bundeslaender-Kacheln (Foerderseite) ------------------------------ */
 .landgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:980px;margin-inline:auto}
 .landgrid a{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px;background:var(--card);
