@@ -140,9 +140,9 @@ Slug-Änderungen vermeiden; falls nötig: 301 + `S` in `common.py` anpassen und 
 ## 8. Integrationen
 
 - **WPForms ID 6891** (Lite!): aktuell auf beiden EG-LPs UND der Startseite. Lite speichert NICHTS in der DB, Mail-Zustellung via WP Mail SMTP muss stehen (offener Punkt). Für die Startseite ist ein eigenes allgemeines Formular sauberer (Quelle unterscheiden: Hidden Field `{page_url}`).
-- **EG-Rechner → n8n:** POST-Webhook `https://klicknerds.app.n8n.cloud/webhook/ebz-eg-rechner` (im Attribut `data-webhook` der `.ebz-rechner`-Section, 3 Instanzen). Workflow: Webhook (CORS auf https://ebz-photovoltaik.at) → Gmail an office@ebz-energie.com → 200 {"ok":true}. Fallback ohne/bei Fehler: Redirect `/kontakt/` mit Query-Params. Import-JSON: `n8n-workflow-eg-rechner-leads.json`. Live-Test steht noch aus.
+- **EG-Rechner → Make:** POST-Webhook `https://hook.us2.make.com/61g9gdhyr3rjyjua175p38516o7lhvfr` (im Attribut `data-webhook` der `.ebz-rechner`-Section; live nur noch eine Instanz: Custom-HTML-Block der Seite `/energiegemeinschaften/`, WordPress-ID 6946). Make-Szenario "EBZ EG-Rechner Leads -> E-Mail" (ID 6573319): Webhook → Antwort 200 {"ok": true} → Gmail an office@ebz-energie.com, bei Fehler Slack-Warnung + 3 Wiederholungen. Überwachung durch das Szenario "Formular-Wächter" (ID 6572497): läuft stündlich, prüft die beiden EBZ-Szenarien (Rechner und Chatbot) aber nur einmal täglich im Lauf um 8 Uhr (Zeitbedingung im Filter). Fallback ohne/bei Fehler: Redirect `/kontakt/` mit Query-Params. Umzug von n8n am 09.10.2026, Live-Test über den Rechner erfolgreich. Der Rechner hat keine Quelle mehr im Repo: Änderungen direkt im WP-Block.
 - **Rechner-Defaults sind Beispielwerte** (EG-Einspeisung 10 ct, Bezug 14 ct, Beitrag 4 €/Monat): echte EBZ-Konditionen ausstehend → `DEFAULTS` in `rechner.py` + Hero-Badges der LPs aktualisieren.
-- **Chatbot** (Cloudflare Worker) existiert separat; bei NAP/Fakten-Änderungen dessen System-Prompt mitziehen.
+- **Chatbot** (Cloudflare Worker `ebzbot`, https://ebzbot.klicknerds.workers.dev, eingebunden über WPCode-Snippet "ChatBot" ID 6745): Endpunkte `/chat` und `/lead`. `/lead` leitet an die Adresse aus der Cloudflare-Variable `LEAD_WEBHOOK_URL` weiter (überschreibt den im Code fest eingetragenen n8n-Fallback). Ziel: Make-Szenario "EBZ Chatbot Leads -> E-Mail" (ID 6573557), Webhook `https://hook.us2.make.com/z1vkrysdf6pwg67zvm1gf7wry2iw8d9e` → Gmail an office@ebz-energie.com. Lead-Felder: name, kontakt, region, anliegen, zeitfenster. Bei NAP/Fakten-Änderungen den System-Prompt im Worker mitziehen.
 
 ## 9. Mediathek-Bilder (verifizierte URLs)
 
@@ -176,7 +176,7 @@ Weitere Projektbilder: /referenzen/ crawlen. Referenz-Bild und Referenz-Zahlen m
 ## 10. Offene Punkte (Stand: Anfang September 2026)
 
 1. Echte EG-Konditionen vom Kunden → `rechner.py` DEFAULTS + LP-Hero-Badges
-2. Live-Test Rechner → n8n → Gmail (inkl. CORS mit www-Variante prüfen)
+2. Nach dem Umzug n8n → Make (09.10.2026, Rechner und Chatbot live getestet): n8n-Fallback-Adresse aus dem Worker-Code entfernen, n8n kündigen
 3. WP Mail SMTP vor Livegang der Formulare
 4. energyfamily-Logo-Freigabe (dann Text-Badge → `<img>`)
 5. OeMAG-August-Marktpreis in Artikel 18 nachtragen (Anfang September verfügbar)
