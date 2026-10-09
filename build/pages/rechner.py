@@ -231,8 +231,9 @@ SOLAR_FAQ = [
      "Anlage mit. Das Lastprofil / Standardlastprofil eines Haushalts mit Wärmepumpe unterscheidet sich aber, deshalb rechnen wir das im "
      "Projektbericht mit Ihren echten Verbrauchsdaten nach."),
     ("Sind Landesförderungen eingerechnet?",
-     "Nein, nur die Bundesförderung nach EAG. Die Landespauschale Kärnten 3.000 € (Neuanlage ab 5 kWp mit 5 kWh Speicher, Call 12. Oktober bis "
-     "31. Dezember 2026) und die Landesförderung Steiermark kommen zusätzlich dazu und verkürzen die Amortisation weiter."),
+     "Nein, nur die Bundesförderung nach EAG. Die Landespauschale Kärnten 3.000 € (Neuanlage ab 5 kWp mit 5 kWh Speicher) und die "
+     "Landesförderung Steiermark kommen zusätzlich dazu und verkürzen die Amortisation weiter. Welche Fristen gerade laufen, steht "
+     "tagesaktuell auf unserer Förderseite."),
 ]
 
 
@@ -321,7 +322,7 @@ def _solar_page():
                      "Richtpreis vor Förderung*", "EAG 2026", "Amortisation*"],
             rows=examples,
             note=(f"*Richtwerte, Stand Oktober 2026. Einspeisung zu {OEMAG_STR} ct (OeMAG September 2026). Kärnten-Pauschale: 3.000 € "
-                  "Landesförderung für Neuanlagen ab 5 kWp mit 5 kWh Speicher, Call 12. Oktober bis 31. Dezember 2026. Ohne Speicher sinkt der "
+                  "Landesförderung für Neuanlagen ab 5 kWp mit 5 kWh Speicher. Ohne Speicher sinkt der "
                   "Richtpreis auf 1.000 bis 1.500 € je kWp, die Eigenverbrauchsquote auf rund 30 %."),
             anchor="beispiele",
             white=False,
@@ -331,20 +332,22 @@ def _solar_page():
             h2="Welche Förderung ist eingerechnet: EAG 2026, Landespauschale Kärnten, Steiermark",
             paragraphs=[
                 ("Eingerechnet ist nur der Bundeszuschuss nach EAG: 150 € je kWp bis 10 kWp (Kategorie A), 140 € bis 20 kWp, 130 € bis 100 kWp, "
-                 "dazu 150 € je kWh Speicher. Der dritte Fördercall 2026 läuft bis 22. Oktober 2026, danach stellt der Bund laut BMWET ab 2027 "
-                 "auf eine Systemförderung für Speicher mit intelligenter Steuerung um, bei der der Antrag erst nach der Installation erfolgt."),
+                 "dazu 150 € je kWh Speicher (Stand Oktober 2026). Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und "
+                 "intelligente Steuerung."),
                 ("Nicht eingerechnet, aber zusätzlich möglich: die Landespauschale Kärnten 3.000 € für Neuanlagen ab 5 kWp mit mindestens 5 kWh "
-                 "Speicher (Antrag 12. Oktober bis 31. Dezember 2026, maximal 50 Prozent der Kosten) und die Landesförderung Steiermark. "
-                 "Beides verkürzt die Amortisation um ein bis zwei Jahre. Wir stellen die Anträge mit Ihnen."),
+                 "Speicher (maximal 50 Prozent der Kosten) und die Landesförderung Steiermark. Beides verkürzt die Amortisation um ein "
+                 "bis zwei Jahre. "
+                 "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
+                 "und stellen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung 2026 in Kärnten und der Steiermark",
             bullets=[
-                a("foerderung_at", "EAG-Fördercall 2026: Termine und Sätze"),
+                a("foerderung_at", "EAG-Investitionszuschuss 2026: Sätze und Kategorien"),
                 a("foerderung_kaernten", "Förderung Kärnten 2026: 3.000 € Pauschale"),
                 a("foerderung_steiermark", "Förderung Steiermark: aktuelle Programme"),
             ],
-            cta=("foerderung_at", "Förderungen 2026 im Überblick"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
         ),
         C.media_text(
             eyebrow="Vom Richtwert zum Projekt",

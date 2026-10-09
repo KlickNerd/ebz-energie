@@ -289,7 +289,7 @@ def build():
             paragraphs=[
                 ("Eine eigene Förderung für die Teilnahme gibt es nicht. Gefördert wird Ihre Photovoltaikanlage über "
                  "den EAG-Investitionszuschuss und die Landesförderungen: In Kärnten 3.000 € Pauschale für Neuanlagen ab "
-                 "5 kWp mit 5 kWh Speicher (Call 12. Oktober bis 31. Dezember 2026), in der Steiermark ein Bonus von "
+                 "5 kWp mit 5 kWh Speicher, in der Steiermark ein Bonus von "
                  "125 € je kWp bei Einbindung in ein dezentrales Energiesystem. Für ein Energiemanagementsystem gibt es "
                  "zusätzlich die EMS-Förderung des Klimafonds, die Teilnahme an einer Energiegemeinschaft ist dort eine "
                  "zulässige Betriebsoption."),
@@ -301,8 +301,9 @@ def build():
                 a("foerderung_steiermark", "Steiermark: 125 €/kWp Bonus") + " bei EG-Einbindung",
                 a("/ems-foerderung/", "EMS-Förderung des Klimafonds") + " bis 600 € für Haushalte",
                 a("finanzierung", "Finanzierung") + " ab 147 € im Monat inkl. Speicher, Eigentum ab Tag 1",
+                "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt",
             ],
-            cta=("foerderung_at", "Förderungen 2026 im Überblick"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
         ),
         C.why_section(
             eyebrow="Ihr Partner vor Ort",

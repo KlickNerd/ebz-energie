@@ -45,9 +45,9 @@ FAQ = [
      "Ja, nach Terminvereinbarung in der Triglavstraße 15 in Villach. Für die Planung kommen wir aber meist zu Ihnen, "
      "weil wir Dach, Zählerschrank und Verbrauch vor Ort aufnehmen."),
     ("Übernimmt EBZ Energie die Förderabwicklung?",
-     "Ja, komplett: Landespauschale Kärnten (3.000 € für PV ab 5 kWp mit Speicher, Einreichung 12. Oktober bis "
-     "31. Dezember 2026), Förderung Steiermark, EAG-Zuschuss des Bundes sowie Mitteilung an die Gemeinde und "
-     "Netzanmeldung beim Netzbetreiber."),
+     "Ja, komplett: Landespauschale Kärnten (3.000 € für PV ab 5 kWp mit Speicher), Förderung Steiermark, "
+     "EAG-Zuschuss des Bundes sowie Mitteilung an die Gemeinde und Netzanmeldung beim Netzbetreiber. Welche "
+     "Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
     ("Macht EBZ nur Photovoltaik?",
      "Nein. Wir begleiten die ganze Energiewende: Photovoltaik, Batteriespeicher, Wärmepumpe, Energiemanagement, "
      "Wallbox und Energiegemeinschaft, alles aus einer Hand."),

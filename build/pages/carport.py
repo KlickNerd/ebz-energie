@@ -257,11 +257,13 @@ def build():
             eyebrow="Förderung und Finanzierung",
             h2="Förderung: der PV-Teil wird gefördert wie jede Dachanlage",
             paragraphs=[
-                ("Für die Photovoltaikanlage auf dem Carport gilt 2026 der EAG-Investitionszuschuss des Bundes: 150 € "
-                 "je kWp bis 10 kWp, 150 € je kWh Speicher und 10 Prozent Made-in-Europe-Bonus je Komponente. Der "
-                 "dritte Fördercall läuft bis 22. Oktober 2026, ab 2027 plant der Bund laut BMWET eine Systemförderung "
-                 f"mit Antrag nach der Installation ({STAND}). In Kärnten kommen 3.000 € Landespauschale für "
-                 "Neuanlagen ab 5 kWp mit Speicher ab 5 kWh dazu, Einreichung 12. Oktober bis 31. Dezember 2026."),
+                ("Für die Photovoltaikanlage auf dem Carport gilt der EAG-Investitionszuschuss des Bundes: 150 € "
+                 "je kWp bis 10 kWp, 150 € je kWh Speicher und 10 Prozent Made-in-Europe-Bonus je Komponente "
+                 f"({STAND}). In Kärnten kommen 3.000 € Landespauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh "
+                 "dazu, die Steiermark fördert über eigene Programme. Ab 2027 plant der Bund laut BMWET eine "
+                 "Systemförderung für Speicher und intelligente Steuerung. "
+                 "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
+                 "und stellen die Anträge."),
                 ("Die Carport-Konstruktion selbst ist nicht Teil der PV-Förderung, und der Umsatzsteuer-Nullsatz für "
                  "PV-Anlagen ist seit April 2025 ausgelaufen; an seine Stelle tritt der Zuschuss. Wer die Investition nicht auf "
                  "einmal binden will, finanziert mit 0 € Anzahlung und fixer Rate. Die Anlage gehört Ihnen dabei ab "
@@ -273,8 +275,9 @@ def build():
                 "Bund: 150 €/kWp und 150 €/kWh Speicher, plus Made-in-Europe-Bonus",
                 "Kärnten: 3.000 € Pauschale für Neuanlagen mit Speicher",
                 a("finanzierung", "Finanzierung: 0 € Anzahlung, Eigentum ab Tag 1"),
+                a("foerderung_at", "PV-Förderung Österreich 2026 im Detail"),
             ],
-            cta=("foerderung_at", "PV-Förderung Österreich 2026 im Detail"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
             dark=True,
         ),
         C.media_text(

@@ -56,8 +56,8 @@ FAQ = [
      "Speicher bis zu 80 Prozent*. Dazu kommt die Förderung: 150 Euro je kWh vom Bund und die Landespauschale "
      "Kärnten, die einen Speicher ab 5 kWh voraussetzt. Mit Notstromfunktion bleibt Ihr Haus bei Netzausfall versorgt."),
     ("Was ändert sich 2026 bei Photovoltaik in Österreich?",
-     "Der EAG-Fördercall vom 8. bis 22. Oktober 2026 ist der letzte im bisherigen System; ab 2027 ist laut BMWET eine "
-     "Systemförderung für Speicher und Steuerung geplant, beantragt nach der Installation. Der OeMAG-Marktpreis lag im "
+     "Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und intelligente Steuerung; die aktuellen "
+     "Förderprogramme und Fristen stehen auf unserer Förderseite. Der OeMAG-Marktpreis lag im "
      "September 2026 bei 10,168 Cent je kWh (Juli: 6,146 Cent). Seit Oktober 2026 gilt das neue "
      "Elektrizitätswirtschaftsgesetz (ElWG)."),
     ("Übernimmt EBZ Energie die Förderanträge und die Anmeldung beim Netzbetreiber?",
@@ -158,7 +158,7 @@ def build():
                 "Netzanmeldung bei Kärnten Netz oder Energie Klagenfurt mit Prüfung der Einspeiseleistung",
                 "Zählertausch, Inbetriebnahme und Fertigstellungsmeldung durch EBZ Energie",
             ],
-            cta=("foerderung_kaernten", "Förderung und Fristen Kärnten 2026"),
+            cta=("foerderung_kaernten", "PV-Förderung Kärnten 2026"),
         ),
         C.problem_compare(
             eyebrow="Finanzielle Entlastung",
@@ -205,12 +205,13 @@ def build():
             h2="Förderung für Photovoltaik in Villach: Landespauschale Kärnten und EAG",
             paragraphs=[
                 ("Das Land Kärnten zahlt 2026 eine Pauschale von 3.000 Euro für neue private PV-Anlagen ab 5 kWp mit "
-                 "Speicher ab 5 kWh, Einreichung vom 12. Oktober bis 31. Dezember 2026. Der Bund fördert über den "
+                 "Speicher ab 5 kWh. Der Bund fördert über den "
                  "EAG-Investitionszuschuss mit 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, europäische "
                  "Komponenten bringen 10 Prozent Bonus (Stand Oktober 2026)."),
                 ("Als Ihr Partner aus Villach übernehmen wir die Abwicklung: Wir prüfen, welche Programme zu Ihrem "
-                 "Projekt passen, halten Fristen und Reihenfolge ein und bereiten die Anträge vor. Alle Details und "
-                 "den Ausblick auf 2027 finden Sie im Ratgeber."),
+                 "Projekt passen, halten Fristen und Reihenfolge ein und bereiten die Anträge vor. Welche Fristen "
+                 "gerade laufen, steht tagesaktuell auf unserer Förderseite; alle Details zur Landesförderung finden "
+                 "Sie im Ratgeber."),
             ],
             img=IMG["foerderung"],
             alt="Beratung zur Photovoltaik-Förderung in Kärnten am Tisch",
@@ -218,8 +219,9 @@ def build():
                 "Landespauschale Kärnten 3.000 € für PV ab 5 kWp mit Speicher ab 5 kWh",
                 "EAG-Investitionszuschuss 150 €/kWp bis 10 kWp und 150 €/kWh Speicher, 10 % Made-in-Europe-Bonus",
                 "Antrag und Abwicklung durch EBZ Energie",
+                a("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
             ],
-            cta=("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
             dark=True,
         ),
         C.finance_band(),

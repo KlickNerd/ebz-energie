@@ -290,8 +290,8 @@ def build():
                  "Gemeinden haben eigene, budgetierte Programme. Der Umsatzsteuer-Nullsatz ist am 31. März 2025 "
                  "ausgelaufen, seit 1. April 2025 gelten wieder 20 Prozent."),
                 ("Wer mehr als 800 Watt möchte, fährt oft besser mit einer kleinen Dachanlage: 150 € je kWp und 150 € je "
-                 "kWh Speicher vom Bund (2026), in Kärnten dazu 3.000 € Landespauschale ab 5 kWp mit 5 kWh Speicher "
-                 "(Call bis 31. Dezember 2026)."),
+                 "kWh Speicher vom Bund, in Kärnten dazu 3.000 € Landespauschale ab 5 kWp mit 5 kWh Speicher (Stand "
+                 "Oktober 2026). Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zu Förderung und Anmeldung eines Balkonkraftwerks",
@@ -299,6 +299,7 @@ def build():
                 "Bund: kein EAG-Zuschuss für Balkonkraftwerke bis 800 Watt",
                 "Länder und Gemeinden: teilweise eigene Programme, vor dem Kauf prüfen",
                 "Alternative: kleine Dachanlage mit 150 € je kWp Förderung (2026)",
+                a("foerderungen", "Aktuelle Förderungen 2026") + ": Programme und Fristen tagesaktuell",
             ],
             cta=("/balkonkraftwerk-foerderung-in-oesterreich/", "Ratgeber: Balkonkraftwerk-Förderung in Österreich"),
         ),

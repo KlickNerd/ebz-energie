@@ -10,8 +10,8 @@ Nachruestung) -> Nutzen/Zahlen -> Speichergroesse -> Technik -> Kosten (Preis je
 SEO/GEO-Briefing build/seo/batteriespeicher.json (Stand 2026-10-09): Primaer
 "batteriespeicher" (4.400), "pv speicher" als Synonym; Preis pro kWh, Faustformel,
 Marken (BYD, Fronius, Huawei nur als Beispiele), Entladetiefe/Wirkungsgrad,
-Brandschutz/Aufstellort. Foerderzahlen aus build/seo/_fakten_2026-10.md (Kaernten
-2. Call 12.10. bis 31.12.2026, EAG bis 22.10.2026, Ausblick Systemfoerderung 2027).
+Brandschutz/Aufstellort. Foerderzahlen aus build/seo/_fakten_2026-10.md (nur Betraege;
+Fristen und Call-Termine stehen ausschliesslich im Hub /foerderungen/).
 Bereinigt gegenueber der Quelle: Gedankenstriche, "Kaernten, Salzburg und der
 Steiermark" (Montage nur Kaernten + Steiermark), "ueber 100 Anlagen pro Jahr" (300+
 Projekte), "Stromkosten fast auf Null" / "100 % Eigenverbrauch" (bis zu 85 %),
@@ -39,9 +39,9 @@ FAQ = [
      "Eine komplette 10-kWp-Anlage mit Speicher liegt bei 15.000 bis 22.000 € vor Förderung."),
     ("Werden Batteriespeicher 2026 billiger?",
      "Die Preise je kWh sind in den vergangenen Jahren gesunken, 2026 liegt der Richtwert bei 800 bis 1.200 €*. "
-     "Warten lohnt selten: Jede nicht gespeicherte kWh kostet rund 32 Cent, der EAG-Zuschuss endet mit dem Fördercall "
-     "am 22. Oktober 2026, die Kärntner Pauschale am 31. Dezember 2026. Die Systemförderung ab 2027 ist geplant, die "
-     "Höhe offen."),
+     "Warten lohnt selten: Jede nicht gespeicherte kWh kostet rund 32 Cent, und die laufenden Förderungen (EAG-Zuschuss "
+     "des Bundes, Kärntner Pauschale) sind budgetiert und befristet. Die Systemförderung ab 2027 ist geplant, die "
+     "Höhe offen. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
     ("Kann ich einen Speicher bei meiner bestehenden PV-Anlage nachrüsten?",
      "Ja, fast immer. Am flexibelsten ist die AC-Kopplung mit eigenem Batteriewechselrichter, der vorhandene "
      "PV-Wechselrichter bleibt. Alternativ tauschen wir ihn gegen einen Hybridwechselrichter (DC-Kopplung), sinnvoll "
@@ -55,9 +55,9 @@ FAQ = [
      "2026). Besser: Ein Energiemanagement lenkt ihn in Wärmepumpe, Warmwasser oder Wallbox, oder Sie teilen ihn in "
      "einer Energiegemeinschaft. Der Speicher nimmt keinen Schaden, das Batteriemanagement beendet die Ladung."),
     ("Wie hoch ist die Förderung für einen Batteriespeicher 2026?",
-     "Bund: 150 € je kWh (maximal 50 kWh), nur mit neuer oder erweiterter PV-Anlage, letzter Fördercall bis 22. "
-     "Oktober 2026. Kärnten: vom 12. Oktober bis 31. Dezember 2026 3.000 € Pauschale für Neuanlagen ab 5 kWp mit "
-     "Speicher ab 5 kWh, 1.000 € für die Nachrüstung. Für 10 kWp mit 10 kWh sind in Kärnten 6.000 € erreichbar."),
+     "Bund: 150 € je kWh (maximal 50 kWh), nur mit neuer oder erweiterter PV-Anlage. Kärnten: 3.000 € Pauschale für "
+     "Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, 1.000 € für die Nachrüstung (Stand Oktober 2026). Für 10 kWp mit "
+     "10 kWh sind in Kärnten 6.000 € erreichbar. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
     ("Wo wird der Speicher aufgestellt und wie steht es um den Brandschutz?",
      "Im Keller, in der Garage oder im Technikraum: frostfrei, trocken, nicht im Fluchtweg oder Schlafzimmer, nahe am "
      "Zählerkasten. LFP-Zellen ohne Kobalt gelten als besonders sicher, das Batteriemanagement trennt bei Fehlern ab, "
@@ -138,7 +138,7 @@ def build():
                 "bullets": [
                     "AC-gekoppelt: Ihr Wechselrichter bleibt, der Speicher kommt mit eigenem Batteriewechselrichter dazu",
                     "Richtwert 800 bis 1.200 € je kWh inklusive Installation*",
-                    "Kärnten fördert die Nachrüstung ab 5 kWh mit 1.000 € (Antrag 12. Oktober bis 31. Dezember 2026)",
+                    "Kärnten fördert die Nachrüstung ab 5 kWh mit 1.000 € (Stand Oktober 2026)",
                 ],
                 "cta": ("/pv-speicher-nachruesten/", "PV-Speicher nachrüsten: Ablauf und Kosten"),
             },
@@ -227,20 +227,20 @@ def build():
             note=("*Richtwerte für Österreich inklusive Installation, vor Förderung. Ihren genauen Preis erhalten Sie im "
                   "Projektbericht mit 3D-Belegplan und Statikreport."),
         ).replace('<section class="section"', '<section id="kosten" class="section"', 1),
-        # 7. Foerderung + Finanzierung (Fakten Stand 9.10.2026)
+        # 7. Foerderung + Finanzierung (Betraege Stand Oktober 2026, keine Fristen: die stehen im Hub)
         C.media_text(
             eyebrow="Stromspeicher Förderung Österreich 2026",
-            h2="Förderung 2026: 150 € je kWh vom Bund, Land Kärnten bis 3.000 €, Fördercall Oktober",
+            h2="Förderung für Ihren Speicher: 150 € je kWh vom Bund, Land Kärnten bis 3.000 €",
             paragraphs=[
-                ("Der EAG-Investitionszuschuss fördert Speicher 2026 mit 150 € je kWh (mindestens 0,5 kWh je kWp, "
+                ("Der EAG-Investitionszuschuss fördert Speicher mit 150 € je kWh (mindestens 0,5 kWh je kWp, "
                  "maximal 50 kWh), nur gemeinsam mit einer neuen oder erweiterten PV-Anlage und nur bei Antrag vor der "
-                 "Inbetriebnahme. Der 3. Fördercall Oktober 2026 läuft bis 22. Oktober und ist der letzte im alten "
-                 "System (Quelle: EAG-Abwicklungsstelle, Stand Oktober 2026)."),
-                ("Das Land Kärnten zahlt im 2. Call vom 12. Oktober bis 31. Dezember 2026 pauschal 3.000 € für neue "
-                 "PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh und 1.000 € für die Speicher-Nachrüstung ab 5 kWh, maximal "
-                 "50 % der Kosten, ohne Anrechnung der Bundesförderung (Quelle: Land Kärnten). Die Steiermark hat keine "
-                 "eigene Speicherprämie. Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit "
-                 "intelligenter Steuerung, Antrag nach der Rechnung, Höhe offen. Wir übernehmen alle Anträge."),
+                 "Inbetriebnahme (Quelle: EAG-Abwicklungsstelle, Stand Oktober 2026)."),
+                ("Das Land Kärnten zahlt pauschal 3.000 € für neue PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh und "
+                 "1.000 € für die Speicher-Nachrüstung ab 5 kWh, maximal 50 % der Kosten, ohne Anrechnung der "
+                 "Bundesförderung (Quelle: Land Kärnten). Die Steiermark hat keine eigene Speicherprämie. Ab 2027 plant "
+                 "der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, Höhe offen. "
+                 "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
+                 "und stellen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Speicherförderung bei EBZ Energie",
@@ -249,7 +249,7 @@ def build():
                 "EAG-Speicherförderung 150 €/kWh plus Made-in-Europe-Bonus 10 % je Komponente von der White List",
                 a("/foerderung-pv-speicher-kaernten/", "Speicherförderung Land Kärnten") + " und " + a("/foerderung-fuer-pv-speicher/", "Speicherförderung 2026 im Detail"),
             ],
-            cta=("foerderung_at", "EAG-Fördercall Oktober 2026 im Überblick"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
         ),
         C.finance_band(),
         # 8. Sicherheit, Aufstellort, EMS
@@ -324,7 +324,7 @@ def build():
             steps=[
                 ("Beratung und Analyse", "Jahresverbrauch, Lastprofil, bestehende Anlage und Ihre Pläne für E-Auto oder Wärmepumpe. Kostenlos.", "Tag 1"),
                 ("Projektbericht", "Projektbericht mit 3D-Belegplan und Statikreport, inklusive Speichergröße, Kopplung, Aufstellort und Förderübersicht.", "wenige Tage"),
-                ("Förderanträge", "EAG-Antrag vor Inbetriebnahme (Fördercall bis 22. Oktober 2026), Landesantrag Kärnten bis 31. Dezember 2026.", "vor der Montage"),
+                ("Förderanträge", "EAG-Antrag vor der Inbetriebnahme, Landesantrag Kärnten; die laufenden Fristen prüfen wir für Ihr Projekt.", "vor der Montage"),
                 ("Montage und Inbetriebnahme", "Zertifizierte Fachkräfte montieren Speicher und Wechselrichter, bei der Nachrüstung meist in 1 bis 3 Tagen. Anmeldung und Übergabe inklusive.", "1 bis 3 Tage vor Ort"),
             ],
         ),

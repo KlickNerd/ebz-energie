@@ -27,11 +27,12 @@ FAQ = [
      "In den meisten Fällen ja. Betriebe verbrauchen den Großteil ihres Stroms tagsüber und erreichen ohne Speicher "
      "Eigenverbrauchsquoten von 70 Prozent und mehr*. Ab etwa 50 Prozent rechnet sich die Anlage deutlich schneller "
      "als im Eigenheim. Referenz: 40 kWp in Oberösterreich sparen rund 13.500 Euro im Jahr."),
-    ("Welche Förderung gibt es 2026 für Gewerbeanlagen (EAG Kategorie C und D) und wann ist der nächste Fördercall?",
+    ("Welche Förderung gibt es 2026 für Gewerbeanlagen (EAG Kategorie C und D)?",
      "Der EAG-Investitionszuschuss 2026 zahlt in Kategorie C (über 20 bis 100 kWp) 130 Euro je kWp, in Kategorie D "
      "(über 100 bis 1.000 kWp) 120 Euro je kWp, Speicher 150 Euro je kWh (mindestens 0,5 kWh je kWp, maximal 50 kWh), "
-     "dazu 10 Prozent Made-in-Europe-Bonus. Der letzte Fördercall 2026 läuft bis 22. Oktober 2026; ab 2027 ist laut "
-     "BMWET eine Systemförderung mit Antrag nach der Installation geplant (Stand Oktober 2026)."),
+     "dazu 10 Prozent Made-in-Europe-Bonus (Stand Oktober 2026). Ab 2027 plant der Bund laut BMWET eine "
+     "Systemförderung. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für "
+     "Ihr Projekt und stellen die Anträge."),
     ("PV Anlage 30 kWp, 50 kWp oder 100 kWp: Was kostet sie für einen Betrieb?",
      "Marktrichtwert 2026: rund 700 bis 1.300 Euro je kWp netto*. 30 kWp liegen damit bei etwa 21.000 bis 39.000 Euro, "
      "50 kWp bei 45.000 bis 65.000 Euro, 100 kWp bei 85.000 bis 130.000 Euro, jeweils vor Förderung und ohne Speicher. "
@@ -242,7 +243,7 @@ def build():
                  "Speicher den Mehrbedarf, statt dass er aus dem Netz kommt."),
                 ("Das EMS steuert zusätzlich Wallboxen, Wärmepumpe und große Verbraucher nach Sonnenstrom und liefert "
                  "die Energiedaten für Energieaudits und ESG-Reporting. Förderung für Betriebe: 30 Prozent, maximal "
-                 "20.000 Euro je Standort (Klima- und Energiefonds, bis 15. April 2027)."),
+                 "20.000 Euro je Standort (Klima- und Energiefonds, Antrag vor der Bestellung)."),
             ],
             img=IMG["ems"],
             alt="Energiemanagementsystem mit Visualisierung von Produktion, Speicher und Verbrauch",
@@ -297,21 +298,23 @@ def build():
         ),
         C.media_text(
             eyebrow="EAG Investitionszuschuss 2026 für Betriebe",
-            h2="Förderungen 2026: EAG Kategorie C und D, Fördercall Oktober, Speicher, EMS, Elektrizitätsabgabe",
+            h2="Förderungen für Betriebe: EAG Kategorie C und D, Speicher, EMS, Elektrizitätsabgabe",
             paragraphs=[
                 ("Der EAG-Investitionszuschuss 2026 fördert Gewerbeanlagen in Kategorie C (über 20 bis 100 kWp) mit "
                  "130 Euro je kWp und in Kategorie D (über 100 bis 1.000 kWp) mit 120 Euro je kWp, dazu kommt die "
-                 "Speicherförderung 150 €/kWh bis 50 kWh und 10 Prozent Made-in-Europe-Bonus je Komponente. Der dritte "
-                 f"Fördercall 2026 läuft bis 22. Oktober 2026 (Quelle: EAG-Abwicklungsstelle, {STAND})."),
-                ("Ab 2027 plant der Bund laut BMWET eine Systemförderung mit Antrag nach der Installation statt "
-                 "Fördercall. Für das EMS erhalten Betriebe 30 Prozent, maximal 20.000 Euro je Standort, Registrierung "
-                 "vor der Rechnung. Auf selbst erzeugten und verbrauchten Strom entfällt die Elektrizitätsabgabe von "
-                 "1,5 Cent je kWh. Reihenfolge und Fristen halten wir ein."),
+                 "Speicherförderung 150 €/kWh bis 50 kWh und 10 Prozent Made-in-Europe-Bonus je Komponente (Quelle: "
+                 f"EAG-Abwicklungsstelle, {STAND})."),
+                ("Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und intelligente Steuerung. "
+                 "Für das EMS erhalten Betriebe 30 Prozent, maximal 20.000 Euro je Standort, Antrag vor der "
+                 "Bestellung. Auf selbst erzeugten und verbrauchten Strom entfällt die Elektrizitätsabgabe von "
+                 "1,5 Cent je kWh. "
+                 "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
+                 "und stellen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung für einen Betrieb",
             bullets=[
-                a("foerderung_at", "EAG-Fördercall Oktober 2026: Sätze und Fristen"),
+                a("foerderungen", "Aktuelle Förderungen 2026") + " und " + a("foerderung_at", "EAG-Investitionszuschuss im Detail"),
                 a("/ems-foerderung/", "EMS-Förderung für Betriebe: 30 % bis 20.000 €"),
                 a("/unternehmensfoerderung-von-waermepumpen/", "Wärmepumpenförderung für Unternehmen"),
             ],
@@ -381,7 +384,7 @@ def build():
              ("eg_gewerbe", "Energiegemeinschaft für Betriebe und Gemeinden"),
              ("ems", "Energiemanagementsystem"),
              ("batteriespeicher", "Batteriespeicher"),
-             ("foerderung_at", "EAG-Fördercall Oktober 2026"),
+             ("foerderungen", "Aktuelle Förderungen 2026"),
              ("/ems-foerderung/", "EMS-Förderung für Betriebe"),
              ("/unternehmensfoerderung-von-waermepumpen/", "Wärmepumpenförderung für Unternehmen"),
              ("waermepumpe", "Wärmepumpe im Betrieb"),

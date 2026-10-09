@@ -31,13 +31,13 @@ FAQ = [
      "Kärnten und der EAG-Zuschuss des Bundes ab. Der genaue Preis hängt von Dach, Speichergröße und Ausstattung ab."),
     ("Welche Förderung gibt es 2026 für Photovoltaik in Kärnten?",
      "Das Land Kärnten zahlt für neue private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal 3.000 €, "
-     "für die Speicher-Nachrüstung 1.000 €. Einreichung vom 12. Oktober bis 31. Dezember 2026 über die "
-     "Förderplattform des Landes. Der EAG-Investitionszuschuss des Bundes beträgt 150 € je kWp bis 10 kWp und "
-     "150 € je kWh Speicher; der letzte Fördercall 2026 läuft bis 22. Oktober. EBZ Energie übernimmt die Anträge."),
+     "für die Speicher-Nachrüstung 1.000 €, Antrag über die Förderplattform des Landes. Der EAG-Investitionszuschuss "
+     "des Bundes beträgt 150 € je kWp bis 10 kWp und 150 € je kWh Speicher (Stand Oktober 2026). Welche Fristen "
+     "gerade laufen, steht tagesaktuell auf unserer Förderseite; EBZ Energie prüft sie für Ihr Projekt und stellt die Anträge."),
     ("Was ändert sich 2026 bei Photovoltaik in Österreich?",
-     "Drei Punkte: Der EAG-Fördercall Oktober 2026 (8. bis 22. Oktober) ist der letzte im bisherigen System; ab 2027 ist "
-     "laut BMWET eine Systemförderung für Speicher und intelligente Steuerung geplant, beantragt nach der "
-     "Installation. Der OeMAG-Marktpreis für eingespeisten Strom lag im September 2026 bei 10,168 ct je kWh "
+     "Drei Punkte: Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und intelligente Steuerung, "
+     "die aktuellen Förderprogramme und Fristen stehen auf unserer Förderseite. Der OeMAG-Marktpreis für "
+     "eingespeisten Strom lag im September 2026 bei 10,168 ct je kWh "
      "(Juli: 6,146 ct), er schwankt monatlich. Und seit Oktober 2026 gilt das neue Elektrizitätswirtschaftsgesetz (ElWG)."),
     ("Wie läuft die Netzanmeldung bei Kärnten Netz?",
      "In den meisten Gemeinden Kärntens ist die Kärnten Netz GmbH (eine Tochter der Kelag) der Netzbetreiber, in der Stadt Klagenfurt die "
@@ -154,23 +154,25 @@ def build():
             eyebrow="Förderung 2026",
             h2="Förderung 2026 in Kärnten und der Steiermark: Landesprogramme und EAG-Zuschuss",
             paragraphs=[
-                ("Kärnten zahlt 2026 für private PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh pauschal 3.000 €, "
-                 "Einreichung 12. Oktober bis 31. Dezember 2026. Die " +
+                ("Das Land " + a("foerderung_kaernten", "Kärnten") + " zahlt für private PV-Anlagen ab 5 kWp mit "
+                 "Speicher ab 5 kWh pauschal 3.000 €. Die " +
                  a("foerderung_steiermark", "Steiermark") + " hat keine Pauschale, dafür Sanierungsbonus bis "
-                 "15 %, Ökofonds bis 30 % ab 20 kWp und Gemeindeförderungen 200 bis 1.000 €. Der EAG-Zuschuss "
-                 "des Bundes (150 €/kWp bis 10 kWp, 150 €/kWh Speicher) läuft bis 22. Oktober 2026."),
+                 "15 %, Ökofonds bis 30 % ab 20 kWp und Gemeindeförderungen 200 bis 1.000 €. Der Bund fördert über "
+                 "den EAG-Investitionszuschuss mit 150 €/kWp bis 10 kWp und 150 €/kWh Speicher (Stand Oktober 2026)."),
                 ("Energiemanagement fördert der Klimafonds mit 50 % bis 600 €. Die Bundesförderung für Wärmepumpen "
-                 "ist seit Herbst 2026 ausgeschöpft, es gelten die Länder. Ab 2027 plant der Bund laut BMWET "
-                 "eine Systemförderung, beantragt nach der Installation (Stand Oktober 2026)."),
+                 "ist seit Herbst 2026 ausgeschöpft, es gelten die Länder. Ab 2027 plant der Bund laut BMWET eine "
+                 "Systemförderung für Speicher und intelligente Steuerung. "
+                 "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
+                 "und stellen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratung zur Photovoltaik-Förderung in Kärnten und der Steiermark am Tisch",
             bullets=[
                 "Kärnten 3.000 € Pauschale, Steiermark Sanierungsbonus und Ökofonds",
-                "Bund: 150 €/kWp und 150 €/kWh bis 22. Oktober, EMS bis 600 €",
+                "Bund: 150 €/kWp und 150 €/kWh Speicher, EMS bis 600 €",
                 "Komplette Abwicklung durch EBZ Energie inklusive Netzanmeldung",
             ],
-            cta=("foerderungen", "Alle Förderungen 2026"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
             reverse=True,
         ),
         C.reference_cards(

@@ -192,17 +192,19 @@ def build():
         ).replace('<section class="section"', '<section id="beispiele" class="section"', 1),
         C.media_text(
             eyebrow="Förderung trotz Finanzierung",
-            h2="Förderung trotz Finanzierung: EAG-Zuschuss, Speicherbonus, Fördercall Oktober 2026",
+            h2="Förderung trotz Finanzierung: EAG-Zuschuss, Speicherbonus, Landespauschale Kärnten",
             paragraphs=[
                 ("Wer in Österreich eine PV-Anlage finanziert, erhält die Förderung in voller Höhe: Der "
                  "EAG-Investitionszuschuss 2026 zahlt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, "
-                 "zusammen bis zu 3.000 Euro, dazu 10 Prozent Made-in-Europe-Bonus je Komponente. Der dritte "
-                 f"Fördercall läuft bis 22. Oktober 2026 (Quelle: EAG-Abwicklungsstelle, {STAND})."),
+                 "zusammen bis zu 3.000 Euro, dazu 10 Prozent Made-in-Europe-Bonus je Komponente (Quelle: "
+                 f"EAG-Abwicklungsstelle, {STAND})."),
                 ("Weil Sie bei der EBZ-Finanzierung vom ersten Tag an Eigentümer sind, stellen Sie den Antrag "
                  "selbst und die Auszahlung geht auf Ihr Konto. Bei Mietmodellen bekommt der Anbieter die "
                  "Förderung. In Kärnten kommen 3.000 Euro Landespauschale für Neuanlagen ab 5 kWp mit Speicher "
-                 "ab 5 kWh dazu, Einreichung vom 12. Oktober bis 31. Dezember 2026. Ab 2027 plant der Bund laut "
-                 "BMWET eine Systemförderung mit Antrag nach der Installation."),
+                 "ab 5 kWh dazu, die Steiermark fördert über eigene Programme. Ab 2027 plant der Bund laut BMWET "
+                 "eine Systemförderung für Speicher und intelligente Steuerung. "
+                 "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
+                 "und stellen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung bei Finanzierung",
@@ -210,7 +212,7 @@ def build():
                      "Sie sind Eigentümer und Antragsteller, nicht die Bank",
                      "Bund und Land sind kombinierbar, wir prüfen beides für Ihr Projekt",
                      "Anträge bereiten wir vor, Fristen und Reihenfolge behalten wir im Blick"],
-            cta=("foerderung_at", "PV-Förderung Österreich 2026 (Fördercall Oktober)"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
             dark=True,
         ),
         C.facts_panel(
@@ -292,7 +294,7 @@ def build():
         C.linkgrid_section("Weiterlesen", [
             ("/solaranlage-mieten-oder-kaufen/", "Solaranlage mieten oder kaufen: der Vergleich"),
             ("/kosten-einer-solaranlage/", "Was kostet eine Solaranlage?"),
-            ("foerderung_at", "PV-Förderung Österreich 2026 (Fördercall Oktober)"),
+            ("foerderung_at", "PV-Förderung Österreich 2026"),
             ("photovoltaik", "Photovoltaikanlage für Eigenheim und Gewerbe"),
             ("batteriespeicher", "Batteriespeicher mitfinanzieren"),
             ("waermepumpe", "Wärmepumpe mitfinanzieren"),

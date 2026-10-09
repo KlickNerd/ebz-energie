@@ -51,9 +51,9 @@ FAQ = [
      "und der Steiermark ist er in den meisten Haushalten bereits eingebaut."),
     ("Wie hoch ist die EMS-Förderung 2026 und was ändert sich 2027?",
      "Private Haushalte erhalten 50 Prozent der Kosten, maximal 600 €, Betriebe und Gemeinden bis zu 30 Prozent, "
-     "maximal 20.000 € je Standort. Registrierung längstens bis 15. April 2027, vor der ersten Rechnung. Ab 2027 "
-     "plant das BMWET laut Eckpunkten vom Oktober 2026 eine Systemförderung für Speicher mit intelligenter "
-     "Steuerung: Ein EMS soll dann Förderkriterium werden, der Antrag erst nach der Installation erfolgen."),
+     "maximal 20.000 € je Standort. Die Registrierung erfolgt vor der ersten Rechnung; welche Fristen gerade laufen, "
+     "steht tagesaktuell auf unserer Förderseite. Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher "
+     "mit intelligenter Steuerung: Ein EMS soll dann Förderkriterium werden."),
     ("Was ist der Unterschied zwischen EMS fürs Haus und ISO 50001?",
      "Ein EMS fürs Haus schaltet Geräte in Echtzeit. ISO 50001 (Abgrenzung Industrie) ist dagegen ein "
      "Managementprozess für Unternehmen: Energiedaten erfassen, Ziele setzen, Maßnahmen dokumentieren. Die "
@@ -87,12 +87,12 @@ def _ausblick_2027():
     """Hinweis-Box: Reihenfolge bei der Foerderung + geplante Systemfoerderung 2027 (BMWET)."""
     return (
         '<div class="art-box art-box--p eg-reveal" style="margin:32px auto 0;max-width:920px">'
-        '<h3>Erst registrieren, dann Rechnung. Und ab 2027 wird das EMS zum Förderkriterium.</h3>'
+        '<h3>Erst registrieren, dann Rechnung. Und ab 2027 soll das EMS zum Förderkriterium werden.</h3>'
         '<p>Haushalte registrieren sich online, <b>bevor</b> die erste Rechnung gelegt wird, Betriebe stellen den '
-        'Antrag vor der verbindlichen Bestellung. Wer zuerst kauft, geht leer aus. Ab 2027 plant das BMWET laut '
-        'Eckpunkten vom Oktober 2026 eine <b>Systemförderung</b> für PV-Speicher mit intelligenter Steuerung: Antrag '
-        'erst nach Installation, Nachrüstung von Speicher und EMS förderbar, ein Energiemanagementsystem wird '
-        'voraussichtlich zum Förderkriterium. Höhe und Technikkriterien sind noch offen. '
+        'Antrag vor der verbindlichen Bestellung. Wer zuerst kauft, geht leer aus. Ab 2027 plant der Bund laut BMWET '
+        'eine <b>Systemförderung</b> für Speicher und intelligente Steuerung, bei der ein Energiemanagementsystem '
+        'voraussichtlich zum Förderkriterium wird; Höhe und Technikkriterien sind noch offen. Welche Fristen gerade '
+        f'laufen, steht tagesaktuell auf unserer Förderseite: {a("foerderungen", "Aktuelle Förderungen 2026")}. '
         f'Alle Details: {a("/ems-foerderung/", "Ratgeber EMS-Förderung 2026")}.</p>'
         '</div>'
     )
@@ -255,7 +255,7 @@ def build():
             h2="Was ein EMS kostet und was der Klimafonds dazuzahlt",
             intro=("Marktübliche Systeme kosten im Einfamilienhaus 800 bis 1.500 €* inklusive Installation. Der "
                    "Klima- und Energiefonds fördert 2026 Systeme, die mindestens zwei Komponenten aktiv steuern. "
-                   "Budget 4,9 Millionen Euro, Registrierung bis 15. April 2027 (Stand Oktober 2026)."),
+                   "Budget 4,9 Millionen Euro, Registrierung vor der ersten Rechnung (Stand Oktober 2026)."),
             items=[
                 {"size": "Private Haushalte", "price": "50 %", "price_sub": "der Kosten, maximal 600 €",
                  "features": ["Steuerung, Messtechnik, Installation und Konfiguration förderfähig",
@@ -410,8 +410,8 @@ def _footnote():
       Basis typischer Anlagen mit Speicher und flexiblen Verbrauchern, EMS-Kosten für marktübliche Systeme
       inklusive Installation, Ersparnis-Beispiel mit 2.000 kWh verschobenem Verbrauch und 28 ct je kWh.
       OeMAG-Marktpreis September 2026: 10,168 ct je kWh (Juli 2026: 6,146 ct; der Wert schwankt monatlich).
-      Förderangaben laut Leitfaden des Klima- und Energiefonds (Juni 2026), Ausblick 2027 laut Eckpunkten des
-      BMWET (Oktober 2026), maßgeblich sind die offiziellen Förderbedingungen. Fachlich geprüft von {AUTHOR},
+      Förderangaben laut Leitfaden des Klima- und Energiefonds (Juni 2026), Ausblick 2027 laut BMWET,
+      maßgeblich sind die offiziellen Förderbedingungen. Fachlich geprüft von {AUTHOR},
       {AUTHOR_ROLE}.</p>
     </div>
   </section>""")

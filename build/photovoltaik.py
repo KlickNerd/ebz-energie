@@ -44,10 +44,10 @@ FAQ = [
      "Nachrüsten geht fast immer, AC-gekoppelt für 800 bis 1.200 € je kWh*. Kärnten fördert die Nachrüstung 2026 "
      "mit 1.000 €, der EAG-Zuschuss von 150 € je kWh gilt nur mit neuer Anlage."),
     ("Wie hoch ist die Förderung für Photovoltaik 2026 in Kärnten und der Steiermark?",
-     "Bund: EAG-Zuschuss 150 € je kWp bis 10 kWp und 150 € je kWh Speicher, letzter Fördercall 8. bis 22. Oktober "
-     "2026. Land Kärnten: 3.000 € pauschal für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, Antrag 12. Oktober bis "
-     "31. Dezember 2026, mit dem Bund kombinierbar. Steiermark: eigene Landesprogramme, siehe Ratgeber. Ab 2027 "
-     "plant der Bund eine Systemförderung (Stand Oktober 2026)."),
+     "Bund: EAG-Investitionszuschuss 150 € je kWp bis 10 kWp und 150 € je kWh Speicher. Land Kärnten: 3.000 € "
+     "pauschal für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, mit dem Bund kombinierbar. Steiermark: eigene "
+     "Landesprogramme, siehe Ratgeber (Stand Oktober 2026). Ab 2027 plant der Bund laut BMWET eine Systemförderung. "
+     "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt und stellen die Anträge."),
     ("Brauche ich eine Genehmigung und wie lange dauert die Anmeldung beim Netzbetreiber?",
      "In Kärnten sind Dach- und Fassadenanlagen meist nicht bewilligungspflichtig, es gilt eine Mitteilungspflicht "
      "an die Gemeinde. Den Netzzutrittsantrag stellen wir direkt nach dem Auftrag, weil die Zählpunktnummer für den "
@@ -220,17 +220,17 @@ def build():
         C.finance_band(),
         C.media_text(
             eyebrow="Förderungen 2026",
-            h2="Förderungen 2026: EAG-Zuschuss, Fördercall Oktober, Land Kärnten und Steiermark",
+            h2="Förderungen für Ihre Photovoltaikanlage: Bund, Kärnten, Steiermark",
             paragraphs=[
-                ("Der Bund fördert Photovoltaik 2026 über den EAG-Investitionszuschuss: 150 € je kWp bis 10 kWp "
+                ("Der Bund fördert Photovoltaik über den EAG-Investitionszuschuss: 150 € je kWp bis 10 kWp "
                  "(Kategorie A), 140 € bis 20 kWp, 130 € bis 100 kWp, dazu 150 € je kWh Speicher und 10 % "
-                 "Made-in-Europe-Bonus je Komponente. Der 3. Fördercall 8. bis 22. Oktober 2026 ist der letzte im "
-                 "alten System (Quelle: EAG-Abwicklungsstelle, Stand Oktober 2026)."),
+                 "Made-in-Europe-Bonus je Komponente (Quelle: EAG-Abwicklungsstelle, Stand Oktober 2026). Ab 2027 "
+                 "plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung."),
                 ("Das Land Kärnten fördert private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal mit "
-                 "3.000 €, die Speicher-Nachrüstung mit 1.000 €: Antrag online vom 12. Oktober bis 31. Dezember 2026, "
-                 "maximal 50 % der Investitionskosten, Budget rund 10 Mio. € (Quelle: Land Kärnten). Ab 2027 plant der "
-                 "Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. Wir stellen alle "
-                 "Anträge für Sie."),
+                 "3.000 €, die Speicher-Nachrüstung mit 1.000 €, maximal 50 % der Investitionskosten, Budget rund "
+                 "10 Mio. € (Quelle: Land Kärnten); die Steiermark fördert über eigene Landesprogramme. Welche "
+                 "Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
+                 "und stellen alle Anträge für Sie."),
             ],
             img=IMG["foerderung"],
             alt="Beratung zur Photovoltaik Förderung am Tisch",
@@ -239,7 +239,7 @@ def build():
                 "Speicherförderung 150 €/kWh (mindestens 0,5 kWh je kWp, maximal 50 kWh)",
                 a("foerderung_kaernten", "PV-Förderung Kärnten 2026") + " und " + a("foerderung_steiermark", "PV-Förderung Steiermark 2026") + " im Detail",
             ],
-            cta=("foerderung_at", "EAG-Fördercall Oktober 2026 im Überblick"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
         ),
         # 7. Reibung raus: Anmeldung und Genehmigung
         C.media_text(

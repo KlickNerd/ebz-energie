@@ -53,7 +53,8 @@ FAQ = [
     ("Lohnt sich die Kombination mit Photovoltaik?",
      "Ja. Eigener Solarstrom kostet 10 bis 14 Cent je Kilowattstunde, Netzstrom das Zwei- bis Dreifache. Mit "
      "PV-Anlage und Speicher sinken die Heizkosten im Beispielhaus auf 200 bis 500 Euro im Jahr. Die PV-Anlage wird "
-     "getrennt gefördert: 150 Euro je kWp und 150 Euro je kWh Speicher, Fördercall bis 22. Oktober 2026."),
+     "getrennt gefördert: 150 Euro je kWp und 150 Euro je kWh Speicher (Stand Oktober 2026); die aktuellen Fristen "
+     "stehen auf unserer Förderseite."),
     ("Wie laut ist eine Luft-Wasser-Wärmepumpe und wo darf sie stehen?",
      "Die Lautstärke steht als Schallleistung in dB(A) im Datenblatt, nachts läuft die Außeneinheit mit reduzierter "
      "Drehzahl. Entscheidend ist der Aufstellort: nicht in Ecken oder zwischen zwei Wänden, Abstand zu "
@@ -224,7 +225,7 @@ def build():
                 ("Die Bundesförderung 2026 für den Heizungstausch (Sanierungsoffensive mit Kesseltausch bis 7.500 €, "
                  "Sauber Heizen für Alle bis 100 %) ist seit Herbst 2026 ausgeschöpft, neue Registrierungen sind nicht "
                  "möglich; ob 2027 ein neues Bundesprogramm kommt, ist offen (Quelle: umweltfoerderung.at, Stand "
-                 "9. Oktober 2026). Wer bereits registriert ist, kann noch beantragen."),
+                 "Oktober 2026). Wer bereits registriert ist, kann noch beantragen."),
                 ("Aktuell laufen die Landesförderungen: Kärnten fördert den Heizungstausch weiter (2026 laut Berichten "
                  "auf 3.000 € Pauschale angepasst, zuvor 35 % bis 6.000 €), die Steiermark zahlt 35 % der förderbaren "
                  "Kosten für Ein- und Zweifamilienhäuser. Wer seine Bundesförderung noch ausbezahlt bekommt, setzt "
@@ -237,9 +238,10 @@ def build():
                 "Bund 2026: Kesseltausch bis 7.500 € galt bis zur Ausschöpfung, aktuell keine neuen Registrierungen",
                 a("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen Kärnten und Steiermark") + ": laufen, Richtlinien ändern sich, wir prüfen tagesaktuell",
                 a("/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/", "Öko-Sonderausgabenpauschale") + ": 5 Jahre je 400 € bei ausbezahlter Bundesförderung und über 2.000 € Restkosten",
+                a("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung 2026 im Detail") + ": alle Programme für Kärnten und die Steiermark",
                 "Finanzierung möglich: 0 € Anzahlung, fixe Rate, Eigentum ab Tag 1",
             ],
-            cta=("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung 2026 im Detail"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
             dark=True,
         ),
         C.media_text(
@@ -275,7 +277,7 @@ def build():
                 ("Kühlen mit Wärmepumpe: Im Sommer kehrt sie den Kreislauf um und kühlt über Fußbodenheizung oder "
                  "Gebläsekonvektoren, nicht über klassische Heizkörper. Den Strom liefert mittags die PV-Anlage, genau "
                  "dann, wenn Kühlung gebraucht wird. Die PV-Anlage wird getrennt gefördert: 150 € je kWp und 150 € je kWh "
-                 "Speicher, Fördercall bis 22. Oktober 2026."),
+                 "Speicher (Stand Oktober 2026)."),
             ],
             img=IMG["ems"],
             alt="Energiemanagementsystem steuert Photovoltaik, Speicher und Wärmepumpe",

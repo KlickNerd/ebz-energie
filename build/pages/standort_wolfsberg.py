@@ -57,9 +57,9 @@ FAQ = [
      "Für die Erstberatung kommen wir von Villach über die Südautobahn A2 kostenlos zu Ihnen."),
     ("Wie hoch ist die PV-Förderung in Kärnten 2026?",
      "Das Land Kärnten fördert private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal mit 3.000 Euro, "
-     "die Speicher-Nachrüstung mit 1.000 Euro; Einreichung vom 12. Oktober bis 31. Dezember 2026, maximal 50 Prozent "
-     "der Kosten. Der EAG-Zuschuss des Bundes beträgt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, "
-     "letzter Fördercall bis 22. Oktober 2026 (Stand Oktober 2026). Beide Förderungen sind kombinierbar."),
+     "die Speicher-Nachrüstung mit 1.000 Euro, maximal 50 Prozent der Kosten. Der EAG-Zuschuss des Bundes beträgt "
+     "150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher (Stand Oktober 2026). Beide Förderungen sind "
+     "kombinierbar. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
     ("Brauche ich in Kärnten eine Genehmigung für die PV-Anlage?",
      "Für Anlagen auf Dach oder Fassade gilt in Kärnten in der Regel eine Mitteilungspflicht statt einer "
      "Bewilligungspflicht: Die Gemeinde wird informiert, ein Bauverfahren entfällt meist. Wir klären das für Ihr "
@@ -181,8 +181,8 @@ def build():
                  "als das Haus verbraucht, und bremst sie, wenn Wolken kommen. So fahren Sie mit Strom, der Sie "
                  "nichts mehr kostet, statt mit Netzstrom."),
                 ("Dasselbe System steuert Wärmepumpe und Speicher. Der Klima- und Energiefonds fördert ein "
-                 "Energiemanagementsystem für Haushalte mit 50 Prozent, maximal 600 Euro (Einreichung bis "
-                 "15. April 2027, Stand Oktober 2026). Wir planen Wallbox und Steuerung gleich mit, damit "
+                 "Energiemanagementsystem für Haushalte mit 50 Prozent, maximal 600 Euro (Registrierung vor der "
+                 "ersten Rechnung, Stand Oktober 2026). Wir planen Wallbox und Steuerung gleich mit, damit "
                  "Leitungen und Zählerschrank passen."),
             ],
             img=IMG["ems"],
@@ -199,12 +199,12 @@ def build():
             h2="Förderung: EAG, Made-in-Europe-Bonus und Landespauschale Kärnten",
             paragraphs=[
                 ("Das Land Kärnten fördert 2026 private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal mit "
-                 "3.000 Euro, die Speicher-Nachrüstung mit 1.000 Euro; Einreichung vom 12. Oktober bis 31. Dezember "
-                 "2026. Der Bund zahlt über den EAG-Investitionszuschuss 150 Euro je kWp bis 10 kWp und 150 Euro je "
+                 "3.000 Euro, die Speicher-Nachrüstung mit 1.000 Euro. Der Bund zahlt über den "
+                 "EAG-Investitionszuschuss 150 Euro je kWp bis 10 kWp und 150 Euro je "
                  "kWh Speicher, europäische Komponenten bringen je 10 Prozent Made-in-Europe-Bonus (Stand Oktober 2026)."),
                 ("Wir prüfen die passenden Programme für Ihr Projekt in Wolfsberg, halten die Fristen ein und "
-                 "bereiten die Anträge vor. Details und den Ausblick auf die geplante Systemförderung 2027 finden "
-                 "Sie im Ratgeber."),
+                 "bereiten die Anträge vor. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; "
+                 "die Details zur Landesförderung finden Sie im Ratgeber."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung für ein Eigenheim",
@@ -212,8 +212,9 @@ def build():
                 "EAG 150 €/kWp und 150 €/kWh vom Bund, 10 % Made-in-Europe-Bonus",
                 "3.000 € Landespauschale Kärnten für PV mit Speicher, 1.000 € für Speicher-Nachrüstung",
                 "Anträge, Mitteilung an die Gemeinde und Netzanmeldung durch EBZ Energie",
+                a("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
             ],
-            cta=("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
+            cta=("foerderungen", "Aktuelle Förderungen 2026"),
             dark=True,
         ),
         C.finance_band(),

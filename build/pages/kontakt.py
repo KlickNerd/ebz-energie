@@ -40,9 +40,9 @@ FAQ = [
      "trotzdem unverbindlich: Sie entscheiden nach dem Angebot in Ruhe, es gibt keine Verpflichtung. Und wenn eine "
      "kleinere Anlage besser passt oder sich ein Speicher bei Ihnen nicht rechnet, sagen wir das."),
     ("Beraten Sie auch zu Förderung und Finanzierung?",
-     "Ja, das ist Teil jeder Beratung. Wir prüfen Landespauschale Kärnten (3.000 € für PV ab 5 kWp mit Speicher, "
-     "Einreichung 12. Oktober bis 31. Dezember 2026), Förderung Steiermark und den EAG-Zuschuss des Bundes und "
-     "stellen die Anträge. Auf Wunsch rechnen wir eine Finanzierung ab 147 € im Monat* durch: Eigentum ab Tag 1, "
+     "Ja, das ist Teil jeder Beratung. Wir prüfen Landespauschale Kärnten (3.000 € für PV ab 5 kWp mit Speicher), "
+     "Förderung Steiermark und den EAG-Zuschuss des Bundes, kennen die laufenden Fristen und stellen die Anträge. "
+     "Auf Wunsch rechnen wir eine Finanzierung ab 147 € im Monat* durch: Eigentum ab Tag 1, "
      "0 € Anzahlung, fixe Rate."),
     ("Kann ich auch telefonisch, per Video oder bei Ihnen in Villach beraten werden?",
      "Ja. Ein erstes Gespräch führen wir gern am Telefon oder per Video, damit Sie Ihre Fragen schnell klären. Für "

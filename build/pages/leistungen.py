@@ -48,10 +48,10 @@ FAQ = [
      "mit 4 bis 8 Wochen, abhängig von Projektbericht, Förderantrag und Zählertausch durch den Netzbetreiber."),
     ("Gibt es 2026 noch Förderung für PV mit Speicher (EAG, Landespauschale)?",
      "Ja. Der EAG-Investitionszuschuss zahlt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, dazu 10 Prozent "
-     "Made-in-Europe-Bonus; der dritte Fördercall läuft bis 22. Oktober 2026, ab 2027 plant der Bund laut BMWET eine "
-     "Systemförderung mit Antrag nach der Installation. Kärnten zahlt 3.000 Euro Pauschale für Neuanlagen ab 5 kWp mit "
-     "Speicher ab 5 kWh (Einreichung 12. Oktober bis 31. Dezember 2026). Wir bereiten die Anträge vor und behalten "
-     "Fristen und Reihenfolge im Blick."),
+     "Made-in-Europe-Bonus; ab 2027 plant der Bund laut BMWET eine Systemförderung. Kärnten zahlt 3.000 Euro Pauschale "
+     "für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, die Steiermark fördert über eigene Programme (Stand Oktober 2026). "
+     "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt und "
+     "stellen die Anträge."),
     ("Komplettset zur Selbstmontage oder Fachbetrieb: was ist der Unterschied?",
      "Komplettsets aus dem Online-Shop (rund 1.300 bis 9.000 Euro*) enthalten Module, Wechselrichter und oft "
      "Speicher, aber keine Montage, keine Statik, keine Elektroinstallation und keine Netzanmeldung. Der Anschluss "
@@ -160,7 +160,7 @@ def build():
                  "link_key": "waermepumpe", "link_text": "Zur Wärmepumpe"},
                 {"img": IMG["ems"], "alt": "Energiemanagementsystem vernetzt Photovoltaik, Speicher, Wärmepumpe und Wallbox",
                  "title": "Energiemanagement",
-                 "text": "Das Energiemanagementsystem (EMS) ist die Steuerzentrale: hebt Eigenverbrauch und Autarkie, nutzt dynamische Tarife und kappt im Gewerbe Lastspitzen. Bis 15. April 2027 mit 50 %, maximal 600 € gefördert.",
+                 "text": "Das Energiemanagementsystem (EMS) ist die Steuerzentrale: hebt Eigenverbrauch und Autarkie, nutzt dynamische Tarife und kappt im Gewerbe Lastspitzen. Der Klimafonds fördert es mit 50 %, maximal 600 €.",
                  "link_key": "ems", "link_text": "Zum Energiemanagement"},
                 {"img": IMG["eg_drohne"], "alt": "Wohngebiet aus der Luft, Nachbarn teilen Sonnenstrom",
                  "title": "Energiegemeinschaft",
@@ -219,14 +219,15 @@ def build():
                 ("10 kWp mit Speicher", "rund 15.000 bis 22.000 € vor Förderung, schlüsselfertig"),
                 ("10 kWp ohne Speicher", "rund 10.000 bis 15.000 € vor Förderung"),
                 ("Preis je kWp", "rund 1.500 bis 2.200 €/kWp inklusive Speicher und Montage*"),
-                ("EAG-Investitionszuschuss Bund", "150 €/kWp bis 10 kWp und 150 €/kWh Speicher, 10 % Made-in-Europe-Bonus; 3. Fördercall bis 22.10.2026"),
-                ("Landesförderung Kärnten 3.000 €", "Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, Einreichung 12.10. bis 31.12.2026; Steiermark: eigene Programme"),
+                ("EAG-Investitionszuschuss Bund", "150 €/kWp bis 10 kWp und 150 €/kWh Speicher, 10 % Made-in-Europe-Bonus (Stand Oktober 2026)"),
+                ("Landesförderung Kärnten 3.000 €", "Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh; Steiermark: eigene Programme"),
                 ("Summe Förderung Kärnten", "bis zu rund 6.450 € für 10 kWp + 10 kWh (Bund + Land)*"),
                 ("Finanzierung", "0 € Anzahlung, fixe Rate, Eigentum ab Tag 1, ab 147 € im Monat inkl. Speicher*"),
-                ("Ab 2027", "Systemförderung des Bundes geplant (laut BMWET): Antrag nach Installation, Höhe offen"),
+                ("Ab 2027", "Systemförderung des Bundes für Speicher und intelligente Steuerung geplant (laut BMWET), Höhe offen"),
+                ("Fristen", "stehen tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt und stellen die Anträge"),
             ],
             actions=[("10 kWp Komplettanlage: Kosten im Detail", KOMPLETT_10, ""),
-                     ("Förderung 2026", href("foerderung_at"), "")],
+                     ("Aktuelle Förderungen 2026", href("foerderungen"), "")],
         ),
         C.cards_section(
             eyebrow="Welche Größe passt?",
