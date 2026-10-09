@@ -600,6 +600,19 @@ p{margin:0 0 1rem}
 @media(max-width:820px){.linkgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.linkgrid{grid-template-columns:1fr}}
 
+/* --- Bundeslaender-Kacheln (Foerderseite) ------------------------------ */
+.landgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:980px;margin-inline:auto}
+.landgrid a{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px;background:var(--card);
+  border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--ink);transition:.18s}
+.landgrid a:hover{border-color:var(--petrol);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.landgrid b{font-family:var(--font-head);font-weight:700;font-size:1.02rem}
+.landgrid small{grid-column:1;color:var(--muted);font-size:.88rem;line-height:1.35}
+.landgrid .arr{grid-column:2;grid-row:1/3;color:var(--amber-2);font-size:1.1rem}
+.landgrid a.is-home{border-color:rgba(245,166,35,.55);background:rgba(245,166,35,.08)}
+.landgrid-more{text-align:center;margin-top:22px}
+@media(max-width:820px){.landgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.landgrid{grid-template-columns:1fr}}
+
 /* --- Final CTA ---------------------------------------------------------- */
 .finalcta{background:var(--amber);border-radius:calc(var(--radius) + 6px);
   padding:clamp(32px,5vw,56px);text-align:center;color:#1b1200}

@@ -39,18 +39,39 @@ R_WP_BETRIEBE = "/unternehmensfoerderung-von-waermepumpen/"
 R_WP_STEUER = "/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/"
 R_SANIERUNG = "/sanierungsoffensive-2026/"
 R_SAUBER = "/sauber-heizen-fuer-alle-2026/"
+# (Pfad, Bundesland, Kurzstatus PV/Speicher, Kernmarkt?)  Kurzstatus = Auszug aus der Matrix unten
 LAENDER = [
-    (R_KTN, "Kärnten: 3.000 € Pauschale"),
-    (R_STMK, "Steiermark: Sanierungsbonus und Ökofonds"),
-    ("/photovoltaik-foerderung-wien/", "Wien"),
-    ("/photovoltaik-foerderung-niederoesterreich/", "Niederösterreich"),
-    ("/photovoltaik-foerderung-oberoesterreich/", "Oberösterreich"),
-    ("/photovoltaik-foerderung-salzburg/", "Salzburg"),
-    ("/photovoltaik-foerderung-tirol/", "Tirol"),
-    ("/photovoltaik-foerderung-vorarlberg/", "Vorarlberg"),
-    ("/photovoltaik-foerderung-burgenland/", "Burgenland"),
-    (R_LAENDER, "Alle 9 Bundesländer im Vergleich"),
+    (R_KTN, "Kärnten", "3.000 € Pauschale mit Speicher", True),
+    (R_STMK, "Steiermark", "Sanierungsbonus und Ökofonds", True),
+    ("/photovoltaik-foerderung-tirol/", "Tirol", "bis 125 €/kWp, Speicher 100 €/kWh", False),
+    ("/photovoltaik-foerderung-oberoesterreich/", "Oberösterreich", "Speicher-Nachrüstung 150 €/kWh", False),
+    ("/photovoltaik-foerderung-burgenland/", "Burgenland", "Speicher 100 €/kWh", False),
+    ("/photovoltaik-foerderung-vorarlberg/", "Vorarlberg", "VKW-Speicherbonus", False),
+    ("/photovoltaik-foerderung-salzburg/", "Salzburg", "Bundesförderung", False),
+    ("/photovoltaik-foerderung-niederoesterreich/", "Niederösterreich", "Bundesförderung", False),
+    ("/photovoltaik-foerderung-wien/", "Wien", "Stadt Wien oder Bund", False),
 ]
+
+
+def _laender_section():
+    home_cls = ' class="is-home"'
+    tiles = "".join(
+        f'<a href="{path}"{home_cls if home else ""}><b>{name}</b><small>{status}</small>'
+        f'<span class="arr" aria-hidden="true">→</span></a>'
+        for path, name, status, home in LAENDER
+    )
+    return f"""
+  <section class="section section--tight" id="bundeslaender">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">Landesförderung</p>
+      <h2 class="center eg-reveal">Förderung nach Bundesland</h2>
+      <p class="lead center eg-reveal" style="max-width:62ch;margin-inline:auto">Die Bundesförderung gilt überall,
+      die Länder legen unterschiedlich viel dazu. Kärnten und die Steiermark sind unser Montagegebiet.</p>
+      <div class="landgrid eg-reveal" style="margin-top:30px">{tiles}</div>
+      <p class="landgrid-more eg-reveal">{a(R_LAENDER, 'Alle 9 Bundesländer im Vergleich →', cls='btn btn--ghost')}</p>
+    </div>
+  </section>"""
+
 
 FAQ = [
     ("Kann ich die Bundesförderung mit einer Landesförderung kombinieren?",
@@ -228,7 +249,7 @@ def build():
                  "link_key": "finanzierung", "link_text": "PV-Anlage finanzieren"},
             ],
         ),
-        C.linkgrid_section("Förderung nach Bundesland", LAENDER),
+        _laender_section(),
         C.steps_section(
             eyebrow="Reihenfolge der Anträge",
             h2="Erst Bund, dann Land: die richtige Reihenfolge im Herbst 2026",
