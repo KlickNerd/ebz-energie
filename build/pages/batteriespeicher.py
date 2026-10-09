@@ -336,6 +336,7 @@ def build():
              ("/ab-wann-lohnt-sich-photovoltaik-mit-speicher/", "Ab wann lohnt sich PV mit Speicher?"),
              ("/foerderung-fuer-pv-speicher/", "Speicherförderung 2026"),
              ("/foerderung-pv-speicher-kaernten/", "Speicherförderung Land Kärnten"),
+             ("foerderungen", "Alle Förderungen 2026"),
              ("/dynamischer-stromtarif/", "Speicher mit dynamischem Tarif laden"),
              ("ems", "Energiemanagement"),
              ("photovoltaik", "Photovoltaikanlage komplett"),

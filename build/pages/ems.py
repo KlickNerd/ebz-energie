@@ -370,6 +370,7 @@ def build():
         C.faq_section(FAQ),
         C.linkgrid_section("Weiterlesen zum Energiemanagement", [
             ("/ems-foerderung/", "EMS-Förderung 2026 im Detail"),
+            ("foerderungen", "Alle Förderungen 2026"),
             ("/smart-meter/", "Smart Meter erklärt"),
             ("/dynamischer-stromtarif/", "Dynamischer Stromtarif"),
             ("/photovoltaik-fuer-waermepumpe/", "Photovoltaik für die Wärmepumpe"),

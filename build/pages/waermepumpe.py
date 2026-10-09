@@ -378,6 +378,7 @@ def build():
              ("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung 2026"),
              ("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen Kärnten und Steiermark"),
              ("/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/", "Wärmepumpe steuerlich absetzen"),
+             ("foerderungen", "Alle Förderungen 2026"),
              ("/waermepumpe-im-altbau/", "Wärmepumpe im Altbau"),
              ("/funktionsweise-einer-waermepumpe/", "So funktioniert eine Wärmepumpe"),
              ("/heizen-mit-waermepumpe/", "Heizen mit Wärmepumpe"),

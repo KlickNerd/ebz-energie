@@ -23,6 +23,7 @@ def _nav():
         ("balkonkraftwerke", "Balkonkraftwerke"),
         ("ems", "Energiemanagement"),
         ("eg_privat", "Energiegemeinschaft"),
+        ("foerderungen", "Förderungen"),
     ]
     menu = "".join(a(k, t) for k, t in leistungen)
     return f"""
@@ -79,6 +80,7 @@ def _footer():
             <li>{a('waermepumpe', 'Wärmepumpe')}</li>
             <li>{a('balkonkraftwerke', 'Balkonkraftwerke')}</li>
             <li>{a('eg_privat', 'Energiegemeinschaft')}</li>
+            <li>{a('foerderungen', 'Förderungen')}</li>
           </ul>
         </div>
         <div class="footer-col">

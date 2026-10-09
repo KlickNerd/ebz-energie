@@ -257,8 +257,8 @@ p{margin:0 0 1rem}
 .panel--dark{background:linear-gradient(160deg,var(--petrol),var(--petrol-3));color:#fff;border:0}
 .panel--dark h3{color:#fff}
 .checklist{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
-.checklist li{display:flex;gap:12px;align-items:flex-start}
-.checklist li::before{content:"\2713";flex:0 0 auto;width:26px;height:26px;border-radius:50%;
+.checklist li{position:relative;padding-left:38px;line-height:1.5}
+.checklist li::before{content:"\2713";position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;
   background:rgba(245,166,35,.18);color:var(--amber-2);font-weight:800;display:grid;place-items:center;font-size:.9rem}
 .panel--dark .checklist li::before{color:var(--amber);background:rgba(245,166,35,.2)}
 @media(max-width:760px){.split{grid-template-columns:1fr}}
@@ -325,7 +325,8 @@ p{margin:0 0 1rem}
   aspect-ratio:4/3;object-fit:cover}
 .mediatext--reverse .mediatext__media{order:2}
 .mediatext p{color:var(--muted)}
-.mediatext .checklist{margin-top:18px}
+.mediatext .checklist{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow-sm)}
+.section.dark .mediatext .checklist{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);box-shadow:none}
 @media(max-width:820px){.mediatext{grid-template-columns:1fr;gap:24px}
   .mediatext--reverse .mediatext__media{order:0}}
 

@@ -103,6 +103,7 @@ S = {
     "foerderung_at": "/photovoltaik-foerderung-oesterreich-2026/",  # WP-Beitrag; alte Seite /photovoltaik-foerderung-oesterreich/ -> 301
     "foerderung_kaernten": "/photovoltaik-foerderung-kaernten/",  # WP-Beitrag 2026; alte Seite /foerderung-photovoltaik-kaernten/ -> 301
     "foerderung_steiermark": "/foerderung-photovoltaik-steiermark/",
+    "foerderungen": "/foerderungen/",  # Hub: alle Foerderungen 2026 (PV, Speicher, Waermepumpe, EMS, Balkon)
     "pv_villach": "/photovoltaik-villach/",
     "pv_wolfsberg": "/photovoltaik-wolfsberg/",
     "marktpreis": "/marktpreis-2026/",

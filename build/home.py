@@ -152,26 +152,25 @@ def build():
         ),
         C.media_text(
             eyebrow="Förderung 2026",
-            h2="Förderung 2026 in Kärnten und der Steiermark: Landespauschale und EAG-Zuschuss",
+            h2="Förderung 2026 in Kärnten und der Steiermark: Landesprogramme und EAG-Zuschuss",
             paragraphs=[
-                ("Das Land Kärnten fördert 2026 private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal "
-                 "mit 3.000 €, die Speicher-Nachrüstung mit 1.000 €. Einreichung vom 12. Oktober bis 31. Dezember "
-                 "2026. Der EAG-Investitionszuschuss des Bundes zahlt 150 € je kWp bis 10 kWp und 150 € je kWh "
-                 "Speicher, letzter Fördercall bis 22. Oktober 2026 (Quelle: Land Kärnten, EAG-Abwicklungsstelle, "
-                 "Stand Oktober 2026)."),
-                ("Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und intelligente Steuerung, "
-                 "beantragt nach der Installation. Welche Programme für Ihr Projekt passen, prüfen wir und "
-                 "stellen die Anträge: in Kärnten ebenso wie in der " +
-                 a("foerderung_steiermark", "Steiermark") + "."),
+                ("Kärnten zahlt 2026 für private PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh pauschal 3.000 €, "
+                 "Einreichung 12. Oktober bis 31. Dezember 2026. Die " +
+                 a("foerderung_steiermark", "Steiermark") + " hat keine Pauschale, dafür Sanierungsbonus bis "
+                 "15 %, Ökofonds bis 30 % ab 20 kWp und Gemeindeförderungen 200 bis 1.000 €. Der EAG-Zuschuss "
+                 "des Bundes (150 €/kWp bis 10 kWp, 150 €/kWh Speicher) läuft bis 22. Oktober 2026."),
+                ("Energiemanagement fördert der Klimafonds mit 50 % bis 600 €. Die Bundesförderung für Wärmepumpen "
+                 "ist seit Herbst 2026 ausgeschöpft, es gelten die Länder. Ab 2027 plant der Bund laut BMWET "
+                 "eine Systemförderung, beantragt nach der Installation (Stand Oktober 2026)."),
             ],
             img=IMG["foerderung"],
-            alt="Beratung zur Photovoltaik-Förderung in Kärnten am Tisch",
+            alt="Beratung zur Photovoltaik-Förderung in Kärnten und der Steiermark am Tisch",
             bullets=[
-                "3.000 € Landespauschale Kärnten für PV ab 5 kWp mit Speicher ab 5 kWh",
-                "150 €/kWp und 150 €/kWh vom Bund, 10 % Made-in-Europe-Bonus",
-                "Komplette Abwicklung durch EBZ Energie, inklusive Netzanmeldung",
+                "Kärnten 3.000 € Pauschale, Steiermark Sanierungsbonus und Ökofonds",
+                "Bund: 150 €/kWp und 150 €/kWh bis 22. Oktober, EMS bis 600 €",
+                "Komplette Abwicklung durch EBZ Energie inklusive Netzanmeldung",
             ],
-            cta=("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
+            cta=("foerderungen", "Alle Förderungen 2026"),
             reverse=True,
         ),
         C.reference_cards(

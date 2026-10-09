@@ -352,6 +352,7 @@ def build():
         C.linkgrid_section(
             "Weiterlesen: Balkonkraftwerk, Zähler und Einspeisung",
             [("/balkonkraftwerk-foerderung-in-oesterreich/", "Balkonkraftwerk-Förderung in Österreich"),
+             ("foerderungen", "Alle Förderungen 2026"),
              ("/smart-meter/", "Smart Meter und Zähler"),
              ("/einspeisetarif-fuer-photovoltaik/", "Einspeisetarif für Photovoltaik"),
              ("batteriespeicher", "Stromspeicher für die Dachanlage"),

@@ -363,6 +363,7 @@ def build():
              ("pv_wolfsberg", "Photovoltaik Wolfsberg"),
              ("foerderung_kaernten", "PV-Förderung Kärnten 2026"),
              ("foerderung_steiermark", "PV-Förderung Steiermark 2026"),
+             ("foerderungen", "Alle Förderungen 2026"),
              ("/kosten-einer-solaranlage/", "Kosten einer Solaranlage"),
              ("/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/", "Komplettanlage 10 kWp mit Speicher"),
              ("batteriespeicher", "Batteriespeicher"),

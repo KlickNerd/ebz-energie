@@ -39,14 +39,13 @@
 /photovoltaik-beratung/                            /kontakt/
 /energiemangementsystem/                           /energiemanagementsystem/
 
-# Alte Referenz-Unterseiten -> Anker auf der neuen Referenzseite
+# Alte Referenz-Unterseiten -> neue Projektseiten (build/pages/referenz_projekte.py)
 /referenzen-alt/                                                  /referenzen/
-/referenzen-alt/projekt-gewerbe-oberoesterreich/                  /referenzen/#gewerbe-oberoesterreich
-/referenzen-alt/projekt-pv-anlage-hotel-villach/                  /referenzen/#hotel-villach-warmbad
-/referenzen-alt/projekt-landwirtschaft-im-burgenland/             /referenzen/#landwirtschaft-burgenland
-/referenzen-alt/projekt-stadthaus-in-graz/                        /referenzen/#stadthaus-graz
-/referenzen-alt/projekt-bitumendach-in-niederoesterreich/         /referenzen/#bitumendach-niederoesterreich
-/referenzen-alt/projekt-pv-wien/                                  /referenzen/#wohnhaus-wien
-/referenzen-alt/projekt-pv-am-ossiachersee/                       /referenzen/#einfamilienhaus-ossiachersee
-/referenzen-alt/projekt-flachdach-in-graz/                        /referenzen/#flachdach-graz
-/referenzen/projekt-gewerbe-oberoesterreich/                      /referenzen/#gewerbe-oberoesterreich
+/referenzen-alt/projekt-gewerbe-oberoesterreich/                  /referenzen/projekt-gewerbe-oberoesterreich/
+/referenzen-alt/projekt-pv-anlage-hotel-villach/                  /referenzen/projekt-pv-anlage-hotel-villach/
+/referenzen-alt/projekt-landwirtschaft-im-burgenland/             /referenzen/projekt-landwirtschaft-im-burgenland/
+/referenzen-alt/projekt-stadthaus-in-graz/                        /referenzen/projekt-stadthaus-in-graz/
+/referenzen-alt/projekt-bitumendach-in-niederoesterreich/         /referenzen/projekt-bitumendach-in-niederoesterreich/
+/referenzen-alt/projekt-pv-wien/                                  /referenzen/projekt-pv-wien/
+/referenzen-alt/projekt-pv-am-ossiachersee/                       /referenzen/projekt-pv-am-ossiachersee/
+/referenzen-alt/projekt-flachdach-in-graz/                        /referenzen/projekt-flachdach-in-graz/

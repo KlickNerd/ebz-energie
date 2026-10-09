@@ -101,9 +101,25 @@ FAQ = [
 ]
 
 
+# Anker der Uebersicht -> Slug der Detailseite (build/pages/referenz_projekte.py)
+DETAIL = {
+    "gewerbe-oberoesterreich": "projekt-gewerbe-oberoesterreich",
+    "hotel-villach-warmbad": "projekt-pv-anlage-hotel-villach",
+    "landwirtschaft-burgenland": "projekt-landwirtschaft-im-burgenland",
+    "einfamilienhaus-villach": "projekt-einfamilienhaus-villach",
+    "mehrparteienhaus-krumpendorf": "projekt-mehrparteienhaus-krumpendorf",
+    "stadthaus-graz": "projekt-stadthaus-in-graz",
+    "bitumendach-niederoesterreich": "projekt-bitumendach-in-niederoesterreich",
+    "wohnhaus-wien": "projekt-pv-wien",
+    "einfamilienhaus-ossiachersee": "projekt-pv-am-ossiachersee",
+    "flachdach-graz": "projekt-flachdach-in-graz",
+}
+
+
 def _project(eyebrow, h2, paragraphs, img, alt, specs, reverse, anchor):
+    cta = (f"/referenzen/{DETAIL[anchor]}/", 'Zum Projekt <span aria-hidden="true">→</span>') if anchor in DETAIL else None
     return C.media_text(eyebrow=eyebrow, h2=h2, paragraphs=paragraphs, img=img, alt=alt,
-                        bullets=specs, reverse=reverse, anchor=anchor)
+                        bullets=specs, reverse=reverse, anchor=anchor, cta=cta)
 
 
 def _section_label(eyebrow, h2, text):
