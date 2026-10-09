@@ -33,7 +33,7 @@ ARTICLE = {
         "Montage: <b>2 bis 4 Tage</b>",
     ],
     "date_published": "2026-02-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "waermepumpe",
     "hero_alt": "Wärmepumpe im Garten eines Einfamilienhauses in Kärnten",
 
@@ -65,7 +65,8 @@ ARTICLE = {
 Richtung: Der Kühlschrank transportiert Wärme aus seinem Inneren nach außen, die Wärmepumpe holt Wärme
 aus der Umgebung ins Haus. Die Energiequelle ist keine Verbrennung, sondern die kostenlose thermische
 Energie aus Luft, Erdreich oder Grundwasser. Strom braucht die Wärmepumpe nur, um diese Wärme auf ein
-nutzbares Temperaturniveau anzuheben, und zwar deutlich weniger, als sie an Wärme abgibt.</p>
+nutzbares Temperaturniveau anzuheben, und zwar deutlich weniger, als sie an Wärme abgibt. Planung und Montage
+in Kärnten und der Steiermark übernimmt EBZ Energie als {a('waermepumpe', 'Wärmepumpen-Installateur')}.</p>
 <p>Herzstück ist ein geschlossener Kältemittelkreislauf mit vier Schritten:</p>
 {A.steps([
     ("Verdampfen",
@@ -176,9 +177,10 @@ grobe Orientierung für ein typisches Einfamilienhaus, jeweils gesamt und vor F�
 {a('/kosten-einer-waermepumpe/', 'Kosten einer Wärmepumpe 2026')}.</p>
 <h3>Förderung: Bund und Land gleichzeitig</h3>
 <ul>
-  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> Wer eine fossile Heizung durch eine Wärmepumpe
-  ersetzt, erhält einen Investitionszuschuss von mehreren tausend Euro. Die Höhe richtet sich nach
-  Gebäudetyp und Wärmepumpe. Details: {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
+  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> 2026 gab es für den Tausch einer fossilen Heizung bis zu
+  7.500 Euro Investitionszuschuss. Stand Oktober 2026 ist das Programm ausgeschöpft, neue Registrierungen
+  sind nicht möglich; ob 2027 ein Folgeprogramm kommt, ist offen. Details:
+  {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
   <li><b>Landesförderung Kärnten und Steiermark:</b> Beide Bundesländer haben eigene Programme.
   Überblick: {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}.</li>
 </ul>

@@ -43,7 +43,7 @@ ARTICLE = {
         "Gemeinde: zusätzlich <b>200 bis 1.000 €</b>",
     ],
     "date_published": "2026-04-01",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "foerderung",
     "hero_alt": "Förderunterlagen und Taschenrechner auf dem Tisch: Vergleich der Photovoltaik-Landesförderungen in Österreich",
 
@@ -104,7 +104,7 @@ EAG-Investitionszuschüsseverordnung-Strom-Novelle 2026 am 16. Jänner 2026 fixi
 Made-in-Europe-Bonus bringt jeweils 10 Prozent pro Komponente (PV-Module, Wechselrichter, Speicher), also
 bis zu 20 Prozent Zuschlag für die PV-Anlage und weitere 10 Prozent für den Speicher, sofern die
 Komponenten auf der White List der EAG-Abwicklungsstelle stehen.</p>
-<p>Die drei Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober. In den Kategorien A und
+<p>Die drei Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober. In den Kategorien A und
 B gilt First-Come-First-Served mit Ticketziehung, der Antrag muss vor Inbetriebnahme gestellt werden.
 Alle Details im Ratgeber {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
 """),
@@ -115,7 +115,7 @@ sie mit dem EAG-Bundeszuschuss kombinierbar ist und den Stand der Angaben.</p>
     ["Bundesland", "Förderart 2026", "Höhe und Eckdaten", "Mit EAG kombinierbar?", "Stand"],
     [
         ["Burgenland", "Speicherförderung des Landes, keine PV-Direktförderung für Private", "100 €/kWh nutzbar, max. 20 kWh, max. 30 % der Kosten, bis 2.000 €; Antrag bis 6 Monate nach Rechnung", "teilweise: Bund vor Land, Landesgeld nur wenn EAG nicht möglich", "Juni 2026"],
-        ["Kärnten", "Pauschale für PV mit Speicher, Speicher-Nachrüstung, Gewerbeprogramm", "3.000 € (ab 5 kWp + 5 kWh), Nachrüstung 1.000 €, Gewerbe bis 200 €/kWp; Landes-Call 15. April bis 30. Juni 2026, Antrag nach Fertigstellung", "ja, ohne Anrechnung", "Juni 2026"],
+        ["Kärnten", "Pauschale für PV mit Speicher, Speicher-Nachrüstung, Gewerbeprogramm", "3.000 € (ab 5 kWp + 5 kWh), Nachrüstung 1.000 €, Gewerbe bis 200 €/kWp; 2. Landes-Call 12. Oktober bis 31. Dezember 2026 (1. Call: 15. April bis 30. Juni), Antrag nach Fertigstellung", "ja, ohne Anrechnung", "Juni 2026"],
         ["Niederösterreich", "Wohnbauförderung (Punktesystem), keine Direktförderung", "PV und Speicher bringen Punkte in der Eigenheimsanierung; Parkplatzüberdachungen: 2 Mio. €, max. 45 % der Mehrkosten, Stichtag 30. Juni 2026", "ja", "Juni 2026"],
         ["Oberösterreich", "Speicher-Nachrüstung für Bestandsanlagen, Dächer-Förderung", "150 €/kWh Nennkapazität, max. 15 kWh, max. 40 % der Kosten, bis 2.250 €; nur PV in Betrieb vor 1. Jänner 2026", "nein beim Speicher (EAG-Speicher und OÖ-Speicher schließen sich aus)", "Juni 2026"],
         ["Salzburg", "keine PV-Landesförderung für Private mehr", "Landesförderung mit 31. Dezember 2025 ausgelaufen, Stadt Salzburg mit 1. Jänner 2026 eingestellt; nur betriebliche PV (max. 40 %)", "entfällt, nur EAG", "Juni 2026"],
@@ -143,7 +143,7 @@ Landesförderung. Alle Details im Ratgeber {a(BGLD, 'Photovoltaik-Förderung Bur
 <p>Kärnten hat 2026 die höchste Landespauschale Österreichs: 3.000 Euro für neue private PV-Anlagen ab
 5 kWp mit Speicher ab 5 kWh, unabhängig von der Anlagengröße, plus 1.000 Euro für die Speicher-Nachrüstung.
 Reine PV-Anlagen ohne Speicher werden nicht mehr gefördert. Das Budget liegt bei rund 40 Millionen Euro,
-der Landes-Call läuft vom 15. April bis 30. Juni 2026, der Antrag wird nach Fertigstellung gestellt. Die
+der zweite Landes-Call läuft vom 12. Oktober bis 31. Dezember 2026 (der erste lief vom 15. April bis 30. Juni), der Antrag wird nach Fertigstellung gestellt. Die
 Anrechnung der Bundesförderung entfällt: Für 8 kWp mit 8 kWh Speicher ergibt das 5.400 Euro aus Land und
 Bund, mit Made-in-Europe-Bonus rund 5.700 bis 5.900 Euro. Betriebe erhalten bis 200 Euro je kWp. Alle Details
 im Ratgeber {a(KTN, 'Photovoltaik-Förderung Kärnten 2026')}.</p>
@@ -244,7 +244,7 @@ erhöhen, mit der falschen verliert man eine Förderung komplett.</p>
      "müssen auf der White List der EAG-Abwicklungsstelle stehen, das gehört in die Angebotsphase, nicht in die "
      "Endabrechnung."),
     ("Landesförderung nach Fertigstellung",
-     "Die meisten Landesanträge werden nach Fertigstellung gestellt: Kärnten im Landes-Call bis 30. Juni 2026, "
+     "Die meisten Landesanträge werden nach Fertigstellung gestellt: Kärnten im 2. Landes-Call bis 31. Dezember 2026, "
      "Steiermark im Sanierungsbonus-Fenster, Burgenland bis sechs Monate nach Rechnung, Oberösterreich nach "
      "Umsetzung. Ausnahme Wien: Hier muss vorab entschieden werden, ob Stadt oder Bund."),
     ("Gemeindeförderung nicht vergessen",
@@ -271,6 +271,11 @@ angewiesen.</p>
 bei der Antragstellung, die Komponentenauswahl für den Made-in-Europe-Bonus und die rechtzeitige
 Vorbereitung der Unterlagen entscheiden über mehrere tausend Euro. Was der Bund bei Speichern zusätzlich
 zahlt, steht im Ratgeber {a('/foerderung-fuer-pv-speicher/', 'Förderung für PV-Speicher')}.</p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Förderung in Kärnten und der Steiermark aus einer Hand",
        "Wir planen Ihre Anlage förderfähig, ziehen das EAG-Ticket, stellen den Landesantrag und prüfen die "
        "Gemeindeförderung an Ihrem Wohnort.",
@@ -309,8 +314,8 @@ zahlt, steht im Ratgeber {a('/foerderung-fuer-pv-speicher/', 'Förderung für PV
          "Oberösterreich sind Landes- und EAG-Speicherförderung nicht kombinierbar. Im Burgenland gilt Bund vor "
          "Land, die Landesförderung greift nur, wenn die EAG nicht möglich ist."),
         ("Bis wann muss ich meinen Antrag 2026 stellen?",
-         "Der EAG-Bundeszuschuss läuft in drei Calls: 23. April bis 11. Mai, 16. bis 30. Juni und ab 8. Oktober "
-         "2026, jeweils vor Inbetriebnahme. Die Kärntner Landesförderung ist bis 30. Juni 2026 möglich, der "
+         "Der EAG-Bundeszuschuss läuft in drei Calls: 23. April bis 11. Mai, 16. bis 30. Juni und 8. bis 22. Oktober "
+         "2026, jeweils vor Inbetriebnahme. Die Kärntner Landesförderung ist im 2. Call bis 31. Dezember 2026 möglich, der "
          "Steirische Sanierungsbonus vom 1. April bis 15. Mai 2026, die Wiener Stadtförderung startet am 1. Mai "
          "2026. Im Burgenland gilt für den Speicher eine Frist von sechs Monaten nach Rechnung."),
         ("Welche Bundesländer fördern Stromspeicher direkt?",

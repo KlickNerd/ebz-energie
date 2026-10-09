@@ -24,9 +24,10 @@ ARTICLE = {
     "eyebrow": "Förderung · Bundesländer",
     "crumb_label": "Landesförderungen Wärmepumpe",
     "h1": "Landesförderungen für die Wärmepumpe 2026: Alle neun Bundesländer im Vergleich, bis zu 18.000 € Gesamtförderung",
-    "lead": ("Zur Bundesförderung von bis zu 7.500 € kommt in jedem Bundesland ein eigener Zuschuss: von 1.500 € "
-             "in Vorarlberg bis 8.000 € in Wien. Dieser Ratgeber zeigt Förderhöhen, Voraussetzungen und "
-             "Antragswege aller neun Länder und wie Sie Bund, Land und Gemeinde kombinieren."),
+    "lead": ("Jedes Bundesland hat einen eigenen Zuschuss für den Heizungstausch: von 1.500 € in Vorarlberg bis "
+             "8.000 € in Wien. Seit die Bundesförderung von bis zu 7.500 € im Herbst 2026 ausgeschöpft ist, sind die "
+             "Landesprogramme der wichtigste Topf. Dieser Ratgeber zeigt Förderhöhen, Voraussetzungen und "
+             "Antragswege aller neun Länder und was die Anschlussförderung an den Bund jetzt bedeutet."),
     "chips": [
         "Wien: <b>35 %</b>, bis 8.000 €",
         "Tirol: <b>bis 18.000 €</b> gesamt",
@@ -34,14 +35,14 @@ ARTICLE = {
         "Bund + Land <b>kombinierbar</b>",
     ],
     "date_published": "2026-03-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "foerderung",
     "hero_alt": "Beratung zur Landesförderung für Wärmepumpen mit Unterlagen am Tisch",
 
     "tldr": [
-        "Die Bundesförderung (Sanierungsoffensive 2026) zahlt bis zu 7.500 € für eine Wärmepumpe, gedeckelt "
-        "bei 30 % der Kosten. Alle neun Bundesländer legen eigene Zuschüsse dazu, die in der Regel "
-        "kombinierbar sind.",
+        "Stand Oktober 2026: Die Bundesförderung (Sanierungsoffensive 2026, bis 7.500 € für eine Wärmepumpe) ist "
+        "ausgeschöpft, neue Registrierungen sind nicht möglich. Alle neun Bundesländer haben eigene Zuschüsse; "
+        "mehrere vergeben sie als Anschlussförderung an den Bund, den aktuellen Stand klärt die Landesstelle.",
         "Die höchsten Gesamtförderungen erreichen Tirol (25 % plus 3.000 € Bonus, bis zu 18.000 €, rund 60 %) "
         "und Wien (35 % bis 8.000 €, mit Bund 15.500 €). Kärnten fördert 35 % bis 6.000 € (laut Berichten "
         "2026 auf 3.000 € angepasst), die Steiermark 35 % der förderbaren Kosten.",
@@ -54,7 +55,7 @@ ARTICLE = {
         "erfasst.",
     ],
     "kpis": [
-        ("7.500 €", "Bundesförderung als Basis"),
+        ("7.500 €", "Bundesförderung 2026 (seit Herbst ausgeschöpft)"),
         ("8.000 €", "höchster Landeszuschuss (Wien)"),
         ("18.000 €", "Gesamtförderung Tirol (max.)"),
         ("9", "Bundesländer mit eigenem Programm"),
@@ -62,7 +63,13 @@ ARTICLE = {
 
     "sections": [
         ("Warum die Landesförderung den Unterschied macht", "warum", f"""
-<p>Die {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} des Bundes ist das Fundament jedes
+{A.box("Stand Oktober 2026: Die Sanierungsoffensive 2026 des Bundes ist beendet, die Mittel sind ausgeschöpft "
+       "und neue Registrierungen sind laut umweltfoerderung.at nicht mehr möglich. Für bereits registrierte "
+       "Projekte gilt die Kombination Bund plus Land weiterhin. Für neue Projekte entscheidet die Richtlinie des "
+       "Landes, ob die Landesförderung ohne Bundesförderung gewährt wird; Kärnten vergab sie bisher als "
+       "Anschlussförderung an den Bund. Klären Sie den Stand vor der Antragstellung mit der Landesstelle. Ob 2027 "
+       "ein neues Bundesprogramm kommt, ist offen.", label="Wichtig:")}
+<p>Die {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} des Bundes war 2026 das Fundament jedes
 Heizungstausches: bis zu 7.500 € für eine {a('waermepumpe', 'Wärmepumpe')}, gedeckelt bei 30 % der
 förderfähigen Kosten. Für viele Haushalte reicht das allein nicht, um den Eigenanteil auf ein tragbares
 Maß zu senken. Die Bundesländer stocken deshalb mit eigenen Programmen auf, und die Unterschiede sind
@@ -108,8 +115,10 @@ Zuschüssen ist mit 85 % der förderfähigen Kosten gedeckelt; darüber wird die
 <p><b>Rechenbeispiel:</b>* Bei Projektkosten von 30.000 € für eine Luft-Wasser-Wärmepumpe ergeben
 7.500 € Bund plus bis zu 6.000 € Land eine Gesamtförderung von bis zu 13.500 € (rund 45 %). Mit der
 berichteten Obergrenze von 3.000 € wären es 10.500 € (35 %).</p>
-<p>Antrag: über das Förderportal des Landes Kärnten, die Bundesförderung separat auf
-sanierungsoffensive.gv.at. Kontakt: Land Kärnten, Abteilung für Umwelt und Energie. Für Photovoltaik
+<p>Antrag: über das Förderportal des Landes Kärnten; die Bundesförderung wurde separat auf
+sanierungsoffensive.gv.at registriert (seit Herbst 2026 nicht mehr möglich). Da Kärnten die Landesförderung
+als Anschlussförderung an den Bund vergibt, klären Sie vor der Antragstellung mit dem Land, wie neue
+Projekte ohne Bundesförderung behandelt werden. Kontakt: Land Kärnten, Abteilung für Umwelt und Energie. Für Photovoltaik
 gilt ein eigenes Programm, siehe {a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')}.</p>
 """),
         ("Steiermark: 35 % Einmalzuschuss", "steiermark", f"""
@@ -187,8 +196,10 @@ den öffentlichen Förderungen.</p>
 """),
         ("So kombinieren Sie Bund, Land und Gemeinde richtig", "kombination", f"""
 {A.steps([
-    ("Bundesförderung registrieren",
-     "Auf sanierungsoffensive.gv.at, vor dem ersten Auftrag. Das reserviert das Bundesbudget für 9 Monate."),
+    ("Bundesförderung registrieren (2026 ausgeschöpft)",
+     "Galt bis Herbst 2026: Registrierung auf sanierungsoffensive.gv.at vor dem ersten Auftrag, das reservierte "
+     "das Bundesbudget für 9 Monate. Seit dem Förderstopp ist das nicht mehr möglich; Registrierte setzen "
+     "innerhalb ihrer Frist um."),
     ("Landesförderung beantragen",
      "In der Regel separat beim Land. In Oberösterreich, Vorarlberg und dem Burgenland erst nach dem "
      "Heizungstausch, in anderen Ländern vor Beginn der Maßnahme. Fristen beachten."),
@@ -228,10 +239,11 @@ Förderung hängt von Projektkosten, Anlagentyp und den aktuellen Bedingungen de
 
     "faq": [
         ("Kann ich die Landesförderung auch ohne Bundesförderung beantragen?",
-         "In den meisten Bundesländern setzt die Landesförderung den gleichzeitigen Bezug der Bundesförderung "
-         "voraus, sie wird als Anschlussförderung vergeben. Ausnahmen gibt es bei Landesförderungen für "
-         "Neubauten oder den Tausch nicht-fossiler Heizsysteme, etwa in Salzburg. Prüfen Sie die Bedingungen "
-         "Ihres Bundeslandes."),
+         "In den meisten Bundesländern setzte die Landesförderung bisher den gleichzeitigen Bezug der "
+         "Bundesförderung voraus, sie wird als Anschlussförderung vergeben. Seit die Bundesförderung im Herbst 2026 "
+         "ausgeschöpft ist, ist diese Frage entscheidend: Klären Sie mit der Landesstelle, ob und wie neue Projekte "
+         "ohne Bundesförderung gefördert werden. Ausnahmen gab es bisher bei Landesförderungen für Neubauten oder "
+         "den Tausch nicht-fossiler Heizsysteme, etwa in Salzburg."),
         ("Welches Bundesland bietet die höchste Förderung?",
          "Tirol mit rund 60 % Förderquote bzw. Gesamtförderungen bis zu 18.000 € (25 % Landeszuschuss plus "
          "3.000 € Bonus plus Bund). Wien folgt mit bis zu 8.000 € Landesförderung, mit dem Bund 15.500 €. "
@@ -270,7 +282,7 @@ Förderung hängt von Projektkosten, Anlagentyp und den aktuellen Bedingungen de
     ],
     "related": [
         ("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung Österreich 2026: Überblick"),
-        ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: Bundesförderung"),
+        ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: beendet, das gilt jetzt"),
         ("foerderung_kaernten", "Photovoltaik-Förderung Kärnten"),
         ("waermepumpe", "Wärmepumpen-Installateur EBZ Energie"),
     ],

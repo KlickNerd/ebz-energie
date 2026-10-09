@@ -33,7 +33,7 @@ ARTICLE = {
         "Garantie: <b>bis 30 Jahre</b> Leistung",
     ],
     "date_published": "2025-12-19",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_detail",
     "hero_alt": "Montage einer Photovoltaik-Komplettanlage mit 10 kWp auf einem Einfamilienhausdach",
 
@@ -59,6 +59,12 @@ ARTICLE = {
 
     "sections": [
         ("Warum 10 kWp die richtige Größe für das Einfamilienhaus ist", "warum-10-kwp", f"""
+<p><b>Eine Photovoltaik-Komplettanlage mit 10 kWp und Speicher kostet in Österreich rund 15.000 bis 22.000 Euro
+vor Förderung</b> (EBZ-Richtpreis, Stand Oktober 2026, inklusive Montage und 20 Prozent Umsatzsteuer). Der
+EAG-Investitionszuschuss beträgt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, zusammen bis zu
+3.000 Euro (Quelle: EAG-Abwicklungsstelle). Lieferumfang und Ablauf bei EBZ Energie finden Sie auf der
+Leistungsseite {a('photovoltaik', 'Photovoltaik-Komplettanlage mit Speicher')} und im Überblick aller
+{a('leistungen', 'Leistungen')}.</p>
 <p>Für die meisten Einfamilienhäuser in Österreich hat sich eine Anlagenleistung von rund 10 Kilowatt-Peak
 (kWp) als Optimum herauskristallisiert. Je nach Standort, Ausrichtung und Neigung erzeugt eine solche
 Anlage etwa 10.000 Kilowattstunden Strom pro Jahr. Das ist mehr, als ein durchschnittlicher Haushalt mit
@@ -148,7 +154,7 @@ Speicher für 10 kWp. Bei der Dimensionierung hilft der Ratgeber
 """),
         ("Wirtschaftlichkeit: Was die Anlage jedes Jahr bringt", "wirtschaftlichkeit", f"""
 <p>Die Rechnung ist einfach: Jede selbst verbrauchte Kilowattstunde ersetzt Netzstrom für rund 32 Cent,
-jede eingespeiste bringt aktuell rund 6 Cent (OeMAG-Marktpreis Juli 2026: 6,146 Cent). Mit Speicher und
+jede eingespeiste bringt 6 bis 10 Cent (OeMAG-Marktpreis September 2026: 10,168 Cent, Juli 2026: 6,146 Cent). Mit Speicher und
 60 bis 80 Prozent Eigenverbrauch sinkt die Stromrechnung um bis zu 85 Prozent. Ein Beispiel aus den
 {a('referenzen', 'EBZ-Referenzen')}: Ein Einfamilienhaus in Villach mit 10 kWp in Ost-West-Ausrichtung,
 Speicher und Notstrom erzeugt rund 11.000 kWh pro Jahr und hat seine Stromkosten um etwa 80 Prozent
@@ -281,7 +287,7 @@ einer Hand liefert und auch nach der Inbetriebnahme erreichbar bleibt.</p>
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team hat über 300 Photovoltaikanlagen "
                     "geplant und montiert, die 10-kWp-Komplettanlage mit Speicher ist das meistgebaute Paket. "
                     "Preise und Förderwerte in diesem Ratgeber sind Richtwerte aus der laufenden Angebotspraxis, "
-                    "Stand September 2026."),
+                    "Stand Oktober 2026."),
     "sources": [
         ("EAG-Abwicklungsstelle: Investitionszuschuss Photovoltaik und Speicher",
          "https://www.eag-abwicklungsstelle.at/wissen/investitionszuschuss-photovoltaik-und-speicher/"),

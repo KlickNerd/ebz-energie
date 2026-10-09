@@ -32,7 +32,7 @@ ARTICLE = {
         "Antrag <b>vor Inbetriebnahme</b>",
     ],
     "date_published": "2025-07-05",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "foerderung",
     "hero_alt": "Förderantrag für Photovoltaik und Stromspeicher wird am Schreibtisch vorbereitet",
 
@@ -41,8 +41,9 @@ ARTICLE = {
         "30 Prozent der Investitionskosten und maximal 50 kWh. Bedingung: Der Speicher wird gemeinsam mit einer "
         "neuen oder erweiterten PV-Anlage errichtet und hat mindestens 0,5 kWh je kWp.",
         "Der Antrag läuft über die EAG-Abwicklungsstelle (OeMAG) in zeitlich begrenzten Fördercalls und muss "
-        "zwingend vor der Inbetriebnahme gestellt werden. 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab "
-        "8. Oktober.",
+        "zwingend vor der Inbetriebnahme gestellt werden. 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis "
+        "22. Oktober (letzter Call). Ab 2027 plant das BMWET eine Systemförderung mit Antrag nach Installation, "
+        "bei der auch die Speicher-Nachrüstung förderbar werden soll (Stand Oktober 2026).",
         "Made-in-Europe-Bonus: 10 Prozent Zuschlag je Komponente (Module, Wechselrichter, Speicher) von der White "
         "List der Abwicklungsstelle, eingeführt mit dem zweiten Call im Juni 2025.",
         "Länder 2026: Kärnten 3.000 Euro Pauschale für PV mit Speicher und 1.000 Euro für die Nachrüstung, "
@@ -63,7 +64,8 @@ ARTICLE = {
 <p>Das Herzstück der staatlichen Speicherförderung ist der Investitionszuschuss aus dem
 Erneuerbaren-Ausbau-Gesetz (EAG). Die Abwicklung übernimmt die EAG-Abwicklungsstelle (OeMAG) in sogenannten
 Fördercalls, also festgelegten Zeitfenstern mit eigenem Budget je Anlagenkategorie (A bis D). Der Vorteil für
-Antragsteller ist die Planbarkeit: Die Termine sind vorab bekannt.</p>
+Antragsteller ist die Planbarkeit: Die Termine sind vorab bekannt. Welcher {a('batteriespeicher', 'PV-Speicher')}
+förderfähig ist und wie EBZ Energie ihn auslegt, zeigt die Leistungsseite Batteriespeicher.</p>
 <p>Für den Speicher gewährt der Bund 150 Euro je Kilowattstunde Nettospeicherkapazität, zusätzlich zum
 Zuschuss für die PV-Module je kWp. Die Deckelung liegt bei 30 Prozent der gesamten Investitionskosten,
 gefördert werden maximal 50 kWh. Drei Bedingungen entscheiden über die Förderfähigkeit:</p>
@@ -116,7 +118,7 @@ werden dürfen.</p>
 {A.table(
     ["Bundesland", "Speicherförderung des Landes 2026", "Kombination mit EAG"],
     [
-        ["Kärnten", "3.000 € Pauschale für neue PV ab 5 kWp mit Speicher ab 5 kWh; 1.000 € für die Speicher-Nachrüstung; Landes-Call 15. April bis 30. Juni 2026", "ja, ohne Anrechnung"],
+        ["Kärnten", "3.000 € Pauschale für neue PV ab 5 kWp mit Speicher ab 5 kWh; 1.000 € für die Speicher-Nachrüstung; 2. Landes-Call 12. Oktober bis 31. Dezember 2026 (1. Call: 15. April bis 30. Juni)", "ja, ohne Anrechnung"],
         ["Oberösterreich", "Speicher-Nachrüstung: 150 €/kWh, max. 15 kWh, bis 2.250 €, nur für PV in Betrieb vor 1. Jänner 2026", "nein beim Speicher"],
         ["Burgenland", "100 €/kWh nutzbar, max. 20 kWh, max. 30 % der Kosten, bis 2.000 €", "nur, wenn der EAG-Zuschuss nicht möglich ist"],
         ["Tirol", "100 €/kWh, max. 10 kWh, bis 1.000 € (netzdienliche Speicher); PV über Wohnhaussanierung", "ja"],
@@ -228,8 +230,9 @@ verkürzt die Amortisation auf den EBZ-typischen Korridor von 4 bis 6 Jahren.</p
          "Kombination aus."),
         ("Wann kann ich den EAG-Investitionszuschuss beantragen?",
          "Nur in den Fördercalls der EAG-Abwicklungsstelle. 2026 laufen sie vom 23. April bis 11. Mai, vom 16. "
-         "bis 30. Juni und ab 8. Oktober. In den Kategorien A und B gilt First-Come-First-Served mit "
-         "Ticketziehung, die Budgets je Call sind begrenzt."),
+         "bis 30. Juni und 8. bis 22. Oktober. In den Kategorien A und B gilt First-Come-First-Served mit "
+         "Ticketziehung, die Budgets je Call sind begrenzt. Nach dem 22. Oktober 2026 gibt es keinen weiteren Call; "
+         "ab 2027 soll der Antrag laut BMWET nach der Installation gestellt werden (Systemförderung, Details offen)."),
         ("Was ist der Made-in-Europe-Bonus?",
          "Ein Zuschlag von 10 Prozent je Komponente für PV-Module, Wechselrichter und Speicher von Herstellern auf "
          "der White List der EAG-Abwicklungsstelle, eingeführt mit dem zweiten Fördercall im Juni 2025. Für die "

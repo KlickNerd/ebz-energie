@@ -32,7 +32,7 @@ ARTICLE = {
         "<b>Nicht</b> mit EAG-Speicher kombinierbar",
     ],
     "date_published": "2026-05-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gewerbe_dach",
     "hero_alt": "Photovoltaikanlage auf einem Gewerbedach in Oberösterreich, Ost-West-Ausrichtung auf Trapezblech",
 
@@ -98,8 +98,7 @@ Hausbesitzer. Mit der EAG-Investitionszuschüsseverordnung-Strom-Novelle 2026, k
 PV-Neuerrichtung oder -Erweiterung. Der Made-in-Europe-Bonus bringt jeweils 10 Prozent pro Komponente
 (Module, Wechselrichter, Speicher) von der White List. Für Anlagen auf landwirtschaftlich genutzten
 Flächen oder Grünland gilt ein Abschlag von 25 Prozent auf den Fördersatz, ausgenommen Agri-PV.</p>
-<p>Die drei EAG-Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie ab
-8. Oktober. Der Antrag muss vor Inbetriebnahme der Anlage online bei der EAG-Abwicklungsstelle gestellt
+<p>Die drei EAG-Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie vom 8. bis 22. Oktober. Der Antrag muss vor Inbetriebnahme der Anlage online bei der EAG-Abwicklungsstelle gestellt
 werden. Mehr dazu im Ratgeber {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
 """),
         ("Speicher-Nachrüstung Oberösterreich 2026 im Detail", "speicher", f"""
@@ -227,6 +226,11 @@ Zum Vergleich: Der Richtpreis für eine 10-kWp-Anlage mit Speicher liegt bei run
 Förderung.</p>
 <p><small>*Beispielkonditionen. Der Made-in-Europe-Bonus setzt Komponenten von der White List voraus, die
 Gemeindeförderung hängt vom Wohnort ab.</small></p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Jetzt Förderung und Technik aus einer Hand",
        "Wir prüfen Ihre Förderschiene, dimensionieren Speicher und Anlage förderfähig und übernehmen die "
        "Anträge beim Bund, beim Land und bei der Gemeinde.",

@@ -32,7 +32,7 @@ ARTICLE = {
         "Landesantrag bis <b>6 Monate</b> nach Rechnung",
     ],
     "date_published": "2026-05-20",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Hausdach unter klarem Himmel, wie im sonnenreichen Burgenland",
 
@@ -96,8 +96,7 @@ Hausbesitzer. Die Konditionen wurden mit der EAG-Investitionszuschüsseverordnun
 <p>Stromspeicher fördert der Bund mit 150 Euro je kWh bis maximal 50 kWh, nur in Kombination mit einer
 PV-Neuerrichtung oder -Erweiterung. Der Made-in-Europe-Bonus bringt jeweils 10 Prozent pro Komponente
 (PV-Module, Wechselrichter, Speicher) von der White List der EAG-Abwicklungsstelle.</p>
-<p>Die drei EAG-Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie ab
-8. Oktober. Der Antrag muss vor Inbetriebnahme online gestellt werden. Mehr dazu im Ratgeber
+<p>Die drei EAG-Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie vom 8. bis 22. Oktober. Der Antrag muss vor Inbetriebnahme online gestellt werden. Mehr dazu im Ratgeber
 {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
 """),
         ("Burgenländische Stromspeicher-Förderung 2026 im Detail", "speicher", f"""
@@ -219,6 +218,11 @@ Speicher-Nachrüstung, dazu die Gemeinde. Wer den Bundesantrag auslässt, verlie
 Gesamtförderung realistisch, primär aus der EAG, ergänzt um Made-in-Europe-Bonus und Gemeindezuschuss.
 Wer eine Bestandsanlage um einen Speicher ergänzt, erhält vom Land bis zu 2.000 Euro. Zum Vergleich: Der
 Richtpreis für eine 10-kWp-Anlage mit Speicher liegt bei rund 15.000 bis 22.000 Euro vor Förderung.</p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Jetzt Förderung und Technik aus einer Hand",
        "Wir prüfen Ihre Förderschiene, planen Speicher und Anlage förderfähig und stellen die Anträge in der "
        "richtigen Reihenfolge.",

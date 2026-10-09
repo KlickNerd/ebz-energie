@@ -33,7 +33,7 @@ ARTICLE = {
         "Montage: <b>2 bis 4 Tage</b>",
     ],
     "date_published": "2026-02-20",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "waermepumpe",
     "hero_alt": "Luft-Wasser-Wärmepumpe an der Fassade eines sanierten Altbaus",
 
@@ -84,8 +84,8 @@ zutreffen:</p>
   <li><b>Wechsel von einer fossilen Heizung:</b> Wer heute mit Öl oder Gas heizt, hat das größte
   Einsparpotenzial. Die Betriebskosten sinken sofort, selbst wenn das Gebäude noch nicht perfekt
   gedämmt ist.</li>
-  <li><b>Förderung möglich:</b> Die aktuellen Programme fördern den Kesseltausch im Bestand
-  ausdrücklich, Details weiter unten.</li>
+  <li><b>Förderung:</b> Die Programme fördern den Kesseltausch im Bestand ausdrücklich; die Bundesförderung
+  2026 ist allerdings seit Herbst 2026 ausgeschöpft, Details weiter unten.</li>
 </ul>
 {A.box("Im schlecht gedämmten Altbau (ungedämmte Außenwände, einfach verglaste Fenster, hohe "
        "Wärmeverluste) ist eine Wärmepumpe technisch möglich, die Effizienz leidet aber. Dann empfehlen "
@@ -208,10 +208,11 @@ und nachts bereit. Wie die Kombination geplant wird:
 <p>Die aktuellen Förderungen machen den Einbau einer Wärmepumpe im Altbau besonders attraktiv, weil der
 Wechsel von einer fossilen Heizung ausdrücklich unterstützt wird:</p>
 <ul>
-  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> Wer im Altbau eine Gas- oder Ölheizung durch eine
-  Wärmepumpe ersetzt, erhält einen Investitionszuschuss von mehreren tausend Euro, abhängig von
-  Gebäudetyp und Wärmepumpe. Details: {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}
-  und {a('/sauber-heizen-fuer-alle-2026/', 'Sauber Heizen für Alle 2026')}.</li>
+  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> 2026 gab es für den Tausch einer Gas- oder Ölheizung im
+  Altbau bis zu 7.500 Euro Investitionszuschuss. Stand Oktober 2026 sind die Programme
+  {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} und
+  {a('/sauber-heizen-fuer-alle-2026/', 'Sauber Heizen für Alle 2026')} ausgeschöpft, neue Registrierungen
+  sind nicht möglich; ob 2027 ein Folgeprogramm kommt, ist offen.</li>
   <li><b>Landesförderung Kärnten und Steiermark:</b> Beide Bundesländer fördern zusätzlich, auch
   Sanierungsmaßnahmen, die gemeinsam mit der Wärmepumpe umgesetzt werden. Die Kombination aus
   Wärmepumpen- und Sanierungsförderung senkt die Investition erheblich. Überblick:
@@ -298,7 +299,7 @@ Kosten.</p>
     "related": [
         ("waermepumpe", "Wärmepumpen-Installateur in Kärnten und Steiermark"),
         ("/kosten-einer-waermepumpe/", "Kosten einer Wärmepumpe 2026"),
-        ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: Kesseltausch fördern lassen"),
+        ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: beendet, das gilt jetzt"),
         ("/heizen-mit-waermepumpe/", "Heizen mit Wärmepumpe: Grundlagen"),
     ],
     "cta": {

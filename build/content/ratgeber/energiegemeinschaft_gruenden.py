@@ -32,7 +32,7 @@ ARTICLE = {
         "Dauer: <b>Wochen bis Monate</b>",
     ],
     "date_published": "2026-07-03",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gewerbe_dach",
     "hero_alt": "Großes Dach mit Photovoltaikanlage als Erzeuger einer neu gegründeten Energiegemeinschaft",
 
@@ -64,6 +64,10 @@ und vergünstigt abgerechnet werden kann. Bevor Sie damit anfangen, lohnt ein Bl
 In Österreich gibt es mittlerweile über 11.000 Energiegemeinschaften, davon mehr als 5.500
 Erneuerbare-Energie-Gemeinschaften. In Kärnten und der Steiermark findet sich in fast jedem
 Umspannwerksbereich eine aktive Gemeinschaft oder eine, die gerade entsteht.</p>
+<p>Dieser Ratgeber richtet sich an alle, die eine Energiegemeinschaft selbst gründen wollen, und erklärt die
+sechs Schritte von der Rechtsform bis zur ersten Abrechnung. Gemeinden, Betriebe und Wohnbauträger, die sich
+die Gründung abnehmen lassen möchten, finden das Angebot {a('eg_gewerbe', 'Energiegemeinschaft gründen lassen')}
+auf unserer Leistungsseite für Gewerbe und Gemeinden.</p>
 <p>Gründen lohnt sich dann, wenn Sie mehrere Erzeuger und Abnehmer kennen, die an einem Trafo hängen, oder
 wenn eine Gemeinde oder ein Betrieb die Gemeinschaft als eigenes Projekt aufsetzen will. Zwei Personen
 können zwar eine Gemeinschaft gründen, der Aufwand mit Verein und Netzbetreibervertrag ist aber derselbe
@@ -113,7 +117,8 @@ Rechtsformen stellt die Koordinationsstelle für Energiegemeinschaften kostenlos
      "Graz). Danach werden die Zählpunkte über das EDA-Portal angemeldet, jedes Mitglied bestätigt die "
      "Datenfreigabe im eigenen Kundenportal."),
     ("Preise und Aufteilungsschlüssel festlegen",
-     "Einspeisepreis deutlich über dem OeMAG-Marktpreis (Juli 2026: 6,146 Cent), Bezugspreis unter dem "
+     "Einspeisepreis über dem OeMAG-Marktpreis im Jahresmittel (2026: 6,146 Cent im Juli bis 10,168 Cent im "
+     "September), Bezugspreis unter dem "
      "Arbeitspreis der Lieferanten, typisch 8 bis 12 Cent Einspeisung und 12 bis 16 Cent Bezug. Die "
      "Differenz deckt die Gemeinschaftskosten. Dynamische Aufteilung nach tatsächlichem Verbrauch ist für "
      "die meisten Gemeinschaften effizienter als feste Prozentsätze."),
@@ -257,7 +262,8 @@ Planung bis zur Installation.</p>
          "28 Prozent (regionale EEG). Österreichweites Teilen ist als Bürgerenergiegemeinschaft möglich, dann aber "
          "ohne Netzentgelt-Rabatt und ohne Abgabenbefreiung."),
         ("Welche Preise soll die Gemeinschaft festlegen?",
-         "Der Einspeisepreis sollte deutlich über dem OeMAG-Marktpreis liegen (Juli 2026: 6,146 Cent), der "
+         "Der Einspeisepreis sollte über dem OeMAG-Marktpreis im Jahresmittel liegen (2026: 6,146 Cent im Juli bis "
+         "10,168 Cent im September), der "
          "Bezugspreis unter dem Arbeitspreis der Lieferanten. Typisch sind 8 bis 12 Cent Einspeisung und 12 bis "
          "16 Cent Bezug. Die Differenz deckt Plattform und Verwaltung."),
         ("Welche technische Basis brauche ich?",

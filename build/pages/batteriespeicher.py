@@ -2,17 +2,21 @@
 
 Quellen: Live-Seite /batteriespeicher/ sowie die beiden alten Beitraege
 /photovoltaik-mit-speicher/ und /batteriespeicher-und-photovoltaik/ (gehen per 301
-in diese Seite auf). Roter Faden: Hook -> Problem (Eigenverbrauch 30 %) -> fuer wen
-(Neuanlage oder Nachruestung) -> Nutzen/Zahlen -> Speichergroesse -> Kosten ->
-Foerderung + Finanzierung -> Notstrom/Technik -> warum EBZ -> Referenzen -> Ablauf
--> FAQ -> Cluster-Links -> Kontakt.
+in diese Seite auf). Roter Faden: Hook -> Definition -> fuer wen (Neuanlage oder
+Nachruestung) -> Nutzen/Zahlen -> Speichergroesse -> Technik -> Kosten (Preis je kWh)
+-> Foerderung + Finanzierung -> Sicherheit/Aufstellort/EMS -> Mario -> warum EBZ
+-> Referenzen -> Ablauf -> FAQ -> Cluster-Links -> Kontakt.
 
+SEO/GEO-Briefing build/seo/batteriespeicher.json (Stand 2026-10-09): Primaer
+"batteriespeicher" (4.400), "pv speicher" als Synonym; Preis pro kWh, Faustformel,
+Marken (BYD, Fronius, Huawei nur als Beispiele), Entladetiefe/Wirkungsgrad,
+Brandschutz/Aufstellort. Foerderzahlen aus build/seo/_fakten_2026-10.md (Kaernten
+2. Call 12.10. bis 31.12.2026, EAG bis 22.10.2026, Ausblick Systemfoerderung 2027).
 Bereinigt gegenueber der Quelle: Gedankenstriche, "Kaernten, Salzburg und der
 Steiermark" (Montage nur Kaernten + Steiermark), "ueber 100 Anlagen pro Jahr" (300+
 Projekte), "Stromkosten fast auf Null" / "100 % Eigenverbrauch" (bis zu 85 %),
 "nicht brennbar" (LFP gilt als besonders sicher), "verlustfrei" (Wirkungsgrad ueber
-95 %), Kosten 15.000 bis 25.000 (Richtpreis 15.000 bis 22.000), Carport-Absatz im
-Fazit des alten Beitrags (Copy-Paste-Rest) verworfen.
+95 %), Kosten 15.000 bis 25.000 (Richtpreis 15.000 bis 22.000).
 """
 
 from common import IMG, NAP, CLAIMS, AUTHOR, AUTHOR_ROLE, faq_jsonld, u, a, write_page, load_reviews
@@ -20,48 +24,51 @@ from layout import page
 import components as C
 
 PATH = "/batteriespeicher/"
-TITLE = "Batteriespeicher: bis 80 % Eigenverbrauch, Notstrom | EBZ"
-DESC = ("Batteriespeicher in Kärnten und der Steiermark: Eigenverbrauch von 30 auf bis zu 80 %, Notstrom, "
-        "Nachrüstung, Förderung 150 € je kWh. Fachbetrieb, 4,9 Sterne.")
+TITLE = "Batteriespeicher für PV: Größe, Kosten, Förderung | EBZ"
+DESC = ("PV-Speicher vom Fachbetrieb in Kärnten und der Steiermark: Eigenverbrauch von 30 auf bis zu 80 %, Notstrom, "
+        "Nachrüstung, 150 € je kWh Förderung, Preis pro kWh.")
 
 FAQ = [
-    ("Wie groß sollte mein Batteriespeicher sein?",
-     "Als Faustregel gilt rund 1 kWh Speicherkapazität je kWp Modulleistung beziehungsweise je 1.000 kWh "
-     "Jahresstromverbrauch. Ein Haushalt mit 4.500 kWh und einer 5-kWp-Anlage ist mit 4 bis 5 kWh gut "
-     "versorgt, bei 10 kWp und Wärmepumpe oder E-Auto sind eher 10 kWh sinnvoll. Für die Bundesförderung "
-     "muss der Speicher mindestens 0,5 kWh je kWp haben. Wir legen die Größe anhand Ihres Verbrauchs aus."),
-    ("Wie lange hält ein Stromspeicher?",
-     "Moderne Lithium-Eisenphosphat-Speicher (LFP) sind für 6.000 bis 10.000 Ladezyklen ausgelegt. Bei "
-     "einem Zyklus pro Tag entspricht das 15 bis 20 Jahren Betrieb. Die Hersteller geben üblicherweise 10 "
-     "Jahre Garantie und sichern zu, dass die Kapazität in dieser Zeit nicht unter 80 % fällt."),
-    ("Was kostet ein Batteriespeicher?",
-     "Als Richtwert gelten in Österreich 800 bis 1.200 € je Kilowattstunde Speicherkapazität inklusive "
-     "Installation. Ein 10-kWh-Speicher liegt damit bei rund 8.000 bis 12.000 € vor Förderung. Eine "
-     "komplette 10-kWp-Anlage mit Speicher kostet bei EBZ Energie rund 15.000 bis 22.000 € vor Förderung."),
+    ("Wie groß sollte mein Batteriespeicher sein, und was passiert, wenn er zu groß ist?",
+     "Faustformel 1 kWh je kWp Modulleistung oder 1 bis 1,5 kWh je 1.000 kWh Jahresverbrauch: 4.500 kWh mit 5 kWp "
+     "brauchen 4 bis 5 kWh, 10 kWp mit Wärmepumpe oder E-Auto eher 10 kWh. Ein zu großer Speicher wird im "
+     "Winterbetrieb nie voll und verlängert die Amortisation; für die Bundesförderung reichen 0,5 kWh je kWp."),
+    ("Wie hoch sind die Kosten pro kWh für einen Batteriespeicher?",
+     "800 bis 1.200 € je kWh inklusive Installation (Richtwert Österreich, Stand Oktober 2026)*: 5 kWh kosten 4.000 "
+     "bis 6.000 €, 10 kWh 8.000 bis 12.000 €. Nach dem EAG-Zuschuss von 150 € je kWh bleiben 650 bis 1.050 € je kWh. "
+     "Eine komplette 10-kWp-Anlage mit Speicher liegt bei 15.000 bis 22.000 € vor Förderung."),
+    ("Werden Batteriespeicher 2026 billiger?",
+     "Die Preise je kWh sind in den vergangenen Jahren gesunken, 2026 liegt der Richtwert bei 800 bis 1.200 €*. "
+     "Warten lohnt selten: Jede nicht gespeicherte kWh kostet rund 32 Cent, der EAG-Zuschuss endet mit dem Fördercall "
+     "am 22. Oktober 2026, die Kärntner Pauschale am 31. Dezember 2026. Die Systemförderung ab 2027 ist geplant, die "
+     "Höhe offen."),
     ("Kann ich einen Speicher bei meiner bestehenden PV-Anlage nachrüsten?",
-     "Ja, fast immer. Am flexibelsten ist die AC-Kopplung: Der Speicher bekommt einen eigenen "
-     "Batteriewechselrichter und arbeitet unabhängig vom vorhandenen PV-Wechselrichter. Alternativ tauschen "
-     "wir den alten Wechselrichter gegen einen Hybridwechselrichter (DC-Kopplung), was sich bei älteren "
-     "Anlagen oder bei Notstromwunsch oft anbietet."),
+     "Ja, fast immer. Am flexibelsten ist die AC-Kopplung mit eigenem Batteriewechselrichter, der vorhandene "
+     "PV-Wechselrichter bleibt. Alternativ tauschen wir ihn gegen einen Hybridwechselrichter (DC-Kopplung), sinnvoll "
+     "bei älteren Anlagen oder Notstromwunsch. Kärnten fördert die Nachrüstung ab 5 kWh 2026 mit 1.000 €."),
     ("Funktioniert der Speicher bei einem Stromausfall?",
-     "Nur, wenn das System notstromfähig geplant ist. Eine normale PV-Anlage schaltet bei Netzausfall aus "
-     "Sicherheitsgründen ab. Für Notstrom braucht es einen notstromfähigen Hybridwechselrichter, einen dafür "
-     "freigegebenen Speicher und eine Umschalteinrichtung, die das Haus vom Netz trennt. Ein 10-kWh-Speicher "
-     "deckt 500 Watt Dauerlast rund 20 Stunden."),
+     "Nur, wenn das System notstromfähig geplant ist: Eine normale PV-Anlage schaltet bei Netzausfall ab. Es braucht "
+     "einen notstromfähigen Hybridwechselrichter, einen freigegebenen Speicher und eine Umschalteinrichtung, die das "
+     "Haus vom Netz trennt. Ein 10-kWh-Speicher deckt 500 Watt Dauerlast rund 20 Stunden."),
+    ("Was passiert mit dem Strom, wenn der Speicher voll ist?",
+     "Der Überschuss fließt ins Netz und wird vergütet, im OeMAG-Marktpreismodell mit 10,168 Cent je kWh (September "
+     "2026). Besser: Ein Energiemanagement lenkt ihn in Wärmepumpe, Warmwasser oder Wallbox, oder Sie teilen ihn in "
+     "einer Energiegemeinschaft. Der Speicher nimmt keinen Schaden, das Batteriemanagement beendet die Ladung."),
     ("Wie hoch ist die Förderung für einen Batteriespeicher 2026?",
-     "Der Bund fördert Speicher mit 150 € je kWh (maximal 50 kWh), allerdings nur gemeinsam mit einer "
-     "neuen oder erweiterten PV-Anlage. Kärnten zahlt 2026 zusätzlich 3.000 € Pauschale für neue PV-Anlagen "
-     "ab 5 kWp mit Speicher ab 5 kWh und 1.000 € für die Speicher-Nachrüstung an Bestandsanlagen. Für "
-     "10 kWp mit 10 kWh sind in Kärnten in Summe 6.000 € erreichbar."),
-    ("Was passiert mit dem Speicher im Winter?",
-     "Im Winter produziert die PV-Anlage weniger, der Speicher wird nicht jeden Tag voll. Das regelt das "
-     "System automatisch: Jede überschüssige Kilowattstunde wird gespeichert und deckt die teuren "
-     "Verbrauchsspitzen am Abend ab, bevor Strom aus dem Netz bezogen wird. Deshalb planen wir die Kapazität "
-     "nicht zu groß, ein überdimensionierter Speicher ist unwirtschaftlich."),
-    ("Was ist der Unterschied zwischen kWp, kW und kWh?",
-     "kWp (Kilowatt-Peak) ist die Spitzenleistung Ihrer Solaranlage. kW (Kilowatt) ist die Leistung, die "
-     "gerade erzeugt oder verbraucht wird, ein Herd hat zum Beispiel 2 kW. kWh (Kilowattstunde) ist die "
-     "Energiemenge: wie viel in Ihren Speicher passt oder wie viel Strom Sie im Jahr verbrauchen."),
+     "Bund: 150 € je kWh (maximal 50 kWh), nur mit neuer oder erweiterter PV-Anlage, letzter Fördercall bis 22. "
+     "Oktober 2026. Kärnten: vom 12. Oktober bis 31. Dezember 2026 3.000 € Pauschale für Neuanlagen ab 5 kWp mit "
+     "Speicher ab 5 kWh, 1.000 € für die Nachrüstung. Für 10 kWp mit 10 kWh sind in Kärnten 6.000 € erreichbar."),
+    ("Wo wird der Speicher aufgestellt und wie steht es um den Brandschutz?",
+     "Im Keller, in der Garage oder im Technikraum: frostfrei, trocken, nicht im Fluchtweg oder Schlafzimmer, nahe am "
+     "Zählerkasten. LFP-Zellen ohne Kobalt gelten als besonders sicher, das Batteriemanagement trennt bei Fehlern ab, "
+     "ein Rauchmelder im Raum ist Standard. Die Montage dokumentieren wir im Projektbericht."),
+    ("Welche Marken verbaut EBZ (BYD, Fronius, Huawei)?",
+     "Wir planen herstellerunabhängig: je nach Anlage zum Beispiel Hochvolt-Speicher von BYD oder Huawei mit "
+     "Hybridwechselrichtern von Fronius oder Huawei, bei Nachrüstungen auch AC-gekoppelte Systeme. Entscheidend sind "
+     "Garantie 10 Jahre auf 80 % Restkapazität, Notstromfähigkeit und modulare Erweiterbarkeit."),
+    ("Wie lange hält ein Stromspeicher?",
+     "LFP-Speicher sind für 6.000 bis 10.000 Ladezyklen ausgelegt, bei einem Zyklus pro Tag also 15 bis 20 Jahre. "
+     "Die Hersteller geben üblicherweise 10 Jahre Garantie darauf, dass die Kapazität nicht unter 80 % fällt."),
 ]
 
 
@@ -70,12 +77,12 @@ def build():
     body = "".join([
         # 1. Hook
         C.hero(
-            eyebrow="Batteriespeicher für Photovoltaik in Kärnten und der Steiermark",
-            h1="Batteriespeicher: Ihr Sonnenstrom, auch wenn die Sonne weg ist",
-            lead=("Ohne Speicher nutzen Sie nur rund 30 % Ihres eigenen Solarstroms, der Rest geht für wenige "
-                  "Cent ins Netz. Mit einem passend geplanten Batteriespeicher heben Sie den Eigenverbrauch auf "
-                  "bis zu 80 %, haben Strom am Abend und auf Wunsch auch bei Stromausfall. Wir planen, montieren "
-                  "und betreuen Ihr Speichersystem mit zertifizierten Fachkräften aus Villach."),
+            eyebrow="Batteriespeicher und PV-Speicher für Kärnten und die Steiermark",
+            h1="Batteriespeicher für Ihre PV-Anlage: Sonnenstrom auch am Abend und in der Nacht",
+            lead=("Ein Batteriespeicher hebt den Eigenverbrauch Ihrer Photovoltaikanlage von rund 30 auf 60 bis 80 %*. "
+                  "Richtwert: 800 bis 1.200 € je kWh inklusive Installation, der Bund fördert 150 € je kWh. Wir planen, "
+                  "montieren und betreuen Ihr Speichersystem mit zertifizierten Fachkräften aus Villach, Notstrom und "
+                  "Nachrüstung inklusive."),
             badges=[("bis zu 80 %", "Eigenverbrauch"),
                     ("Notstrom", "auf Wunsch"),
                     ("Nachrüstung", "für Bestandsanlagen")],
@@ -88,8 +95,8 @@ def build():
         # Quick Trust
         C.kpis([
             ("bis zu 80 %", "Eigenverbrauch mit Speicher"),
-            ("15 bis 20 Jahre", "Lebensdauer moderner LFP-Speicher"),
-            ("150 € je kWh", "Bundesförderung 2026 mit neuer PV-Anlage"),
+            ("800 bis 1.200 €", "Preis pro kWh inkl. Installation*"),
+            ("150 € je kWh", "EAG-Speicherförderung 2026"),
             (NAP["rating"], "Sterne auf Google"),
         ]),
         # Kurze Definition (GEO)
@@ -97,21 +104,22 @@ def build():
             eyebrow="Kurz erklärt",
             h2="Was ist ein Batteriespeicher?",
             paragraphs=[
-                ("Ein Batteriespeicher (auch Stromspeicher oder Solarspeicher) ist eine wiederaufladbare Batterie, "
-                 "die den Solarstrom Ihrer Photovoltaikanlage zwischenspeichert. Mittags, wenn die Anlage mehr "
-                 "produziert als das Haus verbraucht, lädt er auf. Am Abend und in der Nacht gibt er den Strom "
-                 "wieder ab, bevor etwas aus dem Netz bezogen wird."),
-                ("Gesteuert wird das vom Hybridwechselrichter, der PV-Wechselrichter und Batteriemanager in einem "
-                 "Gerät vereint. Die Kapazität wird in Kilowattstunden (kWh) angegeben, typische Heimspeicher haben "
-                 "5 bis 15 kWh."),
+                ("Ein Batteriespeicher ist eine wiederaufladbare Batterie auf Basis von Lithium-Eisenphosphat (LFP), "
+                 "die den Solarstrom Ihrer Photovoltaikanlage zwischenspeichert: Mittags lädt er den Überschuss, am "
+                 "Abend und in der Nacht gibt er ihn ab, bevor Strom aus dem Netz bezogen wird. Typische Heimspeicher "
+                 "haben 5 bis 15 kWh nutzbare Kapazität (EBZ Energie, Stand Oktober 2026)."),
+                ("Ob Sie Stromspeicher, Solarspeicher, PV Speicher oder Photovoltaik Speicher sagen: gemeint ist "
+                 "dieselbe Technik. Gesteuert wird sie vom Hybridwechselrichter, der PV-Wechselrichter und "
+                 "Batteriemanagement in einem Gerät vereint; bei der Nachrüstung übernimmt das ein eigener "
+                 "Batteriewechselrichter."),
             ],
         ),
         # 2. Fuer wen: Neuanlage oder Nachruestung
         C.audience_split(
             eyebrow="Für wen planen wir?",
             h2="Neue Anlage mit Speicher oder Speicher nachrüsten: beides geht",
-            intro=("Wählen Sie, was auf Sie zutrifft. Die Technik unterscheidet sich, das Ziel ist dasselbe: mehr "
-                   "eigener Strom, weniger Netzbezug."),
+            intro=("Wer bei bestehender Photovoltaik Speicher nachrüsten möchte, braucht andere Technik als beim Neubau. "
+                   "Das Ziel ist dasselbe: mehr eigener Strom, weniger Netzbezug."),
             left={
                 "img": IMG["gen_eigenheim"],
                 "alt": "Einfamilienhaus mit neuer Photovoltaikanlage und Batteriespeicher in Kärnten",
@@ -119,7 +127,7 @@ def build():
                 "bullets": [
                     "DC-gekoppeltes System mit Hybridwechselrichter: höchster Wirkungsgrad",
                     "Speicher und Notstrom von Anfang an mitgeplant",
-                    "Bundesförderung 150 € je kWh plus Landesförderung, 10 kWp mit Speicher rund 15.000 bis 22.000 €*",
+                    "EAG-Zuschuss 150 € je kWh plus Land Kärnten 3.000 €, 10 kWp mit Speicher rund 15.000 bis 22.000 €*",
                 ],
                 "cta": ("kontakt", "Beratung für die neue Anlage"),
             },
@@ -128,79 +136,83 @@ def build():
                 "alt": "Montagearbeiten an einer bestehenden Photovoltaikanlage auf dem Dach, Vorbereitung für die Speicher-Nachrüstung",
                 "title": "Sie haben bereits eine Solaranlage",
                 "bullets": [
-                    "AC-Kopplung: Ihr Wechselrichter bleibt, der Speicher kommt mit eigenem Batteriewechselrichter dazu",
+                    "AC-gekoppelt: Ihr Wechselrichter bleibt, der Speicher kommt mit eigenem Batteriewechselrichter dazu",
                     "Richtwert 800 bis 1.200 € je kWh inklusive Installation*",
-                    "Kärnten fördert die Nachrüstung ab 5 kWh mit 1.000 € Pauschale",
+                    "Kärnten fördert die Nachrüstung ab 5 kWh mit 1.000 € (Antrag 12. Oktober bis 31. Dezember 2026)",
                 ],
-                "cta": ("/pv-speicher-nachruesten/", "Ratgeber: Speicher nachrüsten"),
+                "cta": ("/pv-speicher-nachruesten/", "PV-Speicher nachrüsten: Ablauf und Kosten"),
             },
         ),
-        # 3. Das Problem und die Zahl dahinter
+        # 3. Das Problem und die Zahl dahinter (GEO-Passage)
         C.problem_compare(
-            eyebrow="Das Problem jeder Photovoltaikanlage ohne Speicher",
-            h2="Von 30 auf bis zu 80 % Eigenverbrauch",
-            intro=("Eine PV-Anlage produziert den meisten Strom zur Mittagszeit, wenn oft niemand zu Hause ist. "
-                   "Der Überschuss fließt für 5 bis 10 Cent ins Netz, am Abend kaufen Sie denselben Strom für rund "
-                   "32 Cent zurück. Ein Speicher verschiebt den Mittagsstrom in den Abend.*"),
+            eyebrow="Das Problem jeder PV-Anlage ohne Speicher",
+            h2="Von 30 auf bis zu 80 % Eigenverbrauch: was der Speicher ändert",
+            intro=("Ein Batteriespeicher hebt den Eigenverbrauch einer PV-Anlage von rund 30 auf 60 bis 80 %*. Bei "
+                   "Netzstrompreisen von rund 30 bis 35 Cent je kWh und einer Einspeisevergütung von 10,168 Cent "
+                   "(OeMAG-Marktpreis September 2026) lohnt sich ein Speicher ab etwa 5 kWp PV-Leistung und 3.500 kWh "
+                   "Jahresverbrauch (Stand Oktober 2026). *Richtwerte, abhängig vom Lastprofil."),
             bars=[
                 ("Eigenverbrauch ohne Speicher", 30, "bad", "rund 30 %*"),
                 ("Eigenverbrauch mit passendem Speicher", 80, "good", "bis zu 80 %*"),
             ],
             aside=("Was der Speicher für Sie ändert", [
-                ("▮", "Strom am Abend", "Kochen, Waschen, Fernsehen mit eigenem Sonnenstrom statt Netzbezug."),
+                ("▮", "Strom am Abend", "Kochen, Waschen, Fernsehen mit eigenem Sonnenstrom; bei 10 kWp rund 70 % Autarkie.*"),
                 ("€", "Bis zu 85 % weniger Stromkosten", "Jede gespeicherte kWh ersetzt eine teuer gekaufte."),
                 ("✓", "Notstrom bei Blackout", "Notstromfähige Systeme versorgen Kühlschrank, Heizung und Router weiter."),
                 ("⚙", "Ein System für alles", "Der Hybridwechselrichter steuert auch Wallbox und Wärmepumpe mit."),
             ]),
         ),
-        # 4. Speichergroesse
+        # 4. Speichergroesse (Faustformel)
         C.cards_section(
-            eyebrow="Die richtige Speichergröße",
-            h2="Wir schätzen nicht, wir berechnen",
-            intro=("Ein zu kleiner Speicher ist abends zu früh leer, ein zu großer wird im Winter nie voll und kostet "
-                   "unnötig. Faustregel: rund 1 kWh Kapazität je kWp Modulleistung oder je 1.000 kWh Jahresverbrauch. "
-                   "Diese Richtwerte zeigen die Richtung, die Auslegung machen wir anhand Ihres Lastprofils.*"),
+            eyebrow="Speichergröße je Jahresverbrauch und Anlage",
+            h2="Welche Speichergröße passt? Faustformel und drei Haushalte",
+            intro=("Faustformel 1 kWh je kWp Modulleistung oder 1 bis 1,5 kWh je 1.000 kWh Jahresverbrauch (EBZ Energie, "
+                   "Stand Oktober 2026). Ein zu kleiner Speicher ist abends früh leer, ein zu großer wird im Winterbetrieb "
+                   "nie voll; die Auslegung machen wir anhand Ihres Lastprofils.*"),
             cards=[
                 {"ic": "⌂", "title": "Kleiner Haushalt: 3.000 bis 4.500 kWh",
                  "text": "Empfohlen: 4 bis 7 kWp PV-Leistung und 4 bis 8 kWh Speicher. Deckt den Nachtbedarf im Sommer und in der Übergangszeit."},
                 {"ic": "☀", "title": "Familie: 6.000 kWh",
-                 "text": "Empfohlen: 8 bis 10 kWp und 8 bis 10 kWh Speicher. Die typische Kombination für das Einfamilienhaus, auf Wunsch mit Notstrom."},
+                 "text": "Empfohlen: 8 bis 10 kWp und 8 bis 10 kWh Speicher. Die typische Kombination für das Einfamilienhaus, auf Wunsch mit Notstrom.",
+                 "link_key": "/ab-wann-lohnt-sich-photovoltaik-mit-speicher/", "link_text": "Ab wann lohnt sich PV mit Speicher?"},
                 {"ic": "♨", "title": "Mit Wärmepumpe oder E-Auto: 8.000 kWh und mehr",
-                 "text": "Empfohlen: 10 kWp und mehr, 10 bis 15 kWh Speicher. Hier lohnt auch ein Energiemanagement, das Speicher, Wallbox und Wärmepumpe steuert.",
-                 "link_key": "ems", "link_text": "Zum Energiemanagement"},
+                 "text": "Empfohlen: 10 kWp und mehr, 10 bis 15 kWh Speicher. Hier lohnt ein Energiemanagement, das Speicher, Wallbox und Wärmepumpe steuert.",
+                 "link_key": "ems", "link_text": "Energiemanagement für Speicher und Wärmepumpe"},
             ],
         ),
         # 5. Technik und Notstrom (Bild: Speicher, Hochformat)
         C.media_text(
             eyebrow="Technik, die 20 Jahre hält",
-            h2="Lithium-Eisenphosphat, Hybridwechselrichter und Notstrom",
+            h2="Technik: LFP, Hybridwechselrichter, Entladetiefe, Zyklen, Garantie",
             paragraphs=[
-                ("Wir setzen auf Lithium-Eisenphosphat-Speicher (LFP). Sie gelten als besonders sicher und "
-                 "langlebig, erreichen einen Wirkungsgrad von über 95 % und sind für 6.000 bis 10.000 Ladezyklen "
-                 "ausgelegt. Ein Batteriemanagementsystem überwacht jede Zelle und schützt vor Überladung und "
-                 "Tiefentladung. Die nutzbare Kapazität liegt bei aktuellen Systemen bei 90 bis 100 Prozent der "
-                 "Nennkapazität."),
-                ("Notstrom ist Planungssache, kein Zubehör: Eine normale PV-Anlage schaltet bei Stromausfall ab. "
-                 "Mit notstromfähigem Hybridwechselrichter, freigegebenem Speicher und Umschalteinrichtung trennt "
-                 "sich Ihr Haus vom Netz und läuft im Inselbetrieb weiter. Bei einer Ersatzstromlösung lädt die "
-                 "Anlage den Speicher bei Sonne sogar nach."),
+                ("Wir setzen auf Lithium-Eisenphosphat (LFP): Wirkungsgrad über 95 %, 6.000 bis 10.000 Ladezyklen, "
+                 "Herstellergarantie 10 Jahre auf mindestens 80 % Restkapazität. Die Entladetiefe aktueller Systeme "
+                 "liegt bei 90 bis 100 % der Nennkapazität, ein Batteriemanagementsystem überwacht jede Zelle und "
+                 "schützt vor Überladung und Tiefentladung (Stand Oktober 2026)."),
+                ("Hochvolt-Speicher von Herstellern wie BYD oder Huawei arbeiten mit Hybridwechselrichtern zum "
+                 "Beispiel von Fronius oder Huawei, Niedervolt-Systeme eignen sich für kleinere Nachrüstungen. Wir "
+                 "wählen herstellerunabhängig nach Anlage. Notstrom ist Planungssache: Mit notstromfähigem "
+                 "Hybridwechselrichter, freigegebenem Speicher und Umschalteinrichtung läuft Ihr Haus im Inselbetrieb "
+                 "weiter, bei Ersatzstrom lädt die Anlage den Speicher bei Sonne sogar nach."),
             ],
             img=IMG["speicher"],
             alt="Batteriespeicher einer Photovoltaikanlage an der Wand eines Technikraums",
             bullets=[
-                "Wirkungsgrad über 95 %, 10 Jahre Herstellergarantie mit mindestens 80 % Restkapazität",
+                "Modular erweiterbar: heute 5 kWh, morgen 10 kWh, wenn E-Auto oder Wärmepumpe dazukommen",
                 "Notstrom oder Ersatzstrom: 10 kWh decken 500 Watt Dauerlast rund 20 Stunden",
-                "Erweiterbar: heute 5 kWh, morgen 10 kWh, wenn E-Auto oder Wärmepumpe dazukommen",
+                "Lebensdauer 15 Jahre und mehr bei einem Ladezyklus pro Tag",
             ],
             reverse=True,
-            cta=("/notstrom/", "Ratgeber: Notstrom mit Photovoltaik"),
+            cta=("/notstrom/", "Notstrom mit Batteriespeicher"),
         ),
-        # 6. Geld-Fragen: Kosten
+        # 6. Geld-Fragen: Kosten (Preis pro kWh)
         C.price_cards(
-            eyebrow="Batteriespeicher Kosten",
+            eyebrow="Batteriespeicher Kosten: Preis pro kWh",
             h2="Was kostet ein Batteriespeicher?",
-            intro=("Der Preis hängt von Kapazität, Kopplung und Notstromwunsch ab. Diese Richtwerte geben Ihnen eine "
-                   "erste Orientierung vor Förderung."),
+            intro=("Ein Batteriespeicher kostet in Österreich rund 800 bis 1.200 € je kWh inklusive Installation*, die "
+                   "häufige Suchanfrage „Stromspeicher 10 kWh Preis“ beantwortet sich also mit 8.000 bis 12.000 € vor "
+                   "Förderung (Richtwert EBZ Energie, Stand Oktober 2026). Preisentwicklung 2026: gesunken, aber jede nicht "
+                   "gespeicherte kWh kostet weiter rund 32 Cent."),
             items=[
                 {"size": "Nachrüstung klein", "price": "4.000 bis 6.000 €", "price_sub": "5 kWh, AC-gekoppelt*",
                  "features": ["Passend für 3.500 bis 5.000 kWh Jahresverbrauch", "Inklusive Batteriewechselrichter und Installation",
@@ -210,41 +222,61 @@ def build():
                               "Amortisation des Speichers allein 8 bis 12 Jahre*"]},
                 {"size": "Neue Komplettanlage", "price": "15.000 bis 22.000 €", "price_sub": "10 kWp mit Speicher*",
                  "features": ["Module, Hybridwechselrichter, Speicher, Montage und Anmeldung", "Förderung 2026 in Kärnten bis 6.000 € (Bund und Land)",
-                              "Typische Amortisation 4 bis 6 Jahre", a("kontakt", "Kostenlose Beratung anfragen →")]},
+                              "Typische Amortisation 4 bis 6 Jahre", a("photovoltaik", "Zur Photovoltaikanlage komplett →")]},
             ],
-            note="*Richtwerte für Österreich inklusive Installation, vor Förderung. Ihren genauen Preis erhalten Sie im Projektbericht mit 3D-Belegplan und Statikreport.",
+            note=("*Richtwerte für Österreich inklusive Installation, vor Förderung. Ihren genauen Preis erhalten Sie im "
+                  "Projektbericht mit 3D-Belegplan und Statikreport."),
         ).replace('<section class="section"', '<section id="kosten" class="section"', 1),
-        # 7. Foerderung + Finanzierung
+        # 7. Foerderung + Finanzierung (Fakten Stand 9.10.2026)
         C.media_text(
-            eyebrow="Förderung 2026",
-            h2="150 € je kWh vom Bund, bis zu 3.000 € vom Land Kärnten",
+            eyebrow="Stromspeicher Förderung Österreich 2026",
+            h2="Förderung 2026: 150 € je kWh vom Bund, Land Kärnten bis 3.000 €, Fördercall Oktober",
             paragraphs=[
-                ("Der EAG-Investitionszuschuss des Bundes fördert Speicher mit 150 € je Kilowattstunde (maximal 50 kWh), "
-                 "allerdings nur gemeinsam mit einer neuen oder erweiterten PV-Anlage und nur bei Antrag vor der "
-                 "Inbetriebnahme. Der Speicher muss mindestens 0,5 kWh je kWp haben."),
-                ("Kärnten legt 2026 eine Pauschale von 3.000 € für neue PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh "
-                 "drauf, ohne Anrechnung der Bundesförderung, und fördert die reine Speicher-Nachrüstung mit 1.000 €. "
-                 "Die Steiermark hat keine eigene Speicherprämie, dafür gilt der Bundeszuschuss. Zwei Stellen, zwei "
-                 "Fristen, gegensätzliche Reihenfolge: Wir übernehmen beide Anträge und die Endabrechnung."),
+                ("Der EAG-Investitionszuschuss fördert Speicher 2026 mit 150 € je kWh (mindestens 0,5 kWh je kWp, "
+                 "maximal 50 kWh), nur gemeinsam mit einer neuen oder erweiterten PV-Anlage und nur bei Antrag vor der "
+                 "Inbetriebnahme. Der 3. Fördercall Oktober 2026 läuft bis 22. Oktober und ist der letzte im alten "
+                 "System (Quelle: EAG-Abwicklungsstelle, Stand Oktober 2026)."),
+                ("Das Land Kärnten zahlt im 2. Call vom 12. Oktober bis 31. Dezember 2026 pauschal 3.000 € für neue "
+                 "PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh und 1.000 € für die Speicher-Nachrüstung ab 5 kWh, maximal "
+                 "50 % der Kosten, ohne Anrechnung der Bundesförderung (Quelle: Land Kärnten). Die Steiermark hat keine "
+                 "eigene Speicherprämie. Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit "
+                 "intelligenter Steuerung, Antrag nach der Rechnung, Höhe offen. Wir übernehmen alle Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Speicherförderung bei EBZ Energie",
             bullets=[
-                "Beispiel Kärnten: 10 kWp mit 10 kWh, 3.000 € Bund plus 3.000 € Land = 6.000 €",
-                "Made-in-Europe-Bonus: bis zu 10 % mehr für Speicher von der White List",
-                "Fördercalls 2026 sind zeitlich begrenzt, wir reichen für Sie rechtzeitig ein",
+                "Beispiel Kärnten: 10 kWp mit 10 kWh, 3.000 € Bund (150 € je kWp und je kWh) plus 3.000 € Land = 6.000 €",
+                "EAG-Speicherförderung 150 €/kWh plus Made-in-Europe-Bonus 10 % je Komponente von der White List",
+                a("/foerderung-pv-speicher-kaernten/", "Speicherförderung Land Kärnten") + " und " + a("/foerderung-fuer-pv-speicher/", "Speicherförderung 2026 im Detail"),
             ],
-            cta=("/foerderung-fuer-pv-speicher/", "Ratgeber: Förderung für PV-Speicher"),
+            cta=("foerderung_at", "EAG-Fördercall Oktober 2026 im Überblick"),
         ),
         C.finance_band(),
+        # 8. Sicherheit, Aufstellort, EMS
+        C.cards_section(
+            eyebrow="Sicherheit, Aufstellort, Steuerung",
+            h2="Sicherheit und Aufstellort: Keller, Garage oder Technikraum",
+            intro=("LFP-Speicher gelten als besonders sicher, weil ihre Zellchemie thermisch stabil ist. Der Brandschutz "
+                   "hängt trotzdem vom Aufstellort (Keller, Garage, Technikraum) ab: frostfrei, trocken, außerhalb von "
+                   "Fluchtwegen, montiert nach Herstellervorgabe (EBZ Energie, Stand Oktober 2026)."),
+            cards=[
+                {"ic": "⌂", "title": "Aufstellort",
+                 "text": "Keller, Garage oder Technikraum, frostfrei und trocken, Temperatur im vom Hersteller freigegebenen Bereich, Wandmontage oder Standgerät, kurzer Weg zum Zählerkasten."},
+                {"ic": "✓", "title": "Brandschutz",
+                 "text": "LFP ohne Kobalt, das Batteriemanagement trennt bei Fehlern ab, Rauchmelder im Raum, kein Aufstellort im Fluchtweg oder Schlafzimmer. Die Installation dokumentieren wir im Projektbericht."},
+                {"ic": "⚙", "title": "Energiemanagement (EMS) und dynamischer Stromtarif",
+                 "text": "Mit EMS lädt der Speicher aus PV-Überschuss oder per Netzladen, wenn der Börsenstrom günstig ist, und entlädt in teuren Stunden; Wallbox und Wärmepumpe steuert es mit.",
+                 "link_key": "/dynamischer-stromtarif/", "link_text": "Speicher mit dynamischem Stromtarif laden"},
+            ],
+        ),
         # Menschlicher Anker
         C.founder_story(
             eyebrow="Ein Wort von Mario Zintl",
             h2="Warum ich bei der Speichergröße nicht verhandle",
             paragraphs=[
-                ("Der Markt ist voll von Speichern, die online in zwei Minuten bestellt sind. Was fehlt, ist die "
-                 "Frage, ob die Größe zu Ihrem Haus passt. Ich habe zu viele Anlagen gesehen, bei denen ein 15-kWh-Speicher "
-                 "an einem 3.500-kWh-Haushalt hängt und im November halb leer bleibt. Das kostet Geld und bringt nichts."),
+                ("Der Markt ist voll von Speichern, die online in zwei Minuten bestellt sind. Was fehlt, ist die Frage, "
+                 "ob die Größe zu Ihrem Haus passt. Ich habe zu viele 15-kWh-Speicher an 3.500-kWh-Haushalten gesehen, "
+                 "die im November halb leer bleiben."),
                 ("Deshalb schauen wir uns Jahresverbrauch, Lastprofil und Ihre Pläne für E-Auto oder Wärmepumpe an, "
                  "bevor wir Kapazität, Kopplung und Notstrom festlegen. Wenn ein kleinerer Speicher die bessere Wahl "
                  "ist, sage ich Ihnen das auch."),
@@ -253,7 +285,7 @@ def build():
             name=AUTHOR, role=AUTHOR_ROLE,
             badge="Villach, Kärnten",
         ),
-        # 8. Warum EBZ
+        # 9. Warum EBZ
         C.why_section(
             eyebrow="Warum EBZ Energie",
             h2="Ihr Speicher-Partner in Kärnten und der Steiermark",
@@ -261,15 +293,15 @@ def build():
                 ("☀", "Ein System aus einer Hand", "PV, Speicher, Wechselrichter, Wallbox und Wärmepumpe aufeinander abgestimmt, ein Ansprechpartner."),
                 ("✓", "Zertifizierte Fachkräfte", "Festangestelltes Team, meisterhaftes Handwerk, sauber abgestimmte Komponenten."),
                 ("★", "4,9 Sterne auf Google", "Bewertungen von echten Kundinnen und Kunden aus der Region."),
-                ("◉", "300+ Projekte", "Erfahrung aus über 300 dokumentierten Anlagen in 6 Bundesländern, viele mit Speicher und Notstrom."),
-                ("€", "Förderung und Finanzierung inklusive", "Wir stellen die Anträge bei Bund und Land und bieten Finanzierung ab 147 € im Monat."),
+                ("◉", "300+ Projekte", "Über 300 dokumentierte Anlagen in 6 Bundesländern, viele mit Speicher und Notstrom."),
+                ("€", "Förderung und Finanzierung inklusive", "Wir stellen die Anträge bei Bund und Land und bieten Finanzierung ab 147 € im Monat.*"),
                 ("⌂", "Auch in 10 Jahren erreichbar", "Regionaler Fachbetrieb in Villach: Service, Monitoring und Erweiterung aus der Nähe."),
             ],
         ),
-        # 9. Beweis
+        # 10. Beweis
         C.reference_cards(
             eyebrow="Aus der Praxis",
-            h2="Speicher und Notstrom, mit Zahlen belegt",
+            h2="Referenzen mit Zahlen: Speicher und Notstrom",
             intro=("Drei Projekte mit Batteriespeicher aus Eigenheim, Mehrparteienhaus und Gewerbe. Bild und Zahlen "
                    "gehören jeweils zum selben Projekt."),
             items=[
@@ -285,14 +317,14 @@ def build():
             ],
         ),
         C.reviews_slider(reviews, rating=rating, count=count),
-        # 10. Ablauf
+        # 11. Ablauf
         C.steps_section(
             eyebrow="So läuft es ab",
             h2="Von der Verbrauchsanalyse zum eigenen Speicher",
             steps=[
-                ("Beratung und Analyse", "Wir prüfen Jahresverbrauch, Lastprofil, bestehende Anlage und Ihre Pläne für E-Auto oder Wärmepumpe. Kostenlos.", "Tag 1"),
-                ("Projektbericht", "Sie erhalten einen Projektbericht mit 3D-Belegplan und Statikreport, inklusive Speichergröße, Kopplung und Förderübersicht.", "wenige Tage"),
-                ("Förderanträge", "Wir reichen den EAG-Antrag vor Inbetriebnahme ein und bereiten den Landesantrag vor.", "vor der Montage"),
+                ("Beratung und Analyse", "Jahresverbrauch, Lastprofil, bestehende Anlage und Ihre Pläne für E-Auto oder Wärmepumpe. Kostenlos.", "Tag 1"),
+                ("Projektbericht", "Projektbericht mit 3D-Belegplan und Statikreport, inklusive Speichergröße, Kopplung, Aufstellort und Förderübersicht.", "wenige Tage"),
+                ("Förderanträge", "EAG-Antrag vor Inbetriebnahme (Fördercall bis 22. Oktober 2026), Landesantrag Kärnten bis 31. Dezember 2026.", "vor der Montage"),
                 ("Montage und Inbetriebnahme", "Zertifizierte Fachkräfte montieren Speicher und Wechselrichter, bei der Nachrüstung meist in 1 bis 3 Tagen. Anmeldung und Übergabe inklusive.", "1 bis 3 Tage vor Ort"),
             ],
         ),
@@ -300,12 +332,14 @@ def build():
         C.linkgrid_section(
             "Weiterlesen: Speicher, Notstrom und Förderung",
             [("/pv-speicher-nachruesten/", "PV-Speicher nachrüsten"),
-             ("/notstrom/", "Notstrom mit Photovoltaik"),
+             ("/notstrom/", "Notstrom mit Batteriespeicher"),
              ("/ab-wann-lohnt-sich-photovoltaik-mit-speicher/", "Ab wann lohnt sich PV mit Speicher?"),
-             ("/foerderung-fuer-pv-speicher/", "Förderung für PV-Speicher"),
-             ("/foerderung-pv-speicher-kaernten/", "Speicherförderung Kärnten"),
-             ("/kosten-einer-solaranlage/", "Kosten einer Solaranlage"),
-             ("photovoltaik", "Photovoltaik für Eigenheim und Gewerbe"),
+             ("/foerderung-fuer-pv-speicher/", "Speicherförderung 2026"),
+             ("/foerderung-pv-speicher-kaernten/", "Speicherförderung Land Kärnten"),
+             ("/dynamischer-stromtarif/", "Speicher mit dynamischem Tarif laden"),
+             ("ems", "Energiemanagement"),
+             ("photovoltaik", "Photovoltaikanlage komplett"),
+             ("finanzierung", "Speicher mitfinanzieren"),
              ("referenzen", "Referenzen")],
         ),
         C.contact_section(
@@ -331,13 +365,14 @@ def build():
 
 def _footnote():
     return ("""
-  <section class="section--tight" style="padding-bottom:40px">
+  <section class="section--tight section" style="padding-bottom:40px">
     <div class="wrap">
       <p class="form-note">*Richtwerte für Österreich auf Basis typischer Projekte, inklusive Installation und vor
-      Förderung. Eigenverbrauchsanteil, Ersparnis, Preis und Amortisation hängen von Verbrauch, Lastprofil,
-      Anlagengröße, Strompreis (gerechnet mit rund 32 ct/kWh Bezug und 5 bis 10 ct/kWh Einspeisung) und Förderung ab.
-      Fördersätze Stand 2026, Förderprogramme sind budgetiert und ändern sich. Fachlich geprüft von Mario Zintl,
-      Geschäftsführung EBZ Energie GmbH.</p>
+      Förderung, Stand Oktober 2026. Eigenverbrauchsanteil, Autarkie, Ersparnis, Preis und Amortisation hängen von
+      Verbrauch, Lastprofil, Anlagengröße, Strompreis (gerechnet mit rund 30 bis 35 ct/kWh Bezug und 10,168 ct/kWh
+      OeMAG-Marktpreis September 2026) und Förderung ab. Finanzierungsrate: Beispielkonditionen. Fördersätze laut
+      EAG-Abwicklungsstelle und Land Kärnten, Programme sind budgetiert und ändern sich. Fachlich geprüft von
+      Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
     </div>
   </section>""")
 

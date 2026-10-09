@@ -1,9 +1,10 @@
 """Ratgeber: Marktpreis 2026 (Lohnt sich Photovoltaik noch?).
 
 Migriert von ebz-photovoltaik.at/marktpreis-2026/ (Stand der Quelle: Dezember 2025).
-Aktualisiert mit den OeMAG-Werten Stand September 2026: PV-Marktpreis Juli 2026
-6,146 ct/kWh (gesetzliche Untergrenze), Q3-2026-Quartalsmarktpreis der E-Control
-10,923 ct/kWh. Historische Werte der Quelle (Q4 2025: 9,17 ct) bleiben als Verlauf.
+Aktualisiert mit den OeMAG-Werten Stand Oktober 2026: PV-Marktpreis September 2026
+10,168 ct/kWh (aktueller Wert), Juli 2026 6,146 ct/kWh (gesetzliche Untergrenze, Verlauf),
+Q3-2026-Quartalsmarktpreis der E-Control 10,923 ct/kWh. August 2026 ohne belegten Wert,
+nicht genannt. Historische Werte der Quelle (Q4 2025: 9,17 ct) bleiben als Verlauf.
 """
 
 import os
@@ -17,43 +18,44 @@ from common import a
 ARTICLE = {
     "slug": "marktpreis-2026",
     "path": "/marktpreis-2026/",
-    "title": "Marktpreis 2026: Lohnt sich Photovoltaik noch? | EBZ Energie",
-    "description": ("OeMAG-Marktpreis Juli 2026: 6,146 ct/kWh, Q3-Marktpreis 10,923 ct. Warum Eigenverbrauch "
-                    "die Einspeisung schlägt und wie sich PV mit Speicher 2026 noch rechnet."),
+    "title": "OeMAG-Marktpreis 2026: 10,168 ct, lohnt sich PV noch? | EBZ",
+    "description": ("OeMAG-Marktpreis September 2026: 10,168 ct/kWh, Juli 6,146 ct. Warum Eigenverbrauch "
+                    "die Einspeisung schlägt und wie sich PV mit Speicher 2026 rechnet."),
     "eyebrow": "Markt · Einspeisetarif und Förderung",
     "crumb_label": "Marktpreis 2026",
-    "h1": "Marktpreis 2026: Lohnt sich Photovoltaik bei 6,146 Cent Einspeisetarif noch?",
-    "lead": ("Der OeMAG-Marktpreis für PV-Strom lag im Juli 2026 bei 6,146 Cent je Kilowattstunde, der "
-             "Netzbezug kostet rund 30 Cent. Diese Schere entscheidet über die Strategie: Nicht die "
+    "h1": "Marktpreis 2026: Lohnt sich Photovoltaik bei 6 bis 10 Cent Einspeisetarif noch?",
+    "lead": ("Der OeMAG-Marktpreis für PV-Strom lag im September 2026 bei 10,168 Cent je Kilowattstunde, im "
+             "Juli bei 6,146 Cent; der Netzbezug kostet rund 30 Cent. Diese Schere entscheidet über die Strategie: Nicht die "
              "Einspeisung bringt die Rendite, sondern jede selbst verbrauchte Kilowattstunde."),
     "chips": [
+        "OeMAG September 2026: <b>10,168 ct/kWh</b>",
         "OeMAG Juli 2026: <b>6,146 ct/kWh</b>",
-        "Q3-Marktpreis: <b>10,923 ct/kWh</b>",
         "Netzbezug: <b>rund 30 ct/kWh</b>*",
-        "Förderung: <b>EAG-Calls 2026</b>",
+        "EAG-Call: <b>bis 22.10.2026</b>",
     ],
     "date_published": "2025-12-10",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "pv_card",
     "hero_alt": "Photovoltaikanlage von EBZ Energie auf einem Wohnhausdach in Kärnten",
 
     "tldr": [
-        "Stand September 2026: Der OeMAG-Marktpreis für Photovoltaik lag im Juli 2026 bei 6,146 Cent je "
-        "Kilowattstunde, das ist die gesetzliche Untergrenze von 60 Prozent des Quartalsmarktpreises der "
-        "E-Control (Q3 2026: 10,923 Cent). Im 4. Quartal 2025 lag der Marktpreis noch bei 9,17 Cent.",
+        "Stand Oktober 2026: Der OeMAG-Marktpreis für Photovoltaik beträgt für September 2026 10,168 Cent je "
+        "Kilowattstunde. Im Juli 2026 lag er mit 6,146 Cent an der gesetzlichen Untergrenze von 60 Prozent des "
+        "Quartalsmarktpreises der E-Control (Q3 2026: 10,923 Cent). Der Wert schwankt monatlich.",
         "Netzbezug kostet inklusive Netzentgelten, Abgaben und Steuern im Schnitt rund 30 bis 35 Cent je "
-        "Kilowattstunde*. Die Differenz zur Einspeisung beträgt damit über 24 Cent: Eigenverbrauch schlägt "
+        "Kilowattstunde*. Die Differenz zur Einspeisung beträgt damit rund 20 bis 24 Cent: Eigenverbrauch schlägt "
         "Einspeisung um ein Vielfaches.",
         "Mit dem Bundesgesetzblatt I Nr. 69/2025 ist die EAG-Novelle kundgemacht: Statt des Nullsteuersatzes, "
-        "der im April 2025 ausgelaufen ist, gibt es 2026 wieder Investitionszuschüsse über Fördercalls.",
+        "der im April 2025 ausgelaufen ist, gibt es 2026 Investitionszuschüsse über Fördercalls. Der letzte Call "
+        "2026 läuft bis 22. Oktober 2026; ab 2027 plant das BMWET eine Systemförderung mit Antrag nach der Installation.",
         "Ohne Speicher nutzen typische Haushalte nur rund 30 Prozent ihres Solarstroms selbst, mit passend "
         "dimensioniertem Speicher 70 bis 80 Prozent*. Der Speicher ist damit der Rendite-Hebel.",
         "Wer wartet, spart nicht: Hardware ist günstig, Lohnkosten steigen, und Netzkapazitäten in Kärnten "
         "und der Steiermark werden knapper.",
     ],
     "kpis": [
-        ("6,146 ct", "OeMAG-Marktpreis PV, Juli 2026"),
-        ("10,923 ct", "Quartalsmarktpreis E-Control, Q3 2026"),
+        ("10,168 ct", "OeMAG-Marktpreis PV, September 2026"),
+        ("6,146 ct", "OeMAG-Marktpreis PV, Juli 2026 (Untergrenze)"),
         ("30 bis 35 ct", "Netzbezug je kWh inkl. Abgaben*"),
         ("70 bis 80 %", "Eigenverbrauch mit Speicher*"),
     ],
@@ -64,10 +66,11 @@ ARTICLE = {
 sogenannten Marktpreis abzunehmen. Dieser Preis wird monatlich im Nachhinein aus den Börsenpreisen zu
 den Einspeisestunden berechnet und in einen Korridor gezwängt: nach oben begrenzt durch den
 Quartalsmarktpreis der E-Control, nach unten durch 60 Prozent davon.</p>
-<p><b>Stand September 2026:</b> Für Juli 2026 beträgt der OeMAG-Marktpreis für Photovoltaik 6,146 Cent
-je Kilowattstunde. Das ist die Untergrenze, weil die Börsenpreise zur Mittagszeit wegen des vielen
-Solarstroms seit dem Frühjahr darunter liegen. Der Quartalsmarktpreis der E-Control für das dritte
-Quartal 2026 liegt bei 10,923 Cent (109,23 Euro je MWh).</p>
+<p><b>Stand Oktober 2026: Der OeMAG-Marktpreis für Photovoltaik beträgt für September 2026 10,168 Cent
+je Kilowattstunde</b> (Quelle: oem-ag.at/marktpreis, monatlich im Nachhinein veröffentlicht). Im Juli 2026
+lag er bei 6,146 Cent, der Untergrenze des Quartals, weil die Börsenpreise zur Mittagszeit wegen des vielen
+Solarstroms darunter lagen. Der Quartalsmarktpreis der E-Control für das dritte Quartal 2026 liegt bei
+10,923 Cent (109,23 Euro je MWh) und bildet die Obergrenze.</p>
 {A.table(
     ["Zeitraum", "Wert", "Einordnung"],
     [
@@ -76,32 +79,35 @@ Quartal 2026 liegt bei 10,923 Cent (109,23 Euro je MWh).</p>
         ["Q4 2025 (Quartalsmarktpreis)", "9,17 ct/kWh", "Stand bei Erstveröffentlichung dieses Artikels"],
         ["Q3 2026 (Quartalsmarktpreis E-Control)", "10,923 ct/kWh", "Obergrenze für den OeMAG-Tarif"],
         ["Juli 2026 (OeMAG-Marktpreis PV)", "6,146 ct/kWh", "gesetzliche Untergrenze (60 %)"],
+        ["September 2026 (OeMAG-Marktpreis PV)", "10,168 ct/kWh", "aktueller Wert, nahe der Obergrenze"],
     ],
     hl_cols=(1,),
 )}
-<p>Die Ära der Krisenpreise ist vorbei, und der Trend zeigt für PV-Einspeisung nach unten: Solange
-mittags viel Solarstrom im Netz ist, klebt der OeMAG-Tarif an der Untergrenze. Wie die Berechnung im
+<p>Die Ära der Krisenpreise ist vorbei, und der Tarif schwankt im Korridor: In Monaten mit viel
+Mittagssolarstrom fällt er auf die Untergrenze (Juli 2026), in anderen nähert er sich der Obergrenze
+(September 2026). Für die Wirtschaftlichkeit bleibt er in jedem Fall weit unter dem Bezugspreis. Wie die Berechnung im
 Detail funktioniert und welche Alternativen es gibt, lesen Sie im Ratgeber
 {a('/oemag-einspeisetarif/', 'OeMAG-Einspeisetarif')} und im Vergleich
 {a('/einspeisetarif-fuer-photovoltaik/', 'Einspeisetarif für Photovoltaik')}.</p>
 """),
         ("Das neue Rechenmodell: Eigenverbrauch schlägt Einspeisung", "eigenverbrauch", f"""
-<p>Was bedeuten 6 Cent für Ihre Strategie? Sie bedeuten, dass das alte Modell „Dach vollmachen und
+<p>Was bedeuten 6 bis 10 Cent für Ihre Strategie? Sie bedeuten, dass das alte Modell „Dach vollmachen und
 alles verkaufen“ nicht mehr funktioniert. Die Rechnung:</p>
 <ul>
   <li>Eine Kilowattstunde vom Netzbetreiber kostet inklusive Netzgebühren, Abgaben und Steuern im Schnitt
   rund 30 bis 35 Cent*.</li>
-  <li>Eine selbst produzierte Kilowattstunde bringt bei der OeMAG 6,146 Cent (Juli 2026).</li>
-  <li>Die Differenz, der „Spread“, beträgt also über 24 Cent je Kilowattstunde.</li>
+  <li>Eine selbst produzierte Kilowattstunde bringt bei der OeMAG je nach Monat 6,146 Cent (Juli 2026)
+  bis 10,168 Cent (September 2026).</li>
+  <li>Die Differenz, der „Spread“, beträgt also rund 20 bis 24 Cent je Kilowattstunde.</li>
 </ul>
 <p>Jede Kilowattstunde, die Sie selbst verbrauchen, spart rund 30 Cent Ausgabe. Jede Kilowattstunde,
-die Sie einspeisen, bringt gut 6 Cent Einnahme. Der Wert des selbst verbrauchten Stroms ist damit rund
-fünfmal so hoch wie der des eingespeisten. Der Gewinn Ihrer Anlage liegt nicht mehr im Verkauf von
+die Sie einspeisen, bringt 6 bis 10 Cent Einnahme. Der Wert des selbst verbrauchten Stroms ist damit rund
+drei- bis fünfmal so hoch wie der des eingespeisten. Der Gewinn Ihrer Anlage liegt nicht mehr im Verkauf von
 Energie, sondern in der Vermeidung von Zukauf: Ihre PV-Anlage ist keine Einnahmequelle für
 Einspeisevergütungen, sondern eine Sparbüchse für Ihre Betriebskosten.</p>
 {A.box("Wer Überschuss lieber an Nachbarn oder Familie verkauft als an die OeMAG, findet in der "
-       + a('eg', 'Energiegemeinschaft') + " eine Alternative: Typische EG-Einspeisepreise liegen bei "
-       "8 bis 12 Cent, zusätzlich sparen Mitglieder im Nahbereich bis zu 57 Prozent der Netzentgelte "
+       + a('eg', 'Energiegemeinschaft') + " eine Alternative: Der Einspeisepreis wird fix vereinbart, typisch "
+       "8 bis 12 Cent*, statt monatlich zu schwanken; zusätzlich sparen Mitglieder im Nahbereich bis zu 57 Prozent der Netzentgelte "
        "(siehe " + a('/energiegemeinschaft-netzkosten/', 'Netzkosten in der Energiegemeinschaft') + ").",
        label="Alternative:")}
 <p><small>*Richtwerte für Haushaltskunden inklusive Netzentgelte, Abgaben und Steuern. Der tatsächliche
@@ -124,6 +130,11 @@ Nr. 69/2025, ist die Finanzierung der klassischen Investitionszuschüsse für 20
      "Sie erhalten einen fixen Zuschuss pro installiertem Kilowattpeak (kWp) und pro Kilowattstunde (kWh) "
      "Speicherkapazität zurücküberwiesen."),
 ])}
+<p><b>Stand Oktober 2026:</b> Der dritte und letzte Fördercall 2026 läuft bis 22. Oktober 2026
+(Ticketziehung ab 8. Oktober). Ab 2027 plant das BMWET laut Eckpunkten eine Neuausrichtung zur
+Systemförderung: Antrag nach Installation und Rechnung statt Fördercall, gefördert werden Speicher mit
+intelligenter Steuerung, auch als Nachrüstung. Projekte, die ab 1. November 2026 in Betrieb gehen, sollen
+2027 im neuen System beantragbar sein. Höhe und Technikkriterien sind noch offen.</p>
 <p>Die Republik Österreich hat sich europarechtlich verpflichtet, den Ausbau der Erneuerbaren
 voranzutreiben. Ein Förderstopp ist damit vom Tisch. Die Details zu Bund und Ländern finden Sie in den
 Ratgebern {a('foerderung_at', 'Photovoltaik-Förderung Österreich')},
@@ -142,7 +153,7 @@ Sparpotenzial. Zwei Faktoren haben sich geändert:</p>
 {A.table(
     ["Konfiguration", "Eigenverbrauchsanteil*", "Was mit dem Rest passiert"],
     [
-        ["PV ohne Speicher", "rund 30 %", "70 % Einspeisung zu 6,146 ct"],
+        ["PV ohne Speicher", "rund 30 %", "70 % Einspeisung zum Marktpreis (2026: 6 bis 10 ct)"],
         ["PV mit passend dimensioniertem Speicher", "70 bis 80 %", "Mittagsstrom wird abends genutzt"],
         ["PV, Speicher und Energiemanagement", "noch höher", "Überschuss geht in Wärmepumpe und Wallbox"],
     ],
@@ -153,7 +164,7 @@ scheint, während Sie bei der Arbeit sind. Mit einem passend dimensionierten Spe
 auf 70 bis 80 Prozent. Sie retten den Mittagsstrom in den Abend, um zu kochen, zu waschen oder das
 E-Auto zu laden.</p>
 <h3>Intelligentes Energiemanagement</h3>
-<p>Ist der Speicher im Sommer schon um 11 Uhr voll, soll der Überschuss nicht für 6 Cent ins Netz
+<p>Ist der Speicher im Sommer schon um 11 Uhr voll, soll der Überschuss nicht für 6 bis 10 Cent ins Netz
 fließen. Stattdessen gibt ein {a('ems', 'Energiemanagementsystem')} der Wärmepumpe das Signal, jetzt
 Warmwasser zu bereiten, oder der Wallbox, das E-Auto zu laden. So wird Ihr Dach zur Energiequelle für
 Wärme und Mobilität. Seit Juni 2026 fördert der Klimafonds solche Systeme mit bis zu 600 Euro für
@@ -186,8 +197,8 @@ die Förderung besser.“ Drei Gründe sprechen gegen diese Strategie:</p>
         ("Fazit: Die Ampel steht auf Grün", "fazit", f"""
 <p>2026 ist ein gutes Jahr für Photovoltaik, aber mit anderer Logik als 2022: Das Gesetz ist fixiert und
 die Fördermittel sind da. Die Technik ist ausgereift und preiswert. Der Strompreis ist hoch genug, um
-Sparen attraktiv zu machen, während der Einspeisetarif mit 6,146 Cent so niedrig ist, dass Eigenverbrauch
-über Speicher und Energiemanagement zur Pflicht wird. Bei EBZ Energie liegt eine 10-kWp-Anlage mit
+Sparen attraktiv zu machen, während der Einspeisetarif mit 6 bis 10 Cent (2026) so weit darunter liegt, dass
+Eigenverbrauch über Speicher und Energiemanagement zur Pflicht wird. Bei EBZ Energie liegt eine 10-kWp-Anlage mit
 Speicher je nach Dach bei rund 15.000 bis 22.000 Euro vor Förderung, die Amortisation typischerweise bei
 4 bis 6 Jahren.</p>
 {A.cta("Lassen Sie uns gemeinsam rechnen",
@@ -209,24 +220,24 @@ Speicher je nach Dach bei rund 15.000 bis 22.000 Euro vor Förderung, die Amorti
             ("Regional verankert", "Wenn es ein Problem gibt, kommen wir vorbei."),
             ("Langlebig statt billig", "Glas-Glas-Module und geprüfte Speicher, damit die Rendite hält."),
             ("Alles aus einer Hand", "Vom Drohnen-Aufmaß über den Projektbericht bis zur Förder-Einreichung."),
-            ("Fördermanagement", "Wir kennen die Call-Termine 2026 und reichen fristgerecht ein."),
+            ("Fördermanagement", "Wir kennen die Fristen 2026 und das geplante System 2027 und reichen fristgerecht ein."),
         ],
     },
 
     "faq": [
         ("Wie hoch ist der OeMAG-Marktpreis aktuell?",
-         "Stand September 2026: Für Juli 2026 beträgt der OeMAG-Marktpreis für Photovoltaik 6,146 Cent je "
-         "Kilowattstunde. Das ist die gesetzliche Untergrenze von 60 Prozent des Quartalsmarktpreises der "
-         "E-Control, der für das dritte Quartal 2026 bei 10,923 Cent liegt. Im vierten Quartal 2025 lag der "
-         "Marktpreis noch bei 9,17 Cent."),
+         "Stand Oktober 2026: Für September 2026 beträgt der OeMAG-Marktpreis für Photovoltaik 10,168 Cent je "
+         "Kilowattstunde. Im Juli 2026 lag er mit 6,146 Cent an der gesetzlichen Untergrenze von 60 Prozent des "
+         "Quartalsmarktpreises der E-Control (Q3 2026: 10,923 Cent). Der Wert schwankt monatlich; im vierten "
+         "Quartal 2025 lag der Marktpreis bei 9,17 Cent."),
         ("Bekomme ich 2026 noch eine Förderung, obwohl die 0 Prozent Umsatzsteuer weg sind?",
          "Ja. Die Art der Förderung hat sich geändert: Statt des Nullsteuersatzes beim Kauf greift 2026 "
          "wieder das EAG mit Investitionszuschüssen über Fördercalls. Das Budget wurde im Bundesgesetzblatt "
          "I Nr. 69/2025 bestätigt. Sie strecken die Umsatzsteuer vor und bekommen über den Call einen Teil "
          "der Investitionskosten zurück. EBZ Energie übernimmt die Antragstellung."),
-        ("Lohnt sich eine Anlage noch, wenn ich nur rund 6 Cent für die Einspeisung bekomme?",
+        ("Lohnt sich eine Anlage noch, wenn ich nur 6 bis 10 Cent für die Einspeisung bekomme?",
          "Ja, aber die Strategie ändert sich. Da der Netzbezug rund 30 Cent kostet, ist jede selbst "
-         "verbrauchte Kilowattstunde etwa fünfmal so viel wert wie eine eingespeiste. Die Rendite entsteht "
+         "verbrauchte Kilowattstunde drei- bis fünfmal so viel wert wie eine eingespeiste. Die Rendite entsteht "
          "durch Einsparung, nicht durch Verkauf. Eine passend dimensionierte Anlage mit Speicher "
          "amortisiert sich bei EBZ Energie typischerweise in 4 bis 6 Jahren."),
         ("Ist ein Batteriespeicher jetzt Pflicht?",
@@ -234,16 +245,17 @@ Speicher je nach Dach bei rund 15.000 bis 22.000 Euro vor Förderung, die Amorti
          "30 auf 70 bis 80 Prozent und rettet den Mittagsstrom in den Abend. Zudem sind systemdienliche "
          "Speicher laut ElWG 20 Jahre von Infrastrukturbeiträgen befreit."),
         ("Was passiert, wenn ich den Förder-Call verpasse?",
-         "Die Mittel sind budgetiert. Wer zu spät kommt oder Fehler im Antrag hat, muss auf den nächsten "
-         "Call warten oder geht im schlimmsten Fall für das Jahr leer aus. EBZ Energie bereitet alle "
-         "Unterlagen vor und reicht sie zur Call-Öffnung ein."),
+         "Der letzte Call 2026 endet am 22. Oktober 2026. Danach gibt es im alten System keinen weiteren Call. "
+         "Ab 2027 soll laut BMWET eine Systemförderung mit Antrag nach der Installation folgen; Projekte, die ab "
+         "1. November 2026 in Betrieb gehen, sollen dort beantragbar sein. Höhe und Kriterien sind noch offen. "
+         "EBZ Energie bereitet alle Unterlagen vor und reicht fristgerecht ein."),
         ("Soll ich noch warten, ob die Preise für PV-Anlagen weiter fallen?",
          "Wir raten davon ab. Die Hardwarepreise haben einen Boden erreicht, gleichzeitig steigen Lohn- "
          "und Montagekosten jährlich. Zudem riskieren Sie bei längerem Warten, dass Netzkapazitäten in "
          "Ihrer Region erschöpft sind. Preis, Förderung und Verfügbarkeit passen aktuell zusammen."),
         ("Gibt es Alternativen zur OeMAG-Einspeisung?",
-         "Ja. In einer Energiegemeinschaft verkaufen Sie Überschuss an Nachbarn oder Familie, typischerweise "
-         "zu 8 bis 12 Cent, und sparen im Nahbereich bis zu 57 Prozent der Netzentgelte. Der OeMAG-Vertrag "
+         "Ja. In einer Energiegemeinschaft verkaufen Sie Überschuss an Nachbarn oder Familie zu einem fix "
+         "vereinbarten Preis, typischerweise 8 bis 12 Cent (Beispielwerte), und sparen im Nahbereich bis zu 57 Prozent der Netzentgelte. Der OeMAG-Vertrag "
          "bleibt als Auffangnetz für den Rest bestehen. Auch andere Lieferanten bieten Einspeisetarife an."),
         ("Wie oft ändert sich der Marktpreis?",
          "Der OeMAG-Marktpreis wird seit Jänner 2024 monatlich im Nachhinein festgelegt. Die Ober- und "

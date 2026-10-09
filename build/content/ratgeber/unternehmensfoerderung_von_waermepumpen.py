@@ -34,7 +34,7 @@ ARTICLE = {
         "Antrag <b>nach</b> Umsetzung",
     ],
     "date_published": "2026-03-25",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_gewerbe",
     "hero_alt": "Gewerbegebäude mit Photovoltaik auf dem Dach und Wärmepumpe im Betrieb",
 
@@ -72,8 +72,9 @@ Privatprogrammen unterscheiden und in manchen Fällen höhere Beträge bieten. S
         ("Welche Förderprogramme gibt es für Unternehmen?", "programme", f"""
 <h3>„Raus aus Öl und Gas“ für Betriebe: Anlagen unter 100 kW</h3>
 <p>Das Programm ist das Pendant zur {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive')} für
-Privathaushalte und wird von der Kommunalkredit Public Consulting (KPC) im Auftrag des Bundesministeriums
-abgewickelt. Antragsberechtigt sind alle Unternehmen und unternehmerisch tätigen Organisationen in
+Privathaushalte (diese ist seit Herbst 2026 ausgeschöpft; die Betriebsschiene hat eigene Budgets, den
+aktuellen Stand zeigt umweltfoerderung.at) und wird von der Kommunalkredit Public Consulting (KPC) im
+Auftrag des Bundesministeriums abgewickelt. Antragsberechtigt sind alle Unternehmen und unternehmerisch tätigen Organisationen in
 Österreich sowie Vereine und konfessionelle Einrichtungen. Gefördert wird der Ersatz eines fossilen
 Heizsystems (Öl, Gas, Kohle, Strom, Allesbrenner) durch Wärmepumpe, Holzheizung oder Fernwärmeanschluss
 mit überwiegend betrieblicher Nutzung. Die thermische Leistung der neuen Anlage muss unter 100 kW liegen.

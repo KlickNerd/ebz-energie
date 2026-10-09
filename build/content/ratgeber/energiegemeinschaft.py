@@ -18,7 +18,7 @@ ARTICLE = {
     "path": "/energiegemeinschaft/",
     "title": "Energiegemeinschaft: Strom teilen und sparen | EBZ Energie",
     "description": ("Energiegemeinschaft erklärt: EEG, BEG, GEA und Peer-to-Peer, bis zu 57 % weniger Netzentgelt, "
-                    "8 bis 12 ct statt 6,146 ct OeMAG. Ablauf, Kosten, Nachteile."),
+                    "fixer EG-Preis statt OeMAG-Tarif. Ablauf, Kosten, Nachteile."),
     "eyebrow": "Energiegemeinschaft · Leitartikel",
     "crumb_label": "Energiegemeinschaft",
     "h1": "Energiegemeinschaft in Österreich: Solarstrom teilen und bis zu 57 % Netzentgelt sparen",
@@ -29,11 +29,11 @@ ARTICLE = {
     "chips": [
         "Netzentgelt: bis zu <b>57 %</b> weniger",
         "EG-Einspeisepreis: <b>8 bis 12 ct</b>",
-        "OeMAG Juli 2026: <b>6,146 ct</b>",
+        "OeMAG Sept. 2026: <b>10,168 ct</b>",
         "Über <b>11.000</b> Gemeinschaften in Österreich",
     ],
     "date_published": "2026-07-22",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "eg_drohne",
     "hero_alt": "Ortschaft mit Photovoltaik auf mehreren Dächern, typisches Netzgebiet einer lokalen Energiegemeinschaft",
 
@@ -44,8 +44,9 @@ ARTICLE = {
         "Abnehmer sparen auf den zugeordneten Strom 57 Prozent (lokal) oder 28 Prozent (regional) des "
         "Arbeitspreises von Netznutzungs- und Netzverlustentgelt. In einer Erneuerbaren-Energie-Gemeinschaft "
         "entfallen zusätzlich Elektrizitätsabgabe (1,5 ct/kWh) und Erneuerbaren-Förderbeitrag.",
-        "Erzeuger bekommen für den zugeordneten Überschuss typisch 8 bis 12 Cent statt 6,146 Cent OeMAG-Tarif "
-        "(Juli 2026). Was nicht zugeordnet wird, geht weiterhin an die OeMAG oder den Einspeisevertrag.",
+        "Erzeuger bekommen für den zugeordneten Überschuss einen fix vereinbarten Preis, typisch 8 bis 12 Cent "
+        "(Beispielwerte), statt des monatlich schwankenden OeMAG-Tarifs (Juli 2026: 6,146 Cent, September 2026: "
+        "10,168 Cent). Was nicht zugeordnet wird, geht weiterhin an die OeMAG oder den Einspeisevertrag.",
         "Strom teilen geht österreichweit, etwa mit der Tante in Wien. Den Netzentgelt-Abschlag gibt es aber "
         "nur im Nahbereich (selber Trafo oder selbes Umspannwerk). Überregional bleibt die "
         "Bürgerenergiegemeinschaft ohne Rabatt.",
@@ -54,16 +55,19 @@ ARTICLE = {
     ],
     "kpis": [
         ("57 %", "weniger Netzentgelt (Arbeitspreis) in der lokalen EEG"),
-        ("6,146 ct", "OeMAG-Marktpreis PV im Juli 2026"),
+        ("10,168 ct", "OeMAG-Marktpreis PV im September 2026 (Juli: 6,146 ct)"),
         ("2 Teilnehmer", "gesetzliche Mindestgröße einer Energiegemeinschaft"),
         ("1.10.2026", "ElWG: neue Regeln, Peer-to-Peer-Verträge"),
     ],
 
     "sections": [
         ("Was ist eine Energiegemeinschaft?", "was-ist", f"""
-<p>Eine Energiegemeinschaft ist ein Zusammenschluss von mindestens zwei Teilnehmern, die Strom aus
-erneuerbaren Quellen, in der Praxis fast immer Photovoltaik, gemeinsam erzeugen, teilen und verbrauchen.
-Rechtsgrundlage ist seit 2021 das Erneuerbaren-Ausbau-Gesetz (EAG), ab 1. Oktober 2026 übernimmt das
+<p><b>Eine Energiegemeinschaft ist ein Zusammenschluss von mindestens zwei Teilnehmern, die Solarstrom über
+das öffentliche Netz teilen.</b> Im Nahbereich sinken die Netzentgelte um bis zu 57 Prozent (lokal) oder
+28 Prozent (regional), österreichweit teilen Bürgerenergiegemeinschaften ohne Rabatt. Voraussetzung ist ein
+Smart Meter mit Viertelstundenwerten (Quellen: E-Control SNE-VO, energiegemeinschaften.gv.at, Stand Oktober 2026).</p>
+<p>Die Teilnehmer erzeugen, teilen und verbrauchen Strom aus erneuerbaren Quellen gemeinsam, in der Praxis
+fast immer Photovoltaik. Rechtsgrundlage ist seit 2021 das Erneuerbaren-Ausbau-Gesetz (EAG), ab 1. Oktober 2026 übernimmt das
 neue Elektrizitätswirtschaftsgesetz (ElWG) die Regeln. Für einen Hausbesitzer mit PV-Anlage heißt das:
 Der Strom, den die Anlage mittags zu viel produziert, geht nicht mehr nur an die OeMAG oder den
 Lieferanten, sondern an Nachbarn, Betriebe oder die Gemeinde, zu einem Preis, den die Gemeinschaft
@@ -142,20 +146,22 @@ Rechnung Position für Position steht im Artikel
 <p><small>*Richtwerte 2026, die exakten Sätze Ihres Netzgebiets stehen auf der Netzrechnung. EG-Preise sind
 Beispielwerte, jede Gemeinschaft legt sie selbst fest.</small></p>
 """),
-        ("Was Erzeuger gewinnen: mehr als der OeMAG-Tarif", "erzeuger", f"""
+        ("Was Erzeuger gewinnen: fixer Preis statt schwankendem OeMAG-Tarif", "erzeuger", f"""
 <p>Die OeMAG nimmt PV-Strom zum sogenannten Marktpreis ab, der seit Jänner 2024 monatlich im Nachhinein
-festgelegt wird. Für Juli 2026 lag er bei 6,146 Cent je Kilowattstunde, das ist die gesetzliche
-Untergrenze von 60 Prozent des Quartalsmarktpreises der E-Control (10,923 Cent im dritten Quartal 2026)
-abzüglich Ausgleichsenergiekosten. Solange die Börsenpreise zur Mittagszeit wegen des vielen
-Solarstroms niedrig sind, klebt der Tarif an dieser Untergrenze.</p>
-<p>In einer Energiegemeinschaft verkaufen Sie den zugeordneten Überschuss zu einem selbst vereinbarten
-Preis, typisch 8 bis 12 Cent. Rechnerisch bei 7.000 kWh Überschuss und 60 Prozent Zuordnung: 4.200 kWh
-zu 10 Cent* statt 6,146 Cent ergeben rund 160 Euro Mehrerlös im Jahr. Dazu kommt der Abnehmervorteil in
-den Abend- und Winterstunden, in denen Sie selbst aus der Gemeinschaft beziehen.</p>
+festgelegt wird. Für September 2026 beträgt er 10,168 Cent je Kilowattstunde (Stand Oktober 2026), im
+Juli 2026 lag er bei 6,146 Cent, der gesetzlichen Untergrenze von 60 Prozent des Quartalsmarktpreises der
+E-Control (10,923 Cent im dritten Quartal 2026) abzüglich Ausgleichsenergiekosten. Der Tarif schwankt
+also innerhalb eines Quartals um rund 4 Cent, je nachdem, wie die Börsenpreise zur Mittagszeit stehen.</p>
+<p>In einer Energiegemeinschaft verkaufen Sie den zugeordneten Überschuss zu einem selbst vereinbarten,
+fixen Preis, typisch 8 bis 12 Cent*. Rechnerisch bei 7.000 kWh Überschuss und 60 Prozent Zuordnung:
+4.200 kWh zu 10 Cent* bringen 420 Euro im Jahr. Bei der OeMAG wären es je nach Monatswert 258 Euro
+(Juli 2026) bis 427 Euro (September 2026). Der Erzeugervorteil hängt also vom Marktpreis ab und kann in
+Monaten mit hohem OeMAG-Tarif entfallen. Verlässlich sind die Planbarkeit des fixen Preises und der
+Abnehmervorteil in den Abend- und Winterstunden, in denen Sie selbst aus der Gemeinschaft beziehen.</p>
 {A.box("Sie müssen den OeMAG-Vertrag nicht kündigen. Die Gemeinschaft ordnet nur die Menge zu, die in "
        "derselben Viertelstunde von einem Mitglied verbraucht wird. Alles andere bleibt Überschuss im Netz "
-       "und wird von Ihrem bestehenden Abnahmevertrag zum dortigen Tarif vergütet. Sie können also nur "
-       "gewinnen.", label="Wichtig:")}
+       "und wird von Ihrem bestehenden Abnahmevertrag zum dortigen Tarif vergütet. Auf dem nicht "
+       "zugeordneten Anteil ändert sich für Sie nichts.", label="Wichtig:")}
 <p>Die Berechnung des OeMAG-Tarifs, den Verlauf 2026 und den Vergleich aller Optionen für den Überschuss
 finden Sie im Artikel {a('/oemag-einspeisetarif/', 'OeMAG-Einspeisetarif 2026')}, die Einordnung für
 Kärnten und die Steiermark im {a('/marktpreis-2026/', 'Marktpreis-Überblick 2026')}.</p>
@@ -265,7 +271,8 @@ Energiegemeinschaft ist dort eine der sechs zulässigen Betriebsoptionen.</p>
 """),
         ("Fazit: Energiegemeinschaft", "fazit", f"""
 <p>Die Energiegemeinschaft macht lokal erzeugten Strom für mehrere Teilnehmer nutzbar und wirkt an zwei
-Stellen: Erzeuger bekommen 8 bis 12 Cent statt 6,146 Cent für den zugeordneten Überschuss, Abnehmer
+Stellen: Erzeuger bekommen einen fix vereinbarten Preis, typisch 8 bis 12 Cent, für den zugeordneten
+Überschuss (der OeMAG-Tarif schwankte 2026 zwischen 6,146 Cent im Juli und 10,168 Cent im September), Abnehmer
 sparen bis zu 57 Prozent Netzentgelt plus Abgaben. Beides gilt nur für die zugeordnete Menge, deshalb
 entscheiden Verbrauchsprofil, Speicher und Energiemanagement über den tatsächlichen Nutzen. Der Einstieg
 dauert wenige Wochen, das Risiko ist gering: Lieferant und OeMAG-Vertrag bleiben, der Austritt ist mit
@@ -310,7 +317,8 @@ ein bis drei Monaten Frist möglich.</p>
         ("Wie viel kann ich sparen?",
          "Abnehmer sparen auf die zugeordnete Menge rund 7 bis 8 Cent je Kilowattstunde aus Netz und Abgaben "
          "(lokale EEG, Richtwerte 2026) plus die Differenz zwischen Lieferantenpreis und EG-Preis. Erzeuger "
-         "bekommen typisch 8 bis 12 Cent statt 6,146 Cent OeMAG-Tarif. Laut Erfahrungsberichten liegt der "
+         "bekommen einen fixen EG-Preis von typisch 8 bis 12 Cent; der OeMAG-Tarif schwankte 2026 zwischen 6,146 Cent "
+         "(Juli) und 10,168 Cent (September). Laut Erfahrungsberichten liegt der "
          "Jahresvorteil eines Haushalts typisch bei 100 bis 300 Euro, abhängig von der Zuordnungsquote."),
         ("Brauche ich eine eigene PV-Anlage?",
          "Nein. Sie können als reiner Abnehmer teilnehmen und sparen Netzentgelt und Abgaben auf den EG-Strom. "

@@ -1,5 +1,8 @@
 """Ratgeber: Sanierungsoffensive 2026 (Bundesförderung Kesseltausch, bis 7.500 € für Wärmepumpen).
 
+Stand Oktober 2026: Programm BEENDET, Mittel ausgeschöpft, keine Registrierung mehr (umweltfoerderung.at,
+9.10.2026). Konditionen bleiben als "galt 2026" dokumentiert, Status-Box oben, Alternativen genannt.
+
 Migriert vom WordPress-Artikel ebz-photovoltaik.at/sanierungsoffensive-2026/
 (veröffentlicht 2026-03-10, zuletzt geändert 2026-04-12). Zahlen: Stand April 2026.
 Bereinigt: Gedankenstriche, "ohne Subunternehmer" entfernt, Widerspruch "Budget langfristig
@@ -18,63 +21,85 @@ from common import a
 ARTICLE = {
     "slug": "sanierungsoffensive-2026",
     "path": "/sanierungsoffensive-2026/",
-    "title": "Sanierungsoffensive 2026: bis 7.500 € für Wärmepumpen | EBZ",
-    "description": ("Sanierungsoffensive 2026: bis 7.500 € Bundesförderung für den Kesseltausch auf "
-                    "Wärmepumpe, mit Bohrbonus 12.500 €. Voraussetzungen, 9-Monats-Frist und Ablauf."),
+    "title": "Sanierungsoffensive 2026: beendet, das gilt jetzt | EBZ",
+    "description": ("Sanierungsoffensive 2026: Kesseltausch-Förderung bis 7.500 € seit Herbst 2026 ausgeschöpft, "
+                    "keine Registrierung mehr. Was 2026 galt, Alternativen, Ausblick."),
     "eyebrow": "Förderung · Bund",
     "crumb_label": "Sanierungsoffensive 2026",
-    "h1": "Sanierungsoffensive 2026: Bis zu 7.500 € Bundesförderung für Ihre neue Wärmepumpe",
-    "lead": ("Wer seine Öl-, Gas-, Kohle- oder Elektroheizung durch eine Wärmepumpe ersetzt, erhält vom Bund "
-             "einen nicht rückzahlbaren Zuschuss von bis zu 7.500 €, bei Erdwärme mit Bohrbonus bis zu 12.500 €. "
-             "Hier finden Sie Förderhöhen, technische Kriterien, Fristen und den genauen Ablauf der Registrierung."),
+    "h1": "Sanierungsoffensive 2026: Programm beendet, Mittel ausgeschöpft. Was jetzt für Ihre Wärmepumpe gilt",
+    "lead": ("Stand Oktober 2026: Die Bundesförderung für den Kesseltausch (bis zu 7.500 €, mit Bohrbonus 12.500 €) "
+             "ist ausgeschöpft, neue Registrierungen sind nicht mehr möglich. Hier finden Sie den aktuellen Status, "
+             "die Konditionen, die 2026 galten, und die Alternativen, die jetzt noch offen sind."),
     "chips": [
-        "Wärmepumpe: <b>bis 7.500 €</b>",
-        "Bohrbonus Erdwärme: <b>+5.000 €</b>",
-        "Deckel: <b>30 %</b> der Kosten",
-        "Registrierung bis <b>31.12.2026</b>",
+        "Status: <b>beendet</b> (Stand Oktober 2026)",
+        "Galt 2026: <b>bis 7.500 €</b> Wärmepumpe",
+        "Bohrbonus Erdwärme: <b>+5.000 €</b> (galt 2026)",
+        "Alternative: <b>Landesförderung</b> + Steuer",
     ],
     "date_published": "2026-03-10",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "waermepumpe",
     "hero_alt": "Luft-Wasser-Wärmepumpe an der Hauswand eines Einfamilienhauses",
 
     "tldr": [
-        "Die Sanierungsoffensive 2026 fördert den Tausch einer fossilen Heizung im Ein-, Zweifamilien- oder "
-        "Reihenhaus mit bis zu 7.500 € für Wärmepumpen, 8.500 € für Holzzentralheizungen und 6.500 € für "
-        "Fernwärmeanschluss. Deckel: 30 % der förderfähigen Kosten.",
+        "Stand Oktober 2026: Die Sanierungsoffensive 2026 (Sanierungsbonus und Kesseltausch) ist beendet. Die "
+        "Mittel sind ausgeschöpft, eine Registrierung oder Antragstellung ist nicht mehr möglich (Quelle: "
+        "umweltfoerderung.at).",
+        "Was 2026 galt: Tausch einer fossilen Heizung im Ein-, Zweifamilien- oder Reihenhaus mit bis zu 7.500 € "
+        "für Wärmepumpen, 8.500 € für Holzzentralheizungen und 6.500 € für Fernwärmeanschluss. Deckel: 30 % der "
+        "förderfähigen Kosten.",
         "Boni: 5.000 € Bohrbonus für Sole-Wasser- oder Wasser-Wasser-Wärmepumpen, 2.500 € für eine thermische "
         "Solaranlage ab 6 m². Bei Kältemitteln mit GWP 150 bis 750 (z. B. R32) sinkt die Förderung um 20 %.",
         "Voraussetzungen: EHPA-Gütesiegel, GWP höchstens 750, Vorlauftemperatur maximal 55 °C, Leistung unter "
         "100 kW, Installation durch einen befugten Fachbetrieb, Energieberatungsprotokoll bei der Registrierung.",
-        "Ablauf: online registrieren auf sanierungsoffensive.gv.at (seit 24. November 2025, bis 31. Dezember "
-        "2026), dann 9 Monate für Umsetzung und Endabrechnung. Leistungen ab 3. Oktober 2025 sind förderfähig.",
-        "Budget: 360 Millionen Euro pro Jahr von 2026 bis 2030. Innerhalb des Jahres gilt „First Come, First "
-        "Served“: Im April 2026 waren bereits über 60 % der Mittel gebunden.",
+        "Bereits Registrierte: Die Reservierung lief 9 Monate ab Registrierung für Umsetzung und Endabrechnung. "
+        "Den Stand der eigenen Reservierung zeigt das KPC-Kundenportal.",
+        "Alternativen jetzt: Landesförderungen in Kärnten und der Steiermark (ob ohne Bundesförderung möglich, "
+        "klärt die Landesstelle). Die Öko-Sonderausgabenpauschale gilt nur mit ausbezahlter Bundesförderung. Ob "
+        "2027 ein neues Bundesprogramm kommt, ist offen.",
     ],
     "kpis": [
-        ("7.500 €", "Grundpauschale Wärmepumpe"),
-        ("12.500 €", "mit Bohrbonus Erdwärme"),
-        ("9 Monate", "Frist ab Registrierung"),
-        ("360 Mio. €", "Bundesbudget pro Jahr"),
+        ("beendet", "Stand Oktober 2026: Mittel ausgeschöpft"),
+        ("7.500 €", "Grundpauschale Wärmepumpe (galt 2026)"),
+        ("9 Monate", "Frist für bereits Registrierte"),
+        ("35 %", "Landesförderung Kärnten/Steiermark laut Richtlinie, Stand prüfen"),
     ],
 
     "sections": [
-        ("Warum der Bund 2026 auf den Kesseltausch setzt", "hintergrund", f"""
+        ("Stand Oktober 2026: Programm beendet, Mittel ausgeschöpft", "status", f"""
+{A.box_dark("Sanierungsoffensive 2026: keine Registrierung mehr möglich",
+    "Die Sanierungsoffensive mit Sanierungsbonus und Kesseltausch (Ein- und Zweifamilienhaus 2026) ist laut "
+    "umweltfoerderung.at beendet: Die Mittel sind ausgeschöpft, eine Registrierung oder Antragstellung ist nicht "
+    "mehr möglich (Stand 9. Oktober 2026). Auch „Sauber Heizen für Alle 2026“ nimmt keine neuen Registrierungen "
+    "an; wer dort bereits registriert ist, kann noch beantragen. Ob 2027 ein neues Bundesprogramm kommt, ist offen.")}
+<p>Was jetzt weiterhin gilt: Die Landesförderungen für den Heizungstausch laufen weiter; mehrere Länder, darunter
+Kärnten, vergeben sie bisher als Anschlussförderung an den Bund, den aktuellen Stand klären Sie vor der
+Antragstellung mit der Landesstelle (Kärnten, Steiermark). Die steuerliche
+{a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/', 'Öko-Sonderausgabenpauschale')}
+(fünf Jahre je 400 € Sonderausgaben) setzt eine ausbezahlte Bundesförderung voraus und bleibt damit für
+registrierte Projekte relevant. Wer sein Projekt vor dem Förderstopp registriert hat, prüft den
+Status seiner Reservierung im KPC-Kundenportal; maßgeblich sind die Informationen auf umweltfoerderung.at.
+Alle Angaben weiter unten beschreiben die Konditionen, die 2026 galten, und bleiben für bereits registrierte
+Projekte sowie als Referenz für ein mögliches Folgeprogramm relevant. Den Überblick über alle Töpfe gibt der
+Ratgeber {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich')}.</p>
+"""),
+        ("Warum der Bund 2026 auf den Kesseltausch gesetzt hat", "hintergrund", f"""
 <p>Jede fünfte Heizung in Österreich läuft noch mit Öl oder Gas. Das bedeutet hohe Energiekosten,
-steigende CO₂-Abgaben und Abhängigkeit von internationalen Energiemärkten. Die Bundesregierung stellt
-deshalb für die Sanierungsoffensive im Zeitraum 2026 bis 2030 jährlich 360 Millionen Euro bereit,
-insgesamt 1,8 Milliarden Euro. Die Finanzierung ist damit über mehrere Jahre gesichert. Innerhalb eines
-Jahres kann das Budget aber ausgeschöpft sein, weil Registrierungen nach Reihenfolge des Eingangs
-angenommen werden.</p>
+steigende CO₂-Abgaben und Abhängigkeit von internationalen Energiemärkten. Die Bundesregierung hat
+deshalb für die Sanierungsoffensive im Zeitraum 2026 bis 2030 jährlich 360 Millionen Euro angekündigt,
+insgesamt 1,8 Milliarden Euro. Innerhalb eines Jahres kann das Budget aber ausgeschöpft sein, weil
+Registrierungen nach Reihenfolge des Eingangs angenommen werden. Genau das ist 2026 passiert: Im Herbst
+waren die Mittel aufgebraucht, die Registrierung wurde geschlossen.</p>
 <p>Der Kesseltausch steht im Mittelpunkt, weil der Austausch einer fossilen Heizung durch eine
 {a('waermepumpe', 'Wärmepumpe')} die höchste CO₂-Einsparung pro Fördereuro erzielt. Seit 2. Februar 2026
 konzentriert der Bund die Mittel auf den Kesseltausch. Neue Registrierungen für den Sanierungsbonus
 (thermische Gebäudesanierung wie Dämmung oder Fenstertausch) werden seither nicht mehr angenommen.</p>
 """),
-        ("Wie hoch ist die Förderung beim Kesseltausch 2026?", "foerderhoehe", f"""
-<p>Der Zuschuss ist ein nicht rückzahlbarer Einmalbetrag, der nach Prüfung direkt auf Ihr Konto
+        ("Wie hoch war die Förderung beim Kesseltausch 2026?", "foerderhoehe", f"""
+<p>Der Zuschuss war ein nicht rückzahlbarer Einmalbetrag, der nach Prüfung direkt auf das Konto
 ausbezahlt wird. Er ist mit maximal 30 % der förderfähigen Investitionskosten gedeckelt. Für Ein- oder
-Zweifamilienhäuser und Reihenhäuser gelten diese Grundpauschalen und Boni (Stand: April 2026):</p>
+Zweifamilienhäuser und Reihenhäuser galten 2026 diese Grundpauschalen und Boni (für neue Projekte seit
+Herbst 2026 nicht mehr verfügbar):</p>
 {A.table(
     ["Maßnahme", "Förderung", "Hinweis"],
     [
@@ -92,10 +117,11 @@ Zweifamilienhäuser und Reihenhäuser gelten diese Grundpauschalen und Boni (Sta
 Liegt der GWP-Wert zwischen 150 und 750, etwa bei R32, reduziert sich die Förderung bei Monoblockgeräten
 bis 50 kW und Splitgeräten bis 12 kW um 20 %. Geräte mit einem GWP über 750 sind ausgeschlossen.</p>
 {A.box("Photovoltaik ist nicht Teil der Kesseltausch-Förderung. PV-Anlagen werden separat über den "
-       "EAG-Investitionszuschuss gefördert, die Fördercalls 2026 starten im April, Juni und Oktober.")}
+       "EAG-Investitionszuschuss gefördert; der letzte Fördercall 2026 läuft bis 22. Oktober 2026, ab 2027 ist "
+       "laut BMWET eine Systemförderung mit Antrag nach der Installation geplant.")}
 """),
-        ("Wer kann den Kesseltausch 2026 beantragen?", "antragsberechtigt", f"""
-<p>Die Förderung richtet sich an Privatpersonen:</p>
+        ("Wer konnte den Kesseltausch 2026 beantragen?", "antragsberechtigt", f"""
+<p>Die Förderung richtete sich an Privatpersonen:</p>
 <ul>
   <li><b>(Mit-)Eigentümerinnen und Eigentümer</b> von Ein- oder Zweifamilienhäusern und Reihenhäusern
   im Inland, unabhängig davon, ob dort der Hauptwohnsitz liegt.</li>
@@ -105,9 +131,9 @@ bis 50 kW und Splitgeräten bis 12 kW um 20 %. Geräte mit einem GWP über 750 s
 <p>Es gibt keine Einkommensgrenze und kein Mindestalter für die alte Heizanlage. Entscheidend ist, dass
 ein fossiles Heizsystem vollständig durch ein klimafreundliches ersetzt wird. Pro Standort ist nur ein
 Antrag möglich: In einem Zweifamilienhaus mit gemeinsamer Zentralheizung gibt es einen gemeinsamen Antrag.
-Haushalte mit geringem Einkommen sollten zuerst
-{a('/sauber-heizen-fuer-alle-2026/', '„Sauber Heizen für Alle“')} prüfen, dort sind bis zu 100 % der
-Kosten möglich.</p>
+Für Haushalte mit geringem Einkommen gab es parallel
+{a('/sauber-heizen-fuer-alle-2026/', '„Sauber Heizen für Alle“')} mit bis zu 100 % der Kosten; auch dieses
+Programm nimmt seit Herbst 2026 keine neuen Registrierungen mehr an.</p>
 """),
         ("Was gefördert wird und was nicht", "foerderfaehig", f"""
 <h3>Förderfähige Kosten</h3>
@@ -143,8 +169,9 @@ ausschließlich Nettobeträge. Förderfähig sind Leistungen, die ab dem 3. Okto
 kein Netz verfügbar ist. Ob Ihr Gebäude die 55 °C Vorlauftemperatur einhält, klärt der Ratgeber
 {a('/waermepumpe-im-altbau/', 'Wärmepumpe im Altbau')}.</p>
 """),
-        ("Schritt für Schritt: So läuft die Antragstellung ab", "ablauf", f"""
-<p>Der Förderprozess besteht aus zwei Schritten: Registrierung und Endabrechnung.</p>
+        ("So lief die Antragstellung ab (für bereits Registrierte weiterhin relevant)", "ablauf", f"""
+<p>Der Förderprozess bestand aus zwei Schritten: Registrierung und Endabrechnung. Neue Registrierungen
+sind seit Herbst 2026 nicht mehr möglich; wer registriert ist, durchläuft die Schritte 3 und 4.</p>
 {A.steps([
     ("Energieberatung durchführen lassen",
      "Bereits bei der Registrierung muss ein gültiges Energieberatungsprotokoll Ihres Bundeslandes vorliegen. "
@@ -152,9 +179,9 @@ kein Netz verfügbar ist. Ob Ihr Gebäude die 55 °C Vorlauftemperatur einhält,
      "Standort betreffen. Ein Energieausweis ist nicht erforderlich."),
     ("Online registrieren",
      "Auf sanierungsoffensive.gv.at mit ID Austria oder Lichtbildausweis, mit Angaben zur Maßnahme und den "
-     "voraussichtlichen Kosten. Möglich seit 24. November 2025, längstens bis 31. Dezember 2026, solange Budget "
-     "vorhanden ist. Sie erhalten eine Bestätigung per E-Mail und Zugangsdaten zur Plattform. Das Budget ist "
-     "ab jetzt 9 Monate für Sie reserviert."),
+     "voraussichtlichen Kosten. Möglich war das seit 24. November 2025, solange Budget vorhanden war; seit Herbst "
+     "2026 ist die Registrierung geschlossen. Registrierte haben eine Bestätigung per E-Mail und Zugangsdaten zur "
+     "Plattform erhalten, das Budget ist ab der Registrierung 9 Monate reserviert."),
     ("Heizungstausch umsetzen",
      "Ein befugter Fachbetrieb installiert die Wärmepumpe, baut die Altanlage ab und entsorgt Kessel und "
      "Tanks. Sammeln Sie alle Rechnungen, sie müssen auf Ihren Namen lauten und bezahlt sein."),
@@ -167,9 +194,9 @@ kein Netz verfügbar ist. Ob Ihr Gebäude die 55 °C Vorlauftemperatur einhält,
     "Wird die Endabrechnung nicht innerhalb von 9 Monaten nach der Registrierung hochgeladen, verfällt die "
     "Reservierung und die Mittel fließen zurück in den allgemeinen Topf. Registrieren Sie sich erst, wenn "
     "Beratung, Angebot und Liefertermin realistisch in diese Frist passen.")}
-{A.cta("Registrierung und Technik aus einer Hand",
-       "EBZ Energie organisiert die Energieberatung, registriert Ihr Projekt auf sanierungsoffensive.gv.at "
-       "und plant die Wärmepumpe so, dass alle Förderkriterien erfüllt sind.",
+{A.cta("Alternativen prüfen, Technik förderkonform planen",
+       "EBZ Energie prüft, welche Landesförderung für Ihr Projekt aktuell "
+       "möglich ist, und plant die Wärmepumpe so, dass sie auch die Kriterien eines möglichen Folgeprogramms erfüllt.",
        secondary=("waermepumpe", "Zur Wärmepumpen-Leistungsseite"))}
 """),
         ("Zeitplan und Fristen der Sanierungsoffensive 2026", "fristen", f"""
@@ -179,43 +206,49 @@ kein Netz verfügbar ist. Ob Ihr Gebäude die 55 °C Vorlauftemperatur einhält,
         ["3. Oktober 2025", "Stichtag: Leistungen ab diesem Rechnungsdatum sind rückwirkend förderfähig"],
         ["24. November 2025", "Start der Online-Registrierung auf sanierungsoffensive.gv.at"],
         ["2. Februar 2026", "Fokus auf den Kesseltausch; keine neuen Registrierungen mehr für den Sanierungsbonus"],
-        ["31. Dezember 2026", "letztmöglicher Tag für die Registrierung, sofern noch Budget vorhanden ist"],
-        ["9 Monate ab Registrierung", "Frist für Installation und Hochladen der Endabrechnung"],
+        ["Herbst 2026", "Mittel ausgeschöpft, Registrierung geschlossen (Stand 9. Oktober 2026, umweltfoerderung.at)"],
+        ["31. Dezember 2026", "ursprünglich letztmöglicher Tag für die Registrierung, durch das Budgetende hinfällig"],
+        ["9 Monate ab Registrierung", "Frist für Installation und Hochladen der Endabrechnung (für Registrierte)"],
     ],
     hl_cols=(0,),
 )}
-<p><b>Budgetstand (April 2026):</b> Laut Berichten waren bereits über 60 % der verfügbaren Fördermittel
-gebunden. Seit der Konzentration auf den Kesseltausch im Februar ist die Nachfrage stark gestiegen.
-Registrieren Sie sich daher, bevor Sie den ersten Auftrag unterschreiben.</p>
-<h3>Kombination mit Landesförderungen</h3>
-<p>Die Bundesförderung kann mit den Programmen der Bundesländer kombiniert werden. In Kärnten und der
-Steiermark, den Kernregionen von EBZ Energie, kommen dadurch mehrere Tausend Euro dazu. Alle Beträge
+<p><b>Budgetstand (Oktober 2026):</b> Die Mittel sind ausgeschöpft. Im April 2026 waren laut Berichten
+bereits über 60 % gebunden, seit der Konzentration auf den Kesseltausch im Februar war die Nachfrage stark
+gestiegen. Ob und in welcher Form 2027 ein neues Bundesprogramm folgt, ist offen.</p>
+<h3>Landesförderungen: jetzt der wichtigste Topf</h3>
+<p>Für bereits registrierte Projekte kann die Bundesförderung mit den Programmen der Bundesländer
+kombiniert werden. Für neue Projekte sind die Landesförderungen derzeit die wichtigste Unterstützung: In
+Kärnten und der Steiermark, den Kernregionen von EBZ Energie, geht es um mehrere Tausend Euro. Ob ein Land
+ohne Bundesförderung zahlt, regelt seine Richtlinie (Kärnten vergab die Förderung bisher als Anschlussförderung
+an den Bund); klären Sie den Stand vor der Antragstellung mit der Landesstelle. Alle Beträge
 und Bedingungen stehen im Ratgeber
 {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}. Wichtig:
 Die Summe aus Bund, Land und Gemeinde darf die tatsächlichen Investitionskosten nicht übersteigen.
 Alle Förderungen werden in der Transparenzdatenbank erfasst, unzulässige Mehrfachförderungen werden
 zurückgefordert. Zusätzlich bringt die
 {a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/', 'Öko-Sonderausgabenpauschale')}
-fünf Jahre lang je 400 € Sonderausgaben.</p>
+fünf Jahre lang je 400 € Sonderausgaben, Voraussetzung ist eine ausbezahlte Bundesförderung.</p>
 """),
         ("Wärmepumpe und Photovoltaik: die Kombination, die unabhängig macht", "photovoltaik", f"""
 <p>Eine Wärmepumpe verbraucht rund 3.000 bis 5.000 kWh Strom pro Jahr. Mit einer passend
 dimensionierten {a('photovoltaik', 'PV-Anlage')} decken Sie einen Großteil dieses Bedarfs selbst und
 speisen den Überschuss ein oder speichern ihn. Photovoltaik wird über den EAG-Investitionszuschuss
-gefördert, die Calls 2026 starten im April, Juni und Oktober. Wer beides gemeinsam plant, nutzt beide
-Fördertöpfe und spart dauerhaft. Wie das technisch zusammenspielt, zeigt der Ratgeber
+gefördert: Der letzte Call 2026 läuft bis 22. Oktober 2026, ab 2027 plant das BMWET eine Systemförderung
+für Speicher mit intelligenter Steuerung, beantragt nach der Installation. Wer beides gemeinsam plant,
+nutzt die laufenden Töpfe und spart dauerhaft. Wie das technisch zusammenspielt, zeigt der Ratgeber
 {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}; die Kosten des Gesamtpakets
 lassen sich über eine {a('finanzierung', 'Finanzierung')} verteilen, die Anlage gehört ab Tag 1 Ihnen.</p>
 """),
-        ("Fazit: Registrieren, bevor das Jahresbudget aufgebraucht ist", "fazit", f"""
-<p>Die Sanierungsoffensive 2026 ist mit bis zu 7.500 € (Erdwärme 12.500 €) das Fundament jedes
-Heizungstausches. Die Bedingungen sind klar: EHPA-Gütesiegel, GWP unter 750, Vorlauf 55 °C,
-Fachbetrieb, Energieberatung. Der kritische Punkt ist die Zeit: Erst Beratung, dann Registrierung, dann
-Auftrag, und die Endabrechnung innerhalb von 9 Monaten. Einen Überblick über alle weiteren Töpfe gibt
+        ("Fazit: Was nach dem Förderstopp gilt", "fazit", f"""
+<p>Die Sanierungsoffensive 2026 war mit bis zu 7.500 € (Erdwärme 12.500 €) das Fundament jedes
+Heizungstausches, ist aber seit Herbst 2026 ausgeschöpft. Wer registriert ist, hält die 9-Monats-Frist für
+Umsetzung und Endabrechnung ein. Wer neu plant, klärt die Landesförderung mit der Landesstelle
+und baut die Wärmepumpe so, dass sie die bekannten Kriterien (EHPA-Gütesiegel, GWP unter 750, Vorlauf
+55 °C, Fachbetrieb) erfüllt, falls 2027 ein neues Bundesprogramm kommt. Einen Überblick über alle Töpfe gibt
 der Ratgeber {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich 2026')}.</p>
-{A.cta("Jetzt Förderung sichern",
-       "Wir prüfen Ihre Förderfähigkeit, organisieren die Energieberatung und registrieren Ihr Projekt "
-       "zum richtigen Zeitpunkt.",
+{A.cta("Jetzt die offenen Förderwege nutzen",
+       "Wir prüfen die Landesförderung für Ihr Projekt, planen die Wärmepumpe förderkonform und "
+       "informieren Sie, sobald ein neues Bundesprogramm startet.",
        primary=("kontakt", "Kostenlose Erstberatung"), secondary=("waermepumpe", "Mehr zur Wärmepumpe"))}
 """),
     ],
@@ -226,18 +259,27 @@ der Ratgeber {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderu
         "text": ("EBZ Energie aus Villach ist Ihr Fachbetrieb für Wärmepumpen und Photovoltaik in Kärnten und "
                  "der Steiermark, mit einem festangestellten Team aus zertifizierten Fachkräften. Wir kommen zu "
                  "Ihnen, analysieren das Gebäude, planen Wärmepumpe und PV als Gesamtlösung und übernehmen den "
-                 "gesamten Förderprozess von der Energieberatung bis zur Endabrechnung."),
+                 "gesamten Förderprozess, aktuell für die Landesförderung, bei Registrierten bis zur Endabrechnung."),
         "grid": [
             ("Beratung vor Ort", "Wir berechnen, welches System zu Ihrem Haus passt."),
-            ("Komplette Förderabwicklung", "Energieberatung, Registrierung, Endabrechnung auf sanierungsoffensive.gv.at."),
+            ("Komplette Förderabwicklung", "Landesförderung, Endabrechnung für Registrierte, neue Programme sobald verfügbar."),
             ("Installation aus einer Hand", "Wärmepumpe und PV vom selben Team, klare Verantwortlichkeiten."),
             ("Regionale Expertise", "Wir kennen die Landesförderungen in Kärnten und der Steiermark."),
         ],
     },
 
     "faq": [
-        ("Kann ich die Förderung beantragen, wenn ich keinen Hauptwohnsitz am Standort habe?",
-         "Ja. Ein Hauptwohnsitz am Standort ist keine Voraussetzung, die Förderung gilt für Wohngebäude im "
+        ("Kann ich mich noch für die Sanierungsoffensive 2026 registrieren?",
+         "Nein. Stand Oktober 2026 ist die Sanierungsoffensive mit Sanierungsbonus und Kesseltausch beendet, die "
+         "Mittel sind ausgeschöpft und eine Registrierung oder Antragstellung ist laut umweltfoerderung.at nicht "
+         "mehr möglich. Offen bleiben die Landesförderungen (Bedingungen beim Land prüfen); die "
+         "Öko-Sonderausgabenpauschale setzt eine ausbezahlte Bundesförderung voraus."),
+        ("Kommt 2027 eine neue Bundesförderung für den Heizungstausch?",
+         "Das ist offen. Der Bund hatte für 2026 bis 2030 jährlich 360 Millionen Euro angekündigt, ein konkretes "
+         "Programm für 2027 ist aber noch nicht veröffentlicht. Wir aktualisieren diesen Ratgeber, sobald es "
+         "offizielle Informationen gibt."),
+        ("Konnte ich die Förderung beantragen, wenn ich keinen Hauptwohnsitz am Standort habe?",
+         "Ja. Ein Hauptwohnsitz am Standort war keine Voraussetzung, die Förderung galt für Wohngebäude im "
          "Inland, auch wenn Sie dort nur zeitweise wohnen oder das Objekt vermieten. Entscheidend ist, dass "
          "die beheizte Wohnfläche mehr als 50 % des Gebäudes ausmacht und die fossile Heizung vollständig "
          "ersetzt wird."),
@@ -253,10 +295,10 @@ der Ratgeber {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderu
          "Ja. Der Ersatz stationärer oder fest eingebauter Elektroheizungen wie Nachtspeicheröfen oder "
          "Elektrospeicherheizungen wird mit denselben Sätzen und Voraussetzungen gefördert wie der Tausch "
          "einer Öl- oder Gasheizung. Die alte Stromheizung muss vollständig stillgelegt werden."),
-        ("Kann ich mit der Umsetzung beginnen, bevor die Registrierung abgeschlossen ist?",
-         "Leistungen sind ab dem 3. Oktober 2025 förderfähig, also auch vor der Registrierung. Sie tragen dann "
-         "aber das Risiko, dass die Mittel bei der späteren Registrierung bereits erschöpft sind. Wir "
-         "empfehlen, zuerst zu registrieren und erst danach zu beauftragen."),
+        ("Ich habe vor dem Förderstopp registriert. Was gilt für mich?",
+         "Für registrierte Projekte galt die Reservierung 9 Monate ab Registrierung für Umsetzung und Hochladen "
+         "der Endabrechnung. Prüfen Sie den Stand Ihrer Reservierung im KPC-Kundenportal und halten Sie die Frist "
+         "ein; maßgeblich sind die Informationen auf umweltfoerderung.at."),
         ("Wie hoch ist die Förderung für eine Erdwärme-Wärmepumpe?",
          "Zur Grundpauschale von 7.500 € kommt bei Sole-Wasser- oder Wasser-Wasser-Wärmepumpen mit Tiefen- "
          "oder Brunnenbohrung ein Bohrbonus von 5.000 €, in Summe bis zu 12.500 € vom Bund. Auch hier gilt "
@@ -269,8 +311,8 @@ der Ratgeber {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderu
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant und installiert "
                     "Wärmepumpen und Photovoltaik in Kärnten und der Steiermark und übernimmt die Registrierung "
-                    "und Endabrechnung bei der Sanierungsoffensive. Alle Angaben entsprechen dem Stand April 2026 "
-                    "und den Vorgaben auf sanierungsoffensive.gv.at. Keine Rechts- oder Steuerberatung, "
+                    "und Endabrechnung bei der Sanierungsoffensive. Status des Programms: Stand 9. Oktober 2026 laut "
+                    "umweltfoerderung.at; Konditionen: Stand April 2026. Keine Rechts- oder Steuerberatung, "
                     "maßgeblich sind die offiziellen Förderbedingungen."),
     "sources": [
         ("Sanierungsoffensive 2026 (Bundesportal, Registrierung und Förderbedingungen)",
@@ -283,11 +325,11 @@ der Ratgeber {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderu
         ("waermepumpe", "Wärmepumpen-Installateur EBZ Energie"),
     ],
     "cta": {
-        "h3": "Budget reservieren",
-        "text": "Wir registrieren Ihren Heizungstausch, bevor das Jahresbudget ausgeschöpft ist, und planen förderkonform.",
+        "h3": "Offene Förderwege prüfen",
+        "text": "Bundesprogramm ausgeschöpft: Wir prüfen, welche Landesförderung für Ihren Heizungstausch offen ist, und planen förderkonform.",
         "primary": ("kontakt", "Kostenlose Beratung"),
     },
-    "final_h2": "Ihre neue Wärmepumpe, mit Bundesförderung",
+    "final_h2": "Ihre neue Wärmepumpe: offene Förderwege nutzen",
     "final_text": ("Kostenlose Erstberatung, ehrliche Zahlen und ein Team aus Villach, das Planung, "
                    "Montage und Förderabwicklung aus einer Hand übernimmt."),
 }

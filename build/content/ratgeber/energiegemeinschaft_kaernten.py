@@ -16,27 +16,28 @@ from common import a
 ARTICLE = {
     "slug": "energiegemeinschaft-kaernten",
     "path": "/energiegemeinschaft-kaernten/",
-    "title": "Energiegemeinschaft Kärnten: bis 57 % weniger Netzentgelt | EBZ",
-    "description": "Energiegemeinschaft in Kärnten: PV-Überschuss an Nachbarn statt für 6,146 ct an die OeMAG. Netzentgelt bis 57 % weniger, Start in 4 bis 8 Wochen. EBZ, Villach.",
+    "title": "Energiegemeinschaft Kärnten: bis 57 % weniger Netzentgelt",
+    "description": "Energiegemeinschaft in Kärnten: PV-Überschuss zum fixen Preis an Nachbarn statt zum OeMAG-Tarif. Netzentgelt bis 57 % weniger, Start in 4 bis 8 Wochen mit EBZ.",
     "eyebrow": "Energiegemeinschaft · Kärnten",
     "crumb_label": "Energiegemeinschaft Kärnten",
-    "h1": "Energiegemeinschaft in Kärnten: Solarstrom teilen statt für 6 Cent einspeisen",
+    "h1": "Energiegemeinschaft in Kärnten: Solarstrom teilen statt zum schwankenden OeMAG-Tarif einspeisen",
     "lead": ("Rund 390 Kärntnerinnen und Kärntner suchen jeden Monat nach einer Energiegemeinschaft. "
              "Hier steht, wie sie funktioniert, was sie in Kärnten konkret bringt und wie Sie mit EBZ Energie einsteigen."),
     "chips": [
         "Netzentgelt: <b>bis zu 57 %</b> weniger",
         "Elektrizitätsabgabe: <b>entfällt</b>",
-        "OeMAG Juli 2026: <b>6,146 ct/kWh</b>",
+        "OeMAG Sept. 2026: <b>10,168 ct/kWh</b>",
         "Start in <b>4 bis 8 Wochen</b>",
     ],
     "date_published": "2026-08-05",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "eg_drohne",
     "hero_alt": "Ortschaft in Kärnten aus der Luft mit Photovoltaikanlagen auf mehreren Dächern",
 
     "tldr": [
         "Eine Energiegemeinschaft (EG) lässt Sie PV-Überschuss zu einem selbst vereinbarten Preis an Haushalte "
-        "und Betriebe im Nahbereich verkaufen, statt ihn zum OeMAG-Marktpreis von 6,146 Cent (Juli 2026) abzugeben.",
+        "und Betriebe im Nahbereich verkaufen, statt ihn zum monatlich schwankenden OeMAG-Marktpreis abzugeben "
+        "(Juli 2026: 6,146 Cent, September 2026: 10,168 Cent).",
         "In Kärnten entscheidet das Netz der Kärnten Netz GmbH über den Nahbereich: derselbe Trafo bedeutet lokal "
         "(minus 57 Prozent Netzentgelt), dasselbe Umspannwerk regional (minus 28 Prozent).",
         "Erneuerbare-Energie-Gemeinschaften sind zusätzlich von Elektrizitätsabgabe (1,5 Cent je kWh) und "
@@ -48,7 +49,7 @@ ARTICLE = {
     ],
     "kpis": [
         ("~1.100 kWh", "Jahresertrag je kWp in Kärnten"),
-        ("6,146 ct", "OeMAG-Marktpreis Juli 2026 je kWh"),
+        ("10,168 ct", "OeMAG-Marktpreis September 2026 (Juli: 6,146 ct)"),
         ("57 %", "Netzentgelt-Abschlag lokal (Arbeitspreis)"),
         ("8 bis 12 ct", "typischer EG-Einspeisepreis*"),
     ],
@@ -81,9 +82,9 @@ die drei Modelle EEG, BEG und GEA im Detail. Hier konzentrieren wir uns auf das,
 installiertem Kilowattpeak liegt Kärnten österreichweit an der Spitze, das Klagenfurter Becken und das Lavanttal noch
 etwas darüber. Eine 10-kWp-Anlage liefert also gut 11.000 kWh im Jahr, von denen ein Einfamilienhaus ohne Speicher
 nur etwa 30 Prozent selbst verbraucht.</p>
-<p>Zweitens der Einspeisetarif: Der OeMAG-Marktpreis lag im Juli 2026 bei 6,146 Cent pro Kilowattstunde, das ist die
-gesetzliche Untergrenze, und die Tendenz zeigt seit Monaten nach unten (aktuelle Werte in unserem
-{a('marktpreis', 'Marktpreis-Überblick')}). Drittens die Netzstruktur: Kärnten ist kleinteilig besiedelt, viele
+<p>Zweitens der Einspeisetarif: Der OeMAG-Marktpreis schwankt monatlich, im Juli 2026 lag er mit 6,146 Cent pro
+Kilowattstunde an der gesetzlichen Untergrenze, im September 2026 bei 10,168 Cent (Stand Oktober 2026, aktuelle
+Werte in unserem {a('marktpreis', 'Marktpreis-Überblick')}). Planbar ist er damit nicht. Drittens die Netzstruktur: Kärnten ist kleinteilig besiedelt, viele
 Ortschaften hängen an einem gemeinsamen Trafo. Das erleichtert lokale Energiegemeinschaften mit dem vollen
 Netzentgelt-Abschlag.</p>
 {A.box("7.000 kWh Überschuss, davon landen 60 Prozent in der Gemeinschaft, zu 10 statt 6 Cent*: Das sind 168 Euro "

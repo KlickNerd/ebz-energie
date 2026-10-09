@@ -4,7 +4,14 @@ Kommerzieller Suchintent "photovoltaik villach". Quelle: Live-Seite
 /photovoltaik-villach/ (WP-Beitrag). Bereinigt: falsche Notstrom-Absaetze unter
 "Finanzielle Entlastung" entfernt, "25 Jahre Leistungsgarantie" -> bis zu 30 Jahre,
 Gedankenstriche, Superlative. Lokale Fakten nur aus Quelle bzw. Repo-Ratgeber
-(Kaernten ueber 1.900 Sonnenstunden, Landespauschale 3.000 Euro).
+(Kaernten ueber 1.900 Sonnenstunden, rund 1.000 bis 1.100 kWh je kWp, Landespauschale 3.000 Euro).
+
+SEO-Ueberarbeitung Oktober 2026 (build/seo/standort_villach.json): Genehmigung
+(Mitteilungspflicht Kaernten) und Netzanschluss (Kaernten Netz) als eigene Sektion,
+Ertrag je kWp, Local-Pack-Signale (NAP, Zeiten, 4,9 Sterne aus 111 Bewertungen) und eine
+direkt zitierbare Antwortpassage fuer Konversations-Suchanfragen ("PV-Firma in Villach").
+Foerderung nur als Kurzfassung, Details im Ratgeber. Kaernten-weiter Regionenblock entfernt
+(stand identisch auf /photovoltaik-wolfsberg/).
 """
 
 from common import IMG, NAP, CLAIMS, AUTHOR, AUTHOR_ROLE, S, faq_jsonld, u, a, href, tel_link, write_page, load_reviews
@@ -13,58 +20,67 @@ import components as C
 
 PATH = "/photovoltaik-villach/"
 TITLE = "Photovoltaik Villach: Fachbetrieb vor Ort | EBZ Energie"
-DESC = ("Photovoltaik in Villach vom Fachbetrieb vor Ort: Planung, Montage, Speicher und Förderung "
-        "Kärnten aus einer Hand. Referenz 10 kWp: rund 80 % weniger Strom.")
+DESC = ("Photovoltaik in Villach und Klagenfurt vom Fachbetrieb vor Ort: Planung, Montage, Speicher, "
+        "Netzanmeldung und Förderung Kärnten aus einer Hand. 4,9 Sterne.")
 
 HERO_IMG = "/assets/img/pv-villach-stadt.jpg"
 
 MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Triglavstra%C3%9Fe+15%2C+9500+Villach"
 
 FAQ = [
-    ("Was kostet eine Photovoltaikanlage in Villach?",
-     "Eine Komplettanlage mit rund 10 kWp und Speicher liegt typischerweise bei rund 15.000 bis 22.000 Euro vor "
-     "Förderung. Der genaue Preis hängt von Dach, Speichergröße und Ausstattung ab. Das Land Kärnten zahlt für "
-     "neue private Anlagen ab 5 kWp mit Speicher eine Pauschale von 3.000 Euro, dazu kommt die Bundesförderung."),
-    ("Wie bestimme ich die richtige Größe für meine Anlage in Villach?",
-     "Die Größe in kWp richtet sich nach Ihrem Stromverbrauch, der geeigneten Dachfläche und Ihren Plänen, etwa "
-     "E-Auto oder Wärmepumpe. Wir kommen zu Ihnen nach Villach oder in die Umgebung, analysieren Dach und "
-     "Verbrauch und legen die Anlage im Projektbericht mit 3D-Belegplan und Statikreport aus."),
-    ("Lohnt sich Photovoltaik in Villach überhaupt?",
-     "Ja. Kärnten zählt mit über 1.900 Sonnenstunden im Jahr zu den einstrahlungsreichsten Regionen Österreichs. "
-     "Unsere Referenz in Villach, ein Einfamilienhaus mit 10 kWp in Ost-West-Ausrichtung, erzeugt rund 11.000 kWh "
-     "im Jahr und senkt die Stromkosten um rund 80 Prozent. Typisch rechnet sich eine Anlage in 4 bis 6 Jahren."),
-    ("Wie lange hält eine Photovoltaikanlage?",
-     "Moderne Anlagen sind auf 25 bis 30 Jahre und mehr ausgelegt. Auf die Module gibt es bis zu 30 Jahre "
-     "Leistungsgarantie und mindestens 10 Jahre Produktgarantie. Wir setzen auf hochwertige Komponenten, damit "
-     "Ihre Anlage in Villach viele Jahre zuverlässig produziert."),
-    ("Brauche ich einen Stromspeicher zu meiner PV-Anlage?",
-     "Nicht zwingend, aber ein Speicher ist die wichtigste Ergänzung. Ohne Speicher nutzen Sie Ihren Sonnenstrom "
-     "nur, während die Sonne scheint. Mit Speicher steht er auch abends und nachts zur Verfügung, der "
-     "Eigenverbrauch steigt deutlich und Notstrom wird möglich."),
+    ("Was kostet eine 10 kWp PV-Anlage mit Speicher und Montage in Villach?",
+     "Eine Komplettanlage mit rund 10 kWp und Speicher kostet in Villach typischerweise rund 15.000 bis 22.000 Euro "
+     "vor Förderung, inklusive Montage, Netzanmeldung und Inbetriebnahme (EBZ-Richtpreis, Stand Oktober 2026). Davon "
+     "gehen bis zu 3.000 Euro Landespauschale Kärnten und der EAG-Zuschuss des Bundes ab. Finanzierung ab 147 Euro "
+     "im Monat* ist möglich."),
+    ("Brauche ich in Kärnten eine Genehmigung für eine Photovoltaikanlage?",
+     "Für Anlagen auf Dach oder Fassade gilt in Kärnten in der Regel eine Mitteilungspflicht statt einer "
+     "Bewilligungspflicht: Die Gemeinde wird über das Vorhaben informiert, ein Bauverfahren entfällt meist. "
+     "Sonderfälle wie Ortsbildschutz oder freistehende Anlagen klären wir für Sie mit der Baubehörde der Stadt Villach."),
+    ("Wie viel Strom erzeugt eine PV-Anlage in Villach pro kWp?",
+     "In Kärnten liegt der Jahresertrag bei rund 1.000 bis 1.100 kWh je kWp. Unsere Referenz in Villach, ein "
+     "Einfamilienhaus mit 10 kWp in Ost-West-Ausrichtung, erzeugt rund 11.000 kWh im Jahr. Wie viel Ihr Dach "
+     "hergibt, zeigt der Solarpotenzialkataster des Landes (KAGIS, Kärnten Atlas) und danach unser Projektbericht "
+     "mit 3D-Belegplan, der auch die Verschattung durch die Berge berücksichtigt."),
+    ("Wie lange dauert die Netzanmeldung bei Kärnten Netz?",
+     "Wir melden Ihre Anlage mit den Daten aus dem Projektbericht beim Netzbetreiber an, in Villach und den meisten "
+     "Gemeinden Kärntens ist das die Kärnten Netz GmbH. Der Netzbetreiber prüft die Einspeiseleistung, danach folgen "
+     "Zählertausch und Fertigstellungsmeldung. Eine fixe Frist gibt es nicht; laut einer Kundenbewertung dauerte es bei "
+     "einem Projekt fünf Wochen von der Beratung bis zur Fertigstellung."),
+    ("Woran erkenne ich einen seriösen Photovoltaik-Anbieter in Villach?",
+     "An einem eigenen Montageteam statt Vermittlung, an einem Projektbericht mit 3D-Belegplan und Statikreport, an "
+     "schriftlichen Garantien (bis zu 30 Jahre Leistungs-, mindestens 10 Jahre Produktgarantie), an Referenzen mit "
+     "Zahlen und an echten Google-Bewertungen. EBZ Energie: 300+ Projekte, 4,9 Sterne, Firmensitz Triglavstraße 15."),
+    ("Lohnt sich ein Speicher in Kärnten?",
+     "Ja, in den meisten Haushalten. Ohne Speicher nutzen Sie nur rund 30 Prozent Ihres Sonnenstroms selbst, mit "
+     "Speicher bis zu 80 Prozent*. Dazu kommt die Förderung: 150 Euro je kWh vom Bund und die Landespauschale "
+     "Kärnten, die einen Speicher ab 5 kWh voraussetzt. Mit Notstromfunktion bleibt Ihr Haus bei Netzausfall versorgt."),
+    ("Was ändert sich 2026 bei Photovoltaik in Österreich?",
+     "Der EAG-Fördercall vom 8. bis 22. Oktober 2026 ist der letzte im bisherigen System; ab 2027 ist laut BMWET eine "
+     "Systemförderung für Speicher und Steuerung geplant, beantragt nach der Installation. Der OeMAG-Marktpreis lag im "
+     "September 2026 bei 10,168 Cent je kWh (Juli: 6,146 Cent). Seit Oktober 2026 gilt das neue "
+     "Elektrizitätswirtschaftsgesetz (ElWG)."),
     ("Übernimmt EBZ Energie die Förderanträge und die Anmeldung beim Netzbetreiber?",
-     "Ja. Wir kennen die Programme von Land Kärnten und Bund, bereiten die Anträge vor und kümmern uns um die "
-     "Anmeldung beim Netzbetreiber, den Zählertausch und die Inbetriebnahme. Sie bekommen eine schlüsselfertige Anlage."),
+     "Ja. Wir kennen die Programme von Land Kärnten und Bund, bereiten die Anträge vor und kümmern uns um Mitteilung an "
+     "die Gemeinde, Netzanmeldung, Zählertausch und Inbetriebnahme. Sie bekommen eine schlüsselfertige Anlage."),
     ("Kann ich bei EBZ Energie in Villach persönlich vorbeikommen?",
      "Ja, nach Terminvereinbarung in der Triglavstraße 15, 9500 Villach, Montag bis Freitag von 10:00 bis 20:00 Uhr. "
      "Die Beratung findet meist direkt bei Ihnen vor Ort statt, weil wir Dach, Zählerschrank und Verbrauch "
      "gleich mit aufnehmen."),
 ]
 
-KAERNTEN = ["Villach", "Klagenfurt", "Spittal an der Drau", "Feldkirchen",
-            "St. Veit an der Glan", "Wolfsberg", "Völkermarkt", "Hermagor"]
-STEIERMARK = ["Graz", "Leibnitz", "Deutschlandsberg", "Voitsberg",
-              "Weiz", "Murtal", "Leoben", "Südoststeiermark"]
-
 
 def build():
     rating, count, reviews = load_reviews()
+    bew = f"{count} Bewertungen" if count else "echten Bewertungen"
     body = "".join([
         C.hero(
             eyebrow="Photovoltaik Villach",
-            h1="Photovoltaik in Villach: Ihr Fachbetrieb aus der Triglavstraße",
+            h1="Photovoltaik in Villach: PV-Anlage mit Speicher vom Fachbetrieb aus der Triglavstraße",
             lead=("Sonnenstrom vom eigenen Dach, geplant und montiert von einem Betrieb, der selbst in Villach "
-                  "zuhause ist. Wir kommen zu Ihnen, prüfen Dach und Verbrauch und übernehmen Förderung, "
-                  "Netzanmeldung und Montage. Für Eigenheim und Betrieb in Villach, Klagenfurt und Umgebung."),
+                  "zuhause ist. Wir kommen zu Ihnen, prüfen Dach und Verbrauch und übernehmen Mitteilung an die "
+                  "Gemeinde, Netzanmeldung bei Kärnten Netz, Förderung und Montage. Für Eigenheim und Betrieb in "
+                  "Villach, Klagenfurt und Umgebung."),
             badges=[("Aus Villach", "für Villach"),
                     ("Förderung Kärnten", "inklusive Antrag"),
                     ("bis zu 85 %", "weniger Stromkosten")],
@@ -76,26 +92,27 @@ def build():
         ),
         C.kpis([
             ("rund 80 %", "weniger Stromkosten, EFH Villach (10 kWp)"),
-            ("1.900+", "Sonnenstunden im Jahr in Kärnten"),
+            ("1.000 bis 1.100 kWh", "Jahresertrag je kWp in Kärnten"),
             ("3.000 €", "Landespauschale Kärnten für PV mit Speicher"),
-            (NAP["rating"], "Sterne auf Google"),
+            (NAP["rating"], f"Sterne auf Google, {bew}"),
         ]),
         C.text_block(
             eyebrow="Kurz erklärt",
             h2="Warum sich Photovoltaik in Villach lohnt",
             paragraphs=[
-                ("Kärnten gehört mit über 1.900 Sonnenstunden im Jahr zu den sonnenreichsten Regionen "
-                 "Österreichs. Eine Photovoltaikanlage in Villach wandelt dieses Licht in Strom um, den Sie "
-                 "direkt im Haus oder Betrieb verbrauchen. Was Sie selbst erzeugen, kaufen Sie nicht mehr teuer "
-                 "aus dem Netz."),
-                ("Das Land Kärnten und der Bund fördern den Einstieg. Mit Speicher nutzen Sie den Sonnenstrom "
-                 "auch am Abend, mit Notstrom bleibt Ihr Haus bei einem Netzausfall versorgt. Typisch rechnet "
-                 "sich eine Anlage in 4 bis 6 Jahren."),
+                ("Villach liegt in einer der sonnenreichsten Regionen Österreichs: Kärnten kommt auf über 1.900 "
+                 "Sonnenstunden und rund 1.000 bis 1.100 kWh Jahresertrag je kWp (Richtwert, Stand Oktober 2026). "
+                 "Unsere Referenz in Villach liefert mit 10 kWp rund 11.000 kWh im Jahr. Wie viel Ihr Dach hergibt, "
+                 "zeigt der Solarpotenzialkataster des Landes Kärnten (KAGIS)."),
+                ("Was Villach besonders macht: Tallagen und Berge. Der Horizont schluckt am Morgen oder Abend ein paar "
+                 "Prozent, deshalb rechnen wir die Verschattung im 3D-Belegplan für Ihr Dach mit, statt mit "
+                 "Pauschalwerten zu arbeiten; der Statikreport, also der Statikbericht für Ihr Dach, gehört zu "
+                 "jedem Projektbericht. Typisch rechnet sich eine Anlage in 4 bis 6 Jahren."),
             ],
         ),
         C.audience_split(
             eyebrow="Für wen planen wir in Villach?",
-            h2="Eigenheim oder Betrieb: Ihre Anlage passt zu Ihrem Verbrauch",
+            h2="Eigenheim oder Betrieb in Villach und Klagenfurt: Ihre Anlage passt zu Ihrem Verbrauch",
             intro="Jedes Dach und jeder Strombedarf ist anders. Wir legen Größe, Speicher und Wirtschaftlichkeit genau darauf aus.",
             left={
                 "img": IMG["gen_eigenheim"],
@@ -103,8 +120,8 @@ def build():
                 "title": "Für Ihr Zuhause in Villach",
                 "bullets": [
                     "Bis zu 85 % weniger Stromkosten",
-                    "Speicher und Notstrom für Abend und Netzausfall",
-                    "Landespauschale Kärnten plus Bundesförderung, Finanzierung ab 147 € im Monat",
+                    "Speicher, Notstrom und Wallbox für Abend, Netzausfall und E-Auto",
+                    "Landespauschale Kärnten plus Bundesförderung, Finanzierung ab 147 € im Monat*",
                 ],
                 "cta": ("kontakt", "Beratung für mein Zuhause"),
             },
@@ -120,96 +137,103 @@ def build():
                 "cta": ("pv_gewerbe", "Photovoltaik für Gewerbe"),
             },
         ),
+        C.media_text(
+            eyebrow="Behörde und Netzbetreiber",
+            h2="Genehmigung und Netzanschluss in Kärnten: Mitteilungspflicht und Kärnten Netz",
+            paragraphs=[
+                ("Photovoltaikanlagen auf Dach und Fassade sind in Kärnten in der Regel mitteilungspflichtig, nicht "
+                 "bewilligungspflichtig: Die Gemeinde wird über das Vorhaben informiert (Bauanzeige), ein Bauverfahren entfällt "
+                 "meist. Den Netzanschluss beantragt der Errichter beim Netzbetreiber, in Villach und den meisten "
+                 "Gemeinden Kärntens bei der Kärnten Netz GmbH, einer Tochter der Kelag, in der Stadt Klagenfurt bei der Energie Klagenfurt "
+                 "(Stand Oktober 2026)."),
+                ("Der Netzbetreiber prüft die gewünschte Einspeiseleistung für Ihren Zählpunkt, danach folgen "
+                 "Zählertausch auf den Smart Meter, Inbetriebnahme nach ÖNORM und Fertigstellungsmeldung. Wir reichen alle "
+                 "Unterlagen mit den Daten aus dem Projektbericht ein, damit nichts nachgefordert wird, und klären "
+                 "Sonderfälle wie Ortsbildschutz direkt mit der Baubehörde."),
+            ],
+            img=IMG["gen_detail"],
+            alt="Montagedetail einer Photovoltaikanlage: Modulklemmen und Unterkonstruktion auf einem Dach in Kärnten",
+            bullets=[
+                "Mitteilung an die Gemeinde statt Bauverfahren (Dach- und Fassadenanlagen)",
+                "Netzanmeldung bei Kärnten Netz oder Energie Klagenfurt mit Prüfung der Einspeiseleistung",
+                "Zählertausch, Inbetriebnahme und Fertigstellungsmeldung durch EBZ Energie",
+            ],
+            cta=("foerderung_kaernten", "Förderung und Fristen Kärnten 2026"),
+        ),
         C.problem_compare(
             eyebrow="Finanzielle Entlastung",
-            h2="Schutz vor Preiserhöhungen, Wertsteigerung für Ihr Haus",
-            intro=("Mit eigener Anlage werden Sie vom Konsumenten zum Erzeuger. Ein großer Teil Ihres "
-                   "Stroms kommt vom Dach, zu Kosten, die über Jahrzehnte feststehen. Ein Gebäude mit "
-                   "niedrigen Betriebskosten ist zudem auf dem Markt in Villach deutlich attraktiver."),
+            h2="Was eine PV-Anlage in Villach kostet und was sie spart",
+            intro=("Eine Komplettanlage mit rund 10 kWp und Speicher kostet rund 15.000 bis 22.000 € vor Förderung "
+                   "(EBZ-Richtpreis, Stand Oktober 2026). Mit eigener Anlage werden Sie vom Konsumenten zum "
+                   "Erzeuger: Ein großer Teil Ihres Stroms kommt vom Dach, zu Kosten, die über Jahrzehnte feststehen."),
             bars=[
                 ("Stromkosten ohne eigene Anlage", 100, "bad", "voller Netzbezug"),
                 ("Stromkosten mit Photovoltaik und Speicher", 15, "good", "bis zu 85 % weniger*"),
             ],
             aside=("Ihre Vorteile in Villach", [
                 ("☀", "Eigener Strom", "Sie erzeugen Ihren Strom selbst und werden unabhängiger von Preissteigerungen."),
-                ("€", "Förderung Kärnten", "3.000 € Landespauschale für private PV ab 5 kWp mit Speicher, dazu der Bund."),
+                ("€", "Förderung Kärnten", "3.000 € Landespauschale für private PV ab 5 kWp mit Speicher, dazu der EAG-Zuschuss des Bundes."),
                 ("▮", "Speicher und Notstrom", "Sonnenstrom auch abends, Versorgung auch bei Netzausfall."),
-                ("⌂", "Wertsteigerung", "Ein Haus mit eigener Energieversorgung gilt als zukunftssicher."),
+                ("⌂", "Wertsteigerung", "Ein Haus mit eigener Energieversorgung gilt am Markt in Villach als zukunftssicher."),
             ]),
         ),
         C.media_text(
             eyebrow="Mehr Unabhängigkeit mit Speicher",
-            h2="Eigenverbrauch und Stromspeicher: der Schlüssel zur Unabhängigkeit",
+            h2="Eigenverbrauch, Speicher, Notstrom und Wallbox",
             paragraphs=[
                 ("Ohne Speicher nutzen Sie Ihren Sonnenstrom nur, während die Sonne scheint, und speisen den "
                  "Überschuss für wenige Cent ein. Ein Stromspeicher hält den Strom vom Tag für Abend und Nacht "
-                 "bereit, wenn der Bedarf im Haushalt am höchsten ist."),
-                ("Deshalb planen wir den Speicher als zentrales Element im System mit, nicht als Zubehör. Mit "
-                 "Notstromfunktion bleibt Ihr Zuhause in Villach auch bei einem Stromausfall versorgt."),
+                 "bereit, wenn der Bedarf im Haushalt am höchsten ist: Der Eigenverbrauch steigt von rund 30 auf "
+                 "bis zu 80 Prozent*."),
+                ("Deshalb planen wir Speicher, Notstrom oder Ersatzstrom und Wallbox als Teile eines Systems mit. "
+                 "Die Wallbox lädt Ihr E-Auto bevorzugt mit Überschuss vom Dach, das Energiemanagement steuert "
+                 "alles automatisch. Mit Notstromfunktion bleibt Ihr Zuhause in Villach auch bei einem "
+                 "Stromausfall versorgt."),
             ],
             img=IMG["speicher"],
             alt="Batteriespeicher einer Photovoltaikanlage im Technikraum",
             bullets=[
-                "Deutlich höherer Eigenverbrauch statt günstiger Einspeisung",
-                "Sonnenstrom auch am Abend und in der Nacht",
-                "Optional mit Notstrom bei Netzausfall",
+                "Eigenverbrauch von rund 30 auf bis zu 80 Prozent*",
+                "Notstrom oder Ersatzstrom bei Netzausfall",
+                "Wallbox: E-Auto mit eigenem Sonnenstrom laden",
             ],
             reverse=True,
             cta=("batteriespeicher", "Mehr zum Batteriespeicher"),
         ),
         C.media_text(
             eyebrow="Förderung Kärnten",
-            h2="Förderung für Photovoltaik in Villach: Land Kärnten und Bund",
+            h2="Förderung für Photovoltaik in Villach: Landespauschale Kärnten und EAG",
             paragraphs=[
-                ("Das Land Kärnten zahlt 2026 eine Pauschale von 3.000 Euro für neue private PV-Anlagen ab 5 kWp "
-                 "mit Speicher. Der Bund fördert über den EAG-Investitionszuschuss mit 150 Euro je kWp bis 10 kWp "
-                 "und 150 Euro je kWh Speicher, europäische Komponenten bringen 10 Prozent Bonus."),
-                ("Sich hier zurechtzufinden kostet Zeit. Als Ihr Partner aus Villach übernehmen wir die Abwicklung: "
-                 "Wir prüfen, welche Programme zu Ihrem Projekt passen, halten Fristen und Reihenfolge ein und "
-                 "bereiten die Anträge vor."),
+                ("Das Land Kärnten zahlt 2026 eine Pauschale von 3.000 Euro für neue private PV-Anlagen ab 5 kWp mit "
+                 "Speicher ab 5 kWh, Einreichung vom 12. Oktober bis 31. Dezember 2026. Der Bund fördert über den "
+                 "EAG-Investitionszuschuss mit 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, europäische "
+                 "Komponenten bringen 10 Prozent Bonus (Stand Oktober 2026)."),
+                ("Als Ihr Partner aus Villach übernehmen wir die Abwicklung: Wir prüfen, welche Programme zu Ihrem "
+                 "Projekt passen, halten Fristen und Reihenfolge ein und bereiten die Anträge vor. Alle Details und "
+                 "den Ausblick auf 2027 finden Sie im Ratgeber."),
             ],
             img=IMG["foerderung"],
             alt="Beratung zur Photovoltaik-Förderung in Kärnten am Tisch",
             bullets=[
-                "3.000 € Landespauschale Kärnten für PV mit Speicher",
-                "150 €/kWp und 150 €/kWh vom Bund, 10 % Made-in-Europe-Bonus",
+                "Landespauschale Kärnten 3.000 € für PV ab 5 kWp mit Speicher ab 5 kWh",
+                "EAG-Investitionszuschuss 150 €/kWp bis 10 kWp und 150 €/kWh Speicher, 10 % Made-in-Europe-Bonus",
                 "Antrag und Abwicklung durch EBZ Energie",
             ],
             cta=("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
             dark=True,
         ),
-        C.media_text(
-            eyebrow="Unser Service für Villach",
-            h2="Planung, Installation und Service aus einer Hand",
-            paragraphs=[
-                ("Wir nehmen uns Zeit für Ihr Projekt. Die Analyse findet bei Ihnen vor Ort in Villach, Klagenfurt "
-                 "oder in der Umgebung statt: Dach, Zählerschrank, Verbrauch und Ihre Pläne für E-Auto oder "
-                 "Wärmepumpe. Daraus entsteht Ihr Projektbericht mit 3D-Belegplan und Statikreport."),
-                ("Zertifizierte Fachkräfte montieren Ihre Anlage sauber und termintreu, Elektrik und Dach aus einem "
-                 "Team. Wir planen Ihr Energiesystem als Ganzes, vom Speicher bis zur Wallbox, und bleiben nach "
-                 "der Inbetriebnahme Ihr Ansprechpartner in Villach für Monitoring, Wartung und Erweiterung."),
-            ],
-            img=IMG["team_beratung"],
-            alt="Beratungsgespräch mit dem Team von EBZ Energie in Villach",
-            bullets=[
-                "Analyse und Beratung bei Ihnen vor Ort",
-                "Förderung, Netzanmeldung und Zählertausch inklusive",
-                "Service und Monitoring nach der Übergabe",
-            ],
-            cta=("ems", "Speicher, Wallbox und Wärmepumpe im System"),
-        ),
         C.finance_band(),
         C.reference_cards(
             eyebrow="Referenz aus Villach",
-            h2="Anlagen in Villach und am Wörthersee, mit Zahlen belegt",
+            h2="Referenzen in Villach und am Wörthersee, mit Zahlen belegt",
             intro=("So sehen typische Anlagen aus unserer Region aus. Bild und Zahlen gehören jeweils zum selben "
-                   "Projekt. Das Hotel in Villach/Warmbad (13 kWp, 27 kWh Speicher, rund 4.200 € Ersparnis im "
-                   "Jahr) finden Sie auf der Referenzseite."),
+                   "Projekt. Das Hotel in Villach/Warmbad (13 kWp bifazial, 27 kWh Speicher, rund 15.000 kWh und "
+                   "4.200 € Ersparnis im Jahr) finden Sie auf der Referenzseite."),
             items=[
                 {"img": IMG["ref_villach"],
                  "alt": "Photovoltaikanlage mit 10 kWp auf einem Einfamilienhaus in Villach",
                  "title": "Einfamilienhaus, Villach",
-                 "specs": "10 kWp in Ost-West-Ausrichtung mit Notstrom, rund 11.000 kWh im Jahr.",
+                 "specs": "10 kWp in Ost-West-Ausrichtung mit Notstrom, rund 11.000 kWh pro Jahr.",
                  "result": "rund 80 %", "result_sub": "weniger Stromkosten"},
                 {"img": IMG["ref_krumpendorf"],
                  "alt": "Photovoltaikanlage auf einem Mehrparteienhaus in Krumpendorf am Wörthersee",
@@ -218,9 +242,26 @@ def build():
                  "result": "4 Tage", "result_sub": "Bauzeit"},
             ],
         ),
+        C.cards_section(
+            eyebrow="Anbieter-Check",
+            h2="Woran Sie einen seriösen Photovoltaik-Fachbetrieb in Villach erkennen",
+            intro=("PV-Firma in Villach: EBZ Energie GmbH, Triglavstraße 15, 9500 Villach, festangestelltes "
+                   f"Montageteam, 300+ Projekte, {NAP['rating']} Sterne aus {bew} auf Google, Beratung vor Ort in "
+                   "Villach, Klagenfurt und in ganz Kärnten (Stand Oktober 2026). Bei der Suche nach Photovoltaik-Firmen "
+                   "in Villach oder Klagenfurt lohnt es sich, jeden Anbieter an diesen sechs Punkten zu messen."),
+            cards=[
+                {"ic": "✓", "title": "Eigenes Montageteam", "text": "Festangestellte, zertifizierte Fachkräfte für Dach und Elektrotechnik statt Vermittlung an Dritte."},
+                {"ic": "◫", "title": "Projektbericht statt Pauschale", "text": "Projektbericht mit 3D-Belegplan und Statikreport für Ihr Dach, dazu ein Fixangebot."},
+                {"ic": "◇", "title": "Garantien schriftlich", "text": "Bis zu 30 Jahre Leistungs- und mindestens 10 Jahre Produktgarantie auf die Module."},
+                {"ic": "€", "title": "Behördenwege inklusive", "text": "Mitteilung an die Gemeinde, Netzanmeldung bei Kärnten Netz, Landespauschale und EAG-Antrag aus einer Hand."},
+                {"ic": "★", "title": "Echte Bewertungen", "text": f"{NAP['rating']} Sterne aus {bew} auf Google, Local Pack Platz 1 für „Photovoltaik Villach“ (Oktober 2026)."},
+                {"ic": "◉", "title": "Referenzen mit Zahlen", "text": "Anlagen in Villach, Warmbad, am Wörther- und Ossiachersee mit kWp, kWh und Ersparnis.",
+                 "link_key": "referenzen", "link_text": "Referenzen in Kärnten"},
+            ],
+        ),
         C.founder_story(
             eyebrow="Persönliche Beratung vor Ort",
-            h2="Mario Zintl: in Villach aufgewachsen, in Villach im Einsatz",
+            h2="Mario Zintl und das Team in Villach",
             paragraphs=[
                 ("Ich bin in Villach aufgewachsen und kenne die Dächer hier: Ost-West-Giebel in den Siedlungen, "
                  "Flachdächer in Warmbad, Mehrparteienhäuser am See. Wenn Sie anfragen, komme ich oder jemand "
@@ -244,29 +285,22 @@ def build():
                 ("Telefon", tel_link()),
                 ("E-Mail", f'<a href="mailto:{NAP["email"]}">{NAP["email"]}</a>'),
                 ("Öffnungszeiten", NAP["hours"]),
+                ("Google-Bewertung", f"{NAP['rating']} von 5 aus {bew}"),
                 ("Anfahrt", "Nach Terminvereinbarung. Für die Erstberatung kommen wir in der Regel zu Ihnen nach Villach, Klagenfurt oder in die Umgebung."),
-                ("Einzugsgebiet", "Villach und Umgebung, ganz Kärnten, Steiermark. Referenzen in 6 Bundesländern."),
+                ("Einzugsgebiet", "Villach, Klagenfurt, Spittal an der Drau, Feldkirchen, Wörthersee und Ossiachersee, ganz Kärnten und die Steiermark. Referenzen in 6 Bundesländern."),
+                ("Netzbetreiber vor Ort", "Kärnten Netz GmbH (Villach und Umgebung), Energie Klagenfurt (Stadt Klagenfurt)"),
             ],
             actions=[("Route planen", MAPS_URL, ' target="_blank" rel="noopener"'),
                      ("Anrufen", NAP["phone_href"], "")],
         ).replace('<section class="section"', '<section id="standort" class="section"', 1),
-        C.regions_section(
-            eyebrow="Einzugsgebiet",
-            h2="Von Villach aus in ganz Kärnten und der Steiermark",
-            intro=("Villach ist unser Zuhause, der Montageschwerpunkt liegt in Kärnten und der Steiermark. "
-                   "Referenzprojekte gibt es darüber hinaus in ganz Österreich."),
-            kaernten=KAERNTEN,
-            steiermark=STEIERMARK,
-            note="Referenzprojekte auch im Burgenland, in Niederösterreich, Oberösterreich und Wien.",
-        ),
         C.reviews_slider(reviews, rating=rating, count=count),
         C.steps_section(
             eyebrow="So läuft es ab",
-            h2="Von der Beratung in Villach bis zum eigenen Sonnenstrom",
+            h2="Von der Beratung in Villach bis zur Übergabe",
             steps=[
                 ("Beratung vor Ort", "Wir besprechen Verbrauch, Dach und Ziele bei Ihnen in Villach. Kostenlos und unverbindlich.", ""),
-                ("Projektbericht", "Sie erhalten einen Projektbericht mit 3D-Belegplan und Statikreport sowie ein transparentes Angebot.", ""),
-                ("Förderung und Anmeldung", "Landespauschale Kärnten, Bundesförderung und Netzanmeldung: Wir bereiten alles vor.", ""),
+                ("Projektbericht", "Sie erhalten einen Projektbericht mit 3D-Belegplan und Statikreport sowie ein transparentes Fixangebot.", ""),
+                ("Förderung, Gemeinde, Netz", "Landespauschale Kärnten, EAG-Antrag, Mitteilung an die Gemeinde und Netzanmeldung bei Kärnten Netz: Wir bereiten alles vor.", ""),
                 ("Montage und Übergabe", "Zertifizierte Fachkräfte montieren, wir kümmern uns um Zählertausch, Inbetriebnahme und Einschulung.", ""),
             ],
         ),
@@ -274,13 +308,15 @@ def build():
         C.linkgrid_section(
             "Photovoltaik in Kärnten",
             [("photovoltaik", "Photovoltaik für Eigenheim und Gewerbe"),
-             ("foerderung_kaernten", "PV-Förderung Kärnten 2026"),
-             ("batteriespeicher", "Batteriespeicher"),
-             ("/notstrom/", "Notstrom mit Photovoltaik"),
+             ("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
+             ("/kosten-einer-solaranlage/", "Was eine Solaranlage kostet"),
+             ("/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/", "10 kWp Komplettanlage mit Speicher"),
+             ("batteriespeicher", "Stromspeicher"),
+             ("/notstrom/", "Notstrom bei Stromausfall"),
              ("/energiegemeinschaft-villach-klagenfurt/", "Energiegemeinschaft Villach und Klagenfurt"),
-             ("pv_wolfsberg", "Photovoltaik Wolfsberg"),
-             ("finanzierung", "Finanzierung"),
-             ("referenzen", "Referenzen")],
+             ("pv_wolfsberg", "Photovoltaik in Wolfsberg"),
+             ("finanzierung", "Finanzierung ab 147 € im Monat"),
+             ("referenzen", "Referenzen in Villach und Kärnten")],
         ),
         C.contact_section(
             headline="Ihr kostenloses Angebot für Photovoltaik in Villach",
@@ -304,9 +340,10 @@ def _footnote():
     return ("""
   <section class="section--tight" style="padding-bottom:40px">
     <div class="wrap">
-      <p class="form-note">*Richtwerte auf Basis typischer Projekte, vor Förderung. Preis, Ersparnis und
-      Amortisation hängen von Verbrauch, Anlagengröße, Ausrichtung und Strompreis ab. Fördersätze Stand 2026,
-      Änderungen durch die Fördergeber vorbehalten. Fachlich geprüft von Mario Zintl, Geschäftsführung
+      <p class="form-note">*Richtwerte auf Basis typischer Projekte, vor Förderung. Preis, Ersparnis, Eigenverbrauch und
+      Amortisation hängen von Verbrauch, Anlagengröße, Ausrichtung und Strompreis ab. Finanzierung: Beispielkonditionen,
+      vorbehaltlich Bonitätsprüfung. Fördersätze, Fristen und OeMAG-Marktpreis Stand Oktober 2026, Änderungen durch
+      Fördergeber, Netzbetreiber und OeMAG vorbehalten. Fachlich geprüft von Mario Zintl, Geschäftsführung
       EBZ Energie GmbH.</p>
     </div>
   </section>""")

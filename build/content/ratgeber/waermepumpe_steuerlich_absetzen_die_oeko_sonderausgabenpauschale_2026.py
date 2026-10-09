@@ -35,7 +35,7 @@ ARTICLE = {
         "Berücksichtigung <b>automatisch</b>",
     ],
     "date_published": "2026-03-20",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "foerderung",
     "hero_alt": "Unterlagen und Taschenrechner für die Steuerveranlagung nach dem Heizungstausch",
 
@@ -72,6 +72,11 @@ Kosten, sondern über einen festen Pauschalbetrag, daher der Name.</p>
 Steuerveranlagung berücksichtigt, ohne zusätzlichen Antrag beim Finanzamt. Sie ergänzt die direkten
 Zuschüsse aus der {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} und den
 {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen')}. Stand: April 2026.</p>
+{A.box("Stand Oktober 2026: Die Bundesprogramme Sanierungsoffensive 2026 (Kesseltausch) und „Sauber Heizen für "
+       "Alle 2026“ sind ausgeschöpft, neue Registrierungen sind nicht möglich (umweltfoerderung.at). Die Pauschale "
+       "setzt eine ausbezahlte Bundesförderung voraus und greift damit für alle, die vor dem Förderstopp registriert "
+       "haben und ihre Förderung ausbezahlt bekommen. Ohne Bundesförderung entsteht kein Anspruch; ob 2027 ein neues "
+       "Programm kommt, ist offen.", label="Hinweis:")}
 """),
         ("Wie hoch ist die Pauschale?", "hoehe", f"""
 {A.table(

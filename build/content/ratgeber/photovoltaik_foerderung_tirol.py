@@ -44,7 +44,7 @@ ARTICLE = {
         "Speicher gesamt: <b>bis 250 €/kWh</b>",
     ],
     "date_published": "2026-05-05",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_detail",
     "hero_alt": "Montage von Photovoltaikmodulen auf einem sanierten Wohnhausdach",
 
@@ -95,7 +95,7 @@ stehen 60 Millionen Euro für PV- und Speicherprojekte bereit. Stromspeicher wer
 50 kWh gefördert, allerdings nur in Kombination mit einer PV-Neuerrichtung oder -Erweiterung. Hinzu kommt der
 Made-in-Europe-Bonus mit je 10 % pro Komponente auf der White List der OeMAG.</p>
 {EAG_TABLE}
-<p>Die drei Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie ab 8. Oktober. Die
+<p>Die drei Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie vom 8. bis 22. Oktober. Die
 Antragstellung erfolgt online über die EAG-Abwicklungsstelle, in den Kategorien A und B nach dem
 First-come-first-served-Prinzip mit Ticketziehung. Alle Details im Ratgeber
 {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
@@ -202,7 +202,7 @@ dem Sanierungsvorhaben ab.</small></p>
      "festlegen."),
     ("EAG-Antrag im Fördercall",
      "Online über die EAG-Abwicklungsstelle, in Kategorie A und B mit Ticketziehung, zwingend vor Inbetriebnahme. "
-     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober."),
+     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober."),
     ("Errichtung und Inbetriebnahme",
      "Installation durch ein gewerblich befugtes Unternehmen, Rechnungen auf den Antragsteller ausstellen lassen."),
     ("Tiroler Landesförderung beantragen",
@@ -229,6 +229,11 @@ Für eine 8-kWp-Anlage mit 8-kWh-Speicher im Sanierungskontext sind rund 4.560 �
 die richtige Reihenfolge: EAG vor Inbetriebnahme, Land danach.</p>
 <p><small>Stand: Juni 2026. Förderhöhen, Budgets und Fristen können sich ändern beziehungsweise sind budgetär
 begrenzt. Maßgeblich sind die Richtlinien der EAG-Abwicklungsstelle (OeMAG) und des Landes Tirol.</small></p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Förderkombination für Ihr Projekt in Tirol",
        "Wir planen PV, Speicher und Steuerung förderfähig und übernehmen EAG-Antrag und Landesförderung in der "
        "richtigen Reihenfolge.",
@@ -280,7 +285,7 @@ begrenzt. Maßgeblich sind die Richtlinien der EAG-Abwicklungsstelle (OeMAG) und
          "zwischen 20 und 40 % der förderfähigen Kosten. Die Programme sind zeitlich und budgetär begrenzt, fragen "
          "Sie vor Projektstart bei der Regionalstelle nach."),
         ("Wann sind die EAG-Fördercalls 2026?",
-         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und ab 8. Oktober 2026. In den "
+         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und 8. bis 22. Oktober 2026. In den "
          "Kategorien A und B gilt First come, first served mit Ticketziehung. Der Antrag muss vor Inbetriebnahme "
          "gestellt werden."),
         ("Wer hilft bei der Förderabwicklung in Tirol?",

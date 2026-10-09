@@ -31,7 +31,7 @@ ARTICLE = {
         "Förderbeitrag: <b>entfällt</b>",
     ],
     "date_published": "2026-08-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_gewerbe",
     "hero_alt": "Photovoltaikanlage auf einem Gewerbedach, im Hintergrund Trafostation und Wohnsiedlung",
 
@@ -56,6 +56,10 @@ ARTICLE = {
 
     "sections": [
         ("Woraus Ihre Stromrechnung besteht", "stromrechnung", f"""
+<p><b>Eine Energiegemeinschaft ist ein Zusammenschluss von mindestens zwei Teilnehmern, die Solarstrom über das
+öffentliche Netz teilen.</b> Im Nahbereich sinken die Netzentgelte um bis zu 57 Prozent (lokal) oder 28 Prozent
+(regional), österreichweit teilen Bürgerenergiegemeinschaften ohne Rabatt. Voraussetzung ist ein Smart Meter
+mit Viertelstundenwerten (Quellen: E-Control SNE-VO, energiegemeinschaften.gv.at, Stand Oktober 2026).</p>
 <p>Um den Vorteil der Energiegemeinschaft zu verstehen, muss man die Stromrechnung in ihre drei Teile zerlegen.
 Erstens der Energiepreis, den Ihr Lieferant verlangt, aktuell je nach Tarif 12 bis 20 Cent netto pro Kilowattstunde.
 Zweitens die Netzkosten, die der Netzbetreiber nach der Systemnutzungsentgelte-Verordnung der E-Control verrechnet:

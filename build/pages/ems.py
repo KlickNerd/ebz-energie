@@ -1,11 +1,15 @@
 """Leistungsseite Energiemanagementsystem (/energiemanagementsystem/).
 
-Quellen: bestehende EMS-Landingpage /ems-lp-2/ (Inhalte freigegeben) und der
-Ratgeber /ems-foerderung/ (Klimafonds-Zahlen 2026). Roter Faden: Hook ->
-Definition + Vernetzung -> Problem (Eigenverbrauch 30 vs. 80 %) -> sechs Nutzen ->
-Privat/Gewerbe -> Foerderung 2026 (erst registrieren, dann Rechnung) ->
-Smart Meter + dynamischer Tarif -> Energiegemeinschaft -> warum EBZ -> Beweis ->
-Ablauf -> FAQ -> Cluster -> Kontakt.
+Quellen: bestehende EMS-Landingpage /ems-lp-2/ (Inhalte freigegeben), der Ratgeber
+/ems-foerderung/ (Klimafonds-Zahlen 2026), build/seo/_fakten_2026-10.md (Systemfoerderung
+2027 laut BMWET) und das SEO/GEO-Briefing build/seo/ems.{json,md} (Stand 9.10.2026).
+
+Roter Faden: Hook -> Definition mit Synonymen (EMS, HEMS, Energiemanager) -> Funktionsweise
+-> Problem (Eigenverbrauch 30 vs. 80 %) -> sechs Hebel als Tabelle (inkl. Warmwasser/Heizstab)
+-> wann es sich lohnt -> Kompatibilitaet (Fronius, Huawei, SMA, Kostal, SMARTFOX, Solar Manager,
+neoom; EBZ herstellerunabhaengig) -> Kosten + Foerderung 2026 + Ausblick 2027 -> Privat vs.
+Gewerbe (ISO 50001) -> Ausblick dynamische Tarife, EG, V2H -> warum EBZ -> Beweis -> Ablauf
+-> FAQ -> Cluster -> Kontakt. Sichtbarer Text ohne Bewertungs-Slider unter 2.300 Woertern.
 """
 
 from common import IMG, NAP, AUTHOR, AUTHOR_ROLE, faq_jsonld, u, a, write_page, load_reviews
@@ -13,57 +17,82 @@ from layout import page
 import components as C
 
 PATH = "/energiemanagementsystem/"
-TITLE = "Energiemanagementsystem: bis 80 % Eigenverbrauch | EBZ"
-DESC = ("EMS für Eigenheim und Gewerbe: Eigenverbrauch von 30 auf bis zu 80 %, dynamische Tarife, "
-        "Überschussladen, Förderung 2026 bis 600 €. Fachbetrieb aus Villach.")
+TITLE = "Energiemanagementsystem (EMS) für Photovoltaik | EBZ Energie"
+DESC = ("Energiemanagementsystem (EMS, Energiemanager) für Eigenheim und Betrieb: steuert PV, Speicher, "
+        "Wallbox, Wärmepumpe und Warmwasser. Förderung 2026 bis 600 €.")
 
 FAQ = [
-    ("Was genau macht ein Energiemanagementsystem?",
-     "Ein EMS ist die Steuerzentrale Ihres Energiesystems. Es misst laufend Erzeugung und Verbrauch und "
-     "lenkt den Strom automatisch dorthin, wo er am meisten wert ist: in den direkten Verbrauch, in den "
-     "Speicher, in die Wärmepumpe oder ins E-Auto. So steigt Ihre Eigenverbrauchsquote und Sie kaufen "
-     "weniger teuren Netzstrom zu."),
-    ("Lohnt sich ein EMS auch für Privathaushalte?",
-     "Ja, besonders in Kombination mit Wärmepumpe oder E-Auto. Dort entstehen die größten Sparpotenziale, "
-     "weil sich diese flexiblen Verbraucher an die Sonnenstunden und an günstige Tarifzeiten anpassen lassen. "
-     "Schon bei einer PV-Anlage mit Speicher sorgt ein EMS dafür, dass Ihr Sonnenstrom nicht ungenutzt ins "
-     "Netz wandert."),
-    ("Funktioniert ein EMS auch mit meiner bestehenden Anlage?",
-     "In den meisten Fällen ja. Ein EMS lässt sich nachrüsten und bindet Ihre vorhandenen Komponenten ein, "
-     "Sie müssen nichts neu kaufen. In der kostenlosen Analyse prüfen wir, welche Systeme mit Ihrer Technik "
-     "kompatibel sind und den größten Nutzen bringen."),
-    ("Wie viel kann ich mit einem EMS sparen?",
-     "Das hängt von Anlage, Verbrauch und Tarif ab. Typischerweise steigt die Eigenverbrauchsquote von rund "
-     "30 % auf 60 bis 80 %. Jede zusätzlich selbst genutzte Kilowattstunde spart den vollen Strompreis statt "
-     "nur den Einspeisetarif. Wie viel es in Ihrem Fall ist, rechnen wir individuell."),
-    ("Brauche ich einen dynamischen Stromtarif dafür?",
-     "Nein. Ein EMS bringt auch ohne dynamischen Tarif klare Vorteile beim Eigenverbrauch. Mit Smart Meter und "
-     "variablem Tarif kommt ein weiterer Hebel dazu: Ihr System lädt und verbraucht automatisch dann, wenn der "
-     "Börsenstrom am günstigsten ist. Wir beraten Sie, ob sich das für Sie lohnt."),
-    ("Wie hoch ist die EMS-Förderung 2026?",
-     "Der Klima- und Energiefonds fördert Energiemanagementsysteme 2026 erstmals eigenständig: Private Haushalte "
-     "erhalten 50 % der Kosten, maximal 600 €. Betriebe, Gemeinden und Vereine bekommen bis zu 30 %, maximal "
-     "20.000 € pro Standort. Registrierung längstens bis 15. April 2027, solange Budget vorhanden ist."),
-    ("Was ist bei der Förderung die häufigste Fehlerquelle?",
-     "Die Reihenfolge. Haushalte müssen sich online registrieren, bevor die erste Rechnung gelegt wird. Betriebe "
-     "stellen den Antrag vor der ersten verbindlichen Bestellung. Wer zuerst kauft und dann einreicht, verliert "
-     "die Förderung vollständig. EBZ Energie übernimmt die Registrierung zum richtigen Zeitpunkt."),
-    ("Welche Systeme verbaut EBZ Energie?",
-     "Wir arbeiten herstellerunabhängig und wählen das EMS, das zu Ihrer Technik und Ihren Zielen passt, statt "
-     "Sie an ein einzelnes Produkt zu binden. Entscheidend ist, dass alle Komponenten sauber zusammenspielen "
-     "und das System den Förderkriterien entspricht."),
+    ("Was ist ein Energiemanagementsystem und wofür steht EMS?",
+     "EMS steht für Energiemanagementsystem, im Haushalt auch Energiemanager oder Home Energy Management System "
+     "(HEMS). Es misst laufend, wie viel Strom die Photovoltaikanlage liefert und wie viel jedes Gerät braucht, "
+     "und steuert Speicher, Heizstab, Wärmepumpe und Wallbox so, dass möglichst viel Sonnenstrom im Haus bleibt: "
+     "Eigenverbrauch rund 30 statt 60 bis 80 Prozent.* Nachrüsten geht bei fast jeder bestehenden Anlage."),
+    ("Wann braucht man ein Energiemanagementsystem?",
+     "Sobald mehr als eine steuerbare Komponente im Haus ist: PV plus Speicher, Wärmepumpe, Heizstab oder E-Auto. "
+     "Bei 3 bis 5 kWp ohne Speicher reicht meist das Monitoring des Wechselrichters. Mit Speicher, Wallbox oder "
+     "Wärmepumpe holt ein EMS täglich Kilowattstunden heraus, die sonst zum OeMAG-Marktpreis ins Netz gehen."),
+    ("Wie viel kostet ein Energiemanagementsystem fürs Einfamilienhaus?",
+     "Marktübliche Systeme kosten inklusive Installation und Konfiguration rund 800 bis 1.500 €.* Der Klima- und "
+     "Energiefonds übernimmt 2026 davon 50 Prozent, maximal 600 €, es bleiben oft nur wenige hundert Euro "
+     "Eigenanteil. Steckt der Energiemanager schon im Wechselrichter (etwa Fronius GEN24), zahlen Sie vor allem "
+     "Einbindung und Zubehör."),
+    ("Welche Wechselrichter und Wärmepumpen sind kompatibel?",
+     "Alle gängigen Systeme: Fronius (Solar.web, Energiekostenassistent), Huawei FusionSolar, SMA Energy und Kostal "
+     "bringen eigene Energiemanager mit, SMARTFOX, Solar Manager oder neoom binden auch Fremdgeräte ein. "
+     "Wärmepumpen brauchen SG Ready oder Modbus, Wallboxen Modbus oder OCPP. Die Schnittstellen Ihrer Geräte "
+     "prüfen wir in der kostenlosen Analyse."),
+    ("Funktioniert ein EMS auch ohne Speicher oder ohne PV-Anlage?",
+     "Ohne Speicher ja: Das EMS legt dann Heizstab, Wärmepumpe und Wallbox in die Sonnenstunden. Ohne PV-Anlage "
+     "lohnt es sich nur mit einem dynamischen Stromtarif, bei dem es Verbraucher in günstige Börsenstunden "
+     "verschiebt. Die Klimafonds-Förderung verlangt mindestens zwei aktiv gesteuerte Komponenten."),
+    ("Brauche ich einen Smart Meter für das EMS?",
+     "Für die Steuerung im Haus nicht, das EMS misst mit eigenen Zählern am Hausanschluss. Für einen dynamischen "
+     "Stromtarif oder eine Energiegemeinschaft braucht es den Smart Meter mit Viertelstundenwerten; in Kärnten "
+     "und der Steiermark ist er in den meisten Haushalten bereits eingebaut."),
+    ("Wie hoch ist die EMS-Förderung 2026 und was ändert sich 2027?",
+     "Private Haushalte erhalten 50 Prozent der Kosten, maximal 600 €, Betriebe und Gemeinden bis zu 30 Prozent, "
+     "maximal 20.000 € je Standort. Registrierung längstens bis 15. April 2027, vor der ersten Rechnung. Ab 2027 "
+     "plant das BMWET laut Eckpunkten vom Oktober 2026 eine Systemförderung für Speicher mit intelligenter "
+     "Steuerung: Ein EMS soll dann Förderkriterium werden, der Antrag erst nach der Installation erfolgen."),
+    ("Was ist der Unterschied zwischen EMS fürs Haus und ISO 50001?",
+     "Ein EMS fürs Haus schaltet Geräte in Echtzeit. ISO 50001 (Abgrenzung Industrie) ist dagegen ein "
+     "Managementprozess für Unternehmen: Energiedaten erfassen, Ziele setzen, Maßnahmen dokumentieren. Die "
+     "Messdaten eines technischen EMS können einfließen, ersetzen den Prozess aber nicht."),
 ]
 
 
-def _foerder_hinweis():
-    """A-Box-artiger Hinweis zur Reihenfolge bei der Foerderung (wird in die Preis-Sektion eingesetzt)."""
+def _table_section(eyebrow, h2, intro, headers, rows, note="", anchor=""):
+    th = "".join(f"<th>{h}</th>" for h in headers)
+    trs = "".join(
+        "<tr>" + "".join(f'<td class="{"hl" if i == 0 else ""}">{c}</td>' for i, c in enumerate(r)) + "</tr>"
+        for r in rows
+    )
+    anchor_attr = f' id="{anchor}"' if anchor else ""
+    note_html = f'<p class="form-note center eg-reveal" style="margin-top:18px">{note}</p>' if note else ""
+    return f"""
+  <section class="section"{anchor_attr} style="background:#fff;border-block:1px solid var(--line)">
+    <div class="wrap">
+      <p class="eyebrow center eg-reveal">{eyebrow}</p>
+      <h2 class="center eg-reveal">{h2}</h2>
+      <p class="lead center eg-reveal" style="max-width:72ch;margin-inline:auto">{intro}</p>
+      <div class="art-tablewrap eg-reveal" style="margin-top:32px">
+        <table class="art-table"><thead><tr>{th}</tr></thead><tbody>{trs}</tbody></table>
+      </div>
+      {note_html}
+    </div>
+  </section>"""
+
+
+def _ausblick_2027():
+    """Hinweis-Box: Reihenfolge bei der Foerderung + geplante Systemfoerderung 2027 (BMWET)."""
     return (
         '<div class="art-box art-box--p eg-reveal" style="margin:32px auto 0;max-width:920px">'
-        '<h3>Erst registrieren, dann Rechnung</h3>'
-        '<p>Die Förderung gibt es nur, wenn die Reihenfolge stimmt: Private Haushalte registrieren sich online '
-        'bei der Umweltförderung, <b>bevor</b> die erste Rechnung gelegt wird. Betriebe reichen den Antrag ein, '
-        '<b>bevor</b> sie verbindlich bestellen. Danach bleiben sechs Monate für Installation und Abrechnung. '
-        'Wer zuerst kauft, geht leer aus. Wir planen die Registrierung deshalb gemeinsam mit Ihrem Angebot. '
+        '<h3>Erst registrieren, dann Rechnung. Und ab 2027 wird das EMS zum Förderkriterium.</h3>'
+        '<p>Haushalte registrieren sich online, <b>bevor</b> die erste Rechnung gelegt wird, Betriebe stellen den '
+        'Antrag vor der verbindlichen Bestellung. Wer zuerst kauft, geht leer aus. Ab 2027 plant das BMWET laut '
+        'Eckpunkten vom Oktober 2026 eine <b>Systemförderung</b> für PV-Speicher mit intelligenter Steuerung: Antrag '
+        'erst nach Installation, Nachrüstung von Speicher und EMS förderbar, ein Energiemanagementsystem wird '
+        'voraussichtlich zum Förderkriterium. Höhe und Technikkriterien sind noch offen. '
         f'Alle Details: {a("/ems-foerderung/", "Ratgeber EMS-Förderung 2026")}.</p>'
         '</div>'
     )
@@ -74,12 +103,13 @@ def build():
     body = "".join([
         # 1. Hook
         C.hero(
-            eyebrow="Energiemanagement für Privat und Gewerbe · Kärnten und Steiermark",
-            h1="Ihre Anlage produziert Strom. Ein Energiemanagementsystem sorgt dafür, dass Sie ihn auch nutzen.",
-            lead=("PV, Speicher, Wärmepumpe und Wallbox arbeiten bei den meisten Anlagen nebeneinander her, "
-                  "statt zusammen. Ein EMS verbindet alles und lenkt jede Kilowattstunde automatisch dorthin, "
-                  "wo sie am meisten wert ist. Das Ergebnis: weniger Netzbezug, höherer Eigenverbrauch und "
-                  "volle Kontrolle per App."),
+            eyebrow="Energiemanagementsystem für Privat und Gewerbe · Kärnten und Steiermark",
+            h1="Energiemanagementsystem für Ihre Photovoltaik: bis zu 80 % Eigenverbrauch statt 30 %",
+            lead=("PV, Speicher, Wärmepumpe, Heizstab und Wallbox arbeiten bei den meisten Anlagen nebeneinander "
+                  "her. Ein Energiemanagementsystem (EMS, auch Energiemanager oder HEMS) verbindet alles und lenkt "
+                  "jede Kilowattstunde automatisch dorthin, wo sie am meisten wert ist. Herstellerunabhängig "
+                  "geplant, von den freundlichen Energie-Handwerkern aus Villach eingebaut, 2026 mit bis zu "
+                  "600 € gefördert."),
             badges=[("Hersteller", "unabhängig"),
                     ("Privat", "und Gewerbe"),
                     ("Auch zum", "Nachrüsten")],
@@ -91,125 +121,147 @@ def build():
             cta_secondary=("#foerderung", "Förderung 2026"),
         ),
         C.kpis([
-            ("bis 80 %", "Eigenverbrauch statt rund 30 %"),
-            ("1 System", "für Strom, Wärme und Mobilität"),
+            ("bis 80 %", "Eigenverbrauch statt rund 30 %*"),
+            ("1 System", "für Strom, Wärme, Warmwasser und Mobilität"),
             ("bis 600 €", "EMS-Förderung 2026 für Haushalte"),
-            ("24/7", "automatische Optimierung"),
+            ("800 bis 1.500 €*", "Kosten inkl. Installation vor Förderung"),
         ]),
-        # 2. Definition (GEO) + Vernetzungsgrafik
+        # 2. Definition (GEO) mit Synonymen
         C.text_block(
-            eyebrow="Was ist ein EMS?",
-            h2="Das Gehirn Ihrer Energie: Es verbindet, was bisher nur nebeneinander lief",
+            eyebrow="Kurz erklärt",
+            h2="Was ist ein Energiemanagementsystem?",
             paragraphs=[
-                ("Ein Energiemanagementsystem (EMS) ist die Steuerzentrale Ihres Zuhauses oder Betriebs. Es misst "
-                 "in Echtzeit, wie viel Strom Ihre PV-Anlage produziert und wie viel jedes Gerät gerade braucht, "
-                 "und entscheidet automatisch, wohin jede Kilowattstunde fließt: direkt in den Verbrauch, in den "
-                 "Speicher, in die Wärmepumpe oder ins E-Auto."),
-                ("Im Gewerbe kappt es zusätzlich Lastspitzen und senkt so Netzentgelte und Leistungspreis. "
-                 "Das System arbeitet rund um die Uhr, Sie sehen das Ergebnis in einer App."),
+                ("Ein Energiemanagementsystem (EMS) ist die Steuerzentrale einer Photovoltaikanlage: Es misst "
+                 "Erzeugung und Verbrauch in Echtzeit und schaltet Speicher, Wärmepumpe, Heizstab und Wallbox so, "
+                 "dass möglichst viel Sonnenstrom im Haus bleibt. Der Eigenverbrauch steigt damit von rund 30 auf "
+                 "60 bis 80 Prozent.* Der Klima- und Energiefonds fördert ein EMS 2026 mit 50 Prozent, maximal "
+                 "600 Euro (Stand Oktober 2026, Quelle: klimafonds.gv.at)."),
+                ("Ob Sie es Energiemanagementsystem Photovoltaik, Energiemanager Photovoltaik, Energiemanagement "
+                 "Photovoltaik oder Home Energy Management System (HEMS) nennen: Gemeint ist immer dieselbe Technik. "
+                 "Sie steckt entweder im Wechselrichter (etwa bei Fronius, Huawei, SMA oder Kostal) oder sitzt als "
+                 "eigenes Gerät im Zählerkasten (SMARTFOX, Solar Manager, neoom). Im Gewerbe kappt sie zusätzlich "
+                 "Lastspitzen und senkt Netzentgelte und Leistungspreis."),
             ],
         ),
+        # 3. Funktionsweise
         C.hub_section(
-            eyebrow="Vernetzung statt Einzelteile",
-            h2="Ohne EMS arbeitet jede Komponente für sich. Mit EMS arbeiten alle für Ihr Konto.",
-            lead=("Das EMS sitzt in der Mitte und kennt PV-Produktion, Speicherstand, Wärmebedarf, Ladestand "
-                  "des E-Autos und den aktuellen Strompreis. Daraus entsteht ein Fahrplan, der täglich neu gerechnet wird."),
+            eyebrow="Wie ein EMS arbeitet",
+            h2="Messen, entscheiden, steuern: Das EMS sitzt in der Mitte",
+            lead=("Das EMS kennt PV-Produktion, Speicherstand, Wärmebedarf, Ladestand des E-Autos, Wetterprognose und "
+                  "Strompreis und rechnet daraus täglich einen neuen Fahrplan."),
             points=[
-                ("☀", "Direkt verbrauchen statt teuer einspeisen und zurückkaufen."),
+                ("☀", "Direkt verbrauchen statt zum OeMAG-Marktpreis einspeisen und abends teuer zurückkaufen."),
+                ("♨", "Warmwasser über den Heizstab erhitzen, solange Überschuss da ist."),
                 ("▮", "Den Speicher laden, wenn Überschuss da ist oder der Börsenstrom günstig ist."),
-                ("♨", "Die Wärmepumpe laufen lassen, wenn die Sonne scheint (SG-Ready)."),
-                ("⌖", "Das E-Auto mit reinem PV-Überschuss laden."),
+                ("⌖", "Das E-Auto per Überschussladen mit reinem PV-Strom laden, die Wärmepumpe per SG Ready."),
                 ("◎", "Im Gewerbe: Lastspitzen kappen und Netzkosten senken."),
             ],
         ),
-        # 3. Problem in Zahlen
+        # 4. Problem in Zahlen
         C.problem_compare(
             eyebrow="Das kostet Sie bares Geld",
-            h2="Ohne Steuerung verschenken Sie jeden Tag Strom",
-            intro=("Jede Kilowattstunde, die Sie mittags für ein paar Cent einspeisen und abends für 25 Cent und "
-                   "mehr zurückkaufen, ist ein Verlustgeschäft. Bei den meisten Anlagen lädt der Speicher zur "
-                   "falschen Zeit, die Wärmepumpe läuft nachts auf Netzstrom, das E-Auto zieht zum vollen Tarif. "
-                   "Ein EMS dreht diese Logik um, automatisch, Tag für Tag."),
+            h2="Ohne EMS arbeitet jede Komponente für sich",
+            intro=("Jede Kilowattstunde, die Sie mittags für 10,168 Cent (OeMAG-Marktpreis September 2026) einspeisen "
+                   "und abends für 28 Cent zurückkaufen, ist ein Verlustgeschäft. Ohne Steuerung lädt der Speicher zur "
+                   "falschen Zeit, die Wärmepumpe läuft nachts, das E-Auto zieht zum vollen Tarif."),
             bars=[
                 ("Eigenverbrauch Ihrer PV-Anlage ohne EMS", 30, "bad", "rund 30 %*"),
                 ("Eigenverbrauch mit EMS, Speicher und flexiblen Verbrauchern", 80, "good", "bis 80 %*"),
             ],
             aside=("Was sich mit EMS ändert", [
-                ("☀", "Mittags nutzen", "Überschuss geht in Speicher, Wärmepumpe und Auto statt ins Netz."),
+                ("☀", "Mittags nutzen", "Überschuss geht in Warmwasser, Speicher, Wärmepumpe und Auto statt ins Netz."),
                 ("◔", "Zur richtigen Zeit", "Laden und heizen, wenn Strom günstig oder gratis ist."),
                 ("€", "Volle Ersparnis", "Jede selbst genutzte Kilowattstunde spart den vollen Strompreis."),
-                ("◎", "Alles sichtbar", "Produktion, Verbrauch und Ersparnis live in einer App."),
+                ("◎", "Alles sichtbar", "Produktion, Verbrauch und Ersparnis live in der App und im Monitoring."),
             ]),
         ),
-        # 4. Sechs Nutzen (aus der freigegebenen LP)
-        C.cards_section(
+        # 5. Sechs Hebel als Tabelle (inkl. Warmwasser/Heizstab als guenstigster Hebel)
+        _table_section(
             eyebrow="Ihre Sparpotenziale",
             h2="Sechs Hebel, mit denen ein EMS bares Geld herausholt",
-            intro=("Welche Hebel bei Ihnen greifen, hängt von Ihren Komponenten und Ihrem Tarif ab. "
-                   "Die kostenlose Analyse zeigt es ehrlich."),
+            intro=("Welche Hebel bei Ihnen greifen, hängt von Ihren Komponenten und Ihrem Tarif ab. Der günstigste "
+                   "Einstieg ist fast immer das Warmwasser: Ein Heizstab im bestehenden Boiler macht aus Überschuss "
+                   "Wärme, ohne dass Sie ein neues Gerät kaufen."),
+            headers=["Hebel", "Was das EMS tut", "Für wen"],
+            rows=[
+                ("Eigenverbrauch maximieren",
+                 "Lenkt Überschuss in Speicher und Verbraucher statt ins Netz. Eigenverbrauch von rund 30 auf 70 bis 80 %.*",
+                 "jede PV-Anlage mit Speicher"),
+                ("Heizstab / Boiler / Warmwasser",
+                 "Regelt den Heizstab stufenlos nach Überschuss, der Boiler wird tagsüber mit Sonnenstrom warm.",
+                 "jeder Haushalt mit Warmwasserspeicher"),
+                ("Wallbox: Überschussladen / PV-geführtes Laden",
+                 "Lädt das E-Auto bevorzugt mit PV-Überschuss, auf Wunsch mit Mindestladung bis zur Abfahrtszeit.",
+                 "E-Auto-Fahrer, " + a("carport", "PV-Carport mit Wallbox")),
+                ("Wärmepumpe SG Ready",
+                 "Hebt die Solltemperatur bei Überschuss an, die Wärmepumpe heizt und speichert Wärme tagsüber.",
+                 a("waermepumpe", "Wärmepumpe") + " mit SG-Ready-Kontakt"),
+                ("Dynamischer Stromtarif / Börsenstrompreis",
+                 "Lädt Speicher und Auto in günstigen Börsenstunden, meidet die teuren. Braucht Smart Meter.",
+                 a("/dynamischer-stromtarif/", "Haushalte mit dynamischem Tarif")),
+                ("Lastspitzen / Lastmanagement",
+                 "Glättet Leistungsspitzen über den Speicher und senkt Netzentgelte und Leistungspreis.",
+                 "Gewerbe, Ladeparks, Mehrparteienhäuser"),
+            ],
+            note="*Richtwerte für typische Anlagen mit Speicher und flexiblen Verbrauchern. Ihre Analyse zeigt die Zahlen für Ihr Haus.",
+        ),
+        # 6. Wann lohnt sich ein EMS
+        C.cards_section(
+            eyebrow="Wann sich ein EMS lohnt",
+            h2="Kleine Anlage ohne Speicher: Monitoring reicht. Ab Speicher, E-Auto oder Wärmepumpe: EMS.",
+            intro=("Entscheidend ist, wie viele flexible Verbraucher es gibt und wie viel Überschuss heute ungenutzt "
+                   "ins Netz geht. Wir sagen ehrlich, wann ein Energiemanager Sinn hat."),
             cards=[
-                {"ic": "☀", "title": "Eigenverbrauch maximieren",
-                 "text": "Statt einzuspeisen und teuer zurückzukaufen, nutzen Sie Ihren Sonnenstrom selbst. Die Eigenverbrauchsquote steigt oft von rund 30 % auf 60 bis 80 %."},
-                {"ic": "◔", "title": "Dynamische Tarife nutzen",
-                 "text": "Mit Smart Meter und variablem Stromtarif verbraucht und lädt Ihr System automatisch dann, wenn der Börsenstrom am günstigsten ist.",
-                 "link_key": "/dynamischer-stromtarif/", "link_text": "Ratgeber dynamischer Tarif"},
-                {"ic": "⌖", "title": "Überschussladen fürs E-Auto",
-                 "text": "Die Wallbox lädt bevorzugt mit PV-Überschuss. So fahren Sie mit selbst produziertem Strom, nahezu zum Nulltarif."},
-                {"ic": "♨", "title": "Wärmepumpe PV-optimiert",
-                 "text": "Das EMS erzeugt Wärme und Warmwasser bevorzugt bei Sonnenschein über die SG-Ready-Schnittstelle und senkt so Ihre Heizkosten spürbar.",
-                 "link_key": "waermepumpe", "link_text": "Zur Wärmepumpe"},
-                {"ic": "▮", "title": "Lastspitzen kappen",
-                 "text": "Besonders im Gewerbe: Das EMS glättet teure Leistungsspitzen über den Speicher und senkt Netzentgelte und Leistungspreis.",
+                {"ic": "◎", "title": "3 bis 5 kWp, kein Speicher",
+                 "text": "Die Grundlast frisst den Sonnenstrom ohnehin tagsüber. Hier reicht das Monitoring des Wechselrichters, ein EMS bringt wenig. Ausnahme: ein Heizstab im Boiler, der den Überschuss aufnimmt."},
+                {"ic": "▮", "title": "PV mit Speicher",
+                 "text": "Das EMS lädt den Speicher prognosebasiert, hält Reserve für den Abend und lässt am Vormittag bewusst Platz. Der Autarkiegrad steigt, die Speicherzyklen sinken.",
                  "link_key": "batteriespeicher", "link_text": "Zum Batteriespeicher"},
-                {"ic": "◎", "title": "Volle Transparenz",
-                 "text": "Sie sehen live, was produziert, verbraucht und gespart wird, decken Stromfresser auf und behalten alles per App im Griff."},
+                {"ic": "⌖", "title": "E-Auto, Wärmepumpe oder Gewerbe",
+                 "text": "Hier liegt das größte Potenzial: 2.000 bis 4.000 kWh pro Jahr lassen sich mit Überschussladen und SG Ready in die Sonnenstunden verschieben.* Im Gewerbe kommt das Lastspitzenmanagement dazu.",
+                 "link_key": "kontakt", "link_text": "Potenzial prüfen lassen"},
             ],
         ),
-        # 5. Privat / Gewerbe
-        C.audience_split(
-            eyebrow="Für Ihr Zuhause und Ihren Betrieb",
-            h2="Ein EMS, zwei Welten: Wir planen es passend für Sie",
-            intro="Wählen Sie, was auf Sie zutrifft. Systemwahl, Einbindung und Förderweg richten wir danach aus.",
-            left={
-                "img": IMG["gen_eigenheim"],
-                "alt": "Einfamilienhaus mit Photovoltaik, Speicher und Wallbox in Kärnten",
-                "title": "Privat: mehr Unabhängigkeit und Komfort",
-                "bullets": [
-                    "Sonnenstrom rund um die Uhr optimal genutzt",
-                    "E-Auto günstig mit PV-Überschuss laden",
-                    "Wärmepumpe und Warmwasser automatisch steuern",
-                    "Dynamische Tarife ohne Aufwand ausnutzen",
-                    "Alles per App, kein Fachwissen nötig",
-                ],
-                "cta": ("kontakt", "Für mein Zuhause anfragen"),
-            },
-            right={
-                "img": IMG["gen_gewerbe"],
-                "alt": "Gewerbebetrieb mit großer Photovoltaikanlage auf dem Dach",
-                "title": "Gewerbe: kalkulierbare Energiekosten",
-                "bullets": [
-                    "Lastspitzenmanagement senkt Leistungspreis und Netzentgelte",
-                    "Lademanagement für Fuhrpark und Ladeparks",
-                    "Energiedaten für ESG-Reporting und Energieaudits",
-                    "Skalierbar über mehrere Standorte und Verbraucher",
-                    "Bessere Amortisation der gesamten Energieinvestition",
-                ],
-                "cta": ("kontakt", "Für meinen Betrieb anfragen"),
-            },
+        # 7. Kompatibilitaet
+        _table_section(
+            eyebrow="Herstellerunabhängige Auswahl",
+            h2="Kompatibel mit Fronius, Huawei, SMA und weiteren Systemen",
+            intro=("Ob Energiemanagementsystem Fronius, Huawei oder SMA: Fast jeder Wechselrichter bringt einen eigenen "
+                   "Energiemanager mit, der die eigenen Geräte gut steuert, Fremdgeräte oft nicht. Herstellerübergreifende "
+                   "Systeme schließen die Lücke. EBZ Energie ist herstellerunabhängig und wählt, was zu Ihrer Technik passt."),
+            headers=["System", "Typ", "Modbus / Schnittstellen", "Stärke"],
+            rows=[
+                ("Fronius Solar.web / Energiekostenassistent (GEN24)", "im Wechselrichter integriert",
+                 "Modbus, eigener Heizstab- und Wallbox-Regler", "alles aus einem Haus, sehr verbreitet in Kärnten und der Steiermark"),
+                ("Huawei FusionSolar", "im Wechselrichter integriert",
+                 "Modbus, eigene Wallbox und Speicher", "einfache App, gute Speichersteuerung"),
+                ("SMA Energy", "im Wechselrichter integriert",
+                 "Modbus, SunSpec", "offene Schnittstellen, viele Wallboxen anbindbar"),
+                ("Kostal", "im Wechselrichter integriert",
+                 "Modbus", "solide Basis für Speicher und Wallbox"),
+                ("SMARTFOX", "eigenes Gerät, herstellerübergreifend",
+                 "Modbus, SG Ready, Relais", "stufenlose Heizstab-Regelung, österreichischer Hersteller"),
+                ("Solar Manager", "eigenes Gerät, herstellerübergreifend",
+                 "Modbus, EEBus, OCPP", "bindet Fremd-Wechselrichter, Wärmepumpen und Wallboxen ein"),
+                ("neoom", "eigenes Gerät, herstellerübergreifend",
+                 "Modbus, SG Ready", "Prognose (Wetter, Verbrauch, KI), Energiegemeinschaft, Gewerbe"),
+            ],
+            note=("Auswahl marktüblicher Systeme ohne Anspruch auf Vollständigkeit, Stand Oktober 2026. "
+                  "Welche Schnittstelle Ihre Wärmepumpe oder Wallbox bietet, prüfen wir in der Analyse."),
         ),
-        # 6. Foerderung 2026 (prominent)
+        # 8. Kosten + Foerderung 2026 + Ausblick 2027
         C.price_cards(
-            eyebrow="EMS-Förderung 2026",
-            h2="Der Klimafonds zahlt mit: bis zu 600 € für Haushalte, bis zu 20.000 € für Betriebe",
-            intro=("Der Klima- und Energiefonds fördert 2026 erstmals eigenständig Energiemanagementsysteme, die "
-                   "mindestens zwei Komponenten wie PV-Anlage, Speicher, Wärmepumpe oder Ladestelle aktiv steuern. "
-                   "Budget: 4,9 Millionen Euro, Registrierung längstens bis 15. April 2027."),
+            eyebrow="Kosten und EMS-Förderung 2026",
+            h2="Was ein EMS kostet und was der Klimafonds dazuzahlt",
+            intro=("Marktübliche Systeme kosten im Einfamilienhaus 800 bis 1.500 €* inklusive Installation. Der "
+                   "Klima- und Energiefonds fördert 2026 Systeme, die mindestens zwei Komponenten aktiv steuern. "
+                   "Budget 4,9 Millionen Euro, Registrierung bis 15. April 2027 (Stand Oktober 2026)."),
             items=[
                 {"size": "Private Haushalte", "price": "50 %", "price_sub": "der Kosten, maximal 600 €",
                  "features": ["Steuerung, Messtechnik, Installation und Konfiguration förderfähig",
                               "Plus 100 € Bonus bei Teilnahme an der Begleitforschung",
                               "Online-Registrierung vor der ersten Rechnung",
-                              "Sechs Monate Zeit für Installation und Abrechnung"]},
+                              "Eigenanteil nach Förderung oft nur wenige hundert Euro*"]},
                 {"size": "Betriebe, Gemeinden, Vereine", "price": "bis 30 %", "price_sub": "der Nettokosten, maximal 20.000 € je Standort",
                  "features": ["Auch Beratung, Planung und Standortanalyse förderfähig",
                               "Großunternehmen bis zu 20 %",
@@ -222,66 +274,78 @@ def build():
                               "Nachweise und Endabrechnung mit Fachbetriebs-Bestätigung",
                               a("kontakt", "Förderung sichern →")]},
             ],
-            note=("Typische EMS-Kosten im Einfamilienhaus: 800 bis 1.500 €* inklusive Installation. Nach Abzug der "
-                  "Förderung bleiben oft nur wenige hundert Euro Eigenanteil. Fünf Jahre Betrieb mit einer von sechs "
-                  "Optionen, zum Beispiel dynamischer Stromtarif oder Teilnahme an einer Energiegemeinschaft."),
+            note=("Fünf Jahre Betrieb mit einer von sechs Optionen, etwa dynamischer Stromtarif oder Energiegemeinschaft. "
+                  "Amortisation: 2.000 kWh verschobener Verbrauch sparen bei 28 ct rund 350 € im Jahr*, der Eigenanteil "
+                  "ist nach ein bis drei Jahren zurück."),
         ).replace('<section class="section"', '<section id="foerderung" class="section"', 1)
          .replace('<p class="form-note center eg-reveal" style="margin-top:22px">',
-                  _foerder_hinweis() + '<p class="form-note center eg-reveal" style="margin-top:22px">', 1),
-        # 7. Smart Meter + dynamischer Tarif
+                  _ausblick_2027() + '<p class="form-note center eg-reveal" style="margin-top:22px">', 1),
+        # 9. Privat / Gewerbe (inkl. Abgrenzung ISO 50001)
+        C.audience_split(
+            eyebrow="Für Ihr Zuhause und Ihren Betrieb",
+            h2="Privat oder Gewerbe: EMS fürs Eigenheim und Energiemanagement im Betrieb",
+            intro=("Ein Energiemanagementsystem Privathaushalt steuert Geräte, ISO 50001 ist ein Managementprozess für "
+                   "Unternehmen. Wir liefern die Steuerung im Haus und die Messdaten für Audit und Reporting im Betrieb."),
+            left={
+                "img": IMG["gen_eigenheim"],
+                "alt": "Einfamilienhaus mit Photovoltaik, Speicher und Wallbox in Kärnten",
+                "title": "Privat: mehr Unabhängigkeit und Komfort",
+                "bullets": [
+                    "Sonnenstrom rund um die Uhr optimal genutzt, Autarkiegrad steigt",
+                    "E-Auto günstig per Überschussladen, Warmwasser über den Heizstab",
+                    "Wärmepumpe über SG Ready automatisch in die Sonnenstunden gelegt",
+                    "Dynamische Tarife ohne Aufwand ausnutzen",
+                    "Alles per App und Monitoring, kein Fachwissen nötig",
+                ],
+                "cta": ("kontakt", "Für mein Zuhause anfragen"),
+            },
+            right={
+                "img": IMG["gen_gewerbe"],
+                "alt": "Gewerbebetrieb mit großer Photovoltaikanlage auf dem Dach",
+                "title": "Gewerbe: kalkulierbare Energiekosten",
+                "bullets": [
+                    "Lastspitzenmanagement senkt Leistungspreis und Netzentgelte",
+                    "Lademanagement für Fuhrpark und Ladeparks",
+                    "Energiedaten für ESG-Reporting, Energieaudit und ISO 50001",
+                    "Skalierbar über mehrere Standorte und Verbraucher",
+                    "Bis zu 20.000 € Förderung je Standort (2026)",
+                ],
+                "cta": ("kontakt", "Für meinen Betrieb anfragen"),
+            },
+        ),
+        # 10. Ausblick: dynamische Tarife, Energiegemeinschaft, V2H
         C.media_text(
-            eyebrow="Smart Meter und dynamischer Stromtarif",
-            h2="Der zweite Hebel: Strom kaufen, wenn er günstig ist",
+            eyebrow="Was als Nächstes kommt",
+            h2="Dynamische Tarife, Energiegemeinschaft, V2H: Ein EMS ist dafür gebaut",
             paragraphs=[
-                ("Der Smart Meter erfasst Ihren Verbrauch in Viertelstundenwerten. Damit wird ein dynamischer "
-                 "Stromtarif möglich, der stundengenau nach Börsenpreis abrechnet. Ein EMS macht daraus ohne Ihr "
-                 "Zutun einen Vorteil: Es lädt den Speicher oder das E-Auto in günstigen Stunden und meidet die "
-                 "teuren."),
-                ("Das ist auch die Brücke zur Förderung: Ein dynamischer Liefervertrag ist eine der sechs Optionen, "
-                 "mit denen Sie die fünfjährige Betriebsverpflichtung des Klimafonds erfüllen. Ob sich der Tarif "
-                 "für Ihr Verbrauchsprofil rechnet, zeigen wir Ihnen mit Zahlen."),
+                ("Der Smart Meter liefert Viertelstundenwerte, damit wird ein dynamischer Stromtarif nach "
+                 "Börsenstrompreis möglich. Das EMS lädt Speicher und E-Auto in günstigen Stunden und meidet die "
+                 "teuren, ab 2027 kommen regelbare Netztarife dazu. Beides zählt als Option für die fünfjährige "
+                 "Betriebsverpflichtung der Klimafonds-Förderung."),
+                ("Was auch ein EMS nicht im Haus unterbringt, muss nicht für wenige Cent ins Netz: In einer "
+                 "Energiegemeinschaft teilen Sie den Überschuss mit Nachbarn, im Nahbereich mit bis zu 57 % weniger "
+                 "Netzentgelt für die Bezieher. Und mit Vehicle-to-Home (V2H) / bidirektionalem Laden wird das "
+                 "E-Auto selbst zum Speicher. Ein gut gewähltes EMS steuert das alles aus einer Oberfläche."),
             ],
             img=IMG["gen_detail"],
             alt="Fachkraft von EBZ Energie bei der Einbindung von Steuerungstechnik an einer Photovoltaikanlage",
             bullets=[
-                "Smart Meter: Voraussetzung für stundengenaue Abrechnung",
-                "Dynamischer Tarif: Börsenpreis statt Fixpreis, automatisch genutzt",
-                "Regelbare Netztarife ab 2027: Wer Lasten steuert, spart doppelt",
-            ],
-            cta=("/smart-meter/", "Ratgeber Smart Meter"),
-            reverse=True,
-        ),
-        # 8. Energiegemeinschaft
-        C.media_text(
-            eyebrow="Energiegemeinschaft",
-            h2="Überschuss teilen statt verschenken",
-            paragraphs=[
-                ("Was auch ein EMS nicht im Haus unterbringt, muss nicht für wenige Cent ins Netz. In einer "
-                 "Energiegemeinschaft teilen Sie Ihren Überschuss mit Nachbarn oder Verwandten, österreichweit "
-                 "möglich. Im Nahbereich sparen die Bezieher zusätzlich beim Netzentgelt, bis zu 57 % lokal und "
-                 "28 % regional. Österreichweites Teilen funktioniert als Bürgerenergiegemeinschaft ohne diesen Rabatt."),
-                ("Das EMS legt Ihren Verbrauch in die Stunden, in denen die Gemeinschaft Überschuss hat. Die "
-                 "Teilnahme an einer lokalen oder regionalen Energiegemeinschaft zählt außerdem als Option für die "
-                 "EMS-Förderung."),
-            ],
-            img=IMG["eg_drohne"],
-            alt="Wohngebiet aus der Luft: Nachbarn teilen Sonnenstrom in einer Energiegemeinschaft",
-            bullets=[
-                "Strom teilen mit Nachbarn oder der Familie in einem anderen Bundesland",
-                "Netzentgelt-Rabatt nur im Nahbereich, bis zu 57 % lokal",
-                "Abrechnung über die Plattform energyfamily",
+                a("/smart-meter/", "Smart Meter") + ": Voraussetzung für stundengenaue Abrechnung",
+                a("/dynamischer-stromtarif/", "Dynamischer Tarif") + ": Börsenpreis statt Fixpreis, automatisch genutzt",
+                a("eg_privat", "Energiegemeinschaft") + ": Überschuss teilen, Rabatt nur im Nahbereich",
             ],
             cta=("eg_privat", "Zur Energiegemeinschaft"),
+            reverse=True,
             dark=True,
         ),
-        # 9. Warum EBZ
+        # 11. Warum EBZ
         C.why_section(
             eyebrow="Ihr Handwerkspartner",
             h2="Ein EMS ist nur so gut wie die Hand, die es installiert und einstellt",
             items=[
                 ("◇", "Herstellerunabhängig", "Wir empfehlen das System, das zu Ihnen passt, nicht umgekehrt. Neutral beraten, sauber umgesetzt."),
                 ("☀", "Alles aus einer Hand", "PV, Speicher, Wärmepumpe, Wallbox und EMS von einem Partner. Kein Schnittstellen-Chaos."),
-                ("✓", "Zertifizierte Fachkräfte", "Festangestelltes Team aus zertifizierten Elektro-Fachkräften, volle Verantwortung bei uns."),
+                ("✓", "Zertifizierte Fachkräfte", "Zertifizierte Elektro-Fachkräfte, volle Verantwortung bei uns, Montage in Kärnten und der Steiermark."),
                 ("⌂", "Auch zum Nachrüsten", "Ihr EMS funktioniert auch mit Ihrer bestehenden PV-Anlage. Sie müssen nichts neu kaufen."),
                 ("€", "Förderung mitgedacht", "Förderfähige Technik, Registrierung zum richtigen Zeitpunkt, Endabrechnung inklusive."),
                 ("◎", "Service über Jahre", "Monitoring, Wartung und ein direkter Draht zu unserem Team, auch nach der Inbetriebnahme."),
@@ -292,7 +356,7 @@ def build():
             "Maximum heraus. Wir sorgen dafür, dass jede Kilowattstunde für Sie arbeitet."
         ),
         C.reviews_slider(reviews, rating, count),
-        # 10. Ablauf
+        # 12. Ablauf
         C.steps_section(
             eyebrow="So einfach geht es",
             h2="In vier Schritten zu einem System, das für Sie mitdenkt",
@@ -305,13 +369,14 @@ def build():
         ),
         C.faq_section(FAQ),
         C.linkgrid_section("Weiterlesen zum Energiemanagement", [
-            ("/ems-foerderung/", "EMS-Förderung 2026"),
-            ("/smart-meter/", "Smart Meter"),
+            ("/ems-foerderung/", "EMS-Förderung 2026 im Detail"),
+            ("/smart-meter/", "Smart Meter erklärt"),
             ("/dynamischer-stromtarif/", "Dynamischer Stromtarif"),
-            ("eg", "Energiegemeinschaft"),
-            ("batteriespeicher", "Batteriespeicher"),
-            ("waermepumpe", "Wärmepumpe"),
-            ("/pv-speicher-nachruesten/", "PV-Speicher nachrüsten"),
+            ("/photovoltaik-fuer-waermepumpe/", "Photovoltaik für die Wärmepumpe"),
+            ("batteriespeicher", "Stromspeicher"),
+            ("/pv-speicher-nachruesten/", "Speicher nachrüsten"),
+            ("carport", "Photovoltaik-Carport mit Wallbox"),
+            ("eg_privat", "Energiegemeinschaft"),
             ("referenzen", "Referenzen"),
         ]),
         C.contact_section(
@@ -319,6 +384,7 @@ def build():
             sub=("Ob Sie schon eine PV-Anlage haben oder gerade planen: Wir zeigen Ihnen in einem kostenlosen "
                  "Gespräch, wie viel ein Energiemanagementsystem in Ihrem Fall herausholt. Ohne Verkaufsdruck, "
                  "dafür mit ehrlicher Rechnung."),
+            page_label="Leistungsseite Energiemanagementsystem",
         ),
         C.finalcta(
             "Jede Kilowattstunde zählt. Lassen Sie sie für sich arbeiten.",
@@ -341,8 +407,11 @@ def _footnote():
     <div class="wrap">
       <p class="form-note">*Richtwerte, abhängig von Anlage, Verbrauch und Tarif. Eigenverbrauchsquoten auf
       Basis typischer Anlagen mit Speicher und flexiblen Verbrauchern, EMS-Kosten für marktübliche Systeme
-      inklusive Installation. Förderangaben laut Leitfaden des Klima- und Energiefonds (Juni 2026), maßgeblich
-      sind die offiziellen Förderbedingungen. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
+      inklusive Installation, Ersparnis-Beispiel mit 2.000 kWh verschobenem Verbrauch und 28 ct je kWh.
+      OeMAG-Marktpreis September 2026: 10,168 ct je kWh (Juli 2026: 6,146 ct; der Wert schwankt monatlich).
+      Förderangaben laut Leitfaden des Klima- und Energiefonds (Juni 2026), Ausblick 2027 laut Eckpunkten des
+      BMWET (Oktober 2026), maßgeblich sind die offiziellen Förderbedingungen. Fachlich geprüft von {AUTHOR},
+      {AUTHOR_ROLE}.</p>
     </div>
   </section>""")
 

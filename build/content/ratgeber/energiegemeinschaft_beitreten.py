@@ -16,7 +16,7 @@ from common import a
 ARTICLE = {
     "slug": "energiegemeinschaft-beitreten",
     "path": "/energiegemeinschaft-beitreten/",
-    "title": "Energiegemeinschaft beitreten: 4 Schritte, 4 bis 8 Wochen | EBZ",
+    "title": "Energiegemeinschaft beitreten: 4 Schritte, 4 bis 8 Wochen",
     "description": "Energiegemeinschaft beitreten: Voraussetzungen (Zählpunkt, Smart Meter, Nahbereich), 4 Schritte, 2 bis 8 € im Monat, Start in 4 bis 8 Wochen. Auch ohne PV.",
     "eyebrow": "Energiegemeinschaft · Beitritt",
     "crumb_label": "Energiegemeinschaft beitreten",
@@ -30,7 +30,7 @@ ARTICLE = {
         "Kündbar <b>monatlich bis quartalsweise</b>",
     ],
     "date_published": "2026-08-10",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "team_quer",
     "hero_alt": "Team von EBZ Energie berät zum Beitritt in eine Energiegemeinschaft",
 
@@ -39,8 +39,9 @@ ARTICLE = {
         "Betriebe, Vereine, Gemeinden. Eine PV-Anlage ist nicht nötig.",
         "Der Ablauf: passende Gemeinschaft im Nahbereich finden, Mitgliedsvertrag unterschreiben, Zählpunkt im "
         "Netzbetreiber-Portal freigeben, Start im Folgemonat. In Summe vier bis acht Wochen.",
-        "Abnehmer sparen beim EG-Strom Netzentgelt (28 bis 57 Prozent) und Abgaben, Erzeuger bekommen mehr als den "
-        "OeMAG-Tarif von 6,146 Cent (Juli 2026). Der Lieferantenvertrag bleibt bestehen.",
+        "Abnehmer sparen beim EG-Strom Netzentgelt (28 bis 57 Prozent) und Abgaben, Erzeuger bekommen einen fix "
+        "vereinbarten EG-Preis statt des monatlich schwankenden OeMAG-Tarifs (Juli 2026: 6,146 Cent, September 2026: "
+        "10,168 Cent). Der Lieferantenvertrag bleibt bestehen.",
         "Kosten: meist 2 bis 8 Euro Mitgliedsbeitrag im Monat, keine Einrichtungsgebühr, Kündigungsfrist ein bis "
         "drei Monate.",
         "EBZ Energie nimmt Kunden in Kärnten und der Steiermark auf und erledigt die Schritte beim Netzbetreiber mit. "
@@ -59,7 +60,10 @@ ARTICLE = {
 In den allermeisten Fällen lautet die Antwort nein. In Österreich gibt es mittlerweile über 11.000
 Energiegemeinschaften, davon mehr als 5.500 Erneuerbare-Energie-Gemeinschaften. In Kärnten und der Steiermark
 findet sich in fast jedem Umspannwerksbereich eine aktive Gemeinschaft oder eine, die gerade entsteht. Der Beitritt
-erspart Ihnen Rechtsform, Vereinsregister, Netzbetreibervertrag und Abrechnungssoftware. Das alles steht schon.</p>
+erspart Ihnen Rechtsform, Vereinsregister, Netzbetreibervertrag und Abrechnungssoftware. Das alles steht schon.
+Dieser Ratgeber beschreibt den Ablauf des Beitritts Schritt für Schritt. Wer in Kärnten oder der Steiermark
+nicht selbst suchen will: Den {a('eg_privat', 'Beitritt über EBZ Energie')} inklusive Zählpunktfreigabe,
+Aufnahme und Abrechnung über energyfamily beschreibt unsere Leistungsseite.</p>
 <p>Gründen lohnt sich dann, wenn Sie mehrere Erzeuger und Abnehmer kennen, die an einem Trafo hängen, oder wenn eine
 Gemeinde oder ein Betrieb die Gemeinschaft als eigenes Projekt aufsetzen will. Dafür haben wir den Artikel
 {a('/energiegemeinschaft-gruenden/', 'Energiegemeinschaft gründen')} geschrieben. Hier geht es um den Beitritt.
@@ -131,11 +135,12 @@ zuhause ist. Die Rechnung je Position steht im Artikel
 {a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.</p>
 """),
         ("Was der Beitritt für Erzeuger bringt", "erzeuger", f"""
-<p>Als PV-Besitzer verkaufen Sie den Überschuss zum EG-Einspeisepreis, typisch zwischen 8 und 12 Cent*, statt zum
-OeMAG-Tarif von aktuell 6,146 Cent (Juli 2026). Nur der Anteil, der zeitgleich in der Gemeinschaft verbraucht wird,
-bekommt diesen Preis. Der Rest geht weiter an die OeMAG oder Ihren Einspeisevertragspartner. Sie verlieren also nie,
-Sie gewinnen nur auf dem zugeordneten Anteil. Gleichzeitig sind Sie abends und im Winter selbst Abnehmer und
-profitieren von den Ersparnissen oben. Den Vergleich mit allen Zahlen ziehen wir im Artikel
+<p>Als PV-Besitzer verkaufen Sie den Überschuss zum EG-Einspeisepreis, typisch zwischen 8 und 12 Cent*, der in der
+Gemeinschaft fix vereinbart wird. Der OeMAG-Tarif schwankt dagegen monatlich: Im Juli 2026 lag er bei 6,146 Cent, im
+September 2026 bei 10,168 Cent (Stand Oktober 2026). Nur der Anteil, der zeitgleich in der Gemeinschaft verbraucht
+wird, bekommt den EG-Preis. Der Rest geht weiter an die OeMAG oder Ihren Einspeisevertragspartner, dort ändert sich
+nichts. Ob der EG-Preis über dem OeMAG-Wert liegt, hängt vom Monat ab; verlässlich ist der Vorteil beim Bezug:
+Abends und im Winter sind Sie selbst Abnehmer und profitieren von den Ersparnissen oben. Den Vergleich mit allen Zahlen ziehen wir im Artikel
 {a('/oemag-einspeisetarif/', 'OeMAG-Einspeisetarif oder Energiegemeinschaft')}. Ein
 {a('batteriespeicher', 'Batteriespeicher')} verschiebt Überschuss zusätzlich in die Abendstunden, in denen die
 Gemeinschaft mehr braucht.</p>

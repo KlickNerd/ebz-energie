@@ -33,7 +33,7 @@ ARTICLE = {
         "Amortisation: <b>8 bis 15 Jahre</b>",
     ],
     "date_published": "2026-02-05",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "waermepumpe",
     "hero_alt": "Luft-Wasser-Wärmepumpe als Außeneinheit neben einem Einfamilienhaus",
 
@@ -60,6 +60,13 @@ ARTICLE = {
 
     "sections": [
         ("Anschaffungskosten im Überblick: Gerät plus Installation", "anschaffung", f"""
+<p><b>Eine Luft-Wasser-Wärmepumpe kostet in Österreich 2026 inklusive Installation rund 12.000 bis
+22.000 Euro*, eine Erdwärmepumpe 22.000 bis 40.000 Euro*</b> (EBZ-Richtwerte, Stand Oktober 2026). Die
+Bundesförderung für den Kesseltausch (bis 7.500 Euro, Sanierungsoffensive 2026) ist seit Herbst 2026
+ausgeschöpft; das Land Kärnten fördert laut Richtlinie 35 Prozent bis 6.000 Euro (laut Berichten 2026:
+3.000 Euro), die Steiermark 35 Prozent (Quelle: umweltfoerderung.at, Landesstellen; Stand vor Antrag
+prüfen). Ein Festpreisangebot für Ihr Haus erstellt EBZ Energie als
+{a('waermepumpe', 'Wärmepumpen-Installateur in Kärnten und der Steiermark')}.</p>
 <p>Die Anschaffungskosten einer Wärmepumpe liegen über denen einer Gasheizung. Dieser Vergleich greift
 aber zu kurz, weil er laufende Kosten und Lebensdauer ausblendet. Eine Wärmepumpe ist eine Investition,
 die sich über Jahre und Jahrzehnte rechnet. Die Anschaffung besteht aus zwei Blöcken: dem Gerät selbst
@@ -141,8 +148,9 @@ bis 30.000 Euro vor Förderung. Details, Rechenbeispiele und Voraussetzungen fin
     ],
     hl_cols=(1,),
 )}
-<p>Nach Abzug der Bundesförderung „Raus aus Öl und Gas“, der Landesförderung Kärnten beziehungsweise
-Steiermark und allfälliger kommunaler Programme reduzieren sich diese Summen deutlich. Zum Vergleich:
+<p>Nach Abzug von Förderungen reduzieren sich diese Summen deutlich: 2026 galt die Bundesförderung
+„Raus aus Öl und Gas“ mit bis zu 7.500 Euro (seit Herbst 2026 ausgeschöpft), dazu kommen die Landesförderung
+Kärnten beziehungsweise Steiermark (Stand beim Land prüfen) und allfällige kommunale Programme. Zum Vergleich:
 Eine {a('photovoltaik', 'Photovoltaikanlage')} mit 10 kWp und Speicher kostet rund 15.000 bis
 22.000 Euro vor Förderung, die Kombination aus beidem senkt die Energiekosten am stärksten.</p>
 {A.cta("Was kostet die Wärmepumpe für Ihr Haus?",
@@ -151,19 +159,20 @@ Eine {a('photovoltaik', 'Photovoltaikanlage')} mit 10 kWp und Speicher kostet ru
        secondary=("waermepumpe", "Zum Wärmepumpen-Installateur"))}
 """),
         ("Förderung: Wie viel bekommen Sie zurück?", "foerderung", f"""
-<p>Die Anschaffung einer Wärmepumpe wird in Österreich aus mehreren Quellen gleichzeitig gefördert.
-Zusammengenommen können die Zuschüsse die Investition je nach Bundesland und Programm um 4.000 bis
-12.000 Euro senken.</p>
+<p>Die Anschaffung einer Wärmepumpe wurde 2026 in Österreich aus mehreren Quellen gleichzeitig gefördert.
+Zusammengenommen konnten die Zuschüsse die Investition je nach Bundesland und Programm um 4.000 bis
+12.000 Euro senken. <b>Stand Oktober 2026:</b> Die Bundesprogramme sind ausgeschöpft, neue Registrierungen
+sind nicht möglich; offen bleiben die Landesförderungen (Bedingungen beim Land prüfen).</p>
 <ul>
-  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> Wer eine fossile Heizung durch eine Wärmepumpe
-  ersetzt, erhält einen Investitionszuschuss von mehreren tausend Euro, förderfähig sind Gerät und
-  Installation. Aktuelle Konditionen: {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}
-  und {a('/sauber-heizen-fuer-alle-2026/', 'Sauber Heizen für Alle 2026')} für einkommensschwache
-  Haushalte.</li>
+  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> 2026 gab es für den Tausch einer fossilen Heizung bis
+  zu 7.500 Euro Investitionszuschuss, förderfähig waren Gerät und Installation. Das Programm
+  {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} und
+  {a('/sauber-heizen-fuer-alle-2026/', 'Sauber Heizen für Alle 2026')} für einkommensschwache Haushalte
+  sind seit Herbst 2026 beendet (Mittel ausgeschöpft); ob 2027 ein neues Programm kommt, ist offen.</li>
   <li><b>Landesförderung Kärnten und Steiermark:</b> Beide Bundesländer haben eigene Programme, deren
   Höhe je nach Antragsjahr variiert. Überblick: {a('/landesfoerderungen-fuer-die-waermepumpe/',
   'Landesförderungen für die Wärmepumpe')}.</li>
-  <li><b>Steuer:</b> Zusätzlich lässt sich der Heizungstausch über die
+  <li><b>Steuer:</b> Wer eine Bundesförderung ausbezahlt bekommt, kann den Heizungstausch zusätzlich über die
   {a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/',
   'Öko-Sonderausgabenpauschale')} steuerlich geltend machen.</li>
 </ul>
@@ -275,8 +284,9 @@ Bruchteil der bisherigen Kosten.</p>
          "12.000 kWh Wärmebedarf und einer Jahresarbeitszahl von 4 sind es 3.000 kWh, also rund 900 Euro "
          "Stromkosten bei 0,30 Euro je Kilowattstunde."),
         ("Was kostet die Wärmepumpe nach Abzug der Förderung?",
-         "Je nach Bundesland und Programm reduzieren Bundes- und Landesförderung die Anschaffung um 4.000 "
-         "bis 12.000 Euro. Aus 20.000 Euro vor Förderung können so 8.000 bis 16.000 Euro Eigenanteil werden. "
+         "2026 reduzierten Bundes- und Landesförderung die Anschaffung je nach Bundesland und Programm um 4.000 "
+         "bis 12.000 Euro. Aus 20.000 Euro vor Förderung konnten so 8.000 bis 16.000 Euro Eigenanteil werden. Seit "
+         "Herbst 2026 ist die Bundesförderung ausgeschöpft, offen bleibt die Landesförderung (Stand prüfen). "
          "EBZ Energie berechnet Ihre individuelle Förderhöhe kostenlos."),
         ("Amortisiert sich eine Wärmepumpe wirklich?",
          "Ja, in den meisten Fällen innerhalb von 8 bis 15 Jahren. Entscheidend sind die ausgeschöpfte "

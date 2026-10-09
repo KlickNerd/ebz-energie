@@ -16,9 +16,9 @@ from common import a
 ARTICLE = {
     "slug": "foerderung-pv-speicher-kaernten",
     "path": "/foerderung-pv-speicher-kaernten/",
-    "title": "Förderung PV-Speicher Kärnten: 3.000 € plus Bund | EBZ",
-    "description": ("Förderung für PV-Speicher in Kärnten: 2026 zahlt das Land 3.000 € Pauschale für PV mit Speicher, "
-                    "1.000 € für die Nachrüstung, der Bund 150 € je kWh. Ablauf."),
+    "title": "PV-Speicher-Förderung Kärnten 2026: 3.000 € bis 31.12. | EBZ",
+    "description": ("PV-Speicher-Förderung Kärnten 2026: 3.000 € Pauschale für PV mit Speicher, 1.000 € für die "
+                    "Nachrüstung, Bund 150 € je kWh. 2. Call 12.10. bis 31.12.2026."),
     "eyebrow": "Förderung · Kärnten",
     "crumb_label": "PV-Speicher-Förderung Kärnten",
     "h1": "Förderung für PV-Speicher in Kärnten: 3.000 Euro Landespauschale plus 150 Euro je kWh vom Bund",
@@ -30,10 +30,10 @@ ARTICLE = {
         "2026: <b>3.000 €</b> Pauschale (PV + Speicher)",
         "Nachrüstung: <b>1.000 €</b> ab 5 kWh",
         "Bund: <b>150 €/kWh</b>, voll kombinierbar",
-        "Landes-Call: <b>15. April bis 30. Juni 2026</b>",
+        "2. Landes-Call: <b>12. Oktober bis 31. Dezember 2026</b>",
     ],
     "date_published": "2025-07-25",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus in Kärnten mit Photovoltaikanlage und Batteriespeicher",
 
@@ -47,8 +47,9 @@ ARTICLE = {
         "Speicherförderungen Österreichs; die Kombination mit dem Bund war für gewerbliche und kommunale Anlagen "
         "vorgesehen.",
         "Reihenfolge beachten: EAG-Antrag vor Inbetriebnahme im Fördercall (2026: ab 23. April, 16. Juni, "
-        "8. Oktober), Landesantrag erst nach Fertigstellung zwischen 15. April und 30. Juni 2026, Rechnungen "
-        "datiert nach dem 1. Jänner 2026.",
+        "8. Oktober; letzter Call bis 22. Oktober), Landesantrag erst nach Fertigstellung im 2. Call zwischen "
+        "12. Oktober und 31. Dezember 2026 (1. Call: 15. April bis 30. Juni), Rechnungen datiert nach dem "
+        "1. Jänner 2026. Stand Oktober 2026.",
         "Der Andrang ist groß, Budgets sind begrenzt. Vollständige Unterlagen (Angebot, Datenblätter, "
         "Zählpunkt, Nachweise) und eine frühzeitige Einreichung entscheiden.",
     ],
@@ -72,16 +73,19 @@ vereinfacht: Statt eines Zuschusses je Kilowattstunde gibt es Pauschalen.</p>
         ["Speicher-Nachrüstung an Bestandsanlage", "275 €/kWh (bis 10 kWh)", "1.000 € Pauschale (ab 5 kWh)"],
         ["Reine PV-Anlage ohne Speicher", "PV-Zuschuss des Landes", "keine Landesförderung, nur EAG-Bund"],
         ["Kombination mit EAG-Bund", "für gewerbliche und kommunale Anlagen vorgesehen", "ja, ohne Anrechnung"],
-        ["Antragszeitpunkt", "vor Projektbeginn, digital", "nach Fertigstellung, Landes-Call 15. April bis 30. Juni 2026"],
+        ["Antragszeitpunkt", "vor Projektbeginn, digital", "nach Fertigstellung, 2. Landes-Call 12. Oktober bis 31. Dezember 2026 (1. Call: 15. April bis 30. Juni)"],
     ],
     hl_cols=(2,),
 )}
 <p>Für einen typischen 10-kWh-Speicher bedeutete der Satz 2025 einen Zuschuss von 2.750 Euro. Die Pauschale
 2026 von 3.000 Euro gilt unabhängig von der Anlagengröße: Eine 12-kWp-Anlage bekommt denselben Betrag wie eine
 5-kWp-Anlage. Für betriebliche Eigenverbrauchsanlagen gibt es eine eigene Schiene mit bis zu 200 Euro je kWp.
-Insgesamt stellt das Land 2026 rund 40 Millionen Euro für die Energieförderung bereit.</p>
+Insgesamt stellt das Land 2026 rund 40 Millionen Euro für die Energieförderung bereit; der zweite Call vom
+12. Oktober bis 31. Dezember 2026 ist mit rund 10 Millionen Euro dotiert, gedeckelt mit 50 Prozent der
+Baukosten (Quelle: Land Kärnten, Stand Oktober 2026).</p>
 <p><small>Stand: Förderjahr 2025 laut Quelle vom November 2025, Förderjahr 2026 laut Landesrichtlinie Kärnten
-2026 (Stand Juni 2026). Maßgeblich sind die jeweils gültigen Richtlinien des Landes Kärnten.</small></p>
+2026 und Ankündigung des 2. Calls (Stand Oktober 2026). Maßgeblich sind die jeweils gültigen Richtlinien des
+Landes Kärnten.</small></p>
 """),
         ("Der EAG-Bundeszuschuss als zweite Säule", "eag-bund", f"""
 <p>Neben dem Landesprogramm gibt es den EAG-Investitionszuschuss des Bundes, abgewickelt über die
@@ -98,9 +102,12 @@ wird. Der Antrag muss vor der Inbetriebnahme gestellt werden.</p>
     ],
     hl_cols=(2, 3),
 )}
-<p>Die EAG-Calls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und ab 8. Oktober. In den
+<p>Die EAG-Calls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und vom 8. bis 22. Oktober. In den
 Kategorien A und B gilt First-Come-First-Served mit Ticketziehung. Der Made-in-Europe-Bonus bringt 10 Prozent
 Zuschlag je Komponente von der White List der Abwicklungsstelle.</p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (bis 22. Oktober 2026) ist der letzte im bisherigen System. Ab
+2027 plant das BMWET eine Systemförderung mit Antrag nach Installation, bei der Speicher mit intelligenter
+Steuerung im Mittelpunkt stehen und auch die Nachrüstung förderbar werden soll. Höhe und Kriterien sind offen.</p>
 <p>Zur Einordnung: Bis 31. März 2025 galt für kleine PV-Anlagen der Nullsteuersatz bei der Umsatzsteuer. Er
 wurde durch den Investitionszuschuss abgelöst. Für Sie als Endkunde ist das transparenter: ein fester Betrag,
 der die Anfangsinvestition unmittelbar senkt, statt eines Steuervorteils. Alle Bundeskonditionen im Ratgeber
@@ -143,8 +150,8 @@ Amortisation auswirken, rechnet der Ratgeber
   <li><b>Rechnungsdatum:</b> Module, Wechselrichter und Speicher müssen nach dem 1. Jänner 2026 in Rechnung
   gestellt und per Überweisung bezahlt sein.</li>
   <li><b>Antrag nach Fertigstellung:</b> Der Landesantrag wird digital über das Portal des Landes Kärnten
-  gestellt, zwischen 15. April und 30. Juni 2026, mit Rechnungen, Zahlungsnachweisen, Datenblättern und
-  Zählpunkt.</li>
+  gestellt, im 2. Call zwischen 12. Oktober und 31. Dezember 2026 (1. Call: 15. April bis 30. Juni), mit
+  Rechnungen, Zahlungsnachweisen, Datenblättern und Zählpunkt.</li>
   <li><b>Fachgerechte Errichtung:</b> Installation durch einen befugten Fachbetrieb nach den geltenden Normen.</li>
 </ul>
 <p>Im Förderjahr 2025 galt die umgekehrte Reihenfolge: Der Landesantrag musste vor Projektbeginn eingereicht
@@ -170,8 +177,8 @@ wer aber den EAG-Antrag nach der Inbetriebnahme stellt, verliert die Bundesförd
      "Montage durch zertifizierte Fachkräfte, Anmeldung beim Netzbetreiber. Rechnungen nach dem 1. Jänner "
      "2026 datiert und per Überweisung bezahlt."),
     ("Landesantrag nach Fertigstellung",
-     "Zwischen 15. April und 30. Juni 2026 den Antrag online über das Portal des Landes Kärnten stellen, mit "
-     "allen Nachweisen."),
+     "Im 2. Call zwischen 12. Oktober (ab 9 Uhr) und 31. Dezember 2026 den Antrag online über die Förderplattform "
+     "des Landes Kärnten stellen, mit allen Nachweisen (1. Call: 15. April bis 30. Juni 2026)."),
     ("Endabrechnung und Auszahlung",
      "Endabrechnung beim Bund, Prüfung durch das Land, Auszahlung beider Zuschüsse."),
 ])}
@@ -227,7 +234,7 @@ Made-in-Europe-Komponenten mehr. Der Erfolg hängt an der Reihenfolge und an vol
         ("Kann ich Landes- und Bundesförderung kombinieren?",
          "Ja, 2026 ohne Anrechnung. Sie stellen zwei Anträge bei zwei Stellen: den EAG-Antrag vor Inbetriebnahme "
          "bei der EAG-Abwicklungsstelle und den Landesantrag nach Fertigstellung über das Portal des Landes "
-         "Kärnten, zwischen 15. April und 30. Juni 2026."),
+         "Kärnten, im 2. Call zwischen 12. Oktober und 31. Dezember 2026 (1. Call: 15. April bis 30. Juni)."),
         ("Kann ich die Förderung für eine bereits gekaufte Anlage beantragen?",
          "Für den Bund nein: Der EAG-Antrag muss vor der Inbetriebnahme gestellt sein, sonst entfällt der "
          "Zuschuss. Das Land Kärnten verlangt 2026 den Antrag nach Fertigstellung, aber nur für Anlagen mit "
@@ -237,12 +244,13 @@ Made-in-Europe-Komponenten mehr. Der Erfolg hängt an der Reihenfolge und an vol
          "reine Nachrüstung nicht, weil der EAG-Speicherzuschuss an eine neue oder erweiterte PV-Anlage gebunden ist."),
         ("Wie funktioniert der EAG-Investitionszuschuss?",
          "Er wird in Fördercalls der EAG-Abwicklungsstelle beantragt, 2026 ab 23. April, 16. Juni und "
-         "8. Oktober. Gefördert werden die PV-Anlage je kWp (150 Euro bis 10 kWp) und der Speicher je kWh "
+         "8. Oktober (letzter Call bis 22. Oktober; ab 2027 laut BMWET Antrag nach Installation). Gefördert werden die PV-Anlage je kWp (150 Euro bis 10 kWp) und der Speicher je kWh "
          "(150 Euro, max. 50 kWh). Der Zuschuss wird nach Fertigstellung und Endabrechnung ausbezahlt."),
         ("Was passiert, wenn der Fördertopf leer ist?",
-         "Beim Bund können Sie im nächsten Call erneut einreichen; die Anlage darf bis dahin nicht in Betrieb "
-         "gehen. Beim Land ist mit neuen Budgets im Folgejahr zu rechnen; 2026 stehen rund 40 Millionen Euro "
-         "bereit. Wer vorbereitet ist, reicht am ersten Tag ein."),
+         "Beim Bund gibt es nach dem 22. Oktober 2026 keinen weiteren Call im alten System; Projekte mit "
+         "intelligentem Speicher ab 1. November 2026 sollen 2027 in der geplanten Systemförderung beantragbar sein. "
+         "Beim Land läuft der 2. Call bis 31. Dezember 2026 mit rund 10 Millionen Euro. Wer vorbereitet ist, reicht "
+         "früh ein."),
         ("Warum lohnt sich professionelle Hilfe beim Antrag?",
          "Weil zwei Stellen mit gegensätzlicher Reihenfolge, eigene Fristen und formale Anforderungen "
          "koordiniert werden müssen. Ein Fehler beim Rechnungsdatum oder ein verspätetes EAG-Ticket kostet "

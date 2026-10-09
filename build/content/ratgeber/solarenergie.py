@@ -33,7 +33,7 @@ ARTICLE = {
         "Wasserkraft in Österreich: <b>rund 60 %</b> des Stroms",
     ],
     "date_published": "2025-05-10",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "pv_card",
     "hero_alt": "Photovoltaikmodule auf einem Dach in der Sonne: Grundlagen der Solarenergie",
 
@@ -180,8 +180,8 @@ von allen Quellen am schnellsten (Stand 2025).</p>
   Jahr sind 70 bis 80 Prozent realistisch.</li>
   <li><b>Speichergrenzen:</b> Ein Batteriespeicher überbrückt Stunden, keine Wochen. Ein zu großer Speicher wird
   im Winter nie voll, ein zu kleiner ist im Sommer schnell am Limit.</li>
-  <li><b>Einspeisung bringt wenig:</b> Der OeMAG-Marktpreis für eingespeisten Strom lag im Juli 2026 bei
-  6,146 Cent je kWh. Wirtschaftlich zählt der Eigenverbrauch, nicht der Verkauf (siehe
+  <li><b>Einspeisung bringt wenig:</b> Der OeMAG-Marktpreis für eingespeisten Strom beträgt für September 2026
+  10,168 Cent je kWh, im Juli 2026 waren es 6,146 Cent (Stand Oktober 2026). Wirtschaftlich zählt der Eigenverbrauch, nicht der Verkauf (siehe
   {a('/einspeisetarif-fuer-photovoltaik/', 'Einspeisetarif für Photovoltaik')}).</li>
   <li><b>Netz:</b> Viele Anlagen in einem Netzabschnitt können die Leitungen an die Grenze bringen. Speicher,
   Energiemanagement und {a('eg', 'Energiegemeinschaften')} helfen, Erzeugung und Verbrauch lokal abzustimmen.</li>

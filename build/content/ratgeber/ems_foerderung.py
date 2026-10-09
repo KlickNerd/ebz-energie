@@ -31,7 +31,7 @@ ARTICLE = {
         "Frist: <b>15. April 2027</b>",
     ],
     "date_published": "2026-09-05",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "ems",
     "hero_alt": "Energiemanagementsystem vernetzt Photovoltaik, Speicher, Wärmepumpe und Wallbox im Eigenheim",
 
@@ -57,6 +57,10 @@ ARTICLE = {
 
     "sections": [
         ("Was ist die Energiemanagement-Förderung des Klimafonds?", "was-ist", f"""
+<p><b>Die Bundesförderung „Energiemanagement: Flexibilisierung im Verteilnetz“ (Klima- und Energiefonds) zahlt
+privaten Haushalten 50 Prozent der Kosten, maximal 600 Euro, Betrieben und Gemeinden 30 Prozent, maximal
+20.000 Euro je Standort.</b> Einreichung vom 23. Juni 2026 bis 15. April 2027, Budget 4,9 Millionen Euro,
+Registrierung vor der Rechnung (Quelle: klimafonds.gv.at, umweltfoerderung.at, Stand Oktober 2026).</p>
 <p>Die Energiemanagement-Förderung 2026 trägt offiziell den Titel „Energiemanagement, Flexibilisierung
 im Verteilnetz“ und ist ein neues Programm des Klima- und Energiefonds der österreichischen
 Bundesregierung. Gefördert werden Anschaffung, Installation und Konfiguration intelligenter
@@ -193,8 +197,8 @@ Energiemanagement in den nächsten Jahren zum Standard:</p>
   <li><b>Regelbare Netztarife ab 2027:</b> Voraussichtlich ab 1. Jänner 2027 kommen in Österreich
   regelbare Netztarife, bei denen Lastspitzen stärker ins Gewicht fallen. Wer Lasten intelligent steuert,
   spart doppelt.</li>
-  <li><b>Sinkende Einspeisetarife:</b> Der {a('marktpreis', 'OeMAG-Marktpreis')} lag im Juli 2026 bei
-  6,146 Cent je Kilowattstunde. Je weniger die Einspeisung bringt, desto wertvoller wird jede selbst
+  <li><b>Schwankende Einspeisetarife:</b> Der {a('marktpreis', 'OeMAG-Marktpreis')} lag im Juli 2026 bei
+  6,146 Cent je Kilowattstunde, im September 2026 bei 10,168 Cent (Stand Oktober 2026). Je weniger die Einspeisung bringt, desto wertvoller wird jede selbst
   genutzte Kilowattstunde, gerade in Kombination mit Wärmepumpe und Wallbox.</li>
   <li><b>Energiegemeinschaften:</b> Ein EMS legt Ihren Verbrauch in die Stunden, in denen die
   {a('eg', 'Energiegemeinschaft')} Überschuss hat, und hebt so die Zuordnungsquote.</li>

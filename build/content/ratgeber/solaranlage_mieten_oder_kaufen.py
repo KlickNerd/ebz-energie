@@ -40,7 +40,7 @@ ARTICLE = {
         "Amortisation: <b>4 bis 6 Jahre</b>",
     ],
     "date_published": "2026-01-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach: Vergleich von Miete, Kauf und Finanzierung",
 
@@ -65,6 +65,11 @@ ARTICLE = {
 
     "sections": [
         ("Drei Wege zur eigenen Solaranlage: Miete, Kauf, Finanzierung", "drei-modelle", f"""
+<p><b>In Österreich lässt sich eine PV-Anlage mit Speicher ab rund 147 Euro pro Monat finanzieren*.</b> Die Anlage
+gehört ab dem ersten Tag dem Kunden, die volle Förderung bleibt privat erhalten, es gibt keinen
+Datenbankeintrag. Der Direktkauf bleibt über 20 Jahre die günstigste Variante, die
+{a('finanzierung', 'Finanzierung')} schont die Liquidität (EBZ Energie, Stand Oktober 2026).
+<small>*Beispielkonditionen, abhängig von Laufzeit und Anlagengröße.</small></p>
 <p>Wer eine Photovoltaikanlage will, aber die Anschaffung scheut, stößt auf drei Modelle, die auf den
 ersten Blick ähnlich klingen und sich wirtschaftlich stark unterscheiden:</p>
 <ul>

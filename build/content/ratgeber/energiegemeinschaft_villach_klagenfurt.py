@@ -30,7 +30,7 @@ ARTICLE = {
         "Beratung <b>vor Ort</b>",
     ],
     "date_published": "2026-08-10",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Wohnhausdach in Villach mit Blick über die Stadt",
 
@@ -82,8 +82,8 @@ Konstellation häufig. In den Umlandgemeinden geht es meist auf die regionale Eb
     [
         ["Abnehmer ohne PV", "3.500 kWh Verbrauch, 40 % aus der Gemeinschaft, 14 ct EG-Preis statt 17 ct Lieferant, "
          "plus Netz- und Abgabenersparnis", "rund 120 bis 150 €"],
-        ["Erzeuger mit 10 kWp", "Überschuss zum EG-Preis statt zum OeMAG-Tarif von 6,146 ct (Juli 2026)",
-         "150 bis 250 € Mehrerlös"],
+        ["Erzeuger mit 10 kWp", "Überschuss zum fixen EG-Preis statt zum schwankenden OeMAG-Tarif (Juli 2026: 6,146 ct, September 2026: 10,168 ct)",
+         "0 bis 250 € Mehrerlös, je nach Monatswert"],
     ],
     hl_cols=(2,),
 )}

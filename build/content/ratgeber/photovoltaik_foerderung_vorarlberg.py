@@ -29,7 +29,7 @@ CALLS_TABLE = A.table(
     [
         ["Call 1", "23. April bis 11. Mai 2026", "erster Call des Jahres, meist hohe Nachfrage"],
         ["Call 2", "16. bis 30. Juni 2026", "Sommer-Call"],
-        ["Call 3", "ab 8. Oktober 2026", "Herbst-Call"],
+        ["Call 3", "8. bis 22. Oktober 2026", "Herbst-Call, letzter Call im bisherigen System"],
     ],
     hl_cols=(1,),
 )
@@ -53,7 +53,7 @@ ARTICLE = {
         "Typisch: <b>2.500 bis 4.500 €</b> für EFH*",
     ],
     "date_published": "2026-04-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_gewerbe",
     "hero_alt": "Photovoltaikanlage auf einem Gewerbedach mit Parkplatzfläche als Beispiel für PV auf versiegelten Flächen",
 
@@ -203,7 +203,7 @@ Speicherkapazität, Komponenten und der Wohnsitzgemeinde ab.</small></p>
      "müssen bei EAG-Antragstellung vorliegen."),
     ("EAG-Antrag im Fördercall",
      "Online über die EAG-Abwicklungsstelle, in Kategorie A und B mit Ticketziehung, zwingend vor Inbetriebnahme. "
-     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober."),
+     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober."),
     ("Landes- und VKW-Antrag",
      "Projekte ab 20 kWp auf versiegelten Flächen beim Land Vorarlberg einreichen, Speicherbonus direkt bei der VKW "
      "beantragen. Gemeindeförderung nach lokaler Richtlinie."),
@@ -229,6 +229,11 @@ Bonus, VKW-Speicherförderung und Gemeindezuschuss dazu. Für eine typische Priv
 Landesförderung von bis zu 50.000 € plus EAG deutlich höhere Gesamtquoten.</p>
 <p><small>Stand: Mai 2026. Förderhöhen, Budgets und Fristen können sich ändern, maßgeblich sind die Richtlinien
 der EAG-Abwicklungsstelle (OeMAG), des Landes Vorarlberg und der VKW.</small></p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Förderkombination für Ihr Projekt in Vorarlberg",
        "Wir prüfen EAG, VKW-Bonus, Gemeindeförderung und bei Flächenprojekten die Landesförderung und übernehmen "
        "die Antragstellung in der richtigen Reihenfolge.",
@@ -273,7 +278,7 @@ der EAG-Abwicklungsstelle (OeMAG), des Landes Vorarlberg und der VKW.</small></p
          "kombinieren, sofern die beihilferechtlichen Höchstgrenzen eingehalten werden. Auch die Landesförderung für "
          "versiegelte Flächen ist mit der EAG kombinierbar."),
         ("Wann sind die EAG-Fördercalls 2026?",
-         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und ab 8. Oktober 2026. In den "
+         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und 8. bis 22. Oktober 2026. In den "
          "Kategorien A und B gilt First come, first served mit Ticketziehung. Der Antrag muss vor Inbetriebnahme "
          "gestellt werden."),
         ("Lohnt sich eine PV-Anlage in Vorarlberg trotz fehlender Landesförderung?",

@@ -1,5 +1,8 @@
 """Ratgeber: Sauber Heizen für Alle 2026 (bis zu 100 % Förderung für einkommensschwache Haushalte).
 
+Stand Oktober 2026: Programm BEENDET, keine neuen Registrierungen (umweltfoerderung.at, 9.10.2026);
+bereits Registrierte koennen noch beantragen. Konditionen als "galt 2026" dokumentiert, Status-Box oben.
+
 Migriert vom WordPress-Artikel ebz-photovoltaik.at/sauber-heizen-fuer-alle-2026/
 (veröffentlicht 2026-03-15, zuletzt geändert 2026-04-12). Zahlen: Stand April 2026.
 Bereinigt: Gedankenstriche, "ohne Subunternehmer" entfernt, "Fachbetrieb in ganz Österreich"
@@ -17,58 +20,73 @@ from common import a
 ARTICLE = {
     "slug": "sauber-heizen-fuer-alle-2026",
     "path": "/sauber-heizen-fuer-alle-2026/",
-    "title": "Sauber Heizen für Alle 2026: bis 100 % Förderung | EBZ",
-    "description": ("Sauber Heizen für Alle 2026: bis zu 100 % Förderung für den Heizungstausch bei "
-                    "Einkommen bis 1.867 € netto. Obergrenzen 25.586 € und 37.550 €, Ablauf, Fristen."),
+    "title": "Sauber Heizen für Alle 2026: beendet, das gilt jetzt | EBZ",
+    "description": ("Sauber Heizen für Alle 2026: keine neuen Registrierungen mehr (Stand Oktober 2026). Was für "
+                    "Registrierte gilt, was 2026 galt und welche Alternativen bleiben."),
     "eyebrow": "Förderung · Einkommensschwache Haushalte",
     "crumb_label": "Sauber Heizen für Alle 2026",
-    "h1": "Sauber Heizen für Alle 2026: Bis zu 100 % Förderung für Ihren Heizungstausch",
-    "lead": ("Für Haushalte im unteren Einkommensdrittel übernimmt „Sauber Heizen für Alle“ den Umstieg auf "
-             "eine Wärmepumpe bis zur Kostenobergrenze von 25.586 € (Luft-Wasser) bzw. 37.550 € (Sole-Wasser) "
-             "vollständig. Hier lesen Sie, wer förderberechtigt ist, welche Einkommensgrenzen gelten und wie "
-             "der Ablauf von der Registrierung bis zur Auszahlung funktioniert."),
+    "h1": "Sauber Heizen für Alle 2026: Programm beendet. Was für Registrierte gilt und welche Alternativen bleiben",
+    "lead": ("Stand Oktober 2026: „Sauber Heizen für Alle 2026“ nimmt keine neuen Registrierungen mehr an. Wer "
+             "registriert ist, kann noch beantragen und bis zu 100 % der Kosten bis zur Obergrenze von 25.586 € "
+             "(Luft-Wasser) bzw. 37.550 € (Sole-Wasser) erhalten. Hier lesen Sie, was jetzt gilt, welche Konditionen "
+             "2026 galten und welche Förderwege offen bleiben."),
     "chips": [
-        "Förderung: <b>bis 100 %</b>",
+        "Status: <b>beendet</b> (Stand Oktober 2026)",
+        "Registrierte: <b>Antrag weiter möglich</b>",
+        "Galt 2026: <b>bis 100 %</b> Förderung",
         "Obergrenze Luft-Wasser: <b>25.586 €</b>",
-        "Einkommen (1 Person): <b>1.867 €</b> netto/Monat",
-        "Registrierung bis <b>31.12.2026</b>",
     ],
     "date_published": "2026-03-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit neuer Wärmepumpe und Photovoltaik nach dem Heizungstausch",
 
     "tldr": [
-        "„Sauber Heizen für Alle“ ist ein Programm des Bundes (BMLUK) gemeinsam mit den Bundesländern. Es "
-        "ergänzt die Bundes- und Landesförderung so, dass bis zu 100 % der förderfähigen Kosten abgedeckt sind.",
+        "Stand Oktober 2026: „Sauber Heizen für Alle 2026“ ist beendet, neue Registrierungen sind nicht mehr "
+        "möglich. Bereits registrierte Haushalte können noch beantragen (Quelle: umweltfoerderung.at).",
+        "Was 2026 galt: Das Programm des Bundes (BMLUK) gemeinsam mit den Bundesländern ergänzte Bundes- und "
+        "Landesförderung so, dass bis zu 100 % der förderfähigen Kosten abgedeckt waren.",
         "Kostenobergrenzen: 25.586 € für Luft-Wasser-Wärmepumpen, 37.550 € für Sole-Wasser- und "
         "Wasser-Wasser-Systeme. Liegen Ihre Kosten darunter, bleibt kein Eigenanteil.",
         "Voraussetzungen: Eigentum an einem Ein-, Zweifamilien- oder Reihenhaus, Hauptwohnsitz am Standort "
         "(begründet vor 31. Dezember 2024), Haushaltseinkommen im unteren Einkommensdrittel.",
         "Einkommensgrenze: 1.867 € netto pro Monat für eine Person, rund 2.801 € für zwei Erwachsene, "
         "rund 3.361 € mit einem Kind, rund 3.921 € mit zwei Kindern.",
-        "Ablauf: Registrierung auf sauber-heizen.at (seit 1. Jänner 2026 bis 31. Dezember 2026), kostenlose "
-        "Energieberatung durch die Landesstelle, Antrag, dann 12 Monate für Umsetzung und Endabrechnung. "
-        "Leistungen vor der Antragstellung sind nicht förderfähig.",
+        "Ablauf für Registrierte: kostenlose Energieberatung durch die Landesstelle, Antrag auf sauber-heizen.at, "
+        "dann 12 Monate für Umsetzung und Endabrechnung. Leistungen vor der Antragstellung sind nicht förderfähig. "
+        "Für alle anderen bleibt die Landesförderung (Bedingungen beim Land prüfen); Ausblick 2027 offen.",
     ],
     "kpis": [
-        ("100 %", "maximale Kostenübernahme"),
+        ("beendet", "Stand Oktober 2026: keine neuen Registrierungen"),
+        ("100 %", "maximale Kostenübernahme (galt 2026)"),
         ("25.586 €", "Obergrenze Luft-Wasser-WP"),
-        ("1.867 €", "Nettoeinkommen, 1 Person/Monat"),
-        ("12 Monate", "Umsetzungsfrist ab Zusage"),
+        ("12 Monate", "Umsetzungsfrist ab Zusage für Registrierte"),
     ],
 
     "sections": [
+        ("Stand Oktober 2026: Programm beendet, keine neuen Registrierungen", "status", f"""
+{A.box_dark("Sauber Heizen für Alle 2026: Registrierung geschlossen",
+    "Laut umweltfoerderung.at ist „Sauber Heizen für Alle 2026“ beendet, neue Registrierungen sind nicht mehr "
+    "möglich (Stand 9. Oktober 2026). Wer bereits registriert ist, kann den Antrag noch stellen und das Projekt "
+    "innerhalb der Fristen umsetzen. Auch die reguläre Kesseltausch-Förderung der Sanierungsoffensive 2026 ist "
+    "ausgeschöpft.")}
+<p>Was weiterhin offen ist: die Landesförderungen für den Heizungstausch (Kärnten und Steiermark; ob sie ohne
+Bundesförderung gewährt werden, klärt die Landesstelle). Die steuerliche
+{a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/', 'Öko-Sonderausgabenpauschale')}
+setzt eine ausbezahlte Bundesförderung voraus und bleibt damit für Registrierte relevant. Ob 2027 ein neues Bundesprogramm für einkommensschwache Haushalte kommt, ist offen. Die folgenden Abschnitte
+beschreiben die Konditionen, die 2026 galten, und bleiben für bereits registrierte Haushalte relevant.</p>
+"""),
         ("Warum es „Sauber Heizen für Alle“ gibt", "hintergrund", f"""
 <p>Die reguläre Bundesförderung über die {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}
-zahlt bis zu 7.500 € für eine Wärmepumpe. Für Haushalte mit geringem Einkommen bleibt danach ein
-Eigenanteil, der oft nicht tragbar ist. Genau hier setzt „Sauber Heizen für Alle“ an. Das Programm wurde
+zahlte bis zu 7.500 € für eine Wärmepumpe (2026 ebenfalls ausgeschöpft). Für Haushalte mit geringem
+Einkommen blieb danach ein Eigenanteil, der oft nicht tragbar ist. Genau hier setzte „Sauber Heizen für
+Alle“ an. Das Programm wurde
 vom Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und
 Wasserwirtschaft (BMLUK) ins Leben gerufen und wird gemeinsam mit den Bundesländern umgesetzt.</p>
 <p>Die Förderung wird als einmaliger Investitionszuschuss in Ergänzung zur Basisförderung des Bundes und
 zur jeweiligen Landesförderung vergeben. Im Idealfall decken die drei Bausteine zusammen bis zu 100 %
 der förderfähigen Kosten ab: eine neue {a('waermepumpe', 'Wärmepumpe')} ohne Eigenanteil.
-Stand: April 2026.</p>
+Konditionen: Stand April 2026; Programmstatus: Stand Oktober 2026.</p>
 """),
         ("Was wird gefördert?", "was-wird-gefoerdert", f"""
 <h3>Förderfähige Heizsysteme</h3>
@@ -88,7 +106,7 @@ ausgeschlossen. Ersetzt werden können Ölheizungen (zentral und Einzelöfen), G
 Etagenheizungen), Kohle- und Koksfeuerungen („Allesbrenner“, auch bei teilweiser Holznutzung) sowie
 stationäre Elektroheizungen wie Nachtspeicher- und Elektrospeicheröfen.</p>
 """),
-        ("Wie hoch ist die Förderung?", "foerderhoehe", f"""
+        ("Wie hoch ist die Förderung für Registrierte?", "foerderhoehe", f"""
 <p>Die Förderung wird bis zu einer technologiespezifischen Kostenobergrenze gewährt. Diese Obergrenze
 umfasst die gesamte Förderung aus Bund, Land und Sauber-Heizen-Zuschuss:</p>
 {A.table(
@@ -103,14 +121,14 @@ umfasst die gesamte Förderung aus Bund, Land und Sauber-Heizen-Zuschuss:</p>
 )}
 <h3>Drei Bausteine bis zur Obergrenze</h3>
 <ol>
-  <li><b>Basisförderung des Bundes</b> (Kesseltausch-Pauschale): bis zu 7.500 € für Wärmepumpen.</li>
+  <li><b>Basisförderung des Bundes</b> (Kesseltausch-Pauschale): bis zu 7.500 € für Wärmepumpen (galt 2026).</li>
   <li><b>Landesförderung</b> des jeweiligen Bundeslandes: je nach Land mehrere Tausend Euro.</li>
   <li><b>Zusatzförderung „Sauber Heizen für Alle“:</b> schließt die Lücke bis zur Kostenobergrenze.</li>
 </ol>
 <p>Liegen die tatsächlichen Kosten Ihres Heizungstausches innerhalb der Obergrenze, tragen Sie keinen
 Eigenanteil. Übersteigen sie die Obergrenze, zahlen Sie nur die Differenz.</p>
 """),
-        ("Wer ist förderberechtigt?", "voraussetzungen", f"""
+        ("Wer war förderberechtigt?", "voraussetzungen", f"""
 <ul>
   <li><b>Gebäudeeigentum:</b> Sie sind Eigentümerin oder Eigentümer eines Ein- oder Zweifamilienhauses
   bzw. Reihenhauses. Fruchtgenussrecht allein reicht nicht.</li>
@@ -136,18 +154,19 @@ oder den Bezug von Wohnbeihilfe. Liegt keiner dieser Nachweise vor, prüft die L
 anrechenbare Haushaltseinkommen individuell: Lohn, Gehalt, Pensionen und Einkommen aus Selbständigkeit
 werden berücksichtigt, bestimmte Beihilfen und Sozialleistungen nicht. Haushalte ohne jeden
 Einkommensnachweis sind ausgeschlossen.</p>
-{A.cta("Förderfähigkeit vorab prüfen lassen",
-       "EBZ Energie schätzt mit Ihnen ein, ob Sie die Einkommensgrenzen erfüllen, und zeigt die beste "
-       "Alternative, falls nicht. So geht keine Zeit verloren.",
+{A.cta("Registriert? Antrag und Umsetzung begleiten lassen",
+       "EBZ Energie unterstützt bereits registrierte Haushalte bei Antrag und förderkonformer Umsetzung und zeigt "
+       "allen anderen, welche Landesförderung aktuell möglich ist.",
        secondary=("waermepumpe", "Zur Wärmepumpen-Leistungsseite"))}
 """),
-        ("Schritt für Schritt: So läuft die Antragstellung ab", "ablauf", f"""
+        ("Schritt für Schritt: So läuft der Antrag für Registrierte ab", "ablauf", f"""
 <p>Der Prozess ist in drei Phasen gegliedert. Beteiligt sind Bund, Land und die Abwicklungsstelle
-Kommunalkredit Public Consulting (KPC).</p>
+Kommunalkredit Public Consulting (KPC). Schritt 1 ist seit Herbst 2026 geschlossen, Registrierte setzen
+bei Schritt 2 fort.</p>
 {A.steps([
-    ("Registrierung auf sauber-heizen.at",
-     "Möglich seit 1. Jänner 2026, solange Budget vorhanden ist, spätestens bis 31. Dezember 2026. Sie "
-     "benötigen einen Einkommensnachweis (Sozialhilfebescheid, ORF-Beitragsbefreiung, Wohnbeihilfebescheid "
+    ("Registrierung auf sauber-heizen.at (geschlossen)",
+     "Möglich war die Registrierung seit 1. Jänner 2026, solange Budget vorhanden war; seit Herbst 2026 werden "
+     "keine neuen Registrierungen angenommen. Nötig waren ein Einkommensnachweis (Sozialhilfebescheid, ORF-Beitragsbefreiung, Wohnbeihilfebescheid "
      "oder Angaben zum Einkommen aller Haushaltsmitglieder), eine Haushaltsbestätigung und einen "
      "Grundbuchauszug. Die Unterlagen gehen an die Landesförderungsstelle, die die Einkommenssituation prüft."),
     ("Energieberatung und Antragstellung",
@@ -168,19 +187,22 @@ Kommunalkredit Public Consulting (KPC).</p>
     ["Zeitpunkt", "Was gilt"],
     [
         ["1. Jänner 2026", "Start der Online-Registrierung auf sauber-heizen.at"],
-        ["31. Dezember 2026", "letztmöglicher Tag für die Registrierung, sofern Budget vorhanden"],
+        ["Herbst 2026", "Programm beendet, keine neuen Registrierungen (Stand 9. Oktober 2026, umweltfoerderung.at)"],
+        ["31. Dezember 2026", "ursprünglich letztmöglicher Registrierungstag, durch das Programmende hinfällig"],
         ["nach positiver Prüfung", "Landesstelle organisiert die Energieberatung"],
         ["nach Antragstellung", "Förderzusage, ab jetzt sind Leistungen förderfähig"],
         ["12 Monate nach Zusage", "Frist für Umsetzung und Endabrechnung"],
     ],
     hl_cols=(0,),
 )}
-<p>Wird Ihr Antrag abgelehnt, etwa weil die Einkommensgrenze überschritten ist, wird das Projekt nicht
-automatisch in die reguläre Kesseltausch-Förderung übernommen. Sie müssten einen neuen, separaten Antrag
-über die Sanierungsoffensive stellen. Eine frühzeitige Einschätzung der Einkommenssituation spart daher
-Zeit.</p>
+<p>Wird der Antrag eines registrierten Haushalts abgelehnt, etwa weil die Einkommensgrenze überschritten
+ist, wird das Projekt nicht automatisch in die reguläre Kesseltausch-Förderung übernommen. Da auch die
+Sanierungsoffensive 2026 ausgeschöpft ist, bleibt in diesem Fall die Landesförderung (Bedingungen beim
+Land prüfen).</p>
 """),
-        ("Sauber Heizen für Alle vs. regulärer Kesseltausch", "vergleich", f"""
+        ("Sauber Heizen für Alle vs. regulärer Kesseltausch (Konditionen 2026)", "vergleich", f"""
+<p>Beide Programme sind seit Herbst 2026 für neue Registrierungen geschlossen. Der Vergleich zeigt die
+Konditionen, die 2026 galten:</p>
 {A.table(
     ["Kriterium", "Sauber Heizen für Alle", "Kesseltausch (Sanierungsoffensive)"],
     [
@@ -199,13 +221,14 @@ Zeit.</p>
 <p>Eine Wärmepumpe braucht Strom. Wer ihn mit einer eigenen {a('photovoltaik', 'Photovoltaikanlage')}
 erzeugt, macht sich von steigenden Strompreisen weitgehend unabhängig. Die Wärmepumpe senkt die
 Heizkosten, die PV-Anlage die Stromkosten. Photovoltaik wird über den EAG-Investitionszuschuss separat
-gefördert, die Calls 2026 starten im April, Juni und Oktober. Wie beide Systeme zusammenarbeiten, lesen
+gefördert: Der letzte Call 2026 läuft bis 22. Oktober 2026, ab 2027 ist laut BMWET eine Systemförderung mit
+Antrag nach der Installation geplant. Wie beide Systeme zusammenarbeiten, lesen
 Sie im Ratgeber {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}. Für die PV-Anlage
 bietet EBZ Energie eine {a('finanzierung', 'Finanzierung')} ab 147 € pro Monat inklusive Speicher an, die
 Anlage gehört dabei ab Tag 1 Ihnen.</p>
-{A.cta("Gemeinsam die richtige Förderung finden",
-       "Wir prüfen die Einkommensgrenzen, begleiten Registrierung und Antrag auf sauber-heizen.at und "
-       "installieren die Wärmepumpe förderkonform.",
+{A.cta("Gemeinsam den offenen Förderweg finden",
+       "Registrierte begleiten wir durch Antrag und Umsetzung, alle anderen zur Landesförderung. "
+       "Die Wärmepumpe installieren wir förderkonform.",
        primary=("kontakt", "Kostenlose Erstberatung"), secondary=("waermepumpe", "Mehr zur Wärmepumpe"))}
 """),
     ],
@@ -213,39 +236,50 @@ Anlage gehört dabei ab Tag 1 Ihnen.</p>
     "partner": {
         "h2": "Ihr Partner für Sauber Heizen für Alle: EBZ Energie",
         "toc": "Ihr Partner: EBZ Energie",
-        "text": ("Einkommensprüfung, Registrierung, Energieberatung, Antrag, Umsetzungsfrist, Endabrechnung: "
+        "text": ("Antrag, Umsetzungsfrist, Endabrechnung für Registrierte, Landesförderung für alle anderen: "
                  "EBZ Energie aus Villach nimmt Ihnen diesen Weg ab. Als Fachbetrieb für Wärmepumpen und "
                  "Photovoltaik in Kärnten und der Steiermark begleiten wir Sie mit einem festangestellten Team "
                  "aus zertifizierten Fachkräften von der ersten Frage bis zur warmen Stube."),
         "grid": [
-            ("Förderfähigkeits-Check", "Wir prüfen die Einkommensgrenzen und helfen bei den Nachweisen."),
-            ("Registrierung und Antrag", "Begleitung auf sauber-heizen.at inklusive Unterlagen und Angebote."),
+            ("Förder-Check", "Wir prüfen, welche Landesförderung für Ihr Projekt aktuell offen ist."),
+            ("Antrag für Registrierte", "Begleitung auf sauber-heizen.at inklusive Unterlagen und Angebote."),
             ("Förderkonforme Installation", "EHPA-Gütesiegel, GWP unter 750, Vorlauf 55 °C: passend geplant."),
             ("Photovoltaik als Ergänzung", "Auf Wunsch eine PV-Anlage, abgestimmt auf die Wärmepumpe."),
         ],
     },
 
     "faq": [
+        ("Kann ich mich noch für „Sauber Heizen für Alle 2026“ registrieren?",
+         "Nein. Stand Oktober 2026 ist das Programm laut umweltfoerderung.at beendet, neue Registrierungen sind "
+         "nicht mehr möglich. Wer bereits registriert ist, kann den Antrag noch stellen und hat nach der Zusage "
+         "12 Monate für Umsetzung und Endabrechnung."),
+        ("Welche Förderung gibt es jetzt noch für einkommensschwache Haushalte?",
+         "Auf Bundesebene derzeit keine: Sauber Heizen für Alle und die Sanierungsoffensive 2026 sind "
+         "ausgeschöpft. Offen bleiben die Landesförderungen für den Heizungstausch in Kärnten und der Steiermark; "
+         "ob sie ohne Bundesförderung gewährt werden, klärt die Landesstelle. Die Öko-Sonderausgabenpauschale "
+         "setzt eine ausbezahlte Bundesförderung voraus. Ob 2027 ein neues Bundesprogramm kommt, ist offen."),
         ("Kann ich „Sauber Heizen für Alle“ mit der regulären Kesseltausch-Förderung kombinieren?",
          "„Sauber Heizen für Alle“ enthält bereits die Basisförderung des Bundes und die Landesförderung. Es "
          "ist ein eigenständiges Gesamtpaket, das die reguläre Kesseltausch-Förderung nicht ergänzt, sondern "
          "durch eine deutlich höhere Fördersumme bis zur Kostenobergrenze ersetzt."),
         ("Was passiert, wenn mein Einkommen knapp über der Grenze liegt?",
-         "Dann können Sie keinen Antrag auf „Sauber Heizen für Alle“ stellen. Offen bleibt die reguläre "
-         "Bundesförderung über die Sanierungsoffensive 2026 mit bis zu 7.500 € (Erdwärme 12.500 €), die mit "
-         "Landesförderungen kombinierbar ist. EBZ Energie rechnet beide Wege für Sie durch."),
+         "Dann war kein Antrag auf „Sauber Heizen für Alle“ möglich. Die reguläre Bundesförderung über die "
+         "Sanierungsoffensive 2026 (bis zu 7.500 €, Erdwärme 12.500 €) ist seit Herbst 2026 ebenfalls "
+         "ausgeschöpft. Aktuell bleibt die Landesförderung (Bedingungen beim Land prüfen); EBZ Energie rechnet "
+         "die offenen Wege für Sie durch."),
         ("Muss ich die Energieberatung selbst organisieren?",
          "Nein. Nach positiver Prüfung Ihrer Registrierung organisiert die Landesförderungsstelle automatisch "
          "eine kostenlose Energieberatung. Sie umfasst Erstberatung, Unterstützung bei der Angebotseinholung "
          "und Hilfe bei der Antragstellung; die Beraterin oder der Berater meldet sich bei Ihnen."),
         ("Kann ich als Mieter die Förderung beantragen?",
-         "Nein. Bei „Sauber Heizen für Alle“ sind ausschließlich Gebäudeeigentümerinnen und -eigentümer "
-         "antragsberechtigt. Beim regulären Kesseltausch der Sanierungsoffensive 2026 können auch Mieter "
-         "ansuchen, wenn der Eigentümer dem Heizungstausch zustimmt."),
-        ("Wie lange dauert es von der Registrierung bis zur Auszahlung?",
+         "Nein. Bei „Sauber Heizen für Alle“ waren ausschließlich Gebäudeeigentümerinnen und -eigentümer "
+         "antragsberechtigt. Beim regulären Kesseltausch der Sanierungsoffensive 2026 konnten auch Mieter "
+         "ansuchen, wenn der Eigentümer dem Heizungstausch zustimmte; beide Programme sind seit Herbst 2026 "
+         "für neue Registrierungen geschlossen."),
+        ("Wie lange dauert es für Registrierte bis zur Auszahlung?",
          "Einkommensprüfung, Terminierung der Energieberatung, Angebotseinholung und Antragsprüfung dauern "
          "erfahrungsgemäß mehrere Wochen bis wenige Monate. Danach beginnt die Umsetzungsfrist von 12 Monaten "
-         "ab Förderzusage. Je früher Sie sich registrieren, desto mehr Planungssicherheit haben Sie."),
+         "ab Förderzusage. Halten Sie die Fristen ein, sonst verfällt die Zusage."),
         ("Welche Einkommensgrenze gilt für eine vierköpfige Familie?",
          "Für zwei Erwachsene mit zwei Kindern unter 14 Jahren liegt die Grenze bei rund 3.921 € netto pro "
          "Monat (Faktor 1 + 0,5 + 0,3 + 0,3 auf 1.867 €). Für eine Person gelten 1.867 €, für zwei Erwachsene "
@@ -258,8 +292,8 @@ Anlage gehört dabei ab Tag 1 Ihnen.</p>
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team installiert Wärmepumpen und "
                     "Photovoltaik in Kärnten und der Steiermark und begleitet Haushalte durch Registrierung und "
-                    "Antrag bei „Sauber Heizen für Alle“. Alle Beträge entsprechen dem Stand April 2026 und den "
-                    "Vorgaben auf sauber-heizen.at und umweltfoerderung.at. Keine Rechts- oder Steuerberatung, "
+                    "Antrag bei „Sauber Heizen für Alle“. Programmstatus: Stand 9. Oktober 2026 laut umweltfoerderung.at; "
+                    "Beträge: Stand April 2026 laut sauber-heizen.at. Keine Rechts- oder Steuerberatung, "
                     "maßgeblich sind die offiziellen Förderbedingungen."),
     "sources": [
         ("Sauber Heizen für Alle (Bundesportal, Registrierung)", "https://www.sauber-heizen.at/"),
@@ -272,11 +306,11 @@ Anlage gehört dabei ab Tag 1 Ihnen.</p>
         ("waermepumpe", "Wärmepumpen-Installateur EBZ Energie"),
     ],
     "cta": {
-        "h3": "Einkommensgrenze prüfen",
-        "text": "Wir schätzen Ihre Förderfähigkeit ein und begleiten Sie durch Registrierung und Antrag.",
+        "h3": "Offene Förderwege prüfen",
+        "text": "Programm beendet: Wir begleiten Registrierte durch den Antrag und zeigen allen anderen die offene Landesförderung.",
         "primary": ("kontakt", "Kostenlose Beratung"),
     },
-    "final_h2": "Heizungstausch ohne Eigenanteil",
+    "final_h2": "Heizungstausch: die offenen Förderwege nutzen",
     "final_text": ("Kostenlose Erstberatung, ehrliche Zahlen und ein Team aus Villach, das Planung, "
                    "Montage und Förderabwicklung aus einer Hand übernimmt."),
 }

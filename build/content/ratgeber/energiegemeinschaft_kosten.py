@@ -31,7 +31,7 @@ ARTICLE = {
         "<b>3 Rechnungen:</b> Netz, Lieferant, EG",
     ],
     "date_published": "2026-08-25",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_detail",
     "hero_alt": "Montagedetail einer Photovoltaikanlage, deren Überschuss in einer Energiegemeinschaft abgerechnet wird",
 
@@ -147,14 +147,14 @@ Umsatzsteuer ab, größere Gemeinschaften mit.</p>
 """),
         ("Was bei der Preisfestlegung zu beachten ist", "preise", f"""
 <p>Die Gemeinschaft legt Einspeise- und Bezugspreis selbst fest. Drei Regeln haben sich bewährt. Erstens:
-Der Einspeisepreis sollte deutlich über dem OeMAG-Marktpreis liegen (Juli 2026: 6,146 Cent), sonst fehlt
-der Anreiz für Erzeuger. Zweitens: Der Bezugspreis sollte unter dem Arbeitspreis der gängigen Lieferanten
+Der Einspeisepreis sollte über dem OeMAG-Marktpreis im Jahresmittel liegen (2026 schwankte er zwischen 6,146 Cent
+im Juli und 10,168 Cent im September), sonst fehlt der Anreiz für Erzeuger. Zweitens: Der Bezugspreis sollte unter dem Arbeitspreis der gängigen Lieferanten
 liegen, sonst fehlt der Anreiz für Abnehmer. Drittens: Die Differenz zwischen beiden deckt die
 Gemeinschaftskosten.</p>
 {A.table(
     ["Preis", "Marktübliche Spanne", "Beispielwert*", "Vergleichswert"],
     [
-        ["EG-Einspeisepreis (Erzeuger bekommt)", "8 bis 12 ct", "10 ct", "OeMAG Juli 2026: 6,146 ct"],
+        ["EG-Einspeisepreis (Erzeuger bekommt)", "8 bis 12 ct", "10 ct", "OeMAG Sept. 2026: 10,168 ct (Juli: 6,146 ct)"],
         ["EG-Bezugspreis (Abnehmer zahlt)", "12 bis 16 ct", "14 ct", "Lieferant Arbeitspreis: 12 bis 20 ct netto"],
         ["Differenz (deckt Verwaltung)", "2 bis 4 ct", "4 ct", "plus Mitgliedsbeitrag 2 bis 8 € je Monat"],
     ],
@@ -226,7 +226,8 @@ Beitritt kennen.</p>
          "zusammen."),
         ("Welche Preise sind in einer Energiegemeinschaft üblich?",
          "Typisch sind 8 bis 12 Cent Einspeisung und 12 bis 16 Cent Bezug je Kilowattstunde. Der Einspeisepreis "
-         "liegt damit deutlich über dem OeMAG-Marktpreis von 6,146 Cent (Juli 2026), der Bezugspreis unter dem "
+         "liegt damit im Bereich des OeMAG-Marktpreises, der 2026 zwischen 6,146 Cent (Juli) und 10,168 Cent "
+         "(September) schwankte, ist aber fix vereinbart; der Bezugspreis liegt unter dem "
          "Arbeitspreis der meisten Lieferanten. Die Differenz deckt die Gemeinschaftskosten."),
         ("Fällt auf den EG-Strom Umsatzsteuer an?",
          "Das hängt von der Rechtsform der Gemeinschaft ab. Vereine unter der Kleinunternehmergrenze rechnen ohne "

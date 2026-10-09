@@ -33,7 +33,7 @@ ARTICLE = {
         "Betrieb bis <b>-20 °C</b> und darunter",
     ],
     "date_published": "2026-03-30",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "waermepumpe",
     "hero_alt": "Außeneinheit einer Luft-Wasser-Wärmepumpe: Wärmequelle Außenluft für den Kältemittelkreislauf",
 
@@ -189,9 +189,10 @@ vom eigenen Dach. Zusammen machen sie Ihr Haus nahezu energieautark:</p>
 <p>Eine durchschnittliche Wärmepumpe verbraucht 3.000 bis 5.000 kWh Strom pro Jahr. Mit einer passend
 dimensionierten {a('photovoltaik', 'PV-Anlage')} decken Sie einen Großteil dieses Bedarfs selbst, den
 Rest speisen Sie ein oder speichern ihn im {a('batteriespeicher', 'Batteriespeicher')}. Beide Systeme
-werden separat gefördert: die Wärmepumpe über die
-{a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} (Kesseltausch), die PV-Anlage über den
-EAG-Investitionszuschuss. Wer beides gemeinsam plant, maximiert Förderung und Ersparnis. Details zur
+werden separat gefördert: die Wärmepumpe 2026 über die
+{a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} (Kesseltausch, seit Herbst 2026 ausgeschöpft,
+aktuell Landesförderungen), die PV-Anlage über den EAG-Investitionszuschuss. Wer beides gemeinsam plant,
+maximiert Förderung und Ersparnis. Details zur
 Dimensionierung: {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}.</p>
 """),
         ("Fazit: Wissen ist der erste Schritt, die Auslegung der zweite", "fazit", f"""

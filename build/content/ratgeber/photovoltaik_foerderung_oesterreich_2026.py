@@ -5,6 +5,8 @@ Quelle (160 €/kWp, Bonus bis 20 %) stammen aus der Zeit vor der EAG-Novelle; s
 auf die mit 16. Jänner 2026 kundgemachten Werte (150/140/130/120 €/kWp, 10 % je Komponente)
 angeglichen, damit der Artikel zu den Bundesland-Ratgebern und zum Landesförderungs-Überblick
 passt. Details im Migrationsbericht.
+Stand Oktober 2026: 3. Call Antragstellung bis 22.10.2026 (letzter im alten System); Ausblick 2027
+Systemfoerderung laut BMWET (geplant). Kaernten 2. Call 12.10. bis 31.12.2026.
 """
 
 import os
@@ -18,23 +20,24 @@ from common import a
 ARTICLE = {
     "slug": "photovoltaik-foerderung-oesterreich-2026",
     "path": "/photovoltaik-foerderung-oesterreich-2026/",
-    "title": "PV-Förderung Österreich 2026: EAG-Sätze und Calls | EBZ",
-    "description": ("PV-Förderung Österreich 2026: 150 €/kWp und 150 €/kWh Speicher vom Bund, 10 % "
-                    "Made-in-Europe-Bonus, Calls ab 23. April, 16. Juni, 8. Oktober. Alle 9 Länder."),
+    "title": "PV-Förderung Österreich 2026: 150 €/kWp, bis 22.10. | EBZ",
+    "description": ("PV-Förderung Österreich 2026: 150 €/kWp und 150 €/kWh Speicher vom Bund, 10 % Bonus, "
+                    "letzter Call bis 22. Oktober 2026, Ausblick 2027. Alle 9 Länder."),
     "eyebrow": "Förderung · Österreich",
     "crumb_label": "PV-Förderung Österreich 2026",
-    "h1": "Photovoltaik-Förderung Österreich 2026: 150 Euro je kWp, 150 Euro je kWh und drei Fördercalls",
+    "h1": "Photovoltaik-Förderung Österreich 2026: 150 Euro je kWp, 150 Euro je kWh, letzter Call bis 22. Oktober",
     "lead": ("Der Nullsteuersatz ist Geschichte, dafür zahlt der Bund 2026 wieder Investitionszuschüsse: 150 Euro "
-             "je kWp für Anlagen bis 10 kWp, 150 Euro je kWh Speicher und 10 Prozent Made-in-Europe-Bonus. "
-             "Dieser Ratgeber erklärt Sätze, Termine, Ablauf und die Kombination mit den Landesförderungen."),
+             "je kWp für Anlagen bis 10 kWp, 150 Euro je kWh Speicher und 10 Prozent Made-in-Europe-Bonus. Der "
+             "letzte Fördercall läuft bis 22. Oktober 2026, ab 2027 ist eine Systemförderung geplant. Dieser Ratgeber "
+             "erklärt Sätze, Termine, Ablauf und die Kombination mit den Landesförderungen."),
     "chips": [
         "PV bis 10 kWp: <b>150 €/kWp</b>",
         "Speicher: <b>150 €/kWh</b>, max. 50 kWh",
         "Made-in-Europe: <b>+10 %</b> je Komponente",
-        "Calls: <b>23. April, 16. Juni, 8. Oktober</b>",
+        "Letzter Call: <b>8. bis 22. Oktober 2026</b>",
     ],
     "date_published": "2025-12-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "foerderung",
     "hero_alt": "Euro-Scheine und Taschenrechner: Photovoltaik-Förderung in Österreich 2026 berechnen",
 
@@ -47,16 +50,17 @@ ARTICLE = {
         "und mindestens 0,5 kWh je kWp.",
         "Made-in-Europe-Bonus: je 10 Prozent Zuschlag auf den Zuschuss für Module, Wechselrichter und Speicher "
         "von der White List, also bis zu 20 Prozent für die PV-Anlage und 10 Prozent für den Speicher.",
-        "Drei Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni und ab 8. Oktober. In den Kategorien A "
-        "und B gilt First-Come-First-Served mit Ticketziehung, der Antrag muss vor Inbetriebnahme gestellt werden.",
+        "Drei Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni und 8. bis 22. Oktober. In den Kategorien A "
+        "und B gilt First-Come-First-Served mit Ticketziehung, der Antrag muss vor Inbetriebnahme gestellt werden. "
+        "Ab 2027 plant das BMWET eine Systemförderung mit Antrag nach der Installation (Stand Oktober 2026).",
         "Rechenbeispiel 10 kWp mit 10 kWh: 3.000 Euro vom Bund plus rund 450 Euro Bonus. In Kärnten kommen 3.000 "
-        "Euro Landespauschale dazu, in Summe rund 6.450 Euro.",
+        "Euro Landespauschale dazu (2. Call 12. Oktober bis 31. Dezember 2026), in Summe rund 6.450 Euro.",
     ],
     "kpis": [
         ("150 €/kWp", "EAG-Bund bis 10 kWp"),
         ("150 €/kWh", "Speicher, bis 50 kWh"),
         ("60 Mio. €", "Bundesbudget 2026"),
-        ("23.04.2026", "Start des ersten Fördercalls"),
+        ("22.10.2026", "Ende des letzten Fördercalls 2026"),
     ],
 
     "sections": [
@@ -73,8 +77,8 @@ online und mit Ticketsystem. Das Verfahren wirkt bürokratischer als der Nullste
 Planungssicherheit: Die Termine stehen fest, die Sätze sind fixiert, und die Förderung ist auf
 systemdienliche Anlagen mit Speicher ausgerichtet.</p>
 <p>Die wirtschaftliche Betrachtung verschiebt sich damit: Entscheidend ist 2026 die Gesamtrechnung aus
-Investitionszuschuss, Eigenverbrauchsquote und Strompreis. Wer den eigenen Strom nutzt, statt ihn für rund
-6 Cent einzuspeisen, spart 25 bis 35 Cent je Kilowattstunde Netzbezug und erhält obendrein den Zuschuss.</p>
+Investitionszuschuss, Eigenverbrauchsquote und Strompreis. Wer den eigenen Strom nutzt, statt ihn für 6 bis 10 Cent
+einzuspeisen (OeMAG-Marktpreis 2026), spart 25 bis 35 Cent je Kilowattstunde Netzbezug und erhält obendrein den Zuschuss.</p>
 """),
         ("EAG-Bundesförderung 2026: Sätze und Kategorien", "eag-saetze", f"""
 <p>Die Fördersätze sind nach Anlagengröße in vier Kategorien gestaffelt. Für private Dachanlagen sind die
@@ -114,10 +118,15 @@ der volumenstärkste:</p>
     [
         ["1. Call", "23. April bis 11. Mai 2026", "größtes Budgetvolumen, Ticket am ersten Tag empfohlen"],
         ["2. Call", "16. bis 30. Juni 2026", "für Projekte, die im April noch nicht antragsreif waren"],
-        ["3. Call", "ab 8. Oktober 2026", "Restbudget, Abschluss des Förderjahres"],
+        ["3. Call", "8. bis 22. Oktober 2026", "Ticketziehung ab 8. Oktober 17:00 Uhr, letzter Call im bisherigen System"],
     ],
     hl_cols=(1,),
 )}
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 <p>In den Kategorien A und B gilt First-Come-First-Served: Beim Start des Calls ziehen Sie online ein Ticket,
 die Reihung erfolgt nach Eingang. Wer die Unterlagen und die Zählpunktnummer vorbereitet hat und am ersten
 Tag einreicht, hat die besten Chancen. Ist das Budget eines Calls ausgeschöpft, werden auch fristgerechte
@@ -152,7 +161,7 @@ Anträge abgelehnt.</p>
         ["EAG-Bund, Speicher", "10 kWh × 150 €", "1.500 €"],
         ["Made-in-Europe-Bonus", "10 % auf Modul-, Wechselrichter- und Speicherzuschuss", "rund 450 €"],
         ["Zwischensumme Bund", "", "rund 3.450 €"],
-        ["Landespauschale Kärnten", "PV ab 5 kWp mit Speicher ab 5 kWh, Landes-Call bis 30. Juni 2026", "3.000 €"],
+        ["Landespauschale Kärnten", "PV ab 5 kWp mit Speicher ab 5 kWh, 2. Landes-Call 12. Oktober bis 31. Dezember 2026", "3.000 €"],
         ["Summe in Kärnten", "", "rund 6.450 €"],
     ],
     hl_cols=(2,),
@@ -162,7 +171,7 @@ Kärnten damit rund 12.000 Euro Investition. Mit hohem Eigenverbrauch amortisier
 EBZ-Projekten typischerweise in 4 bis 6 Jahren, die vollständige Rechnung finden Sie im Ratgeber
 {a('/kosten-einer-solaranlage/', 'Kosten einer Solaranlage')}.</p>
 <p><small>*Beispielkonditionen nach EAG-Investitionszuschüsseverordnung 2026 und Kärntner Landesrichtlinie,
-Stand Juni 2026. Der Bonus setzt Komponenten von der White List voraus.</small></p>
+Stand Oktober 2026. Der Bonus setzt Komponenten von der White List voraus.</small></p>
 {A.cta("Förderung sichern, bevor der Call-Topf leer ist",
        "Wir bereiten Angebot und Zählpunkt vor, ziehen am Starttag das Ticket und reichen die Endabrechnung "
        "ein. Sie müssen sich um nichts kümmern.",
@@ -175,7 +184,7 @@ Link zum jeweiligen Detail-Ratgeber:</p>
 {A.table(
     ["Bundesland", "Landesförderung 2026 (Kurzfassung)", "Mit Bund kombinierbar"],
     [
-        [a('/photovoltaik-foerderung-kaernten/', 'Kärnten'), "3.000 € Pauschale für PV ab 5 kWp mit Speicher ab 5 kWh, Landes-Call 15. April bis 30. Juni 2026, Antrag nach Fertigstellung; Nachrüstung 1.000 €", "ja"],
+        [a('/photovoltaik-foerderung-kaernten/', 'Kärnten'), "3.000 € Pauschale für PV ab 5 kWp mit Speicher ab 5 kWh, 2. Landes-Call 12. Oktober bis 31. Dezember 2026, Antrag nach Fertigstellung; Nachrüstung 1.000 €", "ja"],
         [a('/foerderung-photovoltaik-steiermark/', 'Steiermark'), "Sanierungsbonus bis 15 % im Sanierungskontext (1. April bis 15. Mai 2026), Ökofonds bis 30 % ab 20 kWp", "ja"],
         [a('/photovoltaik-foerderung-wien/', 'Wien'), "Stadtförderung ab 1. Mai 2026, Fokus auf Gründächer, Fassaden und Mehrparteienhäuser", "nein"],
         [a('/photovoltaik-foerderung-niederoesterreich/', 'Niederösterreich'), "über die Wohnbauförderung, Punktesystem", "ja"],
@@ -189,14 +198,14 @@ Link zum jeweiligen Detail-Ratgeber:</p>
 <p>Die Kombination ist also nicht überall erlaubt: Wien schließt sie aus, Oberösterreich beim Speicher, im
 Burgenland gilt Bund vor Land. Den vollständigen Vergleich aller neun Regelwerke finden Sie im Ratgeber
 {a('/photovoltaik-landesfoerderungen/', 'Photovoltaik-Landesförderungen: alle 9 Bundesländer')}.</p>
-<p><small>Stand: Juni 2026. Maßgeblich sind die jeweils gültigen Landesrichtlinien.</small></p>
+<p><small>Stand: Oktober 2026. Maßgeblich sind die jeweils gültigen Landesrichtlinien.</small></p>
 """),
         ("Wirtschaftlichkeit 2026: Förderung plus Eigenverbrauch", "wirtschaftlichkeit", f"""
 <p>Lohnt sich Photovoltaik, wenn die Einspeisevergütung sinkt und die Umsatzsteuer wieder gilt? Ja, aber
 die Rechnung hat sich verschoben. Der Zuschuss dämpft die Anfangskosten, der eigentliche Hebel ist der
 Eigenverbrauch: Netzstrom kostet 25 bis 35 Cent je Kilowattstunde inklusive Netzgebühren und Steuern, die
 Gestehungskosten des eigenen Solarstroms liegen dank Förderung oft nur bei 6 bis 8 Cent. Der OeMAG-Marktpreis
-für eingespeisten Strom lag im Juli 2026 bei 6,146 Cent, mehr dazu im Ratgeber
+für eingespeisten Strom lag im Juli 2026 bei 6,146 Cent und im September 2026 bei 10,168 Cent, mehr dazu im Ratgeber
 {a('/einspeisetarif-fuer-photovoltaik/', 'Einspeisetarif für Photovoltaik')}.</p>
 <p>Genau deshalb fördert der Bund den Speicher mit 150 Euro je kWh: Er hebt den Eigenverbrauch von rund 30
 auf 60 bis 80 Prozent und senkt die Stromrechnung um bis zu 85 Prozent. Dazu kommt die
@@ -211,9 +220,11 @@ den Wert der Immobilie.</p>
         ("Fazit: Fristen kennen, Reihenfolge einhalten", "fazit", f"""
 <p>Die Photovoltaik-Förderung in Österreich 2026 ist mit 150 Euro je kWp, 150 Euro je kWh Speicher und dem
 Made-in-Europe-Bonus solide ausgestattet, in Kärnten kommt die höchste Landespauschale Österreichs dazu.
-Entscheidend ist die Reihenfolge: Zählpunkt sichern, am Starttag des Calls (23. April, 16. Juni, 8. Oktober)
-das Ticket ziehen, erst dann in Betrieb nehmen. Wer das einhält und die Anlage auf hohen Eigenverbrauch
-plant, holt 3.000 bis 6.500 Euro Förderung und senkt seine Stromkosten dauerhaft.</p>
+Entscheidend ist die Reihenfolge: Zählpunkt sichern, im Call (letzter Termin 2026: 8. bis 22. Oktober) das
+Ticket ziehen, erst dann in Betrieb nehmen. Wer das einhält und die Anlage auf hohen Eigenverbrauch
+plant, holt 3.000 bis 6.500 Euro Förderung und senkt seine Stromkosten dauerhaft. Ab 2027 soll sich der
+Ablauf drehen: Antrag nach der Installation, Fokus auf Speicher mit intelligenter Steuerung (laut BMWET,
+Details offen).</p>
 """),
     ],
 
@@ -233,10 +244,16 @@ plant, holt 3.000 bis 6.500 Euro Förderung und senkt seine Stromkosten dauerhaf
     },
 
     "faq": [
-        ("Wann startet der erste Fördercall 2026?",
-         "Der erste und volumenstärkste EAG-Call läuft vom 23. April bis 11. Mai 2026, der zweite vom 16. bis "
-         "30. Juni, der dritte ab 8. Oktober. Bereiten Sie Angebot und Zählpunktnummer vor, um am Starttag das "
-         "Ticket zu ziehen. Wer den April verpasst, kann im Juni nachreichen, dann mit kleinerem Budget."),
+        ("Wann laufen die Fördercalls 2026?",
+         "Der erste und volumenstärkste EAG-Call lief vom 23. April bis 11. Mai 2026, der zweite vom 16. bis "
+         "30. Juni, der dritte und letzte vom 8. bis 22. Oktober 2026 (Ticketziehung ab 8. Oktober, 17:00 Uhr). "
+         "Danach gibt es im bisherigen System keinen Call mehr."),
+        ("Wie geht es mit der PV-Förderung 2027 weiter?",
+         "Laut Eckpunkten des BMWET (Oktober 2026) wird die Förderung 2027 zur Systemförderung: Der Antrag wird "
+         "nach Installation und Rechnung gestellt, nicht mehr im Fördercall. Gefördert werden Speicher mit "
+         "intelligenter Steuerung, auch als Nachrüstung, ein Europa-Bonus ist geplant. Projekte mit intelligentem "
+         "Speicher, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Kriterien "
+         "sind noch offen."),
         ("Gilt die 0 Prozent Umsatzsteuer für Photovoltaik noch?",
          "Nein. Der Nullsteuersatz für PV-Anlagen bis 35 kWp ist mit 1. April 2025 ausgelaufen, seither gilt "
          "wieder 20 Prozent auf Komponenten und Montage. Als Ausgleich wurde die EAG-Investitionsförderung 2026 "
@@ -261,8 +278,10 @@ plant, holt 3.000 bis 6.500 Euro Förderung und senkt seine Stromkosten dauerhaf
          "für den Speicher weitere 10 Prozent. Bei 10 kWp mit 10 kWh sind das rund 450 Euro zusätzlich."),
         ("Was passiert, wenn das Budget eines Calls ausgeschöpft ist?",
          "Dann werden auch fristgerechte Anträge abgelehnt, in den Kategorien A und B entscheidet die Reihenfolge "
-         "der Ticketziehung. Eine Antragstellung am ersten Tag des Calls erhöht die Chancen erheblich. Nicht "
-         "berücksichtigte Projekte können im nächsten Call erneut einreichen."),
+         "der Ticketziehung. Eine Antragstellung am ersten Tag des Calls erhöht die Chancen erheblich. Nach dem "
+         "letzten Call 2026 (bis 22. Oktober) gibt es keinen weiteren Call; nicht berücksichtigte Projekte mit "
+         "intelligentem Speicher, die ab 1. November 2026 in Betrieb gehen, sollen 2027 im neuen System "
+         "beantragbar sein."),
         ("Muss der Antrag wirklich vor der Inbetriebnahme gestellt werden?",
          "Ja. Der EAG-Antrag muss vor der Inbetriebnahme der Anlage im Fördercall eingereicht werden, sonst entfällt "
          "die Bundesförderung. Die Montage darf vorbereitet werden, die Inbetriebnahme muss nach dem Antrag liegen. "
@@ -289,7 +308,7 @@ plant, holt 3.000 bis 6.500 Euro Förderung und senkt seine Stromkosten dauerhaf
     ],
     "cta": {
         "h3": "Förderung nicht verschenken",
-        "text": "Wir ziehen das Ticket am Starttag, wählen förderfähige Komponenten und reichen die Endabrechnung ein.",
+        "text": "Letzter Call bis 22. Oktober 2026: Wir ziehen das Ticket, wählen förderfähige Komponenten und reichen die Endabrechnung ein.",
         "primary": ("kontakt", "Kostenlose Förderberatung"),
     },
     "final_h2": "Ihre Förderung, richtig beantragt",

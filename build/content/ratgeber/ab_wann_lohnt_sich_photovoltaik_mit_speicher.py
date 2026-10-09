@@ -32,7 +32,7 @@ ARTICLE = {
         "Eigenverbrauch: <b>30 auf 70 %+</b>",
     ],
     "date_published": "2025-12-05",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage mit Ost-West-Ausrichtung auf einem Einfamilienhaus in Kärnten",
 
@@ -58,6 +58,11 @@ ARTICLE = {
 
     "sections": [
         ("Vom Einspeiser zum Selbstversorger: warum sich die Rechnung geändert hat", "paradigmenwechsel", f"""
+<p><b>Ein Batteriespeicher hebt den Eigenverbrauch einer PV-Anlage von rund 30 auf 60 bis 80 Prozent*.</b> Bei
+Haushaltsstrompreisen von 22 bis 35 Cent je kWh* und dem EAG-Zuschuss von 150 Euro je kWh lohnt sich ein
+Speicher ab etwa 5 kWp PV-Leistung und 3.500 kWh Jahresverbrauch* (Stand Oktober 2026). Wie EBZ Energie eine
+{a('batteriespeicher', 'PV-Anlage mit Speicher')} auslegt, zeigt die Leistungsseite.
+<small>*Richtwerte, abhängig von Lastprofil, Tarif und Netzgebiet.</small></p>
 <p>In den Jahren hoher geförderter Tarife wurde eine PV-Anlage so ausgelegt, dass möglichst viel eingespeist
 werden konnte. Die Einspeisevergütung war der Renditetreiber. Das hat sich grundlegend gedreht: Langfristig
 pendelt sich die Vergütung für Überschussstrom auf einem moderaten Niveau ein, oft nur wenige Cent je

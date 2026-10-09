@@ -44,7 +44,7 @@ ARTICLE = {
         "Gemeinde: <b>200 bis 1.000 €</b>",
     ],
     "date_published": "2026-05-10",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach als Beispiel für eine geförderte Eigenheimsanierung",
 
@@ -96,7 +96,7 @@ für PV- und Speicherprojekte bereit. Speicher werden mit 150 €/kWh bis maxima
 Kombination mit einer PV-Neuerrichtung oder -Erweiterung. Der Made-in-Europe-Bonus bringt je 10 % pro
 Komponente auf der White List der OeMAG.</p>
 {EAG_TABLE}
-<p>Die drei Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie ab 8. Oktober. Die
+<p>Die drei Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie vom 8. bis 22. Oktober. Die
 Antragstellung erfolgt online über die EAG-Abwicklungsstelle, in den Kategorien A und B nach dem
 First-come-first-served-Prinzip mit Ticketziehung. Der Antrag muss vor Inbetriebnahme gestellt werden, wer im
 ersten Call kein Ticket zieht, fällt in der Reihung zurück. Alle Details im Ratgeber
@@ -206,7 +206,7 @@ Gemeinde ab.</small></p>
      "EAG-Antragstellung vorliegen."),
     ("EAG-Antrag im Fördercall",
      "Online über die EAG-Abwicklungsstelle, in Kategorie A und B mit Ticketziehung, zwingend vor Inbetriebnahme. "
-     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober."),
+     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober."),
     ("Wohnbauförderung im Sanierungs- oder Neubauantrag",
      "PV und Speicher als Punkte-Maßnahmen im Antrag beim Land Niederösterreich angeben, Nachweise zur "
      "energetischen Qualität beilegen."),
@@ -234,6 +234,11 @@ Voraussetzung sind sorgfältige Planung und die richtige Reihenfolge bei der Ant
 <p><small>Stand: Juni 2026. Förderhöhen, Budgets und Fristen können sich ändern beziehungsweise sind budgetär
 begrenzt. Maßgeblich sind die Richtlinien der EAG-Abwicklungsstelle (OeMAG), des Landes Niederösterreich und
 der jeweiligen Gemeinde.</small></p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Förderkombination für Ihr Projekt in Niederösterreich",
        "Wir planen PV und Speicher förderfähig, prüfen Wohnbau- und Gemeindeförderung und übernehmen den "
        "EAG-Antrag im richtigen Call.",
@@ -284,7 +289,7 @@ der jeweiligen Gemeinde.</small></p>
          "und das Amt der NÖ Landesregierung geben Auskunft. Weil Programme jährlich angepasst werden und manche "
          "früh ausgeschöpft sind, fragen Sie idealerweise vor Beginn der Planung."),
         ("Wann sind die EAG-Fördercalls 2026?",
-         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und ab 8. Oktober 2026. In den "
+         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und 8. bis 22. Oktober 2026. In den "
          "Kategorien A und B gilt First come, first served mit Ticketziehung. Der Antrag muss vor Inbetriebnahme "
          "gestellt werden."),
         ("Wer hilft bei der Förderabwicklung in Niederösterreich?",

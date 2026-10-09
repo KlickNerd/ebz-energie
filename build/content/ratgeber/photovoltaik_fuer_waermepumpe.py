@@ -34,7 +34,7 @@ ARTICLE = {
         "Energiekosten: <b>50 bis 70 %</b> weniger*",
     ],
     "date_published": "2025-07-20",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach und Wärmepumpe im Garten",
 
@@ -176,8 +176,9 @@ Einsparungen und der Zuschüsse gesehen werden. Die Kostenblöcke für ein Einfa
 )}
 <h3>Förderung: zwei Systeme, zwei Programme</h3>
 <ul>
-  <li><b>Wärmepumpe:</b> Der Tausch einer fossilen Heizung wird über die Bundesförderung „Raus aus Öl
-  und Gas“ und die Landesprogramme gefördert. Überblick:
+  <li><b>Wärmepumpe:</b> Der Tausch einer fossilen Heizung wurde 2026 über die Bundesförderung „Raus aus Öl
+  und Gas“ (bis 7.500 Euro, seit Herbst 2026 ausgeschöpft) und die Landesprogramme gefördert; aktuell laufen
+  die Landesförderungen (Stand prüfen). Überblick:
   {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich')} und
   {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
   <li><b>Photovoltaik und Speicher:</b> Bundesweit über den EAG-Investitionszuschuss, dazu

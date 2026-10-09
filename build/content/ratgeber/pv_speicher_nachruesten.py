@@ -32,7 +32,7 @@ ARTICLE = {
         "Lebensdauer: <b>15 bis 20 Jahre</b>",
     ],
     "date_published": "2025-06-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "speicher",
     "hero_alt": "Batteriespeicher für die Nachrüstung an einer bestehenden Photovoltaikanlage",
 
@@ -65,7 +65,8 @@ Solarstrom ist stark gesunken, während der Bezugspreis für Netzstrom inklusive
 geblieben ist. Wer den Mittagsüberschuss für wenige Cent je Kilowattstunde abgibt und abends zum vollen
 Tarif zurückkauft, verschenkt einen großen Teil des möglichen Nutzens seiner Anlage. Den aktuellen
 {a('marktpreis', 'OeMAG-Marktpreis')} und die Vergütungen der Anbieter vergleichen wir im Ratgeber
-{a('/einspeisetarif-fuer-photovoltaik/', 'Einspeisetarif für Photovoltaik')}.</p>
+{a('/einspeisetarif-fuer-photovoltaik/', 'Einspeisetarif für Photovoltaik')}. Welchen
+{a('batteriespeicher', 'Batteriespeicher')} EBZ Energie für die Nachrüstung einsetzt, steht auf der Leistungsseite.</p>
 <p>Ein Batteriespeicher löst dieses Zeitproblem. Er nimmt den Überschuss vom Tag auf und gibt ihn abends,
 nachts und an trüben Tagen wieder ab. Der Eigenverbrauchsanteil steigt damit von durchschnittlich 30 Prozent
 auf bis zu 80 Prozent. Drei weitere Gründe sprechen für die Nachrüstung:</p>
@@ -165,10 +166,15 @@ Hersteller, Kapazität, Kopplungsart und Aufwand vor Ort ab.</small></p>
 wird nur gewährt, wenn der Speicher gemeinsam mit einer neuen oder erweiterten PV-Anlage errichtet wird. Die
 reine Nachrüstung an einer Bestandsanlage ist auf Bundesebene nicht förderfähig. Dafür haben mehrere
 Bundesländer eigene Schienen aufgelegt:</p>
+{A.box("Ausblick 2027 (Stand Oktober 2026): Laut Eckpunkten des BMWET wird der EAG-Zuschuss ab 2027 zur "
+       "Systemförderung umgebaut. Der Antrag soll nach Installation und Rechnung gestellt werden, und die "
+       "Nachrüstung von Speicher und Energiemanagement an Bestandsanlagen soll erstmals bundesweit förderbar "
+       "werden. Projekte mit intelligentem Speicher, die ab 1. November 2026 in Betrieb gehen, sollen 2027 im "
+       "neuen System beantragbar sein. Höhe und Technikkriterien sind noch offen.", label="Ausblick:")}
 {A.table(
     ["Bundesland", "Förderung für die Speicher-Nachrüstung", "Bedingungen"],
     [
-        ["Kärnten", "1.000 € Pauschale", "Speicher ab 5 kWh an bestehender PV-Anlage, Landes-Call 15. April bis 30. Juni 2026, Antrag nach Fertigstellung"],
+        ["Kärnten", "1.000 € Pauschale", "Speicher ab 5 kWh an bestehender PV-Anlage, 2. Landes-Call 12. Oktober bis 31. Dezember 2026 (1. Call: 15. April bis 30. Juni), Antrag nach Fertigstellung"],
         ["Oberösterreich", "150 €/kWh, max. 15 kWh, bis 2.250 €", "max. 40 % der Kosten, nur für PV-Anlagen, die vor dem 1. Jänner 2026 in Betrieb gingen; seit 1. März 2026"],
         ["Tirol", "100 €/kWh, max. 10 kWh, bis 1.000 €", "netzdienliches Speichersystem, Ansuchen beim Land"],
         ["Burgenland", "100 €/kWh nutzbar, max. 20 kWh, bis 2.000 €", "max. 30 % der Kosten, Antrag bis 6 Monate nach Rechnung"],

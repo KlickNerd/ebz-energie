@@ -32,7 +32,7 @@ ARTICLE = {
         "Speicher: <b>150 €/kWh</b> mit neuer PV",
     ],
     "date_published": "2025-08-20",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "balkon",
     "hero_alt": "Balkonkraftwerk mit zwei Solarmodulen am Balkongeländer eines Wohnhauses",
 
@@ -45,7 +45,7 @@ ARTICLE = {
         "Kleinste förderfähige Alternative: jede PV-Anlage, die formell beim Netzbetreiber angemeldet wird und "
         "einen Einspeisezählpunkt erhält. Praktisch ist das eine kleine, fest installierte Dach-, Terrassen- oder "
         "Gartenanlage in Kategorie A (bis 10 kWp) mit 150 Euro je kWp (2026).",
-        "Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober. In Kategorie A gilt "
+        "Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober. In Kategorie A gilt "
         "First-Come-First-Served mit Ticketziehung; der Antrag muss vor Inbetriebnahme gestellt werden.",
         "Länder und Gemeinden haben teils eigene Programme, die auch Balkonkraftwerke einschließen können. Ein "
         "Blick auf Landes- und Gemeindeebene lohnt sich, bevor Sie kaufen.",
@@ -59,6 +59,11 @@ ARTICLE = {
 
     "sections": [
         ("Warum ein Balkonkraftwerk keinen EAG-Zuschuss bekommt", "eag-ausschluss", f"""
+<p><b>Ein Balkonkraftwerk darf in Österreich bis 800 Watt Wechselrichterleistung ohne Genehmigung betrieben
+werden.</b> Es muss mindestens 14 Tage vor Inbetriebnahme beim örtlichen Netzbetreiber gemeldet werden
+(Kleinsterzeugungsanlage laut E-Control). Eine eigene Bundesförderung gibt es nicht, der EAG-Zuschuss greift
+erst bei Anlagen mit Einspeisezählpunkt (Stand Oktober 2026). Welche Geräte EBZ Energie anbietet, zeigt die
+Leistungsseite {a('balkonkraftwerke', 'Balkonkraftwerk')}.</p>
 <p>Der EAG-Investitionszuschuss ist eine direkte, nicht rückzahlbare Beihilfe für die Neuerrichtung oder
 Erweiterung von Photovoltaikanlagen. Er deckt Module, Wechselrichter und optional einen Stromspeicher ab, wenn
 dieser gemeinsam mit der Anlage installiert wird. Die entscheidende Voraussetzung: Die Anlage muss über einen
@@ -86,8 +91,13 @@ alle Anlagen bis 10 kWp. Die Fördersätze wurden mit der EAG-Novelle 2026 neu f
 )}
 <p>Die Vergabe erfolgt in zeitlich begrenzten Fördercalls. 2025 waren es drei Calls (23. April bis 8. Mai,
 23. Juni bis 7. Juli, 8. bis 22. Oktober), 2026 ebenfalls drei: 23. April bis 11. Mai, 16. bis 30. Juni und
-ab 8. Oktober. In Kategorie A gilt First-Come-First-Served: Anträge werden streng nach Eingang bearbeitet,
+8. bis 22. Oktober. In Kategorie A gilt First-Come-First-Served: Anträge werden streng nach Eingang bearbeitet,
 bis das Budget des Calls erschöpft ist.</p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 <p>Der <b>Made-in-Europe-Bonus</b> ist seit dem zweiten Call 2025 (23. Juni 2025) verfügbar: Für Module und
 Wechselrichter mit nachgewiesener europäischer Wertschöpfung steigt der Zuschuss um bis zu 20 Prozent, für den
 Speicher um weitere 10 Prozent. Alle Details im Ratgeber

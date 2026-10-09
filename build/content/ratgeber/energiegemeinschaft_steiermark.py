@@ -27,11 +27,11 @@ ARTICLE = {
     "chips": [
         "Landesbonus: <b>125 €/kWp</b> bei EG-Teilnahme",
         "Netzentgelt: <b>bis zu 57 %</b> weniger",
-        "OeMAG Juli 2026: <b>6,146 ct/kWh</b>",
+        "OeMAG Sept. 2026: <b>10,168 ct/kWh</b>",
         "EBZ vor Ort in der <b>ganzen Steiermark</b>",
     ],
     "date_published": "2026-08-05",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus in der Steiermark mit Photovoltaikanlage auf dem Dach",
 
@@ -41,8 +41,9 @@ ARTICLE = {
         "Teilnahme an einer Energiegemeinschaft. Bei 10 kWp sind das 1.250 Euro.",
         "Netzbetreiber sind vor allem die Energienetze Steiermark und in Graz die Stromnetz Graz. Der Nahbereich "
         "(Trafo oder Umspannwerk) bestimmt den Netzentgelt-Abschlag von 57 oder 28 Prozent.",
-        "Der OeMAG-Marktpreis lag im Juli 2026 bei 6,146 Cent je kWh. Zwischen diesem Tarif und dem "
-        "Haushaltsstrompreis liegt eine Spanne von rund 10 Cent, die die Gemeinschaft aufteilt.",
+        "Der OeMAG-Marktpreis schwankt monatlich: Juli 2026 6,146 Cent, September 2026 10,168 Cent je kWh. Zwischen "
+        "diesem Tarif und dem Haushaltsstrompreis liegt je nach Monat eine Spanne von rund 7 bis 11 Cent, die die "
+        "Gemeinschaft aufteilt.",
         "Aktive Gemeinschaften gibt es in fast allen Bezirken, von Leibnitz über Weiz bis ins Murtal. EBZ Energie "
         "nimmt Kunden in der Steiermark auf und rechnet über energyfamily ab.",
     ],
@@ -57,8 +58,9 @@ ARTICLE = {
         ("Energiegemeinschaft in der Steiermark: die Ausgangslage", "ausgangslage", f"""
 <p>Die Steiermark hat in den vergangenen Jahren mehr PV-Leistung zugebaut als fast jedes andere Bundesland, und
 genau daraus entsteht das Problem, das die Energiegemeinschaft löst: Zu Mittag drückt so viel Sonnenstrom ins Netz,
-dass der Börsenpreis fällt und der OeMAG-Tarif seit Frühjahr 2026 an der gesetzlichen Untergrenze klebt, im Juli
-waren es 6,146 Cent pro Kilowattstunde. Gleichzeitig zahlen Ihre Nachbarn für Strom aus dem Netz das Dreifache. Eine
+dass der Börsenpreis fällt und der OeMAG-Tarif monatlich schwankt: im Juli 2026 lag er mit 6,146 Cent pro
+Kilowattstunde an der gesetzlichen Untergrenze, im September 2026 bei 10,168 Cent. Gleichzeitig zahlen Ihre Nachbarn
+für Strom aus dem Netz rund das Dreifache. Eine
 Energiegemeinschaft schließt diese Lücke, indem sie Ihren Überschuss direkt an Abnehmer im selben Netzgebiet
 verkauft, zu einem Preis, den die Gemeinschaft selbst bestimmt.</p>
 {A.table(
@@ -194,7 +196,8 @@ wenigen Wochen {a('/energiegemeinschaft-beitreten/', 'beitreten')}.</p>
          "Praxis reicht für Privathaushalte eine gut passende Gemeinschaft."),
         ("Was passiert mit meinem Strom, wenn in der Gemeinschaft niemand Bedarf hat?",
          "Er wird wie bisher an die OeMAG oder Ihren Einspeisevertragspartner geliefert und zum dortigen Tarif "
-         "vergütet, im Juli 2026 waren das 6,146 Cent je kWh. Sie verlieren also nichts gegenüber heute."),
+         "vergütet, im Juli 2026 waren das 6,146 Cent je kWh, im September 2026 10,168 Cent. Sie verlieren also "
+         "nichts gegenüber heute."),
         ("Wie lange dauert der Beitritt?",
          "Vom Erstgespräch bis zur ersten zugeordneten Kilowattstunde vergehen in der Regel vier bis acht Wochen. "
          "Der größte Zeitfaktor ist die Zählpunktanmeldung beim Netzbetreiber."),

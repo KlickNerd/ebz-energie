@@ -32,7 +32,7 @@ ARTICLE = {
         "Am besten <b>per EMS automatisiert</b>",
     ],
     "date_published": "2026-07-17",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "speicher",
     "hero_alt": "Batteriespeicher im Eigenheim, der bei dynamischem Stromtarif in günstigen Stunden lädt",
 
@@ -149,7 +149,7 @@ Liefervertrag. Voraussetzungen und Ablauf finden Sie im Ratgeber
 <p>Der Börsenpreis wirkt in beide Richtungen. Wer PV-Strom einspeist, bekommt beim
 {a('/oemag-einspeisetarif/', 'OeMAG-Marktpreis')} einen Tarif, der ebenfalls dem Börsenpreis zu den
 Einspeisestunden folgt: Im Juli 2026 lag er bei 6,146 Cent je Kilowattstunde, weil die Mittagspreise
-wegen des vielen Solarstroms niedrig sind. Genau diese günstigen Mittagsstunden sind beim dynamischen
+wegen des vielen Solarstroms niedrig waren, im September 2026 bei 10,168 Cent (Stand Oktober 2026). Genau diese günstigen Mittagsstunden sind beim dynamischen
 Bezugstarif Ihr Vorteil. Die Konsequenz für PV-Haushalte: möglichst viel selbst verbrauchen, den Rest
 über den Speicher in den Abend retten und Zukauf in die günstigen Stunden legen. Mehr dazu im
 {a('/marktpreis-2026/', 'Marktpreis-Überblick 2026')}.</p>

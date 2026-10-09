@@ -32,7 +32,7 @@ ARTICLE = {
         "Ökofonds ab 20 kWp: <b>bis 30 %</b>",
     ],
     "date_published": "2026-04-05",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch zur Photovoltaik-Förderung in der Steiermark mit Förderunterlagen am Tisch",
 
@@ -45,7 +45,7 @@ ARTICLE = {
         "9,8 Millionen Euro Budget, kombinierbar mit der EAG-Förderung.",
         "Für Anlagen ab 20 kWp mit Doppelnutzung (Parkplatzüberdachung, Agri-PV, Fassade) gibt es den Ökofonds "
         "mit bis zu 30 Prozent der Kosten, maximal 250.000 Euro je Antrag.",
-        "EAG-Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober. Der Antrag muss vor "
+        "EAG-Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober. Der Antrag muss vor "
         "Baubeginn und Inbetriebnahme gestellt werden, in den Kategorien A und B gilt First-Come-First-Served.",
         "Viele steirische Gemeinden zahlen zusätzlich 200 bis 1.000 Euro. Bund, Land und Gemeinde sind in der "
         "Steiermark grundsätzlich kombinierbar.",
@@ -102,7 +102,7 @@ meisten privaten Anlagen ist diese Obergrenze nicht relevant, hier entscheiden d
 <ul>
   <li><b>Erster Call:</b> 23. April 2026 (17:00 Uhr) bis 11. Mai 2026 (23:59 Uhr)</li>
   <li><b>Zweiter Call:</b> 16. bis 30. Juni 2026</li>
-  <li><b>Dritter Call:</b> ab 8. Oktober 2026</li>
+  <li><b>Dritter Call:</b> 8. bis 22. Oktober 2026</li>
 </ul>
 <p>Die Antragstellung ist nur in diesen Zeitfenstern möglich. In den Kategorien A und B zählt der
 Eingang: Wer am ersten Tag ein Ticket zieht, sichert sich die beste Reihung. Wer den Call verpasst,
@@ -229,6 +229,11 @@ eine private Anlage mit Speicher 4.000 bis 6.000 Euro zusammen. Für Betriebe mi
 {a('/photovoltaik-landesfoerderungen/', 'PV-Landesförderungen in Österreich')}.</p>
 <p>Entscheidend ist die Reihenfolge: EAG-Antrag im Call vor Baubeginn, Sanierungsbonus und Gemeinde nach
 Fertigstellung, Endabrechnung innerhalb der Frist. Wer das sauber plant, verschenkt kein Geld.</p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Jetzt Förderung in der Steiermark sichern",
        "Wir planen Ihre Anlage förderfähig, ziehen das EAG-Ticket und übernehmen Sanierungsbonus, "
        "Gemeindeantrag und Endabrechnung.",
@@ -261,7 +266,7 @@ Fertigstellung, Endabrechnung innerhalb der Frist. Wer das sauber plant, versche
          "Gemeindeförderung sind insgesamt 4.000 bis 6.000 Euro realistisch."),
         ("Wann sind die EAG-Fördercalls 2026?",
          "Der erste Call läuft vom 23. April (17:00 Uhr) bis 11. Mai 2026, der zweite vom 16. bis 30. Juni 2026, "
-         "der dritte startet am 8. Oktober 2026. Der Steirische Sanierungsbonus hat ein eigenes Antragsfenster vom "
+         "der dritte läuft vom 8. bis 22. Oktober 2026. Der Steirische Sanierungsbonus hat ein eigenes Antragsfenster vom "
          "1. April bis 15. Mai 2026."),
         ("Gibt es in der Steiermark eine PV-Pauschale des Landes?",
          "Nein. Anders als Kärnten mit 3.000 Euro zahlt das Land Steiermark 2026 keine direkte PV-Pauschale. Die "

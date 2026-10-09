@@ -32,7 +32,7 @@ ARTICLE = {
         "Smart Meter: <b>nur bei dynamisch Pflicht</b>",
     ],
     "date_published": "2026-07-22",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "ems",
     "hero_alt": "Energiemanagementsystem stimmt Photovoltaik, Speicher und Verbraucher auf den Stromtarif ab",
 
@@ -130,7 +130,8 @@ Tarif betrifft nur den Reststrom, meist abends und im Winter. Ein flexibler Tari
 unkomplizierte Wahl. Mit {a('batteriespeicher', 'Speicher')} und Wärmepumpe lohnt sich der Schritt zum
 dynamischen Tarif, weil der Speicher in Niedrigpreisstunden aus dem Netz nachladen und die Wärmepumpe
 vorheizen kann. Für den Überschuss gilt unabhängig vom Bezugstarif der Einspeisetarif, etwa der
-{a('/oemag-einspeisetarif/', 'OeMAG-Marktpreis')}, der im Juli 2026 bei 6,146 Cent je Kilowattstunde lag.
+{a('/oemag-einspeisetarif/', 'OeMAG-Marktpreis')}, der im Juli 2026 bei 6,146 Cent und im September 2026 bei
+10,168 Cent je Kilowattstunde lag (Stand Oktober 2026).
 Je niedriger die Einspeisevergütung, desto wichtiger wird der Eigenverbrauch, und desto mehr lohnt sich
 die Steuerung per EMS.</p>
 """),

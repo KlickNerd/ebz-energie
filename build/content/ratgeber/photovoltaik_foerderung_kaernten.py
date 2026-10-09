@@ -2,6 +2,8 @@
 
 Migriert von ebz-photovoltaik.at/photovoltaik-foerderung-kaernten/ (Stand Juni 2026),
 inhaltlich bereinigt und auf die Ratgeber-Vorlage umgestellt.
+Stand Oktober 2026: 2. Landes-Call 12.10. bis 31.12.2026 (Budget rund 10 Mio. EUR), 1. Call (15.4. bis 30.6.)
+als Historie; EAG 3. Call bis 22.10.2026, Ausblick 2027 Systemfoerderung (BMWET, geplant).
 Zahlen: Landesrichtlinie Kärnten 2026 und EAG-Investitionszuschüsseverordnung 2026 (Quellen unten).
 """
 
@@ -16,23 +18,23 @@ from common import a
 ARTICLE = {
     "slug": "photovoltaik-foerderung-kaernten",
     "path": "/photovoltaik-foerderung-kaernten/",
-    "title": "PV-Förderung Kärnten 2026: 3.000 € plus Bund | EBZ Energie",
-    "description": ("PV-Förderung Kärnten 2026: 3.000 € Landespauschale für PV ab 5 kWp mit Speicher, voll mit "
-                    "der EAG-Bundesförderung kombinierbar. Fristen, Ablauf, Rechenbeispiel."),
+    "title": "PV-Förderung Kärnten 2026: 3.000 € bis 31.12. | EBZ Energie",
+    "description": ("PV-Förderung Kärnten 2026: 3.000 € Landespauschale für PV ab 5 kWp mit Speicher, 2. Call "
+                    "12.10. bis 31.12.2026, mit dem Bund kombinierbar. Rechenbeispiel."),
     "eyebrow": "Förderung · Kärnten",
     "crumb_label": "PV-Förderung Kärnten 2026",
-    "h1": "Photovoltaik-Förderung Kärnten 2026: 3.000 Euro Landespauschale plus Bundesförderung",
+    "h1": "Photovoltaik-Förderung Kärnten 2026: 3.000 Euro Landespauschale, 2. Call bis 31. Dezember 2026",
     "lead": ("Kärnten fördert 2026 neue private PV-Anlagen mit Speicher pauschal mit 3.000 Euro, ohne "
-             "Anrechnung der EAG-Bundesförderung. Für eine typische 8-kWp-Anlage mit 8-kWh-Speicher sind "
-             "damit rund 5.760 Euro Gesamtförderung realistisch."),
+             "Anrechnung der EAG-Bundesförderung. Der zweite Landes-Call läuft vom 12. Oktober bis 31. Dezember 2026. "
+             "Für eine typische 8-kWp-Anlage mit 8-kWh-Speicher sind rund 5.760 Euro Gesamtförderung realistisch."),
     "chips": [
         "Land Kärnten: <b>3.000 €</b> Pauschale",
         "Speicher-Nachrüstung: <b>1.000 €</b>",
         "EAG-Bund: <b>150 €/kWp</b> + 150 €/kWh",
-        "Landes-Call: <b>15. April bis 30. Juni 2026</b>",
+        "2. Landes-Call: <b>12. Oktober bis 31. Dezember 2026</b>",
     ],
     "date_published": "2026-05-25",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus in Kärnten mit Photovoltaikanlage auf dem Dach",
 
@@ -44,21 +46,27 @@ ARTICLE = {
         "frühere Anrechnung der Bundesförderung auf die Landesförderung entfällt 2026.",
         "Speicherpflicht: Reine PV-Anlagen ohne Speicher fördert das Land Kärnten 2026 nicht mehr. Die "
         "EAG-Bundesförderung bleibt davon unberührt.",
-        "Termine: Landes-Call vom 15. April bis 30. Juni 2026 (Antrag erst nach Fertigstellung), "
-        "EAG-Calls ab 23. April, 16. Juni und 8. Oktober 2026 (Antrag vor Inbetriebnahme). "
-        "Landesbudget: rund 40 Millionen Euro.",
+        "Termine (Stand Oktober 2026): 2. Landes-Call vom 12. Oktober bis 31. Dezember 2026, Budget rund "
+        "10 Millionen Euro, Antrag erst nach Fertigstellung über die Förderplattform des Landes; der 1. Call lief "
+        "vom 15. April bis 30. Juni 2026. EAG-Bund: 3. Call bis 22. Oktober 2026 (Antrag vor Inbetriebnahme), ab "
+        "2027 laut BMWET Systemförderung mit Antrag nach Installation.",
         "Rechenbeispiel 8 kWp mit 8 kWh Speicher: 3.000 Euro Land plus 2.400 Euro Bund plus "
         "Made-in-Europe-Bonus, in Summe rund 5.760 Euro oder etwa 32 Prozent der Kosten.",
     ],
     "kpis": [
         ("3.000 €", "Landespauschale für PV ab 5 kWp mit Speicher"),
         ("150 €/kWp", "EAG-Bundesförderung bis 10 kWp"),
-        ("30.06.2026", "Ende des Kärntner Landes-Calls"),
+        ("31.12.2026", "Ende des 2. Kärntner Landes-Calls (Start 12.10.)"),
         ("~32 %", "Förderquote im Rechenbeispiel*"),
     ],
 
     "sections": [
         ("Die Photovoltaik-Förderung Kärnten 2026 im Überblick", "ueberblick", f"""
+<p><b>Das Land Kärnten fördert 2026 private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal mit
+3.000 Euro, die Speicher-Nachrüstung mit 1.000 Euro.</b> Antrag online vom 12. Oktober bis 31. Dezember 2026
+(zweiter Call, Start 9 Uhr), maximal 50 Prozent der Baukosten, Budget rund 10 Millionen Euro, Anlagen ab
+1. Jänner 2026 errichtet (Quelle: Land Kärnten, Stand Oktober 2026). Dazu kommt der EAG-Zuschuss des Bundes,
+eine Anrechnung entfällt.</p>
 <p>Kärnten zählt mit über 1.900 Sonnenstunden im Jahr zu den einstrahlungsreichsten Regionen Österreichs
 und hat 2026 zusätzlich seine PV-Landesförderung grundlegend vereinfacht. Statt der degressiven Sätze
 pro Kilowattpeak aus den Vorjahren gibt es jetzt eine Pauschale: Wer eine neue private PV-Anlage mit
@@ -79,9 +87,11 @@ Für betriebliche Eigenverbrauchsanlagen gibt es eine eigene Schiene mit bis zu 
 )}
 <p>Insgesamt stellt das Land Kärnten 2026 rund 40 Millionen Euro für die Energieförderung bereit, ein
 ähnlich hohes Budget wie im Vorjahr, in dem rund 13.000 Förderfälle abgewickelt wurden. Der erste
-Landes-Call läuft vom 15. April bis 30. Juni 2026. Die wichtigste Neuerung für die Kalkulation: Die
-bisher nötige Anrechnung von Bundesförderungen auf die Landespauschale entfällt komplett.</p>
-<p><small>Stand: Juni 2026. Maßgeblich sind die jeweils gültigen Richtlinien des Landes Kärnten.</small></p>
+Landes-Call lief vom 15. April bis 30. Juni 2026, der zweite Call mit rund 10 Millionen Euro Budget vom
+12. Oktober bis 31. Dezember 2026. Zwei Grenzen gelten: maximal 50 Prozent der Baukosten, und
+Landesförderungen der letzten zehn Jahre werden berücksichtigt. Die wichtigste Neuerung für die Kalkulation:
+Die bisher nötige Anrechnung von Bundesförderungen auf die Landespauschale entfällt komplett.</p>
+<p><small>Stand: Oktober 2026. Maßgeblich sind die jeweils gültigen Richtlinien des Landes Kärnten.</small></p>
 """),
         ("EAG-Bundesförderung 2026: die zweite Säule", "eag", f"""
 <p>Die volle Wirkung entfaltet die Kärntner Landesförderung erst in Kombination mit dem
@@ -102,11 +112,16 @@ nach Anlagengröße in vier Kategorien gestaffelt:</p>
 mit einer PV-Neuerrichtung oder -Erweiterung. Dazu kommt der Made-in-Europe-Bonus von jeweils
 10 Prozent pro Komponente für PV-Module, Wechselrichter und Speicher, sofern die Produkte auf der
 White List der EAG-Abwicklungsstelle stehen.</p>
-<p>Die drei EAG-Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie ab
-8. Oktober. Die Antragstellung erfolgt online über die EAG-Abwicklungsstelle, in den Kategorien A und B
+<p>Die drei EAG-Fördercalls 2026 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni sowie vom 8. bis
+22. Oktober. Die Antragstellung erfolgt online über die EAG-Abwicklungsstelle, in den Kategorien A und B
 mit Ticketziehung nach Eingang. Entscheidend: Der EAG-Antrag muss vor Inbetriebnahme der Anlage gestellt
 werden. Die Kärntner Landesförderung wird dagegen erst nach Fertigstellung beantragt. Mehr zu den
 Bundeskonditionen im Ratgeber {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 """),
         ("Voraussetzungen für die Landesförderung Kärnten", "voraussetzungen", f"""
 <p>Die Kärntner Bedingungen sind im Vergleich zu anderen Bundesländern klar formuliert, jede Abweichung
@@ -139,15 +154,17 @@ erst nach vollständiger Fertigstellung gestellt, der EAG-Antrag zwingend vor In
 Förderungen kombinieren will, hält diese Reihenfolge ein:</p>
 {A.steps([
     ("EAG-Antrag vor der Errichtung",
-     "Am ersten Tag des EAG-Calls (23. April, 16. Juni oder 8. Oktober 2026) Ticket ziehen und den "
-     "Bundesantrag online einreichen. Dafür brauchen Sie Zählpunktnummer, Netzzugangsvertrag und alle "
+     "Am ersten Tag des EAG-Calls (23. April, 16. Juni oder 8. Oktober 2026; letzter Call bis 22. Oktober) "
+     "Ticket ziehen und den Bundesantrag online einreichen. Ab 2027 soll der Antrag laut BMWET nach der "
+     "Installation gestellt werden. Dafür brauchen Sie Zählpunktnummer, Netzzugangsvertrag und alle "
      "erforderlichen Genehmigungen oder Anzeigen."),
     ("Montage und Inbetriebnahme",
      "Errichtung durch ein gewerblich befugtes Unternehmen. Alle Hauptkomponenten müssen nach dem "
      "1. Jänner 2026 in Rechnung gestellt und per Überweisung bezahlt sein."),
     ("Landesantrag nach Fertigstellung",
-     "Zwischen 15. April und 30. Juni 2026 den Antrag online über das Portal des Landes Kärnten "
-     "stellen: Rechnungen, Zahlungsnachweise und Abnahme- beziehungsweise Prüfprotokoll hochladen."),
+     "Im zweiten Call zwischen 12. Oktober (ab 9 Uhr) und 31. Dezember 2026 den Antrag online über die "
+     "Förderplattform des Landes Kärnten stellen: Rechnungen, Zahlungsnachweise und Abnahme- beziehungsweise "
+     "Prüfprotokoll hochladen. Der erste Call lief vom 15. April bis 30. Juni 2026."),
     ("Prüfung und Auszahlung",
      "Bei vollständigen Unterlagen wird die 3.000-Euro-Pauschale auf das angegebene Konto überwiesen. "
      "Da eine Reihung nach Eingang der vollständigen Anträge erfolgen kann, lohnt sich eine zeitnahe "
@@ -213,7 +230,8 @@ zusätzlich vom Klima- und Energiefonds gefördert (siehe {a('/ems-foerderung/',
 Sonneneinstrahlung im Süden Österreichs ergeben eine Förderkonstellation, die es 2026 in keinem anderen
 Bundesland gibt (Vergleich: {a('/photovoltaik-landesfoerderungen/', 'PV-Landesförderungen aller neun Bundesländer')}).
 Für eine typische Privatanlage sind rund 5.700 bis 6.800 Euro Gesamtförderung realistisch.</p>
-<p>Die Fördertöpfe sind aber begrenzt, der Landes-Call endet am 30. Juni 2026, und die Reihenfolge der
+<p>Die Fördertöpfe sind aber begrenzt: Der zweite Landes-Call läuft vom 12. Oktober bis 31. Dezember 2026
+mit rund 10 Millionen Euro Budget, der letzte EAG-Call endet am 22. Oktober 2026. Die Reihenfolge der
 Anträge ist entscheidend: EAG vor Inbetriebnahme, Land nach Fertigstellung. Wer diese Reihenfolge
 falsch macht, verliert eine der beiden Förderungen.</p>
 {A.cta("Jetzt Förderung in Kärnten sichern",
@@ -251,9 +269,10 @@ falsch macht, verliert eine der beiden Förderungen.</p>
          "mindestens 5 kWh nutzbarer Kapazität vor, die PV-Anlage muss mindestens 5 kWp leisten. Ohne Speicher "
          "bleibt nur die EAG-Bundesförderung mit 150 Euro je kWp."),
         ("Wann muss ich den Antrag in Kärnten 2026 stellen?",
-         "Der Landes-Call läuft vom 15. April bis 30. Juni 2026, der Antrag wird erst nach vollständiger "
-         "Fertigstellung der Anlage gestellt. Der EAG-Bundesantrag muss dagegen vor Inbetriebnahme eingereicht "
-         "werden, idealerweise am ersten Tag eines Fördercalls (23. April, 16. Juni oder 8. Oktober 2026)."),
+         "Der zweite Landes-Call läuft vom 12. Oktober bis 31. Dezember 2026 (der erste lief vom 15. April bis "
+         "30. Juni), der Antrag wird erst nach vollständiger Fertigstellung der Anlage über die Förderplattform des "
+         "Landes gestellt. Der EAG-Bundesantrag muss dagegen vor Inbetriebnahme eingereicht werden; der letzte "
+         "Call 2026 läuft vom 8. bis 22. Oktober 2026, ab 2027 ist laut BMWET ein Antrag nach Installation geplant."),
         ("Wird die Bundesförderung auf die Kärntner Pauschale angerechnet?",
          "Nein, nicht mehr. Seit 2026 entfällt die Anrechnung von Bundesförderungen auf die Landespauschale. "
          "Sie erhalten den vollen EAG-Investitionszuschuss und zusätzlich die 3.000 Euro vom Land Kärnten."),
@@ -295,7 +314,7 @@ falsch macht, verliert eine der beiden Förderungen.</p>
     ],
     "cta": {
         "h3": "3.000 Euro vom Land Kärnten sichern",
-        "text": "Wir planen Ihre Anlage so, dass Land und Bund voll greifen, und übernehmen beide Anträge.",
+        "text": "2. Call bis 31. Dezember 2026: Wir planen Ihre Anlage so, dass Land und Bund voll greifen, und übernehmen beide Anträge.",
         "primary": ("kontakt", "Kostenlose Beratung"),
     },
     "final_h2": "Ihre PV-Anlage in Kärnten, förderoptimiert geplant",

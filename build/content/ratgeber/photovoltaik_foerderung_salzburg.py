@@ -29,7 +29,7 @@ CALLS_TABLE = A.table(
     [
         ["Call 1", "23. April bis 11. Mai 2026", "erster Call des Jahres, meist hohe Nachfrage"],
         ["Call 2", "16. bis 30. Juni 2026", "Sommer-Call"],
-        ["Call 3", "ab 8. Oktober 2026", "Herbst-Call"],
+        ["Call 3", "8. bis 22. Oktober 2026", "Herbst-Call, letzter Call im bisherigen System"],
     ],
     hl_cols=(1,),
 )
@@ -53,7 +53,7 @@ ARTICLE = {
         "Gemeinde: <b>200 bis 1.000 €</b> möglich",
     ],
     "date_published": "2026-04-20",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Einfamilienhausdach bei Sonnenschein",
 
@@ -67,13 +67,13 @@ ARTICLE = {
         "Gemeindeförderungen bringen je nach Wohnsitzgemeinde 200 bis 1.000 € zusätzlich. Die Wohnbauförderung "
         "des Landes ist nur im Sanierungskontext relevant.",
         "Der EAG-Antrag muss vor Inbetriebnahme im Fördercall gestellt werden: 23. April bis 11. Mai, 16. bis "
-        "30. Juni, ab 8. Oktober 2026.",
+        "30. Juni, 8. bis 22. Oktober 2026.",
     ],
     "kpis": [
         ("150 €/kWp", "EAG-Zuschuss Kategorie A (bis 10 kWp)"),
         ("2.760 €", "Beispiel 8 kWp + 8 kWh inkl. Bonus*"),
         ("0 €", "Landesförderung Salzburg für Privat-PV 2026"),
-        ("7.500 €", "Bundespauschale Wärmepumpe (Sanierungsoffensive)"),
+        ("beendet", "Bundes-Wärmepumpenförderung 2026 (ausgeschöpft)"),
     ],
 
     "sections": [
@@ -159,7 +159,7 @@ beihilferechtlichen Höchstgrenzen eingehalten werden.</p>
 oder Biomasseanlage tauscht, profitiert von Bundesförderungen, die den Wegfall der Salzburger PV-Landesförderung
 teilweise kompensieren:</p>
 <ul>
-  <li><b>Sanierungsoffensive (Wärmepumpe):</b> Pauschale bis zu 7.500 €</li>
+  <li><b>Sanierungsoffensive (Wärmepumpe):</b> galt 2026 mit bis zu 7.500 € Pauschale, seit Herbst 2026 ausgeschöpft, keine Registrierung mehr möglich (Stand Oktober 2026)</li>
   <li><b>Sanierungsoffensive (Biomasse):</b> Pauschale bis zu 8.500 €</li>
   <li><b>„Sauber Heizen für Alle“</b> (einkommensschwache Haushalte): bis zu 100 % Förderung</li>
 </ul>
@@ -189,7 +189,7 @@ Eigenverbrauch steigt, und die Energiekosten sinken um bis zu 85 %. Mehr dazu im
      "müssen bei Antragstellung vorliegen."),
     ("EAG-Antrag im Fördercall",
      "Online über die EAG-Abwicklungsstelle, in Kategorie A und B mit Ticketziehung, zwingend vor Inbetriebnahme. "
-     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober."),
+     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober."),
     ("Inbetriebnahme und Endabrechnung",
      "Nach Inbetriebnahme Rechnungen (per Überweisung bezahlt) und Nachweise einreichen, danach wird der Zuschuss "
      "ausbezahlt. Gemeindeförderung nach lokaler Richtlinie beantragen."),
@@ -206,6 +206,11 @@ Made-in-Europe-Zertifizierung wählen, Gemeindeförderung recherchieren, idealer
 kombinieren und den Antrag vor Inbetriebnahme stellen.</p>
 <p><small>Stand: Mai 2026. Förderhöhen, Budgets und Fristen können sich ändern, maßgeblich sind die Richtlinien
 der EAG-Abwicklungsstelle (OeMAG), des Landes Salzburg und der jeweiligen Gemeinde.</small></p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Förderstrategie für Ihr Projekt in Salzburg",
        "Wir planen mit gelisteten Komponenten, prüfen Ihre Gemeindeförderung und übernehmen den EAG-Antrag "
        "im richtigen Call.",
@@ -223,7 +228,7 @@ der EAG-Abwicklungsstelle (OeMAG), des Landes Salzburg und der jeweiligen Gemein
         "grid": [
             ("Förderabwicklung komplett", "EAG-Antrag, Gemeindezuschuss und Heizungstausch-Förderung."),
             ("White-List-Komponenten", "Module, Wechselrichter und Speicher mit Made-in-Europe-Bonus."),
-            ("PV plus Wärmepumpe", "Bis zu 7.500 € Bundespauschale für die Wärmepumpe mitplanen."),
+            ("PV plus Wärmepumpe", "Die Bundespauschale 2026 ist ausgeschöpft; Landesförderung Salzburg und Ausblick 2027 prüfen wir mit."),
             ("Referenzen in 6 Bundesländern", "300+ Projekte, 4,9 Sterne auf Google."),
         ],
     },
@@ -246,7 +251,7 @@ der EAG-Abwicklungsstelle (OeMAG), des Landes Salzburg und der jeweiligen Gemein
          "OeMAG stehen. Bei 8 kWp und 8 kWh sind das 240 € auf den PV-Zuschuss und 120 € auf den Speicherzuschuss, "
          "in Summe 360 €."),
         ("Wann sind die EAG-Fördercalls 2026?",
-         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und ab 8. Oktober 2026. In den "
+         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und 8. bis 22. Oktober 2026. In den "
          "Kategorien A und B gilt First come, first served mit Ticketziehung. Der Antrag muss vor Inbetriebnahme "
          "gestellt werden."),
         ("Kann ich Gemeindeförderung und EAG kombinieren?",

@@ -1,8 +1,9 @@
 """Ratgeber: OeMAG-Einspeisetarif 2026 und die Energiegemeinschaft als Alternative.
 
 Migriert von ebz-photovoltaik.at/oemag-einspeisetarif/ (Stand August 2026).
-Marktpreise: Juli 2026 = 6,146 ct (Untergrenze), Q3 2026 = 10,923 ct. Ältere Werte
-der Quelle bleiben als Verlauf. Folgemonate nach OeMAG-Veröffentlichung nachtragen.
+Marktpreise (Stand Oktober 2026): September 2026 = 10,168 ct (aktueller Wert),
+Juli 2026 = 6,146 ct (Untergrenze, Verlaufswert), Q3 2026 = 10,923 ct. August 2026
+ohne belegten Wert, daher nicht genannt. Folgemonate nach OeMAG-Veröffentlichung nachtragen.
 """
 
 import os
@@ -16,64 +17,70 @@ from common import a
 ARTICLE = {
     "slug": "oemag-einspeisetarif",
     "path": "/oemag-einspeisetarif/",
-    "title": "OeMAG-Einspeisetarif 2026: aktuell 6,146 ct | EBZ Energie",
-    "description": ("OeMAG-Einspeisetarif Photovoltaik: Juli 2026 6,146 ct/kWh, Q3-Marktpreis 10,923 ct. "
-                    "Berechnung, warum er an der Untergrenze klebt, was die EG bringt."),
+    "title": "OeMAG-Einspeisetarif 2026: aktuell 10,168 ct | EBZ Energie",
+    "description": ("OeMAG-Einspeisetarif Photovoltaik: September 2026 10,168 ct/kWh, Juli 6,146 ct, "
+                    "Q3-Marktpreis 10,923 ct. Berechnung, warum er schwankt, was die EG bringt."),
     "eyebrow": "Einspeisetarif · OeMAG",
     "crumb_label": "OeMAG-Einspeisetarif 2026",
-    "h1": "OeMAG-Einspeisetarif 2026: 6,146 Cent je kWh, warum er so niedrig ist und was Sie stattdessen tun können",
+    "h1": "OeMAG-Einspeisetarif 2026: 10,168 Cent je kWh im September, warum er monatlich schwankt und was Sie stattdessen tun können",
     "lead": ("Rund 3.000 Österreicher suchen jeden Monat nach dem aktuellen OeMAG-Tarif, und die meisten sind "
-             "enttäuscht. Hier stehen die Zahlen, die Berechnung und die Alternative, die für den zugeordneten "
-             "Überschuss bis zum Doppelten bringt."),
+             "überrascht, wie stark er schwankt. Hier stehen die aktuellen Zahlen, die Berechnung und die "
+             "Alternative Energiegemeinschaft, die den Überschuss planbar macht und beim Bezug Netzentgelte spart."),
     "chips": [
+        "September 2026: <b>10,168 ct/kWh</b>",
         "Juli 2026: <b>6,146 ct/kWh</b>",
         "Q3-Marktpreis: <b>10,923 ct/kWh</b>",
-        "Untergrenze: <b>60 %</b> des Marktpreises",
         "EG-Einspeisung: <b>8 bis 12 ct</b>",
     ],
     "date_published": "2026-08-20",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "pv_card",
     "hero_alt": "Photovoltaikanlage, deren Überschuss zum OeMAG-Marktpreis oder in einer Energiegemeinschaft vergütet wird",
 
     "tldr": [
-        "Der OeMAG-Einspeisetarif für Photovoltaik lag im Juli 2026 bei 6,146 Cent je kWh. Das ist die gesetzliche "
-        "Untergrenze, weil die Börsenpreise zur Mittagszeit seit dem Frühjahr darunter liegen. Stand: September 2026.",
+        "Der OeMAG-Einspeisetarif für Photovoltaik beträgt für September 2026 10,168 Cent je kWh (Stand Oktober 2026). "
+        "Im Juli 2026 lag er mit 6,146 Cent an der gesetzlichen Untergrenze. Der Wert schwankt monatlich mit den "
+        "Börsenpreisen zu den Einspeisestunden.",
         "Der Tarif wird monatlich im Nachhinein aus dem Day-Ahead-Preis berechnet, begrenzt durch den "
         "Quartalsmarktpreis der E-Control (Obergrenze, Q3 2026: 10,923 Cent) und 60 Prozent davon (Untergrenze), "
         "abzüglich 0,408 Cent Ausgleichsenergiekosten.",
-        "In einer Energiegemeinschaft verkaufen Sie den Überschuss zu einem selbst vereinbarten Preis, typisch "
-        "8 bis 12 Cent, an Nachbarn. Was nicht zugeordnet wird, geht weiterhin an die OeMAG. Sie können also "
-        "nur gewinnen.",
-        "Bei 7.000 kWh Überschuss und 60 Prozent Zuordnung bringt die Gemeinschaft rund 160 Euro* Mehrerlös im "
-        "Jahr, plus den Vorteil beim eigenen Bezug. EBZ Energie kombiniert PV, Speicher, Energiemanagement und "
-        "Energiegemeinschaft in Kärnten und der Steiermark.",
+        "In einer Energiegemeinschaft verkaufen Sie den Überschuss zu einem selbst vereinbarten, fixen Preis, typisch "
+        "8 bis 12 Cent*, an Nachbarn. Was nicht zugeordnet wird, geht weiterhin an die OeMAG. Der OeMAG-Vertrag "
+        "bleibt als Auffangnetz bestehen.",
+        "Ob der Erzeuger mehr bekommt als bei der OeMAG, hängt vom Monat ab: Gegenüber dem Juli-Wert bringt ein "
+        "EG-Preis von 10 Cent* ein Plus, gegenüber dem September-Wert nicht. Verlässlich sind der Bezugsvorteil "
+        "(bis zu 57 Prozent weniger Netzentgelt im Nahbereich) und die Planbarkeit. EBZ Energie kombiniert PV, "
+        "Speicher, Energiemanagement und Energiegemeinschaft in Kärnten und der Steiermark.",
     ],
     "kpis": [
-        ("6,146 ct", "OeMAG-Tarif Juli 2026 (Photovoltaik)"),
+        ("10,168 ct", "OeMAG-Tarif September 2026 (Photovoltaik)"),
+        ("6,146 ct", "OeMAG-Tarif Juli 2026 (Untergrenze)"),
         ("10,923 ct", "Quartalsmarktpreis Q3 2026 (Obergrenze)"),
         ("0,408 ct", "Abzug Ausgleichsenergie PV 2026"),
-        ("60 %", "gesetzliche Untergrenze des Quartalsmarktpreises"),
     ],
 
     "sections": [
         ("Der aktuelle OeMAG-Einspeisetarif", "aktueller-tarif", f"""
+<p><b>Der OeMAG-Marktpreis für Photovoltaik beträgt für September 2026 10,168 Cent je Kilowattstunde</b>
+(Quelle: oem-ag.at/marktpreis, monatlich im Nachhinein veröffentlicht, Stand 9. Oktober 2026). Im Juli 2026
+lag er bei 6,146 Cent, der Untergrenze des dritten Quartals. Der Marktpreis gilt für Anlagen im
+OeMAG-Marktpreismodell, nicht für alte Fördertarife nach Paragraf 12 Ökostromgesetz.</p>
 <p>Die OeMAG, die Abwicklungsstelle für Ökostrom, ist gesetzlich verpflichtet, Strom aus PV-Anlagen zum
 sogenannten Marktpreis abzunehmen. Seit Jänner 2024 wird dieser Preis monatlich und rückwirkend
-festgelegt. Für Juli 2026 beträgt er 6,146 Cent je Kilowattstunde für Photovoltaik, der Juni lag bei
-6,772 Cent. Der Quartalsmarktpreis der E-Control, der als Obergrenze dient, liegt für das dritte Quartal
+festgelegt. Der Juni 2026 lag bei 6,772 Cent, der Juli bei 6,146 Cent, der September bei 10,168 Cent.
+Der Quartalsmarktpreis der E-Control, der als Obergrenze dient, liegt für das dritte Quartal
 2026 bei 10,923 Cent (109,23 Euro je MWh), im zweiten Quartal waren es 11,967 Cent.</p>
 {A.table(
     ["Zeitraum 2026", "Quartalsmarktpreis (Obergrenze)", "Untergrenze PV (60 % minus 0,408 ct)", "OeMAG-Tarif PV"],
     [
         ["Q1 (Jänner bis März)", "9,250 ct", "5,142 ct", "Jänner und Februar nahe Obergrenze, März deutlich darunter"],
         ["Q2 (April bis Juni)", "11,967 ct", "6,772 ct", "Mai und Juni exakt an der Untergrenze: 6,772 ct"],
-        ["Q3 (Juli bis September)", "10,923 ct", "6,146 ct", "Juli 6,146 ct; August und September nach Veröffentlichung durch die OeMAG"],
+        ["Q3 (Juli bis September)", "10,923 ct", "6,146 ct", "Juli 6,146 ct (Untergrenze), September 10,168 ct (nahe Obergrenze)"],
     ],
     hl_cols=(3,),
 )}
 <p>Quelle: OeMAG Marktpreis-Übersicht, E-Control. Werte gelten für Photovoltaik, der Windtarif liegt
-geringfügig darunter. Stand: September 2026, die Folgemonate tragen wir nach ihrer Veröffentlichung
+geringfügig darunter. Stand: Oktober 2026, die Folgemonate tragen wir nach ihrer Veröffentlichung
 nach. Die Einordnung für Kärnten und die Steiermark finden Sie in unserem
 {a('/marktpreis-2026/', 'Marktpreis-Überblick 2026')}.</p>
 """),
@@ -90,11 +97,13 @@ nach. Die Einordnung für Kärnten und die Steiermark finden Sie in unserem
     ("Korridor und Abzug",
      "Der Monatswert wird in einen Korridor gezwängt: nach oben begrenzt durch den Quartalsmarktpreis, nach "
      "unten durch 60 Prozent davon. Seit 2026 werden zusätzlich die Kosten für Ausgleichsenergie abgezogen, "
-     "bei PV 0,408 Cent je Kilowattstunde. Ergebnis für Juli 2026: 10,923 × 0,6 minus 0,408 = 6,146 Cent."),
+     "bei PV 0,408 Cent je Kilowattstunde. Ergebnis für Juli 2026: 10,923 × 0,6 minus 0,408 = 6,146 Cent. "
+     "Im September 2026 lag der Monatswert mit 10,168 Cent dagegen nahe der Obergrenze."),
 ])}
-<p>Solange die Mittagspreise an der Börse wegen des vielen Solarstroms niedrig sind, klebt der Tarif an der
-Untergrenze. Und die Untergrenze sinkt mit jedem Quartal, in dem der Terminmarkt nachgibt. Eine Erholung
-ist nur in den Wintermonaten zu erwarten, in denen PV-Anlagen ohnehin wenig liefern.</p>
+<p>In Monaten mit viel Solarstrom und niedrigen Mittagspreisen fällt der Tarif auf die Untergrenze, wie im
+Juli 2026. Steigen die Börsenpreise zu den Einspeisestunden, nähert er sich der Obergrenze, wie im
+September 2026. Planbar ist er damit nicht: Innerhalb des dritten Quartals 2026 schwankte er um rund
+4 Cent. Die Untergrenze selbst sinkt zudem mit jedem Quartal, in dem der Terminmarkt nachgibt.</p>
 """),
         ("Was die Alternativen bringen", "alternativen", f"""
 <p>Wer mit dem OeMAG-Tarif unzufrieden ist, hat drei Hebel. Der erste ist der Einspeisevertrag mit einem
@@ -108,6 +117,7 @@ Wärmepumpe, Wallbox und Energiemanagement sind die Werkzeuge dafür. Der dritte
 {A.table(
     ["Wo der Überschuss landet", "Cent je kWh", "Wer bekommt oder zahlt"],
     [
+        ["OeMAG-Tarif (September 2026)", "10,168 ct", "Erzeuger bekommt"],
         ["OeMAG-Tarif (Juli 2026)", "6,146 ct", "Erzeuger bekommt"],
         ["EG-Einspeisung (Beispiel*)", "10 ct", "Erzeuger bekommt"],
         ["EG-Bezug (Beispiel*)", "14 ct", "Abnehmer zahlt"],
@@ -115,12 +125,16 @@ Wärmepumpe, Wallbox und Energiemanagement sind die Werkzeuge dafür. Der dritte
     ],
     hl_cols=(1,),
 )}
-<p>Zwischen OeMAG-Tarif und Haushaltsstrompreis liegt eine Spanne von rund 10 Cent. Die Energiegemeinschaft
-teilt diese Spanne zwischen Erzeuger und Abnehmer auf. Der Vergleich der Optionen im Überblick:</p>
+<p>Zwischen OeMAG-Tarif und Haushaltsstrompreis liegt je nach Monat eine Spanne von rund 7 bis 11 Cent. Die
+Energiegemeinschaft teilt diese Spanne zwischen Erzeuger und Abnehmer auf. Liegt der Marktpreis wie im
+September 2026 bei 10,168 Cent, bringt ein EG-Einspeisepreis von 10 Cent* dem Erzeuger keinen Mehrerlös.
+Der Vorteil der Gemeinschaft liegt dann beim Abnehmer (Bezugspreis unter dem Lieferantentarif,
+Netzentgelt-Rabatt im Nahbereich) und in der Planbarkeit: Der EG-Preis ist fix vereinbart, der OeMAG-Tarif
+schwankt monatlich. Der Vergleich der Optionen im Überblick:</p>
 {A.table(
     ["Option", "Preis je kWh Überschuss", "Bindung", "Risiko"],
     [
-        ["OeMAG-Marktpreis", "6,1 bis 9,7 ct (2026)", "keine, jederzeit kündbar", "folgt der Börse, sinkt im Sommer"],
+        ["OeMAG-Marktpreis", "6,1 bis 10,2 ct (2026)", "keine, jederzeit kündbar", "folgt der Börse, schwankt monatlich"],
         ["Einspeisevertrag Lieferant", "5 bis 12 ct, oft befristet", "meist an Bezugstarif gekoppelt", "Aktionspreise laufen aus"],
         ["Energiegemeinschaft (EEG)", "8 bis 12 ct, selbst vereinbart", "1 bis 3 Monate Kündigungsfrist", "nur zugeordnete Menge, Rest an OeMAG"],
         ["Eigenverbrauch", "25 bis 35 ct brutto vermieden", "Investition in Speicher/EMS", "begrenzt durch Ihren Verbrauch"],
@@ -137,9 +151,11 @@ derselben Viertelstunde von einem Mitglied verbraucht wird. Alles andere bleibt 
 wird von Ihrem bestehenden Abnahmevertrag, also der OeMAG oder Ihrem Lieferanten, zum dortigen Tarif
 vergütet. Die Energiegemeinschaft legt sich wie eine zweite Schicht darüber: Was sie abnimmt, bekommt den
 besseren Preis, was sie nicht abnimmt, läuft wie bisher.</p>
-{A.box("Rechnerisch bei 7.000 kWh Überschuss und 60 Prozent Zuordnung: 4.200 kWh zu 10 Cent* statt "
-       "6,146 Cent ergeben 162 Euro Mehrerlös im Jahr. Dazu kommt der Abnehmervorteil in den Stunden, in "
-       "denen Sie selbst aus der Gemeinschaft beziehen: bis zu 57 Prozent weniger Netzentgelt und keine "
+{A.box("Rechnerisch bei 7.000 kWh Überschuss und 60 Prozent Zuordnung: 4.200 kWh zu 10 Cent* bringen "
+       "420 Euro im Jahr. Bei der OeMAG wären es je nach Monatswert 258 Euro (Juli 2026: 6,146 Cent) bis "
+       "427 Euro (September 2026: 10,168 Cent). Der Erzeugervorteil hängt also vom Marktpreis ab und kann in "
+       "Monaten mit hohem Tarif entfallen. Verlässlich ist der Abnehmervorteil in den Stunden, in denen Sie "
+       "selbst aus der Gemeinschaft beziehen: bis zu 57 Prozent weniger Netzentgelt und keine "
        "Elektrizitätsabgabe im Nahbereich.", label="Beispiel:")}
 <p>Der Netzentgelt-Abschlag gilt nur im Nahbereich, also am selben Trafo oder Umspannwerk. Wie er sich
 zusammensetzt, steht im Artikel {a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.
@@ -160,10 +176,11 @@ ist er nicht relevant. Keine Steuerberatung, maßgeblich sind die Informationen 
 (siehe Quellen).</p>
 """),
         ("Fazit: OeMAG-Einspeisetarif und Energiegemeinschaft", "fazit", f"""
-<p>Der OeMAG-Tarif ist 2026 kein Ertragsmodell mehr, sondern ein Auffangnetz auf gesetzlichem
-Mindestniveau. Wer seinen Überschuss besser verwerten will, erhöht zuerst den Eigenverbrauch und verkauft
-den Rest in einer Energiegemeinschaft an die Nachbarschaft. Beides zusammen bringt einen dreistelligen
-Betrag im Jahr und macht Sie unabhängiger von der Börse. Die OeMAG bleibt im Hintergrund für alles, was
+<p>Der OeMAG-Tarif ist 2026 kein planbares Ertragsmodell, sondern ein Auffangnetz, das im dritten
+Quartal zwischen 6,146 Cent (Juli) und 10,168 Cent (September) schwankte. Wer seinen Überschuss besser
+verwerten will, erhöht zuerst den Eigenverbrauch und teilt den Rest in einer Energiegemeinschaft mit der
+Nachbarschaft: zu einem fix vereinbarten Preis und mit Netzentgelt-Rabatt beim Bezug. Beides zusammen
+macht Sie unabhängiger von der Börse. Die OeMAG bleibt im Hintergrund für alles, was
 übrig ist. Den Beitritt beschreibt der Artikel {a('/energiegemeinschaft-beitreten/', 'Energiegemeinschaft beitreten')}.</p>
 {A.cta("Überschuss neu verwerten: Speicher, EMS, Energiegemeinschaft",
        "Wir prüfen Ihre bestehende Anlage und zeigen, welcher Hebel bei Ihnen am meisten bringt.",
@@ -188,21 +205,23 @@ Betrag im Jahr und macht Sie unabhängiger von der Börse. Die OeMAG bleibt im H
 
     "faq": [
         ("Wie hoch ist der OeMAG-Einspeisetarif aktuell?",
-         "Für Juli 2026 beträgt der OeMAG-Marktpreis für Photovoltaik 6,146 Cent je Kilowattstunde (Stand: "
-         "September 2026). Die Folgemonate können gesetzlich nicht unter dieser Untergrenze liegen, solange der "
-         "Q3-Marktpreis von 10,923 Cent gilt."),
-        ("Warum ist der OeMAG-Tarif so niedrig?",
-         "Weil er dem Börsenpreis zu den Stunden folgt, in denen PV-Anlagen einspeisen. Mittags ist so viel "
-         "Solarstrom im Netz, dass die Day-Ahead-Preise niedrig oder negativ sind. Die gesetzliche Untergrenze "
-         "von 60 Prozent des Quartalsmarktpreises verhindert, dass der Tarif noch weiter fällt."),
+         "Für September 2026 beträgt der OeMAG-Marktpreis für Photovoltaik 10,168 Cent je Kilowattstunde (Stand: "
+         "Oktober 2026). Im Juli 2026 lag er mit 6,146 Cent an der gesetzlichen Untergrenze. Der Wert schwankt "
+         "monatlich innerhalb des Korridors aus Quartalsmarktpreis (Q3 2026: 10,923 Cent) und 60 Prozent davon."),
+        ("Warum schwankt der OeMAG-Tarif so stark?",
+         "Weil er dem Börsenpreis zu den Stunden folgt, in denen PV-Anlagen einspeisen. In Monaten mit viel "
+         "Mittagssolarstrom sind die Day-Ahead-Preise niedrig oder negativ, der Tarif fällt auf die Untergrenze "
+         "(Juli 2026: 6,146 Cent). Ziehen die Börsenpreise an, nähert er sich der Obergrenze (September 2026: "
+         "10,168 Cent). Die gesetzliche Untergrenze von 60 Prozent des Quartalsmarktpreises begrenzt den Absturz."),
         ("Muss ich den OeMAG-Vertrag kündigen, wenn ich einer Energiegemeinschaft beitrete?",
          "Nein. Die Gemeinschaft ordnet nur den zeitgleich verbrauchten Anteil zu. Der restliche Überschuss wird "
          "weiterhin über den OeMAG-Vertrag zum Marktpreis vergütet. Der OeMAG-Vertrag bleibt als Auffangnetz "
          "bestehen."),
         ("Wie viel mehr bringt eine Energiegemeinschaft gegenüber der OeMAG?",
-         "Typische EG-Einspeisepreise liegen bei 8 bis 12 Cent gegenüber 6,146 Cent bei der OeMAG im Juli 2026. "
-         "Bei 7.000 kWh Überschuss und 60 Prozent Zuordnung sind das rund 160 Euro Mehrerlös im Jahr, plus den "
-         "Vorteil beim eigenen Bezug aus der Gemeinschaft."),
+         "Das hängt vom Monat ab. Typische EG-Einspeisepreise liegen bei 8 bis 12 Cent (Beispielwerte). Gegenüber "
+         "dem Juli-Wert der OeMAG von 6,146 Cent ist das ein Plus, gegenüber dem September-Wert von 10,168 Cent "
+         "nicht. Verlässlich sind der fixe Preis, der Bezugsvorteil mit bis zu 57 Prozent weniger Netzentgelt im "
+         "Nahbereich und die wegfallende Elektrizitätsabgabe."),
         ("Ist ein Einspeisevertrag beim Lieferanten besser als die OeMAG?",
          "Teils liegen diese Tarife mit 5 bis 12 Cent über der OeMAG, sie sind aber meist an den Bezugstarif "
          "gekoppelt, oft befristet und folgen mit Verzögerung demselben Börsenpreis. Vergleichen Sie immer "
@@ -211,16 +230,17 @@ Betrag im Jahr und macht Sie unabhängiger von der Börse. Die OeMAG bleibt im H
          "Für Privatpersonen sind Erlöse bis 12.500 kWh im Jahr bei Anlagen bis 35 kWp einkommensteuerfrei. Das "
          "gilt auch für Erlöse aus Energiegemeinschaften. Darüber hinausgehende Mengen sind steuerpflichtig. "
          "Keine Steuerberatung."),
-        ("Wann wird der OeMAG-Tarif wieder steigen?",
-         "Erst wenn die Mittagspreise an der Börse über die Untergrenze steigen, was typischerweise in den "
-         "Wintermonaten der Fall ist. Für die Sommermonate ist bis auf Weiteres mit Werten an der Untergrenze zu "
-         "rechnen, im Q3 2026 also 6,146 Cent."),
+        ("Wie entwickelt sich der OeMAG-Tarif?",
+         "Er folgt den Börsenpreisen zu den Einspeisestunden. Im Juli 2026 lag er an der Untergrenze (6,146 Cent), "
+         "im September 2026 mit 10,168 Cent nahe der Obergrenze von 10,923 Cent. In Monaten mit viel "
+         "Mittagssolarstrom ist mit niedrigen Werten zu rechnen, eine verlässliche Prognose für einzelne Monate "
+         "gibt es nicht. Wir aktualisieren die Werte monatlich nach Veröffentlichung durch die OeMAG."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant und installiert PV-Anlagen, "
                     "Speicher und Energiemanagementsysteme in Kärnten und der Steiermark und begleitet Kunden beim "
                     "Einstieg in Energiegemeinschaften. Die Marktpreise werden monatlich anhand der Veröffentlichungen "
-                    "von OeMAG und E-Control aktualisiert. Keine Rechts- oder Steuerberatung."),
+                    "von OeMAG und E-Control aktualisiert, Stand Oktober 2026. Keine Rechts- oder Steuerberatung."),
     "sources": [
         ("OeMAG: Marktpreis", "https://www.oem-ag.at/marktpreis"),
         ("E-Control: Aktueller Marktpreis gemäß § 41 ÖSG",

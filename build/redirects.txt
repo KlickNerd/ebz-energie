@@ -17,6 +17,9 @@
 # Slug-Aenderung Leistungsseite (GSC: 4 Klicks in 3 Monaten, kein Risiko)
 /waermepumpen-installateur/                        /waermepumpe/
 
+# Rechner: alter Live-Slug -> neue Rechnerseite (Briefing solarrechner, Platz 8 'pv rechner oesterreich')
+/ebz-solarrechner/                                 /solarrechner/
+
 # Alte Seiten, deren Thema jetzt ein Ratgeber abdeckt
 /foerderung-photovoltaik-kaernten/                 /photovoltaik-foerderung-kaernten/
 /photovoltaik-foerderung-oesterreich/              /photovoltaik-foerderung-oesterreich-2026/

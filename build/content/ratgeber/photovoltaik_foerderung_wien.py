@@ -29,7 +29,7 @@ CALLS_TABLE = A.table(
     [
         ["Call 1", "23. April bis 11. Mai 2026", "erster Call des Jahres, meist hohe Nachfrage"],
         ["Call 2", "16. bis 30. Juni 2026", "Sommer-Call"],
-        ["Call 3", "ab 8. Oktober 2026", "Herbst-Call"],
+        ["Call 3", "8. bis 22. Oktober 2026", "Herbst-Call, letzter Call im bisherigen System"],
     ],
     hl_cols=(1,),
 )
@@ -53,7 +53,7 @@ ARTICLE = {
         "Wien + EAG: <b>nicht kombinierbar</b>",
     ],
     "date_published": "2026-04-10",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-09",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch zur Photovoltaik-Förderung mit Unterlagen und Taschenrechner",
 
@@ -67,7 +67,7 @@ ARTICLE = {
         "Rechenbeispiel EAG: 8 kWp mit 8 kWh Speicher bringen 2.400 € Zuschuss plus 360 € Made-in-Europe-Bonus, "
         "in Summe rund 2.760 €*.",
         "Der EAG-Antrag muss vor Inbetriebnahme gestellt werden. Die Calls 2026: 23. April bis 11. Mai, "
-        "16. bis 30. Juni und ab 8. Oktober.",
+        "16. bis 30. Juni und 8. bis 22. Oktober.",
     ],
     "kpis": [
         ("150 €/kWp", "EAG-Zuschuss Kategorie A (bis 10 kWp)"),
@@ -223,7 +223,7 @@ und Sicherheitsanforderungen.</p>
      "Diese Unterlagen müssen bei Antragstellung vorliegen."),
     ("EAG-Antrag im Fördercall",
      "Online über die EAG-Abwicklungsstelle, in Kategorie A und B mit Ticketziehung. Zwingend vor Inbetriebnahme. "
-     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober."),
+     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober."),
     ("Errichtung, Inbetriebnahme, Endabrechnung",
      "Nach Errichtung und Inbetriebnahme werden Rechnungen und Nachweise eingereicht, danach erfolgt die "
      "Auszahlung des Zuschusses."),
@@ -248,6 +248,11 @@ Gründächer. Für eine private Dachanlage mit Speicher sind über die EAG rund 
 muss sich aber vorab entscheiden, weil beide Schienen nicht kombinierbar sind.</p>
 <p><small>Stand: Mai 2026. Förderhöhen, Budgets und Fristen können sich ändern, maßgeblich sind die
 Richtlinien der EAG-Abwicklungsstelle (OeMAG) und der Stadt Wien.</small></p>
+<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
+bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
+und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
+Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
+sind noch offen.</p>
 {A.cta("Förderstrategie für Ihr Wiener Projekt",
        "Wir rechnen EAG und Wiener Paket für Ihr Dach oder Ihre Fassade durch und übernehmen die Antragstellung "
        "in der richtigen Reihenfolge.",
@@ -293,7 +298,7 @@ Richtlinien der EAG-Abwicklungsstelle (OeMAG) und der Stadt Wien.</small></p>
          "Mehrgeschosswohnbauten, Flugdächern und Gründächern. Für Mehrgeschosswohnbau gab es zusätzlich das "
          "Beratungsprogramm „1, 2, 3 Sonnengutschein“ mit drei kostenlosen Modulen, das laut Stadt bis 31. März 2026 lief."),
         ("Wann sind die EAG-Fördercalls 2026?",
-         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und ab 8. Oktober 2026. In den "
+         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und 8. bis 22. Oktober 2026. In den "
          "Kategorien A und B (bis 20 kWp) gilt First come, first served mit Ticketziehung. Der Antrag muss vor "
          "Inbetriebnahme der Anlage gestellt werden."),
         ("Gibt es in Wien 2026 eine Speicherförderung?",
