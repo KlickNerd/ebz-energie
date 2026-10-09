@@ -306,8 +306,6 @@ FINDER_JS = """
 
 
 def _finder_section():
-    from urllib.parse import quote
-
     def opts(group, items, active):
         return "".join(
             f'<button type="button" class="ff__opt" data-group="{group}" data-val="{val}" '
@@ -324,7 +322,6 @@ def _finder_section():
             bcls, btxt = BADGE[status]
             title = f"{vlabel} {ophrase}"
             active = " is-active" if (vk, ok_) == DEFAULT else ""
-            anliegen = quote(f"Förderung prüfen: {title}")
             results += f"""
         <article class="ff-result{active}" data-v="{vk}" data-o="{ok_}">
           <div>
@@ -338,7 +335,7 @@ def _finder_section():
             <div><dt>Unser Tipp</dt><dd>{TIPP[(vk, ok_)]}</dd></div>
           </dl>
           <div class="ff-btns">
-            <a class="btn btn--primary" href="/kontakt/?anliegen={anliegen}">Förderung für mein Projekt prüfen</a>
+            <a class="btn btn--primary" href="/foerderrechner/?v={vk}&amp;o={ok_}">Förderung für mein Projekt prüfen</a>
             {a(DETAIL[vk][ok_], 'Alle Details im Ratgeber', cls='btn btn--light')}
           </div>
         </article>"""
@@ -456,6 +453,7 @@ def build():
             ("waermepumpe", "Wärmepumpe"),
             ("finanzierung", "Finanzierung: Eigentum ab Tag 1"),
             ("solarrechner", "Solarrechner: Kosten und Ertrag"),
+            ("foerderrechner", "Förderrechner: Ihre Förderung berechnen"),
         ]),
         C.contact_section(
             "Welche Förderung passt zu Ihrem Projekt?",

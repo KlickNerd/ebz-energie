@@ -499,23 +499,24 @@ p{margin:0 0 1rem}
   .about-media{order:-1}.about-values{grid-template-columns:1fr}}
 
 /* --- Founder story (Mario): dunkler Editorial-Block -------------------- */
+/* Portrait sitzt als Freisteller in einem eigenen Rahmen, mittig zur Textspalte (kein Leerraum darueber). */
 .fstory{position:relative;overflow:hidden;color:#fff;border-radius:calc(var(--radius) + 8px);
   background:linear-gradient(135deg,var(--petrol),var(--petrol-3));box-shadow:var(--shadow);
-  display:grid;grid-template-columns:300px 1fr;gap:clamp(24px,4vw,64px);align-items:end;
-  padding:clamp(28px,4vw,52px) clamp(24px,4vw,56px) 0}
+  display:grid;grid-template-columns:clamp(300px,40%,460px) 1fr;gap:clamp(24px,3.5vw,56px);align-items:center;
+  padding:clamp(28px,4vw,52px) clamp(24px,4vw,56px)}
 .fstory::before{content:"";position:absolute;inset:0;opacity:.35;pointer-events:none;
   background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),
     linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
   background-size:44px 44px;mask-image:radial-gradient(circle at 80% 0%,#000,transparent 70%)}
-.fstory::after{content:"";position:absolute;left:-40px;bottom:-120px;width:440px;height:440px;
-  border-radius:50%;background:radial-gradient(circle,rgba(245,166,35,.32),transparent 68%);pointer-events:none}
-.fstory__media{position:relative;z-index:1;align-self:end;text-align:center}
-.fstory__media img{width:100%;max-width:280px;height:auto;display:block;margin:0 auto;
+.fstory__media{position:relative;z-index:1;overflow:hidden;border-radius:var(--radius);
+  border:1px solid rgba(255,255,255,.14);padding-top:clamp(20px,3vw,40px);
+  background:radial-gradient(circle at 50% 72%,rgba(245,166,35,.42),rgba(245,166,35,0) 64%),rgba(255,255,255,.06)}
+.fstory__media img{width:116%;max-width:none;height:auto;display:block;margin:0 -8%;
   filter:drop-shadow(0 24px 40px rgba(0,0,0,.45))}
 .fstory__badge{position:absolute;left:50%;transform:translateX(-50%);bottom:18px;display:inline-flex;
   gap:8px;align-items:center;background:var(--amber);color:#1b1200;border-radius:999px;padding:8px 14px;
   font-family:var(--font-head);font-weight:700;font-size:.85rem;white-space:nowrap;box-shadow:var(--shadow-sm)}
-.fstory__text{position:relative;z-index:1;padding-bottom:clamp(28px,4vw,52px)}
+.fstory__text{position:relative;z-index:1}
 .fstory .eyebrow{color:var(--amber)}
 .fstory h2{color:#fff}
 .fstory p{color:#dbe7ec}
@@ -525,10 +526,8 @@ p{margin:0 0 1rem}
 .fstory cite{font-style:normal;font-family:var(--font-head);font-weight:700;color:#fff}
 .fstory cite small{display:block;font-family:var(--font-body);font-weight:600;color:#9fbcc6}
 @media(max-width:820px){
-  .fstory{grid-template-columns:1fr;align-items:start;gap:8px}
-  .fstory__text{order:1;padding-bottom:12px}
-  .fstory__media{order:2;margin-top:8px}
-  .fstory__media img{max-width:230px}
+  .fstory{grid-template-columns:1fr;align-items:start;gap:22px}
+  .fstory__media{max-width:360px;width:100%;margin-inline:auto}
 }
 
 /* --- Finance band ------------------------------------------------------- */
@@ -896,6 +895,52 @@ p{margin:0 0 1rem}
 .calc__assume ul{color:var(--muted);font-size:.92rem}
 @media(max-width:860px){.calc{grid-template-columns:1fr}.calc .form-card{position:static}}
 @media(max-width:480px){.calc__grid,.calc .field--row{grid-template-columns:1fr}}
+
+/* --- Foerderrechner (/foerderrechner/) --------------------------------- */
+.fr-set{border:0;padding:0;margin:0 0 18px;min-width:0}
+.fr-set legend{font-weight:600;margin-bottom:10px;padding:0}
+.fr-chips{display:flex;flex-wrap:wrap;gap:8px}
+.fr-chip{position:relative;cursor:pointer}
+.fr-chip input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.fr-chip span{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-weight:700;font-size:.92rem;
+  padding:10px 16px;border:1.5px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);
+  transition:background .15s,border-color .15s,color .15s}
+.fr-chip:hover span{border-color:var(--petrol)}
+.fr-chip input:checked+span{background:var(--petrol);border-color:var(--petrol);color:#fff}
+.fr-chip input:checked+span::before{content:"✓";color:var(--amber)}
+.fr-chip input:focus-visible+span{outline:3px solid var(--amber);outline-offset:2px}
+.fr-hide{display:none!important}
+.calc__big--range{font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.1}
+.fr-lines{display:grid;gap:10px;margin:22px 0}
+.fr-line{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:13px 16px}
+.fr-line__top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:2px 14px}
+.fr-line__top span{font-family:var(--font-head);font-weight:700;font-size:.95rem;color:#fff;min-width:0;overflow-wrap:anywhere}
+.fr-line__top b{font-family:var(--font-head);font-weight:800;font-size:1.15rem;white-space:nowrap;color:#fff}
+.fr-line.is-zero .fr-line__top b{color:#9fbcc6}
+.fr-line p{margin:6px 0 0;font-size:.9rem;line-height:1.5;color:#c6dbe2}
+.fr-st{display:inline-flex;align-items:center;gap:7px;margin-top:8px;font-family:var(--font-head);font-weight:700;
+  font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:#e4eef1}
+.fr-st::before{content:"";width:8px;height:8px;border-radius:50%;background:#9aa9b0;flex:0 0 auto}
+.fr-st--ok::before{background:#3ccf8e}
+.fr-st--soon::before,.fr-st--check::before{background:var(--amber)}
+.fr-bonus{font-size:.9rem;line-height:1.5;color:#c6dbe2;margin:-8px 0 20px}
+.fr-sub{font-family:var(--font-head);font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--amber);margin:0 0 8px}
+.fr-steps{margin:0 0 22px;padding:0 0 0 20px;color:#e4eef1;font-size:.93rem;line-height:1.5}
+.fr-steps li{margin-bottom:6px}
+@media(max-width:480px){.calc__res{padding:22px 18px}.fr-line{padding:12px 14px}
+  .fr-chip span{padding:9px 13px;font-size:.88rem}.calc .form-card{padding:22px 18px}}
+
+/* --- Kontrast-Korrekturen (Audit 10.10.2026, alle Seiten gemessen) -------
+   Regeln fuer helle Bereiche duerfen Text in dunklen Bereichen nicht einfaerben und umgekehrt. */
+.dark .mediatext p{color:#c6dbe2}
+.dark .mediatext .eyebrow{color:var(--amber)}
+.dark .mediatext a:not(.btn),.dark .checklist a,.panel--dark a:not(.btn),.prose-panel--dark a:not(.btn),
+.art-box--p a:not(.btn),.fstory a:not(.btn),.calc__res a:not(.btn){color:#ffc45c}
+.dark .form-card p,.dark .form-card .form-note,.contact .form-card p,.contact .form-card .form-note{color:var(--muted)}
+.dark .form-card a:not(.btn){color:var(--petrol)}
+.panel--dark .form-note,.finance .form-note{color:#c6dbe2}
+.ff-badge--ok{background:#15804e}
 
 /* --- Reveal ------------------------------------------------------------- */
 .eg-reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}

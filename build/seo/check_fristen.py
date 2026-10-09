@@ -7,7 +7,7 @@ import glob, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Seiten, die Fristen tragen DUERFEN
-ALLOW = {"/foerderungen/", "/ratgeber/"}
+ALLOW = {"/foerderungen/", "/foerderrechner/", "/ratgeber/"}
 # Nur Foerderfristen: Call-Begriffe und die bekannten Stichtage (Liste bei neuen Calls erweitern).
 # Rechts-/Historiendaten (USt-Nullsatz 1.4.2025, Zustimmungsfiktion 1.9.2024, ElWG 1.10.2026) sind erlaubt.
 PAT = re.compile(

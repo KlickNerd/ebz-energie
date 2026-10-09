@@ -676,7 +676,7 @@ def founder_story(eyebrow, h2, paragraphs, quote, name, role, badge=None,
     <div class="wrap">
       <div class="fstory eg-reveal">
         <div class="fstory__media">
-          <img src="{IMG['mario']}" alt="{name}, {role}" loading="lazy" width="325" height="307">
+          <img src="{IMG['mario']}" alt="{name}, {role}" loading="lazy" width="800" height="750">
           {badge_html}
         </div>
         <div class="fstory__text">
@@ -724,7 +724,7 @@ def finance_band():
           <span style="color:#c6dbe2">Komplettanlage inklusive Speicher</span>
           <b>ab 147 €</b>
           <span style="color:#c6dbe2">pro Monat*</span>
-          <p class="form-note" style="color:#9fbcc6;margin-top:14px">*Beispielkonditionen,
+          <p class="form-note" style="margin-top:14px">*Beispielkonditionen,
           abhängig von Anlagengröße und Laufzeit.</p>
         </div>
       </div>

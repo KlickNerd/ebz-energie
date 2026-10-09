@@ -104,6 +104,7 @@ S = {
     "foerderung_kaernten": "/photovoltaik-foerderung-kaernten/",  # WP-Beitrag 2026; alte Seite /foerderung-photovoltaik-kaernten/ -> 301
     "foerderung_steiermark": "/foerderung-photovoltaik-steiermark/",
     "foerderungen": "/foerderungen/",  # Hub: alle Foerderungen 2026 (PV, Speicher, Waermepumpe, EMS, Balkon)
+    "foerderrechner": "/foerderrechner/",  # Rechner hinter dem Finder-Button der Foerderseite
     "pv_villach": "/photovoltaik-villach/",
     "pv_wolfsberg": "/photovoltaik-wolfsberg/",
     "marktpreis": "/marktpreis-2026/",
