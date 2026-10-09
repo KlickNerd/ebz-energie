@@ -600,40 +600,52 @@ p{margin:0 0 1rem}
 @media(max-width:820px){.linkgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.linkgrid{grid-template-columns:1fr}}
 
-/* --- Foerder-Finder (/foerderungen/) ---------------------------------- */
-.fhero{padding-bottom:clamp(96px,11vw,140px)}
-.fhero h1{font-size:clamp(1.9rem,4vw,2.9rem)}
-.ff-wrap{position:relative;z-index:2;margin-top:clamp(-110px,-9vw,-72px);padding-bottom:clamp(36px,5vw,64px);scroll-margin-top:90px}
-.ff{background:var(--card);border:1px solid var(--line);border-radius:calc(var(--radius) + 6px);box-shadow:var(--shadow);
-  padding:clamp(20px,3.2vw,36px);max-width:1000px;margin-inline:auto}
-.ff__step{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;align-items:center;margin-bottom:22px}
-.ff__n{width:34px;height:34px;border-radius:50%;background:var(--amber);color:#1b1200;font-family:var(--font-head);
-  font-weight:800;display:grid;place-items:center}
-.ff__q{font-family:var(--font-head);font-weight:800;font-size:1.15rem;color:var(--ink)}
-.ff__opts{grid-column:2;display:flex;flex-wrap:wrap;gap:10px}
-.ff__opt{font:inherit;font-family:var(--font-head);font-weight:700;font-size:.95rem;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
-  padding:11px 16px;border-radius:999px;border:2px solid var(--line);background:#fff;color:var(--ink);transition:.15s}
-.ff__opt .ic{color:var(--amber-2)}
-.ff__opt:hover{border-color:var(--petrol)}
-.ff__opt[aria-pressed="true"]{background:var(--petrol);border-color:var(--petrol);color:#fff}
-.ff__opt[aria-pressed="true"] .ic{color:var(--amber)}
-.ff-result{display:none;background:linear-gradient(160deg,var(--petrol),var(--petrol-3));color:#fff;border-radius:var(--radius);
-  padding:clamp(20px,3vw,32px);margin-top:6px}
-.ff-result.is-active{display:grid;grid-template-columns:minmax(0,330px) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:start}
-.ff-result h3{color:#fff;font-size:1.1rem;margin:10px 0 14px}
-.ff-badge{display:inline-block;font-family:var(--font-head);font-weight:700;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;
-  border-radius:999px;padding:5px 12px}
-.ff-badge--ok{background:#1f9d62;color:#fff}
-.ff-badge--part{background:var(--amber);color:#1b1200}
-.ff-badge--end{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.3)}
-.ff-sum b{display:block;font-family:var(--font-head);font-weight:800;font-size:clamp(1.7rem,3.3vw,2.2rem);line-height:1.1;color:var(--amber);text-wrap:balance}
-.ff-sum span{display:block;margin-top:8px;color:#c6dbe2;font-size:.95rem;line-height:1.4}
-.ff-rows{margin:0;display:grid;gap:12px}
-.ff-rows>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px 16px}
-.ff-rows dt{font-family:var(--font-head);font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
-.ff-rows dd{margin:4px 0 0;color:#e4eef1;font-size:.97rem;line-height:1.5}
-.ff-btns{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
-.ff-foot{font-size:.82rem;color:var(--muted);margin:16px 0 0;text-align:center}
+/* --- Foerder-Finder (/foerderungen/) ----------------------------------
+   Fragen stehen im dunklen Hero, das Ergebnis ist EINE helle Karte mit einer Rechenzeile. */
+.fhero{padding-bottom:clamp(150px,15vw,200px)}
+.fhero .page-hero__inner{max-width:1100px}
+.fhero h1{font-size:clamp(1.8rem,3.6vw,2.6rem);max-width:22ch;margin-inline:auto}
+.ffq{margin-top:28px}
+.ffq__label{font-family:var(--font-head);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--amber);margin:0 0 12px}
+.ffq__opts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.ffq__opts--6{display:grid;grid-template-columns:repeat(6,max-content)}
+@media(max-width:1140px){.ffq__opts--6{grid-template-columns:repeat(3,max-content)}}
+@media(max-width:600px){.ffq__opts--6{grid-template-columns:1fr 1fr}}
+.ff__opt{font:inherit;font-family:var(--font-head);font-weight:700;font-size:.95rem;line-height:1.2;cursor:pointer;
+  padding:11px 18px;border-radius:999px;border:1.5px solid rgba(255,255,255,.38);background:transparent;color:#fff;transition:.15s}
+.ff__opt:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.ff__opt[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:#1b1200}
+.ff-wrap{position:relative;z-index:2;margin-top:clamp(-150px,-11vw,-110px);padding-bottom:clamp(28px,4vw,48px);scroll-margin-top:90px}
+.ff-card{background:var(--card);border-radius:calc(var(--radius) + 6px);box-shadow:var(--shadow);max-width:860px;
+  margin-inline:auto;padding:clamp(24px,3.6vw,42px);text-align:center}
+.ff-result{display:none}
+.ff-result.is-active{display:block}
+.ff-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-weight:700;font-size:.74rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ff-badge::before{content:"";width:10px;height:10px;border-radius:50%;background:#9aa9b0}
+.ff-badge--ok::before{background:#1f9d62}
+.ff-badge--part::before{background:var(--amber)}
+.ff-title{font-family:var(--font-head);font-weight:800;line-height:1.15;color:var(--ink);font-size:clamp(1.35rem,2.6vw,1.8rem);margin:10px 0 4px}
+.ff-sub{color:var(--muted);margin:0 0 22px}
+.ff-eq{display:flex;align-items:center;justify-content:center;background:var(--bg);border-radius:16px;padding:20px 12px}
+.ff-eq__cell{flex:1 1 0;min-width:0;padding:0 10px}
+.ff-eq__cell span{display:block;font-family:var(--font-head);font-weight:700;font-size:.74rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted)}
+.ff-eq__cell b{display:block;margin-top:6px;font-family:var(--font-head);font-weight:800;line-height:1.15;color:var(--ink);
+  font-size:clamp(1.2rem,2.5vw,1.6rem)}
+.ff-eq__cell--sum b{color:var(--petrol);font-size:clamp(1.5rem,3.3vw,2.15rem)}
+.ff-eq__op{flex:0 0 auto;font-family:var(--font-head);font-weight:800;font-size:1.5rem;line-height:1;color:var(--amber-2)}
+.ff-hint{max-width:60ch;margin:20px auto 0;color:#2b3d46}
+.ff-actions{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:center;align-items:center;margin-top:22px}
+.ff-more{font-family:var(--font-head);font-weight:700;color:var(--petrol);text-decoration:none}
+.ff-more:hover{text-decoration:underline}
+.ff-foot{font-size:.82rem;color:var(--muted);margin:16px auto 0;text-align:center}
+@media(max-width:600px){
+  .ff__opt{padding:9px 14px;font-size:.88rem}
+  .ff-eq{flex-direction:column;gap:8px;padding:18px 12px}
+  .ff-actions .btn{width:100%;justify-content:center}
+}
 .fstatus{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1000px;margin-inline:auto}
 .fstatus>div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
 .fstatus b{display:flex;align-items:center;gap:8px;font-family:var(--font-head);font-weight:800;color:var(--ink);margin-bottom:6px}
@@ -654,11 +666,7 @@ p{margin:0 0 1rem}
 .fall summary::after{content:"\002B";color:var(--amber-2);font-size:1.2rem}
 .fall[open] summary::after{content:"\2212"}
 .fall summary:hover{border-color:var(--petrol)}
-@media(max-width:860px){.ff-result.is-active{grid-template-columns:1fr}.fstatus{grid-template-columns:1fr}}
-@media(max-width:560px){.ff__step{grid-template-columns:1fr}.ff__n{display:none}
-  .ff__opts{grid-column:1;display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .ff__opt{padding:10px 12px;font-size:.86rem;line-height:1.2;border-radius:14px;text-align:left}
-  .ff-btns .btn{width:100%;justify-content:center}}
+@media(max-width:860px){.fstatus{grid-template-columns:1fr}}
 
 /* --- Bundeslaender-Kacheln (Foerderseite) ------------------------------ */
 .landgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:980px;margin-inline:auto}
