@@ -70,9 +70,11 @@ FINANZIERUNG = {
                  "vorbehaltlich Bonitätsprüfung."),
 }
 
-# Kontaktformular: POST (JSON) an n8n-Webhook, der per Gmail an office@ weiterleitet.
-# Workflow-Import: build/n8n-workflow-kontakt.json. Fallback im Browser: mailto-Link.
-FORM_ENDPOINT = "https://klicknerds.app.n8n.cloud/webhook/ebz-kontakt"
+# Kontaktformular: POST (JSON) an den Make-Webhook "EBZ Kontaktformular" (Szenario "EBZ Kontaktformular -> E-Mail",
+# ID 6582422): Antwort 200 {"ok": true}, dann Gmail an office@, bei Fehler Slack-Warnung und 3 Wiederholungen.
+# Ueberwacht vom "Formular-Waechter" (einmal taeglich im 8-Uhr-Lauf). Fallback im Browser: mailto-Link.
+# (Seit 10.10.2026 statt n8n; build/n8n-workflow-kontakt.json ist nur noch Archiv.)
+FORM_ENDPOINT = "https://hook.us2.make.com/1fkgm8zywyy6jqswmqibte15sxb349n7"
 
 AUTHOR = "Mario Zintl"
 AUTHOR_ROLE = "Geschäftsführung EBZ Energie GmbH"
