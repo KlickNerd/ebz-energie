@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ebz-photovoltaik.at/</loc><lastmod>2026-10-10</lastmod><priority>1.0</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/ab-wann-lohnt-sich-photovoltaik-mit-speicher/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/ab-wann-lohnt-sich-photovoltaik-mit-speicher/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/balkonkraftwerk-foerderung-in-oesterreich/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/balkonkraftwerke/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/batteriespeicher/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
@@ -9,7 +9,7 @@
   <url><loc>https://ebz-photovoltaik.at/dynamischer-stromtarif/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/einspeisetarif-fuer-photovoltaik/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/elwg-beschluss-oesterreich/</loc><lastmod>2026-09-24</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/ems-foerderung/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/ems-foerderung/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-beitreten/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-finden/</loc><lastmod>2026-09-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-gruenden/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
@@ -19,48 +19,63 @@
   <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-netzkosten/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-privat/</loc><lastmod>2026-09-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-rechner/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-steiermark/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-steiermark/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft-villach-klagenfurt/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/energiegemeinschaft/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/energiemanagementsystem/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/finanzierung/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/flexibler-stromtarif/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/foerderrechner/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/foerderung-fuer-pv-speicher/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/foerderung-photovoltaik-steiermark/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/foerderung-fuer-pv-speicher/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/foerderung-photovoltaik-steiermark/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/foerderung-pv-speicher-kaernten/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/foerderungen/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/funktionsweise-einer-waermepumpe/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/heizen-mit-waermepumpe/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/heizen-mit-waermepumpe/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/impressum/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/kontakt/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/kosten-einer-solaranlage/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/kosten-einer-waermepumpe/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/landesfoerderungen-fuer-die-waermepumpe/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/kosten-einer-solaranlage/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/kosten-einer-waermepumpe/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/landesfoerderungen-fuer-die-waermepumpe/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/leistungen/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/leistungen/energiegemeinschaft-gewerbe/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/leistungen/energiegemeinschaft/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/marktpreis-2026/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/notstrom/</loc><lastmod>2026-09-24</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/notstrom/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/oemag-einspeisetarif/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-carport/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-deutschlandsberg/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-feldkirchen/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-burgenland/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-kaernten/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-niederoesterreich/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-oberoesterreich/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-oesterreich-2026/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-oesterreich-2026/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-salzburg/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-tirol/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-vorarlberg/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-foerderung-wien/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-fuer-waermepumpe/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-gewerbe/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-graz/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-hermagor/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-klagenfurt/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/photovoltaik-landesfoerderungen/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-landesfoerderungen/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-leibnitz/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-leoben/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-murtal/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-spittal/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-st-veit/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-steiermark/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-suedoststeiermark/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-villach/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-voelkermarkt/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-voitsberg/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/photovoltaik-weiz/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik-wolfsberg/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/photovoltaik/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/pv-speicher-nachruesten/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/pv-speicher-nachruesten/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/ratgeber/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/referenzen/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/referenzen/projekt-bitumendach-in-niederoesterreich/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
@@ -73,19 +88,20 @@
   <url><loc>https://ebz-photovoltaik.at/referenzen/projekt-pv-anlage-hotel-villach/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/referenzen/projekt-pv-wien/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/referenzen/projekt-stadthaus-in-graz/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/sanierungsoffensive-2026/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/sauber-heizen-fuer-alle-2026/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/sanierungsoffensive-2026/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/sauber-heizen-fuer-alle-2026/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/smart-meter-auslesen/</loc><lastmod>2026-09-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/smart-meter-opt-out/</loc><lastmod>2026-09-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/smart-meter/</loc><lastmod>2026-09-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/solaranlage-mieten-oder-kaufen/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/solarenergie/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/solarrechner/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/standorte/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/ueber-uns/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://ebz-photovoltaik.at/unternehmensfoerderung-von-waermepumpen/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/waermepumpe-im-altbau/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/waermepumpe-im-altbau/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/waermepumpe/</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ebz-photovoltaik.at/waermepumpenfoerderung-in-oesterreich/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ebz-photovoltaik.at/waermepumpenfoerderung-in-oesterreich/</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://ebz-photovoltaik.at/was-ist-ein-smart-meter/</loc><lastmod>2026-09-24</lastmod><priority>0.6</priority></url>
 </urlset>

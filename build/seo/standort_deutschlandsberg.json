@@ -1,0 +1,459 @@
+{
+  "slug": "standort_deutschlandsberg",
+  "path": "/photovoltaik-deutschlandsberg/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "primary": {
+    "keyword": "photovoltaik deutschlandsberg",
+    "volume_at": 20,
+    "kd": null,
+    "cpc": 5.41,
+    "intent": "commercial (lokal)",
+    "competition": "HIGH (78)",
+    "trend": "Saisonspitze Juni 2026 mit 50, Winter 10"
+  },
+  "secondary": [
+    {
+      "keyword": "pv anlage deutschlandsberg",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "wärmepumpe deutschlandsberg",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "heizungstausch deutschlandsberg",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    }
+  ],
+  "semantic": [
+    "Energienetze Steiermark",
+    "Umspannwerk Deutschlandsberg",
+    "Netzanschlusskonzept",
+    "Einspeiserportal",
+    "Einspeisekapazität",
+    "Steiermärkisches Baugesetz",
+    "meldepflichtig",
+    "Bauamt",
+    "Batteriespeicher",
+    "Wärmepumpe",
+    "Fernwärme",
+    "Energie Steiermark Wärme",
+    "SolarTool",
+    "Digitaler Atlas Steiermark",
+    "PVGIS",
+    "kWp",
+    "Eigenverbrauch",
+    "Energiegemeinschaft",
+    "Weststeiermark",
+    "Koralpe",
+    "Koralmbahn",
+    "Pionierstadt",
+    "Frauental an der Laßnitz",
+    "Stainz",
+    "Eibiswald",
+    "Wies",
+    "Bad Schwanberg",
+    "Groß Sankt Florian",
+    "Projektbericht mit 3D-Belegplan und Statikreport"
+  ],
+  "long_tail": [
+    {
+      "keyword": "photovoltaik frauental",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik wies",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik stainz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik eibiswald",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik schwanberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik groß st. florian",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik lannach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik weststeiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage weststeiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik schilcherland",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik bezirk deutschlandsberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv deutschlandsberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "solaranlage deutschlandsberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik firmen deutschlandsberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur deutschlandsberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe weststeiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "elektriker deutschlandsberg",
+      "volume_at": 70
+    },
+    {
+      "keyword": "installateur deutschlandsberg",
+      "volume_at": 70
+    },
+    {
+      "keyword": "installateur stainz",
+      "volume_at": 30
+    }
+  ],
+  "umfeld": [
+    {
+      "keyword": "photovoltaik steiermark",
+      "volume_at": 70
+    },
+    {
+      "keyword": "pv anlage steiermark",
+      "volume_at": 40
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik leibnitz",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik voitsberg",
+      "volume_at": 10
+    },
+    {
+      "keyword": "heizungstausch steiermark",
+      "volume_at": 10
+    },
+    {
+      "keyword": "solaranlage steiermark",
+      "volume_at": 10
+    }
+  ],
+  "questions": [
+    "Was kostet eine 10 kW PV-Anlage mit Speicher und Montage?",
+    "Wie viel Photovoltaik brauche ich, um 10.000 kWh Strom zu erzeugen?",
+    "Was ist die 60% Regel bei PV?",
+    "Was ändert sich 2026 mit Photovoltaik?",
+    "Wie wird der Photovoltaik-Ausbau in Österreich bis 2026 sein?",
+    "Welche Hersteller von PV-Modulen gibt es in Österreich?",
+    "Wie hoch sind die Kosten für eine Luftwärmepumpe in einem Einfamilienhaus in Österreich?",
+    "Ist Heizen mit Wärmepumpe billiger als mit Gas?",
+    "Welche Wärmepumpe ist in Österreich die beste?",
+    "Wer sind die Top-Hersteller von Wärmepumpen?"
+  ],
+  "serp": {
+    "features": {
+      "photovoltaik deutschlandsberg": [
+        "local_pack",
+        "people_also_ask"
+      ],
+      "wärmepumpe deutschlandsberg": [
+        "ai_overview",
+        "people_also_ask",
+        "knowledge_graph",
+        "related_searches"
+      ]
+    },
+    "local_pack": {
+      "photovoltaik deutschlandsberg (Austria)": [
+        {
+          "name": "PV-Vision Photovoltaik (Dietmannsdorf)",
+          "rating": "5 Sterne",
+          "reviews": 27,
+          "pos": 1
+        },
+        {
+          "name": "Herk Elektrotechnik (Grazer Str. 43)",
+          "rating": 4.5,
+          "reviews": 23,
+          "pos": 2
+        },
+        {
+          "name": "solarWORK montageservice gmbh (Preding)",
+          "rating": 4.7,
+          "reviews": 28,
+          "pos": 3
+        }
+      ]
+    },
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "herold.at",
+        "title": "Elektrotechnik in Deutschlandsberg, Steiermark",
+        "type": "portal"
+      },
+      {
+        "pos": 2,
+        "domain": "firmen.wko.at",
+        "title": "Alarmanlagenerrichter In Deutschlandsberg (Bezirk)",
+        "type": "portal"
+      },
+      {
+        "pos": 3,
+        "domain": "daibau.at",
+        "title": "Elektriker, Deutschlandsberg: Top 16 Elektroinstallateure",
+        "type": "portal"
+      },
+      {
+        "pos": 4,
+        "domain": "energiezentrum.dlbg.at",
+        "title": "Multifunktionales Energiezentrum Deutschlandsberg",
+        "type": "gemeinde (veraltet)"
+      },
+      {
+        "pos": 5,
+        "domain": "maschinenring.at",
+        "title": "PV-Anlagen: Maschinenring Raabtal",
+        "type": "anbieter (nicht lokal)"
+      },
+      {
+        "pos": 6,
+        "domain": "herold.at",
+        "title": "Solaranlagen in Dietmannsdorf im Sulmtal",
+        "type": "portal"
+      },
+      {
+        "pos": 7,
+        "domain": "gbc-solino.at",
+        "title": "Photovoltaik: GBC Solino",
+        "type": "anbieter"
+      },
+      {
+        "pos": 8,
+        "domain": "maschinenring.at",
+        "title": "PV-Anlagen: Voitsberg",
+        "type": "anbieter (nicht lokal)"
+      },
+      {
+        "pos": 9,
+        "domain": "pvatlas.at",
+        "title": "Photovoltaik in Deutschlandsberg: Ertrag und Förderung",
+        "type": "datenportal"
+      },
+      {
+        "pos": 10,
+        "domain": "herold.at",
+        "title": "Polz GmbH in 8522 Deutschlandsberg",
+        "type": "portal"
+      }
+    ],
+    "top10_waermepumpe": [
+      {
+        "pos": 1,
+        "domain": "kratky-gas.at",
+        "title": "Wärmepumpen",
+        "type": "anbieter (nicht lokal)"
+      },
+      {
+        "pos": 2,
+        "domain": "reichel.at",
+        "title": "Installateur für Wärmepumpen",
+        "type": "anbieter (nicht lokal)"
+      },
+      {
+        "pos": 3,
+        "domain": "firmen.wko.at",
+        "title": "Heizungstechniker In Deutschlandsberg (Bezirk)",
+        "type": "portal"
+      },
+      {
+        "pos": 4,
+        "domain": "herold.at",
+        "title": "Der Schrei Kälte Klima Wärmepumpen, Preding",
+        "type": "portal"
+      },
+      {
+        "pos": 5,
+        "domain": "geberit.at",
+        "title": "Erich Perkitsch Installationen",
+        "type": "händlerverzeichnis"
+      },
+      {
+        "pos": 6,
+        "domain": "daibau.at",
+        "title": "Klimaanlagen, Deutschlandsberg",
+        "type": "portal"
+      },
+      {
+        "pos": 7,
+        "domain": "ochsner.com",
+        "title": "OCHSNER Wärmepumpen",
+        "type": "hersteller"
+      },
+      {
+        "pos": 8,
+        "domain": "firmen.wko.at",
+        "title": "Wärmepumpe: 340 Unternehmen gefunden",
+        "type": "portal"
+      },
+      {
+        "pos": 9,
+        "domain": "bezirkstipp.at",
+        "title": "Klimatechniker in Deutschlandsberg, Steiermark",
+        "type": "portal"
+      }
+    ],
+    "ebz_rankings": "EBZ ist in beiden SERPs nicht in den Top 10 (Seite ist neu)."
+  },
+  "competitor_outline": [],
+  "gaps": [
+    "Beide SERPs bestehen fast nur aus Branchenverzeichnissen (Herold, WKO, Daibau) und ortsfremden Anbietern: Es gibt keine lokale Anbieterseite mit Inhalt zu Netz, Genehmigung und Förderung in Deutschlandsberg.",
+    "pvatlas.at rankt mit Ertrags- und Bestandszahlen (1.006 Anlagen, 12.354 kWp laut Snippet): Ertrag je kWp ist ein Rankingthema, auf der Seite mit PVGIS-Wert abgedeckt.",
+    "Local Pack ohne Adresse im Bezirk nicht erreichbar (PV-Vision, Herk, solarWORK)."
+  ],
+  "cannibalization": [
+    "/photovoltaik-steiermark/",
+    "/foerderung-photovoltaik-steiermark/",
+    "/photovoltaik-leibnitz/",
+    "/photovoltaik-voitsberg/"
+  ],
+  "ai_search_volume": [],
+  "recommendation": {
+    "title": "Photovoltaik Deutschlandsberg: PV & Wärmepumpe | EBZ",
+    "h1": "Photovoltaik in Deutschlandsberg: PV-Anlage, Speicher und Wärmepumpe aus einer Planung",
+    "description": "Photovoltaik und Wärmepumpe in Deutschlandsberg: rund 1.180 kWh Ertrag je kWp, Meldung statt Baubewilligung, Netzanschluss bei Energienetze Steiermark.",
+    "h2_outline": [
+      "PV-Anlage Deutschlandsberg: guter Ertrag, knappes Netz",
+      "Photovoltaik Deutschlandsberg: Stadt, Netz und Behörde auf einen Blick",
+      "Genehmigung und Netzanschluss in Deutschlandsberg: Meldung an die Stadt, Antrag beim Netzbetreiber",
+      "Heizungstausch Deutschlandsberg: Fernwärme prüfen, Wärmepumpe richtig planen",
+      "Förderung für Photovoltaik und Wärmepumpe in Deutschlandsberg",
+      "Referenzen in der Steiermark: zwei Projekte in Graz"
+    ],
+    "faq_add": [
+      "Photovoltaik Deutschlandsberg: Was kostet eine Anlage mit Speicher?",
+      "Wie viel Strom erzeugt eine Photovoltaikanlage in Deutschlandsberg?",
+      "Brauche ich in Deutschlandsberg eine Baubewilligung für die PV-Anlage?",
+      "Wer ist der Netzbetreiber in Deutschlandsberg und wie läuft der Netzanschluss?",
+      "Was bedeutet die fehlende freie Einspeisekapazität am Umspannwerk Deutschlandsberg?",
+      "Lohnt sich eine Wärmepumpe in Deutschlandsberg, wenn es Fernwärme gibt?",
+      "Muss ich eine Wärmepumpe in Deutschlandsberg bei der Gemeinde melden?",
+      "Gibt es eine Förderung der Stadt Deutschlandsberg für Photovoltaik oder Wärmepumpe?"
+    ],
+    "internal_links": [
+      "/photovoltaik-steiermark/ -> Photovoltaik in der Steiermark",
+      "/waermepumpe/ -> Wärmepumpe",
+      "/batteriespeicher/ -> Batteriespeicher",
+      "/leistungen/energiegemeinschaft/ -> Energiegemeinschaft",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft in der Steiermark",
+      "/foerderrechner/ -> Förderrechner"
+    ],
+    "notes": "Nachfrage ist klein (20 Suchen im Monat, Umlandorte je 10 oder 0), die SERP aber schwach besetzt: Verzeichnisse und ortsfremde Anbieter. Die Seite gewinnt über belegte lokale Fakten, die sonst niemand zusammenführt: 0,0 MW freie Einspeisekapazität am Umspannwerk Deutschlandsberg, Meldepflicht statt Bewilligung seit der Baugesetznovelle 2026, Fernwärmenetz mit 56,8 % erneuerbarem Anteil, PVGIS-Ertrag 1.180 kWh je kWp. Wärmepumpen-Keywords mit Ortsbezug haben kein messbares Volumen, die Sektion dient Long-Tail und KI-Antworten. Nächster Hebel: eine freigegebene Referenz aus dem Bezirk."
+  },
+  "lokale_fakten": [
+    {
+      "fakt": "11.675 Einwohner (1.1.2026), 179,1 km², Seehöhe Gemeindeamt 370 m, 3.908 Wohngebäude, 6.999 Wohnungen, 5.509 Privathaushalte",
+      "quelle": "https://www.landesentwicklung.steiermark.at/cms/dokumente/12256480_141979478/965eb940/60344.pdf"
+    },
+    {
+      "fakt": "Bezirk: 60.962 Einwohner, 863,5 km², 15 Gemeinden",
+      "quelle": "https://www.landesentwicklung.steiermark.at/cms/dokumente/12256480_141979478/1d0cea17/603.pdf"
+    },
+    {
+      "fakt": "Ortsteile Bad Gams, Deutschlandsberg, Freiland, Kloster, Osterwitz, Trahütten, Wildbach",
+      "quelle": "https://www.deutschlandsberg.at/"
+    },
+    {
+      "fakt": "Bauamt im Rathaus, Hauptplatz 35, 2. Stock, Bauberatung nach Terminvereinbarung",
+      "quelle": "https://www.deutschlandsberg.at/system/web/zusatzseite.aspx?detailonr=225309977&menuonr=225309978"
+    },
+    {
+      "fakt": "Förderseite der Stadt: kein Programm für PV, Speicher, Heizungstausch (8 Einträge, darunter Heizkostenzuschuss)",
+      "quelle": "https://www.deutschlandsberg.at/system/web/foerderung.aspx?menuonr=225283910"
+    },
+    {
+      "fakt": "PV auf Dach/Fassade unabhängig von der Größe meldepflichtig, Bewilligung über 3,50 m Anlagenhöhe; Batterie bis 20 kWh, bis 100 kWh mit Nachweis; Wärmepumpe meldepflichtig mit Datenblatt und Schallbestätigung",
+      "quelle": "https://www.technik.steiermark.at/cms/dokumente/11549819_58813874/8510f5cf/Erl%C3%A4uterungen%20zum%20Stmk%20Deregulierungsgesetz%20LGBL_19_2026.pdf"
+    },
+    {
+      "fakt": "Baugesetz in der Fassung LGBl. Nr. 20/2026 (ab 28.02.2026)",
+      "quelle": "https://www.technik.steiermark.at/cms/beitrag/11549819/58813874/"
+    },
+    {
+      "fakt": "Netzanschluss: Einspeiserportal, Netzanschlusskonzept 12 Monate, einmal um 12 Monate verlängerbar, Wirkleistungsvorgabe 3,68 bis 250 kW seit 1.12.2024",
+      "quelle": "https://www.e-netze.at/Strom/Erzeugungsanlagen/Default.aspx"
+    },
+    {
+      "fakt": "Umspannwerk Deutschlandsberg: 29,0 MW gebucht, 0,0 MW verfügbar (Stand 01.07.2026); 42 von 53 Umspannwerken mit 0,0 MW",
+      "quelle": "https://www.e-netze.at/Service/FEK/Default.aspx"
+    },
+    {
+      "fakt": "EVU der Marktgemeinde Eibiswald: Netzbetreiber und Stromlieferant, 16 Trafostationen, rund 60 km Netz, über 1.000 Kundenanlagen",
+      "quelle": "https://www.eibiswald.gv.at/wirtschaftumweltwohnen/evu-eibiswald"
+    },
+    {
+      "fakt": "SolarTool im Digitalen Atlas Steiermark, Bericht per E-Mail",
+      "quelle": "https://www.landesentwicklung.steiermark.at/cms/beitrag/12910759/145230171"
+    },
+    {
+      "fakt": "PVGIS 46,816 N / 15,215 O, 370 m: 1.180,98 kWh je kWp und Jahr (39 Grad, Azimut -7, 14 % Verluste, SARAH2 2005 bis 2020)",
+      "quelle": "https://re.jrc.ec.europa.eu/api/v5_2/PVcalc?lat=46.816&lon=15.215&peakpower=1&loss=14&optimalangles=1&outputformat=json"
+    },
+    {
+      "fakt": "Fernwärmenetz Deutschlandsberg der Energie Steiermark Wärme GmbH, Brennstoffmix 2025: 56,8 % erneuerbar, 43,2 % fossil",
+      "quelle": "https://www.e-steiermark.com/fileadmin/user_upload/downloads/Uebersicht_Brennstoffmix_Regionen_2025.pdf"
+    },
+    {
+      "fakt": "Pionierstadt Deutschlandsberg (Mission Klimaneutrale Stadt), Projektstart 2023, Roadmap bis 2040",
+      "quelle": "https://orte-von-morgen.at/ort/pionierstadt-deutschlandsberg/?place-id=366"
+    },
+    {
+      "fakt": "Koralmbahn: 130 km neue Strecke Graz bis Klagenfurt, Weststeiermark und Südkärnten besser erreichbar",
+      "quelle": "https://infrastruktur.oebb.at/de/projekte-fuer-oesterreich/bahnstrecken/suedstrecke-wien-villach/koralmbahn"
+    }
+  ],
+  "weggelassen": [
+    "Schilcherland und KEM Schilcherland: nur alte KEM-Berichte (2014/15) in Suchtreffern, auf der aktuellen Karte des Klimafonds nicht gelistet",
+    "Fernwärme-Ausbau (neues Biomasse-Heizwerk, 18 Mio. Euro, Inbetriebnahme Herbst 2027): nur Regionalpresse (meinbezirk.at, 11.06.2026)",
+    "Gasnetz: Netzkarte von Energienetze Steiermark nur interaktiv, keine Gemeindeliste",
+    "Ortsbildschutz, Sonnenstunden, Heizungsbestand (Ölanteil): keine amtliche Quelle abgerufen",
+    "Lage des Bahnhofs Weststeiermark und Fahrzeiten der Koralmbahn",
+    "Gemeindeförderungen der Umlandgemeinden: nicht einzeln geprüft"
+  ],
+  "cost_usd": 0.23,
+  "cost_note": "Schätzung: 3 Aufrufe Google-Ads-Suchvolumen (je rund 0,075 $) und 2 SERP-Abrufe (je rund 0,003 $). Die MCP-Antworten enthalten kein cost-Feld."
+}

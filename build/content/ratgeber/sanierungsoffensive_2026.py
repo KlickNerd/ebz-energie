@@ -37,7 +37,7 @@ ARTICLE = {
         "Alternative: <b>Landesförderung</b> + Steuer",
     ],
     "date_published": "2026-03-10",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "waermepumpe",
     "hero_alt": "Luft-Wasser-Wärmepumpe an der Hauswand eines Einfamilienhauses",
 
@@ -54,15 +54,16 @@ ARTICLE = {
         "100 kW, Installation durch einen befugten Fachbetrieb, Energieberatungsprotokoll bei der Registrierung.",
         "Bereits Registrierte: Die Reservierung lief 9 Monate ab Registrierung für Umsetzung und Endabrechnung. "
         "Den Stand der eigenen Reservierung zeigt das KPC-Kundenportal.",
-        "Alternativen jetzt: Landesförderungen in Kärnten und der Steiermark (ob ohne Bundesförderung möglich, "
-        "klärt die Landesstelle). Die Öko-Sonderausgabenpauschale gilt nur mit ausbezahlter Bundesförderung. Ob "
+        "Alternativen jetzt: In Kärnten zahlt das Land 2026 eine Pauschale von 3.000 € für die Wärmepumpe (ob "
+        "das Budget reicht, klären wir vor dem Angebot). Die Steiermark nimmt für neue Wärmepumpen derzeit keine "
+        "Förderanträge an. Die Öko-Sonderausgabenpauschale gilt nur mit ausbezahlter Bundesförderung. Ob "
         "2027 ein neues Bundesprogramm kommt, ist offen.",
     ],
     "kpis": [
         ("beendet", "Stand Oktober 2026: Mittel ausgeschöpft"),
         ("7.500 €", "Grundpauschale Wärmepumpe (galt 2026)"),
         ("9 Monate", "Frist für bereits Registrierte"),
-        ("35 %", "Landesförderung Kärnten/Steiermark laut Richtlinie, Stand prüfen"),
+        ("3.000 €", "Landespauschale Kärnten 2026 (Steiermark: derzeit keine Anträge)"),
     ],
 
     "sections": [
@@ -72,9 +73,12 @@ ARTICLE = {
     "umweltfoerderung.at beendet: Die Mittel sind ausgeschöpft, eine Registrierung oder Antragstellung ist nicht "
     "mehr möglich (Stand 9. Oktober 2026). Auch „Sauber Heizen für Alle 2026“ nimmt keine neuen Registrierungen "
     "an; wer dort bereits registriert ist, kann noch beantragen. Ob 2027 ein neues Bundesprogramm kommt, ist offen.")}
-<p>Was jetzt weiterhin gilt: Die Landesförderungen für den Heizungstausch laufen weiter; mehrere Länder, darunter
-Kärnten, vergeben sie bisher als Anschlussförderung an den Bund, den aktuellen Stand klären Sie vor der
-Antragstellung mit der Landesstelle (Kärnten, Steiermark). Die steuerliche
+<p>Was jetzt weiterhin gilt: Landesförderungen für den Heizungstausch laufen in den meisten Bundesländern
+weiter. Kärnten zahlt 2026 eine Pauschale von 3.000 € für die Wärmepumpe (ob das Budget reicht, klären wir
+vor dem Angebot), die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an
+(wohnbau.steiermark.at, Stand 10. Oktober 2026). Mehrere Länder vergaben ihre Förderung bisher als
+Anschlussförderung an den Bund, den aktuellen Stand klären Sie vor der Antragstellung mit der Landesstelle.
+Die steuerliche
 {a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/', 'Öko-Sonderausgabenpauschale')}
 (fünf Jahre je 400 € Sonderausgaben) setzt eine ausbezahlte Bundesförderung voraus und bleibt damit für
 registrierte Projekte relevant. Wer sein Projekt vor dem Förderstopp registriert hat, prüft den
@@ -218,7 +222,10 @@ gestiegen. Ob und in welcher Form 2027 ein neues Bundesprogramm folgt, ist offen
 <h3>Landesförderungen: jetzt der wichtigste Topf</h3>
 <p>Für bereits registrierte Projekte kann die Bundesförderung mit den Programmen der Bundesländer
 kombiniert werden. Für neue Projekte sind die Landesförderungen derzeit die wichtigste Unterstützung: In
-Kärnten und der Steiermark, den Kernregionen von EBZ Energie, geht es um mehrere Tausend Euro. Ob ein Land
+Kärnten, einer Kernregion von EBZ Energie, zahlt das Land 2026 eine Pauschale von 3.000 € (plus 1.500 € bei
+Errichtung einer Solaranlage, plus 200 € für den hydraulischen Abgleich). Die Steiermark nimmt für neue
+Wärmepumpen derzeit keine Förderanträge an; gefördert wird dort nur der Tausch mindestens 15 Jahre alter
+Biomassekessel oder Wärmepumpen mit höchstens 30 %, höchstens 1.500 €. Ob ein Land
 ohne Bundesförderung zahlt, regelt seine Richtlinie (Kärnten vergab die Förderung bisher als Anschlussförderung
 an den Bund); klären Sie den Stand vor der Antragstellung mit der Landesstelle. Alle Beträge
 und Bedingungen stehen im Ratgeber
@@ -317,6 +324,8 @@ der Ratgeber {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderu
     "sources": [
         ("Sanierungsoffensive 2026 (Bundesportal, Registrierung und Förderbedingungen)",
          "https://www.sanierungsoffensive.gv.at/"),
+        ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
+         "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
     ],
     "related": [
         ("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung Österreich 2026: Überblick"),

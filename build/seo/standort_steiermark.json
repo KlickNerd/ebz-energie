@@ -1,0 +1,623 @@
+{
+  "slug": "standort_steiermark",
+  "path": "/photovoltaik-steiermark/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "primary": {
+    "keyword": "photovoltaik steiermark",
+    "volume_at": 70,
+    "kd": null,
+    "cpc": 5.24,
+    "intent": "commercial (Nebenintent informational, navigational); Wettbewerb Google Ads HIGH (71)"
+  },
+  "secondary": [
+    {
+      "keyword": "pv steiermark",
+      "volume_at": 70,
+      "kd": 15,
+      "intent": "informational/navigational (Kurzform, gleiche SERP-Familie)"
+    },
+    {
+      "keyword": "pv anlage steiermark",
+      "volume_at": 40,
+      "kd": 11,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "photovoltaik anbieter steiermark",
+      "volume_at": 40,
+      "kd": 14,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "volume_at": 30,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "photovoltaikanlage steiermark",
+      "volume_at": 20,
+      "kd": 51,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "photovoltaik firmen steiermark",
+      "volume_at": 10,
+      "kd": 22,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "solaranlage steiermark",
+      "volume_at": 10,
+      "kd": 48,
+      "intent": "commercial"
+    }
+  ],
+  "bezirke": [
+    {
+      "keyword": "photovoltaik graz",
+      "volume_at": 480,
+      "kd": null,
+      "seite": "/photovoltaik-graz/ (eigenes Modul)"
+    },
+    {
+      "keyword": "pv anlage graz",
+      "volume_at": 70
+    },
+    {
+      "keyword": "wärmepumpe graz",
+      "volume_at": 70
+    },
+    {
+      "keyword": "solaranlage graz",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik graz umgebung",
+      "volume_at": 40,
+      "kd": null,
+      "hinweis": "CPC 7,75 €, Wettbewerb 97: keine eigene Seite geplant, hier und auf der Graz-Seite abdecken"
+    },
+    {
+      "keyword": "photovoltaik gleisdorf",
+      "volume_at": 40,
+      "kd": 7,
+      "hinweis": "staerkster Ort ausserhalb von Graz, liegt im Bezirk Weiz"
+    },
+    {
+      "keyword": "photovoltaik leibnitz",
+      "volume_at": 30,
+      "kd": 13
+    },
+    {
+      "keyword": "photovoltaik leoben",
+      "volume_at": 20,
+      "kd": null
+    },
+    {
+      "keyword": "photovoltaik deutschlandsberg",
+      "volume_at": 20,
+      "kd": 14
+    },
+    {
+      "keyword": "photovoltaik murtal",
+      "volume_at": 20,
+      "kd": null
+    },
+    {
+      "keyword": "photovoltaik weiz",
+      "volume_at": 10,
+      "kd": 11
+    },
+    {
+      "keyword": "photovoltaik voitsberg",
+      "volume_at": 10,
+      "kd": null
+    },
+    {
+      "keyword": "photovoltaik südoststeiermark",
+      "volume_at": 10,
+      "kd": null
+    },
+    {
+      "keyword": "photovoltaik feldbach",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik hartberg",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik fürstenfeld",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik judenburg",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik knittelfeld",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik kapfenberg",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik liezen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik bruck an der mur",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik murau",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik köflach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik weststeiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik obersteiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik hartberg fürstenfeld",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik bruck mürzzuschlag",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe leibnitz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe weiz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe leoben",
+      "volume_at": 0
+    }
+  ],
+  "semantic": [
+    "Steiermärkisches Baugesetz § 21 (meldepflichtige Vorhaben)",
+    "Meldung an die Gemeinde / Magistrat Graz",
+    "Baubewilligung, vereinfachtes Verfahren (Anlagenhöhe über 3,50 m)",
+    "Solarpflicht Neubau § 80b",
+    "Energienetze Steiermark",
+    "Einspeiserportal",
+    "Einspeisezählpunkt",
+    "Netzanschlusskonzept (12 Monate)",
+    "netzwirksame Leistung",
+    "Stromnetz Graz",
+    "Stadtwerke Voitsberg / Köflach / Judenburg / Kapfenberg / Hartberg / Mürzzuschlag",
+    "Feistritzwerke-STEWEAG",
+    "Solarpotenzial Steiermark / Digitaler Atlas / SolarTool",
+    "GIS Steiermark",
+    "EAG-Investitionszuschuss 150 €/kWp",
+    "Steirischer Sanierungsbonus",
+    "Ökofonds Steiermark",
+    "Gemeindeförderung",
+    "Batteriespeicher bis 20 kWh / 100 kWh",
+    "Notstrom",
+    "Wallbox",
+    "Luft-Wasser-Wärmepumpe",
+    "Planungsbasispegel / Schallnachweis",
+    "Tausch erneuerbar betriebener Heizungssysteme",
+    "Energieberatung Land Steiermark",
+    "Erneuerbare-Energie-Gemeinschaft",
+    "Bürgerenergiegemeinschaft",
+    "Nahbereich / Quick Check",
+    "Peer-to-Peer-Vertrag",
+    "Energieagentur Steiermark",
+    "Graz-Umgebung",
+    "Leibnitz",
+    "Deutschlandsberg",
+    "Voitsberg",
+    "Weiz / Gleisdorf",
+    "Murtal / Judenburg / Knittelfeld",
+    "Leoben",
+    "Südoststeiermark / Feldbach",
+    "Flachdach ballastiert",
+    "Komplettanbieter"
+  ],
+  "long_tail": [
+    {
+      "keyword": "energiegemeinschaft steiermark",
+      "volume_at": 480
+    },
+    {
+      "keyword": "photovoltaik förderung steiermark",
+      "volume_at": 210
+    },
+    {
+      "keyword": "förderung photovoltaik steiermark privat 2026",
+      "volume_at": 110
+    },
+    {
+      "keyword": "pv förderung steiermark",
+      "volume_at": 90
+    },
+    {
+      "keyword": "wärmepumpe förderung steiermark",
+      "volume_at": 70
+    },
+    {
+      "keyword": "energie steiermark photovoltaik",
+      "volume_at": 50
+    },
+    {
+      "keyword": "förderung wärmepumpe steiermark",
+      "volume_at": 40
+    },
+    {
+      "keyword": "energie steiermark photovoltaik anmelden",
+      "volume_at": 40
+    },
+    {
+      "keyword": "förderung land steiermark photovoltaik",
+      "volume_at": 40
+    },
+    {
+      "keyword": "kleine sanierung steiermark photovoltaik",
+      "volume_at": 30
+    },
+    {
+      "keyword": "pv anlage genehmigung steiermark",
+      "volume_at": 20
+    },
+    {
+      "keyword": "wärmepumpe genehmigung steiermark",
+      "volume_at": 20
+    },
+    {
+      "keyword": "wärmepumpe abstand nachbar steiermark",
+      "volume_at": 20
+    },
+    {
+      "keyword": "heizungstausch förderung steiermark",
+      "volume_at": 20
+    },
+    {
+      "keyword": "energie steiermark wärmepumpe",
+      "volume_at": 20
+    },
+    {
+      "keyword": "energie steiermark photovoltaik einspeisen",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik genehmigung steiermark",
+      "volume_at": 10
+    },
+    {
+      "keyword": "baugesetz steiermark photovoltaik",
+      "volume_at": 10
+    },
+    {
+      "keyword": "gis steiermark photovoltaik",
+      "volume_at": 10
+    },
+    {
+      "keyword": "solarkataster steiermark",
+      "volume_at": 10
+    },
+    {
+      "keyword": "wärmepumpe abstand grundstücksgrenze steiermark",
+      "volume_at": 10
+    },
+    {
+      "keyword": "stromspeicher steiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur steiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik komplettanbieter steiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe kosten steiermark",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Ist Photovoltaik in Österreich verpflichtend?",
+    "Welche Netzbetreiber gibt es in der Steiermark?",
+    "Was kostet eine normale PV-Anlage?",
+    "Was kostet eine 10 kW Solaranlage mit Speicher und Montage?",
+    "Wie viel Photovoltaik brauche ich, um 10.000 kWh Strom zu erzeugen?",
+    "Ist eine Photovoltaikanlage 2026 noch sinnvoll?",
+    "Wann macht eine PV-Anlage keinen Sinn?",
+    "Was sind die Nachteile von Photovoltaik?",
+    "Welche Wärmepumpen sind genehmigungspflichtig?",
+    "Gibt es in Österreich eine Heizungsförderung ab 2026?",
+    "Welche Wärmepumpen sind 2026 förderfähig?",
+    "Wie lange gibt es die Förderung raus aus dem Öl?",
+    "Ist eine JAZ von 4 gut?",
+    "Wie hoch ist die Heizungsförderung ab 2027?"
+  ],
+  "serp": {
+    "photovoltaik steiermark (Austria)": {
+      "features": [
+        "local_pack",
+        "people_also_ask",
+        "images",
+        "related_searches"
+      ],
+      "local_pack": [
+        "enerix Hoch- und Oststeiermark (5 Sterne, 31 Bew.)",
+        "Martin Pock PV ET (5 Sterne, 31 Bew.)",
+        "Solar-Ernte Photovoltaik GmbH (4,7, 37 Bew.)"
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "enerix.at",
+          "title": "enerix Graz: Photovoltaik & Stromspeicher",
+          "type": "anbieter (Standortseite Graz)"
+        },
+        {
+          "pos": 2,
+          "domain": "wirtschafts-nachrichten.at",
+          "title": "Klimatalk 2025: Alles zu Photovoltaik-Förderung Steiermark",
+          "type": "news"
+        },
+        {
+          "pos": 3,
+          "domain": "prosonne.at",
+          "title": "Pro Sonne Photovoltaik",
+          "type": "anbieter (Startseite)"
+        },
+        {
+          "pos": 4,
+          "domain": "wohnbau.steiermark.at",
+          "title": "Förderung von solarthermischen Anlagen",
+          "type": "behörde"
+        },
+        {
+          "pos": 5,
+          "domain": "kleinezeitung.at",
+          "title": "Die Steiermark ist vorerst nur bei der Photovoltaik auf Zielkurs",
+          "type": "news"
+        },
+        {
+          "pos": 6,
+          "domain": "seiner-photovoltaik.at",
+          "title": "Photovoltaikanlagen von Seiner PV",
+          "type": "anbieter (Startseite)"
+        },
+        {
+          "pos": 7,
+          "domain": "otovo.at",
+          "title": "Sie suchen eine Solaranlage in der Steiermark?",
+          "type": "portal (Regionsseite)"
+        },
+        {
+          "pos": 8,
+          "domain": "heizma.at",
+          "title": "Photovoltaik Steiermark: bis zu 3.450 € Förderung",
+          "type": "anbieter (Regionsseite)"
+        },
+        {
+          "pos": 9,
+          "domain": "regionalenergie.at",
+          "title": "Förderungen Steiermark",
+          "type": "ratgeber"
+        },
+        {
+          "pos": 10,
+          "domain": "facebook.com",
+          "title": "Energie Steiermark: PV-Komplettpaket (Video)",
+          "type": "social"
+        }
+      ],
+      "related": [
+        "Photovoltaik Graz-Umgebung",
+        "Photovoltaik Anbieter Steiermark",
+        "Photovoltaik anbieter Graz",
+        "PV-Anlage Graz Genehmigung"
+      ],
+      "ebz": "nicht in den Top 10, nicht im Local Pack"
+    },
+    "wärmepumpe steiermark (Styria,Austria)": {
+      "features": [
+        "ai_overview",
+        "people_also_ask",
+        "people_also_search"
+      ],
+      "ai_overview_themen": [
+        "Meldepflicht § 21 Baugesetz",
+        "Schallnachweis ÖNORM S 5021",
+        "Landesförderung (Status prüfen)",
+        "Sauber Heizen für Alle",
+        "Energie Steiermark Heizungstausch-Aktion",
+        "Mitgliederverzeichnis Wärmepumpe Austria"
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "wohnbau.steiermark.at",
+          "title": "Sauber Heizen für Alle (Richtlinie)",
+          "type": "behörde"
+        },
+        {
+          "pos": 2,
+          "domain": "e-steiermark.com",
+          "title": "Energieverbrauch bei Wärmepumpen und Photovoltaikanlagen (FAQ)",
+          "type": "versorger"
+        },
+        {
+          "pos": 3,
+          "domain": "transparenzportal.gv.at",
+          "title": "Förderung von Wärmepumpen",
+          "type": "behörde"
+        },
+        {
+          "pos": 4,
+          "domain": "kbe-haustechnik.at",
+          "title": "Förderung Archive",
+          "type": "anbieter"
+        },
+        {
+          "pos": 5,
+          "domain": "heizma.at",
+          "title": "Ratgeber Wärmepumpe: Kosten, Förderung, Marken",
+          "type": "anbieter (Ratgeber)"
+        },
+        {
+          "pos": 6,
+          "domain": "neubauer-hls.at",
+          "title": "Wärmepumpe Graz: Installation, Förderung & Service",
+          "type": "anbieter (Ortsseite)"
+        },
+        {
+          "pos": 7,
+          "domain": "gemeindeservice-stmk.at",
+          "title": "BUND: Wärmepumpen",
+          "type": "portal"
+        },
+        {
+          "pos": 8,
+          "domain": "wohnbau.steiermark.at",
+          "title": "Förderungen",
+          "type": "behörde"
+        },
+        {
+          "pos": 9,
+          "domain": "firmen.wko.at",
+          "title": "Wärmepumpen in Steiermark (870 Unternehmen)",
+          "type": "verzeichnis"
+        }
+      ],
+      "ebz": "nicht in den Top 10"
+    }
+  },
+  "competitor_outline": [
+    "H1 Photovoltaik in der Steiermark (mit Förderbetrag) [heizma, otovo]",
+    "H2 Warum jetzt / Lohnt sich PV in der Steiermark (Sonnenstunden, Orte von Graz-Umgebung bis Murtal)",
+    "H2 Förderungen 2026 in der Steiermark (keine Landesförderung für Aufdach, Bund EAG, Gemeinden)",
+    "H2 Förderrechner / Fördersumme schätzen",
+    "H2 Kosten und Amortisation in der Steiermark (Preisbeispiele)",
+    "H2 Ablauf (Erstberatung, Angebot, Installation, Förderantrag)",
+    "H2 Wir kennen Ihre Gegend (Bezirksliste: Graz-Umgebung, Leibnitz, Deutschlandsberg, Weiz, Hartberg-Fürstenfeld, Leoben, Kapfenberg)",
+    "H2 FAQ (Förderhöhe, Landesförderung ja/nein, Kosten, Sonnenstunden, Finanzierung, Wärmepumpe dazu)",
+    "H2 Wärmepumpe und Photovoltaik aus einer Hand"
+  ],
+  "gaps": [
+    "Vor dem Neubau: Die Seite gab es im statischen Build nicht (nur als Nebenbegriff der Startseite). Jetzt abgedeckt.",
+    "Kein Wettbewerber in den Top 10 erklärt das steirische Baurecht (Meldepflicht § 21 seit Novelle 2026, Speicher 20/100 kWh, Wärmepumpe mit Schallbestätigung): eigener Vorsprung, auch für die AI Overview zu 'wärmepumpe steiermark'.",
+    "Netzbetreiber-Frage (PAA in beiden SERPs) beantwortet keiner der Anbieter: Energienetze Steiermark, Stromnetz Graz, Stadtwerke.",
+    "Wettbewerber nennen Sonnenstunden (2.100 bis 2.180) ohne Quelle: bei uns bewusst weggelassen, bis eine amtliche Zahl vorliegt.",
+    "Local Pack: EBZ fehlt (Sitz Villach). Organisch erreichbar, Local Pack nicht ohne steirischen Standort.",
+    "Preisbeispiele je Anlagengröße (otovo) haben wir nur als Richtpreis 10 kWp plus zwei Grazer Referenzen."
+  ],
+  "cannibalization": [
+    "/ (Startseite führt 'photovoltaik steiermark' als Sekundärbegriff im H1: dort belassen, aber auf diese Seite verlinken)",
+    "/photovoltaik-graz/ (Graz-Begriffe 480/70/70 gehören dorthin, hier nur Kurzkarte mit Link)",
+    "/foerderung-photovoltaik-steiermark/ (alle Förder-Keywords, 210/110/90: hier nur Kurzfassung)",
+    "/energiegemeinschaft-steiermark/ (480: hier nur eine Sektion mit Link)",
+    "/landesfoerderungen-fuer-die-waermepumpe/ und /waermepumpe/ (Förder- und Produktbegriffe Wärmepumpe)",
+    "Bezirksseiten aus der Vorlage (Leibnitz, Deutschlandsberg, Voitsberg, Weiz, Murtal, Leoben, Südoststeiermark): Bezirksbegriffe dort, hier nur Karten"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "photovoltaik steiermark",
+      "ai_volume": 10
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "ai_volume": 5
+    },
+    {
+      "keyword": "pv anlage steiermark",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "wärmepumpe förderung steiermark",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "energiegemeinschaft steiermark",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "photovoltaik graz",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "photovoltaik förderung steiermark",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik anbieter steiermark",
+      "ai_volume": 0
+    }
+  ],
+  "recommendation": {
+    "title": "Photovoltaik Steiermark: PV & Wärmepumpe | EBZ Energie",
+    "h1": "Photovoltaik in der Steiermark: PV-Anlage, Speicher und Wärmepumpe vom Fachbetrieb aus Villach",
+    "description": "Photovoltaik und Wärmepumpe in der Steiermark: Planung, Montage, Meldung an die Gemeinde und Netzansuchen aus einer Hand. 2 Referenzen in Graz, 4,9 Sterne.",
+    "h2_outline": [
+      "Photovoltaik und Wärmepumpe in der Steiermark: was hier anders läuft als in Kärnten",
+      "PV-Anlage in der Steiermark: Bezirke und Orte, in denen wir planen und montieren",
+      "PV-Anlage genehmigen in der Steiermark: Meldung an die Gemeinde statt Baubewilligung",
+      "Netzbetreiber in der Steiermark: Energienetze Steiermark, Stromnetz Graz und Stadtwerke",
+      "Solarpotenzial Steiermark: Ihr Dach im Digitalen Atlas prüfen",
+      "Förderung für Photovoltaik in der Steiermark: Bundeszuschuss statt Landespauschale",
+      "Ihre Anlage gehört Ihnen ab dem ersten Tag (Finanzierung)",
+      "Wärmepumpe in der Steiermark: Meldepflicht, Schallnachweis und Förderlage",
+      "Energiegemeinschaft in der Steiermark: Strom teilen im Nahbereich oder österreichweit",
+      "Was Photovoltaik in der Steiermark kostet und bringt: zwei Anlagen aus Graz",
+      "Photovoltaik-Firmen in der Steiermark vergleichen: sechs Fragen an jeden Anbieter",
+      "EBZ Energie: Sitz in Villach, Beratung und Montage in der Steiermark",
+      "Von der Anfrage bis zur Inbetriebnahme in der Steiermark",
+      "Häufige Fragen",
+      "Quellen",
+      "Weiterlesen",
+      "Kontakt"
+    ],
+    "faq_add": [
+      "Brauche ich in der Steiermark eine Baubewilligung für eine Photovoltaikanlage?",
+      "Welche Netzbetreiber gibt es in der Steiermark?",
+      "Gibt es in der Steiermark eine Landesförderung für Photovoltaik?",
+      "Was kostet eine PV-Anlage mit Speicher in der Steiermark?",
+      "Ist Photovoltaik in der Steiermark verpflichtend?",
+      "Brauche ich in der Steiermark eine Genehmigung für eine Wärmepumpe?",
+      "Welche Förderung gibt es 2026 für eine Wärmepumpe in der Steiermark?",
+      "Kann ich meinen Sonnenstrom in der Steiermark in einer Energiegemeinschaft teilen?",
+      "EBZ Energie sitzt in Villach: In welchen steirischen Bezirken montieren Sie?"
+    ],
+    "internal_links": [
+      "/photovoltaik-graz/ -> Photovoltaik in Graz",
+      "/foerderung-photovoltaik-steiermark/ -> PV-Förderung Steiermark im Detail",
+      "/foerderungen/ -> Aktuelle Förderungen ansehen",
+      "/foerderrechner/ -> Förderrechner",
+      "/waermepumpe/ -> Wärmepumpe vom Fachbetrieb",
+      "/landesfoerderungen-fuer-die-waermepumpe/ -> Landesförderungen für die Wärmepumpe",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/photovoltaik-fuer-waermepumpe/ -> Photovoltaik für die Wärmepumpe",
+      "/energiegemeinschaft-steiermark/ -> Ratgeber: Energiegemeinschaft Steiermark",
+      "/leistungen/energiegemeinschaft/ -> Energiegemeinschaft für Privathaushalte",
+      "/referenzen/projekt-stadthaus-in-graz/ -> Stadthaus, Graz",
+      "/referenzen/projekt-flachdach-in-graz/ -> Einfamilienhaus mit Flachdach, Graz",
+      "Bezirksseiten (pv_leibnitz, pv_deutschlandsberg, pv_voitsberg, pv_weiz, pv_murtal, pv_leoben, pv_suedoststeiermark) -> automatisch, sobald die Inhaltsdatei existiert",
+      "EINGEHEND: Startseite (Regionenblock), /waermepumpe/, /foerderung-photovoltaik-steiermark/ und /energiegemeinschaft-steiermark/ sollten auf /photovoltaik-steiermark/ verlinken"
+    ],
+    "notes": "Die Region ist klein im Volumen (photovoltaik steiermark 70, pv steiermark 70, pv anlage 40, anbieter 40, wärmepumpe 30), aber die SERP ist schwach besetzt: Startseiten kleiner Anbieter, News und Behördenseiten, nur heizma und otovo haben echte Regionsseiten. Unser Hebel sind die belegten lokalen Fakten (Baugesetz-Novelle 2026, Netzanschlusskonzept, Schallbestätigung bei Wärmepumpen), die kein Wettbewerber hat. Eigene Seiten lohnen sich nach Volumen zuerst für Graz (480), dann Gleisdorf/Weiz (40+10), Leibnitz (30), Leoben, Deutschlandsberg, Murtal (je 20); Voitsberg und Südoststeiermark (je 10) nur über die Vorlage. Für die Wärmepumpe gibt es auf Bezirksebene kein messbares Volumen. WICHTIG: Die im Auftrag und sitewide genannte Landesförderung '35 % für die Wärmepumpe' ist laut Land Steiermark derzeit nicht beantragbar; auf dieser Seite steht deshalb die tatsächliche Lage. Die anderen Seiten (foerderungen, foerderrechner, waermepumpe, standorte.py LAND['stmk'], Ratgeber) sollten nachgezogen werden."
+  },
+  "cost_usd": 0.43,
+  "cost_note": "Schätzung nach Preisliste, MCP liefert kein cost-Feld: 5 x Google-Ads-Volumen live (0,375), 2 SERP live advanced, Keyword Overview (20), 2 x Keyword Suggestions, AI-Suchvolumen, 2 x Content Parsing."
+}

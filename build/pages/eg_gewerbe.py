@@ -46,8 +46,8 @@ FAQ = [
     ("Welche Förderung gibt es für die Gründung (Klima- und Energiefonds)?",
      "Der Klima- und Energiefonds hat Konzept- und Aufbauphase von Energiegemeinschaften über eigene Förder-Calls "
      "unterstützt; ob aktuell ein Call offen ist, prüfen wir für Ihr Projekt (Stand Oktober 2026). Verlässlich "
-     "gefördert wird die Anlage: EAG-Investitionszuschuss, Landesförderungen, in der Steiermark 125 € je kWp Bonus bei "
-     "EG-Einbindung, und das Energiemanagementsystem mit bis zu 30 Prozent, maximal 20.000 € je Standort."),
+     "gefördert wird die Anlage: EAG-Investitionszuschuss und Landesförderungen, "
+     "dazu das Energiemanagementsystem mit bis zu 30 Prozent, maximal 20.000 € je Standort."),
     ("Verein oder Genossenschaft: welche Rechtsform passt für Gemeinde und Betrieb?",
      "Die Gemeinschaft braucht eine eigene Rechtspersönlichkeit. Für kleinere Gemeinschaften ohne Kapitalbedarf der "
      "Verein (Statuten, ZVR-Zahl, Vorstand, etwa 50 bis 150 €), für größere mit Investitionen und vielen Mitgliedern "
@@ -306,7 +306,7 @@ def build():
             alt="Beratungsgespräch zu Förderung und Finanzierung einer Gewerbe-Photovoltaikanlage",
             bullets=[
                 "EAG-Investitionszuschuss und Landesförderungen für PV und Speicher",
-                "125 €/kWp Steiermark-Bonus bei EG-Einbindung, " + a("/ems-foerderung/", "EMS-Förderung des Klimafonds"),
+                a("/ems-foerderung/", "EMS-Förderung des Klimafonds") + ": 30 % bis 20.000 € je Standort",
                 a("finanzierung", "Finanzierung") + ": 0 € Anzahlung, fixe Rate, Eigentum ab Tag 1",
             ],
             cta=("foerderung_at", "Förderungen 2026 im Überblick"),
@@ -320,7 +320,7 @@ def build():
                 ("◷", "Lastgang statt Bauchgefühl", "Wir rechnen mit Ihren Viertelstundenwerten, nicht mit Prospektzahlen, und mit dem aktuellen OeMAG-Marktpreis statt dem Tief vom Juli."),
                 ("◎", "Prozesse mit dem Netzbetreiber", "ebUtilities, Betreibervertrag, EDA-Anmeldungen: Wir kennen die Abläufe bei Kärnten Netz und Energienetze Steiermark."),
                 ("✓", "Skalierbare Abrechnung", "energyfamily rechnet von 2 bis über 1.000 Zählpunkte automatisiert ab, monatlich, mit App und Reporting."),
-                ("€", "Förderungen im Blick", "EAG-Investitionszuschuss, Landesförderungen und der Steiermark-Bonus von 125 € je kWp bei EG-Einbindung."),
+                ("€", "Förderungen im Blick", "EAG-Investitionszuschuss, Landesförderungen und die EMS-Förderung des Klimafonds: Wir prüfen, was gerade beantragbar ist."),
                 ("⌂", "Regional präsent", "Sitz in Villach, Projekte in ganz Kärnten und der Steiermark. Ein Ansprechpartner, vom Erstgespräch bis zum Reporting."),
             ],
         ),

@@ -1,0 +1,430 @@
+{
+ "slug": "standort_murtal",
+ "path": "/photovoltaik-murtal/",
+ "seitentyp": "standort",
+ "stand": "2026-10-10",
+ "quelle": "DataForSEO (Google Ads Search Volume live, SERP Google Organic live advanced), location Austria, language de",
+ "primary": {
+  "keyword": "photovoltaik murtal",
+  "volume_at": 20,
+  "kd": null,
+  "cpc": 6.8,
+  "competition": "MEDIUM (Index 62)",
+  "intent": "commercial/lokal (nicht per API geprüft)",
+  "trend": "12 Monate: 10 bis 50 Suchen, Spitze April 2026 (50), September 2025 und März 2026 je 30"
+ },
+ "secondary": [
+  {
+   "keyword": "wärmepumpe murtal",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial/lokal",
+   "competition": "HIGH (Index 76)"
+  },
+  {
+   "keyword": "solaranlage murtal",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial/lokal"
+  },
+  {
+   "keyword": "photovoltaik anbieter murtal",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaik judenburg",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial/lokal",
+   "competition": "HIGH (Index 100)"
+  },
+  {
+   "keyword": "photovoltaik knittelfeld",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial/lokal",
+   "competition": "HIGH (Index 74)"
+  },
+  {
+   "keyword": "photovoltaik fohnsdorf",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial/lokal"
+  }
+ ],
+ "semantic": [
+  "Bezirk Murtal",
+  "Aichfeld",
+  "Judenburg",
+  "Knittelfeld",
+  "Zeltweg",
+  "Fohnsdorf",
+  "Spielberg",
+  "Weißkirchen in Steiermark",
+  "Pöls-Oberkurzheim",
+  "Obdach",
+  "Seckau",
+  "Stadtwerke Judenburg AG",
+  "Energienetze Steiermark",
+  "Umspannwerk Judenburg West",
+  "Umspannwerk Knittelfeld Ost",
+  "freie Einspeisekapazität",
+  "Wirkleistungsvorgabe",
+  "Rundsteuerempfänger",
+  "Einspeiserportal",
+  "Einspeisezählpunkt",
+  "Netzanschlusskonzept",
+  "§ 21 Steiermärkisches Baugesetz (meldepflichtig)",
+  "Fernwärme Zellstoff Pöls",
+  "Bioenergie Wärmeservice",
+  "Energieagentur Obersteiermark",
+  "KEM Murtal",
+  "e5 Judenburg",
+  "Solarpotenzial Digitaler Atlas Steiermark",
+  "Frosttage Station Zeltweg",
+  "Luft-Wasser-Wärmepumpe",
+  "Vorlauftemperatur 55 Grad",
+  "Batteriespeicher",
+  "Eigenverbrauch"
+ ],
+ "long_tail": [
+  {
+   "keyword": "lr photovoltaik",
+   "volume_at": 170,
+   "hinweis": "Markensuche nach einem Mitbewerber aus dem Bezirk, nicht bespielen"
+  },
+  {
+   "keyword": "pv förderung steiermark",
+   "volume_at": 90
+  },
+  {
+   "keyword": "photovoltaik steiermark",
+   "volume_at": 70
+  },
+  {
+   "keyword": "pv anlage steiermark",
+   "volume_at": 40
+  },
+  {
+   "keyword": "wärmepumpe steiermark",
+   "volume_at": 30
+  },
+  {
+   "keyword": "photovoltaik murtal",
+   "volume_at": 20
+  },
+  {
+   "keyword": "fernwärme judenburg",
+   "volume_at": 10
+  },
+  {
+   "keyword": "stadtwerke judenburg photovoltaik",
+   "volume_at": 10
+  },
+  {
+   "keyword": "heizungstausch steiermark",
+   "volume_at": 10
+  },
+  {
+   "keyword": "pv anlage murtal",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv murtal",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik firmen murtal",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe installateur murtal",
+   "volume_at": 0
+  },
+  {
+   "keyword": "heizungstausch murtal",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik obersteiermark",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe obersteiermark",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv anlage judenburg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe judenburg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv anlage knittelfeld",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe knittelfeld",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik zeltweg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe zeltweg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik aichfeld",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik spielberg",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Gibt es in der Steiermark eine Fördermöglichkeit für Luftwärmepumpen?",
+  "Was kostet eine Wärmepumpe in Österreich?",
+  "Was kostet eine Wärmepumpe inklusive Einbau für ein Einfamilienhaus?",
+  "Gibt es in Österreich eine Förderung für Wärmepumpen ab 2026?",
+  "Welche Heizungen gibt es in Österreich?",
+  "Wer ist der größte Wärmepumpenhersteller in Österreich?",
+  "Wer ist im Murtal der Stromnetzbetreiber für meine Photovoltaikanlage? (eigene Frage, aus den lokalen Fakten)",
+  "Kann ich im Murtal noch einspeisen, wenn die Umspannwerke ausgebucht sind? (eigene Frage)",
+  "Fernwärme oder Wärmepumpe in Judenburg und Zeltweg? (eigene Frage, 'fernwärme judenburg' 10)"
+ ],
+ "serp": {
+  "photovoltaik murtal": {
+   "features": [
+    "local_pack",
+    "people_also_search",
+    "related_searches"
+   ],
+   "local_pack": [
+    {
+     "name": "LR-Photovoltaik GmbH",
+     "rating": "5 Sterne",
+     "votes": 86
+    },
+    {
+     "name": "Ökosolar PV GmbH",
+     "rating": "3,4",
+     "votes": 30
+    },
+    {
+     "name": "KWP Montage GmbH",
+     "rating": "5 Sterne",
+     "votes": 9
+    }
+   ],
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "abcsolar.at",
+     "title": "ABC Solar GmbH | Photovoltaikanlagen in der Steiermark",
+     "type": "anbieter"
+    },
+    {
+     "pos": 2,
+     "domain": "pvbaustria.at",
+     "title": "PV Austria",
+     "type": "verband"
+    },
+    {
+     "pos": 3,
+     "domain": "e-nusshold.at",
+     "title": "Nusshold Elektrotechnik Photovoltaik Südoststeiermark",
+     "type": "anbieter"
+    },
+    {
+     "pos": 4,
+     "domain": "pvbaustria.at",
+     "title": "Profi-Suche - PV Austria",
+     "type": "portal"
+    },
+    {
+     "pos": 5,
+     "domain": "maschinenring.at",
+     "title": "PV-Anlagen - Maschinenring Aichfeld-Leoben | Judenburg",
+     "type": "anbieter"
+    },
+    {
+     "pos": 6,
+     "domain": "enerix.at",
+     "title": "Oststeiermark: Photovoltaik & Stromspeicher",
+     "type": "anbieter"
+    },
+    {
+     "pos": 7,
+     "domain": "dezentralo.com",
+     "title": "74 PV Anbieter in der Steiermark",
+     "type": "portal"
+    },
+    {
+     "pos": 8,
+     "domain": "firmen.wko.at",
+     "title": "Photovoltaik In Laßnitzhöhe (Gemeinde)",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 9,
+     "domain": "bezirkstipp.at",
+     "title": "PV-Wartung & Service in der Stadt Knittelfeld - Murtal",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 10,
+     "domain": "elektrotechnik-tantscher.at",
+     "title": "Photovoltaik in der Südoststeiermark",
+     "type": "anbieter"
+    }
+   ],
+   "befund": "Kein einziger organischer Treffer mit 'Murtal' im Title und eigenem Bezirksinhalt; nur der Maschinenring hat Ortsbezug (Judenburg). Schwache SERP, eine echte Bezirksseite hat Chancen auf die Top 5. Local Pack bleibt ohne Adresse im Bezirk unerreichbar."
+  },
+  "wärmepumpe murtal": {
+   "features": [
+    "local_pack",
+    "people_also_ask",
+    "people_also_search",
+    "related_searches"
+   ],
+   "local_pack": [
+    {
+     "name": "MaWo Haustechnik, Knittelfeld",
+     "rating": "4,8",
+     "votes": 64
+    },
+    {
+     "name": "Mosshammer GmbH",
+     "rating": "3,8",
+     "votes": 6
+    },
+    {
+     "name": "Traybar Heizungs- u Sanitär",
+     "rating": "4,4",
+     "votes": 46
+    }
+   ],
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "m-tec.at",
+     "title": "M-TEC Heizungstausch auf Wärmepumpe",
+     "type": "hersteller"
+    },
+    {
+     "pos": 2,
+     "domain": "firmen.wko.at",
+     "title": "Wärmeversorgungsunternehmen In Murtal (Bezirk)",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 3,
+     "domain": "murtalelektrik.at",
+     "title": "Elektriker Elektro Alarmanlage Videoüberwachung",
+     "type": "anbieter"
+    },
+    {
+     "pos": 4,
+     "domain": "kierer.at",
+     "title": "Mein Heizungstausch",
+     "type": "anbieter"
+    },
+    {
+     "pos": 5,
+     "domain": "mawo-haustechnik.at",
+     "title": "Leistungen in Leoben und Murtal",
+     "type": "anbieter"
+    },
+    {
+     "pos": 6,
+     "domain": "daibau.at",
+     "title": "Wärmepumpe, Mürzzuschlag.",
+     "type": "portal"
+    },
+    {
+     "pos": 7,
+     "domain": "meinbezirk.at",
+     "title": "Heizen mit erneuerbaren Energien voll im Trend - Murtal",
+     "type": "presse"
+    },
+    {
+     "pos": 8,
+     "domain": "firmen.wko.at",
+     "title": "Errichter Von Fotovoltaikanlagen In Murtal (Bezirk)",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 9,
+     "domain": "firmen.wko.at",
+     "title": "Brunnenmeister In Murtal (Bezirk)",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 10,
+     "domain": "bezirkstipp.at",
+     "title": "Whirlpool-Service in der Stadt Knittelfeld - Murtal",
+     "type": "verzeichnis"
+    }
+   ],
+   "befund": "Sehr schwache SERP (Verzeichnisse, themenfremde Treffer). Eine eigene Wärmepumpen-Sektion mit Fernwärme-Abgrenzung und zwei FAQ reicht für Relevanz."
+  }
+ },
+ "local_facts": [
+  "Bezirk Murtal: 20 Gemeinden, rund 71.000 Einwohner (71.178 am 1.1.2026, Summe Landesstatistik), rund 20.000 Wohngebäude (2024)",
+  "Zwei Netzbetreiber: Stadtwerke Judenburg AG (460 km² Versorgungsgebiet) und Energienetze Steiermark (u. a. Knittelfeld, Zeltweg, Spielberg, Kobenz, Seckau)",
+  "Freie Einspeisekapazität: Judenburg West 0 kVA (Stadtwerke, Stand 1.10.2026) und 0,0 MW (Energienetze, Stand 1.7.2026), Knittelfeld Ost 0,0 MW",
+  "Fernwärme aus Abwärme der Zellstoff Pöls: mehr als 15.000 Haushalte im Murtal (Stadtwerke Judenburg)",
+  "Stmk. Baugesetz § 21 (LGBl. 20/2026): PV auf Dach/Fassade meldepflichtig bis 3,50 m Höhe, Speicher bis 20 kWh, Wärmepumpe meldepflichtig mit Schallbestätigung",
+  "Stadtgemeinde Zeltweg: 150 Euro PV-Förderung; Judenburg und Knittelfeld weisen kein eigenes Programm aus",
+  "KEM Murtal (alle 20 Gemeinden), Büro Energieagentur Obersteiermark in Zeltweg; Judenburg e5 mit fünf e",
+  "GeoSphere-Station Zeltweg (678 m): rund 136 Frosttage und rund 2.000 Sonnenstunden pro Jahr (Mittel 2016 bis 2025)"
+ ],
+ "cannibalization": [
+  "/photovoltaik-steiermark/ (Regionsseite, nennt das Murtal in der Bezirksliste)",
+  "/photovoltaik-leoben/ (Nachbarbezirk, gleiche Baurechts- und Energienetze-Absätze: bewusst anders formuliert)",
+  "/foerderung-photovoltaik-steiermark/ (Förder-Keywords dort halten)"
+ ],
+ "recommendation": {
+  "title": "Photovoltaik im Murtal: PV-Anlage & Wärmepumpe | EBZ Energie",
+  "h1": "Photovoltaik im Murtal: PV-Anlage mit Speicher und Wärmepumpe von Judenburg bis Knittelfeld",
+  "description": "PV-Anlage und Wärmepumpe im Murtal: Beratung vor Ort in Judenburg, Knittelfeld und Zeltweg. 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung.",
+  "h2_outline": [
+   "Photovoltaik und Wärmepumpe im Murtal: zwei Stromnetze, knappe Einspeisung, viel Fernwärme",
+   "Das Murtal auf einen Blick: Gemeinden, Netze, Fernwärme und Solarpotenzial",
+   "Genehmigung und Netzanschluss im Murtal: Meldung an die Gemeinde, Antrag beim richtigen Netzbetreiber",
+   "Wärmepumpe im Murtal: erst die Fernwärme prüfen, dann für lange Winter auslegen",
+   "Förderung für Photovoltaik und Wärmepumpe im Murtal",
+   "Referenzen mit Zahlen: zwei Projekte in Graz, ein Einfamilienhaus in Villach",
+   "Häufige Fragen"
+  ],
+  "faq_add": [
+   "Wer ist im Murtal der Stromnetzbetreiber für meine Photovoltaikanlage?",
+   "Kann ich im Murtal noch einspeisen, wenn die Umspannwerke ausgebucht sind?",
+   "Brauche ich im Murtal eine Baubewilligung für eine Photovoltaikanlage?",
+   "Was kostet eine Photovoltaikanlage im Murtal?",
+   "Fernwärme oder Wärmepumpe in Judenburg und Zeltweg: was passt besser?",
+   "Funktioniert eine Luft-Wasser-Wärmepumpe im Murtaler Winter?",
+   "Gibt es in Judenburg, Knittelfeld oder Zeltweg eine Gemeindeförderung für Photovoltaik?",
+   "Kommt EBZ Energie aus Villach auch ins Murtal?"
+  ],
+  "internal_links": [
+   "/photovoltaik/ -> Photovoltaikanlage",
+   "/waermepumpe/ -> Wärmepumpe",
+   "/batteriespeicher/ -> Speicher",
+   "/energiemanagementsystem/ -> Energiemanagementsystem",
+   "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft in der Steiermark",
+   "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+   "/einspeisetarif-fuer-photovoltaik/ -> Einspeisetarif für Photovoltaik"
+  ],
+  "notes": "Das Suchvolumen ist klein (Bezirk 20, Städte je 10, Wärmepumpe 10), die SERPs sind aber schwach: Kein Mitbewerber hat eine Seite mit echtem Bezirksinhalt. Die Seite setzt deshalb auf belegte lokale Fakten, die sonst niemand zusammenführt (zwei Netzbetreiber, ausgebuchte Umspannwerke, Fernwärme aus Pöls, Zeltweger Gemeindeförderung). Judenburg, Knittelfeld, Zeltweg und Fohnsdorf stehen in H1, Lead, Tabelle und FAQ, damit die Seite auch die Ortssuchen abdeckt. Die Vorlage erzeugt an zwölf Stellen 'in Murtal' und 'nach Murtal': ein optionales Feld für die Ortsangabe mit Artikel ('im Murtal', 'ins Murtal') in standorte.py würde das beheben. Ohne Adresse im Bezirk bleibt der Local Pack unerreichbar; eine dokumentierte Referenz aus dem Murtal wäre der stärkste nächste Schritt."
+ },
+ "cost_usd": 0.23,
+ "cost_note": "Schätzung nach DataForSEO-Preisliste (3 Aufrufe Google Ads Search Volume live zu je 0,075 $, 2 SERP live advanced zu je rund 0,003 $); die MCP-Antworten enthalten kein cost-Feld. Budget 0,60 $."
+}

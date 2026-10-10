@@ -1,0 +1,570 @@
+{
+  "slug": "standort_klagenfurt",
+  "path": "/photovoltaik-klagenfurt/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "primary": {
+    "keyword": "photovoltaik klagenfurt",
+    "volume_at": 50,
+    "kd": 28,
+    "cpc": 4.13,
+    "intent": "commercial 0,72 (Intent-API), Wettbewerb Google Ads HIGH (71); Saison: 140 im September 2025 und Maerz 2026, 30 im August 2026"
+  },
+  "secondary": [
+    {
+      "keyword": "wärmepumpe klagenfurt",
+      "volume_at": 20,
+      "kd": null,
+      "intent": "commercial 0,82; CPC 19,91 (hoechster Klickpreis im Set)"
+    },
+    {
+      "keyword": "pv anlage klagenfurt",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "commercial 0,71; CPC 5,10"
+    },
+    {
+      "keyword": "solar klagenfurt",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "commercial 0,56 / informational 0,38"
+    },
+    {
+      "keyword": "photovoltaik förderung klagenfurt",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "commercial 0,83 (nur als FAQ, Details auf foerderung_kaernten)"
+    },
+    {
+      "keyword": "stadtwerke klagenfurt photovoltaik",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "navigational/commercial (Netzantrag Energie Klagenfurt, Einspeisetarif)"
+    }
+  ],
+  "pv_klagenfurt_hinweis": "'pv klagenfurt' ist NICHT belastbar: Die Google-Ads-Schnittstelle liefert exakt dieselbe Zahl und dieselbe Monatsreihe wie fuer 'photovoltaik klagenfurt' (50, also als enge Variante zusammengefasst, nicht zusaetzlich), DataForSEO Labs nennt 140 mit fachfremden Kategorien und Intent informational 0,87 (andere Bedeutungen von 'PV'). Nicht als eigenes Volumen zaehlen.",
+  "semantic": [
+    "Energie Klagenfurt GmbH (Netzbetreiber Stadtnetz)",
+    "Stadtwerke Klagenfurt (STW)",
+    "Antragsportal pv.stw.at",
+    "Kärnten Netz GmbH (Umland)",
+    "netzwirksame Einspeiseleistung (kW) / Modulleistung (kWp)",
+    "Netzzugangsvertrag",
+    "Zählpunkt, Smart Meter, zweiter Messkanal",
+    "Mitteilungspflicht § 7 K-BO 1996",
+    "Magistrat der Landeshauptstadt Klagenfurt, Abt. Baurecht",
+    "Klagenfurt am Wörthersee",
+    "Krumpendorf",
+    "Pörtschach",
+    "Maria Wörth",
+    "Ebenthal",
+    "Maria Saal",
+    "Moosburg",
+    "Viktring",
+    "Waidmannsdorf",
+    "Annabichl",
+    "Sonnenstunden Klagenfurt Flughafen (GeoSphere Austria)",
+    "PVGIS kWh je kWp",
+    "Ost-West-Ausrichtung",
+    "Stromspeicher",
+    "Notstrom",
+    "Mehrparteienhaus / gemeinschaftliche Erzeugungsanlage",
+    "Energiegemeinschaft",
+    "SonnenCity Klagenfurt (Einspeisetarif)",
+    "OeMAG-Marktpreis",
+    "Luft-Wasser-Wärmepumpe",
+    "Fernwärme Klagenfurt",
+    "Heizungstausch",
+    "Landespauschale Kärnten 3.000 €",
+    "Projektbericht mit 3D-Belegplan und Statikreport"
+  ],
+  "long_tail": [
+    {
+      "keyword": "photovoltaik klagenfurt",
+      "volume_at": 50
+    },
+    {
+      "keyword": "wärmepumpe klagenfurt",
+      "volume_at": 20
+    },
+    {
+      "keyword": "pv anlage klagenfurt",
+      "volume_at": 10
+    },
+    {
+      "keyword": "solar klagenfurt",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik förderung klagenfurt",
+      "volume_at": 10
+    },
+    {
+      "keyword": "stadtwerke klagenfurt photovoltaik",
+      "volume_at": 10
+    },
+    {
+      "keyword": "solaranlage klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik firmen klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik firma klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv firma klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaikanlage klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "stromspeicher klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "luftwärmepumpe klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "heizungstausch klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "balkonkraftwerk klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wallbox klagenfurt",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik wörthersee",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik krumpendorf",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik pörtschach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik ebenthal",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik klagenfurt land",
+      "volume_at": 0
+    }
+  ],
+  "kontext_keywords": [
+    {
+      "keyword": "photovoltaik kärnten",
+      "volume_at": 70,
+      "hinweis": "gehoert zur Startseite/Photovoltaik-Seite"
+    },
+    {
+      "keyword": "wärmepumpe kärnten",
+      "volume_at": 10,
+      "hinweis": "gehoert zu /waermepumpe/"
+    },
+    {
+      "keyword": "fernwärme klagenfurt",
+      "volume_at": 70,
+      "hinweis": "navigational (Stadtwerke); nur als Abgrenzung in der Waermepumpen-Sektion"
+    },
+    {
+      "keyword": "installateur klagenfurt",
+      "volume_at": 880,
+      "hinweis": "zu breit (Sanitaer/Heizung), nicht Ziel der Seite"
+    },
+    {
+      "keyword": "energie klagenfurt",
+      "volume_at": 1000,
+      "hinweis": "navigational, nicht Ziel"
+    },
+    {
+      "keyword": "stadtwerke klagenfurt strom",
+      "volume_at": 320,
+      "hinweis": "navigational, nicht Ziel"
+    },
+    {
+      "keyword": "kelag pv anlage anmelden",
+      "volume_at": 20,
+      "hinweis": "zeigt Bedarf an Netzanmelde-Inhalten; in Klagenfurt ist Energie Klagenfurt zustaendig"
+    },
+    {
+      "keyword": "photovoltaik st veit",
+      "volume_at": 20,
+      "hinweis": "eigene Ortsseite pv_st_veit"
+    }
+  ],
+  "questions": [
+    "Was kostet eine 10 kW PV-Anlage mit Speicher und Montage?",
+    "Was kostet es, eine Photovoltaikanlage zu installieren?",
+    "Was kostet eine Photovoltaikanlage 2026?",
+    "Gibt es in Kärnten eine Förderung für PV-Speicher?",
+    "Welche Förderungen gibt es für Stromspeicher im Jahr 2026?",
+    "Was ändert sich 2026 mit Photovoltaik?",
+    "Welche Änderungen gibt es ab 2027 für PV-Anlagen?",
+    "Welche Hersteller von PV-Modulen gibt es in Österreich?",
+    "Welche Wärmepumpen sind genehmigungspflichtig?",
+    "Welche Förderungen gibt es in Kärnten für Heizungen?",
+    "Was kostet eine Luftwärmepumpe für 100 Quadratmeter Haus?",
+    "Welche Wärmepumpe verbraucht am wenigsten Strom?",
+    "Was ist der größte Nachteil einer Wärmepumpe?",
+    "Wer sind die Hersteller von Wärmepumpen in Österreich?"
+  ],
+  "serp": {
+    "location": "Klagenfurt,Carinthia,Austria (de, Desktop, 10.10.2026)",
+    "features": [
+      "local_pack",
+      "people_also_ask",
+      "people_also_search",
+      "images",
+      "paid (Verbund, OBI)",
+      "related_searches",
+      "video (Facebook)"
+    ],
+    "local_pack": {
+      "photovoltaik klagenfurt": [
+        {
+          "pos": 1,
+          "name": "SUNWORLD Energietechnik GmbH",
+          "rating": 4.9,
+          "reviews": 39
+        },
+        {
+          "pos": 2,
+          "name": "Kärnten Solar",
+          "rating": 4.9,
+          "reviews": 66
+        },
+        {
+          "pos": 3,
+          "name": "ABW-Solar GmbH",
+          "rating": 4.6,
+          "reviews": 9
+        }
+      ],
+      "wärmepumpe klagenfurt": [
+        {
+          "pos": 1,
+          "name": "Klötzl Klima",
+          "rating": 4.2,
+          "reviews": 30
+        },
+        {
+          "pos": 2,
+          "name": "Steinwender Haustechnik",
+          "rating": 4.5,
+          "reviews": 53
+        },
+        {
+          "pos": 3,
+          "name": "HTS Groß- und Detailhandel GmbH",
+          "rating": 3.3,
+          "reviews": 36
+        }
+      ]
+    },
+    "ebz_rankings": {
+      "photovoltaik klagenfurt": "weder Local Pack noch organische Top 10",
+      "wärmepumpe klagenfurt": "weder Local Pack noch organische Top 10"
+    },
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "kaernten-solar.at",
+        "title": "Deine Photovoltaikanlage I Eine Investition in die Zukunft",
+        "type": "anbieter (Klagenfurt)"
+      },
+      {
+        "pos": 2,
+        "domain": "pvbaustria.at",
+        "title": "Profi-Suche - PV Austria",
+        "type": "verband/verzeichnis"
+      },
+      {
+        "pos": 3,
+        "domain": "facebook.com",
+        "title": "Kärnten Solar: Privathaus in Klagenfurt am Wörthersee",
+        "type": "video/social"
+      },
+      {
+        "pos": 4,
+        "domain": "firmen.wko.at",
+        "title": "Photovoltaik in Kärnten (Bundesland)",
+        "type": "verzeichnis"
+      },
+      {
+        "pos": 5,
+        "domain": "aufdach.at",
+        "title": "aufdach.at - Photovoltaik für alle.",
+        "type": "anbieter"
+      },
+      {
+        "pos": 6,
+        "domain": "herold.at",
+        "title": "Solaranlagen in Klagenfurt am Wörthersee",
+        "type": "verzeichnis"
+      },
+      {
+        "pos": 7,
+        "domain": "pvbaustria.at",
+        "title": "PV Austria",
+        "type": "verband"
+      },
+      {
+        "pos": 8,
+        "domain": "facebook.com",
+        "title": "Kärnten Solar | Klagenfurt",
+        "type": "social"
+      },
+      {
+        "pos": 9,
+        "domain": "kelag.at",
+        "title": "Photovoltaik für Zuhause",
+        "type": "energieversorger"
+      },
+      {
+        "pos": 10,
+        "domain": "stw.at",
+        "title": "Stadtwerke Klagenfurt",
+        "type": "energieversorger/netzbetreiber"
+      }
+    ],
+    "top10_waermepumpe": [
+      {
+        "pos": 1,
+        "domain": "dolinschek.com",
+        "title": "Wärmepumpe in Villach & Kärnten | Installateur Dolinschek",
+        "type": "anbieter (Villach)"
+      },
+      {
+        "pos": 2,
+        "domain": "daibau.at",
+        "title": "Wärmepumpen, Keutschach am See - Top 16 Installateure",
+        "type": "portal"
+      },
+      {
+        "pos": 3,
+        "domain": "facebook.com",
+        "title": "SHT: Luft-Wasser-Wärmepumpen von Bosch",
+        "type": "video/social"
+      },
+      {
+        "pos": 4,
+        "domain": "shm-heizungsanitaer.at",
+        "title": "Installateur Leistungen in Klagenfurt | SHM GmbH",
+        "type": "anbieter"
+      },
+      {
+        "pos": 5,
+        "domain": "gecheckt.at",
+        "title": "Boilerwartung H.Rinnhofer",
+        "type": "portal"
+      },
+      {
+        "pos": 6,
+        "domain": "elektrobau-kobald.at",
+        "title": "Wärmepumpen: Elektrobau Kobald GmbH",
+        "type": "anbieter"
+      },
+      {
+        "pos": 7,
+        "domain": "daibau.at",
+        "title": "Wärmepumpen, Breitenfurt bei Wien",
+        "type": "portal (ortsfremd)"
+      },
+      {
+        "pos": 8,
+        "domain": "firmen.wko.at",
+        "title": "Wärmepumpen in Klagenfurt (Bezirk)",
+        "type": "verzeichnis"
+      },
+      {
+        "pos": 9,
+        "domain": "firmen.wko.at",
+        "title": "Wärmepumpen in Kärnten (Bundesland)",
+        "type": "verzeichnis"
+      },
+      {
+        "pos": 10,
+        "domain": "herold.at",
+        "title": "Waterkotte Austria GmbH in 9073 Klagenfurt",
+        "type": "verzeichnis"
+      }
+    ],
+    "related_searches": [
+      "Photovoltaik Kärnten",
+      "Photovoltaik Villach",
+      "Kelag Photovoltaik aktion",
+      "Pv anlage Kärnten Förderung",
+      "Kelag PV-Anlage anmelden",
+      "Photovoltaik St veit",
+      "Heizungstechniker Klagenfurt",
+      "Installateur Klagenfurt"
+    ]
+  },
+  "competitor_outline": [
+    "kaernten-solar.at: H1 Photovoltaikanlagen sind unser Alltag (Referenzkacheln)",
+    "H2 Deine Photovoltaikanlage für mehr Energieeffizienz (Beratung, Installation, Wartung)",
+    "H2 5 unterschiedliche Arten von Photovoltaikanlagen",
+    "H2 PV Kosten und Finanzierung (Amortisation 8 bis 12 Jahre, keine Preise)",
+    "sunworld.at: H1 Photovoltaik (Ertrag 1.000 bis 1.200 kWh je kWp, Flächenbedarf, Hinweis 'keine Bauverhandlung, Meldung an Gemeinde/Magistrat')",
+    "H1 Netzgekoppelte Anlagen (Beratung, Planung, Montage, Wartung, Anmeldung beim Energieversorger)",
+    "H1 Inselanlagen",
+    "H1 Batteriespeicher",
+    "H1 PV-Zaun/Balkon"
+  ],
+  "gaps": [
+    "Kein Wettbewerber in den Top 10 erklaert den Netzanschluss in Klagenfurt (Energie Klagenfurt statt Kaernten Netz, Portal pv.stw.at, Antrag durch den Kunden mit Vollmacht): groesster lokaler Hebel der neuen Seite.",
+    "Keine Preisangaben bei den lokalen Anbietern (PAA fragt dreimal nach Kosten): Richtpreis 15.000 bis 22.000 € sichtbar in H2 und FAQ.",
+    "Ertrag fuer Klagenfurt nirgends ortsgenau belegt: PVGIS (1.000 bis 1.240 kWh je kWp) und GeoSphere (rund 2.100 Sonnenstunden) auf der Seite.",
+    "Genehmigung nur als Einzeiler bei sunworld.at: eigene Sektion mit § 7 K-BO, Magistrat, Fertigstellungsmeldung.",
+    "Waermepumpe und Photovoltaik als ein System kommt in keiner der beiden SERPs vor (Installateure ohne PV, PV-Firmen ohne Heizung); Fernwaerme-Abgrenzung fehlt ueberall.",
+    "EBZ fehlt im Local Pack Klagenfurt (Sitz Villach): ohne Standort in Klagenfurt ist nur das organische Ranking erreichbar, Local Pack bleibt bei Klagenfurter Adressen."
+  ],
+  "cannibalization": [
+    "/photovoltaik-villach/ (fuehrte Klagenfurt bisher als Nebenbegriff, wird entkoppelt und verlinkt hierher)",
+    "/energiegemeinschaft-villach-klagenfurt/ (anderer Intent: Energiegemeinschaft; gegenseitig verlinken)",
+    "/waermepumpe/ (Hero nennt Klagenfurt; bleibt Kaernten-/Steiermark-Seite, verlinkt von hier)",
+    "/photovoltaik-foerderung-kaernten/ (alle Foerder-Keywords Kaernten; hier nur Kurzfassung)",
+    "/ (Startseite: 'Photovoltaik-Firmen in Kaernten, in Klagenfurt' im Anbieter-Check, unkritisch)"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "photovoltaik klagenfurt",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "pv anlage klagenfurt",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "wärmepumpe klagenfurt",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "solar klagenfurt",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik förderung klagenfurt",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "solaranlage klagenfurt",
+      "ai_volume": 0
+    }
+  ],
+  "local_facts": [
+    {
+      "fakt": "Netzbetreiber im Stadtnetz ist die Energie Klagenfurt GmbH (Stadtwerke), Antrag ueber pv.stw.at, Antrag nur durch den Kunden, Elektrofachbetrieb bevollmaechtigbar, Speicher meldepflichtig, Inbetriebnahme erst nach Freigabe/Netzzugangsvertrag",
+      "quelle": "https://www.stw.at/privat/energie/stromnetz/photovoltaikanlagen/"
+    },
+    {
+      "fakt": "Kärnten Netz GmbH ist Verteilernetzbetreiber in Kärnten (Umland; adressgenaue Zuordnung nicht belegt)",
+      "quelle": "https://kaerntennetz.at/ueber-uns.htm"
+    },
+    {
+      "fakt": "Einspeisetarif SonnenCity Klagenfurt 7 Cent je kWh netto",
+      "quelle": "https://www.stw.at/privat/energie/strom/sonnencity-klagenfurt/"
+    },
+    {
+      "fakt": "PV und Speicher mitteilungspflichtig nach § 7 Abs. 1 lit. a Z 20 K-BO 1996 idF LGBl. 11/2026; Vollendung binnen zwei Wochen melden",
+      "quelle": "https://villach.at/getmedia/fe3178f4-230a-4056-871d-d9412d2329ff/Mitteilung_P7_KBO1996.pdf.aspx (Formular Magistrat Villach zur selben Bestimmung); Gesetzestext-Wiedergabe https://www.forum-media.at/brandschutz/Vorschriften/Kaerntner-Bauordnung-1996/2.-Abschnitt/7.-Mitteilungspflichtige-Vorhaben"
+    },
+    {
+      "fakt": "Baubehoerde Stadt: Magistrat der Landeshauptstadt Klagenfurt, Abt. Baurecht",
+      "quelle": "https://stw.at/wp-content/uploads/2024/03/mitteilung_an_baupolizeit.pdf (altes Formular, Schwellenwerte ueberholt)"
+    },
+    {
+      "fakt": "Sonnenscheindauer Klagenfurt Flughafen: Mittel 2015 bis 2024 2.119 h/Jahr (1.902 bis 2.278); 1992 bis 2020 2.074 h",
+      "quelle": "https://dataset.api.hub.geosphere.at/v1/station/historical/klima-v2-1y?parameters=so_h&station_ids=48&start=1991-01-01&end=2025-12-31"
+    },
+    {
+      "fakt": "Ertrag PVGIS 5.3 (SARAH3, 2005 bis 2023), Klagenfurt Zentrum: Sued 30 Grad 1.240 kWh/kWp, Ost 25 Grad 993, West 25 Grad 1.008 (14 % Verluste)",
+      "quelle": "https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?lat=46.624&lon=14.308&peakpower=1&loss=14&angle=30&aspect=0&outputformat=json"
+    },
+    {
+      "fakt": "Fernwaerme Stadtwerke Klagenfurt 2025 zu 90,51 % erneuerbar, Anschluss adressgenau pruefbar",
+      "quelle": "https://www.stw.at/privat/energie/fernwaerme/unsere-fernwaerme/"
+    },
+    {
+      "fakt": "Klagenfurt Teil der EU-Cities-Mission seit 28.04.2022, Ziel bilanzielle Klimaneutralitaet 2030",
+      "quelle": "https://www.klagenfurt.at/stadtservice/klima-umwelt/klimaschutz"
+    }
+  ],
+  "weggelassen": [
+    "Solarpotenzialkataster KAGIS/Kärnten Atlas: ktn.gv.at und kagis.ktn.gv.at waren nicht erreichbar, keine Quelle abgerufen",
+    "Foerderung der Stadt Klagenfurt fuer PV, Speicher oder Heizungstausch: auf klagenfurt.at und stw.at nichts gefunden; Seite sagt nur 'uns nicht bekannt'",
+    "Kelag-Waermepumpen-Praemie: gilt fuer Kelag-Stromkunden, hier nicht selbst abgerufen",
+    "Zuordnung einzelner Umlandgemeinden zu Energie Klagenfurt oder Kaernten Netz, Entfernungen und Fahrzeiten",
+    "Gesetzeswortlaut direkt aus dem RIS (Bot-Schutz, HTTP 503)"
+  ],
+  "recommendation": {
+    "title": "Photovoltaik Klagenfurt: PV-Anlage und Wärmepumpe | EBZ",
+    "h1": "Photovoltaik in Klagenfurt: PV-Anlage, Speicher und Wärmepumpe vom Fachbetrieb aus Villach",
+    "description": "Photovoltaik und Wärmepumpe in Klagenfurt: Planung, Speicher, Montage, Netzantrag bei der Energie Klagenfurt und Förderung Kärnten. 4,9 Sterne, 300+ Projekte.",
+    "h2_outline": [
+      "Lohnt sich Photovoltaik in Klagenfurt? (Sonnenstunden, kWh je kWp)",
+      "Netzanschluss in Klagenfurt: Energie Klagenfurt im Stadtnetz, Kärnten Netz im Umland",
+      "Genehmigung in Klagenfurt: Mitteilung an den Magistrat statt Bauverfahren",
+      "Einfamilienhaus, Mehrparteienhaus oder Betrieb: Photovoltaik für Klagenfurt und den Wörthersee",
+      "Was eine PV-Anlage in Klagenfurt kostet und was sie spart",
+      "Wärmepumpe in Klagenfurt: erst Fernwärme prüfen, sonst mit Sonnenstrom heizen",
+      "Förderung für Photovoltaik in Klagenfurt: Land Kärnten und Bund in Kürze",
+      "Ihre Anlage gehört Ihnen ab dem ersten Tag (Finanzierung)",
+      "Referenzen am Wörthersee und in Kärnten (Krumpendorf 25 kWp)",
+      "Photovoltaik-Firmen in Klagenfurt vergleichen: sechs Punkte fürs Angebot",
+      "Fachbetrieb aus Villach, vor Ort in Klagenfurt (NAP, Stadtteile, Umland)",
+      "Ablauf, Häufige Fragen, Kontakt"
+    ],
+    "faq_add": [
+      "Wer ist in Klagenfurt der Netzbetreiber für meine Photovoltaikanlage?",
+      "Brauche ich in Klagenfurt eine Baugenehmigung für eine PV-Anlage auf dem Dach?",
+      "Was kostet eine PV-Anlage mit Speicher und Montage in Klagenfurt?",
+      "Wie viel Strom erzeugt eine Photovoltaikanlage in Klagenfurt?",
+      "Gibt es eine Photovoltaik-Förderung der Stadt Klagenfurt?",
+      "Wer nimmt in Klagenfurt meinen überschüssigen Sonnenstrom ab?",
+      "Was kostet eine Wärmepumpe in Klagenfurt, und passt sie zur Photovoltaik?",
+      "Fernwärme oder Wärmepumpe: Was ist in Klagenfurt sinnvoll?",
+      "Welche Förderung gibt es für eine Wärmepumpe in Klagenfurt?",
+      "Ist eine Wärmepumpe in Klagenfurt genehmigungspflichtig?",
+      "Hat EBZ Energie ein Büro in Klagenfurt?"
+    ],
+    "internal_links": [
+      "/photovoltaik/ -> Photovoltaik für Eigenheim und Gewerbe",
+      "/waermepumpe/ -> Wärmepumpe vom Fachbetrieb",
+      "/batteriespeicher/ -> Stromspeicher",
+      "/photovoltaik-foerderung-kaernten/ -> PV-Förderung Kärnten 2026 im Detail",
+      "/foerderungen/ -> Aktuelle Förderungen 2026",
+      "/foerderrechner/ -> Förderrechner",
+      "/energiegemeinschaft-villach-klagenfurt/ -> Energiegemeinschaft Villach und Klagenfurt",
+      "/photovoltaik-fuer-waermepumpe/ -> Photovoltaik für die Wärmepumpe",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/kosten-einer-waermepumpe/ -> Kosten einer Wärmepumpe",
+      "/landesfoerderungen-fuer-die-waermepumpe/ -> Landesförderungen für die Wärmepumpe",
+      "/referenzen/projekt-mehrparteienhaus-krumpendorf/ -> Referenz Krumpendorf am Wörthersee",
+      "/photovoltaik-villach/ -> Photovoltaik in Villach",
+      "/photovoltaik-gewerbe/ -> Photovoltaik für Gewerbe",
+      "/finanzierung/ -> Finanzierung ab 147 € im Monat"
+    ],
+    "notes": "Die organische SERP fuer 'photovoltaik klagenfurt' ist schwach besetzt (ein lokaler Anbieter, sonst Verzeichnisse, Verband, Facebook, Kelag, Stadtwerke); KD 28. Der Local Pack bleibt ohne Adresse in Klagenfurt ausser Reichweite, deshalb zaehlt das organische Ranking: Die Seite setzt auf die lokalen Informationsbausteine, die kein Wettbewerber hat (Netzantrag bei der Energie Klagenfurt, Mitteilung an den Magistrat, Ertrag und Sonnenstunden fuer Klagenfurt, Preis). Waermepumpe als eigene H2 mit Fernwaerme-Abgrenzung; der Klickpreis von 19,91 € zeigt den Wert der wenigen Suchen. Foerder-Keywords bleiben auf /photovoltaik-foerderung-kaernten/. Monatlich mitpflegen: SonnenCity-Tarif und OeMAG-Wert."
+  },
+  "cost_usd": 0.3,
+  "cost_hinweis": "Schaetzung, die MCP-Antworten enthalten kein cost-Feld: 3x Google-Ads-Suchvolumen, 2x Keyword Suggestions, 1x Keyword Overview, 1x Search Intent, 1x AI-Suchvolumen, 2x SERP live (PAA-Tiefe 2), 2x Content Parsing."
+}

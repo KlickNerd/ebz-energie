@@ -1,0 +1,365 @@
+{
+ "slug": "standort_leibnitz",
+ "path": "/photovoltaik-leibnitz/",
+ "seitentyp": "standort",
+ "stand": "2026-10-10",
+ "primary": {
+  "keyword": "photovoltaik leibnitz",
+  "volume_at": 30,
+  "kd": null,
+  "cpc": 4.21,
+  "intent": "commercial/lokal (SERP: Installateure, Branchenverzeichnisse)",
+  "hinweis": "Google Ads fasst 'photovoltaik leibnitz' und 'pv leibnitz' zusammen (identische Monatsreihe, Wettbewerb HIGH 82). Saison: März/April 50, August 10."
+ },
+ "secondary": [
+  {
+   "keyword": "pv leibnitz",
+   "volume_at": 30,
+   "kd": null,
+   "intent": "wie Primär (gleiche Keyword-Gruppe, nicht addieren)"
+  },
+  {
+   "keyword": "photovoltaik lebring",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "lokal"
+  },
+  {
+   "keyword": "wärmepumpe leibnitz",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "lokal, SERP mit Local Pack"
+  },
+  {
+   "keyword": "pv anlage leibnitz",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "solaranlage leibnitz",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaik südsteiermark",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "regional"
+  }
+ ],
+ "long_tail": [
+  {
+   "keyword": "installateur leibnitz",
+   "volume_at": 170
+  },
+  {
+   "keyword": "elektriker leibnitz",
+   "volume_at": 90
+  },
+  {
+   "keyword": "photovoltaik steiermark",
+   "volume_at": 70
+  },
+  {
+   "keyword": "photovoltaik lebring",
+   "volume_at": 10
+  },
+  {
+   "keyword": "photovoltaik firmen leibnitz",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe installateur leibnitz",
+   "volume_at": 0
+  },
+  {
+   "keyword": "heizungstausch leibnitz",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik wagna",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik wildon",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik gamlitz",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv anlage südsteiermark",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe südsteiermark",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv förderung leibnitz",
+   "volume_at": 0
+  },
+  {
+   "keyword": "energiegemeinschaft leibnitz",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Was kostet eine 10 kW PV-Anlage mit Speicher und Montage?",
+  "Gibt es 2026 eine Förderung für Photovoltaikanlagen in der Steiermark?",
+  "Wie hoch ist die Förderung für Photovoltaik in der Steiermark?",
+  "Ist eine PV-Anlage bewilligungspflichtig in der Steiermark?",
+  "Was kostet eine PV-Anlage inklusive Montage?",
+  "Was ändert sich 2026 mit Photovoltaik?",
+  "Wie viel kostet eine Wärmepumpe inklusive Montage?",
+  "Brauche ich in der Steiermark eine Genehmigung für eine Wärmepumpe?",
+  "Wann lohnt sich eine Wärmepumpe nicht?",
+  "Was kostet eine Wärmepumpe mit Einbau in Österreich?",
+  "Was kostet eine Wärmepumpe monatlich an Strom?",
+  "Gibt es in Österreich eine Förderung für Wärmepumpen ab 2026?"
+ ],
+ "serp": {
+  "photovoltaik leibnitz": {
+   "location": "Austria",
+   "features": [
+    "people_also_ask",
+    "people_also_search",
+    "related_searches",
+    "knowledge_graph (EVERTO Solarstrom GmbH, Leibnitz)"
+   ],
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "firmen.wko.at",
+     "title": "Photovoltaik In Leibnitz (Bezirk) | 31 Unternehmen gefunden",
+     "type": "portal"
+    },
+    {
+     "pos": 2,
+     "domain": "everto.at",
+     "title": "Der Photovoltaik-Spezialist aus der Steiermark",
+     "type": "anbieter (Sitz Leibnitz)"
+    },
+    {
+     "pos": 3,
+     "domain": "elektrotechnik-fuernschuss.com",
+     "title": "Photovoltaik Leibnitz: Anlage mit Speicher & Förderung",
+     "type": "anbieter (Ortsseite)"
+    },
+    {
+     "pos": 4,
+     "domain": "pv-vision.at",
+     "title": "Photovoltaik Anlagen in Leibnitz",
+     "type": "anbieter (Referenzen)"
+    },
+    {
+     "pos": 5,
+     "domain": "krottmeier-elektrik.at",
+     "title": "News & Aktionen",
+     "type": "anbieter"
+    },
+    {
+     "pos": 6,
+     "domain": "leibnitzonline.at",
+     "title": "Photovoltaik & Solartechnik in Leibnitz und Umgebung",
+     "type": "portal"
+    },
+    {
+     "pos": 7,
+     "domain": "daibau.at",
+     "title": "Photovoltaik, Leibnitz: Top 16 Auftragnehmer",
+     "type": "portal"
+    },
+    {
+     "pos": 8,
+     "domain": "elektro-sunko.at",
+     "title": "Photovoltaik-Anlagen, Strom durch Sonnenkraft",
+     "type": "anbieter"
+    },
+    {
+     "pos": 9,
+     "domain": "facebook.com",
+     "title": "Everto Solarstrom & Photovoltaiktechnik | Leibnitz",
+     "type": "social"
+    },
+    {
+     "pos": 10,
+     "domain": "ketschler.com",
+     "title": "Ketschler Energietechnik | Photovoltaik Leibnitz",
+     "type": "anbieter"
+    }
+   ]
+  },
+  "wärmepumpe leibnitz": {
+   "location": "Austria",
+   "features": [
+    "local_pack",
+    "people_also_ask",
+    "people_also_search",
+    "related_searches"
+   ],
+   "local_pack": [
+    "Cool Company Kälte - Klima - Gastro GmbH (4,9 / 112)",
+    "Ebenwalder Kälte- Klimatechnik GmbH (4,6 / 21)",
+    "GWH Gebrüder Roiko GmbH (4,0 / 18)"
+   ],
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "coolcompany.at",
+     "title": "Klimaanlagen Wohnraumlüftungen Wärmepumpen Leibnitz",
+     "type": "anbieter"
+    },
+    {
+     "pos": 2,
+     "domain": "waermepumpe-austria.at",
+     "title": "GWH Gebrüder Roiko Ges.m.b.H., 8430 Leibnitz",
+     "type": "portal"
+    },
+    {
+     "pos": 3,
+     "domain": "pratter-installationen.at",
+     "title": "Wärmepumpe | Installateur Leibnitz | Installateur Gamlitz",
+     "type": "anbieter"
+    },
+    {
+     "pos": 4,
+     "domain": "daibau.at",
+     "title": "Wärmepumpen, Leibnitz: Top 16 Installateure",
+     "type": "portal"
+    },
+    {
+     "pos": 5,
+     "domain": "gwh-roiko.at",
+     "title": "Heizungen | GWH Installateur",
+     "type": "anbieter"
+    },
+    {
+     "pos": 6,
+     "domain": "vaillant.at",
+     "title": "Umweltfreundlicher Wohnkomfort in Leibnitz (Referenz Einfamilienhaus)",
+     "type": "hersteller"
+    },
+    {
+     "pos": 7,
+     "domain": "firmen.wko.at",
+     "title": "Wärmepumpen In Leibnitz (Bezirk)",
+     "type": "portal"
+    },
+    {
+     "pos": 8,
+     "domain": "flanyek.at",
+     "title": "Top Installateur in Leibnitz | Heizung, Bad & Sanitär",
+     "type": "anbieter (Ortsseite)"
+    },
+    {
+     "pos": 9,
+     "domain": "waermepumpe-austria.at",
+     "title": "Cool Company Kälte-Klima-Gastro GmbH, 8430 Leibnitz",
+     "type": "portal"
+    },
+    {
+     "pos": 10,
+     "domain": "harkam.at",
+     "title": "Ing. Harkam: Ihr Installateur in Leibnitz",
+     "type": "anbieter"
+    }
+   ]
+  }
+ },
+ "lokale_fakten": [
+  {
+   "fakt": "Stadtgemeinde Leibnitz: 13.441 Einwohner (1.1.2026), 23,5 km², Seehöhe Gemeindeamt 273 m, 3.328 Wohngebäude, 7.750 Wohnungen. Bezirk: 88.164 Einwohner, 750,1 km², 29.568 Wohngebäude, 44.836 Wohnungen.",
+   "quelle": "https://www.landesentwicklung.steiermark.at/cms/dokumente/12256481_141979478/0a48dff2/61053.pdf ; https://www.landesentwicklung.steiermark.at/cms/dokumente/12658731_141979478/b8d8a2ef/610.pdf"
+  },
+  {
+   "fakt": "Strom-Verteilernetz laut E-Control je PLZ: 8430 Leibnitz, 8435 Wagna, 8431 Gralla, 8434 Tillmitsch, 8423 St. Veit in der Südsteiermark, 8461 Ehrenhausen, 8472 Straß = Energienetze Steiermark GmbH und E-Werk Ebner GesmbH. 8403 Lebring, 8413, 8421, 8422 = Energienetze Steiermark und P.K. Energieversorgungs-GmbH. 8424 Gabersdorf = alle drei. 8443 Gleinstätten = E-Werk Gleinstätten GmbH und Energienetze Steiermark. 8410 Wildon, 8462 Gamlitz, 8463 Leutschach, 8442 Kitzeck, 8451 Heimschuh = nur Energienetze Steiermark.",
+   "quelle": "https://www.e-control.at/tarifkalkulator (Abfrage der Netzbetreiber je Postleitzahl, 10.10.2026)"
+  },
+  {
+   "fakt": "Gasnetz laut E-Control: Energienetze Steiermark GmbH in 8430, 8435, 8431, 8434, 8403, 8410, 8411, 8423, 8443, 8461, 8472. Kein Gasnetzbetreiber gelistet für 8462 Gamlitz, 8463 Leutschach, 8442 Kitzeck, 8451 Heimschuh, 8452 Großklein, 8454 Arnfels, 8455 Oberhaag.",
+   "quelle": "https://www.e-control.at/tarifkalkulator"
+  },
+  {
+   "fakt": "Energienetze Steiermark: Antrag über Einspeiserportal, Zählpunkt, automatisch Netzanschlusskonzept (12 Monate, einmal um 12 Monate verlängerbar), Installationsdokument durch konzessioniertes Elektrounternehmen, Einschalten erst nach Freigabe. Wirkleistungsbegrenzung seit 1.12.2024 für PV 3,68 bis 250 kW: Netzwerkkabel Wechselrichter zu Smart Meter bei Neuanlagen.",
+   "quelle": "https://www.e-netze.at/Strom/Erzeugungsanlagen/Default.aspx"
+  },
+  {
+   "fakt": "Stmk. Baugesetz § 21 idF LGBl. Nr. 20/2026 (Deregulierungsgesetz 2025): PV und Solarthermie auf Dach oder Fassade meldepflichtig (Höhe höchstens 3,50 m), Freifläche bis 100 kWp; Batterieanlagen bis 20 kWh meldepflichtig, bis 100 kWh mit Nachweis zum thermal runaway; ortsfeste Aufstellung von Wärmepumpen meldepflichtig mit Datenblatt und Sachverständigen-Bestätigung zum Planungsbasispegel an der relevanten Grundgrenze. Mitteilung vor Ausführung schriftlich an die Gemeinde.",
+   "quelle": "https://sued.zt.at/fileadmin/user_upload/redakteure_stk/02_Mitglieder/Gesetze/2026/Stmk._Deregulierungsgesetz_2025.pdf ; Textausgabe https://www.forum-media.at/brandschutz/Vorschriften/Steiermaerkisches-Baugesetz/I.-HAUPTSTUeCK/III.-TEIL/I.-Abschnitt/21.-Meldepflichtige-Vorhaben (RIS wegen Sicherheitsabfrage nicht abrufbar)"
+  },
+  {
+   "fakt": "Baubehörde: Stadtgemeinde Leibnitz, Abteilung Baurecht & Umwelt, Hauptplatz 24, Formular 'Mitteilung meldepflichtiges Bauvorhaben' (Stand 2022, Merkblatt noch mit alter 400-m²-Grenze).",
+   "quelle": "https://newsroom.leibnitz.at/formulareundantraege/"
+  },
+  {
+   "fakt": "Stadtförderung: Anträge 'Direktförderung von Solaranlagen' (nur thermische Solaranlage ankreuzbar) und 'Direktförderung von Balkonkraftwerken', beide ohne Rechtsanspruch, nach Budgetmitteln, kein weiterer Investitionszuschuss außer Bund/Land. Beträge im Formular nicht genannt.",
+   "quelle": "https://newsroom.leibnitz.at/wp-content/uploads/2025/10/2023_Antrag_Solaranlage.pdf ; https://newsroom.leibnitz.at/wp-content/uploads/2025/10/2024_Antrag_Balkonkraftwerk.pdf"
+  },
+  {
+   "fakt": "Klima- und Standortstrategie Leibnitz 2040: im April 2026 einstimmig vom Gemeinderat beschlossen, rund 65 % des Energiebedarfs aus fossilen Quellen, Pionierstadt im Programm 'Klimaneutrale Stadt'.",
+   "quelle": "https://newsroom.leibnitz.at/weichenstellung-fuer-die-zukunftleibnitz-praesentiert-klima-und-standortstrategie-2040/"
+  },
+  {
+   "fakt": "Fernwärmeverbund Tillmitsch-Leibnitz-Wagna ('Demonstrator Leibnitz'), Netzbetreiberin Nahwärme Tillmitsch GmbH & Co KG, Heizzentrale Kaindorf mit zwei Biomassekesseln zu je 3 MW, Netzvorlauf rund 92 °C, Jahresbedarf am Standort 21.894 MWh; deckt laut Bericht einen Großteil der Wärmeversorgung im Raum Leibnitz, Tillmitsch, Kaindorf, Gralla.",
+   "quelle": "https://klimafonds.gv.at/wp-content/uploads/2025/02/KC398825_Publizierbarer-Endbericht_SolareGA.pdf"
+  },
+  {
+   "fakt": "Solarpotenzial: Digitaler Atlas Steiermark zeigt Eignung und technisches Potenzial der Dachflächen, SolarTool schickt Bericht per E-Mail (ABT 15 und ABT 17, April 2023).",
+   "quelle": "https://landesentwicklung.steiermark.at/cms/beitrag/12910759/145230171 ; https://gis.stmk.gv.at/atlas2/Solartool.html"
+  },
+  {
+   "fakt": "PVGIS 5.3 (SARAH3), 46,781 N / 15,545 O, 272 m, 1 kWp, 14 % Verluste: Süd 30 Grad 1.207 kWh/kWp pro Jahr (Dezember 48,5, Jänner 58,3, Juli 142,8 kWh); Ost 15 Grad 994, West 15 Grad 997 kWh/kWp.",
+   "quelle": "https://re.jrc.ec.europa.eu/pvg_tools/de/ (API v5_3 PVcalc)"
+  }
+ ],
+ "gaps": [
+  "Kein Referenzprojekt im Bezirk Leibnitz (Wettbewerber pv-vision.at und Everto zeigen lokale Anlagen).",
+  "Kein Local Pack erreichbar ohne Adresse im Bezirk; bei 'wärmepumpe leibnitz' dominieren Kälte- und Installationsbetriebe mit Sitz in Leibnitz.",
+  "Stadtförderung: Beträge nicht belegbar, solange www.leibnitz.at in Wartung ist."
+ ],
+ "cannibalization": [
+  "/photovoltaik-steiermark/ (Region, 'photovoltaik steiermark' 70)",
+  "/photovoltaik-graz/",
+  "/foerderung-photovoltaik-steiermark/",
+  "/landesfoerderungen-fuer-die-waermepumpe/",
+  "/waermepumpe/"
+ ],
+ "recommendation": {
+  "title": "Photovoltaik Leibnitz: PV-Anlage & Wärmepumpe | EBZ Energie",
+  "h1": "Photovoltaik in Leibnitz: PV-Anlage, Speicher und Wärmepumpe für die Südsteiermark",
+  "description": "Photovoltaik und Wärmepumpe in Leibnitz, Wagna und im Bezirk: rund 1.200 kWh je kWp laut PVGIS, Meldung statt Baubewilligung. Fachbetrieb aus Villach.",
+  "h2_outline": [
+   "Photovoltaik und Wärmepumpe in Leibnitz: was das Dach hier liefert",
+   "Leibnitz auf einen Blick: Netz, Behörde, Fernwärme, Solarpotenzial",
+   "Genehmigung und Netzanschluss in Leibnitz: Meldung an die Stadt, Antrag beim Netzbetreiber",
+   "Wärmepumpe in Leibnitz: erst Fernwärme prüfen, dann Heizung tauschen und mit PV koppeln",
+   "Förderung für Photovoltaik und Wärmepumpe in Leibnitz",
+   "Referenzen aus der Steiermark: zwei Projekte in Graz"
+  ],
+  "faq_add": [
+   "Was kostet eine Photovoltaikanlage in Leibnitz mit Speicher?",
+   "Wie viel Strom liefert eine PV-Anlage in Leibnitz pro kWp?",
+   "Brauche ich in Leibnitz eine Baubewilligung für die PV-Anlage?",
+   "Welcher Netzbetreiber ist in Leibnitz für meine PV-Anlage zuständig?",
+   "Fernwärme oder Wärmepumpe: Was passt in Leibnitz besser?",
+   "Muss ich eine Wärmepumpe in Leibnitz bei der Gemeinde melden?",
+   "Zahlt die Stadt Leibnitz eine Förderung für Photovoltaik oder Wärmepumpe?",
+   "Kommt EBZ Energie aus Villach wirklich bis nach Leibnitz?"
+  ],
+  "internal_links": [
+   "/leistungen/energiegemeinschaft/ -> Energiegemeinschaft",
+   "/energiemanagementsystem/ -> Energiemanagementsystem",
+   "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+   "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft in der Steiermark",
+   "/kosten-einer-solaranlage/ -> Was eine Solaranlage kostet",
+   "/pv-speicher-nachruesten/ -> PV-Speicher nachrüsten"
+  ],
+  "notes": "Kleines, aber kaufnahes Volumen (30 im Monat, CPC 4,21 €, Wettbewerb hoch). Die SERP besteht aus lokalen Elektrikern und Verzeichnissen ohne belegte Behördenfakten: Die Seite punktet mit den zwei Netzbetreibern laut E-Control, der Meldepflicht nach der Baugesetz-Novelle 2026, dem Fernwärmeverbund und dem PVGIS-Ertrag. Wärmepumpen-Begriffe haben kein messbares Volumen, die Sektion bleibt wegen des Fernwärme-Themas trotzdem sinnvoll. Zuerst ein Referenzprojekt aus dem Bezirk nachziehen und die Stadtförderung nach Ende der Wartung von leibnitz.at prüfen. Wärmepumpe ohne Förderversprechen: Land Steiermark und Bund nehmen laut zentraler Faktenliste derzeit keine Anträge an."
+ },
+ "cost_usd": 0.16,
+ "cost_hinweis": "Schätzung: 2 x Google-Ads-Suchvolumen (je ca. 0,075 $) und 2 x SERP live advanced mit People-also-ask (je ca. 0,005 $); die MCP-Antworten enthalten kein cost-Feld."
+}

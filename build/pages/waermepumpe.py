@@ -38,9 +38,9 @@ FAQ = [
      "Euro (Stand Oktober 2026). Den Festpreis erhalten Sie nach der Vor-Ort-Prüfung."),
     ("Wie hoch ist die Förderung für eine Wärmepumpe 2026?",
      "Die Bundesförderung 2026 (Kesseltausch bis 7.500 Euro, Sauber Heizen für Alle bis 100 Prozent) ist seit Herbst "
-     "2026 ausgeschöpft, neue Registrierungen sind nicht möglich. Aktuell laufen die Landesförderungen: Kärnten laut "
-     "Berichten 2026 mit 3.000 Euro Pauschale, die Steiermark mit 35 Prozent der förderbaren Kosten. Ob 2027 ein neues "
-     "Bundesprogramm kommt, ist offen (Stand Oktober 2026)."),
+     "2026 ausgeschöpft, neue Registrierungen sind nicht möglich. Das Land Kärnten zahlt 2026 eine Pauschale von "
+     "3.000 Euro für den Umstieg auf eine Wärmepumpe im Eigenheim. Die Steiermark nimmt für neue Wärmepumpen derzeit "
+     "keine Förderanträge an. Ob 2027 ein neues Bundesprogramm kommt, ist offen (Stand Oktober 2026)."),
     ("Funktioniert eine Wärmepumpe auch im Altbau, und wann macht sie keinen Sinn?",
      "Ja, meistens. Bis 55 Grad Vorlauf arbeitet eine moderne Wärmepumpe effizient, große alte Heizkörper sind oft "
      "überdimensioniert und deshalb geeignet. Brauchen Heizkörper dauerhaft 60 bis 70 Grad, hilft eine "
@@ -139,7 +139,7 @@ def build():
                 "alt": "Einfamilienhaus in Kärnten mit Photovoltaikanlage für die Wärmepumpe",
                 "title": "Für Ihr Eigenheim",
                 "bullets": [
-                    "Raus aus Öl und Gas: Landesförderung Kärnten oder Steiermark plus Steuerbonus",
+                    "Raus aus Öl und Gas: in Kärnten mit 3.000 € Landespauschale",
                     "Neubau und Altbau, auch mit vorhandenen Heizkörpern",
                     "Heizkosten mit Photovoltaik: 200 bis 500 € im Jahr*",
                 ],
@@ -205,7 +205,7 @@ def build():
                 {"size": "Luft-Wasser im Einfamilienhaus", "price": "12.000 bis 22.000 €", "price_sub": "vor Förderung*",
                  "features": ["Gerät 8.000 bis 18.000 €, Installation 3.000 bis 6.000 €",
                               "Keine Bohrung, keine Erschließung nötig",
-                              "Landesförderung Kärnten oder Steiermark abziehbar"]},
+                              "In Kärnten 3.000 € Landespauschale abziehbar"]},
                 {"size": "Luft-Wasser im Altbau", "price": "15.000 bis 28.000 €", "price_sub": "vor Förderung*",
                  "features": ["Inklusive Anpassung von Heizkörpern und Verteilsystem",
                               "Fußbodenheizung nicht zwingend, Nachrüstung 50 bis 120 € je m²",
@@ -220,15 +220,15 @@ def build():
         ).replace('<section class="section"', '<section id="kosten" class="section"', 1),
         C.media_text(
             eyebrow="Förderung 2026",
-            h2="Förderung 2026: Bund ausgeschöpft, Land Kärnten und Steiermark, Steuerbonus",
+            h2="Förderung 2026: Bund ausgeschöpft, Kärnten zahlt 3.000 €, Steiermark pausiert",
             paragraphs=[
                 ("Die Bundesförderung 2026 für den Heizungstausch (Sanierungsoffensive mit Kesseltausch bis 7.500 €, "
                  "Sauber Heizen für Alle bis 100 %) ist seit Herbst 2026 ausgeschöpft, neue Registrierungen sind nicht "
                  "möglich; ob 2027 ein neues Bundesprogramm kommt, ist offen (Quelle: umweltfoerderung.at, Stand "
                  "Oktober 2026). Wer bereits registriert ist, kann noch beantragen."),
-                ("Aktuell laufen die Landesförderungen: Kärnten fördert den Heizungstausch weiter (2026 laut Berichten "
-                 "auf 3.000 € Pauschale angepasst, zuvor 35 % bis 6.000 €), die Steiermark zahlt 35 % der förderbaren "
-                 "Kosten für Ein- und Zweifamilienhäuser. Wer seine Bundesförderung noch ausbezahlt bekommt, setzt "
+                ("Bei den Ländern ist die Lage unterschiedlich: Kärnten zahlt 2026 eine Pauschale von 3.000 € für den "
+                 "Umstieg auf eine Wärmepumpe im Eigenheim (plus 1.500 € mit thermischer Solaranlage). Die Steiermark "
+                 "nimmt für neue Wärmepumpen derzeit keine Förderanträge an. Wer seine Bundesförderung noch ausbezahlt bekommt, setzt "
                  "zusätzlich fünf Jahre lang je 400 € Öko-Sonderausgabenpauschale ab. Wir prüfen vor jedem Angebot den "
                  "Budgetstand und übernehmen die Anträge."),
             ],
@@ -236,7 +236,7 @@ def build():
             alt="Beratungsgespräch zur Wärmepumpenförderung am Tisch",
             bullets=[
                 "Bund 2026: Kesseltausch bis 7.500 € galt bis zur Ausschöpfung, aktuell keine neuen Registrierungen",
-                a("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen Kärnten und Steiermark") + ": laufen, Richtlinien ändern sich, wir prüfen tagesaktuell",
+                a("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen im Vergleich") + ": Kärnten 3.000 € Pauschale, Steiermark derzeit keine Anträge für neue Wärmepumpen",
                 a("/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/", "Öko-Sonderausgabenpauschale") + ": 5 Jahre je 400 € bei ausbezahlter Bundesförderung und über 2.000 € Restkosten",
                 a("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung 2026 im Detail") + ": alle Programme für Kärnten und die Steiermark",
                 "Finanzierung möglich: 0 € Anzahlung, fixe Rate, Eigentum ab Tag 1",
@@ -368,7 +368,7 @@ def build():
             steps=[
                 ("Beratung", "Heizbedarf, Gebäude und Ziele. Kostenlos und ohne Verkaufsdruck.", ""),
                 ("Vor-Ort-Prüfung", "Heizraum, Heizflächen, Dämmung, Elektrik und Aufstellort als Grundlage für Heizlast und Festpreisangebot.", ""),
-                ("Förderung prüfen", "Landesförderung Kärnten oder Steiermark und Steuerbonus vor dem Auftrag, Budgetstand tagesaktuell.", ""),
+                ("Förderung prüfen", "Wir klären vor dem Auftrag, was Land und Bund aktuell zahlen und ob das Budget reicht.", ""),
                 ("Montage", "Demontage der alten Heizung, Einbau, Sanitär und Elektro aus einer Hand.", "2 bis 4 Tage"),
                 ("Inbetriebnahme", "Einregulierung, Übergabe, Endabrechnung der Förderung. Wir bleiben erreichbar.", ""),
             ],
@@ -376,7 +376,11 @@ def build():
         C.faq_section(FAQ),
         C.linkgrid_section(
             "Mehr zur Wärmepumpe",
-            [("/kosten-einer-waermepumpe/", "Kosten einer Wärmepumpe"),
+            [("pv_villach", "Wärmepumpe und Photovoltaik in Villach"),
+             ("pv_klagenfurt", "Wärmepumpe und Photovoltaik in Klagenfurt"),
+             ("pv_graz", "Wärmepumpe und Photovoltaik in Graz"),
+             ("pv_steiermark", "Wärmepumpe in der Steiermark"),
+             ("/kosten-einer-waermepumpe/", "Kosten einer Wärmepumpe"),
              ("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung 2026"),
              ("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen Kärnten und Steiermark"),
              ("/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/", "Wärmepumpe steuerlich absetzen"),

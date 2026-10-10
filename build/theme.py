@@ -124,7 +124,7 @@ p{margin:0 0 1rem}
   font-size:.95rem}
 .site-footer a{color:#cfe0e6;text-decoration:none}
 .site-footer a:hover{color:#fff}
-.footer-grid{display:grid;gap:32px;grid-template-columns:1.4fr 1fr 1fr 1fr}
+.footer-grid{display:grid;gap:32px;grid-template-columns:1.3fr 1fr 1fr 1fr 1.15fr}
 .footer-brand .brand{color:#fff}
 .footer-brand p{color:#9fbcc6;margin-top:12px;max-width:34ch}
 .footer-col h4{color:#fff;font-size:1rem;margin-bottom:14px}
@@ -132,6 +132,7 @@ p{margin:0 0 1rem}
 .footer-bottom{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);
   display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;color:#9fbcc6}
 .footer-bottom a{text-decoration:underline}
+@media(max-width:1060px){.footer-grid{grid-template-columns:repeat(4,1fr)}.footer-brand{grid-column:1/-1}}
 @media(max-width:820px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.footer-grid{grid-template-columns:1fr}}
 

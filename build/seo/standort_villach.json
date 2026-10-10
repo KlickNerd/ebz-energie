@@ -402,5 +402,438 @@
     "notes": "Die Seite gewinnt den Local Pack, verliert aber die organische Top 10: Es fehlen die drei lokalen Informationsbausteine, die Kelag, Verbund und die Top-Installateure haben (Genehmigung und Mitteilungspflicht Kärnten, Netzanschluss über Kärnten Netz, Ertrag je kWp am Standort). Zuerst eine H2 'Genehmigung und Netzanschluss in Kärnten' plus FAQ ergänzen und den Richtpreis als FAQ-Antwort sichtbar machen. Förderung-Keywords (260 Vol.) nicht hier ausbauen, sondern auf den Ratgeber verlinken. 'photovoltaik klagenfurt' (50 Vol., KD 28) als Sekundärbegriff in H2 und Description halten, bis eine eigene Klagenfurt-Seite entschieden ist."
   },
   "cost_usd": 0.1,
-  "cost_note": "Die MCP-Antworten enthielten kein cost-Feld. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Advanced 0,002 $ + PAA-Klicks, Content Parsing 0,0005 $/URL, AI Keyword Data 0,0002 $/Keyword)."
+  "cost_note": "Die MCP-Antworten enthielten kein cost-Feld. Betrag ist eine Schaetzung nach DataForSEO-Listenpreisen (Labs 0,01 $/Request + 0,0001 $/Keyword, SERP Advanced 0,002 $ + PAA-Klicks, Content Parsing 0,0005 $/URL, AI Keyword Data 0,0002 $/Keyword).",
+  "waermepumpe": {
+    "stand": "2026-10-10",
+    "ziel": "Wärmepumpe als Sekundärthema der Standortseite (eine Seite je Ort, siehe build/pages/README_standort.md)",
+    "datenquelle": "DataForSEO: Google Ads Search Volume (Austria, de), Labs Keyword Overview (Austria, de), SERP Organic Live Advanced. Abruf 10.10.2026.",
+    "keywords": [
+      {
+        "keyword": "wärmepumpe villach",
+        "volume_at": 0,
+        "intent": "transactional (Labs)",
+        "quelle": "Google Ads (kein Wert)"
+      },
+      {
+        "keyword": "wärmepumpen installateur villach",
+        "volume_at": 0,
+        "quelle": "Google Ads (kein Wert)"
+      },
+      {
+        "keyword": "heizungsinstallateur villach",
+        "volume_at": 40,
+        "kd": 45,
+        "cpc": 2.09,
+        "intent": "commercial",
+        "quelle": "Google Ads + Labs"
+      },
+      {
+        "keyword": "installateur villach",
+        "volume_at": 590,
+        "kd": 29,
+        "cpc": 2.3,
+        "intent": "commercial / navigational",
+        "quelle": "Google Ads + Labs",
+        "hinweis": "allgemeiner Installateur-Begriff (Sanitär, Notdienst), kein Ziel für EBZ"
+      },
+      {
+        "keyword": "wärmepumpe spittal",
+        "volume_at": 0,
+        "quelle": "Google Ads (kein Wert)"
+      },
+      {
+        "keyword": "wärmepumpe kärnten",
+        "volume_at": 10,
+        "kd": null,
+        "cpc": 11.88,
+        "intent": "commercial",
+        "quelle": "Google Ads + Labs"
+      },
+      {
+        "keyword": "wärmepumpe klagenfurt",
+        "volume_at": 20,
+        "kd": null,
+        "cpc": 19.91,
+        "intent": "commercial",
+        "quelle": "Google Ads + Labs",
+        "hinweis": "gehört auf /photovoltaik-klagenfurt/"
+      },
+      {
+        "keyword": "luftwärmepumpe kärnten",
+        "volume_at": 10,
+        "kd": 45,
+        "cpc": 9.21,
+        "intent": "transactional",
+        "quelle": "Google Ads + Labs"
+      },
+      {
+        "keyword": "wärmepumpe förderung kärnten",
+        "volume_at": 50,
+        "kd": 46,
+        "cpc": 3.17,
+        "intent": "informational",
+        "quelle": "Google Ads + Labs",
+        "hinweis": "Ratgeber /landesfoerderungen-fuer-die-waermepumpe/ und Hub /foerderungen/, nicht Standortseite"
+      },
+      {
+        "keyword": "förderung wärmepumpe kärnten",
+        "volume_at": 30,
+        "kd": 46,
+        "cpc": 2.06,
+        "intent": "informational",
+        "quelle": "Labs"
+      },
+      {
+        "keyword": "förderung heizungstausch kärnten",
+        "volume_at": 90,
+        "kd": 8,
+        "cpc": 2.39,
+        "intent": "commercial",
+        "quelle": "Labs",
+        "hinweis": "Trend minus 43 % im Jahresvergleich"
+      },
+      {
+        "keyword": "heizungstausch förderung kärnten",
+        "volume_at": 10,
+        "kd": 8,
+        "cpc": null,
+        "intent": "informational",
+        "quelle": "Google Ads + Labs"
+      },
+      {
+        "keyword": "raus aus öl kärnten",
+        "volume_at": 10,
+        "kd": 40,
+        "cpc": null,
+        "intent": "informational",
+        "quelle": "Google Ads + Labs"
+      },
+      {
+        "keyword": "kelag wärmepumpe",
+        "volume_at": 20,
+        "kd": 3,
+        "cpc": 1.7,
+        "intent": "transactional",
+        "quelle": "Labs"
+      },
+      {
+        "keyword": "wärmepumpe installateur",
+        "volume_at": 260,
+        "kd": null,
+        "cpc": 7.86,
+        "intent": "commercial",
+        "quelle": "Labs",
+        "hinweis": "österreichweit, Ziel der Leistungsseite /waermepumpe/"
+      },
+      {
+        "keyword": "heizungstausch kärnten",
+        "volume_at": 0,
+        "quelle": "Google Ads (kein Wert)"
+      },
+      {
+        "keyword": "heizung tauschen kärnten",
+        "volume_at": 0,
+        "quelle": "Google Ads (kein Wert)"
+      },
+      {
+        "keyword": "wärmepumpen installateur kärnten",
+        "volume_at": 0,
+        "quelle": "Google Ads (kein Wert)"
+      },
+      {
+        "keyword": "wärmepumpe installateur kärnten",
+        "volume_at": 0,
+        "quelle": "Google Ads (kein Wert)"
+      },
+      {
+        "keyword": "wärmepumpe kosten kärnten",
+        "volume_at": 0,
+        "quelle": "Google Ads (kein Wert)"
+      }
+    ],
+    "serp": [
+      {
+        "keyword": "wärmepumpe villach",
+        "location": "Villach,Carinthia,Austria",
+        "features": [
+          "paid (3 Anzeigen)",
+          "local_pack",
+          "people_also_ask",
+          "people_also_search",
+          "related_searches"
+        ],
+        "ads": [
+          "hsh-installateur.com (Rainer Heizung Sanitär)",
+          "kelag.at",
+          "angebot.viessmann.at"
+        ],
+        "local_pack": [
+          "WSB Haustechnik (4.9, 52 Bew.)",
+          "Zöchling GmbH (4.9, 40 Bew.)",
+          "Draustadt Haustechnik (5 Sterne, 36 Bew.)"
+        ],
+        "top10": [
+          {
+            "pos": 1,
+            "domain": "dolinschek.com",
+            "title": "Fußbodenheizung & Wandheizung in Villach",
+            "type": "anbieter (lokal)"
+          },
+          {
+            "pos": 2,
+            "domain": "daibau.at",
+            "title": "Wärmepumpen, Keutschach am See: Top 16 Installateure",
+            "type": "portal"
+          },
+          {
+            "pos": 3,
+            "domain": "dolinschek.com",
+            "title": "Installateur Villach",
+            "type": "anbieter (lokal)"
+          },
+          {
+            "pos": 4,
+            "domain": "bezirkstipp.at",
+            "title": "Wärmepumpen-Installateur in der Stadt Villach",
+            "type": "verzeichnis"
+          },
+          {
+            "pos": 5,
+            "domain": "firma.at",
+            "title": "Wikinger Energiequellen",
+            "type": "verzeichnis"
+          },
+          {
+            "pos": 6,
+            "domain": "herold.at",
+            "title": "Wärmepumpen in Feffernitz, Villach (Land)",
+            "type": "verzeichnis"
+          },
+          {
+            "pos": 7,
+            "domain": "facebook.com",
+            "title": "Sanitherm Handels- und Installations GmbH",
+            "type": "social"
+          },
+          {
+            "pos": 8,
+            "domain": "firmen.wko.at",
+            "title": "Heizungstechniker in Villach (Bezirk)",
+            "type": "verzeichnis"
+          },
+          {
+            "pos": 9,
+            "domain": "gecheckt.at",
+            "title": "Top 15 Profis für PV-Anlagen Villach, 2026",
+            "type": "portal"
+          },
+          {
+            "pos": 10,
+            "domain": "villach.at",
+            "title": "Energie | Stadt Villach",
+            "type": "behörde (Fernwärme)"
+          }
+        ],
+        "related": [
+          "Heizungsinstallateur Villach",
+          "Kältetechnik Villach",
+          "Installateur Villach Notdienst",
+          "Sanitär Villach",
+          "Installateur Villach Landskron"
+        ],
+        "eigene_rankings": "EBZ weder im Local Pack noch in den Top 10. Organisch ranken fast nur Verzeichnisse und ein lokaler Installateur ohne eigene Wärmepumpen-Seite: schwache SERP."
+      },
+      {
+        "keyword": "wärmepumpe kärnten",
+        "location": "Austria",
+        "features": [
+          "ai_overview",
+          "people_also_ask",
+          "related_searches"
+        ],
+        "top10": [
+          {
+            "pos": 1,
+            "domain": "kelag.at",
+            "title": "Welche Förderungen für Wärmepumpen gibt es?",
+            "type": "versorger (ratgeber)"
+          },
+          {
+            "pos": 2,
+            "domain": "ktn.gv.at",
+            "title": "Erdwärme (Wärmepumpen), Themen A-Z",
+            "type": "behörde"
+          },
+          {
+            "pos": 3,
+            "domain": "waermepumpe-austria.at",
+            "title": "Profis in Kärnten",
+            "type": "verband (verzeichnis)"
+          },
+          {
+            "pos": 4,
+            "domain": "heizma.at",
+            "title": "Wärmepumpe Kärnten: Förderung & Installation",
+            "type": "anbieter (überregional), nennt bis zu 3.000 € Landesförderung"
+          },
+          {
+            "pos": 5,
+            "domain": "hargassner.com",
+            "title": "Förderungen für Wärmepumpen: Kärnten",
+            "type": "hersteller, nennt bis zu 3.000 €"
+          },
+          {
+            "pos": 6,
+            "domain": "installateur-steinwender.at",
+            "title": "Wärmepumpen in Klagenfurt in Kärnten",
+            "type": "anbieter (lokal)"
+          },
+          {
+            "pos": 7,
+            "domain": "windhager.com",
+            "title": "Heizung Förderung Kärnten",
+            "type": "hersteller, nennt Pauschalbetrag von 3.000 Euro"
+          },
+          {
+            "pos": 8,
+            "domain": "regenfelder.at",
+            "title": "Wärmepumpen aus St. Veit an der Glan",
+            "type": "anbieter (lokal)"
+          },
+          {
+            "pos": 9,
+            "domain": "kelag.at",
+            "title": "Wärmepumpe für Ihr Zuhause",
+            "type": "versorger, Prämie 1.200 Euro"
+          }
+        ],
+        "related": [
+          "Wärmepumpen Förderung Kärnten",
+          "Luftwärmepumpe Kärnten",
+          "Kelag Wärmepumpe Förderung",
+          "Kelag wärmepumpentarif 2026",
+          "Heizungstausch Förderung Kärnten 2026"
+        ],
+        "eigene_rankings": "EBZ nicht in den Top 10"
+      },
+      {
+        "keyword": "heizungstausch kärnten",
+        "location": "Austria",
+        "features": [
+          "ai_overview",
+          "people_also_ask",
+          "related_searches"
+        ],
+        "top10": [
+          {
+            "pos": 1,
+            "domain": "transparenzportal.gv.at",
+            "title": "Förderung für den Austausch fossiler Heizanlagen",
+            "type": "behörde (max. 35 % der förderbaren Sanierungskosten)"
+          },
+          {
+            "pos": 2,
+            "domain": "windhager.com",
+            "title": "Förderung für erneuerbare Heizsysteme in Österreich",
+            "type": "hersteller"
+          },
+          {
+            "pos": 3,
+            "domain": "umweltfoerderung.at",
+            "title": "Sauber Heizen für Alle 2024",
+            "type": "behörde (beendet)"
+          },
+          {
+            "pos": 4,
+            "domain": "noe.arbeiterkammer.at",
+            "title": "Förderungen für Heizungstausch & Sanierungsbonus",
+            "type": "portal"
+          },
+          {
+            "pos": 5,
+            "domain": "oekofen.com",
+            "title": "Förderungen Heizungstausch 2026",
+            "type": "hersteller"
+          },
+          {
+            "pos": 6,
+            "domain": "holdirmehr.at",
+            "title": "Kärntner Förderung Heizungstausch, bis 4.500 €",
+            "type": "portal"
+          },
+          {
+            "pos": 7,
+            "domain": "meine-waermepumpe.at",
+            "title": "Wärmepumpen-Förderung Kärnten 2026: bis 4.700 €",
+            "type": "portal (27.09.2026)"
+          },
+          {
+            "pos": 8,
+            "domain": "umweltfoerderung.at",
+            "title": "Tausch erneuerbarer Heizungssysteme",
+            "type": "behörde (beendet)"
+          },
+          {
+            "pos": 9,
+            "domain": "heizma.at",
+            "title": "Wärmepumpe Kärnten: Förderung & Installation",
+            "type": "anbieter (überregional)"
+          }
+        ],
+        "eigene_rankings": "EBZ nicht in den Top 10"
+      }
+    ],
+    "questions": [
+      "Welche Förderungen gibt es in Kärnten für Heizungen?",
+      "Wie hoch sind die Kosten für eine Wärmepumpe in Österreich?",
+      "Was kostet eine sehr gute Wärmepumpe?",
+      "Wer ist der größte Wärmepumpenhersteller in Österreich?",
+      "Wer ist der Marktführer bei Wärmepumpen?",
+      "Welche Wärmepumpe wird am meisten gekauft?",
+      "Welche Förderungen gibt es für Wärmepumpen in Kärnten?",
+      "Gibt es in Kärnten 2026 eine Heizungsförderung?",
+      "Welche Förderungen gibt es in Kärnten für Heizungen?",
+      "Welche Förderungen gibt es 2026 für den Heizungstausch in Kärnten?",
+      "Was wird bei einem Heizungstausch gefördert?",
+      "Was kostet aktuell eine Wärmepumpe inklusive Einbau?",
+      "Wie viel kostet es, eine Heizung zu erneuern?",
+      "Wann lohnt sich eine Wärmepumpe nicht?",
+      "Was ist die beste Alternative zur Wärmepumpe?"
+    ],
+    "lokale_fakten": [
+      "Villach hat ein Fernwärmenetz, umgesetzt von der Kelag Energie & Wärme (Quelle: villach.at/stadt-service/energie, abgerufen 10.10.2026). Die Stadt bietet eine kostenlose Energieberatung an; eine städtische Förderung für Wärmepumpen nennt die Seite nicht.",
+      "Kelag-Wärmepumpen-Prämie 1.200 Euro: aktiver Kelag-Stromliefervertrag in Kärnten, Wärmepumpe mit Internetanbindung, Gutschrift tagesaliquot über zwei Jahre (Quelle: kelag.at/privatkunden/ubersicht-zur-warmepumpe.htm, abgerufen 10.10.2026)."
+    ],
+    "umsetzung": {
+      "title": "unverändert: Photovoltaik Villach: Fachbetrieb vor Ort | EBZ Energie (kein Suchvolumen für 'wärmepumpe villach', Primärkeyword bleibt PV)",
+      "description": "Photovoltaik in Villach und Umgebung vom Fachbetrieb vor Ort: Planung, Montage, Speicher, Netzanmeldung und Förderung Kärnten aus einer Hand. 4,9 Sterne.",
+      "description_grund": "Nur 'und Klagenfurt' durch 'und Umgebung' ersetzt (eigene Seite /photovoltaik-klagenfurt/). Diese Fassung ersetzt recommendation.description.",
+      "h2_neu": "Wärmepumpe in Villach: Heizungstausch mit Sonnenstrom vom eigenen Dach (Anker #waermepumpe, nach Speicher, vor Förderung)",
+      "faq_neu": [
+        "Was kostet eine Wärmepumpe in Villach inklusive Montage, und rechnet sie sich mit Photovoltaik?",
+        "Welche Förderung gibt es für eine Wärmepumpe in Villach?"
+      ],
+      "internal_links": [
+        "/waermepumpe/ -> Wärmepumpe vom Fachbetrieb aus Villach",
+        "/kosten-einer-waermepumpe/ -> Kosten einer Wärmepumpe",
+        "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+        "/photovoltaik-fuer-waermepumpe/ -> Photovoltaik für die Wärmepumpe",
+        "/foerderungen/ -> Förderungen im Überblick",
+        "/foerderrechner/ -> Förderrechner",
+        "/photovoltaik-klagenfurt/, /photovoltaik-wolfsberg/, /photovoltaik-graz/, /photovoltaik-steiermark/ -> Linkliste Standorte"
+      ],
+      "klagenfurt": "Aus Description, zwei H2/H3, Hero, Anbieter-Check, Netzbetreiber-Zeile und Einzugsgebiet entfernt. Ein Textlink 'Photovoltaik in Klagenfurt' unter der Zielgruppen-H2 plus Linkliste. Überholt damit die Notiz in recommendation.notes ('photovoltaik klagenfurt' in H2 und Description halten)."
+    },
+    "offene_fragen": [
+      "Landesförderung Kärnten Heizungstausch 2026: Die Seiten nennen 35 % der förderbaren Kosten ohne Euro-Obergrenze (Vorgabe). Das Transparenzportal des Bundes führt die Richtlinie mit max. 35 % und höchstens 6.000 € je Wohnung als ausgelaufen (gültig 1.1.2025 bis 31.12.2025). Windhager, Heizma und Hargassner nennen für Kärnten einen Pauschalbetrag bzw. bis zu 3.000 €, meine-waermepumpe.at bis 4.700 €, holdirmehr.at bis 4.500 €. Satz UND Obergrenze beim Land (Abteilung 11, Wohnbau) bzw. mit dem Kunden klären; ktn.gv.at war in dieser Sitzung nicht erreichbar.",
+      "build/pages/waermepumpe.py (FAQ und Fördersektion) nennt für Kärnten 'laut Berichten 2026 3.000 Euro Pauschale', Hub und Standortseiten 35 %. Nach der Klärung sitewide vereinheitlichen.",
+      "Richtlinie 2025 laut Transparenzportal: Fernwärmeanschluss hat Vorrang, Wärmepumpe wird nur gefördert, wenn kein Anschluss möglich ist oder er deutlich teurer wäre; Bundesförderung musste vorab beantragt werden. Ob das 2026 weiter gilt, ist offen.",
+      "Soll die Kelag-Prämie (1.200 Euro) auf der Villach-Seite genannt bleiben? Kelag schaltet selbst Anzeigen auf 'wärmepumpe villach'.",
+      "Fernwärme-Hinweis für Villach: Gibt es eine Karte des Versorgungsgebiets, auf die verlinkt werden kann, und will der Kunde den Hinweis so stehen lassen?",
+      "Google-Unternehmensprofil: EBZ fehlt im Local Pack für 'wärmepumpe villach'. Kategorie bzw. Leistung 'Wärmepumpe' im Profil ergänzen und Bewertungen mit Wärmepumpen-Bezug sammeln."
+    ],
+    "notes": "Auf Ortsebene gibt es für die Wärmepumpe in Villach kein messbares Suchvolumen, kärntenweit 10 je Monat. Die Sektion zielt deshalb auf Long-Tail, Local-Pack-Relevanz und auf KI-Antworten, nicht auf ein eigenes Keyword; Title und H1 bleiben bei Photovoltaik. Die Nachfrage liegt bei den Förderbegriffen (90, 50, 30 je Monat): diese gehören in den Hub und den Landesförderungs-Ratgeber, die Standortseite verlinkt nur.",
+    "cost_usd": 0.09,
+    "cost_note": "Schätzung, kein cost-Feld in den MCP-Antworten. Gesamt für beide Standort-Briefings rund 0,18 $: 2 x Google Ads Search Volume (je 0,075 $), 1 x Labs Keyword Overview (rund 0,012 $), 4 x SERP Live Advanced mit PAA-Klick (zusammen rund 0,015 $). Je zur Hälfte auf Villach und Wolfsberg gebucht."
+  }
 }

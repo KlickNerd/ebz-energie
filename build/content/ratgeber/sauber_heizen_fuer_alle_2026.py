@@ -37,7 +37,7 @@ ARTICLE = {
         "Obergrenze Luft-Wasser: <b>25.586 €</b>",
     ],
     "date_published": "2026-03-15",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit neuer Wärmepumpe und Photovoltaik nach dem Heizungstausch",
 
@@ -70,8 +70,9 @@ ARTICLE = {
     "möglich (Stand 9. Oktober 2026). Wer bereits registriert ist, kann den Antrag noch stellen und das Projekt "
     "innerhalb der Fristen umsetzen. Auch die reguläre Kesseltausch-Förderung der Sanierungsoffensive 2026 ist "
     "ausgeschöpft.")}
-<p>Was weiterhin offen ist: die Landesförderungen für den Heizungstausch (Kärnten und Steiermark; ob sie ohne
-Bundesförderung gewährt werden, klärt die Landesstelle). Die steuerliche
+<p>Was weiterhin offen ist: in Kärnten die Landespauschale von 3.000 € für die Wärmepumpe (ob das Budget
+reicht, klären wir vor dem Angebot). Die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an
+(wohnbau.steiermark.at, Stand 10. Oktober 2026). Die steuerliche
 {a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/', 'Öko-Sonderausgabenpauschale')}
 setzt eine ausbezahlte Bundesförderung voraus und bleibt damit für Registrierte relevant. Ob 2027 ein neues Bundesprogramm für einkommensschwache Haushalte kommt, ist offen. Die folgenden Abschnitte
 beschreiben die Konditionen, die 2026 galten, und bleiben für bereits registrierte Haushalte relevant.</p>
@@ -255,8 +256,9 @@ Anlage gehört dabei ab Tag 1 Ihnen.</p>
          "12 Monate für Umsetzung und Endabrechnung."),
         ("Welche Förderung gibt es jetzt noch für einkommensschwache Haushalte?",
          "Auf Bundesebene derzeit keine: Sauber Heizen für Alle und die Sanierungsoffensive 2026 sind "
-         "ausgeschöpft. Offen bleiben die Landesförderungen für den Heizungstausch in Kärnten und der Steiermark; "
-         "ob sie ohne Bundesförderung gewährt werden, klärt die Landesstelle. Die Öko-Sonderausgabenpauschale "
+         "ausgeschöpft. Offen bleibt in Kärnten die Landespauschale von 3.000 € für die Wärmepumpe; ob das Budget "
+         "reicht, klären wir vor dem Angebot. Die Steiermark nimmt für neue Wärmepumpen derzeit keine "
+         "Förderanträge an. Die Öko-Sonderausgabenpauschale "
          "setzt eine ausbezahlte Bundesförderung voraus. Ob 2027 ein neues Bundesprogramm kommt, ist offen."),
         ("Kann ich „Sauber Heizen für Alle“ mit der regulären Kesseltausch-Förderung kombinieren?",
          "„Sauber Heizen für Alle“ enthält bereits die Basisförderung des Bundes und die Landesförderung. Es "
@@ -298,6 +300,8 @@ Anlage gehört dabei ab Tag 1 Ihnen.</p>
     "sources": [
         ("Sauber Heizen für Alle (Bundesportal, Registrierung)", "https://www.sauber-heizen.at/"),
         ("Umweltförderung (KPC): Förderbedingungen", "https://www.umweltfoerderung.at/"),
+        ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
+         "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
     ],
     "related": [
         ("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung Österreich 2026: Überblick"),

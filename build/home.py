@@ -15,7 +15,7 @@ aber an die verbindlichen Fakten (85 % statt 90 %, 4,9 statt 5,0, Finanzierung
 statt Leasing, Projektbericht statt Ertragsprognose).
 """
 
-from common import CLAIMS, NAP, IMG, faq_jsonld, u, a, write_page, load_reviews
+from common import CLAIMS, NAP, IMG, faq_jsonld, u, a, write_page, load_reviews, STANDORTE, standort_link
 from layout import page
 import components as C
 
@@ -156,11 +156,12 @@ def build():
             paragraphs=[
                 ("Das Land " + a("foerderung_kaernten", "Kärnten") + " zahlt für private PV-Anlagen ab 5 kWp mit "
                  "Speicher ab 5 kWh pauschal 3.000 €. Die " +
-                 a("foerderung_steiermark", "Steiermark") + " hat keine Pauschale, dafür Sanierungsbonus bis "
-                 "15 %, Ökofonds bis 30 % ab 20 kWp und Gemeindeförderungen 200 bis 1.000 €. Der Bund fördert über "
+                 a("foerderung_steiermark", "Steiermark") + " hat keine Pauschale für private PV-Anlagen, dort gilt die "
+                 "Bundesförderung, manche Gemeinden zahlen einen eigenen Zuschuss. Der Bund fördert über "
                  "den EAG-Investitionszuschuss mit 150 €/kWp bis 10 kWp und 150 €/kWh Speicher (Stand Oktober 2026)."),
                 ("Energiemanagement fördert der Klimafonds mit 50 % bis 600 €. Die Bundesförderung für Wärmepumpen "
-                 "ist seit Herbst 2026 ausgeschöpft, es gelten die Länder. Ab 2027 plant der Bund laut BMWET eine "
+                 "ist seit Herbst 2026 ausgeschöpft; Kärnten zahlt 3.000 € Landespauschale, die Steiermark nimmt für neue "
+                 "Wärmepumpen derzeit keine Anträge an. Ab 2027 plant der Bund laut BMWET eine "
                  "Systemförderung für Speicher und intelligente Steuerung. "
                  "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
                  "und stellen die Anträge."),
@@ -168,7 +169,7 @@ def build():
             img=IMG["foerderung"],
             alt="Beratung zur Photovoltaik-Förderung in Kärnten und der Steiermark am Tisch",
             bullets=[
-                "Kärnten 3.000 € Pauschale, Steiermark Sanierungsbonus und Ökofonds",
+                "Kärnten 3.000 € Pauschale für PV mit Speicher, Steiermark: Bundesförderung",
                 "Bund: 150 €/kWp und 150 €/kWh Speicher, EMS bis 600 €",
                 "Komplette Abwicklung durch EBZ Energie inklusive Netzanmeldung",
             ],
@@ -244,16 +245,19 @@ def build():
             intro=("Photovoltaik Kärnten und Photovoltaik Steiermark aus einer Hand: Der Montageschwerpunkt "
                    "liegt rund um Villach, Klagenfurt, Wolfsberg und Graz. Für die Erstberatung kommen wir zu "
                    "Ihnen, Referenzprojekte gibt es in ganz Österreich."),
-            kaernten=[a("pv_villach", "Villach"), "Klagenfurt", "Spittal an der Drau", "Feldkirchen",
-                      "St. Veit an der Glan", a("pv_wolfsberg", "Wolfsberg"), "Völkermarkt", "Hermagor"],
-            steiermark=["Graz", "Leibnitz", "Deutschlandsberg", "Voitsberg",
-                        "Weiz", "Murtal", "Leoben", "Südoststeiermark"],
-            note="Referenzprojekte auch im Burgenland, in Niederösterreich, Oberösterreich und Wien.",
+            kaernten=[standort_link(k, n) for k, n, l, _s in STANDORTE if l == "ktn"],
+            steiermark=[standort_link(k, n) for k, n, l, _s in STANDORTE if l == "stmk"],
+            note=("Überblick für die Region: " + a("pv_steiermark", "Photovoltaik und Wärmepumpe in der Steiermark")
+                  + ". Referenzprojekte auch im Burgenland, in Niederösterreich, Oberösterreich und Wien."),
         ),
         C.linkgrid_section(
             "Beliebte Seiten",
             [("photovoltaik", "Photovoltaikanlage mit Speicher"),
              ("pv_villach", "Photovoltaik in Villach"),
+             ("pv_klagenfurt", "Photovoltaik in Klagenfurt"),
+             ("pv_graz", "Photovoltaik in Graz"),
+             ("pv_steiermark", "Photovoltaik in der Steiermark"),
+             ("foerderrechner", "Förderrechner"),
              ("foerderung_kaernten", "PV-Förderung Kärnten 2026"),
              ("foerderung_steiermark", "PV-Förderung Steiermark"),
              ("solarrechner", "PV-Rechner"),

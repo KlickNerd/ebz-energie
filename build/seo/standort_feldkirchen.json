@@ -1,0 +1,504 @@
+{
+  "slug": "standort_feldkirchen",
+  "path": "/photovoltaik-feldkirchen/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "quelle": "DataForSEO Google Ads Search Volume + SERP Live Advanced, location Austria, language de",
+  "primary": {
+    "keyword": "photovoltaik feldkirchen",
+    "volume_at": 10,
+    "kd": null,
+    "cpc": 2.14,
+    "competition": "HIGH (69)",
+    "intent": "commercial/lokal; österreichweit gemessen, meint auch Feldkirchen bei Graz und Feldkirchen an der Donau"
+  },
+  "secondary": [
+    {
+      "keyword": "pv feldkirchen",
+      "volume_at": 10,
+      "kd": null,
+      "cpc": 0.78,
+      "intent": "commercial/lokal"
+    },
+    {
+      "keyword": "photovoltaik feldkirchen kärnten",
+      "volume_at": 10,
+      "kd": null,
+      "cpc": 1.87,
+      "intent": "commercial/lokal, eindeutig Kärnten"
+    },
+    {
+      "keyword": "wärmepumpe feldkirchen",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial/lokal (Sekundärthema der Seite)"
+    },
+    {
+      "keyword": "pv anlage feldkirchen",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial/lokal"
+    },
+    {
+      "keyword": "solaranlage feldkirchen",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial/lokal"
+    },
+    {
+      "keyword": "heizungstausch feldkirchen",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial/lokal"
+    }
+  ],
+  "long_tail": [
+    {
+      "keyword": "installateur feldkirchen",
+      "volume_at": 90
+    },
+    {
+      "keyword": "elektriker feldkirchen",
+      "volume_at": 50
+    },
+    {
+      "keyword": "fernwärme feldkirchen",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik firmen feldkirchen",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur feldkirchen",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik feldkirchen in kärnten",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik bezirk feldkirchen",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik ossiacher see",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik ossiach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik bodensdorf",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik himmelberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik gurktal",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik feldkirchen bei graz",
+      "volume_at": 0
+    }
+  ],
+  "semantic": [
+    "Feldkirchen in Kärnten (PLZ 9560)",
+    "Bezirk Feldkirchen",
+    "Bezirkshauptstadt",
+    "Mittelkärnten",
+    "Klagenfurter Becken",
+    "Nockberge",
+    "Ossiacher See",
+    "Himmelberg",
+    "Steuerberg",
+    "St. Urban",
+    "Glanegg",
+    "Steindorf am Ossiacher See",
+    "Ossiach",
+    "Gnesau",
+    "Albeck",
+    "Reichenau",
+    "Waiern",
+    "KNG-Kärnten Netz GmbH",
+    "Umspannwerk Feldkirchen",
+    "Einspeiseleistung",
+    "Netzzutrittsangebot",
+    "dynamische Leistungsregelung",
+    "Baumitteilung",
+    "Bauvollendungsmeldung",
+    "§ 7 K-BO 1996",
+    "Regionalwärme Feldkirchen (Biomasse-Fernwärme)",
+    "KEM Tiebeltal und Wimitzerberge",
+    "e5-Gemeinde",
+    "netEB Energieberatung",
+    "PVGIS",
+    "Landespauschale Kärnten 3.000 €"
+  ],
+  "questions": [
+    "Gibt es in Kärnten 2026 eine Heizungsförderung?",
+    "Was sind die Nachteile einer Luftwärmepumpe?",
+    "Wer ist aktuell Marktführer bei Wärmepumpen?",
+    "Was kostet eine gute Wärmepumpe in Österreich?",
+    "Wann lohnt sich eine Wärmepumpe nicht?",
+    "Gibt es in Österreich eine Förderung für Wärmepumpen ab 2026?",
+    "Was kostet eine Photovoltaikanlage mit Speicher in Feldkirchen in Kärnten? (eigene Frage, kein PAA im PV-SERP)",
+    "Wer ist in Feldkirchen der Stromnetzbetreiber? (eigene Frage)",
+    "Wärmepumpe oder Fernwärme in Feldkirchen? (eigene Frage, Volumen 'fernwärme feldkirchen' 10)"
+  ],
+  "serp": {
+    "photovoltaik feldkirchen": {
+      "features": [
+        "local_pack",
+        "related_searches"
+      ],
+      "local_pack": [
+        {
+          "name": "MS-Elektrotechnik",
+          "rating": 4.5,
+          "votes": 25,
+          "ort": "Feldkirchen in Kärnten"
+        },
+        {
+          "name": "Electriply GmbH",
+          "rating": 4.2,
+          "votes": 10,
+          "ort": "Feldkirchen an der Donau (OÖ)"
+        },
+        {
+          "name": "Spitzer Installationen GmbH",
+          "rating": 4.8,
+          "votes": 33,
+          "ort": "Feldkirchen in Kärnten"
+        }
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "kew.at",
+          "title": "PV für Industrie- und Gewerbeunternehmen | KEW Kärnten",
+          "type": "anbieter (Referenz Feldkirchen, 286 kWp)"
+        },
+        {
+          "pos": 2,
+          "domain": "herold.at",
+          "title": "Photovoltaik in Kalsberg, Feldkirchen, Kärnten",
+          "type": "portal"
+        },
+        {
+          "pos": 3,
+          "domain": "pvbaustria.at",
+          "title": "PV Austria",
+          "type": "verband"
+        },
+        {
+          "pos": 4,
+          "domain": "bezirkstipp.at",
+          "title": "Energieberatung - Feldkirchen in Kärnten",
+          "type": "portal"
+        },
+        {
+          "pos": 5,
+          "domain": "rora.at",
+          "title": "Mit Sonnenkraft voraus",
+          "type": "anbieter (Feldkirchen an der Donau)"
+        },
+        {
+          "pos": 6,
+          "domain": "suntracker.at",
+          "title": "Feldkirchen/Kärnten - Suntracker",
+          "type": "anbieter (Referenz)"
+        },
+        {
+          "pos": 7,
+          "domain": "ekm1.at",
+          "title": "EKM1: Elektro, Photovoltaik & Stromspeicher in Niederösterreich",
+          "type": "anbieter (ortsfremd)"
+        },
+        {
+          "pos": 8,
+          "domain": "electriply.at",
+          "title": "Kontakt | Electriply",
+          "type": "anbieter (Feldkirchen an der Donau)"
+        },
+        {
+          "pos": 9,
+          "domain": "my-hammer.at",
+          "title": "Elektriker in Feldkirchen in Kärnten",
+          "type": "portal"
+        },
+        {
+          "pos": 10,
+          "domain": "amperie.at",
+          "title": "Über uns | Amperie",
+          "type": "anbieter"
+        }
+      ]
+    },
+    "photovoltaik feldkirchen kärnten": {
+      "features": [
+        "ai_overview",
+        "knowledge_graph",
+        "related_searches"
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "my-hammer.at",
+          "title": "Elektriker in Feldkirchen in Kärnten",
+          "type": "portal"
+        },
+        {
+          "pos": 2,
+          "domain": "kaernten.orf.at",
+          "title": "PV-Anlage dürfte Kellerbrand ausgelöst haben",
+          "type": "news (2023)"
+        },
+        {
+          "pos": 3,
+          "domain": "firmen.wko.at",
+          "title": "Photovoltaik in Kärnten (Bundesland)",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 4,
+          "domain": "elektro-maschke.at",
+          "title": "Photovoltaik und Notstrom - Villach",
+          "type": "anbieter (Villach, nennt Feldkirchen)"
+        },
+        {
+          "pos": 5,
+          "domain": "bezirkstipp.at",
+          "title": "Energieberatung - Feldkirchen in Kärnten",
+          "type": "portal"
+        },
+        {
+          "pos": 6,
+          "domain": "e-autonom.at",
+          "title": "PV Anlage Kärnten",
+          "type": "anbieter"
+        },
+        {
+          "pos": 7,
+          "domain": "firmen.wko.at",
+          "title": "Errichter von Fotovoltaikanlagen in Feldkirchen (Bezirk)",
+          "type": "verzeichnis (8 Unternehmen)"
+        },
+        {
+          "pos": 8,
+          "domain": "pommer-automation.at",
+          "title": "Photovoltaik - Elektrotechnik & Mechatronik",
+          "type": "anbieter (Feldkirchen bei Mattighofen)"
+        },
+        {
+          "pos": 9,
+          "domain": "herold.at",
+          "title": "Elektroinstallationsunternehmen - Feldkirchen in Kärnten",
+          "type": "portal"
+        }
+      ]
+    },
+    "wärmepumpe feldkirchen": {
+      "features": [
+        "local_pack",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "local_pack": [
+        {
+          "name": "Spitzer Installationen GmbH",
+          "rating": 4.8,
+          "votes": 33,
+          "ort": "Feldkirchen in Kärnten"
+        },
+        {
+          "name": "Vrabel Klimaanlagen",
+          "rating": 5.0,
+          "votes": 114,
+          "ort": "Feldkirchen bei Graz"
+        },
+        {
+          "name": "VEBE GmbH",
+          "rating": 5.0,
+          "votes": 34,
+          "ort": "Feldkirchen bei Graz"
+        }
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "firmen.wko.at",
+          "title": "Wärmepumpen in Feldkirchen (Bezirk)",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 2,
+          "domain": "tully-haustechnik.at",
+          "title": "Wärmepumpe - Tully Haustechnik Feldkirchen",
+          "type": "anbieter (lokal)"
+        },
+        {
+          "pos": 3,
+          "domain": "daibau.at",
+          "title": "Wärmepumpen, Feldkirchen in Kärnten",
+          "type": "portal"
+        },
+        {
+          "pos": 4,
+          "domain": "hsh-installateur.com",
+          "title": "Willkommen bei SPITZER Installationen",
+          "type": "anbieter (lokal)"
+        },
+        {
+          "pos": 5,
+          "domain": "hitachiaircon.com",
+          "title": "Wärmepumpenanlagen-Installation Feldkirchen/Graz",
+          "type": "hersteller (Feldkirchen bei Graz)"
+        },
+        {
+          "pos": 6,
+          "domain": "et-koenig.at",
+          "title": "Wärmepumpen Installation in der Steiermark",
+          "type": "anbieter"
+        },
+        {
+          "pos": 7,
+          "domain": "instagram.com",
+          "title": "WP Energie · Feldkirchen bei Graz",
+          "type": "social"
+        },
+        {
+          "pos": 8,
+          "domain": "gecheckt.at",
+          "title": "Top 20 Profis ... Feldkirchen in Kärnten",
+          "type": "portal"
+        },
+        {
+          "pos": 9,
+          "domain": "waermepumpe-austria.at",
+          "title": "Profis in Kärnten",
+          "type": "verband"
+        },
+        {
+          "pos": 10,
+          "domain": "hsh-installateur.com",
+          "title": "Natürliche Kühlung - Spitzer Installationen",
+          "type": "anbieter (lokal)"
+        }
+      ]
+    }
+  },
+  "gaps": [
+    "Kein Wettbewerber im SERP hat eine eigene Ortsseite 'Photovoltaik Feldkirchen in Kärnten' mit lokalen Fakten: Portale, Verzeichnisse und ortsfremde Anbieter füllen die Top 10.",
+    "Google mischt drei Orte (Kärnten, bei Graz, an der Donau, dazu bei Mattighofen und Feldkirchen in Bayern): 'in Kärnten', PLZ 9560 und Bezirksgemeinden konsequent nennen.",
+    "Local Pack nur mit Betrieben am Ort: ohne GBP-Signal im Bezirk bleibt EBZ dort unsichtbar, die Seite zielt auf die organischen Plätze."
+  ],
+  "cannibalization": [
+    "/photovoltaik-villach/ (nennt Feldkirchen im Umland, nur Nennung)",
+    "/photovoltaik-graz/ (Feldkirchen bei Graz: dort abdecken, nicht hier)"
+  ],
+  "recommendation": {
+    "title": "Photovoltaik & Wärmepumpe Feldkirchen in Kärnten | EBZ",
+    "h1": "Photovoltaik in Feldkirchen in Kärnten: PV-Anlage, Speicher und Wärmepumpe aus einer Hand",
+    "description": "Photovoltaik und Wärmepumpe in Feldkirchen in Kärnten: Fachbetrieb aus Villach, Beratung vor Ort, Baumitteilung, Kärnten Netz und 3.000 € Landespauschale.",
+    "h2_outline": [
+      "Photovoltaik und Wärmepumpe in Feldkirchen: Bezirksstadt zwischen Klagenfurter Becken und Nockbergen",
+      "Feldkirchen in Kärnten auf einen Blick: Behörde, Netz und Wärme",
+      "Baumitteilung in Feldkirchen und Netzanschluss bei Kärnten Netz",
+      "Wärmepumpe in Feldkirchen: die Alternative zu Öl und Gas abseits der Fernwärme",
+      "Förderung für Photovoltaik und Wärmepumpe in Feldkirchen in Kärnten",
+      "Referenzen in der Nähe von Feldkirchen: Ossiachersee, Villach, Krumpendorf"
+    ],
+    "faq_add": [
+      "Was kostet eine Photovoltaikanlage mit Speicher in Feldkirchen in Kärnten?",
+      "Wer ist in Feldkirchen der Stromnetzbetreiber und wie läuft die Anmeldung der PV-Anlage?",
+      "Brauche ich in Feldkirchen eine Baubewilligung für die Photovoltaikanlage?",
+      "Wie viel Strom erzeugt eine PV-Anlage in Feldkirchen?",
+      "Wärmepumpe oder Fernwärme: Was passt in Feldkirchen besser?",
+      "Funktioniert eine Luft-Wasser-Wärmepumpe in der Höhenlage von Feldkirchen?",
+      "Gibt es in Feldkirchen eine Gemeindeförderung für Photovoltaik oder Wärmepumpe?",
+      "Ist hier Feldkirchen in Kärnten oder Feldkirchen bei Graz gemeint, und kommen Sie in den ganzen Bezirk?"
+    ],
+    "internal_links": [
+      "/waermepumpe/ -> Wärmepumpe",
+      "/batteriespeicher/ -> Speicher",
+      "/energiemanagementsystem/ -> Energiemanagement",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ -> 10 kWp mit Speicher: Kosten",
+      "/foerderung-pv-speicher-kaernten/ -> Speicherförderung Kärnten",
+      "/energiegemeinschaft-kaernten/ -> Energiegemeinschaft in Kärnten",
+      "/photovoltaik-graz/ -> unsere Seite für Graz und Umgebung (Abgrenzung Feldkirchen bei Graz)"
+    ],
+    "notes": "Das messbare Volumen ist klein (drei Keywords mit je 10 Suchen, österreichweit und über mehrere Orte namens Feldkirchen verteilt), dafür fehlt im SERP jede echte Ortsseite eines PV-Fachbetriebs. Die Seite gewinnt über Eindeutigkeit (in Kärnten, PLZ 9560, zehn Bezirksgemeinden) und über lokale Fakten, die sonst niemand hat: Umspannwerk Feldkirchen mit 10 MVA freier Einspeisekapazität, Formulare der Stadtgemeinde, Fernwärme der Regionalwärme, beendete Gemeindeaktion. Wärmepumpe hat kein messbares Volumen, 'installateur feldkirchen' (90) und 'fernwärme feldkirchen' (10) zeigen aber Heizungsnachfrage: deshalb die FAQ Wärmepumpe oder Fernwärme. Nächster Hebel ist eine Referenz aus dem Bezirk."
+  },
+  "lokale_fakten": [
+    {
+      "fakt": "Bezirkshauptstadt, nördlicher Rand des Klagenfurter Beckens, Seehöhe 550 bis 900 m (510 bis 1.069 m), 77,49 km², Ortschaften, Ausläufer der Nockberge",
+      "quelle": "https://www.feldkirchen.at/tourismus/service/daten-und-fakten"
+    },
+    {
+      "fakt": "14.558 Einwohner Stadtgemeinde, 30.082 Bezirk (2026); zehn Gemeinden im Bezirk (Blätter 21001 bis 21010)",
+      "quelle": "https://www.statistik.at/blickgem/G0201/g21002.pdf"
+    },
+    {
+      "fakt": "Online-Formulare Baumitteilung (mitteilungspflichtig, bewilligungsfrei), Bauvollendungsmeldung 'zB.: Photovoltaikanlagen', Anzeige Ortsbildschutz/Ortsbildpflege; keine Energie-Förderformulare",
+      "quelle": "https://www.feldkirchen.at/sites/formulare"
+    },
+    {
+      "fakt": "Bauamt: Bauordnung, Bauberatung, Ortsbildschutz, Bebauungspläne, e5",
+      "quelle": "https://www.feldkirchen.at/stadtamt-und-services/abteilungen/bauamt-tiefbau-umweltschutz-und-landwirtschaft"
+    },
+    {
+      "fakt": "§ 7 Abs. 1 lit. a Z 20 K-BO 1996: Anlagen, die erneuerbare Energie erzeugen oder Strom speichern, mitteilungspflichtig; Vollendung binnen zwei Wochen melden",
+      "quelle": "https://villach.at/getmedia/fe3178f4-230a-4056-871d-d9412d2329ff/Mitteilung_P7_KBO1996.pdf.aspx"
+    },
+    {
+      "fakt": "Kärnten Netz: Anschlussantrag im Kundenportal, Netzberechnung, Netzzutrittsangebot, Einspeiseleistung mindestens in Höhe des Strombezugsrechts, dynamische Leistungsregelung, Fertigstellungsmeldung, Abnahmevertrag",
+      "quelle": "https://kaerntennetz.at/pv.htm"
+    },
+    {
+      "fakt": "Umspannwerk Feldkirchen: 2 MVA gebucht, 10 MVA verfügbar (Stand 30.07.2026, unverbindlich)",
+      "quelle": "https://kaerntennetz.at/dokumente/Strom/Veroeffentlichung_der_verfuegbaren_Kapazitaeten_gemaess_20_ElWOG.pdf"
+    },
+    {
+      "fakt": "PVGIS 5.3, 46.729 N / 14.100 O, 559 m: Süd 30 Grad 1.247 kWh/kWp, Ost 25 Grad 996, West 25 Grad 1.001 (14 % Verluste, SARAH3 2005 bis 2023)",
+      "quelle": "https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?lat=46.729&lon=14.100&peakpower=1&loss=14&angle=30&aspect=0"
+    },
+    {
+      "fakt": "Biomasse-Heizwerk 7,5 MW Anschlussleistung, Netzbetreiber BC Regionalwärme, Netzverdichtung und Ausbau geplant, Rest über Gasnetz und Ölheizungen, Wärmenetz der Diakonie Waiern (Bericht 27.03.2025)",
+      "quelle": "https://klimafonds.gv.at/wp-content/uploads/2025/04/KC397616_Publizierbarer-Zwischenbericht-Solar_Feldkirchen_260325C.pdf"
+    },
+    {
+      "fakt": "Regionalwärme Gruppe führt Feldkirchen als Heizwerkstandort",
+      "quelle": "https://regionalwaerme.com/leistungen/heizwerke/"
+    },
+    {
+      "fakt": "e5-Beitritt 2016, erstes Audit 2019; Vor-Ort-Energieberatung netEB, vom Land gefördert",
+      "quelle": "https://www.feldkirchen.at/stadt-und-politik/umwelt/e5-energieeffiziente-gemeinde"
+    },
+    {
+      "fakt": "KEM Tiebeltal und Wimitzerberge: Feldkirchen, Himmelberg, St. Urban, Steuerberg; Ziel Ausstieg aus Öl und Gas",
+      "quelle": "https://www.feldkirchen.at/stadt-und-politik/umwelt/kem-klima-und-energie-modellregion"
+    },
+    {
+      "fakt": "Gemeindeaktion 'Raus aus den fossilen Energieträgern' (bis 1.500 Euro je Anlage und Haushalt) ist beendet",
+      "quelle": "https://kem.fenergiereich.at/kem/news/raus-aus-den-fossilen-energietraegern"
+    }
+  ],
+  "weggelassen": [
+    "KAGIS-Solarpotenzialkataster (ktn.gv.at und kagis.ktn.gv.at nicht erreichbar)",
+    "Gurktal als Lagebezug (keine selbst abgerufene amtliche Quelle für die Zuordnung)",
+    "Sonnenstunden (keine GeoSphere-Station für Feldkirchen abgefragt)",
+    "Anteil '65 %' Fernwärmeversorgung aus dem Klimafonds-Bericht (Bezugsgröße unklar)",
+    "Betrag der Landesförderung für den Vor-Ort-Energiecheck (Stadt nennt 200 Euro, Aktualität unklar)",
+    "Satz und Obergrenze der Landesförderung Wärmepumpe Kärnten (laut Faktenliste widersprüchlich)",
+    "Kelag-Wärmepumpen-Prämie (nicht selbst abgerufen)",
+    "Entfernungen und Fahrzeiten, lokale Wettbewerber"
+  ],
+  "cost_usd": 0.16,
+  "cost_note": "Schätzung: MCP-Antworten enthalten kein cost-Feld. 2 x Google Ads Search Volume (je ca. 0,075 $) + 3 x SERP Live Advanced mit People-also-ask (je ca. 0,003 $)."
+}

@@ -33,7 +33,7 @@ ARTICLE = {
         "Montage: <b>2 bis 4 Tage</b>",
     ],
     "date_published": "2026-02-20",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "waermepumpe",
     "hero_alt": "Luft-Wasser-Wärmepumpe an der Fassade eines sanierten Altbaus",
 
@@ -47,15 +47,16 @@ ARTICLE = {
         "1.020 Euro pro Jahr.",
         "Große alte Gussheizkörper sind oft überdimensioniert und deshalb gut geeignet. Eine "
         "Fußbodenheizung ist nicht zwingend, das Nachrüsten kostet 50 bis 120 Euro pro Quadratmeter.",
-        "Kosten im typischen Altbau-Einfamilienhaus: 15.000 bis 28.000 Euro vor Förderung, nach Bundes- "
-        "und Landesförderung 10.000 bis 20.000 Euro. Über 20 Jahre ist die Wärmepumpe meist günstiger als "
+        "Kosten im typischen Altbau-Einfamilienhaus: 15.000 bis 28.000 Euro vor Förderung. Nach Bundes- "
+        "und Landesförderung blieben 2026 bis zur Ausschöpfung der Bundesförderung 10.000 bis 20.000 Euro. "
+        "Über 20 Jahre ist die Wärmepumpe meist günstiger als "
         "Gas und Öl.",
     ],
     "kpis": [
         ("30 bis 35 °C", "Vorlauf bei Fußbodenheizung"),
         ("60 bis 70 °C", "Vorlauf klassischer Altbau-Heizkörper"),
         ("50 bis 120 €/m²", "Fußbodenheizung nachrüsten"),
-        ("10.000 bis 20.000 €", "Kosten nach Förderung*"),
+        ("10.000 bis 20.000 €", "Kosten nach Förderung* (galt bis Herbst 2026)"),
     ],
 
     "sections": [
@@ -213,9 +214,9 @@ Wechsel von einer fossilen Heizung ausdrücklich unterstützt wird:</p>
   {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} und
   {a('/sauber-heizen-fuer-alle-2026/', 'Sauber Heizen für Alle 2026')} ausgeschöpft, neue Registrierungen
   sind nicht möglich; ob 2027 ein Folgeprogramm kommt, ist offen.</li>
-  <li><b>Landesförderung Kärnten und Steiermark:</b> Beide Bundesländer fördern zusätzlich, auch
-  Sanierungsmaßnahmen, die gemeinsam mit der Wärmepumpe umgesetzt werden. Die Kombination aus
-  Wärmepumpen- und Sanierungsförderung senkt die Investition erheblich. Überblick:
+  <li><b>Landesförderung Kärnten und Steiermark:</b> Kärnten zahlt 2026 eine Pauschale von 3.000 Euro für
+  die Wärmepumpe (ob das Budget reicht, klären wir vor dem Angebot). Die Steiermark nimmt für neue
+  Wärmepumpen derzeit keine Förderanträge an. Überblick:
   {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}.</li>
   <li><b>Steuerlich absetzen:</b> {a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/',
   'Öko-Sonderausgabenpauschale 2026')}.</li>
@@ -273,8 +274,9 @@ Kosten.</p>
          "aber wirtschaftlicher als Gas oder Öl."),
         ("Was kostet eine Wärmepumpe im Altbau nach Förderung?",
          "Für ein typisches Altbau-Einfamilienhaus liegen die Kosten inklusive Installation bei 15.000 bis "
-         "28.000 Euro vor Förderung. Nach Abzug der Bundes- und Landesförderung bleiben je nach Gebäude und "
-         "Bundesland 10.000 bis 20.000 Euro. Wir berechnen Ihre individuelle Förderhöhe kostenlos."),
+         "28.000 Euro vor Förderung. Nach Abzug der Bundes- und Landesförderung blieben 2026 je nach Gebäude und "
+         "Bundesland 10.000 bis 20.000 Euro; das galt bis zur Ausschöpfung der Bundesförderung im Herbst 2026. "
+         "Aktuell zahlt Kärnten eine Landespauschale von 3.000 Euro. Wir berechnen Ihre individuelle Förderhöhe kostenlos."),
         ("Wie lange dauert der Einbau einer Wärmepumpe im Altbau?",
          "Die eigentliche Montage dauert in der Regel 2 bis 4 Tage. Der gesamte Prozess von der Beratung bis "
          "zur Inbetriebnahme dauert einige Wochen, weil Förderanträge und Genehmigungen Zeit brauchen."),
@@ -296,6 +298,10 @@ Kosten.</p>
                     "übernimmt die Förderabwicklung. Alle Rechenbeispiele sind Richtwerte aus der "
                     "Projektpraxis. Keine Rechts- oder Steuerberatung, maßgeblich sind die offiziellen "
                     "Förderbedingungen."),
+    "sources": [
+        ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
+         "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
+    ],
     "related": [
         ("waermepumpe", "Wärmepumpen-Installateur in Kärnten und Steiermark"),
         ("/kosten-einer-waermepumpe/", "Kosten einer Wärmepumpe 2026"),

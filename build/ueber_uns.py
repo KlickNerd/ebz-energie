@@ -13,7 +13,7 @@ Verbote: kein "Subunternehmer" (positiv: Fachkraefte), nur
 Triglavstrasse 15, keine Gedankenstriche, keine erfundenen Zahlen (kein Gruendungsjahr ohne Beleg).
 """
 
-from common import NAP, IMG, EMAIL, faq_jsonld, u, a, href, tel_link, write_page, load_reviews
+from common import NAP, IMG, EMAIL, faq_jsonld, u, a, href, tel_link, write_page, load_reviews, STANDORTE, standort_link
 from layout import page
 import components as C
 
@@ -209,11 +209,10 @@ def build():
             intro=("Der Montageschwerpunkt liegt in Kärnten und der Steiermark: als Photovoltaik Anbieter Steiermark "
                    "rund um Graz, in Kärnten von Villach bis Wolfsberg. Referenzprojekte gibt es darüber hinaus in "
                    "ganz Österreich."),
-            kaernten=[a("pv_villach", "Villach"), "Klagenfurt", "Spittal an der Drau", "Feldkirchen",
-                      "St. Veit an der Glan", a("pv_wolfsberg", "Wolfsberg"), "Völkermarkt", "Hermagor"],
-            steiermark=["Graz", "Leibnitz", "Deutschlandsberg", "Voitsberg",
-                        "Weiz", "Murtal", "Leoben", "Südoststeiermark"],
-            note="Referenzprojekte auch im Burgenland, in Niederösterreich, Oberösterreich und Wien.",
+            kaernten=[standort_link(k, n) for k, n, l, _s in STANDORTE if l == "ktn"],
+            steiermark=[standort_link(k, n) for k, n, l, _s in STANDORTE if l == "stmk"],
+            note=("Überblick für die Region: " + a("pv_steiermark", "Photovoltaik und Wärmepumpe in der Steiermark")
+                  + ". Referenzprojekte auch im Burgenland, in Niederösterreich, Oberösterreich und Wien."),
         ),
         C.contact_section(
             headline="Auf einen Kaffee und ein ehrliches Gespräch",

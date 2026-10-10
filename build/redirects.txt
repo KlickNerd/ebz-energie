@@ -49,3 +49,6 @@
 /referenzen-alt/projekt-pv-wien/                                  /referenzen/projekt-pv-wien/
 /referenzen-alt/projekt-pv-am-ossiachersee/                       /referenzen/projekt-pv-am-ossiachersee/
 /referenzen-alt/projekt-flachdach-in-graz/                        /referenzen/projekt-flachdach-in-graz/
+
+# Standortseiten (10.10.2026): Kaernten-Begriffe liegen auf der Startseite
+/solar-in-kaernten/                                /

@@ -1,0 +1,420 @@
+{
+ "slug": "standort_st_veit",
+ "path": "/photovoltaik-st-veit/",
+ "seitentyp": "standort",
+ "stand": "2026-10-10",
+ "primary": {
+  "keyword": "photovoltaik st veit",
+  "volume_at": 20,
+  "kd": null,
+  "cpc": 3.59,
+  "intent": "commercial/lokal (Local Pack in der SERP)",
+  "hinweis": "Volumen österreichweit, mehrere Orte namens St. Veit (z. B. im Pongau): Seite grenzt über vollen Namen, Bezirk, PLZ 9300 und eine FAQ ab."
+ },
+ "secondary": [
+  {
+   "keyword": "photovoltaik st. veit an der glan",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial/lokal"
+  },
+  {
+   "keyword": "photovoltaik st veit glan",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "commercial/lokal"
+  },
+  {
+   "keyword": "wärmepumpe st veit",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial/lokal"
+  },
+  {
+   "keyword": "wärmepumpe st veit an der glan",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial/lokal"
+  },
+  {
+   "keyword": "pv anlage st veit",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial/lokal"
+  },
+  {
+   "keyword": "installateur st veit an der glan",
+   "volume_at": 40,
+   "kd": null,
+   "intent": "lokal (Heizung/Sanitär, nur Umfeld)"
+  }
+ ],
+ "long_tail": [
+  {
+   "keyword": "installateur st veit",
+   "volume_at": 90
+  },
+  {
+   "keyword": "photovoltaik kärnten",
+   "volume_at": 70
+  },
+  {
+   "keyword": "pv anlage kärnten",
+   "volume_at": 70
+  },
+  {
+   "keyword": "photovoltaik kärnten firmen",
+   "volume_at": 70
+  },
+  {
+   "keyword": "installateur st veit an der glan",
+   "volume_at": 40
+  },
+  {
+   "keyword": "elektriker st veit an der glan",
+   "volume_at": 20
+  },
+  {
+   "keyword": "sonnenstadt st veit",
+   "volume_at": 10
+  },
+  {
+   "keyword": "wärmepumpe kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "pv st veit",
+   "volume_at": 0
+  },
+  {
+   "keyword": "solaranlage st veit",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik firmen st veit",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe installateur st veit",
+   "volume_at": 0
+  },
+  {
+   "keyword": "heizungstausch st veit",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv anlage st veit an der glan",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik sankt veit an der glan",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik bezirk st veit",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik althofen",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik friesach",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe althofen",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik mittelkärnten",
+   "volume_at": 0
+  },
+  {
+   "keyword": "fernwärme st veit an der glan",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik st veit im pongau",
+   "volume_at": 0
+  },
+  {
+   "keyword": "heizungstausch kärnten",
+   "volume_at": 0
+  }
+ ],
+ "semantic": [
+  "Bezirk Sankt Veit an der Glan",
+  "Mittelkärnten",
+  "Kärnten Netz",
+  "Netzzutrittsangebot",
+  "Netzzugangsvertrag",
+  "Mitteilung § 7 Kärntner Bauordnung",
+  "Bauamt Rathaus Hauptplatz 1",
+  "Fernwärme Kelag Energie & Wärme",
+  "Klimaneutralitätsfahrplan 2040",
+  "KEM Sonnenland Mittelkärnten",
+  "e5-Gemeinde",
+  "Sonnenpark",
+  "Solarpotenzialkataster KAGIS",
+  "Althofen",
+  "Friesach",
+  "St. Georgen am Längsee",
+  "Liebenfels",
+  "Stromspeicher",
+  "Notstrom",
+  "Luft-Wasser-Wärmepumpe",
+  "Heizungstausch",
+  "Energiegemeinschaft",
+  "Landespauschale Kärnten 3.000 €",
+  "10 kWp mit Speicher"
+ ],
+ "questions": [
+  "Wie hoch ist die aktuelle PV-Förderung in Kärnten?",
+  "Wie viel kostet eine Photovoltaikanlage inklusive Montage?",
+  "Wie hoch sind die Kosten für eine Photovoltaikanlage in Kärnten?",
+  "Was kostet eine 10 kW PV-Anlage mit Speicher und Montage?",
+  "Wie lange braucht ein 10kW Speicher bis er voll ist?",
+  "Was bringt eine 10 kWp Photovoltaikanlage im Winter?",
+  "Welche Förderungen gibt es für Wärmepumpen in Kärnten?",
+  "Wer ist aktuell Marktführer bei Wärmepumpen?",
+  "Welche Wärmepumpe ist in Österreich die beste?",
+  "Was kostet eine Luftwärmepumpe für ein Einfamilienhaus in Österreich?",
+  "Wie teuer ist eine Wärmepumpe komplett mit Einbau?",
+  "Gibt es in Österreich eine Förderung für Wärmepumpen ab 2026?"
+ ],
+ "serp": {
+  "photovoltaik st veit an der glan": {
+   "location": "Austria",
+   "features": [
+    "local_pack",
+    "people_also_ask",
+    "people_also_search",
+    "video",
+    "related_searches"
+   ],
+   "local_pack": [
+    {
+     "name": "GREENoneTEC Solarindustrie GmbH",
+     "rating": 3.8,
+     "votes": 26
+    },
+    {
+     "name": "HOLZ die SONNE ins Haus Photovoltaik GmbH",
+     "rating": 4.9,
+     "votes": 85
+    },
+    {
+     "name": "Vivatro GmbH",
+     "rating": 4.7,
+     "votes": 30
+    }
+   ],
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "hsh-installateur.com",
+     "title": "HOLZ die SONNE ins Haus Photovoltaik GmbH",
+     "type": "anbieter"
+    },
+    {
+     "pos": 2,
+     "domain": "firmen.wko.at",
+     "title": "Photovoltaik In Sankt Veit An Der Glan (Bezirk)",
+     "type": "portal"
+    },
+    {
+     "pos": 3,
+     "domain": "greenonetec.com",
+     "title": "GREENoneTEC | Solaranlagen vom Weltmarktführer",
+     "type": "hersteller"
+    },
+    {
+     "pos": 4,
+     "domain": "vivatro.at",
+     "title": "Photovoltaik | Dach | Elektro - Vivatro GmbH",
+     "type": "anbieter"
+    },
+    {
+     "pos": 5,
+     "domain": "rsp-photovoltaik.at",
+     "title": "Photovoltaik | RSP Photovoltaik",
+     "type": "anbieter"
+    },
+    {
+     "pos": 6,
+     "domain": "daibau.at",
+     "title": "Photovoltaik, Sankt Veit an der Glan",
+     "type": "portal"
+    },
+    {
+     "pos": 7,
+     "domain": "btvon.at",
+     "title": "Größte Photovoltaikanlage Österreichs eröffnet (Video, 2014)",
+     "type": "news"
+    },
+    {
+     "pos": 8,
+     "domain": "zukunftmitherz.at",
+     "title": "Innovativer Vorreiter St. Veit: Erneuerbare Energien",
+     "type": "news"
+    },
+    {
+     "pos": 9,
+     "domain": "herold.at",
+     "title": "Photovoltaik in St. Veit an der Glan, Kärnten",
+     "type": "portal"
+    },
+    {
+     "pos": 10,
+     "domain": "mobilitaetsprojekte.vcoe.at",
+     "title": "Sonnenstadt St. Veit - Vorbildhafte Mobilitätsprojekte",
+     "type": "info"
+    }
+   ],
+   "related": [
+    "HSH St Veit",
+    "SONNENKRAFT St Veit",
+    "Green Solar St veit",
+    "Solaris St Veit",
+    "Installateur St Veit an der Glan",
+    "PV-Anlagen Kärnten"
+   ]
+  },
+  "wärmepumpe st veit an der glan": {
+   "location": "Austria",
+   "features": [
+    "local_pack",
+    "people_also_ask",
+    "related_searches"
+   ],
+   "local_pack": [
+    {
+     "name": "Erlacher Installationen GmbH",
+     "rating": 4.7,
+     "votes": 15
+    },
+    {
+     "name": "Egger Installationen GmbH & Co KG",
+     "rating": 4.1,
+     "votes": 64
+    },
+    {
+     "name": "Solaris GmbH",
+     "rating": 4.7,
+     "votes": 40
+    }
+   ],
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "hsh-installateur.com",
+     "title": "Willkommen bei Solaris GmbH",
+     "type": "anbieter"
+    },
+    {
+     "pos": 2,
+     "domain": "ebner-installationen.at",
+     "title": "Wärmepumpe installieren lassen im Raum St. Veit",
+     "type": "anbieter (Ortsseite)"
+    },
+    {
+     "pos": 3,
+     "domain": "baucheck.io",
+     "title": "Wärmepumpen, 9300 St. Veit an der Glan",
+     "type": "portal"
+    },
+    {
+     "pos": 4,
+     "domain": "regenfelder.at",
+     "title": "Wärmepumpen aus St. Veit an der Glan",
+     "type": "anbieter"
+    },
+    {
+     "pos": 5,
+     "domain": "firmenabc.at",
+     "title": "Installateur für Gas, Wasser & Heizung im Bezirk Sankt Veit",
+     "type": "portal"
+    },
+    {
+     "pos": 6,
+     "domain": "firmen.wko.at",
+     "title": "Wärmepumpen In Sankt Veit An Der Glan (Bezirk)",
+     "type": "portal"
+    },
+    {
+     "pos": 7,
+     "domain": "facebook.com",
+     "title": "Egger Installationen GmbH & Co KG",
+     "type": "anbieter"
+    },
+    {
+     "pos": 8,
+     "domain": "hausbaufuehrer.at",
+     "title": "Erlacher Gas - Wasser - Heizung - Solar",
+     "type": "portal"
+    },
+    {
+     "pos": 9,
+     "domain": "erlacher-installationen.at",
+     "title": "Erlacher Installationen",
+     "type": "anbieter"
+    },
+    {
+     "pos": 10,
+     "domain": "dasschnelle.at",
+     "title": "Installateure in St Veit an der Glan",
+     "type": "portal"
+    }
+   ]
+  }
+ },
+ "recommendation": {
+  "title": "Photovoltaik St. Veit an der Glan & Wärmepumpe | EBZ",
+  "h1": "Photovoltaik und Wärmepumpe in St. Veit an der Glan: Sonnenstrom vom eigenen Dach",
+  "description": "Photovoltaik und Wärmepumpe in St. Veit an der Glan: Fachbetrieb aus Villach berät vor Ort. Netzanmeldung bei Kärnten Netz, 3.000 € Landespauschale.",
+  "h2_outline": [
+   "Photovoltaik in St. Veit an der Glan: Die Stadt hat vorgelegt, jetzt sind die Hausdächer dran",
+   "St. Veit an der Glan auf einen Blick: Zahlen, Behörden, Netze",
+   "Genehmigung und Netzanschluss in St. Veit an der Glan: Bauamt im Rathaus, Kärnten Netz am Zähler",
+   "Wärmepumpe in St. Veit an der Glan: erst die Fernwärme prüfen, dann die Wärmepumpe planen",
+   "Förderung für Photovoltaik und Wärmepumpe in St. Veit (Vorlage)",
+   "Referenzen in der Nähe von St. Veit an der Glan"
+  ],
+  "faq_add": [
+   "Was kostet eine Photovoltaikanlage in St. Veit an der Glan?",
+   "Brauche ich in St. Veit an der Glan eine Baubewilligung für Photovoltaik und Speicher?",
+   "Wer ist der Stromnetzbetreiber in St. Veit an der Glan und wie läuft die Netzanmeldung?",
+   "Lohnt sich eine Wärmepumpe in St. Veit an der Glan, obwohl es Fernwärme gibt?",
+   "Funktioniert eine Wärmepumpe in einem älteren Haus in St. Veit an der Glan?",
+   "Gibt es in St. Veit an der Glan eine Förderung der Stadt für Photovoltaik oder Heizungstausch?",
+   "In welchen Orten rund um St. Veit an der Glan berät und montiert EBZ Energie?",
+   "Kann ich Sonnenstrom in St. Veit an der Glan mit Nachbarn teilen?"
+  ],
+  "internal_links": [
+   "/waermepumpe/ -> Wärmepumpe",
+   "/leistungen/energiegemeinschaft/ -> Energiegemeinschaft",
+   "/batteriespeicher/ -> Speicher richtig auslegen",
+   "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+   "/energiegemeinschaft-kaernten/ -> Energiegemeinschaft in Kärnten",
+   "/pv-speicher-nachruesten/ -> PV-Speicher nachrüsten"
+  ],
+  "notes": "Kleines, aber kommerzielles Volumen (zusammen rund 40 Suchen im Monat für die drei PV-Varianten), CPC bis 4 Euro, Wettbewerb hoch. Die SERP ist von ortsansässigen Betrieben mit Local-Pack-Einträgen und von Portalen geprägt; keine einzige Seite liefert lokale Fakten zu Netz, Baurecht, Fernwärme und Gebäudebestand. Dort setzt die Seite an. Ohne Standort in St. Veit ist das Local Pack nicht erreichbar: Ziel sind die organischen Plätze hinter den lokalen Betrieben und Zitate in KI-Antworten. Für Wärmepumpe gibt es kein messbares Suchvolumen am Ort; der Abschnitt trägt über die Fernwärme-Frage (über 70 % der Haushalte, aber nur rund 800 von 2.999 Gebäuden). Wichtigster Hebel danach: eine Referenz aus dem Bezirk St. Veit und das GBP-Einzugsgebiet."
+ },
+ "local_facts_sources": [
+  "https://stveit.com/unser-st-veit/projekte-in-st-veit/sonne-energie",
+  "https://stveit.com/fileadmin/sankt_veit/_Laufwerk_Stadt_SanktVeit/Sonstige_Dokumente/St._VeitGlan_Klimaneutralitaetsfahrplan__Vers._1.0_.pdf",
+  "https://www.stveit.com/klimaschutz",
+  "https://stveit.com/unser-rathaus/stadtverwaltung/bauamt",
+  "https://stveit.com/service/foerderung-beihilfe-subventionen",
+  "https://eap.ktn.gv.at/Verfahren.aspx?id=331c5659-97a7-4994-8e00-cba24cf92d78&lang=de&p=az",
+  "https://www.kaerntennetz.at/pv.htm",
+  "https://kaerntennetz.at/mittelkaernten.htm",
+  "https://www.kelag.at/ueber-kelag/geschichte.htm",
+  "https://www.statistik.at/blickgem/G0201/g20527.pdf",
+  "https://www.statistik.at/blickgem/G0402/g20527.pdf",
+  "https://www.statistik.at/blickgem/G0403/g20527.pdf"
+ ],
+ "cost_usd": 0.23,
+ "cost_note": "Schätzung: Die MCP-Antworten enthalten kein cost-Feld. 3 Google-Ads-Volumenabfragen (je rund 0,075 $, eine vierte scheiterte am Minutenlimit und wurde nicht verrechnet) plus 2 Live-SERPs mit People-also-ask (je unter 0,01 $)."
+}

@@ -26,8 +26,8 @@ CASES = [
     ("Kaernten Speicher nachruesten 10 kWh", inp(sp=True), "2026-10-15", 1000, 1000, False),
     ("Kaernten Speicher nachruesten 4 kWh", inp(kwh=4, sp=True), "2026-10-15", 0, 0, False),
     ("Steiermark 10 kWp + 10 kWh", inp(land="stmk", pv=True, sp=True), "2026-10-10", 3000, 3000, False),
-    ("Steiermark Waermepumpe (offen)", inp(land="stmk", wp=True), "2026-10-10", 0, 0, True),
-    ("Kaernten Waermepumpe (bis 6.000)", inp(wp=True), "2026-10-10", 0, 6000, False),
+    ("Steiermark Waermepumpe (derzeit keine Antraege)", inp(land="stmk", wp=True), "2026-10-10", 0, 0, False),
+    ("Kaernten Waermepumpe (3.000 Pauschale)", inp(wp=True), "2026-10-10", 3000, 3000, False),
     ("EMS", inp(ems=True), "2026-10-10", 0, 600, False),
     ("EMS nach Programmende", inp(ems=True), "2027-04-16", 0, 0, False),
     ("Balkonkraftwerk", inp(balkon=True), "2026-10-10", 0, 0, False),
@@ -38,7 +38,7 @@ CASES = [
     ("Burgenland neu, nach Call: Land 1.000", inp(land="bgld", pv=True, sp=True), "2026-10-23", 1000, 1000, False),
     ("Vorarlberg 10 kWp + 10 kWh (VKW 500)", inp(land="vbg", pv=True, sp=True), "2026-10-10", 3500, 3500, False),
     ("Ohne Bundesland: nur Bund", inp(land="", pv=True, sp=True), "2026-10-10", 3000, 3000, False),
-    ("Alles in Kaernten", inp(pv=True, sp=True, wp=True, ems=True), "2026-10-10", 6000, 6000 + 6000 + 600, False),
+    ("Alles in Kaernten", inp(pv=True, sp=True, wp=True, ems=True), "2026-10-10", 6000 + 3000, 6000 + 3000 + 600, False),
     ("Speicher 60 kWh bei 20 kWp (Deckel 50 kWh)", inp(land="stmk", kwp=20, kwh=60, pv=True, sp=True), "2026-10-10", 2800 + 7500, 10300, False),
 ]
 js = core + "\nvar out=[];" + json.dumps([[c[1], c[2]] for c in CASES]) + \

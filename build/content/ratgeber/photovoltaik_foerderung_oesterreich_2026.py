@@ -37,7 +37,7 @@ ARTICLE = {
         "Letzter Call: <b>8. bis 22. Oktober 2026</b>",
     ],
     "date_published": "2025-12-15",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "foerderung",
     "hero_alt": "Euro-Scheine und Taschenrechner: Photovoltaik-Förderung in Österreich 2026 berechnen",
 
@@ -166,7 +166,7 @@ Anträge abgelehnt.</p>
     ],
     hl_cols=(2,),
 )}
-<p>Dazu kommen je nach Wohnort 200 bis 1.000 Euro Gemeindeförderung. Bei 18.500 Euro Anlagenpreis bleiben in
+<p>Manche Gemeinden zahlen dazu einen eigenen Zuschuss. Bei 18.500 Euro Anlagenpreis bleiben in
 Kärnten damit rund 12.000 Euro Investition. Mit hohem Eigenverbrauch amortisiert sich die Anlage in
 EBZ-Projekten typischerweise in 4 bis 6 Jahren, die vollständige Rechnung finden Sie im Ratgeber
 {a('/kosten-einer-solaranlage/', 'Kosten einer Solaranlage')}.</p>
@@ -185,7 +185,7 @@ Link zum jeweiligen Detail-Ratgeber:</p>
     ["Bundesland", "Landesförderung 2026 (Kurzfassung)", "Mit Bund kombinierbar"],
     [
         [a('/photovoltaik-foerderung-kaernten/', 'Kärnten'), "3.000 € Pauschale für PV ab 5 kWp mit Speicher ab 5 kWh, 2. Landes-Call 12. Oktober bis 31. Dezember 2026, Antrag nach Fertigstellung; Nachrüstung 1.000 €", "ja"],
-        [a('/foerderung-photovoltaik-steiermark/', 'Steiermark'), "Sanierungsbonus bis 15 % im Sanierungskontext (1. April bis 15. Mai 2026), Ökofonds bis 30 % ab 20 kWp", "ja"],
+        [a('/foerderung-photovoltaik-steiermark/', 'Steiermark'), "derzeit keine PV-Landesförderung offen: Sanierungsbonus (bis 15 %, Fenster 1. April bis 15. Mai 2026) beendet, Ökofonds ohne PV-Ausschreibung", "entfällt, nur EAG"],
         [a('/photovoltaik-foerderung-wien/', 'Wien'), "Stadtförderung ab 1. Mai 2026, Fokus auf Gründächer, Fassaden und Mehrparteienhäuser", "nein"],
         [a('/photovoltaik-foerderung-niederoesterreich/', 'Niederösterreich'), "über die Wohnbauförderung, Punktesystem", "ja"],
         [a('/photovoltaik-foerderung-oberoesterreich/', 'Oberösterreich'), "Speicher-Nachrüstung 150 €/kWh bis 2.250 € für Bestandsanlagen vor 1. Jänner 2026", "nein beim Speicher"],
@@ -238,7 +238,7 @@ Details offen).</p>
         "grid": [
             ("Fristen im Griff", "Zählpunkt und Angebot vor dem Call, Ticket am Starttag, Inbetriebnahme danach."),
             ("Förderfähige Technik", "Komponenten von der White List für den Made-in-Europe-Bonus, Speicher ab 0,5 kWh je kWp."),
-            ("Land und Gemeinde", "Kärntner Pauschale, steirischer Sanierungsbonus und Gemeindeförderung geprüft."),
+            ("Land und Gemeinde", "Kärntner Pauschale, Stand der steirischen Programme und Gemeindeförderung geprüft."),
             ("Endabrechnung inklusive", "Rechnungen, Fertigstellungsmeldung und Nachweise reichen wir für Sie ein."),
         ],
     },
@@ -268,8 +268,8 @@ Details offen).</p>
          "0,5 kWh je kWp PV-Leistung. In Kärnten gibt es zusätzlich 3.000 Euro Landespauschale, die einen Speicher "
          "ab 5 kWh voraussetzt."),
         ("Kann ich die Bundesförderung mit der Landesförderung kombinieren?",
-         "In den meisten Bundesländern ja, etwa in Kärnten, der Steiermark, Niederösterreich, Tirol und "
-         "Vorarlberg. Wien schließt die Kombination aus, Oberösterreich beim Speicher, im Burgenland gilt Bund vor "
+         "In den meisten Bundesländern ja, etwa in Kärnten, Niederösterreich, Tirol und Vorarlberg; in der "
+         "Steiermark ist derzeit keine PV-Landesförderung offen. Wien schließt die Kombination aus, Oberösterreich beim Speicher, im Burgenland gilt Bund vor "
          "Land. Seit der EAG-Novelle 2026 ist die Kombination bis 100 kWp bundesseitig erlaubt, maßgeblich ist die "
          "Landesrichtlinie."),
         ("Was bedeutet der Made-in-Europe-Bonus?",

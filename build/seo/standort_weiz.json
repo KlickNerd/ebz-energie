@@ -1,0 +1,485 @@
+{
+  "slug": "standort_weiz",
+  "path": "/photovoltaik-weiz/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "datenquelle": "DataForSEO Google Ads Search Volume (Austria, de), 3 Aufrufe; SERP organic live (Austria, de), 2 Aufrufe",
+  "primary": {
+    "keyword": "photovoltaik weiz",
+    "volume_at": 10,
+    "kd": null,
+    "cpc": 3.63,
+    "intent": "commercial/lokal (Local Pack in der SERP)",
+    "competition": "HIGH (84)"
+  },
+  "secondary": [
+    {
+      "keyword": "photovoltaik gleisdorf",
+      "volume_at": 40,
+      "kd": null,
+      "cpc": 2.1,
+      "intent": "commercial/lokal"
+    },
+    {
+      "keyword": "wärmepumpe weiz",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial/lokal"
+    },
+    {
+      "keyword": "installateur weiz",
+      "volume_at": 110,
+      "kd": null,
+      "cpc": 2.0,
+      "intent": "lokal, Gewerk allgemein"
+    },
+    {
+      "keyword": "installateur gleisdorf",
+      "volume_at": 90,
+      "kd": null,
+      "cpc": 2.12,
+      "intent": "lokal, Gewerk allgemein"
+    },
+    {
+      "keyword": "photovoltaik steiermark",
+      "volume_at": 70,
+      "kd": null,
+      "cpc": 5.24,
+      "intent": "commercial (gehoert auf /photovoltaik-steiermark/)"
+    },
+    {
+      "keyword": "fernwärme weiz",
+      "volume_at": 90,
+      "kd": null,
+      "intent": "navigational/informational (Heizungsentscheidung)"
+    }
+  ],
+  "long_tail": [
+    {
+      "keyword": "feistritzwerke",
+      "volume_at": 4400
+    },
+    {
+      "keyword": "photovoltaik förderung steiermark",
+      "volume_at": 210
+    },
+    {
+      "keyword": "stadtwerke gleisdorf",
+      "volume_at": 170
+    },
+    {
+      "keyword": "energieregion weiz gleisdorf",
+      "volume_at": 90
+    },
+    {
+      "keyword": "solarstadt gleisdorf",
+      "volume_at": 70
+    },
+    {
+      "keyword": "elektriker weiz",
+      "volume_at": 50
+    },
+    {
+      "keyword": "pv anlage steiermark",
+      "volume_at": 40
+    },
+    {
+      "keyword": "elektriker gleisdorf",
+      "volume_at": 40
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "volume_at": 30
+    },
+    {
+      "keyword": "heizungstausch steiermark",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik hartberg",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv anlage weiz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv weiz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "solaranlage weiz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik firmen weiz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur weiz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "heizungstausch weiz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik oststeiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage gleisdorf",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe gleisdorf",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik birkfeld",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe oststeiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage oststeiermark",
+      "volume_at": 0
+    }
+  ],
+  "semantic": [
+    "Energieregion Weiz-Gleisdorf",
+    "Klima- und Energie-Modellregion (seit 2013)",
+    "Solarstadt Gleisdorf",
+    "e5-Gemeinde Weiz",
+    "Energienetze Steiermark",
+    "Einspeiserportal",
+    "Netzanschlusskonzept",
+    "netzwirksame Leistung",
+    "Umspannwerk Weiz",
+    "freie Einspeisekapazität",
+    "Feistritzwerke",
+    "Hüllkurvenkonzept",
+    "Nulleinspeisung",
+    "Batteriespeicher",
+    "Energiemanagementsystem",
+    "Fernwärme Weiz",
+    "Stadtwerke Gleisdorf",
+    "Steiermärkisches Baugesetz § 21",
+    "meldepflichtig",
+    "Ortsbildschutzzone",
+    "Energieagentur W.E.I.Z.",
+    "Energiegemeinschaft WEIZnord",
+    "EnErGie Werk Weiz",
+    "SolarTool Digitaler Atlas Steiermark",
+    "Bezirk Weiz",
+    "Birkfeld",
+    "Passail",
+    "St. Ruprecht an der Raab"
+  ],
+  "questions": [
+    "Brauche ich in der Steiermark eine Genehmigung für eine Wärmepumpe?",
+    "Wie viel kostet eine Wärmepumpe für ein Haus mit 150 m2?",
+    "Was kostet eine gute Wärmepumpe in Österreich?",
+    "Was sind die Nachteile einer Luftwärmepumpe?",
+    "Wann machen Wärmepumpen keinen Sinn?",
+    "Ist eine Luftwärmepumpe ein Stromfresser?",
+    "Wer ist in Weiz und in Gleisdorf der Stromnetzbetreiber für meine PV-Anlage?",
+    "Kann ich in Weiz noch Sonnenstrom ins Netz einspeisen?",
+    "Was bedeutet das Hüllkurvenkonzept der Feistritzwerke?",
+    "Wärmepumpe oder Fernwärme in Weiz?"
+  ],
+  "questions_hinweis": "Die ersten sechs sind People-also-ask aus der SERP 'wärmepumpe weiz'; die SERP 'photovoltaik weiz' zeigt keine PAA-Box. Die übrigen sind aus der lokalen Recherche abgeleitet.",
+  "serp": {
+    "photovoltaik weiz": {
+      "features": [
+        "local_pack",
+        "people_also_search",
+        "related_searches"
+      ],
+      "local_pack": [
+        {
+          "name": "EP:Schreck (Elektrofachhandel, Ahornweg 11)",
+          "rating": 4.6,
+          "votes": 372
+        },
+        {
+          "name": "ATR GmbH, balkonkraftwerk-shop.at (Weizer Str. 36)",
+          "rating": 5.0,
+          "votes": 81
+        },
+        {
+          "name": "DieNeuen Bau&Haustechnik GmbH, Standort Weiz",
+          "rating": 4.7,
+          "votes": 18
+        }
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "de.wikipedia.org",
+          "title": "Weiz",
+          "type": "lexikon"
+        },
+        {
+          "pos": 2,
+          "domain": "www.weiz.at",
+          "title": "Stadtgemeinde Weiz - Home",
+          "type": "gemeinde"
+        },
+        {
+          "pos": 3,
+          "domain": "www.steiermark.com",
+          "title": "Weiz | Oststeiermark",
+          "type": "tourismus"
+        },
+        {
+          "pos": 4,
+          "domain": "www.innovationszentrum-weiz.at",
+          "title": "Innovationszentrum W.E.I.Z.",
+          "type": "institution"
+        },
+        {
+          "pos": 5,
+          "domain": "kiga.weiz.at",
+          "title": "Stadtgemeinde Weiz - Kindergarten",
+          "type": "gemeinde"
+        },
+        {
+          "pos": 6,
+          "domain": "www.bh-weiz.steiermark.at",
+          "title": "Bezirkshauptmannschaft Weiz",
+          "type": "behoerde"
+        },
+        {
+          "pos": 7,
+          "domain": "www.weiz.at",
+          "title": "Kulturbüro",
+          "type": "gemeinde"
+        },
+        {
+          "pos": 8,
+          "domain": "www.bh-weiz.steiermark.at",
+          "title": "Behindertenhilfe - BH Weiz",
+          "type": "behoerde"
+        },
+        {
+          "pos": 9,
+          "domain": "www.weiz.at",
+          "title": "Musikschule Weiz",
+          "type": "gemeinde"
+        },
+        {
+          "pos": 10,
+          "domain": "www.weiz.at",
+          "title": "Wasser / Abwassergebühren",
+          "type": "gemeinde"
+        }
+      ],
+      "befund": "Kein einziger PV-Anbieter in den organischen Top 10: Google wertet die Abfrage (Standort Austria) fast nur als Ortsabfrage. Eine echte Anbieterseite mit lokalen Fakten hat organisch freie Bahn; der Local Pack bleibt ohne Adresse im Bezirk unerreichbar."
+    },
+    "wärmepumpe weiz": {
+      "features": [
+        "local_pack",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "local_pack": [
+        {
+          "name": "Klimatech Handels- und Service GmbH (Energiestr. 5)",
+          "rating": 4.9,
+          "votes": 26
+        },
+        {
+          "name": "Harb GesmbH Installationen (Moarweg 1)",
+          "rating": 5.0,
+          "votes": 29
+        },
+        {
+          "name": "Trieb & Kreimer Installationen (Birkfelderstraße 31)",
+          "rating": 4.3,
+          "votes": 27
+        }
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "neubauer-hls.at",
+          "title": "Wärmepumpe im Bezirk Weiz, Neubauer GmbH",
+          "type": "anbieter"
+        },
+        {
+          "pos": 2,
+          "domain": "www.hsh-installateur.com",
+          "title": "Haustechnik Hofer GmbH",
+          "type": "anbieter"
+        },
+        {
+          "pos": 3,
+          "domain": "www.waermepumpe-austria.at",
+          "title": "Heizung Hollersbacher, 8160 Weiz",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 4,
+          "domain": "www.energieschauplaetze.at",
+          "title": "Hot Ice (Fernwärme Weiz, Eisspeicher-Wärmepumpe)",
+          "type": "institution"
+        },
+        {
+          "pos": 5,
+          "domain": "www.daibau.at",
+          "title": "Wärmepumpen, Weiz: Top 16 Installateure",
+          "type": "portal"
+        },
+        {
+          "pos": 6,
+          "domain": "neubauer-hls.at",
+          "title": "Wärmepumpe installieren in Graz & Weiz",
+          "type": "anbieter"
+        },
+        {
+          "pos": 7,
+          "domain": "www.gwh-rosenberger.at",
+          "title": "Wärmepumpen in Weiz, Steiermark",
+          "type": "anbieter"
+        },
+        {
+          "pos": 8,
+          "domain": "heizma.at",
+          "title": "Heizma: Wärmepumpe und Photovoltaik in Österreich",
+          "type": "anbieter"
+        },
+        {
+          "pos": 9,
+          "domain": "www.instagram.com",
+          "title": "klimatechweiz: Wärmepumpe",
+          "type": "social"
+        },
+        {
+          "pos": 10,
+          "domain": "firmen.wko.at",
+          "title": "Wärmepumpen in Weiz (Bezirk), 70 Unternehmen",
+          "type": "verzeichnis"
+        }
+      ],
+      "befund": "Lokale Installateure mit eigener Ortsseite ('Wärmepumpe im Bezirk Weiz') dominieren. Der Wettbewerber auf Platz 1 nennt im Snippet 'Förderung bis 8.500 Euro'; unsere Seite nennt nur die belegte Stadtförderung (300 Euro) und den Stand, dass Land und Bund derzeit keine Anträge annehmen."
+    }
+  },
+  "recommendation": {
+    "title": "Photovoltaik Weiz & Gleisdorf: PV und Wärmepumpe | EBZ",
+    "h1": "Photovoltaik in Weiz und Gleisdorf: PV-Anlage, Speicher und Wärmepumpe vom Fachbetrieb",
+    "description": "Photovoltaik und Wärmepumpe in Weiz und Gleisdorf: Netzanschluss bei Energienetze Steiermark oder Feistritzwerken, 300 € Stadtförderung für den Heizungstausch.",
+    "h2_outline": [
+      "Warum Photovoltaik und Wärmepumpe im Raum Weiz anders geplant werden",
+      "Weiz und Gleisdorf auf einen Blick: Netz, Behörde, Wärme",
+      "Genehmigung und Netzanschluss in Weiz: Bauamt, Energienetze Steiermark, Feistritzwerke",
+      "Wärmepumpe in Weiz: erst die Fernwärme prüfen, dann rechnen",
+      "Förderung in Weiz: 300 Euro von der Stadt für den Heizungstausch",
+      "Referenzen in der Steiermark: zwei Projekte aus Graz"
+    ],
+    "internal_links": [
+      "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft in der Steiermark",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/pv-speicher-nachruesten/ -> PV-Speicher nachrüsten",
+      "/energiemanagementsystem/ -> Energiemanagementsystem",
+      "/batteriespeicher/ -> Batteriespeicher"
+    ],
+    "notes": "Das Suchvolumen für Weiz selbst ist klein (10), Gleisdorf ist viermal so groß (40): Gleisdorf steht deshalb in Title, H1 und Description. Stärkstes Unterscheidungsmerkmal ist die Netzlage: Umspannwerk Weiz ohne freie Einspeisekapazität (Stand 1. Juli 2026) und das Hüllkurvenkonzept der Feistritzwerke in Gleisdorf. Die Seite macht daraus das Planungsargument für Speicher, Energiemanagement und Wärmepumpe. Bei der Wärmepumpe ehrlich bleiben: Fernwärme Weiz deckt etwa 80 % des Wärmebedarfs der Stadt. Sobald es ein Projekt im Bezirk gibt, als Referenz nachziehen."
+  },
+  "lokale_fakten": [
+    {
+      "fakt": "Stadt Weiz: 477 m Seehöhe, 17,5 km², 12.970 Einwohner (12.000 Hauptwohnsitz), 5.632 Haushalte",
+      "quelle": "https://www.weiz.at/"
+    },
+    {
+      "fakt": "Bezirk Weiz: 31 Gemeinden",
+      "quelle": "https://www.bh-weiz.steiermark.at/cms/ziel/58210179/DE/"
+    },
+    {
+      "fakt": "Ökoförderungen Stadt Weiz 2026: Heizungstausch 300 € (Wärmepumpe, Nah-/Fernwärmeanschluss, Biomassekessel), +100 € je weiterer Wohneinheit, nur ohne Bundesförderung; Solarthermie 300 €; keine PV-/Speicherförderung; Weiz ist Klimabündnis- und e5-Gemeinde",
+      "quelle": "https://www.weiz.at/Gemeinde/Umwelt-_Klimaschutz/Oekofoerderungen"
+    },
+    {
+      "fakt": "Fernwärme Weiz GmbH: 50.000 MWh, ca. 80 % des Wärmebedarfs in Weiz, zwei Heizanlagen, 100 % biogene Brennstoffe, im Hauptbesitz der Stadtgemeinde",
+      "quelle": "https://www.weiz.at/Fernwaerme_Weiz"
+    },
+    {
+      "fakt": "Bauamt Weiz, Hauptplatz 7; Formular Mitteilung gem. § 21 Stmk. BauG; Ortsbildschutz(zone)",
+      "quelle": "https://www.weiz.at/Services/Bauen_Wohnen/Bauamt"
+    },
+    {
+      "fakt": "Stmk. BauG idF LGBl. 20/2026: PV auf Dach/Fassade meldepflichtig bis 3,50 m Anlagenhöhe (§ 21 lit. o), darüber vereinfachtes Verfahren (§ 20 Z 2 lit. l); Batterie bis 20 kWh meldepflichtig (§ 21 Abs. 2 Z 2a); Wärmepumpe meldepflichtig mit Datenblatt und Schallbestätigung eines Sachverständigen (§ 21 Abs. 2 Z 2b, Abs. 3 Z 5)",
+      "quelle": "https://www.technik.steiermark.at/cms/beitrag/11549819/58813874/"
+    },
+    {
+      "fakt": "Stromnetz Stadt Weiz: Energienetze Steiermark (PIN für die Weizer Energiegemeinschaften aus dem Serviceportal der E-Netze Steiermark; zwei EEG: EnErGie Werk Weiz Süd, Region Umspannwerk WEIZnord)",
+      "quelle": "https://www.innovationszentrum-weiz.at/energieberatung-energiegemeinschaften/"
+    },
+    {
+      "fakt": "Pichlerwerke-Verteilernetz 01/2012 in die Stromnetz Steiermark integriert (Hintergrund, nicht auf der Seite)",
+      "quelle": "https://www.landesrechnungshof.steiermark.at/cms/dokumente/12912566_174678476/b80c6f7b/2014_Stromnetz%20Steiermark%20GmbH.pdf"
+    },
+    {
+      "fakt": "Freie Einspeisekapazität je Umspannwerk, Stand 01.07.2026: Weiz 24,5 MW gebucht / 0,0 MW frei; Gleisdorf 13,3 / 0,0; Birkfeld 7,0 / 0,9",
+      "quelle": "https://www.e-netze.at/Service/FEK/Default.aspx"
+    },
+    {
+      "fakt": "Energienetze Steiermark: Einspeiserportal, Netzanschlusskonzept 12 Monate + einmal 12 Monate, netzwirksame Leistung, Wirkleistungsvorgabe PV 3,68 bis 250 kW seit 1.12.2024",
+      "quelle": "https://www.e-netze.at/Strom/Erzeugungsanlagen/Default.aspx"
+    },
+    {
+      "fakt": "Mittelspannungsverstärkung UW Weiz bis Passail: 6,5 Mio. €, bis zu 12 MW neue Einspeisekapazität, 2022 bis 2025 (Pressemitteilung 3.7.2023)",
+      "quelle": "https://www.e-steiermark.com/pressemitteilungen/energienetze-steiermark-ein-tochterunternehmen-der-energie-steiermark-schaffen-die-voraussetzung-dass-ost-und-suedoststeiermark-an-sonnigen-tagen-mehr-als-die-haelfte-des-gesamten-strombedarfs-des-landes-abdecken-kann"
+    },
+    {
+      "fakt": "Gleisdorf: Feistritzwerke zuständig für Stromnetz und Netzanschlüsse; Leitbild 'Im Herzen die Sonne', Solarstadt; Stadtwerke zuständig für Fernwärme",
+      "quelle": "https://www.gleisdorf.at/energie-strom_118.htm"
+    },
+    {
+      "fakt": "Feistritzwerke: flächenmäßig zweitgrößter steirischer Verteilnetzbetreiber (1.115 km², rund 1.300 Trafostationen, 4.855 km Leitungen)",
+      "quelle": "https://www.feistritzwerke.at/versorgungsgebiet/"
+    },
+    {
+      "fakt": "Feistritzwerke Hüllkurvenkonzept (31.08.2026): Engpass im 110-kV-Netz der Energienetze Steiermark und im APG-Netz, neue Anlagen nur netzneutral (Nulleinspeisung), Einspeisung in Randzeiten, Batteriespeicher Voraussetzung, dynamische Regelung am Netzanschlusspunkt, EMS, Bestandsanlagen behalten Einspeiseleistung",
+      "quelle": "https://www.feistritzwerke.at/files/fws_huellkurvenkonzept_20260831.pdf"
+    },
+    {
+      "fakt": "Stadtwerke Gleisdorf Fernwärme: rund 17 km Leitung, 720 Kunden",
+      "quelle": "https://www.stadtwerke-gleisdorf.at/waerme/"
+    },
+    {
+      "fakt": "Energieregion Weiz-Gleisdorf: 12 Gemeinden, rd. 48.500 Einwohner; KEM seit 2013",
+      "quelle": "https://www.energieregion.at/region/ und https://www.energieregion.at/kem/"
+    },
+    {
+      "fakt": "Energieagentur W.E.I.Z.: anerkannte Energieberatungsstelle des Landes, Heizungstausch-Beratung vor Ort 150 € Selbstkostenbeitrag",
+      "quelle": "https://www.innovationszentrum-weiz.at/energieberatung-energiegemeinschaften/"
+    },
+    {
+      "fakt": "Solarpotenzial/SolarTool im Digitalen Atlas Steiermark",
+      "quelle": "https://www.technik.steiermark.at/cms/beitrag/12756734/99241573/"
+    }
+  ],
+  "weggelassen": [
+    "Ertrag je kWp und Sonnenstunden für Weiz (keine amtliche Quelle abgerufen; Verweis auf das SolarTool)",
+    "Gemeindeförderung Gleisdorf (Seite umweltfoerderungen_365.htm liefert 404; Stromspeicher-Richtlinie nur aus Suchtreffer bekannt, nicht selbst gelesen)",
+    "Netzbetreiber der übrigen Bezirksgemeinden (Birkfeld, Anger, Passail, Pischelsdorf, Sinabelkirchen): nicht je Gemeinde belegt",
+    "Gasnetz in Weiz/Gleisdorf",
+    "Inhalt der Weizer Energieraumplanung (mögliche Fernwärme-Anschlussbereiche)",
+    "Aussage '20.000 Menschen täglich mit Fernwärme versorgt' (mehr als die Einwohnerzahl, missverständlich)",
+    "Landesförderung Wärmepumpe (laut _fakten_2026-10.md derzeit keine Antragstellung; kommt aus der Vorlage)",
+    "Artikel der LK Steiermark von 2023 zur 400-m²-Grenze (durch die Baugesetz-Novelle 2026 überholt)",
+    "Entfernungen, Fahrzeiten, Fristen"
+  ],
+  "kundenfragen": [
+    "Gibt es Projekte im Bezirk Weiz oder in Gleisdorf, die als Referenz freigegeben werden können?",
+    "Hat EBZ bereits Anlagen mit Hüllkurve bzw. Nulleinspeisung im Netz der Feistritzwerke in Betrieb genommen (EMS-Einstellung, mehrmals jährliche Anpassung)? Wer übernimmt die laufende Anpassung der Hüllkurve?",
+    "Ist EBZ bei der Energienetze Steiermark als qualifiziertes Elektroinstallationsunternehmen für die Wirkleistungsvorgabe gelistet?",
+    "Soll die Seite Fernwärme ausdrücklich als Alternative empfehlen (so jetzt formuliert), oder nur neutral erwähnen?",
+    "Übernimmt EBZ die Schallbestätigung des Sachverständigen für die Wärmepumpen-Meldung (§ 21 Abs. 3 Z 5) im Angebot?"
+  ],
+  "cost_usd": 0.23,
+  "cost_hinweis": "Schätzung nach DataForSEO-Listenpreisen (3 x Google Ads Search Volume live je 0,075 $, 2 x SERP live advanced mit PAA je rund 0,002 bis 0,003 $); die MCP-Antworten enthalten kein cost-Feld."
+}

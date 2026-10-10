@@ -1,0 +1,402 @@
+{
+  "slug": "standort_spittal",
+  "path": "/photovoltaik-spittal/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "quelle": "DataForSEO: Google Ads Search Volume (2 Aufrufe, 20 Keywords) und SERP Organic Live Advanced (2 Aufrufe), location_name Austria, language_code de",
+  "primary": {
+    "keyword": "photovoltaik spittal an der drau",
+    "volume_at": 0,
+    "kd": null,
+    "cpc": null,
+    "intent": "commercial (lokal); kein messbares Volumen, auch 'photovoltaik spittal' = 0"
+  },
+  "secondary": [
+    {
+      "keyword": "photovoltaik spittal",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "pv anlage spittal",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "wärmepumpe spittal",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "wärmepumpe spittal an der drau",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "fernwärme spittal",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "informational"
+    },
+    {
+      "keyword": "photovoltaik kärnten",
+      "volume_at": 70,
+      "kd": null,
+      "intent": "commercial (Land, Ziel ist /photovoltaik-foerderung-kaernten/ und /photovoltaik/)"
+    }
+  ],
+  "long_tail": [
+    {
+      "keyword": "installateur spittal an der drau",
+      "volume_at": 30
+    },
+    {
+      "keyword": "elektriker spittal an der drau",
+      "volume_at": 30
+    },
+    {
+      "keyword": "fernwärme spittal",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv spittal",
+      "volume_at": 0
+    },
+    {
+      "keyword": "solaranlage spittal",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik firmen spittal",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage spittal an der drau",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur spittal",
+      "volume_at": 0
+    },
+    {
+      "keyword": "heizungstausch spittal",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik oberkärnten",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik millstätter see",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik seeboden",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik mölltal",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik radenthein",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Ist Photovoltaik meldepflichtig?",
+    "Was kostet eine 10 kW Solaranlage mit Speicher und Montage?",
+    "Wie viel Photovoltaik brauche ich, um 10.000 kWh Strom zu erzeugen?",
+    "Was kostet eine 4000 kWh Photovoltaikanlage?",
+    "Werden Solarmodule 2026 billiger?",
+    "Welche Hersteller von PV-Modulen gibt es in Österreich?",
+    "Wer ist der größte Wärmepumpenhersteller in Österreich?",
+    "Sind iDM Wärmepumpen gut?",
+    "Wie viel kosten iDM Wärmepumpen?",
+    "Wie lange hält eine iDM Wärmepumpe im Durchschnitt?"
+  ],
+  "serp": {
+    "photovoltaik spittal an der drau": {
+      "features": [
+        "local_pack",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "local_pack": [
+        {
+          "name": "Conversio Energie GmbH",
+          "rating": 4.6,
+          "votes": 9
+        },
+        {
+          "name": "MET Elektro Unterlerchner",
+          "rating": 4.5,
+          "votes": 16
+        },
+        {
+          "name": "MET Elektro Photovoltaik Team",
+          "rating": null,
+          "votes": 0
+        }
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "meine-freizeit.net",
+          "title": "Kärnten startet neuen PV-Fördercall mit Speicherpflicht",
+          "type": "news"
+        },
+        {
+          "pos": 2,
+          "domain": "kaernten-solar.at",
+          "title": "Kärnten Solar I Dein Photovoltaik Experte aus Kärnten",
+          "type": "anbieter"
+        },
+        {
+          "pos": 3,
+          "domain": "pvbaustria.at",
+          "title": "Profi-Suche - PV Austria",
+          "type": "portal"
+        },
+        {
+          "pos": 4,
+          "domain": "kem-millstaettersee.at",
+          "title": "Aktuelles - Ältere Beiträge",
+          "type": "region (KEM)"
+        },
+        {
+          "pos": 5,
+          "domain": "ew-alternativenergie.at",
+          "title": "EW Alternativ Energie GmbH",
+          "type": "anbieter (Spittal)"
+        },
+        {
+          "pos": 6,
+          "domain": "dasschnelle.at",
+          "title": "Energietechniker in Spittal an der Drau, 6 Firmen",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 7,
+          "domain": "red.sport",
+          "title": "MET PHOTOVOLTAIK HORNETS SPITTAL",
+          "type": "sonstiges (Sportverein)"
+        },
+        {
+          "pos": 8,
+          "domain": "ktn.gv.at",
+          "title": "Förderung Photovoltaik-Anlagen und Stromspeicher",
+          "type": "behörde"
+        },
+        {
+          "pos": 9,
+          "domain": "archiv.5min.at",
+          "title": "Gemeinde Spittal setzt auf Ausbau der Alternativenergie",
+          "type": "news (2021)"
+        },
+        {
+          "pos": 10,
+          "domain": "herold.at",
+          "title": "SOLARier Gesellschaft für erneuerbare Energie mbH",
+          "type": "verzeichnis"
+        }
+      ],
+      "related_searches": [
+        "Kelag Photovoltaik",
+        "Pv firma klagenfurt",
+        "Kelag virtueller stromspeicher",
+        "Kelag Förderung Speicher",
+        "Balkonkraftwerk Kärnten kaufen",
+        "Bürgerenergiegemeinschaft Kärnten"
+      ]
+    },
+    "wärmepumpe spittal an der drau": {
+      "features": [
+        "ai_overview",
+        "knowledge_graph (iDM Energiesysteme GmbH Werk Spittal)",
+        "people_also_ask",
+        "video"
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "idm-energie.at",
+          "title": "Layher Sanitär-Heizung (Partnerseite)",
+          "type": "hersteller"
+        },
+        {
+          "pos": 2,
+          "domain": "idm-energie.at",
+          "title": "Partner - Seite 32 von 69",
+          "type": "hersteller"
+        },
+        {
+          "pos": 3,
+          "domain": "facebook.com",
+          "title": "iNTELLiGENTE iDM Wärmepumpe (Video)",
+          "type": "social"
+        },
+        {
+          "pos": 4,
+          "domain": "idm-energie.at",
+          "title": "Tobias Grau Heizungs- und Sanitärservice",
+          "type": "hersteller"
+        },
+        {
+          "pos": 5,
+          "domain": "idm-energie.at",
+          "title": "Thomas Demmel GmbH",
+          "type": "hersteller"
+        },
+        {
+          "pos": 6,
+          "domain": "idm-energie.at",
+          "title": "T.O. Haustechnik",
+          "type": "hersteller"
+        },
+        {
+          "pos": 7,
+          "domain": "idm-energie.at",
+          "title": "WRI Installationen",
+          "type": "hersteller"
+        },
+        {
+          "pos": 8,
+          "domain": "facebook.com",
+          "title": "Wärmepumpen von iDM | Matrei in Osttirol",
+          "type": "social"
+        },
+        {
+          "pos": 9,
+          "domain": "fep.at",
+          "title": "IDM-Energiesysteme GmbH, 9971 Matrei in Osttirol",
+          "type": "verzeichnis"
+        }
+      ]
+    }
+  },
+  "gaps": [
+    "Kein Mitbewerber im PV-SERP erklärt Genehmigung (Mitteilung § 7 K-BO) und Netzanschluss für Spittal: PAA 'Ist Photovoltaik meldepflichtig?' ist offen.",
+    "Die Wärmepumpen-SERP wird vom iDM-Werk Spittal (Knowledge Graph, Partnerseiten) dominiert, kein lokaler Installateur-Inhalt: eine Seite mit Fernwärme-Abwägung und Kosten hat Platz.",
+    "Kein Treffer verbindet Fernwärme Spittal (Volumen 10) mit der Wärmepumpen-Entscheidung.",
+    "Local Pack nur mit Spittaler Betrieben: ohne GBP-Einzugsgebiet Oberkärnten und ohne Referenz im Bezirk bleibt EBZ dort unsichtbar."
+  ],
+  "cannibalization": [
+    "/photovoltaik-villach/ (anderer Ort, eigene Fakten: kein Konflikt)",
+    "/photovoltaik-foerderung-kaernten/ (Förderdetails dort halten)",
+    "/waermepumpe/ (Leistungsseite, hier nur lokaler Bezug)"
+  ],
+  "recommendation": {
+    "title": "Photovoltaik & Wärmepumpe Spittal an der Drau | EBZ",
+    "h1": "Photovoltaik in Spittal an der Drau: PV-Anlage, Speicher und Wärmepumpe vom Fachbetrieb aus Villach",
+    "description": "Photovoltaik und Wärmepumpe in Spittal an der Drau: Fachbetrieb aus Villach, Beratung vor Ort, Netzanmeldung bei Kärnten Netz, 3.000 € Landespauschale.",
+    "h2_outline": [
+      "Warum Photovoltaik und Wärmepumpe in Spittal an der Drau zusammengehören",
+      "Spittal an der Drau im Überblick: Behörde, Stromnetz, Fernwärme, Solarkataster",
+      "Genehmigung und Netzanschluss in Spittal: Mitteilung an die Stadtgemeinde, Antrag bei Kärnten Netz",
+      "Wärmepumpe in Spittal: zuerst die Fernwärme prüfen, dann mit Sonnenstrom heizen",
+      "Förderung für Photovoltaik und Wärmepumpe in Spittal an der Drau",
+      "Referenzen aus Kärnten: Ossiacher See und Villach"
+    ],
+    "faq_add": [
+      "Brauche ich in Spittal eine Baubewilligung für die Photovoltaikanlage?",
+      "Wer ist in Spittal der Netzbetreiber und wie läuft die Anmeldung der PV-Anlage?",
+      "Fernwärme oder Wärmepumpe: Was passt in Spittal besser?",
+      "Gibt es in Spittal an der Drau eine Gemeindeförderung für Photovoltaik?"
+    ],
+    "internal_links": [
+      "/waermepumpe/ -> Wärmepumpe",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ -> PV-Komplettanlage 10 kWp mit Speicher: Kosten",
+      "/energiegemeinschaft-kaernten/ -> Energiegemeinschaft in Kärnten",
+      "/batteriespeicher/ -> Speicher",
+      "/energiemanagementsystem/ -> Energiemanagement",
+      "/foerderrechner/ -> Förderrechner"
+    ],
+    "notes": "Kein Keyword mit Ortsbezug hat in Österreich messbares Google-Ads-Volumen, die Seite gewinnt nur über Longtail, lokale Fakten und KI-Zitierbarkeit. Unterscheidungsmerkmale sind die Fernwärme-Abwägung (Kelag Energie & Wärme, rund 98 % Biomasse), das Netz-Rechenbeispiel von Kärnten Netz und die städtischen Zahlen (761,79 kWp, Ziel 2040). Für das Local Pack fehlen ein GBP-Einzugsgebiet Oberkärnten und eine freigegebene Referenz im Bezirk Spittal. Der Slug /photovoltaik-spittal/ bleibt, Title und H1 nennen den vollen Ortsnamen."
+  },
+  "lokale_fakten": [
+    {
+      "fakt": "560 m Seehöhe, 48,57 km², 7 Katastralgemeinden, 27 Ortschaften, größte Gemeinde des Bezirks",
+      "quelle": "https://www.spittal-drau.at/buergerservice/zahlen-und-fakten"
+    },
+    {
+      "fakt": "Einwohner 2026: Stadt 15.263, Bezirk 75.119",
+      "quelle": "https://www.statistik.at/blickgem/G0201/g20635.pdf"
+    },
+    {
+      "fakt": "Mitteilungspflichtige Bauvorhaben nach § 7 K-BO, schriftliche Bekanntgabe vor der Ausführung, Baubehörde Stadtgemeinde, Burgplatz 5",
+      "quelle": "https://www.spittal-drau.at/buergerservice/bauen/bauverfahren/bewilligungsfreien-aber-mitteilungspflichtigen-7k-bo"
+    },
+    {
+      "fakt": "§ 7 Abs. 1 lit. a Z 20 K-BO 1996: bauliche Anlagen, die erneuerbare Energie erzeugen oder elektrische Energie speichern; Vollendung binnen zwei Wochen melden",
+      "quelle": "https://villach.at/getmedia/fe3178f4-230a-4056-871d-d9412d2329ff/Mitteilung_P7_KBO1996.pdf.aspx"
+    },
+    {
+      "fakt": "Kärnten Netz: Störbezirk Spittal an der Drau",
+      "quelle": "https://kaerntennetz.at/stoerungsdienst.htm"
+    },
+    {
+      "fakt": "PV-Anschluss: Antrag im Kundenportal, automatische Netzberechnung, Netzzutrittsangebot, Einspeisung mindestens in Höhe des Strombezugsrechts, Beispiel 10 kWp / 3,5 kW / 6 kW",
+      "quelle": "https://kaerntennetz.at/pv.htm"
+    },
+    {
+      "fakt": "Fernwärme Spittal: Kelag Energie & Wärme, rund 33 Mio. kWh pro Jahr, rund 98 % Biomasse, Kläranlagen-Abwärme rund 2 Mio. kWh (rund 400 Wohnungen)",
+      "quelle": "https://presse.kelag.at/news-wasserverband-millstaetter-see-und-kelag-energie-waerme-abwaerme-der-klaeranlage-wird-fuer-die-fernwaerme-spittal-an-der-drau-nutzbar-gemacht?id=192828&menueid=27567&l=deutsch"
+    },
+    {
+      "fakt": "Kelag betreibt das Netz seit 2013/2014",
+      "quelle": "https://presse.kelag.at/news-kelag-energie-waerme-errichtet-biomasse-heizwerk-fuer-die-kaerntnermilch?id=208101&menueid=27567&l=deutsch"
+    },
+    {
+      "fakt": "Netzverdichtung Spittal an der Drau 2023 bis 2024",
+      "quelle": "https://www.kew.at/forderungen.htm"
+    },
+    {
+      "fakt": "Photovoltaik-Potenzialkataster der Stadt (Solarpotenzial Nockregion, Oberflächenmodelle 2024)",
+      "quelle": "https://www.spittal-drau.at/buergerservice/klima-energie/photovoltaik-potenzialkataster"
+    },
+    {
+      "fakt": "Pionier-Kleinstadt Klimaneutrale Stadt, Ziel klimaneutral bis 2040, e5-Gemeinde",
+      "quelle": "https://www.spittal-drau.at/buergerservice/klima-energie/klimaneutrale-stadt"
+    },
+    {
+      "fakt": "Fünf städtische PV-Anlagen mit 761,79 kWp, Trinkwasserkraftwerk Gmeineck 215 kW, über 1,4 Mio. kWh und rund 220.000 Euro Ersparnis im Vorjahr, zwei eigene Energiegemeinschaften",
+      "quelle": "https://www.spittal-drau.at/buergerservice/aktuelles/detailansicht/energiegeladen-in-die-zukunft"
+    },
+    {
+      "fakt": "KEM Millstätter See: Spittal, Seeboden, Millstatt, Lendorf, Baldramsdorf",
+      "quelle": "https://www.kem-millstaettersee.at/kem-millst%C3%A4tter-see/"
+    },
+    {
+      "fakt": "Keine Gemeindeförderung für PV, Speicher, Heizung auf der Förderseite der Stadt",
+      "quelle": "https://www.spittal-drau.at/foerderungen"
+    },
+    {
+      "fakt": "Ölkesselfreie Gemeinde abgeschlossen; KEM-Beratung kostenlos; Energieberatung Land Kärnten bis zu 2 Stunden",
+      "quelle": "https://www.kem-millstaettersee.at/f%C3%B6rderungen/"
+    },
+    {
+      "fakt": "Kelag-Wärmepumpen-Prämie 1.200 Euro, Gutschrift über zwei Jahre",
+      "quelle": "https://www.kelag.at/privatkunden/ubersicht-zur-warmepumpe.htm"
+    }
+  ],
+  "weggelassen": [
+    "Sonnenstunden und Ertrag je kWp für Spittal (keine GeoSphere-/PVGIS-Abfrage in dieser Sitzung): nur der freigegebene Kärnten-Richtwert",
+    "KAGIS-Solarkataster des Landes (ktn.gv.at nicht erreichbar): stattdessen der Kataster der Stadt",
+    "Fläche und Gemeindezahl des Bezirks, 'flächengrößter Bezirk Kärntens' (BH-Seite nicht erreichbar, nur Wikipedia)",
+    "Lokale Netzbetreiber im Bezirk: weder belegt noch ausgeschlossen",
+    "Erdgasnetz in Spittal (Kärnten Netz nennt keine Orte)",
+    "Kundenzahl und Netzlänge der Fernwärme, geplantes Biomasse-Heizwerk Kärntnermilch (Stand 2024, Umsetzung unklar)",
+    "e5-Stufe der Stadt, weitere KEM im Bezirk (Lieser-Maltatal, Mölltal: Seiten nicht abrufbar)",
+    "PV-Offensive Spittal 2025 der KEM (Termine alle 2025, Fortführung unklar)",
+    "40-m²-Grenze der Stadtseite (überholter Stand), Ortsbild- oder Denkmalschutz (nicht belegt)",
+    "Satz der Landesförderung Kärnten für den Heizungstausch (laut _fakten_2026-10.md widersprüchlich)"
+  ],
+  "cost_usd": 0.16,
+  "cost_note": "Schätzung, die MCP-Antworten enthalten kein cost-Feld: 2 x Google Ads Search Volume live (je ca. 0,075 $) plus 2 x SERP live advanced mit People also ask (je ca. 0,003 $). Zwei weitere Volumen-Aufrufe scheiterten am Minutenlimit und wurden nicht verrechnet."
+}

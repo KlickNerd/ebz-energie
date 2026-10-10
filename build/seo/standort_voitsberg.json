@@ -1,0 +1,336 @@
+{
+ "slug": "standort_voitsberg",
+ "path": "/photovoltaik-voitsberg/",
+ "seitentyp": "standort",
+ "stand": "2026-10-10",
+ "quelle": "DataForSEO (Google Ads Suchvolumen, Labs Keyword Overview, SERP live), location Austria, language de",
+ "primary": {
+  "keyword": "photovoltaik voitsberg",
+  "volume_at": 10,
+  "kd": null,
+  "cpc": 1.41,
+  "intent": "navigational (Labs), lokal-kommerziell laut SERP: Anbieter und Verzeichnisse",
+  "monthly_peak": "40 im März und April 2026, 20 im Juli 2026, sonst 10",
+  "competition": "HIGH (Index 90)"
+ },
+ "secondary": [
+  {
+   "keyword": "photovoltaik bärnbach",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "navigational / commercial"
+  },
+  {
+   "keyword": "wärmepumpe voitsberg",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "n/a"
+  },
+  {
+   "keyword": "photovoltaik köflach",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "n/a"
+  },
+  {
+   "keyword": "photovoltaik weststeiermark",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "n/a"
+  },
+  {
+   "keyword": "photovoltaik steiermark",
+   "volume_at": 70,
+   "kd": null,
+   "intent": "commercial (gehört zur Regionsseite /photovoltaik-steiermark/)"
+  },
+  {
+   "keyword": "pv anlage steiermark",
+   "volume_at": 40,
+   "kd": 11,
+   "intent": "commercial (Regionsseite)"
+  }
+ ],
+ "long_tail": [
+  {
+   "keyword": "pv anlage voitsberg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv voitsberg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "solaranlage voitsberg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik firmen voitsberg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe installateur voitsberg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "heizungstausch voitsberg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe köflach",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv anlage köflach",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe weststeiermark",
+   "volume_at": 0
+  },
+  {
+   "keyword": "fernwärme voitsberg",
+   "volume_at": 30
+  },
+  {
+   "keyword": "installateur voitsberg",
+   "volume_at": 90
+  },
+  {
+   "keyword": "elektriker voitsberg",
+   "volume_at": 30
+  },
+  {
+   "keyword": "wärmepumpe steiermark",
+   "volume_at": 30
+  },
+  {
+   "keyword": "stadtwerke voitsberg",
+   "volume_at": 1600
+  },
+  {
+   "keyword": "stadtwerke köflach",
+   "volume_at": 1000
+  }
+ ],
+ "semantic": [
+  "Bezirk Voitsberg",
+  "Weststeiermark",
+  "Lipizzanerheimat",
+  "Köflach",
+  "Bärnbach",
+  "Rosental an der Kainach",
+  "Maria Lankowitz",
+  "Ligist",
+  "Söding-Sankt Johann",
+  "Krottendorf-Gaisfeld",
+  "Stadtwerke Voitsberg (Netzbetreiber)",
+  "Stadtwerke Köflach (Netzbetreiber)",
+  "Netzzusage 12 Monate",
+  "Zählpunktnummer",
+  "Ausführungs- und Fertigstellungsmeldung",
+  "§ 21 Steiermärkisches Baugesetz (meldepflichtig)",
+  "Stmk. Deregulierungsgesetz LGBl. Nr. 19/2026",
+  "Planungsbasispegel",
+  "Immissionsschutzzone (Flächenwidmungsplan 4.0)",
+  "Zone mit erhaltenswertem Orts- und Straßenbild",
+  "Fernwärme Energie Steiermark Wärme GmbH",
+  "Solarpotenzial Digitaler Atlas Steiermark, SolarTool",
+  "Bürgerbeteiligungs-PV Schlossberg 1,8 MWp",
+  "Energie-Erlebnispark Zangtal",
+  "Pionierstadt, Klimaneutralitätsplan 2040",
+  "KEM WEST",
+  "Blackout-Schutz / Notstrom (Wettbewerb)",
+  "Fronius (Stadtwerke verbauen)"
+ ],
+ "questions": [
+  "Wie hoch ist die Förderung für Photovoltaik in der Steiermark?",
+  "Gibt es 2026 noch eine Photovoltaikförderung?",
+  "Ist eine PV-Anlage bewilligungspflichtig in der Steiermark?",
+  "Wie viel Photovoltaik brauche ich, um 4.000 kWh zu erzeugen?",
+  "Ab welcher Größe ist eine Photovoltaikanlage sinnvoll?",
+  "Für wen lohnt sich eine Luftwärmepumpe?",
+  "Wie hoch sind die Kosten für eine Wärmepumpe in Österreich?",
+  "Wann lohnt sich eine Wärmepumpe nicht?",
+  "Gibt es in Österreich eine Förderung für Wärmepumpen ab 2026?",
+  "Wie hoch ist die Anschlussgebühr für Fernwärme?"
+ ],
+ "serp": {
+  "photovoltaik voitsberg": {
+   "features": [
+    "ai_overview",
+    "people_also_ask",
+    "people_also_search",
+    "knowledge_graph (Stadtwerke Voitsberg GmbH)",
+    "related_searches"
+   ],
+   "local_pack": false,
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "firmen.wko.at",
+     "title": "Photovoltaik In Voitsberg (Bezirk)",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 2,
+     "domain": "stadtwerke-voitsberg.at",
+     "title": "Photovoltaik",
+     "type": "netzbetreiber und anbieter"
+    },
+    {
+     "pos": 3,
+     "domain": "elektro-lion.at",
+     "title": "Elektriker & Photovoltaik Graz, Voitsberg & Steiermark",
+     "type": "anbieter"
+    },
+    {
+     "pos": 4,
+     "domain": "mo-elektro.at",
+     "title": "Elektriker Voitsberg | Mo Elektro",
+     "type": "anbieter"
+    },
+    {
+     "pos": 5,
+     "domain": "meisterinstallateure.at",
+     "title": "Photovoltaik",
+     "type": "anbieter"
+    },
+    {
+     "pos": 6,
+     "domain": "elektrotechnik-fuernschuss.com",
+     "title": "Elektriker Voitsberg",
+     "type": "anbieter"
+    },
+    {
+     "pos": 7,
+     "domain": "daibau.at",
+     "title": "Photovoltaik, Voitsberg - Top 16 Auftragnehmer",
+     "type": "portal"
+    },
+    {
+     "pos": 8,
+     "domain": "meinbezirk.at",
+     "title": "Photovoltaikanlage am Schlossberg ging in Betrieb",
+     "type": "news 2021"
+    },
+    {
+     "pos": 9,
+     "domain": "et-plus.at",
+     "title": "Photovoltaikanlagen",
+     "type": "anbieter"
+    }
+   ]
+  },
+  "wärmepumpe voitsberg": {
+   "features": [
+    "ai_overview",
+    "people_also_ask",
+    "people_also_search",
+    "knowledge_graph (Pichler Gas - Wasser - Heizung GmbH)",
+    "related_searches"
+   ],
+   "local_pack": false,
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "sa-energietechnik.at",
+     "title": "Moderne Wärmepumpen | Heizsysteme in Oberösterreich",
+     "type": "hersteller"
+    },
+    {
+     "pos": 2,
+     "domain": "my-hammer.at",
+     "title": "Klimatechniker in Voitsberg",
+     "type": "portal"
+    },
+    {
+     "pos": 3,
+     "domain": "schimautz.at",
+     "title": "Erdwärme - Graz",
+     "type": "anbieter"
+    },
+    {
+     "pos": 4,
+     "domain": "firmen.wko.at",
+     "title": "Wärmepumpen In Steiermark (Bundesland)",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 5,
+     "domain": "meinbezirk.at",
+     "title": "Mochart: Heizen und Warmwasser mit der Energie aus dem eigenen Garten",
+     "type": "advertorial 2020"
+    },
+    {
+     "pos": 6,
+     "domain": "zama-energietechnik.at",
+     "title": "Energietechniker im Bezirk Voitsberg bei Graz",
+     "type": "anbieter"
+    },
+    {
+     "pos": 7,
+     "domain": "bezirkstipp.at",
+     "title": "Klimatechniker in Voitsberg, Steiermark",
+     "type": "portal"
+    },
+    {
+     "pos": 8,
+     "domain": "schmelzerklima.at",
+     "title": "Wärmepumpe Graz vom Meisterbetrieb",
+     "type": "anbieter"
+    },
+    {
+     "pos": 9,
+     "domain": "hausbaufuehrer.at",
+     "title": "Firmen in Voitsberg mit der Branche Wärmepumpen",
+     "type": "portal"
+    }
+   ]
+  },
+  "fernwärme voitsberg": {
+   "note": "keine lokale Betreiberseite in den Top 10, nur Verzeichnisse und Graz-Treffer: die Fernwärme-Frage ist auf der Seite beantwortet"
+  }
+ },
+ "gaps": [
+  "Kein Wettbewerber in den Top 10 erklärt die zwei Stadtwerke-Netze (Voitsberg, Köflach) und die Netzzusage: das ist der inhaltliche Hebel der Seite.",
+  "Wärmepumpen-SERP ist schwach besetzt (Portale, Hersteller aus Oberösterreich, Graz-Seiten): eine Seite mit echtem Ortsbezug (Fernwärme, Immissionsschutzzone, Meldepflicht) kann hier ranken.",
+  "Kein Local Pack: organische Treffer sind ohne Standort in Voitsberg erreichbar.",
+  "Keine Referenz aus dem Bezirk Voitsberg (nur Graz)."
+ ],
+ "cannibalization": [
+  "/photovoltaik-steiermark/ (Regionsbegriffe dort halten)",
+  "/photovoltaik-graz/",
+  "/foerderung-photovoltaik-steiermark/ (Förder-Keywords dort halten)"
+ ],
+ "recommendation": {
+  "title": "Photovoltaik Voitsberg: PV, Speicher & Wärmepumpe | EBZ",
+  "h1": "Photovoltaik und Wärmepumpe in Voitsberg: Planung vor Ort, Netzantrag bei den Stadtwerken",
+  "description": "Photovoltaik und Wärmepumpe in Voitsberg, Köflach und Bärnbach: Fachbetrieb aus Villach, Netzantrag beim Stadtwerk, 10 kWp mit Speicher um 15.000 bis 22.000 €.",
+  "h2_outline": [
+   "Vom Kohlerevier zum Sonnenstrom: warum Photovoltaik und Wärmepumpe nach Voitsberg passen",
+   "Voitsberg auf einen Blick: Bezirk, Netzbetreiber, Behörde",
+   "PV-Anlage in Voitsberg anmelden: Mitteilung an die Gemeinde, Netzzusage vom Stadtwerk",
+   "Wärmepumpe in Voitsberg: erst die Fernwärme prüfen, dann richtig auslegen",
+   "Förderung für Photovoltaik und Wärmepumpe in Voitsberg",
+   "Referenzen aus der Steiermark: zwei Projekte in Graz"
+  ],
+  "faq_add": [
+   "Wer ist in Voitsberg der Stromnetzbetreiber für meine PV-Anlage?",
+   "Brauche ich in Voitsberg eine Baubewilligung für eine Photovoltaikanlage?",
+   "Wärmepumpe oder Fernwärme in Voitsberg: Was passt zu meinem Haus?",
+   "Was bedeutet die Immissionsschutzzone in Voitsberg für meine Heizung?"
+  ],
+  "internal_links": [
+   "/photovoltaik-steiermark/ -> Photovoltaik in der Steiermark",
+   "/photovoltaik-graz/ -> Photovoltaik Graz",
+   "/waermepumpe/ -> Wärmepumpe",
+   "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft in der Steiermark",
+   "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+   "/foerderrechner/ -> Förderrechner"
+  ],
+  "notes": "Das Suchvolumen ist klein (photovoltaik voitsberg 10 im Monat, im Frühjahr 40), dafür fehlt der Local Pack und die Anbieter in den Top 10 sind kleine Elektriker ohne Inhalt zu Netz und Genehmigung. Die Seite setzt deshalb auf belegte lokale Fakten: zwei Stadtwerke als Netzbetreiber, Meldepflicht nach § 21 Stmk. BauG, Fernwärme der Energie Steiermark, Immissionsschutzzone im Flächenwidmungsplan. Die stark gesuchten Marken stadtwerke voitsberg (1.600) und stadtwerke köflach (1.000) sind navigational und kein Ziel, stützen aber die Relevanz der Netzbetreiber-Abschnitte. Wichtigster nächster Schritt: eine Referenz aus dem Bezirk Voitsberg."
+ },
+ "cost_usd": 0.17,
+ "cost_note": "Schätzung nach DataForSEO-Preisliste (2 x Google-Ads-Suchvolumen, 1 x Labs Keyword Overview, 3 x SERP live); die MCP-Antworten enthalten kein cost-Feld. 2 weitere Aufrufe liefen in das Rate-Limit und wurden nicht verrechnet."
+}

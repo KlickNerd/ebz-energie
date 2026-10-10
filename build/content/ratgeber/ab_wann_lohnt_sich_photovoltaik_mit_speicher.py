@@ -32,7 +32,7 @@ ARTICLE = {
         "Eigenverbrauch: <b>30 auf 70 %+</b>",
     ],
     "date_published": "2025-12-05",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage mit Ost-West-Ausrichtung auf einem Einfamilienhaus in Kärnten",
 
@@ -204,7 +204,7 @@ kann die Amortisation um Jahre verlängern.</p>
                  "mit Ihrem Verbrauch durch und schöpfen die Förderungen von Bund und Land aus."),
         "grid": [
             ("Ehrliche Rechnung", "Wirtschaftlichkeit auf Basis Ihres Lastprofils, nicht auf Basis von Prospektwerten."),
-            ("Förderung aus einer Hand", "EAG-Ticket, Landesantrag Kärnten oder Steiermark, Endabrechnung."),
+            ("Förderung aus einer Hand", "EAG-Ticket, Landesantrag Kärnten, Endabrechnung."),
             ("Auslegung nach Faustformel und Praxis", "1 kWp zu 1 kWh als Start, Feinabstimmung nach Verbrauch."),
             ("Garantien", "Bis zu 30 Jahre Leistungsgarantie, mindestens 10 Jahre Produktgarantie."),
         ],

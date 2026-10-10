@@ -70,7 +70,7 @@ CFG = {
     "land": {
         "ktn": {"name": "Kärnten", "topf": "Land Kärnten"},
         "stmk": {"name": "Steiermark", "topf": "Land Steiermark",
-                 "flat": ("Keine Landespauschale für PV oder Speicher. Manche Gemeinden zahlen 200 bis 1.000 €, "
+                 "flat": ("Keine Landespauschale für PV oder Speicher. Manche Gemeinden zahlen einen eigenen Zuschuss, "
                           "das prüfen wir für Ihre Adresse.")},
         "bgld": {"name": "Burgenland", "topf": "Land Burgenland",
                  "pv": {"note": "Keine PV-Direktförderung für private Anlagen."},
@@ -112,13 +112,15 @@ CFG = {
     },
     # Waermepumpe je Bundesland: min/max in EUR; open = Betrag haengt von den Kosten ab (nicht in der Summe).
     "wp": {
-        "ktn": {"min": 0, "max": 6000, "st": "check", "badge": "In Klärung",
-                "note": ("35 % der förderbaren Kosten, Obergrenze 6.000 € laut Richtlinie (laut Berichten 2026: "
-                         "3.000 €). Kärnten fördert im Anschluss an den Bund. Wie neue Projekte ohne "
-                         "Bundesförderung behandelt werden, klären wir vor dem Angebot mit dem Land.")},
-        "stmk": {"open": True, "label": "35 %", "st": "check", "badge": "Betrag je nach Angebot",
-                 "note": ("35 % der förderbaren Kosten für Eigenheime mit höchstens zwei Wohnungen. Den Betrag "
-                          "rechnen wir mit Ihrem Angebot aus.")},
+        # Kaernten 2026: 3.000 EUR Pauschale (Landesfoerderung energieeffiziente Haustechnikanlagen, Foerderblatt
+        # "Foerderungen 2026" der KEM auf maria-saal.gv.at, abgerufen 10.10.2026). Die 35 %/6.000 EUR galten bis 31.12.2025.
+        "ktn": {"min": 3000, "max": 3000, "st": "check", "badge": "Budget vor Antrag prüfen",
+                "note": ("Pauschale des Landes Kärnten für den Umstieg auf eine Wärmepumpe im Eigenheim, plus 1.500 € bei zu"
+                         "sätzlicher thermischer Solaranlage. Ob das Budget reicht, klären wir vor dem Angebot mit dem Land.")},
+        # Steiermark: laut wohnbau.steiermark.at (10.10.2026) derzeit keine Antragstellung fuer neue Waermepumpen.
+        "stmk": {"min": 0, "max": 0, "st": "none", "badge": "Derzeit keine Anträge",
+                 "note": ("Das Land Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an und stellt auf absehbare Ze"
+                          "it keine Förderung in Aussicht. Gefördert wird nur der Tausch mindestens 15 Jahre alter Wärmepumpen und Biomassekessel.")},
         "wien": {"min": 0, "max": 8000, "st": "check", "badge": LAENDER_STAND,
                  "note": "35 % der förderbaren Kosten, höchstens 8.000 €."},
         "tirol": {"open": True, "label": "25 % + 3.000 €", "st": "check", "badge": LAENDER_STAND,
@@ -281,7 +283,7 @@ function compute(inp, t){
     if(W){
       lines.push({topf: L.topf + " · Wärmepumpe", min: W.min || 0, max: W.max || 0, open: !!W.open, st: W.st,
                   badge: W.badge, note: W.note, label: W.label || span(W.min || 0, W.max || 0)});
-      steps.push(T.stepWp);
+      if(W.max > 0 || W.open) steps.push(T.stepWp);
     }
   }
   if(inp.ems){
@@ -377,11 +379,11 @@ FAQ = [
      "Ja, aber nicht in der Summe. Der Rechner vergleicht bei jedem Aufruf das Datum mit den Fristen der Programme. "
      "Ist eine Frist vorbei, steht der Topf als beendet in der Liste und zählt nicht mehr mit. So sehen Sie auf "
      "einen Blick, was heute beantragbar ist und was nicht."),
-    ("Warum steht bei der Wärmepumpe kein fixer Betrag?",
-     "Die Bundesförderung für den Heizungstausch ist derzeit ausgeschöpft, und die Länder fördern meist einen "
-     "Prozentsatz der Kosten mit einer Obergrenze. Kärnten und die Steiermark zahlen 35 Prozent der förderbaren "
-     "Kosten. Den Betrag für Ihr Haus rechnen wir mit dem Angebot aus und klären vorab mit dem Land, ob das Budget "
-     "reicht."),
+    ("Warum steht bei der Wärmepumpe nicht überall ein fixer Betrag?",
+     "Die Bundesförderung für den Heizungstausch ist derzeit ausgeschöpft. Kärnten zahlt eine Pauschale von "
+     "3.000 Euro, die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an. Andere Länder fördern "
+     "einen Prozentsatz der Kosten mit Obergrenze, dort zeigt der Rechner eine Spanne. Vor dem Angebot klären wir "
+     "mit dem Land, ob das Budget reicht."),
     ("Kann ich Bundes- und Landesförderung kombinieren?",
      "In Kärnten ja: Die Landespauschale wird ohne Anrechnung zusätzlich zum Bundeszuschuss gezahlt, höchstens "
      "50 Prozent der Baukosten. In Oberösterreich schließen sich der Speicherzuschuss des Bundes und die "
@@ -441,13 +443,13 @@ def _methodik_section():
          "Ab 5 kWp und 5 kWh, höchstens 50 % der Baukosten, Antrag nach der Fertigstellung"),
         ("Land Steiermark",
          "Keine Pauschale für private Anlagen",
-         "Gemeinden zahlen teils 200 bis 1.000 €, Ökofonds erst ab 20 kWp"),
+         "Manche Gemeinden zahlen einen eigenen Zuschuss, der Ökofonds hat derzeit keine PV-Ausschreibung"),
         ("Andere Bundesländer",
          "Tirol bis 125 € je kWp und 100 € je kWh bis 1.000 €, Oberösterreich 150 € je kWh bis 2.250 € "
          "(Nachrüstung), Burgenland 100 € je kWh bis 2.000 €, Vorarlberg 50 € je kWh bis 500 € (VKW)",
          f"Länderdaten {LAENDER_STAND}, Details im " + a(R_LAENDER, "Ländervergleich")),
         ("Wärmepumpe",
-         "Bund derzeit ausgeschöpft. Länder: Kärnten und Steiermark 35 % der förderbaren Kosten, Wien 35 % bis "
+         "Bund derzeit ausgeschöpft. Kärnten 3.000 € Pauschale, Steiermark derzeit keine Anträge, Wien 35 % bis "
          "8.000 €, weitere als Pauschale",
          "Als Spanne oder Prozentsatz, Details im " + a(R_WP_LAENDER, "Wärmepumpen-Ländervergleich")),
         ("Energiemanagement",

@@ -4,6 +4,8 @@ Migriert von ebz-photovoltaik.at/energiegemeinschaft-steiermark/ (Stand August 2
 Inhalt freigegeben, auf die Ratgeber-Vorlage umgestellt. Rechenbeispiel der Quelle war in
 sich widersprüchlich (Jahresverbrauch 5.000 kWh bei 5.800 kWh Eigenverbrauch) und wurde
 auf konsistente Werte gebracht (Jahresverbrauch 7.800 kWh, Netzbezug 2.000 kWh).
+Korrektur 10.10.2026 (build/seo/_fakten_2026-10.md): Der 125-€/kWp-Bonus war Teil der PV-Ausschreibung des
+Ökofonds; der Ökofonds hat derzeit keine PV-Ausschreibung, der Bonus steht daher nicht mehr als laufend da.
 """
 
 import os
@@ -17,28 +19,30 @@ from common import a
 ARTICLE = {
     "slug": "energiegemeinschaft-steiermark",
     "path": "/energiegemeinschaft-steiermark/",
-    "title": "Energiegemeinschaft Steiermark: 125 €/kWp Bonus | EBZ Energie",
-    "description": "Energiegemeinschaft Steiermark: Landesbonus 125 € je kWp bei EG-Teilnahme, Netzentgelt bis 57 % weniger, Rechenbeispiel mit 10 kWp. Beitritt in 4 bis 8 Wochen.",
+    "title": "Energiegemeinschaft Steiermark: bis 57 % Netzrabatt | EBZ",
+    "description": "Energiegemeinschaft Steiermark: Netzentgelt bis 57 % weniger im Nahbereich, Rechenbeispiel mit 10 kWp, Netzgebiete und Bezirke. Beitritt in 4 bis 8 Wochen.",
     "eyebrow": "Energiegemeinschaft · Steiermark",
     "crumb_label": "Energiegemeinschaft Steiermark",
-    "h1": "Energiegemeinschaft Steiermark: 125 Euro je kWp Bonus und mehr aus jeder Kilowattstunde",
+    "h1": "Energiegemeinschaft Steiermark: bis 57 % weniger Netzentgelt und mehr aus jeder Kilowattstunde",
     "lead": ("Die Steiermark ist das Bundesland mit den meisten Suchanfragen zur Energiegemeinschaft. Kein Wunder: "
-             "Hier gibt es als einziges Land einen eigenen Förderbonus für Teilnehmer."),
+             "Hier gibt es viele aktive Gemeinschaften und zwei Netzbetreiber mit eingespielten Prozessen. Der "
+             "frühere Ökofonds-Bonus von 125 Euro je kWp ist derzeit nicht beantragbar (Stand Oktober 2026)."),
     "chips": [
-        "Landesbonus: <b>125 €/kWp</b> bei EG-Teilnahme",
+        "Beitritt: <b>4 bis 8 Wochen</b>",
         "Netzentgelt: <b>bis zu 57 %</b> weniger",
         "OeMAG Sept. 2026: <b>10,168 ct/kWh</b>",
         "EBZ vor Ort in der <b>ganzen Steiermark</b>",
     ],
     "date_published": "2026-08-05",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus in der Steiermark mit Photovoltaikanlage auf dem Dach",
 
     "tldr": [
-        "In der Steiermark gibt es neben den bundesweiten Vorteilen einen eigenen Anreiz: Die Landesförderung zahlt "
-        "125 Euro je kWp zusätzlich, wenn die PV-Anlage Teil eines dezentralen Energiesystems ist, etwa durch "
-        "Teilnahme an einer Energiegemeinschaft. Bei 10 kWp sind das 1.250 Euro.",
+        "Stand Oktober 2026: Den früheren steirischen Bonus von 125 Euro je kWp für PV-Anlagen in einem dezentralen "
+        "Energiesystem (etwa durch Teilnahme an einer Energiegemeinschaft) gibt es derzeit nicht. Er war Teil der "
+        "PV-Ausschreibung des Ökofonds für Anlagen ab 20 kWp mit Doppelnutzung, und der Ökofonds hat derzeit keine "
+        "PV-Ausschreibung. Es bleiben die bundesweiten Vorteile der Energiegemeinschaft.",
         "Netzbetreiber sind vor allem die Energienetze Steiermark und in Graz die Stromnetz Graz. Der Nahbereich "
         "(Trafo oder Umspannwerk) bestimmt den Netzentgelt-Abschlag von 57 oder 28 Prozent.",
         "Der OeMAG-Marktpreis schwankt monatlich: Juli 2026 6,146 Cent, September 2026 10,168 Cent je kWh. Zwischen "
@@ -48,8 +52,8 @@ ARTICLE = {
         "nimmt Kunden in der Steiermark auf und rechnet über energyfamily ab.",
     ],
     "kpis": [
-        ("125 €/kWp", "Landesbonus bei Einbindung ins dezentrale Energiesystem"),
-        ("1.250 €", "Bonus bei einer 10-kWp-Anlage"),
+        ("10,168 ct/kWh", "OeMAG-Marktpreis September 2026"),
+        ("150 bis 180 €", "laufender Vorteil pro Jahr im Rechenbeispiel*"),
         ("57 % / 28 %", "Netzentgelt-Abschlag lokal / regional"),
         ("4 bis 8 Wochen", "vom Erstgespräch bis zum Start"),
     ],
@@ -75,21 +79,22 @@ verkauft, zu einem Preis, den die Gemeinschaft selbst bestimmt.</p>
 )}
 <p>Zwischen OeMAG-Tarif und Haushaltsstrompreis liegt eine Spanne von rund 10 Cent. Die Energiegemeinschaft teilt
 diese Spanne zwischen Erzeuger und Abnehmer auf. Das Prinzip ist in ganz Österreich gleich und in unserem
-{a('eg', 'Leitartikel zur Energiegemeinschaft')} erklärt. Was die Steiermark besonders macht, sind drei Dinge: der
-Landesbonus, die Netzstruktur mit zwei großen Betreibern und die Dichte an bestehenden Gemeinschaften.</p>
+{a('eg', 'Leitartikel zur Energiegemeinschaft')} erklärt. Was die Steiermark besonders macht, sind zwei Dinge: die
+Netzstruktur mit zwei großen Betreibern und die Dichte an bestehenden Gemeinschaften.</p>
 <p><small>*Beispielwerte aus dem Markt, jede Gemeinschaft legt ihre Preise selbst fest. Lieferantenpreis netto ohne
 Netz und Abgaben.</small></p>
 """),
-        ("Der steirische Bonus: 125 Euro je kWp für Teilnehmer", "landesbonus", f"""
-<p>Die Photovoltaik-Förderung des Landes Steiermark kennt einen Zuschlag von 125 Euro pro Kilowattpeak, wenn die
-Anlage in ein ganzheitliches, dezentrales Energiesystem eingebunden ist. Das gilt bei Kombination mit mindestens
-zwei weiteren neu installierten Komponenten, etwa {a('batteriespeicher', 'Speicher')} und Wallbox, oder eben durch
-die Teilnahme an einer Energiegemeinschaft. Bei einer 10-kWp-Anlage sind das 1.250 Euro, die es ohne Gemeinschaft
-nicht gäbe. Alle Details, Fristen und den Made-in-Europe-Bonus finden Sie im Artikel
-{a('foerderung_steiermark', 'Photovoltaik-Förderung Steiermark 2026')}.</p>
-{A.box("Der Nachweis für den Bonus ist die Teilnahmebestätigung der Energiegemeinschaft. Wer die Anlage über EBZ "
-       "errichten lässt, bekommt die Aufnahme in die Gemeinschaft zeitlich so gelegt, dass der Nachweis bei der "
-       "Förderabrechnung vorliegt.", label="Praxistipp:")}
+        ("Der steirische Bonus von 125 Euro je kWp: derzeit nicht beantragbar", "landesbonus", f"""
+<p>Die PV-Ausschreibung des Ökofonds Steiermark kannte bis Ende Mai 2026 einen Zuschlag von 125 Euro pro
+Kilowattpeak, wenn die Anlage in ein ganzheitliches, dezentrales Energiesystem eingebunden war: bei Kombination
+mit mindestens zwei weiteren neu installierten Komponenten, etwa {a('batteriespeicher', 'Speicher')} und Wallbox,
+oder eben durch die Teilnahme an einer Energiegemeinschaft. Der Bonus galt für Anlagen ab 20 kWp mit
+Doppelnutzung. Stand 10. Oktober 2026 führt der Ökofonds keine PV-Ausschreibung (nur Wasserstoffprojekte und
+Innovative Energiespeicher), der Bonus ist daher derzeit nicht beantragbar. Den aktuellen Förderstand finden Sie
+im Artikel {a('foerderung_steiermark', 'Photovoltaik-Förderung Steiermark 2026')}.</p>
+{A.box("Ob der Ökofonds wieder eine PV-Ausschreibung öffnet, ist offen. Planen Sie die Energiegemeinschaft "
+       "deshalb nach ihrem laufenden Vorteil und nicht nach einem Bonus. Den Förderstand prüfen wir vor dem "
+       "Angebot.", label="Praxistipp:")}
 """),
         ("Netzgebiete: Energienetze Steiermark und Stromnetz Graz", "netzgebiete", f"""
 <p>Den Großteil der Steiermark versorgt die Energienetze Steiermark GmbH, die Landeshauptstadt die Stromnetz Graz
@@ -129,7 +134,7 @@ Privatpersonen gegründet worden. Die Energie Steiermark bietet ebenfalls eine e
 zeigt unser Artikel {a('/energiegemeinschaft-finden/', 'Energiegemeinschaft finden')}. EBZ prüft das für Sie im
 Erstgespräch.</p>
 {A.cta("Energiegemeinschaft in der Steiermark: Jetzt Eignung prüfen",
-       "Wir klären Netzgebiet, passende Gemeinschaft und ob Ihre Anlage für den 125-Euro-Bonus infrage kommt.",
+       "Wir klären Netzgebiet, passende Gemeinschaft und Ihr Einsparpotenzial.",
        secondary=("eg_rechner", "Ersparnis berechnen"))}
 """),
         ("Rechenbeispiel für ein steirisches Einfamilienhaus", "rechenbeispiel", f"""
@@ -143,8 +148,7 @@ typisch 60 bis 70 Prozent bei anderen Mitgliedern.</p>
         ["Einspeisung 4.700 kWh", "zu 6,1 ct: 287 €", "3.000 kWh zu 10 ct + 1.700 kWh zu 6,1 ct: 404 €"],
         ["Netzbezug 2.000 kWh, davon 600 kWh aus EG", "Netzentgelt voll",
          "600 kWh mit minus 57 % Netz, ohne E-Abgabe: ca. 40 € gespart"],
-        ["Landesbonus (einmalig)", "0 €", "1.250 €"],
-        ["Vorteil im ersten Jahr", "", "ca. 1.400 €, danach ca. 150 bis 180 € jährlich"],
+        ["Vorteil pro Jahr", "", "ca. 150 bis 180 €"],
     ],
     hl_cols=(2,),
 )}
@@ -155,12 +159,12 @@ im {a('eg_rechner', 'EG-Rechner')} nach.</p>
 legt ihre Preise selbst fest, die Zuordnungsquote hängt von Erzeugern und Abnehmern im Nahbereich ab.</small></p>
 """),
         ("Fazit: Energiegemeinschaft Steiermark", "fazit", f"""
-<p>Nirgendwo in Österreich ist der Einstieg in eine Energiegemeinschaft so gut angeschoben wie in der Steiermark:
-Landesbonus, viele bestehende Gemeinschaften und zwei Netzbetreiber mit eingespielten Prozessen. Wer jetzt eine
+<p>In der Steiermark ist der Einstieg in eine Energiegemeinschaft gut vorbereitet: viele bestehende
+Gemeinschaften und zwei Netzbetreiber mit eingespielten Prozessen. Wer jetzt eine
 {a('photovoltaik', 'PV-Anlage')} plant, sollte die Gemeinschaft von Anfang an mitdenken. Wer schon eine hat, kann in
 wenigen Wochen {a('/energiegemeinschaft-beitreten/', 'beitreten')}.</p>
 {A.cta("Ihre Anlage, Ihre Gemeinschaft, ein Ansprechpartner",
-       "EBZ Energie plant die Anlage, beantragt die Förderung inklusive Bonus und bringt Sie in die passende "
+       "EBZ Energie plant die Anlage, beantragt die Förderung und bringt Sie in die passende "
        "Energiegemeinschaft.",
        primary=("kontakt", "Kostenlose Erstberatung"), secondary=("eg_privat", "Zur Leistungsseite"))}
 """),
@@ -177,7 +181,7 @@ wenigen Wochen {a('/energiegemeinschaft-beitreten/', 'beitreten')}.</p>
                  "Bruck-Mürzzuschlag, Südoststeiermark und Umgebung."),
         "grid": [
             ("Alles aus einer Hand", "PV, Speicher, Wärmepumpe, Wallbox und EG-Anbindung vom selben Team."),
-            ("Bonus mitgeplant", "Aufnahme in die Gemeinschaft so terminiert, dass der 125-Euro-Nachweis vorliegt."),
+            ("Förderstand geprüft", "EAG-Antrag im Call, Stand der steirischen Landesprogramme vor dem Angebot geklärt."),
             ("Abrechnung inklusive", "Zählpunktfreigabe, Aufnahme und monatliche Abrechnung über energyfamily."),
             ("Kostenlose Erstberatung", "Wir prüfen Netzgebiet, Eignung und Ihr Einsparpotenzial."),
         ],
@@ -185,9 +189,9 @@ wenigen Wochen {a('/energiegemeinschaft-beitreten/', 'beitreten')}.</p>
 
     "faq": [
         ("Gibt es in der Steiermark eine Förderung für die Energiegemeinschaft?",
-         "Indirekt ja. Die PV-Landesförderung zahlt 125 Euro je kWp zusätzlich, wenn die Anlage in ein dezentrales "
-         "Energiesystem eingebunden ist, unter anderem durch Teilnahme an einer Energiegemeinschaft. Bei 10 kWp sind "
-         "das 1.250 Euro. Für die Teilnahme allein gibt es keine eigene Prämie."),
+         "Derzeit nicht. Der frühere Bonus von 125 Euro je kWp für PV-Anlagen in einem dezentralen Energiesystem "
+         "war Teil der PV-Ausschreibung des Ökofonds (Anlagen ab 20 kWp mit Doppelnutzung). Der Ökofonds hat derzeit "
+         "keine PV-Ausschreibung (Stand 10. Oktober 2026). Für die Teilnahme allein gibt es keine eigene Prämie."),
         ("Welcher Netzbetreiber ist für mich zuständig?",
          "In Graz-Stadt die Stromnetz Graz GmbH, fast überall sonst die Energienetze Steiermark GmbH. Die Zuordnung "
          "steht auf Ihrer Netzrechnung. Sie bestimmt, mit wem Sie lokal oder regional verbunden sein können."),
@@ -228,8 +232,8 @@ wenigen Wochen {a('/energiegemeinschaft-beitreten/', 'beitreten')}.</p>
         ("foerderung_steiermark", "Photovoltaik-Förderung Steiermark 2026"),
     ],
     "cta": {
-        "h3": "125-Euro-Bonus mitnehmen",
-        "text": "Wir planen Anlage, Förderung und Energiegemeinschaft so, dass der Nachweis rechtzeitig vorliegt.",
+        "h3": "Eignung prüfen lassen",
+        "text": "Wir planen Anlage, Förderung und Energiegemeinschaft aus einer Hand und prüfen Netzgebiet und Einsparpotenzial.",
         "primary": ("kontakt", "Kostenlose Beratung"),
     },
     "final_h2": "Mehr aus jeder steirischen Kilowattstunde",

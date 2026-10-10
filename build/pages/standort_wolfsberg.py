@@ -11,9 +11,31 @@ St. Andrae, St. Paul, Bad St. Leonhard und den Wolfsberger Ortsteilen als Einzug
 Ertragswert laut PV-Atlas (1.162 kWh je kWp Wolfsberg, Bezirksmedian 1.188), Wallbox-Abschnitt,
 Eigenheim/Landwirtschaft/Betrieb. Keine erfundene Lavanttal-Referenz: Referenzen aus Kaernten
 mit Link auf /referenzen/.
+
+Ueberarbeitung 10.10.2026 (README_standort.md, Briefing-Abschnitt "waermepumpe" in
+build/seo/standort_wolfsberg.json):
+- Waermepumpe war bisher nur Nebensatz (Speichergroesse, EMS, Warmwasser). Jetzt eigene H2-Sektion
+  (#waermepumpe) mit Heizungstausch im Bestand und PV-Kombination am Standort (11.600 kWh je 10 kWp
+  laut PV-Atlas), zwei FAQ, Links auf die Leistungsseite und die Ratgeber Kosten, Altbau, PV fuer
+  Waermepumpe. Zahlen nur aus build/pages/waermepumpe.py (Altbau 15.000 bis 28.000 EUR, 55 Grad
+  Vorlauf, Montage 2 bis 4 Tage, bis minus 20 Grad, Hochtemperatur 60 bis 70 Grad).
+- Foerderung Waermepumpe als Kurzfassung ohne Fristen und ohne Euro-Obergrenze: Bund ausgeschoepft,
+  Land Kaernten 3.000 EUR Pauschale 2026 (Foerderblatt "Foerderungen 2026" auf maria-saal.gv.at, abgerufen
+  10.10.2026; die 35 %/6.000 EUR galten nur bis 31.12.2025), Verweis auf foerderungen und foerderrechner.
+- Keine neuen lokalen Zahlen fuer das Lavanttal (keine amtliche Quelle zu Heizungsbestand oder
+  Klima abgerufen): Ortsbezug nur ueber Orte und den schon belegten PV-Atlas-Wert.
+- Title und Description unveraendert: "waermepumpe wolfsberg" und "waermepumpe lavanttal" haben in
+  Oesterreich kein messbares Suchvolumen (Google Ads, 10.10.2026).
+- Linkliste: andere Standortseiten (pv_villach, pv_klagenfurt, pv_graz, pv_steiermark) und
+  foerderrechner.
 """
 
-from common import IMG, NAP, CLAIMS, AUTHOR, AUTHOR_ROLE, S, faq_jsonld, u, a, href, tel_link, write_page, load_reviews
+if __name__ == "__main__":  # Direktaufruf: build/ in den Suchpfad legen (build_all setzt ihn sonst)
+    import os
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from common import IMG, NAP, CLAIMS, AUTHOR, AUTHOR_ROLE, S, faq_jsonld, u, a, href, tel_link, write_page, load_reviews, standorte, standort_schema
 from layout import page
 import components as C
 
@@ -68,6 +90,17 @@ FAQ = [
      "Im Alltag meint „Solaranlage“ meist Photovoltaik, also Strom vom Dach. Fachlich steht Solaranlage auch für "
      "Solarthermie, die Warmwasser erzeugt. Wir planen Photovoltaikanlagen; Warmwasser aus PV-Überschuss lösen wir "
      "über einen Heizstab-Regler oder die Wärmepumpe, gesteuert vom Energiemanagement."),
+    ("Funktioniert eine Wärmepumpe im Lavanttal auch im Altbau mit Heizkörpern?",
+     "Meistens ja. Bis 55 Grad Vorlauftemperatur arbeitet eine moderne Luft-Wasser-Wärmepumpe effizient, und alte "
+     "Heizkörper sind oft so groß ausgelegt, dass sie damit auskommen. Kälte ist kein Hindernis: Die Geräte arbeiten "
+     "bis minus 20 Grad. Braucht ein Raum dauerhaft 60 bis 70 Grad, tauschen wir einzelne Heizkörper oder setzen eine "
+     "Hochtemperatur-Wärmepumpe ein. Der Umstieg im Altbau kostet mit Anpassungen rund 15.000 bis 28.000 Euro vor "
+     "Förderung*. Ist das Haus ungedämmt, sagen wir Ihnen offen, wenn zuerst Fenster oder Dämmung dran sind."),
+    ("Welche Förderung gibt es für den Heizungstausch auf eine Wärmepumpe in Wolfsberg?",
+     "Der Bund fördert den Heizungstausch derzeit nicht, die Mittel sind ausgeschöpft. Das Land Kärnten zahlt 2026 für den "
+     "Umstieg auf eine Wärmepumpe im Eigenheim eine Pauschale von 3.000 Euro. Budget und Voraussetzungen prüfen wir für "
+     "Ihr Haus im Lavanttal, bevor wir ein Angebot legen; die Photovoltaikanlage wird getrennt gefördert. Den "
+     "aktuellen Stand aller Programme finden Sie auf unserer Förderseite und im Förderrechner."),
     ("Lohnt sich eine Photovoltaikanlage in Wolfsberg auch im Winter?",
      "Ja. Module arbeiten bei kalten Temperaturen sogar effizienter als bei großer Hitze. Über das Winterhalbjahr "
      "liefern Anlagen typischerweise 25 bis 30 Prozent des Jahresertrags."),
@@ -83,8 +116,8 @@ def build():
             h1="Photovoltaik in Wolfsberg und im Lavanttal: Planung vor Ort, Montage in wenigen Tagen",
             lead=("Von Wolfsberg über St. Andrä und St. Paul bis Bad St. Leonhard: EBZ Energie aus Villach plant "
                   "Ihre PV-Anlage bei Ihnen vor Ort im Lavanttal, montiert mit zertifizierten Fachkräften und "
-                  "übernimmt Förderung, Mitteilung an die Gemeinde und Netzanmeldung. Mit Speicher, Notstrom und "
-                  "Wallbox, wenn Sie wollen."),
+                  "übernimmt Förderung, Mitteilung an die Gemeinde und Netzanmeldung. Mit Speicher, Notstrom, "
+                  "Wallbox und Wärmepumpe, wenn Sie wollen."),
             badges=[("2 bis 4 Tage", "Montage vor Ort"),
                     ("1.162 kWh/kWp", "Ertrag in Wolfsberg (PV-Atlas)"),
                     ("Förderung", "Kärnten und Bund inklusive")],
@@ -193,6 +226,38 @@ def build():
                 "EMS-Förderung: 50 % bis 600 € für Haushalte",
             ],
             cta=("ems", "Energiemanagementsystem im Detail"),
+        ),
+        C.media_text(
+            eyebrow="Wärmepumpe Wolfsberg · Lavanttal",
+            h2="Wärmepumpe in Wolfsberg und im Lavanttal: raus aus Öl und Gas, Strom vom eigenen Dach",
+            paragraphs=[
+                ("Im Lavanttal planen wir die Wärmepumpe nicht als Einzelgerät, sondern als Teil derselben Anlage "
+                 "wie Photovoltaik, Speicher und Wallbox. Beim Termin in Wolfsberg, St. Andrä oder St. Paul nehmen "
+                 "wir deshalb neben Dach und Zählerschrank auch Heizraum, Heizkörper und den Platz für die "
+                 "Außeneinheit auf. Im Bestand entscheidet die Vorlauftemperatur: Kommen Ihre Heizkörper an kalten "
+                 "Tagen mit 50 bis 55 Grad aus, läuft eine Luft-Wasser-Wärmepumpe effizient, sonst reicht oft der "
+                 "Tausch einzelner Heizkörper."),
+                ("Der Heizungstausch im Altbau kostet mit Anpassungen rund 15.000 bis 28.000 € vor Förderung*, die "
+                 "Montage dauert 2 bis 4 Tage inklusive Demontage der alten Heizung. Einen Teil des Heizstroms "
+                 "liefert danach Ihr Dach: Eine 10-kWp-Anlage erzeugt in Wolfsberg rund 11.600 kWh im Jahr "
+                 "(PV-Atlas), und das Energiemanagement legt Warmwasser und Pufferspeicher über die "
+                 "SG-Ready-Schnittstelle in die Sonnenstunden."),
+                ("Förderung, kurz gefasst: Vom Bund gibt es für den Heizungstausch derzeit nichts, die Mittel sind "
+                 "ausgeschöpft. Das Land Kärnten zahlt 2026 eine Pauschale von 3.000 € für die Wärmepumpe im Eigenheim; ob "
+                 "das für Ihr Haus gilt und das Budget reicht, klären wir, bevor Sie ein Angebot unterschreiben. Alle laufenden Programme "
+                 "stehen auf der Seite " + a("foerderungen", "Förderungen im Überblick") + ", Ihren Richtwert "
+                 "rechnet der " + a("foerderrechner", "Förderrechner") + " aus."),
+            ],
+            img=IMG["waermepumpe"],
+            alt="Luft-Wasser-Wärmepumpe im Garten eines Wohnhauses, Symbolbild für den Heizungstausch im Lavanttal",
+            bullets=[
+                a("/waermepumpe-im-altbau/", "Ratgeber Wärmepumpe im Altbau") + ": wann die vorhandenen Heizkörper reichen",
+                a("/kosten-einer-waermepumpe/", "Was eine Wärmepumpe kostet") + ": Gerät, Installation, Betrieb",
+                a("/photovoltaik-fuer-waermepumpe/", "Photovoltaik für die Wärmepumpe") + ": wie groß Anlage und Speicher sein sollten",
+            ],
+            reverse=True,
+            cta=("waermepumpe", "Wärmepumpe: Leistung im Detail"),
+            anchor="waermepumpe",
         ),
         C.media_text(
             eyebrow="Förderung in Wolfsberg",
@@ -316,17 +381,25 @@ def build():
         ),
         C.faq_section(FAQ),
         C.linkgrid_section(
-            "Photovoltaik in Kärnten",
+            "Mehr zu Photovoltaik und Wärmepumpe im Lavanttal und in Kärnten",
             [("photovoltaik", "Photovoltaik für Eigenheim und Gewerbe"),
+             ("waermepumpe", "Wärmepumpe für Eigenheim und Betrieb"),
              ("foerderung_kaernten", "PV-Förderung Kärnten 2026"),
+             ("foerderrechner", "Förderrechner"),
              ("/kosten-einer-solaranlage/", "Kosten einer Solaranlage"),
+             ("/photovoltaik-fuer-waermepumpe/", "Photovoltaik für die Wärmepumpe"),
              ("batteriespeicher", "Stromspeicher"),
              ("/notstrom/", "Notstrom bei Stromausfall"),
              ("ems", "Energiemanagementsystem"),
              ("pv_gewerbe", "Photovoltaik für Betriebe"),
-             ("pv_villach", "Photovoltaik in Villach"),
              ("finanzierung", "Finanzierung ab 147 € im Monat"),
-             ("referenzen", "Referenzen")],
+             ("referenzen", "Referenzen"),
+             ("pv_villach", "Photovoltaik in Villach"),
+             ("pv_klagenfurt", "Photovoltaik in Klagenfurt"),
+             ("pv_graz", "Photovoltaik in Graz"),
+             ("pv_steiermark", "Photovoltaik in der Steiermark")]
+            + [(k, f"Photovoltaik {n}") for k, n in standorte("ktn", ohne="pv_wolfsberg") if k in ('pv_voelkermarkt', 'pv_st_veit')]
+            + [("standorte", "Alle Standorte in Kärnten und der Steiermark")],
         ),
         C.contact_section(
             headline="Ihr kostenloses Angebot für Photovoltaik in Wolfsberg",
@@ -342,7 +415,7 @@ def build():
         _footnote(),
     ])
     html = page(TITLE, DESC, PATH, body, faq_jsonld_str=faq_jsonld(u(PATH), FAQ),
-                og_image=IMG["gen_hero"])
+                og_image=IMG["gen_hero"], extra_jsonld=standort_schema(PATH, "Wolfsberg", "Kärnten"))
     return write_page("photovoltaik-wolfsberg/index.html", html)
 
 
@@ -353,11 +426,15 @@ def _footnote():
       <p class="form-note">*Richtwerte: Eigenverbrauchsquoten und Preise auf Basis typischer Einfamilienhäuser,
       vor Förderung. Ersparnis und Amortisation hängen von Verbrauch, Anlagengröße, Ausrichtung und Strompreis ab.
       Ertragswerte laut PV-Atlas (pvatlas.at), Fördersätze, Fristen und OeMAG-Marktpreis Stand Oktober 2026,
-      Änderungen durch Fördergeber und OeMAG vorbehalten. Finanzierung: Beispielkonditionen, vorbehaltlich
-      Bonitätsprüfung. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
+      Änderungen durch Fördergeber und OeMAG vorbehalten. Wärmepumpe: Richtwerte für den Heizungstausch aus unseren
+      Ratgebern, vor Förderung; Förderhöhe abhängig von Richtlinie, Gebäude und Budget der Fördergeber. Finanzierung:
+      Beispielkonditionen, vorbehaltlich Bonitätsprüfung. Fachlich geprüft von Mario Zintl, Geschäftsführung
+      EBZ Energie GmbH.</p>
     </div>
   </section>""")
 
 
 if __name__ == "__main__":
+    import theme
+    theme.write_assets()
     build()

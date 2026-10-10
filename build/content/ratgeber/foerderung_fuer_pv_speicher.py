@@ -32,7 +32,7 @@ ARTICLE = {
         "Antrag <b>vor Inbetriebnahme</b>",
     ],
     "date_published": "2025-07-05",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "foerderung",
     "hero_alt": "Förderantrag für Photovoltaik und Stromspeicher wird am Schreibtisch vorbereitet",
 
@@ -123,7 +123,7 @@ werden dürfen.</p>
         ["Burgenland", "100 €/kWh nutzbar, max. 20 kWh, max. 30 % der Kosten, bis 2.000 €", "nur, wenn der EAG-Zuschuss nicht möglich ist"],
         ["Tirol", "100 €/kWh, max. 10 kWh, bis 1.000 € (netzdienliche Speicher); PV über Wohnhaussanierung", "ja"],
         ["Vorarlberg", "VKW-Speicherbonus 50 €/kWh, max. 500 €; Land nur PV-Überdachungen ab 20 kWp", "ja"],
-        ["Steiermark", "keine eigene Speicherprämie; Sanierungsbonus max. 15 % (1. April bis 15. Mai 2026), Ökofonds ab 20 kWp", "ja"],
+        ["Steiermark", "keine eigene Speicherprämie; Sanierungsbonus (max. 15 %, Fenster 1. April bis 15. Mai 2026) beendet, Ökofonds derzeit ohne PV-Ausschreibung", "entfällt, nur EAG"],
         ["Niederösterreich", "keine Direktförderung; PV und Speicher bringen Punkte in der Wohnbauförderung", "ja"],
         ["Salzburg", "Landesförderung für Private mit 31. Dezember 2025 ausgelaufen", "entfällt, nur EAG"],
         ["Wien", "Speicherförderung (max. 2.000 €) mit 31. Dezember 2025 ausgelaufen; neues Paket ab Mai 2026 nur für Fassaden- und Verschattungs-PV", "nein"],
@@ -202,7 +202,7 @@ verkürzt die Amortisation auf den EBZ-typischen Korridor von 4 bis 6 Jahren.</p
                  "das EAG-Ticket am ersten Call-Tag und stellen den Landesantrag in der richtigen Reihenfolge."),
         "grid": [
             ("Förderfähige Planung", "Speicher ab 0,5 kWh je kWp, Made-in-Europe-Komponenten wo sinnvoll."),
-            ("Beide Schienen", "EAG-Bund und Landesförderung Kärnten oder Steiermark, sauber getrennt."),
+            ("Beide Schienen", "EAG-Bund und Kärntner Landesförderung, sauber getrennt."),
             ("Fristen im Blick", "Call-Termine, Rechnungsdaten und Endabrechnung übernehmen wir."),
             ("Auch Nachrüstung", "Speicher für Bestandsanlagen inklusive Landesförderung, wo es sie gibt."),
         ],

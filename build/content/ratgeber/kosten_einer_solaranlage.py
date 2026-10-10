@@ -36,7 +36,7 @@ ARTICLE = {
         "Finanzierung: <b>ab 147 €/Monat</b>",
     ],
     "date_published": "2025-12-17",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach: Kosten einer Solaranlage mit Speicher",
 
@@ -144,8 +144,8 @@ je 10 Prozent Made-in-Europe-Bonus auf den jeweiligen Zuschuss.</p>
     ],
     hl_cols=(2,),
 )}
-<p>In der Steiermark läuft die Landesförderung über den Sanierungsbonus (bis 15 Prozent der Kosten im
-Sanierungskontext), viele Gemeinden zahlen zusätzlich 200 bis 1.000 Euro. Die EAG-Fördercalls 2026
+<p>In der Steiermark ist derzeit keine PV-Landesförderung offen (Sanierungsbonus beendet, Ökofonds ohne
+PV-Ausschreibung, Stand 10. Oktober 2026); manche Gemeinden zahlen einen eigenen Zuschuss. Die EAG-Fördercalls 2026
 laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und ab 8. Oktober, der Antrag muss vor der
 Inbetriebnahme gestellt werden. Alle Details finden Sie in den Ratgebern
 {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')},

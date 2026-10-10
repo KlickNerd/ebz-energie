@@ -1,0 +1,444 @@
+{
+ "slug": "standort_voelkermarkt",
+ "path": "/photovoltaik-voelkermarkt/",
+ "seitentyp": "standort",
+ "stand": "2026-10-10",
+ "quelle_inhalt": "build/content/standorte/voelkermarkt.py (Vorlage build/pages/standorte.py)",
+ "primary": {
+  "keyword": "photovoltaik völkermarkt",
+  "volume_at": 0,
+  "kd": null,
+  "cpc": null,
+  "intent": "commercial/local (kein messbares Volumen in Google Ads, Local Pack vorhanden)"
+ },
+ "secondary": [
+  {
+   "keyword": "wärmepumpe völkermarkt",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial/local"
+  },
+  {
+   "keyword": "installateur völkermarkt",
+   "volume_at": 110,
+   "kd": null,
+   "cpc": 2.9,
+   "intent": "local (Heizung, Sanitär, Wärmepumpe)"
+  },
+  {
+   "keyword": "elektriker völkermarkt",
+   "volume_at": 50,
+   "kd": null,
+   "cpc": 2.0,
+   "intent": "local"
+  },
+  {
+   "keyword": "pv anlage kärnten",
+   "volume_at": 70,
+   "kd": null,
+   "cpc": 6.76,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaik kärnten",
+   "volume_at": 70,
+   "kd": null,
+   "cpc": 4.43,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "fernwärme völkermarkt",
+   "volume_at": 10,
+   "kd": null,
+   "intent": "informational/local"
+  }
+ ],
+ "long_tail": [
+  {
+   "keyword": "pv anlage völkermarkt",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv völkermarkt",
+   "volume_at": 0
+  },
+  {
+   "keyword": "solaranlage völkermarkt",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik firmen völkermarkt",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe installateur völkermarkt",
+   "volume_at": 0
+  },
+  {
+   "keyword": "heizungstausch völkermarkt",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik bleiburg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv anlage bleiburg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe bleiburg",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik klopeiner see",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik st. kanzian",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik unterkärnten",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik südkärnten",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik jauntal",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik eberndorf",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik griffen",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik bad eisenkappel",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik kühnsdorf",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "photovoltaik firmen kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "solaranlage kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "heizungstausch kärnten",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe klagenfurt",
+   "volume_at": 20
+  }
+ ],
+ "questions": [
+  "Wie hoch sind die Kosten für eine Photovoltaikanlage in Kärnten?",
+  "Wie viel kostet eine Photovoltaikanlage inklusive Montage?",
+  "Wie hoch ist die Photovoltaikförderung in Kärnten ab 2026?",
+  "Brauche ich eine Genehmigung für Photovoltaikanlagen in Kärnten?",
+  "Was kostet eine 10 kW PV-Anlage mit Speicher und Montage?",
+  "Was ändert sich 2026 mit Photovoltaik?",
+  "Welcher Netzbetreiber ist in Völkermarkt zuständig? (eigene Frage, lokaler Bezug)",
+  "Wärmepumpe oder Fernwärme in Völkermarkt? (eigene Frage, lokaler Bezug)"
+ ],
+ "serp": {
+  "photovoltaik völkermarkt (Austria, de)": {
+   "features": [
+    "local_pack",
+    "popular_products",
+    "people_also_search",
+    "people_also_ask"
+   ],
+   "local_pack": [
+    {
+     "pos": 1,
+     "name": "LupoSol Montageservice e.U.",
+     "rating": 4.9,
+     "reviews": 15
+    },
+    {
+     "pos": 2,
+     "name": "KILOWATT GmbH",
+     "rating": "5 Sterne",
+     "reviews": 16
+    },
+    {
+     "pos": 3,
+     "name": "HOLZ die SONNE ins Haus Photovoltaik GmbH",
+     "rating": 4.9,
+     "reviews": 85
+    }
+   ],
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "firmen.wko.at",
+     "title": "Photovoltaik In Völkermarkt (Bezirk)",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 2,
+     "domain": "herold.at",
+     "title": "Photovoltaik in Völkermarkt, Kärnten",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 3,
+     "domain": "sbs-jandl.at",
+     "title": "Photovoltaik in Völkermarkt, Klagenfurt, St.Veit, Feldkirchen",
+     "type": "anbieter"
+    },
+    {
+     "pos": 4,
+     "domain": "daibau.at",
+     "title": "Photovoltaik, Völkermarkt - Top 16 Auftragnehmer",
+     "type": "portal"
+    },
+    {
+     "pos": 5,
+     "domain": "h-k.at",
+     "title": "Photovoltaikanlagen - Energie & Sicherheitstechnik",
+     "type": "anbieter"
+    },
+    {
+     "pos": 6,
+     "domain": "vk24.at",
+     "title": "Völkermarkt: Energielandesrat Schuschnig unterstützt neue Photovoltaik-Anlage",
+     "type": "news"
+    },
+    {
+     "pos": 7,
+     "domain": "meinbezirk.at",
+     "title": "Photovoltaik-Anlagen: Strom vom eigenen Dach",
+     "type": "news"
+    },
+    {
+     "pos": 8,
+     "domain": "pvbaustria.at",
+     "title": "PV Austria",
+     "type": "verband"
+    },
+    {
+     "pos": 9,
+     "domain": "helios365.at",
+     "title": "HELIOS 365 - maßgeschneiderte Photovoltaik",
+     "type": "anbieter (OÖ)"
+    },
+    {
+     "pos": 10,
+     "domain": "pemasol.at",
+     "title": "Erfolgreiche Photovoltaik-Projekte von PEMASOL",
+     "type": "anbieter"
+    }
+   ]
+  },
+  "wärmepumpe völkermarkt (Austria, de)": {
+   "features": [
+    "local_pack",
+    "popular_products",
+    "related_searches"
+   ],
+   "local_pack": [
+    {
+     "pos": 1,
+     "name": "GKV Haustechnik",
+     "rating": 4.5,
+     "reviews": 25
+    },
+    {
+     "pos": 2,
+     "name": "Gomernik & Pichler Installationen",
+     "rating": 4.7,
+     "reviews": 31
+    },
+    {
+     "pos": 3,
+     "name": "Lessiak Johann Heizungstechnik GmbH",
+     "rating": "5 Sterne",
+     "reviews": 7
+    }
+   ],
+   "top10": [
+    {
+     "pos": 1,
+     "domain": "gkv-haustechnik.at",
+     "title": "GKV Haustechnik seit 25 Jahren | Installateur Völkermarkt",
+     "type": "anbieter"
+    },
+    {
+     "pos": 2,
+     "domain": "daibau.at",
+     "title": "Wärmepumpen, Völkermarkt - Top 16 Installateure",
+     "type": "portal"
+    },
+    {
+     "pos": 3,
+     "domain": "waermepumpe-austria.at",
+     "title": "Lessiak Heizungstechnik GmbH, 9100 Völkermarkt",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 4,
+     "domain": "facebook.com",
+     "title": "GKV Haustechnik | Völkermarkt",
+     "type": "social"
+    },
+    {
+     "pos": 5,
+     "domain": "firmen.wko.at",
+     "title": "Heizungstechniker In Völkermarkt (Bezirk)",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 6,
+     "domain": "herold.at",
+     "title": "Installateur in Völkermarkt, Kärnten",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 7,
+     "domain": "lessiak-heizungstechnik.at",
+     "title": "Haustechnik Kärnten - Lessiak Heizungstechnik",
+     "type": "anbieter"
+    },
+    {
+     "pos": 8,
+     "domain": "firmenabc.at",
+     "title": "GKV Haustechnik GmbH in Völkermarkt",
+     "type": "verzeichnis"
+    },
+    {
+     "pos": 9,
+     "domain": "heizungsoptimierer.at",
+     "title": "Wärmepumpen im Bezirk Mödling und Neunkirchen",
+     "type": "anbieter (NÖ)"
+    },
+    {
+     "pos": 10,
+     "domain": "daibau.at",
+     "title": "Installateur, Völkermarkt - Top 16 Auftragnehmer",
+     "type": "portal"
+    }
+   ],
+   "related_searches": [
+    "Völkermarkt Installateur",
+    "GKV Haustechnik Völkermarkt",
+    "Klimaanlage Völkermarkt",
+    "Installateur Althofen"
+   ]
+  },
+  "ebz_rankings": "ebz-photovoltaik.at in beiden SERPs nicht in den Top 10 (Seite ist neu)"
+ },
+ "gaps": [
+  "Kein Wettbewerber in den Top 10 hat eine Ortsseite mit lokalen Fakten (Netzbetreiber, Baupolizei, Fernwärme, Gemeindeförderung): Verzeichnisse und ortsfremde Anbieter füllen die SERP ab Platz 8.",
+  "Local Pack ist ohne Standort im Bezirk nicht erreichbar: Google-Unternehmensprofil um das Einzugsgebiet Bezirk Völkermarkt erweitern, Bewertungen aus dem Jauntal sammeln.",
+  "Keine Referenz aus dem Bezirk Völkermarkt in referenz_projekte.py."
+ ],
+ "cannibalization": [
+  "/photovoltaik-wolfsberg/ (nennt Völkermarkt und Griffen als Nachbarregion: abgegrenzt und verlinkt)",
+  "/photovoltaik-klagenfurt/ (Umland Klagenfurt)",
+  "/photovoltaik-foerderung-kaernten/ (Förder-Keywords dort halten)"
+ ],
+ "recommendation": {
+  "title": "Photovoltaik Völkermarkt & Wärmepumpe vor Ort | EBZ Energie",
+  "h1": "Photovoltaik und Wärmepumpe in Völkermarkt: für Stadt, Jauntal und Klopeiner See",
+  "description": "Photovoltaik und Wärmepumpe in Völkermarkt, Bleiburg und im Jauntal: Fachbetrieb aus Villach, Netzanmeldung bei Kärnten Netz, 3.000 € Landespauschale.",
+  "h2_outline": [
+   "Sonnenstrom in Völkermarkt: Die Region holt auf, viele Dächer sind noch frei",
+   "Völkermarkt auf einen Blick: Netz, Behörde, Wärme und Förderung",
+   "Genehmigung und Netzanschluss in Völkermarkt: Mitteilung an die Baupolizei, Antrag bei Kärnten Netz",
+   "Wärmepumpe in Völkermarkt: erst das Wärmenetz prüfen, dann mit Sonnenstrom heizen",
+   "Förderung für Photovoltaik und Wärmepumpe in Völkermarkt",
+   "Referenzen aus Kärnten: die nächstgelegenen dokumentierten Projekte",
+   "Häufige Fragen"
+  ],
+  "faq_add": [
+   "Welcher Netzbetreiber ist in Völkermarkt zuständig?",
+   "Brauche ich in Völkermarkt eine Baubewilligung für eine Photovoltaikanlage?",
+   "Fördert die Stadtgemeinde Völkermarkt Photovoltaik oder Stromspeicher?",
+   "Wärmepumpe oder Fernwärme: Was passt in Völkermarkt?"
+  ],
+  "internal_links": [
+   "/photovoltaik-wolfsberg/ -> Photovoltaik Wolfsberg (Lavanttal)",
+   "/waermepumpe/ -> Wärmepumpe",
+   "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+   "/energiegemeinschaft-kaernten/ -> Energiegemeinschaft in Kärnten",
+   "/foerderrechner/ -> Förderrechner",
+   "/photovoltaik-foerderung-kaernten/ -> PV-Förderung Kärnten im Detail"
+  ],
+  "notes": "Alle Orts-Keywords (Völkermarkt, Bleiburg, Klopeiner See, Jauntal, Unterkärnten, Südkärnten) liegen unter der Messgrenze von Google Ads; messbar sind nur installateur völkermarkt (110) und elektriker völkermarkt (50) sowie die Kärnten-Begriffe (je 70). Die Seite ist deshalb auf Long-Tail, Local-Intent und zitierbare lokale Fakten ausgelegt, nicht auf ein Volumen-Keyword. Größter Hebel außerhalb der Seite: Einzugsgebiet im Google-Unternehmensprofil und eine dokumentierte Referenz aus dem Bezirk."
+ },
+ "local_facts": [
+  {
+   "fakt": "Stadtgemeinde: 137,44 km², 10.866 Einwohner (Statistik Austria 2021), 461 m, Schotterterrasse über dem Völkermarkter Stausee; ehem. Gemeinden Haimburg, St. Peter am Wallersberg, Tainach, Waisenberg",
+   "quelle": "https://voelkermarkt.gv.at/fileadmin/voelkermarkt/03-Buergerservice/Energie_und_Umwelt/e5_Auditbericht_Voelkermarkt.pdf"
+  },
+  {
+   "fakt": "PV 2020: 230,9 kWp je 1.000 EW (Kärnten 268,1); 24 % erneuerbar beheizte BGF; Fernwärme im Stadtzentrum (Kelag Wärme), Biomasse-Nahwärme Tainach; Stromversorgung Kelag",
+   "quelle": "e5-Auditbericht 2021 (wie oben)"
+  },
+  {
+   "fakt": "e5-Gemeinde, 3e, Umsetzungsgrad 61,3 % (Audit 2021); Gemeindeförderung nur thermische Solaranlagen (200 €) und Elektrofahrzeuge",
+   "quelle": "https://voelkermarkt.gv.at/buergerservice/energie-umwelt und https://voelkermarkt.gv.at/fileadmin/voelkermarkt/02-Amtstafel/Foerderungen/Foerderung-Solaranlagen.pdf"
+  },
+  {
+   "fakt": "Baupolizei der Stadtgemeinde, Formular Mitteilung nach § 7 Abs. 1 K-BO 1996, viele Teilbebauungspläne",
+   "quelle": "https://voelkermarkt.gv.at/buergerservice/bauen-planen"
+  },
+  {
+   "fakt": "§ 7 Abs. 1 lit. a Z 20 K-BO 1996 (in Kraft seit 21.02.2026): Anlagen, die erneuerbare Energie erzeugen oder elektrische Energie speichern, sind mitteilungspflichtig; Abs. 4: schriftlich vor Beginn",
+   "quelle": "https://ogd.ris.bka.gv.at/Dokumente/Landesnormen/LKT40020954/LKT40020954.html"
+  },
+  {
+   "fakt": "Kärnten Netz: Anschlussantrag im Kundenportal, Netzberechnung, Netzzutrittsangebot, Einspeiseleistung mindestens in Höhe des Strombezugsrechts, sonst anderer Anschlusspunkt oder dynamische Leistungsregelung",
+   "quelle": "https://www.kaerntennetz.at/pv.htm"
+  },
+  {
+   "fakt": "Umspannwerk Bleiburg: Erneuerung 110-kV-Schaltanlage, rund 5 Mio. €, 2025 bis 2027, zusätzliche Kapazitäten für Erneuerbare",
+   "quelle": "https://www.kaerntennetz.at/unsere-projekte.htm"
+  },
+  {
+   "fakt": "Ortsnetz Völkermarkt: 2,7 Mio. €, 36 Trafostationen, 8,9 km Mittelspannungs- und 33,7 km Niederspannungskabel",
+   "quelle": "https://www.news.at/pm/kelag-voelkermarkt-glasfaserleitung (Unternehmensmeldung Kelag/Kärnten Netz, 17.06.2025)"
+  },
+  {
+   "fakt": "KEM Südkärnten: 13 Gemeinden = Bezirk Völkermarkt, 41.981 Einwohner, Büro Klagenfurter Straße 10; PV 0,17 (2017) auf 1,30 kWp je EW (2024); Thema Ölkesselfreies Südkärnten",
+   "quelle": "https://orte-von-morgen.at/ort/kem-suedkaernten/?place-id=49"
+  },
+  {
+   "fakt": "Vor-Ort-Energiecheck des Landes Kärnten (netEB), rund zwei Stunden, unabhängig und produktneutral",
+   "quelle": "https://voelkermarkt.gv.at/fileadmin/voelkermarkt/03-Buergerservice/Energie_und_Umwelt/e5/e5_Download-Vor-Ort-Energiecheck.pdf"
+  },
+  {
+   "fakt": "Kelag Wärmepumpen-Prämie 1.200 €, Kelag-Stromliefervertrag in Kärnten, Internetanbindung, Gutschrift über zwei Jahre",
+   "quelle": "https://www.kelag.at/privatkunden/ubersicht-zur-warmepumpe.htm"
+  }
+ ],
+ "weggelassen": [
+  "Solarpotenzialkataster KAGIS und Angaben der BH Völkermarkt: ktn.gv.at und kagis.ktn.gv.at waren nicht erreichbar",
+  "Sonnenstunden, Nebel, Klimadaten und ein ortsgenauer Ertrag je kWp: keine amtliche Quelle abgerufen (nur Kärnten-Richtwert 1.000 bis 1.100 kWh je kWp)",
+  "Gasnetz in Völkermarkt, Betreiber der Nahwärme Tainach, Anschlusszahlen der Fernwärme",
+  "Ortsbild- oder Altstadtschutz: nur der Denkmalschutz des Rathauses ist belegt",
+  "Preise des Energiechecks (Folder undatiert) und Betrag der E-Fahrzeug-Förderung (PDF nicht lesbar)",
+  "Landesförderung Wärmepumpe Kärnten: kein Prozentsatz, keine Obergrenze (Faktenliste: widersprüchlich)",
+  "Entfernungen, Fahrzeiten, Koralmbahn"
+ ],
+ "cost_usd": 0.23,
+ "cost_note": "Schätzung nach DataForSEO-Preisliste, die MCP-Antworten enthalten kein cost-Feld: 3 x Google-Ads-Suchvolumen (je 10 Keywords, rund 0,075 $) und 2 x SERP live advanced (rund 0,003 $). Drei weitere Aufrufe scheiterten am Rate-Limit bzw. an einem Serverfehler und sind nicht eingerechnet."
+}

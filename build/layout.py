@@ -93,6 +93,17 @@ def _footer():
           </ul>
         </div>
         <div class="footer-col">
+          <h4>Standorte</h4>
+          <ul>
+            <li>{a('pv_villach', 'Photovoltaik Villach')}</li>
+            <li>{a('pv_klagenfurt', 'Photovoltaik Klagenfurt')}</li>
+            <li>{a('pv_wolfsberg', 'Photovoltaik Wolfsberg')}</li>
+            <li>{a('pv_graz', 'Photovoltaik Graz')}</li>
+            <li>{a('pv_steiermark', 'Photovoltaik Steiermark')}</li>
+            <li>{a('standorte', 'Alle Standorte')}</li>
+          </ul>
+        </div>
+        <div class="footer-col">
           <h4>Kontakt</h4>
           <ul>
             <li>{NAP['street']}</li>

@@ -109,6 +109,23 @@ S = {
     "foerderrechner": "/foerderrechner/",  # Rechner hinter dem Finder-Button der Foerderseite
     "pv_villach": "/photovoltaik-villach/",
     "pv_wolfsberg": "/photovoltaik-wolfsberg/",
+    "pv_klagenfurt": "/photovoltaik-klagenfurt/",
+    "pv_graz": "/photovoltaik-graz/",
+    "pv_steiermark": "/photovoltaik-steiermark/",
+    # Ortsseiten aus der gemeinsamen Vorlage (build/pages/standorte.py + build/content/standorte/<datei>.py)
+    "pv_spittal": "/photovoltaik-spittal/",
+    "pv_feldkirchen": "/photovoltaik-feldkirchen/",
+    "pv_st_veit": "/photovoltaik-st-veit/",
+    "pv_voelkermarkt": "/photovoltaik-voelkermarkt/",
+    "pv_hermagor": "/photovoltaik-hermagor/",
+    "pv_leibnitz": "/photovoltaik-leibnitz/",
+    "pv_deutschlandsberg": "/photovoltaik-deutschlandsberg/",
+    "pv_voitsberg": "/photovoltaik-voitsberg/",
+    "pv_weiz": "/photovoltaik-weiz/",
+    "pv_murtal": "/photovoltaik-murtal/",
+    "pv_leoben": "/photovoltaik-leoben/",
+    "pv_suedoststeiermark": "/photovoltaik-suedoststeiermark/",
+    "standorte": "/standorte/",  # Uebersicht aller Standortseiten
     "marktpreis": "/marktpreis-2026/",
     "pv_gewerbe": "/photovoltaik-gewerbe/",
     "carport": "/photovoltaik-carport/",
@@ -163,6 +180,54 @@ IMG_SOURCES = {
 
 
 # --- Helfer ---------------------------------------------------------------
+# Alle Standortseiten in der Reihenfolge der Ortsliste auf der Startseite.
+# (Slug-Key, Name, Land, Quelle): Quelle "modul" = eigenes Modul build/pages/standort_<x>.py,
+# sonst Dateiname in build/content/standorte/ (gemeinsame Vorlage build/pages/standorte.py).
+STANDORTE = [
+    ("pv_villach", "Villach", "ktn", "modul"),
+    ("pv_klagenfurt", "Klagenfurt", "ktn", "modul"),
+    ("pv_spittal", "Spittal an der Drau", "ktn", "spittal"),
+    ("pv_feldkirchen", "Feldkirchen", "ktn", "feldkirchen"),
+    ("pv_st_veit", "St. Veit an der Glan", "ktn", "st_veit"),
+    ("pv_wolfsberg", "Wolfsberg", "ktn", "modul"),
+    ("pv_voelkermarkt", "Völkermarkt", "ktn", "voelkermarkt"),
+    ("pv_hermagor", "Hermagor", "ktn", "hermagor"),
+    ("pv_graz", "Graz", "stmk", "modul"),
+    ("pv_leibnitz", "Leibnitz", "stmk", "leibnitz"),
+    ("pv_deutschlandsberg", "Deutschlandsberg", "stmk", "deutschlandsberg"),
+    ("pv_voitsberg", "Voitsberg", "stmk", "voitsberg"),
+    ("pv_weiz", "Weiz", "stmk", "weiz"),
+    ("pv_murtal", "Murtal", "stmk", "murtal"),
+    ("pv_leoben", "Leoben", "stmk", "leoben"),
+    ("pv_suedoststeiermark", "Südoststeiermark", "stmk", "suedoststeiermark"),
+]
+_STANDORT_MODUL = {"pv_villach": "standort_villach", "pv_klagenfurt": "standort_klagenfurt",
+                   "pv_wolfsberg": "standort_wolfsberg", "pv_graz": "standort_graz",
+                   "pv_steiermark": "standort_steiermark"}
+
+
+def standort_exists(key):
+    """True, wenn es fuer den Slug-Key schon eine Seitenquelle gibt (sonst wird nicht verlinkt)."""
+    here = _os.path.dirname(_os.path.abspath(__file__))
+    if key in _STANDORT_MODUL:
+        return _os.path.exists(_os.path.join(here, "pages", _STANDORT_MODUL[key] + ".py"))
+    for k, _name, _land, src in STANDORTE:
+        if k == key:
+            return _os.path.exists(_os.path.join(here, "content", "standorte", src + ".py"))
+    return False
+
+
+def standort_link(key, text):
+    """Link auf eine Standortseite, oder nur der Text, solange die Seite noch nicht gebaut ist."""
+    return a(key, text) if standort_exists(key) else text
+
+
+def standorte(land=None, ohne=None):
+    """Gebaute Standortseiten als (key, name), optional nach Land gefiltert und ohne die eigene Seite."""
+    return [(k, n) for k, n, l, _src in STANDORTE
+            if (land is None or l == land) and k != ohne and standort_exists(k)]
+
+
 def href(key_or_path):
     """Relativer Href fuer interne Links (statisch, hoster-unabhaengig)."""
     return S.get(key_or_path, key_or_path)
@@ -248,6 +313,25 @@ def article_jsonld(page_url, headline, description, date_published, date_modifie
     if image:
         data["image"] = image if image.startswith("http") else BASE + image
     return _json.dumps(data, ensure_ascii=False, indent=None)
+
+
+def standort_schema(path, name, land_name, area_name=None, ort_in=None):
+    """Breadcrumb + Service-Schema (areaServed = Ort) fuer Standortseiten. Gibt zwei JSON-Strings zurueck."""
+    crumbs = breadcrumb_jsonld([("Startseite", u("/")), ("Standorte", u("standorte")), (name, u(path))])
+    service = {
+        "@context": "https://schema.org", "@type": "Service",
+        "@id": u(path).rstrip("/") + "/#service",
+        "serviceType": "Photovoltaik, Batteriespeicher und Wärmepumpe: Planung, Montage und Förderabwicklung",
+        "name": "Photovoltaik und Wärmepumpe " + (ort_in or f"in {name}"),
+        "areaServed": {"@type": "AdministrativeArea", "name": area_name or name,
+                       "containedInPlace": {"@type": "AdministrativeArea", "name": land_name}},
+        "provider": {"@type": "SolarInstallation", "@id": BASE + "/#business", "name": NAP["name"],
+                     "telephone": NAP["phone_display"], "url": BASE + "/",
+                     "address": {"@type": "PostalAddress", "streetAddress": NAP["street"], "postalCode": NAP["zip"],
+                                 "addressLocality": NAP["city"], "addressCountry": NAP["country"]}},
+        "url": u(path),
+    }
+    return [crumbs, _json.dumps(service, ensure_ascii=False)]
 
 
 def localbusiness_jsonld():
@@ -350,6 +434,9 @@ def load_reviews():
         with open(path, encoding="utf-8") as f:
             data = _json.load(f)
         reviews = data.get("reviews") or fallback
+        # Rezensionen, die einen Schauraum erwaehnen, nicht anzeigen: EBZ hat keinen (Vorgabe Kunde, Okt. 2026).
+        # Der Text echter Rezensionen wird nie umgeschrieben, die Rezension wird nur nicht ausgespielt.
+        reviews = [r for r in reviews if "chauraum" not in r.get("text", "")] or fallback
         for r in reviews:  # Emojis aus echten Rezensionen entfernen (Design-Regel, Text bleibt sonst gleich)
             r["text"] = _re.sub(r"\s{2,}", " ", _EMOJI_RE.sub("", r.get("text", ""))).strip()
         return data.get("rating", NAP["rating"]), data.get("count"), reviews

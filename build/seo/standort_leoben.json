@@ -1,0 +1,376 @@
+{
+  "slug": "standort_leoben",
+  "path": "/photovoltaik-leoben/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "quelle": "DataForSEO Google Ads Search Volume + SERP organic live advanced, location Austria, language de",
+  "primary": {
+    "keyword": "photovoltaik leoben",
+    "volume_at": 20,
+    "kd": null,
+    "cpc": 4.64,
+    "competition": "HIGH (Index 83)",
+    "intent": "commercial/lokal (Local Pack an Position 1)"
+  },
+  "secondary": [
+    {
+      "keyword": "photovoltaik trofaiach",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "commercial/lokal"
+    },
+    {
+      "keyword": "wärmepumpe leoben",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial/lokal"
+    },
+    {
+      "keyword": "pv anlage leoben",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial/lokal"
+    },
+    {
+      "keyword": "photovoltaik steiermark",
+      "volume_at": 70,
+      "kd": null,
+      "intent": "commercial (Regionsseite pv_steiermark)"
+    },
+    {
+      "keyword": "pv anlage steiermark",
+      "volume_at": 40,
+      "kd": null,
+      "intent": "commercial (Regionsseite pv_steiermark)"
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "volume_at": 30,
+      "kd": null,
+      "intent": "commercial (Regionsseite pv_steiermark)"
+    }
+  ],
+  "long_tail": [
+    {
+      "keyword": "pv leoben",
+      "volume_at": 0
+    },
+    {
+      "keyword": "solaranlage leoben",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik firmen leoben",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur leoben",
+      "volume_at": 0
+    },
+    {
+      "keyword": "heizungstausch leoben",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik obersteiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik eisenerz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik bruck an der mur",
+      "volume_at": 0
+    },
+    {
+      "keyword": "heizungstausch steiermark",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik steiermark anbieter",
+      "volume_at": 10
+    },
+    {
+      "keyword": "fernwärme leoben",
+      "volume_at": 20
+    },
+    {
+      "keyword": "stadtwärme leoben",
+      "volume_at": 1300,
+      "hinweis": "navigational (Kundenportal/Stadtwerke), kein Ziel-Keyword, aber Beleg fuer die Relevanz des Themas in der Waermepumpen-Sektion"
+    },
+    {
+      "keyword": "installateur leoben",
+      "volume_at": 210,
+      "hinweis": "generisch (Sanitaer/Heizung), nur als semantischer Begriff"
+    }
+  ],
+  "semantic": [
+    "Bezirk Leoben",
+    "Obersteiermark",
+    "Donawitz",
+    "Göss",
+    "Judendorf",
+    "Leitendorf",
+    "Trofaiach",
+    "St. Michael in Obersteiermark",
+    "Niklasdorf",
+    "Eisenerz",
+    "Stadtwerke Leoben",
+    "Stadtwärme",
+    "Abwärme voestalpine",
+    "Energienetze Steiermark",
+    "Einspeiserportal",
+    "Netzanschlusskonzept",
+    "Stadtwerke Trofaiach",
+    "Steiermärkisches Baugesetz § 21",
+    "meldepflichtig",
+    "Ortsbildschutzgebiet",
+    "Ortsbildkonzept",
+    "Solardachkataster / SolarTool",
+    "KEM Murraum Leoben",
+    "Energiegemeinschaft",
+    "Speicher",
+    "Luft-Wasser-Wärmepumpe",
+    "Schallnachweis Grundgrenze"
+  ],
+  "questions": [
+    "Welche Wärmepumpen sind genehmigungspflichtig?",
+    "Brauche ich in der Steiermark eine Genehmigung für eine Wärmepumpe?",
+    "Gibt es in der Steiermark eine Förderung für den Kesseltausch?",
+    "Welche Förderungen gibt es in der Steiermark im Jahr 2026?",
+    "Was kostet eine Luftwärmepumpe für 100 Quadratmeter Haus?",
+    "Ist eine Jaz von 4 gut?",
+    "PV-Anlage Steiermark meldepflicht (verwandte Suche)",
+    "Energie Steiermark Photovoltaik anmelden (verwandte Suche)",
+    "Förderung Photovoltaik Steiermark privat 2026 (verwandte Suche)"
+  ],
+  "serp": {
+    "photovoltaik leoben": {
+      "features": [
+        "local_pack",
+        "people_also_search",
+        "related_searches",
+        "paid"
+      ],
+      "local_pack": [
+        {
+          "name": "Wernegg GmbH & Co KG",
+          "typ": "Elektroinstallationsdienst",
+          "rating": 4.5,
+          "votes": 19
+        },
+        {
+          "name": "Leitold GmbH",
+          "typ": "Gasinstallateur",
+          "rating": 4.3,
+          "votes": 39
+        },
+        {
+          "name": "enerix Hoch- und Oststeiermark",
+          "typ": "Solartechnik-Anbieter",
+          "rating": 5,
+          "votes": 31
+        }
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "firmenabc.at",
+          "title": "Solarzellen / Solaranlagen im Bezirk Leoben",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 2,
+          "domain": "e-eins.at",
+          "title": "Verlässliche Partner für sichere Lösungen (E1)",
+          "type": "anbieter"
+        },
+        {
+          "pos": 3,
+          "domain": "kleinezeitung.at",
+          "title": "Warum man auf eine PV-Anlage verzichtet ... (Live Congress Leoben, 2022)",
+          "type": "medien"
+        },
+        {
+          "pos": 4,
+          "domain": "oesterreich.gv.at",
+          "title": "Photovoltaik-Förderaktionen und weitere Umweltförderungen",
+          "type": "behoerde"
+        },
+        {
+          "pos": 5,
+          "domain": "pvatlas.at",
+          "title": "Photovoltaik in Leoben: Ertrag und Förderung",
+          "type": "portal"
+        },
+        {
+          "pos": 6,
+          "domain": "solarvic.at",
+          "title": "SOLARVIC Photovoltaik und Haustechnik",
+          "type": "anbieter/handel"
+        },
+        {
+          "pos": 7,
+          "domain": "solarenergie.at",
+          "title": "PV Förderung 2026 Leoben, Steiermark Vorteile",
+          "type": "ratgeber"
+        },
+        {
+          "pos": 8,
+          "domain": "murraum-leoben.at",
+          "title": "Informationsabend PV und Energiegemeinschaft in Niklasdorf",
+          "type": "kem"
+        },
+        {
+          "pos": 9,
+          "domain": "e-nusshold.at",
+          "title": "Nusshold Elektrotechnik Photovoltaik Südoststeiermark",
+          "type": "anbieter"
+        },
+        {
+          "pos": 10,
+          "domain": "kleinezeitung.at",
+          "title": "Eröffnung von PV-Anlage sorgte für verbale Schlacht im Netz (2023)",
+          "type": "medien"
+        }
+      ]
+    },
+    "wärmepumpe leoben": {
+      "features": [
+        "local_pack",
+        "people_also_ask",
+        "people_also_search",
+        "related_searches"
+      ],
+      "local_pack": [
+        {
+          "name": "Leitold GmbH",
+          "typ": "Gasinstallateur",
+          "rating": 4.3,
+          "votes": 39
+        },
+        {
+          "name": "RIELLO Austria, Eibisberger Gerhard",
+          "typ": "Heizungsanlagenanbieter",
+          "rating": 4.8,
+          "votes": 17
+        },
+        {
+          "name": "Ronald Gostentschnigg GmbH, Proleb",
+          "typ": "Heizungsanlagenanbieter",
+          "rating": 5,
+          "votes": 36
+        }
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "nibe.at",
+          "title": "NIBE Österreich: Wärmepumpen",
+          "type": "hersteller"
+        },
+        {
+          "pos": 2,
+          "domain": "e-eins.at",
+          "title": "Heizung & Kühlung",
+          "type": "anbieter"
+        },
+        {
+          "pos": 3,
+          "domain": "heizma.at",
+          "title": "Ratgeber Wärmepumpe: Kosten, Förderung, Marken",
+          "type": "ratgeber"
+        },
+        {
+          "pos": 4,
+          "domain": "e-steiermark.com",
+          "title": "Heizungstausch-Aktion für Energievorreiter",
+          "type": "energieversorger"
+        },
+        {
+          "pos": 5,
+          "domain": "daibau.at",
+          "title": "Installateur, Leoben: Top 16 Auftragnehmer",
+          "type": "portal"
+        },
+        {
+          "pos": 6,
+          "domain": "neubauer-hls.at",
+          "title": "Wärmepumpe installieren in Graz & Weiz",
+          "type": "anbieter"
+        },
+        {
+          "pos": 7,
+          "domain": "firmen.wko.at",
+          "title": "Wärmepumpen in Steiermark",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 8,
+          "domain": "facebook.com",
+          "title": "Leitold GmbH, Haustechnik mit Zukunft, Leoben",
+          "type": "social"
+        },
+        {
+          "pos": 9,
+          "domain": "waermepumpe-austria.at",
+          "title": "Förderungen bei Wärmepumpen",
+          "type": "verband"
+        },
+        {
+          "pos": 10,
+          "domain": "kwb.net",
+          "title": "Wärmepumpen & Wärmepumpenheizung",
+          "type": "hersteller"
+        }
+      ]
+    }
+  },
+  "gaps": [
+    "Keine einzige Top-10-Seite erklaert die Leobener Besonderheiten (Stadtwaerme vs. Waermepumpe, Ortsbildkonzept, Netzbetreiber Stadt vs. Trofaiach): das ist der inhaltliche Hebel der Seite.",
+    "Kein Anbieter aus den Top 10 hat eine eigene Ortsseite fuer Leoben; die organischen Plaetze belegen Verzeichnisse, Medien und Portale. Eine belegte Ortsseite hat realistische Chancen auf die Top 5.",
+    "Local Pack ist ohne Standort in Leoben nicht erreichbar (EBZ sitzt in Villach): Ziel ist das organische Ergebnis darunter.",
+    "Kein Ertragswert je kWp auf der Seite (nur PV-Atlas verfuegbar, keine amtliche Quelle): bewusst weggelassen."
+  ],
+  "cannibalization": [
+    "/photovoltaik-steiermark/ (Regionsbegriffe dort halten)",
+    "/foerderung-photovoltaik-steiermark/ (Foerder-Keywords dort halten)"
+  ],
+  "recommendation": {
+    "title": "Photovoltaik Leoben & Wärmepumpe: PV mit Speicher | EBZ",
+    "h1": "Photovoltaik in Leoben: PV-Anlage mit Speicher und Wärmepumpe vom Fachbetrieb",
+    "description": "Photovoltaik und Wärmepumpe in Leoben und Trofaiach: Fachbetrieb aus Villach, Beratung vor Ort. 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung.",
+    "h2_outline": [
+      "Photovoltaik und Wärmepumpe in Leoben: was hier anders ist als anderswo",
+      "Leoben auf einen Blick: Behörde, Netze, Wärme und Solarpotenzial",
+      "Genehmigung und Netzanschluss in Leoben: Meldung an die Stadt, Antrag beim Netzbetreiber",
+      "Wärmepumpe in Leoben: zuerst die Stadtwärme prüfen, dann die Heizung planen",
+      "Förderung für Photovoltaik und Wärmepumpe in Leoben: Bund, Land und der Stand bei der Stadt",
+      "Referenzen aus der Steiermark: zwei Projekte in Graz mit Zahlen"
+    ],
+    "faq_add": [
+      "Brauche ich in Leoben eine Baubewilligung für eine Photovoltaikanlage?",
+      "Darf ich in der Leobener Altstadt oder in Göss eine PV-Anlage aufs Dach bauen?",
+      "Wer ist in Leoben der Stromnetzbetreiber und wie läuft der Netzanschluss ab?",
+      "Was kostet eine Photovoltaikanlage in Leoben?",
+      "Wärmepumpe oder Stadtwärme in Leoben: was passt besser?",
+      "Muss ich eine Wärmepumpe in Leoben genehmigen lassen?",
+      "Fördert die Stadt Leoben Photovoltaik oder Wärmepumpen?",
+      "Kommt EBZ Energie auch nach Trofaiach, St. Michael oder Eisenerz?"
+    ],
+    "internal_links": [
+      "/photovoltaik/ -> Photovoltaikanlage",
+      "/waermepumpe/ -> Wärmepumpe",
+      "/batteriespeicher/ -> Speicher",
+      "/energiemanagementsystem/ -> Energiemanagementsystem",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft in der Steiermark",
+      "/foerderung-fuer-pv-speicher/ -> Förderung für PV-Speicher"
+    ],
+    "notes": "Nur 'photovoltaik leoben' (20) und 'photovoltaik trofaiach' (10) haben messbares Volumen, alle Wärmepumpen- und Variantenbegriffe mit Ortsnamen liegen unter der Messgrenze. Die Seite gewinnt deshalb nicht über Keyword-Varianten, sondern über belegte lokale Inhalte, die kein Wettbewerber hat: Stadtwärme aus Abwärme (Suchinteresse 'stadtwärme leoben' 1.300), Ortsbildkonzept für Altstadt und Göss, Meldepflicht nach Baugesetz 2026, Netzbetreiber Stadt und Trofaiach. Trofaiach steht in Description, Lead und FAQ. Offen: Die zentrale Vorlage nennt 35 % Landesförderung für Wärmepumpen, die Landesseite meldet aber 'derzeit keine Antragstellung möglich'; bitte zentral klären."
+  },
+  "cost_usd": 0.16,
+  "cost_note": "Schätzung: 2 x Google-Ads-Suchvolumen live (je rund 0,075 $) und 2 x SERP live advanced (je rund 0,004 $). Die MCP-Antworten enthalten kein cost-Feld; ein dritter Volumen-Aufruf scheiterte am Rate-Limit (nicht verrechnet)."
+}

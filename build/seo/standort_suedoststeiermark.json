@@ -1,0 +1,371 @@
+{
+  "slug": "standort_suedoststeiermark",
+  "path": "/photovoltaik-suedoststeiermark/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "quelle": "DataForSEO Google Ads Search Volume + SERP (location Austria, language de), abgerufen 10.10.2026",
+  "primary": {
+    "keyword": "photovoltaik südoststeiermark",
+    "volume_at": 10,
+    "kd": null,
+    "cpc": 3.23,
+    "intent": "commercial (Wettbewerb HIGH, Index 67)"
+  },
+  "secondary": [
+    {
+      "keyword": "photovoltaik feldbach",
+      "volume_at": 10,
+      "kd": null,
+      "cpc": 2.75,
+      "intent": "commercial (Wettbewerb HIGH, Index 68; August 2026: 40)"
+    },
+    {
+      "keyword": "photovoltaik bad radkersburg",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "photovoltaik mureck",
+      "volume_at": 10,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "wärmepumpe feldbach",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "wärmepumpe südoststeiermark",
+      "volume_at": 0,
+      "kd": null,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "installateur feldbach",
+      "volume_at": 70,
+      "kd": null,
+      "cpc": 2.71,
+      "intent": "local (Wettbewerb MEDIUM; nur als semantischer Begriff, nicht als Ziel)"
+    }
+  ],
+  "long_tail": [
+    {
+      "keyword": "photovoltaik steiermark",
+      "volume_at": 70
+    },
+    {
+      "keyword": "installateur feldbach",
+      "volume_at": 70
+    },
+    {
+      "keyword": "pv anlage steiermark",
+      "volume_at": 40
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "volume_at": 30
+    },
+    {
+      "keyword": "pv anlage genehmigung steiermark",
+      "volume_at": 20
+    },
+    {
+      "keyword": "elektriker feldbach",
+      "volume_at": 20
+    },
+    {
+      "keyword": "photovoltaik firmen steiermark",
+      "volume_at": 10
+    },
+    {
+      "keyword": "energienetze steiermark photovoltaik",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik landwirtschaft",
+      "volume_at": 10
+    },
+    {
+      "keyword": "pv anlage südoststeiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage feldbach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv feldbach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "solaranlage feldbach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik firmen feldbach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur feldbach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "heizungstausch feldbach",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik fehring",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik bad gleichenberg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik gnas",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik vulkanland",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage vulkanland",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe bad radkersburg",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe genehmigung steiermark",
+      "volume_at": 0
+    },
+    {
+      "keyword": "heizungstausch steiermark förderung",
+      "volume_at": 0
+    }
+  ],
+  "semantic": [
+    "Bezirk Südoststeiermark",
+    "Feldbach",
+    "Fehring",
+    "Bad Radkersburg",
+    "Mureck",
+    "Bad Gleichenberg",
+    "Gnas",
+    "Kirchbach-Zerlach",
+    "Sankt Stefan im Rosental",
+    "Steirisches Vulkanland",
+    "Energievision 2035",
+    "Klima- und Energie-Modellregion",
+    "Lokale Energieagentur (LEA)",
+    "Energienetze Steiermark",
+    "Einspeiserportal",
+    "Einspeisezählpunkt",
+    "Netzanschlusskonzept",
+    "freie Einspeisekapazität Umspannwerk Feldbach / Halbenrain",
+    "P.K. Energieversorgungs-GmbH",
+    "Bad Gleichenberger Energie GmbH",
+    "EVU der Stadtgemeinde Mureck",
+    "Steiermärkisches Baugesetz § 21 (meldepflichtig)",
+    "Planungsbasispegel",
+    "Batteriespeicher 20 kWh / 100 kWh",
+    "Solarpotenzial Steiermark / SolarTool (Digitaler Atlas)",
+    "Landwirtschaft, Stall, Notstrom",
+    "Biomasse-Nahwärme",
+    "Gasnetz",
+    "Eigenverbrauch",
+    "Energiemanagement"
+  ],
+  "questions": [
+    "Brauche ich in der Steiermark eine Genehmigung für eine Wärmepumpe?",
+    "Was ist der größte Nachteil einer Wärmepumpe?",
+    "Welche Wärmepumpe ist in Österreich die beste?",
+    "Wer ist aktuell Marktführer bei Wärmepumpen?",
+    "Was kostet eine sehr gute Wärmepumpe?",
+    "Welche Wärmepumpe ist die langlebigste?",
+    "Welcher Netzbetreiber ist in der Südoststeiermark zuständig? (eigene Frage, aus der Recherche)",
+    "Brauche ich in Feldbach eine Baubewilligung für die PV-Anlage? (eigene Frage, Long-Tail 'pv anlage genehmigung steiermark' 20)"
+  ],
+  "serp": {
+    "photovoltaik feldbach": {
+      "location": "Austria",
+      "features": [
+        "knowledge_graph (ComEn Energie, Feldbach, 4,3 Sterne / 6 Bewertungen)",
+        "popular_products",
+        "people_also_search",
+        "related_searches"
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "abcsolar.at",
+          "title": "ABC Solar GmbH | Photovoltaikanlagen in der Steiermark",
+          "type": "anbieter"
+        },
+        {
+          "pos": 2,
+          "domain": "prosolis.at",
+          "title": "Photovoltaik aus und für die Steiermark von ProSolis",
+          "type": "anbieter"
+        },
+        {
+          "pos": 3,
+          "domain": "herold.at",
+          "title": "Finde \"Photovoltaik\" in Deutschlandsberg",
+          "type": "portal"
+        },
+        {
+          "pos": 4,
+          "domain": "solavolta.at",
+          "title": "SOLAVOLTA: Photovoltaik vom Marktführer | Österreich",
+          "type": "anbieter"
+        },
+        {
+          "pos": 5,
+          "domain": "lr-photovoltaik.at",
+          "title": "LR Photovoltaik",
+          "type": "anbieter"
+        },
+        {
+          "pos": 6,
+          "domain": "herold.at",
+          "title": "Photovoltaik in Gersdorf, Deutschlandsberg, Steiermark",
+          "type": "portal"
+        },
+        {
+          "pos": 7,
+          "domain": "solarel.at",
+          "title": "Projekte (Agri-PV Dornau bei Halbenrain, 9,98 MW)",
+          "type": "anbieter"
+        },
+        {
+          "pos": 8,
+          "domain": "pluspv.at",
+          "title": "PLUS PV Photovoltaik",
+          "type": "anbieter"
+        },
+        {
+          "pos": 9,
+          "domain": "tesolar.at",
+          "title": "Teschinegg KG aus Deutschlandsberg, Steiermark",
+          "type": "anbieter"
+        }
+      ],
+      "beobachtung": "Kein Treffer in den Top 9 hat eine eigene Seite für Feldbach oder die Südoststeiermark: Google füllt mit steiermarkweiten Anbietern und Herold-Listen. Eine Seite mit echten Bezirksfakten hat hier wenig Konkurrenz."
+    },
+    "wärmepumpe feldbach": {
+      "location": "Austria",
+      "features": [
+        "knowledge_graph (Krobath Bad Heizung Service GmbH, Feldbach, 4,1 Sterne / 141 Bewertungen)",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "top10": [
+        {
+          "pos": 1,
+          "domain": "daibau.at",
+          "title": "Wärmepumpen, Feldbach: Top 16 Installateure",
+          "type": "portal"
+        },
+        {
+          "pos": 2,
+          "domain": "waermepumpe-austria.at",
+          "title": "Krobath Bad Heizung Service GmbH, 8330 Feldbach",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 3,
+          "domain": "krobath.at",
+          "title": "Krobath Bad Heizung Service GmbH aus der Steiermark",
+          "type": "anbieter (lokal)"
+        },
+        {
+          "pos": 4,
+          "domain": "instagram.com",
+          "title": "Krobath Bad Heizung Service (@krobathbhs)",
+          "type": "social"
+        },
+        {
+          "pos": 5,
+          "domain": "pammer.co.at",
+          "title": "Wärmepumpentechnik",
+          "type": "anbieter"
+        },
+        {
+          "pos": 6,
+          "domain": "heizma.at",
+          "title": "Heizma: Wärmepumpe und Photovoltaik in Österreich",
+          "type": "anbieter"
+        },
+        {
+          "pos": 7,
+          "domain": "krobath.at",
+          "title": "Die neue Generation der Luft-Wasser-Wärmepumpe",
+          "type": "anbieter (lokal)"
+        },
+        {
+          "pos": 8,
+          "domain": "baucheck.io",
+          "title": "Installateur in Südoststeiermark, 8330 Feldbach",
+          "type": "portal"
+        },
+        {
+          "pos": 9,
+          "domain": "firmenabc.at",
+          "title": "Krobath Bad Heizung Service GmbH in Feldbach",
+          "type": "verzeichnis"
+        },
+        {
+          "pos": 10,
+          "domain": "herold.at",
+          "title": "Wärmepumpen in Deutschlandsberg, Steiermark",
+          "type": "portal"
+        }
+      ],
+      "beobachtung": "Die Wärmepumpen-SERP gehört einem lokalen Installateur (Krobath) und Verzeichnissen. Ohne Standort im Bezirk ist das Local Pack nicht erreichbar; Chance liegt bei der Kombination PV plus Wärmepumpe und der People-also-ask-Frage zur Genehmigung."
+    }
+  },
+  "cannibalization": [
+    "/photovoltaik-steiermark/ (Regionsseite: Landesrecht und Förderung dort ausführlich, hier nur Kurzfassung mit Link)",
+    "/photovoltaik-graz/",
+    "/foerderung-photovoltaik-steiermark/ (Förder-Keywords dort halten)"
+  ],
+  "recommendation": {
+    "title": "Photovoltaik Südoststeiermark, Feldbach + Wärmepumpe | EBZ",
+    "h1": "Photovoltaik und Wärmepumpe in der Südoststeiermark: von Feldbach bis Bad Radkersburg",
+    "description": "Photovoltaik und Wärmepumpe in der Südoststeiermark: Feldbach, Fehring, Bad Radkersburg, Mureck. 4 Stromnetze, Meldung an die Gemeinde, Fachbetrieb aus Villach.",
+    "h2_outline": [
+      "Warum Photovoltaik und Wärmepumpe in der Südoststeiermark zusammengehören",
+      "Die Südoststeiermark auf einen Blick: Bezirk, Stromnetze, Behörde, Solarkataster",
+      "Genehmigung und Netzanschluss in der Südoststeiermark: Gemeinde informieren, richtiges Netz finden",
+      "Wärmepumpe in der Südoststeiermark: Meldung, Gasnetz, Nahwärme und eigener Sonnenstrom",
+      "Förderung für Photovoltaik und Wärmepumpe in der Südoststeiermark",
+      "Referenzen in der Nähe: zwei Projekte in Graz und ein landwirtschaftlicher Betrieb"
+    ],
+    "faq_add": [
+      "Welcher Netzbetreiber ist in der Südoststeiermark für meine Photovoltaikanlage zuständig?",
+      "Brauche ich in Feldbach, Fehring oder Bad Radkersburg eine Baubewilligung für die Photovoltaikanlage?",
+      "Für das Umspannwerk Feldbach ist keine Einspeisekapazität frei. Kann ich trotzdem eine PV-Anlage bauen?",
+      "Brauche ich in der Südoststeiermark eine Genehmigung für eine Wärmepumpe?",
+      "In meiner Gemeinde gibt es kein Gasnetz. Ist die Wärmepumpe dann die richtige Heizung?",
+      "Zahlt die Stadt Feldbach oder meine Gemeinde eine Förderung für Photovoltaik, Speicher oder Wärmepumpe?"
+    ],
+    "internal_links": [
+      "/photovoltaik-steiermark/ -> Photovoltaik in der Steiermark",
+      "/photovoltaik-gewerbe/ -> Photovoltaik für Gewerbedächer",
+      "/notstrom/ -> Notstrom",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft in der Steiermark",
+      "/batteriespeicher/ -> Speicher",
+      "/energiemanagementsystem/ -> Energiemanagement"
+    ],
+    "notes": "Das Suchvolumen ist klein (je 10 für Südoststeiermark, Feldbach, Bad Radkersburg, Mureck; alle Wärmepumpen-Ortsbegriffe ohne messbares Volumen), dafür hat keine Seite in der SERP echte Bezirksinhalte. Die Seite setzt deshalb auf belegte lokale Unterscheidungsmerkmale: vier Stromnetzbetreiber, 0,0 MW freie Einspeisekapazität an den Umspannwerken Feldbach und Halbenrain, Gasnetz nur in einem Teil des Bezirks, landwirtschaftliche Struktur, Energievision Vulkanland. Local Pack ist ohne Standort im Bezirk nicht erreichbar; wichtig wäre ein erstes dokumentiertes Referenzprojekt aus dem Bezirk."
+  },
+  "cost_usd": 0.23,
+  "cost_note": "Schätzung: die MCP-Antworten enthalten kein cost-Feld. 3 Aufrufe Google Ads Search Volume (je rund 0,075 $) und 2 Live-SERPs mit People-also-ask (je rund 0,003 $). Zwei weitere Volumen-Aufrufe scheiterten am Minutenlimit (40202) und wurden nicht verrechnet."
+}

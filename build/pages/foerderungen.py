@@ -42,7 +42,7 @@ R_SAUBER = "/sauber-heizen-fuer-alle-2026/"
 # (Pfad, Bundesland, Kurzstatus PV/Speicher, Kernmarkt?)  Kurzstatus = Auszug aus der Matrix unten
 LAENDER = [
     (R_KTN, "Kärnten", "3.000 € Pauschale mit Speicher", True),
-    (R_STMK, "Steiermark", "Sanierungsbonus und Ökofonds", True),
+    (R_STMK, "Steiermark", "Bundesförderung, keine Pauschale", True),
     ("/photovoltaik-foerderung-tirol/", "Tirol", "bis 125 €/kWp, Speicher 100 €/kWh", False),
     ("/photovoltaik-foerderung-oberoesterreich/", "Oberösterreich", "Speicher-Nachrüstung 150 €/kWh", False),
     ("/photovoltaik-foerderung-burgenland/", "Burgenland", "Speicher 100 €/kWh", False),
@@ -76,8 +76,8 @@ def _laender_section():
 FAQ = [
     ("Kann ich die Bundesförderung mit einer Landesförderung kombinieren?",
      "In Kärnten ja: Die 3.000 Euro Landespauschale für PV mit Speicher wird laut Land ohne Anrechnung zusätzlich "
-     "zum EAG-Investitionszuschuss gezahlt, gedeckelt mit 50 Prozent der Baukosten. In der Steiermark sind "
-     "Sanierungsbonus und Ökofonds mit dem Bund kombinierbar. Ausnahmen: In Oberösterreich schließen sich "
+     "zum EAG-Investitionszuschuss gezahlt, gedeckelt mit 50 Prozent der Baukosten. Die Steiermark hat derzeit kein "
+     "eigenes Programm für private PV-Anlagen, dort gilt der Bund. Ausnahmen: In Oberösterreich schließen sich "
      "EAG-Speicherzuschuss und Landes-Speicherförderung aus, im Burgenland zahlt das Land nur, wenn der Bund nicht "
      "möglich ist, in Wien gilt Stadt oder Bund."),
     ("Welche Fristen gelten im Herbst 2026?",
@@ -100,14 +100,15 @@ FAQ = [
     ("Wird die Wärmepumpe 2026 überhaupt noch gefördert?",
      "Vom Bund derzeit nicht: Sanierungsoffensive mit Kesseltausch (bis 7.500 Euro) und Sauber Heizen für Alle sind "
      "seit Herbst 2026 ausgeschöpft, neue Registrierungen sind nicht möglich; bereits Registrierte können noch "
-     "beantragen. Weiter laufen die Landesförderungen (Kärnten 35 Prozent, Steiermark 35 Prozent der förderbaren "
-     "Kosten, Stand beim Land prüfen). Die Öko-Sonderausgabenpauschale (fünf Jahre je 400 Euro) setzt eine ausbezahlte "
+     "beantragen. Weiter läuft die Landesförderung in Kärnten mit 3.000 Euro Pauschale für den Umstieg auf eine "
+     "Wärmepumpe im Eigenheim. Die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an (Stand "
+     "Oktober 2026, Land Steiermark). Die Öko-Sonderausgabenpauschale (fünf Jahre je 400 Euro) setzt eine ausbezahlte "
      "Bundesförderung voraus und gilt damit nur für bereits Registrierte. Ob 2027 ein neues Bundesprogramm kommt, "
      "ist offen."),
     ("Welche Förderungen gibt es für Betriebe und Gemeinden?",
      "PV: EAG-Zuschuss in den Kategorien B bis D (140 bis 120 Euro je kWp, ab 20 kWp im Bieterverfahren) plus "
-     "Speicher 150 Euro je kWh; Kärnten fördert betriebliche Eigenverbrauchsanlagen mit bis zu 200 Euro je kWp, die "
-     "Steiermark über den Ökofonds mit bis zu 30 Prozent ab 20 kWp. EMS: 30 Prozent bis 20.000 Euro je Standort "
+     "Speicher 150 Euro je kWh; Kärnten fördert betriebliche Eigenverbrauchsanlagen mit bis zu 200 Euro je kWp, der "
+     "steirische Ökofonds hat derzeit keine PV-Ausschreibung. EMS: 30 Prozent bis 20.000 Euro je Standort "
      "(Großunternehmen 20 Prozent). Wärmepumpe: KPC-Programm für Betriebe bis 7.500 Euro unter 50 kW und 12.000 Euro "
      "bei 50 bis 100 kW, maximal 50 Prozent, Antrag bis sechs Monate nach Rechnung."),
 ]
@@ -133,7 +134,7 @@ def _matrix_section():
         ("Photovoltaik",
          _cell("150 €/kWp bis 10 kWp, darüber 140 bis 120 €/kWp, 10 % Made-in-Europe-Bonus. <b>Läuft:</b> Antrag bis 22.10.2026", R_BUND),
          _cell("<b>3.000 € Pauschale</b> für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh. <b>Läuft:</b> 12.10. bis 31.12.2026", R_KTN),
-         _cell("Keine Pauschale. Sanierungsbonus bis 15 % (Call 1.4. bis 15.5.2026 beendet), Ökofonds bis 30 % ab 20 kWp, Gemeinden 200 bis 1.000 €", R_STMK),
+         _cell("Keine Pauschale für private Dachanlagen. Der Sanierungsbonus (bis 15 %, Call 1.4. bis 15.5.2026) ist beendet, der Ökofonds hat derzeit keine PV-Ausschreibung. Manche Gemeinden zahlen einen Zuschuss", R_STMK),
          _cell("Tirol bis 125 €/kWp; Burgenland, Niederösterreich, Oberösterreich, Salzburg, Vorarlberg und Wien: nur Bund für Standard-Dachanlagen", R_LAENDER)),
         ("Stromspeicher",
          _cell("150 €/kWh bis 50 kWh, nur gemeinsam mit neuer oder erweiterter PV-Anlage. <b>Läuft</b> bis 22.10.2026", R_SPEICHER),
@@ -142,13 +143,13 @@ def _matrix_section():
          _cell("Oberösterreich 150 €/kWh Nachrüstung bis 2.250 €, Burgenland 100 €/kWh bis 2.000 €, Tirol 100 €/kWh bis 1.000 €, Vorarlberg VKW-Bonus bis 500 €; sonst nur Bund", R_LAENDER)),
         ("Wärmepumpe",
          _cell("<b>Beendet:</b> Kesseltausch bis 7.500 € und Sauber Heizen für Alle ausgeschöpft. Die Öko-Sonderausgabenpauschale (5 Jahre je 400 €) setzt eine ausbezahlte Bundesförderung voraus", R_WP_AT),
-         _cell("35 % der förderbaren Kosten, Obergrenze 6.000 € laut Richtlinie (laut Berichten 2026: 3.000 €), plus 1.200 € Kelag-Prämie. Stand beim Land prüfen", R_WP_LAENDER),
-         _cell("35 % der förderbaren Kosten für Eigenheime mit maximal zwei Wohnungen, Energieberatung kostenlos", R_WP_LAENDER),
+         _cell("<b>3.000 € Pauschale</b> für den Umstieg auf die Wärmepumpe im Eigenheim, plus 1.500 € mit thermischer Solaranlage; dazu 1.200 € Kelag-Prämie. Budget vor dem Antrag prüfen", R_WP_LAENDER),
+         _cell("<b>Derzeit keine Anträge:</b> Das Land nimmt für neue Wärmepumpen keine Förderanträge an. Gefördert wird nur der Tausch mindestens 15 Jahre alter Wärmepumpen und Biomassekessel", R_WP_LAENDER),
          _cell("Wien 35 % bis 8.000 €, Tirol 25 % plus 3.000 € Bonus, Salzburg rund 5.000 €, Burgenland 2.000 €, Vorarlberg 1.000 €, Oberösterreich bis 1.700 €", R_WP_LAENDER)),
         ("Energiemanagement (EMS)",
          _cell("Klimafonds: <b>50 % bis 600 €</b> für Haushalte, 30 % bis 20.000 € für Betriebe. <b>Läuft</b> bis 15.4.2027, Registrierung vor Rechnung", R_EMS),
          _cell("Nur Bund", R_EMS),
-         _cell("Nur Bund; im Ökofonds ab 20 kWp gibt es 125 €/kWp Bonus für die Einbindung in ein Energiesystem", R_STMK),
+         _cell("Nur Bund", R_EMS),
          _cell("Nur Bund", R_EMS)),
         ("Balkonkraftwerk",
          _cell("Kein EAG-Zuschuss für Steckeranlagen bis 800 W (kein Einspeisezählpunkt). Angemeldete Kleinanlagen ab rund 3 kWp: 150 €/kWp", R_BALKON),
@@ -205,12 +206,12 @@ _GEMEINDE = "Keine Landesförderung; manche Gemeinden zahlen einen Zuschuss."
 LAND = {
     ("pvsp", "ktn"): ("3.000 € Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, zusätzlich zum Bund. Antrag nach "
                       "Fertigstellung, 12. Oktober bis 31. Dezember 2026."),
-    ("pvsp", "stmk"): ("Keine Pauschale. Ökofonds bis 30 % ab 20 kWp, Gemeinden zahlen teils 200 bis 1.000 € oder einen "
+    ("pvsp", "stmk"): ("Keine Pauschale für private Dachanlagen. Manche Gemeinden zahlen einen eigenen Zuschuss oder "
                        "Speicherbonus. Der Sanierungsbonus-Call 2026 ist beendet."),
     ("pvsp", "at"): ("Tirol bis 125 € je kWp und 100 € je kWh Speicher. Oberösterreich, Burgenland und Vorarlberg haben "
                      "Speicherprogramme, die sich teils nicht mit dem Bund kombinieren lassen. Sonst gilt der Bund."),
     ("pv", "ktn"): "Die 3.000-€-Pauschale gibt es nur mit Speicher ab 5 kWh. Ohne Speicher bleibt die Bundesförderung.",
-    ("pv", "stmk"): "Keine Pauschale. Ökofonds bis 30 % ab 20 kWp, Gemeinden zahlen teils 200 bis 1.000 €.",
+    ("pv", "stmk"): "Keine Pauschale für private Dachanlagen. Manche Gemeinden zahlen einen eigenen Zuschuss.",
     ("pv", "at"): ("Tirol bis 125 € je kWp. In Burgenland, Niederösterreich, Oberösterreich, Salzburg, Vorarlberg und Wien "
                    "gilt für Standard-Dachanlagen die Bundesförderung."),
     ("sp", "ktn"): ("1.000 € pauschal für die Nachrüstung ab 5 kWh an einer bestehenden Anlage. Antrag nach Fertigstellung, "
@@ -218,15 +219,14 @@ LAND = {
     ("sp", "stmk"): "Keine Landesförderung für die Nachrüstung; einzelne Gemeinden zahlen einen Speicherbonus.",
     ("sp", "at"): ("Oberösterreich 150 € je kWh bis 2.250 €, Burgenland 100 € je kWh bis 2.000 €, Tirol 100 € je kWh bis "
                    "1.000 €, Vorarlberg VKW-Bonus bis 500 €."),
-    ("wp", "ktn"): ("35 % der förderbaren Kosten. Obergrenze laut Richtlinie 6.000 €, laut Berichten 2026 auf 3.000 € "
-                    "angepasst; dazu 1.200 € Kelag-Prämie. Den aktuellen Stand klären wir vor dem Angebot mit dem Land."),
-    ("wp", "stmk"): ("35 % der förderbaren Kosten für Eigenheime mit maximal zwei Wohnungen, Energieberatung kostenlos. "
-                     "Den aktuellen Stand klären wir vor dem Angebot mit dem Land."),
+    ("wp", "ktn"): ("3.000 € Pauschale für den Umstieg auf eine Wärmepumpe im Eigenheim, plus 1.500 € mit thermischer "
+                    "Solaranlage; dazu 1.200 € Kelag-Prämie. Ob das Budget reicht, klären wir vor dem Angebot mit dem Land."),
+    ("wp", "stmk"): ("Für neue Wärmepumpen nimmt das Land derzeit keine Förderanträge an. Gefördert wird nur der Tausch "
+                     "mindestens 15 Jahre alter Wärmepumpen und Biomassekessel."),
     ("wp", "at"): ("Wien 35 % bis 8.000 €, Tirol 25 % plus 3.000 € Bonus, Salzburg rund 5.000 €, Burgenland 2.000 €, "
                    "Oberösterreich bis 1.700 €, Vorarlberg 1.000 €."),
     ("ems", "ktn"): "Keine eigene Landesförderung, es gilt der Klimafonds.",
-    ("ems", "stmk"): ("Keine eigene Landesförderung. Im Ökofonds gibt es ab 20 kWp einen Bonus von 125 € je kWp für die "
-                      "Einbindung in ein Energiesystem."),
+    ("ems", "stmk"): "Keine eigene Landesförderung, es gilt der Klimafonds.",
     ("ems", "at"): "Keine eigene Landesförderung, es gilt der Klimafonds.",
     ("balkon", "ktn"): _GEMEINDE,
     ("balkon", "stmk"): _GEMEINDE,
@@ -245,8 +245,8 @@ SUMME = {
     ("sp", "ktn"): ("ok", "1.000 €", "Landespauschale für die Nachrüstung ab 5 kWh"),
     ("sp", "stmk"): ("end", "Derzeit keine", "2027 soll die Nachrüstung im Bund förderbar werden"),
     ("sp", "at"): ("part", "bis 2.250 €", "je nach Bundesland, Höchstwert Oberösterreich"),
-    ("wp", "ktn"): ("part", "35 %", "der förderbaren Kosten vom Land, der Bund ist derzeit ausgeschöpft"),
-    ("wp", "stmk"): ("part", "35 %", "der förderbaren Kosten vom Land, der Bund ist derzeit ausgeschöpft"),
+    ("wp", "ktn"): ("part", "3.000 €", "Landespauschale Kärnten, der Bund ist derzeit ausgeschöpft"),
+    ("wp", "stmk"): ("end", "Derzeit keine", "der Bund ist ausgeschöpft, das Land nimmt keine Anträge an"),
     ("wp", "at"): ("part", "bis 8.000 €", "je nach Bundesland, Höchstwert Wien; der Bund ist derzeit ausgeschöpft"),
     ("ems", "ktn"): ("ok", "bis 600 €", "50 % der Kosten für Haushalte"),
     ("ems", "stmk"): ("ok", "bis 600 €", "50 % der Kosten für Haushalte"),
@@ -368,7 +368,8 @@ def _status_section():
           (12. Oktober bis 31. Dezember 2026), EMS-Förderung des Klimafonds (bis 15. April 2027).</p></div>
         <div><b><span class="dot dot--end"></span>Beendet</b>
           <p>Bundesförderung für Wärmepumpen: Kesseltausch und Sauber Heizen für Alle sind ausgeschöpft.
-          Steirischer Sanierungsbonus: Call 2026 abgeschlossen.</p></div>
+          Land Steiermark: keine Anträge für neue Wärmepumpen. Steirischer Sanierungsbonus: Call 2026
+          abgeschlossen.</p></div>
         <div><b><span class="dot dot--plan"></span>Geplant ab 2027</b>
           <p>Systemförderung für Speicher mit intelligenter Steuerung, Antrag nach der Installation statt im
           Fördercall (laut BMWET, noch nicht beschlossen).</p></div>

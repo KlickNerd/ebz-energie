@@ -60,8 +60,8 @@ FAQ = [
     ("Agri-PV oder Dachanlage: was passt zu meinem landwirtschaftlichen Betrieb?",
      "Agri-PV ist eine Freiflächenanlage mit aufgeständerten oder senkrechten Modulen, unter der weiter bewirtschaftet "
      "wird: ein eigenes Projektfeld mit Flächenwidmung, Netzanschluss und meist Pachtmodellen. Für die meisten Höfe ist "
-     "das Stall-, Hallen- oder Lagerdach die einfachere Fläche: keine Widmung, kurzer Weg zum Zählpunkt. In der "
-     "Steiermark fördert der Ökofonds Doppelnutzungsanlagen ab 20 kWp mit bis zu 30 Prozent, maximal 250.000 Euro."),
+     "das Stall-, Hallen- oder Lagerdach die einfachere Fläche: keine Widmung, kurzer Weg zum Zählpunkt. Der "
+     "steirische Ökofonds, der Doppelnutzungsanlagen ab 20 kWp gefördert hat, führt derzeit keine PV-Ausschreibung."),
     ("Wie groß sollte eine Gewerbe-PV-Anlage sein?",
      "Die Größe richtet sich nach Ihrem Lastprofil, nicht nur nach der Dachfläche. Typische Gewerbeanlagen liegen "
      "zwischen 20 und 100 kWp, Hallen und Ställe auch darüber. Ab rund 100 kWp stimmen wir Anschlussleistung, Netzebene "

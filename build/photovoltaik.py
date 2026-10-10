@@ -360,7 +360,10 @@ def build():
         C.linkgrid_section(
             "Weiterlesen: Standorte, Förderung, Kosten",
             [("pv_villach", "Photovoltaik Villach"),
+             ("pv_klagenfurt", "Photovoltaik Klagenfurt"),
              ("pv_wolfsberg", "Photovoltaik Wolfsberg"),
+             ("pv_graz", "Photovoltaik Graz"),
+             ("pv_steiermark", "Photovoltaik Steiermark"),
              ("foerderung_kaernten", "PV-Förderung Kärnten 2026"),
              ("foerderung_steiermark", "PV-Förderung Steiermark 2026"),
              ("foerderungen", "Alle Förderungen 2026"),

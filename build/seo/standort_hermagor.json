@@ -1,0 +1,436 @@
+{
+ "slug": "standort_hermagor",
+ "path": "/photovoltaik-hermagor/",
+ "seitentyp": "standort",
+ "stand": "2026-10-10",
+ "primary": {
+  "keyword": "photovoltaik hermagor",
+  "volume_at": 0,
+  "kd": null,
+  "cpc": null,
+  "intent": "transactional (Labs Keyword Overview); kein messbares Google-Ads-Volumen in AT"
+ },
+ "secondary": [
+  {
+   "keyword": "wärmepumpe hermagor",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial (SERP: Local Pack mit Installateuren)"
+  },
+  {
+   "keyword": "pv anlage hermagor",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "photovoltaik gailtal",
+   "volume_at": 0,
+   "kd": null,
+   "intent": "commercial"
+  },
+  {
+   "keyword": "installateur hermagor",
+   "volume_at": 40,
+   "kd": 45,
+   "intent": "navigational/lokal (Heizung, Sanitär)"
+  },
+  {
+   "keyword": "photovoltaik kärnten",
+   "volume_at": 70,
+   "kd": null,
+   "intent": "commercial (Dachbegriff, gehört zur Startseite und /photovoltaik-villach/)"
+  },
+  {
+   "keyword": "pv anlage kärnten",
+   "volume_at": 70,
+   "kd": 4,
+   "intent": "commercial (Dachbegriff)"
+  }
+ ],
+ "semantic": [
+  "Hermagor-Pressegger See",
+  "Bezirk Hermagor",
+  "Gailtal",
+  "Gitschtal",
+  "Lesachtal",
+  "Kötschach-Mauthen",
+  "Nassfeld",
+  "Pressegger See",
+  "Weißensee",
+  "St. Stefan im Gailtal",
+  "Kirchbach",
+  "Dellach",
+  "KNG-Kärnten Netz GmbH",
+  "AAE Wasserkraft GmbH (Verteilernetz Kötschach)",
+  "Netzzutrittsangebot",
+  "Strombezugsrecht",
+  "dynamische Leistungsregelung",
+  "Mitteilungspflicht § 7 K-BO 1996",
+  "Baubehörde Stadtgemeinde, Wulfeniaplatz 1",
+  "PVGIS",
+  "kWh je kWp",
+  "Horizontabschattung",
+  "Schneelast",
+  "Statikreport",
+  "Fernwärme KELAG Wärme Hermagor",
+  "Biomasse",
+  "Luft-Wasser-Wärmepumpe",
+  "Vorlauftemperatur",
+  "KEM Karnische Energie",
+  "e5-Gemeinde Kötschach-Mauthen",
+  "Erneuerbare Energiegemeinschaft Wulfenia",
+  "Landespauschale Kärnten 3.000 €"
+ ],
+ "long_tail": [
+  {
+   "keyword": "aae naturstrom",
+   "volume_at": 1000
+  },
+  {
+   "keyword": "photovoltaik kärnten",
+   "volume_at": 70
+  },
+  {
+   "keyword": "pv anlage kärnten",
+   "volume_at": 70
+  },
+  {
+   "keyword": "installateur hermagor",
+   "volume_at": 40
+  },
+  {
+   "keyword": "elektriker hermagor",
+   "volume_at": 10
+  },
+  {
+   "keyword": "wärmepumpe kärnten",
+   "volume_at": 10
+  },
+  {
+   "keyword": "aae wasserkraft",
+   "volume_at": 10
+  },
+  {
+   "keyword": "pv hermagor",
+   "volume_at": 0
+  },
+  {
+   "keyword": "solaranlage hermagor",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik firmen hermagor",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe installateur hermagor",
+   "volume_at": 0
+  },
+  {
+   "keyword": "heizungstausch hermagor",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik kötschach-mauthen",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik kötschach",
+   "volume_at": 0
+  },
+  {
+   "keyword": "pv anlage gailtal",
+   "volume_at": 0
+  },
+  {
+   "keyword": "wärmepumpe gailtal",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik nassfeld",
+   "volume_at": 0
+  },
+  {
+   "keyword": "photovoltaik bezirk hermagor",
+   "volume_at": 0
+  },
+  {
+   "keyword": "energiegemeinschaft hermagor",
+   "volume_at": 0
+  },
+  {
+   "keyword": "installateur kötschach-mauthen",
+   "volume_at": 0
+  }
+ ],
+ "questions": [
+  "Welche Förderungen gibt es in Kärnten für Heizungen?",
+  "Was ist der Nachteil einer Luft-Wasser-Wärmepumpe?",
+  "Wer ist der größte Wärmepumpenhersteller in Österreich?",
+  "Wie hoch sind die Kosten für eine Wärmepumpe in Österreich?",
+  "Wie teuer ist eine Wärmepumpe komplett mit Einbau?",
+  "Für wen lohnt sich eine Wärmepumpe nicht?",
+  "Wie viel Strom erzeugt eine Photovoltaikanlage in Hermagor? (eigene Frage, lokal)",
+  "Wer ist in Hermagor und Kötschach-Mauthen der Netzbetreiber für die PV-Anlage? (eigene Frage, lokal)",
+  "Brauche ich in Hermagor eine Baubewilligung für Photovoltaik? (eigene Frage, lokal)",
+  "Fernwärme oder Wärmepumpe in Hermagor? (eigene Frage, lokal)"
+ ],
+ "serp": {
+  "features": {
+   "photovoltaik hermagor": [
+    "ai_overview"
+   ],
+   "wärmepumpe hermagor": [
+    "local_pack",
+    "people_also_ask"
+   ]
+  },
+  "top10": [
+   {
+    "pos": 1,
+    "domain": "herold.at",
+    "title": "Photovoltaik - Seite 2/19",
+    "type": "portal"
+   },
+   {
+    "pos": 2,
+    "domain": "herold.at",
+    "title": "Photovoltaik in Niederdorf, Völkermarkt, Kärnten",
+    "type": "portal"
+   },
+   {
+    "pos": 3,
+    "domain": "industriemagazin.at",
+    "title": "Kärnten: Liebenfels soll Photovoltaik-Hot-Spot werden",
+    "type": "news"
+   },
+   {
+    "pos": 4,
+    "domain": "et-könig.at",
+    "title": "Photovoltaik im Murtal & Steiermark | PV-Anlagen vom Profi",
+    "type": "anbieter (ortsfremd)"
+   },
+   {
+    "pos": 5,
+    "domain": "bauwohnwelt.at",
+    "title": "Elektriker in Hermagor",
+    "type": "portal"
+   },
+   {
+    "pos": 6,
+    "domain": "herold.at",
+    "title": "Photovoltaik in Sankt Martin, Villach (Land), Kärnten",
+    "type": "portal"
+   },
+   {
+    "pos": 7,
+    "domain": "firmen.wko.at",
+    "title": "Photovoltaik | Über 1000 Unternehmen gefunden",
+    "type": "portal"
+   },
+   {
+    "pos": 8,
+    "domain": "smolar.at",
+    "title": "Wartungsmodus",
+    "type": "anbieter (Seite offline)"
+   },
+   {
+    "pos": 9,
+    "domain": "photovoltaik.etisch.at",
+    "title": "Elektro Tisch",
+    "type": "anbieter"
+   }
+  ],
+  "top10_waermepumpe": [
+   {
+    "pos": 1,
+    "domain": "firmenabc.at",
+    "title": "Verkauf von Wärmepumpen im Bundesland Kärnten",
+    "type": "portal"
+   },
+   {
+    "pos": 2,
+    "domain": "herold.at",
+    "title": "Fernwärme in Schönboden, Hermagor, Kärnten",
+    "type": "portal"
+   },
+   {
+    "pos": 3,
+    "domain": "firmen.wko.at",
+    "title": "Wärmepumpen in Kärnten (Bundesland)",
+    "type": "portal"
+   },
+   {
+    "pos": 4,
+    "domain": "herold.at",
+    "title": "Finde Wärmepumpen in Bad Kleinkirchheim",
+    "type": "portal"
+   },
+   {
+    "pos": 5,
+    "domain": "firmenabc.at",
+    "title": "Energieerzeugung, -versorgung & erneuerbare Energien im Bezirk Hermagor",
+    "type": "portal"
+   },
+   {
+    "pos": 6,
+    "domain": "firmen.wko.at",
+    "title": "Wärmepumpen in Feldkirchen (Bezirk)",
+    "type": "portal"
+   },
+   {
+    "pos": 7,
+    "domain": "meinbezirk.at",
+    "title": "Bauen und Wohnen: Ausstieg aus fossilen Energieformen (Gailtal)",
+    "type": "news"
+   },
+   {
+    "pos": 8,
+    "domain": "firmenabc.at",
+    "title": "1.515 Firmen im Bezirk Hermagor",
+    "type": "portal"
+   },
+   {
+    "pos": 9,
+    "domain": "herold.at",
+    "title": "Energietechnik in Lenzhof, Hermagor, Kärnten",
+    "type": "portal"
+   },
+   {
+    "pos": 10,
+    "domain": "herold.at",
+    "title": "Finde Wärmepumpen in St. Georgen an der Leys",
+    "type": "portal"
+   }
+  ],
+  "local_pack_waermepumpe": [
+   {
+    "name": "GailTECH Installationen",
+    "rating": 5.0,
+    "votes": 5
+   },
+   {
+    "name": "Wiedenig Haustechnik GmbH",
+    "rating": 4.6,
+    "votes": 42
+   },
+   {
+    "name": "Installationen Seiwald",
+    "rating": 4.4,
+    "votes": 14
+   }
+  ]
+ },
+ "competitor_outline": [
+  "Nicht erhoben: Die SERP besteht fast nur aus Branchenverzeichnissen ohne Inhaltsseiten, on_page_content_parsing wurde aus Budgetgründen nicht aufgerufen."
+ ],
+ "gaps": [
+  "Keine einzige Inhaltsseite eines PV-Anbieters zu Hermagor in den Top 10: Verzeichnisse (Herold, WKO, FirmenABC, Bauwohnwelt) und ortsfremde Treffer. Eine Seite mit echten Ortsfakten hat freie Bahn.",
+  "Kein Local Pack für 'photovoltaik hermagor', aber eines für 'wärmepumpe hermagor' mit drei lokalen Installateuren (5 bis 42 Bewertungen): Bei der Wärmepumpe ist der lokale Wettbewerb real.",
+  "Niemand erklärt die zwei Netzbetreiber im Bezirk (Kärnten Netz und AAE Wasserkraft in Kötschach), den Ertrag je kWp am Standort oder die Frage Fernwärme oder Wärmepumpe."
+ ],
+ "cannibalization": [
+  "/photovoltaik-villach/ (Kärnten-Dachbegriffe dort und auf der Startseite belassen)",
+  "/photovoltaik-foerderung-kaernten/ (Förderbegriffe)",
+  "/energiegemeinschaft-kaernten/ (EEG-Begriffe)"
+ ],
+ "ai_search_volume": [],
+ "local_facts": [
+  {
+   "fakt": "6.930 Einwohner Gemeinde, 17.910 Bezirk (2026)",
+   "quelle": "https://www.statistik.at/blickgem/G0201/g20305.pdf"
+  },
+  {
+   "fakt": "20.482 ha Gemeindefläche, 62 % Wald, 22,7 % Dauersiedlungsraum",
+   "quelle": "https://www.statistik.at/blickgem/G0101/g20305.pdf"
+  },
+  {
+   "fakt": "526 land- und forstwirtschaftliche Betriebe (2020)",
+   "quelle": "https://www.statistik.at/blickgem/G0701/g20305.pdf"
+  },
+  {
+   "fakt": "Baubehörde: Stadtgemeinde, Abt. Baubehörde/Hochbau, Wulfeniaplatz 1; Formulare Bauanzeige, Ortsbildpflege",
+   "quelle": "https://hermagor.at/verwaltung/abteilungen/baubehoerde/"
+  },
+  {
+   "fakt": "Gebäudestruktur laut textlichem Bebauungsplan (Stadtkern, dörfliche Ortskerne mit Hofgebäuden, Nassfeld mit Zweitwohnsitzen)",
+   "quelle": "https://hermagor.at/fileadmin/Redakteure/Amtstafel/Hermagor_textlicher_Bbpl_gesamt_GR_06-2012.pdf"
+  },
+  {
+   "fakt": "Mitteilungspflicht § 7 Abs. 1 lit. a Z 20 K-BO 1996, Vollendungsmeldung binnen zwei Wochen",
+   "quelle": "https://villach.at/getmedia/fe3178f4-230a-4056-871d-d9412d2329ff/Mitteilung_P7_KBO1996.pdf.aspx"
+  },
+  {
+   "fakt": "KNG-Kärnten Netz GmbH, 100-%-Tochter der Kelag, Verteilernetz Kärnten; PV-Ablauf mit Netzberechnung, Einspeiseleistung mindestens in Höhe des Strombezugsrechts",
+   "quelle": "https://www.kaerntennetz.at/pv.htm"
+  },
+  {
+   "fakt": "AAE Wasserkraft GmbH: eigenes Verteilernetz Kötschach, ca. 700 Zählpunkte, 550 Anschlussanlagen, 10 Trafostationen, vorgelagert KNG (UW Würmlach)",
+   "quelle": "https://aae-wasserkraft.at/stromnetz/netze/"
+  },
+  {
+   "fakt": "PVGIS Hermagor (46.627 N, 13.367 O): Süd 30 Grad 1.185 kWh/kWp, Ost 25 Grad 976, West 25 Grad 943; Dezember 39, Juli 141 kWh/kWp; Kötschach-Mauthen Süd 1.250",
+   "quelle": "https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?lat=46.627&lon=13.367&peakpower=1&loss=14&angle=30&aspect=0"
+  },
+  {
+   "fakt": "Fernwärmenetz Hermagor der KELAG Wärme GmbH, rund 120 Kunden, Biomassekessel 4 MW (Stand 2016)",
+   "quelle": "https://www.fernwaerme.at/neuer-biomasse-heiswasserkessel-in-hermagor"
+  },
+  {
+   "fakt": "Kötschach-Mauthen: e5 seit 2009, 82,1 % im Audit 2020, Stromversorgung KNG und AAE, Wärmenetze Kötschach/Mauthen/Würmlach, PV 118 kWp je 1.000 EW (Kärnten 229), gemeindeeigene Förderung Solar/Heizung (2020)",
+   "quelle": "https://cdn.citiesapps.com/pages/8ec89955280b06333deb5e56/page-file-system/1741594570253_e5_Audit-Bericht_Ktschach-Mauthen2020.pdf"
+  },
+  {
+   "fakt": "KEM Karnische Energie aus dem Bezirk Hermagor, eine von 18 KEM in Kärnten",
+   "quelle": "https://hermagor.at/fileadmin/user_upload/direct-uploads/MTB_JUNI_2026_Web.pdf"
+  },
+  {
+   "fakt": "EEG Wulfenia: Stadtgemeinde und 6 Betriebe, 8 bestehende PV-Anlagen und Kleinwasserkraftwerk, Haushalte sollen aufgenommen werden",
+   "quelle": "https://hermagor.at/fileadmin/user_upload/direct-uploads/EEG-050923.pdf"
+  },
+  {
+   "fakt": "Region Hermagor mit 9 Gemeinden (inkl. Weißensee, Feistritz an der Gail), KEM Karnische Energie und KEM Tourismus",
+   "quelle": "https://kirchbach.gv.at/fileadmin/kirchbach/PDFs_allgemein/Regionalstrategie_Region_Hermagor_Land-Kaernten_Broschuere-Hermagor_.pdf"
+  }
+ ],
+ "weggelassen": [
+  "Solarpotenzialkataster KAGIS (ktn.gv.at und kagis.ktn.gv.at nicht erreichbar)",
+  "Seehöhe, Sonnenstunden, Schneelastzone (nur als Planungsthema ohne Zahl)",
+  "Gasnetz im Bezirk, adressgenaue Netzgebiete, mögliche weitere kleine Netzbetreiber",
+  "Höhe der Landesförderung Wärmepumpe Kärnten (laut _fakten_2026-10.md ungeklärt), Kelag-Wärmepumpen-Prämie",
+  "Aktuelle Höhe der Gemeindeförderung Kötschach-Mauthen (nur Bestand 2020 belegt)",
+  "Entfernungen, Fahrzeiten, eigene EBZ-Projekte im Bezirk"
+ ],
+ "recommendation": {
+  "title": "Photovoltaik Hermagor & Wärmepumpe im Gailtal | EBZ Energie",
+  "h1": "Photovoltaik in Hermagor: PV-Anlage, Speicher und Wärmepumpe für das Gailtal",
+  "description": "Photovoltaik und Wärmepumpe in Hermagor und im Gailtal: rund 1.185 kWh je kWp am Süddach, Netzanmeldung bei Kärnten Netz oder AAE Wasserkraft inklusive.",
+  "h2_outline": [
+   "Lohnt sich Photovoltaik in Hermagor und im Gailtal?",
+   "Hermagor und das Gailtal: Zahlen und Zuständigkeiten für Ihre Anlage",
+   "Genehmigung und Netzanschluss in Hermagor: Bauamt, Kärnten Netz und AAE Wasserkraft",
+   "Wärmepumpe in Hermagor: erst die Fernwärme prüfen, dann mit Sonnenstrom heizen",
+   "Förderung in Hermagor: Land, Bund und was die Gemeinden beitragen",
+   "Referenzen aus Kärnten: die nächstgelegenen Projekte",
+   "Vorlage: Finanzierung, Beratung, Bewertungen, Ablauf, FAQ, Quellen, Kontakt"
+  ],
+  "faq_add": [
+   "Wie viel Strom erzeugt eine Photovoltaikanlage in Hermagor?",
+   "Wer ist in Hermagor und in Kötschach-Mauthen der Netzbetreiber?",
+   "Fernwärme oder Wärmepumpe in Hermagor?",
+   "Reicht eine PV-Anlage in Hermagor für die Wärmepumpe im Winter?"
+  ],
+  "internal_links": [
+   "/waermepumpe/ -> Wärmepumpe",
+   "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+   "/notstrom/ -> Notstrom mit Photovoltaik und Speicher",
+   "/energiegemeinschaft-kaernten/ -> Energiegemeinschaft in Kärnten",
+   "/leistungen/energiegemeinschaft/ -> Energiegemeinschaft für Private",
+   "/photovoltaik-foerderung-kaernten/ -> PV-Förderung Kärnten im Detail"
+  ],
+  "notes": "Kein Ortsbegriff hat messbares Suchvolumen, der Wert der Seite liegt in Long-Tail, Local und KI-Zitierbarkeit. Die SERP für 'photovoltaik hermagor' ist schwach besetzt (Verzeichnisse, ortsfremde Treffer, kein Local Pack). Für 'wärmepumpe hermagor' gibt es ein Local Pack mit drei ortsansässigen Installateuren: Die Seite sagt deshalb offen, dass EBZ aus Villach kommt, und punktet mit Fakten (zwei Netzbetreiber, PVGIS-Ertrag, Fernwärme)."
+ },
+ "cost_usd": 0.17,
+ "cost_note": "Schätzung, die MCP-Antworten enthalten kein cost-Feld: 2x Google-Ads-Suchvolumen (je ca. 0,075 $), 2x SERP live advanced mit PAA (je ca. 0,003 $), 1x Labs Keyword Overview mit 20 Keywords (ca. 0,012 $). Zwei weitere Volumenaufrufe scheiterten am Rate-Limit und wurden nicht verrechnet."
+}

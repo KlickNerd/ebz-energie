@@ -286,8 +286,8 @@ def build():
             paragraphs=[
                 ("Ein Reihencarport über dem Firmenparkplatz liefert ab 12 kWp Strom, wenn der Betrieb ihn braucht, und "
                  "lädt Fuhrpark und Kundenfahrzeuge mit eigenem Sonnenstrom; das Energiemanagement verhindert Lastspitzen. "
-                 "In der Steiermark fördert der Ökofonds Parkplatzüberdachungen ab 20 kWp mit bis zu 30 Prozent, maximal "
-                 "250.000 € je Antrag, kombinierbar mit dem EAG-Zuschuss."),
+                 "Gefördert wird über den EAG-Zuschuss des Bundes; der steirische Ökofonds hat derzeit keine "
+                 "PV-Ausschreibung offen."),
             ],
             img=IMG["gen_gewerbe"],
             alt="Gewerbebetrieb mit Photovoltaikanlage, Symbolbild für Firmenparkplatz mit Solarcarport",

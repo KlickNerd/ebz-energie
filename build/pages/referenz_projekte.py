@@ -410,6 +410,7 @@ PROJEKTE = [
              "in etwa 4 Jahren ins Plus. Typisch sind bei EBZ-Anlagen 4 bis 6 Jahre."),
         ],
         "related": [
+            ("pv_graz", "Photovoltaik und Wärmepumpe in Graz"),
             ("photovoltaik", "Photovoltaik für Eigenheim und Gewerbe"),
             ("/foerderung-photovoltaik-steiermark/", "PV-Förderung Steiermark 2026"),
             ("/notstrom/", "Notstrom mit Photovoltaik: Ersatzstrom erklärt"),
@@ -780,6 +781,7 @@ PROJEKTE = [
              "für Haus, Pool und Auto."),
         ],
         "related": [
+            ("pv_graz", "Photovoltaik und Wärmepumpe in Graz"),
             ("photovoltaik", "Photovoltaik für Eigenheim und Gewerbe"),
             ("/foerderung-photovoltaik-steiermark/", "PV-Förderung Steiermark 2026"),
             ("/notstrom/", "Notstrom mit Photovoltaik: Ersatzstrom erklärt"),
@@ -938,6 +940,7 @@ PROJEKTE = [
              "Stroms. Zusätzlich dient er als Reserve für die Notstromversorgung der wichtigsten Verbraucher bei Netzausfall."),
         ],
         "related": [
+            ("pv_klagenfurt", "Photovoltaik in Klagenfurt und am Wörthersee"),
             ("photovoltaik", "Photovoltaik für Eigenheim und Gewerbe"),
             ("/notstrom/", "Notstrom mit Photovoltaik: Ersatzstrom erklärt"),
             ("/photovoltaik-foerderung-kaernten/", "PV-Förderung Kärnten 2026"),

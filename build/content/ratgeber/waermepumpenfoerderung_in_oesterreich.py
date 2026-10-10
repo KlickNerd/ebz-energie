@@ -37,7 +37,7 @@ ARTICLE = {
         "Ausblick 2027: <b>offen</b>",
     ],
     "date_published": "2026-03-05",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch zur Wärmepumpenförderung mit Unterlagen und Taschenrechner",
 
@@ -45,8 +45,9 @@ ARTICLE = {
         "Stand Oktober 2026: Die Sanierungsoffensive 2026 (Kesseltausch bis 7.500 €, Erdwärme 12.500 €) und "
         "„Sauber Heizen für Alle 2026“ sind beendet, die Mittel ausgeschöpft. Neue Registrierungen sind nicht "
         "möglich (umweltfoerderung.at). Wer registriert ist, setzt innerhalb der Fristen um.",
-        "Alle neun Bundesländer legen eigene Zuschüsse dazu, zum Beispiel Wien 35 % bis 8.000 €, Salzburg "
-        "rund 5.000 €, Oberösterreich 100 € je kW bis 1.700 €. Bund und Land sind in der Regel kombinierbar.",
+        "Die meisten Bundesländer haben eigene Zuschüsse, zum Beispiel Wien 35 % bis 8.000 €, Salzburg "
+        "rund 5.000 €, Kärnten 3.000 € Pauschale, Oberösterreich 100 € je kW bis 1.700 €. Die Steiermark nimmt "
+        "für neue Wärmepumpen derzeit keine Förderanträge an. Bund und Land waren in der Regel kombinierbar.",
         "„Sauber Heizen für Alle“ übernahm 2026 für Haushalte im unteren Einkommensdrittel bis zu 100 % der "
         "Kosten (Obergrenze 25.586 € Luft-Wasser, 37.550 € Sole-Wasser); Registrierte können noch beantragen.",
         "Die Öko-Sonderausgabenpauschale bringt zusätzlich fünf Jahre lang 400 € Sonderausgaben, wenn nach "
@@ -66,9 +67,11 @@ ARTICLE = {
         ("Stand Oktober 2026: Bund ausgeschöpft, was noch läuft", "status", f"""
 <p><b>Die Bundesförderung 2026 für den Heizungstausch (Kesseltausch bis 7.500 Euro, Sauber Heizen für
 Alle bis 100 Prozent) ist seit Herbst 2026 ausgeschöpft, neue Registrierungen sind nicht möglich</b>
-(Quelle: umweltfoerderung.at, Stand 9. Oktober 2026). Weiter laufen die Landesförderungen: Kärnten laut
-Richtlinie 35 Prozent bis 6.000 Euro (laut Berichten 2026: 3.000 Euro), Steiermark 35 Prozent der
-förderbaren Kosten; ob ein Land ohne Bundesförderung zahlt, klärt die Landesstelle. Ob 2027 ein neues
+(Quelle: umweltfoerderung.at, Stand 9. Oktober 2026). Weiter laufen Landesförderungen: Kärnten zahlt
+2026 eine Pauschale von 3.000 Euro (plus 1.500 Euro bei Errichtung einer Solaranlage, plus 200 Euro für den
+hydraulischen Abgleich); ob das Budget reicht, klären wir vor dem Angebot. Die Steiermark nimmt für neue
+Wärmepumpen derzeit keine Förderanträge an (wohnbau.steiermark.at, Stand 10. Oktober 2026). Ob ein Land
+ohne Bundesförderung zahlt, klärt die Landesstelle. Ob 2027 ein neues
 Bundesprogramm kommt, ist offen.</p>
 {A.box_dark("Was das für Ihr Projekt heißt",
     "Bereits registrierte Haushalte setzen innerhalb ihrer Frist um (Sanierungsoffensive: 9 Monate ab "
@@ -142,15 +145,19 @@ Hauptwohnsitz am Standort des Heizungstausches.</p>
 </ul>
 """),
         ("Landesförderungen: So stocken die Bundesländer auf", "laender", f"""
-<p>Alle neun Bundesländer bieten eigene Programme für den Wärmepumpen-Einbau, die in der Regel mit der
-Bundesförderung kombiniert werden können. Die Beträge unterscheiden sich deutlich:</p>
+<p>Die meisten Bundesländer bieten eigene Programme für den Wärmepumpen-Einbau, die in der Regel mit der
+Bundesförderung kombiniert werden konnten. Die Beträge unterscheiden sich deutlich, die Steiermark nimmt
+für neue Wärmepumpen derzeit keine Förderanträge an:</p>
 {A.table(
     ["Bundesland", "Landesförderung", "Besonderheit"],
     [
         ["Wien", "35 % der förderbaren Kosten, max. 8.000 €", "auch für Mieterinnen und Mieter"],
         ["Salzburg", "rund 5.000 €", "Bestand und Neubau"],
         ["Oberösterreich", "100 € je kW Nennwärmeleistung, max. 1.700 €", "begrenzt auf 50 % der Kosten"],
-        ["Kärnten, Steiermark, NÖ, Tirol, Vorarlberg, Burgenland", "eigene Programme, unterschiedliche Beträge",
+        ["Kärnten", "3.000 € Pauschale (2026)", "plus 1.500 € bei Errichtung einer Solaranlage, plus 200 € hydraulischer Abgleich"],
+        ["Steiermark", "derzeit keine Anträge für neue Wärmepumpen",
+         "nur Tausch mind. 15 Jahre alter Biomassekessel oder Wärmepumpen: höchstens 30 %, höchstens 1.500 €"],
+        ["NÖ, Tirol, Vorarlberg, Burgenland", "eigene Programme, unterschiedliche Beträge",
          f"Details im {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungs-Ratgeber')}"],
     ],
     hl_cols=(1,),
@@ -270,13 +277,15 @@ der Ratgeber {a('/kosten-einer-waermepumpe/', 'Kosten einer Wärmepumpe')}.</p>
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant und installiert "
                     "Wärmepumpen und Photovoltaik in Kärnten und der Steiermark und übernimmt die komplette "
-                    "Förderabwicklung. Beträge: Stand April 2026; Programmstatus: Stand 9. Oktober 2026 laut "
+                    "Förderabwicklung. Beträge: Stand April 2026 (Kärnten und Steiermark: Stand 10. Oktober 2026); Programmstatus: Stand 9. Oktober 2026 laut "
                     "umweltfoerderung.at. Keine Rechts- "
                     "oder Steuerberatung, maßgeblich sind die offiziellen Förderbedingungen."),
     "sources": [
         ("Sanierungsoffensive 2026 (Bundesportal)", "https://www.sanierungsoffensive.gv.at/"),
         ("Sauber Heizen für Alle (Bundesportal)", "https://www.sauber-heizen.at/"),
         ("Verband Wärmepumpe Austria: Förderübersicht", "https://www.waermepumpe-austria.at/foerderungen"),
+        ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
+         "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
     ],
     "related": [
         ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: beendet, das gilt jetzt"),

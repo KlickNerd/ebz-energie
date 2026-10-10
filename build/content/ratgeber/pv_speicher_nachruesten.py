@@ -32,7 +32,7 @@ ARTICLE = {
         "Lebensdauer: <b>15 bis 20 Jahre</b>",
     ],
     "date_published": "2025-06-15",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "speicher",
     "hero_alt": "Batteriespeicher für die Nachrüstung an einer bestehenden Photovoltaikanlage",
 
@@ -233,7 +233,7 @@ Nutzung der Landesförderung, wo es sie gibt.</p>
             ("Herstellerunabhängig", "AC-Nachrüstung für praktisch jede Bestandsanlage, DC-Tausch wo sinnvoll."),
             ("Auslegung nach Lastprofil", "Speichergröße nach Ihrem Verbrauch, nicht nach Katalog."),
             ("Notstrom mitgedacht", "Auf Wunsch mit Umschalteinrichtung und Ersatzstrom für das ganze Haus."),
-            ("Förderung inklusive", "Landesförderung Kärnten und Steiermark: Fristen, Unterlagen, Abrechnung."),
+            ("Förderung inklusive", "Kärntner Landesförderung: Fristen, Unterlagen, Abrechnung."),
         ],
     },
 

@@ -1,0 +1,595 @@
+{
+  "slug": "standort_graz",
+  "path": "/photovoltaik-graz/",
+  "seitentyp": "standort",
+  "stand": "2026-10-10",
+  "primary": {
+    "keyword": "photovoltaik graz",
+    "volume_at": 480,
+    "volume_belastbar_at": 70,
+    "kd": null,
+    "cpc": 4.61,
+    "intent": "transactional (Keyword Overview), commercial als Nebenintent",
+    "hinweis": "Die 480 sind NICHT die Photovoltaik-Nachfrage: Google Ads fasst 'photovoltaik graz' und 'pv graz' zusammen (identische Monatsreihe, core_keyword 'photovoltaik graz' beim Eintrag 'pv graz'), und 'PV Graz' meint meist die Pensionsversicherung: In der SERP 'pv graz' (Austria, 10.10.2026) sind 8 von 10 organischen Treffern pv.at, zar-graz.at oder PVA-Seiten, dazu das Knowledge Panel der Landesstelle Steiermark der Pensionsversicherung. Belastbar fuer die Planung ist die eindeutige Variante 'pv anlage graz' mit 70 Suchen im Monat (CPC 8,37, Wettbewerb HIGH 78). Die Seite zielt trotzdem auf 'photovoltaik graz' als Kopfbegriff (Slug, Title, H1), weil die SERP dafuer rein kommerziell ist (Local Pack mit drei PV-Firmen, Installateure, Verzeichnisse)."
+  },
+  "secondary": [
+    {
+      "keyword": "pv anlage graz",
+      "volume_at": 70,
+      "kd": null,
+      "cpc": 8.37,
+      "intent": "commercial, Nebenintent transactional"
+    },
+    {
+      "keyword": "wärmepumpe graz",
+      "volume_at": 70,
+      "kd": null,
+      "cpc": 8.41,
+      "intent": "transactional (identische Reihe wie 'wärmepumpen graz')"
+    },
+    {
+      "keyword": "photovoltaik graz umgebung",
+      "volume_at": 40,
+      "kd": null,
+      "cpc": 7.75,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "photovoltaik anbieter graz",
+      "volume_at": 20,
+      "kd": null,
+      "cpc": 3.87,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "photovoltaikanlage graz",
+      "volume_at": 20,
+      "kd": 9,
+      "cpc": 8.64,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "solaranlage graz",
+      "volume_at": 20,
+      "kd": 13,
+      "cpc": 4.14,
+      "intent": "transactional"
+    }
+  ],
+  "semantic": [
+    "Graz-Umgebung",
+    "Stromnetz Graz (Verteilernetz Stadt Graz)",
+    "Energienetze Steiermark (Landesnetz, Einspeiserportal)",
+    "Netzanschlusskonzept",
+    "Einspeisezählpunkt",
+    "Installationsdokument",
+    "Netzzugangsvertrag",
+    "Steiermärkisches Baugesetz § 21 (Meldepflicht)",
+    "Bau- und Anlagenbehörde Graz, Referat für technische Anlagen",
+    "Grazer Altstadterhaltungsgesetz 2008 (GAEG), Schutzzonen",
+    "Altstadt-Sachverständigenkommission (ASVK)",
+    "Solarpotenzial (Online-Service Stadt Graz, Solardachkataster)",
+    "Digitaler Atlas Steiermark, SolarTool",
+    "Flachdach, ballastiert, ohne Dachdurchdringung",
+    "Sarnafil-Folie",
+    "Glas-Glas-Module, bifazial",
+    "Batteriespeicher bis 20 kWh (meldepflichtig)",
+    "Wallbox 11 kW",
+    "Notstrom",
+    "Mehrparteienhaus, Gemeinschaftsanlage",
+    "Luftwärmepumpe, Planungsbasispegel an der Grundgrenze",
+    "Schallleistungspegel dB(A)",
+    "Kältemittel R290",
+    "Fernwärme Graz",
+    "EAG-Investitionszuschuss 150 €/kWp",
+    "keine PV-Landespauschale Steiermark",
+    "Landesförderung Heizungstausch 35 %",
+    "Statikbericht",
+    "kWp, kWh pro Jahr, Amortisation",
+    "Seiersberg-Pirka, Gratwein-Straßengel, Gratkorn, Hart bei Graz, Kalsdorf, Lieboch, Frohnleiten"
+  ],
+  "long_tail": [
+    {
+      "keyword": "pv anlage flachdach",
+      "volume_at": 140
+    },
+    {
+      "keyword": "pv förderung steiermark",
+      "volume_at": 90
+    },
+    {
+      "keyword": "photovoltaik steiermark",
+      "volume_at": 70
+    },
+    {
+      "keyword": "wärmepumpe förderung steiermark",
+      "volume_at": 70
+    },
+    {
+      "keyword": "pv montage flachdach ohne bohren",
+      "volume_at": 70
+    },
+    {
+      "keyword": "pv anlage steiermark",
+      "volume_at": 40
+    },
+    {
+      "keyword": "photovoltaik gleisdorf",
+      "volume_at": 40
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik leibnitz",
+      "volume_at": 30
+    },
+    {
+      "keyword": "photovoltaik förderung graz",
+      "volume_at": 20
+    },
+    {
+      "keyword": "heizungstausch förderung steiermark",
+      "volume_at": 20
+    },
+    {
+      "keyword": "pv förderung graz",
+      "volume_at": 10
+    },
+    {
+      "keyword": "solardachkataster graz",
+      "volume_at": 10
+    },
+    {
+      "keyword": "luftwärmepumpe graz",
+      "volume_at": 10
+    },
+    {
+      "keyword": "wärmepumpe graz umgebung",
+      "volume_at": 10
+    },
+    {
+      "keyword": "energie graz photovoltaik",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik weiz",
+      "volume_at": 10
+    },
+    {
+      "keyword": "photovoltaik firmen graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv firma graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik installateur graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "photovoltaik graz kosten",
+      "volume_at": 0
+    },
+    {
+      "keyword": "pv anlage graz genehmigung",
+      "volume_at": 0
+    },
+    {
+      "keyword": "stromspeicher graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe installateur graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "heizungstausch graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe kosten graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe förderung graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "luftwärmepumpe genehmigung graz",
+      "volume_at": 0
+    },
+    {
+      "keyword": "wärmepumpe genehmigung steiermark",
+      "volume_at": 0
+    }
+  ],
+  "questions": [
+    "Ist eine PV-Anlage bewilligungspflichtig in der Steiermark?",
+    "Brauche ich in der Steiermark eine Genehmigung für eine Wärmepumpe?",
+    "Was kostet eine 10 kW PV-Anlage mit Speicher und Montage?",
+    "Gibt es 2026 eine Förderung für Photovoltaikanlagen in der Steiermark?",
+    "Wie hoch ist die Förderung für Photovoltaik in der Steiermark?",
+    "Welche Fördermöglichkeiten gibt es für PV-Anlagen in Graz?",
+    "Welche Förderungen gibt es für den Heizungstausch in der Steiermark?",
+    "Was kostet aktuell eine Wärmepumpe inklusive Einbau?",
+    "Wie viel kWp brauche ich für ein Einfamilienhaus?",
+    "Ist eine Photovoltaikanlage ohne Speicher sinnvoll?",
+    "Wie viel Photovoltaik brauche ich, um 10.000 kWh Strom zu erzeugen?",
+    "Wie wird die PV-Anlage an das Stromnetz angeschlossen?",
+    "Wo finde ich den Einspeisezählpunkt?",
+    "Was ändert sich 2026 mit Photovoltaik?",
+    "Guter Anbieter PV-Anlagen Graz und Umgebung? (Reddit r/graz, Platz 9 für 'photovoltaik graz')"
+  ],
+  "serp": {
+    "features": [
+      "local_pack",
+      "people_also_ask",
+      "images",
+      "related_searches",
+      "paid (nur Wärmepumpe)",
+      "people_also_search (nur Wärmepumpe)"
+    ],
+    "local_pack": {
+      "photovoltaik graz (Graz)": [
+        "PowerPeak Photovoltaik (5 Sterne, 14 Bew.)",
+        "Solar-Ernte Photovoltaik GmbH (4.7, 37 Bew.)",
+        "enerix Graz (4.7, 35 Bew.)"
+      ],
+      "pv anlage graz (Austria)": [
+        "Solar-Ernte Photovoltaik GmbH (4.7, 37 Bew.)",
+        "SOLANA Renewable Technologies GmbH (5 Sterne, 102 Bew.)",
+        "ETEC-Holzbauer GmbH (5 Sterne, 41 Bew.)"
+      ],
+      "wärmepumpe graz (Graz)": [
+        "Schmelzer GmbH (4.9, 168 Bew.)",
+        "WHK-Haustechnik e.U. (5 Sterne, 14 Bew.)",
+        "Haustechnik WOLF e.U. (4.8, 145 Bew.)"
+      ]
+    },
+    "top10": [
+      {
+        "pos": 1,
+        "domain": "elektrotechnikselman.at",
+        "title": "Photovoltaikanlagen in Graz von den Experten",
+        "type": "anbieter"
+      },
+      {
+        "pos": 2,
+        "domain": "prosolis.at",
+        "title": "Photovoltaik Projekt in Graz-Mariatrost mit 7 kWp",
+        "type": "anbieter (Referenz)"
+      },
+      {
+        "pos": 3,
+        "domain": "prosolis.at",
+        "title": "Graz Photovoltaik Förderung Gemeinschaftsanlagen",
+        "type": "ratgeber"
+      },
+      {
+        "pos": 4,
+        "domain": "dezentralo.com",
+        "title": "32 PV Anbieter in Graz und Umgebung",
+        "type": "portal"
+      },
+      {
+        "pos": 5,
+        "domain": "prosolis.at",
+        "title": "Rote Photovoltaik-Module, Sonderlösung in Grazer Altstadt",
+        "type": "anbieter (Referenz)"
+      },
+      {
+        "pos": 6,
+        "domain": "fda-solar.at",
+        "title": "Photovoltaik | Fda Solar | Graz",
+        "type": "anbieter"
+      },
+      {
+        "pos": 7,
+        "domain": "solana-energy.at",
+        "title": "PV-Anlagen Förderung 2026",
+        "type": "anbieter (Ratgeber)"
+      },
+      {
+        "pos": 8,
+        "domain": "sonnenschmiede.at",
+        "title": "Photovoltaik Mehrparteienhaus: Strom verkaufen",
+        "type": "anbieter"
+      },
+      {
+        "pos": 9,
+        "domain": "reddit.com",
+        "title": "Guter Anbieter PV Anlagen Graz und Umgebung?",
+        "type": "forum"
+      },
+      {
+        "pos": 10,
+        "domain": "firmen.wko.at",
+        "title": "Photovoltaikanlagen in Graz-Stadt (Bezirk)",
+        "type": "verzeichnis"
+      }
+    ],
+    "top10_pv_anlage_graz": [
+      {
+        "pos": 1,
+        "domain": "enerix.at",
+        "title": "enerix Graz: Photovoltaik & Stromspeicher",
+        "type": "anbieter (Standortseite)"
+      },
+      {
+        "pos": 2,
+        "domain": "solana-energy.at",
+        "title": "Photovoltaik Graz | SOLANA Renewable Technologies",
+        "type": "anbieter"
+      },
+      {
+        "pos": 3,
+        "domain": "prosolis.at",
+        "title": "Komplettanbieter für Photovoltaik aus Graz-Umgebung",
+        "type": "anbieter"
+      },
+      {
+        "pos": 4,
+        "domain": "graz.at",
+        "title": "Umweltförderung thermische Solaranlagen",
+        "type": "behoerde"
+      },
+      {
+        "pos": 5,
+        "domain": "elektro-photovoltaik-graz.at",
+        "title": "Elektro Photovoltaik Graz",
+        "type": "anbieter"
+      },
+      {
+        "pos": 6,
+        "domain": "ewg.at",
+        "title": "Photovoltaikanlagen in Graz & Graz-Umgebung",
+        "type": "anbieter (E-Werk)"
+      },
+      {
+        "pos": 7,
+        "domain": "energie-graz.at",
+        "title": "Solar Anleger",
+        "type": "energieversorger"
+      },
+      {
+        "pos": 8,
+        "domain": "firmen.wko.at",
+        "title": "Photovoltaik in Graz-Stadt (Bezirk)",
+        "type": "verzeichnis"
+      },
+      {
+        "pos": 9,
+        "domain": "e-steiermark.com",
+        "title": "Photovoltaik",
+        "type": "energieversorger"
+      },
+      {
+        "pos": 10,
+        "domain": "transparenzportal.gv.at",
+        "title": "Umweltförderung Photovoltaik-Anlagen (SolarEnergieDach), abgelaufen 2022",
+        "type": "behoerde"
+      }
+    ],
+    "top10_waermepumpe_graz": [
+      {
+        "pos": 1,
+        "domain": "energie-graz.at",
+        "title": "Wärmepumpe PLUS",
+        "type": "energieversorger"
+      },
+      {
+        "pos": 2,
+        "domain": "schmelzerklima.at",
+        "title": "Wärmepumpe Graz vom Meisterbetrieb",
+        "type": "anbieter"
+      },
+      {
+        "pos": 3,
+        "domain": "graz.at",
+        "title": "Technische Anlagen (Bau- und Anlagenbehörde)",
+        "type": "behoerde"
+      },
+      {
+        "pos": 4,
+        "domain": "waermepumpe-austria.at",
+        "title": "Profis in Steiermark",
+        "type": "verband"
+      },
+      {
+        "pos": 5,
+        "domain": "umwelt.graz.at",
+        "title": "Wärmepumpen, Umweltserver der Stadt Graz",
+        "type": "behoerde"
+      },
+      {
+        "pos": 6,
+        "domain": "heizma.at",
+        "title": "Heizma: Wärmepumpe und Photovoltaik in Österreich",
+        "type": "anbieter"
+      },
+      {
+        "pos": 7,
+        "domain": "neubauer-hls.at",
+        "title": "Wärmepumpe installieren in Graz & Weiz",
+        "type": "anbieter"
+      },
+      {
+        "pos": 8,
+        "domain": "servicequadrat.at",
+        "title": "Wärmepumpen Service Steiermark",
+        "type": "anbieter (Service)"
+      },
+      {
+        "pos": 9,
+        "domain": "daibau.at",
+        "title": "Wärmepumpen, Graz: Top 16 Installateure",
+        "type": "portal"
+      },
+      {
+        "pos": 10,
+        "domain": "tugraz.at",
+        "title": "Innovative Wärmepumpensysteme",
+        "type": "news"
+      }
+    ],
+    "related_searches": [
+      "PV-Anlage Graz Genehmigung",
+      "Photovoltaik anbieter Graz",
+      "Photovoltaik Graz-Umgebung",
+      "PV-Anlage Förderung Steiermark 2026",
+      "Luftwärmepumpe Genehmigung Graz",
+      "Referat für technische Anlagen Graz",
+      "Photovoltaik Mehrfamilienhaus Eigentümergemeinschaft"
+    ]
+  },
+  "competitor_outline": [
+    "H1 Photovoltaik/Wärmepumpe in Graz (enerix, E-Werk Franz, Schmelzer: Ort im H1, Graz-Umgebung im ersten Absatz)",
+    "H2 Leistungen: Photovoltaikanlage, Stromspeicher, Energiemanagement, Wallbox, Energiegemeinschaft (enerix)",
+    "H2 Ablauf in Schritten: Beratung, Planung, Montage (enerix, Schmelzer, SOLANA)",
+    "H2 Wo wir in Graz und Umgebung tätig sind: Ortsliste (enerix: Voitsberg, Deutschlandsberg, Leibnitz)",
+    "H2 Projekte in Graz und Umgebung mit kWp und kWh Speicher (enerix, SOLANA, ProSolis)",
+    "H2 Warum dieser Anbieter: Elektromeisterbetrieb, Finanzierung, Service aus Graz",
+    "H2 Kundenstimmen aus Graz und Umgebung",
+    "H2 FAQ: Kosten (SOLANA: ab rund 17.000 € inkl. Speicher), Anlagengröße (8 bis 10 kWp), Förderung, Wartung",
+    "H2 Förderung: EAG-Zuschuss, bei Schmelzer ein eigener Fördermonitor Steiermark",
+    "H2 Mehrparteienhaus und Gemeinschaftsanlage (SOLANA, Sonnenschmiede, ProSolis)"
+  ],
+  "gaps": [
+    "Neue Seite, es gibt noch kein out/photovoltaik-graz/index.html. Die folgenden Punkte sind Chancen, die die Top-5 NICHT oder nur duenn abdecken.",
+    "Genehmigung: Kein Installateur in den Top 10 erklaert die Meldepflicht nach § 21 Stmk. BauG; PAA ('Ist eine PV-Anlage bewilligungspflichtig in der Steiermark?', 'Brauche ich in der Steiermark eine Genehmigung für eine Wärmepumpe?') und Related Searches ('PV-Anlage Graz Genehmigung', 'Luftwärmepumpe Genehmigung Graz') fragen danach, graz.at rankt damit Platz 3 fuer 'wärmepumpe graz'.",
+    "Netzanschluss: Stromnetz Graz (Stadt) gegen Energienetze Steiermark (Umland) erklaert keiner; SOLANA nennt nur 'Beantragung des Netzzugangs'.",
+    "Altstadt-Schutzzonen (GAEG 2008, ASVK): nur ProSolis hat dazu Referenzen (rote Module); eine klare Ablaufbeschreibung fehlt in der SERP.",
+    "Flachdach ohne Bohrung: beide EBZ-Referenzen in Graz sind ballastierte Flachdaecher (pv anlage flachdach 140, pv montage flachdach ohne bohren 70 Suchen): als eigenes Thema ausspielen.",
+    "Waermepumpe und PV aus einer Hand: Die Waermepumpen-SERP besteht aus Heizungs- und Klimabetrieben ohne PV, die PV-SERP aus Elektrobetrieben ohne Heizung. Schallnachweis (Planungsbasispegel an der Grundgrenze) nennt kein Anbieter.",
+    "Stadtfoerderung ehrlich einordnen: ProSolis und transparenzportal ranken mit Grazer PV-Foerderungen; die alte Einzelanlagen-Foerderung lief 2022 aus, die Gemeinschaftsanlagen-Foerderung ist laut Stadtportal derzeit ausgesetzt.",
+    "Local Pack: ohne Grazer Adresse nicht erreichbar. Die Seite kann nur organisch und in KI-Antworten punkten; das offen sagen (Firmensitz Villach) statt einen Standort vorzutaeuschen."
+  ],
+  "cannibalization": [
+    "/photovoltaik-steiermark/ (entsteht parallel, Key pv_steiermark): 'photovoltaik steiermark' 70, 'pv anlage steiermark' 40, 'wärmepumpe steiermark' 30 gehoeren dorthin; hier nur verlinken",
+    "/foerderung-photovoltaik-steiermark/: 'pv förderung steiermark' 90 und alle Foerderdetails (Sanierungsbonus, Ökofonds, Termine) bleiben dort",
+    "/landesfoerderungen-fuer-die-waermepumpe/ und /waermepumpenfoerderung-in-oesterreich/: 'wärmepumpe förderung steiermark' 70",
+    "/waermepumpe/ (Eyebrow nennt Graz): generische Waermepumpen-Begriffe bleiben dort, hier nur Graz-Bezug (Meldepflicht, Schall, Fernwaerme)",
+    "/referenzen/projekt-stadthaus-in-graz/ und /referenzen/projekt-flachdach-in-graz/: ranken fuer Projekt-Longtails, von hier aus verlinken statt nacherzaehlen",
+    "/energiegemeinschaft-steiermark/: Mehrparteienhaus und Strom teilen",
+    "Ortsseiten Leibnitz, Weiz, Voitsberg, Deutschlandsberg (gemeinsame Vorlage): Umland nur nennen, nicht ausbauen"
+  ],
+  "ai_search_volume": [
+    {
+      "keyword": "photovoltaik steiermark",
+      "ai_volume": 10
+    },
+    {
+      "keyword": "wärmepumpe steiermark",
+      "ai_volume": 5
+    },
+    {
+      "keyword": "photovoltaik graz",
+      "ai_volume": 1
+    },
+    {
+      "keyword": "pv anlage graz",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "wärmepumpe graz",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "solaranlage graz",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik graz umgebung",
+      "ai_volume": 0
+    },
+    {
+      "keyword": "photovoltaik förderung graz",
+      "ai_volume": 0
+    }
+  ],
+  "lokale_fakten": [
+    {
+      "fakt": "PV auf Dach oder Fassade ist in der Steiermark meldepflichtig (§ 21 Abs. 1 Z 2 lit o Stmk. BauG), Anlagenhöhe höchstens 3,50 m; Freifläche bis 100 kWp meldepflichtig, darüber vereinfachtes Verfahren, über 500 kWp Bewilligung. Meldung VOR der Ausführung schriftlich an die Gemeinde.",
+      "quelle": "https://www.graz.at/cms/dokumente/10221057_7708483/6af581a2/072026_INFO_RTA_PV_Gesamt.pdf (Merkblatt Stadt Graz, Juli 2026)"
+    },
+    {
+      "fakt": "Batterieanlagen bis 20 kWh meldepflichtig (§ 21 Abs. 2 Z 2a), bis 100 kWh mit Nachweis zum 'thermal runaway'; über 3 kWh unvernetzte Rauchwarnmelder (OIB RL 2).",
+      "quelle": "wie oben"
+    },
+    {
+      "fakt": "Luftwärmepumpen sind meldepflichtig (§ 21 Abs. 2 Z 2b Stmk. BauG); die Meldung braucht Datenblatt, Schallleistungspegel, Kältemittel und die Bestätigung eines befugten Sachverständigen, dass der Planungsbasispegel der Widmung an der relevanten Grundgrenze eingehalten wird. Innen aufgestellte Wärmepumpen bis 80 dB(A) meldepflichtig; Erdwärme und Grundwasser brauchen eine wasserrechtliche Abklärung.",
+      "quelle": "https://www.graz.at/cms/dokumente/10221057_7708483/fff55a8a/202609_INFO_RTA_W%C3%A4rmepumpen_innenaufgestellte%20Anlagen_Pooltechnik.pdf (Merkblatt Stadt Graz, September 2026); https://www.umwelt.graz.at/cms/beitrag/10438630/13992156/Waermepumpen.html"
+    },
+    {
+      "fakt": "Zuständig in Graz: Bau- und Anlagenbehörde, Referat für technische Anlagen, Europaplatz 20. In Schutzzonen nach dem Grazer Altstadterhaltungsgesetz 2008 ist auch bei meldepflichtigen Anlagen ein separates Ansuchen nötig, die Behörde holt ein Gutachten der Altstadtkommission (ASVK) ein; zusätzliche Unterlagen: Plan mit Draufsicht und Schnitt durch die Dachhaut, Datenblatt oder Bild der Module mit Farbe und Rahmen. Voranfrage bei der ASVK empfohlen, nicht bindend.",
+      "quelle": "https://www.graz.at/cms/beitrag/10221057/7708483/Technische_Anlagen.html und beide Merkblätter"
+    },
+    {
+      "fakt": "Netzbetreiber Stadt Graz: Stromnetz Graz (Tochter der Energie Graz); Unternehmensgegenstand laut Firmenbuch: Elektrizitäts-Verteilernetz insbesondere im Bereich der Landeshauptstadt Graz.",
+      "quelle": "https://www.evi.gv.at/f/275312x ; https://www.stromnetz-graz.at/ (Seitentitel 'Ihr Netzbetreiber in der Stadt Graz'; Direktabruf lief in ein Timeout)"
+    },
+    {
+      "fakt": "Umland: Energienetze Steiermark GmbH. Ablauf: Einspeisezählpunkt im Einspeiserportal beantragen, Netzbeurteilung und Netzanschlusskonzept (12 Monate gültig), Errichtung, Installationsdokument durch konzessioniertes Elektrounternehmen, Inbetriebnahme erst nach Anmeldung beim Energieabnehmer und Freigabe; danach Netzzugangsvertrag.",
+      "quelle": "https://www.e-netze.at/Strom/Erzeugungsanlagen/Default.aspx"
+    },
+    {
+      "fakt": "Solarpotenzial: Online-Service der Stadt Graz (Stadtvermessungsamt, Umweltamt, Land Steiermark); landesweit im Digitalen Atlas Steiermark samt SolarTool (Bericht per E-Mail).",
+      "quelle": "https://www.graz.at/cms/beitrag/10295929/8115447/Online_Karte_Solardachkataster.html ; https://landesentwicklung.steiermark.at/cms/beitrag/12910759/145230171"
+    },
+    {
+      "fakt": "Stadtförderung: Die Stadt Graz führt für PV nur die Umweltförderung PV-Gemeinschaftsanlagen (mehrgeschossige Wohnobjekte; 300 € je kWp bei Eigennutzung bzw. 190 € je kWp, je höchstens 2 kWp pro Haushalt, bis 20.000 €) und beim Heizen die Fernwärme-Heizungsumstellung (einkommensabhängig, bis 7.000 € je Haushalt). Keine Förderung für PV am Einfamilienhaus, Speicher oder Wärmepumpen. Laut Stadtportal ist die Bearbeitung ALLER Förderungen bis auf Weiteres ausgesetzt (§ 83 Statut).",
+      "quelle": "https://www.graz.at/cms/ziel/7882683/DE ; https://www.graz.at/cms/beitrag/10439271/7882683/Umweltfoerderung_PV_Gemeinschaftsanlagen.html ; https://www.graz.at/cms/beitrag/10023441/7882683/Umweltfoerderung_Fernwaerme_Heizungsumstellung.html"
+    }
+  ],
+  "recommendation": {
+    "title": "Photovoltaik Graz: PV-Anlage & Wärmepumpe | EBZ Energie",
+    "h1": "Photovoltaik in Graz und Graz-Umgebung: PV-Anlage, Speicher und Wärmepumpe aus einer Hand",
+    "description": "Photovoltaik und Wärmepumpe in Graz und Graz-Umgebung: Fachbetrieb aus Villach, vor Ort bei Ihnen. Zwei Grazer Referenzen mit 18 und 11,83 kWp, 4,9 Sterne.",
+    "h2_outline": [
+      "Photovoltaik in Graz: was in der Stadt anders ist als am Land (Kurzantwort, Firmensitz Villach offen genannt)",
+      "Vor Ort in Graz: Behörde, Netzbetreiber, Solarpotenzial auf einen Blick (Faktenliste)",
+      "Genehmigung in Graz: PV-Anlage und Speicher sind meldepflichtig, Altstadt als Sonderfall",
+      "Netzanschluss: Stromnetz Graz in der Stadt, Energienetze Steiermark im Umland",
+      "Wärmepumpe in Graz: Meldung, Schallnachweis und Strom vom eigenen Dach",
+      "Förderung in Graz: Bund, Land Steiermark und die Stadt (Kurzfassung ohne Termine)",
+      "Ihre Anlage gehört Ihnen ab dem ersten Tag (Finanzierung)",
+      "Zwei Referenzen aus Graz: Flachdach ohne Bohrung, mit Zahlen",
+      "Beratung in Graz: wir kommen aus Villach zu Ihnen",
+      "Ablauf von der Beratung bis zur Übergabe",
+      "Häufige Fragen",
+      "Kostenloses Angebot"
+    ],
+    "faq_add": [
+      "Ist eine PV-Anlage in Graz bewilligungspflichtig?",
+      "Brauche ich in Graz eine Genehmigung für eine Wärmepumpe?",
+      "Was kostet eine 10 kWp PV-Anlage mit Speicher und Montage in Graz?",
+      "Wer ist in Graz und Graz-Umgebung der Netzbetreiber für meine PV-Anlage?",
+      "Darf ich in der Grazer Altstadt eine PV-Anlage bauen?",
+      "Gibt es eine Förderung der Stadt Graz für Photovoltaik?",
+      "Welche Förderung gibt es für eine Wärmepumpe in Graz?",
+      "Hat EBZ Energie einen Standort in Graz?",
+      "Geht Photovoltaik auf einem Flachdach ohne Bohren?"
+    ],
+    "internal_links": [
+      "/photovoltaik-steiermark/ -> Photovoltaik in der Steiermark (Überblick)",
+      "/foerderung-photovoltaik-steiermark/ -> PV-Förderung Steiermark im Detail",
+      "/foerderungen/ -> Aktuelle Förderungen",
+      "/foerderrechner/ -> Förderrechner",
+      "/waermepumpe/ -> Wärmepumpe vom Fachbetrieb",
+      "/kosten-einer-waermepumpe/ -> Was eine Wärmepumpe kostet",
+      "/waermepumpe-im-altbau/ -> Wärmepumpe im Altbau",
+      "/photovoltaik-fuer-waermepumpe/ -> Photovoltaik für die Wärmepumpe",
+      "/landesfoerderungen-fuer-die-waermepumpe/ -> Landesförderungen für die Wärmepumpe",
+      "/referenzen/projekt-stadthaus-in-graz/ -> Stadthaus Graz, 18 kWp",
+      "/referenzen/projekt-flachdach-in-graz/ -> Flachdach Graz, 11,83 kWp",
+      "/energiegemeinschaft-steiermark/ -> Energiegemeinschaft Steiermark",
+      "/batteriespeicher/, /photovoltaik/, /finanzierung/, /referenzen/, /kontakt/"
+    ],
+    "notes": "Die Seite kann den Local Pack nicht gewinnen (kein Grazer Standort) und darf ihn auch nicht vortaeuschen. Sie gewinnt organisch und in KI-Antworten ueber das, was die Grazer Installateure weglassen: Meldepflicht nach Stmk. Baugesetz fuer PV, Speicher und Luftwaermepumpe, Altstadt-Schutzzonen, die zwei Netzbetreiber und zwei eigene Grazer Flachdach-Referenzen mit Zahlen. Volumen realistisch planen: rund 70 Suchen fuer 'pv anlage graz' und 70 fuer 'wärmepumpe graz', die 480 fuer 'photovoltaik graz' enthalten die Pensionsversicherung. Foerderung nur als Kurzfassung, Details auf dem Steiermark-Ratgeber und dem Hub. Naechster Schritt nach dem Livegang: echte Kundenstimmen aus Graz und ein drittes Projekt mit Waermepumpe nachziehen."
+  },
+  "cost_usd": 0.4,
+  "cost_hinweis": "Schätzung, die MCP-Antworten enthalten kein cost-Feld: 4 Google-Ads-Abrufe (je rund 0,075 $), 5 SERPs, 1 Keyword Overview, 1 Suggestions, 1 AI-Volumen, 4 Content-Parsings. Ein Ads-Abruf lief ins Rate-Limit und wurde wiederholt."
+}

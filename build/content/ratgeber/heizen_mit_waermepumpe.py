@@ -33,7 +33,7 @@ ARTICLE = {
         "Montage: <b>2 bis 4 Tage</b>",
     ],
     "date_published": "2026-02-15",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "waermepumpe",
     "hero_alt": "Wärmepumpe im Garten eines Einfamilienhauses in Kärnten",
 
@@ -181,8 +181,9 @@ grobe Orientierung für ein typisches Einfamilienhaus, jeweils gesamt und vor F�
   7.500 Euro Investitionszuschuss. Stand Oktober 2026 ist das Programm ausgeschöpft, neue Registrierungen
   sind nicht möglich; ob 2027 ein Folgeprogramm kommt, ist offen. Details:
   {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
-  <li><b>Landesförderung Kärnten und Steiermark:</b> Beide Bundesländer haben eigene Programme.
-  Überblick: {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}.</li>
+  <li><b>Landesförderung Kärnten und Steiermark:</b> Kärnten zahlt 2026 eine Pauschale von 3.000 Euro (ob
+  das Budget reicht, klären wir vor dem Angebot). Die Steiermark nimmt für neue Wärmepumpen derzeit keine
+  Förderanträge an. Überblick: {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}.</li>
 </ul>
 <p>Als zertifizierter Fachbetrieb übernimmt EBZ Energie die gesamte Förderabwicklung von der
 Antragstellung bis zur Auszahlung. Alle Programme im Überblick:
@@ -239,7 +240,7 @@ hinaus:</p>
      "Sie erhalten ein detailliertes Angebot mit einer klaren Aufstellung aller Kosten, ohne versteckte "
      "Posten."),
     ("Förderabwicklung",
-     "Wir übernehmen alle Förderanträge: Bundesförderung, Landesförderung Kärnten oder Steiermark und "
+     "Wir übernehmen alle Förderanträge, die für Ihr Projekt offen sind, etwa die Landesförderung Kärnten, und "
      "auf Wunsch auch die Förderung für eine Photovoltaikanlage."),
     ("Montage durch zertifizierte Fachkräfte",
      "Die eigentliche Montage dauert in der Regel 2 bis 4 Tage und erfolgt durch unser "
@@ -253,8 +254,8 @@ hinaus:</p>
 <p>Für die meisten Haushalte in Österreich klar ja. Eine Wärmepumpe heizt effizienter als jedes andere
 verfügbare System, nutzt Energie aus der Umwelt, erzeugt im Betrieb keine direkten Emissionen, braucht
 kaum Wartung und arbeitet vollautomatisch, auch im strengen Winter. Im Beispielhaus spart sie
-gegenüber Gas rund 840 Euro im Jahr, mit Photovoltaik sinken die Heizkosten auf 200 bis 400 Euro. Mit
-den aktuellen Förderungen von Bund und Land ist der Einstieg so günstig wie selten.</p>
+gegenüber Gas rund 840 Euro im Jahr, mit Photovoltaik sinken die Heizkosten auf 200 bis 400 Euro. In
+Kärnten senkt die Landespauschale von 3.000 Euro die Investition zusätzlich.</p>
 {A.cta("Jetzt kostenlose Erstberatung vereinbaren",
        "Wir analysieren Ihr Gebäude, berechnen Förderung und Betriebskosten und planen Wärmepumpe und "
        "Photovoltaik als abgestimmtes Gesamtsystem.",
@@ -310,6 +311,10 @@ den aktuellen Förderungen von Bund und Land ist der Einstieg so günstig wie se
                     "komplette Förderabwicklung. Alle Verbrauchs- und Kostenangaben sind Richtwerte aus der "
                     "Projektpraxis. Keine Rechts- oder Steuerberatung, maßgeblich sind die offiziellen "
                     "Förderbedingungen."),
+    "sources": [
+        ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
+         "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
+    ],
     "related": [
         ("waermepumpe", "Wärmepumpen-Installateur in Kärnten und Steiermark"),
         ("/kosten-einer-waermepumpe/", "Kosten einer Wärmepumpe 2026"),

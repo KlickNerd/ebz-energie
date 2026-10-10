@@ -31,7 +31,7 @@ ARTICLE = {
         "Frist: <b>15. April 2027</b>",
     ],
     "date_published": "2026-09-05",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-10",
     "hero_img": "ems",
     "hero_alt": "Energiemanagementsystem vernetzt Photovoltaik, Speicher, Wärmepumpe und Wallbox im Eigenheim",
 
@@ -210,8 +210,9 @@ Kombination mit anderen Bundes-, Landes- oder Gemeindeförderungen <b>nicht mög
 nicht dieselbe EMS-Rechnung bei zwei Stellen einreichen.</p>
 <p>Unberührt bleiben die Förderungen für die Anlagen drumherum: PV-Anlage, Speicher oder Wärmepumpe
 laufen über eigene Schienen, in Kärnten über die Landesförderung (siehe
-{a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')}), in der Steiermark über die dortige
-Landesförderung (siehe {a('foerderung_steiermark', 'Photovoltaik-Förderung Steiermark')}). Wer eine neue
+{a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')}), in der Steiermark ist derzeit
+keine Landesförderung für Photovoltaik oder neue Wärmepumpen offen (siehe
+{a('foerderung_steiermark', 'Photovoltaik-Förderung Steiermark')}). Wer eine neue
 Anlage plant, kann das EMS förderfähig mitplanen, wenn zwei Regeln eingehalten werden: Die EMS-Kosten
 stehen auf einer eigenen Rechnung oder als eigene Position, und bringt der Wechselrichter oder Speicher
 bereits EMS-Komponenten mit, gelten nur die separat ausgewiesenen Mehrkosten als förderfähig. Genau
@@ -307,6 +308,8 @@ registrieren, dann installieren.</p>
          "https://www.klimafonds.gv.at/foerderung/energiemanagement-betriebe-2026/"),
         ("Umweltförderung: Energiemanagement für Privatpersonen",
          "https://www.umweltfoerderung.at/privatpersonen/energiemanagement-fuer-privatpersonen"),
+        ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
+         "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
         ("Leitfaden für private Haushalte, Juni 2026 (PDF)",
          "https://www.klimafonds.gv.at/wp-content/uploads/2026/06/Leitfaden-Energiemanagement-Haushalte.pdf"),
         ("Leitfaden für Betriebe, Gemeinden und Vereine, Juni 2026 (PDF)",

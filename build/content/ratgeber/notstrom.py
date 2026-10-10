@@ -33,7 +33,7 @@ ARTICLE = {
         "Nachrüstung: <b>1 bis 3 Tage</b> vor Ort",
     ],
     "date_published": "2025-09-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-10-10",
     "hero_img": "gen_detail",
     "hero_alt": "Montage eines notstromfähigen Hybridwechselrichters mit Batteriespeicher im Technikraum",
 
@@ -225,7 +225,7 @@ nachrüsten, am günstigsten ist die Funktion aber, wenn sie bei einer Neuanlage
             ("Notstrom und Ersatzstrom", "Von der Notstromsteckdose bis zur dreiphasigen Vollversorgung."),
             ("Auch für Bestandsanlagen", "Wechselrichtertausch oder AC-Nachrüstung, herstellerübergreifend."),
             ("Abnahme mit Testlauf", "Simulierter Netzausfall vor Übergabe, Einweisung inklusive."),
-            ("Förderung inklusive", "EAG-Bund und Landesförderung Kärnten oder Steiermark für den Speicheranteil."),
+            ("Förderung inklusive", "EAG-Bund und Kärntner Landesförderung für den Speicheranteil."),
         ],
     },
 
