@@ -131,7 +131,7 @@ def _cost_section():
       </div>
       <p class="form-note center eg-reveal">*Richtwerte vor Förderung: PV-Teil und Speicher auf Basis typischer EBZ-Projekte,
       Komplettsystem- und Bausatzspannen aus marktüblichen österreichischen Angeboten 2026. Die Konstruktion kalkulieren wir nach
-      Vor-Ort-Termin im Festpreisangebot. Weitere Preise im Ratgeber {a("/kosten-einer-solaranlage/", "Kosten einer Solaranlage")}.</p>
+      Vor-Ort-Termin im Festpreisangebot. Weitere Preise im Ratgeber {a("/kosten-einer-solaranlage/", "Kosten einer Solaranlage")}, Wallbox-Kosten und Förderung im Ratgeber {a("/wallbox-foerderung-kosten/", "Wallbox: Förderung und Kosten")}.</p>
     </div>
   </section>"""
 

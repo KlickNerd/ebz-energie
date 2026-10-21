@@ -70,17 +70,10 @@
 /waermepumpe-photovoltaik-oesterreich/             /photovoltaik-fuer-waermepumpe/
 /waermepumpeninstallation-oesterreich/             /waermepumpe/
 # Leistungsseiten ohne eigene neue Seite (Entscheidung offen: eigene Seiten fuer Wallbox, Infrarot, Ersatzziegel, Wartung?)
-/wallbox/                                          /photovoltaik-carport/
-/infrarotheizsysteme/                              /leistungen/
+/wallbox/                                          /wallbox-foerderung-kosten/
+/infrarotheizsysteme/                              /infrarotheizung-mit-photovoltaik/
 /ersatzziegel/                                     /photovoltaik/
 /photovoltaik-wartung/                             /photovoltaik/
-# Ratgeber vom 30.09.2026 auf der alten Seite (Entscheidung offen: als Ratgeber uebernehmen, dann Zeile loeschen)
-/luftwaermepumpe-preise/                           /kosten-einer-waermepumpe/
-/erdwaermepumpe-kosten/                            /kosten-einer-waermepumpe/
-/infrarotheizung-mit-photovoltaik/                 /photovoltaik-fuer-waermepumpe/
-/pv-anlage-kaufen/                                 /photovoltaik/
-/pv-anlage-kwp-groessen/                           /kosten-einer-solaranlage/
-/wallbox-foerderung-kosten/                        /photovoltaik-carport/
 
 # Alte Adressen ausserhalb der Sitemap (Backlinks, Ads-Landingpages, interne Altlinks), Stand 21.10.2026
 /balkonkraftwerk-lp/                               /balkonkraftwerke/

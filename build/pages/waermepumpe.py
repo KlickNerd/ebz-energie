@@ -383,6 +383,8 @@ def build():
              ("pv_graz", "Wärmepumpe und Photovoltaik in Graz"),
              ("pv_steiermark", "Wärmepumpe in der Steiermark"),
              ("/kosten-einer-waermepumpe/", "Kosten einer Wärmepumpe"),
+             ("/luftwaermepumpe-preise/", "Luftwärmepumpe Preise"),
+             ("/erdwaermepumpe-kosten/", "Erdwärmepumpe Kosten"),
              ("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung 2026"),
              ("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen Kärnten und Steiermark"),
              ("/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/", "Wärmepumpe steuerlich absetzen"),

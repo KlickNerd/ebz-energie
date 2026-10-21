@@ -372,6 +372,8 @@ def build():
              ("foerderungen", "Alle Förderungen 2026"),
              ("/kosten-einer-solaranlage/", "Kosten einer Solaranlage"),
              ("/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/", "Komplettanlage 10 kWp mit Speicher"),
+             ("/pv-anlage-kwp-groessen/", "Welche kWp-Größe passt?"),
+             ("/pv-anlage-kaufen/", "PV-Anlage kaufen: worauf achten"),
              ("batteriespeicher", "Batteriespeicher"),
              ("waermepumpe", "Wärmepumpe mit Solarstrom"),
              ("ems", "Energiemanagement"),
