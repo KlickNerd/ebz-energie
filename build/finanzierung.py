@@ -30,13 +30,13 @@ FAQ = [
     ("Wie hoch ist der Zinssatz und was kostet die Finanzierung insgesamt?",
      "Der Zinssatz ist über die gesamte Laufzeit fix und steht als effektiver Jahreszins in Ihrem Angebot, "
      "weil er von Laufzeit, Betrag und Bonität abhängt. Die Gesamtkosten sind einfach zu rechnen: Rate mal "
-     "Monate. Im repräsentativen Beispiel 10 kWp mit 10-kWh-Speicher (22.000 Euro nach Abzug der "
-     "Bundesförderung) sind das ab 164 Euro über 300 Monate, also rund 49.200 Euro*. Kürzere Laufzeit oder "
+     "Monate. Im repräsentativen Beispiel unseres Finanzierungspartners (10 kWp mit 10-kWh-Speicher, "
+     "Stand September 2026) sind das ab 164 Euro über 300 Monate, also rund 49.200 Euro*. Kürzere Laufzeit oder "
      "kostenlose Sondertilgungen senken diese Summe deutlich."),
     ("Kann ich eine PV-Anlage ohne Eigenkapital finanzieren?",
      "Ja. Die EBZ-Finanzierung startet mit 0 Euro Anzahlung, Eigenkapital ist nicht erforderlich. Der komplette "
-     "Kaufpreis abzüglich der Bundesförderung wird zur fixen Monatsrate. Wer Eigenkapital einsetzen möchte, "
-     "verkürzt die Laufzeit oder senkt die Rate."),
+     "Kaufpreis wird zur fixen Monatsrate; ausbezahlte Förderungen wie die Kärntner Landespauschale können Sie "
+     "per kostenloser Sondertilgung einsetzen. Wer Eigenkapital einsetzen möchte, verkürzt die Laufzeit oder senkt die Rate."),
     ("Finanzierung über EBZ oder Kredit bei der Hausbank: was ist der Unterschied?",
      "Ein Ratenkredit, Konsumkredit, Wohnkredit ohne Grundbucheintrag oder ein Bauspardarlehen bei der Hausbank "
      "(etwa Raiffeisen, Erste Bank und Sparkasse oder BAWAG) ist eine echte Alternative, braucht aber einen "
@@ -44,15 +44,16 @@ FAQ = [
      "Grundbuch, mit Fixzins und kostenloser Sondertilgung. Vergleichen Sie in beiden Fällen den effektiven "
      "Jahreszins und die Summe aller Raten."),
     ("Zinsloses Darlehen Photovoltaik Österreich: Gibt es eine 0 %-Finanzierung für PV-Anlagen?",
-     "Ein bundesweites zinsloses Darlehen für Photovoltaik gibt es nicht. Der Bund fördert über den "
-     "EAG-Investitionszuschuss (150 Euro je kWp bis 10 kWp, 150 Euro je kWh Speicher), nicht über Kredite. "
+     "Ein bundesweites zinsloses Darlehen für Photovoltaik gibt es nicht. Der Bund fördert über Zuschüsse, "
+     "nicht über Kredite: Der Investitionszuschuss für PV und Speicher ist für 2026 abgeschlossen, ab 2027 plant der "
+     "Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. "
      "Angebote mit 0 Prozent Zins sind meist Aktionen einzelner Anbieter oder Banken mit kurzer Laufzeit und "
      "hoher Rate. Entscheidend sind die Gesamtkosten über die Laufzeit, nicht der beworbene Zinssatz."),
     ("Bekomme ich die Förderung, obwohl ich finanziere?",
      "Ja, in voller Höhe. Weil Sie Eigentümer und Antragsteller sind, erhalten Sie als Privatperson die "
-     "Bundesförderung und die Landesförderung auf Ihr Konto. Im Beispiel wird der Bundes-Investitionszuschuss "
-     "direkt vom Finanzierungsbetrag abgezogen, Landesförderungen wie die Kärntner Pauschale von 3.000 Euro "
-     "kommen zusätzlich dazu."),
+     "Förderung auf Ihr Konto, in Kärnten etwa die Landespauschale von 3.000 Euro für eine Neuanlage mit Speicher. "
+     "Den Investitionszuschuss des Bundes gibt es für neue Anlagen derzeit nicht, er ist für 2026 abgeschlossen; ab "
+     "2027 plant der Bund laut BMWET eine Systemförderung, beantragt nach der Installation (Höhe offen)."),
     ("Kann ich Speicher und Wärmepumpe mitfinanzieren?",
      "Ja. Finanziert wird das gesamte Energiesystem aus einem Angebot: Photovoltaik, Batteriespeicher, "
      "Wärmepumpe, Wallbox und Energiemanagement. Eine Rate, ein Ansprechpartner, und alle Komponenten gehören "
@@ -95,7 +96,7 @@ def _compare_section():
          "Fixe Rate ab 147 €* inkl. Speicher, Beispiel 10 kWp + 10 kWh: ab 164 €*", "120 bis 180 € Miete*, 15 bis 25 Jahre"),
         ("Gesamtkosten über 20 Jahre", "Kaufpreis plus 4.000 bis 8.000 € Betrieb*, abzüglich Förderung",
          "Summe der Raten (Rate mal Monate), senkbar durch Sondertilgung", "28.800 bis 43.200 €*, Anlage danach nicht Ihre"),
-        ("Förderung", "Bund und Land an Sie", "Bund und Land an Sie, in voller Höhe", "Geht an den Anbieter"),
+        ("Förderung", "An Sie als Eigentümer", "An Sie als Eigentümer, in voller Höhe", "Geht an den Anbieter"),
         ("Wartung und Garantie", "Bis zu 30 Jahre Leistungsgarantie, Service nach Wunsch",
          "Gleiche Technik und Garantien wie beim Kauf", "Im Vertrag enthalten, dafür höhere Rate"),
         ("Vertragsende", "Anlage läuft weiter, nur für Sie", "Rate endet, Anlage läuft weiter, nur für Sie",
@@ -167,17 +168,17 @@ def build():
         C.price_cards(
             eyebrow="Zwei repräsentative Beispiele",
             h2="So sieht die Monatsrate aus: Beispiel 10 kWp mit Speicher",
-            intro=("Beispiele unseres Finanzierungspartners Cloover über 25 Jahre Laufzeit. Die Förderung des "
-                   "Bundes wird direkt vom Finanzierungsbetrag abgezogen, die Anlage gehört Ihnen ab Tag 1. Der "
+            intro=("Beispiele unseres Finanzierungspartners Cloover über 25 Jahre Laufzeit. Ausbezahlte "
+                   "Förderungen setzen Sie per kostenloser Sondertilgung ein, die Anlage gehört Ihnen ab Tag 1. Der "
                    "Fixzins steckt in der Rate; die Gesamtkosten sind Rate mal Monate und stehen im Angebot."),
             items=[
                 {"size": f"{k['betrag']} · 25 Jahre", "price": k["rate"], "price_sub": "pro Monat*",
-                 "features": [f"Beispiel {k['anlage']}", f"abzüglich {k['foerderung']} Bundesförderung",
+                 "features": [f"Beispiel {k['anlage']}", "Repräsentatives Beispiel des Partners, Stand September 2026",
                               f"mit Reststrom (rund 25 €) gesamt {k['gesamt']} im Monat",
                               "Summe der Raten über 300 Monate: rund 30.600 €*",
                               "Fixe Rate, 0 € Anzahlung, Sondertilgung jederzeit kostenlos"]},
                 {"size": f"{g['betrag']} · 25 Jahre", "price": g["rate"], "price_sub": "pro Monat*",
-                 "features": [f"Beispiel {g['anlage']}", f"abzüglich {g['foerderung']} Bundesförderung",
+                 "features": [f"Beispiel {g['anlage']}", "Repräsentatives Beispiel des Partners, Stand September 2026",
                               f"mit Reststrom (rund 25 €) gesamt {g['gesamt']} im Monat",
                               "Summe der Raten über 300 Monate: rund 49.200 €*",
                               "Fixe Rate, 0 € Anzahlung, Sondertilgung jederzeit kostenlos"]},
@@ -192,25 +193,26 @@ def build():
         ).replace('<section class="section"', '<section id="beispiele" class="section"', 1),
         C.media_text(
             eyebrow="Förderung trotz Finanzierung",
-            h2="Förderung trotz Finanzierung: EAG-Zuschuss, Speicherbonus, Landespauschale Kärnten",
+            h2="Förderung trotz Finanzierung: Landespauschale Kärnten, EMS, Ausblick Bund",
             paragraphs=[
-                ("Wer in Österreich eine PV-Anlage finanziert, erhält die Förderung in voller Höhe: Der "
-                 "EAG-Investitionszuschuss 2026 zahlt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, "
-                 "zusammen bis zu 3.000 Euro, dazu 10 Prozent Made-in-Europe-Bonus je Komponente (Quelle: "
-                 f"EAG-Abwicklungsstelle, {STAND})."),
+                ("Wer in Österreich eine PV-Anlage finanziert, erhält die Förderung in voller Höhe. Beantragbar sind "
+                 "derzeit vor allem die Kärntner Landespauschale von 3.000 Euro für Neuanlagen ab 5 kWp mit Speicher "
+                 "ab 5 kWh (1.000 Euro für die Speicher-Nachrüstung) und die EMS-Förderung des Klimafonds mit 50 Prozent "
+                 "bis 600 Euro. Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft "
+                 f"beziehungsweise abgeschlossen ({STAND})."),
                 ("Weil Sie bei der EBZ-Finanzierung vom ersten Tag an Eigentümer sind, stellen Sie den Antrag "
                  "selbst und die Auszahlung geht auf Ihr Konto. Bei Mietmodellen bekommt der Anbieter die "
-                 "Förderung. In Kärnten kommen 3.000 Euro Landespauschale für Neuanlagen ab 5 kWp mit Speicher "
-                 "ab 5 kWh dazu, die Steiermark fördert über eigene Programme. Ab 2027 plant der Bund laut BMWET "
-                 "eine Systemförderung für Speicher und intelligente Steuerung. "
+                 "Förderung. Die Steiermark zahlt derzeit keine PV-Landesförderung. Ab 2027 plant der Bund laut BMWET "
+                 "eine Systemförderung für Speicher mit intelligenter Steuerung; wer jetzt mit Speicher und "
+                 "Energiemanagement plant, hält sich diese Option offen. "
                  "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
                  "und stellen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung bei Finanzierung",
-            bullets=["EAG-Investitionszuschuss 150 €/kWp bis 10 kWp, Speicher 150 €/kWh, 10 % Made-in-Europe-Bonus",
+            bullets=["Kärnten: 3.000 € Landespauschale für PV mit Speicher, 1.000 € für die Nachrüstung",
                      "Sie sind Eigentümer und Antragsteller, nicht die Bank",
-                     "Bund und Land sind kombinierbar, wir prüfen beides für Ihr Projekt",
+                     a("foerderrechner", "Förderrechner") + ": was für Ihr Projekt gerade beantragbar ist",
                      "Anträge bereiten wir vor, Fristen und Reihenfolge behalten wir im Blick"],
             cta=("foerderungen", "Aktuelle Förderungen 2026"),
             dark=True,
@@ -241,7 +243,7 @@ def build():
                    "alles ab Tag 1 Ihr Eigentum."),
             cards=[
                 {"ic": "▮", "title": "Speicher finanzieren",
-                 "text": "5 bis 10 kWh heben den Eigenverbrauch von rund 30 auf 60 bis 80 Prozent. Der Speicher wird mit 150 € je kWh gefördert und läuft in derselben Rate mit.",
+                 "text": "5 bis 10 kWh heben den Eigenverbrauch von rund 30 auf 60 bis 80 Prozent. In Kärnten ist er Voraussetzung für die Landespauschale von 3.000 € und läuft in derselben Rate mit.",
                  "link_key": "batteriespeicher", "link_text": "Batteriespeicher"},
                 {"ic": "♨", "title": "Wärmepumpe finanzieren",
                  "text": "Heizung und Photovoltaik in einem Angebot: Die Wärmepumpe läuft mit eigenem Sonnenstrom, die Rate ersetzt Öl- oder Gasrechnung plus Stromkosten.",
@@ -286,7 +288,7 @@ def build():
                 ("Beratung und Angebot", "Wir planen Ihre Anlage und legen Kauf und Finanzierung mit konkreten Zahlen nebeneinander.", "Tag 1"),
                 ("Online-Anfrage", "Sie stellen die Finanzierungsanfrage digital bei unserem Partner Cloover, ohne Banktermin.", "wenige Minuten"),
                 ("Zusage", "Die Finanzierungsentscheidung kommt in der Regel in unter zwei Minuten.", "sofort"),
-                ("Montage und Förderung", "Unser Team montiert, meldet an und bereitet die Förderanträge vor. Die Anlage gehört Ihnen.", "4 bis 8 Wochen"),
+                ("Montage und Förderung", "Zertifizierte Fachkräfte montieren, wir melden an und bereiten die Förderanträge vor. Die Anlage gehört Ihnen.", "4 bis 8 Wochen"),
             ],
         ),
         C.reviews_slider(reviews, rating, count),
@@ -312,8 +314,9 @@ def build():
             trust=[(f"{NAP['rating']} auf Google", True), ("0 € Anzahlung", False),
                    ("Zusage in Minuten", False), ("Eigentum ab Tag 1", False)],
         ),
-        f'<div class="wrap"><p class="form-note" style="padding:8px 0 40px">{F["fussnote"]} Gesamtsummen sind Mindestrate mal '
-        f'300 Monate ohne Sondertilgung. Mietmodell-Werte sind marktübliche Richtwerte aus unserem Ratgeber. Fördersätze '
+        f'<div class="wrap"><p class="form-note" style="padding:8px 0 40px">{F["fussnote"]} Der in den Partnerbeispielen angesetzte Bundeszuschuss '
+        f'galt 2026 und ist für neue Anlagen derzeit nicht beantragbar. Gesamtsummen sind Mindestrate mal '
+        f'300 Monate ohne Sondertilgung. Mietmodell-Werte sind marktübliche Richtwerte aus unserem Ratgeber. Förderstand '
         f'{STAND}, Änderungen durch Fördergeber vorbehalten. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p></div>',
     ])
     html = page(TITLE, DESC, PATH, body, faq_jsonld_str=faq_jsonld(u(PATH), FAQ),

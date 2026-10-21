@@ -30,7 +30,7 @@ ARTICLE = {
         "Start in <b>4 bis 8 Wochen</b>",
     ],
     "date_published": "2026-08-05",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "eg_drohne",
     "hero_alt": "Ortschaft in Kärnten aus der Luft mit Photovoltaikanlagen auf mehreren Dächern",
 
@@ -171,9 +171,12 @@ vorbehalten.</p>
        "feststehen.", label="Für Kärnten heißt das:")}
 """),
         ("Förderung in Kärnten: Gibt es Geld für die Energiegemeinschaft?", "foerderung", f"""
-<p>Für die Teilnahme selbst gibt es in Kärnten keine eigene Prämie. Gefördert wird die PV-Anlage, und zwar über den
-EAG-Investitionszuschuss des Bundes plus die Kärntner Landesförderung mit der 3.000-Euro-Pauschale, die wir im
-Artikel {a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')} aufgeschlüsselt haben. Wer zusätzlich ein
+<p>Für die Teilnahme selbst gibt es in Kärnten keine eigene Prämie. Gefördert wird die PV-Anlage, und zwar über die
+Kärntner Landesförderung mit der 3.000-Euro-Pauschale (nur mit Speicher, 2. Landes-Call bis 31. Dezember 2026),
+die wir im
+Artikel {a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')} aufgeschlüsselt haben. Der EAG-Investitionszuschuss des Bundes ist derzeit nicht beantragbar: Der letzte Call
+lief vom 8. bis 22. Oktober 2026, ab 2027 ist laut BMWET eine Systemförderung für Speicher mit intelligenter
+Steuerung geplant (nicht beschlossen). Wer zusätzlich ein
 Energiemanagementsystem einbaut, kann die {a('/ems-foerderung/', 'EMS-Förderung des Klimafonds')} nutzen: Die
 Teilnahme an einer Energiegemeinschaft zählt dort als eine der zulässigen Betriebsoptionen. Wer die Anlage über EBZ
 errichten lässt, bekommt Förderabwicklung und EG-Anbindung aus einer Hand.</p>

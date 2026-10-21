@@ -26,22 +26,23 @@ import components as C
 PATH = "/batteriespeicher/"
 TITLE = "Batteriespeicher für PV: Größe, Kosten, Förderung | EBZ"
 DESC = ("PV-Speicher vom Fachbetrieb in Kärnten und der Steiermark: Eigenverbrauch von 30 auf bis zu 80 %, Notstrom, "
-        "Nachrüstung, 150 € je kWh Förderung, Preis pro kWh.")
+        "Nachrüstung, Kärnten fördert 3.000 €, Preis je kWh.")
 
 FAQ = [
     ("Wie groß sollte mein Batteriespeicher sein, und was passiert, wenn er zu groß ist?",
      "Faustformel 1 kWh je kWp Modulleistung oder 1 bis 1,5 kWh je 1.000 kWh Jahresverbrauch: 4.500 kWh mit 5 kWp "
      "brauchen 4 bis 5 kWh, 10 kWp mit Wärmepumpe oder E-Auto eher 10 kWh. Ein zu großer Speicher wird im "
-     "Winterbetrieb nie voll und verlängert die Amortisation; für die Bundesförderung reichen 0,5 kWh je kWp."),
+     "Winterbetrieb nie voll und verlängert die Amortisation; für die Kärntner Landespauschale reichen 5 kWh."),
     ("Wie hoch sind die Kosten pro kWh für einen Batteriespeicher?",
      "800 bis 1.200 € je kWh inklusive Installation (Richtwert Österreich, Stand Oktober 2026)*: 5 kWh kosten 4.000 "
-     "bis 6.000 €, 10 kWh 8.000 bis 12.000 €. Nach dem EAG-Zuschuss von 150 € je kWh bleiben 650 bis 1.050 € je kWh. "
+     "bis 6.000 €, 10 kWh 8.000 bis 12.000 €. In Kärnten gehen bei einer Neuanlage mit Speicher 3.000 € Landespauschale ab. "
      "Eine komplette 10-kWp-Anlage mit Speicher liegt bei 15.000 bis 22.000 € vor Förderung."),
     ("Werden Batteriespeicher 2026 billiger?",
      "Die Preise je kWh sind in den vergangenen Jahren gesunken, 2026 liegt der Richtwert bei 800 bis 1.200 €*. "
-     "Warten lohnt selten: Jede nicht gespeicherte kWh kostet rund 32 Cent, und die laufenden Förderungen (EAG-Zuschuss "
-     "des Bundes, Kärntner Pauschale) sind budgetiert und befristet. Die Systemförderung ab 2027 ist geplant, die "
-     "Höhe offen. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
+     "Warten lohnt selten: Jede nicht gespeicherte kWh kostet rund 32 Cent, und die Kärntner Pauschale ist budgetiert und "
+     "befristet; der Investitionszuschuss des Bundes ist für 2026 bereits abgeschlossen. Ab 2027 plant der Bund laut "
+     "BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, beantragt nach der Installation, die Höhe "
+     "ist offen. Wer jetzt einen Speicher mit Energiemanagement plant, hält sich diese Chance offen. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
     ("Kann ich einen Speicher bei meiner bestehenden PV-Anlage nachrüsten?",
      "Ja, fast immer. Am flexibelsten ist die AC-Kopplung mit eigenem Batteriewechselrichter, der vorhandene "
      "PV-Wechselrichter bleibt. Alternativ tauschen wir ihn gegen einen Hybridwechselrichter (DC-Kopplung), sinnvoll "
@@ -55,9 +56,10 @@ FAQ = [
      "2026). Besser: Ein Energiemanagement lenkt ihn in Wärmepumpe, Warmwasser oder Wallbox, oder Sie teilen ihn in "
      "einer Energiegemeinschaft. Der Speicher nimmt keinen Schaden, das Batteriemanagement beendet die Ladung."),
     ("Wie hoch ist die Förderung für einen Batteriespeicher 2026?",
-     "Bund: 150 € je kWh (maximal 50 kWh), nur mit neuer oder erweiterter PV-Anlage. Kärnten: 3.000 € Pauschale für "
-     "Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, 1.000 € für die Nachrüstung (Stand Oktober 2026). Für 10 kWp mit "
-     "10 kWh sind in Kärnten 6.000 € erreichbar. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
+     "Kärnten: 3.000 € Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, 1.000 € für die Nachrüstung "
+     "(Stand Oktober 2026). Bund: Der Investitionszuschuss für PV und Speicher ist für 2026 ausgeschöpft "
+     "beziehungsweise abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit "
+     "intelligenter Steuerung, Höhe offen. Für 10 kWp mit 10 kWh sind in Kärnten derzeit 3.000 € erreichbar. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
     ("Wo wird der Speicher aufgestellt und wie steht es um den Brandschutz?",
      "Im Keller, in der Garage oder im Technikraum: frostfrei, trocken, nicht im Fluchtweg oder Schlafzimmer, nahe am "
      "Zählerkasten. LFP-Zellen ohne Kobalt gelten als besonders sicher, das Batteriemanagement trennt bei Fehlern ab, "
@@ -80,7 +82,7 @@ def build():
             eyebrow="Batteriespeicher und PV-Speicher für Kärnten und die Steiermark",
             h1="Batteriespeicher für Ihre PV-Anlage: Sonnenstrom auch am Abend und in der Nacht",
             lead=("Ein Batteriespeicher hebt den Eigenverbrauch Ihrer Photovoltaikanlage von rund 30 auf 60 bis 80 %*. "
-                  "Richtwert: 800 bis 1.200 € je kWh inklusive Installation, der Bund fördert 150 € je kWh. Wir planen, "
+                  "Richtwert: 800 bis 1.200 € je kWh inklusive Installation, Kärnten fördert Neuanlagen mit Speicher mit 3.000 €. Wir planen, "
                   "montieren und betreuen Ihr Speichersystem mit zertifizierten Fachkräften aus Villach, Notstrom und "
                   "Nachrüstung inklusive."),
             badges=[("bis zu 80 %", "Eigenverbrauch"),
@@ -96,7 +98,7 @@ def build():
         C.kpis([
             ("bis zu 80 %", "Eigenverbrauch mit Speicher"),
             ("800 bis 1.200 €", "Preis pro kWh inkl. Installation*"),
-            ("150 € je kWh", "EAG-Speicherförderung 2026"),
+            ("3.000 €", "Landespauschale Kärnten mit Speicher"),
             (NAP["rating"], "Sterne auf Google"),
         ]),
         # Kurze Definition (GEO)
@@ -127,7 +129,7 @@ def build():
                 "bullets": [
                     "DC-gekoppeltes System mit Hybridwechselrichter: höchster Wirkungsgrad",
                     "Speicher und Notstrom von Anfang an mitgeplant",
-                    "EAG-Zuschuss 150 € je kWh plus Land Kärnten 3.000 €, 10 kWp mit Speicher rund 15.000 bis 22.000 €*",
+                    "Land Kärnten 3.000 € für Neuanlagen mit Speicher, 10 kWp mit Speicher rund 15.000 bis 22.000 €*",
                 ],
                 "cta": ("kontakt", "Beratung für die neue Anlage"),
             },
@@ -221,7 +223,7 @@ def build():
                  "features": ["Passend für 7.000 bis 10.000 kWh Jahresverbrauch", "Optional Tausch auf Hybridwechselrichter für Notstrom",
                               "Amortisation des Speichers allein 8 bis 12 Jahre*"]},
                 {"size": "Neue Komplettanlage", "price": "15.000 bis 22.000 €", "price_sub": "10 kWp mit Speicher*",
-                 "features": ["Module, Hybridwechselrichter, Speicher, Montage und Anmeldung", "Förderung 2026 in Kärnten bis 6.000 € (Bund und Land)",
+                 "features": ["Module, Hybridwechselrichter, Speicher, Montage und Anmeldung", "Förderung 2026 in Kärnten: 3.000 € Landespauschale",
                               "Typische Amortisation 4 bis 6 Jahre", a("photovoltaik", "Zur Photovoltaikanlage komplett →")]},
             ],
             note=("*Richtwerte für Österreich inklusive Installation, vor Förderung. Ihren genauen Preis erhalten Sie im "
@@ -230,23 +232,26 @@ def build():
         # 7. Foerderung + Finanzierung (Betraege Stand Oktober 2026, keine Fristen: die stehen im Hub)
         C.media_text(
             eyebrow="Stromspeicher Förderung Österreich 2026",
-            h2="Förderung für Ihren Speicher: 150 € je kWh vom Bund, Land Kärnten bis 3.000 €",
+            h2="Förderung für Ihren Speicher: Land Kärnten bis 3.000 €, Systemförderung des Bundes ab 2027 geplant",
             paragraphs=[
-                ("Der EAG-Investitionszuschuss fördert Speicher mit 150 € je kWh (mindestens 0,5 kWh je kWp, "
-                 "maximal 50 kWh), nur gemeinsam mit einer neuen oder erweiterten PV-Anlage und nur bei Antrag vor der "
-                 "Inbetriebnahme (Quelle: EAG-Abwicklungsstelle, Stand Oktober 2026)."),
+                ("Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft beziehungsweise "
+                 "abgeschlossen, neue Speicher bekommen derzeit keinen Bundeszuschuss (Quelle: EAG-Abwicklungsstelle, "
+                 "Stand Oktober 2026). Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit "
+                 "intelligenter Steuerung: Antrag nach Installation und Rechnung, auch die Nachrüstung von Speicher und "
+                 "Energiemanagement soll förderbar werden. Höhe und Kriterien sind offen."),
                 ("Das Land Kärnten zahlt pauschal 3.000 € für neue PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh und "
-                 "1.000 € für die Speicher-Nachrüstung ab 5 kWh, maximal 50 % der Kosten, ohne Anrechnung der "
-                 "Bundesförderung (Quelle: Land Kärnten). Die Steiermark hat keine eigene Speicherprämie. Ab 2027 plant "
-                 "der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, Höhe offen. "
+                 "1.000 € für die Speicher-Nachrüstung ab 5 kWh, maximal 50 % der Kosten (Quelle: Land Kärnten). "
+                 "Die Steiermark hat keine eigene Speicherprämie. Unsere Empfehlung: jetzt mit Speicher und "
+                 "Energiemanagement planen, denn Kärnten zahlt nur mit Speicher, und die geplante Systemförderung setzt "
+                 "auf intelligente Steuerung. "
                  "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
                  "und stellen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Speicherförderung bei EBZ Energie",
             bullets=[
-                "Beispiel Kärnten: 10 kWp mit 10 kWh, 3.000 € Bund (150 € je kWp und je kWh) plus 3.000 € Land = 6.000 €",
-                "EAG-Speicherförderung 150 €/kWh plus Made-in-Europe-Bonus 10 % je Komponente von der White List",
+                "Beispiel Kärnten: 10 kWp mit 10 kWh, 3.000 € Landespauschale; Bundeszuschuss derzeit nicht beantragbar",
+                "Energiemanagement: EMS-Förderung des Klimafonds, Haushalte 50 % bis 600 €",
                 a("/foerderung-pv-speicher-kaernten/", "Speicherförderung Land Kärnten") + " und " + a("/foerderung-fuer-pv-speicher/", "Speicherförderung 2026 im Detail"),
             ],
             cta=("foerderungen", "Aktuelle Förderungen 2026"),
@@ -294,7 +299,7 @@ def build():
                 ("✓", "Zertifizierte Fachkräfte", "Meisterhaftes Handwerk, sauber abgestimmte Komponenten."),
                 ("★", "4,9 Sterne auf Google", "Bewertungen von echten Kundinnen und Kunden aus der Region."),
                 ("◉", "300+ Projekte", "Über 300 dokumentierte Anlagen in 6 Bundesländern, viele mit Speicher und Notstrom."),
-                ("€", "Förderung und Finanzierung inklusive", "Wir stellen die Anträge bei Bund und Land und bieten Finanzierung ab 147 € im Monat.*"),
+                ("€", "Förderung und Finanzierung inklusive", "Wir stellen die Förderanträge und bieten Finanzierung ab 147 € im Monat.*"),
                 ("⌂", "Auch in 10 Jahren erreichbar", "Regionaler Fachbetrieb in Villach: Service, Monitoring und Erweiterung aus der Nähe."),
             ],
         ),
@@ -324,7 +329,7 @@ def build():
             steps=[
                 ("Beratung und Analyse", "Jahresverbrauch, Lastprofil, bestehende Anlage und Ihre Pläne für E-Auto oder Wärmepumpe. Kostenlos.", "Tag 1"),
                 ("Projektbericht", "Projektbericht mit 3D-Belegplan und Statikreport, inklusive Speichergröße, Kopplung, Aufstellort und Förderübersicht.", "wenige Tage"),
-                ("Förderanträge", "EAG-Antrag vor der Inbetriebnahme, Landesantrag Kärnten; die laufenden Fristen prüfen wir für Ihr Projekt.", "vor der Montage"),
+                ("Förderanträge", "Landesantrag Kärnten, EMS-Förderung; was gerade beantragbar ist, prüfen wir für Ihr Projekt.", "vor der Montage"),
                 ("Montage und Inbetriebnahme", "Zertifizierte Fachkräfte montieren Speicher und Wechselrichter, bei der Nachrüstung meist in 1 bis 3 Tagen. Anmeldung und Übergabe inklusive.", "1 bis 3 Tage vor Ort"),
             ],
         ),
@@ -371,8 +376,8 @@ def _footnote():
       <p class="form-note">*Richtwerte für Österreich auf Basis typischer Projekte, inklusive Installation und vor
       Förderung, Stand Oktober 2026. Eigenverbrauchsanteil, Autarkie, Ersparnis, Preis und Amortisation hängen von
       Verbrauch, Lastprofil, Anlagengröße, Strompreis (gerechnet mit rund 30 bis 35 ct/kWh Bezug und 10,168 ct/kWh
-      OeMAG-Marktpreis September 2026) und Förderung ab. Finanzierungsrate: Beispielkonditionen. Fördersätze laut
-      EAG-Abwicklungsstelle und Land Kärnten, Programme sind budgetiert und ändern sich. Fachlich geprüft von
+      OeMAG-Marktpreis September 2026) und Förderung ab. Finanzierungsrate: Beispielkonditionen. Förderstand laut
+      Land Kärnten und EAG-Abwicklungsstelle (Bundeszuschuss für 2026 abgeschlossen), Programme sind budgetiert und ändern sich. Fachlich geprüft von
       Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
     </div>
   </section>""")

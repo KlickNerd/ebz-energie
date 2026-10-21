@@ -55,8 +55,8 @@ FAQ = [
     ("Was kostet eine 10 kWp PV-Anlage mit Speicher und Montage in Villach?",
      "Eine Komplettanlage mit rund 10 kWp und Speicher kostet in Villach typischerweise rund 15.000 bis 22.000 Euro "
      "vor Förderung, inklusive Montage, Netzanmeldung und Inbetriebnahme (EBZ-Richtpreis, Stand Oktober 2026). Davon "
-     "gehen bis zu 3.000 Euro Landespauschale Kärnten und der EAG-Zuschuss des Bundes ab. Finanzierung ab 147 Euro "
-     "im Monat* ist möglich."),
+     "gehen 3.000 Euro Landespauschale Kärnten ab; einen Bundeszuschuss gibt es für neue Anlagen derzeit nicht. "
+     "Finanzierung ab 147 Euro im Monat* ist möglich."),
     ("Brauche ich in Kärnten eine Genehmigung für eine Photovoltaikanlage?",
      "Für Anlagen auf Dach oder Fassade gilt in Kärnten in der Regel eine Mitteilungspflicht statt einer "
      "Bewilligungspflicht: Die Gemeinde wird über das Vorhaben informiert, ein Bauverfahren entfällt meist. "
@@ -77,11 +77,13 @@ FAQ = [
      "Zahlen und an echten Google-Bewertungen. EBZ Energie: 300+ Projekte, 4,9 Sterne, Firmensitz Triglavstraße 15."),
     ("Lohnt sich ein Speicher in Kärnten?",
      "Ja, in den meisten Haushalten. Ohne Speicher nutzen Sie nur rund 30 Prozent Ihres Sonnenstroms selbst, mit "
-     "Speicher bis zu 80 Prozent*. Dazu kommt die Förderung: 150 Euro je kWh vom Bund und die Landespauschale "
-     "Kärnten, die einen Speicher ab 5 kWh voraussetzt. Mit Notstromfunktion bleibt Ihr Haus bei Netzausfall versorgt."),
+     "Speicher bis zu 80 Prozent*. Dazu kommt die Förderung: Die Landespauschale Kärnten setzt einen Speicher "
+     "ab 5 kWh voraus, und die ab 2027 geplante Systemförderung des Bundes (laut BMWET) setzt auf Speicher mit "
+     "intelligenter Steuerung. Mit Notstromfunktion bleibt Ihr Haus bei Netzausfall versorgt."),
     ("Was ändert sich 2026 bei Photovoltaik in Österreich?",
-     "Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und intelligente Steuerung; die aktuellen "
-     "Förderprogramme und Fristen stehen auf unserer Förderseite. Der OeMAG-Marktpreis lag im "
+     "Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen; ab 2027 plant der Bund laut "
+     "BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. Die aktuellen Förderprogramme stehen auf "
+     "unserer Förderseite. Der OeMAG-Marktpreis lag im "
      "September 2026 bei 10,168 Cent je kWh (Juli: 6,146 Cent). Seit Oktober 2026 gilt das neue "
      "Elektrizitätswirtschaftsgesetz (ElWG)."),
     ("Was kostet eine Wärmepumpe in Villach inklusive Montage, und rechnet sie sich mit Photovoltaik?",
@@ -98,7 +100,7 @@ FAQ = [
      "Stromrechnung, verteilt über zwei Jahre, wenn die Wärmepumpe eine Internetanbindung hat. Den aktuellen Stand "
      "finden Sie auf unserer Förderseite und im Förderrechner."),
     ("Übernimmt EBZ Energie die Förderanträge und die Anmeldung beim Netzbetreiber?",
-     "Ja. Wir kennen die Programme von Land Kärnten und Bund, bereiten die Anträge vor und kümmern uns um Mitteilung an "
+     "Ja. Wir kennen die Programme von Land Kärnten, Klimafonds und Bund, bereiten die Anträge vor und kümmern uns um Mitteilung an "
      "die Gemeinde, Netzanmeldung, Zählertausch und Inbetriebnahme. Sie bekommen eine schlüsselfertige Anlage."),
     ("Kann ich bei EBZ Energie in Villach persönlich vorbeikommen?",
      "Ja, nach Terminvereinbarung in der Triglavstraße 15, 9500 Villach, Montag bis Freitag von 10:00 bis 20:00 Uhr. "
@@ -162,7 +164,7 @@ def build():
                 "bullets": [
                     "Bis zu 85 % weniger Stromkosten",
                     "Speicher, Notstrom und Wallbox für Abend, Netzausfall und E-Auto",
-                    "Landespauschale Kärnten plus Bundesförderung, Finanzierung ab 147 € im Monat*",
+                    "Landespauschale Kärnten 3.000 € mit Speicher, Finanzierung ab 147 € im Monat*",
                 ],
                 "cta": ("kontakt", "Beratung für mein Zuhause"),
             },
@@ -213,7 +215,7 @@ def build():
             ],
             aside=("Ihre Vorteile in Villach", [
                 ("☀", "Eigener Strom", "Sie erzeugen Ihren Strom selbst und werden unabhängiger von Preissteigerungen."),
-                ("€", "Förderung Kärnten", "3.000 € Landespauschale für private PV ab 5 kWp mit Speicher, dazu der EAG-Zuschuss des Bundes."),
+                ("€", "Förderung Kärnten", "3.000 € Landespauschale für private PV ab 5 kWp mit Speicher ab 5 kWh."),
                 ("▮", "Speicher und Notstrom", "Sonnenstrom auch abends, Versorgung auch bei Netzausfall."),
                 ("⌂", "Wertsteigerung", "Ein Haus mit eigener Energieversorgung gilt am Markt in Villach als zukunftssicher."),
             ]),
@@ -275,12 +277,13 @@ def build():
         ),
         C.media_text(
             eyebrow="Förderung Kärnten",
-            h2="Förderung für Photovoltaik in Villach: Landespauschale Kärnten und EAG",
+            h2="Förderung für Photovoltaik in Villach: Landespauschale Kärnten, Ausblick Bund",
             paragraphs=[
                 ("Das Land Kärnten zahlt 2026 eine Pauschale von 3.000 Euro für neue private PV-Anlagen ab 5 kWp mit "
-                 "Speicher ab 5 kWh. Der Bund fördert über den "
-                 "EAG-Investitionszuschuss mit 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, europäische "
-                 "Komponenten bringen 10 Prozent Bonus (Stand Oktober 2026)."),
+                 "Speicher ab 5 kWh. Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft "
+                 "beziehungsweise abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit "
+                 "intelligenter Steuerung (Stand Oktober 2026). Wer in Villach jetzt plant, plant deshalb mit Speicher "
+                 "und Energiemanagement."),
                 ("Als Ihr Partner aus Villach übernehmen wir die Abwicklung: Wir prüfen, welche Programme zu Ihrem "
                  "Projekt passen, halten Fristen und Reihenfolge ein und bereiten die Anträge vor. Welche Fristen "
                  "gerade laufen, steht tagesaktuell auf unserer Förderseite; alle Details zur Landesförderung finden "
@@ -290,7 +293,7 @@ def build():
             alt="Beratung zur Photovoltaik-Förderung in Kärnten am Tisch",
             bullets=[
                 "Landespauschale Kärnten 3.000 € für PV ab 5 kWp mit Speicher ab 5 kWh",
-                "EAG-Investitionszuschuss 150 €/kWp bis 10 kWp und 150 €/kWh Speicher, 10 % Made-in-Europe-Bonus",
+                "Bund: Investitionszuschuss für 2026 abgeschlossen, Systemförderung ab 2027 geplant",
                 "Antrag und Abwicklung durch EBZ Energie",
                 a("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
             ],
@@ -328,7 +331,7 @@ def build():
                 {"ic": "✓", "title": "Zertifizierte Montage", "text": "Zertifizierte Fachkräfte für Dach und Elektrotechnik, ein fester Ansprechpartner von der Planung bis zur Übergabe."},
                 {"ic": "◫", "title": "Projektbericht statt Pauschale", "text": "Projektbericht mit 3D-Belegplan und Statikreport für Ihr Dach, dazu ein Fixangebot."},
                 {"ic": "◇", "title": "Garantien schriftlich", "text": "Bis zu 30 Jahre Leistungs- und mindestens 10 Jahre Produktgarantie auf die Module."},
-                {"ic": "€", "title": "Behördenwege inklusive", "text": "Mitteilung an die Gemeinde, Netzanmeldung bei Kärnten Netz, Landespauschale und EAG-Antrag aus einer Hand."},
+                {"ic": "€", "title": "Behördenwege inklusive", "text": "Mitteilung an die Gemeinde, Netzanmeldung bei Kärnten Netz und Landespauschale aus einer Hand."},
                 {"ic": "★", "title": "Echte Bewertungen", "text": f"{NAP['rating']} Sterne aus {bew} auf Google, Local Pack Platz 1 für „Photovoltaik Villach“ (Oktober 2026)."},
                 {"ic": "◉", "title": "Referenzen mit Zahlen", "text": "Anlagen in Villach, Warmbad, am Wörther- und Ossiachersee mit kWp, kWh und Ersparnis.",
                  "link_key": "referenzen", "link_text": "Referenzen in Kärnten"},
@@ -375,7 +378,7 @@ def build():
             steps=[
                 ("Beratung vor Ort", "Wir besprechen Verbrauch, Dach und Ziele bei Ihnen in Villach. Kostenlos und unverbindlich.", ""),
                 ("Projektbericht", "Sie erhalten einen Projektbericht mit 3D-Belegplan und Statikreport sowie ein transparentes Fixangebot.", ""),
-                ("Förderung, Gemeinde, Netz", "Landespauschale Kärnten, EAG-Antrag, Mitteilung an die Gemeinde und Netzanmeldung bei Kärnten Netz: Wir bereiten alles vor.", ""),
+                ("Förderung, Gemeinde, Netz", "Landespauschale Kärnten, Mitteilung an die Gemeinde und Netzanmeldung bei Kärnten Netz: Wir bereiten alles vor.", ""),
                 ("Montage und Übergabe", "Zertifizierte Fachkräfte montieren, wir kümmern uns um Zählertausch, Inbetriebnahme und Einschulung.", ""),
             ],
         ),

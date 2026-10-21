@@ -211,8 +211,8 @@ ORT = {
         ("Was kostet eine Photovoltaikanlage mit Speicher in Feldkirchen in Kärnten?",
          "Eine Komplettanlage mit rund 10 kWp und Speicher kostet in Feldkirchen typischerweise 15.000 bis 22.000 Euro "
          "vor Förderung, inklusive Montage, Baumitteilung an die Stadtgemeinde und Netzanmeldung bei Kärnten Netz "
-         "(EBZ-Richtpreis, Stand Oktober 2026). Davon gehen die Landespauschale Kärnten von 3.000 Euro und der "
-         "Investitionszuschuss des Bundes ab. Eine Finanzierung ab 147 Euro im Monat* ist möglich, die Anlage gehört "
+         "(EBZ-Richtpreis, Stand Oktober 2026). Davon geht die Landespauschale Kärnten von 3.000 Euro ab; der "
+         "Investitionszuschuss des Bundes ist für 2026 abgeschlossen. Eine Finanzierung ab 147 Euro im Monat* ist möglich, die Anlage gehört "
          "Ihnen ab dem ersten Tag."),
         ("Wer ist in Feldkirchen der Stromnetzbetreiber und wie läuft die Anmeldung der PV-Anlage?",
          "Netzbetreiber in Feldkirchen in Kärnten ist die KNG-Kärnten Netz GmbH, die dort ein eigenes Umspannwerk "
@@ -246,8 +246,8 @@ ORT = {
         ("Gibt es in Feldkirchen eine Gemeindeförderung für Photovoltaik oder Wärmepumpe?",
          "Derzeit weist die Stadtgemeinde Feldkirchen kein eigenes Programm für Photovoltaik, Speicher oder "
          "Heizungstausch aus (Stand Oktober 2026). Eine frühere Gemeindeaktion für den Ausstieg aus fossilen "
-         "Heizungen mit bis zu 1.500 Euro ist beendet. Für Photovoltaik gelten die Förderungen von Land Kärnten und "
-         "Bund. Bei der Wärmepumpe ist die Bundesförderung derzeit ausgeschöpft; was das Land Kärnten für den "
+         "Heizungen mit bis zu 1.500 Euro ist beendet. Für Photovoltaik gilt die Landespauschale Kärnten, ab 2027 plant "
+         "der Bund laut BMWET eine Systemförderung für Speicher. Bei der Wärmepumpe ist die Bundesförderung derzeit ausgeschöpft; was das Land Kärnten für den "
          "Heizungstausch aktuell zahlt, prüfen wir vor jedem Angebot."),
         ("Ist hier Feldkirchen in Kärnten oder Feldkirchen bei Graz gemeint, und kommen Sie in den ganzen Bezirk?",
          "Gemeint ist Feldkirchen in Kärnten, die Bezirkshauptstadt mit der Postleitzahl 9560, nicht Feldkirchen bei "

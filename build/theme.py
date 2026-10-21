@@ -1129,9 +1129,21 @@ def write_assets():
     js_path = os.path.join(root, "out", "assets", "js", "main.js")
     os.makedirs(os.path.dirname(css_path), exist_ok=True)
     os.makedirs(os.path.dirname(js_path), exist_ok=True)
+    # Schriften selbst gehostet (build/static/fonts/fonts.css), relative URLs: styles.css liegt in /assets/css/,
+    # so funktioniert es auch im Unterverzeichnis-Deploy der Vorschau.
+    fonts_css = ""
+    fonts_src = os.path.join(root, "build", "static", "fonts", "fonts.css")
+    if os.path.exists(fonts_src):
+        with open(fonts_src, encoding="utf-8") as f:
+            fonts_css = f.read().replace("url(/assets/fonts/", "url(../fonts/").strip() + "\n"
+    from chatbot import CHATBOT_CSS, CHATBOT_JS
+    from common import CHATBOT_URL
     with open(css_path, "w", encoding="utf-8") as f:
-        f.write(CSS.strip() + "\n")
+        f.write(fonts_css + CSS.strip() + "\n" + CHATBOT_CSS.strip() + "\n")
     with open(js_path, "w", encoding="utf-8") as f:
         f.write(JS.strip() + "\n")
+    with open(os.path.join(os.path.dirname(js_path), "chatbot.js"), "w", encoding="utf-8") as f:
+        f.write(CHATBOT_JS.strip().replace("__CHATBOT_URL__", CHATBOT_URL) + "\n")
+    print("[OK ] assets/js/chatbot.js")
     print("[OK ] assets/css/styles.css")
     print("[OK ] assets/js/main.js")

@@ -34,7 +34,7 @@ ARTICLE = {
         "Antrag <b>nach</b> Umsetzung",
     ],
     "date_published": "2026-03-25",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_gewerbe",
     "hero_alt": "Gewerbegebäude mit Photovoltaik auf dem Dach und Wärmepumpe im Betrieb",
 
@@ -183,8 +183,8 @@ Wohnbau, gelten eigene beihilfenrechtliche Grundlagen mit höheren Obergrenzen.<
 <p>Betriebe mit hohem Tagesstrombedarf, etwa Bürogebäude, Werkstätten oder Gastronomie, haben ein
 Verbrauchsprofil, das gut zur Erzeugung einer {a('photovoltaik', 'Photovoltaikanlage')} passt. Der
 tagsüber erzeugte Solarstrom treibt die Wärmepumpe direkt an und senkt die Betriebskosten. Für
-betriebliche PV-Anlagen gibt es eigene Programme über den EAG-Investitionszuschuss und die
-KPC-Umweltförderung für Betriebe (siehe {a('foerderung_at', 'Photovoltaik-Förderung Österreich')}).
+betriebliche PV-Anlagen gab es 2026 den EAG-Investitionszuschuss (letzter Call endete am 22. Oktober 2026,
+derzeit nicht beantragbar) und die KPC-Umweltförderung für Betriebe (siehe {a('foerderung_at', 'Photovoltaik-Förderung Österreich')}).
 Wie Wärmepumpe und PV zusammenspielen, zeigt der Ratgeber
 {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}. Ein Beispiel aus der Praxis:
 Bei einem Gewerbebetrieb in Oberösterreich mit 40 kWp und 40-kWh-Speicher liegt die Ersparnis bei rund

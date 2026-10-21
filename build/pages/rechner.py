@@ -28,6 +28,7 @@ EG_BEZUG = 14.0         # ct/kWh Beispiel EG-Bezugspreis*
 LIEFERANT = 17.0        # ct/kWh Beispiel Energiepreis Lieferant*
 BEITRAG = 48            # EUR/Jahr Beispiel Mitgliedsbeitrag (4 EUR je Monat)*
 RABATT = {"lokal": 0.57, "regional": 0.28, "ne45": 0.64, "at": 0.0}
+KTN_PAUSCHALE = 3000    # EUR Landespauschale Kaernten PV ab 5 kWp mit neuem Speicher ab 5 kWh (2026)
 
 
 def _eur(v):
@@ -106,12 +107,14 @@ def solar_calc(verbrauch, gewerbe=False, speicher=True, preis_ct=28.0, ausrichtu
     inv_min = kwp * (1500 if speicher else 1000)
     inv_max = kwp * (2200 if speicher else 1500)
     inv_mid = (inv_min + inv_max) / 2
-    foerd = (min(kwp, 10) * 150 + max(0, kwp - 10) * 140) + min(kwh_sp, kwp * 0.5) * 150
-    amort = (inv_mid - foerd) / max(ersparnis, 1)
-    amort_ktn = (inv_mid - foerd - 3000) / max(ersparnis, 1)
-    rate = (inv_mid - foerd) / 25000 * 164
+    # Bundeszuschuss (EAG) fuer 2026 abgeschlossen: nicht mehr abgezogen. Eingerechnet als getrennte Zeile nur die
+    # Kaerntner Landespauschale (Neuanlage ab 5 kWp mit neuem Speicher ab 5 kWh), siehe _fakten_2026-10.md.
+    foerd_ktn = KTN_PAUSCHALE if (speicher and kwp >= 5 and kwh_sp >= 5) else 0
+    amort = inv_mid / max(ersparnis, 1)
+    amort_ktn = (inv_mid - foerd_ktn) / max(ersparnis, 1) if foerd_ktn else None
+    rate = inv_mid / 25000 * 164
     return dict(kwp=kwp, ertrag=ertrag, eigen=eigen, einsp=einsp, quote=eigen / ertrag, autark=eigen / verbrauch,
-                ersparnis=ersparnis, inv_min=inv_min, inv_max=inv_max, foerd=foerd, amort=amort,
+                ersparnis=ersparnis, inv_min=inv_min, inv_max=inv_max, foerd_ktn=foerd_ktn, amort=amort,
                 amort_ktn=amort_ktn, rate=rate, flaeche=kwp * M2_KWP)
 
 
@@ -143,8 +146,8 @@ SOLAR_RESULT = f"""
     <div><b id="s-quote">0 %</b><span>Eigenverbrauchsquote*</span></div>
     <div><b id="s-autark">0 %</b><span>Autarkiegrad (weniger Netzstrom)</span></div>
     <div><b id="s-invest">0 €</b><span>Richtpreis vor Förderung*</span></div>
-    <div><b id="s-foerder">0 €</b><span>Bundesförderung (EAG 2026)*</span></div>
-    <div><b id="s-amort">0 Jahre</b><span>Amortisation nach Förderung*</span></div>
+    <div><b id="s-amort">0 Jahre</b><span>Amortisation ohne Förderung*</span></div>
+    <div><b id="s-foerder">0 Jahre</b><span>Amortisation mit Landespauschale Kärnten (3.000 €, nur mit Speicher)*</span></div>
     <div><b id="s-rate">0 €</b><span>Finanzierung pro Monat*</span></div>
     <div><b id="s-einsp">0 €</b><span>Einspeisung zu {OEMAG_STR} ct (OeMAG, Sept. 2026)*</span></div>
   </div>
@@ -159,14 +162,14 @@ SOLAR_ASSUMPTIONS = [
     "Eigenverbrauchsquote: ohne Speicher rund 30 % (Betrieb 50 %), mit Speicher bis zu 70 % (Betrieb 80 %). Mehr geht nur mit Energiemanagement.",
     f"Einspeisung des Überschusses zum OeMAG-Marktpreis von {OEMAG_STR} ct je kWh (September 2026; Juli 2026: {OEMAG_JULI_STR} ct, der Wert schwankt monatlich).",
     "Richtpreis: 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung, ohne Speicher rund 10.000 bis 15.000 €; linear skaliert.",
-    "Bundesförderung 2026 (EAG): 150 € je kWp bis 10 kWp, darüber 140 € je kWp, plus 150 € je kWh Speicher (bis 0,5 kWh je kWp). Landesförderungen kommen zusätzlich dazu.",
+    "Förderung: Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen und wird nicht abgezogen. Getrennt ausgewiesen ist die Landespauschale Kärnten von 3.000 € (Neuanlage ab 5 kWp mit neuem Speicher ab 5 kWh). Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, Höhe offen.",
     "Finanzierung: fixe Rate über 25 Jahre, Richtwert aus den Beispielen des Finanzierungspartners (ab 102 € für 15.000 €, ab 164 € für 25.000 €), linear skaliert. Rate abhängig von Angebot und Laufzeit.",
     "Strompreissteigerungen, Wartung und Modulalterung sind nicht eingerechnet.",
 ]
 
 SOLAR_JS = r"""
 (function(){
-  var OEMAG=__OEMAG__, M2=__M2__, AUS={sued:1,ostwest:0.9,einseitig:0.85};
+  var OEMAG=__OEMAG__, M2=__M2__, KTN=__KTN__, AUS={sued:1,ostwest:0.9,einseitig:0.85};
   var $=function(id){return document.getElementById(id);};
   var eur=function(v){return Math.round(v).toLocaleString("de-DE")+" €";};
   var kwh=function(v){return Math.round(v).toLocaleString("de-DE")+" kWh";};
@@ -183,9 +186,11 @@ SOLAR_JS = r"""
     var ersparnis=eigen*preis+einsp*OEMAG/100;
     var kwhSp=speicher?kwp:0;
     var invMin=kwp*(speicher?1500:1000), invMax=kwp*(speicher?2200:1500), invMid=(invMin+invMax)/2;
-    var foerd=(Math.min(kwp,10)*150+Math.max(0,kwp-10)*140)+Math.min(kwhSp,kwp*0.5)*150;
-    var amort=(invMid-foerd)/Math.max(ersparnis,1);
-    var rate=(invMid-foerd)/25000*164;
+    var foerdKtn=(speicher&&kwp>=5&&kwhSp>=5)?KTN:0;
+    var amort=invMid/Math.max(ersparnis,1);
+    var amortKtn=foerdKtn?(invMid-foerdKtn)/Math.max(ersparnis,1):null;
+    var rate=invMid/25000*164;
+    var jahre=function(v){return (Math.round(v*10)/10).toLocaleString("de-DE")+" Jahre";};
     $("s-ersparnis").textContent=eur(ersparnis);
     $("s-kwp").textContent=kwp.toLocaleString("de-DE")+" kWp";
     $("s-flaeche").textContent="rund "+Math.round(kwp*M2)+" m²";
@@ -193,8 +198,8 @@ SOLAR_JS = r"""
     $("s-quote").textContent=Math.round(eigen/ertrag*100)+" %";
     $("s-autark").textContent=Math.round(eigen/verbrauch*100)+" %";
     $("s-invest").textContent=eur(invMin)+" bis "+eur(invMax);
-    $("s-foerder").textContent=eur(foerd);
-    $("s-amort").textContent=(Math.round(amort*10)/10).toLocaleString("de-DE")+" Jahre";
+    $("s-foerder").textContent=amortKtn===null?"nur mit Speicher":jahre(amortKtn);
+    $("s-amort").textContent=jahre(amort);
     $("s-rate").textContent="ab "+eur(rate);
     $("s-einsp").textContent=eur(einsp*OEMAG/100)+" ("+kwh(einsp)+")";
     var cta=$("s-cta"); var base=cta.getAttribute("href").split("?")[0];
@@ -203,7 +208,11 @@ SOLAR_JS = r"""
   ["s-verbrauch","s-typ","s-ausrichtung","s-speicher","s-preis"].forEach(function(id){ var el=$(id); if(el){ el.addEventListener("input",calc); el.addEventListener("change",calc);} });
   if($("s-verbrauch")) calc();
 })();
-""".replace("__OEMAG__", str(OEMAG)).replace("__M2__", str(M2_KWP))
+""".replace("__OEMAG__", str(OEMAG)).replace("__M2__", str(M2_KWP)).replace("__KTN__", str(KTN_PAUSCHALE))
+
+_R10 = solar_calc(10000)
+_AMORT10 = f"{_R10['amort']:.0f}"
+_AMORT10_KTN = f"{_R10['amort_ktn']:.0f}"
 
 SOLAR_FAQ = [
     ("Wie genau ist der PV-Rechner?",
@@ -220,20 +229,23 @@ SOLAR_FAQ = [
      "Rund 1.000 kWh je kWp bei Südausrichtung und 30 bis 35 Grad Dachneigung, in sonnenreichen Lagen Kärntens bis 1.100 kWh. Ost-West-Dächer "
      "liefern rund 10 Prozent weniger, dafür gleichmäßiger über den Tag. Quelle für Standortwerte: PVGIS der EU-Kommission."),
     ("Wie groß sollte der Speicher zur Anlage sein?",
-     "Richtwert 1 kWh Speicher je kWp Anlagenleistung, bei 10 kWp also rund 10 kWh. Der EAG-Zuschuss fördert mindestens 0,5 kWh je kWp mit "
-     "150 € je kWh. Größere Speicher lohnen sich mit Wärmepumpe, E-Auto oder Notstromwunsch."),
+     "Richtwert 1 kWh Speicher je kWp Anlagenleistung, bei 10 kWp also rund 10 kWh. Kärnten zahlt die Landespauschale von 3.000 € nur "
+     "für eine Neuanlage ab 5 kWp mit neuem Speicher ab 5 kWh, und die ab 2027 geplante Systemförderung des Bundes (laut BMWET) setzt auf "
+     "Speicher mit intelligenter Steuerung. Größere Speicher lohnen sich mit Wärmepumpe, E-Auto oder Notstromwunsch."),
     ("Wie wird die Amortisation berechnet?",
-     "Richtpreis minus Förderung, geteilt durch die jährliche Ersparnis (selbst verbrauchter Strom zum eigenen Strompreis plus Einspeisung zum "
-     f"OeMAG-Marktpreis von {OEMAG_STR} ct). Bei 10 kWp mit Speicher ergibt das rund 7 Jahre, mit der Kärntner Landespauschale von 3.000 € "
-     "rund 6 Jahre. Strompreissteigerungen verkürzen die Dauer, sind aber nicht eingerechnet."),
+     "Richtpreis (Mitte der Spanne), geteilt durch die jährliche Ersparnis (selbst verbrauchter Strom zum eigenen Strompreis plus Einspeisung zum "
+     f"OeMAG-Marktpreis von {OEMAG_STR} ct). Bei 10 kWp mit Speicher ergibt das ohne Förderung rund {_AMORT10} Jahre, mit der Kärntner "
+     f"Landespauschale von 3.000 € rund {_AMORT10_KTN} Jahre. Der Investitionszuschuss des Bundes ist für 2026 abgeschlossen und nicht "
+     "eingerechnet. Strompreissteigerungen verkürzen die Dauer, sind aber ebenfalls nicht eingerechnet."),
     ("Berücksichtigt der Rechner Wärmepumpe und E-Auto / Wallbox?",
      "Indirekt über den Jahresstromverbrauch: Geben Sie den Gesamtverbrauch inklusive Wärmepumpe und E-Auto / Wallbox ein, der Rechner skaliert die "
      "Anlage mit. Das Lastprofil / Standardlastprofil eines Haushalts mit Wärmepumpe unterscheidet sich aber, deshalb rechnen wir das im "
      "Projektbericht mit Ihren echten Verbrauchsdaten nach."),
-    ("Sind Landesförderungen eingerechnet?",
-     "Nein, nur die Bundesförderung nach EAG. Die Landespauschale Kärnten 3.000 € (Neuanlage ab 5 kWp mit 5 kWh Speicher) und die "
-     "Landesförderung Steiermark kommen zusätzlich dazu und verkürzen die Amortisation weiter. Welche Fristen gerade laufen, steht "
-     "tagesaktuell auf unserer Förderseite."),
+    ("Welche Förderung rechnet der PV-Rechner ein?",
+     "Die Landespauschale Kärnten von 3.000 € (Neuanlage ab 5 kWp mit neuem Speicher ab 5 kWh) steht als eigene Zeile im Ergebnis. Der "
+     "Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft beziehungsweise abgeschlossen und wird nicht abgezogen; "
+     "ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, die Höhe ist offen. Die Steiermark "
+     "zahlt derzeit keine PV-Landesförderung. Was gerade beantragbar ist, steht tagesaktuell auf unserer Förderseite und im Förderrechner."),
 ]
 
 
@@ -247,8 +259,8 @@ def _solar_examples():
                      f"{round(r['quote'] * 100)} % / {round(r['autark'] * 100)} %",
                      _eur(r["ersparnis"]),
                      f"{_eur(r['inv_min'])} bis {_eur(r['inv_max'])}",
-                     _eur(r["foerd"]),
-                     f"{r['amort']:.1f} Jahre, mit Kärnten-Pauschale {r['amort_ktn']:.1f} Jahre".replace(".", ",")))
+                     _eur(r["foerd_ktn"]),
+                     f"{r['amort']:.1f} Jahre ohne Förderung, mit Kärnten-Pauschale {r['amort_ktn']:.1f} Jahre".replace(".", ",")))
     return rows
 
 
@@ -273,8 +285,8 @@ def _solar_page():
                 ("Ein PV-Rechner (Photovoltaik-Rechner, Solarrechner) ist ein Online-Werkzeug, das aus Jahresstromverbrauch, "
                  "Dachausrichtung und Standort Richtwerte für Anlagengröße in kWp, Jahresertrag, Eigenverbrauchsquote, Kosten, "
                  "Förderung und Amortisation berechnet. Der EBZ-PV-Rechner rechnet mit 1.000 kWh je kWp für Kärnten und die "
-                 f"Steiermark, dem EAG-Zuschuss 2026 von 150 € je kWp und dem OeMAG-Marktpreis von {OEMAG_STR} ct je kWh "
-                 "(September 2026, Stand Oktober 2026)."),
+                 f"Steiermark, dem OeMAG-Marktpreis von {OEMAG_STR} ct je kWh (September 2026, Stand Oktober 2026) und weist die "
+                 "Kärntner Landespauschale von 3.000 € getrennt aus."),
                 ("Ob Sie PV Anlage Rechner, Photovoltaik Rechner kostenlos oder Solarrechner suchen: Gemeint ist dasselbe Werkzeug. "
                  "Anders als die Wirtschaftlichkeitsberechnung im Projektbericht kennt der PV Rechner weder Ihre Dachneigung noch "
                  "Verschattung oder Ihr Lastprofil. Er ist der ehrliche Einstieg: Wer danach wissen will, was sein Dach wirklich "
@@ -302,14 +314,16 @@ def _solar_page():
                  f"OeMAG-Marktpreis September 2026 (Juli 2026: {OEMAG_JULI_STR} ct), oem-ag.at"),
                 ("Richtpreis vor Förderung", "mit Speicher 1.500 bis 2.200 € je kWp, ohne Speicher 1.000 bis 1.500 € je kWp",
                  "EBZ-Richtpreis 10 kWp mit Speicher 15.000 bis 22.000 €, linear skaliert"),
-                ("EAG-Investitionszuschuss 150 €/kWp", "bis 10 kWp 150 €, bis 20 kWp 140 € je kWp; Speicher 150 € je kWh (mind. 0,5 kWh je kWp); Made-in-Europe-Bonus nicht eingerechnet",
-                 "EAG-Abwicklungsstelle, Fördersätze 2026"),
-                ("Amortisation und Rendite", "(Richtpreis minus Förderung) / Ersparnis pro Jahr; ohne Strompreissteigerung, Wartung, Degradation",
-                 "konservative Wirtschaftlichkeitsberechnung, Landesförderungen separat"),
+                ("Bundeszuschuss (EAG-Investitionszuschuss)", "nicht eingerechnet: für 2026 abgeschlossen (2026 galten 150 € je kWp bis 10 kWp und 150 € je kWh Speicher); ab 2027 Systemförderung laut BMWET geplant, Höhe offen",
+                 "EAG-Abwicklungsstelle, BMWET-Eckpunkte Oktober 2026"),
+                ("Landespauschale Kärnten", "3.000 € für eine Neuanlage ab 5 kWp mit neuem Speicher ab 5 kWh, getrennt ausgewiesen; ohne Speicher keine Pauschale",
+                 "Land Kärnten, Landesförderung 2026"),
+                ("Amortisation und Rendite", "Richtpreis (Mitte der Spanne) / Ersparnis pro Jahr, einmal ohne Förderung, einmal abzüglich Kärnten-Pauschale; ohne Strompreissteigerung, Wartung, Degradation",
+                 "konservative Wirtschaftlichkeitsberechnung"),
                 ("Finanzierung", f"Rate linear aus {F['beispiel_gross']['rate']} für {F['beispiel_gross']['betrag']} über 25 Jahre",
                  f"Finanzierungspartner {F['partner']}, Beispiele Stand September 2026"),
             ],
-            note="Alle Werte sind Richtwerte. Speichergröße kWh wird mit 1 kWh je kWp angesetzt, die Förderung greift auf 0,5 kWh je kWp.",
+            note="Alle Werte sind Richtwerte. Speichergröße kWh wird mit 1 kWh je kWp angesetzt, die Finanzierungsrate ist ohne Förderung gerechnet.",
             anchor="methodik",
         ),
         _table_section(
@@ -319,31 +333,32 @@ def _solar_page():
                    "Speicher 1 kWh je kWp, Verbrauch passend zur Anlagengröße. PV Rechner mit Speicher und ohne unterscheiden sich "
                    "vor allem in der Eigenverbrauchsquote: 30 statt 70 Prozent."),
             headers=["Anlage", "Jahresverbrauch", "Ertrag / Dachfläche*", "Eigenverbrauch / Autarkie*", "Ersparnis pro Jahr*",
-                     "Richtpreis vor Förderung*", "EAG 2026", "Amortisation*"],
+                     "Richtpreis vor Förderung*", "Landespauschale Kärnten", "Amortisation*"],
             rows=examples,
             note=(f"*Richtwerte, Stand Oktober 2026. Einspeisung zu {OEMAG_STR} ct (OeMAG September 2026). Kärnten-Pauschale: 3.000 € "
-                  "Landesförderung für Neuanlagen ab 5 kWp mit 5 kWh Speicher. Ohne Speicher sinkt der "
+                  "Landesförderung für Neuanlagen ab 5 kWp mit 5 kWh Speicher. Ein Bundeszuschuss ist nicht eingerechnet, er ist "
+                  "für 2026 abgeschlossen. Ohne Speicher sinkt der "
                   "Richtpreis auf 1.000 bis 1.500 € je kWp, die Eigenverbrauchsquote auf rund 30 %."),
             anchor="beispiele",
             white=False,
         ),
         C.media_text(
             eyebrow="Förderung 2026",
-            h2="Welche Förderung ist eingerechnet: EAG 2026, Landespauschale Kärnten, Steiermark",
+            h2="Welche Förderung ist eingerechnet: Landespauschale Kärnten, Bund, Steiermark",
             paragraphs=[
-                ("Eingerechnet ist nur der Bundeszuschuss nach EAG: 150 € je kWp bis 10 kWp (Kategorie A), 140 € bis 20 kWp, 130 € bis 100 kWp, "
-                 "dazu 150 € je kWh Speicher (Stand Oktober 2026). Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und "
-                 "intelligente Steuerung."),
-                ("Nicht eingerechnet, aber zusätzlich möglich: die Landespauschale Kärnten 3.000 € für Neuanlagen ab 5 kWp mit mindestens 5 kWh "
-                 "Speicher (maximal 50 Prozent der Kosten) und die Landesförderung Steiermark. Beides verkürzt die Amortisation um ein "
-                 "bis zwei Jahre. "
-                 "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
-                 "und stellen die Anträge."),
+                ("Getrennt ausgewiesen ist die Landespauschale Kärnten: 3.000 € für Neuanlagen ab 5 kWp mit neuem Speicher ab 5 kWh "
+                 "(maximal 50 Prozent der Kosten), für die Speicher-Nachrüstung einer bestehenden Anlage 1.000 €. Sie verkürzt die "
+                 "Amortisation um ein bis zwei Jahre. Die Steiermark zahlt derzeit keine PV-Landesförderung."),
+                ("Nicht eingerechnet ist der Investitionszuschuss des Bundes: Er ist für PV und Speicher für 2026 ausgeschöpft "
+                 "beziehungsweise abgeschlossen, neue Anlagen bekommen derzeit keinen Bundeszuschuss. Ab 2027 plant der Bund laut BMWET "
+                 "eine Systemförderung für Speicher mit intelligenter Steuerung, beantragt nach der Installation; Höhe und Kriterien sind "
+                 "offen. Wer jetzt plant, plant deshalb sinnvoll mit Speicher und Energiemanagement. Was gerade beantragbar ist, steht "
+                 "tagesaktuell auf unserer Förderseite; wir prüfen es für Ihr Projekt und stellen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung 2026 in Kärnten und der Steiermark",
             bullets=[
-                a("foerderung_at", "EAG-Investitionszuschuss 2026: Sätze und Kategorien"),
+                a("foerderrechner", "Förderrechner: was heute beantragbar ist"),
                 a("foerderung_kaernten", "Förderung Kärnten 2026: 3.000 € Pauschale"),
                 a("foerderung_steiermark", "Förderung Steiermark: aktuelle Programme"),
             ],
@@ -363,7 +378,8 @@ def _solar_page():
             alt="Photovoltaikanlage auf einem Einfamilienhaus in Villach, 10 kWp Ost-West mit Notstrom",
             bullets=[
                 "3D-Belegplan und Statikreport statt Schätzung",
-                "Förderanträge Bund und Land inklusive",
+                "Förderanträge inklusive",
+
                 a("referenzen", "Referenzen") + " mit echten Erträgen",
             ],
             reverse=True,
@@ -389,7 +405,7 @@ def _solar_page():
   <section class="section--tight" style="padding-bottom:40px">
     <div class="wrap">
       <p class="form-note">*Richtwerte, kein Angebot. Rechenwerte laut Methodik-Tabelle, Stand Oktober 2026. OeMAG-Marktpreis
-      September 2026: {OEMAG_STR} ct je kWh (oem-ag.at). Fördersätze laut EAG-Abwicklungsstelle und Land Kärnten 2026. Fachlich
+      September 2026: {OEMAG_STR} ct je kWh (oem-ag.at). Förderstand: Land Kärnten 2026, Bundeszuschuss für 2026 abgeschlossen (EAG-Abwicklungsstelle, BMWET). Fachlich
       geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>
   </section>""",

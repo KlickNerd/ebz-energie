@@ -32,7 +32,7 @@ ARTICLE = {
         "Lebensdauer: <b>15 bis 20 Jahre</b>",
     ],
     "date_published": "2025-06-15",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "speicher",
     "hero_alt": "Batteriespeicher für die Nachrüstung an einer bestehenden Photovoltaikanlage",
 
@@ -47,8 +47,9 @@ ARTICLE = {
         "Speicher wird im Winter nie voll, ein zu kleiner ist im Sommer mittags schon geladen.",
         "Kosten: Richtwert 800 bis 1.200 Euro je kWh inklusive Installation und gegebenenfalls "
         "Batteriewechselrichter*. Für 10 kWh also rund 8.000 bis 12.000 Euro vor Förderung.",
-        "Förderung 2026: Der EAG-Bundeszuschuss gilt nur für Speicher zusammen mit einer neuen oder erweiterten "
-        "PV-Anlage. Die reine Nachrüstung fördern aktuell die Länder, etwa Kärnten mit 1.000 Euro Pauschale, "
+        "Förderung: Der EAG-Bundeszuschuss galt im Call 2026 nur für Speicher zusammen mit einer neuen oder "
+        "erweiterten PV-Anlage, der letzte Call endete am 22. Oktober 2026. Die reine Nachrüstung fördern aktuell "
+        "die Länder, etwa Kärnten mit 1.000 Euro Pauschale, "
         "Oberösterreich mit 150 Euro je kWh und Tirol mit 100 Euro je kWh.",
     ],
     "kpis": [
@@ -163,14 +164,16 @@ Hersteller, Kapazität, Kopplungsart und Aufwand vor Ort ab.</small></p>
 """),
         ("Förderung für die Speicher-Nachrüstung 2026", "foerderung", f"""
 <p>Wichtig für die Kalkulation: Der EAG-Investitionszuschuss des Bundes (150 Euro je kWh, maximal 50 kWh)
-wird nur gewährt, wenn der Speicher gemeinsam mit einer neuen oder erweiterten PV-Anlage errichtet wird. Die
-reine Nachrüstung an einer Bestandsanlage ist auf Bundesebene nicht förderfähig. Dafür haben mehrere
-Bundesländer eigene Schienen aufgelegt:</p>
-{A.box("Ausblick 2027 (Stand Oktober 2026): Laut Eckpunkten des BMWET wird der EAG-Zuschuss ab 2027 zur "
-       "Systemförderung umgebaut. Der Antrag soll nach Installation und Rechnung gestellt werden, und die "
+wurde im Call 2026 nur gewährt, wenn der Speicher gemeinsam mit einer neuen oder erweiterten PV-Anlage
+errichtet wurde. Die reine Nachrüstung an einer Bestandsanlage war auf Bundesebene nicht förderfähig, und
+seit dem Ende des letzten Calls am 22. Oktober 2026 ist derzeit gar kein Bundeszuschuss beantragbar. Dafür
+haben mehrere Bundesländer eigene Schienen aufgelegt:</p>
+{A.box("Ausblick 2027 (Stand ab 23. Oktober 2026): Laut Eckpunkten des BMWET soll der EAG-Zuschuss ab 2027 zur "
+       "Systemförderung umgebaut werden (geplant, nicht beschlossen). Der Antrag soll nach Installation und Rechnung gestellt werden, und die "
        "Nachrüstung von Speicher und Energiemanagement an Bestandsanlagen soll erstmals bundesweit förderbar "
        "werden. Projekte mit intelligentem Speicher, die ab 1. November 2026 in Betrieb gehen, sollen 2027 im "
-       "neuen System beantragbar sein. Höhe und Technikkriterien sind noch offen.", label="Ausblick:")}
+       "neuen System beantragbar sein. Höhe und Technikkriterien sind noch offen. Wer jetzt nachrüstet, wählt "
+       "daher einen Speicher mit Energiemanagement.", label="Ausblick:")}
 {A.table(
     ["Bundesland", "Förderung für die Speicher-Nachrüstung", "Bedingungen"],
     [
@@ -262,8 +265,9 @@ Nutzung der Landesförderung, wo es sie gibt.</p>
          "Rest geht ins Netz. Mit einem passend dimensionierten Speicher steigt der Anteil auf 60 bis 80 Prozent, "
          "weil der Mittagsüberschuss abends und nachts verbraucht wird."),
         ("Gibt es 2026 eine Förderung für die reine Speicher-Nachrüstung?",
-         "Vom Bund nicht: Der EAG-Zuschuss von 150 Euro je kWh gilt nur zusammen mit einer neuen oder "
-         "erweiterten PV-Anlage. Landesförderungen gibt es unter anderem in Kärnten (1.000 Euro Pauschale ab "
+         "Vom Bund nicht: Der EAG-Zuschuss von 150 Euro je kWh galt im Call 2026 nur zusammen mit einer neuen "
+         "oder erweiterten PV-Anlage, der letzte Call endete am 22. Oktober 2026. Ab 2027 soll die Nachrüstung laut "
+         "BMWET förderbar werden (geplant, nicht beschlossen). Landesförderungen gibt es unter anderem in Kärnten (1.000 Euro Pauschale ab "
          "5 kWh), Oberösterreich (150 Euro je kWh, bis 2.250 Euro), Tirol (100 Euro je kWh, bis 1.000 Euro) und "
          "im Burgenland (100 Euro je kWh, bis 2.000 Euro). Stand Juni 2026."),
         ("Wie lange rechnet sich ein nachgerüsteter Speicher?",

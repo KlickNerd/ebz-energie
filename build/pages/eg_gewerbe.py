@@ -46,8 +46,9 @@ FAQ = [
     ("Welche Förderung gibt es für die Gründung (Klima- und Energiefonds)?",
      "Der Klima- und Energiefonds hat Konzept- und Aufbauphase von Energiegemeinschaften über eigene Förder-Calls "
      "unterstützt; ob aktuell ein Call offen ist, prüfen wir für Ihr Projekt (Stand Oktober 2026). Verlässlich "
-     "gefördert wird die Anlage: EAG-Investitionszuschuss und Landesförderungen, "
-     "dazu das Energiemanagementsystem mit bis zu 30 Prozent, maximal 20.000 € je Standort."),
+     "beantragbar ist die EMS-Förderung des Klimafonds für das Energiemanagementsystem mit bis zu 30 Prozent, "
+     "maximal 20.000 € je Standort. Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 "
+     "abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung."),
     ("Verein oder Genossenschaft: welche Rechtsform passt für Gemeinde und Betrieb?",
      "Die Gemeinschaft braucht eine eigene Rechtspersönlichkeit. Für kleinere Gemeinschaften ohne Kapitalbedarf der "
      "Verein (Statuten, ZVR-Zahl, Vorstand, etwa 50 bis 150 €), für größere mit Investitionen und vielen Mitgliedern "
@@ -290,12 +291,13 @@ def build():
             actions=[("Kosten und Abrechnung im Detail", "/energiegemeinschaft-kosten/", "")],
         ),
         C.media_text(
-            eyebrow="Förderungen: Klima- und Energiefonds, EAG-Zuschuss, Landesförderung",
+            eyebrow="Förderungen: Klima- und Energiefonds, Landesförderung, Ausblick Bund",
             h2="Förderungen im Blick, Finanzierung nach Bedarf",
             paragraphs=[
-                ("Gefördert wird vor allem die Anlage: EAG-Investitionszuschuss (bis 100 kWp 130 €, bis 1.000 kWp "
-                 "120 € je kWp, Speicher 150 € je kWh, Stand 2026) und Landesförderungen, in der Steiermark mit 125 € "
-                 "je kWp Bonus bei Einbindung in ein dezentrales Energiesystem. Das Energiemanagementsystem fördert der "
+                ("Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft beziehungsweise "
+                 "abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter "
+                 "Steuerung, Höhe und Kriterien offen. Für Betriebe und Gemeinden gelten bei den Ländern eigene "
+                 "Richtlinien, der steirische Ökofonds hat derzeit keine PV-Ausschreibung. Das Energiemanagementsystem fördert der "
                  "Klima- und Energiefonds mit bis zu 30 Prozent, maximal 20.000 € je Standort, die Teilnahme an einer "
                  "Energiegemeinschaft ist dort eine zulässige Betriebsoption."),
                 ("Für Konzept und Aufbau von Energiegemeinschaften gab es beim Klima- und Energiefonds Förder-Calls; ob "
@@ -305,7 +307,7 @@ def build():
             img=IMG["foerderung"],
             alt="Beratungsgespräch zu Förderung und Finanzierung einer Gewerbe-Photovoltaikanlage",
             bullets=[
-                "EAG-Investitionszuschuss und Landesförderungen für PV und Speicher",
+                "Bund: Investitionszuschuss für 2026 abgeschlossen, ab 2027 Systemförderung geplant",
                 a("/ems-foerderung/", "EMS-Förderung des Klimafonds") + ": 30 % bis 20.000 € je Standort",
                 a("finanzierung", "Finanzierung") + ": 0 € Anzahlung, fixe Rate, Eigentum ab Tag 1",
             ],
@@ -320,7 +322,7 @@ def build():
                 ("◷", "Lastgang statt Bauchgefühl", "Wir rechnen mit Ihren Viertelstundenwerten, nicht mit Prospektzahlen, und mit dem aktuellen OeMAG-Marktpreis statt dem Tief vom Juli."),
                 ("◎", "Prozesse mit dem Netzbetreiber", "ebUtilities, Betreibervertrag, EDA-Anmeldungen: Wir kennen die Abläufe bei Kärnten Netz und Energienetze Steiermark."),
                 ("✓", "Skalierbare Abrechnung", "energyfamily rechnet von 2 bis über 1.000 Zählpunkte automatisiert ab, monatlich, mit App und Reporting."),
-                ("€", "Förderungen im Blick", "EAG-Investitionszuschuss, Landesförderungen und die EMS-Förderung des Klimafonds: Wir prüfen, was gerade beantragbar ist."),
+                ("€", "Förderungen im Blick", "Landesförderungen, die EMS-Förderung des Klimafonds und die geplante Systemförderung des Bundes: Wir prüfen, was gerade beantragbar ist."),
                 ("⌂", "Regional präsent", "Sitz in Villach, Projekte in ganz Kärnten und der Steiermark. Ein Ansprechpartner, vom Erstgespräch bis zum Reporting."),
             ],
         ),

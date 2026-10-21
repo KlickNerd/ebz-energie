@@ -18,7 +18,7 @@ import components as C
 PATH = "/photovoltaik-gewerbe/"
 TITLE = "Photovoltaik für Gewerbe & Landwirtschaft | EBZ Energie"
 DESC = ("Photovoltaik für Betriebe in Kärnten und Steiermark: Auslegung nach Lastprofil, Gewerbespeicher, "
-        "EAG-Förderung Kategorie C und D. Referenz: 13.500 € im Jahr.")
+        "EMS-Förderung bis 20.000 €. Referenz: 13.500 € im Jahr.")
 
 STAND = "Stand Oktober 2026"
 
@@ -27,11 +27,12 @@ FAQ = [
      "In den meisten Fällen ja. Betriebe verbrauchen den Großteil ihres Stroms tagsüber und erreichen ohne Speicher "
      "Eigenverbrauchsquoten von 70 Prozent und mehr*. Ab etwa 50 Prozent rechnet sich die Anlage deutlich schneller "
      "als im Eigenheim. Referenz: 40 kWp in Oberösterreich sparen rund 13.500 Euro im Jahr."),
-    ("Welche Förderung gibt es 2026 für Gewerbeanlagen (EAG Kategorie C und D)?",
-     "Der EAG-Investitionszuschuss 2026 zahlt in Kategorie C (über 20 bis 100 kWp) 130 Euro je kWp, in Kategorie D "
-     "(über 100 bis 1.000 kWp) 120 Euro je kWp, Speicher 150 Euro je kWh (mindestens 0,5 kWh je kWp, maximal 50 kWh), "
-     "dazu 10 Prozent Made-in-Europe-Bonus (Stand Oktober 2026). Ab 2027 plant der Bund laut BMWET eine "
-     "Systemförderung. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für "
+    ("Welche Förderung gibt es 2026 für Gewerbeanlagen?",
+     "Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft beziehungsweise abgeschlossen; "
+     "2026 galten für Gewerbeanlagen 130 Euro je kWp (über 20 bis 100 kWp) und 120 Euro je kWp (über 100 bis 1.000 kWp). "
+     "Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, Höhe offen. "
+     "Beantragbar bleibt die EMS-Förderung des Klimafonds mit 30 Prozent, maximal 20.000 Euro je Standort (Stand "
+     "Oktober 2026), für Betriebe gelten bei den Ländern eigene Richtlinien. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für "
      "Ihr Projekt und stellen die Anträge."),
     ("PV Anlage 30 kWp, 50 kWp oder 100 kWp: Was kostet sie für einen Betrieb?",
      "Marktrichtwert 2026: rund 700 bis 1.300 Euro je kWp netto*. 30 kWp liegen damit bei etwa 21.000 bis 39.000 Euro, "
@@ -56,7 +57,8 @@ FAQ = [
      "Betriebe zahlen über den Leistungspreis für ihre höchste Viertelstunden-Leistungsspitze. Bei der "
      "Lastspitzenkappung (Peak Shaving) liefert der Speicher den Mehrbedarf, wenn mehrere Maschinen gleichzeitig "
      "anlaufen. Ein Gewerbespeicher lohnt sich bei teuren Lastspitzen, Verbrauch am Abend oder Wochenende und wenn "
-     "Kühlung oder Server bei Netzausfall weiterlaufen müssen. Förderung: 150 Euro je kWh bis 50 kWh."),
+     "Kühlung oder Server bei Netzausfall weiterlaufen müssen. Mit Energiemanagement geplant, hält er sich die ab 2027 "
+     "geplante Systemförderung des Bundes für Speicher mit intelligenter Steuerung offen (laut BMWET, Höhe offen)."),
     ("Agri-PV oder Dachanlage: was passt zu meinem landwirtschaftlichen Betrieb?",
      "Agri-PV ist eine Freiflächenanlage mit aufgeständerten oder senkrechten Modulen, unter der weiter bewirtschaftet "
      "wird: ein eigenes Projektfeld mit Flächenwidmung, Netzanschluss und meist Pachtmodellen. Für die meisten Höfe ist "
@@ -87,13 +89,12 @@ def _cost_section():
             "Trapezblech mit 40-kWh-Speicher in Oberösterreich, rund 40.000 kWh pro Jahr und 13.500 Euro "
             f"Stromkostenersparnis jährlich (Projektbericht EBZ Energie, {STAND}).")
     rows = [
-        ("30 kWp", "rund 21.000 bis 39.000 €*", "27.000 bis 33.000 kWh", "rund 150 bis 180 m²", "Kat. C: 130 €/kWp = 3.900 €"),
-        ("50 kWp", "rund 45.000 bis 65.000 €*", "45.000 bis 55.000 kWh", "rund 250 bis 300 m²", "Kat. C: 130 €/kWp = 6.500 €"),
-        ("100 kWp", "rund 85.000 bis 130.000 €*", "90.000 bis 110.000 kWh", "rund 500 bis 600 m²", "Kat. C: 130 €/kWp = 13.000 €"),
-        ("Gewerbespeicher", "20 bis 100 kWh, nach Lastprofil", "Eigenverbrauch und Lastspitzenkappung", "Technikraum oder Außenschrank",
-         "150 €/kWh bis 50 kWh, mind. 0,5 kWh je kWp"),
+        ("30 kWp", "rund 21.000 bis 39.000 €*", "27.000 bis 33.000 kWh", "rund 150 bis 180 m²"),
+        ("50 kWp", "rund 45.000 bis 65.000 €*", "45.000 bis 55.000 kWh", "rund 250 bis 300 m²"),
+        ("100 kWp", "rund 85.000 bis 130.000 €*", "90.000 bis 110.000 kWh", "rund 500 bis 600 m²"),
+        ("Gewerbespeicher", "20 bis 100 kWh, nach Lastprofil", "Eigenverbrauch und Lastspitzenkappung", "Technikraum oder Außenschrank"),
     ]
-    table = _table(["Anlagengröße", "Investition netto*", "Ertrag pro Jahr*", "Dachfläche*", "EAG-Zuschuss 2026"], rows)
+    table = _table(["Anlagengröße", "Investition netto*", "Ertrag pro Jahr*", "Dachfläche*"], rows)
     return f"""
   <section class="section" style="background:#fff;border-block:1px solid var(--line)" id="kosten">
     <div class="wrap">
@@ -122,7 +123,7 @@ def _tax_section():
             ("Eigenstrom", "selbst erzeugt und verbraucht: befreit von der Elektrizitätsabgabe (1,5 ct je kWh)"),
             ("Einspeiseerlöse", "Betriebseinnahmen zum OeMAG-Marktpreis oder Lieferantentarif"),
             ("Gemischte Nutzung", "Hof und Wohnhaus, Betrieb und Privat: Aufteilung nach Verbrauchsanteil"),
-            ("Förderung", "EAG-Zuschuss und EMS-Förderung mindern die Anschaffungskosten"),
+            ("Förderung", "Zuschüsse wie die EMS-Förderung mindern die Anschaffungskosten"),
         ],
         actions=[("Zahlen für die Steuerberatung anfragen", href("kontakt"), "")],
     )
@@ -138,7 +139,7 @@ def build():
                   "Lastprofil, montieren mit zertifizierten Fachkräften und übernehmen Förderung und Netzanmeldung. "
                   "Für Hallen, Höfe, Hotels und Werkstätten in Kärnten und der Steiermark."),
             badges=[("Planung", "nach Lastprofil"),
-                    ("EAG Kat. C und D", "130 bzw. 120 €/kWp"),
+                    ("EMS-Förderung", "30 % bis 20.000 €"),
                     ("Gewerbespeicher + EMS", "gegen Lastspitzen")],
             img=IMG["gewerbe_dach"],
             img_alt="Gewerbe-Photovoltaikanlage mit 40 kWp in Ost-West-Ausrichtung auf einem Trapezblechdach in Oberösterreich",
@@ -297,15 +298,15 @@ def build():
             ],
         ),
         C.media_text(
-            eyebrow="EAG Investitionszuschuss 2026 für Betriebe",
-            h2="Förderungen für Betriebe: EAG Kategorie C und D, Speicher, EMS, Elektrizitätsabgabe",
+            eyebrow="Förderung 2026 für Betriebe",
+            h2="Förderungen für Betriebe: Bund, Speicher, EMS, Elektrizitätsabgabe",
             paragraphs=[
-                ("Der EAG-Investitionszuschuss 2026 fördert Gewerbeanlagen in Kategorie C (über 20 bis 100 kWp) mit "
-                 "130 Euro je kWp und in Kategorie D (über 100 bis 1.000 kWp) mit 120 Euro je kWp, dazu kommt die "
-                 "Speicherförderung 150 €/kWh bis 50 kWh und 10 Prozent Made-in-Europe-Bonus je Komponente (Quelle: "
-                 f"EAG-Abwicklungsstelle, {STAND})."),
-                ("Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und intelligente Steuerung. "
-                 "Für das EMS erhalten Betriebe 30 Prozent, maximal 20.000 Euro je Standort, Antrag vor der "
+                ("Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft beziehungsweise "
+                 "abgeschlossen, neue Gewerbeanlagen bekommen derzeit keinen Bundeszuschuss (Quelle: "
+                 f"EAG-Abwicklungsstelle, {STAND}). Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher "
+                 "mit intelligenter Steuerung, beantragt nach der Installation; Höhe und Kriterien sind offen. Wer jetzt "
+                 "plant, plant deshalb sinnvoll mit Gewerbespeicher und Energiemanagement."),
+                ("Für das EMS erhalten Betriebe 30 Prozent, maximal 20.000 Euro je Standort, Antrag vor der "
                  "Bestellung. Auf selbst erzeugten und verbrauchten Strom entfällt die Elektrizitätsabgabe von "
                  "1,5 Cent je kWh. "
                  "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
@@ -314,7 +315,7 @@ def build():
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung für einen Betrieb",
             bullets=[
-                a("foerderungen", "Aktuelle Förderungen 2026") + " und " + a("foerderung_at", "EAG-Investitionszuschuss im Detail"),
+                a("foerderungen", "Aktuelle Förderungen 2026") + " und " + a("foerderrechner", "Förderrechner"),
                 a("/ems-foerderung/", "EMS-Förderung für Betriebe: 30 % bis 20.000 €"),
                 a("/unternehmensfoerderung-von-waermepumpen/", "Wärmepumpenförderung für Unternehmen"),
             ],
@@ -418,7 +419,7 @@ def _footnote():
       <p class="form-note">*Marktrichtwerte 2026 vor Förderung: 700 bis 1.300 € je kWp netto, Amortisation 6 bis 12 Jahre,
       Ertrag 900 bis 1.100 kWh je kWp, 5 bis 6 m² je kWp; Stromgestehungskosten rechnerisch (Investition durch Ertrag über
       25 Jahre plus Betrieb). Alles abhängig von Lastprofil, Größe, Ausrichtung und Strompreis. Referenzzahlen aus den
-      Projekten Gewerbe Oberösterreich und Hotel Villach/Warmbad. Fördersätze und OeMAG-Marktpreis {STAND}. Steuerliche
+      Projekten Gewerbe Oberösterreich und Hotel Villach/Warmbad. Förderstand und OeMAG-Marktpreis {STAND}. Steuerliche
       Angaben ersetzen keine Steuerberatung. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>
   </section>""")

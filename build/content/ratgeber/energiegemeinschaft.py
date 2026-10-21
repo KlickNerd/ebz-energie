@@ -33,7 +33,7 @@ ARTICLE = {
         "Über <b>11.000</b> Gemeinschaften in Österreich",
     ],
     "date_published": "2026-07-22",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "eg_drohne",
     "hero_alt": "Ortschaft mit Photovoltaik auf mehreren Dächern, typisches Netzgebiet einer lokalen Energiegemeinschaft",
 
@@ -264,8 +264,10 @@ wenn die Gemeinschaft ihn braucht. Für Abrechnung und Verwaltung arbeiten wir m
 österreichischen Plattform mit rund 330 aktiven Gemeinschaften und rund 15.000 Nutzern. Für
 Privathaushalte gibt es die {a('eg_privat', 'Energiegemeinschaft für Privatkunden')}, für Betriebe und
 Gemeinden die {a('eg_gewerbe', 'Energiegemeinschaft für Gewerbe und Gemeinden')}.</p>
-<p>Eine eigene Förderung für die Teilnahme gibt es nicht. Gefördert wird die PV-Anlage über den
-EAG-Investitionszuschuss und die Landesförderungen. Wer ein Energiemanagementsystem einsetzt, kann seit
+<p>Eine eigene Förderung für die Teilnahme gibt es nicht. Gefördert wird die PV-Anlage über die
+Landesförderungen, etwa 3.000 Euro Pauschale in Kärnten (nur mit Speicher); der EAG-Investitionszuschuss des
+Bundes ist derzeit nicht beantragbar, der letzte Call endete am 22. Oktober 2026, für 2027 ist laut BMWET eine
+Systemförderung geplant (nicht beschlossen). Wer ein Energiemanagementsystem einsetzt, kann seit
 Juni 2026 die {a('/ems-foerderung/', 'EMS-Förderung des Klimafonds')} nutzen: Die Teilnahme an einer
 Energiegemeinschaft ist dort eine der sechs zulässigen Betriebsoptionen.</p>
 """),

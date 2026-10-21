@@ -3,6 +3,8 @@
 Migriert von /photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ (Dez. 2025).
 Keyword-Stuffing der Quelle entfernt, Preis auf den freigegebenen EBZ-Richtpreis
 (15.000 bis 22.000 Euro vor Förderung), Förderung 2026 und Garantien nach EBZ-Fakten.
+Stand ab 23.10.2026: letzter EAG-Call lief 8. bis 22.10.2026, Bund derzeit nicht beantragbar;
+Foerderbeispiel als "im Call 2026" gekennzeichnet, aktuell nur Kaernten 3.000 EUR.
 """
 
 import os
@@ -33,7 +35,7 @@ ARTICLE = {
         "Garantie: <b>bis 30 Jahre</b> Leistung",
     ],
     "date_published": "2025-12-19",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_detail",
     "hero_alt": "Montage einer Photovoltaik-Komplettanlage mit 10 kWp auf einem Einfamilienhausdach",
 
@@ -45,8 +47,9 @@ ARTICLE = {
         "mehr als ein durchschnittlicher Haushalt verbraucht, mit Reserve für Wärmepumpe und E-Auto.",
         "Ein Speicher mit 5 bis 10 kWh hebt den Eigenverbrauch von rund 30 auf 60 bis 80 Prozent, die "
         "Stromrechnung sinkt um bis zu 85 Prozent.",
-        "Förderung 2026: 1.500 Euro für die PV-Anlage plus 150 Euro je kWh Speicher vom Bund, in Kärnten "
-        "zusätzlich 3.000 Euro Landespauschale.",
+        "Förderung: Im Call 2026 gab es 1.500 Euro für die PV-Anlage plus 150 Euro je kWh Speicher vom Bund; "
+        "der letzte Call endete am 22. Oktober 2026, derzeit ist der Bund nicht beantragbar. In Kärnten gibt es "
+        "aktuell 3.000 Euro Landespauschale für PV mit Speicher.",
         "Die Montage dauert 2 bis 3 Tage, es ist keine Baugenehmigung nötig, nur der Netzzutrittsantrag. "
         "Finanzierung ab 147 Euro im Monat, die Anlage gehört Ihnen ab Tag 1.",
     ],
@@ -61,16 +64,17 @@ ARTICLE = {
         ("Warum 10 kWp die richtige Größe für das Einfamilienhaus ist", "warum-10-kwp", f"""
 <p><b>Eine Photovoltaik-Komplettanlage mit 10 kWp und Speicher kostet in Österreich rund 15.000 bis 22.000 Euro
 vor Förderung</b> (EBZ-Richtpreis, Stand Oktober 2026, inklusive Montage und 20 Prozent Umsatzsteuer). Der
-EAG-Investitionszuschuss beträgt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, zusammen bis zu
-3.000 Euro (Quelle: EAG-Abwicklungsstelle). Lieferumfang und Ablauf bei EBZ Energie finden Sie auf der
+EAG-Investitionszuschuss betrug im Call 2026 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, zusammen
+bis zu 3.000 Euro (Quelle: EAG-Abwicklungsstelle); der letzte Call lief vom 8. bis 22. Oktober 2026, derzeit ist
+kein Bundeszuschuss beantragbar. Lieferumfang und Ablauf bei EBZ Energie finden Sie auf der
 Leistungsseite {a('photovoltaik', 'Photovoltaik-Komplettanlage mit Speicher')} und im Überblick aller
 {a('leistungen', 'Leistungen')}.</p>
 <p>Für die meisten Einfamilienhäuser in Österreich hat sich eine Anlagenleistung von rund 10 Kilowatt-Peak
 (kWp) als Optimum herauskristallisiert. Je nach Standort, Ausrichtung und Neigung erzeugt eine solche
 Anlage etwa 10.000 Kilowattstunden Strom pro Jahr. Das ist mehr, als ein durchschnittlicher Haushalt mit
 4.000 bis 5.000 kWh verbraucht, und lässt Reserven für eine Wärmepumpe oder ein E-Auto.</p>
-<p>Gleichzeitig ist 10 kWp die Grenze der Förderkategorie A des Bundes, in der 2026 der höchste Fördersatz
-gilt, und die Fixkosten für Gerüst, Wechselrichter und Elektroanschluss verteilen sich auf genügend
+<p>Gleichzeitig war 10 kWp die Grenze der Förderkategorie A des Bundes, in der im Call 2026 der höchste
+Fördersatz galt, und die Fixkosten für Gerüst, Wechselrichter und Elektroanschluss verteilen sich auf genügend
 Module, sodass der Preis je kWp günstig ausfällt. Benötigt werden rund 50 bis 60 Quadratmeter Dachfläche
 für 22 bis 25 Module. Auch Ost-West-Dächer eignen sich gut: Sie liefern morgens und abends Strom, genau
 dann, wenn der Haushalt ihn braucht.</p>
@@ -105,23 +109,27 @@ Sie Angebote vergleichen können.</p>
 Dachform und Extras wie Notstrom oder Wallbox über den Endpreis. Ohne Speicher liegt eine 10-kWp-Anlage
 bei rund 10.000 bis 15.000 Euro.</p>
 {A.table(
-    ["Förderung für 10 kWp + 10 kWh (2026)", "Betrag*"],
+    ["Förderung für 10 kWp + 10 kWh", "Betrag*"],
     [
-        ["EAG-Bund, PV-Anlage (150 €/kWp)", "1.500 €"],
-        ["EAG-Bund, Speicher (150 €/kWh)", "1.500 €"],
-        ["Made-in-Europe-Bonus (10 % je Komponente)", "rund 450 €"],
-        ["Landespauschale Kärnten (PV ab 5 kWp mit Speicher ab 5 kWh)", "3.000 €"],
-        ["Summe in Kärnten", "rund 6.450 €"],
+        ["EAG-Bund, PV-Anlage (150 €/kWp), im Call 2026", "1.500 €"],
+        ["EAG-Bund, Speicher (150 €/kWh), im Call 2026", "1.500 €"],
+        ["Made-in-Europe-Bonus (10 % je Komponente), im Call 2026", "rund 450 €"],
+        ["Landespauschale Kärnten (PV ab 5 kWp mit Speicher ab 5 kWh, bis 31. Dezember 2026)", "3.000 €"],
+        ["Summe in Kärnten im Call 2026", "rund 6.450 €"],
+        ["Aktuell in Kärnten (Bund derzeit nicht beantragbar)", "3.000 €"],
     ],
     hl_cols=(1,),
 )}
-<p>Nach Abzug der Förderung bleiben in Kärnten also rund 9.000 bis 15.500 Euro, in der Steiermark und den
-anderen Bundesländern rund 12.000 bis 18.500 Euro. Seit 1. April 2025 gilt wieder der reguläre
+<p>Nach Abzug der Förderung im Call 2026 blieben in Kärnten rund 9.000 bis 15.500 Euro, in der Steiermark und
+den anderen Bundesländern rund 12.000 bis 18.500 Euro. Aktuell bleiben in Kärnten nach der Landespauschale rund
+12.000 bis 19.000 Euro, in den anderen Bundesländern ohne Bundeszuschuss der volle Preis. Ab 2027 ist laut BMWET
+eine Systemförderung für Speicher mit intelligenter Steuerung geplant, aber nicht beschlossen; wer jetzt plant,
+baut daher sinnvoll mit Speicher und Energiemanagement. Seit 1. April 2025 gilt wieder der reguläre
 Umsatzsteuersatz von 20 Prozent, der Nullsteuersatz ist ausgelaufen. Die vollständige Aufschlüsselung
 finden Sie im Ratgeber {a('/kosten-einer-solaranlage/', 'Kosten einer Solaranlage')}, die Fördertermine
 im Ratgeber {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
-<p><small>*Beispielkonditionen nach EAG-Investitionszuschüsseverordnung 2026 und Kärntner Landesrichtlinie,
-Stand Juni 2026. Der EAG-Antrag muss vor Inbetriebnahme gestellt werden.</small></p>
+<p><small>*Beispielkonditionen nach EAG-Investitionszuschüsseverordnung 2026 (Call 2026, beendet) und Kärntner
+Landesrichtlinie, Stand Oktober 2026. Der EAG-Antrag musste vor Inbetriebnahme gestellt werden.</small></p>
 {A.cta("Komplettanlage für Ihr Dach berechnen",
        "Wir liefern Ihnen ein Festpreisangebot mit Projektbericht, 3D-Belegplan und Statikreport und "
        "prüfen alle Förderungen für Ihren Standort.",
@@ -174,8 +182,8 @@ mehr dazu im Ratgeber {a('/einspeisetarif-fuer-photovoltaik/', 'Einspeisetarif f
      "Sie erhalten ein Festpreisangebot mit Projektbericht, 3D-Belegplan und Statikreport, inklusive "
      "Förderübersicht für Ihren Standort."),
     ("Netzzutritt und Förderung",
-     "Wir stellen den Netzzutrittsantrag beim Netzbetreiber und den EAG-Antrag im Fördercall, beides vor "
-     "der Inbetriebnahme. Eine Baugenehmigung ist für Dachanlagen in der Regel nicht nötig."),
+     "Wir stellen den Netzzutrittsantrag beim Netzbetreiber vor der Inbetriebnahme und prüfen die "
+     "Förderungen für Ihren Standort. Eine Baugenehmigung ist für Dachanlagen in der Regel nicht nötig."),
     ("Montage in 2 bis 3 Tagen",
      "Unterkonstruktion und Module sind meist in ein bis zwei Tagen montiert, Wechselrichter und Speicher "
      "werden parallel oder am Folgetag installiert."),
@@ -184,9 +192,11 @@ mehr dazu im Ratgeber {a('/einspeisetarif-fuer-photovoltaik/', 'Einspeisetarif f
      "kümmern wir uns um die Endabrechnung der Landesförderung."),
 ])}
 {A.box_dark("Reihenfolge beachten",
-    "Der EAG-Förderantrag muss <b>vor der Inbetriebnahme</b> im Fördercall gestellt werden (2026: 23. April "
-    "bis 11. Mai, 16. bis 30. Juni, ab 8. Oktober). Die Kärntner Landesförderung wird dagegen erst nach "
-    "Fertigstellung beantragt. Wir stimmen Montagetermin und Anträge so ab, dass keine Förderung verloren geht.")}
+    "Im Call 2026 musste der EAG-Förderantrag <b>vor der Inbetriebnahme</b> gestellt werden (23. April bis "
+    "11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober 2026); der letzte Call ist beendet. Für die geplante "
+    "Systemförderung 2027 soll der Antrag laut BMWET nach Installation und Rechnung kommen (nicht beschlossen). "
+    "Die Kärntner Landesförderung wird nach Fertigstellung beantragt. Wir stimmen Montagetermin und Anträge so "
+    "ab, dass keine Förderung verloren geht.")}
 """),
         ("Garantie und Lebensdauer", "garantie", f"""
 <p>Eine Komplettanlage ist auf Jahrzehnte ausgelegt. EBZ Energie gibt bis zu 30 Jahre Leistungsgarantie
@@ -227,8 +237,8 @@ Stromrechnung.</p>
         ("Fazit: Das Standardpaket, das sich rechnet", "fazit", f"""
 <p>Die Photovoltaik-Komplettanlage mit 10 kWp, Speicher und Montage ist für die meisten Einfamilienhäuser
 die wirtschaftlichste Lösung: rund 10.000 kWh Ertrag, bis zu 85 Prozent weniger Stromkosten, 2 bis 3 Tage
-Montage und ein Komplettpreis von rund 15.000 bis 22.000 Euro, von dem Bund und Land 2026 bis zu
-6.450 Euro übernehmen. Entscheidend ist ein Partner, der Planung, Montage, Netzzutritt und Förderung aus
+Montage und ein Komplettpreis von rund 15.000 bis 22.000 Euro, von dem Bund und Land im Call 2026 bis zu
+6.450 Euro übernahmen; aktuell zahlt in Kärnten das Land 3.000 Euro, der Bund ist derzeit nicht beantragbar. Entscheidend ist ein Partner, der Planung, Montage, Netzzutritt und Förderung aus
 einer Hand liefert und auch nach der Inbetriebnahme erreichbar bleibt.</p>
 """),
     ],
@@ -252,8 +262,9 @@ einer Hand liefert und auch nach der Inbetriebnahme erreichbar bleibt.</p>
     "faq": [
         ("Was kostet eine Photovoltaik-Komplettanlage mit 10 kWp und Speicher?",
          "Bei EBZ Energie liegt der Richtpreis bei rund 15.000 bis 22.000 Euro vor Förderung, inklusive Module, "
-         "Hybrid-Wechselrichter, Speicher, Montage, Elektroinstallation und Anmeldung. Bund und Land übernehmen "
-         "2026 je nach Bundesland 3.000 bis 6.450 Euro davon."),
+         "Hybrid-Wechselrichter, Speicher, Montage, Elektroinstallation und Anmeldung. Bund und Land übernahmen "
+         "im Call 2026 je nach Bundesland 3.000 bis 6.450 Euro davon; aktuell gibt es in Kärnten 3.000 Euro "
+         "Landespauschale, der Bund ist derzeit nicht beantragbar."),
         ("Wie viel Strom erzeugt eine 10-kWp-Anlage im Jahr?",
          "In Österreich durchschnittlich rund 10.000 kWh pro Jahr. Süddächer liefern die höchsten Spitzen, "
          "Ost-West-Anlagen verteilen den Ertrag gleichmäßiger über den Tag. Ein Referenzprojekt in Villach mit "
@@ -269,8 +280,8 @@ einer Hand liefert und auch nach der Inbetriebnahme erreichbar bleibt.</p>
          "fertiggestellt."),
         ("Brauche ich eine Genehmigung für die PV-Anlage?",
          "Für Dachanlagen dieser Größe ist in Österreich in der Regel keine Baugenehmigung nötig. Zwingend ist "
-         "der Netzzutrittsantrag beim Netzbetreiber und, für die Bundesförderung, der EAG-Antrag vor der "
-         "Inbetriebnahme. Beides übernimmt EBZ Energie für Sie."),
+         "der Netzzutrittsantrag beim Netzbetreiber. Den übernimmt EBZ Energie für Sie, ebenso die "
+         "Landesförderung."),
         ("Welche Garantie habe ich auf die Komponenten?",
          "EBZ Energie gibt bis zu 30 Jahre Leistungsgarantie auf die Module und mindestens 10 Jahre "
          "Produktgarantie auf die Komponenten. Wechselrichter von Huawei haben meist 10 Jahre Garantie, "

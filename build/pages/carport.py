@@ -108,7 +108,7 @@ def _cost_section():
         ("PV-Anlage auf dem Carport (EBZ)", "Module, Hybridwechselrichter, Elektroanschluss, Netzanmeldung, rund 5 kWp",
          "ab ca. 9.000 €*", "Konstruktion vorhanden oder separat; später um Speicher und Wallbox erweiterbar"),
         ("Speicher 5 bis 10 kWh", "Batteriespeicher, optional mit Notstrom", "plus 5.000 bis 9.000 €*",
-         "Eigenverbrauch von rund 30 auf 60 bis 80 Prozent, 150 € je kWh gefördert"),
+         "Eigenverbrauch von rund 30 auf 60 bis 80 Prozent; in Kärnten Voraussetzung für die 3.000 € Landespauschale"),
         ("Komplettsystem mit Montage", "Konstruktion, bifaziale Glas-Glas-Module, Statik, Elektrik, Anmeldung, 3 bis 8 kWp",
          "rund 9.000 bis 17.000 €*", "mit Speicher rund 21.500 bis 27.500 €*; Wallbox nach Angebot"),
     ]
@@ -120,8 +120,8 @@ def _cost_section():
       <h2 class="center eg-reveal">Was kostet ein Photovoltaik-Carport? Preise mit und ohne Speicher, Bausatz oder Komplettsystem*</h2>
       <p class="lead center eg-reveal" style="max-width:72ch;margin-inline:auto">Ein Photovoltaik-Carport kostet in Österreich als
       Komplettsystem mit Montage rund 9.000 bis 17.000 Euro* für 3 bis 8 kWp, mit Speicher rund 21.500 bis 27.500 Euro*;
-      reine Bausätze liegen bei 2.400 bis 9.000 Euro* ohne Elektrik und Statik. Der PV-Teil wird mit 150 Euro je kWp und
-      150 Euro je kWh Speicher gefördert (Marktrichtwerte und EAG-Sätze, {STAND}).</p>
+      reine Bausätze liegen bei 2.400 bis 9.000 Euro* ohne Elektrik und Statik. In Kärnten fördert das Land den PV-Teil
+      ab 5 kWp mit Speicher ab 5 kWh mit 3.000 Euro pauschal; ein Bundeszuschuss ist für 2026 abgeschlossen (Marktrichtwerte, {STAND}).</p>
       {table}
       <div class="eg-reveal" style="max-width:72ch;margin-inline:auto;margin-top:22px">
         <h3>Bausatz oder Komplettsystem: der Unterschied liegt im Risiko, nicht im Preis</h3>
@@ -236,7 +236,7 @@ def build():
                 ("Ersparnis Netzstrom", "3.900 kWh mal 28 ct = rund 1.090 € im Jahr*"),
                 ("Einspeisung", "2.100 kWh mal 10,168 ct (OeMAG-Marktpreis September 2026) = rund 215 € im Jahr*"),
                 ("Nutzen gesamt", "rund 1.300 € im Jahr*, plus Treibstoffersparnis fürs E-Auto"),
-                ("Förderung", "EAG 2026: 900 € für 6 kWp plus 150 € je kWh Speicher, Kärnten 3.000 € Pauschale mit Speicher ab 5 kWh"),
+                ("Förderung", "Kärnten 3.000 € Pauschale mit Speicher ab 5 kWh; Bundeszuschuss für 2026 abgeschlossen, derzeit nicht beantragbar"),
                 ("Amortisation PV-Teil", "rund 7 bis 9 Jahre* ohne Konstruktion"),
                 ("Amortisation Komplettsystem", "rund 10 bis 15 Jahre* (Marktrichtwert), bei 30 bis 40 Jahren Lebensdauer"),
             ],
@@ -257,22 +257,23 @@ def build():
             eyebrow="Förderung und Finanzierung",
             h2="Förderung: der PV-Teil wird gefördert wie jede Dachanlage",
             paragraphs=[
-                ("Für die Photovoltaikanlage auf dem Carport gilt der EAG-Investitionszuschuss des Bundes: 150 € "
-                 "je kWp bis 10 kWp, 150 € je kWh Speicher und 10 Prozent Made-in-Europe-Bonus je Komponente "
-                 f"({STAND}). In Kärnten kommen 3.000 € Landespauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh "
-                 "dazu, die Steiermark fördert über eigene Programme. Ab 2027 plant der Bund laut BMWET eine "
-                 "Systemförderung für Speicher und intelligente Steuerung. "
+                ("Für die Photovoltaikanlage auf dem Carport gelten dieselben Programme wie für eine Dachanlage. In "
+                 "Kärnten zahlt das Land 3.000 € Landespauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, die "
+                 "Steiermark zahlt derzeit keine PV-Landesförderung. Der Investitionszuschuss des Bundes für PV und "
+                 f"Speicher ist für 2026 ausgeschöpft beziehungsweise abgeschlossen ({STAND}); ab 2027 plant der Bund "
+                 "laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. Planen Sie den Carport "
+                 "deshalb am besten gleich mit Speicher und Energiemanagement. "
                  "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
                  "und stellen die Anträge."),
                 ("Die Carport-Konstruktion selbst ist nicht Teil der PV-Förderung, und der Umsatzsteuer-Nullsatz für "
-                 "PV-Anlagen ist seit April 2025 ausgelaufen; an seine Stelle tritt der Zuschuss. Wer die Investition nicht auf "
+                 "PV-Anlagen ist seit April 2025 ausgelaufen. Wer die Investition nicht auf "
                  "einmal binden will, finanziert mit 0 € Anzahlung und fixer Rate. Die Anlage gehört Ihnen dabei ab "
                  "dem ersten Tag, die Förderung bleibt bei Ihnen."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung am Tisch",
             bullets=[
-                "Bund: 150 €/kWp und 150 €/kWh Speicher, plus Made-in-Europe-Bonus",
+                "Bund: Investitionszuschuss für 2026 abgeschlossen, ab 2027 Systemförderung geplant",
                 "Kärnten: 3.000 € Pauschale für Neuanlagen mit Speicher",
                 a("finanzierung", "Finanzierung: 0 € Anzahlung, Eigentum ab Tag 1"),
                 a("foerderung_at", "PV-Förderung Österreich 2026 im Detail"),
@@ -286,8 +287,8 @@ def build():
             paragraphs=[
                 ("Ein Reihencarport über dem Firmenparkplatz liefert ab 12 kWp Strom, wenn der Betrieb ihn braucht, und "
                  "lädt Fuhrpark und Kundenfahrzeuge mit eigenem Sonnenstrom; das Energiemanagement verhindert Lastspitzen. "
-                 "Gefördert wird über den EAG-Zuschuss des Bundes; der steirische Ökofonds hat derzeit keine "
-                 "PV-Ausschreibung offen."),
+                 "Der Investitionszuschuss des Bundes ist für 2026 abgeschlossen, und der steirische Ökofonds hat derzeit "
+                 "keine PV-Ausschreibung offen; für das Energiemanagement gibt es die EMS-Förderung des Klimafonds für Betriebe."),
             ],
             img=IMG["gen_gewerbe"],
             alt="Gewerbebetrieb mit Photovoltaikanlage, Symbolbild für Firmenparkplatz mit Solarcarport",
@@ -360,7 +361,7 @@ def _footnote():
       und Bausatzpreise sowie Amortisation 10 bis 15 Jahre aus marktüblichen österreichischen Angeboten 2026. Ertrag 950 bis 1.100 kWh
       je kWp und Jahr ist ein österreichweiter Durchschnitt, Beispielrechnung mit 28 ct/kWh Haushaltsstrompreis, 65 Prozent
       Eigenverbrauch und OeMAG-Marktpreis September 2026 (10,168 ct). Gestehungskosten für Solarstrom 10 bis 14 ct/kWh je nach
-      Anlage, Zusatzgewicht 15 bis 25 kg/m² je nach Modul und Unterkonstruktion. Fördersätze {STAND}, Änderungen durch
+      Anlage, Zusatzgewicht 15 bis 25 kg/m² je nach Modul und Unterkonstruktion. Förderstand {STAND}, Änderungen durch
       Fördergeber vorbehalten. Konstruktion, Ertrag und Kosten hängen von Standort, Lastzone, Ausrichtung und Komponentenwahl ab.
       Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>

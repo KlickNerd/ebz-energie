@@ -284,7 +284,8 @@ ORT = {
         ("Was kostet eine Photovoltaikanlage mit Speicher in der Südoststeiermark?",
          "Eine Komplettanlage mit rund 10 kWp und Speicher kostet typischerweise rund 15.000 bis 22.000 Euro vor "
          "Förderung, inklusive Montage und Anmeldung beim Netzbetreiber (EBZ-Richtpreis, Stand Oktober 2026). Eine "
-         "Landespauschale gibt es in der Steiermark nicht, es bleibt der Investitionszuschuss des Bundes. Die "
+         "Landespauschale gibt es in der Steiermark nicht, und der Investitionszuschuss des Bundes ist für 2026 "
+         "abgeschlossen. Die "
          "Stadtgemeinde Feldbach nennt auf ihrer Umweltseite zusätzlich je 100 Euro für Photovoltaik und "
          "Stromspeicher. Nach der Beratung bei Ihnen vor Ort bekommen Sie einen Projektbericht mit 3D-Belegplan und "
          "Statikreport und ein Fixangebot."),

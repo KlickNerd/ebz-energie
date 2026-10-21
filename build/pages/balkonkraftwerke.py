@@ -52,11 +52,12 @@ FAQ = [
     ("Was sind die Nachteile eines Balkonkraftwerks?",
      "Die 800-Watt-Grenze deckelt die Leistung, Mittagsüberschuss geht ohne Speicher unvergütet ins Netz, bei "
      "Stromausfall schaltet die Anlage ab, Bundesförderung gibt es keine. Wer mehr will, fährt mit einer kleinen "
-     "Dachanlage mit Speicher und 150 € je kWp Förderung oft besser."),
+     "Dachanlage mit Speicher oft besser, in Kärnten mit 3.000 € Landespauschale."),
     ("Gibt es eine Förderung für Balkonkraftwerke in Österreich?",
-     "Vom Bund nicht: Der EAG-Investitionszuschuss verlangt einen eigenen Einspeisezählpunkt, den ein "
-     "Balkonkraftwerk nicht bekommt. Einzelne Länder und Gemeinden haben eigene Programme. Eine kleine, fest "
-     "installierte PV-Anlage wird 2026 mit 150 € je kWp gefördert."),
+     "Vom Bund nicht: Balkonkraftwerke waren vom Investitionszuschuss des Bundes ausgeschlossen, weil sie keinen "
+     "eigenen Einspeisezählpunkt bekommen, und dieser Zuschuss ist für 2026 ohnehin abgeschlossen. Einzelne Länder "
+     "und Gemeinden haben eigene Programme. Eine kleine, fest installierte PV-Anlage ab 5 kWp mit Speicher ab 5 kWh "
+     "fördert das Land Kärnten mit 3.000 € pauschal."),
 ]
 
 
@@ -149,7 +150,7 @@ def build():
                 "title": "Für Hausbesitzer",
                 "bullets": [
                     "Aufständerung für Garten, Garage, Carport oder Flachdach, oft mit Speicher kombiniert",
-                    "Mehr als 800 Watt gewünscht? Eine kleine Dachanlage bekommt 2026 150 € je kWp Förderung",
+                    "Mehr als 800 Watt gewünscht? Eine kleine Dachanlage mit Speicher fördert Kärnten mit 3.000 €",
                     "Später erweiterbar zu Photovoltaikanlage mit Speicher, Wallbox und Notstrom",
                 ],
                 "cta": ("photovoltaik", "Photovoltaik fürs Eigenheim"),
@@ -285,20 +286,21 @@ def build():
             eyebrow="Förderung und Steuer",
             h2="Keine Bundesförderung bis 800 W, aber Alternativen",
             paragraphs=[
-                ("Der EAG-Investitionszuschuss gilt nicht für Balkonkraftwerke: Er verlangt einen eigenen "
-                 "Einspeisezählpunkt, den eine Anlage im vereinfachten Meldeverfahren nicht erhält. Einzelne Länder und "
+                ("Der Investitionszuschuss des Bundes galt nie für Balkonkraftwerke, weil er einen eigenen "
+                 "Einspeisezählpunkt verlangt, den eine Anlage im vereinfachten Meldeverfahren nicht erhält. Für PV "
+                 "und Speicher ist er zudem für 2026 abgeschlossen. Einzelne Länder und "
                  "Gemeinden haben eigene, budgetierte Programme. Der Umsatzsteuer-Nullsatz ist am 31. März 2025 "
                  "ausgelaufen, seit 1. April 2025 gelten wieder 20 Prozent."),
-                ("Wer mehr als 800 Watt möchte, fährt oft besser mit einer kleinen Dachanlage: 150 € je kWp und 150 € je "
-                 "kWh Speicher vom Bund, in Kärnten dazu 3.000 € Landespauschale ab 5 kWp mit 5 kWh Speicher (Stand "
-                 "Oktober 2026). Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
+                ("Wer mehr als 800 Watt möchte, fährt oft besser mit einer kleinen Dachanlage mit Speicher: In Kärnten "
+                 "gibt es 3.000 € Landespauschale ab 5 kWp mit 5 kWh Speicher (Stand Oktober 2026), und ab 2027 plant der "
+                 "Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zu Förderung und Anmeldung eines Balkonkraftwerks",
             bullets=[
-                "Bund: kein EAG-Zuschuss für Balkonkraftwerke bis 800 Watt",
+                "Bund: kein Zuschuss für Balkonkraftwerke bis 800 Watt",
                 "Länder und Gemeinden: teilweise eigene Programme, vor dem Kauf prüfen",
-                "Alternative: kleine Dachanlage mit 150 € je kWp Förderung (2026)",
+                "Alternative: kleine Dachanlage mit Speicher, in Kärnten 3.000 € Landespauschale",
                 a("foerderungen", "Aktuelle Förderungen 2026") + ": Programme und Fristen tagesaktuell",
             ],
             cta=("/balkonkraftwerk-foerderung-in-oesterreich/", "Ratgeber: Balkonkraftwerk-Förderung in Österreich"),

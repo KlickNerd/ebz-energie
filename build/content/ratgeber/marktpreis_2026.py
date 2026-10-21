@@ -5,6 +5,8 @@ Aktualisiert mit den OeMAG-Werten Stand Oktober 2026: PV-Marktpreis September 20
 10,168 ct/kWh (aktueller Wert), Juli 2026 6,146 ct/kWh (gesetzliche Untergrenze, Verlauf),
 Q3-2026-Quartalsmarktpreis der E-Control 10,923 ct/kWh. August 2026 ohne belegten Wert,
 nicht genannt. Historische Werte der Quelle (Q4 2025: 9,17 ct) bleiben als Verlauf.
+Stand ab 23.10.2026: letzter EAG-Call lief 8. bis 22.10.2026, derzeit kein Bundeszuschuss; 2027
+Systemfoerderung laut BMWET geplant, nicht beschlossen.
 """
 
 import os
@@ -31,10 +33,10 @@ ARTICLE = {
         "OeMAG September 2026: <b>10,168 ct/kWh</b>",
         "OeMAG Juli 2026: <b>6,146 ct/kWh</b>",
         "Netzbezug: <b>rund 30 ct/kWh</b>*",
-        "EAG-Call: <b>bis 22.10.2026</b>",
+        "Letzter EAG-Call: <b>bis 22.10.2026</b>, beendet",
     ],
     "date_published": "2025-12-10",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "pv_card",
     "hero_alt": "Photovoltaikanlage von EBZ Energie auf einem Wohnhausdach in Kärnten",
 
@@ -46,8 +48,9 @@ ARTICLE = {
         "Kilowattstunde*. Die Differenz zur Einspeisung beträgt damit rund 20 bis 24 Cent: Eigenverbrauch schlägt "
         "Einspeisung um ein Vielfaches.",
         "Mit dem Bundesgesetzblatt I Nr. 69/2025 ist die EAG-Novelle kundgemacht: Statt des Nullsteuersatzes, "
-        "der im April 2025 ausgelaufen ist, gibt es 2026 Investitionszuschüsse über Fördercalls. Der letzte Call "
-        "2026 läuft bis 22. Oktober 2026; ab 2027 plant das BMWET eine Systemförderung mit Antrag nach der Installation.",
+        "der im April 2025 ausgelaufen ist, gab es 2026 Investitionszuschüsse über Fördercalls. Der letzte Call "
+        "lief vom 8. bis 22. Oktober 2026, derzeit ist kein Bundeszuschuss beantragbar; ab 2027 ist laut BMWET eine "
+        "Systemförderung mit Antrag nach der Installation geplant, aber nicht beschlossen.",
         "Ohne Speicher nutzen typische Haushalte nur rund 30 Prozent ihres Solarstroms selbst, mit passend "
         "dimensioniertem Speicher 70 bis 80 Prozent*. Der Speicher ist damit der Rendite-Hebel.",
         "Wer wartet, spart nicht: Hardware ist günstig, Lohnkosten steigen, und Netzkapazitäten in Kärnten "
@@ -118,25 +121,27 @@ Bezugspreis hängt von Lieferant, Tarif und Netzgebiet ab.</small></p>
 Rechnung war netto gleich brutto. Diese Regelung ist ausgelaufen und wurde nicht verlängert, seither gilt
 wieder der reguläre Steuersatz von 20 Prozent. Ist PV damit 20 Prozent teurer geworden? Unter dem Strich
 nein. Denn mit der Novelle des Erneuerbaren-Ausbau-Gesetzes (EAG), kundgemacht im Bundesgesetzblatt I
-Nr. 69/2025, ist die Finanzierung der klassischen Investitionszuschüsse für 2026 gesichert.</p>
+Nr. 69/2025, war die Finanzierung der klassischen Investitionszuschüsse für 2026 gesichert. So lief
+der Ablauf im Call 2026:</p>
 {A.steps([
     ("Brutto bezahlen",
-     "Sie bezahlen zunächst die Bruttosumme inklusive 20 Prozent Umsatzsteuer."),
+     "Zunächst wurde die Bruttosumme inklusive 20 Prozent Umsatzsteuer bezahlt."),
     ("Antrag im Fördercall einreichen",
-     "Es gibt feste Zeitfenster („Calls“), in denen Anträge gestellt werden müssen. Wer das Fenster "
-     "verpasst oder Formfehler macht, geht leer aus (Reihung nach Eingang beziehungsweise Förderbedarf). "
-     "EBZ Energie bereitet den Antrag vor und reicht ihn zur Call-Öffnung ein."),
+     "Es gab feste Zeitfenster („Calls“), in denen Anträge gestellt werden mussten. Wer das Fenster "
+     "verpasste oder Formfehler machte, ging leer aus (Reihung nach Eingang beziehungsweise Förderbedarf)."),
     ("Zuschuss erhalten",
-     "Sie erhalten einen fixen Zuschuss pro installiertem Kilowattpeak (kWp) und pro Kilowattstunde (kWh) "
+     "Danach wurde ein fixer Zuschuss pro installiertem Kilowattpeak (kWp) und pro Kilowattstunde (kWh) "
      "Speicherkapazität zurücküberwiesen."),
 ])}
-<p><b>Stand Oktober 2026:</b> Der dritte und letzte Fördercall 2026 läuft bis 22. Oktober 2026
-(Ticketziehung ab 8. Oktober). Ab 2027 plant das BMWET laut Eckpunkten eine Neuausrichtung zur
-Systemförderung: Antrag nach Installation und Rechnung statt Fördercall, gefördert werden Speicher mit
-intelligenter Steuerung, auch als Nachrüstung. Projekte, die ab 1. November 2026 in Betrieb gehen, sollen
-2027 im neuen System beantragbar sein. Höhe und Technikkriterien sind noch offen.</p>
-<p>Die Republik Österreich hat sich europarechtlich verpflichtet, den Ausbau der Erneuerbaren
-voranzutreiben. Ein Förderstopp ist damit vom Tisch. Die Details zu Bund und Ländern finden Sie in den
+<p><b>Stand ab 23. Oktober 2026:</b> Der dritte und letzte Fördercall 2026 lief vom 8. bis 22. Oktober 2026.
+Im bisherigen System gibt es keinen weiteren Call, neue Anlagen bekommen derzeit keinen Bundeszuschuss. Ab
+2027 ist laut Eckpunkten des BMWET eine Neuausrichtung zur Systemförderung geplant, aber nicht beschlossen:
+Antrag nach Installation und Rechnung statt Fördercall, gefördert werden sollen Speicher mit intelligenter
+Steuerung, auch als Nachrüstung. Projekte mit intelligentem Speicher, die ab 1. November 2026 in Betrieb gehen,
+sollen 2027 im neuen System beantragbar sein. Höhe und Technikkriterien sind noch offen.</p>
+<p>Wer jetzt plant, baut deshalb sinnvoll mit Speicher und Energiemanagement: Das wahrt die Chance auf die
+Systemförderung 2027, und Kärnten zahlt die 3.000 Euro Landespauschale (2. Landes-Call bis 31. Dezember 2026)
+nur mit Speicher. Die Details zu Bund und Ländern finden Sie in den
 Ratgebern {a('foerderung_at', 'Photovoltaik-Förderung Österreich')},
 {a('foerderung_kaernten', 'Förderung Kärnten')} und {a('foerderung_steiermark', 'Förderung Steiermark')}.</p>
 """),
@@ -195,8 +200,9 @@ die Förderung besser.“ Drei Gründe sprechen gegen diese Strategie:</p>
 </ul>
 """),
         ("Fazit: Die Ampel steht auf Grün", "fazit", f"""
-<p>2026 ist ein gutes Jahr für Photovoltaik, aber mit anderer Logik als 2022: Das Gesetz ist fixiert und
-die Fördermittel sind da. Die Technik ist ausgereift und preiswert. Der Strompreis ist hoch genug, um
+<p>2026 ist ein gutes Jahr für Photovoltaik, aber mit anderer Logik als 2022: Der Bundeszuschuss 2026 ist
+mit dem letzten Call am 22. Oktober ausgelaufen, die Systemförderung 2027 ist laut BMWET geplant, und in
+Kärnten zahlt das Land weiter 3.000 Euro für PV mit Speicher. Die Technik ist ausgereift und preiswert. Der Strompreis ist hoch genug, um
 Sparen attraktiv zu machen, während der Einspeisetarif mit 6 bis 10 Cent (2026) so weit darunter liegt, dass
 Eigenverbrauch über Speicher und Energiemanagement zur Pflicht wird. Bei EBZ Energie liegt eine 10-kWp-Anlage mit
 Speicher je nach Dach bei rund 15.000 bis 22.000 Euro vor Förderung, die Amortisation typischerweise bei
@@ -220,7 +226,7 @@ Speicher je nach Dach bei rund 15.000 bis 22.000 Euro vor Förderung, die Amorti
             ("Regional verankert", "Wenn es ein Problem gibt, kommen wir vorbei."),
             ("Langlebig statt billig", "Glas-Glas-Module und geprüfte Speicher, damit die Rendite hält."),
             ("Alles aus einer Hand", "Vom Drohnen-Aufmaß über den Projektbericht bis zur Förder-Einreichung."),
-            ("Fördermanagement", "Wir kennen die Fristen 2026 und das geplante System 2027 und reichen fristgerecht ein."),
+            ("Fördermanagement", "Wir kennen die Landesfristen und das geplante System 2027 und reichen fristgerecht ein."),
         ],
     },
 
@@ -230,11 +236,11 @@ Speicher je nach Dach bei rund 15.000 bis 22.000 Euro vor Förderung, die Amorti
          "Kilowattstunde. Im Juli 2026 lag er mit 6,146 Cent an der gesetzlichen Untergrenze von 60 Prozent des "
          "Quartalsmarktpreises der E-Control (Q3 2026: 10,923 Cent). Der Wert schwankt monatlich; im vierten "
          "Quartal 2025 lag der Marktpreis bei 9,17 Cent."),
-        ("Bekomme ich 2026 noch eine Förderung, obwohl die 0 Prozent Umsatzsteuer weg sind?",
-         "Ja. Die Art der Förderung hat sich geändert: Statt des Nullsteuersatzes beim Kauf greift 2026 "
-         "wieder das EAG mit Investitionszuschüssen über Fördercalls. Das Budget wurde im Bundesgesetzblatt "
-         "I Nr. 69/2025 bestätigt. Sie strecken die Umsatzsteuer vor und bekommen über den Call einen Teil "
-         "der Investitionskosten zurück. EBZ Energie übernimmt die Antragstellung."),
+        ("Bekomme ich jetzt noch eine Förderung, obwohl die 0 Prozent Umsatzsteuer weg sind?",
+         "Vom Bund derzeit nicht: Statt des Nullsteuersatzes gab es 2026 EAG-Investitionszuschüsse über drei "
+         "Fördercalls, der letzte lief vom 8. bis 22. Oktober 2026. Ab 2027 ist laut BMWET eine Systemförderung "
+         "geplant, aber nicht beschlossen. In Kärnten gibt es 3.000 Euro Landespauschale für PV mit Speicher "
+         "(Einreichung bis 31. Dezember 2026). EBZ Energie übernimmt die Antragstellung."),
         ("Lohnt sich eine Anlage noch, wenn ich nur 6 bis 10 Cent für die Einspeisung bekomme?",
          "Ja, aber die Strategie ändert sich. Da der Netzbezug rund 30 Cent kostet, ist jede selbst "
          "verbrauchte Kilowattstunde drei- bis fünfmal so viel wert wie eine eingespeiste. Die Rendite entsteht "
@@ -244,15 +250,16 @@ Speicher je nach Dach bei rund 15.000 bis 22.000 Euro vor Förderung, die Amorti
          "Rechtlich nein, wirtschaftlich fast immer ja. Der Speicher hebt den Eigenverbrauch von rund "
          "30 auf 70 bis 80 Prozent und rettet den Mittagsstrom in den Abend. Zudem sind systemdienliche "
          "Speicher laut ElWG 20 Jahre von Infrastrukturbeiträgen befreit."),
-        ("Was passiert, wenn ich den Förder-Call verpasse?",
-         "Der letzte Call 2026 endet am 22. Oktober 2026. Danach gibt es im alten System keinen weiteren Call. "
-         "Ab 2027 soll laut BMWET eine Systemförderung mit Antrag nach der Installation folgen; Projekte, die ab "
-         "1. November 2026 in Betrieb gehen, sollen dort beantragbar sein. Höhe und Kriterien sind noch offen. "
-         "EBZ Energie bereitet alle Unterlagen vor und reicht fristgerecht ein."),
+        ("Was passiert, wenn ich den Förder-Call 2026 verpasst habe?",
+         "Der letzte Call 2026 endete am 22. Oktober 2026, im alten System gibt es keinen weiteren Call. Ab 2027 "
+         "ist laut BMWET eine Systemförderung mit Antrag nach der Installation geplant, nicht beschlossen; Projekte "
+         "mit intelligentem Speicher, die ab 1. November 2026 in Betrieb gehen, sollen dort beantragbar sein. Höhe "
+         "und Kriterien sind noch offen. Wer jetzt baut, plant daher mit Speicher und Energiemanagement."),
         ("Soll ich noch warten, ob die Preise für PV-Anlagen weiter fallen?",
          "Wir raten davon ab. Die Hardwarepreise haben einen Boden erreicht, gleichzeitig steigen Lohn- "
          "und Montagekosten jährlich. Zudem riskieren Sie bei längerem Warten, dass Netzkapazitäten in "
-         "Ihrer Region erschöpft sind. Preis, Förderung und Verfügbarkeit passen aktuell zusammen."),
+         "Ihrer Region erschöpft sind. Auf die geplante Systemförderung 2027 müssen Sie nicht warten: Projekte "
+         "mit intelligentem Speicher ab 1. November 2026 sollen laut BMWET dort beantragbar sein."),
         ("Gibt es Alternativen zur OeMAG-Einspeisung?",
          "Ja. In einer Energiegemeinschaft verkaufen Sie Überschuss an Nachbarn oder Familie zu einem fix "
          "vereinbarten Preis, typischerweise 8 bis 12 Cent (Beispielwerte), und sparen im Nahbereich bis zu 57 Prozent der Netzentgelte. Der OeMAG-Vertrag "

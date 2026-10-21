@@ -45,8 +45,10 @@ FAQ = [
      "Ja, nach Terminvereinbarung in der Triglavstraße 15 in Villach. Für die Planung kommen wir aber meist zu Ihnen, "
      "weil wir Dach, Zählerschrank und Verbrauch vor Ort aufnehmen."),
     ("Übernimmt EBZ Energie die Förderabwicklung?",
-     "Ja, komplett: Landespauschale Kärnten (3.000 € für PV ab 5 kWp mit Speicher), Förderung Steiermark, "
-     "EAG-Zuschuss des Bundes sowie Mitteilung an die Gemeinde und Netzanmeldung beim Netzbetreiber. Welche "
+     "Ja, komplett: Landespauschale Kärnten (3.000 € für PV ab 5 kWp mit Speicher), EMS-Förderung des Klimafonds "
+     "sowie Mitteilung an die Gemeinde und Netzanmeldung beim Netzbetreiber. Der Investitionszuschuss des Bundes "
+     "für PV und Speicher ist für 2026 abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für "
+     "Speicher mit intelligenter Steuerung, die wir für Sie im Blick behalten. Welche "
      "Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
     ("Macht EBZ nur Photovoltaik?",
      "Nein. Wir begleiten die ganze Energiewende: Photovoltaik, Batteriespeicher, Wärmepumpe, Energiemanagement, "
@@ -105,8 +107,8 @@ def build():
             steps=[
                 ("Erstgespräch und Vor-Ort-Termin", "Rückmeldung innerhalb eines Werktags, Besichtigung von Dach, Zählerschrank und Verbrauch meist innerhalb einer Woche*.", "1 Werktag"),
                 ("Projektbericht und Fixangebot", "Projektbericht mit 3D-Belegplan und Statikreport, Festpreis-Angebot mit Förder-Check und auf Wunsch Finanzierung.", "wenige Tage"),
-                ("Förderung, Gemeinde, Netz", "Landespauschale Kärnten oder Förderung Steiermark, EAG-Zuschuss, Mitteilung an die Gemeinde, Netzanmeldung.", "vor der Montage"),
-                ("Montage, Übergabe, Service", "Montage durch unser Team in 2 bis 4 Tagen, Inbetriebnahme, Einschulung in die Monitoring-App. Danach bleiben wir Ihr Ansprechpartner.", "2 bis 4 Tage"),
+                ("Förderung, Gemeinde, Netz", "Landespauschale Kärnten, EMS-Förderung, Mitteilung an die Gemeinde, Netzanmeldung.", "vor der Montage"),
+                ("Montage, Übergabe, Service", "Montage durch zertifizierte Fachkräfte in 2 bis 4 Tagen, Inbetriebnahme, Einschulung in die Monitoring-App. Danach bleiben wir Ihr Ansprechpartner.", "2 bis 4 Tage"),
             ],
         ),
         C.prose_panels(
@@ -174,7 +176,7 @@ def build():
                 ("✓", "Ein Ansprechpartner", "Ein fester Ansprechpartner von der Planung bis zur Übergabe. Zertifizierte Fachkräfte für Dach und Elektrotechnik, meisterhaftes Handwerk."),
                 ("☀", "Glas-Glas-Module mit Garantie", "Bifaziale Glas-Glas-Module mit bis zu 30 Jahren Leistungs- und mindestens 10 Jahren Produktgarantie, schriftlich im Angebot."),
                 ("◇", "Projektbericht statt Pauschale", "Projektbericht mit 3D-Belegplan und Statikreport für Ihr Dach, dazu ein Fixangebot mit Festpreisgarantie."),
-                ("€", "Förderabwicklung inklusive", "Landespauschale Kärnten, Förderung Steiermark, EAG-Zuschuss und Netzanmeldung: wir stellen die Anträge, Sie unterschreiben."),
+                ("€", "Förderabwicklung inklusive", "Landespauschale Kärnten, EMS-Förderung und Netzanmeldung: wir stellen die Anträge, Sie unterschreiben."),
                 ("★", "Erfahrung aus 300+ Projekten", f"Referenzen mit Zahlen in 6 Bundesländern und {NAP['rating']} Sterne aus {bew} auf Google."),
             ],
         ),

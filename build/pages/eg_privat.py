@@ -287,18 +287,19 @@ def build():
             eyebrow="Förderung und Finanzierung",
             h2="Gefördert wird die Anlage, die Gemeinschaft kommt dazu",
             paragraphs=[
-                ("Eine eigene Förderung für die Teilnahme gibt es nicht. Gefördert wird Ihre Photovoltaikanlage über "
-                 "den EAG-Investitionszuschuss und die Landesförderungen: In Kärnten 3.000 € Pauschale für Neuanlagen ab "
-                 "5 kWp mit 5 kWh Speicher, in der Steiermark gilt die "
-                 "Bundesförderung. Für ein Energiemanagementsystem gibt es "
+                ("Eine eigene Förderung für die Teilnahme gibt es nicht. Gefördert wird Ihre Photovoltaikanlage: In "
+                 "Kärnten mit 3.000 € Pauschale für Neuanlagen ab 5 kWp mit 5 kWh Speicher, die Steiermark zahlt derzeit "
+                 "keine PV-Landesförderung. Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 "
+                 "abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter "
+                 "Steuerung. Für ein Energiemanagementsystem gibt es "
                  "zusätzlich die EMS-Förderung des Klimafonds, die Teilnahme an einer Energiegemeinschaft ist dort eine "
                  "zulässige Betriebsoption."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Förderung von Photovoltaik und Energiegemeinschaft",
             bullets=[
-                a("foerderung_kaernten", "Kärnten: 3.000 € Landespauschale") + " plus EAG-Zuschuss",
-                a("foerderung_steiermark", "Steiermark: Bundesförderung") + ", keine Landespauschale",
+                a("foerderung_kaernten", "Kärnten: 3.000 € Landespauschale") + " für PV mit Speicher",
+                a("foerderung_steiermark", "Steiermark") + ": derzeit keine PV-Landespauschale",
                 a("/ems-foerderung/", "EMS-Förderung des Klimafonds") + " bis 600 € für Haushalte",
                 a("finanzierung", "Finanzierung") + " ab 147 € im Monat inkl. Speicher, Eigentum ab Tag 1",
                 "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt",

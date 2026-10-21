@@ -5,6 +5,7 @@ Ergebnis: out/ enthaelt deploybare statische Seiten + assets/.
 """
 
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -53,6 +54,15 @@ def copy_static():
             continue
         shutil.copy2(os.path.join(src, name), os.path.join(dst, name))
         print(f"[OK ] assets/img/{name} (static)")
+    # Selbst gehostete Schriften
+    fsrc = os.path.join(ROOT, "build", "static", "fonts")
+    fdst = os.path.join(OUT, "assets", "fonts")
+    if os.path.isdir(fsrc):
+        os.makedirs(fdst, exist_ok=True)
+        for name in os.listdir(fsrc):
+            if name.endswith(".woff2"):
+                shutil.copy2(os.path.join(fsrc, name), os.path.join(fdst, name))
+                print(f"[OK ] assets/fonts/{name} (static)")
 
 
 def write_meta_files():
@@ -72,6 +82,57 @@ def write_meta_files():
     with open(os.path.join(OUT, ".nojekyll"), "w", encoding="utf-8") as f:
         f.write("")
     print("[OK ] robots.txt + .nojekyll")
+    write_htaccess()
+
+
+def write_htaccess():
+    """.htaccess fuer den Apache-Webspace bei IONOS: https, ohne www, 301 aus build/redirects.txt, 404, Caching.
+
+    GitHub Pages ignoriert die Datei; fuer die Vorschau ist sie wirkungslos.
+    """
+    rules = []
+    with open(os.path.join(ROOT, "build", "redirects.txt"), encoding="utf-8") as f:
+        for line in f:
+            parts = line.split()
+            if len(parts) >= 2 and parts[0].startswith("/") and parts[1].startswith("/"):
+                old = parts[0].strip("/")
+                pattern = "^$" if not old else "^" + re.escape(old).replace("\\-", "-") + "/?$"
+                rules.append(f"RewriteRule {pattern} {parts[1]} [R=301,L]")
+    body = f"""# Automatisch erzeugt von build/build_all.py aus build/redirects.txt. Nicht von Hand aendern.
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+# https und Hauptdomain ohne www
+RewriteCond %{{HTTPS}} off [OR]
+RewriteCond %{{HTTP_HOST}} ^www\\. [NC]
+RewriteRule ^ https://ebz-photovoltaik.at%{{REQUEST_URI}} [R=301,L]
+
+# 301-Weiterleitungen alter WordPress-Adressen ({len(rules)})
+{chr(10).join(rules)}
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml text/plain
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 365 days"
+</IfModule>
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+"""
+    with open(os.path.join(OUT, ".htaccess"), "w", encoding="utf-8") as f:
+        f.write(body)
+    print(f"[OK ] .htaccess ({len(rules)} Weiterleitungen)")
 
 
 def write_sitemap():

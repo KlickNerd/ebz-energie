@@ -33,7 +33,7 @@ ARTICLE = {
         "Nachrüstung: <b>1 bis 3 Tage</b> vor Ort",
     ],
     "date_published": "2025-09-15",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_detail",
     "hero_alt": "Montage eines notstromfähigen Hybridwechselrichters mit Batteriespeicher im Technikraum",
 
@@ -185,8 +185,10 @@ inklusive Installation*. Eine Ersatzstromlösung für das ganze Haus liegt über
 Notstromsteckdose, weil Umschalteinrichtung und leistungsfähigere Komponenten dazukommen. Bei einer
 Neuanlage ist die Notstromfunktion am günstigsten mitzuplanen: Eine komplette 10-kWp-Anlage mit Speicher liegt
 bei EBZ Energie bei rund 15.000 bis 22.000 Euro vor Förderung, siehe
-{a('/kosten-einer-solaranlage/', 'Kosten einer Solaranlage')}. Der Speicheranteil wird vom Bund mit
-150 Euro je kWh gefördert, in Kärnten kommt die Landespauschale dazu, siehe
+{a('/kosten-einer-solaranlage/', 'Kosten einer Solaranlage')}. Der Speicheranteil wurde im Call 2026
+vom Bund mit 150 Euro je kWh gefördert; der letzte Call endete am 22. Oktober 2026, derzeit ist kein
+Bundeszuschuss beantragbar. In Kärnten gibt es die Landespauschale von 3.000 Euro für PV mit Speicher, ab 2027
+ist laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung geplant (nicht beschlossen), siehe
 {a('/foerderung-fuer-pv-speicher/', 'Förderung für PV-Speicher')}.</p>
 <h3>Zwei Referenzprojekte mit Notstrom</h3>
 {A.table(
@@ -225,7 +227,7 @@ nachrüsten, am günstigsten ist die Funktion aber, wenn sie bei einer Neuanlage
             ("Notstrom und Ersatzstrom", "Von der Notstromsteckdose bis zur dreiphasigen Vollversorgung."),
             ("Auch für Bestandsanlagen", "Wechselrichtertausch oder AC-Nachrüstung, herstellerübergreifend."),
             ("Abnahme mit Testlauf", "Simulierter Netzausfall vor Übergabe, Einweisung inklusive."),
-            ("Förderung inklusive", "EAG-Bund und Kärntner Landesförderung für den Speicheranteil."),
+            ("Förderung inklusive", "Kärntner Landesförderung für den Speicheranteil, Planung mit Blick auf 2027."),
         ],
     },
 

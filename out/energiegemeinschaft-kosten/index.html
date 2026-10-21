@@ -15,7 +15,7 @@
   <meta property="og:image" content="https://ebz-photovoltaik.at/assets/img/pv-montage-detail.jpg">
   <meta name="theme-color" content="#0e4d64">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "@id": "https://ebz-photovoltaik.at/energiegemeinschaft-kosten/#faq", "mainEntity": [{"@type": "Question", "name": "Was kostet die Teilnahme an einer Energiegemeinschaft?", "acceptedAnswer": {"@type": "Answer", "text": "Laufend 2 bis 8 Euro je Zählpunkt und Monat oder ein Aufschlag von 0,5 bis 2 Cent je abgerechneter Kilowattstunde. Einrichtungsgebühren sind unüblich. Im Jahr sind das 25 bis 100 Euro."}}, {"@type": "Question", "name": "Was kostet es, eine Energiegemeinschaft zu gründen?", "acceptedAnswer": {"@type": "Answer", "text": "Als Verein etwa 50 bis 150 Euro für Vereinsregister, Statuten und Konto, die Registrierung bei ebutilities und der Netzbetreibervertrag sind kostenlos. Eine Genossenschaft kostet mehrere hundert Euro und verlangt eine jährliche Revisionsverbandsmitgliedschaft. Der Hauptaufwand ist die Abrechnung."}}, {"@type": "Question", "name": "Wie wird der Strom in der Energiegemeinschaft abgerechnet?", "acceptedAnswer": {"@type": "Answer", "text": "Der Netzbetreiber ordnet jede Viertelstunde Erzeugung und Verbrauch in der Gemeinschaft zu und übermittelt die Mengen über das EDA-Portal. Die Gemeinschaft oder ihre Plattform verrechnet sie zu den vereinbarten Preisen, schreibt Erzeugern gut und stellt Abnehmern in Rechnung, meist monatlich."}}, {"@type": "Question", "name": "Bekomme ich mehrere Stromrechnungen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, drei: vom Netzbetreiber (mit reduziertem EG-Anteil), vom Lieferanten (Reststrom) und von der Gemeinschaft (EG-Strom). Plattformen wie energyfamily fassen die Gemeinschaftsrechnung in einer App zusammen."}}, {"@type": "Question", "name": "Welche Preise sind in einer Energiegemeinschaft üblich?", "acceptedAnswer": {"@type": "Answer", "text": "Typisch sind 8 bis 12 Cent Einspeisung und 12 bis 16 Cent Bezug je Kilowattstunde. Der Einspeisepreis liegt damit im Bereich des OeMAG-Marktpreises, der 2026 zwischen 6,146 Cent (Juli) und 10,168 Cent (September) schwankte, ist aber fix vereinbart; der Bezugspreis liegt unter dem Arbeitspreis der meisten Lieferanten. Die Differenz deckt die Gemeinschaftskosten."}}, {"@type": "Question", "name": "Fällt auf den EG-Strom Umsatzsteuer an?", "acceptedAnswer": {"@type": "Answer", "text": "Das hängt von der Rechtsform der Gemeinschaft ab. Vereine unter der Kleinunternehmergrenze rechnen ohne Umsatzsteuer ab, größere Gemeinschaften weisen sie aus. Für Privatpersonen als Erzeuger gilt bis 12.500 kWh und 35 kWp die Einkommensteuerbefreiung. Keine Steuerberatung."}}, {"@type": "Question", "name": "Lohnt sich die Gemeinschaft trotz Gebühr?", "acceptedAnswer": {"@type": "Answer", "text": "Bei 25 bis 100 Euro Kosten und typisch 100 bis 300 Euro Vorteil im Jahr ja. Kritisch wird es erst, wenn die Gebühr über 30 Prozent des erwarteten Vorteils liegt, etwa bei sehr geringer Zuordnungsquote. Dann passt ein anderes Gebührenmodell oder eine andere Gemeinschaft besser."}}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://ebz-photovoltaik.at/energiegemeinschaft-kosten/#article", "mainEntityOfPage": "https://ebz-photovoltaik.at/energiegemeinschaft-kosten/", "headline": "Was eine Energiegemeinschaft kostet: 25 bis 100 Euro im Jahr, und wie abgerechnet wird", "description": "Was eine Energiegemeinschaft kostet: 2 bis 8 € je Zählpunkt und Monat, Verein ab ca. 50 €, meist keine Einrichtungsgebühr. Plus: die 3 Rechnungen nach Beitritt.", "inLanguage": "de-AT", "datePublished": "2026-08-25", "dateModified": "2026-10-09", "author": {"@type": "Person", "name": "Mario Zintl", "jobTitle": "Geschäftsführer", "worksFor": {"@type": "Organization", "name": "EBZ Energie GmbH"}, "url": "https://ebz-photovoltaik.at/ueber-uns/"}, "publisher": {"@type": "Organization", "name": "EBZ Energie GmbH", "url": "https://ebz-photovoltaik.at/", "logo": {"@type": "ImageObject", "url": "https://ebz-photovoltaik.at/assets/img/ebz-logo.png"}}, "image": "https://ebz-photovoltaik.at/assets/img/pv-montage-detail.jpg"}</script>
@@ -262,6 +262,33 @@ Beitritt kennen.</p>
     <a class="btn btn--ghost" href="tel:+436502202626">Anrufen</a>
     <a href="/kontakt/" class="btn btn--primary">Beratung anfragen</a>
   </div>
+
+<div id="ebzc">
+  <div id="ebzc-panel">
+    <div class="hd">
+      <button class="x" id="ebzc-x" aria-label="Schließen">×</button>
+      <div class="hdrow">
+        <div class="bdg"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" fill="#082e3d"/><g stroke="#082e3d" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.6M12 18.9v2.6M21.5 12h-2.6M5.1 12H2.5M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8M18.7 18.7l-1.8-1.8M7.1 7.1L5.3 5.3"/></g></svg></div>
+        <div><p class="ttl">EBZ Energie-Assistent</p><div class="sub"><span class="dot"></span> Antwortet sofort · Team Mo bis Fr 10 bis 20 Uhr</div></div>
+      </div>
+    </div>
+    <div class="stream" id="ebzc-stream"></div>
+    <div class="chips" id="ebzc-chips"></div>
+    <div class="ft">
+      <div class="row">
+        <textarea id="ebzc-in" rows="1" placeholder="Ihre Frage zu PV, Wärmepumpe oder Förderung"></textarea>
+        <button class="snd" id="ebzc-snd" aria-label="Senden"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l16-8-6 16-2.5-6.5L4 12z" fill="#082e3d"/></svg></button>
+      </div>
+      <div class="dis">KI-Assistent · kann Fehler machen · keine verbindliche Förderzusage</div>
+    </div>
+  </div>
+  <div id="ebzc-teaser"><button class="tc" id="ebzc-teaser-close" aria-label="Schließen">×</button>Grüß Sie! Fragen zu Photovoltaik, Wärmepumpe oder Förderung? Ich helfe Ihnen gern weiter.</div>
+  <button id="ebzc-launch" aria-label="Chat öffnen">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8A2.5 2.5 0 0117.5 16H9l-4 4v-4H6.5A2.5 2.5 0 014 13.5v-8z" fill="#082e3d"/></svg>
+  </button>
+</div>
+
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/chatbot.js" defer></script>
 </body>
 </html>

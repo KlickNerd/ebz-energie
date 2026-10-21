@@ -37,7 +37,7 @@ ARTICLE = {
         "Obergrenze Luft-Wasser: <b>25.586 €</b>",
     ],
     "date_published": "2026-03-15",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit neuer Wärmepumpe und Photovoltaik nach dem Heizungstausch",
 
@@ -221,9 +221,9 @@ Konditionen, die 2026 galten:</p>
         ("Wärmepumpe und Photovoltaik: auch mit kleinem Einkommen langfristig sparen", "photovoltaik", f"""
 <p>Eine Wärmepumpe braucht Strom. Wer ihn mit einer eigenen {a('photovoltaik', 'Photovoltaikanlage')}
 erzeugt, macht sich von steigenden Strompreisen weitgehend unabhängig. Die Wärmepumpe senkt die
-Heizkosten, die PV-Anlage die Stromkosten. Photovoltaik wird über den EAG-Investitionszuschuss separat
-gefördert: Der letzte Call 2026 läuft bis 22. Oktober 2026, ab 2027 ist laut BMWET eine Systemförderung mit
-Antrag nach der Installation geplant. Wie beide Systeme zusammenarbeiten, lesen
+Heizkosten, die PV-Anlage die Stromkosten. Photovoltaik wurde 2026 über den EAG-Investitionszuschuss separat
+gefördert: Der letzte Call lief vom 8. bis 22. Oktober 2026, derzeit ist kein Bundeszuschuss beantragbar. Ab
+2027 ist laut BMWET eine Systemförderung mit Antrag nach der Installation geplant, nicht beschlossen. Wie beide Systeme zusammenarbeiten, lesen
 Sie im Ratgeber {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}. Für die PV-Anlage
 bietet EBZ Energie eine {a('finanzierung', 'Finanzierung')} ab 147 € pro Monat inklusive Speicher an, die
 Anlage gehört dabei ab Tag 1 Ihnen.</p>

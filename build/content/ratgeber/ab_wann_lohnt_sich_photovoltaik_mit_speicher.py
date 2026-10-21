@@ -3,6 +3,8 @@
 Migriert von ebz-photovoltaik.at/ab-wann-lohnt-sich-photovoltaik-mit-speicher/ (Quelle Stand Dezember 2025).
 Das Rechenbeispiel der Quelle nutzt die Fördersätze 2025; eine zweite Rechnung mit den belegten Sätzen 2026
 (EAG-Novelle 2026, Kärntner Landespauschale) wurde ergänzt.
+Stand ab 23.10.2026: letzter EAG-Call lief 8. bis 22.10.2026, Bund derzeit nicht beantragbar; dritte
+Spalte "aktuell" (nur Kaernten 3.000 EUR) ergaenzt, reine Arithmetik aus den Beispielwerten.
 """
 
 import os
@@ -32,7 +34,7 @@ ARTICLE = {
         "Eigenverbrauch: <b>30 auf 70 %+</b>",
     ],
     "date_published": "2025-12-05",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage mit Ost-West-Ausrichtung auf einem Einfamilienhaus in Kärnten",
 
@@ -44,8 +46,9 @@ ARTICLE = {
         "Rechenbeispiel Kärnten: 10 kWp und 10 kWh für 19.995 Euro brutto, rund 8.500 Euro Förderung von Bund und "
         "Land (Fördersätze 2025), Restkosten 11.495 Euro, 2.500 Euro Ersparnis pro Jahr, Amortisation in "
         "4,6 Jahren.",
-        "Mit den Fördersätzen 2026 (EAG 150 Euro je kWp und je kWh, Kärntner Pauschale 3.000 Euro) ergeben sich "
-        "6.000 Euro Förderung und 5,6 Jahre Amortisation. Beides liegt im EBZ-typischen Korridor von 4 bis 6 Jahren.",
+        "Mit den Fördersätzen im Call 2026 (EAG 150 Euro je kWp und je kWh, Kärntner Pauschale 3.000 Euro) ergaben "
+        "sich 6.000 Euro Förderung und 5,6 Jahre Amortisation. Der letzte Bundescall endete am 22. Oktober 2026; "
+        "aktuell gibt es nur die Kärntner Pauschale, damit sind es 3.000 Euro Förderung und rund 6,8 Jahre.",
         "Über 20 Jahre summiert sich die Ersparnis im Beispiel auf 50.000 Euro, abzüglich Restkosten bleiben rund "
         "38.500 Euro Gewinn, eine Rendite von rund 335 Prozent auf die Restinvestition.",
     ],
@@ -59,8 +62,9 @@ ARTICLE = {
     "sections": [
         ("Vom Einspeiser zum Selbstversorger: warum sich die Rechnung geändert hat", "paradigmenwechsel", f"""
 <p><b>Ein Batteriespeicher hebt den Eigenverbrauch einer PV-Anlage von rund 30 auf 60 bis 80 Prozent*.</b> Bei
-Haushaltsstrompreisen von 22 bis 35 Cent je kWh* und dem EAG-Zuschuss von 150 Euro je kWh lohnt sich ein
-Speicher ab etwa 5 kWp PV-Leistung und 3.500 kWh Jahresverbrauch* (Stand Oktober 2026). Wie EBZ Energie eine
+Haushaltsstrompreisen von 22 bis 35 Cent je kWh* lohnt sich ein Speicher ab etwa 5 kWp PV-Leistung und
+3.500 kWh Jahresverbrauch*, auch ohne den EAG-Zuschuss von 150 Euro je kWh, der im Call 2026 galt und seit
+dem 22. Oktober 2026 nicht mehr beantragbar ist (Stand Oktober 2026). Wie EBZ Energie eine
 {a('batteriespeicher', 'PV-Anlage mit Speicher')} auslegt, zeigt die Leistungsseite.
 <small>*Richtwerte, abhängig von Lastprofil, Tarif und Netzgebiet.</small></p>
 <p>In den Jahren hoher geförderter Tarife wurde eine PV-Anlage so ausgelegt, dass möglichst viel eingespeist
@@ -100,7 +104,7 @@ mindert die Ersparnis. Details zur Technik auf der Leistungsseite {a('batteriesp
 """),
         ("Rechenbeispiel: 10 kWp mit 10 kWh Speicher in Kärnten", "rechenbeispiel", f"""
 <p>Wir bleiben nicht bei der Theorie. Die folgende Rechnung zeigt eine Anlage, die in Kärnten errichtet wird.
-Kärnten steht hier beispielhaft für ein Bundesland mit Landesförderung zusätzlich zum Bund; die Logik gilt
+Kärnten steht hier beispielhaft für ein Bundesland mit Landesförderung; die Logik gilt
 überall, nur die Förderhöhen variieren. Angenommen wird ein Haushalt, der seinen Verbrauch mit
 Energiemanagement auf die Erzeugung abstimmt.</p>
 {A.table(
@@ -115,40 +119,46 @@ Energiemanagement auf die Erzeugung abstimmt.</p>
     ],
     hl_cols=(1,),
 )}
-<h3>Förderung: zwei Stände, zwei Ergebnisse</h3>
+<h3>Förderung: drei Stände, drei Ergebnisse</h3>
 <p>Die Quelle des Beispiels rechnet mit den Fördersätzen des Jahres 2025 (EAG 160 Euro je kWp, Kärnten
-275 Euro je kWh Speicher). Seit 2026 gelten neue Konditionen: Der EAG-Bundeszuschuss beträgt 150 Euro je kWp
-in Kategorie A und 150 Euro je kWh Speicher, das Land Kärnten zahlt für neue PV-Anlagen ab 5 kWp mit
-Speicher ab 5 kWh eine Pauschale von 3.000 Euro, voll mit dem Bund kombinierbar. Beide Varianten:</p>
+275 Euro je kWh Speicher). Im Call 2026 betrug der EAG-Bundeszuschuss 150 Euro je kWp in Kategorie A und
+150 Euro je kWh Speicher, das Land Kärnten zahlt für neue PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh eine
+Pauschale von 3.000 Euro, voll mit dem Bund kombinierbar. Der dritte und letzte Bundescall 2026 lief vom
+8. bis 22. Oktober 2026; neue Anlagen bekommen derzeit keinen Bundeszuschuss, die Kärntner Pauschale ist bis
+31. Dezember 2026 beantragbar. Alle drei Varianten:</p>
 {A.table(
-    ["Förderposition", "Fördersätze 2025*", "Fördersätze 2026*"],
+    ["Förderposition", "Fördersätze 2025*", "Call 2026*", "Aktuell, ab 23. Oktober 2026*"],
     [
-        ["EAG-Bund, PV-Anlage", "1.600 €", "1.500 €"],
-        ["EAG-Bund, Speicher", "1.500 €", "1.500 €"],
-        ["Land Kärnten, PV", "2.680 €", "3.000 € Pauschale (PV mit Speicher)"],
-        ["Land Kärnten, Speicher", "2.750 €", "in der Pauschale enthalten"],
-        ["Gesamtförderung (ohne Made-in-Europe-Bonus)", "rund 8.500 €", "6.000 €"],
-        ["Restkosten nach Förderung", "11.495 €", "13.995 €"],
-        ["Amortisation bei 2.500 € Ersparnis pro Jahr", "4,6 Jahre", "5,6 Jahre"],
+        ["EAG-Bund, PV-Anlage", "1.600 €", "1.500 €", "derzeit nicht beantragbar"],
+        ["EAG-Bund, Speicher", "1.500 €", "1.500 €", "derzeit nicht beantragbar"],
+        ["Land Kärnten, PV", "2.680 €", "3.000 € Pauschale (PV mit Speicher)", "3.000 € Pauschale (PV mit Speicher)"],
+        ["Land Kärnten, Speicher", "2.750 €", "in der Pauschale enthalten", "in der Pauschale enthalten"],
+        ["Gesamtförderung (ohne Made-in-Europe-Bonus)", "rund 8.500 €", "6.000 €", "3.000 €"],
+        ["Restkosten nach Förderung", "11.495 €", "13.995 €", "16.995 €"],
+        ["Amortisation bei 2.500 € Ersparnis pro Jahr", "4,6 Jahre", "5,6 Jahre", "rund 6,8 Jahre"],
     ],
-    hl_cols=(1, 2),
+    hl_cols=(1, 2, 3),
 )}
 <p>Mit dem Made-in-Europe-Bonus (europäische Module, Wechselrichter oder Speicher von der White List der
-EAG-Abwicklungsstelle) steigt die Bundesförderung um 10 Prozent je Komponente. Die genaue Höhe hängt von
-Einreichung, Call und Staffelung ab. Alle Kärntner Details im Ratgeber
+EAG-Abwicklungsstelle) stieg die Bundesförderung im Call 2026 um 10 Prozent je Komponente. Ab 2027 ist laut
+BMWET eine Systemförderung für Speicher mit intelligenter Steuerung geplant, aber nicht beschlossen; Projekte
+ab 1. November 2026 sollen beantragbar sein, die Höhe ist offen und deshalb hier nicht eingerechnet. Wer jetzt
+plant, baut daher sinnvoll mit Speicher und Energiemanagement. Alle Kärntner Details im Ratgeber
 {a('/photovoltaik-foerderung-kaernten/', 'Photovoltaik-Förderung Kärnten 2026')}.</p>
 <h3>Rendite über 20 Jahre</h3>
 <p>Photovoltaikmodule haben eine Leistungsgarantie von bis zu 30 Jahren, für die Rechnung genügen konservative
 20 Jahre: 20 mal 2.500 Euro ergeben 50.000 Euro eingesparte Stromkosten. Abzüglich der Restkosten von
 11.495 Euro bleiben rund 38.500 Euro Gewinn, das entspricht einer Rendite von rund 335 Prozent auf die
-Restinvestition. Mit den Fördersätzen 2026 sind es rund 36.000 Euro Gewinn. Strompreissteigerungen und
+Restinvestition. Mit den Fördersätzen im Call 2026 sind es rund 36.000 Euro Gewinn, mit der aktuellen
+Kärntner Pauschale allein rund 33.000 Euro. Strompreissteigerungen und
 Inflation sind dabei nicht eingerechnet; sie würden das Ergebnis verbessern.</p>
-<p><small>*Beispielkonditionen und Richtwerte, Stand Dezember 2025 (Fördersätze 2025) beziehungsweise Juni 2026
-(Fördersätze 2026). Die tatsächliche Förderhöhe hängt von Call, Einreichzeitpunkt und Bonus ab, die Ersparnis
+<p><small>*Beispielkonditionen und Richtwerte, Stand Dezember 2025 (Fördersätze 2025), Juni 2026
+(Call 2026, beendet) beziehungsweise Oktober 2026 (aktuell). Die tatsächliche Förderhöhe hängt von Programm,
+Einreichzeitpunkt und Bonus ab, die Ersparnis
 von Verbrauchsprofil und Strompreis. EBZ-Richtpreis für 10 kWp mit Speicher: rund 15.000 bis 22.000 Euro
 vor Förderung.</small></p>
 {A.cta("Ihre persönliche Wirtschaftlichkeitsrechnung",
-       "Wir rechnen mit Ihrem Verbrauch, Ihrem Dach und den aktuellen Förderungen von Bund und Land, ehrlich "
+       "Wir rechnen mit Ihrem Verbrauch, Ihrem Dach und den aktuell beantragbaren Förderungen, ehrlich "
        "und ohne Schönfärberei.",
        secondary=("photovoltaik", "Zur Photovoltaik"))}
 """),
@@ -167,8 +177,9 @@ Im Systemverbund ist er der Hebel, der die teuren Netzbezugskosten eliminiert. D
   Einspeisung und über 30 Cent Bezug ist der Speicher der entscheidende Faktor.</li>
   <li><b>Garantien und Lebensdauer:</b> Speicher auf LFP-Basis (Lithium-Eisenphosphat) gelten als sicher und
   langlebig, mit 10 Jahren Herstellergarantie und 15 bis 20 Jahren technischer Lebensdauer.</li>
-  <li><b>Fördercall und Timing:</b> Die Förderhöhe kann je Call variieren, der EAG-Antrag muss vor
-  Inbetriebnahme gestellt werden.</li>
+  <li><b>Förderung und Timing:</b> Der letzte EAG-Call 2026 endete am 22. Oktober 2026, derzeit gibt es keinen
+  Bundeszuschuss. Die geplante Systemförderung 2027 (laut BMWET, nicht beschlossen) soll nach Installation
+  beantragt werden; die Kärntner Pauschale läuft bis 31. Dezember 2026.</li>
 </ul>
 <h3>Blackout-Schutz als Bonus</h3>
 <p>Ein Aspekt, der in der reinen Renditerechnung fehlt: Mit notstromfähigem Wechselrichter und
@@ -186,7 +197,7 @@ finanziell attraktiv, mit Amortisationszeiten von typischerweise 4 bis 6 Jahren.
 {a('finanzierung', 'Finanzierung ab 147 Euro pro Monat inklusive Speicher')} abbilden, bei der die Anlage
 ab Tag 1 Ihnen gehört.</p>
 <p>Damit die Rechnung aufgeht, muss die Planung stimmen: die Dimensionierung der kWp-Leistung, die Auswahl des
-Speichers und die fristgerechte Beantragung aller Förderungen bei Bund und Land. Ein Fehler in der Planung
+Speichers und die fristgerechte Beantragung aller verfügbaren Förderungen. Ein Fehler in der Planung
 kann die Amortisation um Jahre verlängern.</p>
 {A.cta("Rentiert sich PV mit Speicher auf Ihrem Dach in unter 6 Jahren?",
        "Lassen Sie uns gemeinsam rechnen: kostenlose Erstberatung mit individueller Wirtschaftlichkeitsanalyse "
@@ -201,10 +212,10 @@ kann die Amortisation um Jahre verlängern.</p>
         "text": ("EBZ Energie aus Villach plant und installiert Photovoltaik mit Speicher in Kärnten und der "
                  "Steiermark, mit zertifizierten Fachkräften und über 300 "
                  "dokumentierten Projekten mit typischer Amortisation von 4 bis 6 Jahren. Wir rechnen jedes Projekt "
-                 "mit Ihrem Verbrauch durch und schöpfen die Förderungen von Bund und Land aus."),
+                 "mit Ihrem Verbrauch durch und schöpfen die verfügbaren Förderungen aus."),
         "grid": [
             ("Ehrliche Rechnung", "Wirtschaftlichkeit auf Basis Ihres Lastprofils, nicht auf Basis von Prospektwerten."),
-            ("Förderung aus einer Hand", "EAG-Ticket, Landesantrag Kärnten, Endabrechnung."),
+            ("Förderung aus einer Hand", "Landesantrag Kärnten, Endabrechnung, Planung mit Blick auf die Systemförderung 2027."),
             ("Auslegung nach Faustformel und Praxis", "1 kWp zu 1 kWh als Start, Feinabstimmung nach Verbrauch."),
             ("Garantien", "Bis zu 30 Jahre Leistungsgarantie, mindestens 10 Jahre Produktgarantie."),
         ],
@@ -214,16 +225,17 @@ kann die Amortisation um Jahre verlängern.</p>
         ("Ab wann lohnt sich Photovoltaik mit Speicher?",
          "Sobald der Eigenverbrauch hoch und der Bezugspreis deutlich über der Einspeisevergütung liegt. Im "
          "Rechenbeispiel aus Kärnten amortisiert sich eine 10-kWp-Anlage mit 10 kWh Speicher nach Förderung in "
-         "4,6 Jahren (Fördersätze 2025) beziehungsweise 5,6 Jahren (Fördersätze 2026). EBZ-Projekte liegen "
-         "typischerweise bei 4 bis 6 Jahren."),
+         "4,6 Jahren (Fördersätze 2025) beziehungsweise 5,6 Jahren (Call 2026). Mit der aktuell beantragbaren "
+         "Kärntner Pauschale allein sind es rund 6,8 Jahre. EBZ-Projekte liegen typischerweise bei 4 bis 6 Jahren."),
         ("Wie lange hält ein Stromspeicher tatsächlich?",
          "Moderne Speicher setzen meist auf Lithium-Eisenphosphat (LFP). Hersteller geben oft 10 Jahre Garantie, "
          "die technische Lebensdauer liegt bei 15 bis 20 Jahren. Die Stromspeicher-Inspektion der HTW Berlin "
          "bescheinigt diesen Systemen eine hohe Zyklenfestigkeit."),
         ("Kann ich für meine bestehende Anlage einen Speicher nachrüsten?",
          "Ja, ein AC-gekoppelter Speicher lässt sich fast immer integrieren. Die Förderung ist für die reine "
-         "Nachrüstung aber anders geregelt: Der EAG-Bund fördert Speicher nur mit neuer oder erweiterter PV-Anlage, "
-         "Kärnten zahlt für die Nachrüstung 1.000 Euro Pauschale. Wirtschaftlich ist das Gesamtpaket aus PV und "
+         "Nachrüstung aber anders geregelt: Der EAG-Bund förderte Speicher im Call 2026 nur mit neuer oder "
+         "erweiterter PV-Anlage; ab 2027 soll laut BMWET auch die Nachrüstung förderbar werden (geplant, nicht "
+         "beschlossen). Kärnten zahlt für die Nachrüstung 1.000 Euro Pauschale. Wirtschaftlich ist das Gesamtpaket aus PV und "
          "Speicher meist günstiger als die spätere Nachrüstung."),
         ("Wie groß sollte der Speicher dimensioniert sein?",
          "Richtwert: 1 kWp Modulleistung zu 1 kWh Speicherkapazität. Bei 4.000 bis 5.000 kWh Jahresverbrauch "
@@ -236,15 +248,17 @@ kann die Amortisation um Jahre verlängern.</p>
         ("Was kostet eine 10-kWp-Anlage mit Speicher?",
          "Bei EBZ Energie liegt der Richtpreis für 10 kWp mit Speicher bei rund 15.000 bis 22.000 Euro vor "
          "Förderung. Das Rechenbeispiel arbeitet mit 19.995 Euro brutto. Nach Förderung von Bund und Land "
-         "verbleiben je nach Jahr rund 11.500 bis 14.000 Euro."),
+         "verblieben je nach Jahr rund 11.500 bis 14.000 Euro, aktuell mit der Kärntner Pauschale allein rund "
+         "17.000 Euro."),
         ("Was bringt der Speicher bei einem Stromausfall?",
          "Standardmäßig schalten PV-Anlagen bei Netzausfall ab. Ein Speicher mit Notstromfunktion kann das Haus "
          "weiterversorgen, wenn Wechselrichter und Netzumschaltbox dafür ausgelegt sind. Nicht jeder Speicher kann "
          "das ab Werk, es muss bei der Planung berücksichtigt werden."),
         ("Wie hoch ist die Förderung 2026 für PV mit Speicher in Kärnten?",
-         "Der EAG-Bund zahlt 150 Euro je kWp (bis 10 kWp) und 150 Euro je kWh Speicher, das Land Kärnten "
-         "3.000 Euro Pauschale für neue PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh, ohne Anrechnung der "
-         "Bundesförderung. Für 10 kWp mit 10 kWh sind das 6.000 Euro. Stand Juni 2026."),
+         "Das Land Kärnten zahlt 3.000 Euro Pauschale für neue PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh "
+         "(2. Landes-Call bis 31. Dezember 2026). Im Call 2026 kamen vom EAG-Bund 150 Euro je kWp (bis 10 kWp) und "
+         "150 Euro je kWh Speicher dazu, für 10 kWp mit 10 kWh in Summe 6.000 Euro. Der letzte Bundescall endete "
+         "am 22. Oktober 2026, der Bund ist derzeit nicht beantragbar."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team hat über 300 PV-Projekte in sechs "

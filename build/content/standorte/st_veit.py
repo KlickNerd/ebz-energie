@@ -270,8 +270,8 @@ ORT = {
         ("Gibt es in St. Veit an der Glan eine Förderung der Stadt für Photovoltaik oder Heizungstausch?",
          "Auf der Förderseite der Stadtgemeinde ist derzeit kein eigenes Programm für Photovoltaik, Stromspeicher "
          "oder Heizungstausch angeführt. Wir fragen vor dem Angebot im Rathaus nach, ob es einen Zuschuss gibt. Es "
-         "bleiben die Landespauschale Kärnten für Photovoltaik mit Speicher und der Investitionszuschuss des "
-         "Bundes; bei der Wärmepumpe ist die Bundesförderung derzeit ausgeschöpft. Beratung zu Förderungen bieten "
+         "bleibt die Landespauschale Kärnten für Photovoltaik mit Speicher, der Investitionszuschuss des Bundes ist "
+         "für 2026 abgeschlossen; bei der Wärmepumpe ist die Bundesförderung derzeit ausgeschöpft. Beratung zu Förderungen bieten "
          "die Energiesprechtage der Klima- und Energie-Modellregion Sonnenland Mittelkärnten."),
         ("In welchen Orten rund um St. Veit an der Glan berät und montiert EBZ Energie?",
          "Im ganzen Bezirk Sankt Veit an der Glan mit seinen 20 Gemeinden, zum Beispiel in Althofen, Friesach, "

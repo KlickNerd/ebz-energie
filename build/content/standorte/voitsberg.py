@@ -246,8 +246,8 @@ ORT = {
          "(Beispielkondition), die Anlage gehört Ihnen ab dem ersten Tag."),
         ("Gibt es in Voitsberg eine Gemeindeförderung für Photovoltaik oder Heizungstausch?",
          "Die Stadtgemeinde Voitsberg weist derzeit kein eigenes Förderprogramm für Photovoltaik, Speicher oder "
-         "Heizungstausch aus (Stand Oktober 2026). Eine PV-Pauschale des Landes gibt es in der Steiermark nicht, es "
-         "bleibt der Investitionszuschuss des Bundes. Weil Gemeinden ihre Programme jederzeit ändern können, fragen "
+         "Heizungstausch aus (Stand Oktober 2026). Eine PV-Pauschale des Landes gibt es in der Steiermark nicht, und "
+         "der Investitionszuschuss des Bundes ist für 2026 abgeschlossen. Weil Gemeinden ihre Programme jederzeit ändern können, fragen "
          "wir vor jedem Angebot bei Ihrer Wohnsitzgemeinde nach, auch in Köflach, Bärnbach oder Ligist. Welche "
          "Programme gerade offen sind, zeigt unser Förderrechner."),
         ("Wärmepumpe oder Fernwärme in Voitsberg: Was passt zu meinem Haus?",

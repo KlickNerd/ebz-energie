@@ -41,7 +41,9 @@ FAQ = [
      "kleinere Anlage besser passt oder sich ein Speicher bei Ihnen nicht rechnet, sagen wir das."),
     ("Beraten Sie auch zu Förderung und Finanzierung?",
      "Ja, das ist Teil jeder Beratung. Wir prüfen Landespauschale Kärnten (3.000 € für PV ab 5 kWp mit Speicher), "
-     "Förderung Steiermark und den EAG-Zuschuss des Bundes, kennen die laufenden Fristen und stellen die Anträge. "
+     "EMS-Förderung und die Programme in der Steiermark, kennen die laufenden Fristen und stellen die Anträge. "
+     "Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen, ab 2027 plant der Bund "
+     "laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. "
      "Auf Wunsch rechnen wir eine Finanzierung ab 147 € im Monat* durch: Eigentum ab Tag 1, "
      "0 € Anzahlung, fixe Rate."),
     ("Kann ich auch telefonisch, per Video oder bei Ihnen in Villach beraten werden?",
@@ -99,7 +101,7 @@ def build():
                 "Stromverbrauch in kWh pro Jahr und Ihr Tagesprofil",
                 "Anlagengröße in kWp und Speichergröße in kWh, passend zu Verbrauch und Budget",
                 "Wärmepumpe, Wallbox, Notstrom, Energiegemeinschaft: was sich kombinieren lässt",
-                "Förder-Check: Landespauschale Kärnten, Förderung Steiermark, EAG-Zuschuss des Bundes",
+                "Förder-Check: Landespauschale Kärnten, EMS-Förderung, Ausblick Systemförderung des Bundes 2027",
                 "Kostenvoranschlag als Festpreis-Angebot, auf Wunsch mit Finanzierung ab 147 € im Monat*",
             ]},
             right={"title": "Was Sie vorbereiten können", "dark": True, "items": [

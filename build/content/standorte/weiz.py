@@ -281,7 +281,8 @@ ORT = {
          "Für den Heizungstausch ja: Die Stadtgemeinde Weiz zahlt laut ihren Ökoförderungen für 2026 300 Euro für "
          "eine Wärmepumpe, einen Nah- oder Fernwärmeanschluss oder einen Biomassekessel, dazu 100 Euro je "
          "zusätzlicher Wohneinheit, sofern für die Anlage keine Bundesförderung bezogen wird. Für Photovoltaik und "
-         "Stromspeicher führt die Stadt keine eigene Förderung an, hier gilt der Investitionszuschuss des Bundes. "
+         "Stromspeicher führt die Stadt keine eigene Förderung an, und der Investitionszuschuss des Bundes ist für 2026 "
+         "abgeschlossen. "
          "Land und Bund nehmen für neue Wärmepumpen derzeit keine Förderanträge an. Was am Tag Ihrer Anfrage "
          "offen ist, prüfen wir vor dem Angebot."),
         ("Brauche ich in Weiz eine Genehmigung für eine Luft-Wasser-Wärmepumpe?",

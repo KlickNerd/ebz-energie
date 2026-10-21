@@ -33,7 +33,7 @@ ARTICLE = {
         "Wasserkraft in Österreich: <b>rund 60 %</b> des Stroms",
     ],
     "date_published": "2025-05-10",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "pv_card",
     "hero_alt": "Photovoltaikmodule auf einem Dach in der Sonne: Grundlagen der Solarenergie",
 
@@ -191,8 +191,10 @@ von allen Quellen am schnellsten (Stand 2025).</p>
 """),
         ("Wirtschaftlichkeit und Förderung in Kürze", "wirtschaftlichkeit", f"""
 <p>Eine 10-kWp-Anlage kostet 2026 ohne Speicher rund 10.000 bis 15.000 Euro, mit Speicher rund 15.000 bis
-22.000 Euro vor Förderung. Der Bund zahlt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, in Kärnten
-kommen 3.000 Euro Landespauschale dazu. Einnahmen aus der Einspeisung sind für Private bis 12.500 kWh pro
+22.000 Euro vor Förderung. Im Call 2026 zahlte der Bund 150 Euro je kWp bis 10 kWp und 150 Euro je kWh
+Speicher; der letzte Call endete am 22. Oktober 2026, derzeit ist kein Bundeszuschuss beantragbar. In Kärnten
+gibt es 3.000 Euro Landespauschale für PV mit Speicher, ab 2027 ist laut BMWET eine Systemförderung geplant
+(nicht beschlossen). Einnahmen aus der Einspeisung sind für Private bis 12.500 kWh pro
 Jahr einkommensteuerfrei. In EBZ-Projekten mit hohem Eigenverbrauch amortisiert sich die Anlage
 typischerweise in 4 bis 6 Jahren, danach liefert sie noch zwei Jahrzehnte nahezu kostenlosen Strom.</p>
 <p>Die Details finden Sie in den Ratgebern {a('/kosten-einer-solaranlage/', 'Kosten einer Solaranlage')}

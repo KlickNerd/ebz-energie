@@ -19,10 +19,10 @@ import components as C
 
 PATH = "/foerderungen/"
 TITLE = "Förderungen 2026: PV, Speicher, Wärmepumpe, EMS | EBZ"
-DESC = ("Förderungen 2026 im Überblick: EAG 150 €/kWp und 150 €/kWh bis 22.10., Kärnten 3.000 € "
-        "bis 31.12., EMS bis 600 €, Wärmepumpe Bund beendet. Stand Oktober.")
+DESC = ("Förderungen im Überblick: Bundes-Call für PV 2026 beendet, Kärnten 3.000 € bis 31.12., EMS bis 600 €, "
+        "Systemförderung 2027 geplant. Stand Ende Oktober 2026.")
 
-STAND = "Stand 10. Oktober 2026"
+STAND = "Stand Ende Oktober 2026"
 
 # Ratgeber-Pfade (alle in out/ gebaut)
 R_BUND = "foerderung_at"
@@ -75,21 +75,22 @@ def _laender_section():
 
 FAQ = [
     ("Kann ich die Bundesförderung mit einer Landesförderung kombinieren?",
-     "In Kärnten ja: Die 3.000 Euro Landespauschale für PV mit Speicher wird laut Land ohne Anrechnung zusätzlich "
-     "zum EAG-Investitionszuschuss gezahlt, gedeckelt mit 50 Prozent der Baukosten. Die Steiermark hat derzeit kein "
-     "eigenes Programm für private PV-Anlagen, dort gilt der Bund. Ausnahmen: In Oberösterreich schließen sich "
-     "EAG-Speicherzuschuss und Landes-Speicherförderung aus, im Burgenland zahlt das Land nur, wenn der Bund nicht "
-     "möglich ist, in Wien gilt Stadt oder Bund."),
+     "2026 war das in Kärnten ohne Anrechnung möglich: 3.000 Euro Landespauschale für PV mit Speicher plus "
+     "EAG-Investitionszuschuss. Der Bundeszuschuss ist seit dem Ende des letzten Calls am 22. Oktober 2026 nicht mehr "
+     "beantragbar, die Landespauschale läuft weiter (höchstens 50 Prozent der Baukosten). Ob die für 2027 geplante "
+     "Systemförderung des Bundes mit Landesförderungen kombinierbar ist, steht noch nicht fest. Andere Länder: In "
+     "Oberösterreich schlossen sich EAG-Speicherzuschuss und Landes-Speicherförderung aus, im Burgenland zahlt das "
+     "Land nur, wenn der Bund nicht möglich ist, in Wien gilt Stadt oder Bund."),
     ("Welche Fristen gelten im Herbst 2026?",
-     "EAG-Investitionszuschuss: Antragstellung im dritten Fördercall bis 22. Oktober 2026, danach gibt es im alten "
-     "System keinen Call mehr. Kärnten: zweiter Landes-Call vom 12. Oktober bis 31. Dezember 2026, Antrag nach "
+     "EAG-Investitionszuschuss: Der dritte und letzte Fördercall 2026 lief vom 8. bis 22. Oktober 2026, danach gibt "
+     "es im bisherigen System keinen Call mehr. Kärnten: zweiter Landes-Call vom 12. Oktober bis 31. Dezember 2026, Antrag nach "
      "Fertigstellung über die Förderplattform des Landes. EMS-Förderung des Klimafonds: Registrierung vor der "
      "Rechnung, Programm bis 15. April 2027. Wärmepumpe Bund: keine Frist mehr, die Programme sind ausgeschöpft "
      "(Stand 9. Oktober 2026, umweltfoerderung.at)."),
     ("Wer stellt die Förderanträge, EBZ oder ich?",
      "Antragsteller ist immer der Eigentümer der Anlage, also Sie. EBZ Energie bereitet alles vor: Zählpunkt, "
-     "Ticket im EAG-Call, Antragsdaten, Fertigstellungsmeldung, Rechnung und Fotos für das Land, Registrierung beim "
-     "Klimafonds. Sie bestätigen die Einreichung. Das gilt auch bei Finanzierung: Die Anlage gehört ab Tag 1 Ihnen, "
+     "Antragsdaten, Fertigstellungsmeldung, Rechnung und Fotos für das Land, Registrierung beim Klimafonds und ab "
+     "2027 der Antrag für die geplante Systemförderung des Bundes. Sie bestätigen die Einreichung. Das gilt auch bei Finanzierung: Die Anlage gehört ab Tag 1 Ihnen, "
      "die Förderung geht auf Ihr Konto."),
     ("Was ändert sich 2027 bei der PV-Förderung?",
      "Laut BMWET soll der EAG-Investitionszuschuss ab 2027 zur Systemförderung werden: Gefördert wird das "
@@ -106,8 +107,8 @@ FAQ = [
      "Bundesförderung voraus und gilt damit nur für bereits Registrierte. Ob 2027 ein neues Bundesprogramm kommt, "
      "ist offen."),
     ("Welche Förderungen gibt es für Betriebe und Gemeinden?",
-     "PV: EAG-Zuschuss in den Kategorien B bis D (140 bis 120 Euro je kWp, ab 20 kWp im Bieterverfahren) plus "
-     "Speicher 150 Euro je kWh; Kärnten fördert betriebliche Eigenverbrauchsanlagen mit bis zu 200 Euro je kWp, der "
+     "PV: Der EAG-Zuschuss (2026 in den Kategorien B bis D 140 bis 120 Euro je kWp plus Speicher 150 Euro je kWh) "
+     "ist für 2026 abgeschlossen, ab 2027 plant der Bund eine Systemförderung; Kärnten fördert betriebliche Eigenverbrauchsanlagen mit bis zu 200 Euro je kWp, der "
      "steirische Ökofonds hat derzeit keine PV-Ausschreibung. EMS: 30 Prozent bis 20.000 Euro je Standort "
      "(Großunternehmen 20 Prozent). Wärmepumpe: KPC-Programm für Betriebe bis 7.500 Euro unter 50 kW und 12.000 Euro "
      "bei 50 bis 100 kW, maximal 50 Prozent, Antrag bis sechs Monate nach Rechnung."),
@@ -132,15 +133,15 @@ def _matrix_section():
     lead = (f"Fünf Technologien, vier Fördergeber, alle Beträge für private Anlagen ({STAND}).")
     rows = [
         ("Photovoltaik",
-         _cell("150 €/kWp bis 10 kWp, darüber 140 bis 120 €/kWp, 10 % Made-in-Europe-Bonus. <b>Läuft:</b> Antrag bis 22.10.2026", R_BUND),
+         _cell("<b>Call 2026 beendet:</b> Der letzte Call lief bis 22.10.2026 (150 €/kWp bis 10 kWp, darüber 140 bis 120 €/kWp, 10 % Made-in-Europe-Bonus). <b>Ab 2027 geplant:</b> Systemförderung für Speicher mit intelligenter Steuerung, Antrag nach der Installation", R_BUND),
          _cell("<b>3.000 € Pauschale</b> für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh. <b>Läuft:</b> 12.10. bis 31.12.2026", R_KTN),
          _cell("Keine Pauschale für private Dachanlagen. Der Sanierungsbonus (bis 15 %, Call 1.4. bis 15.5.2026) ist beendet, der Ökofonds hat derzeit keine PV-Ausschreibung. Manche Gemeinden zahlen einen Zuschuss", R_STMK),
-         _cell("Tirol bis 125 €/kWp; Burgenland, Niederösterreich, Oberösterreich, Salzburg, Vorarlberg und Wien: nur Bund für Standard-Dachanlagen", R_LAENDER)),
+         _cell("Tirol bis 125 €/kWp; Burgenland, Niederösterreich, Oberösterreich, Salzburg, Vorarlberg und Wien: keine Landesförderung für Standard-Dachanlagen", R_LAENDER)),
         ("Stromspeicher",
-         _cell("150 €/kWh bis 50 kWh, nur gemeinsam mit neuer oder erweiterter PV-Anlage. <b>Läuft</b> bis 22.10.2026", R_SPEICHER),
+         _cell("<b>Call 2026 beendet</b> (150 €/kWh bis 50 kWh, nur mit neuer PV-Anlage). <b>Ab 2027 geplant:</b> Systemförderung, auch für die Nachrüstung; Anlagen ab 1.11.2026 sollen beantragbar sein", R_SPEICHER),
          _cell("In der 3.000-€-Pauschale enthalten; <b>Nachrüstung 1.000 €</b> ab 5 kWh an Bestandsanlagen. <b>Läuft</b> bis 31.12.2026", R_SPEICHER_KTN),
-         _cell("Nur Bund; einzelne Gemeinden zahlen einen Speicherbonus", R_STMK),
-         _cell("Oberösterreich 150 €/kWh Nachrüstung bis 2.250 €, Burgenland 100 €/kWh bis 2.000 €, Tirol 100 €/kWh bis 1.000 €, Vorarlberg VKW-Bonus bis 500 €; sonst nur Bund", R_LAENDER)),
+         _cell("Keine Landesförderung; einzelne Gemeinden zahlen einen Speicherbonus", R_STMK),
+         _cell("Oberösterreich 150 €/kWh Nachrüstung bis 2.250 €, Burgenland 100 €/kWh bis 2.000 €, Tirol 100 €/kWh bis 1.000 €, Vorarlberg VKW-Bonus bis 500 €; sonst keine Landesförderung", R_LAENDER)),
         ("Wärmepumpe",
          _cell("<b>Beendet:</b> Kesseltausch bis 7.500 € und Sauber Heizen für Alle ausgeschöpft. Die Öko-Sonderausgabenpauschale (5 Jahre je 400 €) setzt eine ausbezahlte Bundesförderung voraus", R_WP_AT),
          _cell("<b>3.000 € Pauschale</b> für den Umstieg auf die Wärmepumpe im Eigenheim, plus 1.500 € mit thermischer Solaranlage; dazu 1.200 € Kelag-Prämie. Budget vor dem Antrag prüfen", R_WP_LAENDER),
@@ -152,7 +153,7 @@ def _matrix_section():
          _cell("Nur Bund", R_EMS),
          _cell("Nur Bund", R_EMS)),
         ("Balkonkraftwerk",
-         _cell("Kein EAG-Zuschuss für Steckeranlagen bis 800 W (kein Einspeisezählpunkt). Angemeldete Kleinanlagen ab rund 3 kWp: 150 €/kWp", R_BALKON),
+         _cell("Kein EAG-Zuschuss für Steckeranlagen bis 800 W (kein Einspeisezählpunkt). Angemeldete Kleinanlagen ab rund 3 kWp wurden im Call 2026 mit 150 €/kWp gefördert (beendet)", R_BALKON),
          _cell("Keine Landesförderung; Gemeinde prüfen", R_BALKON),
          _cell("Keine Landesförderung; Gemeinde prüfen", R_BALKON),
          _cell("Einzelne Länder und Gemeinden mit budgetierten Zuschüssen, Programme ändern sich häufig", R_BALKON)),
@@ -190,12 +191,13 @@ ORTE = [("ktn", "Kärnten", "in Kärnten"), ("stmk", "Steiermark", "in der Steie
         ("at", "Anderes Bundesland", "in anderen Bundesländern")]
 
 BUND = {
-    "pvsp": ("150 € je kWp bis 10 kWp (darüber 140 bis 120 €) und 150 € je kWh Speicher, plus 10 % Made-in-Europe-Bonus "
-             "je Komponente. Antrag vor der Inbetriebnahme, aktueller Call bis 22. Oktober 2026."),
-    "pv": ("150 € je kWp bis 10 kWp, darüber 140 bis 120 €, plus 10 % Made-in-Europe-Bonus je Komponente. Antrag vor der "
-           "Inbetriebnahme, aktueller Call bis 22. Oktober 2026."),
-    "sp": ("2026 keine Bundesförderung für die reine Nachrüstung: Der Speicherzuschuss gilt nur zusammen mit einer neuen "
-           "oder erweiterten PV-Anlage. Ab 2027 soll die Nachrüstung laut BMWET förderbar werden."),
+    "pvsp": ("Derzeit nichts: Der letzte Call 2026 lief bis 22. Oktober (150 € je kWp, 150 € je kWh Speicher). Ab 2027 "
+             "plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, Antrag nach der "
+             "Installation; Anlagen ab 1. November 2026 sollen beantragbar sein."),
+    "pv": ("Derzeit nichts: Der letzte Call 2026 lief bis 22. Oktober. Die für 2027 geplante Systemförderung setzt auf "
+           "Speicher mit intelligenter Steuerung; ohne Speicher ist keine Bundesförderung absehbar."),
+    "sp": ("Derzeit nichts: 2026 gab es den Speicherzuschuss nur zusammen mit einer neuen PV-Anlage. Ab 2027 soll laut "
+           "BMWET auch die Nachrüstung mit intelligenter Steuerung förderbar werden."),
     "wp": ("Derzeit nichts: Kesseltausch (bis 7.500 €) und Sauber Heizen für Alle sind ausgeschöpft, neue Registrierungen "
            "sind nicht möglich. Ob 2027 ein neues Programm kommt, ist offen."),
     "ems": ("Klima- und Energiefonds: 50 % der Kosten, maximal 600 € je Haushalt (Betriebe 30 % bis 20.000 €). "
@@ -204,16 +206,16 @@ BUND = {
 }
 _GEMEINDE = "Keine Landesförderung; manche Gemeinden zahlen einen Zuschuss."
 LAND = {
-    ("pvsp", "ktn"): ("3.000 € Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, zusätzlich zum Bund. Antrag nach "
-                      "Fertigstellung, 12. Oktober bis 31. Dezember 2026."),
+    ("pvsp", "ktn"): ("3.000 € Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh. Antrag nach Fertigstellung, "
+                      "12. Oktober bis 31. Dezember 2026. Derzeit die einzige laufende Förderung für PV mit Speicher."),
     ("pvsp", "stmk"): ("Keine Pauschale für private Dachanlagen. Manche Gemeinden zahlen einen eigenen Zuschuss oder "
                        "Speicherbonus. Der Sanierungsbonus-Call 2026 ist beendet."),
     ("pvsp", "at"): ("Tirol bis 125 € je kWp und 100 € je kWh Speicher. Oberösterreich, Burgenland und Vorarlberg haben "
-                     "Speicherprogramme, die sich teils nicht mit dem Bund kombinieren lassen. Sonst gilt der Bund."),
-    ("pv", "ktn"): "Die 3.000-€-Pauschale gibt es nur mit Speicher ab 5 kWh. Ohne Speicher bleibt die Bundesförderung.",
+                     "Speicherprogramme; im Burgenland ist der Landeszuschuss jetzt möglich, weil der Bund wegfällt."),
+    ("pv", "ktn"): "Die 3.000-€-Pauschale gibt es nur mit Speicher ab 5 kWh. Ohne Speicher gibt es derzeit keine Förderung.",
     ("pv", "stmk"): "Keine Pauschale für private Dachanlagen. Manche Gemeinden zahlen einen eigenen Zuschuss.",
     ("pv", "at"): ("Tirol bis 125 € je kWp. In Burgenland, Niederösterreich, Oberösterreich, Salzburg, Vorarlberg und Wien "
-                   "gilt für Standard-Dachanlagen die Bundesförderung."),
+                   "gibt es für Standard-Dachanlagen keine Landesförderung."),
     ("sp", "ktn"): ("1.000 € pauschal für die Nachrüstung ab 5 kWh an einer bestehenden Anlage. Antrag nach Fertigstellung, "
                     "bis 31. Dezember 2026."),
     ("sp", "stmk"): "Keine Landesförderung für die Nachrüstung; einzelne Gemeinden zahlen einen Speicherbonus.",
@@ -233,17 +235,17 @@ LAND = {
     ("balkon", "at"): "Einzelne Länder und Gemeinden haben budgetierte Zuschüsse, die sich häufig ändern.",
 }
 # (Status, Kernzahl, Erlaeuterung)
-_PVSP_SUB = "Beispiel: 10 kWp mit 10 kWh Speicher, inklusive Made-in-Europe-Bonus"
-_PV_SUB = "Beispiel: 10 kWp ohne Speicher, je nach Made-in-Europe-Bonus"
+_PVSP_SUB = "Beispiel: 10 kWp mit 10 kWh Speicher; Bundes-Call 2026 beendet, Systemförderung 2027 geplant"
+_PV_SUB = "Bundes-Call 2026 beendet; mit Speicher besteht die Chance auf die Systemförderung 2027"
 SUMME = {
-    ("pvsp", "ktn"): ("ok", "rund 6.450 €*", _PVSP_SUB),
-    ("pvsp", "stmk"): ("ok", "rund 3.450 €*", _PVSP_SUB),
-    ("pvsp", "at"): ("ok", "rund 3.450 €*", _PVSP_SUB + "; Landesförderung je nach Bundesland zusätzlich"),
-    ("pv", "ktn"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
-    ("pv", "stmk"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
-    ("pv", "at"): ("ok", "1.500 bis 1.800 €*", _PV_SUB),
+    ("pvsp", "ktn"): ("part", "3.000 €*", _PVSP_SUB),
+    ("pvsp", "stmk"): ("end", "Derzeit keine", _PVSP_SUB),
+    ("pvsp", "at"): ("part", "je nach Land", "Tirol und einzelne Speicherprogramme laufen; Bundes-Call 2026 beendet"),
+    ("pv", "ktn"): ("end", "Derzeit keine", _PV_SUB),
+    ("pv", "stmk"): ("end", "Derzeit keine", _PV_SUB),
+    ("pv", "at"): ("part", "je nach Land", "Tirol fördert bis 125 € je kWp; Bundes-Call 2026 beendet"),
     ("sp", "ktn"): ("ok", "1.000 €", "Landespauschale für die Nachrüstung ab 5 kWh"),
-    ("sp", "stmk"): ("end", "Derzeit keine", "2027 soll die Nachrüstung im Bund förderbar werden"),
+    ("sp", "stmk"): ("end", "Derzeit keine", "2027 soll die Nachrüstung im Bund förderbar werden (geplant)"),
     ("sp", "at"): ("part", "bis 2.250 €", "je nach Bundesland, Höchstwert Oberösterreich"),
     ("wp", "ktn"): ("part", "3.000 €", "Landespauschale Kärnten, der Bund ist derzeit ausgeschöpft"),
     ("wp", "stmk"): ("end", "Derzeit keine", "der Bund ist ausgeschöpft, das Land nimmt keine Anträge an"),
@@ -261,14 +263,17 @@ _SP_2027 = ("Speicher, die ab 1. November 2026 in Betrieb gehen, sollen laut BMW
 _WP_TIPP = ("Mit Photovoltaik sinken die Heizkosten deutlich. Die Öko-Sonderausgabenpauschale setzt eine ausbezahlte "
             "Bundesförderung voraus.")
 _EMS_TIPP = "Erst registrieren, dann die Rechnung: Wer zuerst die Rechnung hat, verliert die Förderung."
-_BALKON_TIPP = "Wer Förderung will, plant eine angemeldete Kleinanlage ab rund 3 kWp: 150 € je kWp vom Bund."
+_BALKON_TIPP = ("Wer Förderung will, plant eine richtige PV-Anlage mit Speicher: Darauf setzt die für 2027 geplante "
+                "Systemförderung des Bundes.")
+_JETZT = ("Jetzt mit Speicher und Energiemanagement planen: Anlagen mit intelligentem Speicher, die ab 1. November 2026 "
+          "in Betrieb gehen, sollen 2027 Bundesförderung beantragen können (laut BMWET geplant).")
 TIPP = {
-    ("pvsp", "ktn"): "Reihenfolge beachten: Bundesantrag vor der Montage, Landesantrag danach. Beides bereiten wir vor.",
-    ("pvsp", "stmk"): "Bundesantrag vor der Montage stellen. Welche Gemeinde zusätzlich fördert, prüfen wir für Sie.",
-    ("pvsp", "at"): "Bundesantrag vor der Montage stellen." + _MACHBAR,
-    ("pv", "ktn"): "Mit einem Speicher ab 5 kWh kommen 3.000 € vom Land und 150 € je kWh vom Bund dazu.",
-    ("pv", "stmk"): "Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh.",
-    ("pv", "at"): "Mit einem Speicher zahlt der Bund zusätzlich 150 € je kWh." + _MACHBAR,
+    ("pvsp", "ktn"): _JETZT + " Den Landesantrag stellen wir nach der Fertigstellung.",
+    ("pvsp", "stmk"): _JETZT + " Welche Gemeinde zusätzlich fördert, prüfen wir für Sie.",
+    ("pvsp", "at"): _JETZT + _MACHBAR,
+    ("pv", "ktn"): "Mit einem Speicher ab 5 kWh zahlt Kärnten 3.000 €. " + _JETZT,
+    ("pv", "stmk"): _JETZT,
+    ("pv", "at"): _JETZT + _MACHBAR,
     ("sp", "ktn"): _SP_2027, ("sp", "stmk"): _SP_2027, ("sp", "at"): _SP_2027,
     ("wp", "ktn"): _WP_TIPP, ("wp", "stmk"): _WP_TIPP, ("wp", "at"): _WP_TIPP + _MACHBAR,
     ("ems", "ktn"): _EMS_TIPP, ("ems", "stmk"): _EMS_TIPP, ("ems", "at"): _EMS_TIPP,
@@ -361,13 +366,14 @@ def _status_section():
   <section class="section section--tight">
     <div class="wrap">
       <p class="eyebrow center eg-reveal">Was läuft gerade</p>
-      <h2 class="center eg-reveal">Förderstatus im Oktober 2026</h2>
+      <h2 class="center eg-reveal">Förderstatus Ende Oktober 2026</h2>
       <div class="fstatus eg-reveal" style="margin-top:28px">
         <div><b><span class="dot dot--ok"></span>Läuft</b>
-          <p>EAG-Zuschuss des Bundes für PV und Speicher (Antrag bis 22. Oktober 2026), Landespauschale Kärnten
-          (12. Oktober bis 31. Dezember 2026), EMS-Förderung des Klimafonds (bis 15. April 2027).</p></div>
+          <p>Landespauschale Kärnten für PV mit Speicher und für die Wärmepumpe (bis 31. Dezember 2026),
+          EMS-Förderung des Klimafonds (bis 15. April 2027).</p></div>
         <div><b><span class="dot dot--end"></span>Beendet</b>
-          <p>Bundesförderung für Wärmepumpen: Kesseltausch und Sauber Heizen für Alle sind ausgeschöpft.
+          <p>EAG-Zuschuss des Bundes für PV und Speicher: Der letzte Call 2026 endete am 22. Oktober.
+          Bundesförderung für Wärmepumpen: Kesseltausch und Sauber Heizen für Alle sind ausgeschöpft.
           Land Steiermark: keine Anträge für neue Wärmepumpen. Steirischer Sanierungsbonus: Call 2026
           abgeschlossen.</p></div>
         <div><b><span class="dot dot--plan"></span>Geplant ab 2027</b>
@@ -389,14 +395,13 @@ def _beispiel_section():
           <p class="eyebrow">Ein Beispiel</p>
           <h2 style="font-size:clamp(1.4rem,2.4vw,1.8rem)">10 kWp mit 10 kWh Speicher in Kärnten</h2>
           <dl class="fcalc">
-            <div><dt>Bund: Photovoltaik, 10 kWp × 150 €</dt><dd>1.500 €</dd></div>
-            <div><dt>Bund: Speicher, 10 kWh × 150 €</dt><dd>1.500 €</dd></div>
-            <div><dt>Made-in-Europe-Bonus, falls erfüllt</dt><dd>rund 450 €*</dd></div>
             <div><dt>Land Kärnten: Pauschale</dt><dd>3.000 €</dd></div>
-            <div class="is-sum"><dt>Förderung gesamt</dt><dd>rund 6.450 €*</dd></div>
+            <div><dt>Bund: Call 2026 beendet</dt><dd>0 €</dd></div>
+            <div><dt>Bund 2027: Systemförderung, geplant</dt><dd>offen</dd></div>
+            <div class="is-sum"><dt>Förderung heute sicher</dt><dd>3.000 €*</dd></div>
           </dl>
           <p class="form-note">Bei einem Richtpreis von rund 15.000 bis 22.000 € vor Förderung. In Kärnten maximal 50 %
-          der Baukosten.</p>
+          der Baukosten. Im Call 2026 kamen vom Bund noch 3.000 € dazu (10 kWp × 150 € plus 10 kWh × 150 €).</p>
         </div>
         <div class="panel panel--dark eg-reveal">
           <p class="eyebrow" style="color:var(--amber)">Service inklusive</p>
@@ -405,8 +410,8 @@ def _beispiel_section():
           Den Papierkram machen wir.</p>
           <ul class="checklist">
             <li>Förderprüfung vor dem Angebot, Beträge im Projektbericht mit 3D-Belegplan und Statikreport</li>
-            <li>Ticket, Antrag und Fertigstellungsmeldung bereiten wir vor, Sie bestätigen</li>
-            <li>Reihenfolge im Blick: Bund vor der Montage, Land danach</li>
+            <li>Antrag und Fertigstellungsmeldung bereiten wir vor, Sie bestätigen</li>
+            <li>Reihenfolge im Blick: Land nach der Fertigstellung, Energiemanagement vor der Rechnung registrieren</li>
           </ul>
           <div class="hero__cta" style="margin-top:22px">{a('kontakt', 'Kostenlose Förderprüfung', cls='btn btn--primary')}</div>
         </div>
@@ -434,12 +439,12 @@ def build():
                 ("Förderung prüfen",
                  "Wir klären vor dem Angebot, welche Programme zu Dach, Heizung und Bundesland passen.",
                  "vor dem Angebot"),
-                ("Bund: Antrag vor der Montage",
-                 "Zählpunkt, Ticket, Antrag. Montiert wird erst danach, sonst verfällt der Bundeszuschuss.",
-                 "vor der Montage"),
                 ("Land: Antrag nach der Fertigstellung",
-                 "Kärnten zahlt nach Rechnung und Fertigstellungsmeldung, ohne den Bund anzurechnen.",
+                 "Kärnten zahlt die Pauschale nach Rechnung und Fertigstellungsmeldung.",
                  "nach der Montage"),
+                ("Bund 2027: Antrag nach der Installation",
+                 "Laut BMWET geplant: Systemförderung für Speicher mit intelligenter Steuerung, für Anlagen ab 1. November 2026.",
+                 "ab 2027, geplant"),
                 ("Energiemanagement: erst registrieren",
                  "Beim Klimafonds registrieren, dann erst die Rechnung ausstellen lassen.",
                  "vor der Rechnung"),
@@ -467,10 +472,10 @@ def build():
             trust=[(f"{NAP['rating']} auf Google", True), ("300+ Projekte", False),
                    ("Anträge inklusive", False), ("Antwort in einem Werktag", False)],
         ),
-        f'<div class="wrap"><p class="form-note" style="padding:8px 0 40px">*Beispielrechnung: 10 kWp × 150 € plus '
-        f'10 kWh × 150 € ergeben 3.000 € vom Bund; der Made-in-Europe-Bonus (10 % je Komponente, rund 450 € im Beispiel, '
-        f'300 € ohne Speicher) gilt nur, wenn Module, Wechselrichter und Speicher die Kriterien erfüllen; dazu 3.000 € '
-        f'Landespauschale Kärnten. Fördersätze und Fristen {STAND}, Länderdaten zum Teil Stand Mai bis Juni 2026; Angaben '
+        f'<div class="wrap"><p class="form-note" style="padding:8px 0 40px">*Beispiel Kärnten: 3.000 € Landespauschale '
+        f'für neue PV ab 5 kWp mit Speicher ab 5 kWh, höchstens 50 % der Baukosten. Der Bundeszuschuss (2026: 150 € je '
+        f'kWp und 150 € je kWh, 10 % Made-in-Europe-Bonus je Komponente) war nur im Call bis 22. Oktober 2026 '
+        f'beantragbar. Fördersätze und Fristen {STAND}, Länderdaten zum Teil Stand Mai bis Juni 2026; Angaben '
         f'zu 2027 laut BMWET geplant, nicht beschlossen. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p></div>',
     ])
     html = page(TITLE, DESC, PATH, body, faq_jsonld_str=faq_jsonld(u(PATH), FAQ), og_image=IMG["foerderung"])

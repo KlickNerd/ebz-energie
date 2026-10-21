@@ -31,7 +31,8 @@ FAQ = [
      "Bei EBZ Energie liegt der Richtpreis für 10 kWp mit Speicher bei rund 15.000 bis 22.000 Euro vor Förderung, "
      "schlüsselfertig inklusive Module, Hybrid-Wechselrichter, Speicher, Montagesystem, Elektroinstallation und "
      "Netzanmeldung; ohne Speicher sind es rund 10.000 bis 15.000 Euro. Das entspricht rund 1.500 bis 2.200 Euro je "
-     "kWp inklusive Speicher*. Bund und Land Kärnten übernehmen 2026 bis zu rund 6.450 Euro davon."),
+     "kWp inklusive Speicher*. In Kärnten übernimmt das Land davon 3.000 Euro Pauschale; ein Bundeszuschuss ist "
+     "für neue Anlagen derzeit nicht beantragbar."),
     ("Wie groß muss der Stromspeicher für ein Einfamilienhaus sein?",
      "Als Faustregel rund 1 kWh Speicherkapazität je kWp Modulleistung oder je 1.000 kWh Jahresverbrauch. Für ein "
      "Einfamilienhaus mit 4.000 bis 7.000 kWh sind das 5 bis 10 kWh; mit Wärmepumpe oder E-Auto eher 10 kWh. Ein "
@@ -46,10 +47,12 @@ FAQ = [
      "Die Montage einer 10-kWp-Komplettanlage mit Speicher dauert vor Ort 2 bis 3 Tage, ein Mehrfamilienhaus in "
      "Krumpendorf mit 25 kWp und 25 kWh war in 4 Tagen fertig. Von der Beratung bis zur Inbetriebnahme rechnen Sie "
      "mit 4 bis 8 Wochen, abhängig von Projektbericht, Förderantrag und Zählertausch durch den Netzbetreiber."),
-    ("Gibt es 2026 noch Förderung für PV mit Speicher (EAG, Landespauschale)?",
-     "Ja. Der EAG-Investitionszuschuss zahlt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, dazu 10 Prozent "
-     "Made-in-Europe-Bonus; ab 2027 plant der Bund laut BMWET eine Systemförderung. Kärnten zahlt 3.000 Euro Pauschale "
-     "für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, die Steiermark fördert über eigene Programme (Stand Oktober 2026). "
+    ("Gibt es 2026 noch Förderung für PV mit Speicher (Bund, Landespauschale)?",
+     "In Kärnten ja: Das Land zahlt 3.000 Euro Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh und 1.000 Euro "
+     "für die Speicher-Nachrüstung. Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft "
+     "beziehungsweise abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit "
+     "intelligenter Steuerung, Höhe offen. Die Steiermark zahlt derzeit keine PV-Landesförderung (Stand Oktober 2026). "
+     "Wer jetzt plant, plant deshalb mit Speicher und Energiemanagement. "
      "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt und "
      "stellen die Anträge."),
     ("Komplettset zur Selbstmontage oder Fachbetrieb: was ist der Unterschied?",
@@ -219,11 +222,11 @@ def build():
                 ("10 kWp mit Speicher", "rund 15.000 bis 22.000 € vor Förderung, schlüsselfertig"),
                 ("10 kWp ohne Speicher", "rund 10.000 bis 15.000 € vor Förderung"),
                 ("Preis je kWp", "rund 1.500 bis 2.200 €/kWp inklusive Speicher und Montage*"),
-                ("EAG-Investitionszuschuss Bund", "150 €/kWp bis 10 kWp und 150 €/kWh Speicher, 10 % Made-in-Europe-Bonus (Stand Oktober 2026)"),
-                ("Landesförderung Kärnten 3.000 €", "Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh; Steiermark: eigene Programme"),
-                ("Summe Förderung Kärnten", "bis zu rund 6.450 € für 10 kWp + 10 kWh (Bund + Land)*"),
+                ("Investitionszuschuss Bund", "für 2026 ausgeschöpft beziehungsweise abgeschlossen, für neue Anlagen derzeit nicht beantragbar (Stand Oktober 2026)"),
+                ("Landesförderung Kärnten 3.000 €", "Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, 1.000 € für die Speicher-Nachrüstung; Steiermark: derzeit keine PV-Landesförderung"),
+                ("Energiemanagement", "EMS-Förderung des Klimafonds: Haushalte 50 % bis 600 €"),
                 ("Finanzierung", "0 € Anzahlung, fixe Rate, Eigentum ab Tag 1, ab 147 € im Monat inkl. Speicher*"),
-                ("Ab 2027", "Systemförderung des Bundes für Speicher und intelligente Steuerung geplant (laut BMWET), Höhe offen"),
+                ("Ab 2027", "Systemförderung des Bundes für Speicher mit intelligenter Steuerung geplant (laut BMWET), Antrag nach der Installation, Höhe offen"),
                 ("Fristen", "stehen tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt und stellen die Anträge"),
             ],
             actions=[("10 kWp Komplettanlage: Kosten im Detail", KOMPLETT_10, ""),

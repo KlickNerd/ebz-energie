@@ -15,7 +15,7 @@
   <meta property="og:image" content="https://ebz-photovoltaik.at/assets/img/ems-energiemanagement.jpg">
   <meta name="theme-color" content="#0e4d64">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "@id": "https://ebz-photovoltaik.at/energiemanagementsystem/#faq", "mainEntity": [{"@type": "Question", "name": "Was ist ein Energiemanagementsystem und wofür steht EMS?", "acceptedAnswer": {"@type": "Answer", "text": "EMS steht für Energiemanagementsystem, im Haushalt auch Energiemanager oder Home Energy Management System (HEMS). Es misst laufend, wie viel Strom die Photovoltaikanlage liefert und wie viel jedes Gerät braucht, und steuert Speicher, Heizstab, Wärmepumpe und Wallbox so, dass möglichst viel Sonnenstrom im Haus bleibt: Eigenverbrauch rund 30 statt 60 bis 80 Prozent.* Nachrüsten geht bei fast jeder bestehenden Anlage."}}, {"@type": "Question", "name": "Wann braucht man ein Energiemanagementsystem?", "acceptedAnswer": {"@type": "Answer", "text": "Sobald mehr als eine steuerbare Komponente im Haus ist: PV plus Speicher, Wärmepumpe, Heizstab oder E-Auto. Bei 3 bis 5 kWp ohne Speicher reicht meist das Monitoring des Wechselrichters. Mit Speicher, Wallbox oder Wärmepumpe holt ein EMS täglich Kilowattstunden heraus, die sonst zum OeMAG-Marktpreis ins Netz gehen."}}, {"@type": "Question", "name": "Wie viel kostet ein Energiemanagementsystem fürs Einfamilienhaus?", "acceptedAnswer": {"@type": "Answer", "text": "Marktübliche Systeme kosten inklusive Installation und Konfiguration rund 800 bis 1.500 €.* Der Klima- und Energiefonds übernimmt 2026 davon 50 Prozent, maximal 600 €, es bleiben oft nur wenige hundert Euro Eigenanteil. Steckt der Energiemanager schon im Wechselrichter (etwa Fronius GEN24), zahlen Sie vor allem Einbindung und Zubehör."}}, {"@type": "Question", "name": "Welche Wechselrichter und Wärmepumpen sind kompatibel?", "acceptedAnswer": {"@type": "Answer", "text": "Alle gängigen Systeme: Fronius (Solar.web, Energiekostenassistent), Huawei FusionSolar, SMA Energy und Kostal bringen eigene Energiemanager mit, SMARTFOX, Solar Manager oder neoom binden auch Fremdgeräte ein. Wärmepumpen brauchen SG Ready oder Modbus, Wallboxen Modbus oder OCPP. Die Schnittstellen Ihrer Geräte prüfen wir in der kostenlosen Analyse."}}, {"@type": "Question", "name": "Funktioniert ein EMS auch ohne Speicher oder ohne PV-Anlage?", "acceptedAnswer": {"@type": "Answer", "text": "Ohne Speicher ja: Das EMS legt dann Heizstab, Wärmepumpe und Wallbox in die Sonnenstunden. Ohne PV-Anlage lohnt es sich nur mit einem dynamischen Stromtarif, bei dem es Verbraucher in günstige Börsenstunden verschiebt. Die Klimafonds-Förderung verlangt mindestens zwei aktiv gesteuerte Komponenten."}}, {"@type": "Question", "name": "Brauche ich einen Smart Meter für das EMS?", "acceptedAnswer": {"@type": "Answer", "text": "Für die Steuerung im Haus nicht, das EMS misst mit eigenen Zählern am Hausanschluss. Für einen dynamischen Stromtarif oder eine Energiegemeinschaft braucht es den Smart Meter mit Viertelstundenwerten; in Kärnten und der Steiermark ist er in den meisten Haushalten bereits eingebaut."}}, {"@type": "Question", "name": "Wie hoch ist die EMS-Förderung 2026 und was ändert sich 2027?", "acceptedAnswer": {"@type": "Answer", "text": "Private Haushalte erhalten 50 Prozent der Kosten, maximal 600 €, Betriebe und Gemeinden bis zu 30 Prozent, maximal 20.000 € je Standort. Die Registrierung erfolgt vor der ersten Rechnung; welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite. Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung: Ein EMS soll dann Förderkriterium werden."}}, {"@type": "Question", "name": "Was ist der Unterschied zwischen EMS fürs Haus und ISO 50001?", "acceptedAnswer": {"@type": "Answer", "text": "Ein EMS fürs Haus schaltet Geräte in Echtzeit. ISO 50001 (Abgrenzung Industrie) ist dagegen ein Managementprozess für Unternehmen: Energiedaten erfassen, Ziele setzen, Maßnahmen dokumentieren. Die Messdaten eines technischen EMS können einfließen, ersetzen den Prozess aber nicht."}}]}</script>
 </head>
@@ -423,6 +423,33 @@ Das Angebot wahr sehr detailliert und verständlich.“</p><div class="rev-meta"
     <a class="btn btn--ghost" href="tel:+436502202626">Anrufen</a>
     <a href="/kontakt/" class="btn btn--primary">Beratung anfragen</a>
   </div>
+
+<div id="ebzc">
+  <div id="ebzc-panel">
+    <div class="hd">
+      <button class="x" id="ebzc-x" aria-label="Schließen">×</button>
+      <div class="hdrow">
+        <div class="bdg"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" fill="#082e3d"/><g stroke="#082e3d" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.6M12 18.9v2.6M21.5 12h-2.6M5.1 12H2.5M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8M18.7 18.7l-1.8-1.8M7.1 7.1L5.3 5.3"/></g></svg></div>
+        <div><p class="ttl">EBZ Energie-Assistent</p><div class="sub"><span class="dot"></span> Antwortet sofort · Team Mo bis Fr 10 bis 20 Uhr</div></div>
+      </div>
+    </div>
+    <div class="stream" id="ebzc-stream"></div>
+    <div class="chips" id="ebzc-chips"></div>
+    <div class="ft">
+      <div class="row">
+        <textarea id="ebzc-in" rows="1" placeholder="Ihre Frage zu PV, Wärmepumpe oder Förderung"></textarea>
+        <button class="snd" id="ebzc-snd" aria-label="Senden"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l16-8-6 16-2.5-6.5L4 12z" fill="#082e3d"/></svg></button>
+      </div>
+      <div class="dis">KI-Assistent · kann Fehler machen · keine verbindliche Förderzusage</div>
+    </div>
+  </div>
+  <div id="ebzc-teaser"><button class="tc" id="ebzc-teaser-close" aria-label="Schließen">×</button>Grüß Sie! Fragen zu Photovoltaik, Wärmepumpe oder Förderung? Ich helfe Ihnen gern weiter.</div>
+  <button id="ebzc-launch" aria-label="Chat öffnen">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8A2.5 2.5 0 0117.5 16H9l-4 4v-4H6.5A2.5 2.5 0 014 13.5v-8z" fill="#082e3d"/></svg>
+  </button>
+</div>
+
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/chatbot.js" defer></script>
 </body>
 </html>

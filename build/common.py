@@ -76,6 +76,9 @@ FINANZIERUNG = {
 # (Seit 10.10.2026 statt n8n; build/n8n-workflow-kontakt.json ist nur noch Archiv.)
 FORM_ENDPOINT = "https://hook.us2.make.com/1fkgm8zywyy6jqswmqibte15sxb349n7"
 
+# Website-Chatbot: Cloudflare-Worker "ebzbot" (Quelle lokal unter chatbot/worker.js, nicht im Repo). Widget: build/chatbot.py
+CHATBOT_URL = "https://ebzbot.klicknerds.workers.dev"
+
 AUTHOR = "Mario Zintl"
 AUTHOR_ROLE = "Geschäftsführung EBZ Energie GmbH"
 

@@ -52,3 +52,32 @@
 
 # Standortseiten (10.10.2026): Kaernten-Begriffe liegen auf der Startseite
 /solar-in-kaernten/                                /
+
+# Restliche WordPress-Adressen (Abgleich mit der Live-Sitemap am 21.10.2026), Ziel = naechstliegende neue Seite
+/aktuelles/                                        /ratgeber/
+/category/uncategorized/                           /ratgeber/
+/danke/                                            /kontakt/
+/ems-lp-2/                                         /energiemanagementsystem/
+/energiegemeinschaften/                            /leistungen/energiegemeinschaft/
+/energiegemeinschaften-gewerbe/                    /leistungen/energiegemeinschaft-gewerbe/
+/marstek-lp/                                       /batteriespeicher/
+/photovoltaik-und-batteriespeicher/                /batteriespeicher/
+/pv-anlage-leasen/solar-basic/                     /finanzierung/
+/pv-anlage-leasen/solar-comfort/                   /finanzierung/
+/pv-anlage-leasen/solar-premium/                   /finanzierung/
+/waermepumpe-mit-photovoltaik/                     /photovoltaik-fuer-waermepumpe/
+/waermepumpe-photovoltaik/                         /photovoltaik-fuer-waermepumpe/
+/waermepumpe-photovoltaik-oesterreich/             /photovoltaik-fuer-waermepumpe/
+/waermepumpeninstallation-oesterreich/             /waermepumpe/
+# Leistungsseiten ohne eigene neue Seite (Entscheidung offen: eigene Seiten fuer Wallbox, Infrarot, Ersatzziegel, Wartung?)
+/wallbox/                                          /photovoltaik-carport/
+/infrarotheizsysteme/                              /leistungen/
+/ersatzziegel/                                     /photovoltaik/
+/photovoltaik-wartung/                             /photovoltaik/
+# Ratgeber vom 30.09.2026 auf der alten Seite (Entscheidung offen: als Ratgeber uebernehmen, dann Zeile loeschen)
+/luftwaermepumpe-preise/                           /kosten-einer-waermepumpe/
+/erdwaermepumpe-kosten/                            /kosten-einer-waermepumpe/
+/infrarotheizung-mit-photovoltaik/                 /photovoltaik-fuer-waermepumpe/
+/pv-anlage-kaufen/                                 /photovoltaik/
+/pv-anlage-kwp-groessen/                           /kosten-einer-solaranlage/
+/wallbox-foerderung-kosten/                        /photovoltaik-carport/

@@ -287,7 +287,7 @@ ORT = {
         ("Was kostet eine Photovoltaikanlage im Murtal?",
          "Eine Anlage mit rund 10 kWp und Speicher kostet typischerweise rund 15.000 bis 22.000 Euro vor Förderung, "
          "inklusive Montage, Netzanmeldung und Inbetriebnahme (EBZ-Richtpreis, Stand Oktober 2026). Die Steiermark "
-         "zahlt keine PV-Landespauschale, es gilt der Investitionszuschuss des Bundes. In Zeltweg kommt ein "
+         "zahlt keine PV-Landespauschale, und der Investitionszuschuss des Bundes ist für 2026 abgeschlossen. In Zeltweg kommt ein "
          "Zuschuss der Stadtgemeinde von 150 Euro dazu. Den Fixpreis für Ihr Haus in Judenburg, Knittelfeld oder "
          "einem der Seitentäler nennen wir nach der Besichtigung vor Ort."),
         ("Fernwärme oder Wärmepumpe in Judenburg und Zeltweg: was passt besser?",

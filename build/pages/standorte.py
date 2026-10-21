@@ -37,12 +37,13 @@ LAND = {
         "name": "Kärnten", "in": "in Kärnten", "foerder_key": "foerderung_kaernten",
         "foerder_label": "PV-Förderung Kärnten im Detail",
         "foerder_p": ("Das Land Kärnten zahlt für neue private PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh eine Pauschale "
-                      "von 3.000 Euro, zusätzlich zum Investitionszuschuss des Bundes (2026: 150 Euro je kWp bis 10 kWp "
-                      "und 150 Euro je kWh Speicher). Bei der Wärmepumpe ist die Bundesförderung derzeit ausgeschöpft, "
-                      "das Land Kärnten zahlt für den Umstieg im Eigenheim eine Pauschale von 3.000 Euro."),
+                      "von 3.000 Euro. Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen; "
+                      "ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. "
+                      "Bei der Wärmepumpe ist die Bundesförderung ausgeschöpft, das Land Kärnten zahlt für den Umstieg im "
+                      "Eigenheim eine Pauschale von 3.000 Euro."),
         "foerder_bullets": [
             "Landespauschale Kärnten: 3.000 € für PV ab 5 kWp mit Speicher ab 5 kWh",
-            "Bund: 150 €/kWp bis 10 kWp und 150 €/kWh Speicher",
+            "Bund: Zuschuss für PV und Speicher 2026 abgeschlossen, Systemförderung 2027 geplant",
             "Wärmepumpe: 3.000 € Landespauschale Kärnten, Bund derzeit ausgeschöpft",
         ],
         "kpi": ("3.000 €", "Landespauschale Kärnten für PV mit Speicher"),
@@ -50,13 +51,14 @@ LAND = {
     "stmk": {
         "name": "Steiermark", "in": "in der Steiermark", "foerder_key": "foerderung_steiermark",
         "foerder_label": "PV-Förderung Steiermark im Detail",
-        "foerder_p": ("Die Steiermark zahlt keine Landespauschale für private PV-Anlagen. Es gilt der "
-                      "Investitionszuschuss des Bundes (2026: 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher). "
+        "foerder_p": ("Die Steiermark zahlt keine Landespauschale für private PV-Anlagen, und der Investitionszuschuss "
+                      "des Bundes ist für 2026 abgeschlossen. Ab 2027 plant der Bund laut BMWET eine Systemförderung für "
+                      "Speicher mit intelligenter Steuerung. "
                       "Für neue Wärmepumpen nimmt das Land Steiermark derzeit keine Förderanträge an, und auch die "
                       "Bundesförderung ist ausgeschöpft. Der Heizungstausch rechnet sich deshalb vor allem über den "
                       "eigenen Sonnenstrom."),
         "foerder_bullets": [
-            "Bund: 150 €/kWp bis 10 kWp und 150 €/kWh Speicher",
+            "Bund: Zuschuss für PV und Speicher 2026 abgeschlossen, Systemförderung 2027 geplant",
             "Keine PV-Landespauschale, einzelne Gemeinden zahlen einen Zuschuss",
             "Wärmepumpe: Land Steiermark und Bund nehmen derzeit keine Anträge an",
         ],

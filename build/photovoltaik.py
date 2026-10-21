@@ -25,8 +25,9 @@ DESC = ("Photovoltaikanlage mit Speicher vom Fachbetrieb in Kärnten und der Ste
 FAQ = [
     ("Was kostet eine Photovoltaikanlage mit Speicher?",
      "Eine Komplettanlage 10 kWp mit Speicher und Montage kostet rund 15.000 bis 22.000 € vor Förderung "
-     "(Stand Oktober 2026). Nach EAG-Zuschuss (bis 3.000 €) und Kärntner Landespauschale (3.000 €) bleiben in "
-     "Kärnten typischerweise 9.000 bis 16.000 €, je nach Dach, Speichergröße und Notstrom."),
+     "(Stand Oktober 2026). Nach der Kärntner Landespauschale (3.000 € für Neuanlagen mit Speicher) bleiben in "
+     "Kärnten rund 12.000 bis 19.000 €, je nach Dach, Speichergröße und Notstrom. Einen Bundeszuschuss gibt es für "
+     "neue Anlagen derzeit nicht, der Investitionszuschuss für 2026 ist abgeschlossen."),
     ("Lohnt sich eine Photovoltaikanlage in Österreich und wie schnell rechnet sie sich?",
      "Ja. Anlagen von EBZ Energie rechnen sich meist innerhalb von 4 bis 6 Jahren, je nach Eigenverbrauch und "
      "Strompreis. Danach liefern die Module bei 25 bis 30 Jahren Lebensdauer günstigen Strom, die Ersparnis liegt "
@@ -42,16 +43,18 @@ FAQ = [
     ("Ist eine Photovoltaikanlage mit oder ohne Speicher besser, und kann ich später nachrüsten?",
      "Mit Speicher steigt der Eigenverbrauch von rund 30 auf 60 bis 80 %*, Sonnenstrom gibt es auch am Abend. "
      "Nachrüsten geht fast immer, AC-gekoppelt für 800 bis 1.200 € je kWh*. Kärnten fördert die Nachrüstung 2026 "
-     "mit 1.000 €, der EAG-Zuschuss von 150 € je kWh gilt nur mit neuer Anlage."),
+     "mit 1.000 €. Ab 2027 plant der Bund laut BMWET eine Systemförderung, bei der auch die Nachrüstung von Speicher "
+     "und Energiemanagement förderbar werden soll (Höhe offen)."),
     ("Wie hoch ist die Förderung für Photovoltaik 2026 in Kärnten und der Steiermark?",
-     "Bund: EAG-Investitionszuschuss 150 € je kWp bis 10 kWp und 150 € je kWh Speicher. Land Kärnten: 3.000 € "
-     "pauschal für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, mit dem Bund kombinierbar. Steiermark: eigene "
-     "Landesprogramme, siehe Ratgeber (Stand Oktober 2026). Ab 2027 plant der Bund laut BMWET eine Systemförderung. "
+     "Land Kärnten: 3.000 € pauschal für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, 1.000 € für die "
+     "Speicher-Nachrüstung. Bund: Der Investitionszuschuss für PV und Speicher ist für 2026 ausgeschöpft "
+     "beziehungsweise abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit "
+     "intelligenter Steuerung. Steiermark: derzeit keine PV-Landesförderung (Stand Oktober 2026). "
      "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt und stellen die Anträge."),
     ("Brauche ich eine Genehmigung und wie lange dauert die Anmeldung beim Netzbetreiber?",
      "In Kärnten sind Dach- und Fassadenanlagen meist nicht bewilligungspflichtig, es gilt eine Mitteilungspflicht "
-     "an die Gemeinde. Den Netzzutrittsantrag stellen wir direkt nach dem Auftrag, weil die Zählpunktnummer für den "
-     "EAG-Antrag nötig ist; die Prüfung des Netzbetreibers dauert je nach Netzgebiet einige Wochen."),
+     "an die Gemeinde. Den Netzzutrittsantrag stellen wir direkt nach dem Auftrag, weil die Zählpunktnummer für "
+     "Einspeisevertrag und Förderanträge nötig ist; die Prüfung des Netzbetreibers dauert je nach Netzgebiet einige Wochen."),
     ("Welche laufenden Kosten hat eine Photovoltaikanlage?",
      "Rund 1 bis 2 % der Anschaffung pro Jahr, bei 15.000 bis 22.000 € also 150 bis 440 €* für Wartung, Reinigung "
      "und Rücklagen. Die Versicherung kostet meist unter 100 € im Jahr, der Wechselrichter wird nach rund 15 Jahren "
@@ -202,9 +205,8 @@ def build():
             eyebrow="PV Anlage kaufen: Preise 2026",
             h2="Was kostet eine Photovoltaikanlage?",
             intro=("Eine Photovoltaikanlage mit 10 kWp und Speicher kostet in Österreich rund 15.000 bis 22.000 € vor "
-                   "Förderung (EBZ-Richtpreis, Stand Oktober 2026, inklusive 20 % Umsatzsteuer). Der EAG-Investitionszuschuss "
-                   "beträgt 150 € je kWp bis 10 kWp und 150 € je kWh Speicher, zusammen bis zu 3.000 € (Quelle: "
-                   "EAG-Abwicklungsstelle)."),
+                   "Förderung (EBZ-Richtpreis, Stand Oktober 2026, inklusive 20 % Umsatzsteuer). In Kärnten gehen 3.000 € "
+                   "Landespauschale ab, ein Bundeszuschuss ist für 2026 abgeschlossen und derzeit nicht beantragbar."),
             items=[
                 {"size": "Kleine Anlage", "price": "ab ca. 9.000 €", "price_sub": "rund 5 kWp, ohne Speicher*",
                  "features": ["Ideal für kleinere Haushalte", "Hoher Eigenverbrauch am Tag", "Später um Speicher erweiterbar"]},
@@ -220,23 +222,24 @@ def build():
         C.finance_band(),
         C.media_text(
             eyebrow="Förderungen 2026",
-            h2="Förderungen für Ihre Photovoltaikanlage: Bund, Kärnten, Steiermark",
+            h2="Förderungen für Ihre Photovoltaikanlage: Kärnten, Bund, Steiermark",
             paragraphs=[
-                ("Der Bund fördert Photovoltaik über den EAG-Investitionszuschuss: 150 € je kWp bis 10 kWp "
-                 "(Kategorie A), 140 € bis 20 kWp, 130 € bis 100 kWp, dazu 150 € je kWh Speicher und 10 % "
-                 "Made-in-Europe-Bonus je Komponente (Quelle: EAG-Abwicklungsstelle, Stand Oktober 2026). Ab 2027 "
-                 "plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung."),
+                ("Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft beziehungsweise "
+                 "abgeschlossen, neue Anlagen bekommen derzeit keinen Bundeszuschuss. Ab 2027 plant der Bund laut BMWET "
+                 "eine Systemförderung für Speicher mit intelligenter Steuerung, beantragt nach der Installation; Höhe "
+                 "und Kriterien sind offen. Wer jetzt plant, plant deshalb sinnvoll mit Speicher und Energiemanagement."),
                 ("Das Land Kärnten fördert private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal mit "
                  "3.000 €, die Speicher-Nachrüstung mit 1.000 €, maximal 50 % der Investitionskosten, Budget rund "
-                 "10 Mio. € (Quelle: Land Kärnten); die Steiermark fördert über eigene Landesprogramme. Welche "
+                 "10 Mio. € (Quelle: Land Kärnten); die Steiermark zahlt derzeit keine PV-Landesförderung. Welche "
                  "Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
                  "und stellen alle Anträge für Sie."),
             ],
             img=IMG["foerderung"],
             alt="Beratung zur Photovoltaik Förderung am Tisch",
             bullets=[
-                "Land Kärnten PV-Förderung 2026: 3.000 € pauschal, Bund und Land kombinierbar",
-                "Speicherförderung 150 €/kWh (mindestens 0,5 kWh je kWp, maximal 50 kWh)",
+                "Land Kärnten PV-Förderung 2026: 3.000 € pauschal, nur mit neuem Speicher ab 5 kWh",
+                "EMS-Förderung des Klimafonds: 50 % bis 600 € für Haushalte",
+                a("foerderrechner", "Förderrechner") + ": was für Ihr Projekt gerade beantragbar ist",
                 a("foerderung_kaernten", "PV-Förderung Kärnten 2026") + " und " + a("foerderung_steiermark", "PV-Förderung Steiermark 2026") + " im Detail",
             ],
             cta=("foerderungen", "Aktuelle Förderungen 2026"),
@@ -249,7 +252,7 @@ def build():
                 ("In Kärnten sind Photovoltaikanlagen auf Dächern und an Fassaden meist nicht bewilligungspflichtig, "
                  "es gilt eine Mitteilungspflicht an die Gemeinde (Kärntner Bauordnung, Stand Oktober 2026). "
                  "Verpflichtend ist der Netzzutrittsantrag beim Netzbetreiber: Erst mit der technischen Freigabe und "
-                 "der Zählpunktnummer sind Einspeisevertrag und EAG-Antrag möglich."),
+                 "der Zählpunktnummer sind Einspeisevertrag und Förderanträge möglich."),
                 ("Wir übernehmen den Ablauf: Netzzutrittsantrag bei Kärnten Netz oder Energienetze Steiermark direkt "
                  "nach dem Auftrag, Mitteilung an die Gemeinde, nach der Montage Fertigstellungsmeldung, Zählertausch "
                  "und Einspeisevertrag. Weil das Netz in Kärnten und der Steiermark voller wird, reichen wir den "
@@ -338,7 +341,7 @@ def build():
             steps=[
                 ("Beratung", "Verbrauch, Dach und Ziele. Kostenlos, unverbindlich, auf Wunsch bei Ihnen vor Ort in Kärnten oder der Steiermark.", "Tag 1"),
                 ("Projektbericht", "Sie erhalten einen Projektbericht mit 3D-Belegplan und Statikreport, dazu Förderübersicht und Festpreis.", "wenige Tage"),
-                ("Anträge", "Netzzutrittsantrag, Mitteilung an die Gemeinde, EAG- und Landesantrag: alles vor der Montage und fristgerecht.", "vor der Montage"),
+                ("Anträge", "Netzzutrittsantrag, Mitteilung an die Gemeinde, Landes- und EMS-Antrag: alles vor der Montage und fristgerecht.", "vor der Montage"),
                 ("Montage", "Zertifizierte Fachkräfte montieren auf Ziegel, Trapezblech, Blechfalz oder Flachdach. Bauzeit je nach Größe 1 bis 4 Tage (25 kWp in Krumpendorf: 4 Tage).", "1 bis 4 Tage"),
                 ("Inbetriebnahme", "Fertigstellungsmeldung, Zählertausch, Einspeisevertrag, Monitoring und Übergabe. Wir bleiben erreichbar.", ""),
             ],
@@ -405,8 +408,8 @@ def _footnote():
       <p class="form-note">*Richtwerte auf Basis typischer EBZ-Projekte in Kärnten und der Steiermark, vor Förderung,
       Stand Oktober 2026. Preis, Ertrag, Eigenverbrauch, Ersparnis und Amortisation hängen von Verbrauch, Anlagengröße,
       Ausrichtung, Verschattung und Strompreis ab (gerechnet mit rund 30 bis 35 ct/kWh Netzbezug). Finanzierungsrate:
-      Beispielkonditionen, abhängig von Anlagengröße und Laufzeit. Fördersätze laut EAG-Abwicklungsstelle und Land
-      Kärnten, Programme sind budgetiert und ändern sich. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
+      Beispielkonditionen, abhängig von Anlagengröße und Laufzeit. Förderstand laut Land Kärnten und
+      EAG-Abwicklungsstelle (Bundeszuschuss für 2026 abgeschlossen), Programme sind budgetiert und ändern sich. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
     </div>
   </section>""")
 

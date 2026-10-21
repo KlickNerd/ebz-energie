@@ -27,8 +27,8 @@ import components as C
 PATH = "/foerderrechner/"
 TITLE = "Förderrechner 2026: PV, Speicher, Wärmepumpe | EBZ"
 DESC = ("Kostenloser Förderrechner für Österreich: Vorhaben, Bundesland und Größe eingeben, Förderung von Bund "
-        "und Land sofort sehen. Kärnten bis 6.000 € bei 10 kWp mit Speicher.")
-STAND = "Stand 10. Oktober 2026"
+        "und Land sofort sehen. Kärnten 3.000 € für PV mit Speicher, Bundes-Call 2026 beendet.")
+STAND = "Stand Ende Oktober 2026"
 LAENDER_STAND = "Stand Juni 2026"
 
 R_WP_LAENDER = "/landesfoerderungen-fuer-die-waermepumpe/"
@@ -365,13 +365,13 @@ function compute(inp, t){
 
 FAQ = [
     ("Wie genau ist der Förderrechner?",
-     "Für den Bundeszuschuss für Photovoltaik und Speicher, die Kärntner Landespauschale und die EMS-Förderung "
+     "Für die Kärntner Landespauschale, die EMS-Förderung und, solange ein Call läuft, den Bundeszuschuss "
      "rechnet er mit den veröffentlichten Sätzen und ist damit auf den Euro nachvollziehbar. Für die Wärmepumpe "
      "und für Bundesländer außerhalb unseres Montagegebiets zeigt er Spannen, weil der Betrag von den Kosten und "
      "vom Budget des Landes abhängt. Das Ergebnis ist ein Richtwert, kein Bescheid."),
     ("Welche Förderungen rechnet der Rechner ein?",
-     "Den EAG-Investitionszuschuss des Bundes (150 Euro je kWp bis 10 kWp, 140 Euro bis 20 kWp, 150 Euro je kWh "
-     "Speicher), die Landespauschale Kärnten (3.000 Euro für PV mit Speicher, 1.000 Euro für die Nachrüstung), die "
+     "Den EAG-Investitionszuschuss des Bundes, solange ein Call läuft (2026: 150 Euro je kWp bis 10 kWp, 140 Euro bis "
+     "20 kWp, 150 Euro je kWh Speicher; der letzte Call 2026 endete am 22. Oktober), die Landespauschale Kärnten (3.000 Euro für PV mit Speicher, 1.000 Euro für die Nachrüstung), die "
      "Speicherprogramme in Oberösterreich, Tirol, Burgenland und Vorarlberg, die EMS-Förderung des Klimafonds "
      "(bis 600 Euro) und die Landesförderungen für Wärmepumpen. Gemeindeförderungen und der "
      "Made-in-Europe-Bonus stehen als Hinweis dabei, nicht in der Summe."),
@@ -430,8 +430,8 @@ def _calc_section():
 def _methodik_section():
     rows = [
         ("Bund: Photovoltaik",
-         "150 € je kWp bis 10 kWp, 140 € je kWp über 10 bis 20 kWp, jeweils für die ganze Anlage",
-         "Antrag vor der Montage, im laufenden Call"),
+         "2026: 150 € je kWp bis 10 kWp, 140 € je kWp über 10 bis 20 kWp, jeweils für die ganze Anlage",
+         "Nur im laufenden Call; der letzte Call 2026 endete am 22. Oktober. Ab 2027 Systemförderung geplant"),
         ("Bund: Stromspeicher",
          "150 € je kWh, höchstens 50 kWh",
          "Nur mit neuer oder erweiterter PV-Anlage, ab 0,5 kWh je kWp"),

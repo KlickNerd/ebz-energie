@@ -34,7 +34,7 @@ ARTICLE = {
         "EBZ vor Ort in der <b>ganzen Steiermark</b>",
     ],
     "date_published": "2026-08-05",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus in der Steiermark mit Photovoltaikanlage auf dem Dach",
 
@@ -181,7 +181,7 @@ wenigen Wochen {a('/energiegemeinschaft-beitreten/', 'beitreten')}.</p>
                  "Bruck-Mürzzuschlag, Südoststeiermark und Umgebung."),
         "grid": [
             ("Alles aus einer Hand", "PV, Speicher, Wärmepumpe, Wallbox und EG-Anbindung vom selben Team."),
-            ("Förderstand geprüft", "EAG-Antrag im Call, Stand der steirischen Landesprogramme vor dem Angebot geklärt."),
+            ("Förderstand geprüft", "Stand von Bund und steirischen Landesprogrammen vor dem Angebot geklärt, Blick auf 2027."),
             ("Abrechnung inklusive", "Zählpunktfreigabe, Aufnahme und monatliche Abrechnung über energyfamily."),
             ("Kostenlose Erstberatung", "Wir prüfen Netzgebiet, Eignung und Ihr Einsparpotenzial."),
         ],

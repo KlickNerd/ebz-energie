@@ -54,7 +54,8 @@ Waermepumpen-Aussengeraete (das Gesetz stellt auf den Schallpegel an der Grundgr
 dB-Grenzwerte je Widmung, Netzgebietsgrenzen und kleinere Netzbetreiber im Umland, Fernwaerme-Ausbaugebiete.
 
 Foerderung nur als Kurzfassung ohne Fristen (Betraege aus build/seo/_fakten_2026-10.md und
-build/pages/waermepumpe.py): Bund 150/140 EUR je kWp, 150 EUR je kWh Speicher; keine PV-Landespauschale;
+build/pages/waermepumpe.py): Bundeszuschuss PV/Speicher fuer 2026 abgeschlossen (Stand ab 23.10.2026), ab 2027
+Systemfoerderung laut BMWET geplant; keine PV-Landespauschale;
 Waermepumpe: Land Steiermark nimmt laut wohnbau.steiermark.at (10.10.2026) derzeit keine Antraege an, Bund ausgeschoepft. Details: foerderung_steiermark.
 Referenzen: genau die Zahlen aus build/pages/referenz_projekte.py (Stadthaus in Graz, Flachdach in Graz), Bilder
 aus build/static/img/ref-*-graz-*.jpg, Bild und Zahlen je Karte vom selben Projekt.
@@ -157,8 +158,9 @@ FAQ = [
      "Für Einfamilienhäuser nicht. Die Stadt Graz führt in ihren Umweltförderungen nur ein Programm für "
      "PV-Gemeinschaftsanlagen an mehrgeschossigen Wohnhäusern, und laut Stadtportal ist die Bearbeitung aller "
      "städtischen Förderungen derzeit ausgesetzt (Stand Oktober 2026). Eine PV-Landespauschale gibt es in der "
-     "Steiermark ebenfalls nicht. Es bleibt der Investitionszuschuss des Bundes mit 150 Euro je kWp bis 10 kWp und "
-     "150 Euro je kWh Speicher."),
+     "Steiermark ebenfalls nicht, und der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 "
+     "abgeschlossen. Beantragbar bleibt die EMS-Förderung des Klimafonds; ab 2027 plant der Bund laut BMWET eine "
+     "Systemförderung für Speicher mit intelligenter Steuerung."),
     ("Hat EBZ Energie einen Standort in Graz?",
      "Nein. Unser Firmensitz ist die Triglavstraße 15 in 9500 Villach, einen Standort oder ein Büro in Graz haben wir "
      "nicht. Graz und die Steiermark gehören zu unserem Einzugsgebiet: Die Beratung findet bei Ihnen vor Ort statt, "
@@ -424,8 +426,10 @@ def build():
             h2="Förderung in Graz: was Bund, Land Steiermark und Stadt zahlen",
             paragraphs=[
                 (f"Kurz gefasst (Stand {STAND}): Die Steiermark zahlt keine Landespauschale für private "
-                 "Photovoltaikanlagen. Für PV und Speicher gilt der Investitionszuschuss des Bundes mit 150 Euro je "
-                 "kWp bis 10 kWp, 140 Euro je kWp bis 20 kWp und 150 Euro je kWh Speicher. Für neue Wärmepumpen "
+                 "Photovoltaikanlagen. Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft "
+                 "beziehungsweise abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher "
+                 "mit intelligenter Steuerung, Höhe offen. Wer in Graz jetzt plant, plant deshalb mit Speicher und "
+                 "Energiemanagement, das der Klimafonds fördert. Für neue Wärmepumpen "
                  "nimmt das Land Steiermark derzeit keine Förderanträge an, und auch die Bundesförderung ist "
                  "ausgeschöpft."),
                 ("Und die Stadt Graz? In ihren Umweltförderungen gibt es kein Programm für Photovoltaik am "
@@ -440,7 +444,7 @@ def build():
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Förderung für Photovoltaik und Wärmepumpe mit Unterlagen am Tisch",
             bullets=[
-                "Bund: 150 €/kWp bis 10 kWp, 140 €/kWp bis 20 kWp, 150 €/kWh Speicher",
+                "Bund: Investitionszuschuss für 2026 abgeschlossen, Systemförderung ab 2027 geplant",
                 "Land Steiermark: keine PV-Pauschale, für neue Wärmepumpen derzeit keine Anträge",
                 "Stadt Graz: kein Programm für Einfamilienhaus, Speicher oder Wärmepumpe",
                 a("foerderung_steiermark", "PV-Förderung Steiermark im Detail"),

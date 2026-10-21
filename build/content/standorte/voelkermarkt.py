@@ -221,8 +221,8 @@ ORT = {
         ("Fördert die Stadtgemeinde Völkermarkt Photovoltaik oder Stromspeicher?",
          "Nein, ein eigenes Programm für Photovoltaik, Stromspeicher oder Wärmepumpen weist die Stadtgemeinde "
          "Völkermarkt derzeit nicht aus. Sie fördert thermische Solaranlagen im Eigenheim mit 200 Euro und den "
-         "Ankauf von Elektrofahrzeugen. Für Ihre PV-Anlage zählen deshalb die Landespauschale Kärnten von 3.000 "
-         "Euro für PV ab 5 kWp mit Speicher ab 5 kWh und der Investitionszuschuss des Bundes. Was heute "
+         "Ankauf von Elektrofahrzeugen. Für Ihre PV-Anlage zählt deshalb die Landespauschale Kärnten von 3.000 "
+         "Euro für PV ab 5 kWp mit Speicher ab 5 kWh; der Investitionszuschuss des Bundes ist für 2026 abgeschlossen. Was heute "
          "beantragbar ist, zeigt unser Förderrechner."),
         ("Wärmepumpe oder Fernwärme: Was passt in Völkermarkt?",
          "Das hängt von der Adresse ab. Das Stadtzentrum von Völkermarkt ist mit Fernwärme versorgt, in Tainach "

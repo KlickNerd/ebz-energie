@@ -1,0 +1,71 @@
+name: Deploy live zu IONOS
+
+# Baut die Website fuer die echte Domain (ohne Base-Path, Suchmaschinen erlaubt) und laedt sie per SFTP
+# auf den IONOS-Webspace. Laeuft bei jedem Push auf main und auf Knopfdruck.
+# Benoetigt die Repository-Secrets IONOS_SFTP_HOST, IONOS_SFTP_USER, IONOS_SFTP_PASSWORD und die
+# Repository-Variable IONOS_SFTP_DIR: eigener Unterordner auf dem Webspace (z. B. /ebz-photovoltaik), der in
+# IONOS als Zielverzeichnis der Domain eingestellt ist. Der Upload spiegelt out/ dorthin und LOESCHT dort alles,
+# was es in out/ nicht gibt; das Hauptverzeichnis "/" wird deshalb verweigert.
+# Solange etwas fehlt, wird der Upload uebersprungen (kein Fehler).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ionos
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SFTP_HOST: ${{ secrets.IONOS_SFTP_HOST }}
+      SFTP_USER: ${{ secrets.IONOS_SFTP_USER }}
+      LFTP_PASSWORD: ${{ secrets.IONOS_SFTP_PASSWORD }}
+      SFTP_DIR: ${{ vars.IONOS_SFTP_DIR }}
+    steps:
+      - name: Zugangsdaten vorhanden?
+        id: check
+        run: |
+          if [ -z "$SFTP_HOST" ] || [ -z "$SFTP_USER" ] || [ -z "$LFTP_PASSWORD" ] || [ -z "$SFTP_DIR" ]; then
+            echo "IONOS-Secrets oder IONOS_SFTP_DIR fehlen noch, Upload wird uebersprungen."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          elif [ "$SFTP_DIR" = "/" ] || [ "$SFTP_DIR" = "." ]; then
+            echo "::error::IONOS_SFTP_DIR darf nicht das Hauptverzeichnis sein (mirror --delete)."
+            exit 1
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.check.outputs.go == 'true'
+      - uses: actions/setup-python@v5
+        if: steps.check.outputs.go == 'true'
+        with:
+          python-version: "3.12"
+      - name: Website fuer die Live-Domain bauen
+        if: steps.check.outputs.go == 'true'
+        run: python3 build/build_all.py
+      - name: Pruefen, dass die Live-Fassung stimmt
+        if: steps.check.outputs.go == 'true'
+        run: |
+          grep -q "Allow: /" out/robots.txt
+          test -f out/.htaccess && test -f out/404.html && test -f out/index.html
+          ! grep -q 'href="/ebz-energie/' out/index.html
+          python3 build/seo/check_fristen.py
+      - name: lftp installieren
+        if: steps.check.outputs.go == 'true'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+      - name: Per SFTP hochladen
+        if: steps.check.outputs.go == 'true'
+        run: |
+          lftp --env-password -u "$SFTP_USER" "sftp://$SFTP_HOST" -e "
+            set sftp:auto-confirm yes;
+            set net:max-retries 3;
+            set net:timeout 30;
+            mirror --reverse --delete --parallel=4 --verbose=1 --exclude-glob .DS_Store out/ '$SFTP_DIR';
+            bye"

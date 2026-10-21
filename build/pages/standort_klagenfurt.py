@@ -98,7 +98,7 @@ FAQ = [
     ("Was kostet eine PV-Anlage mit Speicher und Montage in Klagenfurt?",
      "Eine Komplettanlage mit rund 10 kWp und Speicher kostet rund 15.000 bis 22.000 Euro vor Förderung, inklusive "
      "Montage und Inbetriebnahme (EBZ-Richtpreis, Stand Oktober 2026). Davon gehen 3.000 Euro Landespauschale Kärnten "
-     "und der Zuschuss des Bundes ab. Eine Finanzierung ist ab 147 Euro im Monat* möglich, die Anlage gehört Ihnen "
+     "ab; einen Bundeszuschuss gibt es für neue Anlagen derzeit nicht. Eine Finanzierung ist ab 147 Euro im Monat* möglich, die Anlage gehört Ihnen "
      "dabei ab dem ersten Tag. Den genauen Preis nennt Ihr Fixangebot nach dem Termin vor Ort."),
     ("Wie viel Strom erzeugt eine Photovoltaikanlage in Klagenfurt?",
      "Das EU-Werkzeug PVGIS rechnet für Klagenfurt mit rund 1.240 kWh je kWp und Jahr bei Südausrichtung und 30 Grad "
@@ -108,9 +108,9 @@ FAQ = [
      "rechnen wir im 3D-Belegplan für Ihr Dach ein."),
     ("Gibt es eine Photovoltaik-Förderung der Stadt Klagenfurt?",
      "Eine eigene PV-Förderung der Stadt Klagenfurt ist uns nicht bekannt (Stand Oktober 2026). Für Klagenfurter "
-     "Haushalte gelten die Programme von Land und Bund: 3.000 Euro Landespauschale Kärnten für eine neue Anlage ab "
-     "5 kWp mit Speicher ab 5 kWh, 1.000 Euro für die Speicher-Nachrüstung, dazu vom Bund 150 Euro je kWp bis 10 kWp "
-     "und 150 Euro je kWh Speicher. Welche Programme gerade offen sind, steht auf unserer Förderseite."),
+     "Haushalte gilt vor allem das Landesprogramm: 3.000 Euro Landespauschale Kärnten für eine neue Anlage ab "
+     "5 kWp mit Speicher ab 5 kWh, 1.000 Euro für die Speicher-Nachrüstung. Der Investitionszuschuss des Bundes für "
+     "PV und Speicher ist für 2026 abgeschlossen, ab 2027 plant der Bund laut BMWET eine Systemförderung. Welche Programme gerade offen sind, steht auf unserer Förderseite."),
     ("Wer nimmt in Klagenfurt meinen überschüssigen Sonnenstrom ab?",
      "Laut Energie Klagenfurt brauchen Sie schon vor der Inbetriebnahme einen Vertrag mit einem Abnehmer. Zur Wahl "
      "stehen die OeMAG (Marktpreis September 2026: 10,168 Cent je kWh, im Juli 6,146 Cent, der Wert schwankt "
@@ -292,7 +292,7 @@ def build():
             ],
             aside=("Was in Klagenfurt dazukommt", [
                 ("▮", "Speicher", "Der Eigenverbrauch steigt von rund 30 auf bis zu 80 Prozent*, auf Wunsch mit Notstrom."),
-                ("€", "Förderung", "3.000 € Landespauschale Kärnten für PV ab 5 kWp mit Speicher ab 5 kWh, dazu der Zuschuss des Bundes."),
+                ("€", "Förderung", "3.000 € Landespauschale Kärnten für PV ab 5 kWp mit Speicher ab 5 kWh."),
                 ("☀", "Überschuss", "Für eingespeisten Strom brauchen Sie vor der Inbetriebnahme einen Abnehmer: OeMAG, Energieversorger oder Energiegemeinschaft."),
                 ("◷", "Finanzierung", "Ab 147 € im Monat*, die Anlage gehört Ihnen ab dem ersten Tag."),
             ]),
@@ -334,12 +334,13 @@ def build():
             eyebrow="Förderung",
             h2="Förderung für Photovoltaik in Klagenfurt: Land Kärnten und Bund in Kürze",
             paragraphs=[
-                ("Für Klagenfurt gelten die Programme des Landes Kärnten und des Bundes; eine eigene "
+                ("Für Klagenfurt gilt vor allem das Programm des Landes Kärnten; eine eigene "
                  "Photovoltaik-Förderung der Stadt ist uns nicht bekannt (Stand Oktober 2026). Das Land zahlt privaten "
                  "Haushalten 3.000 Euro Pauschale für eine neue Anlage ab 5 kWp mit gleichzeitig neuem Speicher ab "
-                 "5 kWh und 1.000 Euro für die Nachrüstung eines Speichers. Der Bund fördert 2026 mit 150 Euro je kWp "
-                 "bis 10 kWp und 150 Euro je kWh Speicher, europäische Komponenten bringen 10 Prozent Bonus."),
-                ("Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher und intelligente Steuerung. Was "
+                 "5 kWh und 1.000 Euro für die Nachrüstung eines Speichers. Der Investitionszuschuss des Bundes für PV und "
+                 "Speicher ist für 2026 ausgeschöpft beziehungsweise abgeschlossen."),
+                ("Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, "
+                 "Höhe offen; wer jetzt plant, plant deshalb mit Speicher und Energiemanagement. Was "
                  "gerade offen ist und in welcher Reihenfolge Antrag, Auftrag und Montage laufen müssen, steht auf "
                  "unserer Förderseite, die Einzelheiten zum Landesprogramm im Ratgeber. Die Anträge bereiten wir "
                  "für Sie vor."),
@@ -348,7 +349,7 @@ def build():
             alt="Beratungsgespräch zur Förderung einer Photovoltaikanlage am Tisch",
             bullets=[
                 "Land Kärnten: 3.000 € für PV ab 5 kWp mit Speicher ab 5 kWh, 1.000 € für Speicher-Nachrüstung",
-                "Bund 2026: 150 €/kWp bis 10 kWp, 150 €/kWh Speicher, 10 % Bonus für europäische Komponenten",
+                "Bund: Investitionszuschuss für 2026 abgeschlossen, Systemförderung ab 2027 geplant",
                 a("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
                 a("foerderrechner", "Förderrechner: Ihre Förderung berechnen"),
             ],
@@ -433,7 +434,7 @@ def build():
             steps=[
                 ("Termin bei Ihnen", "Wir nehmen Dach, Zählerschrank und Verbrauch auf, auf Wunsch auch Heizraum und Heizkörper. Kostenlos und unverbindlich.", ""),
                 ("Projektbericht und Fixangebot", "Sie erhalten den Projektbericht mit 3D-Belegplan und Statikreport und ein Angebot mit Stückliste.", ""),
-                ("Netz, Baubehörde, Förderung", "Antrag im Portal der Energie Klagenfurt oder bei Kärnten Netz, Mitteilung an Magistrat oder Gemeinde, Anträge bei Land und Bund.", ""),
+                ("Netz, Baubehörde, Förderung", "Antrag im Portal der Energie Klagenfurt oder bei Kärnten Netz, Mitteilung an Magistrat oder Gemeinde, Förderanträge beim Land.", ""),
                 ("Montage und Freigabe", "Zertifizierte Fachkräfte montieren. Nach Fertigstellungsmeldung und Netzzugangsvertrag geht die Anlage in Betrieb, wir schulen Sie ein.", ""),
             ],
         ),

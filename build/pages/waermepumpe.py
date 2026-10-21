@@ -53,8 +53,9 @@ FAQ = [
     ("Lohnt sich die Kombination mit Photovoltaik?",
      "Ja. Eigener Solarstrom kostet 10 bis 14 Cent je Kilowattstunde, Netzstrom das Zwei- bis Dreifache. Mit "
      "PV-Anlage und Speicher sinken die Heizkosten im Beispielhaus auf 200 bis 500 Euro im Jahr. Die PV-Anlage wird "
-     "getrennt gefördert: 150 Euro je kWp und 150 Euro je kWh Speicher (Stand Oktober 2026); die aktuellen Fristen "
-     "stehen auf unserer Förderseite."),
+     "getrennt gefördert: In Kärnten mit 3.000 Euro Landespauschale für eine Neuanlage mit Speicher; der "
+     "Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen (Stand Oktober 2026). Die "
+     "aktuellen Programme stehen auf unserer Förderseite."),
     ("Wie laut ist eine Luft-Wasser-Wärmepumpe und wo darf sie stehen?",
      "Die Lautstärke steht als Schallleistung in dB(A) im Datenblatt, nachts läuft die Außeneinheit mit reduzierter "
      "Drehzahl. Entscheidend ist der Aufstellort: nicht in Ecken oder zwischen zwei Wänden, Abstand zu "
@@ -276,8 +277,9 @@ def build():
                  "Puffer- und Warmwasserspeicher vor."),
                 ("Kühlen mit Wärmepumpe: Im Sommer kehrt sie den Kreislauf um und kühlt über Fußbodenheizung oder "
                  "Gebläsekonvektoren, nicht über klassische Heizkörper. Den Strom liefert mittags die PV-Anlage, genau "
-                 "dann, wenn Kühlung gebraucht wird. Die PV-Anlage wird getrennt gefördert: 150 € je kWp und 150 € je kWh "
-                 "Speicher (Stand Oktober 2026)."),
+                 "dann, wenn Kühlung gebraucht wird. Die PV-Anlage wird getrennt gefördert, in Kärnten mit 3.000 € "
+                 "Landespauschale für eine Neuanlage mit Speicher; ab 2027 plant der Bund laut BMWET eine Systemförderung "
+                 "für Speicher mit intelligenter Steuerung (Stand Oktober 2026)."),
             ],
             img=IMG["ems"],
             alt="Energiemanagementsystem steuert Photovoltaik, Speicher und Wärmepumpe",

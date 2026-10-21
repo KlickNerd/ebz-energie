@@ -29,7 +29,6 @@ jobs:
           EBZ_BASE: /ebz-energie
         run: |
           python3 build/build_all.py
-          python3 build/fetch_images.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

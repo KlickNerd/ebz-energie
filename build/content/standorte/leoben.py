@@ -198,7 +198,7 @@ ORT = {
         "alt": "Außeneinheit einer Luft-Wasser-Wärmepumpe vor einer Holzwand im Garten (Symbolbild)",
     },
 
-    "foerderung_h2": "Förderung für Photovoltaik und Wärmepumpe in Leoben: Bund, Land und der Stand bei der Stadt",
+    "foerderung_h2": "Förderung für Photovoltaik und Wärmepumpe in Leoben: Land, Bund und der Stand bei der Stadt",
     "foerderung_lokal": [
         ("Die Stadtgemeinde Leoben hat thermische Solaranlagen, Photovoltaikanlagen, Biomasseheizungen und "
          "Wärmepumpen über ihre Umweltförderung unterstützt. Dieses Programm ruht: Laut Stadt werden in diesen "
@@ -252,7 +252,7 @@ ORT = {
         ("Was kostet eine Photovoltaikanlage in Leoben?",
          "Eine Komplettanlage mit rund 10 kWp und Speicher kostet typischerweise rund 15.000 bis 22.000 Euro vor "
          "Förderung, inklusive Montage, Netzanmeldung und Inbetriebnahme (EBZ-Richtpreis, Stand Oktober 2026). Der "
-         "Bund fördert mit 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher. Die Steiermark zahlt keine "
+         "Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen, die Steiermark zahlt keine "
          "PV-Landespauschale, und die Stadt Leoben schüttet ihre Umweltförderung derzeit nicht aus. Den genauen "
          "Preis nennen wir nach dem Termin bei Ihnen in Leoben als Fixangebot."),
         ("Wärmepumpe oder Stadtwärme in Leoben: was passt besser?",
@@ -270,8 +270,8 @@ ORT = {
         ("Fördert die Stadt Leoben Photovoltaik oder Wärmepumpen?",
          "Derzeit nicht. Die Stadtgemeinde Leoben hat thermische Solaranlagen, Photovoltaik, Biomasseheizungen und "
          "Wärmepumpen über ihre Umweltförderung unterstützt, schüttet in diesen Bereichen aber laut eigener Auskunft "
-         "bis auf Weiteres keine Förderungen aus. Für Photovoltaik und Speicher bleibt der Investitionszuschuss des "
-         "Bundes. Welche Programme heute beantragbar sind, prüfen wir vor dem Angebot und zeigen es im Förderrechner."),
+         "bis auf Weiteres keine Förderungen aus. Der Investitionszuschuss des Bundes für Photovoltaik und Speicher "
+         "ist für 2026 abgeschlossen, ab 2027 plant der Bund laut BMWET eine Systemförderung. Welche Programme heute beantragbar sind, prüfen wir vor dem Angebot und zeigen es im Förderrechner."),
         ("Kommt EBZ Energie auch nach Trofaiach, St. Michael oder Eisenerz?",
          "Ja. EBZ Energie ist ein Fachbetrieb aus Villach und montiert in Kärnten und der Steiermark. Für die "
          "Erstberatung kommen wir zu Ihnen nach Leoben und in die Gemeinden des Bezirks, etwa Trofaiach, St. Michael "

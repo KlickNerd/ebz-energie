@@ -15,7 +15,7 @@
   <meta property="og:image" content="https://ebz-photovoltaik.at/assets/img/pv-montage-detail.jpg">
   <meta name="theme-color" content="#0e4d64">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "@id": "https://ebz-photovoltaik.at/energiegemeinschaft-finden/#faq", "mainEntity": [{"@type": "Question", "name": "Wie finde ich eine Energiegemeinschaft in meiner Nähe?", "acceptedAnswer": {"@type": "Answer", "text": "Über drei Wege: Nahbereichsabfrage mit Ihrer Zählpunktnummer beim Netzbetreiber, Anfrage bei Abrechnungsplattformen wie energyfamily (rund 330 Gemeinschaften) oder beim Gemeindeamt und der regionalen Energieberatung. In Kärnten und der Steiermark übernimmt EBZ Energie die Suche."}}, {"@type": "Question", "name": "Gibt es eine Karte aller Energiegemeinschaften in Österreich?", "acceptedAnswer": {"@type": "Answer", "text": "Keine vollständige. Einige Plattformen zeigen ihre eigenen Gemeinschaften, die Koordinationsstelle listet Beispielprojekte. Eine Karte wäre ohnehin nur bedingt hilfreich, weil die Teilnahme vom Nahbereich des Zählpunkts abhängt, nicht von der Entfernung."}}, {"@type": "Question", "name": "Was ist die Zählpunktnummer und wo finde ich sie?", "acceptedAnswer": {"@type": "Answer", "text": "Eine 33-stellige Kennung, die mit AT beginnt und jeden Stromanschluss eindeutig identifiziert. Sie steht auf der Netzrechnung, auf der Jahresabrechnung und im Kundenportal des Netzbetreibers."}}, {"@type": "Question", "name": "Kann ich an einer Energiegemeinschaft im Nachbarort teilnehmen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, wenn der Nachbarort am selben Umspannwerk hängt (Regionalbereich). Dann gilt der Netzentgelt-Abschlag von 28 Prozent. Für den Abschlag von 57 Prozent müssen Sie am selben Trafo hängen, was über Ortsgrenzen hinweg selten ist."}}, {"@type": "Question", "name": "Kann ich Strom mit Verwandten in einem anderen Bundesland teilen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, über eine Bürgerenergiegemeinschaft, die österreichweit funktioniert. Den Netzentgelt-Abschlag gibt es dann nicht, weil er an den Nahbereich gebunden ist. EBZ bietet diese Variante über energyfamily an."}}, {"@type": "Question", "name": "Was mache ich, wenn es in meinem Nahbereich keine Gemeinschaft gibt?", "acceptedAnswer": {"@type": "Answer", "text": "Entweder auf den Regionalbereich ausweichen, selbst gründen oder österreichweit als Bürgerenergiegemeinschaft teilen. EBZ sammelt Interessenten je Nahbereich und startet neue Gemeinschaften, sobald Erzeuger und Abnehmer zusammenkommen."}}, {"@type": "Question", "name": "Wie viele Energiegemeinschaften gibt es in Österreich?", "acceptedAnswer": {"@type": "Answer", "text": "Mehr als 11.000, davon über 5.500 Erneuerbare-Energie-Gemeinschaften (Stand August 2026). Statistisch liegt damit in fast jedem Umspannwerksbereich Kärntens und der Steiermark mindestens eine aktive Gemeinschaft."}}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://ebz-photovoltaik.at/energiegemeinschaft-finden/#article", "mainEntityOfPage": "https://ebz-photovoltaik.at/energiegemeinschaft-finden/", "headline": "Energiegemeinschaft finden: Der Nahbereich zählt, nicht die Postleitzahl", "description": "Energiegemeinschaft in der Nähe finden: Nahbereich statt Postleitzahl, 3 Suchwege, 5 Prüfpunkte vor dem Beitritt. In Kärnten und der Steiermark hilft EBZ.", "inLanguage": "de-AT", "datePublished": "2026-08-15", "dateModified": "2026-09-24", "author": {"@type": "Person", "name": "Mario Zintl", "jobTitle": "Geschäftsführer", "worksFor": {"@type": "Organization", "name": "EBZ Energie GmbH"}, "url": "https://ebz-photovoltaik.at/ueber-uns/"}, "publisher": {"@type": "Organization", "name": "EBZ Energie GmbH", "url": "https://ebz-photovoltaik.at/", "logo": {"@type": "ImageObject", "url": "https://ebz-photovoltaik.at/assets/img/ebz-logo.png"}}, "image": "https://ebz-photovoltaik.at/assets/img/pv-montage-detail.jpg"}</script>
@@ -263,6 +263,33 @@ oder österreichweit teilen, in Kärnten und der Steiermark mit EBZ als Partner.
     <a class="btn btn--ghost" href="tel:+436502202626">Anrufen</a>
     <a href="/kontakt/" class="btn btn--primary">Beratung anfragen</a>
   </div>
+
+<div id="ebzc">
+  <div id="ebzc-panel">
+    <div class="hd">
+      <button class="x" id="ebzc-x" aria-label="Schließen">×</button>
+      <div class="hdrow">
+        <div class="bdg"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" fill="#082e3d"/><g stroke="#082e3d" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.6M12 18.9v2.6M21.5 12h-2.6M5.1 12H2.5M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8M18.7 18.7l-1.8-1.8M7.1 7.1L5.3 5.3"/></g></svg></div>
+        <div><p class="ttl">EBZ Energie-Assistent</p><div class="sub"><span class="dot"></span> Antwortet sofort · Team Mo bis Fr 10 bis 20 Uhr</div></div>
+      </div>
+    </div>
+    <div class="stream" id="ebzc-stream"></div>
+    <div class="chips" id="ebzc-chips"></div>
+    <div class="ft">
+      <div class="row">
+        <textarea id="ebzc-in" rows="1" placeholder="Ihre Frage zu PV, Wärmepumpe oder Förderung"></textarea>
+        <button class="snd" id="ebzc-snd" aria-label="Senden"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l16-8-6 16-2.5-6.5L4 12z" fill="#082e3d"/></svg></button>
+      </div>
+      <div class="dis">KI-Assistent · kann Fehler machen · keine verbindliche Förderzusage</div>
+    </div>
+  </div>
+  <div id="ebzc-teaser"><button class="tc" id="ebzc-teaser-close" aria-label="Schließen">×</button>Grüß Sie! Fragen zu Photovoltaik, Wärmepumpe oder Förderung? Ich helfe Ihnen gern weiter.</div>
+  <button id="ebzc-launch" aria-label="Chat öffnen">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8A2.5 2.5 0 0117.5 16H9l-4 4v-4H6.5A2.5 2.5 0 014 13.5v-8z" fill="#082e3d"/></svg>
+  </button>
+</div>
+
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/chatbot.js" defer></script>
 </body>
 </html>

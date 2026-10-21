@@ -4,14 +4,15 @@ page(...) baut ein vollstaendiges HTML5-Dokument. Header und Footer sind
 seitenuebergreifend identisch (eine Quelle) und werden hier gepflegt.
 """
 
+from chatbot import CHATBOT_HTML
 from common import (BASE, NAP, S, IMG, a, href, tel_link, u,
                     localbusiness_jsonld)
 
+# Schriften liegen selbst gehostet unter /assets/fonts/ (kein Aufruf von Google-Servern, DSGVO).
+# Die @font-face-Regeln stehen am Anfang von styles.css (theme.write_assets), hier nur Preload der Latin-Dateien.
 FONTS = (
-    '<link rel="preconnect" href="https://fonts.googleapis.com">'
-    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
-    'family=Sora:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">'
+    '<link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>'
+    '<link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>'
 )
 
 
@@ -182,7 +183,9 @@ def page(title, description, path, body, faq_jsonld_str=None,
   </main>
 {_footer()}
 {_sticky_cta()}
+{CHATBOT_HTML}
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/chatbot.js" defer></script>
 </body>
 </html>
 """

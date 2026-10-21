@@ -684,8 +684,9 @@ PROJEKTE = [
              "E-Auto ist damit über Nacht vollständig geladen, bevorzugt mit eigenem PV-Strom, weil Wallbox, Speicher und "
              "Wechselrichter aus dem Sigenergy-System stammen."),
             ("Was kostet eine 10-kWp-Anlage mit Speicher wie diese?",
-             f"{RICHTPREIS}, abhängig von Dach, Speichergröße und Zubehör wie Wallbox. Der EAG-Investitionszuschuss und die "
-             "Kärntner Landesförderung senken den Preis zusätzlich. Diese Anlage amortisiert sich in rund 5,4 Jahren*."),
+             f"{RICHTPREIS}, abhängig von Dach, Speichergröße und Zubehör wie Wallbox. In Kärnten senkt die "
+             "Landespauschale von 3.000 € für Neuanlagen mit Speicher den Preis zusätzlich; ein Bundeszuschuss ist für neue "
+             "Anlagen derzeit nicht beantragbar. Diese Anlage amortisiert sich in rund 5,4 Jahren*."),
         ],
         "related": [
             ("photovoltaik", "Photovoltaik für Eigenheim und Gewerbe"),
@@ -856,8 +857,9 @@ PROJEKTE = [
              "Bei einem Netzausfall schaltet die Anlage selbstständig in den Notstrombetrieb um, ohne dass jemand einen Schalter "
              "umlegen muss. Wichtige Verbraucher im Haus bleiben versorgt. Mehr dazu im Ratgeber Notstrom mit Photovoltaik."),
             ("Was kostet eine 10-kWp-Anlage wie diese?",
-             f"{RICHTPREIS}, abhängig von Dach, Speichergröße und Notstromlösung. Der EAG-Investitionszuschuss und die Kärntner "
-             "Landesförderung senken den Preis zusätzlich. Den Preis für Ihr Dach liefert der Projektbericht mit 3D-Belegplan und Statikreport."),
+             f"{RICHTPREIS}, abhängig von Dach, Speichergröße und Notstromlösung. In Kärnten senkt die Landespauschale von "
+             "3.000 € für Neuanlagen mit Speicher den Preis zusätzlich; ein Bundeszuschuss ist für neue Anlagen derzeit "
+             "nicht beantragbar. Den Preis für Ihr Dach liefert der Projektbericht mit 3D-Belegplan und Statikreport."),
         ],
         "related": [
             ("pv_villach", "Photovoltaik in Villach"),

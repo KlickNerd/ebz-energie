@@ -4,6 +4,8 @@ Zusammengeführt aus zwei Duplikaten der alten Website:
 ebz-photovoltaik.at/photovoltaik-landesfoerderungen/ (Stand Mai 2026) und
 ebz-photovoltaik.at/photovoltaik-landesfoerderungen-in-oesterreich/ (Stand Juni 2026).
 Je Bundesland wurde die jeweils aktuellere und vollständigere Angabe übernommen.
+Stand ab 23.10.2026: letzter EAG-Call lief 8. bis 22.10.2026, derzeit kein Bundeszuschuss; Ausblick 2027
+Systemfoerderung laut BMWET (geplant, nicht beschlossen).
 """
 
 import os
@@ -33,37 +35,41 @@ ARTICLE = {
     "eyebrow": "Förderung · Österreich",
     "crumb_label": "PV-Landesförderungen 2026",
     "h1": "Photovoltaik-Landesförderungen 2026: Alle 9 Bundesländer im Vergleich, von 0 bis 3.000 Euro",
-    "lead": ("Der EAG-Investitionszuschuss des Bundes ist in ganz Österreich gleich, die Landesförderung nicht: "
-             "Kärnten zahlt 3.000 Euro Pauschale, Salzburg gar nichts mehr, Wien schließt die Kombination mit dem "
-             "Bund aus. Diese Übersicht zeigt, was 2026 wo gilt und was sich kombinieren lässt."),
+    "lead": ("Der EAG-Investitionszuschuss des Bundes war 2026 in ganz Österreich gleich, der letzte Call lief vom "
+             "8. bis 22. Oktober 2026; die Landesförderung unterscheidet sich stark: Kärnten zahlt 3.000 Euro "
+             "Pauschale, Salzburg gar nichts mehr, Wien schloss die Kombination mit dem Bund aus. Diese Übersicht "
+             "zeigt, was 2026 wo gilt und was derzeit noch beantragbar ist."),
     "chips": [
-        "Bund: <b>150 €/kWp</b> + 150 €/kWh, überall gleich",
+        "Bund im Call 2026: <b>150 €/kWp</b>, jetzt beendet",
         "Höchste Pauschale: <b>Kärnten 3.000 €</b>",
         "Speicher: <b>100 bis 150 €/kWh</b> in 3 Ländern",
         "Gemeinde: mancherorts <b>eigener Zuschuss</b>",
     ],
     "date_published": "2026-04-01",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "foerderung",
     "hero_alt": "Förderunterlagen und Taschenrechner auf dem Tisch: Vergleich der Photovoltaik-Landesförderungen in Österreich",
 
     "tldr": [
-        "Drei Säulen: Der EAG-Bundeszuschuss (150 Euro je kWp bis 10 kWp, 150 Euro je kWh Speicher, 60 Millionen "
-        "Euro Budget) gilt überall gleich, die Landesförderung unterscheidet sich stark, manche "
-        "Gemeinden zahlen einen eigenen Zuschuss.",
-        "Höchste Landespauschale: Kärnten mit 3.000 Euro für PV ab 5 kWp mit Speicher ab 5 kWh, voll mit dem Bund "
-        "kombinierbar. Tirol fördert im Sanierungskontext bis 125 Euro je kWp.",
+        "Drei Säulen: Der EAG-Bundeszuschuss (im Call 2026: 150 Euro je kWp bis 10 kWp, 150 Euro je kWh Speicher, "
+        "60 Millionen Euro Budget) galt überall gleich; der letzte Call endete am 22. Oktober 2026, derzeit ist "
+        "kein Bundeszuschuss beantragbar. Die Landesförderung unterscheidet sich stark, manche Gemeinden zahlen "
+        "einen eigenen Zuschuss.",
+        "Höchste Landespauschale: Kärnten mit 3.000 Euro für PV ab 5 kWp mit Speicher ab 5 kWh, im Call 2026 voll "
+        "mit dem Bund kombinierbar und bis 31. Dezember 2026 beantragbar. Tirol fördert im Sanierungskontext bis "
+        "125 Euro je kWp.",
         "Speicher-Schienen: Burgenland 100 Euro je kWh (bis 2.000 Euro), Oberösterreich 150 Euro je kWh (bis "
         "2.250 Euro, nur Bestandsanlagen), Tirol 100 Euro je kWh (bis 1.000 Euro).",
         "Sanierungs- und Punktesysteme: Niederösterreich (Wohnbauförderung). In der Steiermark ist der "
         "Sanierungsbonus (bis 15 Prozent) als befristete Sonderausschreibung beendet, der Ökofonds hat derzeit "
         "keine PV-Ausschreibung (Stand 10. Oktober 2026).",
-        "Vorsicht bei der Kombination: Wien schließt sie aus, Oberösterreich beim Speicher, im Burgenland gilt "
-        "Bund vor Land. Salzburg hat die private PV-Landesförderung mit Jahresende 2025 eingestellt.",
+        "Kombination im Call 2026: Wien schloss sie aus, Oberösterreich beim Speicher, im Burgenland galt "
+        "Bund vor Land. Salzburg hat die private PV-Landesförderung mit Jahresende 2025 eingestellt. Ab 2027 ist "
+        "laut BMWET eine Systemförderung geplant, nicht beschlossen.",
     ],
     "kpis": [
         ("3.000 €", "Landespauschale Kärnten, die höchste in Österreich"),
-        ("150 €/kWp", "EAG-Bund bis 10 kWp, in allen Bundesländern"),
+        ("150 €/kWp", "EAG-Bund bis 10 kWp im Call 2026, in allen Bundesländern"),
         ("9", "Bundesländer, 9 verschiedene Regelwerke"),
         ("2 von 9", "Ländern ohne Landesförderung für private Dachanlagen"),
     ],
@@ -71,26 +77,28 @@ ARTICLE = {
     "sections": [
         ("Das Drei-Säulen-Modell der PV-Förderung in Österreich", "saeulen", f"""
 <p>PV-Förderungen funktionieren in Österreich auf drei Ebenen, die eigene Programme, Töpfe und Regeln
-haben und sich in vielen Fällen kombinieren lassen:</p>
+haben und sich in vielen Fällen kombinieren ließen. Die Bundessäule ist seit dem Ende des letzten Calls am
+22. Oktober 2026 derzeit nicht beantragbar:</p>
 {A.table(
     ["Säule", "Wer fördert", "Was 2026 gilt"],
     [
-        ["1. Bund (EAG)", "EAG-Abwicklungsstelle (OeMAG)", "einheitlicher Investitionszuschuss in ganz Österreich, 60 Mio. € Budget, 1.500 bis 2.800 € je Privatanlage für die PV-Anlage"],
+        ["1. Bund (EAG)", "EAG-Abwicklungsstelle (OeMAG)", "im Call 2026 einheitlicher Investitionszuschuss in ganz Österreich, 60 Mio. € Budget, 1.500 bis 2.800 € je Privatanlage für die PV-Anlage; letzter Call endete am 22. Oktober 2026, ab 2027 Systemförderung laut BMWET geplant"],
         ["2. Bundesland", "neun Landesregierungen", "von 3.000 € Pauschale (Kärnten) über Speicher- und Sanierungsprogramme bis zur kompletten Einstellung (Salzburg)"],
         ["3. Gemeinde", "Wohnsitzgemeinde", "oft übersehen: manche Gemeinden zahlen einen eigenen Zuschuss, meist mit dem Bund kombinierbar"],
     ],
     hl_cols=(2,),
 )}
-<p>Seit der EAG-Novelle 2026 ist die Kombination von Bundes- und Landesförderung für Anlagen bis 100 kWp
+<p>Mit der EAG-Novelle 2026 war die Kombination von Bundes- und Landesförderung für Anlagen bis 100 kWp
 (Kategorien A, B und C) ausdrücklich erlaubt, sofern die beihilferechtlichen Höchstgrenzen eingehalten
-werden. Ob eine Landesförderung zusätzlich zum Bund fließt, entscheidet aber die jeweilige
+wurden. Ob eine Landesförderung zusätzlich zum Bund fließt, entscheidet die jeweilige
 Landesrichtlinie. Genau deshalb lohnt sich der Blick auf jedes einzelne Bundesland.</p>
 <p><small>Stand: Juni 2026. Maßgeblich sind die jeweils gültigen Richtlinien der EAG-Abwicklungsstelle sowie der
 Länder und Gemeinden.</small></p>
 """),
         ("EAG-Bundesförderung 2026: die Basis für ganz Österreich", "eag", f"""
-<p>Der EAG-Investitionszuschuss gilt in allen neun Bundesländern gleich. Die Konditionen wurden mit der
-EAG-Investitionszuschüsseverordnung-Strom-Novelle 2026 am 16. Jänner 2026 fixiert.</p>
+<p>Der EAG-Investitionszuschuss galt im Call 2026 in allen neun Bundesländern gleich. Die Konditionen wurden
+mit der EAG-Investitionszuschüsseverordnung-Strom-Novelle 2026 am 16. Jänner 2026 fixiert. Die Sätze sind
+derzeit nicht beantragbar, der letzte Call endete am 22. Oktober 2026:</p>
 {A.table(
     ["Kategorie", "Anlagengröße", "Fördersatz PV", "Speicher"],
     [
@@ -101,19 +109,23 @@ EAG-Investitionszuschüsseverordnung-Strom-Novelle 2026 am 16. Jänner 2026 fixi
     ],
     hl_cols=(2,),
 )}
-<p>Speicher werden nur in Kombination mit einer PV-Neuerrichtung oder -Erweiterung gefördert. Der
-Made-in-Europe-Bonus bringt jeweils 10 Prozent pro Komponente (PV-Module, Wechselrichter, Speicher), also
+<p>Speicher wurden nur in Kombination mit einer PV-Neuerrichtung oder -Erweiterung gefördert. Der
+Made-in-Europe-Bonus brachte jeweils 10 Prozent pro Komponente (PV-Module, Wechselrichter, Speicher), also
 bis zu 20 Prozent Zuschlag für die PV-Anlage und weitere 10 Prozent für den Speicher, sofern die
-Komponenten auf der White List der EAG-Abwicklungsstelle stehen.</p>
+Komponenten auf der White List der EAG-Abwicklungsstelle standen.</p>
 <p>Die drei Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober. In den Kategorien A und
-B gilt First-Come-First-Served mit Ticketziehung, der Antrag muss vor Inbetriebnahme gestellt werden.
+B galt First-Come-First-Served mit Ticketziehung, der Antrag musste vor Inbetriebnahme gestellt werden. Im
+bisherigen System gibt es keinen weiteren Call, neue Anlagen bekommen derzeit keinen Bundeszuschuss. Ab 2027
+ist laut BMWET eine Systemförderung geplant, aber nicht beschlossen: Speicher mit intelligenter Steuerung,
+Antrag nach Installation und Rechnung, Projekte ab 1. November 2026 sollen beantragbar sein, die Höhe ist offen.
 Alle Details im Ratgeber {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
 """),
         ("Übersichtstabelle: Alle 9 Bundesländer im Schnellvergleich", "vergleich", f"""
 <p>Die Tabelle zeigt je Bundesland die wichtigste Landesförderung für Photovoltaik und Speicher 2026, ob
-sie mit dem EAG-Bundeszuschuss kombinierbar ist und den Stand der Angaben.</p>
+sie im Call 2026 mit dem EAG-Bundeszuschuss kombinierbar war und den Stand der Angaben. Derzeit ist kein
+Bundeszuschuss beantragbar.</p>
 {A.table(
-    ["Bundesland", "Förderart 2026", "Höhe und Eckdaten", "Mit EAG kombinierbar?", "Stand"],
+    ["Bundesland", "Förderart 2026", "Höhe und Eckdaten", "Mit EAG kombinierbar (Call 2026)?", "Stand"],
     [
         ["Burgenland", "Speicherförderung des Landes, keine PV-Direktförderung für Private", "100 €/kWh nutzbar, max. 20 kWh, max. 30 % der Kosten, bis 2.000 €; Antrag bis 6 Monate nach Rechnung", "teilweise: Bund vor Land, Landesgeld nur wenn EAG nicht möglich", "Juni 2026"],
         ["Kärnten", "Pauschale für PV mit Speicher, Speicher-Nachrüstung, Gewerbeprogramm", "3.000 € (ab 5 kWp + 5 kWh), Nachrüstung 1.000 €, Gewerbe bis 200 €/kWp; 2. Landes-Call 12. Oktober bis 31. Dezember 2026 (1. Call: 15. April bis 30. Juni), Antrag nach Fertigstellung", "ja, ohne Anrechnung", "Juni 2026"],
@@ -137,16 +149,17 @@ Dachanlagen gar nicht mehr. In der Steiermark ist derzeit ebenfalls keine PV-Lan
 <p>Das Burgenland zahlt keine PV-Pauschale für Private, fördert aber Stromspeicher mit 100 Euro je kWh
 nutzbarer Kapazität, maximal 20 kWh und 30 Prozent der Kosten, also bis 2.000 Euro. Antragsberechtigt sind
 Eigentümer privater Wohngebäude mit mehr als 50 Prozent Wohnfläche, der Antrag ist bis sechs Monate nach
-Rechnungsdatum möglich. Es gilt Bund vor Land: Wer den möglichen EAG-Antrag auslässt, verliert auch die
-Landesförderung. Alle Details im Ratgeber {a(BGLD, 'Photovoltaik-Förderung Burgenland 2026')}.</p>
+Rechnungsdatum möglich. Im Call 2026 galt Bund vor Land: Wer den möglichen EAG-Antrag ausließ, verlor auch
+die Landesförderung. Wie das Land nach dem Ende der Bundescalls verfährt, klären wir vor dem Angebot. Alle Details im Ratgeber {a(BGLD, 'Photovoltaik-Förderung Burgenland 2026')}.</p>
 
 <h3>Kärnten: die 3.000-Euro-Pauschale</h3>
 <p>Kärnten hat 2026 die höchste Landespauschale Österreichs: 3.000 Euro für neue private PV-Anlagen ab
 5 kWp mit Speicher ab 5 kWh, unabhängig von der Anlagengröße, plus 1.000 Euro für die Speicher-Nachrüstung.
 Reine PV-Anlagen ohne Speicher werden nicht mehr gefördert. Das Budget liegt bei rund 40 Millionen Euro,
 der zweite Landes-Call läuft vom 12. Oktober bis 31. Dezember 2026 (der erste lief vom 15. April bis 30. Juni), der Antrag wird nach Fertigstellung gestellt. Die
-Anrechnung der Bundesförderung entfällt: Für 8 kWp mit 8 kWh Speicher ergibt das 5.400 Euro aus Land und
-Bund, mit Made-in-Europe-Bonus rund 5.700 bis 5.900 Euro. Betriebe erhalten bis 200 Euro je kWp. Alle Details
+Anrechnung der Bundesförderung entfällt: Für 8 kWp mit 8 kWh Speicher ergab das im Call 2026 5.400 Euro aus
+Land und Bund, mit Made-in-Europe-Bonus rund 5.700 bis 5.900 Euro. Aktuell bleiben 3.000 Euro vom Land, der
+Bund ist derzeit nicht beantragbar. Betriebe erhalten bis 200 Euro je kWp. Alle Details
 im Ratgeber {a(KTN, 'Photovoltaik-Förderung Kärnten 2026')}.</p>
 
 <h3>Niederösterreich: Wohnbauförderung als Hebel</h3>
@@ -171,8 +184,8 @@ Details im Ratgeber {a(OOE, 'Photovoltaik-Förderung Oberösterreich 2026')}.</p
 <p>Die Salzburger PV-Landesförderung, zuletzt bis 2.000 Euro für PV mit Speicher, ist mit 31. Dezember 2025
 ersatzlos ausgelaufen, die Stadt Salzburg hat ihre Förderung mit 1. Jänner 2026 eingestellt. Das Land
 fördert nur noch betriebliche PV-Anlagen mit maximal 40 Prozent der Kosten und verweist Private an die
-EAG-Abwicklungsstelle. Private stützen sich damit auf den Bund (1.500 bis 2.800 Euro plus
-Made-in-Europe-Bonus), im Sanierungskontext kann die Wohnbauförderung relevant sein. Alle Details im
+EAG-Abwicklungsstelle. Private stützten sich damit 2026 auf den Bund (im Call 2026 1.500 bis 2.800 Euro plus
+Made-in-Europe-Bonus, derzeit nicht beantragbar), im Sanierungskontext kann die Wohnbauförderung relevant sein. Alle Details im
 Ratgeber {a(SBG, 'Photovoltaik-Förderung Salzburg 2026')}.</p>
 
 <h3>Steiermark: Sanierungsbonus beendet, Ökofonds ohne PV-Ausschreibung</h3>
@@ -181,7 +194,7 @@ vom 1. April bis 15. Mai 2026 mit 9,8 Millionen Euro Budget (maximal 15 Prozent 
 rückwirkend für umgesetzte Maßnahmen inklusive PV und Speicher) und ist beendet. Der Ökofonds, der bis Ende
 Mai 2026 Anlagen ab 20 kWp mit Doppelnutzung mit bis zu 30 Prozent förderte, führt derzeit keine
 PV-Ausschreibung, nur Wasserstoffprojekte und Innovative Energiespeicher (Stand 10. Oktober 2026). Private
-stützen sich damit auf den EAG-Bundeszuschuss; manche Gemeinden zahlen einen eigenen Zuschuss. Die
+stützten sich damit 2026 auf den EAG-Bundeszuschuss, dessen letzter Call am 22. Oktober 2026 endete; manche Gemeinden zahlen einen eigenen Zuschuss. Die
 Wohnbauförderung wird zum
 „Sanierungspass“ reformiert, voraussichtlich ab Sommer 2026. Alle Details im Ratgeber
 {a(STMK, 'Photovoltaik-Förderung Steiermark 2026')}.</p>
@@ -192,15 +205,15 @@ Wohnbauförderung wird zum
 1. Jänner 2026 begründet das Land mit gesunkenen Modulpreisen. Voraussetzung ist ein genehmigtes
 Sanierungsvorhaben an einem bestehenden Wohngebäude. Dazu kommt eine Speicher-Nachrüstung mit 100 Euro je
 kWh bis 10 kWh (max. 1.000 Euro, Inbetriebnahme ab 1. Jänner 2026, netzdienliche Steuerung) sowie regionale
-Programme in Landeck, Lechtal-Reutte und Pitztal mit oft 20 bis 40 Prozent der Kosten. Land und Bund sind
-kombinierbar. Alle Details im Ratgeber {a(TIR, 'Photovoltaik-Förderung Tirol 2026')}.</p>
+Programme in Landeck, Lechtal-Reutte und Pitztal mit oft 20 bis 40 Prozent der Kosten. Land und Bund waren
+im Call 2026 kombinierbar. Alle Details im Ratgeber {a(TIR, 'Photovoltaik-Förderung Tirol 2026')}.</p>
 
 <h3>Vorarlberg: Fokus auf versiegelte Flächen</h3>
 <p>Vorarlberg fördert keine Dach-PV für Private, sondern PV-Überdachungen versiegelter Flächen (Carports,
 Parkplätze) ab 20 kWp mit bis zu 50.000 Euro je Anlage. Anlagen auf bestehenden Gebäuden sind ausdrücklich
 nicht förderfähig. Für Private bleibt der Speicherbonus der VKW (Vorarlberger Kraftwerke) mit 50 Euro je
 kWh, maximal 500 Euro, bei bestehendem VKW-Einspeisevertrag, dazu Gemeindeprogramme. Die Dachanlage
-selbst läuft über die EAG mit 150 Euro je kWp in Kategorie A. Alle Details im Ratgeber
+selbst lief 2026 über die EAG mit 150 Euro je kWp in Kategorie A (Call 2026, beendet). Alle Details im Ratgeber
 {a(VBG, 'Photovoltaik-Förderung Vorarlberg 2026')}.</p>
 
 <h3>Wien: Komplettumbau mit Fokus auf urbane Lösungen</h3>
@@ -208,11 +221,11 @@ selbst läuft über die EAG mit 150 Euro je kWp in Kategorie A. Alle Details im 
 mit 31. Dezember 2025 ausgelaufen. Standard-Dachanlagen auf Einfamilienhäusern fördert die Stadt nicht mehr.
 Seit 1. Mai 2026 gibt es ein neues Paket mit 7 Millionen Euro für PV-Fassadenanlagen und
 PV-Verschattungsanlagen auf begehbaren Dächern, weitergeführt werden Mehrgeschosswohnbau, Flugdächer und
-Gründächer. Eine Kombination mit der EAG oder dem Klima- und Energiefonds ist nicht möglich, Antragsteller
-entscheiden sich für Stadt oder Bund. Alle Details im Ratgeber {a(WIEN, 'Photovoltaik-Förderung Wien 2026')}.</p>
+Gründächer. Eine Kombination mit der EAG oder dem Klima- und Energiefonds war nicht möglich, Antragsteller
+entschieden sich im Call 2026 für Stadt oder Bund. Alle Details im Ratgeber {a(WIEN, 'Photovoltaik-Förderung Wien 2026')}.</p>
 {A.cta("In Kärnten oder der Steiermark? Wir holen das Maximum heraus",
-       "EBZ Energie kennt Landesrichtlinien, EAG-Termine und Gemeindeförderungen in beiden Bundesländern und "
-       "übernimmt die komplette Abwicklung.",
+       "EBZ Energie kennt Landesrichtlinien, den Stand der Bundesförderung und Gemeindeförderungen in beiden "
+       "Bundesländern und übernimmt die komplette Abwicklung.",
        secondary=("photovoltaik", "Zur Photovoltaik-Leistungsseite"))}
 """),
         ("In welchen Bundesländern lohnt sich PV 2026 am meisten?", "lohnt", f"""
@@ -220,33 +233,39 @@ entscheiden sich für Stadt oder Bund. Alle Details im Ratgeber {a(WIEN, 'Photov
 Verbrauchsprofil entscheiden über die Wirtschaftlichkeit. Aus den Förderlandschaften lassen sich aber klare
 Tendenzen ableiten:</p>
 <ul>
-  <li><b>Kärnten</b> ist 2026 das attraktivste Bundesland für private PV-Investitionen: 3.000 Euro Pauschale,
-  volle Kombinierbarkeit mit dem Bund und hohe Einstrahlung im Süden.</li>
+  <li><b>Kärnten</b> ist 2026 das attraktivste Bundesland für private PV-Investitionen: 3.000 Euro Pauschale
+  (bis 31. Dezember 2026, nur mit Speicher), im Call 2026 voll mit dem Bund kombinierbar, und hohe
+  Einstrahlung im Süden.</li>
   <li><b>Steiermark</b> hat derzeit keine offene PV-Landesförderung (Sanierungsbonus beendet, Ökofonds ohne
-  PV-Ausschreibung); es zählen der EAG-Bundeszuschuss und, wo vorhanden, der Zuschuss der Gemeinde.</li>
+  PV-Ausschreibung); nach dem Ende des Bundescalls zählt derzeit nur, wo vorhanden, der Zuschuss der Gemeinde.</li>
   <li><b>Niederösterreich</b> lohnt sich vor allem für alle, die ohnehin sanieren oder neu bauen, weil PV in
   die Wohnbauförderung integriert wird.</li>
   <li><b>Tirol</b> hat die Sätze halbiert, bleibt im Sanierungskontext aber gut planbar.</li>
   <li><b>Burgenland und Oberösterreich</b> punkten mit der Speicher-Nachrüstung, ideal für Bestandsanlagen.</li>
   <li><b>Salzburg und Wien</b> sind die Bundesländer, in denen Privathaushalte 2026 fast ausschließlich auf
-  die EAG-Bundesförderung angewiesen sind.</li>
+  die EAG-Bundesförderung angewiesen waren; seit dem Ende des letzten Calls am 22. Oktober 2026 gibt es dort
+  für Standard-Dachanlagen derzeit keinen Zuschuss.</li>
 </ul>
 <p>Unabhängig vom Bundesland gilt: Der Richtpreis für eine 10-kWp-Anlage mit Speicher liegt bei rund 15.000
 bis 22.000 Euro vor Förderung, die typische Amortisation bei 4 bis 6 Jahren. Was nach der Förderung bleibt,
-lässt sich über eine {a('finanzierung', 'Finanzierung')} ab 147 Euro im Monat inklusive Speicher abbilden.</p>
+lässt sich über eine {a('finanzierung', 'Finanzierung')} ab 147 Euro im Monat inklusive Speicher abbilden.
+Wer jetzt plant, baut sinnvoll mit Speicher und Energiemanagement: Das wahrt die Chance auf die laut BMWET
+geplante Systemförderung 2027, und Kärnten zahlt die 3.000 Euro nur mit Speicher.</p>
 """),
         ("Strategie: die richtige Reihenfolge bei der Antragstellung", "strategie", f"""
 <p>Egal in welchem Bundesland: Mit der richtigen Reihenfolge lässt sich die Gesamtförderung deutlich
-erhöhen, mit der falschen verliert man eine Förderung komplett.</p>
+erhöhen, mit der falschen verliert man eine Förderung komplett. Die ersten beiden Schritte beschreiben den
+Ablauf im Call 2026; derzeit ist kein Bundesantrag möglich.</p>
 {A.steps([
-    ("Mit dem EAG-Bundeszuschuss beginnen",
-     "Der EAG-Antrag muss vor Inbetriebnahme gestellt werden. Wer in den Kategorien A und B den besten "
-     "Reihungsplatz will, zieht am Starttag des Calls (23. April, 16. Juni oder 8. Oktober 2026) punktgenau ein "
-     "Ticket. Im Burgenland ist der Bundesantrag sogar Pflicht, sonst verfällt die Landesförderung."),
-    ("Made-in-Europe-Bonus einplanen",
-     "10 Prozent Zuschlag pro Komponente summieren sich auf über 20 Prozent Mehrförderung. Die Komponenten "
-     "müssen auf der White List der EAG-Abwicklungsstelle stehen, das gehört in die Angebotsphase, nicht in die "
-     "Endabrechnung."),
+    ("Bundeszuschuss: 2026 zuerst, ab 2027 danach",
+     "Im Call 2026 musste der EAG-Antrag vor Inbetriebnahme gestellt werden, in den Kategorien A und B per "
+     "Ticket am Starttag (23. April, 16. Juni oder 8. Oktober 2026). Der letzte Call endete am 22. Oktober 2026. "
+     "Für die geplante Systemförderung 2027 soll der Antrag laut BMWET nach Installation und Rechnung kommen "
+     "(nicht beschlossen)."),
+    ("Speicher und Komponenten einplanen",
+     "Im Call 2026 brachte der Made-in-Europe-Bonus 10 Prozent Zuschlag pro Komponente. Für 2027 ist laut BMWET "
+     "wieder ein Europa-Bonus geplant, gefördert werden sollen Speicher mit intelligenter Steuerung. Das gehört "
+     "in die Angebotsphase, nicht in die Endabrechnung."),
     ("Landesförderung nach Fertigstellung",
      "Die meisten Landesanträge werden nach Fertigstellung gestellt: Kärnten im 2. Landes-Call bis 31. Dezember 2026, "
      "Burgenland bis sechs Monate nach Rechnung, Oberösterreich nach "
@@ -262,26 +281,27 @@ erhöhen, mit der falschen verliert man eine Förderung komplett.</p>
 {A.box_dark("Was passiert, wenn der Topf leer ist?",
     "Bei Ausschöpfung der Mittel werden auch fristgerechte Anträge abgelehnt, in den meisten Programmen gilt "
     "First-Come-First-Served. In Wien waren die Töpfe 2024 bereits im Juni leer, in Kärnten standen 2025 rund "
-    "40 Millionen Euro für 13.000 Förderanträge bereit. Eine Antragstellung am ersten Tag des Calls erhöht "
-    "die Chancen erheblich.")}
+    "40 Millionen Euro für 13.000 Förderanträge bereit. Eine frühe Antragstellung, etwa im laufenden Kärntner "
+    "Landes-Call bis 31. Dezember 2026, erhöht die Chancen erheblich.")}
 """),
         ("Fazit: Die richtige Strategie ist alles", "fazit", f"""
-<p>Die österreichische PV-Förderlandschaft 2026 ist so uneinheitlich wie nie: Wer in Kärnten wohnt und Land
-und Bund kombiniert, bekommt mehrere tausend Euro, die es anderswo nicht gibt. Wer in Wien lebt, muss
-zwischen Stadt und Bund wählen. Wer in Salzburg plant, ist fast vollständig auf die Bundesförderung
-angewiesen.</p>
+<p>Die österreichische PV-Förderlandschaft 2026 ist so uneinheitlich wie nie: Wer in Kärnten wohnte und im
+Call 2026 Land und Bund kombinierte, bekam mehrere tausend Euro, die es anderswo nicht gab; aktuell bleiben
+dort 3.000 Euro Landespauschale. Wer in Wien lebt, musste 2026 zwischen Stadt und Bund wählen. Wer in
+Salzburg plant, war fast vollständig auf die Bundesförderung angewiesen.</p>
 <p>Was alle Bundesländer eint: begrenzte Töpfe, kurze Fristen und formale Hürden. Die richtige Reihenfolge
-bei der Antragstellung, die Komponentenauswahl für den Made-in-Europe-Bonus und die rechtzeitige
-Vorbereitung der Unterlagen entscheiden über mehrere tausend Euro. Was der Bund bei Speichern zusätzlich
-zahlt, steht im Ratgeber {a('/foerderung-fuer-pv-speicher/', 'Förderung für PV-Speicher')}.</p>
-<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
-bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
-und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
-Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
-sind noch offen.</p>
+bei der Antragstellung, die Komponentenauswahl und die rechtzeitige Vorbereitung der Unterlagen entscheiden
+über mehrere tausend Euro. Was der Bund 2026 bei Speichern zahlte und was die Länder fördern, steht im
+Ratgeber {a('/foerderung-fuer-pv-speicher/', 'Förderung für PV-Speicher')}.</p>
+<p><b>Stand ab 23. Oktober 2026:</b> Der dritte Call lief vom 8. bis 22. Oktober 2026 und war der letzte im
+bisherigen System. Neue Anlagen bekommen derzeit keinen Bundeszuschuss. Ab 2027 ist laut Eckpunkten des
+BMWET eine Systemförderung geplant, aber nicht beschlossen: Antrag nach Installation und Rechnung statt
+Fördercall, gefördert werden sollen Speicher mit intelligenter Steuerung, auch als Nachrüstung; Projekte mit
+intelligentem Speicher, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und
+Technikkriterien sind noch offen. Wer jetzt plant, baut deshalb mit Speicher und Energiemanagement.</p>
 {A.cta("Förderung in Kärnten und der Steiermark aus einer Hand",
-       "Wir planen Ihre Anlage förderfähig, ziehen das EAG-Ticket, stellen den Landesantrag und prüfen die "
-       "Gemeindeförderung an Ihrem Wohnort.",
+       "Wir planen Ihre Anlage mit Speicher für die geplante Systemförderung 2027, stellen den Landesantrag und "
+       "prüfen die Gemeindeförderung an Ihrem Wohnort.",
        primary=("kontakt", "Kostenlose Beratung anfragen"), secondary=("referenzen", "Referenzen ansehen"))}
 """),
     ],
@@ -292,54 +312,55 @@ sind noch offen.</p>
         "text": ("EBZ Energie GmbH aus Villach plant und montiert Photovoltaikanlagen, Speicher und Wärmepumpen in "
                  "Kärnten und der Steiermark, mit zertifizierten Fachkräften und "
                  "über 300 dokumentierten Projekten in sechs Bundesländern. Wir kennen die Kärntner "
-                 "3.000-Euro-Pauschale, den Stand der steirischen Landesprogramme, die EAG-Termine und die Gemeindeförderungen "
-                 "beider Länder im Detail und übernehmen die komplette Abwicklung: von der strategischen "
-                 "Förderkombination über die fristgerechte Ticketziehung beim EAG-Call bis zur Endabrechnung bei "
-                 "Land und Gemeinde. Für Projekte außerhalb unseres Montagegebiets prüfen wir die Machbarkeit im "
+                 "3.000-Euro-Pauschale, den Stand der steirischen Landesprogramme und der Bundesförderung und die "
+                 "Gemeindeförderungen beider Länder im Detail und übernehmen die komplette Abwicklung: von der "
+                 "strategischen Förderkombination über die Vorbereitung auf die geplante Systemförderung 2027 bis "
+                 "zur Endabrechnung bei Land und Gemeinde. Für Projekte außerhalb unseres Montagegebiets prüfen wir die Machbarkeit im "
                  "Einzelfall."),
         "grid": [
-            ("Förderabwicklung komplett", "EAG-Ticket, Landesantrag, Gemeindeförderung und Endabrechnung."),
-            ("Kärnten: 3.000 € Pauschale", "Wir planen ab 5 kWp mit 5 kWh Speicher, damit Land und Bund voll greifen."),
-            ("Steiermark: EAG und Gemeinde", "Landesprogramme derzeit nicht offen, wir prüfen den Stand vor dem Angebot."),
+            ("Förderabwicklung komplett", "Landesantrag, Gemeindeförderung, Endabrechnung und Blick auf 2027."),
+            ("Kärnten: 3.000 € Pauschale", "Wir planen ab 5 kWp mit 5 kWh Speicher, damit die Landespauschale greift."),
+            ("Steiermark: Stand geprüft", "Landesprogramme derzeit nicht offen, wir prüfen den Stand vor dem Angebot."),
             ("300+ Projekte", "Referenzen in sechs Bundesländern, typische Amortisation 4 bis 6 Jahre."),
         ],
     },
 
     "faq": [
         ("Welches Bundesland hat 2026 die höchste PV-Landesförderung?",
-         "Kärnten mit 3.000 Euro Pauschale für PV ab 5 kWp mit Speicher ab 5 kWh, voll mit dem Bund kombinierbar. "
+         "Kärnten mit 3.000 Euro Pauschale für PV ab 5 kWp mit Speicher ab 5 kWh, beantragbar bis 31. Dezember 2026. "
          "In der Steiermark ist derzeit keine PV-Landesförderung offen: Der Sanierungsbonus ist beendet, der "
          "Ökofonds hat keine PV-Ausschreibung. Tirol fördert über die Wohnhaussanierung bis 125 Euro je kWp. Salzburg und Wien "
          "haben keine vergleichbare Direktförderung für Standardanlagen."),
-        ("Kann ich Bundes- und Landesförderung in jedem Bundesland kombinieren?",
-         "Nein. In Kärnten, Niederösterreich, der Steiermark, Tirol und Vorarlberg ist die Kombination "
-         "grundsätzlich möglich. Wien schließt die Kombination der Stadtförderung mit der EAG aus. In "
-         "Oberösterreich sind Landes- und EAG-Speicherförderung nicht kombinierbar. Im Burgenland gilt Bund vor "
-         "Land, die Landesförderung greift nur, wenn die EAG nicht möglich ist."),
+        ("Konnte man Bundes- und Landesförderung in jedem Bundesland kombinieren?",
+         "Nein. Im Call 2026 war die Kombination in Kärnten, Niederösterreich, der Steiermark, Tirol und Vorarlberg "
+         "grundsätzlich möglich. Wien schloss die Kombination der Stadtförderung mit der EAG aus. In "
+         "Oberösterreich waren Landes- und EAG-Speicherförderung nicht kombinierbar. Im Burgenland galt Bund vor "
+         "Land. Derzeit ist kein Bundeszuschuss beantragbar, der letzte Call endete am 22. Oktober 2026."),
         ("Bis wann muss ich meinen Antrag 2026 stellen?",
-         "Der EAG-Bundeszuschuss läuft in drei Calls: 23. April bis 11. Mai, 16. bis 30. Juni und 8. bis 22. Oktober "
-         "2026, jeweils vor Inbetriebnahme. Die Kärntner Landesförderung ist im 2. Call bis 31. Dezember 2026 möglich, das "
+         "Der EAG-Bundeszuschuss lief in drei Calls: 23. April bis 11. Mai, 16. bis 30. Juni und 8. bis 22. Oktober "
+         "2026; der letzte endete am 22. Oktober, derzeit ist beim Bund kein Antrag möglich. Die Kärntner Landesförderung ist im 2. Call bis 31. Dezember 2026 möglich, das "
          "Fenster des Steirischen Sanierungsbonus (1. April bis 15. Mai 2026) ist abgelaufen, die Wiener Stadtförderung startet am 1. Mai "
          "2026. Im Burgenland gilt für den Speicher eine Frist von sechs Monaten nach Rechnung."),
         ("Welche Bundesländer fördern Stromspeicher direkt?",
          "Burgenland mit 100 Euro je kWh (max. 20 kWh, bis 2.000 Euro), Oberösterreich mit 150 Euro je kWh (max. "
          "15 kWh, bis 2.250 Euro, nur Bestandsanlagen vor 1. Jänner 2026) und Tirol mit 100 Euro je kWh (max. "
-         "10 kWh, bis 1.000 Euro). Kärnten zahlt 1.000 Euro Pauschale für die Nachrüstung. Der Bund fördert "
-         "Speicher überall mit 150 Euro je kWh, aber nur mit PV-Neuerrichtung oder -Erweiterung."),
-        ("Wie viel bringt die EAG-Bundesförderung für eine Privatanlage?",
-         "Für die PV-Anlage 150 Euro je kWp bis 10 kWp und 140 Euro je kWp bis 20 kWp, also 1.500 bis 2.800 Euro. "
-         "Dazu 150 Euro je kWh Speicher und der Made-in-Europe-Bonus von 10 Prozent je Komponente. Für 8 kWp mit "
-         "8 kWh Speicher ergibt das 2.400 Euro plus Bonus."),
+         "10 kWh, bis 1.000 Euro). Kärnten zahlt 1.000 Euro Pauschale für die Nachrüstung. Der Bund förderte "
+         "Speicher im Call 2026 mit 150 Euro je kWh, nur mit PV-Neuerrichtung oder -Erweiterung; derzeit ist das "
+         "nicht beantragbar, ab 2027 ist laut BMWET eine Systemförderung für Speicher geplant."),
+        ("Wie viel brachte die EAG-Bundesförderung für eine Privatanlage?",
+         "Im Call 2026 für die PV-Anlage 150 Euro je kWp bis 10 kWp und 140 Euro je kWp bis 20 kWp, also 1.500 bis "
+         "2.800 Euro, dazu 150 Euro je kWh Speicher und der Made-in-Europe-Bonus von 10 Prozent je Komponente. Für "
+         "8 kWp mit 8 kWh Speicher ergab das 2.400 Euro plus Bonus. Derzeit ist kein Bundeszuschuss beantragbar."),
         ("Was passiert, wenn die Fördertöpfe ausgeschöpft sind?",
          "Dann werden auch fristgerechte Anträge abgelehnt, in den meisten Programmen gilt First-Come-First-Served. "
          "In Wien waren die Töpfe 2024 bereits im Juni leer, in Kärnten standen 2025 rund 40 Millionen Euro für "
-         "13.000 Anträge bereit. Eine Antragstellung am ersten Tag des Calls erhöht die Chancen erheblich."),
+         "13.000 Anträge bereit. Eine frühe Antragstellung erhöht die Chancen erheblich."),
         ("Gibt es zusätzlich Gemeindeförderungen?",
          "Ja, manche Gemeinden zahlen einen eigenen Zuschuss. Die Programme ändern sich jährlich und werden nicht zentral veröffentlicht, ein Anruf beim "
          "Gemeindeamt lohnt sich fast immer. In den meisten Fällen sind sie mit Bund und Land kombinierbar."),
         ("Übernimmt EBZ Energie die Förderabwicklung auch in anderen Bundesländern?",
          "EBZ Energie montiert in Kärnten und der Steiermark und übernimmt dort die komplette Förderabwicklung "
-         "von der Erstberatung über die Ticketziehung bis zur Endabrechnung. Referenzprojekte gibt es in sechs "
+         "von der Erstberatung über den Landesantrag bis zur Endabrechnung. Referenzprojekte gibt es in sechs "
          "Bundesländern. Für Projekte außerhalb des Montagegebiets prüfen wir die Machbarkeit auf Anfrage."),
     ],
 
@@ -369,7 +390,7 @@ sind noch offen.</p>
     ],
     "cta": {
         "h3": "Welche Förderung gilt bei Ihnen?",
-        "text": "Wir prüfen Bund, Land und Gemeinde für Ihren Standort und stellen die Anträge in der richtigen Reihenfolge.",
+        "text": "Wir prüfen Land, Gemeinde und den Stand der Bundesförderung für Ihren Standort und stellen die Anträge in der richtigen Reihenfolge.",
         "primary": ("kontakt", "Kostenlose Beratung"),
     },
     "final_h2": "Ihre PV-Anlage, förderoptimiert geplant",

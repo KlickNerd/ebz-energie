@@ -1,4 +1,6 @@
-"""Laedt die Original-Bilder aus der Live-Mediathek nach out/assets/img/.
+"""ARCHIV, wird nicht mehr ausgefuehrt: Die 14 Bilder liegen seit 21.10.2026 in build/static/img/.
+
+Laedt die Original-Bilder aus der Live-Mediathek nach out/assets/img/.
 
 Einmalig ausfuehren (Schritt weg von wp-content). Danach liegen die Bilder
 self-hosted im Repo und die Seiten sind unabhaengig von WordPress.

@@ -35,7 +35,7 @@ ARTICLE = {
         "Berücksichtigung <b>automatisch</b>",
     ],
     "date_published": "2026-03-20",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "foerderung",
     "hero_alt": "Unterlagen und Taschenrechner für die Steuerveranlagung nach dem Heizungstausch",
 
@@ -175,15 +175,17 @@ persönlichen Grenzsteuersatz.</small></p>
   <li><b>Kein Wahlrecht bei der Höhe:</b> 400 € bzw. 800 € pro Jahr sind fix. Die tatsächlichen Kosten
   spielen keine Rolle, solange die Mindestgrenze überschritten ist.</li>
   <li><b>Keine Photovoltaik:</b> Die Pauschale gilt nur für Heizungstausch und thermische Sanierung. Die
-  {a('photovoltaik', 'PV-Anlage')} wird über den EAG-Investitionszuschuss gefördert.</li>
+  {a('photovoltaik', 'PV-Anlage')} wurde 2026 über den EAG-Investitionszuschuss gefördert (letzter Call
+  endete am 22. Oktober 2026).</li>
   <li><b>Kein Anspruch ohne Zustimmung:</b> Ohne Datenübermittlung an das Finanzamt keine automatische
   Berücksichtigung; nachholen über das KPC-Bestätigungsformular.</li>
 </ul>
 """),
         ("Wärmepumpe und Photovoltaik: dreifach profitieren", "photovoltaik", f"""
-<p>Wer die Wärmepumpe mit einer PV-Anlage kombiniert, nutzt drei Vorteile: die Bundesförderung für den
-Heizungstausch, die Öko-Sonderausgabenpauschale für die Steuer und den EAG-Investitionszuschuss für die
-Photovoltaik. Dazu senkt der selbst erzeugte Strom die laufenden Betriebskosten der Wärmepumpe. Wie das
+<p>Wer die Wärmepumpe mit einer PV-Anlage kombiniert, nutzt mehrere Vorteile: die Öko-Sonderausgabenpauschale
+für die Steuer, Landesförderungen wie die Kärntner Pauschale für Wärmepumpe und PV mit Speicher und den
+selbst erzeugten Strom. Die Bundesförderungen 2026 für den Heizungstausch und die Photovoltaik
+(EAG-Investitionszuschuss, letzter Call endete am 22. Oktober 2026) sind derzeit nicht beantragbar. Dazu senkt der selbst erzeugte Strom die laufenden Betriebskosten der Wärmepumpe. Wie das
 zusammenspielt, lesen Sie im Ratgeber
 {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}; einen Überblick über alle
 Zuschüsse gibt {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich 2026')}.

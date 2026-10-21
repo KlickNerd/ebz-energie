@@ -5,6 +5,8 @@ inhaltlich bereinigt und auf die Ratgeber-Vorlage umgestellt.
 Zahlen: EAG-Investitionszuschüsseverordnung 2026, Steirischer Sanierungsbonus 2026, Ökofonds Steiermark.
 Korrektur 10.10.2026 (build/seo/_fakten_2026-10.md): Sanierungsbonus beendet, Ökofonds ohne PV-Ausschreibung,
 Gemeindebeträge nicht amtlich belegt, Land nimmt für neue Wärmepumpen keine Anträge an.
+Stand ab 23.10.2026: EAG 3. und letzter Call lief 8. bis 22.10.2026, derzeit kein Bundeszuschuss; Ausblick 2027
+Systemfoerderung laut BMWET (geplant, nicht beschlossen).
 """
 
 import os
@@ -18,59 +20,62 @@ from common import a
 ARTICLE = {
     "slug": "foerderung-photovoltaik-steiermark",
     "path": "/foerderung-photovoltaik-steiermark/",
-    "title": "PV-Förderung Steiermark 2026: 150 €/kWp vom Bund | EBZ",
-    "description": ("PV-Förderung Steiermark 2026: 150 €/kWp EAG-Bund, 150 €/kWh Speicher, Antrag bis 22. Oktober. "
-                    "Sanierungsbonus beendet, Ökofonds ohne PV-Ausschreibung."),
+    "title": "PV-Förderung Steiermark 2026: Bundescall beendet | EBZ",
+    "description": ("PV-Förderung Steiermark: Der letzte EAG-Call endete am 22. Oktober 2026, das Land fördert PV "
+                    "derzeit nicht. Was jetzt noch geht und was 2027 geplant ist."),
     "eyebrow": "Förderung · Steiermark",
     "crumb_label": "PV-Förderung Steiermark 2026",
-    "h1": "Photovoltaik-Förderung Steiermark 2026: 150 €/kWp vom Bund, Sanierungsbonus beendet, Ökofonds ohne PV-Ausschreibung",
-    "lead": ("In der Steiermark gibt es 2026 keine PV-Pauschale des Landes. Stand Oktober 2026 zählt der "
-             "EAG-Investitionszuschuss des Bundes: Der Steirische Sanierungsbonus war eine befristete "
-             "Sonderausschreibung und ist beendet, der Ökofonds hat derzeit keine PV-Ausschreibung. Für 10 kWp mit "
-             "10 kWh Speicher bringt der EAG 3.000 Euro, manche Gemeinden zahlen einen eigenen Zuschuss."),
+    "h1": "Photovoltaik-Förderung Steiermark 2026: EAG-Call beendet, keine Landesförderung, Systemförderung 2027 geplant",
+    "lead": ("In der Steiermark gibt es 2026 keine PV-Pauschale des Landes. Die wichtigste Förderung war der "
+             "EAG-Investitionszuschuss des Bundes, dessen dritter und letzter Call vom 8. bis 22. Oktober 2026 lief; "
+             "derzeit ist kein Bundeszuschuss beantragbar. Der Steirische Sanierungsbonus ist beendet, der Ökofonds "
+             "hat keine PV-Ausschreibung, manche Gemeinden zahlen einen eigenen Zuschuss. Ab 2027 ist laut BMWET "
+             "eine Systemförderung geplant, nicht beschlossen."),
     "chips": [
-        "EAG-Bund: <b>150 €/kWp</b> bis 10 kWp",
-        "Speicher: <b>150 €/kWh</b> bis 50 kWh",
+        "EAG-Bund: <b>Call 2026 beendet</b>",
+        "2027: <b>Systemförderung</b> geplant",
         "Sanierungsbonus: <b>beendet</b>",
         "Ökofonds: <b>keine PV-Ausschreibung</b>",
     ],
     "date_published": "2026-04-05",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch zur Photovoltaik-Förderung in der Steiermark mit Förderunterlagen am Tisch",
 
     "tldr": [
-        "Die wichtigste PV-Förderung in der Steiermark ist der EAG-Investitionszuschuss des Bundes: 150 Euro je kWp "
-        "bis 10 kWp, 140 Euro je kWp bis 20 kWp, Speicher 150 Euro je kWh bis 50 kWh, plus 10 Prozent "
-        "Made-in-Europe-Bonus je Komponente.",
+        "Die wichtigste PV-Förderung in der Steiermark war 2026 der EAG-Investitionszuschuss des Bundes: Im Call "
+        "2026 gab es 150 Euro je kWp bis 10 kWp, 140 Euro je kWp bis 20 kWp, Speicher 150 Euro je kWh bis 50 kWh, "
+        "plus 10 Prozent Made-in-Europe-Bonus je Komponente. Derzeit ist der Bund nicht beantragbar.",
         "Der Steirische Sanierungsbonus 2026 (maximal 15 Prozent der förderbaren Kosten, Antragsfenster "
         "1. April bis 15. Mai 2026, 9,8 Millionen Euro Budget) war eine befristete Sonderausschreibung und ist "
         "beendet.",
         "Der Ökofonds des Landes hat derzeit keine PV-Ausschreibung, ausgeschrieben sind nur Wasserstoffprojekte "
         "und Innovative Energiespeicher (Stand 10. Oktober 2026). Der PV-Call für Anlagen ab 20 kWp mit "
         "Doppelnutzung (bis zu 30 Prozent) lief bis Ende Mai 2026.",
-        "EAG-Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober. Der Antrag muss vor "
-        "Baubeginn und Inbetriebnahme gestellt werden, in den Kategorien A und B gilt First-Come-First-Served.",
-        "Manche Gemeinden zahlen einen eigenen Zuschuss. Bund und Gemeinde sind in der Steiermark grundsätzlich "
-        "kombinierbar.",
+        "EAG-Fördercalls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober, alle beendet; im "
+        "bisherigen System gibt es keinen weiteren Call. Ab 2027 ist laut BMWET eine Systemförderung für Speicher "
+        "mit intelligenter Steuerung geplant, Antrag nach Installation, nicht beschlossen, Höhe offen.",
+        "Manche Gemeinden zahlen einen eigenen Zuschuss, die EMS-Förderung des Klimafonds läuft bis 15. April 2027. "
+        "Wer jetzt plant, baut mit Speicher und Energiemanagement, um die Chance auf die Systemförderung 2027 zu wahren.",
     ],
     "kpis": [
-        ("150 €/kWp", "EAG-Bundesförderung bis 10 kWp"),
-        ("150 €/kWh", "EAG-Speicherförderung bis 50 kWh"),
-        ("22. Oktober", "Antragsende dritter EAG-Call 2026"),
-        ("3.000 €", "EAG für 10 kWp mit 10 kWh Speicher*"),
+        ("150 €/kWp", "EAG-Bundesförderung bis 10 kWp im Call 2026"),
+        ("150 €/kWh", "EAG-Speicherförderung im Call 2026"),
+        ("22. Oktober", "Ende des letzten EAG-Calls 2026"),
+        ("3.000 €", "EAG im Call 2026 für 10 kWp mit 10 kWh*"),
     ],
 
     "sections": [
         ("Die PV-Förderung Steiermark 2026 im Überblick: was noch läuft", "ueberblick", f"""
 <p>Die steirische Förderlandschaft stand 2026 auf drei Säulen: Bundesförderung über das
 Erneuerbaren-Ausbau-Gesetz (EAG), Landesförderungen des Landes Steiermark und Gemeindeförderungen.
-Stand Oktober 2026 läuft davon für Photovoltaik nur noch die Bundesförderung mit ihrem dritten Call; die
-beiden Landesschienen sind derzeit nicht offen.</p>
+Stand ab 23. Oktober 2026 ist für Photovoltaik davon keine Bundes- oder Landesschiene offen: Der dritte und
+letzte EAG-Call lief vom 8. bis 22. Oktober 2026, die beiden Landesschienen sind beendet. Bleiben manche
+Gemeindezuschüsse und die EMS-Förderung des Klimafonds.</p>
 {A.table(
     ["Förderschiene", "Für wen", "Förderhöhe 2026", "Zeitfenster"],
     [
-        ["EAG-Investitionszuschuss (Bund)", "Private, Betriebe, Landwirte, Gemeinden", "150 €/kWp (bis 10 kWp) + 150 €/kWh Speicher + Made-in-Europe-Bonus", "3 Calls: ab 23. April, 16. Juni, 8. Oktober (Antrag bis 22. Oktober)"],
+        ["EAG-Investitionszuschuss (Bund)", "Private, Betriebe, Landwirte, Gemeinden", "im Call 2026: 150 €/kWp (bis 10 kWp) + 150 €/kWh Speicher + Made-in-Europe-Bonus", "beendet: 3 Calls 2026, der letzte lief vom 8. bis 22. Oktober 2026; ab 2027 Systemförderung laut BMWET geplant"],
         ["Steirischer Sanierungsbonus (Land)", "Private, rückwirkend für umgesetzte Maßnahmen", "war: max. 15 % der förderbaren Kosten, nach Ökopunkten", "beendet (Antragsfenster war 1. April bis 15. Mai 2026)"],
         ["Ökofonds Steiermark (Land)", "Anlagen ab 20 kWp mit Doppelnutzung", "war: bis 30 %, max. 250.000 € je Antrag", "derzeit keine PV-Ausschreibung (PV-Call lief bis Ende Mai 2026)"],
         ["Gemeindeförderung", "je nach Wohnsitzgemeinde", "manche Gemeinden zahlen einen eigenen Zuschuss", "gemeindeabhängig"],
@@ -78,18 +83,19 @@ beiden Landesschienen sind derzeit nicht offen.</p>
     hl_cols=(2,),
 )}
 <p>Eine direkte PV-Pauschale des Landes wie die 3.000 Euro in Kärnten gibt es in der Steiermark nicht.
-Die finanziell stärkste Schiene ist deshalb der EAG-Investitionszuschuss; manche Gemeinden zahlen einen
-eigenen Zuschuss dazu.</p>
+Die finanziell stärkste Schiene war deshalb 2026 der EAG-Investitionszuschuss; derzeit ist er nicht
+beantragbar, manche Gemeinden zahlen einen eigenen Zuschuss.</p>
 <p><small>Stand: Oktober 2026. Maßgeblich sind die jeweils gültigen Richtlinien der EAG-Abwicklungsstelle und des
-Landes Steiermark. *Rechenwert für eine private Anlage mit 10 kWp und 10 kWh Speicher: 1.500 Euro plus
-1.500 Euro aus dem EAG, ohne Made-in-Europe-Bonus.</small></p>
+Landes Steiermark. *Rechenwert im Call 2026 (beendet) für eine private Anlage mit 10 kWp und 10 kWh Speicher:
+1.500 Euro plus 1.500 Euro aus dem EAG, ohne Made-in-Europe-Bonus.</small></p>
 """),
         ("EAG-Investitionszuschuss 2026: die wichtigste PV-Förderung", "eag", f"""
-<p>Der EAG-Investitionszuschuss ist die zentrale Bundesförderung für Photovoltaik und Stromspeicher in
+<p>Der EAG-Investitionszuschuss war 2026 die zentrale Bundesförderung für Photovoltaik und Stromspeicher in
 Österreich. Mit der EAG-Investitionszuschüsseverordnung-Strom-Novelle 2026, kundgemacht am 16. Jänner 2026,
-wurden die Konditionen im Wesentlichen auf dem Niveau des Vorjahres fortgeschrieben. Insgesamt stehen 2026
-rund 60 Millionen Euro Bundesmittel bereit, vergeben über drei Fördercalls.</p>
-<h3>Fördersätze nach Anlagengröße</h3>
+wurden die Konditionen im Wesentlichen auf dem Niveau des Vorjahres fortgeschrieben. Insgesamt standen 2026
+rund 60 Millionen Euro Bundesmittel bereit, vergeben über drei Fördercalls. Der letzte Call endete am
+22. Oktober 2026, die Sätze sind derzeit nicht beantragbar.</p>
+<h3>Fördersätze nach Anlagengröße im Call 2026</h3>
 {A.table(
     ["Kategorie", "Engpassleistung", "Fördersatz", "Vergabe"],
     [
@@ -101,24 +107,30 @@ rund 60 Millionen Euro Bundesmittel bereit, vergeben über drei Fördercalls.</p
     ],
     hl_cols=(2,),
 )}
-<p>Die Förderung ist generell auf 30 Prozent der förderfähigen Netto-Investitionskosten begrenzt. Für die
-meisten privaten Anlagen ist diese Obergrenze nicht relevant, hier entscheiden die kWp-Sätze.</p>
-<h3>Die Fördercall-Termine 2026</h3>
+<p>Die Förderung war generell auf 30 Prozent der förderfähigen Netto-Investitionskosten begrenzt. Für die
+meisten privaten Anlagen war diese Obergrenze nicht relevant, dort entschieden die kWp-Sätze.</p>
+<h3>Die Fördercall-Termine 2026 (alle beendet)</h3>
 <ul>
   <li><b>Erster Call:</b> 23. April 2026 (17:00 Uhr) bis 11. Mai 2026 (23:59 Uhr)</li>
   <li><b>Zweiter Call:</b> 16. bis 30. Juni 2026</li>
   <li><b>Dritter Call:</b> 8. bis 22. Oktober 2026</li>
 </ul>
-<p>Die Antragstellung ist nur in diesen Zeitfenstern möglich. In den Kategorien A und B zählt der
-Eingang: Wer am ersten Tag ein Ticket zieht, sichert sich die beste Reihung. Wer den Call verpasst,
-wartet auf den nächsten und riskiert, dass die Mittel bereits ausgeschöpft sind.</p>
-<h3>Made-in-Europe-Bonus: bis zu 20 Prozent extra</h3>
-<p>Der Made-in-Europe-Bonus gilt seit Juni 2025 und auch 2026: Für jede förderbare Komponente mit
-europäischer Wertschöpfung gibt es 10 Prozent Zuschlag auf den Investitionszuschuss, also je 10 Prozent für
-PV-Module, Wechselrichter und Speicher. Für die PV-Anlage sind damit bis zu 20 Prozent Zuschlag möglich,
-für den Speicher weitere 10 Prozent. Voraussetzung: Die Komponenten stehen auf der White List der
+<p>Die Antragstellung war nur in diesen Zeitfenstern möglich, in den Kategorien A und B zählte der
+Eingang nach Ticketziehung. Im bisherigen System gibt es keinen weiteren Call, neue Anlagen bekommen derzeit
+keinen Bundeszuschuss.</p>
+<p><b>Ausblick 2027:</b> Laut Eckpunkten des BMWET ist eine Systemförderung geplant, aber nicht beschlossen:
+Antrag nach Installation und Rechnung statt Fördercall und Ticketziehung, gefördert werden sollen Speicher mit
+intelligenter Steuerung, auch als Nachrüstung. Projekte mit intelligentem Speicher, die ab 1. November 2026 in
+Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Kriterien sind offen. Wer jetzt plant, baut deshalb
+sinnvoll mit Speicher und Energiemanagement.</p>
+<h3>Made-in-Europe-Bonus: bis zu 20 Prozent extra im Call 2026</h3>
+<p>Der Made-in-Europe-Bonus galt seit Juni 2025 und im Call 2026: Für jede förderbare Komponente mit
+europäischer Wertschöpfung gab es 10 Prozent Zuschlag auf den Investitionszuschuss, also je 10 Prozent für
+PV-Module, Wechselrichter und Speicher. Für die PV-Anlage waren damit bis zu 20 Prozent Zuschlag möglich,
+für den Speicher weitere 10 Prozent. Voraussetzung: Die Komponenten standen auf der White List der
 EAG-Abwicklungsstelle und wurden nachweislich im Europäischen Wirtschaftsraum oder in der Schweiz
-produziert. EBZ Energie plant die Anlage von Anfang an mit gelisteten Komponenten.</p>
+produziert. Für 2027 ist laut BMWET wieder ein Europa-Bonus geplant, Höhe offen; EBZ Energie plant die
+Anlage weiterhin mit europäischen Komponenten, wo es sinnvoll ist.</p>
 """),
         ("Steirischer Sanierungsbonus 2026: Sonderausschreibung beendet", "sanierungsbonus", f"""
 <p>Das Land Steiermark hatte für 2026 den „Steirischen Sanierungsbonus 2026“ als befristeten
@@ -135,7 +147,8 @@ Stromspeicher.</p>
   hatte, musste seit der Förderzusage mindestens vier Jahre warten</li>
 </ul>
 {A.box("Für neue Projekte ist der Sanierungsbonus keine Option mehr: Das Antragsfenster ist abgelaufen, die "
-       "Sonderausschreibung beendet. Planen Sie die Förderung derzeit mit dem EAG-Investitionszuschuss.")}
+       "Sonderausschreibung beendet. Auch der EAG-Investitionszuschuss ist seit Ende des letzten Calls am "
+       "22. Oktober 2026 derzeit nicht beantragbar; ab 2027 ist laut BMWET eine Systemförderung geplant.")}
 <p>Parallel wird die steirische Wohnbauförderung reformiert: „Kleine Sanierung“ und „Umfassende
 energetische Sanierung“ sollen zu einer einheitlichen Sanierungsförderung („Sanierungspass“)
 zusammengelegt werden, voraussichtlich ab Sommer 2026. PV-Anlagen werden dort als ökologische Maßnahme
@@ -162,9 +175,9 @@ Gemeinden und Bauträger, Privatpersonen konnten ebenfalls einreichen.</p>
 Integrationskriterium zählte, ist damit derzeit ebenfalls nicht beantragbar. Ob der Ökofonds wieder eine
 PV-Ausschreibung öffnet, ist offen.</p>
 {A.cta("Gewerbliche PV in der Steiermark förderfähig planen",
-       "EBZ Energie plant Anlagen ab 20 kWp mit Parkplatzüberdachung oder Betriebsfläche förderfähig und "
-       "reicht den EAG-Antrag im Call ein. Ob der Ökofonds wieder eine PV-Ausschreibung führt, prüfen wir vor "
-       "dem Angebot.",
+       "EBZ Energie plant Anlagen ab 20 kWp mit Parkplatzüberdachung oder Betriebsfläche mit Speicher und "
+       "Energiemanagement. Ob der Ökofonds wieder eine PV-Ausschreibung führt und was die geplante "
+       "Systemförderung 2027 bringt, prüfen wir vor dem Angebot.",
        secondary=("referenzen", "Referenzen ansehen"))}
 """),
         ("Gemeindeförderungen und Öko-Sonderausgabenpauschale", "gemeinde", f"""
@@ -181,41 +194,44 @@ PV-Anlage zusätzliche Vorteile bringen. Die Voraussetzungen ändern sich regelm
 der Steuererklärung mit Steuerberatung oder Finanzamt.</p>
 """),
         ("Antragstellung Schritt für Schritt", "antrag", f"""
-<p>Der EAG-Antrag läuft vollständig digital über das Portal der EAG-Abwicklungsstelle. Fehler oder
-fehlende Unterlagen kosten Reihungsplätze oder führen zur Ablehnung. So gehen Sie vor:</p>
+<p>Der EAG-Antrag lief 2026 vollständig digital über das Portal der EAG-Abwicklungsstelle. Fehler oder
+fehlende Unterlagen kosteten Reihungsplätze oder führten zur Ablehnung. So lief der Antrag im Call 2026; seit
+dem Ende des letzten Calls am 22. Oktober 2026 ist er derzeit nicht möglich:</p>
 {A.steps([
     ("Vorbereitung vor dem Call",
      "Anlagengröße in kWp, Komponenten (idealerweise von der Made-in-Europe-White-List), Speichergröße, "
-     "Errichtungstermin und ein verbindliches Angebot des Fachbetriebs festlegen. Der Einspeisezählpunkt "
-     "muss registriert sein."),
+     "Errichtungstermin und ein verbindliches Angebot des Fachbetriebs wurden festgelegt, der "
+     "Einspeisezählpunkt musste registriert sein."),
     ("Ticket ziehen am ersten Call-Tag",
-     "Am 23. April, 16. Juni oder 8. Oktober 2026 öffnet das Ticketsystem. Wer schnell ist, sichert sich in "
-     "den Kategorien A und B die beste Reihung. Danach den vollständigen Antrag mit allen Nachweisen im "
-     "EAG-Portal einreichen."),
+     "Am 23. April, 16. Juni oder 8. Oktober 2026 öffnete das Ticketsystem. In den Kategorien A und B "
+     "sicherte die schnelle Ticketziehung die beste Reihung, danach folgte der vollständige Antrag im "
+     "EAG-Portal."),
     ("Errichtung und Inbetriebnahme",
-     "Nach der Förderzusage gilt eine Frist zur Inbetriebnahme. Montage durch einen befugten Fachbetrieb, "
+     "Nach der Förderzusage galt eine Frist zur Inbetriebnahme. Montage durch einen befugten Fachbetrieb, "
      "Rechnungen ausschließlich per Überweisung bezahlen."),
     ("Gemeindeförderung",
      "Nach Fertigstellung die Gemeindeförderung einreichen, sofern Ihre Wohnsitzgemeinde einen eigenen Zuschuss "
      "zahlt. Der Steirische Sanierungsbonus ist beendet (Antragsfenster war 1. April bis 15. Mai 2026)."),
     ("Endabrechnung beim Bund",
      "Innerhalb von sechs Monaten nach Ende der Inbetriebnahmefrist Endabrechnung mit Rechnungen, "
-     "Zahlungsbelegen und Fotos der Anlage einreichen. Erst dann wird der EAG-Zuschuss ausbezahlt."),
+     "Zahlungsbelegen und Fotos der Anlage einreichen. Erst dann wird der EAG-Zuschuss ausbezahlt. Das gilt "
+     "weiter für Projekte mit Zusage aus den Calls 2026."),
 ])}
-<h3>Voraussetzungen für die Förderung</h3>
+<h3>Voraussetzungen für die EAG-Förderung im Call 2026</h3>
 <ul>
   <li><b>Eigentumsnachweis:</b> Eigentümer der Liegenschaft oder schriftliche Einwilligung des Eigentümers.</li>
   <li><b>Stand der Technik:</b> Elektroinstallation und Erdungsanlage müssen dem Stand der Technik entsprechen.</li>
   <li><b>Netzanschluss:</b> Die Anlage muss an das öffentliche Stromnetz angeschlossen sein.</li>
-  <li><b>Kein vorzeitiger Baubeginn:</b> Zum Zeitpunkt der EAG-Antragstellung darf noch nicht mit der
+  <li><b>Kein vorzeitiger Baubeginn:</b> Zum Zeitpunkt der EAG-Antragstellung durfte noch nicht mit der
   Errichtung begonnen worden sein.</li>
-  <li><b>Speicher nur in Kombination:</b> Die EAG fördert Speicher ausschließlich mit einer Neuanlage
-  oder Erweiterung, eine reine Speichernachrüstung nicht.</li>
+  <li><b>Speicher nur in Kombination:</b> Die EAG förderte Speicher 2026 ausschließlich mit einer Neuanlage
+  oder Erweiterung, eine reine Speichernachrüstung nicht (für 2027 laut BMWET geplant, nicht beschlossen).</li>
   <li><b>Keine Barzahlung:</b> Alle Rechnungen per Überweisung.</li>
 </ul>
-{A.box_dark("Der häufigste Fehler",
-    "Wer die Anlage bestellt und errichtet, bevor der EAG-Antrag im Call eingereicht ist, verliert den "
-    "Bundeszuschuss. Ticketziehung, Antrag und Baubeginn gehören deshalb in einen gemeinsamen Zeitplan.")}
+{A.box_dark("Reihenfolge: 2026 und ab 2027 verschieden",
+    "Im Call 2026 verlor den Bundeszuschuss, wer die Anlage vor dem EAG-Antrag bestellte und errichtete. Für "
+    "die geplante Systemförderung 2027 soll der Antrag laut BMWET erst nach Installation und Rechnung kommen "
+    "(nicht beschlossen). Gemeindeanträge und Rechnungsdaten gehören trotzdem in einen gemeinsamen Zeitplan.")}
 """),
         ("Photovoltaik und Wärmepumpe: alle Förderpotenziale ausschöpfen", "waermepumpe", f"""
 <p>Wer die Energiekosten dauerhaft senken will, kombiniert die PV-Anlage mit einer
@@ -231,21 +247,23 @@ Ein {a('ems', 'Energiemanagementsystem')}, das PV, Speicher und Wärmepumpe steu
 und Energiefonds seit Juni 2026 zusätzlich (siehe {a('/ems-foerderung/', 'EMS-Förderung 2026')}).</p>
 """),
         ("Fazit: Der EAG-Zuschuss zählt, die Reihenfolge entscheidet", "fazit", f"""
-<p>Die Photovoltaik-Förderung in der Steiermark 2026 kommt ohne Landespauschale aus. Stand Oktober 2026
-bleibt der EAG-Investitionszuschuss: Für eine private Anlage mit 10 kWp und 10 kWh Speicher sind das
-3.000 Euro*, mit Made-in-Europe-Bonus entsprechend mehr. Der Steirische Sanierungsbonus ist beendet, der Ökofonds hat derzeit
+<p>Die Photovoltaik-Förderung in der Steiermark 2026 kam ohne Landespauschale aus. Die wichtigste Schiene
+war der EAG-Investitionszuschuss: Im Call 2026 gab es für eine private Anlage mit 10 kWp und 10 kWh Speicher
+3.000 Euro*, mit Made-in-Europe-Bonus entsprechend mehr. Der letzte Call endete am 22. Oktober 2026, derzeit
+ist der Bund nicht beantragbar. Der Steirische Sanierungsbonus ist beendet, der Ökofonds hat derzeit
 keine PV-Ausschreibung, manche Gemeinden zahlen einen eigenen Zuschuss. Einen Vergleich mit den anderen Bundesländern finden Sie im Ratgeber
 {a('/photovoltaik-landesfoerderungen/', 'PV-Landesförderungen in Österreich')}.</p>
-<p>Entscheidend ist die Reihenfolge: EAG-Antrag im Call vor Baubeginn, Gemeindeförderung nach
-Fertigstellung, Endabrechnung innerhalb der Frist. Wer das sauber plant, verschenkt kein Geld.</p>
-<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
-bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
-und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
-Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
-sind noch offen.</p>
-{A.cta("Jetzt Förderung in der Steiermark sichern",
-       "Wir planen Ihre Anlage förderfähig, ziehen das EAG-Ticket und übernehmen Gemeindeantrag und "
-       "Endabrechnung.",
+<p>Wer eine Zusage aus den Calls 2026 hat, hält die Inbetriebnahmefrist ein und reicht die Endabrechnung
+fristgerecht ein. Gemeindeförderungen werden nach Fertigstellung beantragt.</p>
+<p><b>Stand ab 23. Oktober 2026:</b> Der dritte Call lief vom 8. bis 22. Oktober 2026 und war der letzte im
+bisherigen System. Ab 2027 ist laut Eckpunkten des BMWET eine Systemförderung geplant, aber nicht beschlossen:
+Antrag nach Installation und Rechnung statt Fördercall, gefördert werden sollen Speicher mit intelligenter
+Steuerung, auch als Nachrüstung; Projekte mit intelligentem Speicher, die ab 1. November 2026 in Betrieb gehen,
+sollen 2027 beantragbar sein. Höhe und Technikkriterien sind noch offen. Wer jetzt plant, baut deshalb mit
+Speicher und Energiemanagement.</p>
+{A.cta("Jetzt in der Steiermark richtig planen",
+       "Wir planen Ihre Anlage mit Speicher und Energiemanagement für die geplante Systemförderung 2027 und "
+       "übernehmen Gemeindeantrag und Endabrechnung.",
        primary=("kontakt", "Kostenlose Beratung anfragen"), secondary=("photovoltaik", "Zur Photovoltaik-Leistungsseite"))}
 """),
     ],
@@ -255,13 +273,13 @@ sind noch offen.</p>
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie GmbH aus Villach plant und montiert Photovoltaikanlagen, Speicher und Wärmepumpen in "
                  "Kärnten und der Steiermark mit zertifizierten Fachkräften. Wir "
-                 "kennen die EAG-Termine, den Stand der steirischen Landesprogramme und die "
-                 "Gemeindeförderungen im Detail und übernehmen die komplette Förderabwicklung von der "
-                 "Ticketziehung bis zur Endabrechnung. Die Anlage gehört dabei ab dem ersten Tag Ihnen, auf "
+                 "kennen den Stand der Bundesförderung, der steirischen Landesprogramme und die "
+                 "Gemeindeförderungen im Detail und übernehmen die komplette Förderabwicklung bis zur "
+                 "Endabrechnung. Die Anlage gehört dabei ab dem ersten Tag Ihnen, auf "
                  "Wunsch mit Finanzierung ab 147 Euro im Monat inklusive Speicher."),
         "grid": [
-            ("Förderabwicklung komplett", "EAG-Ticket, Gemeindeförderung und Endabrechnung."),
-            ("Made-in-Europe geplant", "Komponenten von der White List für bis zu 20 % Bonus auf den Zuschuss."),
+            ("Förderabwicklung komplett", "Gemeindeförderung, EAG-Endabrechnung aus 2026 und Blick auf 2027."),
+            ("Zukunftsfähig geplant", "Speicher mit Energiemanagement und europäische Komponenten für die Systemförderung 2027."),
             ("300+ Projekte", "Referenzen in Kärnten und der Steiermark, typische Amortisation 4 bis 6 Jahre."),
             ("Alles aus einer Hand", "PV, Speicher, Wärmepumpe, Wallbox und Energiemanagement vom selben Team."),
         ],
@@ -269,40 +287,42 @@ sind noch offen.</p>
 
     "faq": [
         ("Wie hoch ist die Photovoltaik-Förderung in der Steiermark 2026 maximal?",
-         "Für eine private Anlage bis 10 kWp gibt es 150 Euro je kWp aus der EAG-Bundesförderung, also bis zu "
-         "1.500 Euro für die PV-Anlage, plus 150 Euro je kWh Speicher. Der Made-in-Europe-Bonus bringt bis zu "
-         "20 Prozent Zuschlag auf die PV-Anlage und 10 Prozent auf den Speicher. Für 10 kWp mit 10 kWh Speicher "
-         "sind das 3.000 Euro ohne Made-in-Europe-Bonus. Der Steirische Sanierungsbonus ist beendet, manche "
-         "Gemeinden zahlen einen eigenen Zuschuss."),
-        ("Wann sind die EAG-Fördercalls 2026?",
-         "Der erste Call läuft vom 23. April (17:00 Uhr) bis 11. Mai 2026, der zweite vom 16. bis 30. Juni 2026, "
-         "der dritte läuft vom 8. bis 22. Oktober 2026. Das Antragsfenster des Steirischen Sanierungsbonus (1. April "
-         "bis 15. Mai 2026) ist abgelaufen, die Sonderausschreibung beendet."),
+         "Im Call 2026 gab es für eine private Anlage bis 10 kWp 150 Euro je kWp aus der EAG-Bundesförderung plus "
+         "150 Euro je kWh Speicher, für 10 kWp mit 10 kWh 3.000 Euro ohne Made-in-Europe-Bonus. Der letzte Call "
+         "endete am 22. Oktober 2026, derzeit ist kein Bundeszuschuss beantragbar. Der Steirische Sanierungsbonus "
+         "ist beendet, manche Gemeinden zahlen einen eigenen Zuschuss."),
+        ("Wann waren die EAG-Fördercalls 2026?",
+         "Der erste Call lief vom 23. April (17:00 Uhr) bis 11. Mai 2026, der zweite vom 16. bis 30. Juni 2026, "
+         "der dritte und letzte vom 8. bis 22. Oktober 2026. Im bisherigen System gibt es keinen weiteren Call, ab "
+         "2027 ist laut BMWET eine Systemförderung geplant (nicht beschlossen). Das Antragsfenster des Steirischen "
+         "Sanierungsbonus (1. April bis 15. Mai 2026) ist ebenfalls abgelaufen."),
         ("Gibt es in der Steiermark eine PV-Pauschale des Landes?",
          "Nein. Anders als Kärnten mit 3.000 Euro zahlt das Land Steiermark 2026 keine direkte PV-Pauschale. Der "
          "Steirische Sanierungsbonus (maximal 15 Prozent der förderbaren Kosten) war eine befristete "
          "Sonderausschreibung und ist beendet, der Ökofonds hat derzeit keine PV-Ausschreibung."),
         ("Kann ich Bundes-, Landes- und Gemeindeförderung kombinieren?",
-         "EAG-Investitionszuschuss und Gemeindeförderung sind in der Steiermark grundsätzlich kombinierbar, sofern "
-         "die beihilferechtlichen Höchstgrenzen eingehalten werden. Eine Landesförderung für Photovoltaik ist "
-         "derzeit nicht offen: Der Sanierungsbonus ist beendet, der Ökofonds hat keine PV-Ausschreibung. Wichtig "
-         "bleibt die Reihenfolge: EAG-Antrag vor Baubeginn."),
-        ("Werden Stromspeicher 2026 in der Steiermark gefördert?",
-         "Ja, über die EAG mit 150 Euro je kWh bis maximal 50 kWh, allerdings nur in Kombination mit der "
-         "Neuerrichtung oder Erweiterung einer PV-Anlage. Eine reine Speichernachrüstung ist über die EAG nicht "
-         "förderfähig. Mit Made-in-Europe-Bonus kommen 10 Prozent Zuschlag auf den Speicher dazu."),
+         "Im Call 2026 waren EAG-Investitionszuschuss und Gemeindeförderung in der Steiermark grundsätzlich "
+         "kombinierbar, sofern die beihilferechtlichen Höchstgrenzen eingehalten wurden. Derzeit ist weder der Bund "
+         "noch eine Landesförderung für Photovoltaik offen: Der letzte EAG-Call endete am 22. Oktober 2026, der "
+         "Sanierungsbonus ist beendet, der Ökofonds hat keine PV-Ausschreibung."),
+        ("Werden Stromspeicher in der Steiermark gefördert?",
+         "Derzeit nicht: Im Call 2026 gab es über die EAG 150 Euro je kWh bis maximal 50 kWh, nur mit "
+         "Neuerrichtung oder Erweiterung einer PV-Anlage; der letzte Call endete am 22. Oktober 2026. Ab 2027 ist "
+         "laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung geplant, auch als Nachrüstung "
+         "(nicht beschlossen, Höhe offen)."),
         ("Was ist der Ökofonds Steiermark?",
          "Der Ökofonds ist ein Förderinstrument des Landes Steiermark. Derzeit führt er nur die Ausschreibungen "
          "Wasserstoffprojekte und Innovative Energiespeicher, eine PV-Ausschreibung gibt es nicht (Stand "
          "10. Oktober 2026). Bis Ende Mai 2026 förderte er PV-Anlagen ab 20 kWp mit Doppelnutzung mit bis zu "
          "30 Prozent der Investitionskosten, maximal 250.000 Euro je Antrag."),
-        ("Muss der EAG-Antrag vor Baubeginn gestellt werden?",
-         "Ja. Zum Zeitpunkt der Antragstellung darf mit der Errichtung noch nicht begonnen worden sein, und der "
-         "Antrag muss vor Inbetriebnahme im Call eingereicht sein. Wer vorher baut, verliert den Bundeszuschuss."),
+        ("Musste der EAG-Antrag vor Baubeginn gestellt werden?",
+         "Im Call 2026 ja: Zum Zeitpunkt der Antragstellung durfte mit der Errichtung noch nicht begonnen worden "
+         "sein, der Antrag musste vor Inbetriebnahme eingereicht sein. Für die geplante Systemförderung 2027 soll "
+         "der Antrag laut BMWET nach Installation und Rechnung kommen (nicht beschlossen)."),
         ("Wer hilft mir bei der Förderabwicklung in der Steiermark?",
          "EBZ Energie mit Sitz in Villach betreut Kunden in ganz Kärnten und der Steiermark und übernimmt die "
-         "komplette Förderabwicklung: Auswahl der Förderungen, Ticketziehung beim EAG-Call, "
-         "Gemeindeförderung und Endabrechnung."),
+         "komplette Förderabwicklung: Auswahl der Förderungen, Gemeindeförderung, Endabrechnung und die "
+         "Vorbereitung auf die geplante Systemförderung 2027."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant und montiert PV-Anlagen, "
@@ -325,7 +345,7 @@ sind noch offen.</p>
     ],
     "cta": {
         "h3": "Förderung in der Steiermark sichern",
-        "text": "Wir planen Ihre Anlage förderfähig und übernehmen EAG-Ticket, Gemeindeantrag und Endabrechnung.",
+        "text": "Wir planen Ihre Anlage mit Speicher für die Systemförderung 2027 und übernehmen Gemeindeantrag und Endabrechnung.",
         "primary": ("kontakt", "Kostenlose Beratung"),
     },
     "final_h2": "Ihre PV-Anlage in der Steiermark, förderoptimiert geplant",

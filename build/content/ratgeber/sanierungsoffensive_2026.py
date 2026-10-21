@@ -37,7 +37,7 @@ ARTICLE = {
         "Alternative: <b>Landesförderung</b> + Steuer",
     ],
     "date_published": "2026-03-10",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "waermepumpe",
     "hero_alt": "Luft-Wasser-Wärmepumpe an der Hauswand eines Einfamilienhauses",
 
@@ -121,8 +121,9 @@ Herbst 2026 nicht mehr verfügbar):</p>
 Liegt der GWP-Wert zwischen 150 und 750, etwa bei R32, reduziert sich die Förderung bei Monoblockgeräten
 bis 50 kW und Splitgeräten bis 12 kW um 20 %. Geräte mit einem GWP über 750 sind ausgeschlossen.</p>
 {A.box("Photovoltaik ist nicht Teil der Kesseltausch-Förderung. PV-Anlagen werden separat über den "
-       "EAG-Investitionszuschuss gefördert; der letzte Fördercall 2026 läuft bis 22. Oktober 2026, ab 2027 ist "
-       "laut BMWET eine Systemförderung mit Antrag nach der Installation geplant.")}
+       "EAG-Investitionszuschuss gefördert; der letzte Fördercall 2026 lief vom 8. bis 22. Oktober 2026, derzeit "
+       "ist kein Bundeszuschuss beantragbar. Ab 2027 ist laut BMWET eine Systemförderung mit Antrag nach der "
+       "Installation geplant, nicht beschlossen.")}
 """),
         ("Wer konnte den Kesseltausch 2026 beantragen?", "antragsberechtigt", f"""
 <p>Die Förderung richtete sich an Privatpersonen:</p>
@@ -153,7 +154,7 @@ ausschließlich Nettobeträge. Förderfähig sind Leistungen, die ab dem 3. Okto
 <ul>
   <li><b>Eigenleistungen:</b> In Eigenregie errichtete Anlagen sind vollständig ausgeschlossen.</li>
   <li><b>Gebrauchte Anlagen:</b> Nur Neuanschaffungen werden gefördert.</li>
-  <li><b>Photovoltaik:</b> eigenes Programm (EAG-Investitionszuschuss), siehe
+  <li><b>Photovoltaik:</b> eigenes Programm (EAG-Investitionszuschuss, letzter Call 2026 beendet), siehe
   {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}.</li>
 </ul>
 """),
@@ -239,10 +240,11 @@ fünf Jahre lang je 400 € Sonderausgaben, Voraussetzung ist eine ausbezahlte B
         ("Wärmepumpe und Photovoltaik: die Kombination, die unabhängig macht", "photovoltaik", f"""
 <p>Eine Wärmepumpe verbraucht rund 3.000 bis 5.000 kWh Strom pro Jahr. Mit einer passend
 dimensionierten {a('photovoltaik', 'PV-Anlage')} decken Sie einen Großteil dieses Bedarfs selbst und
-speisen den Überschuss ein oder speichern ihn. Photovoltaik wird über den EAG-Investitionszuschuss
-gefördert: Der letzte Call 2026 läuft bis 22. Oktober 2026, ab 2027 plant das BMWET eine Systemförderung
-für Speicher mit intelligenter Steuerung, beantragt nach der Installation. Wer beides gemeinsam plant,
-nutzt die laufenden Töpfe und spart dauerhaft. Wie das technisch zusammenspielt, zeigt der Ratgeber
+speisen den Überschuss ein oder speichern ihn. Photovoltaik wurde 2026 über den EAG-Investitionszuschuss
+gefördert: Der letzte Call lief vom 8. bis 22. Oktober 2026, derzeit ist kein Bundeszuschuss beantragbar. Ab
+2027 ist laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung geplant, beantragt nach der
+Installation (nicht beschlossen). Wer jetzt plant, baut daher mit Speicher und Energiemanagement, nutzt die
+laufenden Landestöpfe und spart dauerhaft. Wie das technisch zusammenspielt, zeigt der Ratgeber
 {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}; die Kosten des Gesamtpakets
 lassen sich über eine {a('finanzierung', 'Finanzierung')} verteilen, die Anlage gehört ab Tag 1 Ihnen.</p>
 """),

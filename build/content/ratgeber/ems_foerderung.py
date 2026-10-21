@@ -31,7 +31,7 @@ ARTICLE = {
         "Frist: <b>15. April 2027</b>",
     ],
     "date_published": "2026-09-05",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "ems",
     "hero_alt": "Energiemanagementsystem vernetzt Photovoltaik, Speicher, Wärmepumpe und Wallbox im Eigenheim",
 
@@ -268,7 +268,9 @@ registrieren, dann installieren.</p>
          "regionalen Energiegemeinschaft. Ein Wechsel der Option ist erlaubt und muss gemeldet werden."),
         ("Kann ich die EMS-Förderung mit der PV-Förderung kombinieren?",
          "Für das Energiemanagementsystem selbst ist keine zweite Förderung möglich. PV-Anlage, Speicher oder "
-         "Wärmepumpe können aber weiterhin über Bund oder Land gefördert werden. Voraussetzung: getrennte "
+         "Wärmepumpe können aber über Landesförderungen gefördert werden, etwa in Kärnten; der EAG-Bundeszuschuss "
+         "für PV und Speicher ist seit dem Ende des letzten Calls am 22. Oktober 2026 derzeit nicht beantragbar, "
+         "ab 2027 ist laut BMWET eine Systemförderung geplant (nicht beschlossen). Voraussetzung: getrennte "
          "Rechnungen beziehungsweise eigene Positionen für das EMS; bei integrierten EMS-Komponenten zählen nur "
          "die ausgewiesenen Mehrkosten."),
         ("Kann ich zuerst kaufen und danach die Förderung beantragen?",

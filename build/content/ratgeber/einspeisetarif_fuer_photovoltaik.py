@@ -37,7 +37,7 @@ ARTICLE = {
         "Steuerfrei: <b>bis 12.500 kWh</b> pro Jahr",
     ],
     "date_published": "2025-06-20",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Hausdach bei Sonnenschein: Einspeisetarif für überschüssigen Solarstrom",
 
@@ -214,8 +214,9 @@ private Dachanlagen diese Grenzen praktisch nie überschreiten, bleiben die Erl�
 steuerfrei. Wer mehr einspeist, versteuert nur die Menge über 12.500 kWh, der Wert wirkt als Freibetrag.</p>
 <p>Bei der Umsatzsteuer hat sich die Lage geändert: Der Nullsteuersatz auf Anschaffung und Installation von
 PV-Anlagen bis 35 kWp ist mit 1. April 2025 ausgelaufen, seitdem gilt wieder der reguläre Satz von 20 Prozent.
-Als Ausgleich ist die EAG-Investitionsförderung 2026 wieder voll aktiv (150 Euro je kWp bis 10 kWp, 150 Euro
-je kWh Speicher), siehe {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.
+Als Ausgleich war die EAG-Investitionsförderung 2026 wieder voll aktiv (150 Euro je kWp bis 10 kWp, 150 Euro
+je kWh Speicher); der letzte Call endete am 22. Oktober 2026, derzeit ist kein Bundeszuschuss beantragbar,
+ab 2027 ist laut BMWET eine Systemförderung geplant (nicht beschlossen), siehe {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.
 Unternehmerisch tätige Betreiber können weiterhin die Vorsteuer abziehen.</p>
 {A.box("Dieser Abschnitt ersetzt keine Steuerberatung. Bei Anlagen über 35 kWp, bei gewerblicher Nutzung "
        "oder bei mehreren Zählpunkten klären Sie die Details mit Ihrer Steuerberatung.", label="Hinweis:")}
@@ -228,10 +229,11 @@ Unternehmerisch tätige Betreiber können weiterhin die Vorsteuer abziehen.</p>
     ("Netzzugang sichern",
      "Der Netzzutrittsantrag beim Netzbetreiber liefert nach der technischen Prüfung die Zählpunktnummer, "
      "die für Förderung und Einspeisevertrag nötig ist."),
-    ("Förderung vor Inbetriebnahme beantragen",
-     "Mit der Zählpunktnummer stellen Sie den EAG-Antrag im Fördercall (2026: 23. April bis 11. Mai, "
-     "16. bis 30. Juni, 8. bis 22. Oktober), zwingend vor der Inbetriebnahme. Ab 2027 soll laut BMWET eine "
-     "Systemförderung mit Antrag nach der Installation folgen."),
+    ("Förderung klären",
+     "Im Call 2026 wurde der EAG-Antrag mit der Zählpunktnummer vor der Inbetriebnahme gestellt (23. April "
+     "bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober 2026); derzeit ist kein Bundeszuschuss beantragbar. Ab "
+     "2027 soll laut BMWET eine Systemförderung mit Antrag nach der Installation folgen (nicht beschlossen). "
+     "Landesförderungen wie die Kärntner Pauschale werden nach Fertigstellung beantragt."),
     ("Abnehmer wählen",
      "Anmeldung bei der OeMAG zum Marktpreis, Vertrag mit einem Versorger oder Beitritt zu einer "
      "Energiegemeinschaft. Ein Wechsel ist nach Ablauf der Bindung jederzeit möglich."),
@@ -263,7 +265,7 @@ Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
                  "Vergütungsmodell zu Ihrem Verbrauch passt."),
         "grid": [
             ("Eigenverbrauch zuerst", "Speicher, Wärmepumpe und Wallbox so geplant, dass wenig Überschuss bleibt."),
-            ("Netzzutritt und Förderung", "Zählpunkt, EAG-Antrag im Call und Fertigstellungsmeldung aus einer Hand."),
+            ("Netzzutritt und Förderung", "Zählpunkt, Landesförderantrag und Fertigstellungsmeldung aus einer Hand."),
             ("Energiegemeinschaft", "Beitritt oder Gründung, Abrechnung über Plattform, österreichweit möglich."),
             ("Ehrliche Zahlen", "Tarifvergleich mit Ihrer tatsächlichen Einspeisemenge, keine Lockangebote."),
         ],

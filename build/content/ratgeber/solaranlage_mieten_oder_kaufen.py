@@ -5,6 +5,8 @@ Zusammengeführt aus drei alten WordPress-Beiträgen:
 (alle Jänner 2026). Die alten Beiträge bewarben ein Miet- bzw. Ratenmodell von EBZ;
 EBZ bietet heute Kauf und Finanzierung (Eigentum ab Tag 1). Mietmodelle werden hier
 neutral als Marktangebot erklärt, nicht als EBZ-Angebot.
+Stand ab 23.10.2026: Bundesfoerderabzug in den Cloover-Beispielen als "im Call 2026" gekennzeichnet
+(letzter EAG-Call lief 8. bis 22.10.2026, derzeit kein Bundeszuschuss).
 """
 
 import os
@@ -40,7 +42,7 @@ ARTICLE = {
         "Amortisation: <b>4 bis 6 Jahre</b>",
     ],
     "date_published": "2026-01-15",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach: Vergleich von Miete, Kauf und Finanzierung",
 
@@ -138,8 +140,8 @@ und sich um nichts kümmern möchten. Dafür zahlen sie einen deutlichen Aufprei
         ("Kauf: Eigentum ab dem ersten Tag und die schnellste Amortisation", "kauf", f"""
 <p>Beim Kauf investieren Sie einmal und profitieren über die Lebensdauer der Anlage von 25 bis
 30 Jahren. Eine {a('/photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/', '10-kWp-Komplettanlage mit Speicher und Montage')}
-kostet bei EBZ Energie rund 15.000 bis 22.000 Euro vor Förderung. Welche Landes- und Bundesmittel
-2026 abgehen, lesen Sie im Ratgeber
+kostet bei EBZ Energie rund 15.000 bis 22.000 Euro vor Förderung. Welche Landesmittel aktuell abgehen
+(der letzte Bundescall 2026 endete am 22. Oktober 2026), lesen Sie im Ratgeber
 {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
 <p>Der wirtschaftliche Hebel ist beim Kauf am größten: Die Anlage senkt Ihre Stromkosten um bis zu
 85 Prozent, die Einspeisevergütung landet auf Ihrem Konto, und die Investition ist bei unseren Kunden
@@ -205,7 +207,7 @@ Zahlungsströme unterscheiden sich.</p>
     ("Finanzierung: ab 164 Euro pro Monat bei 25.000 Euro, Eigentum ab Tag 1",
      " Keine Einmalzahlung, sondern eine fixe Monatsrate: Im repräsentativen Beispiel unseres "
      "Finanzierungspartners kostet eine 10-kWp-Anlage mit 10-kWh-Speicher (25.000 Euro, abzüglich 3.000 Euro "
-     "Bundesförderung) über 25 Jahre ab 164 Euro im Monat, mit Reststrom rund 185 Euro. Zum Vergleich: "
+     "Bundesförderung im Call 2026) über 25 Jahre ab 164 Euro im Monat, mit Reststrom rund 185 Euro. Zum Vergleich: "
      "Ohne PV zahlt ein 4-Personen-Haushalt mit 7.000 kWh heute rund 163 Euro Strom im Monat. Der "
      "Unterschied zur Miete: Die Rate endet mit der Laufzeit, die Anlage gehört von Anfang an Ihnen, die "
      "Förderung fließt auf Ihr Konto."),
@@ -241,7 +243,7 @@ Einspeisevergütung geht auf Ihr Konto, und beim Hausverkauf gehört die Anlage 
     ["", "Kleine Anlage", "Anlage mit Speicher"],
     [
         ["Finanzierungsbetrag", "15.000 € (Beispiel 8 kWp)", "25.000 € (10 kWp + 10 kWh)"],
-        ["Abzüglich Bundesförderung (Beispiel)", "900 €", "3.000 €"],
+        ["Abzüglich Bundesförderung (Beispiel, Call 2026)", "900 €", "3.000 €"],
         ["Laufzeit", "25 Jahre", "25 Jahre"],
         ["Monatliche Rate", "ab 102 €*", "ab 164 €*"],
         ["Rate plus Reststrom (rund 25 €)", "rund 127 €*", "rund 185 €*"],
@@ -249,8 +251,9 @@ Einspeisevergütung geht auf Ihr Konto, und beim Hausverkauf gehört die Anlage 
     ],
     hl_cols=(1, 2),
 )}
-<p><small>*Repräsentative Beispiele aus der Finanzierungsbeilage, Stand September 2026. Rate abhängig von
-Angebot und Laufzeit, Förderhöhe und Zusage variieren. Alle Angaben freibleibend, Finanzierung
+<p><small>*Repräsentative Beispiele aus der Finanzierungsbeilage, Stand September 2026. Der Abzug der
+Bundesförderung bezieht sich auf den Call 2026; der letzte Call endete am 22. Oktober 2026, derzeit ist kein
+Bundeszuschuss beantragbar. Rate abhängig von Angebot und Laufzeit, Förderhöhe und Zusage variieren. Alle Angaben freibleibend, Finanzierung
 vorbehaltlich Bonitätsprüfung.</small></p>
 <h3>So läuft die Finanzierung bei EBZ Energie ab</h3>
 {A.steps([
@@ -263,7 +266,7 @@ vorbehaltlich Bonitätsprüfung.</small></p>
      " Sie stellen die Anfrage online bei unserem Partner Cloover, die Zusage kommt meist in unter zwei "
      "Minuten, ohne Banktermin. Laufzeit (bis 25 Jahre) und Rate legen wir gemeinsam fest."),
     ("Montage und Inbetriebnahme",
-     " Unser Team montiert die Anlage und meldet sie beim Netzbetreiber an. Ab jetzt gehört sie Ihnen."),
+     " Zertifizierte Fachkräfte montieren die Anlage, wir melden sie beim Netzbetreiber an. Ab jetzt gehört sie Ihnen."),
     ("Förderung auf Ihren Namen",
      " Wir bereiten die Anträge vor, die Auszahlung geht direkt an Sie."),
 ])}

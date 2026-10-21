@@ -233,9 +233,10 @@ ORT = {
     "faq": [
         ("Was kostet eine Photovoltaikanlage in Leibnitz mit Speicher?",
          "Eine Anlage mit rund 10 kWp und Speicher kostet typischerweise rund 15.000 bis 22.000 Euro vor Förderung, "
-         "inklusive Montage, Netzanmeldung und Inbetriebnahme (EBZ-Richtpreis, Stand Oktober 2026). Der Bund zahlt 2026 "
-         "einen Investitionszuschuss von 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, eine Landespauschale "
-         "für private PV gibt es in der Steiermark nicht. Den Fixpreis für Ihr Haus in Leibnitz nennen wir nach dem "
+         "inklusive Montage, Netzanmeldung und Inbetriebnahme (EBZ-Richtpreis, Stand Oktober 2026). Der "
+         "Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen, eine Landespauschale "
+         "für private PV gibt es in der Steiermark nicht; ab 2027 plant der Bund laut BMWET eine Systemförderung für "
+         "Speicher mit intelligenter Steuerung. Den Fixpreis für Ihr Haus in Leibnitz nennen wir nach dem "
          "Termin vor Ort, zusammen mit dem Projektbericht mit 3D-Belegplan und Statikreport."),
         ("Wie viel Strom liefert eine PV-Anlage in Leibnitz pro kWp?",
          "Das Solarwerkzeug PVGIS der EU-Kommission rechnet für Leibnitz mit rund 1.200 kWh je kWp und Jahr auf einem "
@@ -270,7 +271,7 @@ ORT = {
          "Die Stadtgemeinde Leibnitz führt Antragsformulare für eine Direktförderung von thermischen Solaranlagen und "
          "von Balkonkraftwerken, ohne Rechtsanspruch und nach Maßgabe des Budgets. Eine eigene Stadtförderung für "
          "Photovoltaik-Dachanlagen, Speicher oder Wärmepumpe haben wir in den Unterlagen der Stadt nicht gefunden "
-         "(Stand Oktober 2026). Für PV und Speicher gilt der Investitionszuschuss des Bundes. Für neue Wärmepumpen "
+         "(Stand Oktober 2026). Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen. Für neue Wärmepumpen "
          "nehmen Land Steiermark und Bund derzeit keine Förderanträge an. Wir fragen vor dem Angebot bei Ihrer "
          "Gemeinde nach."),
         ("Kommt EBZ Energie aus Villach wirklich bis nach Leibnitz?",

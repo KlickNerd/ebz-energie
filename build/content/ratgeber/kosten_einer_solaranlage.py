@@ -7,6 +7,8 @@ Preise auf den freigegebenen EBZ-Richtpreis (10 kWp mit Speicher rund 15.000 bis
 22.000 Euro vor Förderung) und die EAG-Förderung 2026 abgestimmt. Abweichungen
 der Quellen (24.000 Euro, 20.000 bis 30.000 Euro, Nullsteuersatz, Amortisation
 13,5 Jahre) sind im Migrationsbericht dokumentiert.
+Stand ab 23.10.2026: letzter EAG-Call lief 8. bis 22.10.2026, Bundeszuschuss derzeit nicht beantragbar;
+Rechenbeispiele mit Bund als "im Call 2026" gekennzeichnet, aktuelle Variante nur Kaernten 3.000 EUR.
 """
 
 import os
@@ -28,15 +30,15 @@ ARTICLE = {
     "h1": "Kosten einer Solaranlage 2026: 10 kWp mit Speicher ab rund 15.000 Euro",
     "lead": ("Eine 10-kWp-Anlage kostet ohne Speicher rund 10.000 bis 15.000 Euro, mit Speicher 15.000 bis "
              "22.000 Euro vor Förderung. Dieser Preis-Guide zeigt, woraus sich die Summe zusammensetzt, "
-             "was Bund und Land abziehen und wann sich die Anlage bezahlt gemacht hat."),
+             "was das Land aktuell und der Bund im Call 2026 abzog und wann sich die Anlage bezahlt gemacht hat."),
     "chips": [
         "10 kWp ohne Speicher: <b>10.000 bis 15.000 €</b>",
         "10 kWp mit Speicher: <b>15.000 bis 22.000 €</b>",
-        "Förderung 2026: <b>150 €/kWp + 150 €/kWh</b>",
+        "Bund im Call 2026: <b>150 €/kWp + 150 €/kWh</b>, beendet",
         "Finanzierung: <b>ab 147 €/Monat</b>",
     ],
     "date_published": "2025-12-17",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach: Kosten einer Solaranlage mit Speicher",
 
@@ -46,12 +48,14 @@ ARTICLE = {
         "Inbetriebnahme.",
         "Der Speicher kostet je nach Kapazität 5.000 bis 9.000 Euro Aufpreis und hebt den Eigenverbrauch "
         "von etwa 30 Prozent auf 60 bis 80 Prozent.",
-        "Die Bundesförderung (EAG) bringt 2026 für 10 kWp mit 10 kWh Speicher rund 3.000 Euro plus "
-        "Made-in-Europe-Bonus, in Kärnten kommen 3.000 Euro Landespauschale dazu.",
+        "Die Bundesförderung (EAG) brachte im Call 2026 für 10 kWp mit 10 kWh Speicher rund 3.000 Euro plus "
+        "Made-in-Europe-Bonus; der letzte Call endete am 22. Oktober 2026, derzeit ist der Bund nicht "
+        "beantragbar. In Kärnten gibt es aktuell 3.000 Euro Landespauschale für PV mit Speicher.",
         "Laufende Kosten liegen bei 1 bis 2 Prozent der Anschaffung pro Jahr, die Module halten 25 bis "
         "30 Jahre, der Wechselrichter rund 15 Jahre.",
-        "Amortisation im Rechenbeispiel: rund 9 Jahre für einen Standardhaushalt, rund 6 Jahre mit "
-        "Wärmepumpe und E-Auto. In EBZ-Projekten mit hohem Eigenverbrauch typisch 4 bis 6 Jahre.",
+        "Amortisation im Rechenbeispiel (Förderung im Call 2026): rund 9 Jahre für einen Standardhaushalt, rund "
+        "6 Jahre mit Wärmepumpe und E-Auto; nur mit der Kärntner Pauschale rund 11 bzw. 8 Jahre. In EBZ-Projekten "
+        "mit hohem Eigenverbrauch typisch 4 bis 6 Jahre.",
     ],
     "kpis": [
         ("15.000 bis 22.000 €", "10 kWp mit Speicher, vor Förderung"),
@@ -64,8 +68,9 @@ ARTICLE = {
         ("Was kostet eine Solaranlage 2026? Die Richtpreise", "richtpreise", f"""
 <p><b>Eine Photovoltaikanlage mit 10 kWp und Speicher kostet in Österreich rund 15.000 bis 22.000 Euro vor
 Förderung</b> (EBZ-Richtpreis, Stand Oktober 2026, inklusive 20 Prozent Umsatzsteuer). Der
-EAG-Investitionszuschuss beträgt 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher, zusammen bis zu
-3.000 Euro (Quelle: EAG-Abwicklungsstelle; letzter Fördercall 2026 bis 22. Oktober). Was EBZ Energie für
+EAG-Investitionszuschuss betrug im Call 2026 150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher,
+zusammen bis zu 3.000 Euro (Quelle: EAG-Abwicklungsstelle). Der letzte Fördercall lief vom 8. bis 22. Oktober
+2026, derzeit ist kein Bundeszuschuss beantragbar; in Kärnten gibt es 3.000 Euro Landespauschale. Was EBZ Energie für
 diesen Preis liefert, steht auf der Leistungsseite {a('photovoltaik', 'Photovoltaik')}.</p>
 <p>Die Kosten einer Solaranlage hängen von der Leistung in Kilowatt-Peak (kWp), vom Speicher und vom
 Montageaufwand ab. Für ein Einfamilienhaus hat sich eine Anlagengröße von rund 10 kWp als Standard
@@ -123,36 +128,42 @@ wer eine Wärmepumpe betreibt oder ein E-Auto lädt, greift eher zu 10 kWh. Als 
 Verhältnis 1:1, also 10 kWh Speicher zu 10 kWp Leistung. Ein zu großer Speicher wird im Winter nie
 voll, ein zu kleiner ist im Sommer schnell am Limit. Moderne Systeme auf Lithium-Eisenphosphat-Basis
 sind modular und lassen sich später erweitern.</p>
-{A.box("Der Bund fördert Speicher 2026 nur gemeinsam mit einer PV-Neuerrichtung oder -Erweiterung "
-       "(150 Euro je kWh). Wer den Speicher erst später nachrüstet, verliert diese Förderung. Details im "
+{A.box("Im Call 2026 förderte der Bund Speicher nur gemeinsam mit einer PV-Neuerrichtung oder -Erweiterung "
+       "(150 Euro je kWh); der letzte Call endete am 22. Oktober 2026. Für 2027 ist laut BMWET eine "
+       "Systemförderung für Speicher mit intelligenter Steuerung geplant, auch als Nachrüstung (nicht "
+       "beschlossen, Höhe offen). Wer jetzt plant, baut daher sinnvoll gleich mit Speicher und "
+       "Energiemanagement; Kärnten zahlt die 3.000 Euro ohnehin nur mit Speicher. Details im "
        "Ratgeber " + a('/pv-speicher-nachruesten/', 'PV-Speicher nachrüsten') + ".")}
 """),
         ("Förderung abziehen: Was 2026 übrig bleibt", "foerderung", f"""
 <p>Seit 1. April 2025 gilt für Photovoltaik wieder der reguläre Umsatzsteuersatz von 20 Prozent, der
-Nullsteuersatz ist ausgelaufen. Dafür ist die Investitionsförderung des Bundes (EAG) 2026 wieder voll
-aktiv: 150 Euro je kWp bis 10 kWp, 140 Euro je kWp bis 20 kWp und 150 Euro je kWh Speicherkapazität.
-Für Module, Wechselrichter und Speicher von der White List der EAG-Abwicklungsstelle gibt es zusätzlich
-je 10 Prozent Made-in-Europe-Bonus auf den jeweiligen Zuschuss.</p>
+Nullsteuersatz ist ausgelaufen. Dafür war die Investitionsförderung des Bundes (EAG) 2026 wieder voll
+aktiv: Im Call 2026 gab es 150 Euro je kWp bis 10 kWp, 140 Euro je kWp bis 20 kWp und 150 Euro je kWh
+Speicherkapazität, für Module, Wechselrichter und Speicher von der White List der EAG-Abwicklungsstelle
+zusätzlich je 10 Prozent Made-in-Europe-Bonus. Der dritte und letzte Call lief vom 8. bis 22. Oktober 2026;
+neue Anlagen bekommen derzeit keinen Bundeszuschuss. Ab 2027 ist laut BMWET eine Systemförderung geplant,
+aber nicht beschlossen, die Höhe ist offen.</p>
 {A.table(
     ["Förderung für 10 kWp + 10 kWh", "Rechnung", "Betrag*"],
     [
-        ["EAG-Bund, PV-Anlage", "10 kWp × 150 €", "1.500 €"],
-        ["EAG-Bund, Speicher", "10 kWh × 150 €", "1.500 €"],
-        ["Made-in-Europe-Bonus", "10 % je Komponente auf den Zuschuss", "rund 450 €"],
-        ["Landespauschale Kärnten", "PV ab 5 kWp mit Speicher ab 5 kWh", "3.000 €"],
-        ["Summe in Kärnten", "", "rund 6.450 €"],
+        ["EAG-Bund, PV-Anlage, im Call 2026", "10 kWp × 150 €", "1.500 €"],
+        ["EAG-Bund, Speicher, im Call 2026", "10 kWh × 150 €", "1.500 €"],
+        ["Made-in-Europe-Bonus, im Call 2026", "10 % je Komponente auf den Zuschuss", "rund 450 €"],
+        ["Landespauschale Kärnten", "PV ab 5 kWp mit Speicher ab 5 kWh, 2. Landes-Call bis 31. Dezember 2026", "3.000 €"],
+        ["Summe in Kärnten im Call 2026", "", "rund 6.450 €"],
+        ["Aktuell in Kärnten (Bund derzeit nicht beantragbar)", "nur Landespauschale", "3.000 €"],
     ],
     hl_cols=(2,),
 )}
 <p>In der Steiermark ist derzeit keine PV-Landesförderung offen (Sanierungsbonus beendet, Ökofonds ohne
 PV-Ausschreibung, Stand 10. Oktober 2026); manche Gemeinden zahlen einen eigenen Zuschuss. Die EAG-Fördercalls 2026
-laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und ab 8. Oktober, der Antrag muss vor der
+liefen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und vom 8. bis 22. Oktober, der Antrag musste vor der
 Inbetriebnahme gestellt werden. Alle Details finden Sie in den Ratgebern
 {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')},
 {a('/photovoltaik-foerderung-kaernten/', 'Photovoltaik-Förderung Kärnten')} und
 {a('/foerderung-fuer-pv-speicher/', 'Förderung für PV-Speicher')}.</p>
-<p><small>*Beispielkonditionen nach EAG-Investitionszuschüsseverordnung 2026 und Kärntner Landesrichtlinie,
-Stand Juni 2026. Der Made-in-Europe-Bonus setzt Komponenten von der White List voraus.</small></p>
+<p><small>*Beispielkonditionen nach EAG-Investitionszuschüsseverordnung 2026 (Call 2026, beendet) und Kärntner
+Landesrichtlinie, Stand Oktober 2026. Der Made-in-Europe-Bonus setzte Komponenten von der White List voraus.</small></p>
 {A.cta("Was kostet Ihr Dach konkret?",
        "Wir berechnen Preis, Förderung und Ersparnis für Ihr Haus und liefern den Projektbericht mit "
        "3D-Belegplan und Statikreport, kostenlos und unverbindlich.",
@@ -160,17 +171,20 @@ Stand Juni 2026. Der Made-in-Europe-Bonus setzt Komponenten von der White List v
 """),
         ("Rechenbeispiel: Wann hat sich die Anlage bezahlt gemacht?", "rechenbeispiel", f"""
 <p>Nehmen wir eine 10-kWp-Anlage mit 10 kWh Speicher in Kärnten für 18.500 Euro* vor Förderung. Nach
-Abzug von 6.450 Euro Bundes- und Landesförderung bleiben 12.050 Euro Investition. Die Anlage erzeugt
+Abzug von 6.450 Euro Bundes- und Landesförderung im Call 2026 blieben 12.050 Euro Investition. Die Anlage erzeugt
 rund 10.000 kWh pro Jahr. Wir rechnen konservativ mit 32 Cent je bezogener Kilowattstunde, 6 Cent Einspeisevergütung
 (OeMAG-Marktpreis Juli 2026: 6,146 Cent, September 2026: 10,168 Cent) und 100 Euro Betriebskosten pro Jahr.</p>
 {A.table(
-    ["Haushalt", "Verbrauch", "Selbst genutzt", "Ersparnis + Einspeisung", "Amortisation*"],
+    ["Haushalt", "Verbrauch", "Selbst genutzt", "Ersparnis + Einspeisung", "Amortisation im Call 2026*"],
     [
         ["Standard (4 Personen)", "4.500 kWh", "3.400 kWh (75 % Autarkie)", "1.088 € + 396 € = 1.484 €", "rund 9 Jahre"],
         ["Mit Wärmepumpe und E-Auto", "8.000 kWh", "5.600 kWh (70 % Autarkie)", "1.792 € + 264 € = 2.056 €", "rund 6 Jahre"],
     ],
     hl_cols=(4,),
 )}
+<p>Mit der aktuellen Förderlage (nur Kärntner Landespauschale 3.000 Euro, Bund derzeit nicht beantragbar)
+bleiben 15.500 Euro Investition; die Amortisation verlängert sich damit auf rund 11 Jahre im
+Standardhaushalt und rund 8 Jahre mit Wärmepumpe und E-Auto*.</p>
 <p>Der Unterschied zeigt den wichtigsten Hebel: Je mehr Solarstrom Sie selbst verbrauchen, desto schneller
 rechnet sich die Anlage. Wärmepumpe, Wallbox und ein {a('ems', 'Energiemanagementsystem')}, das
 Verbraucher in die Sonnenstunden verschiebt, verkürzen die Amortisation deutlich. Steigende Strompreise
@@ -232,8 +246,9 @@ bisherigen Stromrechnung liegt, sparen Sie ab dem ersten Monat.</p>
 """),
         ("Fazit: Solide Investition mit klarer Rechnung", "fazit", f"""
 <p>Die Kosten einer Solaranlage lassen sich 2026 gut eingrenzen: 10.000 bis 15.000 Euro für 10 kWp ohne
-Speicher, 15.000 bis 22.000 Euro mit Speicher, abzüglich 3.000 bis 6.500 Euro Förderung je nach
-Bundesland. Entscheidend für die Wirtschaftlichkeit ist nicht der niedrigste Preis, sondern hoher
+Speicher, 15.000 bis 22.000 Euro mit Speicher. Im Call 2026 kamen 3.000 bis 6.500 Euro Förderung je nach
+Bundesland herunter; seit dem Ende des letzten Bundescalls am 22. Oktober 2026 bleibt aktuell in Kärnten die
+Landespauschale von 3.000 Euro, ab 2027 ist laut BMWET eine Systemförderung geplant (nicht beschlossen). Entscheidend für die Wirtschaftlichkeit ist nicht der niedrigste Preis, sondern hoher
 Eigenverbrauch, solide Montage und Komponenten, die 25 Jahre und länger halten. Wer beides richtig
 plant, senkt seine Stromkosten um bis zu 85 Prozent und hat die Anlage in wenigen Jahren wieder
 eingespielt. Was genau eine Komplettanlage umfasst, lesen Sie im Ratgeber
@@ -250,7 +265,7 @@ eingespielt. Was genau eine Komplettanlage umfasst, lesen Sie im Ratgeber
                  "Statikreport, wir übernehmen Netzzutritt, Förderanträge und Inbetriebnahme."),
         "grid": [
             ("Transparenter Komplettpreis", "Module, Wechselrichter, Speicher, Montage, Elektro und Anmeldung in einem Angebot."),
-            ("Förderung inklusive", "EAG-Antrag zum richtigen Zeitpunkt, Landes- und Gemeindeförderung geprüft."),
+            ("Förderung inklusive", "Landes- und Gemeindeförderung geprüft, Planung mit Blick auf die Systemförderung 2027."),
             ("Garantie", "Bis zu 30 Jahre Leistungsgarantie, mindestens 10 Jahre Produktgarantie."),
             ("Finanzierung", "Ab 147 Euro im Monat inklusive Speicher, Anlage ab Tag 1 Ihr Eigentum."),
         ],
@@ -266,18 +281,20 @@ eingespielt. Was genau eine Komplettanlage umfasst, lesen Sie im Ratgeber
          "rund 30 auf 60 bis 80 Prozent, weil der Mittagsstrom abends genutzt wird. Da Netzstrom rund 32 Cent "
          "kostet und die Einspeisung nur 5 bis 10 Cent bringt, lohnt sich der Speicher in den meisten "
          "Haushalten, besonders mit Wärmepumpe oder E-Auto."),
-        ("Wie viel Förderung gibt es 2026 für eine 10-kWp-Anlage mit Speicher?",
-         "Der Bund zahlt 150 Euro je kWp und 150 Euro je kWh Speicher, für 10 kWp mit 10 kWh also 3.000 Euro, "
-         "plus rund 450 Euro Made-in-Europe-Bonus bei Komponenten von der White List. In Kärnten kommen 3.000 "
-         "Euro Landespauschale dazu, in Summe rund 6.450 Euro. Der EAG-Antrag muss vor Inbetriebnahme gestellt "
-         "werden."),
+        ("Wie viel Förderung gibt es für eine 10-kWp-Anlage mit Speicher?",
+         "Im Call 2026 zahlte der Bund 150 Euro je kWp und 150 Euro je kWh Speicher, für 10 kWp mit 10 kWh also "
+         "3.000 Euro plus rund 450 Euro Made-in-Europe-Bonus, in Kärnten mit Landespauschale rund 6.450 Euro. Der "
+         "letzte Call endete am 22. Oktober 2026, der Bund ist derzeit nicht beantragbar. Aktuell gibt es in "
+         "Kärnten 3.000 Euro Landespauschale, ab 2027 ist laut BMWET eine Systemförderung geplant (nicht beschlossen)."),
         ("Gilt der Nullsteuersatz für Photovoltaik noch?",
          "Nein. Der Umsatzsteuersatz von 0 Prozent auf PV-Anlagen bis 35 kWp ist mit 1. April 2025 ausgelaufen, "
-         "seitdem gilt wieder 20 Prozent. Als Ausgleich wurde die EAG-Investitionsförderung 2026 wieder voll "
-         "aktiviert. Für Privatkunden ist die Umsatzsteuer im Angebotspreis enthalten."),
+         "seitdem gilt wieder 20 Prozent. Als Ausgleich wurde 2026 die EAG-Investitionsförderung wieder voll "
+         "aktiviert, ihr letzter Call endete am 22. Oktober 2026. Für Privatkunden ist die Umsatzsteuer im "
+         "Angebotspreis enthalten."),
         ("Wie lange dauert es, bis sich die Solaranlage amortisiert hat?",
-         "Im Rechenbeispiel mit 12.050 Euro nach Förderung braucht ein Standardhaushalt rund 9 Jahre, ein "
-         "Haushalt mit Wärmepumpe und E-Auto rund 6 Jahre. In EBZ-Projekten mit hohem Eigenverbrauch liegt "
+         "Im Rechenbeispiel mit 12.050 Euro nach Förderung im Call 2026 braucht ein Standardhaushalt rund 9 Jahre, "
+         "ein Haushalt mit Wärmepumpe und E-Auto rund 6 Jahre; nur mit der aktuellen Kärntner Pauschale (15.500 "
+         "Euro Investition) rund 11 bzw. 8 Jahre. In EBZ-Projekten mit hohem Eigenverbrauch liegt "
          "die Amortisation typischerweise bei 4 bis 6 Jahren. Danach liefern die Module noch rund 20 Jahre "
          "nahezu kostenlosen Strom."),
         ("Welche laufenden Kosten kommen nach der Installation auf mich zu?",
@@ -287,8 +304,8 @@ eingespielt. Was genau eine Komplettanlage umfasst, lesen Sie im Ratgeber
         ("Sind die Preise für PV-Anlagen gesunken?",
          "Ja. Nach den Lieferengpässen und Preisspitzen der Jahre 2022 und 2023 haben sich Module und "
          "Wechselrichter wieder auf einem moderaten Niveau eingependelt. Die Umsatzsteuer gilt zwar seit "
-         "April 2025 wieder, dafür senkt die Förderung 2026 den Preis einer 10-kWp-Anlage mit Speicher "
-         "um 3.000 bis 6.500 Euro."),
+         "April 2025 wieder; die Förderung im Call 2026 senkte den Preis einer 10-kWp-Anlage mit Speicher "
+         "um 3.000 bis 6.500 Euro, aktuell bleibt in Kärnten die Landespauschale von 3.000 Euro."),
         ("Kann ich die Anlage finanzieren, statt sie zu kaufen?",
          "Ja. EBZ Energie bietet eine Finanzierung ab 147 Euro im Monat inklusive Speicher. Die Anlage gehört "
          "Ihnen ab dem ersten Tag, Sie erhalten die volle private Förderung, die Bonitätsprüfung läuft digital in Minuten, ohne Grundbucheintrag. Die Rate liegt oft unter der bisherigen "

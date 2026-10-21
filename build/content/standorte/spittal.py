@@ -214,7 +214,7 @@ ORT = {
         ("Was kostet eine PV-Anlage mit Speicher in Spittal an der Drau?",
          "Eine Komplettanlage mit rund 10 kWp und Speicher kostet typischerweise rund 15.000 bis 22.000 Euro vor "
          "Förderung, inklusive Montage, Mitteilung an die Stadtgemeinde Spittal und Anschlussantrag bei Kärnten "
-         "Netz. Davon gehen die Landespauschale Kärnten von 3.000 Euro und der Investitionszuschuss des Bundes ab. "
+         "Netz. Davon geht die Landespauschale Kärnten von 3.000 Euro ab; der Investitionszuschuss des Bundes ist für 2026 abgeschlossen. "
          "Wer nicht alles auf einmal zahlen will, finanziert ab 147 Euro im Monat*. Den genauen Preis nennen wir "
          "nach dem Termin bei Ihnen als Fixangebot."),
         ("Brauche ich in Spittal eine Baubewilligung für die Photovoltaikanlage?",
@@ -248,8 +248,8 @@ ORT = {
          "aktuell beantragbar ist, zeigt unser Förderrechner."),
         ("Gibt es in Spittal an der Drau eine Gemeindeförderung für Photovoltaik?",
          "Derzeit nicht: Auf der Förderseite der Stadtgemeinde Spittal an der Drau ist kein Programm für "
-         "Photovoltaik oder Stromspeicher angeführt (Stand Oktober 2026). Es gelten die Landespauschale Kärnten von "
-         "3.000 Euro für PV ab 5 kWp mit Speicher ab 5 kWh und der Zuschuss des Bundes. Die Klima- und "
+         "Photovoltaik oder Stromspeicher angeführt (Stand Oktober 2026). Es gilt die Landespauschale Kärnten von "
+         "3.000 Euro für PV ab 5 kWp mit Speicher ab 5 kWh; der Zuschuss des Bundes ist für 2026 abgeschlossen. Die Klima- und "
          "Energie-Modellregion Millstätter See berät Private kostenlos. Wir prüfen die Förderlage vor jedem Angebot."),
         ("Kommt EBZ Energie auch nach Seeboden, Millstatt oder ins Lieser- und Mölltal?",
          "Ja. Unser Firmensitz ist die Triglavstraße 15 in Villach, ein Büro in Spittal haben wir nicht. Für die "

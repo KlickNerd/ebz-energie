@@ -224,7 +224,7 @@ ORT = {
         "img": "waermepumpe",
         "alt": "Außeneinheit einer Luft-Wasser-Wärmepumpe vor einer Holzwand im Garten (Symbolbild, nicht in Hermagor aufgenommen)",
     },
-    "foerderung_h2": "Förderung in Hermagor: Land, Bund und was die Gemeinden beitragen",
+    "foerderung_h2": "Förderung in Hermagor: Land Kärnten und was die Gemeinden beitragen",
     "foerderung_lokal": [
         ("Die Stadtgemeinde Hermagor-Pressegger See weist auf ihrer Website derzeit kein eigenes Förderprogramm für "
          "Photovoltaik, Speicher oder Heizungstausch aus (Stand Oktober 2026); wir fragen das vor dem Angebot beim "
@@ -260,8 +260,8 @@ ORT = {
          "Projektbericht mit 3D-Belegplan und Statikreport."),
         ("Was kostet eine PV-Anlage mit Speicher in Hermagor?",
          "Eine Komplettanlage mit rund 10 kWp und Speicher kostet in Hermagor typischerweise rund 15.000 bis 22.000 "
-         "Euro vor Förderung, inklusive Montage, Netzanmeldung und Inbetriebnahme. Davon gehen die Landespauschale "
-         "Kärnten von 3.000 Euro und der Investitionszuschuss des Bundes ab. Die Stadtgemeinde Hermagor-Pressegger "
+         "Euro vor Förderung, inklusive Montage, Netzanmeldung und Inbetriebnahme. Davon geht die Landespauschale "
+         "Kärnten von 3.000 Euro ab; der Investitionszuschuss des Bundes ist für 2026 abgeschlossen. Die Stadtgemeinde Hermagor-Pressegger "
          "See weist derzeit kein eigenes Förderprogramm aus. Eine Finanzierung ist ab 147 Euro im Monat* möglich, "
          "die Anlage gehört Ihnen ab dem ersten Tag."),
         ("Wer ist in Hermagor und in Kötschach-Mauthen der Netzbetreiber für meine PV-Anlage?",

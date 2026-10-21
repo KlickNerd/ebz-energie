@@ -15,7 +15,7 @@
   <meta property="og:image" content="https://ebz-photovoltaik.at/assets/img/pv-eigenheim.jpg">
   <meta name="theme-color" content="#0e4d64">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "@id": "https://ebz-photovoltaik.at/energiegemeinschaft-privat/#faq", "mainEntity": [{"@type": "Question", "name": "Können zwei Haushalte eine Energiegemeinschaft gründen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, die gesetzliche Mindestgröße sind zwei Teilnehmer. Beide müssen im selben Nahbereich liegen und eine Rechtsform, etwa einen Verein, gründen. Für so kleine Gruppen ist der Beitritt zu einer bestehenden Gemeinschaft meist einfacher und günstiger."}}, {"@type": "Question", "name": "Kann ich meinen PV-Strom an meine Kinder verschenken?", "acceptedAnswer": {"@type": "Answer", "text": "Innerhalb einer EEG ist ein Preis von null Cent möglich. Ab 1. Oktober 2026 ist mit dem Peer-to-Peer-Vertrag auch eine Schenkung ohne Verein ausdrücklich vorgesehen. Netzentgelte fallen dabei weiterhin an, im Nahbereich reduziert."}}, {"@type": "Question", "name": "Kann ich Strom mit Verwandten in einem anderen Bundesland teilen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, über eine Bürgerenergiegemeinschaft oder ab Oktober 2026 per Peer-to-Peer-Vertrag ist das österreichweit möglich. Den Netzentgelt-Abschlag von 57 oder 28 Prozent und die Abgabenbefreiung gibt es dabei nicht, weil der Strom die übergeordneten Netzebenen nutzt."}}, {"@type": "Question", "name": "Was ist der Unterschied zwischen GEA und Energiegemeinschaft?", "acceptedAnswer": {"@type": "Answer", "text": "Die gemeinschaftliche Erzeugungsanlage (GEA) teilt Strom innerhalb eines Gebäudes über den Hausanschluss auf, ohne Netzentgelt und ohne Verein. Die Energiegemeinschaft teilt Strom über das öffentliche Netz zwischen verschiedenen Gebäuden, mit reduziertem Netzentgelt und einer Rechtsform."}}, {"@type": "Question", "name": "Brauche ich für eine private Energiegemeinschaft einen Steuerberater?", "acceptedAnswer": {"@type": "Answer", "text": "Für Privatpersonen mit Anlagen bis 35 kWp und Einspeiseerlösen bis 12.500 kWh im Jahr besteht Einkommensteuerbefreiung. Ein Verein als Trägerverein ist in der Regel nicht gewinnorientiert. Bei Unsicherheit empfehlen wir eine Beratung, dieser Artikel ist keine Steuerberatung."}}, {"@type": "Question", "name": "Kann ein Bauernhof an einer privaten Energiegemeinschaft teilnehmen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, landwirtschaftliche Betriebe gelten als kleine oder mittlere Unternehmen und dürfen an Erneuerbaren-Energie-Gemeinschaften teilnehmen. Sie sind mit großen Dachflächen oft die wichtigsten Erzeuger einer Nachbarschafts-EEG."}}, {"@type": "Question", "name": "Wie viel bringt eine private Energiegemeinschaft im Jahr?", "acceptedAnswer": {"@type": "Answer", "text": "Bei 4.000 kWh zugeordneter Menge und rund 10,5 Cent Vorteil je Kilowattstunde (lokale EEG, Richtwerte 2026) sind es rund 400 Euro für die Familie. Abzuziehen sind 2 bis 8 Euro je Zählpunkt und Monat für die Abrechnungsplattform. Wie viel zugeordnet wird, hängt vom Verbrauchsprofil der Abnehmer ab."}}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://ebz-photovoltaik.at/energiegemeinschaft-privat/#article", "mainEntityOfPage": "https://ebz-photovoltaik.at/energiegemeinschaft-privat/", "headline": "Energiegemeinschaft privat: Strom mit Nachbarn und Familie teilen, ab 2 Teilnehmern", "description": "Energiegemeinschaft privat: ab 2 Teilnehmern mit Familie oder Nachbarn, GEA im Mehrparteienhaus ohne Verein, Peer-to-Peer ab 1. Oktober 2026. Modelle, Kosten.", "inLanguage": "de-AT", "datePublished": "2026-08-20", "dateModified": "2026-09-24", "author": {"@type": "Person", "name": "Mario Zintl", "jobTitle": "Geschäftsführer", "worksFor": {"@type": "Organization", "name": "EBZ Energie GmbH"}, "url": "https://ebz-photovoltaik.at/ueber-uns/"}, "publisher": {"@type": "Organization", "name": "EBZ Energie GmbH", "url": "https://ebz-photovoltaik.at/", "logo": {"@type": "ImageObject", "url": "https://ebz-photovoltaik.at/assets/img/ebz-logo.png"}}, "image": "https://ebz-photovoltaik.at/assets/img/pv-eigenheim.jpg"}</script>
@@ -271,6 +271,33 @@ Anfang an auf das Teilen ausgelegt sein.</p>
     <a class="btn btn--ghost" href="tel:+436502202626">Anrufen</a>
     <a href="/kontakt/" class="btn btn--primary">Beratung anfragen</a>
   </div>
+
+<div id="ebzc">
+  <div id="ebzc-panel">
+    <div class="hd">
+      <button class="x" id="ebzc-x" aria-label="Schließen">×</button>
+      <div class="hdrow">
+        <div class="bdg"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" fill="#082e3d"/><g stroke="#082e3d" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.6M12 18.9v2.6M21.5 12h-2.6M5.1 12H2.5M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8M18.7 18.7l-1.8-1.8M7.1 7.1L5.3 5.3"/></g></svg></div>
+        <div><p class="ttl">EBZ Energie-Assistent</p><div class="sub"><span class="dot"></span> Antwortet sofort · Team Mo bis Fr 10 bis 20 Uhr</div></div>
+      </div>
+    </div>
+    <div class="stream" id="ebzc-stream"></div>
+    <div class="chips" id="ebzc-chips"></div>
+    <div class="ft">
+      <div class="row">
+        <textarea id="ebzc-in" rows="1" placeholder="Ihre Frage zu PV, Wärmepumpe oder Förderung"></textarea>
+        <button class="snd" id="ebzc-snd" aria-label="Senden"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l16-8-6 16-2.5-6.5L4 12z" fill="#082e3d"/></svg></button>
+      </div>
+      <div class="dis">KI-Assistent · kann Fehler machen · keine verbindliche Förderzusage</div>
+    </div>
+  </div>
+  <div id="ebzc-teaser"><button class="tc" id="ebzc-teaser-close" aria-label="Schließen">×</button>Grüß Sie! Fragen zu Photovoltaik, Wärmepumpe oder Förderung? Ich helfe Ihnen gern weiter.</div>
+  <button id="ebzc-launch" aria-label="Chat öffnen">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8A2.5 2.5 0 0117.5 16H9l-4 4v-4H6.5A2.5 2.5 0 014 13.5v-8z" fill="#082e3d"/></svg>
+  </button>
+</div>
+
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/chatbot.js" defer></script>
 </body>
 </html>

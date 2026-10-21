@@ -36,7 +36,7 @@ LOKALE FAKTEN, alle am 10.10.2026 selbst abgerufen:
   foerderbaren Kosten, PV bis 15 kWp je Wohneinheit, befristeter Sonder-Call (Richtlinie 01.04.2026,
   wohnbau.steiermark.at). Oekofonds: aktuell Ausschreibungen "Wasserstoffprojekte" und "Innovative Energiespeicher"
   (nur juristische Personen), KEINE offene PV-Ausschreibung: https://www.technik.steiermark.at/oekofonds
-  Bund: build/seo/_fakten_2026-10.md.
+  Bund: build/seo/_fakten_2026-10.md (Stand ab 23.10.2026: Bundeszuschuss PV/Speicher fuer 2026 abgeschlossen).
 - Foerderung Waermepumpe: ABWEICHUNG vom Auftrag ("35 % vom Land"). Die Landesseite sagt woertlich: "Eine
   Antragstellung/Registrierung ist fuer gefoerderte Biomasse-Heizungen, Waermepumpen und solarthermische Anlagen
   derzeit nicht moeglich. [...] auf absehbare Zeit keine Foerderungsmoeglichkeit seitens des Landes Steiermark"
@@ -157,9 +157,10 @@ FAQ = [
      "wählen. Im Landesnetz läuft das Ansuchen über das Einspeiserportal, das Netzanschlusskonzept gilt 12 Monate "
      "und kann einmal um 12 Monate verlängert werden."),
     ("Gibt es in der Steiermark eine Landesförderung für Photovoltaik?",
-     "Eine Pauschale für private Dachanlagen wie in Kärnten gibt es nicht. Der Bund fördert 2026 mit 150 Euro je kWp "
-     "bis 10 kWp und 150 Euro je kWh Speicher. Das Land vergibt den Steirischen Sanierungsbonus (15 Prozent der "
-     "förderbaren Kosten) nur in befristeten Sonderausschreibungen, der Ökofonds richtet sich mit einzelnen "
+     "Eine Pauschale für private Dachanlagen wie in Kärnten gibt es nicht. Der Investitionszuschuss des Bundes für "
+     "PV und Speicher ist für 2026 abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher "
+     "mit intelligenter Steuerung. Der Steirische Sanierungsbonus (15 Prozent der förderbaren Kosten) war eine "
+     "befristete Sonderausschreibung und ist beendet, der Ökofonds richtet sich mit einzelnen "
      "Ausschreibungen an Betriebe, Gemeinden und Energiegemeinschaften. Manche Gemeinden zahlen einen eigenen "
      "Zuschuss. Was gerade offen ist, zeigt unsere Förderseite."),
     ("Was kostet eine PV-Anlage mit Speicher in der Steiermark?",
@@ -275,7 +276,7 @@ def build():
         C.kpis([
             ("2 Referenzen", "in Graz, mit Ertrag und Ersparnis belegt"),
             ("rund 20.000 kWh", "Jahresertrag Stadthaus Graz mit 18 kWp"),
-            ("150 €/kWp", "Bundeszuschuss 2026 bis 10 kWp, dazu 150 €/kWh Speicher"),
+            ("300+", "dokumentierte Projekte in 6 Bundesländern"),
             (NAP["rating"], f"Sterne auf Google, {bew}"),
         ]),
         C.text_block(
@@ -287,7 +288,7 @@ def build():
                  f"montiert. Dahinter stehen 300+ dokumentierte Projekte und {NAP['rating']} Sterne aus {bew} auf "
                  f"Google ({STAND})."),
                 ("Drei Dinge unterscheiden die Steiermark von Kärnten. Das Land zahlt keine Pauschale für private "
-                 "PV-Anlagen, es bleibt der Zuschuss des Bundes. Für Anlagen auf Dach und Fassade genügt seit der "
+                 "PV-Anlagen, und der Zuschuss des Bundes ist für 2026 abgeschlossen. Für Anlagen auf Dach und Fassade genügt seit der "
                  "Baugesetz-Novelle 2026 eine schriftliche Meldung an die Gemeinde, unabhängig von der Größe. Und "
                  "neben dem Landesnetz der Energienetze Steiermark gibt es eigene Stadtnetze, etwa in Graz. Alle "
                  "drei Punkte klären wir für Ihre Adresse, bevor Sie etwas unterschreiben."),
@@ -366,15 +367,16 @@ def build():
         ),
         C.media_text(
             eyebrow="Förderung Steiermark",
-            h2="Förderung für Photovoltaik in der Steiermark: Bundeszuschuss statt Landespauschale",
+            h2="Förderung für Photovoltaik in der Steiermark: keine Landespauschale, Bund ab 2027",
             paragraphs=[
-                ("Das Land Steiermark zahlt keine Pauschale für private PV-Anlagen auf dem Dach. Die verlässliche "
-                 "Förderung kommt vom Bund: 2026 gibt es über den EAG-Investitionszuschuss 150 Euro je kWp bis 10 kWp "
-                 "und 150 Euro je kWh Speicher, europäische Komponenten bringen je 10 Prozent Bonus. Ab 2027 plant "
-                 f"der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung ({STAND})."),
-                ("Vom Land kommen zwei Bausteine, die nicht dauernd offen sind: der Steirische Sanierungsbonus "
+                ("Das Land Steiermark zahlt keine Pauschale für private PV-Anlagen auf dem Dach. Der "
+                 "Investitionszuschuss des Bundes für PV und Speicher ist für 2026 ausgeschöpft beziehungsweise "
+                 "abgeschlossen, neue Anlagen bekommen derzeit keinen Bundeszuschuss. Ab 2027 plant der Bund laut "
+                 f"BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, Höhe offen ({STAND}). Wer jetzt "
+                 "plant, plant deshalb mit Speicher und Energiemanagement; das EMS fördert der Klimafonds."),
+                ("Vom Land gab es zwei Bausteine, die nicht dauernd offen sind: den Steirischen Sanierungsbonus "
                  "(15 Prozent der förderbaren Kosten, auch für PV bis 15 kWp je Wohneinheit, als befristete "
-                 "Sonderausschreibung) und der Ökofonds, der einzelne Ausschreibungen für Betriebe, Gemeinden und "
+                 "Sonderausschreibung, inzwischen beendet) und den Ökofonds, der einzelne Ausschreibungen für Betriebe, Gemeinden und "
                  "Energiegemeinschaften auflegt, derzeit für innovative Energiespeicher. Manche Gemeinden zahlen einen "
                  "eigenen Zuschuss; das fragen wir für Ihre Adresse ab. Welche Programme gerade laufen, steht auf "
                  "unserer Förderseite."),
@@ -382,8 +384,8 @@ def build():
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Förderung einer Photovoltaikanlage am Tisch",
             bullets=[
-                "Bund: 150 €/kWp bis 10 kWp und 150 €/kWh Speicher, 10 % Bonus je europäischer Komponente",
-                "Land: keine PV-Pauschale, Sanierungsbonus und Ökofonds nur in befristeten Ausschreibungen",
+                "Bund: Investitionszuschuss für 2026 abgeschlossen, Systemförderung ab 2027 geplant",
+                "Land: keine PV-Pauschale, Sanierungsbonus beendet, Ökofonds derzeit ohne PV-Ausschreibung",
                 "Gemeinde: Zuschuss je nach Wohnort, wir fragen nach",
                 a("foerderung_steiermark", "PV-Förderung Steiermark im Detail") + " und "
                 + a("foerderrechner", "Förderrechner"),
@@ -528,7 +530,7 @@ def build():
                  "Verbrauch und Heizung auf. Kostenlos und unverbindlich.", ""),
                 ("Projektbericht und Netzansuchen", "Sie erhalten den Projektbericht mit 3D-Belegplan und "
                  "Statikreport und ein Fixangebot. Parallel suchen wir beim Netzbetreiber um den Einspeisezählpunkt an.", ""),
-                ("Meldung und Förderung", "Schriftliche Meldung an die Gemeinde, Förderantrag beim Bund und, wo "
+                ("Meldung und Förderung", "Schriftliche Meldung an die Gemeinde, Förderanträge für EMS und, wo "
                  "vorhanden, bei der Gemeinde. Die richtige Reihenfolge halten wir für Sie ein.", ""),
                 ("Montage und Inbetriebnahme", "Zertifizierte Fachkräfte montieren. Danach übermitteln wir das "
                  "Installationsdokument, die Inbetriebnahme erfolgt in Abstimmung mit dem Netzbetreiber.", ""),

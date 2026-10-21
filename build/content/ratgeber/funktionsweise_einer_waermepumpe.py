@@ -33,7 +33,7 @@ ARTICLE = {
         "Betrieb bis <b>-20 °C</b> und darunter",
     ],
     "date_published": "2026-03-30",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "waermepumpe",
     "hero_alt": "Außeneinheit einer Luft-Wasser-Wärmepumpe: Wärmequelle Außenluft für den Kältemittelkreislauf",
 
@@ -191,7 +191,8 @@ dimensionierten {a('photovoltaik', 'PV-Anlage')} decken Sie einen Großteil dies
 Rest speisen Sie ein oder speichern ihn im {a('batteriespeicher', 'Batteriespeicher')}. Beide Systeme
 werden separat gefördert: die Wärmepumpe 2026 über die
 {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} (Kesseltausch, seit Herbst 2026 ausgeschöpft,
-aktuell Landesförderungen), die PV-Anlage über den EAG-Investitionszuschuss. Wer beides gemeinsam plant,
+aktuell Landesförderungen), die PV-Anlage 2026 über den EAG-Investitionszuschuss (letzter Call endete am
+22. Oktober 2026, aktuell Landesförderungen wie die Kärntner Pauschale). Wer beides gemeinsam plant,
 maximiert Förderung und Ersparnis. Details zur
 Dimensionierung: {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}.</p>
 """),

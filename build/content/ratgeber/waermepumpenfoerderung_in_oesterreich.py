@@ -37,7 +37,7 @@ ARTICLE = {
         "Ausblick 2027: <b>offen</b>",
     ],
     "date_published": "2026-03-05",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-10-21",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch zur Wärmepumpenförderung mit Unterlagen und Taschenrechner",
 
@@ -197,7 +197,8 @@ Projekts, innerhalb von sechs Monaten nach der Schlussrechnung.</p>
 <p>Eine Wärmepumpe braucht Strom. Wer sie mit einer {a('photovoltaik', 'Photovoltaikanlage')} kombiniert,
 senkt die Betriebskosten dauerhaft. 2026 gab es dafür zwei getrennte Fördertöpfe: die Sanierungsoffensive
 für den Heizungstausch (seit Herbst 2026 ausgeschöpft) und den EAG-Investitionszuschuss für die PV-Anlage
-(letzter Call bis 22. Oktober 2026, ab 2027 laut BMWET Systemförderung mit Antrag nach Installation). Wie
+(letzter Call lief vom 8. bis 22. Oktober 2026, derzeit nicht beantragbar; ab 2027 laut BMWET Systemförderung
+mit Antrag nach Installation geplant, nicht beschlossen). Wie
 beide Systeme technisch
 zusammenspielen, lesen Sie im Ratgeber
 {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}. Wer die Investition

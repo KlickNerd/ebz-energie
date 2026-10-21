@@ -34,7 +34,7 @@ ARTICLE = {
         "Energiekosten: <b>50 bis 70 %</b> weniger*",
     ],
     "date_published": "2025-07-20",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach und Wärmepumpe im Garten",
 
@@ -181,8 +181,10 @@ Einsparungen und der Zuschüsse gesehen werden. Die Kostenblöcke für ein Einfa
   die Landesförderungen (Stand prüfen). Überblick:
   {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich')} und
   {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
-  <li><b>Photovoltaik und Speicher:</b> Bundesweit über den EAG-Investitionszuschuss, dazu
-  Landesförderungen: {a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')},
+  <li><b>Photovoltaik und Speicher:</b> 2026 bundesweit über den EAG-Investitionszuschuss (letzter Call
+  lief vom 8. bis 22. Oktober 2026, derzeit nicht beantragbar; ab 2027 laut BMWET Systemförderung für Speicher
+  mit intelligenter Steuerung geplant, nicht beschlossen), aktuell über Landesförderungen wie die Kärntner
+  Pauschale von 3.000 Euro mit Speicher: {a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')},
   {a('foerderung_steiermark', 'Photovoltaik-Förderung Steiermark')},
   {a('foerderung_at', 'Photovoltaik-Förderung Österreich')}.</li>
 </ul>
@@ -237,7 +239,7 @@ zu einer klaren Entscheidung.</p>
                  "Förderabwicklung für beide Systeme, Montage und Service danach."),
         "grid": [
             ("Gesamtkonzept statt Einzelteile", "PV-Anlage, Speicher, EMS und Wärmepumpe aufeinander abgestimmt."),
-            ("Förderung für beide Systeme", "Heizungstausch und EAG-Zuschuss: wir reichen alles ein."),
+            ("Förderung für beide Systeme", "Landesförderungen für Wärmepumpe und PV mit Speicher: wir reichen alles ein."),
             ("Bis zu 30 Jahre Leistungsgarantie", "Komponenten führender Hersteller, mind. 10 Jahre Produktgarantie."),
             ("Finanzierung ab 147 €/Monat", "Inklusive Speicher, Anlage gehört ab Tag 1 Ihnen."),
         ],
@@ -273,9 +275,10 @@ zu einer klaren Entscheidung.</p>
          "Energiemanagementsystem sie steuern kann. Bei PV-Überschuss lädt die Wärmepumpe dann Puffer- oder "
          "Warmwasserspeicher auf höhere Temperaturen und speichert Sonnenenergie als Wärme."),
         ("Werden PV-Anlage und Wärmepumpe getrennt gefördert?",
-         "Ja. Die Wärmepumpe wird über die Bundesförderung für den Heizungstausch und die Landesprogramme "
-         "gefördert, die PV-Anlage mit Speicher über den EAG-Investitionszuschuss und Landesförderungen. "
-         "EBZ Energie wickelt beide Anträge ab."),
+         "Ja. Die Bundesförderungen 2026 (Heizungstausch für die Wärmepumpe, EAG-Investitionszuschuss für PV "
+         "und Speicher) sind ausgeschöpft bzw. beendet, der letzte EAG-Call endete am 22. Oktober 2026. Aktuell "
+         "laufen Landesförderungen, in Kärnten etwa 3.000 Euro für die Wärmepumpe und 3.000 Euro für PV mit "
+         "Speicher. EBZ Energie wickelt beide Anträge ab."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant und installiert "

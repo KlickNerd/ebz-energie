@@ -56,8 +56,8 @@ FAQ = [
     ("Wie viel kostet eine Photovoltaikanlage in Wolfsberg inklusive Montage?",
      "Eine Komplettanlage mit rund 10 kWp und Speicher kostet typischerweise rund 15.000 bis 22.000 Euro vor "
      "Förderung, inklusive Montage, Netzanmeldung und Inbetriebnahme (EBZ-Richtpreis, Stand Oktober 2026). Das Land "
-     "Kärnten zahlt 3.000 Euro Pauschale für private PV ab 5 kWp mit Speicher, der Bund 150 Euro je kWp bis 10 kWp "
-     "und 150 Euro je kWh Speicher. Der Umsatzsteuer-Nullsatz für kleine PV-Anlagen ist seit April 2025 ausgelaufen, "
+     "Kärnten zahlt 3.000 Euro Pauschale für private PV ab 5 kWp mit Speicher; einen Bundeszuschuss gibt es für neue "
+     "Anlagen derzeit nicht. Der Umsatzsteuer-Nullsatz für kleine PV-Anlagen ist seit April 2025 ausgelaufen, "
      "die Richtpreise verstehen sich inklusive 20 Prozent Umsatzsteuer. Finanzierung ab 147 Euro im Monat* ist möglich."),
     ("Wie viel Strom erzeugt eine PV-Anlage im Lavanttal pro kWp?",
      "Laut PV-Atlas (pvatlas.at) liegt der Ertrag in Wolfsberg bei rund 1.162 kWh je kWp und Jahr, der Median im "
@@ -72,16 +72,16 @@ FAQ = [
     ("Wie groß sollte der Speicher für ein Einfamilienhaus sein?",
      "Als Faustregel rund 1 bis 1,5 kWh Speicher je kWp Anlagenleistung, bei einem Einfamilienhaus mit 10 kWp also "
      "etwa 10 bis 15 kWh. Zu klein puffert die Nacht nicht, zu groß kostet unnötig. Wir dimensionieren nach Ihrem Verbrauch, "
-     "nach E-Auto und Wärmepumpe und nach der Förderung (Bund: mindestens 0,5 kWh je kWp, maximal 50 kWh)."),
+     "nach E-Auto und Wärmepumpe und nach der Förderung (Kärnten: Speicher ab 5 kWh als Voraussetzung der Landespauschale)."),
     ("In welchen Orten im Bezirk Wolfsberg montiert EBZ Energie?",
      "Im ganzen Lavanttal: Wolfsberg mit seinen Ortsteilen St. Stefan, St. Marein, St. Michael und Reding, St. Andrä, "
      "St. Paul im Lavanttal, Bad St. Leonhard, Frantschach-St. Gertraud, Lavamünd, Preitenegg und Reichenfels. "
      "Für die Erstberatung kommen wir von Villach über die Südautobahn A2 kostenlos zu Ihnen."),
     ("Wie hoch ist die PV-Förderung in Kärnten 2026?",
      "Das Land Kärnten fördert private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal mit 3.000 Euro, "
-     "die Speicher-Nachrüstung mit 1.000 Euro, maximal 50 Prozent der Kosten. Der EAG-Zuschuss des Bundes beträgt "
-     "150 Euro je kWp bis 10 kWp und 150 Euro je kWh Speicher (Stand Oktober 2026). Beide Förderungen sind "
-     "kombinierbar. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
+     "die Speicher-Nachrüstung mit 1.000 Euro, maximal 50 Prozent der Kosten. Der Investitionszuschuss des Bundes "
+     "für PV und Speicher ist für 2026 abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für "
+     "Speicher mit intelligenter Steuerung (Stand Oktober 2026). Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite."),
     ("Brauche ich in Kärnten eine Genehmigung für die PV-Anlage?",
      "Für Anlagen auf Dach oder Fassade gilt in Kärnten in der Regel eine Mitteilungspflicht statt einer "
      "Bewilligungspflicht: Die Gemeinde wird informiert, ein Bauverfahren entfällt meist. Wir klären das für Ihr "
@@ -120,7 +120,7 @@ def build():
                   "Wallbox und Wärmepumpe, wenn Sie wollen."),
             badges=[("2 bis 4 Tage", "Montage vor Ort"),
                     ("1.162 kWh/kWp", "Ertrag in Wolfsberg (PV-Atlas)"),
-                    ("Förderung", "Kärnten und Bund inklusive")],
+                    ("3.000 €", "Landespauschale Kärnten mit Speicher")],
             img=IMG["gen_hero"],
             img_alt="Photovoltaikanlage auf einem Einfamilienhaus in Kärnten, Symbolbild für Anlagen in Wolfsberg",
             float_num=rating,
@@ -141,7 +141,7 @@ def build():
                  "der Median im Bezirk Wolfsberg liegt bei 1.188 kWh je kWp, bei 1.887 Sonnenstunden pro Jahr und "
                  "Bergen rundum (Horizontverlust 6 %, Stand Oktober 2026). Eine 10-kWp-Anlage erzeugt im "
                  "Lavanttal damit rund 11.600 kWh im Jahr."),
-                ("Dazu kommen gesunkene Preise für Module und Wechselrichter, der EAG-Investitionszuschuss des Bundes, "
+                ("Dazu kommen gesunkene Preise für Module und Wechselrichter, "
                  "die Landespauschale Kärnten und ausgereifte Speicher, mit denen Sie Ihren Sonnenstrom rund um die "
                  "Uhr nutzen. Für Hausbesitzer in Wolfsberg und Umgebung heißt das: kürzere Amortisation, planbare "
                  "Stromkosten und ein Haus, das bei Netzausfall weiterläuft."),
@@ -261,12 +261,12 @@ def build():
         ),
         C.media_text(
             eyebrow="Förderung in Wolfsberg",
-            h2="Förderung: EAG, Made-in-Europe-Bonus und Landespauschale Kärnten",
+            h2="Förderung: Landespauschale Kärnten und Systemförderung des Bundes ab 2027",
             paragraphs=[
                 ("Das Land Kärnten fördert 2026 private PV-Anlagen ab 5 kWp mit mindestens 5 kWh Speicher pauschal mit "
-                 "3.000 Euro, die Speicher-Nachrüstung mit 1.000 Euro. Der Bund zahlt über den "
-                 "EAG-Investitionszuschuss 150 Euro je kWp bis 10 kWp und 150 Euro je "
-                 "kWh Speicher, europäische Komponenten bringen je 10 Prozent Made-in-Europe-Bonus (Stand Oktober 2026)."),
+                 "3.000 Euro, die Speicher-Nachrüstung mit 1.000 Euro. Der Investitionszuschuss des Bundes für PV und "
+                 "Speicher ist für 2026 ausgeschöpft beziehungsweise abgeschlossen; ab 2027 plant der Bund laut BMWET "
+                 "eine Systemförderung für Speicher mit intelligenter Steuerung, Höhe offen (Stand Oktober 2026)."),
                 ("Wir prüfen die passenden Programme für Ihr Projekt in Wolfsberg, halten die Fristen ein und "
                  "bereiten die Anträge vor. Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; "
                  "die Details zur Landesförderung finden Sie im Ratgeber."),
@@ -274,7 +274,7 @@ def build():
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Photovoltaik-Förderung für ein Eigenheim",
             bullets=[
-                "EAG 150 €/kWp und 150 €/kWh vom Bund, 10 % Made-in-Europe-Bonus",
+                "Bund: für 2026 abgeschlossen, deshalb jetzt mit Speicher und Energiemanagement planen",
                 "3.000 € Landespauschale Kärnten für PV mit Speicher, 1.000 € für Speicher-Nachrüstung",
                 "Anträge, Mitteilung an die Gemeinde und Netzanmeldung durch EBZ Energie",
                 a("foerderung_kaernten", "PV-Förderung Kärnten 2026 im Detail"),
@@ -295,7 +295,7 @@ def build():
                 "bullets": [
                     "10 kWp mit Speicher: rund 11.600 kWh im Jahr am Standort Wolfsberg",
                     "Speicher, Notstrom und Wallbox nach Bedarf",
-                    "Landespauschale Kärnten plus EAG-Zuschuss, Finanzierung ab 147 € im Monat*",
+                    "Landespauschale Kärnten 3.000 € mit Speicher, Finanzierung ab 147 € im Monat*",
                 ],
                 "cta": ("kontakt", "Beratung für mein Zuhause"),
             },
@@ -375,7 +375,7 @@ def build():
             steps=[
                 ("Beratung vor Ort", "Wir analysieren Verbrauch, Dach und Ziele bei Ihnen in Wolfsberg. Kostenlos und unverbindlich.", ""),
                 ("Projektbericht", "Projektbericht mit 3D-Belegplan und Statikreport sowie ein transparentes Fixangebot.", ""),
-                ("Förderung und Anmeldung", "EAG-Zuschuss, Landespauschale Kärnten, Mitteilung an die Gemeinde und Netzanmeldung: Wir bereiten alles vor.", ""),
+                ("Förderung und Anmeldung", "Landespauschale Kärnten, Mitteilung an die Gemeinde und Netzanmeldung: Wir bereiten alles vor.", ""),
                 ("Montage und Übergabe", "Montage in 2 bis 4 Tagen, dachschonend und sturmsicher, Inbetriebnahme, Einschulung in die Monitoring-App. Danach Wartung und Service aus Villach.", ""),
             ],
         ),

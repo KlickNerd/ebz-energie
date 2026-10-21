@@ -3,6 +3,8 @@
 Migriert vom Live-Artikel ebz-photovoltaik.at/photovoltaik-foerderung-vorarlberg/
 (Stand der Quelle: Mai 2026), nach README optimiert. Zahlen aus der Quelle
 (EAG-Novelle 2026, Landesförderung versiegelte Flächen, VKW-Speicherförderung).
+Stand ab 23.10.2026: letzter EAG-Call 2026 lief 8. bis 22.10.2026, derzeit kein Bundeszuschuss;
+Ausblick 2027 Systemfoerderung laut BMWET (geplant, nicht beschlossen).
 """
 
 import os
@@ -27,9 +29,9 @@ EAG_TABLE = A.table(
 CALLS_TABLE = A.table(
     ["Call", "Zeitraum", "Hinweis"],
     [
-        ["Call 1", "23. April bis 11. Mai 2026", "erster Call des Jahres, meist hohe Nachfrage"],
-        ["Call 2", "16. bis 30. Juni 2026", "Sommer-Call"],
-        ["Call 3", "8. bis 22. Oktober 2026", "Herbst-Call, letzter Call im bisherigen System"],
+        ["Call 1", "23. April bis 11. Mai 2026", "erster Call des Jahres, beendet"],
+        ["Call 2", "16. bis 30. Juni 2026", "Sommer-Call, beendet"],
+        ["Call 3", "8. bis 22. Oktober 2026", "Herbst-Call, letzter Call im bisherigen System, beendet"],
     ],
     hl_cols=(1,),
 )
@@ -38,39 +40,42 @@ ARTICLE = {
     "slug": "photovoltaik-foerderung-vorarlberg",
     "path": "/photovoltaik-foerderung-vorarlberg/",
     "title": "PV-Förderung Vorarlberg 2026: EAG, VKW, Gemeinden | EBZ",
-    "description": ("PV-Förderung Vorarlberg 2026: EAG 150 €/kWp, VKW-Speicherbonus 50 €/kWh, bis 50.000 € "
-                    "Landesförderung für PV auf versiegelten Flächen ab 20 kWp."),
+    "description": ("PV-Förderung Vorarlberg 2026: VKW-Speicherbonus 50 €/kWh, bis 50.000 € für PV auf "
+                    "versiegelten Flächen ab 20 kWp. EAG-Call 2026 beendet, Ausblick 2027."),
     "eyebrow": "Förderung · Vorarlberg",
     "crumb_label": "PV-Förderung Vorarlberg 2026",
-    "h1": "Photovoltaik-Förderung Vorarlberg 2026: EAG-Zuschuss bis 150 €/kWp, VKW-Speicherbonus und bis zu 50.000 € für PV auf versiegelten Flächen",
+    "h1": "Photovoltaik-Förderung Vorarlberg 2026: VKW-Speicherbonus, bis zu 50.000 € für PV auf versiegelten Flächen, EAG-Call beendet",
     "lead": ("Vorarlberg fördert 2026 keine klassischen Dach-PV-Anlagen für Privathaushalte, sondern setzt auf "
-             "PV-Überdachungen versiegelter Flächen ab 20 kWp. Für Hausbesitzer bleiben die EAG-Bundesförderung, "
-             "der VKW-Speicherbonus und Gemeindezuschüsse, in Summe typisch 2.500 bis 4.500 €*."),
+             "PV-Überdachungen versiegelter Flächen ab 20 kWp. Für Hausbesitzer brachten im Call 2026 die "
+             "EAG-Bundesförderung, der VKW-Speicherbonus und Gemeindezuschüsse typisch 2.500 bis 4.500 €*. Der "
+             "letzte Bundescall lief vom 8. bis 22. Oktober 2026, derzeit bleiben VKW-Bonus und Gemeinde."),
     "chips": [
-        "EAG: <b>150 €/kWp</b> bis 10 kWp",
+        "EAG im Call 2026: <b>150 €/kWp</b> bis 10 kWp",
         "VKW-Speicher: <b>50 €/kWh</b>, max. 500 €",
         "Land: <b>bis 50.000 €</b> ab 20 kWp auf versiegelten Flächen",
-        "Typisch: <b>2.500 bis 4.500 €</b> für EFH*",
+        "Letzter Bundescall: <b>bis 22. Oktober 2026</b>, beendet",
     ],
     "date_published": "2026-04-15",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-10-21",
     "hero_img": "gen_gewerbe",
     "hero_alt": "Photovoltaikanlage auf einem Gewerbedach mit Parkplatzfläche als Beispiel für PV auf versiegelten Flächen",
 
     "tldr": [
         "Vorarlberg zahlt 2026 keine Pauschalförderung pro kWp für Standard-Dachanlagen. Der Hauptzuschuss für "
-        "Privathaushalte ist die EAG-Bundesförderung mit 150 €/kWp (bis 10 kWp) und 150 €/kWh Speicher.",
+        "Privathaushalte war im Call 2026 die EAG-Bundesförderung mit 150 €/kWp (bis 10 kWp) und 150 €/kWh "
+        "Speicher. Der letzte Call endete am 22. Oktober 2026, derzeit ist kein Bundeszuschuss beantragbar.",
         "Die Landesförderung konzentriert sich auf PV auf versiegelten Flächen wie Carports und Parkplätzen: "
-        "ab 20 kWp, bis 50.000 € pro Anlage, nicht auf bestehenden Gebäuden, mit EAG kombinierbar.",
+        "ab 20 kWp, bis 50.000 € pro Anlage, nicht auf bestehenden Gebäuden, im Call 2026 mit EAG kombinierbar.",
         "Die VKW (Vorarlberger Kraftwerke) fördert Speicher mit 50 €/kWh bis maximal 500 €, Voraussetzung ist ein "
-        "VKW-Einspeisevertrag. Mit der EAG ergibt das bis zu 200 €/kWh für die ersten kWh.",
+        "VKW-Einspeisevertrag. Mit der EAG ergab das im Call 2026 bis zu 200 €/kWh für die ersten kWh.",
         "Gemeindeförderungen sind in Vorarlberg der wichtigste Zusatzhebel, weil eine Landesförderung für "
         "Privathaushalte fehlt. Fragen Sie vor Projektstart beim Gemeindeamt nach.",
-        "Realistische Gesamtförderung für eine 8-kWp-Anlage mit Speicher: 2.500 bis 4.500 €*. Der EAG-Antrag "
-        "muss vor Inbetriebnahme im Fördercall gestellt werden.",
+        "Gesamtförderung im Call 2026 für eine 8-kWp-Anlage mit Speicher: 2.500 bis 4.500 €*. Ab 2027 ist laut "
+        "BMWET eine Systemförderung für Speicher mit intelligenter Steuerung geplant, nicht beschlossen; wer jetzt "
+        "plant, baut mit Speicher und Energiemanagement.",
     ],
     "kpis": [
-        ("150 €/kWp", "EAG-Zuschuss Kategorie A (bis 10 kWp)"),
+        ("150 €/kWp", "EAG Kategorie A im Call 2026 (bis 10 kWp)"),
         ("500 €", "maximaler VKW-Speicherbonus (50 €/kWh)"),
         ("50.000 €", "Landesförderung PV auf versiegelten Flächen"),
         ("20 kWp", "Mindestleistung für die Landesförderung"),
@@ -84,28 +89,33 @@ Flächen: Carports, Parkplätze, befestigte Betriebsflächen. Eine Pauschalförd
 Privathaushalte gibt es 2026 nicht.</p>
 <p>Leer gehen Vorarlberger Hausbesitzer trotzdem nicht aus. Drei Schienen sind relevant:</p>
 <ul>
-  <li><b>EAG-Bundesförderung:</b> 120 bis 150 €/kWp plus 150 €/kWh Speicher plus Made-in-Europe-Bonus, der Hauptzuschuss für Privathaushalte</li>
+  <li><b>EAG-Bundesförderung:</b> im Call 2026 120 bis 150 €/kWp plus 150 €/kWh Speicher plus Made-in-Europe-Bonus, der Hauptzuschuss für Privathaushalte; der letzte Call endete am 22. Oktober 2026, derzeit nicht beantragbar</li>
   <li><b>Landesförderung versiegelte Flächen:</b> bis 50.000 € pro Anlage, nur ab 20 kWp und nicht auf Bestandsgebäuden</li>
   <li><b>VKW-Speicherförderung:</b> 50 €/kWh bis maximal 500 €, nur für VKW-Kunden mit Einspeisevertrag</li>
 </ul>
-<p>Für klassische Dachanlagen macht die EAG damit den mit Abstand größten Anteil der Gesamtförderung aus.
-Die systematische Suche nach einer Gemeindeförderung ist in Vorarlberg 2026 deshalb wichtiger als in den
-meisten anderen Bundesländern. Wie sich Vorarlberg im Vergleich schlägt, zeigt der
+<p>Für klassische Dachanlagen machte die EAG im Call 2026 den mit Abstand größten Anteil der Gesamtförderung aus.
+Seit dem Ende des letzten Calls ist die systematische Suche nach einer Gemeindeförderung in Vorarlberg noch
+wichtiger als in den meisten anderen Bundesländern. Wie sich Vorarlberg im Vergleich schlägt, zeigt der
 {a('/photovoltaik-landesfoerderungen/', 'Vergleich aller neun Landesförderungen')}.</p>
 """),
-        ("EAG-Bundesförderung: der Hauptzuschuss für Vorarlberger Hausbesitzer", "eag", f"""
-<p>Mit der EAG-Investitionszuschüsseverordnung-Strom-Novelle 2026, kundgemacht am 16. Jänner 2026, sind die
-Bundeskonditionen fixiert: 60 Millionen Euro stehen für PV- und Speicherprojekte bereit, abgewickelt über die
-EAG-Förderabwicklungsstelle der OeMAG. Die Fördersätze sind nach Anlagengröße gestaffelt, Speicher werden mit
-150 €/kWh bis maximal 50 kWh gefördert.</p>
+        ("EAG-Bundesförderung: 2026 der Hauptzuschuss für Vorarlberger Hausbesitzer", "eag", f"""
+<p>Mit der EAG-Investitionszuschüsseverordnung-Strom-Novelle 2026, kundgemacht am 16. Jänner 2026, waren die
+Bundeskonditionen fixiert: 60 Millionen Euro standen für PV- und Speicherprojekte bereit, abgewickelt über die
+EAG-Förderabwicklungsstelle der OeMAG. Die Fördersätze im Call 2026 waren nach Anlagengröße gestaffelt,
+Speicher wurden mit 150 €/kWh bis maximal 50 kWh gefördert.</p>
 {EAG_TABLE}
 <h3>Made-in-Europe-Bonus</h3>
-<p>Für Komponenten auf der White List der OeMAG gibt es jeweils 10 % Bonus pro Komponente (PV-Module,
-Wechselrichter, Speicher): bis zu 20 % auf den PV-Zuschuss und weitere 10 % auf den Speicherzuschuss.</p>
+<p>Für Komponenten auf der White List der OeMAG gab es im Call 2026 jeweils 10 % Bonus pro Komponente
+(PV-Module, Wechselrichter, Speicher): bis zu 20 % auf den PV-Zuschuss und weitere 10 % auf den
+Speicherzuschuss. Für 2027 ist laut BMWET wieder ein Europa-Bonus geplant, Höhe offen.</p>
 <h3>Die drei EAG-Fördercalls 2026</h3>
 {CALLS_TABLE}
-<p>Die Antragstellung erfolgt online, in den Kategorien A und B nach dem First-come-first-served-Prinzip mit
-Ticketziehung. Der Antrag muss vor Inbetriebnahme der Anlage gestellt werden. Alle Details im Ratgeber
+<p>Die Antragstellung erfolgte online, in den Kategorien A und B nach dem First-come-first-served-Prinzip mit
+Ticketziehung, und musste vor Inbetriebnahme der Anlage liegen. Der dritte und letzte Call lief vom 8. bis
+22. Oktober 2026; im bisherigen System gibt es keinen weiteren Call, neue Anlagen bekommen derzeit keinen
+Bundeszuschuss. Ab 2027 ist laut BMWET eine Systemförderung geplant, nicht beschlossen: Speicher mit
+intelligenter Steuerung, Antrag nach Installation und Rechnung, Projekte ab 1. November 2026 sollen
+beantragbar sein, die Höhe ist offen. Alle Details im Ratgeber
 {a('/photovoltaik-foerderung-oesterreich-2026/', 'Photovoltaik-Förderung Österreich 2026')}.</p>
 """),
         ("Landesförderung Vorarlberg: PV auf versiegelten Flächen ab 20 kWp", "landesfoerderung", f"""
@@ -121,13 +131,13 @@ Wer einen größeren Carport mit PV plant oder einen Firmenparkplatz überdachen
         ["Förderfähige Flächen", "Carports, Parkplätze, befestigte Betriebsflächen"],
         ["Nicht förderfähig", "Anlagen auf bestehenden Gebäuden"],
         ["Antragsberechtigt", "Unternehmen, Bauträger, Vereine, öffentliche Einrichtungen, Privatbauherren"],
-        ["Kombination mit EAG", "ja, innerhalb der beihilferechtlichen Höchstgrenzen"],
+        ["Kombination mit EAG", "im Call 2026 ja, innerhalb der beihilferechtlichen Höchstgrenzen"],
     ],
     hl_cols=(1,),
 )}
 <p>Hintergrund ist der politische Wille des Landes, vorhandene Flächen optimal zu nutzen und die Versiegelung
 von Grünflächen zu vermeiden. Die aktuellen Richtlinien veröffentlicht das Land Vorarlberg. Für Gewerbebetriebe
-mit Parkflächen ist diese Schiene in Kombination mit der EAG-Kategorie C oder D besonders interessant, siehe
+mit Parkflächen war diese Schiene im Call 2026 in Kombination mit der EAG-Kategorie C oder D besonders interessant, siehe
 auch unser Ratgeber {a('/photovoltaik-carport/', 'Photovoltaik-Carport')}.</p>
 """),
         ("VKW-Speicherförderung: 50 €/kWh über den Energieversorger", "vkw-speicher", f"""
@@ -137,15 +147,16 @@ Kraftwerke) unterstützen Stromspeicher in Kombination mit PV-Anlagen.</p>
   <li><b>Förderhöhe:</b> 50 €/kWh, maximal 500 € pro Anlage</li>
   <li><b>Voraussetzung:</b> bestehender VKW-Einspeisevertrag, Speicher in Kombination mit einer PV-Anlage</li>
   <li><b>Antragstellung:</b> direkt über die VKW</li>
-  <li><b>Kombination mit EAG:</b> ja, in Summe bis zu 200 €/kWh für die ersten kWh (150 € Bund plus 50 € VKW)</li>
+  <li><b>Kombination mit EAG:</b> im Call 2026 ja, in Summe bis zu 200 €/kWh für die ersten kWh (150 € Bund plus 50 € VKW); der Bundesanteil ist derzeit nicht beantragbar</li>
 </ul>
 <p>Im Vergleich zu Tirol oder Burgenland (jeweils 100 €/kWh über das Land) fällt der VKW-Bonus mit 50 €/kWh
-geringer aus, ist aber in vielen Fällen die einzige zusätzliche Speicherschiene neben dem Bund. Prüfen Sie
+geringer aus, ist aber seit dem Ende des EAG-Calls in vielen Fällen die einzige Speicherschiene. Laut BMWET ist
+ab 2027 eine Systemförderung für Speicher mit intelligenter Steuerung geplant (nicht beschlossen, Höhe offen). Prüfen Sie
 deshalb, ob Sie als VKW-Kunde infrage kommen. Aktuelle Konditionen direkt bei der VKW. Mehr zur Bundesschiene
 im Ratgeber {a('/foerderung-fuer-pv-speicher/', 'Förderung für PV-Speicher')}.</p>
 {A.cta("Speicher richtig dimensionieren, Förderung mitnehmen",
-       "EBZ Energie plant PV und Speicher so, dass EAG-Zuschuss, Made-in-Europe-Bonus und VKW-Förderung "
-       "zusammenpassen, mit Projektbericht, 3D-Belegplan und Statikreport.",
+       "EBZ Energie plant PV, Speicher und Energiemanagement so, dass die VKW-Förderung greift und die Anlage für "
+       "die geplante Systemförderung 2027 in Frage kommt, mit Projektbericht, 3D-Belegplan und Statikreport.",
        secondary=("batteriespeicher", "Zum Batteriespeicher"))}
 """),
         ("Gemeindeförderungen: der wichtigste Zusatzhebel in Vorarlberg", "gemeinden", f"""
@@ -156,14 +167,16 @@ Investitionskosten. Manche setzen auf Speicher, andere auf E-Mobilität und Wall
 PV-Anlagen.</p>
 <p>Da die Programme jährlich angepasst und nicht zentral kommuniziert werden, lohnt sich ein Anruf beim
 Gemeindeamt oder ein Blick auf die Gemeinde-Website. Auch das Energieinstitut Vorarlberg berät. In den meisten
-Fällen lassen sich Gemeindezuschüsse zusätzlich zur EAG-Bundesförderung und zur VKW-Speicherförderung
-kombinieren, sofern die beihilferechtlichen Höchstgrenzen eingehalten werden.</p>
-{A.box("Drei Fragen an Ihre Gemeinde: Gibt es 2026 eine PV- oder Speicherförderung? Wie hoch ist der Zuschuss "
-       "und welche Voraussetzungen gelten? Ist die Kombination mit EAG und VKW möglich?", label="Tipp:")}
+Fällen lassen sich Gemeindezuschüsse mit der VKW-Speicherförderung kombinieren (im Call 2026 auch mit der
+EAG-Bundesförderung), sofern die beihilferechtlichen Höchstgrenzen eingehalten werden.</p>
+{A.box("Drei Fragen an Ihre Gemeinde: Gibt es eine PV- oder Speicherförderung? Wie hoch ist der Zuschuss "
+       "und welche Voraussetzungen gelten? Ist die Kombination mit VKW und einer künftigen Bundesförderung möglich?", label="Tipp:")}
 """),
         ("Drei Szenarien: welche Förderkombination passt zu Ihrem Projekt?", "szenarien", f"""
+<p>Die Szenarien zeigen die Kombinationen im Call 2026. Die EAG-Anteile sind derzeit nicht beantragbar, VKW,
+Gemeinde und Landesförderung schon:</p>
 {A.table(
-    ["Szenario", "Zielgruppe", "Förderkombination", "Gesamtförderung*"],
+    ["Szenario", "Zielgruppe", "Förderkombination im Call 2026", "Gesamtförderung*"],
     [
         ["Standard-Dach-PV (z. B. Einfamilienhaus)", "Privathaushalte", "EAG + Made-in-Europe-Bonus + VKW-Speicher + Gemeinde", "2.500 bis 4.500 €"],
         ["PV-Carport oder Parkplatz ab 20 kWp", "Unternehmen, Bauträger, Vereine, Private", "Landesförderung + EAG", "bis 50.000 € plus EAG"],
@@ -172,23 +185,25 @@ kombinieren, sofern die beihilferechtlichen Höchstgrenzen eingehalten werden.</
     hl_cols=(3,),
 )}
 <h3>Szenario 1: Standard-Dachanlage</h3>
-<p>Sie nutzen die EAG als Hauptzuschuss (1.500 € bei 10 kWp bis 2.800 € bei 20 kWp), holen mit gelisteten
-Komponenten den Made-in-Europe-Bonus (10 % je Komponente), beantragen die VKW-Speicherförderung (50 €/kWh,
-max. 500 €) und prüfen die Gemeindeförderung. Rechenbeispiel 8 kWp mit 8 kWh Speicher: 1.200 € PV plus 1.200 €
-Speicher plus 360 € Bonus plus 400 € VKW ergeben rund 3.160 €*, mit Gemeindezuschuss entsprechend mehr.</p>
+<p>Im Call 2026 war die EAG der Hauptzuschuss (1.500 € bei 10 kWp bis 2.800 € bei 20 kWp), dazu kamen mit
+gelisteten Komponenten der Made-in-Europe-Bonus (10 % je Komponente), die VKW-Speicherförderung (50 €/kWh,
+max. 500 €) und die Gemeindeförderung. Rechenbeispiel im Call 2026, 8 kWp mit 8 kWh Speicher: 1.200 € PV plus
+1.200 € Speicher plus 360 € Bonus plus 400 € VKW ergaben rund 3.160 €*. Aktuell, ohne Bundeszuschuss, bleiben
+400 € VKW-Bonus plus ein möglicher Gemeindezuschuss.</p>
 <h3>Szenario 2: PV-Carport oder Parkplatzüberdachung ab 20 kWp</h3>
-<p>Landesförderung (max. 50.000 €) plus EAG-Bundesförderung. Je nach Projektgröße fällt die Gesamtförderung
-deutlich höher aus, für gewerbliche Bauherren ist diese Schiene besonders attraktiv.</p>
+<p>Landesförderung (max. 50.000 €), im Call 2026 plus EAG-Bundesförderung. Je nach Projektgröße fällt die
+Gesamtförderung deutlich höher aus, für gewerbliche Bauherren ist diese Schiene besonders attraktiv.</p>
 <h3>Szenario 3: Gewerbliche Anlage auf bestehendem Gebäude</h3>
-<p>Hier greifen EAG Kategorie C oder D (max. 130 bzw. 120 €/kWp im Bieterverfahren) plus Made-in-Europe-Bonus.
-Eine Landesförderung ist nicht verfügbar, weil Anlagen auf bestehenden Gebäuden ausgeschlossen sind.</p>
-<p><small>*Richtwerte auf Basis der Fördersätze 2026. Die tatsächliche Höhe hängt von Anlagengröße,
+<p>Im Call 2026 griffen hier EAG Kategorie C oder D (max. 130 bzw. 120 €/kWp im Bieterverfahren) plus
+Made-in-Europe-Bonus; derzeit ist kein Bundeszuschuss beantragbar. Eine Landesförderung ist nicht verfügbar,
+weil Anlagen auf bestehenden Gebäuden ausgeschlossen sind.</p>
+<p><small>*Richtwerte auf Basis der Fördersätze 2026 (Bundesanteil nur im Call 2026, beendet). Die tatsächliche Höhe hängt von Anlagengröße,
 Speicherkapazität, Komponenten und der Wohnsitzgemeinde ab.</small></p>
 """),
         ("Voraussetzungen und Antragsablauf", "ablauf", f"""
 <p>Für die drei Schienen gelten unterschiedliche Voraussetzungen:</p>
 <ul>
-  <li><b>EAG-Bundesförderung:</b> netzgekoppelte Anlage, Antrag vor Inbetriebnahme, alle Genehmigungen oder Anzeigen liegen bei Antragstellung vor, Anlage nach Stand der Technik</li>
+  <li><b>EAG-Bundesförderung (Call 2026, beendet):</b> netzgekoppelte Anlage, Antrag vor Inbetriebnahme, alle Genehmigungen oder Anzeigen liegen bei Antragstellung vor, Anlage nach Stand der Technik</li>
   <li><b>Landesförderung versiegelte Flächen:</b> mindestens 20 kWp, Errichtung auf bereits versiegelter Fläche, keine Bestandsgebäude, max. 50.000 € pro Anlage</li>
   <li><b>VKW-Speicherförderung:</b> VKW-Einspeisevertrag, Speicher in Kombination mit PV, max. 500 €, Antrag direkt bei der VKW</li>
 </ul>
@@ -201,42 +216,46 @@ Speicherkapazität, Komponenten und der Wohnsitzgemeinde ab.</small></p>
     ("Genehmigungen und Netzzugang",
      "Anzeigen oder Genehmigungen einholen, Zählpunkt und Netzzugang mit dem Netzbetreiber klären. Die Unterlagen "
      "müssen bei EAG-Antragstellung vorliegen."),
-    ("EAG-Antrag im Fördercall",
+    ("EAG-Antrag im Fördercall (2026)",
      "Online über die EAG-Abwicklungsstelle, in Kategorie A und B mit Ticketziehung, zwingend vor Inbetriebnahme. "
-     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober."),
+     "Calls 2026: 23. April bis 11. Mai, 16. bis 30. Juni, 8. bis 22. Oktober, alle beendet. Für 2027 soll der "
+     "Antrag laut BMWET nach Installation und Rechnung kommen (geplant, nicht beschlossen)."),
     ("Landes- und VKW-Antrag",
      "Projekte ab 20 kWp auf versiegelten Flächen beim Land Vorarlberg einreichen, Speicherbonus direkt bei der VKW "
      "beantragen. Gemeindeförderung nach lokaler Richtlinie."),
     ("Inbetriebnahme und Endabrechnung",
      "Nach Inbetriebnahme Rechnungen und Nachweise einreichen, danach werden die Zuschüsse ausbezahlt."),
 ])}
-{A.box_dark("Der häufigste Fehler",
-    "Die Anlage geht in Betrieb, bevor der EAG-Antrag gestellt wurde. Dann ist der Bundeszuschuss weg, und "
-    "in Vorarlberg gibt es für Standard-Dachanlagen keine Landesförderung als Ersatz.")}
+{A.box_dark("Der häufigste Fehler im Call 2026",
+    "Die Anlage ging in Betrieb, bevor der EAG-Antrag gestellt wurde. Dann war der Bundeszuschuss weg, und "
+    "in Vorarlberg gibt es für Standard-Dachanlagen keine Landesförderung als Ersatz. Wer jetzt plant, baut mit "
+    "Speicher und Energiemanagement, damit die Anlage für die geplante Systemförderung 2027 in Frage kommt.")}
 """),
         ("Photovoltaik und Wärmepumpe: die zweite Förderschiene", "waermepumpe", f"""
 <p>Wer die PV-Anlage mit einer {a('waermepumpe', 'Wärmepumpe')} kombiniert, deckt Heizung und Warmwasser mit
 eigenem Sonnenstrom und kann die Energiekosten um bis zu 85 % senken. Förderseitig laufen beide Systeme getrennt:
-Für die PV-Anlage greift die EAG, für die Wärmepumpe die Sanierungsoffensive des Bundes. Gerade in Vorarlberg,
-wo eine PV-Landesförderung für Privathaushalte fehlt, bringt die Wärmepumpen-Förderung zusätzliche Mittel ins
-Gesamtprojekt.</p>
+Für die PV-Anlage griff 2026 die EAG, für die Wärmepumpe die Sanierungsoffensive des Bundes; beide sind seit
+Herbst 2026 beendet bzw. ausgeschöpft. Ob 2027 neue Bundesprogramme kommen, ist offen (für PV und Speicher ist
+laut BMWET eine Systemförderung geplant).</p>
 """),
-        ("Fazit: EAG als Basis, VKW und Gemeinde als Zusatz", "fazit", f"""
-<p>Die Photovoltaik-Förderung in Vorarlberg 2026 ist anders strukturiert als in den meisten Bundesländern, bei
-richtiger Strategie aber attraktiv: EAG-Bundesförderung als Hauptzuschuss, Made-in-Europe-Komponenten für den
-Bonus, VKW-Speicherförderung und Gemeindezuschuss dazu. Für eine typische Privatanlage mit Speicher sind
-2.500 bis 4.500 €* realistisch. Bauherren von Carports oder Parkplatzüberdachungen ab 20 kWp erreichen mit der
-Landesförderung von bis zu 50.000 € plus EAG deutlich höhere Gesamtquoten.</p>
+        ("Fazit: EAG-Call beendet, VKW und Gemeinde bleiben", "fazit", f"""
+<p>Die Photovoltaik-Förderung in Vorarlberg 2026 ist anders strukturiert als in den meisten Bundesländern. Im
+Call 2026 war die EAG-Bundesförderung der Hauptzuschuss, mit Made-in-Europe-Bonus, VKW-Speicherförderung und
+Gemeindezuschuss waren für eine typische Privatanlage mit Speicher 2.500 bis 4.500 €* realistisch. Seit dem
+22. Oktober 2026 bleiben VKW-Bonus und Gemeinde; Bauherren von Carports oder Parkplatzüberdachungen ab 20 kWp
+nutzen die Landesförderung von bis zu 50.000 €. Wer jetzt plant, baut mit Speicher und Energiemanagement, um
+die Chance auf die laut BMWET geplante Systemförderung 2027 zu wahren.</p>
 <p><small>Stand: Mai 2026. Förderhöhen, Budgets und Fristen können sich ändern, maßgeblich sind die Richtlinien
 der EAG-Abwicklungsstelle (OeMAG), des Landes Vorarlberg und der VKW.</small></p>
-<p><b>Stand Oktober 2026:</b> Der dritte Call (Antragstellung bis 22. Oktober 2026) ist der letzte im
-bisherigen System. Ab 2027 plant das BMWET laut Eckpunkten eine Systemförderung: Antrag nach Installation
-und Rechnung statt Fördercall, gefördert werden Speicher mit intelligenter Steuerung, auch als Nachrüstung;
-Projekte, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und Technikkriterien
-sind noch offen.</p>
+<p><b>Stand ab 23. Oktober 2026:</b> Der dritte Call lief vom 8. bis 22. Oktober 2026 und war der letzte im
+bisherigen System. Neue Anlagen bekommen derzeit keinen Bundeszuschuss. Ab 2027 ist laut Eckpunkten des
+BMWET eine Systemförderung geplant, aber nicht beschlossen: Antrag nach Installation und Rechnung statt
+Fördercall, gefördert werden sollen Speicher mit intelligenter Steuerung, auch als Nachrüstung; Projekte mit
+intelligentem Speicher, die ab 1. November 2026 in Betrieb gehen, sollen 2027 beantragbar sein. Höhe und
+Technikkriterien sind noch offen.</p>
 {A.cta("Förderkombination für Ihr Projekt in Vorarlberg",
-       "Wir prüfen EAG, VKW-Bonus, Gemeindeförderung und bei Flächenprojekten die Landesförderung und übernehmen "
-       "die Antragstellung in der richtigen Reihenfolge.",
+       "Wir prüfen VKW-Bonus, Gemeindeförderung und bei Flächenprojekten die Landesförderung, übernehmen die "
+       "Anträge und behalten die geplante Systemförderung 2027 im Blick.",
        primary=("kontakt", "Jetzt Kontakt aufnehmen"), secondary=("finanzierung", "Finanzierung ab 147 €/Monat"))}
 """),
     ],
@@ -246,11 +265,12 @@ sind noch offen.</p>
         "toc": "Ihr Partner: EBZ Energie",
         "text": ("EBZ Energie aus Villach plant Photovoltaikanlagen, Speicher und Wärmepumpen und hat über 300 Projekte "
                  "in sechs Bundesländern dokumentiert. Für Projekte in Vorarlberg übernehmen wir Beratung, Planung mit "
-                 "Projektbericht (3D-Belegplan und Statikreport) und die Förderabwicklung aus einer Hand: EAG-Call, "
-                 "VKW-Speicherbonus, Gemeindeförderung und bei Flächenprojekten die Landesförderung."),
+                 "Projektbericht (3D-Belegplan und Statikreport) und die Förderabwicklung aus einer Hand: "
+                 "VKW-Speicherbonus, Gemeindeförderung, bei Flächenprojekten die Landesförderung und die "
+                 "Vorbereitung auf die geplante Systemförderung 2027."),
         "grid": [
-            ("Förderabwicklung komplett", "EAG, VKW, Gemeinde und Land in der richtigen Reihenfolge."),
-            ("White-List-Komponenten", "Module, Wechselrichter und Speicher mit Made-in-Europe-Bonus."),
+            ("Förderabwicklung komplett", "VKW, Gemeinde und Land in der richtigen Reihenfolge, Blick auf 2027."),
+            ("Europäische Komponenten", "Module, Wechselrichter und Speicher, für 2027 ist laut BMWET ein Europa-Bonus geplant."),
             ("Flächenprojekte ab 20 kWp", "Carport und Parkplatz mit Landesförderung bis 50.000 € planen."),
             ("Referenzen in 6 Bundesländern", "300+ Projekte, 4,9 Sterne auf Google."),
         ],
@@ -260,36 +280,38 @@ sind noch offen.</p>
         ("Gibt es in Vorarlberg 2026 eine direkte PV-Förderung für Privathaushalte?",
          "Nein. Vorarlberg bietet 2026 keine Pauschalförderung pro Kilowattpeak für Standard-Dachanlagen. Der "
          "Schwerpunkt des Landes liegt auf PV auf versiegelten Flächen ab 20 kWp mit bis zu 50.000 € pro Anlage. "
-         "Privathaushalte mit Dachanlagen nutzen die EAG-Bundesförderung mit 150 €/kWp bis 10 kWp."),
+         "Privathaushalte mit Dachanlagen nutzten im Call 2026 die EAG-Bundesförderung mit 150 €/kWp bis 10 kWp; "
+         "der letzte Call endete am 22. Oktober 2026, derzeit bleiben VKW-Bonus und Gemeinde."),
         ("Wie hoch ist die Vorarlberger Förderung für PV-Carports?",
          "Für PV-Anlagen auf versiegelten Flächen wie Carports oder Parkplätzen ab 20 kWp zahlt das Land bis zu "
-         "50.000 € pro Anlage. Anlagen auf bestehenden Gebäuden sind ausgeschlossen. Die Förderung ist mit der EAG "
-         "kombinierbar, sofern die beihilferechtlichen Höchstgrenzen eingehalten werden."),
+         "50.000 € pro Anlage. Anlagen auf bestehenden Gebäuden sind ausgeschlossen. Im Call 2026 war die Förderung "
+         "mit der EAG kombinierbar, sofern die beihilferechtlichen Höchstgrenzen eingehalten wurden."),
         ("Was bietet die VKW-Speicherförderung?",
          "Die VKW fördern 2026 Speicher mit 50 €/kWh, gedeckelt bei 500 € pro Anlage. Voraussetzung sind ein "
          "VKW-Einspeisevertrag und der Betrieb in Kombination mit einer PV-Anlage. Zusammen mit der EAG-Speicherförderung "
-         "von 150 €/kWh ergibt das bis zu 200 €/kWh für die ersten kWh."),
+         "von 150 €/kWh ergab das im Call 2026 bis zu 200 €/kWh für die ersten kWh; der Bundesanteil ist derzeit nicht "
+         "beantragbar."),
         ("Wie viel Förderung bekomme ich für eine 8-kWp-Anlage mit Speicher in Vorarlberg?",
-         "8 kWp bringen 1.200 € EAG-Zuschuss, ein 8-kWh-Speicher 1.200 €, der Made-in-Europe-Bonus 360 € und der "
-         "VKW-Bonus 400 €, in Summe rund 3.160 € (Richtwert). Mit Gemeindeförderung sind 2.500 bis 4.500 € typisch, "
-         "je nach Anlagengröße und Wohnsitzgemeinde."),
+         "Im Call 2026 brachten 8 kWp 1.200 € EAG-Zuschuss, ein 8-kWh-Speicher 1.200 €, der Made-in-Europe-Bonus "
+         "360 € und der VKW-Bonus 400 €, in Summe rund 3.160 € (Richtwert). Seit dem 22. Oktober 2026 ist kein "
+         "Bundeszuschuss beantragbar, es bleiben 400 € VKW-Bonus und ein möglicher Gemeindezuschuss."),
         ("Kann ich EAG, VKW und Gemeindeförderung kombinieren?",
-         "Ja. EAG-Bundesförderung, VKW-Speicherbonus und Gemeindezuschüsse lassen sich in den meisten Fällen "
-         "kombinieren, sofern die beihilferechtlichen Höchstgrenzen eingehalten werden. Auch die Landesförderung für "
-         "versiegelte Flächen ist mit der EAG kombinierbar."),
-        ("Wann sind die EAG-Fördercalls 2026?",
-         "Die drei Calls laufen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und 8. bis 22. Oktober 2026. In den "
-         "Kategorien A und B gilt First come, first served mit Ticketziehung. Der Antrag muss vor Inbetriebnahme "
-         "gestellt werden."),
+         "Im Call 2026 ja: EAG-Bundesförderung, VKW-Speicherbonus und Gemeindezuschüsse ließen sich in den meisten "
+         "Fällen kombinieren, ebenso die Landesförderung für versiegelte Flächen mit der EAG. Derzeit ist kein "
+         "Bundeszuschuss beantragbar; wie die laut BMWET geplante Systemförderung 2027 kombiniert werden kann, ist offen."),
+        ("Wann waren die EAG-Fördercalls 2026?",
+         "Die drei Calls liefen vom 23. April bis 11. Mai, vom 16. bis 30. Juni und vom 8. bis 22. Oktober 2026, "
+         "jeweils mit Ticketziehung und Antrag vor Inbetriebnahme. Im bisherigen System gibt es keinen weiteren Call. "
+         "Projekte mit intelligentem Speicher ab 1. November 2026 sollen laut BMWET 2027 beantragbar sein."),
         ("Lohnt sich eine PV-Anlage in Vorarlberg trotz fehlender Landesförderung?",
-         "Ja. EAG-Zuschuss mit 150 €/kWp, Made-in-Europe-Bonus, VKW-Speicherbonus und mögliche Gemeindezuschüsse "
-         "ergeben in Summe 2.500 bis 4.500 € für eine typische Privatanlage. Entscheidend für die Wirtschaftlichkeit "
-         "ist ein hoher Eigenverbrauch, zum Beispiel mit Speicher und Wärmepumpe. Bei EBZ-Referenzprojekten liegt die "
+         "Ja. Im Call 2026 ergaben EAG-Zuschuss, Made-in-Europe-Bonus, VKW-Speicherbonus und Gemeindezuschüsse "
+         "2.500 bis 4.500 € für eine typische Privatanlage; auch ohne Bundeszuschuss trägt sich die Anlage über den "
+         "Eigenverbrauch. Entscheidend für die Wirtschaftlichkeit ist ein hoher Eigenverbrauch, zum Beispiel mit Speicher und Wärmepumpe. Bei EBZ-Referenzprojekten liegt die "
          "Amortisation typisch bei 4 bis 6 Jahren."),
         ("Wer hilft bei der Förderabwicklung in Vorarlberg?",
          "EBZ Energie aus Villach übernimmt für Projekte in Vorarlberg Beratung, Planung und Förderabwicklung aus "
-         "einer Hand, von der Komponentenwahl für den Made-in-Europe-Bonus über den EAG-Call bis zu VKW- und "
-         "Gemeindeantrag. Referenzen liegen in sechs Bundesländern vor."),
+         "einer Hand, von der Komponentenwahl über VKW- und Gemeindeantrag bis zur Vorbereitung auf die geplante "
+         "Systemförderung 2027. Referenzen liegen in sechs Bundesländern vor."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant PV-Anlagen, Speicher und "
@@ -311,7 +333,7 @@ sind noch offen.</p>
     ],
     "cta": {
         "h3": "Förderung in Vorarlberg sichern",
-        "text": "Wir kombinieren EAG, VKW-Bonus und Gemeindeförderung für Ihr Projekt und stellen die Anträge rechtzeitig.",
+        "text": "Bundescall 2026 beendet: Wir kombinieren VKW-Bonus und Gemeindeförderung und planen mit Speicher für 2027.",
         "primary": ("kontakt", "Kostenlose Beratung"),
     },
     "final_h2": "Ihre PV-Förderung in Vorarlberg, vollständig genutzt",
