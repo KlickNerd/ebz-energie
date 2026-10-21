@@ -127,6 +127,7 @@
       if(form.querySelector('[name="website"]').value){ return; } // Honeypot
       var req = ["name","email"], ok = true;
       req.forEach(function(n){ var el = form.querySelector('[name="'+n+'"]'); var bad = !el.value.trim() || (n==="email" && el.value.indexOf("@")<0); el.classList.toggle("is-invalid", bad); if(bad) ok = false; });
+      form.querySelectorAll(".is-invalid").forEach(function(el){ el.addEventListener("input", function(){ el.classList.remove("is-invalid"); }, {once: true}); });
       var consent = form.querySelector('[name="datenschutz"]');
       if(consent && !consent.checked){ ok = false; show("err", "Bitte bestätigen Sie die Datenschutzerklärung."); }
       if(!ok){ if(!consent || consent.checked) show("err", "Bitte Name und eine gültige E-Mail-Adresse angeben."); return; }

@@ -775,7 +775,7 @@ def contact_section(headline, sub, form_note="Wir melden uns innerhalb eines Wer
             <textarea id="msg" name="msg" rows="4" placeholder="z. B. Einfamilienhaus, 4 Personen, Interesse an PV mit Speicher"></textarea>
           </div>
           <label class="consent"><input type="checkbox" name="datenschutz" required>
-            Ich habe die {a('datenschutz', 'Datenschutzerklärung')} gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung der Anfrage zu.</label>
+            <span>Ich habe die {a('datenschutz', 'Datenschutzerklärung')} gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung der Anfrage zu.</span></label>
           <button class="btn btn--primary btn--lg" type="submit" style="width:100%">Beratung anfragen</button>
           <p class="form-note">{form_note}</p>
           <p class="form-msg" role="status" aria-live="polite" hidden></p>

@@ -585,13 +585,14 @@ p{margin:0 0 1rem}
 
 /* --- Formular-Status ---------------------------------------------------- */
 .consent{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:var(--muted);margin:4px 0 16px;line-height:1.45}
-.consent input{margin-top:4px;accent-color:var(--petrol);flex:0 0 auto}
+.consent input{margin-top:4px;accent-color:var(--petrol);flex:0 0 auto;width:18px;height:18px}
+.consent span{flex:1 1 auto;min-width:0}
 .form-msg{margin:14px 0 0;padding:14px 16px;border-radius:12px;font-weight:600}
 .form-msg--ok{background:#e7f6ee;color:#14532d;border:1px solid #bfe6cf}
 .form-msg--err{background:#fdecec;color:#7f1d1d;border:1px solid #f5c2c2}
 .form-msg a{color:inherit}
 .form-card.is-sending button{opacity:.6;pointer-events:none}
-.field input:invalid:not(:placeholder-shown),.field input.is-invalid{border-color:#dc2626}
+.field input.is-invalid{border-color:#dc2626;background:#fff5f5}
 
 /* --- FAQ ---------------------------------------------------------------- */
 .faq{max-width:820px;margin-inline:auto;display:grid;gap:12px}
@@ -1105,6 +1106,7 @@ JS = r"""
       if(form.querySelector('[name="website"]').value){ return; } // Honeypot
       var req = ["name","email"], ok = true;
       req.forEach(function(n){ var el = form.querySelector('[name="'+n+'"]'); var bad = !el.value.trim() || (n==="email" && el.value.indexOf("@")<0); el.classList.toggle("is-invalid", bad); if(bad) ok = false; });
+      form.querySelectorAll(".is-invalid").forEach(function(el){ el.addEventListener("input", function(){ el.classList.remove("is-invalid"); }, {once: true}); });
       var consent = form.querySelector('[name="datenschutz"]');
       if(consent && !consent.checked){ ok = false; show("err", "Bitte bestätigen Sie die Datenschutzerklärung."); }
       if(!ok){ if(!consent || consent.checked) show("err", "Bitte Name und eine gültige E-Mail-Adresse angeben."); return; }
