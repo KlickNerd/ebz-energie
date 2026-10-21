@@ -137,6 +137,31 @@ def _finance_media(img, alt):
         cta=("#beratung", "Finanzierung anfragen"))
 
 
+def _final_mario(fc, cta_label):
+    """Schluss-Aufruf vor dem Formular: dunkles Band, Text links, Mario im Hochformat rechts."""
+    paras = "".join(f"<p>{x}</p>" for x in [fc["text"]] + fc.get("more", []))
+    return f"""
+  <section class="section lp-final">
+    <div class="wrap">
+      <div class="lp-final__grid">
+        <div class="lp-final__copy eg-reveal">
+          <p class="eyebrow">{fc.get('eyebrow', 'Jetzt starten')}</p>
+          <h2>{fc['h2']}</h2>
+          {paras}
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="#beratung">{cta_label}</a>
+            <a class="btn btn--ghost btn--lg" href="tel:+436502202626">☎ +43 650 220 26 26</a>
+          </div>
+        </div>
+        <figure class="lp-final__photo eg-reveal">
+          <img src="{MARIO_FOTO}" alt="Mario Zintl, Geschäftsführung EBZ Energie GmbH" width="600" height="900" loading="lazy">
+          <figcaption><b>Mario Zintl</b><span>Geschäftsführung EBZ Energie GmbH</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>"""
+
+
 def _mario_cta(cta_label):
     return (f'<div class="lp-cta-row eg-reveal"><a class="btn btn--primary btn--lg" href="#beratung">{cta_label}</a>'
             f'<a class="btn btn--ghost btn--lg" href="tel:+436502202626">☎ +43 650 220 26 26</a></div>')
@@ -225,9 +250,7 @@ def render(lp):
     fc = lp.get("finalcta")
     if fc and media.get("final_mario"):
         # wie auf der alten LP: Schluss-Aufruf mit Mario-Foto direkt vor dem Formular
-        parts.append(C.media_text(fc.get("eyebrow", "Jetzt starten"), fc["h2"], [fc["text"]] + fc.get("more", []),
-                                  MARIO_FOTO, "Mario Zintl, Geschäftsführung EBZ Energie GmbH", reverse=True,
-                                  cta=("#beratung", cta_label)))
+        parts.append(_final_mario(fc, cta_label))
     c = lp["contact"]
     parts.append(C.contact_section(c["h2"], c["sub"], page_label=f"LP {lp['_name']}"))
     if lp.get("faq"):

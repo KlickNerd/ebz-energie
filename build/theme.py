@@ -203,6 +203,23 @@ p{margin:0 0 1rem}
 .lp-photo-bg .step h3{color:#fff}
 .lp-photo-bg .step p{color:#dbe9ee}
 .lp-photo-bg .step__t{color:var(--amber)}
+/* Schluss-Aufruf mit Mario (Ads-Landingpages) */
+.lp-final{background:#fff;border-top:1px solid var(--line)}
+.lp-final__grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(32px,5vw,72px);align-items:center}
+.lp-final h2{color:var(--ink)}
+.lp-final p{color:var(--muted);font-size:1.08rem}
+.lp-final .eyebrow{color:var(--amber-2)}
+.lp-final .hero__cta{margin-top:26px}
+.lp-final__photo{position:relative;margin:0;justify-self:center;width:min(100%,360px)}
+.lp-final__photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;
+  border-radius:calc(var(--radius) + 6px);box-shadow:0 40px 70px -30px rgba(0,0,0,.6)}
+.lp-final__photo figcaption{position:absolute;left:-18px;bottom:24px;background:#fff;color:var(--ink);border-radius:14px;
+  padding:10px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;line-height:1.25}
+.lp-final__photo figcaption b{font-family:var(--font-head);color:var(--petrol)}
+.lp-final__photo figcaption span{font-size:.82rem;color:var(--muted)}
+@media(max-width:860px){.lp-final__grid{grid-template-columns:1fr}.lp-final__photo{order:-1;width:min(100%,300px)}
+  .lp-final__photo figcaption{left:12px}}
+
 /* Button-Zeile unter dem Zitat */
 .lp-cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-top:-24px;padding-bottom:clamp(40px,6vw,72px)}
 
