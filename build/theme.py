@@ -402,15 +402,15 @@ p{margin:0 0 1rem}
 /* --- Steps -------------------------------------------------------------- */
 .steps:has(> :nth-child(6)){grid-template-columns:repeat(3,1fr)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
-.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;display:flex;flex-direction:column}
 .step__n{counter-increment:step;width:40px;height:40px;border-radius:12px;
   background:var(--petrol);color:#fff;font-family:var(--font-head);font-weight:800;
   display:grid;place-items:center;margin-bottom:14px}
 .step__n::before{content:counter(step)}
-.step h3{font-size:1.15rem}
-.step__t{display:inline-block;margin-top:8px;font-size:.85rem;font-weight:700;color:var(--amber-2)}
+.step h3{font-size:1.15rem;min-height:2.6em;display:flex;align-items:flex-start}
+.step__t{display:inline-block;align-self:flex-start;margin-top:auto;padding-top:12px;font-size:.85rem;font-weight:700;color:var(--amber-2)}
 @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.steps{grid-template-columns:1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.step h3{min-height:0}}
 
 /* --- Why grid ----------------------------------------------------------- */
 .why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}

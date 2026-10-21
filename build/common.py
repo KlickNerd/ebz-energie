@@ -411,6 +411,7 @@ def apply_base_path(html):
         return html
     html = html.replace('href="/', f'href="{BASE_PATH}/')
     html = html.replace('src="/', f'src="{BASE_PATH}/')
+    html = html.replace("url('/", f"url('{BASE_PATH}/")  # Hintergrundbilder in style-Attributen
     return html
 
 
