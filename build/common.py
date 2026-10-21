@@ -75,6 +75,8 @@ FINANZIERUNG = {
 # Ueberwacht vom "Formular-Waechter" (einmal taeglich im 8-Uhr-Lauf). Fallback im Browser: mailto-Link.
 # (Seit 10.10.2026 statt n8n; build/n8n-workflow-kontakt.json ist nur noch Archiv.)
 FORM_ENDPOINT = "https://hook.us2.make.com/1fkgm8zywyy6jqswmqibte15sxb349n7"
+# Google Search Console: Bestaetigung der URL-Praefix-Property per Meta-Tag (von der alten WordPress-Seite uebernommen)
+GSC_VERIFICATION = "uILDYt2dby_-jXvB2MkbzM1zUr5RF7oFmLeIn0-8zlo"
 
 # Website-Chatbot: Cloudflare-Worker "ebzbot" (Quelle lokal unter chatbot/worker.js, nicht im Repo). Widget: build/chatbot.py
 CHATBOT_URL = "https://ebzbot.klicknerds.workers.dev"

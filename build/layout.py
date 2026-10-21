@@ -6,7 +6,7 @@ seitenuebergreifend identisch (eine Quelle) und werden hier gepflegt.
 
 from chatbot import CHATBOT_HTML
 from common import (BASE, NAP, S, IMG, a, href, tel_link, u,
-                    localbusiness_jsonld)
+                    localbusiness_jsonld, GSC_VERIFICATION)
 
 # Schriften liegen selbst gehostet unter /assets/fonts/ (kein Aufruf von Google-Servern, DSGVO).
 # Die @font-face-Regeln stehen am Anfang von styles.css (theme.write_assets), hier nur Preload der Latin-Dateien.
@@ -200,6 +200,7 @@ def page(title, description, path, body, faq_jsonld_str=None,
   <meta property="og:url" content="{canonical}">
   <meta property="og:image" content="{og}">
   <meta name="theme-color" content="#0e4d64">
+  <meta name="google-site-verification" content="{GSC_VERIFICATION}">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   {FONTS}
   <link rel="stylesheet" href="/assets/css/styles.css">{schemas}
