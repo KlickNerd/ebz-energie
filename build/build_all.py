@@ -96,7 +96,12 @@ def write_htaccess():
             parts = line.split()
             if len(parts) >= 2 and parts[0].startswith("/") and parts[1].startswith("/"):
                 old = parts[0].strip("/")
-                pattern = "^$" if not old else "^" + re.escape(old).replace("\\-", "-") + "/?$"
+                if old.endswith("*"):
+                    # Platzhalter: /author/* trifft /author/ und alles darunter
+                    base = re.escape(old.rstrip("*").strip("/")).replace("\\-", "-")
+                    pattern = "^" + base + "(/.*)?$"
+                else:
+                    pattern = "^$" if not old else "^" + re.escape(old).replace("\\-", "-") + "/?$"
                 rules.append(f"RewriteRule {pattern} {parts[1]} [R=301,L]")
     body = f"""# Automatisch erzeugt von build/build_all.py aus build/redirects.txt. Nicht von Hand aendern.
 Options -Indexes

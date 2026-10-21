@@ -81,3 +81,29 @@
 /pv-anlage-kaufen/                                 /photovoltaik/
 /pv-anlage-kwp-groessen/                           /kosten-einer-solaranlage/
 /wallbox-foerderung-kosten/                        /photovoltaik-carport/
+
+# Alte Adressen ausserhalb der Sitemap (Backlinks, Ads-Landingpages, interne Altlinks), Stand 21.10.2026
+/balkonkraftwerk-lp/                               /balkonkraftwerke/
+/heimkraftwerk-lp/                                 /photovoltaik/
+/waermepumpe-sea/                                  /waermepumpe/
+/waermepumpe-photovoltaik-lp/                      /photovoltaik-fuer-waermepumpe/
+/foerderung-fuer-photovoltaik/                     /foerderungen/
+/photovoltaik-foerderung/                          /foerderungen/
+/photovoltaik-foerderung-in-kaernten-2026/         /photovoltaik-foerderung-kaernten/
+/stromspeicher/                                    /batteriespeicher/
+/kosten-einer-pv-anlage/                           /kosten-einer-solaranlage/
+/luftwaermepumpe-kosten/                           /kosten-einer-waermepumpe/
+/energiegemeinschaft-erfahrungen/                  /energiegemeinschaft/
+/smart-meter-oesterreich/                          /smart-meter/
+/balkonkraftwerk-in-kaernten/                      /balkonkraftwerke/
+/photovoltaik-am-balkon/                           /balkonkraftwerke/
+/photovoltaik-montage-firma/                       /photovoltaik/
+
+# WordPress-Archive und Feeds (Platzhalter: Pfad und alles darunter)
+/author/*                                          /ueber-uns/
+/category/*                                        /ratgeber/
+/tag/*                                             /ratgeber/
+/aktuelles/*                                       /ratgeber/
+/page/*                                            /ratgeber/
+/comments/feed/*                                   /ratgeber/
+/feed/*                                            /ratgeber/
