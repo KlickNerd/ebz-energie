@@ -216,10 +216,15 @@ def render(lp):
                                       bullets=pr.get("bullets")))
         else:
             parts.append(C.text_block(pr["eyebrow"], pr["h2"], pr["paragraphs"]))
+    sysblock = lp.get("system")
+    if sysblock and media.get("grafik"):
+        src, alt, w, h = media["grafik"]
+        parts.append(C.media_text(sysblock["eyebrow"], sysblock["h2"], sysblock["paragraphs"], src, alt,
+                                  reverse=True).replace('<img src="' + src, '<img class="is-grafik" src="' + src, 1))
     b = lp["benefits"]
     parts.append(C.cards_section(b["eyebrow"], b["h2"], b["intro"],
                                  [{"ic": ic, "title": t, "text": x} for ic, t, x in b["cards"]]))
-    if media.get("grafik"):
+    if media.get("grafik") and not sysblock:
         parts.append(_grafik_section(media["grafik"], lp.get("grafik_h2", "So arbeitet Ihr Energiesystem zusammen")))
     if lp.get("quote"):
         parts.append(C.founder_block(lp["quote"], img=MARIO_FOTO if media.get("mario") else None))

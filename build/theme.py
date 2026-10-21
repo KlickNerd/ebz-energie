@@ -387,6 +387,7 @@ p{margin:0 0 1rem}
 .mediatext__media img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;
   aspect-ratio:4/3;object-fit:cover}
 .mediatext--reverse .mediatext__media{order:2}
+.mediatext__media img.is-grafik{aspect-ratio:auto;height:auto;object-fit:contain;background:#fff}
 .mediatext p{color:var(--muted)}
 .mediatext .checklist{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow-sm)}
 .section.dark .mediatext .checklist{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);box-shadow:none}

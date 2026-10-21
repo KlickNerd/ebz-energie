@@ -35,10 +35,23 @@ LP = {
             "<b>Sicher entscheiden:</b> kostenlose, persönliche Beratung und technische Prüfung direkt bei Ihnen vor Ort.",
         ],
     },
+    "system": {
+        "eyebrow": "Das Energiesystem",
+        "h2": "Photovoltaik mit Speicher und Wallbox: das moderne Energiesystem für Ihr Zuhause",
+        "paragraphs": [
+            ("Statt Ihren Strom teuer beim Energieversorger einzukaufen, nutzen Sie eine Ressource, die jeden Tag "
+             "kostenlos auf Ihr Dach scheint: die Sonne. Eine moderne Photovoltaikanlage wandelt Sonnenlicht direkt in "
+             "elektrische Energie um, sauber, leise und über Jahrzehnte zuverlässig."),
+            ("Mit einem Stromspeicher machen Sie Ihren Sonnenstrom auch abends und nachts verfügbar. Mit einer Wallbox "
+             "laden Sie Ihr Elektroauto mit Ihrem eigenen Solarstrom statt teuer an der öffentlichen Ladesäule."),
+            ("Für Sie bedeutet das: Sie koppeln sich weitgehend vom Strommarkt ab und senken Ihre Energiekosten um bis "
+             "zu 85 %. Gleichzeitig erzeugen Sie Ihre Energie klimafreundlich und machen Ihr Zuhause zukunftssicher."),
+        ],
+    },
     "benefits": {
         "eyebrow": "Ihre Vorteile",
-        "h2": "Photovoltaik, Speicher und Wallbox: ein Energiesystem für Ihr Zuhause",
-        "intro": "Sie produzieren, speichern und nutzen Ihren eigenen Strom. Wir planen das System passend zu Ihrem Verbrauch.",
+        "h2": "Die Sonne ist Ihre größte ungenutzte Energiequelle, und wir machen sie für Sie nutzbar",
+        "intro": "Vier Gründe, warum sich eine eigene PV-Anlage mit Speicher für Ihr Zuhause lohnt.",
         "cards": [
             ("€", "Stromkosten dauerhaft senken",
              "Mit Speicher steigt Ihr Eigenverbrauch auf bis zu 80 %. Sie senken Ihre Energiekosten um bis zu 85 %."),
