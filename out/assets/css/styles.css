@@ -46,7 +46,7 @@ p{margin:0 0 1rem}
 .skip-link:focus{left:0}
 
 /* --- Buttons ------------------------------------------------------------- */
-.btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--font-head);
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;gap:.55em;font-family:var(--font-head);
   font-weight:700;font-size:1rem;line-height:1;padding:15px 26px;border-radius:999px;
   border:2px solid transparent;cursor:pointer;text-decoration:none;transition:.18s ease;
   transition-property:transform,box-shadow,background,color,border-color}
@@ -578,6 +578,7 @@ p{margin:0 0 1rem}
   border-radius:11px;font:inherit;background:var(--bg)}
 .field input:focus,.field textarea:focus{outline:none;border-color:var(--petrol);background:#fff}
 .form-note{font-size:.82rem;color:var(--muted);margin-top:6px}
+.form-card > .form-note{text-align:center;margin-top:10px}
 @media(max-width:820px){.contact__grid{grid-template-columns:1fr}}
 
 /* --- Formular-Status ---------------------------------------------------- */
