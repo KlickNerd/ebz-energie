@@ -310,6 +310,8 @@ p{margin:0 0 1rem}
 .card__link:hover{gap:10px}
 @media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.cards{grid-template-columns:1fr}}
+/* Genau vier Karten: 2 x 2 statt 3 + 1 */
+@media(min-width:601px){.cards:has(> :nth-child(4):last-child){grid-template-columns:repeat(2,1fr)}}
 
 /* --- Split / Panels ----------------------------------------------------- */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
