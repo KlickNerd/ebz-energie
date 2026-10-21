@@ -1171,7 +1171,9 @@ JS = r"""
       fetch(form.action, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(data)})
         .then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); })
         .then(function(){ form.classList.remove("is-sending"); form.reset();
-          show("ok", "Danke! Ihre Anfrage ist bei uns in Villach angekommen. Wir melden uns innerhalb eines Werktags."); })
+          show("ok", "Danke! Ihre Anfrage ist bei uns in Villach angekommen. Wir melden uns innerhalb eines Werktags.");
+          var thanks = form.querySelector(".js-thanks");
+          if(thanks){ setTimeout(function(){ location.href = thanks.href; }, 400); } })
         .catch(function(){ form.classList.remove("is-sending");
           var mail = form.getAttribute("data-mailto");
           var body = encodeURIComponent("Name: "+(data.name||"")+"\nE-Mail: "+(data.email||"")+"\nTelefon: "+(data.tel||"")+"\nPLZ/Ort: "+(data.plz||"")+"\n\n"+(data.msg||""));

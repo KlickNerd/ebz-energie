@@ -56,7 +56,6 @@
 # Restliche WordPress-Adressen (Abgleich mit der Live-Sitemap am 21.10.2026), Ziel = naechstliegende neue Seite
 /aktuelles/                                        /ratgeber/
 /category/uncategorized/                           /ratgeber/
-/danke/                                            /kontakt/
 /marstek-lp/                                       /batteriespeicher/
 /pv-anlage-leasen/solar-basic/                     /finanzierung/
 /pv-anlage-leasen/solar-comfort/                   /finanzierung/
