@@ -18,7 +18,7 @@ die 60 bei Google rankenden Seiten. Textmenge alt/neu in Wörtern (Hauptinhalt o
 | / | / | 2772 | 1843 | Home |
 | /ab-wann-lohnt-sich-photovoltaik-mit-speicher/ | /ab-wann-lohnt-sich-photovoltaik-mit-speicher/ | 1975 | 2531 | Ab wann lohnt sich Photovoltaik mit Speicher? |
 | /balkonkraftwerk-foerderung-in-oesterreich/ | /balkonkraftwerk-foerderung-in-oesterreich/ | 2206 | 2193 | Balkonkraftwerk Förderung in Österreich 2025: Ihr kompletter |
-| /balkonkraftwerk-lp/ | /balkonkraftwerk-lp/ | 753 | 844 | Balkonkraftwerk – LP |
+| /balkonkraftwerk-lp/ | /balkonkraftwerk-lp/ | 753 | 844 | Balkonkraftwerk: LP |
 | /balkonkraftwerke/ | /balkonkraftwerke/ | 1620 | 2491 | Balkonkraftwerke Leistungsseite |
 | /batteriespeicher/ | /batteriespeicher/ | 1936 | 2573 | Batteriespeicher |
 | /datenschutz/ | /datenschutz/ | 1422 | 1251 | Datenschutz |
@@ -46,7 +46,7 @@ die 60 bei Google rankenden Seiten. Textmenge alt/neu in Wörtern (Hauptinhalt o
 | /foerderung-photovoltaik-steiermark/ | /foerderung-photovoltaik-steiermark/ | 2450 | 3019 | Photovoltaik-Förderung Steiermark 2026: So sichern Sie sich  |
 | /foerderung-pv-speicher-kaernten/ | /foerderung-pv-speicher-kaernten/ | 2950 | 2683 | Die Top Förderung für PV-Speicher in Kärnten 2025 sichern |
 | /funktionsweise-einer-waermepumpe/ | /funktionsweise-einer-waermepumpe/ | 2161 | 2232 | Die Funktionsweise einer Wärmepumpe einfach erklärt |
-| /heimkraftwerk-lp/ | /heimkraftwerk-lp/ | 898 | 844 | Heimkraftwerk – LP |
+| /heimkraftwerk-lp/ | /heimkraftwerk-lp/ | 898 | 844 | Heimkraftwerk: LP |
 | /heizen-mit-waermepumpe/ | /heizen-mit-waermepumpe/ | 2842 | 2426 | Heizen mit Wärmepumpe: Alles, was Sie wissen müssen |
 | /impressum/ | /impressum/ | 141 | 616 | Impressum |
 | /infrarotheizung-mit-photovoltaik/ | /infrarotheizung-mit-photovoltaik/ | 1629 | 2205 | Infrarotheizung mit Photovoltaik |
@@ -71,13 +71,13 @@ die 60 bei Google rankenden Seiten. Textmenge alt/neu in Wörtern (Hauptinhalt o
 | /photovoltaik-foerderung-wien/ | /photovoltaik-foerderung-wien/ | 2489 | 2985 | Photovoltaik-Förderung Wien 2026: So holen Sie maximale Zusc |
 | /photovoltaik-fuer-waermepumpe/ | /photovoltaik-fuer-waermepumpe/ | 3026 | 2456 | Photovoltaik für die Wärmepumpe: Ihr Weg zur energieautarken |
 | /photovoltaik-gewerbe-lp/ | /photovoltaik-gewerbe-lp/ | 2696 | 1784 | Photovoltaik Gewerbe LP |
-| /photovoltaik-gewerbe/ | /photovoltaik-gewerbe/ | 1008 | 2472 | Photovoltaik Gewerbe – LP |
+| /photovoltaik-gewerbe/ | /photovoltaik-gewerbe/ | 1008 | 2472 | Photovoltaik Gewerbe: LP |
 | /photovoltaik-klagenfurt/ | /photovoltaik-klagenfurt/ | 2334 | 3184 | Photovoltaik in Klagenfurt: Ihr Wegweiser zu nachhaltiger En |
 | /photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ | /photovoltaik-komplettanlage-10-kwp-mit-speicher-und-montage/ | 2599 | 2674 | Ihre Unabhängigkeit: Photovoltaik Komplettanlage 10 kWp mit  |
 | /photovoltaik-landesfoerderungen/ | /photovoltaik-landesfoerderungen/ | 3476 | 3838 | Photovoltaik-Landesförderungen |
 | /photovoltaik-privat-lp/ | /photovoltaik-privat-lp/ | 2594 | 1145 | Photovoltaik privat LP |
 | /photovoltaik-steiermark/ | /photovoltaik-steiermark/ | 2294 | 3383 | Photovoltaik in der Steiermark: Ihr Weg zu sauberer Energie  |
-| /photovoltaik-und-batteriespeicher/ | /photovoltaik-und-batteriespeicher/ | 1075 | 930 | Photovoltaik und Batteriespeicher – LP |
+| /photovoltaik-und-batteriespeicher/ | /photovoltaik-und-batteriespeicher/ | 1075 | 930 | Photovoltaik und Batteriespeicher: LP |
 | /photovoltaik-villach/ | /photovoltaik-villach/ | 1784 | 2834 | Photovoltaik Villach: Mit EBZ zur eigenen Energie |
 | /photovoltaik-wolfsberg/ | /photovoltaik-wolfsberg/ | 3103 | 2783 | Photovoltaik Wolfsberg: Ihr Leitfaden zur Energieunabhängigk |
 | /photovoltaik/ | /photovoltaik/ | 2673 | 2687 | Photovoltaik |
@@ -123,7 +123,7 @@ die 60 bei Google rankenden Seiten. Textmenge alt/neu in Wörtern (Hauptinhalt o
 | /erneuerbare-energien/ | /solarenergie/ | 2913 | 2435 | Erneuerbare Energien in Österreich: Ihr Leitfaden für eine s |
 | /kosten-von-photovoltaikanlagen-mit-speicher/ | /kosten-einer-solaranlage/ | 2062 | 3014 | Transparenter Überblick: Die Kosten von Photovoltaikanlagen  |
 | /photovoltaik-landesfoerderungen-in-oesterreich/ | /photovoltaik-landesfoerderungen/ | 2960 | 3838 | Photovoltaik Landesförderungen in Österreich |
-| /photovoltaik-mieten/ | /solaranlage-mieten-oder-kaufen/ | 2292 | 3275 | Photovoltaik mieten – Lohnt sich das wirklich? |
+| /photovoltaik-mieten/ | /solaranlage-mieten-oder-kaufen/ | 2292 | 3275 | Photovoltaik mieten: Lohnt sich das wirklich? |
 | /photovoltaik-mit-speicher/ | /batteriespeicher/ | 2453 | 2573 | Photovoltaik mit Speicher: Ihr Weg zur maximalen Unabhängigk |
 | /photovoltaik-oesterreich/ | /solarenergie/ | 2304 | 2435 | Photovoltaik in Österreich: Ihr Weg zur unabhängigen und nac |
 | /pv-anlage-mit-notstrom-nachruesten/ | /notstrom/ | 2826 | 2293 | Ihre PV-Anlage mit Notstrom nachrüsten: Der komplette Leitfa |
