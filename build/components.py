@@ -692,12 +692,13 @@ def founder_story(eyebrow, h2, paragraphs, quote, name, role, badge=None,
   </section>"""
 
 
-def founder_block(quote):
+def founder_block(quote, img=None):
+    """img: optional anderes Mario-Foto (Standard: Freisteller)."""
     return f"""
   <section class="section">
     <div class="wrap">
       <div class="founder eg-reveal">
-        <img src="{IMG['mario']}" alt="{AUTHOR}, {AUTHOR_ROLE}" width="220" height="220" loading="lazy">
+        <img src="{img or IMG['mario']}" alt="{AUTHOR}, {AUTHOR_ROLE}" width="220" height="220" loading="lazy"{' style="object-fit:cover;object-position:50% 20%"' if img else ''}>
         <div>
           <blockquote>„{quote}“</blockquote>
           <cite>{AUTHOR}<small>{AUTHOR_ROLE}</small></cite>

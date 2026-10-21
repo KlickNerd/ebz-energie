@@ -30,6 +30,73 @@ REFS = {
                 "result": "13.500 €", "result_sub": "Ersparnis pro Jahr"},
 }
 
+# Bilder der alten WordPress-LPs (Oktober 2026 gesichert nach build/static/img/lp-*).
+# Projektfotos ohne Zahlen und ohne Kundennamen; Grafiken mit nicht freigegebenen Aussagen
+# (90 %, 70 % Heizkosten, 70 bis 90 % Eigenverbrauch) wurden beschnitten oder nicht uebernommen.
+_I = "/assets/img/"
+PHOTOS = {
+    "ziegeldach-bergblick": ("Photovoltaikanlage auf einem Ziegeldach mit Bergen und Wald im Hintergrund", "Ziegeldach mit Bergblick"),
+    "einfamilienhaus-walmdach": ("Einfamilienhaus mit Walmdach und Photovoltaikmodulen auf mehreren Dachseiten", "Walmdach, mehrere Dachseiten"),
+    "montage-unterkonstruktion": ("Montage der Unterkonstruktion für eine Photovoltaikanlage auf einem Einfamilienhaus", "Montage der Unterkonstruktion"),
+    "landwirtschaft": ("Landwirtschaftlicher Betrieb mit Photovoltaikanlage auf den Stalldächern", "Landwirtschaft, Stalldach"),
+    "flachdach-aufgestaendert": ("Aufgeständerte Photovoltaikmodule auf einem Flachdach im Winter", "Flachdach, aufgeständert"),
+    "blechdach-montage": ("Zertifizierte Fachkräfte montieren Photovoltaikmodule auf einem Blechdach", "Montage auf Blechdach"),
+    "ziegeldach-tal": ("Photovoltaikanlage auf einem Ziegeldach eines Wohnhauses im Tal", "Wohnhaus, Ziegeldach"),
+    "mehrparteienhaus": ("Photovoltaikanlage auf dem Dach eines Mehrparteienhauses aus der Vogelperspektive", "Mehrparteienhaus"),
+    "schieferdach": ("Photovoltaikmodule auf einem dunklen Schieferdach", "Dunkles Schieferdach"),
+    "satteldach-ziegel": ("Photovoltaikanlage auf einem Satteldach mit roten Ziegeln", "Satteldach mit Ziegeln"),
+    "ziegeldach-dachfenster": ("Schwarze Photovoltaikmodule auf einem dunklen Ziegeldach mit Dachfenstern", "Dunkles Ziegeldach"),
+    "module-ziegeldach": ("Nahaufnahme von Photovoltaikmodulen auf einem Ziegeldach mit Dachhaken", "Saubere Montage im Detail"),
+    "holzfassade": ("Photovoltaikanlage auf einem Haus mit Holzfassade unter blauem Himmel", "Haus mit Holzfassade"),
+    "ziegeldach-garten": ("Photovoltaikanlage auf einem Ziegeldach mit Blick in den Garten", "Ziegeldach mit Garten"),
+    "flachdach-drei-ausrichtungen": ("Photovoltaikmodule in drei Ausrichtungen auf einem Flachdach", "Flachdach, drei Ausrichtungen"),
+    "blechdach-bergblick": ("Photovoltaikanlage auf einem Blechdach mit Bergpanorama", "Blechdach mit Bergpanorama"),
+    "zeltdach-fassade": ("Wohnhaus mit Photovoltaik auf dem Zeltdach und Fassadenmodulen am Balkon, Luftaufnahme", "Dach und Fassade"),
+    "fassadenmodule": ("Photovoltaikmodule als Balkonverkleidung an der Fassade eines Wohnhauses", "Fassadenmodule am Balkon"),
+    "ziegeldach-luftbild": ("Luftaufnahme einer Photovoltaikanlage auf einem Ziegeldach in zwei Ausrichtungen", "Ziegeldach, zwei Ausrichtungen"),
+    "blechdach-luftbild": ("Luftaufnahme einer Photovoltaikanlage auf einem grauen Blechdach eines Wohnhauses", "Blechdach von oben"),
+    "pultdach": ("Photovoltaikanlage auf einem dunklen Pultdach neben einer Dachterrasse", "Pultdach mit Terrasse"),
+    "landwirtschaft-luftbild": ("Luftaufnahme eines Hofes mit Photovoltaikanlagen auf mehreren Dächern", "Hof mit mehreren Dächern"),
+}
+GALLERY_2023 = ["schieferdach", "ziegeldach-bergblick", "landwirtschaft", "flachdach-aufgestaendert", "blechdach-montage", "mehrparteienhaus"]
+GALLERY_2024 = ["zeltdach-fassade", "flachdach-drei-ausrichtungen", "blechdach-bergblick", "ziegeldach-garten",
+                "ziegeldach-luftbild", "blechdach-luftbild", "holzfassade", "module-ziegeldach",
+                "fassadenmodule", "pultdach", "satteldach-ziegel", "ziegeldach-dachfenster"]
+GALLERY_PV_SPEICHER = ["ziegeldach-bergblick", "einfamilienhaus-walmdach", "montage-unterkonstruktion", "landwirtschaft",
+                       "flachdach-aufgestaendert", "blechdach-montage", "ziegeldach-tal", "mehrparteienhaus", "schieferdach"]
+GRAFIK_PV = (_I + "lp-grafik-pv-speicher-wallbox.jpg",
+             "Grafik: Photovoltaikanlage auf dem Dach, Stromspeicher im Haus und Wallbox für das Elektroauto", 1408, 560)
+GRAFIK_WP_PV = (_I + "lp-grafik-waermepumpe-pv.jpg",
+                "Grafik: Photovoltaik erzeugt Strom, der Speicher puffert ihn, die Wärmepumpe heizt Haus und Warmwasser", 1600, 893)
+MARIO_FOTO = _I + "lp-mario-zintl.jpg"
+
+# Welche LP welche Bilder bekommt (wie auf der alten Seite)
+MEDIA = {
+    "/photovoltaik-privat-lp/": {"grafik": GRAFIK_PV, "gallery": GALLERY_2023, "mario": True},
+    "/photovoltaik-gewerbe-lp/": {"gallery": GALLERY_2023[:5] + ["landwirtschaft-luftbild"], "mario": True},
+    "/waermepumpeninstallation-oesterreich/": {"gallery": GALLERY_2023, "mario": True},
+    "/waermepumpe-photovoltaik-oesterreich/": {"grafik": GRAFIK_WP_PV, "gallery": GALLERY_2023, "mario": True},
+    "/heimkraftwerk-lp/": {"hero": (_I + "lp-heimkraftwerk.jpg", "Einfamilienhaus mit Photovoltaikanlage auf dem roten Ziegeldach"),
+                           "gallery": GALLERY_2024},
+    "/balkonkraftwerk-lp/": {"gallery": GALLERY_2024},
+    "/photovoltaik-und-batteriespeicher/": {"gallery": GALLERY_PV_SPEICHER},
+    "/ems-lp-2/": {"hero": (_I + "lp-ems-smartphone.jpg", "Frau steuert die Energie im Haus über eine App am Smartphone"), "mario": True},
+}
+
+
+def _grafik_section(grafik, h2):
+    src, alt, w, h = grafik
+    return f"""
+  <section class="section--tight section">
+    <div class="wrap">
+      <h2 class="center eg-reveal" style="margin-bottom:24px">{h2}</h2>
+      <figure class="eg-reveal" style="margin:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#fff">
+        <img src="{src}" alt="{alt}" width="{w}" height="{h}" loading="lazy" style="display:block;width:100%;height:auto">
+      </figure>
+    </div>
+  </section>"""
+
+
 WHY_DEFAULT = [
     ("☀", "Alles aus einer Hand", "Planung, Montage, Förderabwicklung, Netzanmeldung und Service. Ein Ansprechpartner von der Planung bis zur Übergabe."),
     ("✓", "Zertifizierte Fachkräfte", "Meisterhaftes Handwerk und sorgfältige Ausführung nach österreichischen Normen."),
@@ -58,10 +125,12 @@ def load_lps():
 def render(lp):
     rating, count, reviews = load_reviews()
     cta_label = lp.get("cta", "Kostenloses Angebot anfordern")
+    media = MEDIA.get(lp["path"], {})
+    hero_src, hero_alt = media.get("hero", (IMG[lp["hero_img"]], lp["hero_alt"]))
     parts = [
         C.hero(
             eyebrow=lp["eyebrow"], h1=lp["h1"], lead=lp["lead"], badges=lp["badges"],
-            img=IMG[lp["hero_img"]], img_alt=lp["hero_alt"],
+            img=hero_src, img_alt=hero_alt,
             float_num=lp.get("float", ("4,9", "Sterne auf Google"))[0],
             float_label=lp.get("float", ("4,9", "Sterne auf Google"))[1],
             cta_primary=("#beratung", cta_label),
@@ -75,8 +144,10 @@ def render(lp):
     b = lp["benefits"]
     parts.append(C.cards_section(b["eyebrow"], b["h2"], b["intro"],
                                  [{"ic": ic, "title": t, "text": x} for ic, t, x in b["cards"]]))
+    if media.get("grafik"):
+        parts.append(_grafik_section(media["grafik"], lp.get("grafik_h2", "So arbeitet Ihr Energiesystem zusammen")))
     if lp.get("quote"):
-        parts.append(C.founder_block(lp["quote"]))
+        parts.append(C.founder_block(lp["quote"], img=MARIO_FOTO if media.get("mario") else None))
     st = lp["steps"]
     parts.append(C.steps_section(st["eyebrow"], st["h2"], st["steps"]))
     w = lp.get("why", {})
@@ -90,6 +161,11 @@ def render(lp):
             "Aus der Praxis", lp.get("refs_h2", "Echte Projekte, echte Zahlen"),
             "Bild und Zahlen gehören jeweils zum selben Projekt.",
             [REFS[k] for k in lp["refs"]]))
+    if media.get("gallery"):
+        parts.append(C.gallery(
+            "Unsere Anlagen", lp.get("gallery_h2", "Echte Projekte aus der Region"),
+            "Fotos von Anlagen, die EBZ Energie geplant und umgesetzt hat.",
+            [(_I + "lp-ref-" + k + ".jpg", PHOTOS[k][0], PHOTOS[k][1]) for k in media["gallery"]]))
     c = lp["contact"]
     parts.append(C.contact_section(c["h2"], c["sub"], page_label=f"LP {lp['_name']}"))
     if lp.get("faq"):
