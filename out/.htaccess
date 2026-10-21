@@ -9,7 +9,7 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://ebz-photovoltaik.at%{REQUEST_URI} [R=301,L]
 
-# 301-Weiterleitungen alter WordPress-Adressen (70)
+# 301-Weiterleitungen alter WordPress-Adressen (75)
 RewriteRule ^photovoltaik-landesfoerderungen-in-oesterreich/?$ /photovoltaik-landesfoerderungen/ [R=301,L]
 RewriteRule ^kosten-von-photovoltaikanlagen-mit-speicher/?$ /kosten-einer-solaranlage/ [R=301,L]
 RewriteRule ^einspeisetarif-photovoltaik-oesterreich-vergleich/?$ /einspeisetarif-fuer-photovoltaik/ [R=301,L]
@@ -80,6 +80,11 @@ RewriteRule ^aktuelles(/.*)?$ /ratgeber/ [R=301,L]
 RewriteRule ^page(/.*)?$ /ratgeber/ [R=301,L]
 RewriteRule ^comments/feed(/.*)?$ /ratgeber/ [R=301,L]
 RewriteRule ^feed(/.*)?$ /ratgeber/ [R=301,L]
+RewriteRule ^sitemap_index\.xml/?$ /sitemap.xml [R=301,L]
+RewriteRule ^page-sitemap\.xml/?$ /sitemap.xml [R=301,L]
+RewriteRule ^post-sitemap\.xml/?$ /sitemap.xml [R=301,L]
+RewriteRule ^category-sitemap\.xml/?$ /sitemap.xml [R=301,L]
+RewriteRule ^author-sitemap\.xml/?$ /sitemap.xml [R=301,L]
 
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml text/plain

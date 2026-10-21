@@ -98,3 +98,10 @@
 # /photovoltaik-privat-lp/ /photovoltaik-gewerbe-lp/ /heimkraftwerk-lp/ /balkonkraftwerk-lp/ /photovoltaik-und-batteriespeicher/
 # /waermepumpeninstallation-oesterreich/ /waermepumpe-photovoltaik-oesterreich/ /ems-lp-2/ /energiegemeinschaften/ /energiegemeinschaften-gewerbe/
 # /marstek-lp/ bleibt Weiterleitung auf /batteriespeicher/ (Marstek wird nicht mehr angeboten).
+
+# Sitemaps des alten SEO-Plugins (Yoast), in der Search Console hinterlegt
+/sitemap_index.xml                                 /sitemap.xml
+/page-sitemap.xml                                  /sitemap.xml
+/post-sitemap.xml                                  /sitemap.xml
+/category-sitemap.xml                              /sitemap.xml
+/author-sitemap.xml                                /sitemap.xml
