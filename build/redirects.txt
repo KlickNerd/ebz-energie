@@ -98,6 +98,9 @@
 /balkonkraftwerk-in-kaernten/                      /balkonkraftwerke/
 /photovoltaik-am-balkon/                           /balkonkraftwerke/
 /photovoltaik-montage-firma/                       /photovoltaik/
+/photovoltaik-gewerbe-lp/                          /photovoltaik-gewerbe/
+/photovoltaik-privat-lp/                           /photovoltaik/
+/playground-startseite/                            /
 
 # WordPress-Archive und Feeds (Platzhalter: Pfad und alles darunter)
 /author/*                                          /ueber-uns/

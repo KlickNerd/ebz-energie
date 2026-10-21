@@ -9,7 +9,7 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://ebz-photovoltaik.at%{REQUEST_URI} [R=301,L]
 
-# 301-Weiterleitungen alter WordPress-Adressen (83)
+# 301-Weiterleitungen alter WordPress-Adressen (86)
 RewriteRule ^photovoltaik-landesfoerderungen-in-oesterreich/?$ /photovoltaik-landesfoerderungen/ [R=301,L]
 RewriteRule ^kosten-von-photovoltaikanlagen-mit-speicher/?$ /kosten-einer-solaranlage/ [R=301,L]
 RewriteRule ^einspeisetarif-photovoltaik-oesterreich-vergleich/?$ /einspeisetarif-fuer-photovoltaik/ [R=301,L]
@@ -86,6 +86,9 @@ RewriteRule ^smart-meter-oesterreich/?$ /smart-meter/ [R=301,L]
 RewriteRule ^balkonkraftwerk-in-kaernten/?$ /balkonkraftwerke/ [R=301,L]
 RewriteRule ^photovoltaik-am-balkon/?$ /balkonkraftwerke/ [R=301,L]
 RewriteRule ^photovoltaik-montage-firma/?$ /photovoltaik/ [R=301,L]
+RewriteRule ^photovoltaik-gewerbe-lp/?$ /photovoltaik-gewerbe/ [R=301,L]
+RewriteRule ^photovoltaik-privat-lp/?$ /photovoltaik/ [R=301,L]
+RewriteRule ^playground-startseite/?$ / [R=301,L]
 RewriteRule ^author(/.*)?$ /ueber-uns/ [R=301,L]
 RewriteRule ^category(/.*)?$ /ratgeber/ [R=301,L]
 RewriteRule ^tag(/.*)?$ /ratgeber/ [R=301,L]
