@@ -220,6 +220,7 @@ def build():
             headline="Auf einen Kaffee und ein ehrliches Gespräch",
             sub=("Rufen Sie uns an oder schreiben Sie uns. Wir beraten Sie ehrlich und zeigen Ihnen "
                  "in Ruhe, was auf Ihrem Dach möglich ist. Kostenlos und unverbindlich."),
+            page_label="Über uns",
         ),
         C.faq_section(FAQ),
         C.linkgrid_section("Weiterlesen", [

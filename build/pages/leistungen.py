@@ -312,6 +312,7 @@ def build():
             headline="Reden wir über Ihr Projekt",
             sub=("Beim Reden kommen die Leute zusammen. Wir besichtigen Ihr Projekt gerne unverbindlich vor Ort "
                  "und zeigen Ihnen, welche Bausteine sich für Sie rechnen."),
+            page_label="Leistungen",
         ),
         C.finalcta(
             "Ihr Weg in die Unabhängigkeit beginnt jetzt",

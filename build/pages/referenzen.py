@@ -488,6 +488,7 @@ def build():
             headline="Ihr Dach ist das nächste Projekt",
             sub=("Erzählen Sie uns kurz von Ihrem Dach und Ihrem Verbrauch. Wir sagen Ihnen ehrlich, welche "
                  "Anlage passt, was sie kostet und wie schnell sie sich rechnet. Kostenlos und unverbindlich."),
+            page_label="Referenzen",
         ),
         C.finalcta(
             "Bereit für Ihre eigene Referenz?",

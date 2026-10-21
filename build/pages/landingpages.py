@@ -308,7 +308,7 @@ def render(lp):
 
     def s_contact():
         c = lp["contact"]
-        return C.contact_section(c["h2"], c["sub"], page_label=f"LP {lp['_name']}")
+        return C.contact_section(c["h2"], c["sub"], page_label="Ads-LP " + lp["path"])
 
     def s_faq():
         return C.faq_section(lp["faq"]) if lp.get("faq") else ""

@@ -273,6 +273,7 @@ def build():
             headline="Sind Sie bereit, Ihre Stromrechnung selbst zu schreiben?",
             sub=("Sie erreichen uns telefonisch oder über das Formular. Wir beraten Sie ehrlich "
                  "und zeigen Ihnen, was auf Ihrem Dach in Kärnten oder der Steiermark möglich ist."),
+            page_label="Startseite",
         ),
         C.faq_section(FAQ),
         C.finalcta(

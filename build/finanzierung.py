@@ -307,6 +307,7 @@ def build():
         C.contact_section(
             "Kauf oder Finanzierung? Wir rechnen beides für Ihr Dach",
             "Kostenlose Beratung, Projektbericht mit 3D-Belegplan und Statikreport und die Zahlen für beide Wege nebeneinander.",
+            page_label="Finanzierung",
         ),
         C.finalcta(
             "Ihre Anlage. Ihre Rate. Ihr Eigentum.",
