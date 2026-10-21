@@ -14,25 +14,49 @@ LP = {
     "title": "Energiemanagementsystem (EMS) für Ihre PV | EBZ Energie",
     "description": ("Energiemanagementsystem für Photovoltaik: steuert Speicher, Wärmepumpe und Wallbox, bis zu 80 % "
                     "Eigenverbrauch. Herstellerunabhängig, auch zum Nachrüsten."),
-    "eyebrow": "Energiemanagementsystem für Zuhause und Betrieb",
-    "h1": "Das Gehirn Ihrer Energie: Ein Energiemanagementsystem verbindet, was bisher nur nebeneinander lief",
-    "lead": ("Ein EMS misst in Echtzeit, wie viel Strom Ihre PV-Anlage produziert und was jedes Gerät gerade braucht, "
-             "und lenkt jede Kilowattstunde automatisch dorthin, wo sie am meisten wert ist. Ihr Eigenverbrauch steigt "
-             "von rund 30 % auf bis zu 80 %.* Herstellerunabhängig geplant, auch für bestehende Anlagen."),
-    "badges": [("bis 80 %", "Eigenverbrauch möglich*"), ("Hersteller", "unabhängig"), ("Auch zum", "Nachrüsten")],
+    "eyebrow": "Energiemanagement für Privat und Gewerbe",
+    "h1": "Ihre Anlage produziert Strom. Ein Energiemanagementsystem sorgt dafür, dass Sie ihn auch nutzen.",
+    "lead": ("PV, Speicher, Wärmepumpe und Wallbox arbeiten bei den meisten Anlagen nebeneinander her statt zusammen. "
+             "Ein EMS ist das intelligente Gehirn, das alles verbindet und jede Kilowattstunde automatisch dorthin "
+             "lenkt, wo sie am meisten wert ist. Das Ergebnis: weniger Netzbezug, höherer Eigenverbrauch und volle "
+             "Kontrolle per App."),
+    "badges": [("✓", "herstellerunabhängig"), ("✓", "für Privat und Gewerbe"), ("✓", "auch zum Nachrüsten")],
+    "float": ("1 System", "für Strom, Wärme und Mobilität"),
+    "order": ["hero", "kpis", "hub", "problem", "benefits", "split", "steps", "why", "reviews", "quote",
+              "contact", "faq", "finalcta", "footnote"],
+    "kpis": [
+        ("bis 80 %", "Eigenverbrauch möglich*"),
+        ("1 App", "volle Kontrolle in Echtzeit"),
+        ("24/7", "automatische Optimierung"),
+        ("Nachrüsten", "auch für bestehende PV-Anlagen"),
+    ],
+    "hub": {
+        "eyebrow": "Was ist ein EMS?",
+        "h2": "Das Gehirn Ihrer Energie: Es verbindet, was bisher nur nebeneinander lief",
+        "lead": ("Ein Energiemanagementsystem ist die intelligente Schaltzentrale Ihres Zuhauses oder Betriebs. Es misst "
+                 "in Echtzeit, wie viel Strom Ihre PV-Anlage produziert und wie viel jedes Gerät gerade braucht, und "
+                 "entscheidet automatisch, wohin jede Kilowattstunde fließt:"),
+        "points": [
+            ("☀", "Direkt verbrauchen, statt teuer einzuspeisen und zurückzukaufen."),
+            ("▮", "Den Speicher laden, wenn Überschuss da ist."),
+            ("♨", "Die Wärmepumpe laufen lassen, wenn die Sonne scheint."),
+            ("⌖", "Das E-Auto mit reinem PV-Überschuss laden."),
+            ("◎", "Im Gewerbe: Lastspitzen kappen und Netzkosten senken."),
+        ],
+    },
     "hero_img": "ems",
     "hero_alt": "Energiemanagement-Display an der Wand neben Wechselrichter und Batteriespeicher im Technikraum",
     "cta": "Kostenlose EMS-Beratung anfragen",
     "problem": {
         "eyebrow": "Das kostet Sie bares Geld",
         "h2": "Ohne Steuerung verschenken Sie jeden Tag Strom und damit Ersparnis",
-        "paragraphs": [
-            ("Jede Kilowattstunde, die Sie mittags zum OeMAG-Marktpreis (September 2026: 10,168 Cent) einspeisen und "
-             "abends für rund 28 Cent zurückkaufen, ist ein Verlustgeschäft. Genau das passiert bei den meisten Anlagen "
-             "jeden Tag."),
-            ("Der Speicher lädt zur falschen Zeit, die Wärmepumpe läuft nachts mit Netzstrom, und das E-Auto lädt zum "
-             "vollen Tarif. Ohne EMS arbeitet jede Komponente für sich. Mit EMS arbeiten alle zusammen: Der "
-             "Eigenverbrauch steigt von rund 30 % auf 60 bis 80 %.*"),
+        "intro": ("Jede Kilowattstunde, die Sie mittags zum OeMAG-Marktpreis (September 2026: 10,168 Cent) einspeisen "
+                  "und abends für rund 28 Cent zurückkaufen, ist ein Verlustgeschäft. Genau das passiert bei den meisten "
+                  "Anlagen jeden Tag. Der Speicher lädt zur falschen Zeit, die Wärmepumpe läuft nachts mit Netzstrom, "
+                  "und das E-Auto lädt zum vollen Tarif. Ein EMS dreht diese Logik um, automatisch, Tag für Tag."),
+        "bars": [
+            ("Eigenverbrauch Ihrer PV-Anlage ohne EMS", 30, "bad", "rund 30 %*"),
+            ("Eigenverbrauch mit EMS", 80, "good", "bis 80 %*"),
         ],
     },
     "benefits": {
@@ -53,6 +77,37 @@ LP = {
             ("◉", "Volle Transparenz",
              "Sie sehen live, was produziert, verbraucht und gespart wird, finden Stromfresser und behalten alles per App im Blick."),
         ],
+    },
+    "split": {
+        "eyebrow": "Für Ihr Zuhause und Ihren Betrieb",
+        "h2": "Ein EMS, zwei Welten: Wir planen es passend für Sie",
+        "intro": "Im Eigenheim geht es um Unabhängigkeit und Komfort, im Betrieb um kalkulierbare Energiekosten.",
+        "left": {
+            "img_key": "gen_eigenheim",
+            "alt": "Einfamilienhaus mit Photovoltaik, Speicher und Wallbox",
+            "title": "Privat: mehr Unabhängigkeit und Komfort",
+            "bullets": [
+                "Sonnenstrom rund um die Uhr optimal genutzt",
+                "E-Auto günstig mit PV-Überschuss laden",
+                "Wärmepumpe und Warmwasser smart und kostensparend steuern",
+                "Dynamische Tarife automatisch ausnutzen",
+                "Alles per App, kein Fachwissen nötig",
+            ],
+            "cta": ("#beratung", "Für mein Zuhause anfragen"),
+        },
+        "right": {
+            "img_key": "gen_gewerbe",
+            "alt": "Gewerbebetrieb mit großer Photovoltaikanlage auf dem Dach",
+            "title": "Gewerbe: kalkulierbare Energiekosten",
+            "bullets": [
+                "Lastspitzenmanagement senkt Leistungspreis und Netzentgelte",
+                "Intelligentes Lademanagement für Fuhrpark und Ladeparks",
+                "Energiedaten für ESG-Reporting und Energieaudits",
+                "Skalierbar über mehrere Standorte und Verbraucher",
+                "Bessere Amortisation Ihrer gesamten Energieinvestition",
+            ],
+            "cta": ("#beratung", "Für meinen Betrieb anfragen"),
+        },
     },
     "quote": ("Eine PV-Anlage ist ein guter Anfang. Erst mit einem durchdachten Energiemanagement holen Sie das Maximum "
               "heraus. Wir sorgen dafür, dass jede Kilowattstunde für Sie arbeitet."),
@@ -79,7 +134,7 @@ LP = {
         ],
     },
     "contact": {
-        "h2": "Kostenlose EMS-Beratung anfragen",
+        "h2": "Machen Sie mehr aus dem Strom, den Sie ohnehin produzieren",
         "sub": ("Ob Sie schon eine PV-Anlage haben oder gerade planen: Wir zeigen Ihnen in einem kostenlosen Gespräch, "
                 "wie viel ein Energiemanagementsystem in Ihrem Fall herausholt. Wir melden uns innerhalb eines Werktags."),
     },
@@ -113,7 +168,8 @@ LP = {
     ],
     "finalcta": {
         "h2": "Jede Kilowattstunde zählt. Lassen Sie sie für sich arbeiten.",
-        "text": "Ob privat oder Gewerbe: Wir zeigen Ihnen kostenlos und ehrlich, wie viel ein EMS in Ihrem Fall herausholt.",
+        "text": ("Ob privat oder Gewerbe: Wir zeigen Ihnen kostenlos und ehrlich, wie viel ein Energiemanagementsystem "
+                 "in Ihrem Fall herausholt. Der erste Schritt ist nur ein Gespräch entfernt."),
     },
     "footnote": ("*Richtwerte, abhängig von Anlage, Verbrauch, Speicher und Tarif, Stand Oktober 2026. Ihre "
                  "individuelle Rechnung erstellen wir kostenlos. Verbindlich ist Ihr persönliches Angebot."),

@@ -159,6 +159,8 @@ p{margin:0 0 1rem}
 .hero__inner{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;
   align-items:center;max-width:var(--wrap);margin-inline:auto;padding:clamp(48px,7vw,88px) 20px}
 .hero h1{color:#fff}
+.hero__inner > *,.lp-hero__copy{min-width:0}
+h1,h2{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 .hero .lead{color:#c6dbe2}
 .hero__badges{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
 .hero__badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);
