@@ -72,7 +72,16 @@ MARIO_FOTO = _I + "lp-mario-zintl.jpg"
 
 # Welche LP welche Bilder bekommt (wie auf der alten Seite)
 MEDIA = {
-    "/photovoltaik-privat-lp/": {"grafik": GRAFIK_PV, "gallery": GALLERY_2023, "mario": True},
+    "/photovoltaik-privat-lp/": {
+        "hero_bg": _I + "lp-hero-alpenhaus.jpg",
+        "problem_img": (_I + "lp-haus-pv-waermepumpe.jpg", "Modernes Einfamilienhaus mit Photovoltaik auf dem Dach und Wärmepumpe vor dem Haus"),
+        "grafik": GRAFIK_PV,
+        "mario_cta": True,
+        "steps_bg": _I + "lp-bg-module-abendsonne.jpg",
+        "finance_img": (_I + "lp-finanzierung-haus.jpg", "Geldscheine vor einem Einfamilienhaus mit Photovoltaikanlage"),
+        "gallery": GALLERY_2023,
+        "final_mario": True,
+    },
     "/photovoltaik-gewerbe-lp/": {"gallery": GALLERY_2023[:5] + ["landwirtschaft-luftbild"], "mario": True},
     "/waermepumpeninstallation-oesterreich/": {"gallery": GALLERY_2023, "mario": True},
     "/waermepumpe-photovoltaik-oesterreich/": {"grafik": GRAFIK_WP_PV, "gallery": GALLERY_2023, "mario": True},
@@ -95,6 +104,42 @@ def _grafik_section(grafik, h2):
       </figure>
     </div>
   </section>"""
+
+
+def _lp_hero(lp, bg, cta_label, rating):
+    badges = "".join(f'<span class="hero__badge"><b>{b0}</b> {b1}</span>' for b0, b1 in lp["badges"])
+    return f"""
+  <section class="lp-hero" style="--bg:url('{bg}')">
+    <div class="lp-hero__inner">
+      <div class="lp-hero__copy">
+        <p class="eyebrow">{lp['eyebrow']}</p>
+        <h1>{lp['h1']}</h1>
+        <p class="lead">{lp['lead']}</p>
+        <div class="hero__badges">{badges}</div>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="#beratung">{cta_label}</a>
+          <a class="btn btn--light btn--lg" href="tel:+436502202626">☎ +43 650 220 26 26</a>
+        </div>
+        <div class="lp-hero__rating"><span class="stars" aria-hidden="true">★★★★★</span><b>{rating}</b><span>Sterne auf Google</span></div>
+      </div>
+    </div>
+  </section>"""
+
+
+def _finance_media(img, alt):
+    return C.media_text(
+        "Faire Finanzierung", "Ihre Anlage gehört Ihnen ab dem ersten Tag",
+        ["Sie finanzieren Ihre Photovoltaikanlage in monatlichen Raten und sind trotzdem von Beginn an Eigentümer. "
+         "Komplettanlage inklusive Speicher <b>ab 147 € im Monat</b>.*"],
+        img, alt,
+        bullets=["0 € Anzahlung", "Fixe Rate über die gesamte Laufzeit", "Volle Förderung für Privatpersonen",
+                 "Kein Grundbucheintrag"],
+        cta=("#beratung", "Finanzierung anfragen"))
+
+
+def _mario_cta(cta_label):
+    return (f'<div class="lp-cta-row eg-reveal"><a class="btn btn--primary btn--lg" href="#beratung">{cta_label}</a>'
+            f'<a class="btn btn--ghost btn--lg" href="tel:+436502202626">☎ +43 650 220 26 26</a></div>')
 
 
 WHY_DEFAULT = [
@@ -128,7 +173,7 @@ def render(lp):
     media = MEDIA.get(lp["path"], {})
     hero_src, hero_alt = media.get("hero", (IMG[lp["hero_img"]], lp["hero_alt"]))
     parts = [
-        C.hero(
+        _lp_hero(lp, media["hero_bg"], cta_label, rating) if media.get("hero_bg") else C.hero(
             eyebrow=lp["eyebrow"], h1=lp["h1"], lead=lp["lead"], badges=lp["badges"],
             img=hero_src, img_alt=hero_alt,
             float_num=lp.get("float", ("4,9", "Sterne auf Google"))[0],
@@ -140,7 +185,12 @@ def render(lp):
     ]
     if lp.get("problem"):
         pr = lp["problem"]
-        parts.append(C.text_block(pr["eyebrow"], pr["h2"], pr["paragraphs"]))
+        if media.get("problem_img"):
+            paras = list(pr["paragraphs"]) + ([f"<b>{pr['bullets_intro']}</b>"] if pr.get("bullets_intro") else [])
+            parts.append(C.media_text(pr["eyebrow"], pr["h2"], paras, media["problem_img"][0], media["problem_img"][1],
+                                      bullets=pr.get("bullets")))
+        else:
+            parts.append(C.text_block(pr["eyebrow"], pr["h2"], pr["paragraphs"]))
     b = lp["benefits"]
     parts.append(C.cards_section(b["eyebrow"], b["h2"], b["intro"],
                                  [{"ic": ic, "title": t, "text": x} for ic, t, x in b["cards"]]))
@@ -148,14 +198,20 @@ def render(lp):
         parts.append(_grafik_section(media["grafik"], lp.get("grafik_h2", "So arbeitet Ihr Energiesystem zusammen")))
     if lp.get("quote"):
         parts.append(C.founder_block(lp["quote"], img=MARIO_FOTO if media.get("mario") else None))
+        if media.get("mario_cta"):
+            parts.append(_mario_cta(cta_label))
     st = lp["steps"]
-    parts.append(C.steps_section(st["eyebrow"], st["h2"], st["steps"]))
+    steps_html = C.steps_section(st["eyebrow"], st["h2"], st["steps"])
+    if media.get("steps_bg"):
+        steps_html = steps_html.replace('<section class="section" style="background:#fff;border-block:1px solid var(--line)">',
+                                        f'<section class="section lp-photo-bg" style="--bg:url(\'{media["steps_bg"]}\')">', 1)
+    parts.append(steps_html)
     w = lp.get("why", {})
     parts.append(C.why_section(w.get("eyebrow", "Warum EBZ Energie"),
                                w.get("h2", "Warum Kundinnen und Kunden sich für EBZ entscheiden"),
                                w.get("items", WHY_DEFAULT)))
     if lp.get("finance"):
-        parts.append(C.finance_band())
+        parts.append(_finance_media(*media["finance_img"]) if media.get("finance_img") else C.finance_band())
     if lp.get("refs"):
         parts.append(C.reference_cards(
             "Aus der Praxis", lp.get("refs_h2", "Echte Projekte, echte Zahlen"),
@@ -166,12 +222,17 @@ def render(lp):
             "Unsere Anlagen", lp.get("gallery_h2", "Echte Projekte aus der Region"),
             "Fotos von Anlagen, die EBZ Energie geplant und umgesetzt hat.",
             [(_I + "lp-ref-" + k + ".jpg", PHOTOS[k][0], PHOTOS[k][1]) for k in media["gallery"]]))
+    fc = lp.get("finalcta")
+    if fc and media.get("final_mario"):
+        # wie auf der alten LP: Schluss-Aufruf mit Mario-Foto direkt vor dem Formular
+        parts.append(C.media_text(fc.get("eyebrow", "Jetzt starten"), fc["h2"], [fc["text"]] + fc.get("more", []),
+                                  MARIO_FOTO, "Mario Zintl, Geschäftsführung EBZ Energie GmbH", reverse=True,
+                                  cta=("#beratung", cta_label)))
     c = lp["contact"]
     parts.append(C.contact_section(c["h2"], c["sub"], page_label=f"LP {lp['_name']}"))
     if lp.get("faq"):
         parts.append(C.faq_section(lp["faq"]))
-    fc = lp.get("finalcta")
-    if fc:
+    if fc and not media.get("final_mario"):
         parts.append(C.finalcta(fc["h2"], fc["text"], cta=("#beratung", cta_label)))
     if lp.get("footnote"):
         parts.append(f'\n  <section class="section--tight section"><div class="wrap"><p class="form-note">{lp["footnote"]}</p></div></section>')

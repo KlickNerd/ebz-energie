@@ -24,8 +24,15 @@ LP = {
         "paragraphs": [
             ("Grundgebühr, Netzentgelt, Arbeitspreis: Die Stromkosten in Österreich sind in den letzten Jahren deutlich "
              "gestiegen, und jede Jahresabrechnung bringt die nächste Überraschung."),
-            ("Mit einer eigenen Photovoltaikanlage nutzen Sie eine Energiequelle, die jeden Tag auf Ihr Dach scheint. "
-             "Mit Speicher steht der Sonnenstrom auch am Abend zur Verfügung, mit Wallbox laden Sie Ihr E-Auto damit."),
+            ("Diese Abhängigkeit kostet nicht nur Geld, sondern auch Planungssicherheit. Dabei scheint die Energie, "
+             "die Sie brauchen, jeden Tag kostenlos auf Ihr Dach."),
+        ],
+        "bullets_intro": "Es gibt einen besseren Weg, erprobt und zuverlässig: Ihre eigene Photovoltaikanlage.",
+        "bullets": [
+            "<b>Das perfekte Trio:</b> PV-Anlage, Stromspeicher und Wallbox. Sie produzieren, speichern und nutzen Ihren Sonnenstrom.",
+            "<b>Alles aus einer Hand:</b> ein Ansprechpartner für Planung, Montage und Inbetriebnahme aller Komponenten.",
+            "<b>Förderabwicklung inklusive:</b> Wir übernehmen Anträge, Papierkram und die Anmeldung beim Netzbetreiber.",
+            "<b>Sicher entscheiden:</b> kostenlose, persönliche Beratung und technische Prüfung direkt bei Ihnen vor Ort.",
         ],
     },
     "benefits": {
@@ -78,8 +85,11 @@ LP = {
          "Wir bleiben Ihr Ansprechpartner für Service und Fragen. Sie haben einen festen Ansprechpartner von der Planung bis zur Übergabe und darüber hinaus."),
     ],
     "finalcta": {
+        "eyebrow": "Machen Sie sich jetzt unabhängig",
         "h2": "Wie viele Sonnenstunden wollen Sie noch ungenutzt lassen?",
-        "text": "Der erste Schritt ist ein kostenloses Gespräch. Wir melden uns innerhalb eines Werktags.",
+        "text": ("Jeder Tag ohne eigene PV-Anlage ist ein Tag, an dem Sie Strom teuer zukaufen. Wir verbinden "
+                 "sorgfältiges Handwerk mit moderner Technik und bleiben auch nach der Montage Ihr Ansprechpartner."),
+        "more": ["Der erste Schritt ist ein kostenloses Gespräch. Das Team von EBZ Energie freut sich auf Sie."],
     },
     "footnote": "*Richtwerte und Beispielkonditionen, abhängig von Anlagengröße, Dach und Laufzeit. Verbindlich ist Ihr persönliches Angebot.",
 }

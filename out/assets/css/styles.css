@@ -173,6 +173,36 @@ p{margin:0 0 1rem}
 @media(max-width:900px){.hero__inner{grid-template-columns:1fr;gap:32px}
   .hero__media{order:-1}.hero__float{left:12px}}
 
+/* Ads-Landingpages: Hero mit Vollbild-Hintergrund (wie die alten WordPress-LPs) */
+.lp-hero{position:relative;color:#fff;overflow:hidden;background:var(--petrol-3) var(--bg) center/cover no-repeat;
+  min-height:min(86vh,760px);display:flex;align-items:center}
+.lp-hero::before{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(8,46,61,.94) 0%,rgba(8,46,61,.82) 38%,rgba(8,46,61,.35) 68%,rgba(8,46,61,.1) 100%)}
+.lp-hero__inner{position:relative;width:100%;max-width:var(--wrap);margin-inline:auto;padding:clamp(48px,7vw,96px) 20px}
+.lp-hero__copy{max-width:640px}
+.lp-hero h1{color:#fff}
+.lp-hero .lead{color:#dbe9ee}
+.lp-hero__rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:#fff;color:var(--ink);
+  border-radius:14px;padding:10px 16px;box-shadow:var(--shadow)}
+.lp-hero__rating b{font-family:var(--font-head);font-size:1.25rem;color:var(--petrol)}
+.lp-hero__rating .stars{color:var(--amber)}
+@media(max-width:900px){
+  .lp-hero{min-height:0}
+  .lp-hero::before{background:linear-gradient(180deg,rgba(8,46,61,.72) 0%,rgba(8,46,61,.9) 55%,rgba(8,46,61,.96) 100%)}
+}
+/* Schritte auf Foto-Hintergrund */
+.lp-photo-bg{position:relative;background:var(--petrol-3) var(--bg) center/cover no-repeat;color:#fff}
+.lp-photo-bg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,46,61,.78),rgba(8,46,61,.62))}
+.lp-photo-bg > .wrap{position:relative}
+.lp-photo-bg h2{color:#fff}
+.lp-photo-bg .eyebrow{color:var(--amber)}
+.lp-photo-bg .step{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);backdrop-filter:blur(4px)}
+.lp-photo-bg .step h3{color:#fff}
+.lp-photo-bg .step p{color:#dbe9ee}
+.lp-photo-bg .step__t{color:var(--amber)}
+/* Button-Zeile unter dem Zitat */
+.lp-cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-top:-24px;padding-bottom:clamp(40px,6vw,72px)}
+
 /* --- Page hero (Unterseiten) ------------------------------------------- */
 .page-hero{position:relative;overflow:hidden;color:#fff;text-align:center;
   background:linear-gradient(135deg,var(--petrol-2),var(--petrol-3));
