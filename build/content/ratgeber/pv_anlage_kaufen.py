@@ -189,7 +189,7 @@ deshalb auch <b>finanzieren</b>, ab 147 Euro im Monat inklusive Speicher, ohne a
 <ul>
   <li>Die Anlage gehört <b>ab dem ersten Tag Ihnen</b>.</li>
   <li>Sie erhalten als Privatperson die <b>volle Förderung</b> wie beim Barkauf.</li>
-  <li>Es gibt <b>keine strengen Bonitätsprüfungen</b> und <b>keinen Eintrag in Bonitätsdatenbanken</b>.</li>
+  <li>Die Bonitätsprüfung läuft <b>digital in Minuten</b>, es gibt <b>keinen Grundbucheintrag</b>.</li>
 </ul>
 <p>Weil die Stromersparnis ab dem ersten Monat wirkt, deckt sie bei vielen Haushalten einen großen Teil der Rate.
 Konditionen und Rechenbeispiele stehen auf der Seite {a('finanzierung', 'Finanzierung')}. Warum eine Mietanlage
@@ -263,8 +263,8 @@ in Kärnten die 3.000 Euro Landespauschale nutzen und die geplante Systemförder
          "dass keine Förderung verloren geht."),
         ("Kann ich eine PV-Anlage finanzieren?",
          "Ja. Bei EBZ Energie finanzieren Sie ab 147 Euro im Monat inklusive Speicher. Die Anlage gehört ab dem "
-         "ersten Tag Ihnen, Sie erhalten die volle Förderung, es gibt keine strengen Bonitätsprüfungen und keinen "
-         "Eintrag in Bonitätsdatenbanken."),
+         "ersten Tag Ihnen, Sie erhalten die volle Förderung, die Bonitätsprüfung läuft digital in Minuten und es "
+         "gibt keinen Grundbucheintrag."),
         ("Lohnt sich ein Online-Anbieter statt eines regionalen Fachbetriebs?",
          "Online-Anbieter locken oft mit niedrigen Paketpreisen, planen aber häufig per Satellitenbild und ohne "
          "Ansprechpartner vor Ort. Bei Statik, Zählerkasten, Garantiefällen und späteren Erweiterungen zahlt sich ein "

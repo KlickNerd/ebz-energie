@@ -96,7 +96,8 @@ def _table_section(eyebrow, h2, intro, headers, rows, note="", anchor=""):
   </section>"""
 
 
-def build():
+def body():
+    """Inhalt der Seite (auch fuer die Ads-Landingpage unter der alten Adresse, siehe pages/landingpages.py)."""
     rating, count, reviews = load_reviews()
     body = "".join([
         C.hero(
@@ -384,7 +385,11 @@ def build():
     </div>
   </section>""",
     ])
-    html = page(TITLE, DESC, PATH, body, faq_jsonld_str=faq_jsonld(u(PATH), FAQ),
+    return body
+
+
+def build():
+    html = page(TITLE, DESC, PATH, body(), faq_jsonld_str=faq_jsonld(u(PATH), FAQ),
                 og_image=IMG["gewerbe_dach"])
     return write_page("leistungen/energiegemeinschaft-gewerbe/index.html", html)
 

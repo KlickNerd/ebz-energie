@@ -160,7 +160,8 @@ p{margin:0 0 1rem}
   align-items:center;max-width:var(--wrap);margin-inline:auto;padding:clamp(48px,7vw,88px) 20px}
 .hero h1{color:#fff}
 .hero__inner > *,.lp-hero__copy{min-width:0}
-h1,h2{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+h1,h2{overflow-wrap:break-word}
+@media(max-width:600px){h1,h2{hyphens:auto;-webkit-hyphens:auto}}
 .hero .lead{color:#c6dbe2}
 .hero__badges{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
 .hero__badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);
@@ -422,7 +423,7 @@ h1,h2{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 @media(max-width:520px){.regions{columns:1}}
 
 /* --- Steps -------------------------------------------------------------- */
-.steps:has(> :nth-child(6)){grid-template-columns:repeat(3,1fr)}
+@media(min-width:901px){.steps:has(> :nth-child(6)){grid-template-columns:repeat(3,1fr)}}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
 .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;display:flex;flex-direction:column}
 .step__n{counter-increment:step;width:40px;height:40px;border-radius:12px;

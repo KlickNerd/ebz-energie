@@ -127,7 +127,11 @@ def _lp_hero(lp, bg, cta_label, rating):
   </section>"""
 
 
-def _finance_media(img, alt):
+def _finance_media(img, alt, fin=None):
+    """fin (optional, dict): eigener Text ohne Privat-Rate, z. B. fuer Gewerbe-LPs (eyebrow, h2, paragraphs, bullets, cta)."""
+    if isinstance(fin, dict):
+        return C.media_text(fin.get("eyebrow", "Faire Finanzierung"), fin["h2"], fin["paragraphs"], img, alt,
+                            bullets=fin.get("bullets"), cta=("#beratung", fin.get("cta", "Finanzierung anfragen")))
     return C.media_text(
         "Faire Finanzierung", "Ihre Anlage gehört Ihnen ab dem ersten Tag",
         ["Sie finanzieren Ihre Photovoltaikanlage in monatlichen Raten und sind trotzdem von Beginn an Eigentümer. "
@@ -197,10 +201,57 @@ DEFAULT_ORDER = ["hero", "kpis", "reviews", "hub", "problem", "system", "benefit
                  "steps", "why", "finance", "refs", "gallery", "final", "contact", "faq", "finalcta", "footnote"]
 
 
+_PAGES_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def _page_module(name):
+    spec = importlib.util.spec_from_file_location(f"lp_src_{name}", os.path.join(_PAGES_DIR, name + ".py"))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def render_from_page(lp):
+    """LP mit dem Inhalt einer bestehenden Leistungsseite (die alte LP war dieselbe Seite), im LP-Modus:
+    Ratgeber-Linkliste raus, Kontakt-Buttons springen zum Formular, Rechner nach dem Ablauf wie auf der alten LP."""
+    import re
+    body = _page_module(lp["source"]).body()
+    # Link-Kacheln (Weiterlesen/Ratgeber) fuehren von der LP weg
+    body = re.sub(r'\n  <section class="section--tight section">\s*<div class="wrap">\s*<h2[^>]*>[^<]*</h2>\s*<div class="linkgrid">.*?</section>',
+                  "", body, count=1, flags=re.S)
+    body = body.replace('href="/kontakt/"', 'href="#beratung"')
+    body = re.sub(r'(<input type="hidden" name="quelle" value=")[^"]*(")', r"\g<1>Ads-LP " + lp["path"] + r"\g<2>", body)
+    if lp.get("rechner"):
+        rech = _page_module("rechner")
+        calc = rech._calc_section(lp["rechner"], lp.get("rechner_intro", ""), rech.EG_FORM, rech.EG_RESULT,
+                                  rech.EG_ASSUMPTIONS, rech.EG_JS)
+        i = body.find('<div class="steps"')
+        j = body.find("</section>", i) + len("</section>")
+        body = body[:j] + calc + body[j:]
+        # Rechner-Button bleibt auf der LP: Ergebnis ins Anliegen-Feld, dann zum Formular scrollen
+        body += """
+  <script>
+  document.addEventListener("click", function(e){
+    var c = e.target.closest("#e-cta, #s-cta"), f = document.getElementById("beratung");
+    if(!c || !f) return;
+    e.preventDefault();
+    var v = new URLSearchParams((c.getAttribute("href").split("?")[1] || "")).get("anliegen");
+    var m = f.querySelector("[name=msg]");
+    if(v && m) m.value = v + "\\n\\n";
+    f.scrollIntoView({behavior: "smooth"});
+  });
+  </script>"""
+    return page(lp["title"], lp["description"], lp["path"], body, landing=True)
+
+
 def render(lp):
+    if lp.get("source"):
+        return render_from_page(lp)
     rating, count, reviews = load_reviews()
     cta_label = lp.get("cta", "Kostenloses Angebot anfordern")
-    media = MEDIA.get(lp["path"], {})
+    media = dict(MEDIA.get(lp["path"], {}))
+    for k, v in lp.get("media", {}).items():  # Bilder koennen auch direkt in der Content-Datei stehen
+        media[k] = globals()[v] if isinstance(v, str) and v.isupper() and v in globals() else v
     hero_src, hero_alt = media.get("hero", (IMG[lp["hero_img"]], lp["hero_alt"]))
     fc = lp.get("finalcta")
     sysblock = lp.get("system")
@@ -287,7 +338,7 @@ def render(lp):
     def s_finance():
         if not lp.get("finance"):
             return ""
-        return _finance_media(*media["finance_img"]) if media.get("finance_img") else C.finance_band()
+        return _finance_media(*media["finance_img"], fin=lp["finance"]) if media.get("finance_img") else C.finance_band()
 
     def s_refs():
         if not lp.get("refs"):
