@@ -150,6 +150,9 @@ def write_sitemap():
     for dirpath, _dirs, files in os.walk(OUT):
         if "index.html" not in files:
             continue
+        with open(os.path.join(dirpath, "index.html"), encoding="utf-8") as f:
+            if 'content="noindex' in f.read(4000):
+                continue  # Ads-Landingpages und andere noindex-Seiten gehoeren nicht in die Sitemap
         rel = os.path.relpath(dirpath, OUT).replace(os.sep, "/")
         path = "/" if rel == "." else f"/{rel}/"
         prio = "1.0" if path == "/" else ("0.6" if path in lastmod else "0.8")

@@ -123,17 +123,45 @@ def _footer():
   </footer>"""
 
 
-def _sticky_cta():
+def _sticky_cta(target="kontakt"):
     return f"""
   <div class="sticky-cta">
     <a class="btn btn--ghost" href="{NAP['phone_href']}">Anrufen</a>
-    {a('kontakt', 'Beratung anfragen', cls='btn btn--primary')}
+    {a(target, 'Beratung anfragen', cls='btn btn--primary')}
   </div>"""
+
+
+def _header_lp():
+    """Header fuer Ads-Landingpages: Logo, Telefon, Sprung zum Formular. Kein Menue (keine Ablenkung)."""
+    return f"""
+  <header class="site-header site-header--lp">
+    <div class="site-header__inner">
+      <a class="brand" href="{href('home')}" aria-label="EBZ Energie Startseite">
+        <img class="brand__logo" src="{IMG['logo']}" alt="EBZ Energie" width="969" height="223">
+      </a>
+      <div class="header-cta">
+        <a class="header-phone" href="{NAP['phone_href']}">{NAP['phone_display']}<span>Mo bis Fr 10 bis 20 Uhr</span></a>
+        <a class="btn btn--primary" href="#beratung">Angebot anfordern</a>
+      </div>
+    </div>
+  </header>"""
+
+
+def _footer_lp():
+    return f"""
+  <footer class="site-footer site-footer--lp">
+    <div class="wrap">
+      <div class="footer-bottom">
+        <span>&copy; 2026 EBZ Energie GmbH &middot; {NAP['street']}, {NAP['zip']} {NAP['city']} &middot; {tel_link()}</span>
+        <span>{a('home', 'Website')} &middot; {a('impressum', 'Impressum')} &middot; {a('datenschutz', 'Datenschutz')}</span>
+      </div>
+    </div>
+  </footer>"""
 
 
 def page(title, description, path, body, faq_jsonld_str=None,
          include_business_schema=False, og_image=None, extra_jsonld=None,
-         og_type="website"):
+         og_type="website", landing=False):
     """Baut ein vollstaendiges HTML-Dokument.
 
     title/description: fuer <title> und Meta.
@@ -143,6 +171,7 @@ def page(title, description, path, body, faq_jsonld_str=None,
     include_business_schema: LocalBusiness einbetten (nur Startseite/Kontakt).
     extra_jsonld: weitere fertige JSON-LD-Strings (z. B. Article, BreadcrumbList).
     og_type: "website" oder "article" (Ratgeber).
+    landing: Ads-Landingpage: noindex, Header ohne Menue, schlanker Footer, CTA springt zum Formular.
     """
     canonical = BASE + path
     og = BASE + (og_image or "/assets/img/hero-photovoltaik-villach.jpg")
@@ -163,7 +192,7 @@ def page(title, description, path, body, faq_jsonld_str=None,
   <title>{title}</title>
   <meta name="description" content="{description}">
   <link rel="canonical" href="{canonical}">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="{'noindex,follow' if landing else 'index,follow,max-image-preview:large'}">
   <meta property="og:type" content="{og_type}">
   <meta property="og:locale" content="de_AT">
   <meta property="og:title" content="{title}">
@@ -177,12 +206,12 @@ def page(title, description, path, body, faq_jsonld_str=None,
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
-{_header()}
+{_header_lp() if landing else _header()}
   <main id="main">
 {body}
   </main>
-{_footer()}
-{_sticky_cta()}
+{_footer_lp() if landing else _footer()}
+{_sticky_cta("#beratung" if landing else "kontakt")}
 {CHATBOT_HTML}
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/chatbot.js" defer></script>

@@ -116,6 +116,19 @@ p{margin:0 0 1rem}
   .header-cta{display:none}
 }
 
+/* Ads-Landingpages: Header ohne Menue, Telefon und Formular-Button bleiben sichtbar */
+.site-header--lp .header-cta{display:flex;margin-left:auto}
+.site-header--lp .header-cta .btn{display:inline-flex}
+.site-header--lp .header-cta .header-phone span{display:block}
+@media(max-width:560px){
+  .site-header--lp .header-cta .header-phone{display:none}
+  .site-header--lp .brand__logo{height:30px}
+  .site-header--lp .site-header__inner{gap:12px;padding-inline:16px}
+  .site-header--lp .header-cta .btn{padding:10px 14px;font-size:.9rem;white-space:nowrap}
+}
+.site-footer--lp{padding-block:28px 96px}
+.site-footer--lp .footer-bottom{margin-top:0;border-top:0;padding-top:0}
+
 /* --- Footer ------------------------------------------------------------- */
 .site-footer{background:var(--petrol-3);color:#cfe0e6;padding-block:56px 28px;
   font-size:.95rem}

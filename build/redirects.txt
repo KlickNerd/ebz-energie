@@ -57,18 +57,12 @@
 /aktuelles/                                        /ratgeber/
 /category/uncategorized/                           /ratgeber/
 /danke/                                            /kontakt/
-/ems-lp-2/                                         /energiemanagementsystem/
-/energiegemeinschaften/                            /leistungen/energiegemeinschaft/
-/energiegemeinschaften-gewerbe/                    /leistungen/energiegemeinschaft-gewerbe/
 /marstek-lp/                                       /batteriespeicher/
-/photovoltaik-und-batteriespeicher/                /batteriespeicher/
 /pv-anlage-leasen/solar-basic/                     /finanzierung/
 /pv-anlage-leasen/solar-comfort/                   /finanzierung/
 /pv-anlage-leasen/solar-premium/                   /finanzierung/
 /waermepumpe-mit-photovoltaik/                     /photovoltaik-fuer-waermepumpe/
 /waermepumpe-photovoltaik/                         /photovoltaik-fuer-waermepumpe/
-/waermepumpe-photovoltaik-oesterreich/             /photovoltaik-fuer-waermepumpe/
-/waermepumpeninstallation-oesterreich/             /waermepumpe/
 # Leistungsseiten ohne eigene neue Seite (Entscheidung offen: eigene Seiten fuer Wallbox, Infrarot, Ersatzziegel, Wartung?)
 /wallbox/                                          /wallbox-foerderung-kosten/
 /infrarotheizsysteme/                              /infrarotheizung-mit-photovoltaik/
@@ -76,8 +70,6 @@
 /photovoltaik-wartung/                             /photovoltaik/
 
 # Alte Adressen ausserhalb der Sitemap (Backlinks, Ads-Landingpages, interne Altlinks), Stand 21.10.2026
-/balkonkraftwerk-lp/                               /balkonkraftwerke/
-/heimkraftwerk-lp/                                 /photovoltaik/
 /waermepumpe-sea/                                  /waermepumpe/
 /waermepumpe-photovoltaik-lp/                      /photovoltaik-fuer-waermepumpe/
 /foerderung-fuer-photovoltaik/                     /foerderungen/
@@ -91,8 +83,6 @@
 /balkonkraftwerk-in-kaernten/                      /balkonkraftwerke/
 /photovoltaik-am-balkon/                           /balkonkraftwerke/
 /photovoltaik-montage-firma/                       /photovoltaik/
-/photovoltaik-gewerbe-lp/                          /photovoltaik-gewerbe/
-/photovoltaik-privat-lp/                           /photovoltaik/
 /playground-startseite/                            /
 
 # WordPress-Archive und Feeds (Platzhalter: Pfad und alles darunter)
@@ -103,3 +93,8 @@
 /page/*                                            /ratgeber/
 /comments/feed/*                                   /ratgeber/
 /feed/*                                            /ratgeber/
+
+# Ads-Landingpages: werden unter der alten Adresse neu gebaut (build/content/landingpages/), daher KEINE Weiterleitung.
+# /photovoltaik-privat-lp/ /photovoltaik-gewerbe-lp/ /heimkraftwerk-lp/ /balkonkraftwerk-lp/ /photovoltaik-und-batteriespeicher/
+# /waermepumpeninstallation-oesterreich/ /waermepumpe-photovoltaik-oesterreich/ /ems-lp-2/ /energiegemeinschaften/ /energiegemeinschaften-gewerbe/
+# /marstek-lp/ bleibt Weiterleitung auf /batteriespeicher/ (Marstek wird nicht mehr angeboten).
