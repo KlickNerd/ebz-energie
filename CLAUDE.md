@@ -12,7 +12,7 @@ Live-Website gilt: **dieses Dokument** (die Live-Site enthält veraltete Inhalte
 
 - **Kunde:** EBZ Energie GmbH, Photovoltaik-Fachbetrieb
 - **Agentur:** KlickNerds (Dominik), beauftragt mit SEO, Content, Web
-- **Domain:** https://ebz-photovoltaik.at (WordPress + Elementor, wird sukzessive durch Custom-HTML-Blöcke ersetzt)
+- **Domain:** https://ebz-photovoltaik.at (seit 22.10.2026 die neue statische Website auf IONOS Webhosting Plus, Deploy per Push auf main; die alte WordPress-Seite ist abgelöst)
 - **Ziel:** Komplette Website im Design der bereits gebauten Leistungsseiten (Energiegemeinschaft Privat/Gewerbe, EMS) und der neuen Startseite. SEO + GEO (LLM-Zitierbarkeit) sind Leitplanken jeder Seite.
 
 ## 2. Verbindliche Fakten (vom Kunden freigegeben, NICHT ändern)
@@ -141,8 +141,8 @@ Slug-Änderungen vermeiden; falls nötig: 301 + `S` in `common.py` anpassen und 
 ## 8. Integrationen
 
 - **WPForms ID 6891** (Lite!): aktuell auf beiden EG-LPs UND der Startseite. Lite speichert NICHTS in der DB, Mail-Zustellung via WP Mail SMTP muss stehen (offener Punkt). Für die Startseite ist ein eigenes allgemeines Formular sauberer (Quelle unterscheiden: Hidden Field `{page_url}`).
-- **EG-Rechner → Make:** POST-Webhook `https://hook.us2.make.com/61g9gdhyr3rjyjua175p38516o7lhvfr` (im Attribut `data-webhook` der `.ebz-rechner`-Section; live nur noch eine Instanz: Custom-HTML-Block der Seite `/energiegemeinschaften/`, WordPress-ID 6946). Make-Szenario "EBZ EG-Rechner Leads -> E-Mail" (ID 6573319): Webhook → Antwort 200 {"ok": true} → Gmail an office@ebz-energie.com, bei Fehler Slack-Warnung + 3 Wiederholungen. Überwachung durch das Szenario "Formular-Wächter" (ID 6572497): läuft stündlich, prüft die beiden EBZ-Szenarien (Rechner und Chatbot) aber nur einmal täglich im Lauf um 8 Uhr (Zeitbedingung im Filter). Fallback ohne/bei Fehler: Redirect `/kontakt/` mit Query-Params. Umzug von n8n am 09.10.2026, Live-Test über den Rechner erfolgreich. Der Rechner hat keine Quelle mehr im Repo: Änderungen direkt im WP-Block.
-- **Kontaktformular der neuen statischen Website → Make:** POST-Webhook `https://hook.us2.make.com/1fkgm8zywyy6jqswmqibte15sxb349n7` (`FORM_ENDPOINT` in `build/common.py`). Make-Szenario "EBZ Kontaktformular -> E-Mail" (ID 6582422): Webhook → Antwort 200 {"ok": true} → Gmail an office@ebz-energie.com, bei Fehler Slack-Warnung + 3 Wiederholungen. Felder: quelle, name, email, tel, plz, msg, seite, zeit. Im Formular-Wächter mit aufgenommen (einmal täglich im 8-Uhr-Lauf). Angelegt und getestet am 10.10.2026; damit hängt nichts mehr an n8n außer dem Fallback im Worker-Code.
+- **EG-Rechner (alt) → Make:** Szenario "EBZ EG-Rechner Leads -> E-Mail" (ID 6573319) gehörte zum WordPress-Block auf `/energiegemeinschaften/` und ist seit dem Launch am 22.10.2026 **deaktiviert**. Der Rechner der neuen Website (`/energiegemeinschaft-rechner/` und eingebettet in die Ads-LPs) sendet über das Kontaktformular-Szenario.
+- **Kontaktformular der neuen statischen Website → Make:** POST-Webhook `https://hook.us2.make.com/1fkgm8zywyy6jqswmqibte15sxb349n7` (`FORM_ENDPOINT` in `build/common.py`). Make-Szenario "EBZ Kontaktformular -> E-Mail" (ID 6582422): Webhook → Antwort 200 {"ok": true} → Gmail an office@ebz-energie.com, bei Fehler Slack-Warnung + 3 Wiederholungen. Felder: quelle, name, email, tel, plz, msg, seite, zeit; nach Erfolg leitet das Formular auf `/danke/` (dort Google-Ads-Conversion, nur mit Einwilligung). Überwachung durch "Formular-Wächter" (ID 6572497): läuft stündlich, prüft Kontaktformular (6582422) und Chatbot (6573557) einmal täglich im 8-Uhr-Lauf (seit 22.10.2026; vorher fälschlich den alten Rechner statt des Kontaktformulars).
 - **Rechner-Defaults sind Beispielwerte** (EG-Einspeisung 10 ct, Bezug 14 ct, Beitrag 4 €/Monat): echte EBZ-Konditionen ausstehend → `DEFAULTS` in `rechner.py` + Hero-Badges der LPs aktualisieren.
 - **Chatbot** (Cloudflare Worker `ebzbot`, https://ebzbot.klicknerds.workers.dev, eingebunden über WPCode-Snippet "ChatBot" ID 6745): Endpunkte `/chat` und `/lead`. `/lead` leitet an die Adresse aus der Cloudflare-Variable `LEAD_WEBHOOK_URL` weiter (hat Vorrang vor der im Code eingetragenen Reserve; seit 10.10.2026 ist das dieselbe Make-Adresse, n8n kommt im Worker nicht mehr vor). Ziel: Make-Szenario "EBZ Chatbot Leads -> E-Mail" (ID 6573557), Webhook `https://hook.us2.make.com/z1vkrysdf6pwg67zvm1gf7wry2iw8d9e` → Gmail an office@ebz-energie.com. Lead-Felder: name, kontakt, region, anliegen, zeitfenster. System-Prompt am 10.10.2026 auf den Stand dieser Datei gebracht (Finanzierung statt Leasing, Triglavstraße 15, zertifizierte Fachkräfte, Projektbericht, keine Bundesförderung für Wärmepumpen versprechen); Quelle lokal unter `chatbot/worker.js` (nicht im Repo, da öffentlich). Bei NAP/Fakten-Änderungen den System-Prompt im Worker mitziehen; nach dem Launch die Links im Prompt auf die neuen Slugs umstellen.
 
@@ -178,7 +178,7 @@ Weitere Projektbilder: /referenzen/ crawlen. Referenz-Bild und Referenz-Zahlen m
 ## 10. Offene Punkte (Stand: Anfang September 2026)
 
 1. Echte EG-Konditionen vom Kunden → `rechner.py` DEFAULTS + LP-Hero-Badges
-2. n8n kündigen: Rechner, Chatbot und Kontaktformular laufen über Make, die n8n-Adresse ist seit 10.10.2026 aus dem Worker-Code entfernt (geprüft)
+2. ~~n8n kündigen~~ erledigt (Oktober 2026, vom Nutzer gekündigt)
 3. WP Mail SMTP vor Livegang der Formulare
 4. energyfamily-Logo-Freigabe (dann Text-Badge → `<img>`)
 5. OeMAG-August-Marktpreis in Artikel 18 nachtragen (Anfang September verfügbar)
