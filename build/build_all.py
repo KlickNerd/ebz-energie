@@ -86,7 +86,7 @@ def write_meta_files():
 
 
 # Erst auf True setzen, wenn das IONOS-Zertifikat fuer die Domain aktiv ist (sonst SSL-Warnung beim Umzug).
-HTTPS_READY = False
+HTTPS_READY = True
 
 
 def write_htaccess():
