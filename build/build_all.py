@@ -85,6 +85,10 @@ def write_meta_files():
     write_htaccess()
 
 
+# Erst auf True setzen, wenn das IONOS-Zertifikat fuer die Domain aktiv ist (sonst SSL-Warnung beim Umzug).
+HTTPS_READY = False
+
+
 def write_htaccess():
     """.htaccess fuer den Apache-Webspace bei IONOS: https, ohne www, 301 aus build/redirects.txt, 404, Caching.
 
@@ -103,16 +107,22 @@ def write_htaccess():
                 else:
                     pattern = "^$" if not old else "^" + re.escape(old).replace("\\-", "-") + "/?$"
                 rules.append(f"RewriteRule {pattern} {parts[1]} [R=301,L]")
+    if HTTPS_READY:
+        canon = ("# https und Hauptdomain ohne www\n"
+                 "RewriteCond %{HTTPS} off [OR]\n"
+                 "RewriteCond %{HTTP_HOST} ^www\\. [NC]\n"
+                 "RewriteRule ^ https://ebz-photovoltaik.at%{REQUEST_URI} [R=301,L]")
+    else:
+        canon = ("# Uebergang bis das SSL-Zertifikat aktiv ist: nur www -> ohne www, noch kein Zwang auf https\n"
+                 "RewriteCond %{HTTP_HOST} ^www\\. [NC]\n"
+                 "RewriteRule ^ %{REQUEST_SCHEME}://ebz-photovoltaik.at%{REQUEST_URI} [R=301,L]")
     body = f"""# Automatisch erzeugt von build/build_all.py aus build/redirects.txt. Nicht von Hand aendern.
 Options -Indexes
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
 
 RewriteEngine On
-# https und Hauptdomain ohne www
-RewriteCond %{{HTTPS}} off [OR]
-RewriteCond %{{HTTP_HOST}} ^www\\. [NC]
-RewriteRule ^ https://ebz-photovoltaik.at%{{REQUEST_URI}} [R=301,L]
+{canon}
 
 # 301-Weiterleitungen alter WordPress-Adressen ({len(rules)})
 {chr(10).join(rules)}
