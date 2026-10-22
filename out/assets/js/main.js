@@ -118,6 +118,41 @@
     if(pre && msgEl && !msgEl.value){ msgEl.value = pre + "\n\n"; }
   } catch(e){}
 
+  // Cookie-Banner + Google Ads (Consent Mode v2, Basis-Modus: gtag.js laedt erst nach Zustimmung)
+  (function(){
+    var box = document.getElementById("cookie"), KEY = "ebz_consent", loaded = false;
+    function get(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
+    function put(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
+    function loadAds(){
+      if(loaded || !window.EBZ_ADS_ID) return; loaded = true;
+      var s = document.createElement("script"); s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.EBZ_ADS_ID;
+      document.head.appendChild(s);
+    }
+    function apply(v){
+      if(v === "granted" && !loaded){
+        gtag("consent", "update", {ad_storage:"granted", ad_user_data:"granted", ad_personalization:"granted"});
+        gtag("js", new Date());
+        gtag("config", window.EBZ_ADS_ID);
+        if(window.EBZ_CONVERSION){ gtag("event", "conversion", {send_to: window.EBZ_CONVERSION}); } // nur auf /danke/
+        loadAds();
+      }
+    }
+    function open(){ if(box){ box.hidden = false; } }
+    var v = get();
+    if(v){ apply(v); } else { open(); }
+    document.querySelectorAll(".js-cookie").forEach(function(b){
+      b.addEventListener("click", function(){
+        var c = b.getAttribute("data-choice"), was = get(); put(c); box.hidden = true;
+        if(c === "granted"){ apply(c); }
+        else if(was === "granted"){ location.reload(); } // Widerruf: Seite ohne Google-Skript neu laden
+      });
+    });
+    document.querySelectorAll(".js-cookie-settings").forEach(function(l){
+      l.addEventListener("click", function(e){ e.preventDefault(); open(); });
+    });
+  })();
+
   // Kontaktformular: JSON-POST an den Webhook, Fallback mailto
   document.querySelectorAll("form.js-contact").forEach(function(form){
     var msg = form.querySelector(".form-msg");

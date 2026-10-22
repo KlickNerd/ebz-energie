@@ -1,10 +1,10 @@
 """Danke-Seite (/danke/): Ziel nach erfolgreich gesendetem Kontaktformular, wie auf der alten WordPress-Seite.
 
-noindex und nicht in der Sitemap. Hier sitzt spaeter auch die Google-Ads-Conversion (alte Seite:
-AW-10792977949/uGLzCKDeI5wYEJ2Mv5oo), sobald das Ads-Tracking mit Einwilligung eingebaut ist.
+noindex und nicht in der Sitemap. Hier feuert die Google-Ads-Conversion "Anfrage gesendet" (wie auf der alten
+Seite: AW-10792977949/uGLzCKDeI5wYEJ2Mv5oo), aber nur, wenn im Cookie-Banner zugestimmt wurde.
 """
 
-from common import NAP, write_page, tel_link
+from common import NAP, ADS_CONVERSION, write_page, tel_link
 from layout import page
 import components as C
 
@@ -41,6 +41,8 @@ def build():
     ])
     html = page("Danke für Ihre Anfrage | EBZ Energie",
                 "Danke für Ihre Anfrage bei EBZ Energie. Wir melden uns innerhalb eines Werktags.", PATH, body)
+    # Google-Ads-Conversion "Anfrage gesendet": wird nur mit Einwilligung gesendet (siehe Cookie-Banner in main.js)
+    html = html.replace("</head>", f'  <script>window.EBZ_CONVERSION="{ADS_CONVERSION}";</script>\n</head>', 1)
     html = html.replace('<meta name="robots" content="index,follow,max-image-preview:large">',
                         '<meta name="robots" content="noindex,follow">')
     return write_page("danke/index.html", html)

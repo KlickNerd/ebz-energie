@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Datenschutzerklärung | EBZ Energie GmbH</title>
-  <meta name="description" content="Datenschutzerklärung der EBZ Energie GmbH, Villach: Verantwortlicher, Betroffenenrechte nach DSGVO, Kontaktformular, Chat-Assistent, Hosting und Drittdienste.">
+  <meta name="description" content="Datenschutzerklärung der EBZ Energie GmbH, Villach: Verantwortlicher, Betroffenenrechte nach DSGVO, Kontaktformular, Chat-Assistent, Google Ads mit Einwilligung, Hosting.">
   <link rel="canonical" href="https://ebz-photovoltaik.at/datenschutz/">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_AT">
   <meta property="og:title" content="Datenschutzerklärung | EBZ Energie GmbH">
-  <meta property="og:description" content="Datenschutzerklärung der EBZ Energie GmbH, Villach: Verantwortlicher, Betroffenenrechte nach DSGVO, Kontaktformular, Chat-Assistent, Hosting und Drittdienste.">
+  <meta property="og:description" content="Datenschutzerklärung der EBZ Energie GmbH, Villach: Verantwortlicher, Betroffenenrechte nach DSGVO, Kontaktformular, Chat-Assistent, Google Ads mit Einwilligung, Hosting.">
   <meta property="og:url" content="https://ebz-photovoltaik.at/datenschutz/">
   <meta property="og:image" content="https://ebz-photovoltaik.at/assets/img/hero-photovoltaik-villach.jpg">
   <meta name="theme-color" content="#0e4d64">
   <meta name="google-site-verification" content="uILDYt2dby_-jXvB2MkbzM1zUr5RF7oFmLeIn0-8zlo">
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"});window.EBZ_ADS_ID="AW-10792977949";</script>
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -148,13 +149,28 @@
         Anbietern von Schriftarten hergestellt.</p>
 
         <h3>Cookies und lokaler Speicher</h3>
-        <p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Werbedienste. Nur wenn Sie den
+        <p>Ohne Ihre Zustimmung setzt diese Website keine Cookies. Cookies von Google entstehen nur, wenn Sie im
+        Cookie-Hinweis „Alle akzeptieren“ wählen (siehe Google Ads). Ihre Auswahl im Cookie-Hinweis speichert Ihr Browser
+        im lokalen Speicher (localStorage), damit der Hinweis nicht bei jedem Seitenaufruf erneut erscheint. Nur wenn Sie den
         Chat-Assistenten nutzen, speichert Ihr Browser den Gesprächsverlauf im lokalen Speicher (localStorage) Ihres
         Endgeräts, damit das Gespräch beim Wechsel auf eine andere Unterseite erhalten bleibt. Diese Daten verlassen
         Ihr Gerät dafür nicht und werden nach sechs Stunden nicht mehr verwendet; Sie können sie jederzeit über die
         Einstellungen Ihres Browsers löschen. Schließen Sie den Hinweis zum Chat-Assistenten, merkt sich Ihr Browser
         das für die laufende Sitzung (sessionStorage). Diese Speicherungen erfolgen nur aufgrund Ihrer Handlung und
         sind für die von Ihnen gewünschte Funktion erforderlich.</p>
+
+        <h3>Google Ads (Conversion-Messung)</h3>
+        <p>Mit Ihrer Einwilligung nutzen wir Google Ads der Google Ireland Limited, Gordon House, Barrow Street,
+        Dublin 4, Irland. Damit messen wir, ob Besucherinnen und Besucher, die über eine unserer Anzeigen auf die Website
+        kommen, eine Anfrage senden (Conversion). Dazu wird das Skript gtag.js von Google geladen; Google setzt Cookies
+        und verarbeitet unter anderem Ihre IP-Adresse, Geräte- und Browserinformationen sowie die Information, dass nach
+        einem Anzeigenklick eine Anfrage gesendet wurde. Den Inhalt Ihrer Anfrage erhält Google nicht. Eine Übermittlung
+        in die USA ist möglich; Google ist nach dem EU-US Data Privacy Framework zertifiziert.</p>
+        <p>Ohne Ihre Zustimmung wird das Google-Skript nicht geladen und es werden keine Daten an Google gesendet.
+        Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a) DSGVO, § 165 Abs. 3 TKG 2021). Sie können sie
+        jederzeit mit Wirkung für die Zukunft über den Link „Cookie-Einstellungen“ im Fußbereich jeder Seite
+        widerrufen. Weitere Informationen: policies.google.com/privacy.</p>
+        <!-- TODO Kunde: Google-Ads-Datenverarbeitungsbedingungen im Ads-Konto akzeptieren (Google Ads Data Processing Terms) und Abschnitt rechtlich pruefen lassen. -->
 
         <h3>Kontaktanfragen / Kontaktmöglichkeit</h3>
         <p>Sofern Sie per Kontaktformular oder E-Mail mit uns in Kontakt treten, werden die dabei von Ihnen
@@ -255,7 +271,7 @@
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 EBZ Energie GmbH</span>
-        <span><a href="/impressum/">Impressum</a> &middot; <a href="/datenschutz/">Datenschutz</a></span>
+        <span><a href="/impressum/">Impressum</a> &middot; <a href="/datenschutz/">Datenschutz</a> &middot; <a href="#" class="js-cookie-settings">Cookie-Einstellungen</a></span>
       </div>
     </div>
   </footer>
@@ -290,6 +306,16 @@
   </button>
 </div>
 
+
+  <div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Cookie-Einstellungen" hidden>
+    <p><b>Cookies für Werbemessung</b> Wir möchten Google Ads nutzen, um zu messen, ob unsere Anzeigen zu Anfragen führen.
+    Dafür setzt Google Cookies. Das passiert nur mit Ihrer Zustimmung, die Sie jederzeit über „Cookie-Einstellungen“
+    im Fußbereich widerrufen können. Mehr in der <a href="/datenschutz/">Datenschutzerklärung</a>.</p>
+    <div class="cookie__btns">
+      <button type="button" class="btn btn--ghost js-cookie" data-choice="denied">Nur notwendige</button>
+      <button type="button" class="btn btn--primary js-cookie" data-choice="granted">Alle akzeptieren</button>
+    </div>
+  </div>
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/chatbot.js" defer></script>
 </body>

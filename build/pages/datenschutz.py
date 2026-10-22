@@ -2,7 +2,7 @@
 
 Grundlage: Datenschutzerklaerung der alten WordPress-Seite (Muster Weiss & Partner), formatiert, NAP
 vereinheitlicht, Gedankenstriche entfernt. Am 21.10.2026 auf die statische Website umgestellt: Hosting IONOS,
-Schriften lokal (kein Google Fonts mehr), keine Cookies, lokaler Speicher nur fuer den Chat, Kontaktformular
+Schriften lokal (kein Google Fonts mehr), Cookies nur mit Einwilligung (Google Ads), lokaler Speicher fuer Chat und Cookie-Auswahl, Kontaktformular
 ueber Make (Celonis Inc., DPF) und Gmail, neuer Abschnitt Chat-Assistent (Cloudflare, Anthropic). Entfernt:
 Abschnitte zu Consent-Tool, Session-/Drittanbieter-Cookies, Google Maps, YouTube und das ungueltige Privacy
 Shield. Offene Punkte als "TODO Kunde". Keine Rechtsberatung.
@@ -14,7 +14,7 @@ import components as C
 
 PATH = "/datenschutz/"
 TITLE = "Datenschutzerklärung | EBZ Energie GmbH"
-DESC = ("Datenschutzerklärung der EBZ Energie GmbH, Villach: Verantwortlicher, Betroffenenrechte nach DSGVO, Kontaktformular, Chat-Assistent, Hosting und Drittdienste.")
+DESC = ("Datenschutzerklärung der EBZ Energie GmbH, Villach: Verantwortlicher, Betroffenenrechte nach DSGVO, Kontaktformular, Chat-Assistent, Google Ads mit Einwilligung, Hosting.")
 
 
 
@@ -119,13 +119,28 @@ def build():
         Anbietern von Schriftarten hergestellt.</p>
 
         <h3>Cookies und lokaler Speicher</h3>
-        <p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Werbedienste. Nur wenn Sie den
+        <p>Ohne Ihre Zustimmung setzt diese Website keine Cookies. Cookies von Google entstehen nur, wenn Sie im
+        Cookie-Hinweis „Alle akzeptieren“ wählen (siehe Google Ads). Ihre Auswahl im Cookie-Hinweis speichert Ihr Browser
+        im lokalen Speicher (localStorage), damit der Hinweis nicht bei jedem Seitenaufruf erneut erscheint. Nur wenn Sie den
         Chat-Assistenten nutzen, speichert Ihr Browser den Gesprächsverlauf im lokalen Speicher (localStorage) Ihres
         Endgeräts, damit das Gespräch beim Wechsel auf eine andere Unterseite erhalten bleibt. Diese Daten verlassen
         Ihr Gerät dafür nicht und werden nach sechs Stunden nicht mehr verwendet; Sie können sie jederzeit über die
         Einstellungen Ihres Browsers löschen. Schließen Sie den Hinweis zum Chat-Assistenten, merkt sich Ihr Browser
         das für die laufende Sitzung (sessionStorage). Diese Speicherungen erfolgen nur aufgrund Ihrer Handlung und
         sind für die von Ihnen gewünschte Funktion erforderlich.</p>
+
+        <h3>Google Ads (Conversion-Messung)</h3>
+        <p>Mit Ihrer Einwilligung nutzen wir Google Ads der Google Ireland Limited, Gordon House, Barrow Street,
+        Dublin 4, Irland. Damit messen wir, ob Besucherinnen und Besucher, die über eine unserer Anzeigen auf die Website
+        kommen, eine Anfrage senden (Conversion). Dazu wird das Skript gtag.js von Google geladen; Google setzt Cookies
+        und verarbeitet unter anderem Ihre IP-Adresse, Geräte- und Browserinformationen sowie die Information, dass nach
+        einem Anzeigenklick eine Anfrage gesendet wurde. Den Inhalt Ihrer Anfrage erhält Google nicht. Eine Übermittlung
+        in die USA ist möglich; Google ist nach dem EU-US Data Privacy Framework zertifiziert.</p>
+        <p>Ohne Ihre Zustimmung wird das Google-Skript nicht geladen und es werden keine Daten an Google gesendet.
+        Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a) DSGVO, § 165 Abs. 3 TKG 2021). Sie können sie
+        jederzeit mit Wirkung für die Zukunft über den Link „Cookie-Einstellungen“ im Fußbereich jeder Seite
+        widerrufen. Weitere Informationen: policies.google.com/privacy.</p>
+        <!-- TODO Kunde: Google-Ads-Datenverarbeitungsbedingungen im Ads-Konto akzeptieren (Google Ads Data Processing Terms) und Abschnitt rechtlich pruefen lassen. -->
 
         <h3>Kontaktanfragen / Kontaktmöglichkeit</h3>
         <p>Sofern Sie per Kontaktformular oder E-Mail mit uns in Kontakt treten, werden die dabei von Ihnen

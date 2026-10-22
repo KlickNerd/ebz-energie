@@ -129,6 +129,17 @@ p{margin:0 0 1rem}
 .site-footer--lp{padding-block:28px 96px}
 .site-footer--lp .footer-bottom{margin-top:0;border-top:0;padding-top:0}
 
+/* Cookie-Banner (Google Ads nur mit Zustimmung) */
+.cookie{position:fixed;left:16px;bottom:16px;z-index:2147483600;max-width:440px;background:#fff;color:var(--ink);
+  border:1px solid var(--line);border-radius:16px;box-shadow:0 24px 60px -20px rgba(8,46,61,.45);padding:18px 18px 16px}
+.cookie[hidden]{display:none}
+.cookie p{margin:0 0 14px;font-size:.92rem;line-height:1.5;color:var(--muted)}
+.cookie p b{display:block;color:var(--ink);font-family:var(--font-head);margin-bottom:4px}
+.cookie p a{color:var(--petrol)}
+.cookie__btns{display:flex;gap:10px;flex-wrap:wrap}
+.cookie__btns .btn{flex:1 1 140px;padding:12px 16px;font-size:.95rem}
+@media(max-width:600px){.cookie{left:8px;right:8px;bottom:8px;max-width:none}}
+
 /* --- Footer ------------------------------------------------------------- */
 .site-footer{background:var(--petrol-3);color:#cfe0e6;padding-block:56px 28px;
   font-size:.95rem}

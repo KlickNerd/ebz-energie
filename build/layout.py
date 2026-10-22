@@ -6,7 +6,7 @@ seitenuebergreifend identisch (eine Quelle) und werden hier gepflegt.
 
 from chatbot import CHATBOT_HTML
 from common import (BASE, NAP, S, IMG, a, href, tel_link, u,
-                    localbusiness_jsonld, GSC_VERIFICATION)
+                    localbusiness_jsonld, GSC_VERIFICATION, ADS_ID)
 
 # Schriften liegen selbst gehostet unter /assets/fonts/ (kein Aufruf von Google-Servern, DSGVO).
 # Die @font-face-Regeln stehen am Anfang von styles.css (theme.write_assets), hier nur Preload der Latin-Dateien.
@@ -117,7 +117,7 @@ def _footer():
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 EBZ Energie GmbH</span>
-        <span>{a('impressum', 'Impressum')} &middot; {a('datenschutz', 'Datenschutz')}</span>
+        <span>{a('impressum', 'Impressum')} &middot; {a('datenschutz', 'Datenschutz')} &middot; <a href="#" class="js-cookie-settings">Cookie-Einstellungen</a></span>
       </div>
     </div>
   </footer>"""
@@ -128,6 +128,19 @@ def _sticky_cta(target="kontakt"):
   <div class="sticky-cta">
     <a class="btn btn--ghost" href="{NAP['phone_href']}">Anrufen</a>
     {a(target, 'Beratung anfragen', cls='btn btn--primary')}
+  </div>"""
+
+
+def _cookie_banner():
+    return f"""
+  <div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Cookie-Einstellungen" hidden>
+    <p><b>Cookies für Werbemessung</b> Wir möchten Google Ads nutzen, um zu messen, ob unsere Anzeigen zu Anfragen führen.
+    Dafür setzt Google Cookies. Das passiert nur mit Ihrer Zustimmung, die Sie jederzeit über „Cookie-Einstellungen“
+    im Fußbereich widerrufen können. Mehr in der {a('datenschutz', 'Datenschutzerklärung')}.</p>
+    <div class="cookie__btns">
+      <button type="button" class="btn btn--ghost js-cookie" data-choice="denied">Nur notwendige</button>
+      <button type="button" class="btn btn--primary js-cookie" data-choice="granted">Alle akzeptieren</button>
+    </div>
   </div>"""
 
 
@@ -153,7 +166,7 @@ def _footer_lp():
     <div class="wrap">
       <div class="footer-bottom">
         <span>&copy; 2026 EBZ Energie GmbH &middot; {NAP['street']}, {NAP['zip']} {NAP['city']} &middot; {tel_link()}</span>
-        <span>{a('home', 'Website')} &middot; {a('impressum', 'Impressum')} &middot; {a('datenschutz', 'Datenschutz')}</span>
+        <span>{a('home', 'Website')} &middot; {a('impressum', 'Impressum')} &middot; {a('datenschutz', 'Datenschutz')} &middot; <a href="#" class="js-cookie-settings">Cookie-Einstellungen</a></span>
       </div>
     </div>
   </footer>"""
@@ -201,6 +214,7 @@ def page(title, description, path, body, faq_jsonld_str=None,
   <meta property="og:image" content="{og}">
   <meta name="theme-color" content="#0e4d64">
   <meta name="google-site-verification" content="{GSC_VERIFICATION}">
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag("consent","default",{{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"}});window.EBZ_ADS_ID="{ADS_ID}";</script>
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   {FONTS}
   <link rel="stylesheet" href="/assets/css/styles.css">{schemas}
@@ -214,6 +228,7 @@ def page(title, description, path, body, faq_jsonld_str=None,
 {_footer_lp() if landing else _footer()}
 {_sticky_cta("#beratung" if landing else "kontakt")}
 {CHATBOT_HTML}
+{_cookie_banner()}
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/chatbot.js" defer></script>
 </body>

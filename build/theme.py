@@ -132,6 +132,17 @@ p{margin:0 0 1rem}
 .site-footer--lp{padding-block:28px 96px}
 .site-footer--lp .footer-bottom{margin-top:0;border-top:0;padding-top:0}
 
+/* Cookie-Banner (Google Ads nur mit Zustimmung) */
+.cookie{position:fixed;left:16px;bottom:16px;z-index:2147483600;max-width:440px;background:#fff;color:var(--ink);
+  border:1px solid var(--line);border-radius:16px;box-shadow:0 24px 60px -20px rgba(8,46,61,.45);padding:18px 18px 16px}
+.cookie[hidden]{display:none}
+.cookie p{margin:0 0 14px;font-size:.92rem;line-height:1.5;color:var(--muted)}
+.cookie p b{display:block;color:var(--ink);font-family:var(--font-head);margin-bottom:4px}
+.cookie p a{color:var(--petrol)}
+.cookie__btns{display:flex;gap:10px;flex-wrap:wrap}
+.cookie__btns .btn{flex:1 1 140px;padding:12px 16px;font-size:.95rem}
+@media(max-width:600px){.cookie{left:8px;right:8px;bottom:8px;max-width:none}}
+
 /* --- Footer ------------------------------------------------------------- */
 .site-footer{background:var(--petrol-3);color:#cfe0e6;padding-block:56px 28px;
   font-size:.95rem}
@@ -1150,6 +1161,41 @@ JS = r"""
     var msgEl = document.querySelector("form.js-contact [name=msg]");
     if(pre && msgEl && !msgEl.value){ msgEl.value = pre + "\n\n"; }
   } catch(e){}
+
+  // Cookie-Banner + Google Ads (Consent Mode v2, Basis-Modus: gtag.js laedt erst nach Zustimmung)
+  (function(){
+    var box = document.getElementById("cookie"), KEY = "ebz_consent", loaded = false;
+    function get(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
+    function put(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
+    function loadAds(){
+      if(loaded || !window.EBZ_ADS_ID) return; loaded = true;
+      var s = document.createElement("script"); s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.EBZ_ADS_ID;
+      document.head.appendChild(s);
+    }
+    function apply(v){
+      if(v === "granted" && !loaded){
+        gtag("consent", "update", {ad_storage:"granted", ad_user_data:"granted", ad_personalization:"granted"});
+        gtag("js", new Date());
+        gtag("config", window.EBZ_ADS_ID);
+        if(window.EBZ_CONVERSION){ gtag("event", "conversion", {send_to: window.EBZ_CONVERSION}); } // nur auf /danke/
+        loadAds();
+      }
+    }
+    function open(){ if(box){ box.hidden = false; } }
+    var v = get();
+    if(v){ apply(v); } else { open(); }
+    document.querySelectorAll(".js-cookie").forEach(function(b){
+      b.addEventListener("click", function(){
+        var c = b.getAttribute("data-choice"), was = get(); put(c); box.hidden = true;
+        if(c === "granted"){ apply(c); }
+        else if(was === "granted"){ location.reload(); } // Widerruf: Seite ohne Google-Skript neu laden
+      });
+    });
+    document.querySelectorAll(".js-cookie-settings").forEach(function(l){
+      l.addEventListener("click", function(e){ e.preventDefault(); open(); });
+    });
+  })();
 
   // Kontaktformular: JSON-POST an den Webhook, Fallback mailto
   document.querySelectorAll("form.js-contact").forEach(function(form){

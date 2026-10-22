@@ -77,6 +77,9 @@ FINANZIERUNG = {
 FORM_ENDPOINT = "https://hook.us2.make.com/1fkgm8zywyy6jqswmqibte15sxb349n7"
 # Google Search Console: Bestaetigung der URL-Praefix-Property per Meta-Tag (von der alten WordPress-Seite uebernommen)
 GSC_VERIFICATION = "uILDYt2dby_-jXvB2MkbzM1zUr5RF7oFmLeIn0-8zlo"
+# Google Ads (von der alten WordPress-Seite uebernommen). Laedt erst nach Einwilligung im Cookie-Banner (Consent Mode v2, Basis-Modus).
+ADS_ID = "AW-10792977949"
+ADS_CONVERSION = "AW-10792977949/uGLzCKDeI5wYEJ2Mv5oo"  # Anfrage gesendet (feuert auf /danke/)
 
 # Website-Chatbot: Cloudflare-Worker "ebzbot" (Quelle lokal unter chatbot/worker.js, nicht im Repo). Widget: build/chatbot.py
 CHATBOT_URL = "https://ebzbot.klicknerds.workers.dev"
