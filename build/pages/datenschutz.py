@@ -14,7 +14,7 @@ import components as C
 
 PATH = "/datenschutz/"
 TITLE = "Datenschutzerklärung | EBZ Energie GmbH"
-DESC = ("Datenschutzerklärung der EBZ Energie GmbH, Villach: Verantwortlicher, Betroffenenrechte nach DSGVO, Kontaktformular, Chat-Assistent, Google Ads mit Einwilligung, Hosting.")
+DESC = ("Datenschutzerklärung der EBZ Energie GmbH, Villach: Betroffenenrechte, Kontaktformular, Chat-Assistent, Google Ads mit Einwilligung und Hosting.")
 
 
 

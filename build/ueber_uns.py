@@ -19,8 +19,8 @@ import components as C
 
 PATH = "/ueber-uns/"
 TITLE = "EBZ Energie GmbH: Photovoltaik-Fachbetrieb aus Villach"
-DESC = ("EBZ Energie GmbH, Photovoltaik-Fachbetrieb aus Villach: 300+ Anlagen in Kärnten und der Steiermark, "
-        "4,9 Sterne auf Google, ein fester Ansprechpartner für Planung und Montage.")
+DESC = ("EBZ Energie GmbH, PV-Fachbetrieb aus Villach: 300+ Anlagen in Kärnten und der Steiermark, "
+        "4,9 Sterne auf Google, ein Ansprechpartner von Planung bis Montage.")
 
 FN = "FN 597101 s"
 

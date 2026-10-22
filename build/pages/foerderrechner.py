@@ -27,7 +27,7 @@ import components as C
 PATH = "/foerderrechner/"
 TITLE = "Förderrechner 2026: PV, Speicher, Wärmepumpe | EBZ"
 DESC = ("Kostenloser Förderrechner für Österreich: Vorhaben, Bundesland und Größe eingeben, Förderung von Bund "
-        "und Land sofort sehen. Kärnten 3.000 € für PV mit Speicher, Bundes-Call 2026 beendet.")
+        "und Land sehen. Kärnten 3.000 € für PV mit Speicher.")
 STAND = "Stand Ende Oktober 2026"
 LAENDER_STAND = "Stand Juni 2026"
 

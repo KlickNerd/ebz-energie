@@ -188,6 +188,56 @@ def build_pages():
     return errors
 
 
+def write_llms():
+    """llms.txt (GEO): kompakte Uebersicht fuer KI-Suchsysteme (ChatGPT, Perplexity, Gemini) nach llmstxt.org.
+    Unternehmensfakten aus common/NAP, dazu alle indexierbaren Seiten aus der Sitemap mit Titel und Beschreibung."""
+    import html as _html
+    from common import BASE, NAP
+    sm = open(os.path.join(OUT, "sitemap.xml"), encoding="utf-8").read()
+    paths = [u.replace(BASE, "") for u in re.findall(r"<loc>([^<]+)</loc>", sm)]
+    arts = {a["path"] for a in ratgeber.load_articles()}
+    groups = {"Leistungen und Angebot": [], "Standorte": [], "Förderung und Rechner": [], "Ratgeber": [], "Unternehmen": []}
+    for p in paths:
+        f = os.path.join(OUT, p.strip("/"), "index.html") if p != "/" else os.path.join(OUT, "index.html")
+        h = open(f, encoding="utf-8").read(6000)
+        title = _html.unescape(re.search(r"<title>(.*?)</title>", h).group(1)).split(" | ")[0]
+        desc = _html.unescape(re.search(r'<meta name="description" content="([^"]*)"', h).group(1))
+        line = f"- [{title}]({BASE}{p}): {desc}"
+        if p in arts:
+            groups["Ratgeber"].append(line)
+        elif p.startswith("/photovoltaik-") and p.count("-") <= 2 and "foerderung" not in p and p not in ("/photovoltaik-carport/", "/photovoltaik-gewerbe/") or p == "/standorte/":
+            groups["Standorte"].append(line)
+        elif "foerder" in p or "rechner" in p:
+            groups["Förderung und Rechner"].append(line)
+        elif p in ("/ueber-uns/", "/referenzen/", "/kontakt/", "/impressum/", "/datenschutz/") or p.startswith("/referenzen/"):
+            groups["Unternehmen"].append(line)
+        else:
+            groups["Leistungen und Angebot"].append(line)
+    out = [
+        f"# {NAP['name']}",
+        "",
+        (f"> Photovoltaik-Fachbetrieb aus Villach für Kärnten und die Steiermark: Photovoltaik mit Speicher, "
+         f"Wärmepumpe, Energiemanagement, Balkonkraftwerke und Energiegemeinschaften aus einer Hand."),
+        "",
+        f"- Adresse: {NAP['street']}, {NAP['zip']} {NAP['city']}, Österreich",
+        f"- Telefon: {NAP['phone_display']}, E-Mail: {NAP['email']}, {NAP['hours']}",
+        "- Montagegebiet: Kärnten und Steiermark, Referenzen in 6 Bundesländern (300+ dokumentierte Projekte)",
+        f"- Google-Bewertung: {NAP['rating']} Sterne",
+        "- Garantie: bis zu 30 Jahre Leistungsgarantie auf Module, mindestens 10 Jahre Produktgarantie",
+        "- Richtpreis: 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung",
+        "- Finanzierung: Anlage gehört ab dem ersten Tag dem Kunden, ab 147 € im Monat inklusive Speicher (Beispielkondition)",
+        "- Planung: Projektbericht mit 3D-Belegplan und Statikreport, Ausführung durch zertifizierte Fachkräfte",
+        "- Geschäftsführung: Mario Zintl",
+        "",
+    ]
+    for g, lines in groups.items():
+        if lines:
+            out += [f"## {g}", ""] + lines + [""]
+    with open(os.path.join(OUT, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(out))
+    print(f"[OK ] llms.txt ({len(paths)} Seiten)")
+
+
 def main():
     print("=== EBZ Website Build ===")
     theme.write_assets()
@@ -202,6 +252,7 @@ def main():
     errors += len(finanzierung.build())
     errors += len(build_pages())
     write_sitemap()
+    write_llms()
     print("=== Fertig ===")
     if errors:
         print(f"ACHTUNG: {errors} Validierungsfehler. Bitte beheben.")
