@@ -18,7 +18,7 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"});window.EBZ_ADS_ID="AW-10792977949";</script>
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261026">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "@id": "https://ebz-photovoltaik.at/foerderrechner/#faq", "mainEntity": [{"@type": "Question", "name": "Wie genau ist der Förderrechner?", "acceptedAnswer": {"@type": "Answer", "text": "Für die Kärntner Landespauschale, die EMS-Förderung und, solange ein Call läuft, den Bundeszuschuss rechnet er mit den veröffentlichten Sätzen und ist damit auf den Euro nachvollziehbar. Für die Wärmepumpe und für Bundesländer außerhalb unseres Montagegebiets zeigt er Spannen, weil der Betrag von den Kosten und vom Budget des Landes abhängt. Das Ergebnis ist ein Richtwert, kein Bescheid."}}, {"@type": "Question", "name": "Welche Förderungen rechnet der Rechner ein?", "acceptedAnswer": {"@type": "Answer", "text": "Den EAG-Investitionszuschuss des Bundes, solange ein Call läuft (2026: 150 Euro je kWp bis 10 kWp, 140 Euro bis 20 kWp, 150 Euro je kWh Speicher; der letzte Call 2026 endete am 22. Oktober), die Landespauschale Kärnten (3.000 Euro für PV mit Speicher, 1.000 Euro für die Nachrüstung), die Speicherprogramme in Oberösterreich, Tirol, Burgenland und Vorarlberg, die EMS-Förderung des Klimafonds (bis 600 Euro) und die Landesförderungen für Wärmepumpen. Gemeindeförderungen und der Made-in-Europe-Bonus stehen als Hinweis dabei, nicht in der Summe."}}, {"@type": "Question", "name": "Zeigt der Rechner auch abgelaufene Programme an?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, aber nicht in der Summe. Der Rechner vergleicht bei jedem Aufruf das Datum mit den Fristen der Programme. Ist eine Frist vorbei, steht der Topf als beendet in der Liste und zählt nicht mehr mit. So sehen Sie auf einen Blick, was heute beantragbar ist und was nicht."}}, {"@type": "Question", "name": "Warum steht bei der Wärmepumpe nicht überall ein fixer Betrag?", "acceptedAnswer": {"@type": "Answer", "text": "Die Bundesförderung für den Heizungstausch ist derzeit ausgeschöpft. Kärnten zahlt eine Pauschale von 3.000 Euro, die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an. Andere Länder fördern einen Prozentsatz der Kosten mit Obergrenze, dort zeigt der Rechner eine Spanne. Vor dem Angebot klären wir mit dem Land, ob das Budget reicht."}}, {"@type": "Question", "name": "Kann ich Bundes- und Landesförderung kombinieren?", "acceptedAnswer": {"@type": "Answer", "text": "In Kärnten ja: Die Landespauschale wird ohne Anrechnung zusätzlich zum Bundeszuschuss gezahlt, höchstens 50 Prozent der Baukosten. In Oberösterreich schließen sich der Speicherzuschuss des Bundes und die Landesförderung aus, im Burgenland zahlt das Land den Speicher nur, wenn der Bund nicht möglich ist. Der Rechner berücksichtigt diese Regeln."}}, {"@type": "Question", "name": "Gilt der Rechner auch für Betriebe und Gemeinden?", "acceptedAnswer": {"@type": "Answer", "text": "Nein, er rechnet für private Anlagen bis 20 kWp. Für Betriebe gelten eigene Sätze: beim Bund 140 bis 120 Euro je kWp, bei der EMS-Förderung 30 Prozent bis 20.000 Euro, dazu Landesprogramme für Gewerbe. Das rechnen wir im Angebot für Ihr Projekt."}}]}</script>
 </head>
 <body>
@@ -343,8 +343,9 @@ function compute(inp, t){
             <input id="tel" name="tel" type="tel" autocomplete="tel">
           </div>
           <div class="field">
-            <label for="plz">PLZ / Ort</label>
-            <input id="plz" name="plz" type="text" autocomplete="postal-code">
+            <label for="plz">Postleitzahl</label>
+            <input id="plz" name="plz" type="text" inputmode="numeric" autocomplete="postal-code" required
+                   maxlength="4" pattern="[1-9][0-9]{3}" placeholder="z. B. 9500">
           </div>
           <div class="field">
             <label for="msg">Ihr Anliegen</label>
@@ -477,7 +478,7 @@ function compute(inp, t){
       <button type="button" class="btn btn--primary js-cookie" data-choice="granted">Alle akzeptieren</button>
     </div>
   </div>
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=20261026" defer></script>
   <script src="/assets/js/chatbot.js" defer></script>
 </body>
 </html>

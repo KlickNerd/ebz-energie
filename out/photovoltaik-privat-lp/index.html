@@ -18,7 +18,7 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"});window.EBZ_ADS_ID="AW-10792977949";</script>
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261026">
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -293,8 +293,9 @@ Das Angebot wahr sehr detailliert und verständlich.“</p><div class="rev-meta"
             <input id="tel" name="tel" type="tel" autocomplete="tel">
           </div>
           <div class="field">
-            <label for="plz">PLZ / Ort</label>
-            <input id="plz" name="plz" type="text" autocomplete="postal-code">
+            <label for="plz">Postleitzahl</label>
+            <input id="plz" name="plz" type="text" inputmode="numeric" autocomplete="postal-code" required
+                   maxlength="4" pattern="[1-9][0-9]{3}" placeholder="z. B. 9500">
           </div>
           <div class="field">
             <label for="msg">Ihr Anliegen</label>
@@ -368,7 +369,7 @@ Das Angebot wahr sehr detailliert und verständlich.“</p><div class="rev-meta"
       <button type="button" class="btn btn--primary js-cookie" data-choice="granted">Alle akzeptieren</button>
     </div>
   </div>
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=20261026" defer></script>
   <script src="/assets/js/chatbot.js" defer></script>
 </body>
 </html>

@@ -10,6 +10,9 @@ from common import (BASE, NAP, S, IMG, a, href, tel_link, u,
 
 # Schriften liegen selbst gehostet unter /assets/fonts/ (kein Aufruf von Google-Servern, DSGVO).
 # Die @font-face-Regeln stehen am Anfang von styles.css (theme.write_assets), hier nur Preload der Latin-Dateien.
+# Version der CSS/JS-Dateien: bei Aenderungen an Formular-JS oder CSS erhoehen, damit Browser neu laden
+ASSET_V = "20261026"
+
 FONTS = (
     '<link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>'
     '<link rel="preload" href="/assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>'
@@ -217,7 +220,7 @@ def page(title, description, path, body, faq_jsonld_str=None,
   <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag("consent","default",{{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"}});window.EBZ_ADS_ID="{ADS_ID}";</script>
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   {FONTS}
-  <link rel="stylesheet" href="/assets/css/styles.css">{schemas}
+  <link rel="stylesheet" href="/assets/css/styles.css?v={ASSET_V}">{schemas}
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -229,7 +232,7 @@ def page(title, description, path, body, faq_jsonld_str=None,
 {_sticky_cta("#beratung" if landing else "kontakt")}
 {CHATBOT_HTML}
 {_cookie_banner()}
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v={ASSET_V}" defer></script>
   <script src="/assets/js/chatbot.js" defer></script>
 </body>
 </html>

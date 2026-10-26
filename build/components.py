@@ -768,8 +768,9 @@ def contact_section(headline, sub, form_note="Wir melden uns innerhalb eines Wer
             <input id="tel" name="tel" type="tel" autocomplete="tel">
           </div>
           <div class="field">
-            <label for="plz">PLZ / Ort</label>
-            <input id="plz" name="plz" type="text" autocomplete="postal-code">
+            <label for="plz">Postleitzahl</label>
+            <input id="plz" name="plz" type="text" inputmode="numeric" autocomplete="postal-code" required
+                   maxlength="4" pattern="[1-9][0-9]{{3}}" placeholder="z. B. 9500">
           </div>
           <div class="field">
             <label for="msg">Ihr Anliegen</label>
