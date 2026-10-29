@@ -149,7 +149,8 @@ IMG = {
     "mario": "/assets/img/mario-zintl-freigestellt.png",  # echter Freisteller, 2K (Higgsfield)
     "eg_drohne": "/assets/img/energiegemeinschaft-ort.jpg",
     "gewerbe_dach": "/assets/img/gewerbe-dach-ooe.jpg",
-    "pv_card": "/assets/img/photovoltaik-anlage.jpg",
+    "pv_card": "/assets/img/pv-flachdach.jpg",  # EBZ-Projektfoto: Flachdach mit Bergpanorama (Drohne)
+    "pv_efh": "/assets/img/pv-einfamilienhaus.jpg",  # EBZ-Projektfoto: Einfamilienhaus mit Ziegeldach
     "speicher": "/assets/img/batteriespeicher.png",
     "waermepumpe": "/assets/img/waermepumpe.jpg",
     "ems": "/assets/img/ems-energiemanagement.jpg",  # Higgsfield: Technikraum mit EMS-Display, Speicher, Wechselrichter
@@ -176,7 +177,6 @@ IMG_SOURCES = {
     "/assets/img/mario-zintl.png": BASE + "/wp-content/uploads/2023/12/Zintl_cut.png",
     "/assets/img/energiegemeinschaft-ort.jpg": BASE + "/wp-content/uploads/2026/09/pexels-stepan-vrany-591647707-28169966-1.jpg",
     "/assets/img/gewerbe-dach-ooe.jpg": BASE + "/wp-content/uploads/2026/07/gewerbe-ooe-1.jpg",
-    "/assets/img/photovoltaik-anlage.jpg": BASE + "/wp-content/uploads/2023/10/PHOTO-2023-06-23-09-48-56.jpg",
     "/assets/img/batteriespeicher.png": BASE + "/wp-content/uploads/2025/11/Speicher-768x1364.png",
     "/assets/img/waermepumpe.jpg": BASE + "/wp-content/uploads/2026/03/2149250264-1.jpg",
     "/assets/img/energiemanagement.png": BASE + "/wp-content/uploads/2025/11/Gemini_Generated_Image_dndoxkdndoxkdndo.png",

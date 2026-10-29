@@ -98,7 +98,7 @@ def build():
                    "was zu Ihrem Haus und Ihrem Verbrauch passt."),
             with_media=True,
             cards=[
-                {"img": IMG["pv_card"], "alt": "Photovoltaikanlage auf einem Hausdach in Kärnten",
+                {"img": IMG["pv_card"], "alt": "Photovoltaikanlage auf einem Flachdach vor Bergpanorama",
                  "title": "Photovoltaik", "text": "Hochleistungsmodule mit bis zu 30 Jahren Leistungsgarantie, geplant für maximalen Eigenverbrauch.",
                  "link_key": "photovoltaik", "link_text": "Photovoltaikanlage mit Speicher"},
                 {"img": IMG["speicher"], "alt": "Batteriespeicher im Technikraum",

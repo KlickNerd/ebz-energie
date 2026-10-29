@@ -43,7 +43,7 @@ ARTICLE = {
     ],
     "date_published": "2026-09-30",
     "date_modified": "2026-10-21",
-    "hero_img": "pv_card",
+    "hero_img": "pv_efh",
     "hero_alt": "Photovoltaikmodule auf einem Hausdach: Anlagengröße in Kilowatt-Peak richtig wählen",
 
     "tldr": [

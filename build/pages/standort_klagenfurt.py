@@ -257,8 +257,8 @@ def build():
                    "in Krumpendorf oder ein Betrieb im Osten der Stadt. Größe, Speicher und Wirtschaftlichkeit "
                    "richten wir nach Ihrem Verbrauch aus."),
             left={
-                "img": IMG["pv_card"],
-                "alt": "Photovoltaikmodule auf einem Hausdach, montiert von EBZ Energie",
+                "img": IMG["pv_efh"],
+                "alt": "Photovoltaikmodule auf dem Ziegeldach eines Einfamilienhauses, montiert von EBZ Energie",
                 "title": "Für Ihr Zuhause in Klagenfurt",
                 "bullets": [
                     f"Stromkosten um {CLAIMS['ersparnis']} senken",

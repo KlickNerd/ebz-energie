@@ -25,7 +25,7 @@ LP = {
              "Förderabwicklung und Netzanmeldung. Sie senken Ihre Energiekosten um bis zu 85 %, ob im Eigenheim oder "
              "im Betrieb."),
     "badges": [("bis zu 80 %", "Eigenverbrauch mit Speicher*"), ("300+", "Projekte"), ("4,9", "Sterne auf Google")],
-    "hero_img": "pv_card",
+    "hero_img": "pv_efh",
     "hero_alt": "Photovoltaikmodule auf dem Dach eines Wohnhauses in ländlicher Umgebung",
     "media": {
         "hero_bg": "/assets/img/lp-hero-module-sonne.jpg",

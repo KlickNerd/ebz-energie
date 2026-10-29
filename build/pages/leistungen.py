@@ -149,7 +149,7 @@ def build():
                    "Seite mit Zahlen, Ablauf und Förderung."),
             with_media=True,
             cards=[
-                {"img": IMG["pv_card"], "alt": "Photovoltaikanlage auf einem Hausdach in Kärnten",
+                {"img": IMG["pv_efh"], "alt": "Photovoltaikanlage auf dem Ziegeldach eines Einfamilienhauses",
                  "title": "Photovoltaik",
                  "text": "Das Herzstück: Module, Hybrid-Wechselrichter und Montage, geplant für maximalen Eigenverbrauch. Richtpreis 10 kWp mit Speicher 15.000 bis 22.000 € vor Förderung.",
                  "link_key": "photovoltaik", "link_text": "Zur Photovoltaikanlage mit Speicher"},

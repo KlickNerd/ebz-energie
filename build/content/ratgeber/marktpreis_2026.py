@@ -37,7 +37,7 @@ ARTICLE = {
     ],
     "date_published": "2025-12-10",
     "date_modified": "2026-10-21",
-    "hero_img": "pv_card",
+    "hero_img": "pv_efh",
     "hero_alt": "Photovoltaikanlage von EBZ Energie auf einem Wohnhausdach in Kärnten",
 
     "tldr": [

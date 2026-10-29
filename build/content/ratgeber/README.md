@@ -35,7 +35,7 @@ Quelle je Artikel: `<scratchpad>/wp/<slug>.txt` (bereinigter Text des Live-Artik
 - `faq`: 6 bis 8 Fragen (Quelle + typische Suchfragen), Antworten 2 bis 4 Sätze mit Zahl.
 - `author_note`: 2 bis 3 Sätze zu Mario Zintl / EBZ im Themenkontext + Hinweis "keine Rechts-/Steuerberatung" bei Förder-/Steuerthemen.
 - `related`: 4 Links, Mix aus Ratgebern des Clusters (Pfad "/slug/") und Leistungsseiten (Keys: photovoltaik, batteriespeicher, waermepumpe, balkonkraftwerke, finanzierung, eg, ems, referenzen, kontakt, foerderung_kaernten, foerderung_steiermark, foerderung_at, marktpreis).
-- `hero_img`: nur vorhandene IMG-Keys aus `common.py` (waermepumpe, foerderung, pv_card, speicher, gen_hero, gen_eigenheim, gen_gewerbe, gen_detail, team_quer, eg_drohne, gewerbe_dach, balkon, ems). Keine neuen Bilder laden.
+- `hero_img`: nur vorhandene IMG-Keys aus `common.py` (waermepumpe, foerderung, pv_card, pv_efh, speicher, gen_hero, gen_eigenheim, gen_gewerbe, gen_detail, team_quer, eg_drohne, gewerbe_dach, balkon, ems). Keine neuen Bilder laden.
 - `date_published` aus der Quelle, `date_modified` = "2026-09-24".
 - Interne Links im Text: `{a('waermepumpe', 'Wärmepumpen-Installateur')}` (Key) oder `{a('/kosten-einer-waermepumpe/', 'Kosten einer Wärmepumpe')}` (Pfad).
 
