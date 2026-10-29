@@ -198,7 +198,7 @@ def build():
                  "weiter, bei Ersatzstrom lädt die Anlage den Speicher bei Sonne sogar nach."),
             ],
             img=IMG["speicher"],
-            alt="Batteriespeicher einer Photovoltaikanlage an der Wand eines Technikraums",
+            alt="Modularer Batteriespeicher einer Photovoltaikanlage im Technikraum",
             bullets=[
                 "Modular erweiterbar: heute 5 kWh, morgen 10 kWh, wenn E-Auto oder Wärmepumpe dazukommen",
                 "Notstrom oder Ersatzstrom: 10 kWh decken 500 Watt Dauerlast rund 20 Stunden",

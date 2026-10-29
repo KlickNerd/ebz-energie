@@ -151,7 +151,7 @@ IMG = {
     "gewerbe_dach": "/assets/img/gewerbe-dach-ooe.jpg",
     "pv_card": "/assets/img/pv-flachdach.jpg",  # EBZ-Projektfoto: Flachdach mit Bergpanorama (Drohne)
     "pv_efh": "/assets/img/pv-einfamilienhaus.jpg",  # EBZ-Projektfoto: Einfamilienhaus mit Ziegeldach
-    "speicher": "/assets/img/batteriespeicher.png",
+    "speicher": "/assets/img/batteriespeicher.jpg",  # EBZ-Projektfoto: Sigenergy-Speicher im Technikraum
     "waermepumpe": "/assets/img/waermepumpe.jpg",
     "ems": "/assets/img/ems-energiemanagement.jpg",  # Higgsfield: Technikraum mit EMS-Display, Speicher, Wechselrichter
     "ems_app": "/assets/img/ems-app.jpg",  # Higgsfield: Energiefluss-App am Smartphone
@@ -177,7 +177,6 @@ IMG_SOURCES = {
     "/assets/img/mario-zintl.png": BASE + "/wp-content/uploads/2023/12/Zintl_cut.png",
     "/assets/img/energiegemeinschaft-ort.jpg": BASE + "/wp-content/uploads/2026/09/pexels-stepan-vrany-591647707-28169966-1.jpg",
     "/assets/img/gewerbe-dach-ooe.jpg": BASE + "/wp-content/uploads/2026/07/gewerbe-ooe-1.jpg",
-    "/assets/img/batteriespeicher.png": BASE + "/wp-content/uploads/2025/11/Speicher-768x1364.png",
     "/assets/img/waermepumpe.jpg": BASE + "/wp-content/uploads/2026/03/2149250264-1.jpg",
     "/assets/img/energiemanagement.png": BASE + "/wp-content/uploads/2025/11/Gemini_Generated_Image_dndoxkdndoxkdndo.png",
     "/assets/img/balkonkraftwerk.jpg": BASE + "/wp-content/uploads/2024/09/AdobeStock_712663492-web-768x512.jpg",
