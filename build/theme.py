@@ -322,6 +322,11 @@ h1,h2{overflow-wrap:break-word}
 .card__link{margin-top:auto;font-family:var(--font-head);font-weight:700;color:var(--petrol);
   text-decoration:none;display:inline-flex;gap:6px;align-items:center}
 .card__link:hover{gap:10px}
+/* Referenzkarte mit Projektseite: ganze Karte klickbar (Link im Titel, ::after deckt die Karte ab) */
+.card__stretch{color:inherit;text-decoration:none}
+.card__stretch::after{content:"";position:absolute;inset:0;z-index:1}
+.card--link:hover .card__link{gap:10px}
+.card--link .card__result + .card__link{margin-top:4px}
 @media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.cards{grid-template-columns:1fr}}
 /* Genau vier Karten: 2 x 2 statt 3 + 1 */

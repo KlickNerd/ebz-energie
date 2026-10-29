@@ -5,6 +5,7 @@ keine Icon-Fonts, keine Emojis. Reveal ueber Klasse 'eg-reveal'.
 """
 
 import html as _html
+import re
 
 from common import FORM_ENDPOINT, NAP, CLAIMS, AUTHOR, AUTHOR_ROLE, IMG, a, href, tel_link
 
@@ -434,20 +435,60 @@ def price_cards(eyebrow, h2, intro, items, note):
   </section>"""
 
 
-def reference_cards(eyebrow, h2, intro, items):
-    """Referenzprojekte mit Zahlen. items: dict img, alt, title, specs, result, result_sub.
+_REF_LINKS = None
 
-    Bild und Zahlen muessen zum selben Projekt gehoeren (CLAUDE.md).
+
+def _ref_link(img):
+    """Projektseite zu einem Referenzbild: jedes Bild, das in genau einem Projekt aus
+    pages/referenz_projekte.py vorkommt, verlinkt auf /referenzen/<slug>/."""
+    global _REF_LINKS
+    if _REF_LINKS is None:
+        import importlib.util
+        import os
+        spec = importlib.util.spec_from_file_location(
+            "_ref_projekte_links", os.path.join(os.path.dirname(__file__), "pages", "referenz_projekte.py"))
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        seen = {}
+
+        def walk(v, slug):
+            if isinstance(v, str) and v.startswith("/assets/img/"):
+                seen.setdefault(v, set()).add(slug)
+            elif isinstance(v, dict):
+                for x in v.values():
+                    walk(x, slug)
+            elif isinstance(v, (list, tuple)):
+                for x in v:
+                    walk(x, slug)
+        for p in mod.PROJEKTE:
+            walk(p, p["slug"])
+        _REF_LINKS = {im: f"/referenzen/{next(iter(s))}/" for im, s in seen.items() if len(s) == 1}
+    return _REF_LINKS.get(img)
+
+
+def reference_cards(eyebrow, h2, intro, items):
+    """Referenzprojekte mit Zahlen. items: dict img, alt, title, specs, result, result_sub, optional href.
+
+    Bild und Zahlen muessen zum selben Projekt gehoeren (CLAUDE.md). Ohne href wird die Projektseite
+    ueber das Bild ermittelt (_ref_link); gibt es eine, ist die ganze Karte klickbar.
     """
     cards = ""
     for it in items:
+        title = it["title"]
+        m = re.search(r'<a [^>]*href="([^"]+)"', title)
+        if m:  # Titel bringt schon einen Link mit: dessen Ziel nehmen, Tags entfernen (keine verschachtelten Links)
+            title = re.sub(r"</?a\b[^>]*>", "", title)
+        href = it.get("href") or (m.group(1) if m else None) or _ref_link(it["img"])
+        title = f'<a class="card__stretch" href="{href}">{title}</a>' if href else title
+        more = '<span class="card__link" aria-hidden="true">Zum Projekt <span>→</span></span>' if href else ""
         cards += f"""
-        <article class="card eg-reveal">
+        <article class="card{' card--link' if href else ''} eg-reveal">
           <img class="card__media" src="{it['img']}" alt="{it['alt']}" loading="lazy" width="400" height="250">
           <div class="card__body">
-            <h3>{it['title']}</h3>
+            <h3>{title}</h3>
             <p class="card__specs">{it['specs']}</p>
             <p class="card__result">{it['result']}<small>{it['result_sub']}</small></p>
+            {more}
           </div>
         </article>"""
     cta = a("referenzen", 'Alle Referenzen ansehen <span aria-hidden="true">→</span>', cls="btn btn--ghost")
