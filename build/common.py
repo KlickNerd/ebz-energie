@@ -162,6 +162,7 @@ IMG = {
     "ref_krumpendorf": "/assets/img/referenz-krumpendorf.jpg",
     # Projekteigene Bilder (nicht aus wp-content), liegen in build/static/img/
     "team_mission": "/assets/img/team-ebz-mission.jpg",
+    "team_waermepumpe": "/assets/img/team-waermepumpe.jpg",  # Werbegrafik: Team mit Luft-Wärmepumpe (Wärmepumpen-Seite)
     "logo": "/assets/img/ebz-logo.png",  # weisses Wortmark + Amber-Mark (fuer dunkle Leiste)
     # Higgsfield-generierte Szenen (keine erfundenen Team-Fotos), build/static/img/
     "gen_hero": "/assets/img/pv-hero-roof.jpg",

@@ -353,8 +353,8 @@ def build():
                  "PV-Anlage und Förderantrag laufen über einen Ansprechpartner, der auch nach der Übergabe erreichbar "
                  "bleibt."),
             ],
-            img=IMG["team_quer"],
-            alt="Team von EBZ Energie, Fachbetrieb für Wärmepumpe und Photovoltaik aus Villach",
+            img=IMG["team_waermepumpe"],
+            alt="EBZ Energie, Ihr Wärmepumpen-Fachbetrieb: Team aus Villach neben einer Luft-Wärmepumpe",
             bullets=[
                 "Zertifizierte Fachkräfte: Sanitär und Elektro fachgerecht in einem Projekt",
                 "Förderung komplett abgewickelt: Landesantrag, Fristen, Endabrechnung",
