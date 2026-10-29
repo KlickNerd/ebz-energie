@@ -11,7 +11,7 @@ from common import (BASE, NAP, S, IMG, a, href, tel_link, u,
 # Schriften liegen selbst gehostet unter /assets/fonts/ (kein Aufruf von Google-Servern, DSGVO).
 # Die @font-face-Regeln stehen am Anfang von styles.css (theme.write_assets), hier nur Preload der Latin-Dateien.
 # Version der CSS/JS-Dateien: bei Aenderungen an Formular-JS oder CSS erhoehen, damit Browser neu laden
-ASSET_V = "20261029c"
+ASSET_V = "20261029e"
 
 FONTS = (
     '<link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>'

@@ -225,6 +225,39 @@ def split_section(left, right):
   </section>"""
 
 
+def vorlauf_infografik():
+    """Infografik Waermepumpe im Altbau: drei Vorlauftemperatur-Bereiche als HTML (lesbar fuer Google/LLMs)."""
+    radiator = ('<svg viewBox="0 0 48 48" aria-hidden="true"><g fill="#f5a623">'
+                '<rect x="9" y="11" width="5" height="26" rx="2.5"/><rect x="17" y="11" width="5" height="26" rx="2.5"/>'
+                '<rect x="25" y="11" width="5" height="26" rx="2.5"/><rect x="33" y="11" width="5" height="26" rx="2.5"/></g>'
+                '<rect x="7" y="33" width="34" height="3" rx="1.5" fill="#f5a623" opacity=".6"/></svg>')
+    cols = [
+        ("ok", "30 bis 35&nbsp;°C", "Fußbodenheizung"),
+        ("ok", "50 bis 55&nbsp;°C", "Wärmepumpe effizient"),
+        ("hi", "60 bis 70&nbsp;°C", "Klassische Heizkörper"),
+    ]
+    cells = "".join(f'<div class="vlt__col vlt__col--{k}"><span class="vlt__temp">{t}</span>'
+                    f'<span class="vlt__dot" aria-hidden="true"></span><span class="vlt__lab">{lab}</span></div>'
+                    for k, t, lab in cols)
+    return f"""<figure class="vlt" aria-label="Infografik: Vorlauftemperatur bei der Wärmepumpe im Altbau">
+            <div class="vlt__head">
+              <div><span class="vlt__badge">Ratgeber Altbau</span>
+                <p class="vlt__title">Wärmepumpe im Altbau?</p>
+                <p class="vlt__sub">Entscheidend ist die Vorlauftemperatur.</p></div>
+              <span class="vlt__ic">{_PV_ICONS["house"]}</span>
+            </div>
+            <div class="vlt__scale">
+              <p class="vlt__scale-t">Drei Temperaturbereiche auf einen Blick</p>
+              <p class="vlt__scale-s">Niedrigere Vorlauftemperatur heißt meist effizienterer Betrieb</p>
+              <div class="vlt__cols">{cells}</div>
+              <p class="vlt__tip"><span aria-hidden="true">✓</span>Große Altbau-Heizkörper sind oft überdimensioniert. Das senkt die nötige Vorlauftemperatur.</p>
+            </div>
+            <figcaption class="vlt__note"><span class="vlt__note-ic">{radiator}</span>
+              <span><strong>Kein automatischer Ausschluss für Altbauten</strong>
+              Reichen die Heizkörper bei 50 bis 55&nbsp;°C nicht aus, genügt oft der Tausch einzelner Heizkörper.</span></figcaption>
+          </figure>"""
+
+
 # Icons der PV-Infografik (dekorativ, aria-hidden). Farben = Tokens petrol/amber.
 _PV_ICONS = {
     "sun": ('<svg viewBox="0 0 64 64" aria-hidden="true">'
@@ -351,8 +384,9 @@ def audience_split(eyebrow, h2, intro, left, right):
 
 
 def media_text(eyebrow, h2, paragraphs, img, alt, bullets=None, reverse=False,
-               cta=None, dark=False, anchor=None):
-    """Bild-Text-Block (alternierend). paragraphs: Liste aus HTML-Absaetzen."""
+               cta=None, dark=False, anchor=None, media=None):
+    """Bild-Text-Block (alternierend). paragraphs: Liste aus HTML-Absaetzen.
+    media: optionales HTML (z. B. Infografik) statt des Bildes; img/alt werden dann ignoriert."""
     rev = " mediatext--reverse" if reverse else ""
     ps = "".join(f"<p>{p}</p>" for p in paragraphs)
     checklist = ""
@@ -368,7 +402,7 @@ def media_text(eyebrow, h2, paragraphs, img, alt, bullets=None, reverse=False,
     <div class="wrap">
       <div class="mediatext{rev}">
         <div class="mediatext__media eg-reveal">
-          <img src="{img}" alt="{alt}" loading="lazy" width="620" height="465">
+          {media or f'<img src="{img}" alt="{alt}" loading="lazy" width="620" height="465">'}
         </div>
         <div class="eg-reveal">
           <p class="eyebrow">{eyebrow}</p>

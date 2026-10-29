@@ -398,6 +398,33 @@ h1,h2{overflow-wrap:break-word}
 .mediatext__media img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;
   aspect-ratio:4/3;object-fit:cover}
 .mediatext--reverse .mediatext__media{order:2}
+/* Team-Werbegrafiken (Text und Telefonnummer im Bild): nie beschneiden, immer vollständig zeigen */
+img[src*="team-fachbetrieb.jpg"],img[src*="team-ebz-mission.jpg"]{aspect-ratio:auto!important;height:auto!important;object-fit:contain!important;background:var(--petrol-2)}
+/* Infografik Vorlauftemperatur (Waermepumpe im Altbau), components.vorlauf_infografik */
+.vlt{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(18px,3vw,28px)}
+.vlt__head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.vlt__badge{display:inline-block;background:#fff5e2;color:var(--amber-2);font:700 .72rem/1 var(--font-head);letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+.vlt .vlt__title{font:800 clamp(1.25rem,2.4vw,1.55rem)/1.2 var(--font-head);color:var(--ink);margin:12px 0 4px}
+.vlt .vlt__sub{color:var(--muted);margin:0}
+.vlt__ic{flex:0 0 58px;width:58px;height:58px}
+.vlt__ic svg,.vlt__note-ic svg{width:100%;height:100%;display:block}
+.vlt__scale{margin-top:20px;border:1px solid var(--line);border-radius:14px;padding:18px 16px 16px;background:var(--bg)}
+.vlt .vlt__scale-t{font:700 1rem/1.3 var(--font-head);color:var(--ink);margin:0}
+.vlt .vlt__scale-s{font-size:.88rem;color:var(--muted);margin:2px 0 16px}
+.vlt__cols{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;position:relative}
+.vlt__cols::before{content:"";position:absolute;left:16.67%;right:16.67%;top:44px;height:6px;border-radius:3px;
+  background:linear-gradient(90deg,var(--amber) 0 50%,#d3e0e4 50% 100%)}
+.vlt__col{position:relative;display:flex;flex-direction:column;align-items:center;padding:0 4px}
+.vlt__temp{font:800 1.05rem/28px var(--font-head);height:28px;color:var(--ink);white-space:nowrap}
+.vlt__dot{width:22px;height:22px;margin:8px 0 10px;border-radius:50%;background:#fff;border:5px solid var(--amber)}
+.vlt__col--hi .vlt__dot{border-color:var(--petrol)}
+.vlt__lab{font:700 .84rem/1.3 var(--font-head);color:var(--ink)}
+.vlt .vlt__tip{display:flex;gap:10px;align-items:flex-start;margin:16px 0 0;background:#fff5e2;border-radius:10px;padding:10px 12px;font-weight:600;font-size:.92rem;color:var(--ink)}
+.vlt__tip span{flex:0 0 22px;height:22px;border-radius:50%;background:var(--amber);color:#fff;font-size:.8rem;display:grid;place-items:center}
+.vlt__note{display:flex;gap:14px;align-items:center;margin-top:16px;background:var(--petrol-2);border-radius:14px;padding:16px 18px;color:#d7e6eb;font-size:.93rem;line-height:1.45}
+.vlt__note strong{display:block;font:700 1.02rem/1.3 var(--font-head);color:#fff;margin-bottom:4px}
+.vlt__note-ic{flex:0 0 48px;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.08);padding:6px}
+@media(max-width:520px){.vlt__temp{font-size:.8rem}.vlt__lab{font-size:.74rem}.vlt__ic{display:none}}
 .mediatext__media img.is-grafik{aspect-ratio:auto;height:auto;object-fit:contain;background:#fff}
 .mediatext p{color:var(--muted)}
 .mediatext .checklist{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow-sm)}

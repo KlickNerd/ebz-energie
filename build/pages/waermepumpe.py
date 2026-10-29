@@ -257,8 +257,7 @@ def build():
                  "1.680 bis 1.920 € statt 2.400 bis 3.000 € mit Gas. Nach Dämmung oder Fenstertausch sinken die Kosten "
                  "auf rund 900 bis 1.020 € im Jahr.*"),
             ],
-            img=IMG["gen_detail"],
-            alt="Fachkraft von EBZ Energie bei der Montage einer Anlage am Haus",
+            img=None, alt=None, media=C.vorlauf_infografik(),
             bullets=[
                 "Heizflächen-Check: Reichen die Heizkörper bei 50 bis 55 Grad Vorlauf?",
                 "Keine Fußbodenheizung nötig, Nachrüstung möglich für 50 bis 120 € je m²",
