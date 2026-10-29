@@ -152,6 +152,7 @@ IMG = {
     "pv_card": "/assets/img/pv-flachdach.jpg",  # EBZ-Projektfoto: Flachdach mit Bergpanorama (Drohne)
     "pv_efh": "/assets/img/pv-einfamilienhaus.jpg",  # EBZ-Projektfoto: Einfamilienhaus mit Ziegeldach
     "speicher": "/assets/img/batteriespeicher.jpg",  # EBZ-Projektfoto: Sigenergy-Speicher im Technikraum
+    "netz_gateway": "/assets/img/netzanschluss-gateway.jpg",  # EBZ-Foto: Sigenergy-Wandgerät im Technikraum (Abschnitt Netzanmeldung)
     "waermepumpe": "/assets/img/waermepumpe.jpg",
     "ems": "/assets/img/ems-energiemanagement.jpg",  # Higgsfield: Technikraum mit EMS-Display, Speicher, Wechselrichter
     "ems_app": "/assets/img/ems-app.jpg",  # Higgsfield: Energiefluss-App am Smartphone

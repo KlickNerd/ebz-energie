@@ -943,6 +943,7 @@ h1,h2{overflow-wrap:break-word}
 .rg-card:hover .rg-card__media img{transform:scale(1.04)}
 /* Speicherfoto ist Hochformat: Ausschnitt etwas nach oben, damit Display und Schriftzug sichtbar bleiben */
 img[src*="batteriespeicher.jpg"]{object-position:50% 28%}
+img[src*="netzanschluss-gateway.jpg"]{object-position:50% 30%}
 .rg-card__body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
 .rg-card__tag{font-family:var(--font-head);font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-2)}
 .rg-card h3{font-size:1.08rem;line-height:1.3;margin:0}

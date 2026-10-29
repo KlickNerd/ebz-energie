@@ -258,8 +258,8 @@ def build():
                  "und Einspeisevertrag. Weil das Netz in Kärnten und der Steiermark voller wird, reichen wir den "
                  "Netzantrag so früh wie möglich ein."),
             ],
-            img=IMG["gen_detail"],
-            alt="Fachkraft von EBZ Energie montiert Photovoltaikmodule auf einem Dach in Kärnten",
+            img=IMG["netz_gateway"],
+            alt="Netzanschluss einer Photovoltaikanlage: Sigenergy-Gerät im Technikraum",
             bullets=[
                 "Dach-PV in Kärnten: Mitteilung an die Gemeinde statt Baubewilligung, Schutzzonen ausgenommen",
                 "Netzzutrittsantrag liefert die Zählpunktnummer für Förderung und Einspeisung",
