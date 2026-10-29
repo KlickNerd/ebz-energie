@@ -327,8 +327,8 @@ def build():
                  "Netzentgelt für die Bezieher. Und mit Vehicle-to-Home (V2H) / bidirektionalem Laden wird das "
                  "E-Auto selbst zum Speicher. Ein gut gewähltes EMS steuert das alles aus einer Oberfläche."),
             ],
-            img=IMG["gen_detail"],
-            alt="Fachkraft von EBZ Energie bei der Einbindung von Steuerungstechnik an einer Photovoltaikanlage",
+            img=IMG["ems_app"],
+            alt="Energiefluss-App am Smartphone: Photovoltaik, Speicher, Wärmepumpe und E-Auto mit Tagesverlauf",
             bullets=[
                 a("/smart-meter/", "Smart Meter") + ": Voraussetzung für stundengenaue Abrechnung",
                 a("/dynamischer-stromtarif/", "Dynamischer Tarif") + ": Börsenpreis statt Fixpreis, automatisch genutzt",
