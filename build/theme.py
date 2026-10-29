@@ -444,6 +444,11 @@ h1,h2{overflow-wrap:break-word}
 .step h3{font-size:1.15rem;min-height:2.6em;display:flex;align-items:flex-start}
 .step__t{display:inline-block;align-self:flex-start;margin-top:auto;padding-top:12px;font-size:.85rem;font-weight:700;color:var(--amber-2)}
 @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+/* genau 5 Schritte: Desktop 3 + 2 ueber volle Breite, Tablet letzter Schritt ueber beide Spalten (kein Einzelkasten) */
+@media(min-width:901px){.steps:has(> :nth-child(5)):not(:has(> :nth-child(6))){grid-template-columns:repeat(6,1fr)}
+.steps:has(> :nth-child(5)):not(:has(> :nth-child(6))) > *{grid-column:span 2}
+.steps:has(> :nth-child(5)):not(:has(> :nth-child(6))) > :nth-child(n+4){grid-column:span 3}}
+@media(min-width:521px) and (max-width:900px){.steps > :last-child:nth-child(odd){grid-column:1 / -1}}
 @media(max-width:520px){.steps{grid-template-columns:1fr}.step h3{min-height:0}}
 
 /* --- Why grid ----------------------------------------------------------- */
