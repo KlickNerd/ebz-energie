@@ -48,7 +48,7 @@ ARTICLE = {
     "date_published": "2026-04-01",
     "date_modified": "2026-10-21",
     "hero_img": "foerderung",
-    "hero_alt": "Förderunterlagen und Taschenrechner auf dem Tisch: Vergleich der Photovoltaik-Landesförderungen in Österreich",
+    "hero_alt": "Beratungsgespräch bei EBZ Energie zu den Photovoltaik-Landesförderungen in Österreich",
 
     "tldr": [
         "Drei Säulen: Der EAG-Bundeszuschuss (im Call 2026: 150 Euro je kWp bis 10 kWp, 150 Euro je kWh Speicher, "

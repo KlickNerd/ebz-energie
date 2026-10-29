@@ -37,7 +37,7 @@ ARTICLE = {
     "date_published": "2025-07-05",
     "date_modified": "2026-10-21",
     "hero_img": "foerderung",
-    "hero_alt": "Förderantrag für Photovoltaik und Stromspeicher wird am Schreibtisch vorbereitet",
+    "hero_alt": "Beratungsgespräch zum Förderantrag für Photovoltaik und Stromspeicher",
 
     "tldr": [
         "Im Call 2026 förderte der EAG-Investitionszuschuss des Bundes Stromspeicher mit 150 Euro je kWh, "

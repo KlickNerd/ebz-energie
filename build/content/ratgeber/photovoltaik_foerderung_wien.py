@@ -58,7 +58,7 @@ ARTICLE = {
     "date_published": "2026-04-10",
     "date_modified": "2026-10-21",
     "hero_img": "foerderung",
-    "hero_alt": "Beratungsgespräch zur Photovoltaik-Förderung mit Unterlagen und Taschenrechner",
+    "hero_alt": "Beratungsgespräch zur Photovoltaik-Förderung mit Unterlagen am Tisch",
 
     "tldr": [
         "Standard-Dachanlagen auf Wiener Einfamilienhäusern werden 2026 nicht mehr von der Stadt gefördert. "

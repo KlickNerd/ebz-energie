@@ -37,7 +37,7 @@ ARTICLE = {
     "date_published": "2026-03-20",
     "date_modified": "2026-10-21",
     "hero_img": "foerderung",
-    "hero_alt": "Unterlagen und Taschenrechner für die Steuerveranlagung nach dem Heizungstausch",
+    "hero_alt": "Beratungsgespräch bei EBZ Energie zum Heizungstausch und zur Steuerveranlagung",
 
     "tldr": [
         "Die Öko-Sonderausgabenpauschale (§ 18 Abs. 1 Z 10 EStG) gilt seit der Ökosozialen Steuerreform 2022 "

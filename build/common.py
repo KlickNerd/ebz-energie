@@ -156,7 +156,7 @@ IMG = {
     "ems": "/assets/img/ems-energiemanagement.jpg",  # Higgsfield: Technikraum mit EMS-Display, Speicher, Wechselrichter
     "ems_app": "/assets/img/ems-app.jpg",  # Higgsfield: Energiefluss-App am Smartphone
     "balkon": "/assets/img/balkonkraftwerk.jpg",
-    "foerderung": "/assets/img/foerderung.jpg",
+    "foerderung": "/assets/img/beratung-ebz.jpg",  # EBZ-Foto: Beratungsgespräch im Büro Villach
     "ref_villach": "/assets/img/referenz-villach.jpg",
     "ref_krumpendorf": "/assets/img/referenz-krumpendorf.jpg",
     # Projekteigene Bilder (nicht aus wp-content), liegen in build/static/img/
@@ -180,7 +180,6 @@ IMG_SOURCES = {
     "/assets/img/waermepumpe.jpg": BASE + "/wp-content/uploads/2026/03/2149250264-1.jpg",
     "/assets/img/energiemanagement.png": BASE + "/wp-content/uploads/2025/11/Gemini_Generated_Image_dndoxkdndoxkdndo.png",
     "/assets/img/balkonkraftwerk.jpg": BASE + "/wp-content/uploads/2024/09/AdobeStock_712663492-web-768x512.jpg",
-    "/assets/img/foerderung.jpg": BASE + "/wp-content/uploads/2025/12/pexels-mikhail-nilov-6963888-1024x754.jpg",
     "/assets/img/referenz-villach.jpg": BASE + "/wp-content/uploads/2023/09/EBZ-Photovoltaik-Module1.jpg",
     "/assets/img/referenz-krumpendorf.jpg": BASE + "/wp-content/uploads/2023/10/Stranegger-ref.jpg",
 }

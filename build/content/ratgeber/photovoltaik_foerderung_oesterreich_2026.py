@@ -41,7 +41,7 @@ ARTICLE = {
     "date_published": "2025-12-15",
     "date_modified": "2026-10-21",
     "hero_img": "foerderung",
-    "hero_alt": "Euro-Scheine und Taschenrechner: Photovoltaik-Förderung in Österreich 2026 berechnen",
+    "hero_alt": "Beratungsgespräch bei EBZ Energie zur Photovoltaik-Förderung in Österreich 2026",
 
     "tldr": [
         "Seit 1. April 2025 gilt für PV-Anlagen wieder 20 Prozent Umsatzsteuer. Als Ausgleich lief 2026 die "

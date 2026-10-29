@@ -39,7 +39,7 @@ ARTICLE = {
     "date_published": "2026-03-05",
     "date_modified": "2026-10-21",
     "hero_img": "foerderung",
-    "hero_alt": "Beratungsgespräch zur Wärmepumpenförderung mit Unterlagen und Taschenrechner",
+    "hero_alt": "Beratungsgespräch zur Wärmepumpenförderung mit Unterlagen am Tisch",
 
     "tldr": [
         "Stand Oktober 2026: Die Sanierungsoffensive 2026 (Kesseltausch bis 7.500 €, Erdwärme 12.500 €) und "
