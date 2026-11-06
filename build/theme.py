@@ -1244,7 +1244,6 @@ JS = r"""
     form._ebzStart = Date.now();
     form.addEventListener("submit", function(ev){
       ev.preventDefault();
-      if(form.querySelector('[name="website"]').value){ return; } // Honeypot
       var req = ["name","email","plz"], ok = true, plzBad = false;
       req.forEach(function(n){ var el = form.querySelector('[name="'+n+'"]'); if(!el) return;
         var v = el.value.trim();
@@ -1256,7 +1255,9 @@ JS = r"""
       if(consent && !consent.checked){ ok = false; show("err", "Bitte bestätigen Sie die Datenschutzerklärung."); }
       if(!ok){ if(!consent || consent.checked) show("err", plzBad ? "Bitte eine österreichische Postleitzahl angeben (4 Ziffern, z. B. 9500)." : "Bitte Name und eine gültige E-Mail-Adresse angeben."); return; }
       var data = {};
-      new FormData(form).forEach(function(v, k){ if(k !== "website") data[k] = v; });
+      new FormData(form).forEach(function(v, k){ if(k !== "ebz_hp") data[k] = v; });
+      // Lockfeld: nie still verwerfen (Autofill kann es fuellen), sondern als "website" an Make; Make sortiert es als Spam-Verdacht aus
+      var hp = form.querySelector('[name="ebz_hp"]'); data.website = hp ? hp.value : "";
       data.seite = location.href; data.zeit = new Date().toISOString();
       // Spamschutz: Make prueft beides (Pruefwert nur ueber dieses Skript, Ausfuellzeit in Sekunden)
       data.k = "ebz-form-2026"; data.t = Math.round((Date.now() - (form._ebzStart || Date.now())) / 1000);

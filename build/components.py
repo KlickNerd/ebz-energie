@@ -828,7 +828,7 @@ def contact_section(headline, sub, form_note="Wir melden uns innerhalb eines Wer
         <form class="form-card eg-reveal js-contact" action="{FORM_ENDPOINT}" method="post" novalidate
               data-mailto="{NAP['email']}">
           <input type="hidden" name="quelle" value="{page_label}">
-          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"
+          <input type="text" name="ebz_hp" tabindex="-1" autocomplete="one-time-code" aria-hidden="true"
                  style="position:absolute;left:-9999px;opacity:0;height:0">
           <div class="field">
             <label for="name">Name</label>
