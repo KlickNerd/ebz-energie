@@ -840,7 +840,8 @@ def contact_section(headline, sub, form_note="Wir melden uns innerhalb eines Wer
           </div>
           <div class="field">
             <label for="tel">Telefon</label>
-            <input id="tel" name="tel" type="tel" autocomplete="tel">
+            <input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required
+                   placeholder="z. B. 0650 123 45 67">
           </div>
           <div class="field">
             <label for="plz">Postleitzahl</label>

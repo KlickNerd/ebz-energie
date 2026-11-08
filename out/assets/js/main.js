@@ -160,16 +160,19 @@
     form._ebzStart = Date.now();
     form.addEventListener("submit", function(ev){
       ev.preventDefault();
-      var req = ["name","email","plz"], ok = true, plzBad = false;
+      var req = ["name","email","tel","plz"], ok = true, plzBad = false, telBad = false, baseBad = false;
       req.forEach(function(n){ var el = form.querySelector('[name="'+n+'"]'); if(!el) return;
         var v = el.value.trim();
-        var bad = !v || (n==="email" && v.indexOf("@")<0) || (n==="plz" && !/^[1-9][0-9]{3}$/.test(v));
+        var bad = !v || (n==="email" && v.indexOf("@")<0) || (n==="plz" && !/^[1-9][0-9]{3}$/.test(v))
+          || (n==="tel" && (v.replace(/\D/g, "").length < 6 || /[^0-9+()\/.\s-]/.test(v)));
         if(n==="plz" && bad) plzBad = true;
+        if(n==="tel" && bad) telBad = true;
+        if((n==="name" || n==="email") && bad) baseBad = true;
         el.classList.toggle("is-invalid", bad); if(bad) ok = false; });
       form.querySelectorAll(".is-invalid").forEach(function(el){ el.addEventListener("input", function(){ el.classList.remove("is-invalid"); }, {once: true}); });
       var consent = form.querySelector('[name="datenschutz"]');
       if(consent && !consent.checked){ ok = false; show("err", "Bitte bestätigen Sie die Datenschutzerklärung."); }
-      if(!ok){ if(!consent || consent.checked) show("err", plzBad ? "Bitte eine österreichische Postleitzahl angeben (4 Ziffern, z. B. 9500)." : "Bitte Name und eine gültige E-Mail-Adresse angeben."); return; }
+      if(!ok){ if(!consent || consent.checked) show("err", baseBad ? "Bitte Name und eine gültige E-Mail-Adresse angeben." : telBad ? "Bitte eine Telefonnummer angeben, unter der wir Sie erreichen (z. B. 0650 123 45 67)." : plzBad ? "Bitte eine österreichische Postleitzahl angeben (4 Ziffern, z. B. 9500)." : "Bitte Name und eine gültige E-Mail-Adresse angeben."); return; }
       var data = {};
       new FormData(form).forEach(function(v, k){ if(k !== "ebz_hp") data[k] = v; });
       // Lockfeld: nie still verwerfen (Autofill kann es fuellen), sondern als "website" an Make; Make sortiert es als Spam-Verdacht aus
@@ -177,7 +180,7 @@
       data.seite = location.href; data.zeit = new Date().toISOString();
       // Spamschutz: Make prueft beides (Pruefwert nur ueber dieses Skript, Ausfuellzeit in Sekunden)
       data.k = "ebz-form-2026"; data.t = Math.round((Date.now() - (form._ebzStart || Date.now())) / 1000);
-      form.classList.add("is-sending");
+      msg.hidden = true; form.classList.add("is-sending");
       fetch(form.action, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(data)})
         .then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); })
         .then(function(){ form.classList.remove("is-sending"); form.reset();
