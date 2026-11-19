@@ -25,7 +25,7 @@
 - [Photovoltaik Carport: Kosten, Statik, Wallbox](https://ebz-photovoltaik.at/photovoltaik-carport/): Photovoltaik-Carport für 1 oder 2 Stellplätze: 3 bis 7 kWp, bifaziale Glas-Glas-Module, Wallbox, Speicher, Statik für Schneelast. Komplettsystem mit Montage.
 - [Photovoltaik für Gewerbe & Landwirtschaft](https://ebz-photovoltaik.at/photovoltaik-gewerbe/): Photovoltaik für Betriebe in Kärnten und Steiermark: Auslegung nach Lastprofil, Gewerbespeicher, EMS-Förderung bis 20.000 €. Referenz: 13.500 € im Jahr.
 - [Photovoltaikanlage kaufen in Kärnten & Steiermark](https://ebz-photovoltaik.at/photovoltaik/): Photovoltaikanlage mit Speicher vom Fachbetrieb in Kärnten und der Steiermark: 10 kWp ab rund 15.000 €, bis zu 85 % weniger Stromkosten, Förderung inklusive.
-- [Ratgeber: PV, Speicher, Wärmepumpe, Förderung](https://ebz-photovoltaik.at/ratgeber/): 60 Ratgeber von EBZ Energie: PV-Kosten, Speicher, Wärmepumpe, Förderungen in allen Bundesländern, Energiegemeinschaft und Smart Meter, mit Zahlen und Fristen.
+- [Ratgeber: PV, Speicher, Wärmepumpe, Förderung](https://ebz-photovoltaik.at/ratgeber/): 61 Ratgeber von EBZ Energie: PV-Kosten, Speicher, Wärmepumpe, Förderungen in allen Bundesländern, Energiegemeinschaft und Smart Meter, mit Zahlen und Fristen.
 - [Sigenergy Speicher Österreich: Preis, Erfahrungen](https://ebz-photovoltaik.at/sigenergy/): SigenStor von Sigenergy: Wechselrichter, LFP-Speicher, Energiemanagement und Wallbox in einem System. Erfahrungen aus acht EBZ-Projekten, Preise und Notstrom in Kärnten und der Steiermark.
 - [Wärmepumpe Kärnten & Steiermark: Kosten, Förderung](https://ebz-photovoltaik.at/waermepumpe/): Luft-Wasser-Wärmepumpe vom Fachbetrieb in Kärnten und der Steiermark: Kosten ab 12.000 €, Förderung komplett abgewickelt, Kombination mit Photovoltaik.
 
@@ -118,6 +118,7 @@
 - [Wärmepumpe steuerlich absetzen: Öko-Pauschale 2026](https://ebz-photovoltaik.at/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/): Öko-Sonderausgabenpauschale 2026: 5 Jahre je 400 € Sonderausgaben für den Heizungstausch, automatisch über die KPC. Voraussetzungen und Rechenbeispiel.
 - [Wärmepumpenförderung 2026: Bund beendet, Länder laufen](https://ebz-photovoltaik.at/waermepumpenfoerderung-in-oesterreich/): Wärmepumpenförderung 2026: Bundesprogramme (bis 7.500 €, Sauber Heizen) seit Herbst 2026 ausgeschöpft. Was 2026 galt, welche Länder zahlen, Ausblick 2027.
 - [Wallbox 2026: Kosten und Förderung bis 300 €](https://ebz-photovoltaik.at/wallbox-foerderung-kosten/): Wallbox mit Installation: 1.200 bis 3.500 €. Bund eingestellt, Steiermark 30 % bis 300 €, EMS-Förderung bis 600 €. Mit PV-Überschuss 100 km für 1 bis 2 €.
+- [Heizstab PV-Überschuss: Warmwasser mit Photovoltaik](https://ebz-photovoltaik.at/warmwasser-mit-photovoltaik/): Warmwasser mit Photovoltaik: Ein 3-kW-Heizstab erhitzt 200 Liter in rund 3,5 Stunden mit PV-Überschuss. Kosten, Regler, Wärmepumpenboiler, Legionellen und EMS-Förderung 2026.
 - [Was ist ein Smart Meter? Einfach erklärt](https://ebz-photovoltaik.at/was-ist-ein-smart-meter/): Was ist ein Smart Meter? Der digitale Stromzähler misst alle 15 Minuten, überträgt automatisch und zeigt den Verbrauch tagesaktuell. Einfach erklärt.
 
 ## Unternehmen
