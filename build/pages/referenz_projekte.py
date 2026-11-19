@@ -40,7 +40,7 @@ R = {
 
 # Wiederkehrende Komponenten-Bullets (Quelle: alte Projektseiten, Technikabschnitt)
 B_GLASGLAS = "Glas-Glas-Module, bifazial: beidseitig mit Glas laminiert, Mehrertrag durch Rückseitenlicht"
-B_SIGENERGY = "Sigenergy All-in-One-System: Wechselrichter und Speichermanagement aus einem System, Monitoring per App, modular erweiterbar"
+B_SIGENERGY = '<a href="/sigenergy/">Sigenergy All-in-One-System</a>: Wechselrichter und Speichermanagement aus einem System, Monitoring per App, modular erweiterbar'
 B_WALLBOX = "Wallbox 11 kW, dreiphasig: lädt das E-Auto bevorzugt mit eigenem PV-Strom, über Nacht voll"
 B_NOTSTROM_MAN = "Manuelle Notstromumschaltung: Licht, Kühlschrank und andere wichtige Verbraucher laufen bei Netzausfall aus dem Speicher weiter"
 B_NOTSTROM_AUTO = "Gatewaybox: erkennt den Netzausfall in Sekunden, trennt normgerecht vom Netz und schaltet vollautomatisch auf den Speicher um"

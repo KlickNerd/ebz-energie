@@ -64,10 +64,11 @@ FAQ = [
      "Im Keller, in der Garage oder im Technikraum: frostfrei, trocken, nicht im Fluchtweg oder Schlafzimmer, nahe am "
      "Zählerkasten. LFP-Zellen ohne Kobalt gelten als besonders sicher, das Batteriemanagement trennt bei Fehlern ab, "
      "ein Rauchmelder im Raum ist Standard. Die Montage dokumentieren wir im Projektbericht."),
-    ("Welche Marken verbaut EBZ (BYD, Fronius, Huawei)?",
-     "Wir planen herstellerunabhängig: je nach Anlage zum Beispiel Hochvolt-Speicher von BYD oder Huawei mit "
-     "Hybridwechselrichtern von Fronius oder Huawei, bei Nachrüstungen auch AC-gekoppelte Systeme. Entscheidend sind "
-     "Garantie 10 Jahre auf 80 % Restkapazität, Notstromfähigkeit und modulare Erweiterbarkeit."),
+    ("Welche Speicher-Marken verbaut EBZ?",
+     "Wir planen herstellerunabhängig. In acht von zehn dokumentierten Referenzprojekten auf unserer Website steckt "
+     "ein Sigenergy-System, bei dem Wechselrichter, Speicher und Energiemanagement aus einem Gerät kommen. Je nach "
+     "Anlage kommen auch andere Hybridwechselrichter und Speicher in Frage, bei Nachrüstungen auch AC-gekoppelte "
+     "Systeme. Entscheidend sind Garantie, Notstromfähigkeit und modulare Erweiterbarkeit."),
     ("Wie lange hält ein Stromspeicher?",
      "LFP-Speicher sind für 6.000 bis 10.000 Ladezyklen ausgelegt, bei einem Zyklus pro Tag also 15 bis 20 Jahre. "
      "Die Hersteller geben üblicherweise 10 Jahre Garantie darauf, dass die Kapazität nicht unter 80 % fällt."),
@@ -203,6 +204,7 @@ def build():
                 "Modular erweiterbar: heute 5 kWh, morgen 10 kWh, wenn E-Auto oder Wärmepumpe dazukommen",
                 "Notstrom oder Ersatzstrom: 10 kWh decken 500 Watt Dauerlast rund 20 Stunden",
                 "Lebensdauer 15 Jahre und mehr bei einem Ladezyklus pro Tag",
+                "Im Bild ein Sigenergy-Speicher aus einem unserer Projekte: " + a("/sigenergy/", "mehr zu Sigenergy"),
             ],
             reverse=True,
             cta=("/notstrom/", "Notstrom mit Batteriespeicher"),

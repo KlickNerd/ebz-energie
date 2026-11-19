@@ -37,8 +37,8 @@ FAQ = [
      "Eigenanteil. Steckt der Energiemanager schon im Wechselrichter (etwa Fronius GEN24), zahlen Sie vor allem "
      "Einbindung und Zubehör."),
     ("Welche Wechselrichter und Wärmepumpen sind kompatibel?",
-     "Alle gängigen Systeme: Fronius (Solar.web, Energiekostenassistent), Huawei FusionSolar, SMA Energy und Kostal "
-     "bringen eigene Energiemanager mit, SMARTFOX, Solar Manager oder neoom binden auch Fremdgeräte ein. "
+     "Alle gängigen Systeme: Sigenergy (mySigen), Fronius (Solar.web, Energiekostenassistent), Huawei FusionSolar, "
+     "SMA Energy und Kostal bringen eigene Energiemanager mit, SMARTFOX, Solar Manager oder neoom binden auch Fremdgeräte ein. "
      "Wärmepumpen brauchen SG Ready oder Modbus, Wallboxen Modbus oder OCPP. Die Schnittstellen Ihrer Geräte "
      "prüfen wir in der kostenlosen Analyse."),
     ("Funktioniert ein EMS auch ohne Speicher oder ohne PV-Anlage?",
@@ -138,7 +138,7 @@ def build():
                  "600 Euro (Stand Oktober 2026, Quelle: klimafonds.gv.at)."),
                 ("Ob Sie es Energiemanagementsystem Photovoltaik, Energiemanager Photovoltaik, Energiemanagement "
                  "Photovoltaik oder Home Energy Management System (HEMS) nennen: Gemeint ist immer dieselbe Technik. "
-                 "Sie steckt entweder im Wechselrichter (etwa bei Fronius, Huawei, SMA oder Kostal) oder sitzt als "
+                 "Sie steckt entweder im Wechselrichter (etwa bei Sigenergy, Fronius, Huawei, SMA oder Kostal) oder sitzt als "
                  "eigenes Gerät im Zählerkasten (SMARTFOX, Solar Manager, neoom). Im Gewerbe kappt sie zusätzlich "
                  "Lastspitzen und senkt Netzentgelte und Leistungspreis."),
             ],
@@ -225,12 +225,15 @@ def build():
         # 7. Kompatibilitaet
         _table_section(
             eyebrow="Herstellerunabhängige Auswahl",
-            h2="Kompatibel mit Fronius, Huawei, SMA und weiteren Systemen",
-            intro=("Ob Energiemanagementsystem Fronius, Huawei oder SMA: Fast jeder Wechselrichter bringt einen eigenen "
+            h2="Kompatibel mit Sigenergy, Fronius, Huawei, SMA und weiteren Systemen",
+            intro=("Ob Energiemanagementsystem Sigenergy, Fronius, Huawei oder SMA: Fast jeder Wechselrichter bringt einen eigenen "
                    "Energiemanager mit, der die eigenen Geräte gut steuert, Fremdgeräte oft nicht. Herstellerübergreifende "
                    "Systeme schließen die Lücke. EBZ Energie ist herstellerunabhängig und wählt, was zu Ihrer Technik passt."),
             headers=["System", "Typ", "Modbus / Schnittstellen", "Stärke"],
             rows=[
+                (a("/sigenergy/", "Sigenergy (SigenStor, mySigen App)"), "im Wechselrichter integriert",
+                 "Shelly, SG-Ready-Kontakte, eigene AC-Wallbox und DC-Lademodul",
+                 "Wechselrichter, Speicher, Wallbox und Notstrom aus einem System, in unseren Projekten am häufigsten"),
                 ("Fronius Solar.web / Energiekostenassistent (GEN24)", "im Wechselrichter integriert",
                  "Modbus, eigener Heizstab- und Wallbox-Regler", "alles aus einem Haus, sehr verbreitet in Kärnten und der Steiermark"),
                 ("Huawei FusionSolar", "im Wechselrichter integriert",
@@ -248,6 +251,35 @@ def build():
             ],
             note=("Auswahl marktüblicher Systeme ohne Anspruch auf Vollständigkeit, Stand Oktober 2026. "
                   "Welche Schnittstelle Ihre Wärmepumpe oder Wallbox bietet, prüfen wir in der Analyse."),
+        ),
+        # 7b. Referenzen: Anlagen, in denen Sigenergy Speicher, Wallbox und Notstrom gemeinsam steuert
+        C.reference_cards(
+            eyebrow="Energiemanagement in der Praxis",
+            h2="So steuern unsere Kundenanlagen Speicher, Wallbox und Warmwasser",
+            intro=("Acht der zehn Referenzprojekte auf dieser Website laufen mit einem "
+                   + a("/sigenergy/", "Sigenergy-System") + ": Wechselrichter, Speicher und Energiemanagement "
+                   "stecken in einem Gerät, Wallbox und Notstrom-Gateway kommen aus derselben Familie. Drei Beispiele, "
+                   "wie das im Alltag aussieht."),
+            items=[
+                {"img": "/assets/img/ref-wien-1.jpg",
+                 "alt": "Wohnhaus in Wien mit Photovoltaik-Modulen in Süd- und Ostausrichtung auf dem Schindeldach",
+                 "title": "Wohnhaus Wien: Speicher, Wallbox und Warmwasser",
+                 "specs": "10,92 kWp · 20 kWh Speicher · Wallbox 11 kW · Heizstab-Regler für Warmwasser aus PV-Überschuss",
+                 "result": "~12.000 kWh", "result_sub": "Jahresertrag, Amortisation ca. 6 Jahre*",
+                 "href": "/referenzen/projekt-pv-wien/"},
+                {"img": "/assets/img/ref-ossiachersee-1.jpg",
+                 "alt": "Einfamilienhaus am Ossiachersee mit Photovoltaik-Modulen auf dem Ziegeldach",
+                 "title": "Ossiachersee: E-Auto lädt bevorzugt mit Sonnenstrom",
+                 "specs": "10 kWp Ost-West · 9 kWh Speicher · Wallbox 11 kW im selben Sigenergy-System",
+                 "result": "~3.200 €", "result_sub": "Ersparnis pro Jahr*",
+                 "href": "/referenzen/projekt-pv-am-ossiachersee/"},
+                {"img": "/assets/img/ref-hotel-villach-1.jpg",
+                 "alt": "Hotel in Villach/Warmbad mit aufgeständerten Glas-Glas-Modulen auf dem Flachdach",
+                 "title": "Hotel Villach/Warmbad: Notstrom automatisch",
+                 "specs": "13 kWp · 27 kWh Speicher · Gatewaybox schaltet bei Netzausfall in Sekunden um",
+                 "result": "~4.200 €", "result_sub": "Ersparnis pro Jahr*",
+                 "href": "/referenzen/projekt-pv-anlage-hotel-villach/"},
+            ],
         ),
         # 8. Kosten + Foerderung 2026 + Ausblick 2027
         C.price_cards(

@@ -102,6 +102,7 @@ S = {
     "eg_gewerbe": "/leistungen/energiegemeinschaft-gewerbe/",
     "eg_rechner": "/energiegemeinschaft-rechner/",
     "ems": "/energiemanagementsystem/",
+    "sigenergy": "/sigenergy/",
     "solarrechner": "/solarrechner/",
     "leistungen": "/leistungen/",
     "ratgeber": "/ratgeber/",
