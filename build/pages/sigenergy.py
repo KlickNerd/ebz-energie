@@ -365,6 +365,7 @@ def build():
         C.linkgrid_section("Weiterlesen", [
             ("ems", "Energiemanagementsystem"),
             ("batteriespeicher", "Batteriespeicher"),
+            ("/wechselrichter-pv-anlage/", "Wechselrichter für die PV-Anlage"),
             ("/pv-speicher-nachruesten/", "Speicher nachrüsten"),
             ("/wallbox-foerderung-kosten/", "Wallbox: Förderung und Kosten"),
             ("/ems-foerderung/", "EMS-Förderung 2026"),

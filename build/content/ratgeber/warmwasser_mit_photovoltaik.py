@@ -334,7 +334,7 @@ laufend. Preise aus Deutschland sind als solche gekennzeichnet.</small></p>
     "related": [
         ("ems", "Energiemanagementsystem: PV-Überschuss automatisch nutzen"),
         ("/photovoltaik-fuer-waermepumpe/", "Photovoltaik für die Wärmepumpe"),
-        ("/ems-foerderung/", "EMS-Förderung 2026"),
+        ("/brauchwasserwaermepumpe/", "Brauchwasserwärmepumpe: Kosten und Effizienz"),
         ("/sigenergy/", "Sigenergy: Speicher, Wallbox und Notstrom"),
     ],
     "cta": {

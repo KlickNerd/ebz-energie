@@ -9,7 +9,7 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://ebz-photovoltaik.at%{REQUEST_URI} [R=301,L]
 
-# 301-Weiterleitungen alter WordPress-Adressen (74)
+# 301-Weiterleitungen alter WordPress-Adressen (73)
 RewriteRule ^photovoltaik-landesfoerderungen-in-oesterreich/?$ /photovoltaik-landesfoerderungen/ [R=301,L]
 RewriteRule ^kosten-von-photovoltaikanlagen-mit-speicher/?$ /kosten-einer-solaranlage/ [R=301,L]
 RewriteRule ^einspeisetarif-photovoltaik-oesterreich-vergleich/?$ /einspeisetarif-fuer-photovoltaik/ [R=301,L]
@@ -33,7 +33,6 @@ RewriteRule ^akzeptanz-erneuerbare-energien/?$ /solarenergie/ [R=301,L]
 RewriteRule ^professionelle-drohnenaufnahmen-von-ihrem-objekt/?$ /ueber-uns/ [R=301,L]
 RewriteRule ^photovoltaik-mit-speicher/?$ /batteriespeicher/ [R=301,L]
 RewriteRule ^batteriespeicher-und-photovoltaik/?$ /batteriespeicher/ [R=301,L]
-RewriteRule ^balkonkraftwerk-mit-speicher/?$ /balkonkraftwerke/ [R=301,L]
 RewriteRule ^photovoltaik-beratung/?$ /kontakt/ [R=301,L]
 RewriteRule ^energiemangementsystem/?$ /energiemanagementsystem/ [R=301,L]
 RewriteRule ^referenzen-alt/?$ /referenzen/ [R=301,L]

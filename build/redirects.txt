@@ -35,7 +35,6 @@
 # In Leistungsseiten aufgehende Beitraege (Ziel muss vor Launch gebaut sein)
 /photovoltaik-mit-speicher/                        /batteriespeicher/
 /batteriespeicher-und-photovoltaik/                /batteriespeicher/
-/balkonkraftwerk-mit-speicher/                     /balkonkraftwerke/
 /photovoltaik-beratung/                            /kontakt/
 /energiemangementsystem/                           /energiemanagementsystem/
 
