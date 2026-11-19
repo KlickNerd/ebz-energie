@@ -31,7 +31,7 @@ ARTICLE = {
         "Frist: <b>15. April 2027</b>",
     ],
     "date_published": "2026-09-05",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "ems",
     "hero_alt": "Energiemanagementsystem vernetzt Photovoltaik, Speicher, Wärmepumpe und Wallbox im Eigenheim",
 
@@ -198,7 +198,8 @@ Energiemanagement in den nächsten Jahren zum Standard:</p>
   regelbare Netztarife, bei denen Lastspitzen stärker ins Gewicht fallen. Wer Lasten intelligent steuert,
   spart doppelt.</li>
   <li><b>Schwankende Einspeisetarife:</b> Der {a('marktpreis', 'OeMAG-Marktpreis')} lag im Juli 2026 bei
-  6,146 Cent je Kilowattstunde, im September 2026 bei 10,168 Cent (Stand Oktober 2026). Je weniger die Einspeisung bringt, desto wertvoller wird jede selbst
+  6,146 Cent je Kilowattstunde, im September 2026 bei 10,168 Cent und im Oktober 2026 bei 14,874 Cent
+  (Stand November 2026). Je weniger die Einspeisung bringt, desto wertvoller wird jede selbst
   genutzte Kilowattstunde, gerade in Kombination mit Wärmepumpe und Wallbox.</li>
   <li><b>Energiegemeinschaften:</b> Ein EMS legt Ihren Verbrauch in die Stunden, in denen die
   {a('eg', 'Energiegemeinschaft')} Überschuss hat, und hebt so die Zuordnungsquote.</li>

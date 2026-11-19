@@ -3,6 +3,8 @@
 Migriert von ebz-photovoltaik.at/waermepumpe-im-altbau/ (Stand März 2026).
 Bereinigt: Ersparnis im sanierten Beispiel bezieht sich laut Zahlen auf die alte
 Gasheizung vor Sanierung, wurde entsprechend präzisiert.
+Update 19.11.2026: Bund Kesseltausch seit 2.11.2026 neu aufgelegt (5.000 € Pauschale, Vorlauf max. 55 °C,
+Abschnitt "VERBINDLICH AB 19.11.2026" in build/seo/_fakten_2026-10.md).
 """
 
 import os
@@ -33,7 +35,7 @@ ARTICLE = {
         "Montage: <b>2 bis 4 Tage</b>",
     ],
     "date_published": "2026-02-20",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-11-19",
     "hero_img": "waermepumpe",
     "hero_alt": "Luft-Wasser-Wärmepumpe an der Fassade eines sanierten Altbaus",
 
@@ -47,16 +49,16 @@ ARTICLE = {
         "1.020 Euro pro Jahr.",
         "Große alte Gussheizkörper sind oft überdimensioniert und deshalb gut geeignet. Eine "
         "Fußbodenheizung ist nicht zwingend, das Nachrüsten kostet 50 bis 120 Euro pro Quadratmeter.",
-        "Kosten im typischen Altbau-Einfamilienhaus: 15.000 bis 28.000 Euro vor Förderung. Nach Bundes- "
-        "und Landesförderung blieben 2026 bis zur Ausschöpfung der Bundesförderung 10.000 bis 20.000 Euro. "
-        "Über 20 Jahre ist die Wärmepumpe meist günstiger als "
+        "Kosten im typischen Altbau-Einfamilienhaus: 15.000 bis 28.000 Euro vor Förderung. Nach der "
+        "Bundespauschale von 5.000 Euro (Kesseltausch, seit 2. November 2026 neu aufgelegt) bleiben 10.000 "
+        "bis 23.000 Euro, in Kärnten mit 3.000 Euro Landespauschale 7.000 bis 20.000 Euro*. Über 20 Jahre ist die Wärmepumpe meist günstiger als "
         "Gas und Öl.",
     ],
     "kpis": [
         ("30 bis 35 °C", "Vorlauf bei Fußbodenheizung"),
         ("60 bis 70 °C", "Vorlauf klassischer Altbau-Heizkörper"),
         ("50 bis 120 €/m²", "Fußbodenheizung nachrüsten"),
-        ("10.000 bis 20.000 €", "Kosten nach Förderung* (galt bis Herbst 2026)"),
+        ("10.000 bis 23.000 €", "Kosten nach 5.000 € Bundesförderung*"),
     ],
 
     "sections": [
@@ -85,8 +87,8 @@ zutreffen:</p>
   <li><b>Wechsel von einer fossilen Heizung:</b> Wer heute mit Öl oder Gas heizt, hat das größte
   Einsparpotenzial. Die Betriebskosten sinken sofort, selbst wenn das Gebäude noch nicht perfekt
   gedämmt ist.</li>
-  <li><b>Förderung:</b> Die Programme fördern den Kesseltausch im Bestand ausdrücklich; die Bundesförderung
-  2026 ist allerdings seit Herbst 2026 ausgeschöpft, Details weiter unten.</li>
+  <li><b>Förderung:</b> Die Programme fördern den Kesseltausch im Bestand ausdrücklich; der Bund hat den
+  Kesseltausch am 2. November 2026 neu aufgelegt, Details weiter unten.</li>
 </ul>
 {A.box("Im schlecht gedämmten Altbau (ungedämmte Außenwände, einfach verglaste Fenster, hohe "
        "Wärmeverluste) ist eine Wärmepumpe technisch möglich, die Effizienz leidet aber. Dann empfehlen "
@@ -209,18 +211,27 @@ und nachts bereit. Wie die Kombination geplant wird:
 <p>Die aktuellen Förderungen machen den Einbau einer Wärmepumpe im Altbau besonders attraktiv, weil der
 Wechsel von einer fossilen Heizung ausdrücklich unterstützt wird:</p>
 <ul>
-  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> 2026 gab es für den Tausch einer Gas- oder Ölheizung im
-  Altbau bis zu 7.500 Euro Investitionszuschuss. Stand Oktober 2026 sind die Programme
-  {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} und
-  {a('/sauber-heizen-fuer-alle-2026/', 'Sauber Heizen für Alle 2026')} ausgeschöpft, neue Registrierungen
-  sind nicht möglich; ob 2027 ein Folgeprogramm kommt, ist offen.</li>
+  <li><b>Bundesförderung Kesseltausch („Raus aus Öl und Gas“):</b> Seit 2. November 2026 ist der
+  Kesseltausch neu aufgelegt: 5.000 Euro Pauschale, wenn eine Wärmepumpe eine Öl-, Gas- oder Kohleheizung
+  oder Elektrospeicheröfen ersetzt, plus 2.500 Euro für eine thermische Solaranlage ab 6 m² (Photovoltaik
+  zählt nicht). Wichtig im Altbau: Die Vorlauftemperatur darf höchstens 55 Grad betragen, klassische
+  Heizkörper mit 60 bis 70 Grad reichen dafür nicht, oft aber der Tausch einzelner Heizkörper. Fernwärme hat
+  Vorrang, wo ein Anschluss möglich ist. Registrierung bis 31. Dezember 2026 oder bis das Budget
+  aufgebraucht ist, vorher ist eine Energieberatung des Landes nötig, danach bleiben 9 Monate für Umsetzung
+  und Antrag. Keine Einkommensprüfung. In der ersten Aktion 2026 waren es bis zu 7.500 Euro. Details:
+  {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')};
+  {a('/sauber-heizen-fuer-alle-2026/', 'Sauber Heizen für Alle 2026')} bleibt geschlossen.</li>
   <li><b>Landesförderung Kärnten und Steiermark:</b> Kärnten zahlt 2026 eine Pauschale von 3.000 Euro für
-  die Wärmepumpe (ob das Budget reicht, klären wir vor dem Angebot). Die Steiermark nimmt für neue
+  die Wärmepumpe, kombinierbar mit dem Bund, zusammen also bis zu 8.000 Euro* (ob das Budget reicht, klären
+  wir vor dem Angebot). Die Steiermark nimmt für neue
   Wärmepumpen derzeit keine Förderanträge an. Überblick:
   {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}.</li>
   <li><b>Steuerlich absetzen:</b> {a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/',
   'Öko-Sonderausgabenpauschale 2026')}.</li>
 </ul>
+<p><small>*Beispiel Kärnten, Wärmepumpe ersetzt Ölkessel: 5.000 Euro Bund plus 3.000 Euro Land. Alle
+Förderungen zusammen höchstens die Investitionskosten, maßgeblich sind die Bedingungen der
+Förderstellen.</small></p>
 <p>Als zertifizierter Fachbetrieb übernimmt EBZ Energie die gesamte Förderabwicklung, korrekt,
 vollständig und fristgerecht. Alle Programme:
 {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich')}.</p>
@@ -274,9 +285,11 @@ Kosten.</p>
          "aber wirtschaftlicher als Gas oder Öl."),
         ("Was kostet eine Wärmepumpe im Altbau nach Förderung?",
          "Für ein typisches Altbau-Einfamilienhaus liegen die Kosten inklusive Installation bei 15.000 bis "
-         "28.000 Euro vor Förderung. Nach Abzug der Bundes- und Landesförderung blieben 2026 je nach Gebäude und "
-         "Bundesland 10.000 bis 20.000 Euro; das galt bis zur Ausschöpfung der Bundesförderung im Herbst 2026. "
-         "Aktuell zahlt Kärnten eine Landespauschale von 3.000 Euro. Wir berechnen Ihre individuelle Förderhöhe kostenlos."),
+         "28.000 Euro vor Förderung. Der Bund zahlt im seit 2. November 2026 neu aufgelegten Kesseltausch "
+         "5.000 Euro (Vorlauftemperatur höchstens 55 Grad), damit bleiben 10.000 bis 23.000 Euro. In Kärnten "
+         "kommen 3.000 Euro Landespauschale dazu, dann bleiben 7.000 bis 20.000 Euro*. Registrierung beim Bund "
+         "bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist. Wir berechnen Ihre individuelle "
+         "Förderhöhe kostenlos. *Beispielrechnung, maßgeblich sind die Bedingungen der Förderstellen."),
         ("Wie lange dauert der Einbau einer Wärmepumpe im Altbau?",
          "Die eigentliche Montage dauert in der Regel 2 bis 4 Tage. Der gesamte Prozess von der Beratung bis "
          "zur Inbetriebnahme dauert einige Wochen, weil Förderanträge und Genehmigungen Zeit brauchen."),
@@ -299,13 +312,17 @@ Kosten.</p>
                     "Projektpraxis. Keine Rechts- oder Steuerberatung, maßgeblich sind die offiziellen "
                     "Förderbedingungen."),
     "sources": [
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
         ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
          "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
     ],
     "related": [
         ("waermepumpe", "Wärmepumpen-Installateur in Kärnten und Steiermark"),
         ("/kosten-einer-waermepumpe/", "Kosten einer Wärmepumpe 2026"),
-        ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: beendet, das gilt jetzt"),
+        ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: Kesseltausch neu aufgelegt"),
         ("/heizen-mit-waermepumpe/", "Heizen mit Wärmepumpe: Grundlagen"),
     ],
     "cta": {

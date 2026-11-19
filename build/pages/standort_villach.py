@@ -19,7 +19,8 @@ build/seo/standort_villach.json):
   Leistungsseite und die Ratgeber Kosten, Altbau, PV fuer Waermepumpe. Zahlen nur aus
   build/pages/waermepumpe.py (12.000 bis 22.000 EUR, Altbau 15.000 bis 28.000 EUR, 1 kWh Strom
   -> 4 bis 5 kWh Waerme, Beispielhaus 12.000 kWh / JAZ 4, Solarstrom 10 bis 14 ct).
-- Foerderung Waermepumpe als Kurzfassung ohne Fristen und ohne Euro-Obergrenze: Bund ausgeschoepft,
+- Foerderung Waermepumpe als Kurzfassung ohne Fristen und ohne Euro-Obergrenze: Bund ausgeschoepft
+  (UEBERHOLT 19.11.2026: Kesseltausch seit 2.11.2026 neu aufgelegt, 5.000 EUR Pauschale, Texte angepasst),
   Land Kaernten 3.000 EUR Pauschale 2026 (Foerderblatt "Foerderungen 2026" auf maria-saal.gv.at, abgerufen
   10.10.2026; die 35 %/6.000 EUR galten nur bis 31.12.2025), Verweis auf foerderungen und foerderrechner.
 - Lokale Quellen, abgerufen 10.10.2026: Fernwaermenetz Villach laut Stadt Villach
@@ -84,7 +85,7 @@ FAQ = [
      "Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen; ab 2027 plant der Bund laut "
      "BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. Die aktuellen Förderprogramme stehen auf "
      "unserer Förderseite. Der OeMAG-Marktpreis lag im "
-     "September 2026 bei 10,168 Cent je kWh (Juli: 6,146 Cent). Seit Oktober 2026 gilt das neue "
+     "Oktober 2026 bei 14,874 Cent je kWh (September: 10,168 Cent, Juli: 6,146 Cent). Seit Oktober 2026 gilt das neue "
      "Elektrizitätswirtschaftsgesetz (ElWG)."),
     ("Was kostet eine Wärmepumpe in Villach inklusive Montage, und rechnet sie sich mit Photovoltaik?",
      "Eine Luft-Wasser-Wärmepumpe kostet im Einfamilienhaus rund 12.000 bis 22.000 Euro vor Förderung inklusive "
@@ -93,8 +94,10 @@ FAQ = [
      "bis Dreifache*. Den Festpreis erhalten Sie, nachdem wir Heizraum, Heizkörper und Aufstellort bei Ihnen in "
      "Villach geprüft haben."),
     ("Welche Förderung gibt es für eine Wärmepumpe in Villach?",
-     "Die Bundesförderung für den Heizungstausch ist ausgeschöpft, neue Registrierungen sind nicht möglich. Das Land "
-     "Kärnten zahlt 2026 eine Pauschale von 3.000 Euro für den Umstieg auf eine Wärmepumpe im Eigenheim; ob das "
+     "Der Bund zahlt seit der Neuauflage des Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale, wenn die "
+     "Wärmepumpe eine fossile Heizung ersetzt und kein Fernwärmeanschluss möglich ist. Das Land Kärnten zahlt 2026 "
+     "zusätzlich eine Pauschale von 3.000 Euro für den Umstieg auf eine Wärmepumpe im Eigenheim, zusammen also bis "
+     "8.000 Euro*; ob das "
      "Budget reicht und welche Voraussetzungen für Ihr Haus gelten, prüfen wir vor dem Angebot. Kelag-Stromkunden mit aktivem "
      "Liefervertrag erhalten laut kelag.at zusätzlich eine Wärmepumpen-Prämie von 1.200 Euro als Gutschrift auf der "
      "Stromrechnung, verteilt über zwei Jahre, wenn die Wärmepumpe eine Internetanbindung hat. Den aktuellen Stand "
@@ -257,10 +260,10 @@ def build():
                  "vorhandene Heizkörper sind oft groß genug. Im Winter liefert das Dach weniger, als die Heizung "
                  "braucht; Warmwasser und Übergangszeit laufen dafür weitgehend mit eigenem Strom. Villach hat "
                  "außerdem ein Fernwärmenetz (Stadt Villach, villach.at): Liegt Ihr Haus im Versorgungsgebiet, lohnt "
-                 "sich zuerst der Blick auf den Anschluss, das kann auch bei der Landesförderung eine Rolle spielen. "
+                 "sich zuerst der Blick auf den Anschluss, beim Kesseltausch des Bundes hat die Fernwärme Vorrang. "
                  "Wo kein Anschluss möglich ist, rechnen wir Ihnen die Wärmepumpe mit eigener Photovoltaik durch."),
-                ("Zur Förderung in Kürze: Die Bundesförderung für den Heizungstausch ist ausgeschöpft. Das Land "
-                 "Kärnten zahlt 2026 eine Pauschale von 3.000 € für den Umstieg auf die Wärmepumpe im Eigenheim; "
+                ("Zur Förderung in Kürze: Der Bund zahlt im neu aufgelegten Kesseltausch seit November 2026 wieder "
+                 "5.000 € Pauschale. Das Land Kärnten zahlt 2026 zusätzlich eine Pauschale von 3.000 € für den Umstieg auf die Wärmepumpe im Eigenheim; "
                  "Budget und Voraussetzungen prüfen wir für Ihr Haus vor dem Angebot. Den aktuellen Stand lesen Sie auf der Seite "
                  + a("foerderungen", "Förderungen im Überblick") + ", eine erste Zahl liefert der "
                  + a("foerderrechner", "Förderrechner") + "."),
@@ -428,10 +431,10 @@ def _footnote():
     <div class="wrap">
       <p class="form-note">*Richtwerte auf Basis typischer Projekte, vor Förderung. Preis, Ersparnis, Eigenverbrauch und
       Amortisation hängen von Verbrauch, Anlagengröße, Ausrichtung und Strompreis ab. Finanzierung: Beispielkonditionen,
-      vorbehaltlich Bonitätsprüfung. Fördersätze, Fristen und OeMAG-Marktpreis Stand Oktober 2026, Änderungen durch
+      vorbehaltlich Bonitätsprüfung. Fördersätze, Fristen und OeMAG-Marktpreis Stand November 2026, Änderungen durch
       Fördergeber, Netzbetreiber und OeMAG vorbehalten. Wärmepumpe: Richtwerte aus unseren Ratgebern, vor Förderung,
       Beispielhaus mit 12.000 kWh Wärmebedarf und Jahresarbeitszahl 4; Förderhöhe abhängig von Richtlinie, Gebäude
-      und Budget der Fördergeber. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
+      und Budget der Fördergeber, Bund und Land zusammen höchstens die Investitionskosten. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
     </div>
   </section>""")
 

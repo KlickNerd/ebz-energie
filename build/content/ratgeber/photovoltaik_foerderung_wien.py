@@ -56,7 +56,7 @@ ARTICLE = {
         "Wien + EAG: <b>nicht kombinierbar</b>",
     ],
     "date_published": "2026-04-10",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch zur Photovoltaik-Förderung mit Unterlagen am Tisch",
 
@@ -247,7 +247,9 @@ Technik und Sicherheitsanforderungen. So lief der Ablauf 2026:</p>
 <p>Viele Wiener Haushalte heizen noch mit Gas. Wer die PV-Anlage mit einer {a('waermepumpe', 'Wärmepumpe')}
 kombiniert, nutzt den Sonnenstrom direkt für Heizung und Warmwasser und kann die Energiekosten um bis zu
 85 % senken. Förderseitig laufen beide Systeme getrennt: Für die PV-Anlage gelten die hier beschriebenen
-Schienen, für die Wärmepumpe die Sanierungsoffensive des Bundes oder „Sauber Heizen für Alle“. Ein
+Schienen, für die Wärmepumpe der Kesseltausch des Bundes (Sanierungsoffensive, seit 2. November 2026 neu
+aufgelegt, 5.000 Euro Pauschale, Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist).
+Fernwärme hat dabei Vorrang, wo ein Anschluss möglich ist; „Sauber Heizen für Alle“ bleibt geschlossen. Ein
 {a('batteriespeicher', 'Batteriespeicher')} erhöht den Eigenverbrauch zusätzlich; im Call 2026 wurde er über die
 EAG mit 150 €/kWh gefördert, ab 2027 ist laut BMWET eine Systemförderung für Speicher mit intelligenter
 Steuerung geplant (nicht beschlossen).</p>
@@ -337,6 +339,8 @@ sind noch offen. Wer jetzt plant, baut deshalb sinnvoll mit Speicher und Energie
         ("Wiener Sonnenstrom-Offensive", "https://sonnenstrom.wien.gv.at/"),
         ("Stadt Wien: Energie und Klima", "https://www.wien.gv.at/"),
         ("Klima- und Energiefonds", "https://www.klimafonds.gv.at/"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
     ],
     "related": [
         ("/photovoltaik-landesfoerderungen/", "Vergleich: PV-Landesförderungen aller 9 Bundesländer"),

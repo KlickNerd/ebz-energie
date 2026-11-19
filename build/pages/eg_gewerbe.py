@@ -3,13 +3,14 @@
 
 Quelle: Live-LP /energiegemeinschaften-gewerbe/ (freigegebene Inhalte), der Pillar-Ratgeber
 /energiegemeinschaft/, die Cluster-Artikel /energiegemeinschaft-gruenden/ und /energiegemeinschaft-kosten/
-(Gruendungskosten, Mindestgroesse, Rechtsform), build/seo/_fakten_2026-10.md (OeMAG September 2026:
-10,168 ct) und das SEO/GEO-Briefing build/seo/eg_gewerbe.{json,md} (Primaer "Energiegemeinschaft gruenden").
+(Gruendungskosten, Mindestgroesse, Rechtsform), build/seo/_fakten_2026-10.md (OeMAG Oktober 2026:
+14,874 ct, Verlauf Juli 6,146 ct) und das SEO/GEO-Briefing build/seo/eg_gewerbe.{json,md} (Primaer "Energiegemeinschaft gruenden").
 
 Abgrenzung: Diese LP = Energiegemeinschaft gruenden LASSEN (Leistungsumfang, Kosten, Dauer fuer Betriebe
 und Gemeinden). Der Ratgeber /energiegemeinschaft-gruenden/ = selbst gruenden, Schritt fuer Schritt (verlinkt).
-Beispielrechnung "Metallbetrieb, 100 kWp" ehrlich mit OeMAG-Marktpreis September 2026 (10,168 ct): Bei 10 ct*
-EG-Preis kein Mehrerloes, Vorteil kommt aus Netzentgelt, Planbarkeit und Abnehmer-Ersparnis.
+Beispielrechnung "Metallbetrieb, 100 kWp" ehrlich mit der OeMAG-Spanne 2026 (Juli 6,146 ct bis Oktober 14,874 ct,
+Monatswerte aufs Jahr hochgerechnet und so gekennzeichnet): Beim Oktober-Wert bei 10 ct* und 12 ct* EG-Preis
+Mindererloes, Vorteil kommt aus Netzentgelt, Planbarkeit und Abnehmer-Ersparnis.
 
 Pflicht (README): Netzentgelt-Rabatt 57 % lokal / 28 % regional, Netzebene 4/5 bis 64 %, NUR im
 Nahbereich; oesterreichweit = Buergerenergiegemeinschaft ohne Rabatt. energyfamily nur als Text-Badge.
@@ -25,6 +26,7 @@ TITLE = "Energiegemeinschaft gründen: Betriebe und Gemeinden | EBZ"
 DESC = ("Energiegemeinschaft gründen lassen: EBZ plant für Betriebe und Gemeinden Anlage, Rechtsform, "
         "Netzanmeldung und Abrechnung. Verein ab 50 €, 2 bis 8 € je Monat.")
 
+OEMAG_OKT = "14,874"   # aktueller Wert, Stand November 2026
 OEMAG_SEPT = "10,168"
 OEMAG_JULI = "6,146"
 
@@ -64,8 +66,9 @@ FAQ = [
      "Zählpunktanmeldung wird jeweils zum Monatsersten wirksam."),
     ("Was bringt die Gemeinschaft einem Betrieb mit eigener PV-Anlage?",
      f"Planbarkeit und einen zweiten Abnehmerkreis: Der Wochenendüberschuss bekommt einen fix vereinbarten EG-Preis "
-     f"statt des monatlich schwankenden OeMAG-Marktpreises ({OEMAG_JULI} ct im Juli, {OEMAG_SEPT} ct im September "
-     "2026). Bei 10 ct* liegt der EG-Preis derzeit knapp unter dem Marktpreis, bei 12 ct* darüber. Werktags bezieht "
+     f"statt des monatlich schwankenden OeMAG-Marktpreises ({OEMAG_JULI} ct im Juli, {OEMAG_OKT} ct im Oktober "
+     "2026). Ein EG-Preis von 10 oder 12 ct* liegt damit je nach Monat über oder unter dem Marktpreis, im Oktober 2026 "
+     "klar darunter; dafür ist er planbar. Werktags bezieht "
      "der Betrieb bei Bedarf EG-Strom mit reduziertem Netzentgelt, auf Netzebene 4/5 bis zu 64 Prozent weniger."),
     ("Können Mehrparteienhäuser teilnehmen?",
      "Ja. Im Gebäude teilt eine Gemeinschaftliche Erzeugungsanlage (GEA) den Strom ohne Netzentgelt auf die "
@@ -193,15 +196,16 @@ def body():
             h2="Metallbetrieb, 100 kWp: Was das Wochenende wert ist",
             intro=("Jahresertrag rund 105.000 kWh, Eigenverbrauch werktags 65 Prozent. Bleiben rund 37.000 kWh "
                    "Überschuss an Wochenenden und Feiertagen, davon werden in der Gemeinschaft konservativ 70 Prozent "
-                   f"(rund 26.000 kWh) zugeordnet.* Ehrlich gerechnet mit dem OeMAG-Marktpreis September 2026 ({OEMAG_SEPT} ct): "
-                   "Bei 10 ct* EG-Preis entsteht kein Mehrerlös (minus 44 €), bei 12 ct* sind es plus 475 €, beim Juli-Preis "
-                   f"von {OEMAG_JULI} ct wären es rund 1.000 € gewesen. Der sichere Vorteil liegt beim Netzentgelt des Bezugs."),
+                   f"(rund 26.000 kWh) zugeordnet.* Ehrlich gerechnet, den jeweiligen OeMAG-Monatswert aufs Jahr hochgerechnet: "
+                   f"Beim Juli-Wert von {OEMAG_JULI} ct bringen 10 ct* EG-Preis rund 1.000 € mehr als die OeMAG, beim "
+                   f"Oktober-Wert von {OEMAG_OKT} ct rund 1.270 € weniger, bei 12 ct* rund 750 € weniger. Der EG-Preis ist "
+                   "dafür planbar, der sichere Vorteil liegt beim Netzentgelt des Bezugs."),
             bars=[
                 ("Netzentgelt-Arbeitspreis je kWh Bezug beim Lieferanten", 100, "bad", "100 %"),
                 ("Netzentgelt-Arbeitspreis je kWh EG-Bezug auf Netzebene 4/5", 36, "good", "minus 64 %"),
             ],
             aside=("Das Ergebnis im Beispiel", [
-                ("€", "Planbarer Erzeugerpreis", "Fix vereinbart statt Marktpreis, der 2026 zwischen rund 6 und 10 ct schwankte. Mehrerlös nur, wenn der EG-Preis über dem Marktpreis liegt.*"),
+                ("€", "Planbarer Erzeugerpreis", "Fix vereinbart statt Marktpreis, der 2026 zwischen rund 6 und knapp 15 ct schwankte. Mehrerlös nur, wenn der EG-Preis über dem Marktpreis liegt.*"),
                 ("◇", "Netzersparnis beim eigenen Bezug", "Werktags in der Früh und im Winter bezieht der Betrieb EG-Strom mit 28 bis 64 % weniger Netzentgelt, je nach Netzebene."),
                 ("⌂", "Auftritt in der Gemeindezeitung", "Statt einer Zeile auf der OeMAG-Abrechnung: Ihr Strom versorgt den Ort."),
                 ("◷", "Belastbare Zahl aus der Potenzialanalyse", "Betriebe mit Wochenendverbrauch (Kühlung, Hotellerie, Landwirtschaft) profitieren eher als Abnehmer: Lastgang / Lastprofil entscheiden."),
@@ -320,7 +324,7 @@ def body():
             h2="Warum Betriebe und Gemeinden mit EBZ gründen",
             items=[
                 ("☀", "Anlage und EG aus einer Hand", "Dachanlage, Speicher, Lastmanagement und Gemeinschaft vom selben Team aus zertifizierten Fachkräften."),
-                ("◷", "Lastgang statt Bauchgefühl", "Wir rechnen mit Ihren Viertelstundenwerten, nicht mit Prospektzahlen, und mit dem aktuellen OeMAG-Marktpreis statt dem Tief vom Juli."),
+                ("◷", "Lastgang statt Bauchgefühl", "Wir rechnen mit Ihren Viertelstundenwerten, nicht mit Prospektzahlen, und mit der ganzen Spanne des OeMAG-Marktpreises statt nur mit dem Tief vom Juli."),
                 ("◎", "Prozesse mit dem Netzbetreiber", "ebUtilities, Betreibervertrag, EDA-Anmeldungen: Wir kennen die Abläufe bei Kärnten Netz und Energienetze Steiermark."),
                 ("✓", "Skalierbare Abrechnung", "energyfamily rechnet von 2 bis über 1.000 Zählpunkte automatisiert ab, monatlich, mit App und Reporting."),
                 ("€", "Förderungen im Blick", "Landesförderungen, die EMS-Förderung des Klimafonds und die geplante Systemförderung des Bundes: Wir prüfen, was gerade beantragbar ist."),
@@ -377,8 +381,8 @@ def body():
   <section class="section--tight" style="padding-bottom:40px">
     <div class="wrap">
       <p class="form-note">*Beispielkonditionen (EG-Preis 10 bzw. 12 ct je kWh), jede Gemeinschaft legt ihre Preise selbst
-      fest. OeMAG-Marktpreis September 2026: {OEMAG_SEPT} ct je kWh (Stand Oktober 2026, Quelle oem-ag.at); im Juli 2026
-      lag er bei {OEMAG_JULI} ct, der Wert schwankt monatlich. Netzentgelt-Abschlag (lokal 57 %, regional 28 %, Netzebene 4/5
+      fest. OeMAG-Marktpreis Oktober 2026: {OEMAG_OKT} ct je kWh (Stand November 2026, Quelle oem-ag.at); im September
+      lag er bei {OEMAG_SEPT} ct, im Juli 2026 bei {OEMAG_JULI} ct, der Wert schwankt monatlich. Netzentgelt-Abschlag (lokal 57 %, regional 28 %, Netzebene 4/5
       bis 64 %) und Abgabenbefreiung gelten nur für die zugeordnete Menge und nur im Nahbereich. Gründungs- und
       Abrechnungskosten sind marktübliche Spannen. Die belastbare Zahl für Ihren Standort liefert die Potenzialanalyse.
       Keine Garantie, keine Rechts- oder Steuerberatung. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>

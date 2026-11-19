@@ -30,7 +30,7 @@ ARTICLE = {
         "Kündbar <b>monatlich bis quartalsweise</b>",
     ],
     "date_published": "2026-08-10",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-11-19",
     "hero_img": "team_quer",
     "hero_alt": "Team von EBZ Energie berät zum Beitritt in eine Energiegemeinschaft",
 
@@ -40,8 +40,8 @@ ARTICLE = {
         "Der Ablauf: passende Gemeinschaft im Nahbereich finden, Mitgliedsvertrag unterschreiben, Zählpunkt im "
         "Netzbetreiber-Portal freigeben, Start im Folgemonat. In Summe vier bis acht Wochen.",
         "Abnehmer sparen beim EG-Strom Netzentgelt (28 bis 57 Prozent) und Abgaben, Erzeuger bekommen einen fix "
-        "vereinbarten EG-Preis statt des monatlich schwankenden OeMAG-Tarifs (Juli 2026: 6,146 Cent, September 2026: "
-        "10,168 Cent). Der Lieferantenvertrag bleibt bestehen.",
+        "vereinbarten EG-Preis statt des monatlich schwankenden OeMAG-Tarifs (Juli 2026: 6,146 Cent, Oktober 2026: "
+        "14,874 Cent). Je nach Monat liegt der EG-Preis darüber oder darunter, dafür ist er planbar. Der Lieferantenvertrag bleibt bestehen.",
         "Kosten: meist 2 bis 8 Euro Mitgliedsbeitrag im Monat, keine Einrichtungsgebühr, Kündigungsfrist ein bis "
         "drei Monate.",
         "EBZ Energie nimmt Kunden in Kärnten und der Steiermark auf und erledigt die Schritte beim Netzbetreiber mit. "
@@ -137,9 +137,9 @@ zuhause ist. Die Rechnung je Position steht im Artikel
         ("Was der Beitritt für Erzeuger bringt", "erzeuger", f"""
 <p>Als PV-Besitzer verkaufen Sie den Überschuss zum EG-Einspeisepreis, typisch zwischen 8 und 12 Cent*, der in der
 Gemeinschaft fix vereinbart wird. Der OeMAG-Tarif schwankt dagegen monatlich: Im Juli 2026 lag er bei 6,146 Cent, im
-September 2026 bei 10,168 Cent (Stand Oktober 2026). Nur der Anteil, der zeitgleich in der Gemeinschaft verbraucht
+September 2026 bei 10,168 Cent, im Oktober 2026 bei 14,874 Cent (Stand November 2026). Nur der Anteil, der zeitgleich in der Gemeinschaft verbraucht
 wird, bekommt den EG-Preis. Der Rest geht weiter an die OeMAG oder Ihren Einspeisevertragspartner, dort ändert sich
-nichts. Ob der EG-Preis über dem OeMAG-Wert liegt, hängt vom Monat ab; verlässlich ist der Vorteil beim Bezug:
+nichts. Ob der EG-Preis über dem OeMAG-Wert liegt, hängt vom Monat ab (im Oktober 2026 lag die OeMAG über typischen EG-Preisen); verlässlich ist der Vorteil beim Bezug:
 Abends und im Winter sind Sie selbst Abnehmer und profitieren von den Ersparnissen oben. Den Vergleich mit allen Zahlen ziehen wir im Artikel
 {a('/oemag-einspeisetarif/', 'OeMAG-Einspeisetarif oder Energiegemeinschaft')}. Ein
 {a('batteriespeicher', 'Batteriespeicher')} verschiebt Überschuss zusätzlich in die Abendstunden, in denen die

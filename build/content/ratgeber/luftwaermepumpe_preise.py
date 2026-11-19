@@ -7,6 +7,8 @@ Aufstellung). Gesamtvergleich aller Wärmepumpenarten: /kosten-einer-waermepumpe
 Korrigiert nach build/seo/_fakten_2026-10.md: Steiermark "bis zu 35 %" entfernt (keine Anträge für neue
 Wärmepumpen), Kärnten 3.000 € Pauschale, Bund nicht als verfügbar, Öko-Sonderausgabenpauschale nur mit
 ausbezahlter Bundesförderung, "eigene zertifizierte Fachkräfte" entfernt.
+Update 19.11.2026: Bund Kesseltausch seit 2.11.2026 neu aufgelegt (5.000 € Pauschale, Abschnitt
+"VERBINDLICH AB 19.11.2026" in _fakten_2026-10.md).
 """
 
 import os
@@ -29,7 +31,7 @@ ARTICLE = {
     "lead": ("Eine Luft-Wasser-Wärmepumpe kostet im Einfamilienhaus inklusive Montage 14.000 bis 22.000 Euro im "
              "Neubau und 16.000 bis 28.000 Euro in der Sanierung, im Betrieb rund 700 bis 1.100 Euro Strom pro "
              "Jahr. Hier finden Sie alle Preispositionen, die Rechnung zur Jahresarbeitszahl, die Regeln für "
-             "Aufstellung und Schall und den Förderstand Oktober 2026."),
+             "Aufstellung und Schall und den Förderstand November 2026."),
     "chips": [
         "Neubau: <b>14.000 bis 22.000 €</b>*",
         "Sanierung: <b>16.000 bis 28.000 €</b>*",
@@ -37,7 +39,7 @@ ARTICLE = {
         "Mit PV: <b>200 bis 500 €/Jahr</b>*",
     ],
     "date_published": "2026-09-05",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "waermepumpe",
     "hero_alt": "Außeneinheit einer Luft-Wasser-Wärmepumpe auf einem Betonsockel vor einer Holzwand im Garten",
 
@@ -48,9 +50,10 @@ ARTICLE = {
         "Bei 12.000 Kilowattstunden Wärmebedarf und einer Jahresarbeitszahl von 3,5 bis 4 braucht sie rund "
         "3.000 bis 3.500 Kilowattstunden Strom, das sind etwa 700 bis 1.100 Euro pro Jahr. Mit Photovoltaik "
         "sinkt der Wert auf grob 200 bis 500 Euro.",
-        "Förderung Stand Oktober 2026: Die Bundesförderung 2026 (Kesseltausch bis 7.500 Euro) ist ausgeschöpft, "
-        "neue Registrierungen sind derzeit nicht möglich. Kärnten zahlt 3.000 Euro Pauschale, die Steiermark "
-        "nimmt für neue Wärmepumpen derzeit keine Anträge an.",
+        "Förderung Stand November 2026: Der Bund hat den Kesseltausch am 2. November 2026 neu aufgelegt, die "
+        "Wärmepumpe wird mit 5.000 Euro Pauschale gefördert, Registrierung bis 31. Dezember 2026 oder bis das "
+        "Budget aufgebraucht ist. Kärnten zahlt zusätzlich 3.000 Euro Pauschale, die Steiermark nimmt für neue "
+        "Wärmepumpen derzeit keine Anträge an.",
         "Für den Altbau entscheidet die Vorlauftemperatur: Reichen 55 Grad Celsius, arbeitet eine "
         "Luftwärmepumpe wirtschaftlich.",
         "Beim Aufstellort zählen Abstand zu Schlafzimmerfenstern (auch beim Nachbarn), keine Ecken oder Nischen "
@@ -148,33 +151,40 @@ Ratgeber {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepump
 <p><small>*Richtwerte für ein Einfamilienhaus. Ihre Kosten hängen von Wärmebedarf, Jahresarbeitszahl und
 Stromtarif ab.</small></p>
 """),
-        ("Förderung für die Luftwärmepumpe: Stand Oktober 2026", "foerderung", f"""
+        ("Förderung für die Luftwärmepumpe: Stand November 2026", "foerderung", f"""
 <p>Bei der Förderung hat sich 2026 viel bewegt. Der aktuelle Stand für neue Projekte:</p>
 <ul>
-  <li><b>Bund:</b> Die Fördermittel für den Kesseltausch 2026 (Sanierungsoffensive, bis 7.500 Euro für eine
-  Wärmepumpe) sind laut Ministerium seit Juli 2026 vollständig vergeben, „Sauber Heizen für Alle 2026“ ist
-  ebenfalls beendet. Neue Registrierungen sind derzeit nicht möglich, bereits Registrierte werden nach den
-  geltenden Bedingungen abgewickelt. Details: {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
-  <li><b>Ausblick:</b> Für 2027 hat das Ministerium einen Förderrahmen von 360 Millionen Euro vorgesehen,
-  davon 179 Millionen Euro für den Kesseltausch (BMLUK, Juli 2026). Ab wann und zu welchen Bedingungen
-  wieder registriert werden kann, prüfen wir vor jedem Angebot.</li>
+  <li><b>Bund:</b> Der Kesseltausch (Sanierungsoffensive) ist seit 2. November 2026 neu aufgelegt. Ersetzt
+  eine Luftwärmepumpe eine Öl-, Gas- oder Kohleheizung oder Elektrospeicheröfen, gibt es eine Pauschale von 5.000 Euro,
+  plus 2.500 Euro für eine thermische Solaranlage ab 6 m² (Photovoltaik zählt nicht). Registrierung bis
+  31. Dezember 2026 oder bis das Budget aufgebraucht ist, gefördert werden Leistungen ab 7. Oktober 2026.
+  Vorher ist eine Energieberatung des Landes nötig, nach der Registrierung haben Sie 9 Monate für Umsetzung
+  und Antrag. Bedingungen: Vorlauftemperatur höchstens 55 Grad, Vorrang für Fernwärme, wo ein Anschluss
+  möglich ist, und 20 Prozent Abzug bei Geräten mit einem Kältemittel-GWP von 150 bis 750. Eine
+  Einkommensprüfung gibt es nicht. In der ersten Aktion 2026 waren es bis zu 7.500 Euro, „Sauber Heizen
+  für Alle“ bleibt geschlossen. Details: {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
+  <li><b>Ausblick:</b> Für 2027 sind laut BMLUK 179 Millionen Euro für den Kesseltausch vorgesehen, die
+  Förderhöhe bleibt laut BMLUK 2027 gleich.</li>
   <li><b>Kärnten:</b> Das Land zahlt 2026 eine Pauschale von 3.000 Euro für die Wärmepumpe, plus 1.500 Euro
-  bei Errichtung einer Solaranlage und 200 Euro für den hydraulischen Abgleich. Ob das Budget reicht und
-  wie das Land Projekte ohne Bundesförderung behandelt, klären wir vor dem Angebot. Kelag-Stromkunden
+  bei Errichtung einer Solaranlage und 200 Euro für den hydraulischen Abgleich. Bund und Land sind
+  kombinierbar, zusammen also bis zu 8.000 Euro für die Wärmepumpe*. Ob das Budget reicht, klären wir vor
+  dem Angebot. Kelag-Stromkunden
   erhalten zusätzlich eine Wärmepumpen-Prämie von 1.200 Euro als Gutschrift über zwei Jahre.</li>
   <li><b>Steiermark:</b> Für neue Wärmepumpen nimmt das Land derzeit keine Förderanträge an. Gefördert wird
   nur der Tausch mindestens 15 Jahre alter Wärmepumpen oder Biomassekessel, mit höchstens 30 Prozent und
   höchstens 1.500 Euro. Der Umstieg von Öl oder Gas ist damit nicht gefördert.</li>
   <li><b>Steuer:</b> Die {a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/',
-  'Öko-Sonderausgabenpauschale')} setzt eine ausbezahlte Bundesförderung voraus und betrifft damit derzeit
-  vor allem bereits registrierte Projekte.</li>
+  'Öko-Sonderausgabenpauschale')} setzt eine ausbezahlte Bundesförderung voraus, mit dem neu aufgelegten
+  Kesseltausch ist das wieder möglich.</li>
 </ul>
+<p><small>*Beispiel Kärnten, Wärmepumpe ersetzt Ölkessel: 5.000 Euro Bund plus 3.000 Euro Land. Alle
+Förderungen zusammen höchstens die Investitionskosten, maßgeblich sind die Bedingungen der Förderstellen.</small></p>
 <p>Alle Länder im Vergleich: {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}.</p>
 {A.box_dark("Unser Rat für die Planung",
-    "Bereiten Sie das Projekt jetzt vor (Heizlast, Aufstellort, Angebot), aber unterschreiben Sie keinen "
-    "Auftrag, bevor geklärt ist, ab wann Leistungen förderfähig sind. Bei Bundesprogrammen muss die "
-    "Registrierung in der Regel vor der Umsetzung erfolgen. Wir behalten die Förderstellen im Blick und "
-    "melden uns, sobald eine Registrierung wieder möglich ist.")}
+    "Die Registrierung beim Bund ist nur bis 31. Dezember 2026 oder bis zum Ende des Budgets möglich. "
+    "Vereinbaren Sie daher bald die Energieberatung des Landes, lassen Sie Heizlast, Aufstellort und Angebot "
+    "klären und registrieren Sie, bevor das Budget aufgebraucht ist. Danach bleiben 9 Monate für Umsetzung "
+    "und Antrag.")}
 {A.cta("Kosten für Ihr Haus konkret berechnen lassen",
        "EBZ Energie erstellt eine Heizlastberechnung vor Ort und ein Festpreisangebot mit allen Positionen. "
        "Die Förderabwicklung übernehmen wir für Sie.",
@@ -228,9 +238,9 @@ immer mit einer Schallabschätzung und klären die Meldepflicht im Rahmen der Pl
         ("Fazit: Luftwärmepumpe, die wirtschaftliche Standardlösung", "fazit", f"""
 <p>Mit 14.000 bis 28.000 Euro ist die Luftwärmepumpe die günstigste Art, eine fossile Heizung dauerhaft zu
 ersetzen. Im Betrieb kostet sie rund halb so viel wie eine Gasheizung und mit eigener PV-Anlage noch
-deutlich weniger. Weil die Bundesförderung 2026 ausgeschöpft ist und neue Registrierungen derzeit nicht
-möglich sind, lohnt jetzt die saubere Vorbereitung: Heizlast berechnen, Aufstellort klären, Angebot
-einholen und die Förderlage vor der Auftragsvergabe prüfen.</p>
+deutlich weniger. Weil der Bund den Kesseltausch neu aufgelegt hat und die Registrierung nur bis
+31. Dezember 2026 oder bis zum Ende des Budgets läuft, lohnt jetzt die zügige Vorbereitung: Energieberatung
+vereinbaren, Heizlast berechnen, Aufstellort klären, Angebot einholen und rechtzeitig registrieren.</p>
 {A.cta("Jetzt Luftwärmepumpe planen",
        "Wir rechnen Ihr Haus durch, kombinieren auf Wunsch mit Photovoltaik und Speicher und übernehmen die "
        "Förderanträge.",
@@ -268,10 +278,11 @@ einholen und die Förderlage vor der Auftragsvergabe prüfen.</p>
          "erwärmt direkt die Raumluft, versorgt kein Wasser-Heizsystem und bereitet kein Warmwasser. Für "
          "einzelne Räume oder kleine Wohnungen ist sie eine günstige Lösung."),
         ("Gibt es 2026 noch eine Bundesförderung für die Luftwärmepumpe?",
-         "Für neue Projekte derzeit nicht: Die Mittel für den Kesseltausch 2026 (bis 7.500 Euro) sind "
-         "vollständig vergeben, neue Registrierungen sind nicht möglich. Bereits registrierte Anträge werden "
-         "normal abgewickelt. In Kärnten zahlt das Land 3.000 Euro Pauschale, in der Steiermark gibt es für "
-         "neue Wärmepumpen derzeit keine Landesförderung."),
+         "Ja. Der Bund hat den Kesseltausch am 2. November 2026 neu aufgelegt: 5.000 Euro Pauschale, wenn die "
+         "Luftwärmepumpe eine fossile Heizung ersetzt, plus 2.500 Euro für eine thermische Solaranlage ab 6 m². "
+         "Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist, vorher ist eine "
+         "Energieberatung des Landes nötig. In Kärnten zahlt das Land zusätzlich 3.000 Euro Pauschale, in der "
+         "Steiermark gibt es für neue Wärmepumpen derzeit keine Landesförderung."),
         ("Funktioniert eine Luftwärmepumpe auch im Altbau?",
          "Ja, wenn das Haus mit einer Vorlauftemperatur von höchstens 55 Grad Celsius warm wird. Das ist in "
          "vielen teilsanierten Häusern bereits der Fall. Wir prüfen das vor Ort mit einer Heizlastberechnung "
@@ -297,12 +308,12 @@ einholen und die Förderlage vor der Auftragsvergabe prüfen.</p>
                     "Angebote und der offiziellen Förderstellen aktualisiert. Keine Rechts- oder "
                     "Steuerberatung, maßgeblich sind die offiziellen Förderbedingungen der jeweiligen Stelle."),
     "sources": [
-        ("BMLUK: Sanierungsoffensive 2026, alle Fördermittel abgeholt (13. Juli 2026)",
-         "https://www.bmluk.gv.at/service/presse/klima-umwelt/2026/sanierungsoffensive-2026-alle-foerdermittel-abgeholt.html"),
-        ("Sanierungsoffensive: Budget-Information",
-         "https://www.sanierungsoffensive.gv.at/budget-information"),
-        ("Umweltförderung: Kesseltausch Ein-/Zweifamilienhaus 2026",
-         "https://www.umweltfoerderung.at/privatpersonen/kesseltausch-ein-zweifamilienhaus-und-reihenhaus-2026"),
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
+        ("BMLUK: Sanierung und Kesseltausch 2027",
+         "https://www.bmluk.gv.at/themen/klima-und-umwelt/klima/klima-initiativen-und-foerderungen/ufg/sanierung-kesselaustausch-2027.html"),
         ("Land Steiermark: Förderung für Heizungen (Wohnbau)",
          "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
         ("gecheckt.at: Preise Luftwärmepumpe 2026",

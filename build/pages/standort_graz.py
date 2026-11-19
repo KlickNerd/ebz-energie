@@ -56,7 +56,8 @@ dB-Grenzwerte je Widmung, Netzgebietsgrenzen und kleinere Netzbetreiber im Umlan
 Foerderung nur als Kurzfassung ohne Fristen (Betraege aus build/seo/_fakten_2026-10.md und
 build/pages/waermepumpe.py): Bundeszuschuss PV/Speicher fuer 2026 abgeschlossen (Stand ab 23.10.2026), ab 2027
 Systemfoerderung laut BMWET geplant; keine PV-Landespauschale;
-Waermepumpe: Land Steiermark nimmt laut wohnbau.steiermark.at (10.10.2026) derzeit keine Antraege an, Bund ausgeschoepft. Details: foerderung_steiermark.
+Waermepumpe: Land Steiermark nimmt laut wohnbau.steiermark.at (10.10.2026) derzeit keine Antraege an; Bund: Kesseltausch
+seit 2.11.2026 neu aufgelegt, 5.000 EUR Pauschale, Fernwaerme hat Vorrang (Faktenliste, Stand 19.11.2026). Details: foerderung_steiermark.
 Referenzen: genau die Zahlen aus build/pages/referenz_projekte.py (Stadthaus in Graz, Flachdach in Graz), Bilder
 aus build/static/img/ref-*-graz-*.jpg, Bild und Zahlen je Karte vom selben Projekt.
 Abgrenzung: Steiermark-weite Inhalte gehoeren auf /photovoltaik-steiermark/ (Key pv_steiermark), hier nur verlinkt.
@@ -151,9 +152,10 @@ FAQ = [
      "Grundwasser kommt eine wasserrechtliche Abklärung dazu, in den Schutzzonen der Altstadt ein eigenes Ansuchen."),
     ("Was kostet eine Wärmepumpe in Graz, und welche Förderung gibt es?",
      "Eine Luft-Wasser-Wärmepumpe kostet im Einfamilienhaus rund 12.000 bis 22.000 Euro vor Förderung inklusive "
-     "Montage, im Altbau mit Anpassungen 15.000 bis 28.000 Euro*. Die Bundesförderung für den Heizungstausch ist "
-     "ausgeschöpft, und auch das Land Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an. Die "
-     "Stadt Graz hat kein eigenes Programm für Wärmepumpen. Den aktuellen Stand zeigt unser Förderrechner."),
+     "Montage, im Altbau mit Anpassungen 15.000 bis 28.000 Euro*. Der Bund zahlt seit der Neuauflage des "
+     "Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale, wenn die Wärmepumpe eine fossile Heizung ersetzt "
+     "und kein Fernwärmeanschluss möglich ist. Das Land Steiermark nimmt für neue Wärmepumpen derzeit keine "
+     "Förderanträge an. Die Stadt Graz hat kein eigenes Programm für Wärmepumpen. Den aktuellen Stand zeigt unser Förderrechner."),
     ("Gibt es eine Förderung der Stadt Graz für Photovoltaik?",
      "Für Einfamilienhäuser nicht. Die Stadt Graz führt in ihren Umweltförderungen nur ein Programm für "
      "PV-Gemeinschaftsanlagen an mehrgeschossigen Wohnhäusern, und laut Stadtportal ist die Bearbeitung aller "
@@ -430,8 +432,8 @@ def build():
                  "beziehungsweise abgeschlossen; ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher "
                  "mit intelligenter Steuerung, Höhe offen. Wer in Graz jetzt plant, plant deshalb mit Speicher und "
                  "Energiemanagement, das der Klimafonds fördert. Für neue Wärmepumpen "
-                 "nimmt das Land Steiermark derzeit keine Förderanträge an, und auch die Bundesförderung ist "
-                 "ausgeschöpft."),
+                 "nimmt das Land Steiermark derzeit keine Förderanträge an; der Bund zahlt seit der Neuauflage des "
+                 "Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale, sofern kein Fernwärmeanschluss möglich ist."),
                 ("Und die Stadt Graz? In ihren Umweltförderungen gibt es kein Programm für Photovoltaik am "
                  "Einfamilienhaus, für Speicher oder für Wärmepumpen. Die Stadt führt eine Förderung für "
                  "PV-Gemeinschaftsanlagen an mehrgeschossigen Wohnhäusern und eine für die Umstellung auf Fernwärme; "
@@ -445,6 +447,7 @@ def build():
             alt="Beratungsgespräch zur Förderung für Photovoltaik und Wärmepumpe mit Unterlagen am Tisch",
             bullets=[
                 "Bund: Investitionszuschuss für 2026 abgeschlossen, Systemförderung ab 2027 geplant",
+                "Bund Wärmepumpe: Kesseltausch 5.000 € Pauschale, Registrierung bis 31.12.2026 oder bis das Budget aufgebraucht ist",
                 "Land Steiermark: keine PV-Pauschale, für neue Wärmepumpen derzeit keine Anträge",
                 "Stadt Graz: kein Programm für Einfamilienhaus, Speicher oder Wärmepumpe",
                 a("foerderung_steiermark", "PV-Förderung Steiermark im Detail"),

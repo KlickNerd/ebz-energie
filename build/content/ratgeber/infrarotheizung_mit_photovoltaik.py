@@ -10,6 +10,8 @@ Faktor 3 bis 4; jetzt aus 5.000 bis 7.000 kWh Wärme und JAZ 3,5 bis 4 gerechnet
 "rund 6 Cent" durch OeMAG-Marktpreis September 2026 ersetzt, EAG-Aussage auf Stand ab 23.10.2026,
 Bundesförderung Wärmepumpe nicht als "2027 angekündigt/ja", EMS-Förderung: Infrarot zählt nicht als
 förderfähige Komponente. Links /luftwaermepumpe-kosten/ und /batteriespeicher-und-photovoltaik/ ersetzt.
+Update 19.11.2026: OeMAG-Marktpreis Oktober 2026 (14,874 ct), Bund Kesseltausch für Wärmepumpen seit
+2.11.2026 neu aufgelegt (Infrarot bleibt nicht förderfähig).
 """
 
 import os
@@ -41,7 +43,7 @@ ARTICLE = {
         "Ideal: <b>Bad und Übergangszeit</b>",
     ],
     "date_published": "2026-09-25",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikmodule auf einem Ziegeldach mit Kamin vor blauem Himmel",
 
@@ -89,8 +91,9 @@ Netz, und zwar im Winter, wenn Strom oft am teuersten ist. Ein Batteriespeicher 
 Winter bleibt er mangels Überschuss oft leer.</p>
 {A.box("In der Übergangszeit von März bis Mai und September bis November gibt es an vielen Tagen "
        "Sonnenüberschuss und gleichzeitig leichten Heizbedarf. Wer dann Bad, Arbeitszimmer oder Wintergarten "
-       "mit Infrarot temperiert, nutzt Strom, der sonst zum OeMAG-Marktpreis ins Netz ginge (September 2026: "
-       f"10,168 ct je kWh, Juli 2026: 6,146 ct; der Wert schwankt monatlich, siehe {a('marktpreis', 'Marktpreis 2026')}).",
+       "mit Infrarot temperiert, nutzt Strom, der sonst zum OeMAG-Marktpreis ins Netz ginge (Oktober 2026: "
+       "14,874 ct je kWh, Stand November 2026; im September 10,168 ct, im Juli 6,146 ct; der Wert schwankt "
+       f"monatlich, siehe {a('marktpreis', 'Marktpreis 2026')}).",
        label="Wo PV und Infrarot gut zusammenpassen:")}
 <p><small>*Schematische Richtwerte für ein Einfamilienhaus in Kärnten oder der Steiermark. Der tatsächliche
 Anteil hängt von Anlagengröße, Ausrichtung, Speicher und Heizverhalten ab.</small></p>
@@ -134,7 +137,7 @@ Ihrem Stromtarif.</small></p>
         ["Anschaffung Einfamilienhaus*", "4.000 bis 7.000 €", "14.000 bis 28.000 €"],
         ["Effizienz", "1 kWh Strom = 1 kWh Wärme", "1 kWh Strom = 3 bis 5 kWh Wärme"],
         ["Strombedarf 100 m² Neubau*", "5.000 bis 7.000 kWh", "rund 1.300 bis 2.000 kWh"],
-        ["Förderung Heizungstausch", "nein", "Kärnten 3.000 € Pauschale; Bund 2026 ausgeschöpft"],
+        ["Förderung Heizungstausch", "nein", "Bund 5.000 € Pauschale (Kesseltausch seit 2.11.2026); Kärnten 3.000 €"],
         ["Warmwasser", "separat nötig", "inklusive möglich"],
         ["Wartung", "keine", "gering, regelmäßiger Service empfohlen"],
         ["Ideal für", "Zusatzheizung, Passivhaus, selten genutzte Räume", "Hauptheizung in fast allen Häusern"],
@@ -182,25 +185,27 @@ Einfamilienhaus. Dort sprechen Stromkosten und Förderlage klar für die
 </ul>
 """),
         ("Förderung: Was es für Infrarot, PV und Wärmepumpe gibt", "foerderung", f"""
-<p>Stand Oktober 2026 sieht die Förderlage für die drei Bausteine so aus:</p>
+<p>Stand November 2026 sieht die Förderlage für die drei Bausteine so aus:</p>
 <ul>
-  <li><b>Infrarotheizung:</b> Die Heizungstausch-Programme förderten 2026 den Umstieg auf Wärmepumpe,
-  Nah- oder Fernwärme und Holzzentralheizung. Infrarot als Hauptheizung war nicht förderfähig, auch die
-  Kärntner Pauschale für energieeffiziente Haustechnik nennt Infrarot nicht.</li>
+  <li><b>Infrarotheizung:</b> Der Kesseltausch des Bundes fördert den Umstieg auf Wärmepumpe, Nah- oder
+  Fernwärme und Holzzentralheizung. Infrarot als Hauptheizung ist nicht förderfähig, auch die Kärntner
+  Pauschale für energieeffiziente Haustechnik nennt Infrarot nicht.</li>
   <li><b>Photovoltaik:</b> Der EAG-Bundeszuschuss für PV und Speicher ist für 2026 abgeschlossen, der letzte
   Call lief vom 8. bis 22. Oktober 2026. Ab 2027 ist laut BMWET eine Systemförderung für Speicher mit
   intelligenter Steuerung geplant, nicht beschlossen. Kärnten zahlt 3.000 Euro Pauschale für eine neue
   PV-Anlage ab 5 kWp mit neuem Speicher ab 5 kWh (Einreichung bis 31. Dezember 2026), siehe
   {a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')}. Die Steiermark hat derzeit keine
   PV-Landesförderung.</li>
-  <li><b>Wärmepumpe:</b> Die Bundesförderung 2026 ist ausgeschöpft, neue Registrierungen sind derzeit nicht
-  möglich. Kärnten zahlt 3.000 Euro Pauschale, die Steiermark nimmt für neue Wärmepumpen derzeit keine
-  Anträge an. Überblick: {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich')}.</li>
+  <li><b>Wärmepumpe:</b> Der Bund hat den Kesseltausch am 2. November 2026 neu aufgelegt: 5.000 Euro
+  Pauschale, wenn die Wärmepumpe eine fossile Heizung ersetzt, Registrierung bis 31. Dezember 2026 oder bis
+  das Budget aufgebraucht ist. Kärnten zahlt zusätzlich 3.000 Euro Pauschale, die Steiermark nimmt für neue
+  Wärmepumpen derzeit keine Anträge an. Überblick: {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich')}.</li>
 </ul>
 """),
         ("Fazit: Gute Ergänzung, selten die beste Hauptheizung", "fazit", f"""
 <p>Eine Infrarotheizung ist günstig, wartungsfrei und angenehm, und mit Photovoltaik nutzt sie in der
-Übergangszeit Sonnenstrom, der sonst für rund 10 Cent ins Netz ginge. Als alleinige Heizung eines normal
+Übergangszeit Sonnenstrom, der sonst zum schwankenden OeMAG-Marktpreis (2026 zwischen 6,146 und 14,874 ct
+je kWh) ins Netz ginge. Als alleinige Heizung eines normal
 gedämmten Hauses ist sie aber teuer im Betrieb, weil Sonnenstrom im Winter knapp ist und jede Kilowattstunde
 nur eine Kilowattstunde Wärme liefert. Unsere Empfehlung: Infrarot gezielt dort einsetzen, wo es seine
 Stärken hat, und die Grundlast mit einer Wärmepumpe decken.</p>
@@ -243,7 +248,7 @@ Stärken hat, und die Grundlast mit einer Wärmepumpe decken.</p>
          "Elektroinstallation. Dafür sind die laufenden Stromkosten mit 1.400 bis 1.960 Euro pro Jahr im "
          "100-m²-Neubau deutlich höher als bei einer Wärmepumpe."),
         ("Wird eine Infrarotheizung in Österreich gefördert?",
-         "Als Hauptheizung nein. Die Heizungstausch-Programme förderten 2026 nur den Umstieg auf Wärmepumpe, "
+         "Als Hauptheizung nein. Der Kesseltausch des Bundes fördert nur den Umstieg auf Wärmepumpe, "
          "Nah- oder Fernwärme und Holzzentralheizung. Für die PV-Anlage zahlt Kärnten 3.000 Euro Pauschale, wenn "
          "gleichzeitig ein Speicher ab 5 kWh errichtet wird; der EAG-Bundeszuschuss ist für 2026 abgeschlossen."),
         ("Wie viel Watt Infrarotheizung brauche ich pro Quadratmeter?",
@@ -269,8 +274,11 @@ Stärken hat, und die Grundlast mit einer Wärmepumpe decken.</p>
     "sources": [
         ("pieno.at: Infrarotheizung in Österreich, Stromverbrauch und Kosten 2026",
          "https://pieno.at/infrarotheizung-stromverbrauch-kosten-oesterreich/"),
-        ("Sanierungsoffensive des Bundes", "https://www.sanierungsoffensive.gv.at/"),
-        ("OeMAG Abwicklungsstelle für Ökostrom", "https://www.oem-ag.at/"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("OeMAG: Marktpreis", "https://www.oem-ag.at/de/marktpreis/"),
     ],
     "related": [
         ("/photovoltaik-fuer-waermepumpe/", "Photovoltaik für die Wärmepumpe"),

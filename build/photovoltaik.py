@@ -165,7 +165,7 @@ def build():
             eyebrow="Warum sich der Umstieg jetzt lohnt",
             h2="Weniger zukaufen, mehr Unabhängigkeit",
             intro=("Netzstrom kostet rund 30 bis 35 ct je kWh, eingespeister Solarstrom bringt im OeMAG-Marktpreismodell "
-                   "10,168 ct (September 2026). Was Sie selbst erzeugen und verbrauchen, müssen Sie nicht teuer aus "
+                   "14,874 ct (Oktober 2026, im Juli waren es 6,146 ct). Was Sie selbst erzeugen und verbrauchen, müssen Sie nicht teuer aus "
                    "dem Netz kaufen.*"),
             bars=[
                 ("Stromkosten ohne eigene Anlage", 100, "bad", "voller Netzbezug"),
@@ -193,7 +193,7 @@ def build():
             img=IMG["speicher"],
             alt="Batteriespeicher einer Photovoltaikanlage im Technikraum",
             bullets=[
-                "Eigenverbrauch statt Einspeisevergütung zu 10,168 ct je kWh (OeMAG-Marktpreis September 2026)",
+                "Eigenverbrauch statt Einspeisevergütung zu 14,874 ct je kWh (OeMAG-Marktpreis Oktober 2026)",
                 "Der Hybridwechselrichter steuert auch Wallbox und Wärmepumpe mit, das Monitoring zeigt alles am Handy",
                 "Nachrüstung möglich: Kärnten fördert sie 2026 mit 1.000 €",
             ],

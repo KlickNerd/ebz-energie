@@ -15,6 +15,8 @@ Rechenregeln:
 - Speicher Bund: 150 EUR je kWh bis 50 kWh, nur mit neuer PV und ab 0,5 kWh je kWp.
 - Made-in-Europe-Bonus (je 10 % auf Modul-, Wechselrichter- und Speicherzuschuss) nur als Hinweis, nie in der Summe.
 - Waermepumpe: Laender nur als Spanne oder Prozentsatz, weil der Betrag von den Kosten abhaengt.
+- Waermepumpe Bund (Kesseltausch-Neuauflage, Stand 19.11.2026): 5.000 EUR Pauschale zwischen "von" und "bis"
+  in CFG["kt"]; Bohrbonus (+5.000) und Solarthermie (+2.500) nur als Hinweis, nicht in der Summe.
 Test der Rechenlogik: python3 build/seo/test_foerderrechner.py (nach dem Build, braucht node).
 """
 
@@ -28,7 +30,7 @@ PATH = "/foerderrechner/"
 TITLE = "Förderrechner 2026: PV, Speicher, Wärmepumpe | EBZ"
 DESC = ("Kostenloser Förderrechner für Österreich: Vorhaben, Bundesland und Größe eingeben, Förderung von Bund "
         "und Land sehen. Kärnten 3.000 € für PV mit Speicher.")
-STAND = "Stand Ende Oktober 2026"
+STAND = "Stand November 2026"
 LAENDER_STAND = "Stand Juni 2026"
 
 R_WP_LAENDER = "/landesfoerderungen-fuer-die-waermepumpe/"
@@ -43,6 +45,9 @@ CFG = {
             "von": "2026-10-12", "vonText": "12. Oktober 2026",
             "bis": "2026-12-31", "bisText": "31. Dezember 2026"},
     "ems": {"max": 600, "bis": "2027-04-15", "bisText": "15. April 2027"},
+    # Bund Kesseltausch 2026, Neuauflage (KPC-Infoblatt 10/2026, sanierungsoffensive.gv.at, geprueft 19.11.2026)
+    "kt": {"pauschale": 5000, "von": "2026-11-02", "vonText": "2. November 2026",
+           "bis": "2026-12-31", "bisText": "31. Dezember 2026"},
     "stand": LAENDER_STAND,
     "txt": {
         "eagEnd": ("Im bisherigen System gibt es keinen Call mehr. Laut BMWET soll 2027 eine Systemförderung für "
@@ -53,8 +58,13 @@ CFG = {
                   "Höchstens 50 % der Baukosten."),
         "ktnNach": "Pauschale für die Nachrüstung ab 5 kWh an einer bestehenden PV-Anlage.",
         "ktnEnd": "Der Landes-Call 2026 ist beendet. Ob 2027 ein neuer Call kommt, steht noch nicht fest.",
-        "wpBund": ("Kesseltausch und Sauber Heizen für Alle sind ausgeschöpft, neue Registrierungen sind nicht "
-                   "möglich. Ob 2027 ein neues Programm kommt, ist offen."),
+        "wpBund": ("Kesseltausch-Neuauflage: 5.000 € Pauschale für eine Wärmepumpe, die eine fossile Heizung ersetzt. "
+                   "Dazu kommen 5.000 € bei Sole- oder Wasser-Wasser-Wärmepumpen mit Bohrung oder Brunnen und 2.500 € "
+                   "mit thermischer Solaranlage ab 6 m² (nicht in der Summe). Fernwärme hat Vorrang, bei Kältemitteln "
+                   "mit GWP 150 bis 750 werden 20 % abgezogen. Registrierung bis 31. Dezember 2026 oder bis das "
+                   "Budget aufgebraucht ist."),
+        "wpBundEnd": ("Die Neuauflage 2026 des Kesseltauschs ist beendet. Laut BMLUK bleibt die Förderhöhe 2027 "
+                      "gleich; wann die Aktion 2027 startet, prüfen wir für Sie."),
         "ems": "50 % der Kosten, höchstens 600 € je Haushalt.",
         "emsEnd": "Das Programm des Klima- und Energiefonds ist ausgelaufen.",
         "balkon": "Steckeranlagen bis 800 Watt haben keinen Einspeisezählpunkt und bekommen keinen Zuschuss.",
@@ -63,6 +73,8 @@ CFG = {
         "stepKtn": "Land Kärnten: Antrag nach der Fertigstellung über die Förderplattform des Landes.",
         "stepEms": "Klimafonds: erst registrieren, dann die Rechnung ausstellen lassen.",
         "stepWp": "Wärmepumpe: Landesförderung vor der Bestellung klären, das übernehmen wir.",
+        "stepWpBund": ("Bund (Kesseltausch): zuerst die Energieberatung des Landes, dann online registrieren; danach "
+                       "bleiben 9 Monate für Umsetzung und Antrag."),
         "stepEbz": "Wir bereiten alle Anträge vor, Sie bestätigen nur.",
     },
     # Landesregeln PV und Speicher. flat = ein Hinweis fuer alles; pv/spNeu/spNach = Regeln je Fall.
@@ -278,7 +290,15 @@ function compute(inp, t){
   }
 
   if(inp.wp){
-    add("Bund · Wärmepumpe", 0, 0, "end", "Ausgeschöpft", T.wpBund);
+    var KT = CFG.kt, ktSt = t < KT.von ? "soon" : (t <= KT.bis ? "ok" : "end");
+    if(ktSt === "ok"){
+      add("Bund · Wärmepumpe", KT.pauschale, KT.pauschale, "ok", "Registrierung bis " + KT.bisText, T.wpBund);
+      steps.push(T.stepWpBund);
+    } else if(ktSt === "soon"){
+      add("Bund · Wärmepumpe", 0, 0, "soon", "Startet am " + KT.vonText, T.wpBund);
+    } else {
+      add("Bund · Wärmepumpe", 0, 0, "end", "Aktion beendet", T.wpBundEnd, "offen");
+    }
     var W = L ? CFG.wp[inp.land] : null;
     if(W){
       lines.push({topf: L.topf + " · Wärmepumpe", min: W.min || 0, max: W.max || 0, open: !!W.open, st: W.st,
@@ -366,21 +386,24 @@ function compute(inp, t){
 FAQ = [
     ("Wie genau ist der Förderrechner?",
      "Für die Kärntner Landespauschale, die EMS-Förderung und, solange ein Call läuft, den Bundeszuschuss "
-     "rechnet er mit den veröffentlichten Sätzen und ist damit auf den Euro nachvollziehbar. Für die Wärmepumpe "
-     "und für Bundesländer außerhalb unseres Montagegebiets zeigt er Spannen, weil der Betrag von den Kosten und "
+     "rechnet er mit den veröffentlichten Sätzen und ist damit auf den Euro nachvollziehbar. Für die "
+     "Landesförderung der Wärmepumpe und für Bundesländer außerhalb unseres Montagegebiets zeigt er Spannen, weil der Betrag von den Kosten und "
      "vom Budget des Landes abhängt. Das Ergebnis ist ein Richtwert, kein Bescheid."),
     ("Welche Förderungen rechnet der Rechner ein?",
      "Den EAG-Investitionszuschuss des Bundes, solange ein Call läuft (2026: 150 Euro je kWp bis 10 kWp, 140 Euro bis "
      "20 kWp, 150 Euro je kWh Speicher; der letzte Call 2026 endete am 22. Oktober), die Landespauschale Kärnten (3.000 Euro für PV mit Speicher, 1.000 Euro für die Nachrüstung), die "
      "Speicherprogramme in Oberösterreich, Tirol, Burgenland und Vorarlberg, die EMS-Förderung des Klimafonds "
-     "(bis 600 Euro) und die Landesförderungen für Wärmepumpen. Gemeindeförderungen und der "
+     "(bis 600 Euro), den Kesseltausch des Bundes für Wärmepumpen (5.000 Euro Pauschale, Registrierung bis "
+     "31. Dezember 2026) und die Landesförderungen für Wärmepumpen. Gemeindeförderungen und der "
      "Made-in-Europe-Bonus stehen als Hinweis dabei, nicht in der Summe."),
     ("Zeigt der Rechner auch abgelaufene Programme an?",
      "Ja, aber nicht in der Summe. Der Rechner vergleicht bei jedem Aufruf das Datum mit den Fristen der Programme. "
      "Ist eine Frist vorbei, steht der Topf als beendet in der Liste und zählt nicht mehr mit. So sehen Sie auf "
      "einen Blick, was heute beantragbar ist und was nicht."),
     ("Warum steht bei der Wärmepumpe nicht überall ein fixer Betrag?",
-     "Die Bundesförderung für den Heizungstausch ist derzeit ausgeschöpft. Kärnten zahlt eine Pauschale von "
+     "Der Bund zahlt im Kesseltausch (Neuauflage seit 2. November 2026) eine Pauschale von 5.000 Euro, dazu "
+     "5.000 Euro bei Erdwärme oder Grundwasser und 2.500 Euro mit thermischer Solaranlage; diese Zuschläge stehen "
+     "als Hinweis dabei, weil der Rechner die Wärmequelle nicht abfragt. Kärnten zahlt eine Pauschale von "
      "3.000 Euro, die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an. Andere Länder fördern "
      "einen Prozentsatz der Kosten mit Obergrenze, dort zeigt der Rechner eine Spanne. Vor dem Angebot klären wir "
      "mit dem Land, ob das Budget reicht."),
@@ -421,7 +444,7 @@ def _calc_section():
       </div>
       <p class="form-note center eg-reveal" style="margin-top:22px">Fördersätze und Fristen {STAND}, Daten der
       anderen Bundesländer {LAENDER_STAND}. Quellen: EAG-Abwicklungsstelle, Land Kärnten, Klima- und Energiefonds,
-      umweltfoerderung.at, Landesförderstellen.</p>
+      sanierungsoffensive.gv.at, Landesförderstellen.</p>
     </div>
   </section>
   <script>{script}</script>"""
@@ -449,9 +472,10 @@ def _methodik_section():
          "(Nachrüstung), Burgenland 100 € je kWh bis 2.000 €, Vorarlberg 50 € je kWh bis 500 € (VKW)",
          f"Länderdaten {LAENDER_STAND}, Details im " + a(R_LAENDER, "Ländervergleich")),
         ("Wärmepumpe",
-         "Bund derzeit ausgeschöpft. Kärnten 3.000 € Pauschale, Steiermark derzeit keine Anträge, Wien 35 % bis "
-         "8.000 €, weitere als Pauschale",
-         "Als Spanne oder Prozentsatz, Details im " + a(R_WP_LAENDER, "Wärmepumpen-Ländervergleich")),
+         "Bund 5.000 € Pauschale (Kesseltausch bis 31.12.2026), Kärnten 3.000 € Pauschale, Steiermark derzeit "
+         "keine Anträge, Wien 35 % bis 8.000 €, weitere als Pauschale",
+         "Bund als Pauschale in der Summe, Bohrbonus und Solarthermie-Zuschlag nur als Hinweis; Länder als Spanne "
+         "oder Prozentsatz, Details im " + a(R_WP_LAENDER, "Wärmepumpen-Ländervergleich")),
         ("Energiemanagement",
          "50 % der Kosten, höchstens 600 € je Haushalt",
          "Klima- und Energiefonds, Registrierung vor der Rechnung"),

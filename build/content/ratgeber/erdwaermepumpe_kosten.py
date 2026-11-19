@@ -5,7 +5,8 @@ Migriert vom WordPress-Artikel ebz-photovoltaik.at/erdwaermepumpe-kosten/
 Abgrenzung: nur Sole/Erdwärme (Bohrung vs. Kollektor, Bohrkosten je Meter, Genehmigung, Betrieb,
 Amortisation gegenüber Luft). Gesamtvergleich: /kosten-einer-waermepumpe/, Luft: /luftwaermepumpe-preise/.
 Bereinigt: Quelle verlinkte /luftwaermepumpe-kosten/ (existiert nicht, Slug ist /luftwaermepumpe-preise/).
-Förderung nach build/seo/_fakten_2026-10.md (Bund nicht verfügbar, Kärnten 3.000 €, Steiermark keine Anträge).
+Förderung nach build/seo/_fakten_2026-10.md (Kärnten 3.000 €, Steiermark keine Anträge). Update 19.11.2026:
+Bund Kesseltausch seit 2.11.2026 neu aufgelegt (5.000 € Pauschale plus 5.000 € Bohrbonus).
 Bohrmeter-Tabelle und Amortisationsjahre sind aus den Quellwerten gerechnet (50 bis 100 €/m, JAZ 3,5/4,5, 28 ct).
 """
 
@@ -37,7 +38,7 @@ ARTICLE = {
         "Plus: <b>passive Kühlung</b>",
     ],
     "date_published": "2026-09-20",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit großem Rasengrundstück in den Bergen, Platz für Erdsonde oder Flächenkollektor",
 
@@ -52,8 +53,10 @@ ARTICLE = {
         "Strom erst nach Jahrzehnten.",
         "Tiefenbohrungen fallen unter das Wasserrecht: Anzeige mit drei Monaten Entscheidungsfrist oder "
         "Bewilligung durch die Bezirkshauptmannschaft.",
-        "Förderung Stand Oktober 2026: Die Bundesförderung 2026 samt 5.000 Euro Bohrbonus ist ausgeschöpft. "
-        "Kärnten zahlt 3.000 Euro Pauschale, die Steiermark nimmt für neue Wärmepumpen derzeit keine Anträge an.",
+        "Förderung Stand November 2026: Der Bund hat den Kesseltausch am 2. November 2026 neu aufgelegt. Für "
+        "die Erdwärmepumpe gibt es 5.000 Euro Pauschale plus 5.000 Euro Bohrbonus, Registrierung bis 31. "
+        "Dezember 2026 oder bis das Budget aufgebraucht ist. Kärnten zahlt zusätzlich 3.000 Euro Pauschale, die "
+        "Steiermark nimmt für neue Wärmepumpen derzeit keine Anträge an.",
     ],
     "kpis": [
         ("22.000 bis 40.000 €", "gesamt im Einfamilienhaus*"),
@@ -165,33 +168,44 @@ allem in diesen Fällen:</p>
   <li><b>Passive Kühlung</b> im Sommer ist gewünscht: Das kühle Erdreich nimmt Wärme aus Fußboden- oder
   Deckenheizung auf, ohne dass der Verdichter läuft.</li>
   <li><b>Schall oder Platz</b> sprechen gegen ein Außengerät, etwa bei dichter Bebauung.</li>
-  <li><b>Ein Bohrbonus</b> in der Förderung verringert die Mehrkosten deutlich; 2026 waren es 5.000 Euro
-  vom Bund.</li>
+  <li><b>Der Bohrbonus</b> verringert die Mehrkosten deutlich: Im neu aufgelegten Kesseltausch des Bundes
+  gibt es für Tiefenbohrung oder Brunnen 5.000 Euro zusätzlich zur Wärmepumpen-Pauschale. Damit sinken die
+  Mehrkosten gegenüber der Luftwärmepumpe im Beispiel von rund 12.000 auf rund 7.000 Euro*.</li>
 </ul>
 <p>Für die meisten Einfamilienhäuser ist die Luftwärmepumpe die wirtschaftlichere Wahl. Wir rechnen beide
 Varianten für Ihr Haus durch und empfehlen ehrlich, was sich lohnt.</p>
 <p><small>*Richtwerte aus der Mitte der Preisspannen, Strompreis 28 Cent je Kilowattstunde, ohne Förderung
-und ohne Strompreissteigerung. Mit eigener PV-Anlage sinken die Stromkosten beider Varianten.</small></p>
+und ohne Strompreissteigerung (beim Bohrbonus: beide Varianten mit derselben Bundespauschale von 5.000 Euro,
+Erdwärme zusätzlich 5.000 Euro Bohrbonus). Mit eigener PV-Anlage sinken die Stromkosten beider
+Varianten.</small></p>
 """),
-        ("Förderung für Erdwärmepumpen: Stand Oktober 2026", "foerderung", f"""
+        ("Förderung für Erdwärmepumpen: Stand November 2026", "foerderung", f"""
 <ul>
-  <li><b>Bund:</b> In der Sanierungsoffensive 2026 gab es bis zu 7.500 Euro für die Wärmepumpe und
-  zusätzlich 5.000 Euro Bohrbonus für Erdsonden. Die Mittel sind laut Ministerium seit Juli 2026 vergeben,
-  neue Registrierungen sind derzeit nicht möglich. Bereits registrierte Anträge werden normal abgewickelt.
-  Details im Ratgeber {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
-  <li><b>Ausblick:</b> Für 2027 hat das Ministerium einen Förderrahmen von 360 Millionen Euro vorgesehen,
-  davon 179 Millionen Euro für den Kesseltausch (BMLUK, Juli 2026). Ob es wieder einen Bohrbonus gibt und
-  ab wann registriert werden kann, prüfen wir vor jedem Angebot.</li>
+  <li><b>Bund:</b> Der Kesseltausch (Sanierungsoffensive) ist seit 2. November 2026 neu aufgelegt. Ersetzt
+  die Erdwärmepumpe eine fossile Heizung, gibt es 5.000 Euro Pauschale und zusätzlich <b>5.000 Euro
+  Bohrbonus</b> für die Tiefenbohrung (bei der Wasser-Wasser-Wärmepumpe für den Brunnen), zusammen also bis
+  zu 10.000 Euro. Eine thermische Solaranlage ab 6 m² bringt weitere 2.500 Euro, Photovoltaik zählt dafür
+  nicht. Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist, gefördert werden
+  Leistungen ab 7. Oktober 2026. Vor der Registrierung ist eine Energieberatung des Landes nötig, danach
+  haben Sie 9 Monate für Umsetzung und Antrag. Weitere Bedingungen: Vorlauftemperatur höchstens 55 Grad,
+  Vorrang für Fernwärme, wo ein Anschluss möglich ist, keine Einkommensprüfung. In der ersten Aktion 2026
+  waren es bis zu 7.500 Euro für die Wärmepumpe. Details im Ratgeber
+  {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
+  <li><b>Ausblick:</b> Für 2027 sind laut BMLUK 179 Millionen Euro für den Kesseltausch vorgesehen, die
+  Förderhöhe bleibt laut BMLUK 2027 gleich.</li>
   <li><b>Kärnten:</b> 3.000 Euro Pauschale für die Wärmepumpe, plus 1.500 Euro bei Errichtung einer
-  Solaranlage und 200 Euro für den hydraulischen Abgleich. Ob das Budget reicht, klären wir vor dem
-  Angebot.</li>
+  Solaranlage und 200 Euro für den hydraulischen Abgleich. Mit dem Bund kombinierbar, zusammen bis zu
+  13.000 Euro für Erdwärmepumpe und Bohrung*. Ob das Budget reicht, klären wir vor dem Angebot.</li>
   <li><b>Steiermark:</b> Für neue Wärmepumpen nimmt das Land derzeit keine Förderanträge an. Gefördert
   wird nur der Tausch mindestens 15 Jahre alter Wärmepumpen oder Biomassekessel, mit höchstens 1.500 Euro.</li>
 </ul>
 <p>Alle Länder im Vergleich: {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}.
-Weil Genehmigung und Bohrplanung ohnehin einige Monate brauchen, ist jetzt ein guter Zeitpunkt, ein
-Erdwärme-Projekt vorzubereiten. Aufträge, die eine spätere Förderung gefährden könnten, sollten erst
-vergeben werden, wenn die Förderbedingungen feststehen.</p>
+Weil Genehmigung und Bohrplanung einige Monate brauchen, sollten Sie Energieberatung und Registrierung
+beim Bund bald erledigen: Die Registrierung reserviert das Budget für 9 Monate, in dieser Zeit lassen sich
+Anzeigeverfahren, Bohrung und Einbau in der Regel unterbringen.</p>
+<p><small>*Beispiel Kärnten, Erdwärmepumpe mit Tiefenbohrung ersetzt Ölkessel: 5.000 Euro Pauschale plus
+5.000 Euro Bohrbonus vom Bund, 3.000 Euro vom Land. Alle Förderungen zusammen höchstens die
+Investitionskosten, maßgeblich sind die Bedingungen der Förderstellen.</small></p>
 {A.cta("Luft oder Erde? Wir rechnen beides für Sie durch",
        "EBZ Energie prüft Heizlast, Grundstück und Förderung und empfiehlt die Lösung, die sich für Ihr Haus "
        "wirklich rechnet.",
@@ -205,8 +219,8 @@ vergeben werden, wenn die Förderbedingungen feststehen.</p>
      "Das Bohrunternehmen prüft den Untergrund, die Anzeige oder Bewilligung wird bei der Behörde "
      "eingereicht. Im Anzeigeverfahren gilt eine Frist von drei Monaten."),
     ("Förderung",
-     "Wir prüfen Landes- und Bundesförderung und registrieren, sobald das möglich ist und bevor Kosten "
-     "entstehen."),
+     "Wir prüfen Landes- und Bundesförderung und registrieren rechtzeitig, bevor Kosten entstehen und "
+     "bevor das Budget aufgebraucht ist."),
     ("Bohrung",
      "Die Sonden werden gebohrt und verpresst, meist an ein bis drei Tagen."),
     ("Einbau und Inbetriebnahme",
@@ -265,10 +279,11 @@ sinken die Betriebskosten weiter, siehe {a('/photovoltaik-fuer-waermepumpe/', 'P
          "hoher Heizlast, für passive Kühlung, wenn ein Außengerät stören würde oder wenn eine Bohrförderung "
          "verfügbar ist."),
         ("Gibt es eine Förderung für Erdwärmepumpen?",
-         "In der Sanierungsoffensive 2026 gab es zusätzlich zur Wärmepumpenförderung von bis zu 7.500 Euro einen "
-         "Bohrbonus von 5.000 Euro. Diese Mittel sind vergeben, neue Registrierungen sind derzeit nicht "
-         "möglich. Kärnten zahlt 3.000 Euro Pauschale für die Wärmepumpe, die Steiermark nimmt für neue "
-         "Wärmepumpen derzeit keine Anträge an."),
+         "Ja. Im Kesseltausch des Bundes, neu aufgelegt am 2. November 2026, gibt es 5.000 Euro Pauschale für "
+         "die Wärmepumpe und zusätzlich 5.000 Euro Bohrbonus für Tiefenbohrung oder Brunnen. Registrierung bis "
+         "31. Dezember 2026 oder bis das Budget aufgebraucht ist, vorher ist eine Energieberatung des Landes "
+         "nötig. Kärnten zahlt zusätzlich 3.000 Euro Pauschale, die Steiermark nimmt für neue Wärmepumpen "
+         "derzeit keine Anträge an."),
         ("Kann eine Erdwärmepumpe im Sommer kühlen?",
          "Ja. Mit einer Erdsonde ist passive Kühlung möglich: Das kühle Erdreich nimmt Wärme aus der Fußboden- "
          "oder Deckenheizung auf, ohne dass der Verdichter läuft. Der Stromverbrauch dafür ist sehr gering, "
@@ -281,10 +296,12 @@ sinken die Betriebskosten weiter, siehe {a('/photovoltaik-fuer-waermepumpe/', 'P
                     "Förderstand werden anhand realer Projekte und der offiziellen Förderstellen aktualisiert. "
                     "Keine Rechts- oder Steuerberatung, maßgeblich sind die offiziellen Förderbedingungen."),
     "sources": [
-        ("BMLUK: Sanierungsoffensive 2026, alle Fördermittel abgeholt (13. Juli 2026)",
-         "https://www.bmluk.gv.at/service/presse/klima-umwelt/2026/sanierungsoffensive-2026-alle-foerdermittel-abgeholt.html"),
-        ("Sanierungsoffensive: Budget-Information",
-         "https://www.sanierungsoffensive.gv.at/budget-information"),
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
+        ("BMLUK: Sanierung und Kesseltausch 2027",
+         "https://www.bmluk.gv.at/themen/klima-und-umwelt/klima/klima-initiativen-und-foerderungen/ufg/sanierung-kesselaustausch-2027.html"),
         ("Land Steiermark: Förderung für Heizungen (Wohnbau)",
          "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
         ("pieno.at: Erdwärmepumpe in Österreich, Tiefenbohrung und Bewilligung",

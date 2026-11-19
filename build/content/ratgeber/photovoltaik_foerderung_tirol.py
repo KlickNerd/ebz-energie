@@ -47,7 +47,7 @@ ARTICLE = {
         "Letzter Bundescall: <b>bis 22. Oktober 2026</b>, beendet",
     ],
     "date_published": "2026-05-05",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_detail",
     "hero_alt": "Montage von Photovoltaikmodulen auf einem sanierten Wohnhausdach",
 
@@ -233,9 +233,10 @@ dem Sanierungsvorhaben ab.</small></p>
         ("Photovoltaik und Wärmepumpe im Sanierungspaket", "waermepumpe", f"""
 <p>Wer die PV-Anlage mit einer {a('waermepumpe', 'Wärmepumpe')} kombiniert, nutzt den Sonnenstrom direkt für
 Heizung und Warmwasser und kann die Energiekosten um bis zu 85 % senken. Förderseitig laufen beide Systeme
-getrennt: Für die PV-Anlage gelten die hier beschriebenen Schienen, für die Wärmepumpe galten 2026 die
-Sanierungsoffensive des Bundes und {a('/sauber-heizen-fuer-alle-2026/', '„Sauber Heizen für Alle“')}, beide seit
-Herbst 2026 ausgeschöpft bzw. ohne neue Registrierungen. In Tirol kann zusätzlich die
+getrennt: Für die PV-Anlage gelten die hier beschriebenen Schienen, für die Wärmepumpe der Kesseltausch des
+Bundes (Sanierungsoffensive, seit 2. November 2026 neu aufgelegt, 5.000 Euro Pauschale, Registrierung bis
+31. Dezember 2026 oder bis das Budget aufgebraucht ist);
+{a('/sauber-heizen-fuer-alle-2026/', '„Sauber Heizen für Alle“')} bleibt geschlossen. In Tirol kann zusätzlich die
 Wohnhaussanierungsförderung greifen, wenn beide Maßnahmen Teil eines Sanierungsgesamtkonzepts sind.</p>
 """),
         ("Fazit: Halbiert, aber in der Kombination weiterhin attraktiv", "fazit", f"""
@@ -329,6 +330,8 @@ Technikkriterien sind noch offen.</p>
          "https://www.tirol.gv.at/bauen-wohnen/wohnbaufoerderung/sanierung/photovoltaik-anlagen/"),
         ("Land Tirol: Ansuchen zur Förderung von netzdienlichen Stromspeichersystemen",
          "https://www.tirol.gv.at/buergerservice/e-government/formulare/ansuchen-zur-foerderung-von-netzdienlichen-stromspeichersystemen/"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
         ("Land Tirol: Energieförderungen",
          "https://www.tirol.gv.at/umwelt/wasser-forst-und-energierecht/energiefoerderungen/"),
     ],

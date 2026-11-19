@@ -56,7 +56,7 @@ ARTICLE = {
         "Letzter Bundescall: <b>bis 22. Oktober 2026</b>, beendet",
     ],
     "date_published": "2026-04-15",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_gewerbe",
     "hero_alt": "Photovoltaikanlage auf einem Gewerbedach mit Parkplatzfläche als Beispiel für PV auf versiegelten Flächen",
 
@@ -234,9 +234,10 @@ Speicherkapazität, Komponenten und der Wohnsitzgemeinde ab.</small></p>
         ("Photovoltaik und Wärmepumpe: die zweite Förderschiene", "waermepumpe", f"""
 <p>Wer die PV-Anlage mit einer {a('waermepumpe', 'Wärmepumpe')} kombiniert, deckt Heizung und Warmwasser mit
 eigenem Sonnenstrom und kann die Energiekosten um bis zu 85 % senken. Förderseitig laufen beide Systeme getrennt:
-Für die PV-Anlage griff 2026 die EAG, für die Wärmepumpe die Sanierungsoffensive des Bundes; beide sind seit
-Herbst 2026 beendet bzw. ausgeschöpft. Ob 2027 neue Bundesprogramme kommen, ist offen (für PV und Speicher ist
-laut BMWET eine Systemförderung geplant).</p>
+Für die PV-Anlage griff 2026 die EAG (Call 2026 beendet, für 2027 ist laut BMWET eine Systemförderung für
+Speicher geplant). Für die Wärmepumpe gilt der Kesseltausch des Bundes (Sanierungsoffensive), seit
+2. November 2026 neu aufgelegt: 5.000 Euro Pauschale, Registrierung bis 31. Dezember 2026 oder bis das Budget
+aufgebraucht ist.</p>
 """),
         ("Fazit: EAG-Call beendet, VKW und Gemeinde bleiben", "fazit", f"""
 <p>Die Photovoltaik-Förderung in Vorarlberg 2026 ist anders strukturiert als in den meisten Bundesländern. Im
@@ -324,6 +325,8 @@ Technikkriterien sind noch offen.</p>
         ("Land Vorarlberg: Förderungen", "https://www.vorarlberg.at/"),
         ("VKW: Speicherförderung", "https://www.vkw.at/"),
         ("Energieinstitut Vorarlberg", "https://www.energieinstitut.at/"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
     ],
     "related": [
         ("/photovoltaik-landesfoerderungen/", "Vergleich: PV-Landesförderungen aller 9 Bundesländer"),

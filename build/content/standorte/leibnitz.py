@@ -32,7 +32,8 @@ Alle lokalen Angaben stammen aus Quellen, die am 10.10.2026 selbst abgerufen wur
   Sued 30 Grad 1.207 kWh/kWp (Dezember 48,5, Juli 142,8), Ost bzw. West 15 Grad 994 bzw. 997 kWh/kWp.
 
 Foerderung Waermepumpe: laut build/seo/_fakten_2026-10.md (wohnbau.steiermark.at, 10.10.2026) nimmt das Land
-Steiermark derzeit keine Antraege fuer neue Waermepumpen an, Bund ausgeschoepft. Kein Prozentsatz auf der Seite.
+Steiermark derzeit keine Antraege fuer neue Waermepumpen an. Bund: Kesseltausch seit 2.11.2026 neu aufgelegt,
+5.000 EUR Pauschale (Faktenliste, Stand 19.11.2026). Kein Prozentsatz auf der Seite.
 
 Bewusst weggelassen (nicht selbst belegt): Betraege der Stadtfoerderung, Zahl der Gemeinden im Bezirk,
 Klima- und Energie-Modellregion, Ortsbildschutz, Sonnenstunden, Netzgebietsgrenzen innerhalb der Stadt.
@@ -176,8 +177,9 @@ ORT = {
              "Gasanschluss beim Heizungstausch gar nicht zur Wahl. Eine Luft-Wasser-Wärmepumpe kostet im "
              "Einfamilienhaus 12.000 bis 22.000 Euro inklusive Installation, im Altbau mit Anpassungen 15.000 bis "
              "28.000 Euro.* Bis 55 Grad Vorlauftemperatur arbeitet sie effizient, die Montage dauert 2 bis 4 Tage. "
-             "Gerechnet wird derzeit ohne Zuschuss: Land Steiermark und Bund nehmen für neue Wärmepumpen keine "
-             "Förderanträge an (Stand Oktober 2026)."),
+             "Das Land Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an; der Bund zahlt seit der "
+             "Neuauflage des Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale, wenn die Wärmepumpe eine "
+             "Öl- oder Gasheizung ersetzt (Stand November 2026)."),
             ("Auch die Wärmepumpe ist in der Steiermark seit der Baugesetz-Novelle 2026 meldepflichtig. Der "
              "Mitteilung an die Gemeinde liegen das technische Datenblatt und die Bestätigung eines befugten "
              "Sachverständigen bei, dass der zulässige Planungsbasispegel an der relevanten Grundgrenze eingehalten "
@@ -272,7 +274,8 @@ ORT = {
          "von Balkonkraftwerken, ohne Rechtsanspruch und nach Maßgabe des Budgets. Eine eigene Stadtförderung für "
          "Photovoltaik-Dachanlagen, Speicher oder Wärmepumpe haben wir in den Unterlagen der Stadt nicht gefunden "
          "(Stand Oktober 2026). Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen. Für neue Wärmepumpen "
-         "nehmen Land Steiermark und Bund derzeit keine Förderanträge an. Wir fragen vor dem Angebot bei Ihrer "
+         "nimmt das Land Steiermark derzeit keine Förderanträge an, der Bund zahlt im Kesseltausch 5.000 Euro "
+         "Pauschale. Wir fragen vor dem Angebot bei Ihrer "
          "Gemeinde nach."),
         ("Kommt EBZ Energie aus Villach wirklich bis nach Leibnitz?",
          "Ja. Unser Firmensitz ist die Triglavstraße 15 in Villach, montiert wird in Kärnten und der Steiermark. Einen "

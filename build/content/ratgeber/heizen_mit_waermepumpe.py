@@ -3,6 +3,8 @@
 Migriert von ebz-photovoltaik.at/heizen-mit-waermepumpe/ (Stand März 2026).
 Bereinigt: Montage-Formulierung auf "zertifizierte Fachkräfte" umgestellt; Kostenspannen an den Kostenratgeber
 angeglichen (Quelle nannte für Sole- und Wasser-Wasser abweichende Werte).
+Update 19.11.2026: Bund Kesseltausch seit 2.11.2026 neu aufgelegt (Abschnitt "VERBINDLICH AB 19.11.2026"
+in build/seo/_fakten_2026-10.md).
 """
 
 import os
@@ -33,7 +35,7 @@ ARTICLE = {
         "Montage: <b>2 bis 4 Tage</b>",
     ],
     "date_published": "2026-02-15",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-11-19",
     "hero_img": "waermepumpe",
     "hero_alt": "Wärmepumpe im Garten eines Einfamilienhauses in Kärnten",
 
@@ -177,18 +179,24 @@ grobe Orientierung für ein typisches Einfamilienhaus, jeweils gesamt und vor F�
 {a('/kosten-einer-waermepumpe/', 'Kosten einer Wärmepumpe 2026')}.</p>
 <h3>Förderung: Bund und Land gleichzeitig</h3>
 <ul>
-  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> 2026 gab es für den Tausch einer fossilen Heizung bis zu
-  7.500 Euro Investitionszuschuss. Stand Oktober 2026 ist das Programm ausgeschöpft, neue Registrierungen
-  sind nicht möglich; ob 2027 ein Folgeprogramm kommt, ist offen. Details:
-  {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
-  <li><b>Landesförderung Kärnten und Steiermark:</b> Kärnten zahlt 2026 eine Pauschale von 3.000 Euro (ob
-  das Budget reicht, klären wir vor dem Angebot). Die Steiermark nimmt für neue Wärmepumpen derzeit keine
+  <li><b>Bundesförderung Kesseltausch („Raus aus Öl und Gas“):</b> Seit 2. November 2026 neu aufgelegt.
+  Ersetzt eine Wärmepumpe eine fossile Heizung, gibt es 5.000 Euro Pauschale, plus 5.000 Euro Bohrbonus bei
+  Sole- oder Wasser-Wasser-Wärmepumpen und plus 2.500 Euro für eine thermische Solaranlage ab 6 m²
+  (Photovoltaik zählt nicht). Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist,
+  vorher Energieberatung des Landes, danach 9 Monate für Umsetzung und Antrag. Vorlauftemperatur höchstens
+  55 Grad, Fernwärme hat Vorrang, keine Einkommensprüfung. In der ersten Aktion 2026 waren es bis zu
+  7.500 Euro. Details: {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
+  <li><b>Landesförderung Kärnten und Steiermark:</b> Kärnten zahlt 2026 eine Pauschale von 3.000 Euro,
+  kombinierbar mit dem Bund, zusammen also bis zu 8.000 Euro für die Luft-Wasser-Wärmepumpe* (ob das Budget
+  reicht, klären wir vor dem Angebot). Die Steiermark nimmt für neue Wärmepumpen derzeit keine
   Förderanträge an. Überblick: {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen für die Wärmepumpe')}.</li>
 </ul>
 <p>Als zertifizierter Fachbetrieb übernimmt EBZ Energie die gesamte Förderabwicklung von der
 Antragstellung bis zur Auszahlung. Alle Programme im Überblick:
 {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich')}.</p>
-<p><small>*Richtwerte 2026, vor Abzug von Förderungen.</small></p>
+<p><small>*Richtwerte 2026, vor Abzug von Förderungen. Förderbeispiel Kärnten: Wärmepumpe ersetzt
+Ölkessel, 5.000 Euro Bund plus 3.000 Euro Land; alle Förderungen zusammen höchstens die
+Investitionskosten.</small></p>
 """),
         ("Wärmepumpe und Photovoltaik: Heizen und Kühlen mit eigenem Strom", "photovoltaik", f"""
 <p>Die Wärmepumpe ist der größte Stromverbraucher im Haushalt, und genau diesen Strom kann eine
@@ -240,7 +248,8 @@ hinaus:</p>
      "Sie erhalten ein detailliertes Angebot mit einer klaren Aufstellung aller Kosten, ohne versteckte "
      "Posten."),
     ("Förderabwicklung",
-     "Wir übernehmen alle Förderanträge, die für Ihr Projekt offen sind, etwa die Landesförderung Kärnten, und "
+     "Wir übernehmen alle Förderanträge, die für Ihr Projekt offen sind, etwa den Kesseltausch des Bundes "
+     "und die Landesförderung Kärnten, und "
      "auf Wunsch auch die Förderung für eine Photovoltaikanlage."),
     ("Montage durch zertifizierte Fachkräfte",
      "Die eigentliche Montage dauert in der Regel 2 bis 4 Tage und erfolgt durch unser "
@@ -312,6 +321,10 @@ Kärnten senkt die Landespauschale von 3.000 Euro die Investition zusätzlich.</
                     "Projektpraxis. Keine Rechts- oder Steuerberatung, maßgeblich sind die offiziellen "
                     "Förderbedingungen."),
     "sources": [
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
         ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
          "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
     ],

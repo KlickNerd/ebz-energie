@@ -3,12 +3,14 @@
 Quellen: Live-LPs /leistungen/energiegemeinschaft/ und /energiegemeinschaften/ (freigegebene
 Inhalte), der Pillar-Ratgeber /energiegemeinschaft/ (ElWG-Aenderungen ab 1.10.2026), die Ratgeber
 /energiegemeinschaft-beitreten/ (Mehrfachteilnahme, Teilnahmefaktor) und /energiegemeinschaft-finden/
-(Nahbereichsabfrage), build/seo/_fakten_2026-10.md (OeMAG September 2026: 10,168 ct) und das
+(Nahbereichsabfrage), build/seo/_fakten_2026-10.md (OeMAG Oktober 2026: 14,874 ct, Verlauf Juli 6,146 ct) und das
 SEO/GEO-Briefing build/seo/eg_privat.{json,md} (Primaer "Energiegemeinschaft beitreten").
 
 Rechenbeispiel mit Beispielwerten 10 ct / 14 ct / 4 EUR je Monat (alle mit Sternchen). Ehrlich
 dargestellt: Bei 10 ct* EG-Preis liegt der Erzeugererloes derzeit unter dem OeMAG-Marktpreis von
-10,168 ct (September 2026); der Vorteil kommt aus Netzentgelt und Bezug, der EG-Preis ist planbar.
+14,874 ct (Oktober 2026). Das Rechenbeispiel zeigt die Einspeise-Differenz deshalb als Spanne Juli- bis
+Oktober-Wert (Monatswert aufs Jahr hochgerechnet, gekennzeichnet); der sichere Vorteil kommt aus Netzentgelt
+und Bezug, der EG-Preis ist planbar.
 
 Pflicht (README): Netzentgelt-Rabatt 57 % lokal / 28 % regional NUR im Nahbereich,
 oesterreichweit = Buergerenergiegemeinschaft ohne Rabatt. energyfamily nur als Text-Badge.
@@ -23,6 +25,7 @@ TITLE = "Energiegemeinschaft beitreten: Strom teilen | EBZ Energie"
 DESC = ("Energiegemeinschaft beitreten: bis zu 57 % weniger Netzentgelt im Nahbereich, fixer EG-Preis statt "
         "schwankendem OeMAG-Marktpreis. Beitritt in 4 Schritten.")
 
+OEMAG_OKT = "14,874"   # aktueller Wert, Stand November 2026
 OEMAG_SEPT = "10,168"
 OEMAG_JULI = "6,146"
 
@@ -37,10 +40,11 @@ FAQ = [
      "im Nahbereich das um 57 Prozent (lokal) oder 28 Prozent (regional) reduzierte Netznutzungsentgelt, keine "
      "Elektrizitätsabgabe und kein Erneuerbaren-Förderbeitrag. Gegenüber einem Haushaltstarif mit rund 17 ct* "
      "Energiepreis plus vollem Netzentgelt sparen Abnehmer auf die zugeordnete Menge rund 10 ct je kWh.*"),
-    ("Lohnt sich das Einspeisen in die Gemeinschaft noch, wenn der OeMAG-Marktpreis bei 10,168 ct liegt?",
-     "Ehrliche Antwort: Bei einem EG-Preis von 10 ct* nicht über den Preis, denn der liegt knapp unter dem "
-     "OeMAG-Marktpreis von 10,168 ct (September 2026). Im Juli waren es 6,146 ct: Der Marktpreis schwankt monatlich, "
-     "der EG-Preis ist fix vereinbart und planbar. Dazu kommt Ihr eigener Vorteil als Abnehmer, und Ihr Strom bleibt im Ort."),
+    ("Lohnt sich das Einspeisen in die Gemeinschaft noch, wenn der OeMAG-Marktpreis bei 14,874 ct liegt?",
+     "Ehrliche Antwort: Bei einem EG-Preis von 10 ct* nicht über den Preis, denn der liegt unter dem "
+     "OeMAG-Marktpreis von 14,874 ct (Oktober 2026). Im Juli waren es 6,146 ct, im September 10,168 ct: Der Marktpreis "
+     "schwankt monatlich stark, der EG-Preis ist fix vereinbart und planbar. Dazu kommt Ihr eigener Vorteil als Abnehmer "
+     "(im Nahbereich mit Netzentgelt-Rabatt), und Ihr Strom bleibt im Ort."),
     ("Kann ich mehreren Energiegemeinschaften beitreten (Mehrfachteilnahme, Teilnahmefaktor)?",
      "Ja. Die Mehrfachteilnahme erlaubt bis zu fünf Gemeinschaften je Zählpunkt, ein Teilnahmefaktor legt fest, "
      "welcher Anteil in welche Gemeinschaft geht. Für Privathaushalte reicht meist eine, sinnvoll wird es etwa bei "
@@ -74,13 +78,14 @@ FAQ = [
 
 
 def _rechenbeispiel():
-    """Statischer Ersatz fuer den eingebetteten Rechner: zwei Beispielhaushalte, lokale EEG, OeMAG September 2026."""
+    """Statischer Ersatz fuer den eingebetteten Rechner: zwei Beispielhaushalte, lokale EEG, OeMAG-Spanne Juli bis Oktober 2026."""
     rows = [
         ("Ausgangslage",
          "7.000 kWh Überschuss, 60 % zugeordnet (4.200 kWh), dazu 1.000 kWh EG-Bezug",
          "1.000 kWh EG-Strom zugeordnet"),
-        (f"Einspeisung: EG-Preis statt OeMAG {OEMAG_SEPT} ct (September 2026)",
-         "bei 10 ct*: <b>minus 7 €</b> (kein Mehrerlös), bei 12 ct*: <b>plus 77 €</b>",
+        (f"Einspeisung: EG-Preis statt OeMAG-Marktpreis ({OEMAG_JULI} ct im Juli bis {OEMAG_OKT} ct im Oktober 2026)",
+         "bei 10 ct*: <b>plus 162 €</b> (Juli-Wert) bis <b>minus 205 €</b> (Oktober-Wert), "
+         "bei 12 ct*: <b>plus 246 €</b> bis <b>minus 121 €</b>",
          "entfällt"),
         ("Netznutzungsentgelt minus 57 % (lokal) auf 1.000 kWh Bezug",
          "<b>rund 50 €</b>",
@@ -95,7 +100,7 @@ def _rechenbeispiel():
          "minus 48 €",
          "minus 48 €"),
         ("Netto im Jahr",
-         "<b>rund 50 €</b> bei 10 ct*, <b>rund 135 €</b> bei 12 ct*",
+         "<b>rund 57 €</b> sicher aus dem Bezug, dazu die Einspeise-Differenz je nach Marktpreis (siehe oben)*",
          "<b>rund 57 €</b>, bei 2.000 kWh Zuordnung rund 160 €"),
     ]
     trs = "".join(
@@ -118,7 +123,9 @@ def _rechenbeispiel():
       </div>
       <p class="form-note center eg-reveal" style="margin-top:18px">*Beispielkonditionen: Einspeisung 10 bzw. 12 ct,
       Bezug 14 ct, Beitrag 4 € je Monat, Lieferantenpreis 17 ct, Netznutzung 8 ct, Netzverlust 0,7 ct (Richtwerte 2026).
-      OeMAG-Marktpreis {OEMAG_JULI} ct im Juli 2026: Da hätte dieselbe Anlage bei 10 ct rund 160 € Mehrerlös erzielt.
+      OeMAG-Marktpreis 2026: {OEMAG_JULI} ct im Juli, {OEMAG_SEPT} ct im September, {OEMAG_OKT} ct im Oktober. Die Spanne
+      rechnet den Juli- und den Oktober-Wert aufs ganze Jahr hoch und zeigt nur die Bandbreite; die OeMAG vergütet
+      jeden Monat zum jeweiligen Marktpreis.
       Die Konditionen von EBZ nennen wir im Erstgespräch.</p>
       <div class="center eg-reveal" style="margin-top:26px">
         {a('eg_rechner', 'Mit eigenen Zahlen rechnen: Energiegemeinschaft-Rechner', cls='btn btn--primary btn--lg')}
@@ -135,12 +142,12 @@ def body():
         C.hero(
             eyebrow="Energiegemeinschaft für Privathaushalte · Kärnten, Steiermark, österreichweit",
             h1="Energiegemeinschaft beitreten: Solarstrom mit Nachbarn teilen und bis zu 57 % Netzentgelt sparen",
-            lead=(f"Der OeMAG-Marktpreis schwankt monatlich: {OEMAG_JULI} Cent im Juli, {OEMAG_SEPT} Cent im "
-                  "September 2026. In einer Energiegemeinschaft verkaufen Sie Ihren Überschuss zu einem fix vereinbarten "
+            lead=(f"Der OeMAG-Marktpreis schwankt monatlich: {OEMAG_JULI} Cent im Juli, {OEMAG_OKT} Cent im "
+                  "Oktober 2026. In einer Energiegemeinschaft verkaufen Sie Ihren Überschuss zu einem fix vereinbarten "
                   "Preis an Haushalte in der Nähe, und wer bezieht, zahlt im Nahbereich bis zu 57 % weniger Netzentgelt. "
                   "EBZ prüft Ihren Nahbereich und erledigt die Schritte beim Netzbetreiber."),
             badges=[("bis zu 57 %", "weniger Netzentgelt lokal"),
-                    ("Fixer EG-Preis*", f"statt {OEMAG_SEPT} ct OeMAG (Sept. 2026)"),
+                    ("Fixer EG-Preis*", "statt schwankendem OeMAG-Marktpreis"),
                     ("Kein Wechsel", "Lieferant bleibt")],
             img=IMG["eg_drohne"],
             img_alt="Ortschaft mit Photovoltaik auf mehreren Dächern, typisches Netzgebiet einer lokalen Energiegemeinschaft",
@@ -151,7 +158,7 @@ def body():
         ),
         C.kpis([
             ("57 %", "weniger Netzentgelt in der lokalen EEG"),
-            (f"{OEMAG_SEPT} ct", f"OeMAG-Marktpreis Sept. 2026 (Juli: {OEMAG_JULI} ct)"),
+            (f"{OEMAG_OKT} ct", f"OeMAG-Marktpreis Okt. 2026 (Juli: {OEMAG_JULI} ct)"),
             ("4 bis 8 Wochen", "vom Erstgespräch bis zum Start"),
             ("rund 330", "Gemeinschaften auf der Partnerplattform energyfamily"),
         ]),
@@ -178,7 +185,7 @@ def body():
                 "dark": True,
                 "items": [
                     "EG-Preis fix vereinbart, typisch 8 bis 12 ct*, unabhängig vom monatlich schwankenden OeMAG-Marktpreis",
-                    f"Ehrlich: Bei {OEMAG_SEPT} ct Marktpreis (September 2026) bringt 10 ct* keinen Mehrerlös, im Juli ({OEMAG_JULI} ct) waren es plus 4 ct je kWh",
+                    f"Ehrlich: Beim Oktober-Marktpreis von {OEMAG_OKT} ct bringen 10 ct* rund 4,9 ct je kWh weniger als die OeMAG, im Juli ({OEMAG_JULI} ct) waren es rund 4 ct je kWh mehr",
                     "OeMAG-Vertrag bleibt als Auffangnetz bestehen, nicht zugeordneter Strom geht wie bisher dorthin",
                     "Abends und im Winter sind Sie selbst günstiger Abnehmer mit Netzentgelt-Rabatt",
                     "Speicher und Energiemanagement auf die Gemeinschaft abgestimmt",
@@ -209,7 +216,7 @@ def body():
             aside=("Ihre Vorteile auf einen Blick", [
                 ("◇", "Bis zu 57 % weniger Netzentgelt", "Netznutzungs- und Netzverlustentgelt sinken um 57 % (lokal) oder 28 % (regional)."),
                 ("✓", "Abgaben entfallen", "Elektrizitätsabgabe (1,5 ct je kWh) und Erneuerbaren-Förderbeitrag fallen in der EEG weg."),
-                ("€", "Planbarer Erzeugerpreis", "EG-Preis fix statt Marktpreis, der zwischen rund 6 und 10 ct schwankte (Juli bis September 2026)."),
+                ("€", "Planbarer Erzeugerpreis", f"EG-Preis fix statt Marktpreis, der 2026 zwischen {OEMAG_JULI} ct (Juli) und {OEMAG_OKT} ct (Oktober) schwankte."),
                 ("⌂", "Kein Wechsel, kein Risiko", "Lieferant und OeMAG-Vertrag bleiben, Kündigungsfrist 1 bis 3 Monate, keine Einrichtungsgebühr."),
             ]),
         ),
@@ -316,11 +323,11 @@ def body():
                 ("▮", "Anlage auf die EG abgestimmt", "Auslegung, Speicher und Energiemanagement sorgen dafür, dass Ihr Überschuss dann anfällt, wenn die Gemeinschaft ihn braucht."),
                 ("◎", "Netzbetreiber-Prozesse inklusive", "Nahbereichsabfrage, Zählpunktfreigabe und Anmeldung über das EDA-Portal erledigen wir mit Ihnen."),
                 ("✓", "Abrechnung über energyfamily", "Monatliche Abrechnung, App, DSGVO-konform, Datenverarbeitung in Österreich."),
-                ("€", "Ehrliche Zahlen", "Wir rechnen mit dem aktuellen OeMAG-Marktpreis, nicht mit dem Tief vom Juli. Was sich nicht rechnet, empfehlen wir nicht."),
+                ("€", "Ehrliche Zahlen", "Wir rechnen mit der ganzen Spanne des OeMAG-Marktpreises, nicht nur mit dem Tief vom Juli. Was sich nicht rechnet, empfehlen wir nicht."),
             ],
         ),
         C.founder_block(
-            "Der Marktpreis sprang heuer zwischen sechs und zehn Cent. In der Energiegemeinschaft bleibt der Strom im Ort, "
+            "Der Marktpreis sprang heuer zwischen sechs und fast fünfzehn Cent. In der Energiegemeinschaft bleibt der Strom im Ort, "
             "der Preis ist planbar, und der Mehrwert bleibt bei Ihnen und Ihren Nachbarn."
         ),
         C.reference_cards(
@@ -391,8 +398,9 @@ def body():
   <section class="section--tight" style="padding-bottom:40px">
     <div class="wrap">
       <p class="form-note">*EG-Preise sind Beispielwerte (Einspeisung 10 bzw. 12 ct, Bezug 14 ct, Beitrag 4 € je Monat),
-      jede Gemeinschaft legt ihre Konditionen selbst fest. OeMAG-Marktpreis September 2026: {OEMAG_SEPT} ct je kWh
-      (Stand Oktober 2026, Quelle oem-ag.at); im Juli 2026 lag er bei {OEMAG_JULI} ct, der Wert schwankt monatlich.
+      jede Gemeinschaft legt ihre Konditionen selbst fest. OeMAG-Marktpreis Oktober 2026: {OEMAG_OKT} ct je kWh
+      (Stand November 2026, Quelle oem-ag.at); im September lag er bei {OEMAG_SEPT} ct, im Juli 2026 bei {OEMAG_JULI} ct,
+      der Wert schwankt monatlich.
       Netzentgelt-Abschlag und Abgabenbefreiung gelten nur für die zugeordnete Menge und nur im Nahbereich (lokal 57 %,
       regional 28 %), Richtwerte Netzentgelte laut SNE-VO (E-Control) 2026. Keine Garantie, keine Steuerberatung.
       Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>

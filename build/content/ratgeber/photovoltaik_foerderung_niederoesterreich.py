@@ -47,7 +47,7 @@ ARTICLE = {
         "Gemeinde: <b>200 bis 1.000 €</b>",
     ],
     "date_published": "2026-05-10",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach als Beispiel für eine geförderte Eigenheimsanierung",
 
@@ -233,8 +233,10 @@ Gemeinde ab.</small></p>
         ("Photovoltaik und Wärmepumpe im Sanierungskonzept", "waermepumpe", f"""
 <p>Wer die PV-Anlage mit einer {a('waermepumpe', 'Wärmepumpe')} kombiniert, nutzt den Sonnenstrom direkt für
 Heizung und Warmwasser und kann die Energiekosten um bis zu 85 % senken. Förderseitig laufen beide Systeme
-getrennt: Für die PV-Anlage gelten die hier beschriebenen Schienen, für die Wärmepumpe die Sanierungsoffensive
-des Bundes oder {a('/sauber-heizen-fuer-alle-2026/', '„Sauber Heizen für Alle“')}. Weil die Wohnbauförderung in
+getrennt: Für die PV-Anlage gelten die hier beschriebenen Schienen, für die Wärmepumpe der Kesseltausch des
+Bundes (Sanierungsoffensive, seit 2. November 2026 neu aufgelegt, 5.000 Euro Pauschale, Registrierung bis
+31. Dezember 2026 oder bis das Budget aufgebraucht ist);
+{a('/sauber-heizen-fuer-alle-2026/', '„Sauber Heizen für Alle“')} bleibt geschlossen. Weil die Wohnbauförderung in
 Niederösterreich bei Sanierungs-Gesamtkonzepten besonders stark wirkt, kann die Kombination PV plus Wärmepumpe
 hohe Förderbeträge auslösen.</p>
 """),
@@ -326,6 +328,8 @@ sind noch offen. Wer jetzt plant, baut deshalb sinnvoll mit Speicher und Energie
          "https://www.eag-abwicklungsstelle.at/wissen/investitionszuschuss-photovoltaik-und-speicher/"),
         ("Land Niederösterreich: Eigenheimsanierung", "https://noe.gv.at/eigenheimsanierung"),
         ("Energieberatung NÖ", "https://www.enu.at"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
     ],
     "related": [
         ("/photovoltaik-landesfoerderungen/", "Vergleich: PV-Landesförderungen aller 9 Bundesländer"),

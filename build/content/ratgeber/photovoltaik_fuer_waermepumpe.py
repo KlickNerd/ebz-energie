@@ -4,6 +4,8 @@ Migriert von ebz-photovoltaik.at/photovoltaik-fuer-waermepumpe/ (Stand November 
 Bereinigt: deutsche KfW-Kredite durch EBZ-Finanzierung ersetzt, unbelegte
 "bis zu 70 % Förderung" entfernt, PV-Preis auf den freigegebenen Richtpreis
 (10 kWp mit Speicher rund 15.000 bis 22.000 €) gesetzt, Marketing-Floskeln gekürzt.
+Update 19.11.2026: Bund Kesseltausch seit 2.11.2026 neu aufgelegt (Abschnitt "VERBINDLICH AB 19.11.2026"
+in build/seo/_fakten_2026-10.md); PV-Bund 2026 bleibt abgeschlossen.
 """
 
 import os
@@ -34,7 +36,7 @@ ARTICLE = {
         "Energiekosten: <b>50 bis 70 %</b> weniger*",
     ],
     "date_published": "2025-07-20",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach und Wärmepumpe im Garten",
 
@@ -176,9 +178,11 @@ Einsparungen und der Zuschüsse gesehen werden. Die Kostenblöcke für ein Einfa
 )}
 <h3>Förderung: zwei Systeme, zwei Programme</h3>
 <ul>
-  <li><b>Wärmepumpe:</b> Der Tausch einer fossilen Heizung wurde 2026 über die Bundesförderung „Raus aus Öl
-  und Gas“ (bis 7.500 Euro, seit Herbst 2026 ausgeschöpft) und die Landesprogramme gefördert; aktuell laufen
-  die Landesförderungen (Stand prüfen). Überblick:
+  <li><b>Wärmepumpe:</b> Der Bund hat den Kesseltausch („Raus aus Öl und Gas“) am 2. November 2026 neu
+  aufgelegt: 5.000 Euro Pauschale, wenn die Wärmepumpe eine fossile Heizung ersetzt, Registrierung bis
+  31. Dezember 2026 oder bis das Budget aufgebraucht ist (in der ersten Aktion 2026 waren es bis zu
+  7.500 Euro). Der Solarthermie-Zuschlag von 2.500 Euro gilt nur für thermische Kollektoren ab 6 m²,
+  Photovoltaik zählt dafür nicht. Dazu kommen Landesförderungen, in Kärnten 3.000 Euro. Überblick:
   {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich')} und
   {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.</li>
   <li><b>Photovoltaik und Speicher:</b> 2026 bundesweit über den EAG-Investitionszuschuss (letzter Call
@@ -275,10 +279,11 @@ zu einer klaren Entscheidung.</p>
          "Energiemanagementsystem sie steuern kann. Bei PV-Überschuss lädt die Wärmepumpe dann Puffer- oder "
          "Warmwasserspeicher auf höhere Temperaturen und speichert Sonnenenergie als Wärme."),
         ("Werden PV-Anlage und Wärmepumpe getrennt gefördert?",
-         "Ja. Die Bundesförderungen 2026 (Heizungstausch für die Wärmepumpe, EAG-Investitionszuschuss für PV "
-         "und Speicher) sind ausgeschöpft bzw. beendet, der letzte EAG-Call endete am 22. Oktober 2026. Aktuell "
-         "laufen Landesförderungen, in Kärnten etwa 3.000 Euro für die Wärmepumpe und 3.000 Euro für PV mit "
-         "Speicher. EBZ Energie wickelt beide Anträge ab."),
+         "Ja. Für die Wärmepumpe hat der Bund den Kesseltausch am 2. November 2026 neu aufgelegt (5.000 Euro "
+         "Pauschale, Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist). Der "
+         "EAG-Investitionszuschuss für PV und Speicher ist für 2026 abgeschlossen, der letzte Call endete am "
+         "22. Oktober 2026. In Kärnten zahlt das Land zusätzlich 3.000 Euro für die Wärmepumpe und 3.000 Euro "
+         "für PV mit Speicher. EBZ Energie wickelt die Anträge ab."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant und installiert "
@@ -286,6 +291,12 @@ zu einer klaren Entscheidung.</p>
                     "Steiermark und übernimmt die Förderabwicklung für beide Systeme. Alle Kosten- und "
                     "Einsparangaben sind Richtwerte aus der Projektpraxis. Keine Rechts- oder Steuerberatung, "
                     "maßgeblich sind die offiziellen Förderbedingungen."),
+    "sources": [
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
+    ],
     "related": [
         ("photovoltaik", "Photovoltaik-Anlagen von EBZ Energie"),
         ("waermepumpe", "Wärmepumpen-Installateur in Kärnten und Steiermark"),

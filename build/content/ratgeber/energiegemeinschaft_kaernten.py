@@ -26,18 +26,19 @@ ARTICLE = {
     "chips": [
         "Netzentgelt: <b>bis zu 57 %</b> weniger",
         "Elektrizitätsabgabe: <b>entfällt</b>",
-        "OeMAG Sept. 2026: <b>10,168 ct/kWh</b>",
+        "OeMAG Okt. 2026: <b>14,874 ct/kWh</b>",
         "Start in <b>4 bis 8 Wochen</b>",
     ],
     "date_published": "2026-08-05",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "eg_drohne",
     "hero_alt": "Ortschaft in Kärnten aus der Luft mit Photovoltaikanlagen auf mehreren Dächern",
 
     "tldr": [
         "Eine Energiegemeinschaft (EG) lässt Sie PV-Überschuss zu einem selbst vereinbarten Preis an Haushalte "
         "und Betriebe im Nahbereich verkaufen, statt ihn zum monatlich schwankenden OeMAG-Marktpreis abzugeben "
-        "(Juli 2026: 6,146 Cent, September 2026: 10,168 Cent).",
+        "(Juli 2026: 6,146 Cent, Oktober 2026: 14,874 Cent). Je nach Monat liegt der EG-Preis darüber oder darunter, "
+        "dafür ist er planbar.",
         "In Kärnten entscheidet das Netz der Kärnten Netz GmbH über den Nahbereich: derselbe Trafo bedeutet lokal "
         "(minus 57 Prozent Netzentgelt), dasselbe Umspannwerk regional (minus 28 Prozent).",
         "Erneuerbare-Energie-Gemeinschaften sind zusätzlich von Elektrizitätsabgabe (1,5 Cent je kWh) und "
@@ -49,7 +50,7 @@ ARTICLE = {
     ],
     "kpis": [
         ("~1.100 kWh", "Jahresertrag je kWp in Kärnten"),
-        ("10,168 ct", "OeMAG-Marktpreis September 2026 (Juli: 6,146 ct)"),
+        ("14,874 ct", "OeMAG-Marktpreis Oktober 2026 (Juli: 6,146 ct)"),
         ("57 %", "Netzentgelt-Abschlag lokal (Arbeitspreis)"),
         ("8 bis 12 ct", "typischer EG-Einspeisepreis*"),
     ],
@@ -83,13 +84,14 @@ installiertem Kilowattpeak liegt Kärnten österreichweit an der Spitze, das Kla
 etwas darüber. Eine 10-kWp-Anlage liefert also gut 11.000 kWh im Jahr, von denen ein Einfamilienhaus ohne Speicher
 nur etwa 30 Prozent selbst verbraucht.</p>
 <p>Zweitens der Einspeisetarif: Der OeMAG-Marktpreis schwankt monatlich, im Juli 2026 lag er mit 6,146 Cent pro
-Kilowattstunde an der gesetzlichen Untergrenze, im September 2026 bei 10,168 Cent (Stand Oktober 2026, aktuelle
+Kilowattstunde an der gesetzlichen Untergrenze, im September bei 10,168 Cent, im Oktober 2026 bei 14,874 Cent (Stand November 2026, aktuelle
 Werte in unserem {a('marktpreis', 'Marktpreis-Überblick')}). Planbar ist er damit nicht. Drittens die Netzstruktur: Kärnten ist kleinteilig besiedelt, viele
 Ortschaften hängen an einem gemeinsamen Trafo. Das erleichtert lokale Energiegemeinschaften mit dem vollen
 Netzentgelt-Abschlag.</p>
-{A.box("7.000 kWh Überschuss, davon landen 60 Prozent in der Gemeinschaft, zu 10 statt 6 Cent*: Das sind 168 Euro "
-       "mehr im Jahr auf der Einspeiseseite. Dazu kommt die Bezugsseite, denn in den Abend- und Winterstunden sind "
-       "Sie selbst Abnehmer und sparen beim EG-Strom Netzentgelt und Abgaben.", label="Grob durchgerechnet:")}
+{A.box("7.000 kWh Überschuss, davon landen 60 Prozent in der Gemeinschaft, zu 10 Cent*: Gegenüber dem Juli-Wert "
+       "der OeMAG (rund 6 Cent) sind das 168 Euro mehr im Jahr, gegenüber dem Oktober-Wert (14,874 Cent) rund 205 Euro "
+       "weniger. Auf der Einspeiseseite ist der EG-Preis damit vor allem planbar. Dazu kommt die Bezugsseite, denn in den "
+       "Abend- und Winterstunden sind Sie selbst Abnehmer und sparen im Nahbereich beim EG-Strom Netzentgelt und Abgaben.", label="Grob durchgerechnet:")}
 <p>Unser {a('eg_rechner', 'Energiegemeinschaft-Rechner')} rechnet das mit Ihren Werten durch.</p>
 <p><small>*Beispielkonditionen: EG-Einspeisepreis 10 Cent, EG-Bezugspreis 14 Cent je kWh. Jede Gemeinschaft legt
 ihre Preise selbst fest, die tatsächlichen Konditionen nennen wir im Erstgespräch.</small></p>

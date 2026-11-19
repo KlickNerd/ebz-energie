@@ -6,6 +6,7 @@ Stand Oktober 2026: 2. Landes-Call 12.10. bis 31.12.2026 (Budget rund 10 Mio. EU
 als Historie; EAG 3. und letzter Call lief 8. bis 22.10.2026 (beendet, derzeit kein Bundeszuschuss),
 Ausblick 2027 Systemfoerderung (laut BMWET geplant, nicht beschlossen). Stand ab 23.10.2026.
 Zahlen: Landesrichtlinie Kärnten 2026 und EAG-Investitionszuschüsseverordnung 2026 (Quellen unten).
+Update 19.11.2026: Wärmepumpen-Abschnitt auf den neu aufgelegten Kesseltausch des Bundes umgestellt.
 """
 
 import os
@@ -37,7 +38,7 @@ ARTICLE = {
         "2. Landes-Call: <b>12. Oktober bis 31. Dezember 2026</b>",
     ],
     "date_published": "2026-05-25",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus in Kärnten mit Photovoltaikanlage auf dem Dach",
 
@@ -237,9 +238,13 @@ Heizung und Warmwasser und nutzt im Idealfall direkt den selbst produzierten Str
 Kombination sind laut Erfahrungswerten von EBZ Energie bis zu 85 Prozent Ersparnis bei den
 Energiekosten möglich.</p>
 <p>Förderseitig profitieren Sie doppelt: Für die PV-Anlage gelten die hier beschriebenen Förderungen,
-für die Wärmepumpe gibt es eigene Schienen wie die Sanierungsoffensive des Bundes oder „Sauber Heizen
-für Alle“. Ein {a('ems', 'Energiemanagementsystem')}, das beide Anlagen steuert, wird seit Juni 2026
+für die Wärmepumpe gibt es eigene Schienen: den Kesseltausch des Bundes (Sanierungsoffensive, seit
+2. November 2026 neu aufgelegt, 5.000 Euro Pauschale, Registrierung bis 31. Dezember 2026 oder bis das
+Budget aufgebraucht ist) und die Kärntner Landespauschale von 3.000 Euro, zusammen bis zu 8.000 Euro*.
+Ein {a('ems', 'Energiemanagementsystem')}, das beide Anlagen steuert, wird seit Juni 2026
 zusätzlich vom Klima- und Energiefonds gefördert (siehe {a('/ems-foerderung/', 'EMS-Förderung 2026')}).</p>
+<p><small>*Beispiel: Wärmepumpe ersetzt Ölkessel, 5.000 Euro Bund plus 3.000 Euro Land. Alle Förderungen
+zusammen höchstens die Investitionskosten, maßgeblich sind die Bedingungen der Förderstellen.</small></p>
 """),
         ("Fazit: Kärnten ist 2026 das Bundesland mit der höchsten PV-Landespauschale", "fazit", f"""
 <p>Die einheitliche 3.000-Euro-Pauschale, die volle Kombinierbarkeit mit dem Bund im Call 2026 und die hohe
@@ -326,6 +331,8 @@ BMWET geplant, aber nicht beschlossen ist.</p>
          "https://www.eag-abwicklungsstelle.at/wissen/investitionszuschuss-photovoltaik-und-speicher/"),
         ("EAG-Abwicklungsstelle (OeMAG)", "https://www.eag-abwicklungsstelle.at/"),
         ("Förderportal des Landes Kärnten", "https://www.ktn.gv.at/"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
     ],
     "related": [
         ("/foerderung-pv-speicher-kaernten/", "Förderung für PV-Speicher in Kärnten"),

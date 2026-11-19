@@ -13,6 +13,7 @@ Geändert gegenüber der Quelle:
     21.000 bis 30.000 EUR) waren damit je kWp teurer als 10 kWp und sind entfallen, ebenso das daraus
     abgeleitete Preis-je-kWp-Diagramm.
   - OeMAG-Wert September 2026 (10,168 ct) ergänzt; Eigenteam-Aussagen entfernt.
+  - 19.11.2026: OeMAG-Wert Oktober 2026 (14,874 ct) als aktueller Wert.
 """
 
 import os
@@ -42,7 +43,7 @@ ARTICLE = {
         "Speicher: <b>1 bis 1,5 kWh</b> je 1.000 kWh",
     ],
     "date_published": "2026-09-30",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "pv_efh",
     "hero_alt": "Photovoltaikmodule auf einem Hausdach: Anlagengröße in Kilowatt-Peak richtig wählen",
 
@@ -54,7 +55,7 @@ ARTICLE = {
         "Speicher: 1 bis 1,5 kWh je 1.000 kWh Jahresverbrauch, bei 10 kWp sind 5 bis 10 kWh typisch.",
         "Förderung ab 23. Oktober 2026: Der EAG-Bundeszuschuss ist für 2026 abgeschlossen, die Kategoriegrenze bei "
         "10 kWp spielt derzeit keine Rolle. Kärnten zahlt 3.000 Euro pauschal ab 5 kWp mit mindestens 5 kWh Speicher.",
-        "Eingespeister Strom bringt nur den OeMAG-Marktpreis (September 2026: 10,168 Cent), selbst genutzter spart "
+        "Eingespeister Strom bringt nur den OeMAG-Marktpreis (Oktober 2026: 14,874 Cent), selbst genutzter spart "
         "rund 25 bis 30 Cent. Größer planen lohnt sich, wenn Wärmepumpe oder E-Auto kommen.",
     ],
     "kpis": [
@@ -197,7 +198,7 @@ und unter {a('foerderung_kaernten', 'Photovoltaik-Förderung Kärnten')}.</p>
 """),
         ("Größer planen oder nicht? Die Rechnung mit der Einspeisung", "groesser-planen", f"""
 <p>Früher galt: Anlage so groß wie das Dach. Heute ist es differenzierter, denn eingespeister Strom bringt nur den
-OeMAG-Marktpreis, im September 2026 waren das 10,168 Cent je Kilowattstunde, im Juli 6,146 Cent (siehe
+OeMAG-Marktpreis, im Oktober 2026 waren das 14,874 Cent je Kilowattstunde, im September 10,168 Cent, im Juli 6,146 Cent (siehe
 {a('/oemag-einspeisetarif/', 'OeMAG-Einspeisetarif')}). Selbst verbrauchter Strom spart dagegen rund 25 bis
 30 Cent. Die Wirtschaftlichkeit hängt deshalb vor allem am Eigenverbrauch.</p>
 <p>Trotzdem spricht einiges dafür, eher großzügig zu planen:</p>
@@ -268,7 +269,7 @@ Speicher ab 5 kWh.</p>
          "Für Einfamilienhäuser haben sich 1 bis 1,5 kWh Speicher je 1.000 kWh Jahresverbrauch bewährt. Bei 10 kWp "
          "PV sind 5 bis 10 kWh typisch. Für die Kärntner Landespauschale braucht es mindestens 5 kWh."),
         ("Ist eine größere PV-Anlage immer besser?",
-         "Nicht automatisch. Eingespeister Strom bringt nur den OeMAG-Marktpreis, im September 2026 rund 10 Cent, im "
+         "Nicht automatisch. Eingespeister Strom bringt nur den OeMAG-Marktpreis, im Oktober 2026 rund 15 Cent, im "
          "Juli rund 6 Cent je Kilowattstunde. Größer lohnt sich, wenn Wärmepumpe, E-Auto oder eine "
          "Energiegemeinschaft den Strom nutzen. Weil jedes zusätzliche kWp vergleichsweise günstig ist, raten wir zu "
          "großzügiger Planung, wenn der Verbrauch in den nächsten Jahren steigt."),

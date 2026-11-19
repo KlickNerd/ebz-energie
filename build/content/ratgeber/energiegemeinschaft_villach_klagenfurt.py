@@ -30,7 +30,7 @@ ARTICLE = {
         "Beratung <b>vor Ort</b>",
     ],
     "date_published": "2026-08-10",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Wohnhausdach in Villach mit Blick über die Stadt",
 
@@ -39,14 +39,16 @@ ARTICLE = {
         "Energiegemeinschaften am selben Trafo mit dem vollen Netzentgelt-Abschlag von 57 Prozent.",
         "Sie brauchen keine eigene Anlage: Mieter, Wohnungseigentümer und Betriebe können als Abnehmer beitreten und "
         "günstigen Solarstrom aus der Nachbarschaft beziehen, typisch 120 bis 150 Euro Ersparnis im Jahr*.",
-        "Erzeuger mit 10 kWp holen im Beispiel 150 bis 250 Euro Mehrerlös* gegenüber dem OeMAG-Tarif heraus.",
+        "Erzeuger mit 10 kWp bekommen einen fixen EG-Preis*: Bei niedrigem OeMAG-Tarif wie im Juli 2026 (6,146 ct) "
+        "bringt das im Beispiel bis zu 250 Euro Mehrerlös* im Jahr, bei hohem Tarif wie im Oktober 2026 (14,874 ct) "
+        "zahlt die OeMAG mehr.",
         "EBZ Energie nimmt Sie direkt vor Ort auf, übernimmt die Zählpunktfreigabe bei der Kärnten Netz und rechnet "
         "über energyfamily ab. Start ab dem Folgemonat nach der Anmeldung.",
     ],
     "kpis": [
         ("~4 bis 5 ct", "Netzentgelt-Ersparnis je EG-kWh, lokal*"),
         ("1,5 ct", "Elektrizitätsabgabe entfällt je kWh"),
-        ("+4 ct", "Mehrerlös Erzeuger gegenüber OeMAG*"),
+        ("10 ct*", "fixer EG-Preis Erzeuger, OeMAG 2026: 6,146 bis 14,874 ct"),
         ("0 €", "Wechselkosten, Lieferant bleibt"),
     ],
 
@@ -82,8 +84,8 @@ Konstellation häufig. In den Umlandgemeinden geht es meist auf die regionale Eb
     [
         ["Abnehmer ohne PV", "3.500 kWh Verbrauch, 40 % aus der Gemeinschaft, 14 ct EG-Preis statt 17 ct Lieferant, "
          "plus Netz- und Abgabenersparnis", "rund 120 bis 150 €"],
-        ["Erzeuger mit 10 kWp", "Überschuss zum fixen EG-Preis statt zum schwankenden OeMAG-Tarif (Juli 2026: 6,146 ct, September 2026: 10,168 ct)",
-         "0 bis 250 € Mehrerlös, je nach Monatswert"],
+        ["Erzeuger mit 10 kWp", "Überschuss zum fixen EG-Preis statt zum schwankenden OeMAG-Tarif (Juli 2026: 6,146 ct, Oktober 2026: 14,874 ct)",
+         "bis 250 € Mehrerlös beim Juli-Wert, beim Oktober-Wert weniger als bei der OeMAG"],
     ],
     hl_cols=(2,),
 )}
@@ -96,7 +98,7 @@ Gemeinschaft legt ihre Preise selbst fest, die Konditionen nennen wir im Erstges
 <p>Das wird oft übersehen: Eine Energiegemeinschaft braucht Abnehmer, sonst bleibt der Überschuss im Netz. Wenn Sie in
 Villach oder Klagenfurt zur Miete wohnen, eine Eigentumswohnung ohne Dachzugang haben oder einen Betrieb mit
 Tagesverbrauch führen, sind Sie für jede Gemeinschaft ein wertvolles Mitglied. Sie bekommen günstigeren Strom aus
-der Nachbarschaft, der Erzeuger bekommt mehr als von der OeMAG, und beide sparen Netzentgelt. Den Ablauf für
+der Nachbarschaft, der Erzeuger bekommt einen planbaren Preis, und beide sparen Netzentgelt. Den Ablauf für
 Abnehmer beschreibt unser Artikel {a('/energiegemeinschaft-beitreten/', 'Energiegemeinschaft beitreten')}.</p>
 {A.box("Sie brauchen nur einen eigenen Zählpunkt und einen Smart Meter mit Viertelstundenwerten. Ihr "
        "Lieferantenvertrag, egal ob Kelag oder ein anderer Anbieter, bleibt unverändert.", label="Voraussetzung:")}

@@ -3,6 +3,8 @@
 Migriert von ebz-photovoltaik.at/kosten-einer-waermepumpe/ (Stand März 2026).
 Bereinigt: Der Abschnitt "Erdwärmepumpe" war in der Quelle ein Copy-Paste des
 Luftwärmepumpen-Absatzes und wurde aus den Zahlen der Kostenübersicht neu geschrieben.
+Update 19.11.2026: Bund Kesseltausch seit 2.11.2026 neu aufgelegt (5.000 € Pauschale, Bohrbonus 5.000 €,
+Abschnitt "VERBINDLICH AB 19.11.2026" in build/seo/_fakten_2026-10.md).
 """
 
 import os
@@ -33,7 +35,7 @@ ARTICLE = {
         "Amortisation: <b>8 bis 15 Jahre</b>",
     ],
     "date_published": "2026-02-05",
-    "date_modified": "2026-10-10",
+    "date_modified": "2026-11-19",
     "hero_img": "waermepumpe",
     "hero_alt": "Luft-Wasser-Wärmepumpe als Außeneinheit neben einem Einfamilienhaus",
 
@@ -43,9 +45,10 @@ ARTICLE = {
         "3.000 bis 15.000 Euro je nach Wärmequelle.",
         "Für ein typisches Einfamilienhaus mit 130 bis 180 m² kostet eine Luft-Wasser-Wärmepumpe im "
         "Neubau 14.000 bis 22.000 Euro, im Altbau 16.000 bis 28.000 Euro, jeweils vor Förderung.",
-        "Bundes- und Landesförderung reduzierten die Anschaffung 2026 je nach Programm um 4.000 bis "
-        "12.000 Euro. Seit Herbst 2026 ist die Bundesförderung ausgeschöpft; in Kärnten bleibt die "
-        "Landespauschale von 3.000 Euro. EBZ Energie übernimmt die komplette Förderabwicklung.",
+        "Förderung Stand November 2026: Der Bund hat den Kesseltausch am 2. November 2026 neu aufgelegt, "
+        "5.000 Euro Pauschale für die Wärmepumpe (plus 5.000 Euro Bohrbonus bei Erdwärme oder Grundwasser), "
+        "Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist. In Kärnten kommen 3.000 Euro "
+        "Landespauschale dazu. EBZ Energie übernimmt die komplette Förderabwicklung.",
         "Betrieb: Ein gut gedämmtes Haus mit 12.000 kWh Wärmebedarf braucht bei Jahresarbeitszahl 4 rund "
         "3.000 kWh Strom, also etwa 900 Euro pro Jahr. Eine Gasheizung kostet für dieselbe Wärme 1.400 "
         "bis 1.900 Euro.",
@@ -62,12 +65,14 @@ ARTICLE = {
     "sections": [
         ("Anschaffungskosten im Überblick: Gerät plus Installation", "anschaffung", f"""
 <p><b>Eine Luft-Wasser-Wärmepumpe kostet in Österreich 2026 inklusive Installation rund 12.000 bis
-22.000 Euro*, eine Erdwärmepumpe 22.000 bis 40.000 Euro*</b> (EBZ-Richtwerte, Stand Oktober 2026). Die
-Bundesförderung für den Kesseltausch (bis 7.500 Euro, Sanierungsoffensive 2026) ist seit Herbst 2026
-ausgeschöpft. Das Land Kärnten zahlt 2026 eine Pauschale von 3.000 Euro (plus 1.500 Euro bei Errichtung
-einer Solaranlage, plus 200 Euro für den hydraulischen Abgleich); ob das Budget reicht, klären wir vor dem
-Angebot. Die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an (Quellen:
-umweltfoerderung.at, wohnbau.steiermark.at; Stand 10. Oktober 2026). Ein Festpreisangebot für Ihr Haus erstellt EBZ Energie als
+22.000 Euro*, eine Erdwärmepumpe 22.000 bis 40.000 Euro*</b> (EBZ-Richtwerte, Stand Oktober 2026). Der
+Bund fördert den Kesseltausch seit der Neuauflage am 2. November 2026 mit 5.000 Euro Pauschale für die
+Wärmepumpe, bei Erdwärme oder Grundwasser plus 5.000 Euro Bohrbonus (Registrierung bis 31. Dezember 2026
+oder bis das Budget aufgebraucht ist). Das Land Kärnten zahlt 2026 zusätzlich eine Pauschale von 3.000 Euro
+(plus 1.500 Euro bei Errichtung einer Solaranlage, plus 200 Euro für den hydraulischen Abgleich); ob das
+Budget reicht, klären wir vor dem Angebot. Die Steiermark nimmt für neue Wärmepumpen derzeit keine
+Förderanträge an (Quellen: sanierungsoffensive.gv.at, Stand November 2026; wohnbau.steiermark.at, Stand
+10. Oktober 2026). Ein Festpreisangebot für Ihr Haus erstellt EBZ Energie als
 {a('waermepumpe', 'Wärmepumpen-Installateur in Kärnten und der Steiermark')}.</p>
 <p>Die Anschaffungskosten einer Wärmepumpe liegen über denen einer Gasheizung. Dieser Vergleich greift
 aber zu kurz, weil er laufende Kosten und Lebensdauer ausblendet. Eine Wärmepumpe ist eine Investition,
@@ -152,10 +157,11 @@ bis 30.000 Euro vor Förderung. Details, Rechenbeispiele und Voraussetzungen fin
     ],
     hl_cols=(1,),
 )}
-<p>Nach Abzug von Förderungen reduzieren sich diese Summen deutlich: 2026 galt die Bundesförderung
-„Raus aus Öl und Gas“ mit bis zu 7.500 Euro (seit Herbst 2026 ausgeschöpft). Aktuell bleiben in Kärnten die
-Landespauschale von 3.000 Euro und allfällige kommunale Programme; die Steiermark nimmt für neue Wärmepumpen
-derzeit keine Förderanträge an. Zum Vergleich:
+<p>Nach Abzug von Förderungen reduzieren sich diese Summen deutlich: Ersetzt die Wärmepumpe eine fossile
+Heizung, zahlt der Bund im neu aufgelegten Kesseltausch 5.000 Euro (Erdwärme mit Bohrung bis 10.000 Euro).
+In Kärnten kommen 3.000 Euro Landespauschale dazu, zusammen also bis zu 8.000 Euro für die
+Luft-Wasser-Wärmepumpe*; die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an, dort
+bleibt die Bundespauschale. Zum Vergleich:
 Eine {a('photovoltaik', 'Photovoltaikanlage')} mit 10 kWp und Speicher kostet rund 15.000 bis
 22.000 Euro vor Förderung, die Kombination aus beidem senkt die Energiekosten am stärksten.</p>
 {A.cta("Was kostet die Wärmepumpe für Ihr Haus?",
@@ -164,16 +170,22 @@ Eine {a('photovoltaik', 'Photovoltaikanlage')} mit 10 kWp und Speicher kostet ru
        secondary=("waermepumpe", "Zum Wärmepumpen-Installateur"))}
 """),
         ("Förderung: Wie viel bekommen Sie zurück?", "foerderung", f"""
-<p>Die Anschaffung einer Wärmepumpe wurde 2026 in Österreich aus mehreren Quellen gleichzeitig gefördert.
-Zusammengenommen konnten die Zuschüsse die Investition je nach Bundesland und Programm um 4.000 bis
-12.000 Euro senken. <b>Stand Oktober 2026:</b> Die Bundesprogramme sind ausgeschöpft, neue Registrierungen
-sind nicht möglich; offen bleiben die Landesförderungen (Bedingungen beim Land prüfen).</p>
+<p>Die Anschaffung einer Wärmepumpe wird in Österreich aus mehreren Quellen gleichzeitig gefördert.
+<b>Stand November 2026:</b> Der Bund hat den Kesseltausch am 2. November 2026 neu aufgelegt, Registrierung
+bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist. Bund und Land sind kombinierbar, in Kärnten
+sind für eine Luft-Wasser-Wärmepumpe bis zu 8.000 Euro möglich*.</p>
 <ul>
-  <li><b>Bundesförderung „Raus aus Öl und Gas“:</b> 2026 gab es für den Tausch einer fossilen Heizung bis
-  zu 7.500 Euro Investitionszuschuss, förderfähig waren Gerät und Installation. Das Programm
-  {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} und
+  <li><b>Bundesförderung Kesseltausch („Raus aus Öl und Gas“):</b> Seit 2. November 2026 gibt es für den
+  Tausch einer Öl-, Gas- oder Kohleheizung oder von Elektrospeicheröfen gegen eine Wärmepumpe 5.000 Euro
+  Pauschale, plus 5.000 Euro Bohrbonus bei Sole- oder Wasser-Wasser-Wärmepumpen und plus 2.500 Euro für eine
+  thermische Solaranlage ab 6 m² (Photovoltaik zählt nicht). Gefördert werden Leistungen ab 7. Oktober 2026.
+  Vor der Registrierung ist eine Energieberatung des Landes nötig, danach haben Sie 9 Monate für Umsetzung
+  und Antrag. Bedingungen: Vorlauftemperatur höchstens 55 Grad, Vorrang für Fernwärme, wo ein Anschluss
+  möglich ist, 20 Prozent Abzug bei Luft-Wasser-Geräten mit einem Kältemittel-GWP von 150 bis 750, keine
+  Einkommensprüfung. In der ersten Aktion 2026 waren es bis zu 7.500 Euro; laut BMLUK bleibt die Förderhöhe
+  2027 gleich. Details: {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')}.
   {a('/sauber-heizen-fuer-alle-2026/', 'Sauber Heizen für Alle 2026')} für einkommensschwache Haushalte
-  sind seit Herbst 2026 beendet (Mittel ausgeschöpft); ob 2027 ein neues Programm kommt, ist offen.</li>
+  bleibt geschlossen.</li>
   <li><b>Landesförderung Kärnten und Steiermark:</b> Kärnten zahlt 2026 eine Pauschale von 3.000 Euro, plus
   1.500 Euro bei Errichtung einer Solaranlage und 200 Euro für den hydraulischen Abgleich (die frühere Regel
   von 35 Prozent, höchstens 6.000 Euro, galt bis Ende 2025). Die Steiermark nimmt für neue Wärmepumpen
@@ -184,6 +196,9 @@ sind nicht möglich; offen bleiben die Landesförderungen (Bedingungen beim Land
   {a('/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/',
   'Öko-Sonderausgabenpauschale')} steuerlich geltend machen.</li>
 </ul>
+<p><small>*Beispiel Kärnten, Luft-Wasser-Wärmepumpe ersetzt Ölkessel: 5.000 Euro Bund plus 3.000 Euro Land.
+Alle Förderungen zusammen höchstens die Investitionskosten, maßgeblich sind die Bedingungen der
+Förderstellen.</small></p>
 {A.box("Damit die Förderung genehmigt wird, muss der Installateur bestimmte Zertifizierungen erfüllen "
        "und die Anlage mit förderfähigen Geräten umgesetzt werden. EBZ Energie erfüllt als "
        "zertifizierter Fachbetrieb alle Anforderungen und übernimmt die Förderabwicklung von der "
@@ -256,8 +271,8 @@ der Möglichkeit, den Strom selbst zu erzeugen, die wirtschaftlichste Heizlösun
 Bruchteil der bisherigen Kosten.</p>
 <ul>
   <li>Luft-Wasser-Wärmepumpe: die günstigste und flexibelste Lösung für die meisten Gebäude</li>
-  <li>Förderungen von Bund und Land reduzierten die Investition 2026 um 4.000 bis 12.000 Euro; aktuell bleibt
-  in Kärnten die Landespauschale von 3.000 Euro</li>
+  <li>Förderung aktuell: 5.000 Euro vom Bund (Kesseltausch, Registrierung bis 31. Dezember 2026), in Kärnten
+  plus 3.000 Euro vom Land</li>
   <li>Betriebskosten von 700 bis 1.100 Euro pro Jahr statt 1.400 bis 2.200 Euro bei Gas oder Öl</li>
   <li>Mit Photovoltaik sinken die Heizkosten auf 200 bis 500 Euro pro Jahr</li>
 </ul>
@@ -293,13 +308,14 @@ Bruchteil der bisherigen Kosten.</p>
          "12.000 kWh Wärmebedarf und einer Jahresarbeitszahl von 4 sind es 3.000 kWh, also rund 900 Euro "
          "Stromkosten bei 0,30 Euro je Kilowattstunde."),
         ("Was kostet die Wärmepumpe nach Abzug der Förderung?",
-         "2026 reduzierten Bundes- und Landesförderung die Anschaffung je nach Bundesland und Programm um 4.000 "
-         "bis 12.000 Euro. Aus 20.000 Euro vor Förderung konnten so 8.000 bis 16.000 Euro Eigenanteil werden. Seit "
-         "Herbst 2026 ist die Bundesförderung ausgeschöpft. In Kärnten bleibt die Landespauschale von 3.000 Euro, "
-         "die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an. "
-         "EBZ Energie berechnet Ihre individuelle Förderhöhe kostenlos."),
+         "Ersetzt die Wärmepumpe eine fossile Heizung, zahlt der Bund im seit 2. November 2026 neu aufgelegten "
+         "Kesseltausch 5.000 Euro, in Kärnten kommen 3.000 Euro vom Land dazu. Aus 20.000 Euro vor Förderung "
+         "werden so in Kärnten rund 12.000 Euro Eigenanteil, in der Steiermark (derzeit keine Landesförderung "
+         "für neue Wärmepumpen) rund 15.000 Euro*. Die Registrierung beim Bund läuft bis 31. Dezember 2026 oder "
+         "bis das Budget aufgebraucht ist. EBZ Energie berechnet Ihre individuelle Förderhöhe kostenlos. "
+         "*Beispielrechnung, maßgeblich sind die Bedingungen der Förderstellen."),
         ("Amortisiert sich eine Wärmepumpe wirklich?",
-         "Ja, in den meisten Fällen innerhalb von 8 bis 15 Jahren. Entscheidend sind die ausgeschöpfte "
+         "Ja, in den meisten Fällen innerhalb von 8 bis 15 Jahren. Entscheidend sind die genutzte "
          "Förderung, der Zustand des Gebäudes und die Kombination mit einer PV-Anlage, die die "
          "Betriebskosten auf 200 bis 500 Euro pro Jahr senkt."),
         ("Lohnt sich eine Wärmepumpe auch im Altbau?",
@@ -319,6 +335,10 @@ Bruchteil der bisherigen Kosten.</p>
                     "Förderabwicklung. Alle Preisangaben sind Richtwerte aus der Projektpraxis 2026. Keine "
                     "Rechts- oder Steuerberatung, maßgeblich sind die offiziellen Förderbedingungen."),
     "sources": [
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
         ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
          "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
     ],

@@ -52,8 +52,8 @@ FAQ = [
      "einen notstromfähigen Hybridwechselrichter, einen freigegebenen Speicher und eine Umschalteinrichtung, die das "
      "Haus vom Netz trennt. Ein 10-kWh-Speicher deckt 500 Watt Dauerlast rund 20 Stunden."),
     ("Was passiert mit dem Strom, wenn der Speicher voll ist?",
-     "Der Überschuss fließt ins Netz und wird vergütet, im OeMAG-Marktpreismodell mit 10,168 Cent je kWh (September "
-     "2026). Besser: Ein Energiemanagement lenkt ihn in Wärmepumpe, Warmwasser oder Wallbox, oder Sie teilen ihn in "
+     "Der Überschuss fließt ins Netz und wird vergütet, im OeMAG-Marktpreismodell mit 14,874 Cent je kWh (Oktober "
+     "2026, der Wert schwankt monatlich). Besser: Ein Energiemanagement lenkt ihn in Wärmepumpe, Warmwasser oder Wallbox, oder Sie teilen ihn in "
      "einer Energiegemeinschaft. Der Speicher nimmt keinen Schaden, das Batteriemanagement beendet die Ladung."),
     ("Wie hoch ist die Förderung für einen Batteriespeicher 2026?",
      "Kärnten: 3.000 € Pauschale für Neuanlagen ab 5 kWp mit Speicher ab 5 kWh, 1.000 € für die Nachrüstung "
@@ -151,8 +151,8 @@ def build():
             eyebrow="Das Problem jeder PV-Anlage ohne Speicher",
             h2="Von 30 auf bis zu 80 % Eigenverbrauch: was der Speicher ändert",
             intro=("Ein Batteriespeicher hebt den Eigenverbrauch einer PV-Anlage von rund 30 auf 60 bis 80 %*. Bei "
-                   "Netzstrompreisen von rund 30 bis 35 Cent je kWh und einer Einspeisevergütung von 10,168 Cent "
-                   "(OeMAG-Marktpreis September 2026) lohnt sich ein Speicher ab etwa 5 kWp PV-Leistung und 3.500 kWh "
+                   "Netzstrompreisen von rund 30 bis 35 Cent je kWh und einer Einspeisevergütung von 14,874 Cent "
+                   "(OeMAG-Marktpreis Oktober 2026, im Juli 6,146 Cent) lohnt sich ein Speicher ab etwa 5 kWp PV-Leistung und 3.500 kWh "
                    "Jahresverbrauch (Stand Oktober 2026). *Richtwerte, abhängig vom Lastprofil."),
             bars=[
                 ("Eigenverbrauch ohne Speicher", 30, "bad", "rund 30 %*"),
@@ -377,8 +377,8 @@ def _footnote():
     <div class="wrap">
       <p class="form-note">*Richtwerte für Österreich auf Basis typischer Projekte, inklusive Installation und vor
       Förderung, Stand Oktober 2026. Eigenverbrauchsanteil, Autarkie, Ersparnis, Preis und Amortisation hängen von
-      Verbrauch, Lastprofil, Anlagengröße, Strompreis (gerechnet mit rund 30 bis 35 ct/kWh Bezug und 10,168 ct/kWh
-      OeMAG-Marktpreis September 2026) und Förderung ab. Finanzierungsrate: Beispielkonditionen. Förderstand laut
+      Verbrauch, Lastprofil, Anlagengröße, Strompreis (gerechnet mit rund 30 bis 35 ct/kWh Bezug und 14,874 ct/kWh
+      OeMAG-Marktpreis Oktober 2026, Stand November 2026) und Förderung ab. Finanzierungsrate: Beispielkonditionen. Förderstand laut
       Land Kärnten und EAG-Abwicklungsstelle (Bundeszuschuss für 2026 abgeschlossen), Programme sind budgetiert und ändern sich. Fachlich geprüft von
       Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
     </div>

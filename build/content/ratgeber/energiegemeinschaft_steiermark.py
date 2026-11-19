@@ -30,11 +30,11 @@ ARTICLE = {
     "chips": [
         "Beitritt: <b>4 bis 8 Wochen</b>",
         "Netzentgelt: <b>bis zu 57 %</b> weniger",
-        "OeMAG Sept. 2026: <b>10,168 ct/kWh</b>",
+        "OeMAG Okt. 2026: <b>14,874 ct/kWh</b>",
         "EBZ vor Ort in der <b>ganzen Steiermark</b>",
     ],
     "date_published": "2026-08-05",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus in der Steiermark mit Photovoltaikanlage auf dem Dach",
 
@@ -45,15 +45,15 @@ ARTICLE = {
         "PV-Ausschreibung. Es bleiben die bundesweiten Vorteile der Energiegemeinschaft.",
         "Netzbetreiber sind vor allem die Energienetze Steiermark und in Graz die Stromnetz Graz. Der Nahbereich "
         "(Trafo oder Umspannwerk) bestimmt den Netzentgelt-Abschlag von 57 oder 28 Prozent.",
-        "Der OeMAG-Marktpreis schwankt monatlich: Juli 2026 6,146 Cent, September 2026 10,168 Cent je kWh. Zwischen "
-        "diesem Tarif und dem Haushaltsstrompreis liegt je nach Monat eine Spanne von rund 7 bis 11 Cent, die die "
-        "Gemeinschaft aufteilt.",
+        "Der OeMAG-Marktpreis schwankt monatlich: Juli 2026 6,146 Cent, Oktober 2026 14,874 Cent je kWh. Zwischen "
+        "diesem Tarif und dem Arbeitspreis des Lieferanten lag 2026 je nach Monat eine Spanne von rund 2 bis 11 Cent, die die "
+        "Gemeinschaft aufteilt. Sicher ist der Vorteil beim Bezug: weniger Netzentgelt im Nahbereich, keine Abgaben.",
         "Aktive Gemeinschaften gibt es in fast allen Bezirken, von Leibnitz über Weiz bis ins Murtal. EBZ Energie "
         "nimmt Kunden in der Steiermark auf und rechnet über energyfamily ab.",
     ],
     "kpis": [
-        ("10,168 ct/kWh", "OeMAG-Marktpreis September 2026"),
-        ("150 bis 180 €", "laufender Vorteil pro Jahr im Rechenbeispiel*"),
+        ("14,874 ct/kWh", "OeMAG-Marktpreis Oktober 2026 (Juli: 6,146 ct)"),
+        ("rund 40 €", "sicherer Bezugsvorteil pro Jahr im Rechenbeispiel, Einspeisung je nach OeMAG-Monat*"),
         ("57 % / 28 %", "Netzentgelt-Abschlag lokal / regional"),
         ("4 bis 8 Wochen", "vom Erstgespräch bis zum Start"),
     ],
@@ -63,22 +63,25 @@ ARTICLE = {
 <p>Die Steiermark hat in den vergangenen Jahren mehr PV-Leistung zugebaut als fast jedes andere Bundesland, und
 genau daraus entsteht das Problem, das die Energiegemeinschaft löst: Zu Mittag drückt so viel Sonnenstrom ins Netz,
 dass der Börsenpreis fällt und der OeMAG-Tarif monatlich schwankt: im Juli 2026 lag er mit 6,146 Cent pro
-Kilowattstunde an der gesetzlichen Untergrenze, im September 2026 bei 10,168 Cent. Gleichzeitig zahlen Ihre Nachbarn
-für Strom aus dem Netz rund das Dreifache. Eine
+Kilowattstunde an der gesetzlichen Untergrenze, im Oktober 2026 bei 14,874 Cent. Planbar ist er damit nicht. Ihre
+Nachbarn zahlen für Strom aus dem Netz gleichzeitig den vollen Arbeitspreis plus Netzentgelt und Abgaben. Eine
 Energiegemeinschaft schließt diese Lücke, indem sie Ihren Überschuss direkt an Abnehmer im selben Netzgebiet
 verkauft, zu einem Preis, den die Gemeinschaft selbst bestimmt.</p>
 {A.table(
     ["Wo der Überschuss landet", "Cent je kWh", "Wer bekommt / zahlt"],
     [
         ["OeMAG-Tarif (Juli 2026)", "6,1 ct", "Erzeuger bekommt"],
+        ["OeMAG-Tarif (Oktober 2026)", "14,9 ct", "Erzeuger bekommt"],
         ["EG-Einspeisung*", "10,0 ct", "Erzeuger bekommt"],
         ["EG-Bezug*", "14,0 ct", "Abnehmer zahlt"],
         ["Lieferant, Arbeitspreis netto*", "17,0 ct", "Abnehmer zahlt"],
     ],
     hl_cols=(1,),
 )}
-<p>Zwischen OeMAG-Tarif und Haushaltsstrompreis liegt eine Spanne von rund 10 Cent. Die Energiegemeinschaft teilt
-diese Spanne zwischen Erzeuger und Abnehmer auf. Das Prinzip ist in ganz Österreich gleich und in unserem
+<p>Zwischen OeMAG-Tarif und Arbeitspreis des Lieferanten lag 2026 je nach Monat eine Spanne von rund 2 bis 11 Cent.
+Die Energiegemeinschaft teilt diese Spanne zwischen Erzeuger und Abnehmer auf. Liegt der OeMAG-Tarif wie im Oktober
+über dem EG-Preis, bekommt der Erzeuger für den zugeordneten Strom weniger als bei der OeMAG, dafür einen planbaren
+Preis; der Abnehmer spart im Nahbereich zusätzlich Netzentgelt und Abgaben. Das Prinzip ist in ganz Österreich gleich und in unserem
 {a('eg', 'Leitartikel zur Energiegemeinschaft')} erklärt. Was die Steiermark besonders macht, sind zwei Dinge: die
 Netzstruktur mit zwei großen Betreibern und die Dichte an bestehenden Gemeinschaften.</p>
 <p><small>*Beispielwerte aus dem Markt, jede Gemeinschaft legt ihre Preise selbst fest. Lieferantenpreis netto ohne
@@ -145,15 +148,19 @@ typisch 60 bis 70 Prozent bei anderen Mitgliedern.</p>
 {A.table(
     ["Position", "Ohne EG", "Mit lokaler EEG*"],
     [
-        ["Einspeisung 4.700 kWh", "zu 6,1 ct: 287 €", "3.000 kWh zu 10 ct + 1.700 kWh zu 6,1 ct: 404 €"],
+        ["Einspeisung 4.700 kWh", "zum OeMAG-Tarif: 289 € (Juli-Wert 6,146 ct) bis 699 € (Oktober-Wert 14,874 ct)",
+         "3.000 kWh zu 10 ct + 1.700 kWh zum OeMAG-Tarif: 404 € (Juli-Wert) bis 553 € (Oktober-Wert)"],
         ["Netzbezug 2.000 kWh, davon 600 kWh aus EG", "Netzentgelt voll",
          "600 kWh mit minus 57 % Netz, ohne E-Abgabe: ca. 40 € gespart"],
-        ["Vorteil pro Jahr", "", "ca. 150 bis 180 €"],
+        ["Vorteil pro Jahr", "", "ca. 150 bis 180 € beim Juli-Wert, beim Oktober-Wert rund 105 € weniger als ohne EG; "
+         "sicher sind die rund 40 € beim Bezug"],
     ],
     hl_cols=(2,),
 )}
-<p>Die laufende Ersparnis wirkt auf den ersten Blick bescheiden. Über 20 Jahre Anlagenlaufzeit summiert sie sich
-aber auf mehr als 3.000 Euro, und der Hebel wächst mit jeder Tariferhöhung beim Netzentgelt. Rechnen Sie Ihre Zahlen
+<p>Die laufende Ersparnis wirkt auf den ersten Blick bescheiden, und sie hängt beim Erzeugeranteil am OeMAG-Tarif,
+der jeden Monat neu festgelegt wird: Die Spalten rechnen den Juli- und den Oktober-Wert aufs ganze Jahr hoch und
+zeigen damit nur die Bandbreite. Verlässlich ist der Bezugsvorteil, und dieser Hebel wächst mit jeder Tariferhöhung
+beim Netzentgelt. Rechnen Sie Ihre Zahlen
 im {a('eg_rechner', 'EG-Rechner')} nach.</p>
 <p><small>*Beispielkonditionen: EG-Einspeisepreis 10 Cent je kWh, Netzentgelt-Richtwerte 2026. Jede Gemeinschaft
 legt ihre Preise selbst fest, die Zuordnungsquote hängt von Erzeugern und Abnehmern im Nahbereich ab.</small></p>
@@ -200,7 +207,7 @@ wenigen Wochen {a('/energiegemeinschaft-beitreten/', 'beitreten')}.</p>
          "Praxis reicht für Privathaushalte eine gut passende Gemeinschaft."),
         ("Was passiert mit meinem Strom, wenn in der Gemeinschaft niemand Bedarf hat?",
          "Er wird wie bisher an die OeMAG oder Ihren Einspeisevertragspartner geliefert und zum dortigen Tarif "
-         "vergütet, im Juli 2026 waren das 6,146 Cent je kWh, im September 2026 10,168 Cent. Sie verlieren also "
+         "vergütet, im Juli 2026 waren das 6,146 Cent je kWh, im Oktober 2026 14,874 Cent. Sie verlieren also "
          "nichts gegenüber heute."),
         ("Wie lange dauert der Beitritt?",
          "Vom Erstgespräch bis zur ersten zugeordneten Kilowattstunde vergehen in der Regel vier bis acht Wochen. "

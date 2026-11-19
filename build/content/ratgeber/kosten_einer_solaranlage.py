@@ -38,7 +38,7 @@ ARTICLE = {
         "Finanzierung: <b>ab 147 €/Monat</b>",
     ],
     "date_published": "2025-12-17",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage auf dem Dach: Kosten einer Solaranlage mit Speicher",
 
@@ -119,7 +119,7 @@ und Förderanträge Teil des Pakets.</p>
 """),
         ("Speicher: Was der Aufpreis bringt", "speicher", f"""
 <p>Ohne Speicher nutzt ein typischer Haushalt nur rund 30 Prozent des eigenen Solarstroms direkt, der
-Rest fließt zu 5 bis 10 Cent je Kilowattstunde ins Netz, während der Bezug aus dem Netz rund 32 Cent
+Rest fließt zu rund 6 bis 15 Cent je Kilowattstunde ins Netz, während der Bezug aus dem Netz rund 32 Cent
 kostet. Ein {a('batteriespeicher', 'Batteriespeicher')} verschiebt den Mittagsüberschuss in den Abend
 und hebt den Eigenverbrauch auf 60 bis 80 Prozent. Für 5.000 bis 9.000 Euro Aufpreis sinkt die
 Stromrechnung damit um bis zu 85 Prozent.</p>
@@ -173,7 +173,7 @@ Landesrichtlinie, Stand Oktober 2026. Der Made-in-Europe-Bonus setzte Komponente
 <p>Nehmen wir eine 10-kWp-Anlage mit 10 kWh Speicher in Kärnten für 18.500 Euro* vor Förderung. Nach
 Abzug von 6.450 Euro Bundes- und Landesförderung im Call 2026 blieben 12.050 Euro Investition. Die Anlage erzeugt
 rund 10.000 kWh pro Jahr. Wir rechnen konservativ mit 32 Cent je bezogener Kilowattstunde, 6 Cent Einspeisevergütung
-(OeMAG-Marktpreis Juli 2026: 6,146 Cent, September 2026: 10,168 Cent) und 100 Euro Betriebskosten pro Jahr.</p>
+(OeMAG-Marktpreis Juli 2026: 6,146 Cent, September 2026: 10,168 Cent, Oktober 2026: 14,874 Cent) und 100 Euro Betriebskosten pro Jahr.</p>
 {A.table(
     ["Haushalt", "Verbrauch", "Selbst genutzt", "Ersparnis + Einspeisung", "Amortisation im Call 2026*"],
     [
@@ -279,7 +279,7 @@ eingespielt. Was genau eine Komplettanlage umfasst, lesen Sie im Ratgeber
         ("Was kostet ein Speicher zusätzlich und lohnt er sich?",
          "Ein Speicher mit 5 bis 10 kWh kostet 5.000 bis 9.000 Euro Aufpreis. Er hebt den Eigenverbrauch von "
          "rund 30 auf 60 bis 80 Prozent, weil der Mittagsstrom abends genutzt wird. Da Netzstrom rund 32 Cent "
-         "kostet und die Einspeisung nur 5 bis 10 Cent bringt, lohnt sich der Speicher in den meisten "
+         "kostet und die Einspeisung nur rund 6 bis 15 Cent bringt, lohnt sich der Speicher in den meisten "
          "Haushalten, besonders mit Wärmepumpe oder E-Auto."),
         ("Wie viel Förderung gibt es für eine 10-kWp-Anlage mit Speicher?",
          "Im Call 2026 zahlte der Bund 150 Euro je kWp und 150 Euro je kWh Speicher, für 10 kWp mit 10 kWh also "

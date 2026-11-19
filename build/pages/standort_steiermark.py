@@ -44,6 +44,8 @@ LOKALE FAKTEN, alle am 10.10.2026 selbst abgerufen:
   Heizungssysteme" (mind. 15 Jahre alte Biomassekessel und Waermepumpen, max. 30 % der foerderungsfaehigen
   Investitionskosten, Budget 2026 700.000 Euro, 27 % verfuegbar am 06.10.2026):
   https://www.wohnbau.steiermark.at/cms/ziel/183599709/DE/ . Die 35 % stehen deshalb NICHT auf der Seite.
+- Bund Waermepumpe (Stand 19.11.2026, Faktenliste): Kesseltausch seit 2.11.2026 neu aufgelegt, 5.000 EUR
+  Pauschale, Registrierung bis 31.12.2026 oder bis das Budget aufgebraucht ist; "Bund ausgeschoepft" ist ueberholt.
 - Energiegemeinschaft: fuenf Buergerenergiemodelle, Quick Check im Serviceportal, Nahebereich (Trafostation lokal,
   Umspannwerk regional), neue Modelle Peer-to-Peer und Eigenversorgung seit Oktober 2026:
   https://www.e-netze.at/Strom/Energiegemeinschaften/ ; Anlaufstelle Energieagentur Steiermark:
@@ -182,7 +184,10 @@ FAQ = [
      "nächstgelegenen Nachbargrundstück eingehalten wird. Für die Meldung zählt also der Schall an der Grenze; "
      "deshalb planen wir Aufstellort und Gerät gemeinsam."),
     ("Welche Förderung gibt es 2026 für eine Wärmepumpe in der Steiermark?",
-     "Stand Oktober 2026 wenig: Die Bundesförderung für den Heizungstausch ist ausgeschöpft, und das Land Steiermark "
+     "Vor allem vom Bund: Der Kesseltausch ist seit 2. November 2026 neu aufgelegt und zahlt 5.000 Euro Pauschale, "
+     "wenn die Wärmepumpe eine fossile Heizung ersetzt, plus 5.000 Euro bei Erdwärme oder Grundwasser und plus "
+     "2.500 Euro mit thermischer Solaranlage; Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht "
+     "ist (Stand November 2026). Das Land Steiermark "
      "nimmt für den Umstieg von einer fossilen Heizung auf eine Wärmepumpe derzeit keine Anträge an. Offen ist das "
      "Landesprogramm für den Tausch mindestens 15 Jahre alter Wärmepumpen und Biomassekessel in Ein- und "
      "Zweifamilienhäusern, mit höchstens 30 Prozent der förderungsfähigen Investitionskosten und begrenztem Budget. "
@@ -405,8 +410,8 @@ def build():
                  "Sachverständigen bei, dass der zulässige Planungsbasispegel an der Grundgrenze zum nächsten "
                  "Nachbarn eingehalten wird."),
                 ("Deshalb beginnt unsere Planung beim Aufstellort und bei der Schallleistung des Geräts. Bei der "
-                 "Förderung sind wir offen: Die Bundesförderung für den Heizungstausch ist ausgeschöpft, und das Land "
-                 "Steiermark nimmt für den Umstieg von Öl oder Gas auf eine Wärmepumpe derzeit keine Anträge an. "
+                 "Förderung sind wir offen: Der Bund zahlt im neu aufgelegten Kesseltausch seit November 2026 wieder "
+                 "5.000 € Pauschale für die Wärmepumpe, das Land Steiermark nimmt für den Umstieg von Öl oder Gas auf eine Wärmepumpe derzeit keine Anträge an. "
                  "Offen ist ein Landesprogramm für den Tausch mindestens 15 Jahre alter Wärmepumpen und "
                  "Biomassekessel mit höchstens 30 Prozent der förderungsfähigen Investitionskosten, solange das "
                  f"Budget reicht ({STAND})."),
@@ -418,7 +423,7 @@ def build():
             alt="Außeneinheit einer Luft-Wasser-Wärmepumpe an einem Wohnhaus (Symbolbild)",
             bullets=[
                 "Meldung an die Gemeinde mit Datenblatt und Schallbestätigung, kein Bewilligungsverfahren",
-                "Bund ausgeschöpft, Land: Umstieg von Öl und Gas derzeit ohne Antragsmöglichkeit",
+                "Bund: Kesseltausch 5.000 € Pauschale; Land: Umstieg von Öl und Gas derzeit ohne Antragsmöglichkeit",
                 "Tausch alter Wärmepumpen und Biomassekessel: höchstens 30 % vom Land, Budget begrenzt",
                 a("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen für die Wärmepumpe") + ", "
                 + a("/waermepumpe-im-altbau/", "Wärmepumpe im Altbau") + ", "

@@ -6,6 +6,8 @@ Zahlen: EAG-Investitionszuschüsseverordnung 2026, Stromspeicher-Förderung Land
 Stand ab 23.10.2026: letzter EAG-Call 2026 lief 8. bis 22.10.2026, derzeit kein Bundeszuschuss;
 Ausblick 2027 Systemfoerderung laut BMWET (geplant, nicht beschlossen). Ob das Land Speicher an Neuanlagen
 foerdert, solange der Bund nicht beantragbar ist, ist NICHT geprueft (Formulierung offen gehalten).
+Update 19.11.2026: Bund Kesseltausch seit 2.11.2026 neu aufgelegt (Wärmepumpe 5.000 €, Holzzentralheizung
+6.000 €), Beispielrechnung Heizungstausch neu gerechnet. Landes-Heizungstausch Burgenland nicht neu geprüft.
 """
 
 import os
@@ -36,7 +38,7 @@ ARTICLE = {
         "Landesantrag bis <b>6 Monate</b> nach Rechnung",
     ],
     "date_published": "2026-05-20",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Hausdach unter klarem Himmel, wie im sonnenreichen Burgenland",
 
@@ -53,8 +55,9 @@ ARTICLE = {
         "Stärkster Hebel der Landesförderung ist die Speicher-Nachrüstung an Bestandsanlagen, weil die "
         "EAG-Speicherförderung dort nicht griff. Der Landesantrag ist bis sechs Monate nach Rechnungsdatum "
         "möglich, der EAG-Antrag musste im Call 2026 vor Inbetriebnahme gestellt werden.",
-        "Heizungstausch: 30 Prozent bis 3.500 Euro vom Land. Die Sanierungsoffensive des Bundes (2026: 7.500 Euro "
-        "Wärmepumpe bis 8.500 Euro Biomasse) ist seit Herbst 2026 ausgeschöpft.",
+        "Heizungstausch: 30 Prozent bis 3.500 Euro vom Land. Der Kesseltausch des Bundes ist seit 2. November "
+        "2026 neu aufgelegt (Wärmepumpe 5.000 Euro, Holzzentralheizung 6.000 Euro), Registrierung bis 31. "
+        "Dezember 2026 oder bis das Budget aufgebraucht ist.",
     ],
     "kpis": [
         ("150 €/kWp", "EAG-Bund bis 10 kWp im Call 2026"),
@@ -74,7 +77,7 @@ um Gemeindeförderungen und eine Landesförderung für den Heizungstausch.</p>
     [
         ["EAG-Investitionszuschuss (Bund)", "Neue PV-Anlage, mit oder ohne Speicher", "im Call 2026: 150 €/kWp (Kat. A) + 150 €/kWh Speicher + Made-in-Europe-Bonus", "letzter Call endete am 22. Oktober 2026, derzeit nicht beantragbar"],
         ["Stromspeicher-Förderung (Land)", "Eigentümer privater Wohngebäude (Wohnfläche über 50 %)", "100 €/kWh nutzbarer Kapazität, max. 20 kWh, max. 30 % der Kosten, bis 2.000 €", "greift, wenn die Bundesförderung nicht möglich ist; Antrag bis 6 Monate nach Rechnung"],
-        ["Heizungstausch (Land)", "Tausch fossiler Heizungen gegen Wärmepumpe oder Biomasse", "30 % der förderfähigen Kosten, max. 3.500 €", "2026 kombinierbar mit der Sanierungsoffensive des Bundes (seit Herbst 2026 ausgeschöpft)"],
+        ["Heizungstausch (Land)", "Tausch fossiler Heizungen gegen Wärmepumpe oder Biomasse", "30 % der förderfähigen Kosten, max. 3.500 €", "kombinierbar mit dem Kesseltausch des Bundes (seit 2. November 2026 neu aufgelegt)"],
         ["Gemeindeförderung", "je nach Wohnsitzgemeinde", "Fixzuschuss, Speicherbonus oder Prozentanteil", "laufend, gemeindeabhängig"],
     ],
     hl_cols=(2,),
@@ -195,16 +198,17 @@ bis sechs Monate nach Rechnung. So lief es ab:</p>
         ("Heizungstausch-Förderung Burgenland: 3.500 Euro vom Land", "heizung", f"""
 <p>Wer neben der PV-Anlage auch die Heizung tauscht, profitiert im Burgenland zusätzlich. Das Land fördert
 den Tausch fossiler Altanlagen (Öl, Gas, Kohle, Allesbrenner) gegen Wärmepumpe oder Biomasseanlage mit
-30 Prozent der förderfähigen Kosten, gedeckelt bei 3.500 Euro. 2026 war diese Förderung mit der
-Sanierungsoffensive des Bundes kombinierbar, die je nach System 7.500 Euro (Wärmepumpe) bis 8.500 Euro
-(Biomasse) als Pauschale gewährte; die Bundesmittel sind seit Herbst 2026 ausgeschöpft, neue Registrierungen
-sind nicht möglich.</p>
+30 Prozent der förderfähigen Kosten, gedeckelt bei 3.500 Euro. Dazu kommt der Kesseltausch des Bundes
+(Sanierungsoffensive), seit 2. November 2026 neu aufgelegt: 5.000 Euro Pauschale für die Wärmepumpe (plus
+5.000 Euro Bohrbonus bei Erdwärme oder Grundwasser), 6.000 Euro für die Holzzentralheizung. Registrierung
+bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist, vorher ist eine Energieberatung nötig. In der
+ersten Aktion 2026 waren es 7.500 Euro (Wärmepumpe) bis 8.500 Euro (Biomasse).</p>
 {A.table(
-    ["Beispiel 2026: Öl auf Wärmepumpe, 30.000 € Projektkosten*", "Betrag"],
+    ["Beispiel: Öl auf Luftwärmepumpe, 30.000 € Projektkosten*", "Betrag"],
     [
-        ["Sanierungsoffensive des Bundes (Pauschale Wärmepumpe, seit Herbst 2026 ausgeschöpft)", "7.500 €"],
+        ["Kesseltausch des Bundes (Pauschale Wärmepumpe, Neuauflage ab 2. November 2026)", "5.000 €"],
         ["Land Burgenland (30 %, gedeckelt)", "3.500 €"],
-        ["<b>Gesamtförderung 2026</b>", "<b>11.000 € (rund 37 %)</b>"],
+        ["<b>Gesamtförderung</b>", "<b>8.500 € (rund 28 %)</b>"],
     ],
     hl_cols=(1,),
 )}
@@ -214,8 +218,8 @@ Speicherförderung des Landes gilt nach ihrer Richtlinie. Nach
 Erfahrungswerten von EBZ Energie sind in der Kombination aus PV und Wärmepumpe bis zu 85 Prozent
 Ersparnis bei den Energiekosten möglich. Für die Steuerung beider Anlagen fördert der Klima- und
 Energiefonds seit Juni 2026 Energiemanagementsysteme (siehe {a('/ems-foerderung/', 'EMS-Förderung 2026')}).</p>
-<p><small>*Beispielkonditionen 2026. Die tatsächliche Förderhöhe hängt von System, Kosten und den jeweils gültigen
-Richtlinien ab.</small></p>
+<p><small>*Beispielkonditionen, Stand November 2026. Die tatsächliche Förderhöhe hängt von System, Kosten und den
+jeweils gültigen Richtlinien ab; alle Förderungen zusammen höchstens die Investitionskosten.</small></p>
 """),
         ("Gemeindeförderungen im Burgenland", "gemeinde", f"""
 <p>Viele burgenländische Gemeinden bieten eigene PV-Programme: pauschale Fixzuschüsse, Speicherboni oder
@@ -296,9 +300,11 @@ Technikkriterien sind noch offen.</p>
          "Bundeszuschuss beantragbar; ob das Land dann Speicher an Neuanlagen fördert, klären wir vor dem Angebot."),
         ("Wie hoch ist die Heizungstausch-Förderung im Burgenland?",
          "Das Land fördert den Tausch fossiler Heizungen gegen Wärmepumpe oder Biomasse mit 30 Prozent der "
-         "förderfähigen Kosten, maximal 3.500 Euro. Zusammen mit der Sanierungsoffensive des Bundes (2026: 7.500 Euro "
-         "Wärmepumpe, 8.500 Euro Biomasse) ergab das bei 30.000 Euro Projektkosten 11.000 Euro oder rund "
-         "37 Prozent. Die Bundesmittel sind seit Herbst 2026 ausgeschöpft."),
+         "förderfähigen Kosten, maximal 3.500 Euro. Dazu kommt der seit 2. November 2026 neu aufgelegte "
+         "Kesseltausch des Bundes mit 5.000 Euro für die Wärmepumpe oder 6.000 Euro für die "
+         "Holzzentralheizung. Bei einer Luftwärmepumpe und 30.000 Euro Projektkosten ergibt das 8.500 Euro oder "
+         "rund 28 Prozent*. Registrierung beim Bund bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist. "
+         "*Beispielrechnung."),
         ("Welche Voraussetzungen gelten für die Landes-Speicherförderung?",
          "Sie müssen Eigentümer eines privaten Wohngebäudes im Burgenland sein, die Wohnfläche muss über 50 Prozent "
          "ausmachen, der Speicher überwiegend dem Eigenverbrauch dienen und eine Betriebserlaubnis vorliegen. "
@@ -317,6 +323,10 @@ Technikkriterien sind noch offen.</p>
     "sources": [
         ("EAG-Abwicklungsstelle: Investitionszuschuss Photovoltaik und Speicher",
          "https://www.eag-abwicklungsstelle.at/wissen/investitionszuschuss-photovoltaik-und-speicher/"),
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
         ("Förderportal des Landes Burgenland: Energie",
          "https://www.burgenland.at/themen/bauen/wohnen/energie-neu/"),
     ],

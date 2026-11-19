@@ -7,6 +7,8 @@ Korrektur 10.10.2026 (build/seo/_fakten_2026-10.md): Sanierungsbonus beendet, Ö
 Gemeindebeträge nicht amtlich belegt, Land nimmt für neue Wärmepumpen keine Anträge an.
 Stand ab 23.10.2026: EAG 3. und letzter Call lief 8. bis 22.10.2026, derzeit kein Bundeszuschuss; Ausblick 2027
 Systemfoerderung laut BMWET (geplant, nicht beschlossen).
+Update 19.11.2026: Wärmepumpen-Abschnitt auf den neu aufgelegten Kesseltausch des Bundes umgestellt
+(5.000 € Pauschale); PV-Bund 2026 bleibt abgeschlossen.
 """
 
 import os
@@ -38,7 +40,7 @@ ARTICLE = {
         "Ökofonds: <b>keine PV-Ausschreibung</b>",
     ],
     "date_published": "2026-04-05",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch zur Photovoltaik-Förderung in der Steiermark mit Förderunterlagen am Tisch",
 
@@ -238,8 +240,10 @@ dem Ende des letzten Calls am 22. Oktober 2026 ist er derzeit nicht möglich:</p
 {a('waermepumpe', 'Wärmepumpe')}. Die PV-Anlage liefert tagsüber Sonnenstrom, die Wärmepumpe deckt
 Heizung und Warmwasser und nutzt im Idealfall direkt den eigenen Strom. Nach Erfahrungswerten von EBZ
 Energie sind in dieser Kombination bis zu 85 Prozent Ersparnis bei den Energiekosten möglich.</p>
-<p>Förderseitig ist die Lage für die Wärmepumpe derzeit eng: Die Sanierungsoffensive des Bundes ist seit
-Herbst 2026 ausgeschöpft, und das Land Steiermark nimmt für neue Wärmepumpen keine Förderanträge an
+<p>Förderseitig kommt es für die Wärmepumpe in der Steiermark derzeit auf den Bund an: Der Kesseltausch
+des Bundes (Sanierungsoffensive) ist seit 2. November 2026 neu aufgelegt, ersetzt die Wärmepumpe eine
+fossile Heizung, gibt es 5.000 Euro Pauschale (Registrierung bis 31. Dezember 2026 oder bis das Budget
+aufgebraucht ist). Das Land Steiermark nimmt für neue Wärmepumpen keine Förderanträge an
 (Stand 10. Oktober 2026). Die steirische Richtlinie für den Tausch von Heizungssystemen (seit 1. Februar
 2026) fördert nur den Ersatz mindestens 15 Jahre alter Biomassekessel oder Wärmepumpen mit höchstens
 30 Prozent, höchstens 1.500 Euro, und nur ohne Fernwärme-Anschlussmöglichkeit.
@@ -336,6 +340,8 @@ Speicher und Energiemanagement.</p>
         ("Förderportal des Landes Steiermark", "https://www.steiermark.at/"),
         ("Land Steiermark: Förderung für Heizungen (Wohnbau, Stand 10. Oktober 2026)",
          "https://www.wohnbau.steiermark.at/cms/ziel/164947118/DE/"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
     ],
     "related": [
         ("/photovoltaik-foerderung-kaernten/", "Photovoltaik-Förderung Kärnten 2026"),

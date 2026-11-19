@@ -7,7 +7,8 @@ Beispielrechnung mit Amortisation*, bifaziale Glas-Glas-Module, wasserdichtes Da
 Bauanzeige (qualitativ, keine erfundenen Masse), Betriebe. Es gibt kein eigenes
 Carport-Foto, Alt-Texte bleiben deshalb ehrlich (PV-Motive als Symbolbild).
 Zahlen: Ertrag 950 bis 1.100 kWh je kWp, 2 Stellplaetze 30 bis 35 m2 = 5 bis 7 kWp
-(Quellbeitrag), Strompreis 28 ct und OeMAG 10,168 ct (Faktenblatt) fuer die Beispielrechnung.
+(Quellbeitrag), Strompreis 28 ct und OeMAG-Spanne 2026 6,146 bis 14,874 ct (Faktenblatt, Juli und Oktober)
+fuer die Beispielrechnung.
 """
 
 from common import IMG, NAP, AUTHOR, AUTHOR_ROLE, faq_jsonld, u, a, href, write_page, load_reviews
@@ -234,8 +235,8 @@ def build():
                 ("Ertrag", "rund 6.000 kWh im Jahr (6 kWp mal rund 1.000 kWh)*"),
                 ("Eigenverbrauch", "rund 65 Prozent mit E-Auto und Speicher, also etwa 3.900 kWh*"),
                 ("Ersparnis Netzstrom", "3.900 kWh mal 28 ct = rund 1.090 € im Jahr*"),
-                ("Einspeisung", "2.100 kWh mal 10,168 ct (OeMAG-Marktpreis September 2026) = rund 215 € im Jahr*"),
-                ("Nutzen gesamt", "rund 1.300 € im Jahr*, plus Treibstoffersparnis fürs E-Auto"),
+                ("Einspeisung", "2.100 kWh mal 6,146 bis 14,874 ct (OeMAG-Marktpreis Juli und Oktober 2026, schwankt monatlich) = rund 130 bis 310 € im Jahr*"),
+                ("Nutzen gesamt", "rund 1.200 bis 1.400 € im Jahr*, plus Treibstoffersparnis fürs E-Auto"),
                 ("Förderung", "Kärnten 3.000 € Pauschale mit Speicher ab 5 kWh; Bundeszuschuss für 2026 abgeschlossen, derzeit nicht beantragbar"),
                 ("Amortisation PV-Teil", "rund 7 bis 9 Jahre* ohne Konstruktion"),
                 ("Amortisation Komplettsystem", "rund 10 bis 15 Jahre* (Marktrichtwert), bei 30 bis 40 Jahren Lebensdauer"),
@@ -360,7 +361,7 @@ def _footnote():
       <p class="form-note">*Richtwerte vor Förderung: PV-Teil und Speicher auf Basis typischer EBZ-Projekte, Komplettsystem-
       und Bausatzpreise sowie Amortisation 10 bis 15 Jahre aus marktüblichen österreichischen Angeboten 2026. Ertrag 950 bis 1.100 kWh
       je kWp und Jahr ist ein österreichweiter Durchschnitt, Beispielrechnung mit 28 ct/kWh Haushaltsstrompreis, 65 Prozent
-      Eigenverbrauch und OeMAG-Marktpreis September 2026 (10,168 ct). Gestehungskosten für Solarstrom 10 bis 14 ct/kWh je nach
+      Eigenverbrauch und OeMAG-Marktpreis 2026 zwischen 6,146 ct (Juli) und 14,874 ct (Oktober), Stand November 2026. Gestehungskosten für Solarstrom 10 bis 14 ct/kWh je nach
       Anlage, Zusatzgewicht 15 bis 25 kg/m² je nach Modul und Unterkonstruktion. Förderstand {STAND}, Änderungen durch
       Fördergeber vorbehalten. Konstruktion, Ertrag und Kosten hängen von Standort, Lastzone, Ausrichtung und Komponentenwahl ab.
       Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>

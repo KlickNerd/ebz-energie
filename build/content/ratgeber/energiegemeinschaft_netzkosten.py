@@ -31,7 +31,7 @@ ARTICLE = {
         "Förderbeitrag: <b>entfällt</b>",
     ],
     "date_published": "2026-08-15",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_gewerbe",
     "hero_alt": "Photovoltaikanlage auf einem Gewerbedach, im Hintergrund Trafostation und Wohnsiedlung",
 
@@ -134,7 +134,8 @@ Gebühren dafür üblich sind, steht im Artikel {a('/energiegemeinschaft-kosten/
         ("Gilt das auch für Erzeuger?", "erzeuger", f"""
 <p>Der Netzentgelt-Abschlag betrifft den Bezug, nicht die Einspeisung. Als Erzeuger profitieren Sie davon in den
 Stunden, in denen Sie selbst aus der Gemeinschaft beziehen, also abends und im Winter. Auf der Einspeiseseite liegt
-Ihr Vorteil im höheren EG-Preis gegenüber dem OeMAG-Tarif, den Vergleich zieht der Artikel
+Ihr Vorteil im fix vereinbarten EG-Preis: Der OeMAG-Tarif schwankte 2026 zwischen 6,146 Cent (Juli) und 14,874 Cent
+(Oktober), ein EG-Preis liegt je nach Monat darüber oder darunter, ist aber planbar. Den Vergleich zieht der Artikel
 {a('/oemag-einspeisetarif/', 'OeMAG-Einspeisetarif oder Energiegemeinschaft')}.</p>
 <p>Eine Neuerung des ElWG betrifft größere Einspeiser: Für Anlagen mit mehr als 20 kW eingespeister Leistung wird ein
 Versorgungsinfrastrukturbeitrag fällig, gedeckelt mit durchschnittlich 0,5 Euro je Megawattstunde, also 0,05 Cent je

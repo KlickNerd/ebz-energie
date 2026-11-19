@@ -3,6 +3,8 @@
 Migriert von ebz-photovoltaik.at/funktionsweise-einer-waermepumpe/ (Stand April 2026).
 Bereinigt: Montage-Formulierung auf "zertifizierte Fachkräfte" umgestellt, Einsatzgebiet auf Kärnten und Steiermark
 präzisiert, Minuszeichen als Gedankenstrich ersetzt.
+Update 19.11.2026: Bund Kesseltausch seit 2.11.2026 neu aufgelegt (Abschnitt "VERBINDLICH AB 19.11.2026"
+in build/seo/_fakten_2026-10.md), Quellen ergänzt.
 """
 
 import os
@@ -33,7 +35,7 @@ ARTICLE = {
         "Betrieb bis <b>-20 °C</b> und darunter",
     ],
     "date_published": "2026-03-30",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "waermepumpe",
     "hero_alt": "Außeneinheit einer Luft-Wasser-Wärmepumpe: Wärmequelle Außenluft für den Kältemittelkreislauf",
 
@@ -143,8 +145,9 @@ Leistung, besonders für Bestandsgebäude ohne Möglichkeit für Erdarbeiten.</p
 etwa 8 bis 12 °C, unabhängig von der Außentemperatur. Die Wärme wird über Erdsonden (Tiefenbohrung)
 oder Flächenkollektoren erschlossen. Diese Konstanz macht sie sehr effizient, JAZ-Werte von 4,0 bis
 4,5 sind Standard, auch im Winter. Der Nachteil sind die höheren Investitionskosten für die Bohrung.
-Dafür sieht die Bundesförderung laut Quelle einen zusätzlichen Bohrbonus von 5.000 Euro vor, der die
-Mehrkosten deutlich reduziert.</p>
+Dafür sieht der Kesseltausch des Bundes (seit 2. November 2026 neu aufgelegt) zusätzlich zur
+Wärmepumpen-Pauschale von 5.000 Euro einen Bohrbonus von 5.000 Euro vor, der die Mehrkosten deutlich
+reduziert.</p>
 <h3>Wasser-Wasser-Wärmepumpe (Grundwasser)</h3>
 <p>Sie nutzt Grundwasser mit ganzjährig 8 bis 12 °C und erreicht die höchsten JAZ-Werte aller Typen,
 typischerweise 4,5 bis 5,5. Nötig sind ein Förderbrunnen zur Entnahme und ein Schluckbrunnen zur
@@ -189,9 +192,10 @@ vom eigenen Dach. Zusammen machen sie Ihr Haus nahezu energieautark:</p>
 <p>Eine durchschnittliche Wärmepumpe verbraucht 3.000 bis 5.000 kWh Strom pro Jahr. Mit einer passend
 dimensionierten {a('photovoltaik', 'PV-Anlage')} decken Sie einen Großteil dieses Bedarfs selbst, den
 Rest speisen Sie ein oder speichern ihn im {a('batteriespeicher', 'Batteriespeicher')}. Beide Systeme
-werden separat gefördert: die Wärmepumpe 2026 über die
-{a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} (Kesseltausch, seit Herbst 2026 ausgeschöpft,
-aktuell Landesförderungen), die PV-Anlage 2026 über den EAG-Investitionszuschuss (letzter Call endete am
+werden separat gefördert: die Wärmepumpe über die
+{a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} (Kesseltausch, seit 2. November 2026 neu
+aufgelegt, 5.000 Euro Pauschale, Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist,
+dazu Landesförderungen wie in Kärnten), die PV-Anlage 2026 über den EAG-Investitionszuschuss (letzter Call endete am
 22. Oktober 2026, aktuell Landesförderungen wie die Kärntner Pauschale). Wer beides gemeinsam plant,
 maximiert Förderung und Ersparnis. Details zur
 Dimensionierung: {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}.</p>
@@ -262,6 +266,12 @@ der Planung: Wärmequelle, Vorlauftemperatur, Dämmung und Dimensionierung müss
                     "Wärmepumpen, PV-Anlagen und Speicher in Kärnten und der Steiermark. Dieser Artikel "
                     "dient der allgemeinen Information über die Funktionsweise von Wärmepumpen, für Ihr "
                     "Gebäude zählt die individuelle Auslegung vor Ort."),
+    "sources": [
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
+    ],
     "related": [
         ("waermepumpe", "Wärmepumpen-Installateur in Kärnten und Steiermark"),
         ("/heizen-mit-waermepumpe/", "Heizen mit Wärmepumpe: Grundlagen"),

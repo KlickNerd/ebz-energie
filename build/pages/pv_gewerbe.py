@@ -49,8 +49,8 @@ FAQ = [
      "Überschusseinspeisung gelten nicht als Gewerbetreibende; ihre Einspeiseerlöse sind bis 12.500 kWh im Jahr "
      "einkommensteuerfrei (Anlagen bis 35 kWp). Bei Volleinspeisung oder sehr großen Anlagen fragen Sie Ihre Steuerberatung."),
     ("Wie hoch ist die Einspeisevergütung für gewerbliche Anlagen?",
-     "Einen eigenen Gewerbetarif gibt es nicht. Der OeMAG-Marktpreis lag im September 2026 bei 10,168 Cent je kWh "
-     "(Stand Oktober 2026), im Juli bei 6,146 Cent; er schwankt monatlich. Weil der Bezugspreis ein Mehrfaches beträgt, "
+     "Einen eigenen Gewerbetarif gibt es nicht. Der OeMAG-Marktpreis lag im Oktober 2026 bei 14,874 Cent je kWh "
+     "(Stand November 2026), im September bei 10,168 Cent und im Juli bei 6,146 Cent; er schwankt monatlich. Weil der Bezugspreis ein Mehrfaches beträgt, "
      "zählt der Eigenverbrauch. Wochenendüberschüsse verwerten Sie besser in einer Energiegemeinschaft oder bei großen "
      "Anlagen über Direktvermarktung."),
     ("Was ist Lastspitzenkappung und wann lohnt sich ein Gewerbespeicher?",
@@ -216,8 +216,8 @@ def build():
             h2="Überschuss: Überschusseinspeisung, Direktvermarktung oder Energiegemeinschaft",
             paragraphs=[
                 ("Standard ist die Überschusseinspeisung: zuerst Eigenverbrauch, der Rest geht zum OeMAG-Marktpreis "
-                 "ins Netz. Dieser lag im September 2026 bei 10,168 Cent je kWh, im Juli bei 6,146 Cent und schwankt "
-                 f"monatlich ({STAND}). Volleinspeisung lohnt sich bei diesen Preisen nicht, Direktvermarktung erst "
+                 "ins Netz. Dieser lag im Oktober 2026 bei 14,874 Cent je kWh, im Juli bei 6,146 Cent und schwankt "
+                 "monatlich (Stand November 2026). Volleinspeisung lohnt sich bei diesen Preisen nicht, Direktvermarktung erst "
                  "für große Anlagen."),
                 ("Am Wochenende und in der Urlaubszeit liefert das Dach weiter. Diesen Überschuss teilen Sie in einer "
                  "Energiegemeinschaft mit Gemeinde, Siedlung oder anderen Betrieben: Im Nahbereich sinken die Netzentgelte "
@@ -419,7 +419,7 @@ def _footnote():
       <p class="form-note">*Marktrichtwerte 2026 vor Förderung: 700 bis 1.300 € je kWp netto, Amortisation 6 bis 12 Jahre,
       Ertrag 900 bis 1.100 kWh je kWp, 5 bis 6 m² je kWp; Stromgestehungskosten rechnerisch (Investition durch Ertrag über
       25 Jahre plus Betrieb). Alles abhängig von Lastprofil, Größe, Ausrichtung und Strompreis. Referenzzahlen aus den
-      Projekten Gewerbe Oberösterreich und Hotel Villach/Warmbad. Förderstand und OeMAG-Marktpreis {STAND}. Steuerliche
+      Projekten Gewerbe Oberösterreich und Hotel Villach/Warmbad. Förderstand {STAND}, OeMAG-Marktpreis Stand November 2026. Steuerliche
       Angaben ersetzen keine Steuerberatung. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>
   </section>""")

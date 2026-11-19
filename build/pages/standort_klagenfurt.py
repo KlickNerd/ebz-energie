@@ -49,7 +49,8 @@ hier nicht selbst abgerufen), Entfernungen/Fahrzeiten, Zuordnung einzelner Umlan
 
 Waermepumpe: Zahlen nur aus build/pages/waermepumpe.py (12.000 bis 22.000 EUR, Altbau 15.000 bis
 28.000 EUR, 1 kWh Strom -> 4 bis 5 kWh Waerme, Beispielhaus 12.000 kWh / JAZ 4). Foerderung wie auf
-/photovoltaik-villach/ (Vorgabe Koordinator): Bund ausgeschoepft, Land Kaernten 3.000 EUR Pauschale
+/photovoltaik-villach/ (Vorgabe Koordinator): Bund seit 2.11.2026 wieder Kesseltausch 5.000 EUR Pauschale
+(Faktenliste, Stand 19.11.2026; vorher "ausgeschoepft"), Land Kaernten 3.000 EUR Pauschale
 2026 (KEM-Infoblatt "Foerderungen 2026" auf maria-saal.gv.at und STW-Blog, abgerufen 10.10.2026; die 35 % mit
 6.000 EUR Obergrenze galten nur bis 31.12.2025).
 
@@ -113,7 +114,7 @@ FAQ = [
      "PV und Speicher ist für 2026 abgeschlossen, ab 2027 plant der Bund laut BMWET eine Systemförderung. Welche Programme gerade offen sind, steht auf unserer Förderseite."),
     ("Wer nimmt in Klagenfurt meinen überschüssigen Sonnenstrom ab?",
      "Laut Energie Klagenfurt brauchen Sie schon vor der Inbetriebnahme einen Vertrag mit einem Abnehmer. Zur Wahl "
-     "stehen die OeMAG (Marktpreis September 2026: 10,168 Cent je kWh, im Juli 6,146 Cent, der Wert schwankt "
+     "stehen die OeMAG (Marktpreis Oktober 2026: 14,874 Cent je kWh, im Juli 6,146 Cent, der Wert schwankt "
      "monatlich), Energieversorger mit eigenem Einspeisetarif, etwa die Stadtwerke Klagenfurt mit SonnenCity "
      "Klagenfurt (7 Cent je kWh netto laut stw.at, Stand Oktober 2026), oder eine Energiegemeinschaft. Am meisten "
      "bringt jede Kilowattstunde, die Sie selbst verbrauchen."),
@@ -129,8 +130,10 @@ FAQ = [
      "Einfamilienhaus am Stadtrand oder in den Umlandgemeinden, ist die Wärmepumpe meist die naheliegende Lösung, "
      "am besten zusammen mit Photovoltaik. Wir rechnen Ihnen das für Ihr Haus durch."),
     ("Welche Förderung gibt es für eine Wärmepumpe in Klagenfurt?",
-     "Beim Bund ist die Förderung für den Heizungstausch ausgeschöpft, neue Registrierungen sind derzeit nicht "
-     "möglich. Das Land Kärnten zahlt 2026 eine Pauschale von 3.000 Euro für den Wechsel zur Wärmepumpe im Eigenheim; ob "
+     "Der Bund zahlt seit der Neuauflage des Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale, wenn die "
+     "Wärmepumpe eine fossile Heizung ersetzt und kein Fernwärmeanschluss möglich ist; Registrierung bis 31. Dezember "
+     "2026 oder bis das Budget aufgebraucht ist. Das Land Kärnten zahlt 2026 zusätzlich eine Pauschale von 3.000 Euro "
+     "für den Wechsel zur Wärmepumpe im Eigenheim, zusammen also bis 8.000 Euro*; ob "
      "das Budget reicht und welche Voraussetzungen für Ihr Haus gelten, klären wir vor dem Angebot. Die PV-Anlage dazu wird "
      "getrennt gefördert. Der aktuelle Stand steht auf unserer Förderseite, eine erste Zahl liefert der Förderrechner."),
     ("Ist eine Wärmepumpe in Klagenfurt genehmigungspflichtig?",
@@ -313,8 +316,9 @@ def build():
                  "Deshalb legen wir Photovoltaik, Speicher und Wärmepumpe gemeinsam aus und nehmen beim Termin auch "
                  "Heizraum, Heizkörper und den Aufstellort der Außeneinheit auf: In dicht bebauten Siedlungen "
                  "entscheidet der Abstand zu Schlafzimmerfenstern und Nachbargrenze."),
-                ("Zur Förderung in Kürze: Beim Bund ist der Topf für den Heizungstausch ausgeschöpft. Das Land "
-                 "Kärnten zahlt 2026 eine Pauschale von 3.000 € für den Wechsel zur Wärmepumpe im Eigenheim; ob das "
+                ("Zur Förderung in Kürze: Der Bund zahlt im neu aufgelegten Kesseltausch seit November 2026 wieder "
+                 "5.000 € Pauschale, sofern kein Fernwärmeanschluss möglich ist. Das Land "
+                 "Kärnten zahlt 2026 zusätzlich eine Pauschale von 3.000 € für den Wechsel zur Wärmepumpe im Eigenheim; ob das "
                  "Budget reicht und welche Voraussetzungen für Ihr Haus gelten, klären wir vor dem Angebot. Den aktuellen Stand lesen Sie unter "
                  + a("foerderungen", "Förderungen im Überblick") + ", eine erste Zahl liefert der "
                  + a("foerderrechner", "Förderrechner") + "."),
@@ -484,8 +488,8 @@ def _footnote():
       abweichen. Netzanschluss laut Energie Klagenfurt GmbH (stw.at) und Kärnten Netz GmbH, Baurecht laut Kärntner
       Bauordnung 1996, jeweils Stand Oktober 2026. Finanzierung: Beispielkonditionen, vorbehaltlich Bonitätsprüfung.
       Wärmepumpe: Richtwerte aus unseren Ratgebern, Beispielhaus mit 12.000 kWh Wärmebedarf und Jahresarbeitszahl 4;
-      Förderhöhe abhängig von Richtlinie, Gebäude und Budget der Fördergeber. Fördersätze, Tarife und OeMAG-Marktpreis
-      Stand Oktober 2026, Änderungen vorbehalten. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
+      Förderhöhe abhängig von Richtlinie, Gebäude und Budget der Fördergeber, Bund und Land zusammen höchstens die
+      Investitionskosten. Fördersätze und OeMAG-Marktpreis Stand November 2026, Tarife Stand Oktober 2026, Änderungen vorbehalten. Fachlich geprüft von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>
     </div>
   </section>""")
 

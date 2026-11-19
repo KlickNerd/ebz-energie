@@ -2,8 +2,10 @@
 
 Migriert vom WordPress-Artikel ebz-photovoltaik.at/unternehmensfoerderung-von-waermepumpen/
 (veröffentlicht 2026-03-25, zuletzt geändert 2026-04-12). Zahlen: Stand April 2026.
-Bereinigt: Gedankenstriche ("50–100 kW", "15–25 %"), "Ohne Subunternehmer" entfernt,
+Bereinigt: Gedankenstriche (jetzt "50 bis 100 kW", "15 bis 25 %"), "Ohne Subunternehmer" entfernt,
 Förderhöhen als Tabelle, Hinweis auf geänderte Voraussetzungen ab 1. April 2026 beibehalten.
+Update 19.11.2026: nur Aussagen zum privaten Kesseltausch auf die Neuauflage ab 2.11.2026 umgestellt
+(5.000 € Pauschale, keine Prozentgrenze); Betriebsförderung unverändert.
 """
 
 import os
@@ -34,7 +36,7 @@ ARTICLE = {
         "Antrag <b>nach</b> Umsetzung",
     ],
     "date_published": "2026-03-25",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_gewerbe",
     "hero_alt": "Gewerbegebäude mit Photovoltaik auf dem Dach und Wärmepumpe im Betrieb",
 
@@ -72,8 +74,8 @@ Privatprogrammen unterscheiden und in manchen Fällen höhere Beträge bieten. S
         ("Welche Förderprogramme gibt es für Unternehmen?", "programme", f"""
 <h3>„Raus aus Öl und Gas“ für Betriebe: Anlagen unter 100 kW</h3>
 <p>Das Programm ist das Pendant zur {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive')} für
-Privathaushalte (diese ist seit Herbst 2026 ausgeschöpft; die Betriebsschiene hat eigene Budgets, den
-aktuellen Stand zeigt umweltfoerderung.at) und wird von der Kommunalkredit Public Consulting (KPC) im
+Privathaushalte (deren Kesseltausch läuft seit 2. November 2026 als Neuauflage mit 5.000 € für die
+Wärmepumpe; die Betriebsschiene hat eigene Budgets, den aktuellen Stand zeigt umweltfoerderung.at) und wird von der Kommunalkredit Public Consulting (KPC) im
 Auftrag des Bundesministeriums abgewickelt. Antragsberechtigt sind alle Unternehmen und unternehmerisch tätigen Organisationen in
 Österreich sowie Vereine und konfessionelle Einrichtungen. Gefördert wird der Ersatz eines fossilen
 Heizsystems (Öl, Gas, Kohle, Strom, Allesbrenner) durch Wärmepumpe, Holzheizung oder Fernwärmeanschluss
@@ -196,8 +198,8 @@ von bis zu 100.000 € erhalten. Die Einreichfrist läuft bis November 2026. Fü
 selbst gibt es zudem die {a('/ems-foerderung/', 'EMS-Förderung des Klimafonds')}.</p>
 """),
         ("Fazit: Höhere Beträge, anderer Ablauf", "fazit", f"""
-<p>Die Betriebsförderung bietet mit bis zu 12.000 € und einer Quote von bis zu 50 % mehr als die
-Privatförderung, folgt aber eigenen Regeln: Antrag nach Umsetzung, 6-Monats-Frist ab Rechnung,
+<p>Die Betriebsförderung bietet mit bis zu 12.000 € mehr als die Privatförderung (Kesseltausch seit
+2. November 2026: 5.000 € Pauschale für die Wärmepumpe), folgt aber eigenen Regeln: Antrag nach Umsetzung, 6-Monats-Frist ab Rechnung,
 De-minimis-Grenze und ab 1. April 2026 geänderte Voraussetzungen unter 100 kW. Wer Wärmepumpe und
 Photovoltaik gemeinsam plant, nutzt zwei Fördertöpfe und senkt die Betriebskosten dauerhaft. Alle
 Programme im Überblick: {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich 2026')}.</p>
@@ -230,16 +232,19 @@ Programme im Überblick: {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepu
          "Wird das Gebäude teilweise privat genutzt, kann die Privatförderung der bessere Weg sein."),
         ("Muss ich als Betrieb den Antrag vor oder nach dem Heizungstausch stellen?",
          "Bei Anlagen unter 100 kW nach der Umsetzung, spätestens 6 Monate nach Rechnungslegung. Das ist der "
-         "wesentliche Unterschied zur Privatförderung, bei der vor Beginn registriert wird. Ab 100 kW empfiehlt "
+         "wesentliche Unterschied zur Privatförderung, bei der zuerst registriert und dann innerhalb von 9 Monaten "
+         "beantragt wird. Ab 100 kW empfiehlt "
          "sich eine frühzeitige Abstimmung mit der KPC, weil die Förderung projektindividuell berechnet wird."),
         ("Gibt es eine Förderung für Wärmepumpen in Gebäuden, die ich als Unternehmer vermiete?",
          "Vermietete Gebäude fallen nicht unter die Privatförderung. Die Betriebsförderung setzt eine überwiegend "
          "betriebliche Nutzung voraus. Rein vermietete Wohngebäude sind in der Regel von beiden Schienen nicht "
          "abgedeckt; lassen Sie Ihre Situation individuell prüfen."),
         ("Was ist der Unterschied zwischen Betriebs- und Privatförderung?",
-         "Die Betriebsförderung erlaubt höhere Maximalbeträge (bis 12.000 € bei 50 bis 100 kW) und eine Quote "
-         "von bis zu 50 % statt 30 %. Dafür gelten De-minimis-Grenzen und beihilfenrechtliche Vorschriften, und "
-         "der Antrag erfolgt nach Umsetzung. Die Privatförderung ist einfacher, hat aber niedrigere Beträge."),
+         "Die Betriebsförderung erlaubt höhere Maximalbeträge (bis 12.000 € bei 50 bis 100 kW, höchstens 50 % "
+         "der Kosten). Der private Kesseltausch zahlt seit der Neuauflage vom 2. November 2026 eine Pauschale von "
+         "5.000 € für die Wärmepumpe ohne Prozentgrenze. Für Betriebe gelten De-minimis-Grenzen und "
+         "beihilfenrechtliche Vorschriften, und der Antrag erfolgt nach Umsetzung. Die Privatförderung ist "
+         "einfacher, hat aber niedrigere Beträge."),
         ("Kann ein Verein die Förderung beantragen?",
          "Ja. Vereine und konfessionelle Einrichtungen sind ausdrücklich antragsberechtigt, mit denselben "
          "Fördersätzen und technischen Voraussetzungen wie Unternehmen. Der Antrag läuft ebenfalls online über "

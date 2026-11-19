@@ -35,7 +35,7 @@ ARTICLE = {
         "<b>Nicht</b> mit EAG-Speicher kombinierbar",
     ],
     "date_published": "2026-05-15",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gewerbe_dach",
     "hero_alt": "Photovoltaikanlage auf einem Gewerbedach in Oberösterreich, Ost-West-Ausrichtung auf Trapezblech",
 
@@ -211,8 +211,9 @@ berät kostenlos zu allen Förderfragen und kennt die regionalen Programme.</p>
 {a('waermepumpe', 'Wärmepumpe')}. Die PV-Anlage liefert tagsüber Sonnenstrom, die Wärmepumpe deckt
 Heizung und Warmwasser damit. Nach Erfahrungswerten von EBZ Energie sind so bis zu 85 Prozent Ersparnis
 bei den Energiekosten möglich.</p>
-<p>Für die Wärmepumpe gibt es eigene Förderschienen wie die Sanierungsoffensive des Bundes oder „Sauber
-Heizen für Alle“. Das Land Oberösterreich fördert zusätzlich Maßnahmen zur Verbesserung des Wärmeschutzes
+<p>Für die Wärmepumpe gibt es eigene Förderschienen, allen voran den Kesseltausch des Bundes
+(Sanierungsoffensive, seit 2. November 2026 neu aufgelegt, 5.000 Euro Pauschale, Registrierung bis
+31. Dezember 2026 oder bis das Budget aufgebraucht ist); „Sauber Heizen für Alle“ bleibt geschlossen. Das Land Oberösterreich fördert zusätzlich Maßnahmen zur Verbesserung des Wärmeschutzes
 betrieblich genutzter Gebäude. Ein {a('ems', 'Energiemanagementsystem')}, das Speicher und Wärmepumpe
 netzdienlich steuert, erfüllt gleichzeitig die Systemdienlichkeits-Anforderung der OÖ-Speicherförderung
 und wird seit Juni 2026 vom Klima- und Energiefonds gefördert (siehe {a('/ems-foerderung/', 'EMS-Förderung 2026')}).</p>
@@ -321,6 +322,8 @@ sind noch offen. Wer jetzt plant, baut deshalb sinnvoll mit Speicher und Energie
         ("Land Oberösterreich: Nachrüstung von systemdienlichen Solarstromspeichern",
          "https://www.land-oberoesterreich.gv.at/554598.htm"),
         ("OÖ Energiesparverband", "https://www.energiesparverband.at/"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
     ],
     "related": [
         ("/photovoltaik-landesfoerderungen/", "PV-Landesförderungen: alle 9 Bundesländer"),

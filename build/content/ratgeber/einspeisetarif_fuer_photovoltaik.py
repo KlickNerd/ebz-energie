@@ -4,8 +4,9 @@ Zusammengeführt aus drei Live-Artikeln:
   /einspeisetarif-fuer-photovoltaik/ (Nov. 2025),
   /einspeisetarif-photovoltaik-oesterreich-vergleich/ (Juli 2025),
   /einspeiseverguetung/ (Nov. 2025).
-OeMAG-Marktpreis auf Stand Oktober 2026 (September 2026: 10,168 ct aktuell, Juli 2026: 6,146 ct
-Untergrenze als Verlauf, Q3 2026: 10,923 ct; August ohne belegten Wert, nicht genannt), ältere Werte als Verlauf. Widersprüche der Quellen (quartalsweise vs. monatliche
+OeMAG-Marktpreis auf Stand November 2026 (Oktober 2026: 14,874 ct aktuell, September 2026: 10,168 ct
+und Juli 2026: 6,146 ct als Verlauf, Q3 2026: 10,923 ct, Q4 2026: 15,282 ct laut E-Control; andere Monate
+ohne belegten Wert, nicht genannt), ältere Werte als Verlauf. Widersprüche der Quellen (quartalsweise vs. monatliche
 Berechnung, Steuerpflicht vs. Freibetrag) zugunsten der aktuelleren Rechtslage aufgelöst.
 """
 
@@ -21,7 +22,7 @@ ARTICLE = {
     "slug": "einspeisetarif-fuer-photovoltaik",
     "path": "/einspeisetarif-fuer-photovoltaik/",
     "title": "Einspeisetarif Photovoltaik 2026: OeMAG, Anbieter, EG | EBZ",
-    "description": ("Einspeisetarif Photovoltaik 2026: OeMAG-Marktpreis 10,168 ct (September), Anbieter "
+    "description": ("Einspeisetarif Photovoltaik 2026: OeMAG-Marktpreis 14,874 ct (Oktober), Anbieter "
                     "4 bis 11 ct, Fixpreis oder variabel, Energiegemeinschaft, Steuerfreibetrag."),
     "eyebrow": "Stromtarife · Einspeisung",
     "crumb_label": "Einspeisetarif Photovoltaik",
@@ -31,32 +32,32 @@ ARTICLE = {
              "Dieser Ratgeber zeigt, was die Modelle bringen, wo die Fallen liegen und warum Eigenverbrauch "
              "wichtiger bleibt als jeder Tarif."),
     "chips": [
-        "OeMAG September 2026: <b>10,168 ct/kWh</b>",
+        "OeMAG Oktober 2026: <b>14,874 ct/kWh</b>",
         "Anbietertarife: <b>4 bis 11 ct/kWh</b>",
         "Netzbezug: <b>rund 32 ct/kWh</b>",
         "Steuerfrei: <b>bis 12.500 kWh</b> pro Jahr",
     ],
     "date_published": "2025-06-20",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Hausdach bei Sonnenschein: Einspeisetarif für überschüssigen Solarstrom",
 
     "tldr": [
         "Der OeMAG-Marktpreis ist die gesetzliche Basisvergütung für Anlagen bis 500 kWp. Er wird seit 2024 "
-        "monatlich rückwirkend aus den Börsenpreisen berechnet und beträgt für September 2026 10,168 Cent je "
-        "Kilowattstunde (Stand Oktober 2026). Im Juli 2026 lag er bei 6,146 Cent, der Referenzmarktpreis für das "
-        "dritte Quartal 2026 bei 10,923 Cent.",
+        "monatlich rückwirkend aus den Börsenpreisen berechnet und beträgt für Oktober 2026 14,874 Cent je "
+        "Kilowattstunde (Stand November 2026). Im September 2026 lag er bei 10,168 Cent, im Juli 2026 bei "
+        "6,146 Cent; der Wert schwankt monatlich.",
         "Private Energieversorger zahlen je nach Modell 4 bis 11 Cent je kWh (Stand November 2025), koppeln "
         "den Einspeisetarif aber fast immer an einen Strombezugsvertrag mit Bindung und teils Grundgebühr.",
         "Eigenverbrauch schlägt jeden Tarif: Eine selbst genutzte Kilowattstunde spart rund 32 Cent Netzbezug, "
-        "eine eingespeiste bringt 5 bis 10 Cent. Speicher, Wärmepumpe und E-Auto sind der größere Hebel.",
+        "eine eingespeiste bringt rund 4 bis 15 Cent. Speicher, Wärmepumpe und E-Auto sind der größere Hebel.",
         "Energiegemeinschaften sind die Alternative: Der Preis wird in der Gemeinschaft vereinbart, im Nahbereich "
         "sinken zusätzlich die Netzentgelte um bis zu 57 Prozent.",
         "Einnahmen aus der Einspeisung sind für Privatpersonen bis 12.500 kWh pro Jahr einkommensteuerfrei "
         "(Anlagen bis 35 kWp). Der Nullsteuersatz bei der Anschaffung ist seit 1. April 2025 ausgelaufen.",
     ],
     "kpis": [
-        ("10,168 ct", "OeMAG-Marktpreis September 2026"),
+        ("14,874 ct", "OeMAG-Marktpreis Oktober 2026"),
         ("6,146 ct", "OeMAG-Marktpreis Juli 2026 (Untergrenze)"),
         ("4 bis 11 ct", "Spanne privater Anbieter (Nov. 2025)"),
         ("12.500 kWh", "steuerfreie Einspeisung pro Jahr"),
@@ -83,8 +84,9 @@ sinnvoll.</p>
 """),
         ("Eigenverbrauch schlägt jeden Einspeisetarif", "eigenverbrauch", f"""
 <p>Für eine selbst verbrauchte Kilowattstunde sparen Sie den vollen Bezugspreis, der inklusive Netzentgelte,
-Abgaben und Steuern bei rund 32 Cent liegt. Für eine eingespeiste erhalten Sie im Schnitt 5 bis 10 Cent.
-Jede selbst genutzte Kilowattstunde ist damit drei- bis sechsmal so viel wert wie eine verkaufte. Der
+Abgaben und Steuern bei rund 32 Cent liegt. Für eine eingespeiste erhalten Sie je nach Monat und Abnehmer
+rund 4 bis 15 Cent (OeMAG 2026: 6,146 bis 14,874 Cent). Jede selbst genutzte Kilowattstunde ist damit mindestens
+doppelt so viel wert wie eine verkaufte. Der
 Einspeisetarif ist deshalb nur die Optimierung für den unvermeidbaren Überschuss, nicht der Treiber der
 Wirtschaftlichkeit.</p>
 {A.table(
@@ -93,7 +95,7 @@ Wirtschaftlichkeit.</p>
         ["Selbst verbraucht (direkt)", "rund 32 ct gespart", "Verbrauch in die Sonnenstunden legen"],
         ["Selbst verbraucht (aus dem Speicher)", "rund 32 ct gespart, abzüglich Speicherverluste", "Batteriespeicher, Eigenverbrauch 60 bis 80 %"],
         ["In der Energiegemeinschaft verkauft", "vereinbarter Preis, plus Netzentgelt-Rabatt im Nahbereich", "lokale oder regionale EG"],
-        ["Ins Netz eingespeist", "5 bis 10 ct Vergütung", "OeMAG oder Versorger, Tarifvergleich"],
+        ["Ins Netz eingespeist", "rund 4 bis 15 ct Vergütung", "OeMAG oder Versorger, Tarifvergleich"],
     ],
     hl_cols=(1,),
 )}
@@ -117,12 +119,14 @@ fallen. Das begrenzt das Risiko bei einem Preisverfall an der Börse, kappt aber
         ["Mitte 2025", "unter 6 ct", "Untergrenze des Korridors erreicht"],
         ["12-Monats-Schnitt bis November 2025", "rund 7 ct", "Verlauf laut Quelle, Stand November 2025"],
         ["Juli 2026", "6,146 ct", "an der Untergrenze des Korridors"],
-        ["September 2026", "10,168 ct", "aktueller Wert, nahe der Obergrenze"],
+        ["September 2026", "10,168 ct", "nahe der Obergrenze des dritten Quartals"],
         ["Referenzmarktpreis Q3 2026", "10,923 ct", "Obergrenze für die Monatspreise im Quartal"],
+        ["Oktober 2026", "14,874 ct", "aktueller Wert, an der Obergrenze des vierten Quartals"],
+        ["Referenzmarktpreis Q4 2026", "15,282 ct", "Obergrenze für Oktober bis Dezember 2026"],
     ],
     hl_cols=(1,),
 )}
-<p><small>Stand: Oktober 2026 (Quelle: oem-ag.at/marktpreis). Der aktuelle Monatswert wird von der OeMAG veröffentlicht, die
+<p><small>Stand: November 2026 (Quellen: oem-ag.at/marktpreis, e-control.at). Der aktuelle Monatswert wird von der OeMAG veröffentlicht, die
 laufende Entwicklung kommentieren wir im Ratgeber {a('marktpreis', 'Marktpreis 2026')}.</small></p>
 <p>Der große Vorteil des OeMAG-Modells: Sie brauchen keinen gekoppelten Stromliefervertrag, zahlen keine
 Grundgebühr und bleiben beim Stromlieferanten frei. Es eignet sich für Betreiber, deren Rechnung auf hohem
@@ -134,7 +138,7 @@ Sie betreiben möchten. Die Übersicht zeigt die fünf Modelle mit ihren Konditi
 {A.table(
     ["Modell", "Vergütung", "Vorteile", "Nachteile"],
     [
-        ["OeMAG-Marktpreis", "monatlicher Marktpreis, September 2026: 10,168 ct (Juli: 6,146 ct)",
+        ["OeMAG-Marktpreis", "monatlicher Marktpreis, Oktober 2026: 14,874 ct (Juli: 6,146 ct)",
          "keine Bindung, keine Grundgebühr, freier Stromlieferant", "Preisrisiko, schwankende Einnahmen"],
         ["Fixpreis beim Versorger", "fester Satz für meist 12 Monate, Spanne 4 bis 11 ct (Nov. 2025)",
          "Planungssicherheit, Schutz vor fallenden Preisen", "kein Gewinn bei steigenden Preisen, Koppelvertrag"],
@@ -143,7 +147,7 @@ Sie betreiben möchten. Die Übersicht zeigt die fünf Modelle mit ihren Konditi
         ["Direktvermarktung", "Erlös an der Börse abzüglich Dienstleisterentgelt",
          "Zugang zum Großhandelsmarkt", "vor allem für größere Anlagen und Betriebe sinnvoll"],
         ["Energiegemeinschaft", "in der Gemeinschaft vereinbarter Preis",
-         "Preis zwischen Marktpreis und Bezugspreis, Netzentgelt-Rabatt im Nahbereich", "Gründung oder Beitritt nötig, Abrechnung über Plattform"],
+         "fixer, planbarer Preis unter dem Bezugspreis, Netzentgelt-Rabatt im Nahbereich", "Gründung oder Beitritt nötig, Abrechnung über Plattform"],
     ],
     hl_cols=(1,),
 )}
@@ -195,9 +199,10 @@ Bindung.</p>
         ("Energiegemeinschaft: Strom teilen statt einspeisen", "energiegemeinschaft", f"""
 <p>Die {a('eg', 'Energiegemeinschaft')} ist die Alternative zum Verkauf an OeMAG oder Versorger: Sie
 teilen Ihren Überschuss mit Nachbarn, dem Betrieb ums Eck oder auch Verwandten in einem anderen
-Bundesland. Der Preis wird innerhalb der Gemeinschaft vereinbart und liegt typischerweise zwischen dem
-Marktpreis und dem Netzbezugspreis: Der Erzeuger bekommt mehr als bei der Einspeisung, der Abnehmer zahlt
-weniger als beim Versorger.</p>
+Bundesland. Der Preis wird innerhalb der Gemeinschaft fix vereinbart, ist damit planbar und liegt
+typischerweise unter dem Netzbezugspreis: Der Abnehmer zahlt weniger als beim Versorger. Ob der Erzeuger mehr
+bekommt als bei der Einspeisung, hängt vom Monat ab, denn der OeMAG-Marktpreis schwankte 2026 zwischen
+6,146 Cent (Juli) und 14,874 Cent (Oktober).</p>
 <p>Im Nahbereich kommt ein zweiter Vorteil dazu: Für Strom, der in einer lokalen Erneuerbare-Energie-
 Gemeinschaft im selben Netzabschnitt verbraucht wird, sinken die Netzentgelte um bis zu 57 Prozent,
 regional um 28 Prozent, auf Netzebene 4 und 5 um bis zu 64 Prozent. Beim österreichweiten Teilen in einer
@@ -248,10 +253,10 @@ Unternehmerisch tätige Betreiber können weiterhin die Vorsteuer abziehen.</p>
 """),
         ("Fazit: Erst Eigenverbrauch, dann Tarif", "fazit", f"""
 <p>Der Einspeisetarif für Photovoltaik hat sich vom Subventionsmodell zum Marktinstrument gewandelt. Der
-OeMAG-Marktpreis schwankte 2026 zwischen 6,146 Cent (Juli, Untergrenze) und 10,168 Cent (September), private
-Anbieter zahlen 4 bis 11 Cent mit Bindung, Energiegemeinschaften erzielen Preise dazwischen und sparen im Nahbereich Netzentgelte.
+OeMAG-Marktpreis schwankte 2026 zwischen 6,146 Cent (Juli, Untergrenze) und 14,874 Cent (Oktober), private
+Anbieter zahlen 4 bis 11 Cent mit Bindung, Energiegemeinschaften vereinbaren fixe Preise und sparen im Nahbereich Netzentgelte.
 Der größte Hebel bleibt aber der Eigenverbrauch: Jede selbst genutzte Kilowattstunde ist mit rund 32 Cent
-drei- bis sechsmal so viel wert wie eine verkaufte. Planen Sie die Anlage darauf, holen Sie sich für den
+je nach Monat zwei- bis fünfmal so viel wert wie eine an die OeMAG verkaufte. Planen Sie die Anlage darauf, holen Sie sich für den
 Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
 """),
     ],
@@ -273,13 +278,14 @@ Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
 
     "faq": [
         ("Wie hoch ist der aktuelle Einspeisetarif für Photovoltaik in Österreich?",
-         "Es gibt keinen einheitlichen Tarif mehr. Der OeMAG-Marktpreis als Referenz beträgt für September 2026 "
-         "10,168 Cent je kWh (Stand Oktober 2026), im Juli 2026 lag er bei 6,146 Cent. Private "
+         "Es gibt keinen einheitlichen Tarif mehr. Der OeMAG-Marktpreis als Referenz beträgt für Oktober 2026 "
+         "14,874 Cent je kWh (Stand November 2026), im September 2026 lag er bei 10,168 Cent, im Juli 2026 bei "
+         "6,146 Cent. Private "
          "Versorger zahlen je nach Modell 4 bis 11 Cent (Stand November 2025), meist gekoppelt an einen "
          "Strombezugsvertrag."),
         ("Lohnt es sich mehr, Solarstrom selbst zu verbrauchen oder einzuspeisen?",
          "Selbst verbrauchen. Eine eigene Kilowattstunde spart rund 32 Cent Netzbezug, eine eingespeiste bringt "
-         "5 bis 10 Cent. Speicher, Wärmepumpe, E-Auto und ein Energiemanagementsystem, das Verbraucher in die "
+         "rund 4 bis 15 Cent. Speicher, Wärmepumpe, E-Auto und ein Energiemanagementsystem, das Verbraucher in die "
          "Sonnenstunden legt, sind deshalb der größere Hebel als jeder Tarifwechsel."),
         ("Wie wird der OeMAG-Marktpreis berechnet?",
          "Seit Anfang 2024 monatlich und rückwirkend aus dem durchschnittlichen stündlichen Börsenpreis. Ein "
@@ -296,8 +302,9 @@ Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
          "Mindestlaufzeit, meist 12 Monate, unkompliziert: Der neue Anbieter kündigt beim alten und meldet beim "
          "Netzbetreiber um."),
         ("Was bringt eine Energiegemeinschaft im Vergleich zur Einspeisung?",
-         "In der Energiegemeinschaft wird der Preis intern vereinbart und liegt typischerweise zwischen "
-         "Marktpreis und Netzbezugspreis, also über der Einspeisevergütung. Im Nahbereich sinken zusätzlich die "
+         "In der Energiegemeinschaft wird der Preis intern fix vereinbart und ist damit planbar, während der "
+         "OeMAG-Marktpreis monatlich schwankt (2026 zwischen 6,146 und 14,874 Cent). Ob der Erzeuger mehr bekommt "
+         "als bei der Einspeisung, hängt deshalb vom Monat ab; der Abnehmer zahlt meist weniger als beim Versorger. Im Nahbereich sinken zusätzlich die "
          "Netzentgelte um bis zu 57 Prozent (regional 28 Prozent). Österreichweites Teilen ist als "
          "Bürgerenergiegemeinschaft möglich, dann ohne Netzentgelt-Rabatt."),
         ("Muss ich Einnahmen aus der Einspeisung versteuern?",
@@ -313,7 +320,7 @@ Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant PV-Anlagen mit Speicher in "
                     "Kärnten und der Steiermark und begleitet Energiegemeinschaften österreichweit. Die "
-                    "OeMAG-Werte in diesem Ratgeber werden monatlich geprüft, Stand Oktober 2026. Keine "
+                    "OeMAG-Werte in diesem Ratgeber werden monatlich geprüft, Stand November 2026. Keine "
                     "Rechts- oder Steuerberatung, maßgeblich sind die Veröffentlichungen von OeMAG und E-Control."),
     "sources": [
         ("OeMAG: Abwicklungsstelle für Ökostrom, Marktpreis", "https://www.oemag.at/"),

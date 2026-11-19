@@ -39,7 +39,8 @@ Briefing: build/seo/standort_weiz.json und .md. Alle lokalen Angaben am 10.10.20
   standort_steiermark.py. Der Artikel der LK Steiermark von 2023 (400 m2) ist UEBERHOLT und wird nicht verwendet.
   RIS war nicht abrufbar (Bot-Sperre).
 - Foerderung Waermepumpe Land Steiermark: laut build/seo/_fakten_2026-10.md (Nachtrag 10.10.2026) und der
-  Vorlage (LAND["stmk"]) derzeit KEINE Antragstellung fuer neue Waermepumpen, Bund ausgeschoepft. Die Inhaltsdatei
+  Vorlage (LAND["stmk"]) derzeit KEINE Antragstellung fuer neue Waermepumpen. Bund: Kesseltausch seit 2.11.2026
+  neu aufgelegt, 5.000 EUR Pauschale (Faktenliste, Stand 19.11.2026); die Stadt zahlt nur ohne Bund. Die Inhaltsdatei
   nennt deshalb keinen Landessatz; die KPI-Zeile zeigt statt der Vorlagen-Kachel die belegte Stadtfoerderung.
 - Solarpotenzial: SolarTool im Digitalen Atlas Steiermark (technik.steiermark.at).
 Nicht belegt und deshalb weggelassen: Ertrag je kWp, Sonnenstunden, Gasnetz, Gemeindefoerderung Gleisdorf,
@@ -210,12 +211,13 @@ ORT = {
         "alt": "Luft-Wasser-Wärmepumpe im Garten eines Wohnhauses, Symbolbild für den Heizungstausch im Bezirk Weiz",
     },
 
-    "foerderung_h2": "Förderung in Weiz: 300 Euro von der Stadt für den Heizungstausch",
+    "foerderung_h2": "Förderung in Weiz: Kesseltausch des Bundes oder 300 Euro von der Stadt",
     "foerderung_lokal": [
         ("Die Stadtgemeinde Weiz fördert den Heizungstausch laut ihren Ökoförderungen für das Jahr 2026 mit "
          "300 Euro für eine Wärmepumpe, einen Nah- oder Fernwärmeanschluss oder einen Biomassekessel, dazu 100 Euro "
          "für jede zusätzliche Wohneinheit. Bedingung: Für dieselbe Anlage wird keine Bundesförderung in Anspruch "
-         "genommen. Für solarthermische Anlagen gibt es ebenfalls 300 Euro. Eine eigene Förderung für Photovoltaik "
+         "genommen. Seit November 2026 zahlt der Bund im neu aufgelegten Kesseltausch wieder 5.000 Euro Pauschale "
+         "für die Wärmepumpe; wer sie nutzt, bekommt die 300 Euro der Stadt nicht. Für solarthermische Anlagen gibt es ebenfalls 300 Euro. Eine eigene Förderung für Photovoltaik "
          "oder Stromspeicher führt die Stadt in ihrer Liste nicht an; sie empfiehlt vor PV, Speicher und "
          "Heizungstausch eine Energieberatung."),
         ("Für Gleisdorf und die anderen Gemeinden im Bezirk Weiz geben wir hier keine Beträge an, weil sich die "
@@ -283,8 +285,9 @@ ORT = {
          "zusätzlicher Wohneinheit, sofern für die Anlage keine Bundesförderung bezogen wird. Für Photovoltaik und "
          "Stromspeicher führt die Stadt keine eigene Förderung an, und der Investitionszuschuss des Bundes ist für 2026 "
          "abgeschlossen. "
-         "Land und Bund nehmen für neue Wärmepumpen derzeit keine Förderanträge an. Was am Tag Ihrer Anfrage "
-         "offen ist, prüfen wir vor dem Angebot."),
+         "Das Land nimmt für neue Wärmepumpen derzeit keine Förderanträge an; der Bund zahlt im Kesseltausch seit "
+         "November 2026 wieder 5.000 Euro Pauschale und ist damit in der Regel der größere Zuschuss, weil die Stadt "
+         "nur ohne Bundesförderung zahlt. Was am Tag Ihrer Anfrage offen ist, prüfen wir vor dem Angebot."),
         ("Brauche ich in Weiz eine Genehmigung für eine Luft-Wasser-Wärmepumpe?",
          "Eine Baubewilligung nicht, aber eine Meldung. Die ortsfeste Aufstellung einer Wärmepumpe ist nach "
          "Paragraf 21 des Steiermärkischen Baugesetzes in der Fassung von 2026 meldepflichtig. Der Mitteilung an "
@@ -335,8 +338,8 @@ ORT = {
 
     "notizen": (
         "Faktenfragen/Unsicherheiten: (1) Stadtfoerderung Weiz fuer die Waermepumpe (300 EUR) setzt voraus, dass "
-        "keine Bundesfoerderung bezogen wird; da Bund und Land derzeit keine Antraege annehmen, ist das aktuell der "
-        "einzige belegte Zuschuss. Bei neuen Bundes-/Landesprogrammen FAQ und Foerderabsatz anpassen. (2) Netzbetreiber der uebrigen Bezirksgemeinden (Birkfeld, Anger, Passail, "
+        "keine Bundesfoerderung bezogen wird; seit 2.11.2026 laeuft der Kesseltausch des Bundes wieder (5.000 EUR), "
+        "Stadt und Bund schliessen sich damit aus (Stand 19.11.2026). Bei neuen Bundes-/Landesprogrammen FAQ und Foerderabsatz anpassen. (2) Netzbetreiber der uebrigen Bezirksgemeinden (Birkfeld, Anger, Passail, "
         "Pischelsdorf, Sinabelkirchen usw.) nicht einzeln belegt; Feistritzwerke nennen keine Gemeindeliste. "
         "(3) Freie Einspeisekapazitaet UW Weiz ist eine Momentaufnahme (Stand 01.07.2026): bei jeder Aktualisierung "
         "der FEK-Tabelle nachziehen. (4) Huellkurvenkonzept Feistritzwerke wird laufend neu gefasst (Dateiname mit "

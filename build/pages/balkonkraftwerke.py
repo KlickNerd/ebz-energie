@@ -1,7 +1,7 @@
 """Leistungsseite Balkonkraftwerke (/balkonkraftwerke/).
 
-Quellen: Live-Seite /balkonkraftwerke/, der alte Beitrag /balkonkraftwerk-mit-speicher/ (301 in diese
-Seite), Ratgeber /balkonkraftwerk-foerderung-in-oesterreich/, GEO-Datenbasis build/seo/_geo.md
+Quellen: Live-Seite /balkonkraftwerke/, der alte Beitrag /balkonkraftwerk-mit-speicher/ (seit 19.11.2026 wieder
+eigener Ratgeber, daher zielt diese Seite auf "Balkonkraftwerk Montage", nicht auf "mit Speicher"), Ratgeber /balkonkraftwerk-foerderung-in-oesterreich/, GEO-Datenbasis build/seo/_geo.md
 (800 W, Meldung 14 Tage vorher, Zustimmungsfiktion zwei Monate) und das SEO/GEO-Briefing
 build/seo/balkonkraftwerke.{json,md} (Stand 9.10.2026; GSC: Steiermark, Kaernten, Graz, Montageservice).
 
@@ -18,9 +18,9 @@ from layout import page
 import components as C
 
 PATH = "/balkonkraftwerke/"
-TITLE = "Balkonkraftwerk mit Speicher: Montage in Kärnten | EBZ"
-DESC = ("Balkonkraftwerk mit Speicher bis 800 Watt: Montage und Meldung beim Netzbetreiber in Kärnten und "
-        "Steiermark. 600 bis 800 kWh im Jahr, für Mieter und Eigentümer.")
+TITLE = "Balkonkraftwerk Montage in Kärnten und Steiermark | EBZ"
+DESC = ("Balkonkraftwerk mit Montage und Anmeldung beim Netzbetreiber in Kärnten und der Steiermark: "
+        "800 Watt, 600 bis 800 kWh im Jahr, für Mieter und Eigentümer, Speicher optional.")
 
 FAQ = [
     ("Muss ich mein Balkonkraftwerk bei Kelag oder Energie Steiermark anmelden und wie lange vorher?",
@@ -42,9 +42,11 @@ FAQ = [
      "Bei rund 1.200 € für Set und Montage und 180 bis 240 € Ersparnis im Jahr nach 5 bis 7 Jahren.* Mit Speicher "
      "dauert es länger, dafür nutzen Sie auch den Abendverbrauch. Module halten 25 Jahre und mehr."),
     ("Schuko-Stecker vs. Wieland-Stecker: welchen braucht ein Balkonkraftwerk?",
-     "Schuko ist in Österreich zulässig, wenn der Stromkreis geeignet ist. Eine Wieland-Einspeisesteckdose ist "
-     "berührungsgeschützt, braucht aber einen Elektriker. Wir prüfen Steckdose und Leitungsschutz bei der Montage "
-     "und setzen auf Wunsch eine Wieland-Dose."),
+     "Das sehen die Netzbetreiber unterschiedlich streng: Wiener Netze lässt den Schutzkontaktstecker (Schuko) "
+     "unter Verweis auf die ÖVE E 8101 nicht zu, laut E-Control sind Verlängerungskabel und Steckdosenleisten "
+     "tabu. Eine Wieland-Einspeisesteckdose ist berührungsgeschützt und auf der "
+     "sicheren Seite, braucht aber einen Elektriker. Wir prüfen Steckdose und Leitungsschutz vor der Montage und "
+     "setzen im Zweifel eine Wieland-Dose."),
     ("Brauche ich die Zustimmung der anderen Wohnungseigentümer?",
      "Seit 1. September 2024 gilt im Wohnungseigentum die Zustimmungsfiktion: Sie informieren die anderen "
      "Eigentümer schriftlich, widerspricht innerhalb von zwei Monaten niemand, gilt die Zustimmung als erteilt. "
@@ -89,7 +91,7 @@ def build():
         # 1. Hook
         C.hero(
             eyebrow="Balkonkraftwerk Montage und Anmeldung · Kärnten, Steiermark, Graz, Klagenfurt",
-            h1="Balkonkraftwerk mit Speicher: Montage und Anmeldung in Kärnten und der Steiermark",
+            h1="Balkonkraftwerk mit Montage und Anmeldung in Kärnten und der Steiermark",
             lead=("Kühlschrank, Router und Homeoffice laufen tagsüber mit Strom vom eigenen Balkon, der Speicher "
                   "hebt den Rest für den Abend auf. Ein Balkonkraftwerk 800 Watt ist für Mieter wie Eigentümer der "
                   "günstigste Einstieg in Photovoltaik. Wir beraten in Villach, Klagenfurt, Graz und Umgebung, "
@@ -229,7 +231,7 @@ def build():
                  "den Mittagsüberschuss ins Netz, bei Balkonkraftwerken meist ohne Vergütung. Ein Speicher mit 1 bis 2 kWh "
                  "fängt diesen Strom auf und gibt ihn abends ab, wenn Herd, Fernseher und Licht laufen. Der "
                  "Eigenverbrauchsanteil steigt so auf 70 bis 80 %.*"),
-                ("Speicher von Anker Solix oder Zendure nutzen Lithium-Eisenphosphat-Zellen (LFP), halten 6.000 "
+                ("Gängige Balkonspeicher nutzen Lithium-Eisenphosphat-Zellen (LFP), halten laut Herstellern 6.000 "
                  "Ladezyklen und mehr und sind per App überwachbar. Aufstellort: frostfrei und trocken, also überdachter "
                  "Balkon, Abstellraum oder Keller. Notstrom liefert ein Standard-System nicht."),
             ],
@@ -271,9 +273,9 @@ def build():
                 {"ic": "✓", "title": "Sicherheit statt Bastellösung",
                  "text": "Wir prüfen Steckdose und Stromkreis und montieren normgerecht mit statisch geprüfter Halterung / Montagewinkel."},
                 {"ic": "☀", "title": "Schuko oder Wieland",
-                 "text": "Schuko-Stecker vs. Wieland-Stecker: Beides ist zulässig. Wir sagen, was Ihr Stromkreis verträgt, und bauen die Einspeisesteckdose ein."},
+                 "text": "Schuko-Stecker oder Wieland-Stecker: Wir prüfen, was Netzbetreiber und Stromkreis zulassen, und bauen im Zweifel eine Wieland-Einspeisesteckdose ein."},
                 {"ic": "▮", "title": "Speicher richtig dimensioniert",
-                 "text": "1 bis 2 kWh reichen für die Grundlast am Abend. Wir integrieren Anker Solix oder Zendure und richten die App ein."},
+                 "text": "1 bis 2 kWh reichen für die Grundlast am Abend. Wir binden den Speicher ein und richten die App ein."},
                 {"ic": "◇", "title": "Module, die 25 Jahre halten",
                  "text": "Glas-Glas- oder bifaziale Module aus dem Fachhandel, hagel- und sturmfest, gut bei Schwachlicht."},
                 {"ic": "⌂", "title": "Montage, wo Sie wollen",

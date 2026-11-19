@@ -32,6 +32,7 @@ STAND = "Oktober 2026"
 # Zentral gepflegte Kurzfassung je Bundesland (Quelle: build/seo/_fakten_2026-10.md). KEINE Fristen hier.
 # Steiermark Waermepumpe: laut wohnbau.steiermark.at (abgerufen 10.10.2026) derzeit keine Antragstellung moeglich,
 # "auf absehbare Zeit keine Foerderungsmoeglichkeit". Die frueher genannten 35 % gelten NICHT mehr.
+# Bund Waermepumpe: Kesseltausch seit 2.11.2026 neu aufgelegt, 5.000 EUR Pauschale (Faktenliste, Stand 19.11.2026).
 LAND = {
     "ktn": {
         "name": "Kärnten", "in": "in Kärnten", "foerder_key": "foerderung_kaernten",
@@ -39,12 +40,13 @@ LAND = {
         "foerder_p": ("Das Land Kärnten zahlt für neue private PV-Anlagen ab 5 kWp mit Speicher ab 5 kWh eine Pauschale "
                       "von 3.000 Euro. Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen; "
                       "ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung. "
-                      "Bei der Wärmepumpe ist die Bundesförderung ausgeschöpft, das Land Kärnten zahlt für den Umstieg im "
-                      "Eigenheim eine Pauschale von 3.000 Euro."),
+                      "Bei der Wärmepumpe zahlt der Bund seit der Neuauflage des Kesseltauschs im November 2026 wieder "
+                      "5.000 Euro Pauschale, das Land Kärnten für den Umstieg im Eigenheim zusätzlich 3.000 Euro, "
+                      "zusammen also bis 8.000 Euro*."),
         "foerder_bullets": [
             "Landespauschale Kärnten: 3.000 € für PV ab 5 kWp mit Speicher ab 5 kWh",
             "Bund: Zuschuss für PV und Speicher 2026 abgeschlossen, Systemförderung 2027 geplant",
-            "Wärmepumpe: 3.000 € Landespauschale Kärnten, Bund derzeit ausgeschöpft",
+            "Wärmepumpe: 5.000 € Bund (Kesseltausch) plus 3.000 € Landespauschale Kärnten",
         ],
         "kpi": ("3.000 €", "Landespauschale Kärnten für PV mit Speicher"),
     },
@@ -54,13 +56,13 @@ LAND = {
         "foerder_p": ("Die Steiermark zahlt keine Landespauschale für private PV-Anlagen, und der Investitionszuschuss "
                       "des Bundes ist für 2026 abgeschlossen. Ab 2027 plant der Bund laut BMWET eine Systemförderung für "
                       "Speicher mit intelligenter Steuerung. "
-                      "Für neue Wärmepumpen nimmt das Land Steiermark derzeit keine Förderanträge an, und auch die "
-                      "Bundesförderung ist ausgeschöpft. Der Heizungstausch rechnet sich deshalb vor allem über den "
-                      "eigenen Sonnenstrom."),
+                      "Für neue Wärmepumpen nimmt das Land Steiermark derzeit keine Förderanträge an. Der Bund zahlt "
+                      "seit der Neuauflage des Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale, wenn die "
+                      "Wärmepumpe eine fossile Heizung ersetzt; dazu kommt der eigene Sonnenstrom."),
         "foerder_bullets": [
             "Bund: Zuschuss für PV und Speicher 2026 abgeschlossen, Systemförderung 2027 geplant",
             "Keine PV-Landespauschale, einzelne Gemeinden zahlen einen Zuschuss",
-            "Wärmepumpe: Land Steiermark und Bund nehmen derzeit keine Anträge an",
+            "Wärmepumpe: 5.000 € vom Bund (Kesseltausch), das Land Steiermark nimmt derzeit keine Anträge an",
         ],
         "kpi": ("4 bis 6 Jahre", "typische Amortisation einer PV-Anlage*"),
     },
@@ -313,8 +315,8 @@ def render(o):
     <div class="wrap">
       <p class="form-note">*Richtwerte auf Basis typischer Projekte, vor Förderung. Preis, Ersparnis, Eigenverbrauch und
       Amortisation hängen von Verbrauch, Anlagengröße, Ausrichtung und Strompreis ab. Finanzierung: Beispielkonditionen,
-      vorbehaltlich Bonitätsprüfung. Fördersätze Stand {STAND}, Änderungen durch Fördergeber und Netzbetreiber
-      vorbehalten. Firmensitz von EBZ Energie ist Villach; {ort_in} beraten und montieren wir vor Ort.</p>
+      vorbehaltlich Bonitätsprüfung. Fördersätze Stand November 2026 (Wärmepumpe: Bund und Land zusammen
+      höchstens die Investitionskosten), Änderungen durch Fördergeber und Netzbetreiber vorbehalten. Firmensitz von EBZ Energie ist Villach; {ort_in} beraten und montieren wir vor Ort.</p>
     </div>
   </section>""",
     ])

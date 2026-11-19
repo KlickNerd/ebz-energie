@@ -5,8 +5,12 @@ freigegebenen Fakten bzw. den Ratgebern und stehen sichtbar auf der Seite (Metho
 Beispieltabellen werden zur Build-Zeit mit derselben Rechenlogik erzeugt (Python-Spiegel der JS-Formeln).
 Ergebnis fuehrt immer in die kostenlose Beratung (Kontakt mit Vorbelegung).
 
-OeMAG-Marktpreis: September 2026 = 10,168 ct (Stand Oktober 2026, build/seo/_fakten_2026-10.md); Juli 2026
-6,146 ct nur als Verlaufswert. SEO/GEO-Briefings: build/seo/solarrechner.{json,md} (Primaer "pv rechner
+OeMAG-Marktpreis: Rechenwert bleibt September 2026 = 10,168 ct (build/seo/_fakten_2026-10.md); Juli 2026
+6,146 ct und Oktober 2026 14,874 ct (aktueller Wert, Stand November 2026) nur als Verlaufswerte im Text.
+Bewusst NICHT auf 14,874 umgestellt (19.11.2026): Die Rechner setzen einen Monatswert als Jahreswert an; mit dem
+Oktober-Hoechstwert wuerde der EG-Rechner bei den Default-Werten einen negativen Gesamtvorteil zeigen und der
+PV-Rechner die Einspeisung um rund 46 % zu hoch bewerten. Entscheidung offen (siehe Bericht).
+SEO/GEO-Briefings: build/seo/solarrechner.{json,md} (Primaer "pv rechner
 oesterreich") und build/seo/eg_rechner.{json,md} (Primaer "energiegemeinschaft rechner").
 Alter Slug /ebz-solarrechner/ -> 301 auf /solarrechner/ (build/redirects.txt).
 """
@@ -18,6 +22,7 @@ import components as C
 OEMAG = 10.168          # ct/kWh, OeMAG-Marktpreis Photovoltaik September 2026
 OEMAG_STR = "10,168"
 OEMAG_JULI_STR = "6,146"
+OEMAG_OKT_STR = "14,874"   # aktueller Monatswert (Stand November 2026), nur Text, nicht Rechenwert
 ERTRAG_KWP = 1000       # kWh je kWp und Jahr, Rechenwert Kaernten/Steiermark
 M2_KWP = 5.5            # m2 Dachflaeche je kWp
 NETZ_NE7 = 8.7          # ct/kWh Netznutzung 8 + Netzverlust 0,7, Netzebene 7 (Richtwerte Ratgeber Netzkosten)
@@ -160,7 +165,7 @@ SOLAR_ASSUMPTIONS = [
     "Jahresertrag rund 1.000 kWh je kWp in Kärnten und der Steiermark bei Südausrichtung (Richtwert 950 bis 1.100), Ost-West minus 10 %, nur Ost oder nur West minus 15 %.",
     "Anlagengröße: etwa 1 kWp je 1.000 kWh Jahresverbrauch, mindestens 5 kWp, höchstens 30 kWp. Dachfläche rund 5,5 m² je kWp.",
     "Eigenverbrauchsquote: ohne Speicher rund 30 % (Betrieb 50 %), mit Speicher bis zu 70 % (Betrieb 80 %). Mehr geht nur mit Energiemanagement.",
-    f"Einspeisung des Überschusses zum OeMAG-Marktpreis von {OEMAG_STR} ct je kWh (September 2026; Juli 2026: {OEMAG_JULI_STR} ct, der Wert schwankt monatlich).",
+    f"Einspeisung des Überschusses zum OeMAG-Marktpreis von {OEMAG_STR} ct je kWh (Rechenwert September 2026; Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct, der Wert schwankt monatlich).",
     "Richtpreis: 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung, ohne Speicher rund 10.000 bis 15.000 €; linear skaliert.",
     "Förderung: Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen und wird nicht abgezogen. Getrennt ausgewiesen ist die Landespauschale Kärnten von 3.000 € (Neuanlage ab 5 kWp mit neuem Speicher ab 5 kWh). Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, Höhe offen.",
     "Finanzierung: fixe Rate über 25 Jahre, Richtwert aus den Beispielen des Finanzierungspartners (ab 102 € für 15.000 €, ab 164 € für 25.000 €), linear skaliert. Rate abhängig von Angebot und Laufzeit.",
@@ -311,7 +316,7 @@ def _solar_page():
                 ("Strompreis ct/kWh", "Vorgabe 28 ct inklusive Netz und Abgaben, frei änderbar",
                  "Österreich-Durchschnitt Haushalt, E-Control 2026"),
                 ("Einspeisung / OeMAG-Marktpreis", f"{OEMAG_STR} ct je kWh für den Überschuss",
-                 f"OeMAG-Marktpreis September 2026 (Juli 2026: {OEMAG_JULI_STR} ct), oem-ag.at"),
+                 f"OeMAG-Marktpreis September 2026 (Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct), oem-ag.at"),
                 ("Richtpreis vor Förderung", "mit Speicher 1.500 bis 2.200 € je kWp, ohne Speicher 1.000 bis 1.500 € je kWp",
                  "EBZ-Richtpreis 10 kWp mit Speicher 15.000 bis 22.000 €, linear skaliert"),
                 ("Bundeszuschuss (EAG-Investitionszuschuss)", "nicht eingerechnet: für 2026 abgeschlossen (2026 galten 150 € je kWp bis 10 kWp und 150 € je kWh Speicher); ab 2027 Systemförderung laut BMWET geplant, Höhe offen",
@@ -405,7 +410,7 @@ def _solar_page():
   <section class="section--tight" style="padding-bottom:40px">
     <div class="wrap">
       <p class="form-note">*Richtwerte, kein Angebot. Rechenwerte laut Methodik-Tabelle, Stand Oktober 2026. OeMAG-Marktpreis
-      September 2026: {OEMAG_STR} ct je kWh (oem-ag.at). Förderstand: Land Kärnten 2026, Bundeszuschuss für 2026 abgeschlossen (EAG-Abwicklungsstelle, BMWET). Fachlich
+      September 2026: {OEMAG_STR} ct je kWh als Rechenwert (Oktober 2026: {OEMAG_OKT_STR} ct, Stand November 2026, oem-ag.at; der Wert schwankt monatlich). Förderstand: Land Kärnten 2026, Bundeszuschuss für 2026 abgeschlossen (EAG-Abwicklungsstelle, BMWET). Fachlich
       geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>
   </section>""",
@@ -468,7 +473,7 @@ EG_RESULT = f"""
 """
 
 EG_ASSUMPTIONS = [
-    f"Einspeisung in der Gemeinschaft {EG_EINSP:g} ct je kWh (Beispiel, änderbar) gegenüber OeMAG-Marktpreis {OEMAG_STR} ct (September 2026; Juli 2026: {OEMAG_JULI_STR} ct). Liegt der EG-Preis unter dem Marktpreis, wird die Differenz negativ ausgewiesen.",
+    f"Einspeisung in der Gemeinschaft {EG_EINSP:g} ct je kWh (Beispiel, änderbar) gegenüber OeMAG-Marktpreis {OEMAG_STR} ct (Rechenwert September 2026; Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct). Liegt der EG-Preis unter dem Marktpreis, wird die Differenz negativ ausgewiesen.",
     f"Bezug in der Gemeinschaft {EG_BEZUG:g} ct je kWh (Beispiel, änderbar) statt rund {LIEFERANT:g} ct Energiepreis beim Lieferanten.",
     f"Netznutzungs- und Netzverlustentgelt zusammen rund {_ct(NETZ_NE7)} ct je kWh (Netzebene 7): minus 57 % lokal, minus 28 % regional, minus 64 % bei ausschließlicher Teilnahme auf Netzebene 4/5, kein Abschlag österreichweit (SNE-VO, E-Control).",
     f"Elektrizitätsabgabe {_ct(E_ABGABE)} ct und Erneuerbaren-Förderbeitrag rund {_ct(FOERDERBEITRAG)} ct je kWh entfallen für Strom aus Erneuerbare-Energie-Gemeinschaften (nicht in der Bürgerenergiegemeinschaft).",
@@ -502,7 +507,7 @@ EG_JS = r"""
     $("e-beitrag").textContent=eur(BEITRAG);
     $("e-gesamt").textContent=sgn(gesamt);
     var hint="";
-    if(zugU>0 && einsp<OEMAG){ hint="Hinweis: Ihr EG-Einspeisepreis liegt unter dem OeMAG-Marktpreis von "+OEMAG.toLocaleString("de-DE")+" ct (September 2026). Der Vorteil kommt dann aus Bezug und Netzentgelt; im Juli 2026 lag der Marktpreis bei 6,146 ct, er schwankt monatlich."; }
+    if(zugU>0 && einsp<OEMAG){ hint="Hinweis: Ihr EG-Einspeisepreis liegt unter dem OeMAG-Marktpreis von "+OEMAG.toLocaleString("de-DE")+" ct (September 2026). Der Vorteil kommt dann aus Bezug und Netzentgelt; im Juli 2026 lag der Marktpreis bei 6,146 ct, im Oktober 2026 bei 14,874 ct, er schwankt monatlich."; }
     if(bereich==="at"){ hint+=(hint?" ":"")+"Österreichweit teilen ist möglich, der Netzentgelt-Rabatt und die Abgabenbefreiung gelten aber nur im Nahbereich."; }
     $("e-hinweis").textContent=hint;
     var cta=$("e-cta"); var base=cta.getAttribute("href").split("?")[0];
@@ -523,8 +528,8 @@ EG_FAQ = [
      f"14 ct* statt rund {LIEFERANT:g} ct beim Lieferanten. Dazu kommen Netzentgelt (im Nahbereich reduziert), Abgaben (in der EEG befreit) "
      "und Umsatzsteuer 20 %. Vergleichswerte für Ihren Lieferanten finden Sie im E-Control Preisportal."),
     ("Energiegemeinschaft oder OeMAG: was bringt mehr für meinen Überschuss?",
-     f"Im September 2026 zahlt die OeMAG {OEMAG_STR} ct je kWh, im Juli waren es {OEMAG_JULI_STR} ct. Ein EG-Preis von 10 ct* liegt also je nach "
-     "Monat über oder unter dem Marktpreis. Der Unterschied: Der EG-Preis ist fix vereinbart, der Marktpreis schwankt. Dazu kommt, dass Sie als "
+     f"Im Oktober 2026 zahlte die OeMAG {OEMAG_OKT_STR} ct je kWh, im September {OEMAG_STR} ct, im Juli {OEMAG_JULI_STR} ct. Ein EG-Preis von 10 ct* liegt also je nach "
+     "Monat über oder unter dem Marktpreis, im Oktober klar darunter. Der Unterschied: Der EG-Preis ist fix vereinbart, der Marktpreis schwankt. Dazu kommt, dass Sie als "
      "Erzeuger meist auch Abnehmer sind und dort sicher sparen. Der OeMAG-Vertrag bleibt für den nicht zugeordneten Rest bestehen."),
     ("Lohnt sich eine Energiegemeinschaft ohne eigene PV-Anlage?",
      "Ja, als reiner Abnehmer. Sie sparen Netzentgelt, Abgaben und die Differenz zwischen Lieferanten- und EG-Preis auf den zugeordneten Strom, "
@@ -609,7 +614,7 @@ def _eg_page():
                 ("Zuordnungsquote", "Vorgabe 50 %, 10 bis 100 % wählbar; zugeordnet = Überschuss bzw. Netzbezug mal Quote",
                  "Viertelstundenwerte des Smart Meters; statische und dynamische Zuteilung je Gemeinschaft, Standardlastprofil nicht modelliert"),
                 ("EG-Preis 8 bis 12 ct (Einspeisung)", f"{EG_EINSP:g} ct* vorgegeben, änderbar; Differenz zu OeMAG {OEMAG_STR} ct",
-                 f"OeMAG-Marktpreis September 2026 (Juli: OeMAG-Marktpreis {OEMAG_JULI_STR} ct), oem-ag.at"),
+                 f"OeMAG-Marktpreis September 2026 (Juli: {OEMAG_JULI_STR} ct, Oktober: {OEMAG_OKT_STR} ct), oem-ag.at"),
                 ("Bezugspreis / Reststrom vom Lieferanten", f"{EG_BEZUG:g} ct* EG-Bezug gegenüber {LIEFERANT:g} ct* Energiepreis Lieferant",
                  "marktübliche Spannen, E-Control Preisportal"),
                 ("Netznutzungsentgelt und Netzverlustentgelt", f"{_ct(NETZ_NE7)} ct je kWh (Netzebene 7: 8 + 0,7); minus 57 % lokal, 28 % regional, 64 % Netzebene 4/5, 0 % österreichweit",
@@ -632,7 +637,8 @@ def _eg_page():
             rows=_eg_examples(),
             note=(f"*Beispielkonditionen: EG-Bezug {EG_BEZUG:g} ct statt {LIEFERANT:g} ct, Netzentgelt {_ct(NETZ_NE7)} ct minus 57 %, Elektrizitätsabgabe "
                   f"{_ct(E_ABGABE)} ct und Förderbeitrag rund {_ct(FOERDERBEITRAG)} ct entfallen, Beitrag {BEITRAG} € im Jahr, netto ohne Umsatzsteuer. "
-                  "Mit eigener PV-Anlage (etwa 10 kWp, 4.000 kWh Überschuss) kommt die Einspeise-Differenz dazu, die bei 10 ct* gegenüber dem Marktpreis September 2026 leicht negativ ist."),
+                  "Mit eigener PV-Anlage (etwa 10 kWp, 4.000 kWh Überschuss, 50 % zugeordnet) kommt die Einspeise-Differenz dazu: Bei 10 ct* ist sie gegenüber dem Marktpreis September 2026 leicht negativ (rund minus 3 €), "
+                  f"gegenüber dem Oktober-Wert von {OEMAG_OKT_STR} ct deutlich (rund minus 97 €, aufs Jahr hochgerechnet)."),
             anchor="beispiele",
             white=False,
         ),
@@ -662,7 +668,7 @@ def _eg_page():
             right={
                 "title": "Energiegemeinschaft Einspeisetarif oder OeMAG-Einspeisung?",
                 "items": [
-                    f"OeMAG-Marktpreis schwankt monatlich: {OEMAG_JULI_STR} ct im Juli, {OEMAG_STR} ct im September 2026",
+                    f"OeMAG-Marktpreis schwankt monatlich: {OEMAG_JULI_STR} ct im Juli, {OEMAG_STR} ct im September, {OEMAG_OKT_STR} ct im Oktober 2026",
                     "EG-Preis fix vereinbart, typisch 8 bis 12 ct*: in manchen Monaten darüber, in manchen darunter",
                     "Der OeMAG-Vertrag bleibt für den nicht zugeordneten Überschuss bestehen",
                     "Mit eigenem Speicher steigt die Eigendeckung, der Überschuss sinkt: erst Speicher, dann Gemeinschaft rechnen",
@@ -691,7 +697,7 @@ def _eg_page():
   <section class="section--tight" style="padding-bottom:40px">
     <div class="wrap">
       <p class="form-note">*Beispielkonditionen und Richtwerte, kein Angebot. OeMAG-Marktpreis September 2026: {OEMAG_STR} ct je kWh
-      (Stand Oktober 2026, oem-ag.at); Juli 2026: {OEMAG_JULI_STR} ct. Netzentgelt-Abschlag und Abgabenbefreiung nur für die zugeordnete
+      (Rechenwert, oem-ag.at); Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct (Stand November 2026). Netzentgelt-Abschlag und Abgabenbefreiung nur für die zugeordnete
       Menge und nur im Nahbereich (lokal 57 %, regional 28 %, Netzebene 4/5 bis 64 %), Richtwerte laut SNE-VO (E-Control) 2026.
       Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>

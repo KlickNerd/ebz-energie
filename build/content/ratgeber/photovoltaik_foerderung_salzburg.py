@@ -5,6 +5,7 @@ Migriert vom Live-Artikel ebz-photovoltaik.at/photovoltaik-foerderung-salzburg/
 (EAG-Novelle 2026, Wegfall der Landes- und Stadtförderung, Heizungstausch-Förderung).
 Stand ab 23.10.2026: letzter EAG-Call 2026 lief 8. bis 22.10.2026, derzeit kein Bundeszuschuss;
 Ausblick 2027 Systemfoerderung laut BMWET (geplant, nicht beschlossen).
+Update 19.11.2026: Bund Kesseltausch seit 2.11.2026 neu aufgelegt (Wärmepumpe 5.000 €, Holz 6.000 €).
 """
 
 import os
@@ -56,7 +57,7 @@ ARTICLE = {
         "Gemeinde: <b>200 bis 1.000 €</b> möglich",
     ],
     "date_published": "2026-04-20",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Einfamilienhausdach bei Sonnenschein",
 
@@ -78,7 +79,7 @@ ARTICLE = {
         ("150 €/kWp", "EAG Kategorie A im Call 2026 (bis 10 kWp)"),
         ("2.760 €", "Beispiel 8 kWp + 8 kWh im Call 2026*"),
         ("0 €", "Landesförderung Salzburg für Privat-PV 2026"),
-        ("beendet", "Bundes-Wärmepumpenförderung 2026 (ausgeschöpft)"),
+        ("5.000 €", "Bundes-Pauschale Wärmepumpe (Kesseltausch seit 2.11.2026)"),
     ],
 
     "sections": [
@@ -168,9 +169,9 @@ sofern die beihilferechtlichen Höchstgrenzen eingehalten wurden. Seit dem Ende 
 oder Biomasseanlage tauscht, profitiert von Bundesförderungen, die den Wegfall der Salzburger PV-Landesförderung
 teilweise kompensieren:</p>
 <ul>
-  <li><b>Sanierungsoffensive (Wärmepumpe):</b> galt 2026 mit bis zu 7.500 € Pauschale, seit Herbst 2026 ausgeschöpft, keine Registrierung mehr möglich (Stand Oktober 2026)</li>
-  <li><b>Sanierungsoffensive (Biomasse):</b> Pauschale bis zu 8.500 €</li>
-  <li><b>„Sauber Heizen für Alle“</b> (einkommensschwache Haushalte): bis zu 100 % Förderung</li>
+  <li><b>Kesseltausch (Wärmepumpe):</b> seit 2. November 2026 neu aufgelegt, 5.000 € Pauschale, plus 5.000 € Bohrbonus bei Sole- oder Wasser-Wasser-Wärmepumpen und plus 2.500 € für eine thermische Solaranlage ab 6 m² (PV zählt nicht); Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist (in der ersten Aktion 2026 waren es bis zu 7.500 €)</li>
+  <li><b>Kesseltausch (Holzzentralheizung):</b> Pauschale 6.000 € (in der ersten Aktion 2026 bis zu 8.500 €)</li>
+  <li><b>„Sauber Heizen für Alle“</b> (einkommensschwache Haushalte): bleibt geschlossen, laut BMLUK soll das Angebot in die Sanierungsoffensive integriert werden</li>
 </ul>
 <p>Technisch passt die Kombination ohnehin: Die Wärmepumpe nutzt den selbst erzeugten PV-Strom direkt, der
 Eigenverbrauch steigt, und die Energiekosten sinken um bis zu 85 %. Mehr dazu im Ratgeber
@@ -242,7 +243,7 @@ Technikkriterien sind noch offen.</p>
         "grid": [
             ("Förderabwicklung komplett", "Gemeindezuschuss, Heizungstausch-Förderung und Blick auf die Kriterien 2027."),
             ("Europäische Komponenten", "Module, Wechselrichter und Speicher, für 2027 ist laut BMWET ein Europa-Bonus geplant."),
-            ("PV plus Wärmepumpe", "Die Bundespauschale 2026 ist ausgeschöpft; Landesförderung Salzburg und Ausblick 2027 prüfen wir mit."),
+            ("PV plus Wärmepumpe", "Kesseltausch des Bundes seit 2. November 2026 neu aufgelegt; Landesförderung Salzburg prüfen wir mit."),
             ("Referenzen in 6 Bundesländern", "300+ Projekte, 4,9 Sterne auf Google."),
         ],
     },
@@ -292,6 +293,10 @@ Technikkriterien sind noch offen.</p>
         ("EAG-Förderabwicklungsstelle der OeMAG", "https://www.eag-abwicklungsstelle.at/"),
         ("White List der OeMAG (Made-in-Europe-Komponenten)", "https://www.oem-ag.at/"),
         ("Land Salzburg: Förderungen", "https://www.salzburg.gv.at/"),
+        ("Sanierungsoffensive: Kesseltausch Neuauflage Ein-/Zweifamilienhaus oder Reihenhaus",
+         "https://www.sanierungsoffensive.gv.at/kesseltausch/neuauflage-ein-/zweifamilienhaus-oder-reihenhaus"),
+        ("KPC: Informationsblatt Neuauflage Kesseltausch 2026, Ein-/Zweifamilienhaus (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
     ],
     "related": [
         ("/photovoltaik-landesfoerderungen/", "Vergleich: PV-Landesförderungen aller 9 Bundesländer"),

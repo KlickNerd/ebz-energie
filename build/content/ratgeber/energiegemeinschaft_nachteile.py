@@ -32,7 +32,7 @@ ARTICLE = {
         "Rabatt nur im <b>Nahbereich</b>",
     ],
     "date_published": "2026-07-22",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Hausdach, Ausgangspunkt für die Abwägung einer Energiegemeinschaft",
 
@@ -47,7 +47,8 @@ ARTICLE = {
         "Nach dem Beitritt gibt es drei Rechnungen statt einer. Vertragsfallen wie Jahresbindung oder "
         "Austrittsgebühren lassen sich vermeiden, wenn Sie vier Angaben vor der Unterschrift prüfen.",
         "Für Erzeuger mit PV ist die Gemeinschaft attraktiv, weil sie dem Überschuss einen fixen Preis von typisch "
-        "8 bis 12 Cent gibt, während der OeMAG-Tarif monatlich schwankt (Juli 2026: 6,146 Cent, September 2026: 10,168 Cent). Mit Speicher "
+        "8 bis 12 Cent gibt, während der OeMAG-Tarif monatlich schwankt (Juli 2026: 6,146 Cent, Oktober 2026: 14,874 Cent). In Monaten "
+        "mit hohem Marktpreis zahlt die OeMAG mehr, planbar ist nur der EG-Preis. Mit Speicher "
         "und Energiemanagement schrumpfen die meisten Nachteile.",
     ],
     "kpis": [
@@ -68,8 +69,8 @@ können, hier die Gegenüberstellung, jeweils mit der Zahl dahinter:</p>
          "Gilt nur für die zugeordnete Menge, typisch 25 bis 60 % des Verbrauchs"],
         ["Netzentgelt minus 57 % (lokal) oder 28 % (regional), E-Abgabe und Förderbeitrag entfallen",
          "Nur im Nahbereich, Grundpauschale und Leistungspreis bleiben"],
-        ["Fixer Preis für PV-Überschuss: 8 bis 12 ct statt schwankendem OeMAG-Tarif (Juli 2026: 6,146 ct, September 2026: 10,168 ct)",
-         "Nur für den zeitgleich verbrauchten Anteil, der Rest bleibt beim OeMAG-Tarif"],
+        ["Fixer Preis für PV-Überschuss: 8 bis 12 ct statt schwankendem OeMAG-Tarif (Juli 2026: 6,146 ct, Oktober 2026: 14,874 ct)",
+         "Nur für den zeitgleich verbrauchten Anteil, der Rest bleibt beim OeMAG-Tarif; bei hohem Marktpreis zahlt die OeMAG mehr"],
         ["Lieferant und OeMAG-Vertrag bleiben, Austritt mit 1 bis 3 Monaten Frist",
          "Laufende Gebühr 2 bis 8 € je Monat, drei Rechnungen statt einer"],
         ["Regionale Wertschöpfung, Unabhängigkeit von der Börse",
@@ -166,9 +167,9 @@ Erneuerbaren-Energie-Gemeinschaft bleibt. Sie bleibt damit das wirtschaftlich st
         ("Für wen es sich trotzdem lohnt und wie Sie die Nachteile klein halten", "lohnt-sich", f"""
 <p>Für Erzeuger mit einer {a('photovoltaik', 'PV-Anlage')} ist eine Energiegemeinschaft in der Regel attraktiv,
 weil sie dem Überschuss einen fix vereinbarten Preis gibt: typisch 8 bis 12 Cent*, ohne den OeMAG-Vertrag zu
-kündigen. Der OeMAG-Tarif schwankte 2026 zwischen 6,146 Cent (Juli) und 10,168 Cent (September). Bei 7.000 kWh
-Überschuss und 60 Prozent Zuordnung bringen 4.200 kWh zu 10 Cent* 420 Euro im Jahr, bei der OeMAG wären es je
-nach Monat 258 bis 427 Euro. Der Erzeugervorteil ist also nicht garantiert; verlässlich ist der Vorteil beim
+kündigen. Der OeMAG-Tarif schwankte 2026 zwischen 6,146 Cent (Juli) und 14,874 Cent (Oktober). Bei 7.000 kWh
+Überschuss und 60 Prozent Zuordnung bringen 4.200 kWh zu 10 Cent* 420 Euro im Jahr, bei der OeMAG wären es, den
+jeweiligen Monatswert aufs Jahr hochgerechnet, 258 bis 625 Euro. Der Erzeugervorteil ist also nicht garantiert; verlässlich ist der Vorteil beim
 eigenen Bezug abends und im Winter. Reine Abnehmer profitieren
 ebenfalls, aber weniger stark, und am meisten, wenn sie tagsüber verbrauchen.</p>
 <p>Der Hebel gegen den größten Nachteil ist Technik. Ein {a('batteriespeicher', 'Speicher')} verschiebt
@@ -180,7 +181,7 @@ und die Teilnahme an einer Energiegemeinschaft ist dort eine der zulässigen Bet
 {A.table(
     ["Situation", "Empfehlung"],
     [
-        ["PV-Anlage, Überschuss, Nahbereich mit Abnehmern", "Beitreten: höherer Erlös, kein Risiko, OeMAG bleibt als Auffangnetz"],
+        ["PV-Anlage, Überschuss, Nahbereich mit Abnehmern", "Beitreten: planbarer Erlös, geringes Risiko, OeMAG bleibt als Auffangnetz"],
         ["Kein PV, Tagesverbrauch (Wärmepumpe, Homeoffice, E-Auto)", "Beitreten: hohe Zuordnungsquote, Netz und Abgaben gespart"],
         ["Kein PV, nur Abendverbrauch, Pauschalgebühr", "Genau rechnen: Gebühr je kWh wählen oder abwarten"],
         ["Verwandte außerhalb des Nahbereichs", "Teilen möglich, aber ohne Rabatt: eher Peer-to-Peer ab Oktober 2026"],
@@ -193,7 +194,7 @@ und die Teilnahme an einer Energiegemeinschaft ist dort eine der zulässigen Bet
 <p>Die Nachteile einer Energiegemeinschaft sind real, aber beherrschbar: eine Ersparnis, die nur für die
 zugeordnete Menge gilt, Gebühren von 25 bis 100 Euro im Jahr, Smart-Meter-Pflicht, Nahbereich und drei
 Rechnungen. Wer die Zuordnungsquote realistisch einschätzt, das Gebührenmodell zum Verbrauchsprofil
-wählt und den Vertrag vor der Unterschrift prüft, geht kein Risiko ein. Mit einer eigenen PV-Anlage, einem
+wählt und den Vertrag vor der Unterschrift prüft, hält das Risiko gering. Mit einer eigenen PV-Anlage, einem
 Speicher und einem Energiemanagementsystem verschieben Sie die Bilanz klar zu Ihren Gunsten. Wir beraten
 Sie ehrlich, ob und wie sich der Schritt für Sie lohnt.</p>
 {A.cta("Nachteile minimieren, Vorteile maximieren",
@@ -238,9 +239,11 @@ Sie ehrlich, ob und wie sich der Schritt für Sie lohnt.</p>
          "EG-Strom. Der Netzbetreiber ordnet die Mengen automatisch zu, Plattformen wie energyfamily stellen die "
          "Gemeinschaftsabrechnung monatlich in einer App dar. Für Mitglieder ist der Aufwand gering."),
         ("Kann ich Geld verlieren?",
-         "Ein wirtschaftliches Risiko besteht praktisch nicht: Lieferant und OeMAG-Vertrag bleiben, nicht "
+         "Das Risiko ist gering: Lieferant und OeMAG-Vertrag bleiben, nicht "
          "zugeordnete Mengen werden wie bisher abgerechnet, der Austritt ist mit ein bis drei Monaten Frist "
-         "möglich. Verlieren können Sie nur die Gebühr, wenn die Zuordnung sehr gering ausfällt."),
+         "möglich. Verlieren können Sie die Gebühr, wenn die Zuordnung sehr gering ausfällt. Als Erzeuger bekommen Sie "
+         "außerdem in Monaten, in denen der OeMAG-Marktpreis über dem EG-Preis liegt (Oktober 2026: 14,874 Cent), für "
+         "die zugeordnete Menge weniger als bei der OeMAG."),
         ("Was ist mit der Energiegemeinschaft nach dem ElWG?",
          "Bestehende Gemeinschaften laufen ab 1. Oktober 2026 im neuen Rechtsrahmen weiter. Ab 1. Jänner 2027 "
          "kann die E-Control die Netzentgelt-Abschläge per Verordnung neu festlegen, ob sich die 57 und 28 "

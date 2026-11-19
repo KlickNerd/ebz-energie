@@ -19,7 +19,8 @@ build/seo/standort_wolfsberg.json):
   laut PV-Atlas), zwei FAQ, Links auf die Leistungsseite und die Ratgeber Kosten, Altbau, PV fuer
   Waermepumpe. Zahlen nur aus build/pages/waermepumpe.py (Altbau 15.000 bis 28.000 EUR, 55 Grad
   Vorlauf, Montage 2 bis 4 Tage, bis minus 20 Grad, Hochtemperatur 60 bis 70 Grad).
-- Foerderung Waermepumpe als Kurzfassung ohne Fristen und ohne Euro-Obergrenze: Bund ausgeschoepft,
+- Foerderung Waermepumpe als Kurzfassung ohne Fristen und ohne Euro-Obergrenze: Bund ausgeschoepft
+  (UEBERHOLT 19.11.2026: Kesseltausch seit 2.11.2026 neu aufgelegt, 5.000 EUR Pauschale, Texte angepasst),
   Land Kaernten 3.000 EUR Pauschale 2026 (Foerderblatt "Foerderungen 2026" auf maria-saal.gv.at, abgerufen
   10.10.2026; die 35 %/6.000 EUR galten nur bis 31.12.2025), Verweis auf foerderungen und foerderrechner.
 - Keine neuen lokalen Zahlen fuer das Lavanttal (keine amtliche Quelle zu Heizungsbestand oder
@@ -66,7 +67,7 @@ FAQ = [
      "für Ihr Dach rechnen wir im Projektbericht mit 3D-Belegplan nach."),
     ("Ist eine Photovoltaikanlage ohne Speicher sinnvoll?",
      "Sie funktioniert, nutzt aber nur rund 30 Prozent des Sonnenstroms selbst*; der Rest geht zum OeMAG-Marktpreis "
-     "ins Netz (September 2026: 10,168 Cent je kWh, der Wert schwankt monatlich). Mit Speicher steigt der "
+     "ins Netz (Oktober 2026: 14,874 Cent je kWh, im Juli 6,146 Cent, der Wert schwankt monatlich). Mit Speicher steigt der "
      "Eigenverbrauch auf bis zu 80 Prozent*, und erst mit Speicher ab 5 kWh gibt es die Landespauschale Kärnten. "
      "Ohne Speicher ist eine Anlage dann sinnvoll, wenn der Verbrauch tagsüber hoch ist, etwa in Betrieben."),
     ("Wie groß sollte der Speicher für ein Einfamilienhaus sein?",
@@ -97,8 +98,9 @@ FAQ = [
      "Hochtemperatur-Wärmepumpe ein. Der Umstieg im Altbau kostet mit Anpassungen rund 15.000 bis 28.000 Euro vor "
      "Förderung*. Ist das Haus ungedämmt, sagen wir Ihnen offen, wenn zuerst Fenster oder Dämmung dran sind."),
     ("Welche Förderung gibt es für den Heizungstausch auf eine Wärmepumpe in Wolfsberg?",
-     "Der Bund fördert den Heizungstausch derzeit nicht, die Mittel sind ausgeschöpft. Das Land Kärnten zahlt 2026 für den "
-     "Umstieg auf eine Wärmepumpe im Eigenheim eine Pauschale von 3.000 Euro. Budget und Voraussetzungen prüfen wir für "
+     "Der Bund zahlt seit der Neuauflage des Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale, wenn die "
+     "Wärmepumpe eine fossile Heizung ersetzt. Das Land Kärnten zahlt 2026 für den Umstieg auf eine Wärmepumpe im "
+     "Eigenheim zusätzlich eine Pauschale von 3.000 Euro, zusammen also bis 8.000 Euro*. Budget und Voraussetzungen prüfen wir für "
      "Ihr Haus im Lavanttal, bevor wir ein Angebot legen; die Photovoltaikanlage wird getrennt gefördert. Den "
      "aktuellen Stand aller Programme finden Sie auf unserer Förderseite und im Förderrechner."),
     ("Lohnt sich eine Photovoltaikanlage in Wolfsberg auch im Winter?",
@@ -171,7 +173,7 @@ def build():
             h2="Ohne Speicher rund 30 %, mit Speicher bis zu 80 % Eigenverbrauch",
             intro=("Ohne Speicher nutzen Sie typischerweise nur etwa 30 Prozent Ihres Solarstroms selbst, weil "
                    "die meiste Energie mittags entsteht, wenn der Verbrauch im Haushalt gering ist. Der Rest geht "
-                   "zum OeMAG-Marktpreis ins Netz (September 2026: 10,168 Cent je kWh). Ein Speicher hebt den "
+                   "zum OeMAG-Marktpreis ins Netz (Oktober 2026: 14,874 Cent je kWh). Ein Speicher hebt den "
                    "Eigenverbrauch auf bis zu 80 Prozent."),
             bars=[
                 ("Eigenverbrauch ohne Speicher", 30, "bad", "rund 30 %*"),
@@ -242,8 +244,8 @@ def build():
                  "liefert danach Ihr Dach: Eine 10-kWp-Anlage erzeugt in Wolfsberg rund 11.600 kWh im Jahr "
                  "(PV-Atlas), und das Energiemanagement legt Warmwasser und Pufferspeicher über die "
                  "SG-Ready-Schnittstelle in die Sonnenstunden."),
-                ("Förderung, kurz gefasst: Vom Bund gibt es für den Heizungstausch derzeit nichts, die Mittel sind "
-                 "ausgeschöpft. Das Land Kärnten zahlt 2026 eine Pauschale von 3.000 € für die Wärmepumpe im Eigenheim; ob "
+                ("Förderung, kurz gefasst: Der Bund zahlt im neu aufgelegten Kesseltausch seit November 2026 wieder "
+                 "5.000 € Pauschale. Das Land Kärnten zahlt 2026 zusätzlich 3.000 € für die Wärmepumpe im Eigenheim; ob "
                  "das für Ihr Haus gilt und das Budget reicht, klären wir, bevor Sie ein Angebot unterschreiben. Alle laufenden Programme "
                  "stehen auf der Seite " + a("foerderungen", "Förderungen im Überblick") + ", Ihren Richtwert "
                  "rechnet der " + a("foerderrechner", "Förderrechner") + " aus."),
@@ -425,9 +427,10 @@ def _footnote():
     <div class="wrap">
       <p class="form-note">*Richtwerte: Eigenverbrauchsquoten und Preise auf Basis typischer Einfamilienhäuser,
       vor Förderung. Ersparnis und Amortisation hängen von Verbrauch, Anlagengröße, Ausrichtung und Strompreis ab.
-      Ertragswerte laut PV-Atlas (pvatlas.at), Fördersätze, Fristen und OeMAG-Marktpreis Stand Oktober 2026,
+      Ertragswerte laut PV-Atlas (pvatlas.at), Fördersätze, Fristen und OeMAG-Marktpreis Stand November 2026,
       Änderungen durch Fördergeber und OeMAG vorbehalten. Wärmepumpe: Richtwerte für den Heizungstausch aus unseren
-      Ratgebern, vor Förderung; Förderhöhe abhängig von Richtlinie, Gebäude und Budget der Fördergeber. Finanzierung:
+      Ratgebern, vor Förderung; Förderhöhe abhängig von Richtlinie, Gebäude und Budget der Fördergeber, Bund und Land zusammen höchstens die
+      Investitionskosten. Finanzierung:
       Beispielkonditionen, vorbehaltlich Bonitätsprüfung. Fachlich geprüft von Mario Zintl, Geschäftsführung
       EBZ Energie GmbH.</p>
     </div>

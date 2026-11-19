@@ -35,7 +35,7 @@ ARTICLE = {
         "Garantie: <b>bis 30 Jahre</b> Leistung",
     ],
     "date_published": "2025-12-19",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_detail",
     "hero_alt": "Montage einer Photovoltaik-Komplettanlage mit 10 kWp auf einem Einfamilienhausdach",
 
@@ -78,7 +78,7 @@ Fördersatz galt, und die Fixkosten für Gerüst, Wechselrichter und Elektroansc
 Module, sodass der Preis je kWp günstig ausfällt. Benötigt werden rund 50 bis 60 Quadratmeter Dachfläche
 für 22 bis 25 Module. Auch Ost-West-Dächer eignen sich gut: Sie liefern morgens und abends Strom, genau
 dann, wenn der Haushalt ihn braucht.</p>
-<p>Der Speicher ist der zweite Baustein. Ohne ihn fließt der Mittagsüberschuss für 5 bis 10 Cent je
+<p>Der Speicher ist der zweite Baustein. Ohne ihn fließt der Mittagsüberschuss für rund 6 bis 15 Cent je
 Kilowattstunde ins Netz, während Sie abends Strom für rund 32 Cent zukaufen. Mit Speicher nutzen Sie den
 Sonnenstrom bis in die Nacht und steigern den Eigenverbrauch von rund 30 auf 60 bis 80 Prozent.</p>
 """),
@@ -162,7 +162,7 @@ Speicher für 10 kWp. Bei der Dimensionierung hilft der Ratgeber
 """),
         ("Wirtschaftlichkeit: Was die Anlage jedes Jahr bringt", "wirtschaftlichkeit", f"""
 <p>Die Rechnung ist einfach: Jede selbst verbrauchte Kilowattstunde ersetzt Netzstrom für rund 32 Cent,
-jede eingespeiste bringt 6 bis 10 Cent (OeMAG-Marktpreis September 2026: 10,168 Cent, Juli 2026: 6,146 Cent). Mit Speicher und
+jede eingespeiste bringt rund 6 bis 15 Cent (OeMAG-Marktpreis Oktober 2026: 14,874 Cent, September 2026: 10,168 Cent, Juli 2026: 6,146 Cent). Mit Speicher und
 60 bis 80 Prozent Eigenverbrauch sinkt die Stromrechnung um bis zu 85 Prozent. Ein Beispiel aus den
 {a('referenzen', 'EBZ-Referenzen')}: Ein Einfamilienhaus in Villach mit 10 kWp in Ost-West-Ausrichtung,
 Speicher und Notstrom erzeugt rund 11.000 kWh pro Jahr und hat seine Stromkosten um etwa 80 Prozent

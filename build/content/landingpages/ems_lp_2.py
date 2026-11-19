@@ -4,7 +4,7 @@ Botschaft der alten LP uebernommen (EMS als "Gehirn Ihrer Energie", Eigenverbrau
 sechs Sparhebel, Privat und Gewerbe, herstellerunabhaengig, auch zum Nachruesten, 4 Schritte, Mario-Zitat).
 Korrigiert/weggelassen: "bis 30 % mehr Ertrag aus bestehender PV" (nicht belegt) gestrichen; "eigene
 zertifizierte Elektro-Fachkraefte, keine Subunternehmer" -> zertifizierte Fachkraefte; Bewertung 5,0 -> 4,9
-(kommt aus den Reviews); "abends fuer 25 Cent zurueckkaufen" -> OeMAG-Marktpreis September 2026 und 28 Cent wie
+(kommt aus den Reviews); "abends fuer 25 Cent zurueckkaufen" -> OeMAG-Marktpreis Oktober 2026 (Stand November 2026) und 28 Cent wie
 auf der Leistungsseite; Foerderung ohne Betraege; Widmanngasse -> Triglavstrasse 15 (kommt aus NAP).
 Leere H1 der alten Seite durch das Hauptversprechen ersetzt. Zahlen aus build/pages/ems.py.
 """
@@ -50,7 +50,7 @@ LP = {
     "problem": {
         "eyebrow": "Das kostet Sie bares Geld",
         "h2": "Ohne Steuerung verschenken Sie jeden Tag Strom und damit Ersparnis",
-        "intro": ("Jede Kilowattstunde, die Sie mittags zum OeMAG-Marktpreis (September 2026: 10,168 Cent) einspeisen "
+        "intro": ("Jede Kilowattstunde, die Sie mittags zum OeMAG-Marktpreis (Oktober 2026: 14,874 Cent) einspeisen "
                   "und abends für rund 28 Cent zurückkaufen, ist ein Verlustgeschäft. Genau das passiert bei den meisten "
                   "Anlagen jeden Tag. Der Speicher lädt zur falschen Zeit, die Wärmepumpe läuft nachts mit Netzstrom, "
                   "und das E-Auto lädt zum vollen Tarif. Ein EMS dreht diese Logik um, automatisch, Tag für Tag."),

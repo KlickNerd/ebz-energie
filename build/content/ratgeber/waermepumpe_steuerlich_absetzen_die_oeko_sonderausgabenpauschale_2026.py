@@ -6,6 +6,8 @@ ebz-photovoltaik.at/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpausc
 Bereinigt: Gedankenstriche, falsche FAQ-Überschrift ("Sauber Heizen für Alle", Copy-Paste-Rest),
 Widerspruch "2.000 € Steuerersparnis" vs. "2.000 € Sonderausgaben, real ca. 840 €" aufgelöst
 (einheitlich: 2.000 € Sonderausgaben, Steuerersparnis abhängig vom Steuersatz).
+Update 19.11.2026: Bund-Kesseltausch seit 2.11.2026 neu aufgelegt (5.000 € Wärmepumpe, keine 30-%-Grenze);
+Hinweisbox und Rechenbeispiel angepasst. Pauschale laut FAQ KPC 10/2026 an ausbezahlte Bundesförderung geknüpft.
 """
 
 import os
@@ -35,7 +37,7 @@ ARTICLE = {
         "Berücksichtigung <b>automatisch</b>",
     ],
     "date_published": "2026-03-20",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch bei EBZ Energie zum Heizungstausch und zur Steuerveranlagung",
 
@@ -46,8 +48,8 @@ ARTICLE = {
         "(4.000 €) bei thermischer Sanierung. Bei zwei Maßnahmen verlängert sich der Zeitraum auf 10 Jahre.",
         "Die Beträge werden vom steuerpflichtigen Einkommen abgezogen. Bei 42 % Grenzsteuersatz sind das rund "
         "168 € pro Jahr, also etwa 840 € Steuerersparnis über fünf Jahre.",
-        "Voraussetzungen: ausbezahlte Bundesförderung nach dem Umweltförderungsgesetz (Sanierungsoffensive oder "
-        "Sauber Heizen für Alle), Restkosten nach Förderabzug über 2.000 € (Sanierung: über 4.000 €), privat "
+        "Voraussetzungen: ausbezahlte Bundesförderung nach dem Umweltförderungsgesetz (etwa der Kesseltausch der "
+        "Sanierungsoffensive, seit 2. November 2026 neu aufgelegt), Restkosten nach Förderabzug über 2.000 € (Sanierung: über 4.000 €), privat "
         "genutztes Gebäude, natürliche Person.",
         "Ablauf: Zustimmung zur Datenübermittlung im KPC-Förderantrag, dann übermittelt die KPC die Daten ans "
         "Finanzamt. Sie müssen nur jährlich die Arbeitnehmerveranlagung durchführen. Vergessene Zustimmung "
@@ -72,11 +74,11 @@ Kosten, sondern über einen festen Pauschalbetrag, daher der Name.</p>
 Steuerveranlagung berücksichtigt, ohne zusätzlichen Antrag beim Finanzamt. Sie ergänzt die direkten
 Zuschüsse aus der {a('/sanierungsoffensive-2026/', 'Sanierungsoffensive 2026')} und den
 {a('/landesfoerderungen-fuer-die-waermepumpe/', 'Landesförderungen')}. Stand: April 2026.</p>
-{A.box("Stand Oktober 2026: Die Bundesprogramme Sanierungsoffensive 2026 (Kesseltausch) und „Sauber Heizen für "
-       "Alle 2026“ sind ausgeschöpft, neue Registrierungen sind nicht möglich (umweltfoerderung.at). Die Pauschale "
-       "setzt eine ausbezahlte Bundesförderung voraus und greift damit für alle, die vor dem Förderstopp registriert "
-       "haben und ihre Förderung ausbezahlt bekommen. Ohne Bundesförderung entsteht kein Anspruch; ob 2027 ein neues "
-       "Programm kommt, ist offen.", label="Hinweis:")}
+{A.box("Stand November 2026: Der Kesseltausch des Bundes ist seit 2. November 2026 neu aufgelegt (5.000 € für "
+       "die Wärmepumpe, Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht ist). Die Pauschale "
+       "ist an die Auszahlung einer Bundesförderung geknüpft und greift damit auch für die Neuauflage, ebenso für "
+       "alle, die in der ersten Aktion 2026 registriert haben und ihre Förderung ausbezahlt bekommen. „Sauber "
+       "Heizen für Alle“ bleibt geschlossen. Ohne Bundesförderung entsteht kein Anspruch.", label="Hinweis:")}
 """),
         ("Wie hoch ist die Pauschale?", "hoehe", f"""
 {A.table(
@@ -102,7 +104,8 @@ in Summe 6.000 € Sonderausgaben über 10 Jahre. Erfolgen beide Maßnahmen im s
 <ul>
   <li><b>Bundesförderung als Grundvoraussetzung:</b> Für den Heizungstausch muss eine Bundesförderung
   nach dem Umweltförderungsgesetz gewährt und ausbezahlt worden sein, also über die Sanierungsoffensive
-  2026 (Kesseltausch) oder {a('/sauber-heizen-fuer-alle-2026/', '„Sauber Heizen für Alle“')}. Reine
+  2026 (Kesseltausch, seit 2. November 2026 als Neuauflage wieder beantragbar) oder
+  {a('/sauber-heizen-fuer-alle-2026/', '„Sauber Heizen für Alle“')} (geschlossen). Reine
   Landes- oder Gemeindeförderungen reichen nicht.</li>
   <li><b>Mindest-Restkosten:</b> Nach Abzug aller ausbezahlten öffentlichen Förderungen (Bund, Land,
   Gemeinde) müssen beim Heizungstausch mehr als 2.000 € Restkosten bleiben, bei thermischer Sanierung
@@ -149,22 +152,24 @@ Jahre 2027, 2028, 2029 und 2030, insgesamt 5 Jahre zu je 400 €.</p>
     ["Position", "Betrag"],
     [
         ["Gesamtkosten Heizungstausch", "22.000 €"],
-        ["Bundesförderung Kesseltausch (30 % der förderfähigen Kosten)", "6.600 €"],
+        ["Bundesförderung Kesseltausch (Pauschale Wärmepumpe, Neuauflage)", "5.000 €"],
         ["Landesförderung (z. B. Kärnten)", "3.000 €"],
-        ["Verbleibende Restkosten (22.000 minus 6.600 minus 3.000)", "12.400 €"],
+        ["Verbleibende Restkosten (22.000 minus 5.000 minus 3.000)", "14.000 €"],
         ["Öko-Sonderausgabenpauschale: 5 x 400 € Sonderausgaben", "2.000 €"],
         ["Steuerersparnis bei 42 % Grenzsteuersatz (5 x ca. 168 €)", "ca. 840 €"],
-        ["Gesamtvorteil aus Förderung und Steuer", "ca. 10.440 €"],
+        ["Gesamtvorteil aus Förderung und Steuer", "ca. 8.840 €"],
     ],
     hl_cols=(1,),
 )}
-<p>Die Restkosten von 12.400 € übersteigen die Mindestgrenze von 2.000 € deutlich, die Bundesförderung
+<p>Die Restkosten von 14.000 € übersteigen die Mindestgrenze von 2.000 € deutlich, die Bundesförderung
 wurde ausbezahlt, das Gebäude wird privat genutzt: Alle Voraussetzungen sind erfüllt. Die Pauschale ist
 damit kein großer Hebel, aber ein Bonus, den Sie ohne Aufwand mitnehmen. Was eine Wärmepumpe insgesamt
 kostet, zeigt der Ratgeber {a('/kosten-einer-waermepumpe/', 'Kosten einer Wärmepumpe')}.</p>
-<p><small>*Beispielrechnung mit Richtwerten, Stand April 2026. Bundesförderung gedeckelt bei 30 % der
-förderfähigen Kosten, Landesförderung je nach Bundesland unterschiedlich, Steuerersparnis abhängig vom
-persönlichen Grenzsteuersatz.</small></p>
+<p><small>*Beispielrechnung mit Richtwerten. Bundesförderung: Pauschale der Kesseltausch-Neuauflage laut
+Informationsblatt der KPC (Version 10/2026), ohne Abzug für Kältemittel mit höherem GWP; in der ersten Aktion
+2026 war die Förderung bei 30 % der förderfähigen Kosten gedeckelt. Landesförderung je nach Bundesland
+unterschiedlich (Kärnten 2026: 3.000 €), Steuerersparnis abhängig vom persönlichen
+Grenzsteuersatz.</small></p>
 """),
         ("Was die Pauschale nicht abdeckt", "grenzen", f"""
 <ul>
@@ -184,8 +189,9 @@ persönlichen Grenzsteuersatz.</small></p>
         ("Wärmepumpe und Photovoltaik: dreifach profitieren", "photovoltaik", f"""
 <p>Wer die Wärmepumpe mit einer PV-Anlage kombiniert, nutzt mehrere Vorteile: die Öko-Sonderausgabenpauschale
 für die Steuer, Landesförderungen wie die Kärntner Pauschale für Wärmepumpe und PV mit Speicher und den
-selbst erzeugten Strom. Die Bundesförderungen 2026 für den Heizungstausch und die Photovoltaik
-(EAG-Investitionszuschuss, letzter Call endete am 22. Oktober 2026) sind derzeit nicht beantragbar. Dazu senkt der selbst erzeugte Strom die laufenden Betriebskosten der Wärmepumpe. Wie das
+selbst erzeugten Strom. Für den Heizungstausch zahlt der Bund seit 2. November 2026 wieder (Kesseltausch,
+5.000 € für die Wärmepumpe); der Bundeszuschuss für Photovoltaik (EAG-Investitionszuschuss, letzter Call
+endete am 22. Oktober 2026) ist derzeit nicht beantragbar. Dazu senkt der selbst erzeugte Strom die laufenden Betriebskosten der Wärmepumpe. Wie das
 zusammenspielt, lesen Sie im Ratgeber
 {a('/photovoltaik-fuer-waermepumpe/', 'Photovoltaik für die Wärmepumpe')}; einen Überblick über alle
 Zuschüsse gibt {a('/waermepumpenfoerderung-in-oesterreich/', 'Wärmepumpenförderung in Österreich 2026')}.
@@ -247,8 +253,8 @@ dabei ab Tag 1 Ihnen und die Förderungen bleiben voll erhalten.</p>
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team installiert Wärmepumpen und "
                     "Photovoltaik in Kärnten und der Steiermark und übernimmt die Förderabwicklung inklusive der "
-                    "Zustimmung zur Öko-Sonderausgabenpauschale. Alle Angaben entsprechen dem Stand April 2026 und "
-                    "dem Einkommensteuergesetz. Keine Rechts- oder Steuerberatung, maßgeblich sind die offiziellen "
+                    "Zustimmung zur Öko-Sonderausgabenpauschale. Angaben zur Pauschale: Stand April 2026 und "
+                    "Einkommensteuergesetz; Bundesförderung (Kesseltausch-Neuauflage): Stand 19. November 2026. Keine Rechts- oder Steuerberatung, maßgeblich sind die offiziellen "
                     "Förderbedingungen und die Bestimmungen des Bundesministeriums für Finanzen; bei individuellen "
                     "Fragen wenden Sie sich an Ihre Steuerberatung."),
     "sources": [
@@ -256,10 +262,14 @@ dabei ab Tag 1 Ihnen und die Förderungen bleiben voll erhalten.</p>
          "https://www.umweltfoerderung.at/oeko-sonderausgabenpauschale"),
         ("Bundesministerium für Finanzen: Öko-Sonderausgabenpauschale",
          "https://www.bmf.gv.at/oeko-sonderausgabenpauschale"),
+        ("KPC: Informationsblatt Kesseltausch 2026 Ein-/Zweifamilienhaus/Reihenhaus, Neuauflage ab 2.11.2026 (Version 10/2026)",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/Infoblatt_Neuauflage_Kesseltausch_2026_EFH.pdf"),
+        ("KPC: Häufig gestellte Fragen Kesseltausch 2026 und Neuauflage (Version 10/2026), Frage 48 zur Öko-Sonderausgabenpauschale",
+         "https://www.sanierungsoffensive.gv.at/fileadmin/user_upload/2026/faq_Kesseltausch_2026_EFH.pdf"),
     ],
     "related": [
         ("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung Österreich 2026: Überblick"),
-        ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: Bundesförderung"),
+        ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: Kesseltausch neu, 5.000 €"),
         ("/kosten-einer-waermepumpe/", "Kosten einer Wärmepumpe"),
         ("waermepumpe", "Wärmepumpen-Installateur EBZ Energie"),
     ],

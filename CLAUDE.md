@@ -90,7 +90,8 @@ Ein IIFE pro Seite: IntersectionObserver für `.eg-reveal` → `.eg-inview` (Rev
 5. Richtpreis-Anker (freigegeben): 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung.
 6. Interne Verlinkung: jede Seite verlinkt in ihr Cluster (Ratgeber ↔ Leistungsseite ↔ Rechner) und auf /referenzen/.
 7. Bilder: nur Mediathek-URLs (nie Base64 in Produktionsdateien), beschreibende deutsche Alt-Texte, `loading="lazy"` außer Hero, width/height-Attribute.
-8. OeMAG-Zahlen aktuell halten: Marktpreis September 2026 = 10,168 ct (Juli 2026 = 6,146 ct, Q3-Referenz 10,923 ct). Quelle oem-ag.at/de/marktpreis, monatlich prüfen; zentrale Faktenliste: `build/seo/_fakten_2026-10.md`.
+8. OeMAG-Zahlen aktuell halten: Marktpreis Oktober 2026 = 14,874 ct (September 10,168 ct, Juli 6,146 ct, Q3-Referenz 10,923 ct). Quelle oem-ag.at/de/marktpreis, monatlich prüfen; zentrale Faktenliste: `build/seo/_fakten_2026-10.md`.
+9. Bundesförderung Wärmepumpe: Kesseltausch seit 2.11.2026 neu aufgelegt (5.000 € Pauschale, +5.000 € Bohrbonus, +2.500 € Solarthermie, Registrierung bis 31.12.2026 oder Budgetende). Nie mehr "ausgeschöpft" schreiben; Details in der Faktenliste.
 
 ## 5. Build-Pipeline (liegt in `build/`)
 

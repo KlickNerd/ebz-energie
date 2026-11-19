@@ -241,8 +241,9 @@ ORT = {
          "allem zusammen mit Photovoltaik. Wir prüfen beides und sagen Ihnen offen, was sich für Ihr Haus rechnet."),
         ("Was kostet eine Wärmepumpe in Spittal und welche Förderung gibt es?",
          "Eine Luft-Wasser-Wärmepumpe kostet im Einfamilienhaus rund 12.000 bis 22.000 Euro vor Förderung, im Altbau "
-         "mit Anpassungen 15.000 bis 28.000 Euro. Die Bundesförderung ist derzeit ausgeschöpft; den aktuellen Stand "
-         "der Landesförderung Kärnten prüfen wir vor dem Angebot. Die Stadtgemeinde Spittal weist kein eigenes "
+         "mit Anpassungen 15.000 bis 28.000 Euro. Der Bund zahlt seit der Neuauflage des "
+         "Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale; den aktuellen Stand der Landesförderung Kärnten "
+         "prüfen wir vor dem Angebot. Die Stadtgemeinde Spittal weist kein eigenes "
          "Programm aus. "
          "Kelag-Stromkunden erhalten für eine Wärmepumpe mit Internetanbindung eine Prämie von 1.200 Euro. Was "
          "aktuell beantragbar ist, zeigt unser Förderrechner."),

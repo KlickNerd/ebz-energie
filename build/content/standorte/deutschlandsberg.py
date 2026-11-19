@@ -257,8 +257,9 @@ ORT = {
         ("Gibt es eine Förderung der Stadt Deutschlandsberg für Photovoltaik oder Wärmepumpe?",
          "Die Stadtgemeinde Deutschlandsberg weist auf ihrer Förderseite (Stand Oktober 2026) kein eigenes Programm "
          "für Photovoltaik, Stromspeicher oder Heizungstausch aus. Welche Programme von Bund und Land Steiermark "
-         "gerade beantragbar sind, zeigt unser Förderrechner; für neue Wärmepumpen nimmt derzeit weder der Bund "
-         "noch das Land Anträge an. Für Kundinnen und Kunden in anderen Gemeinden des Bezirks, etwa Frauental, "
+         "gerade beantragbar sind, zeigt unser Förderrechner; für neue Wärmepumpen nimmt das Land derzeit keine "
+         "Anträge an, der Bund zahlt seit der Neuauflage des Kesseltauschs im November 2026 wieder 5.000 Euro "
+         "Pauschale. Für Kundinnen und Kunden in anderen Gemeinden des Bezirks, etwa Frauental, "
          "Stainz oder Wies, fragen wir vor dem Angebot im Gemeindeamt nach und bereiten die Anträge vor."),
     ],
 
@@ -305,7 +306,8 @@ ORT = {
         "konsolidierte Paragraf 21 im RIS war am 10.10.2026 technisch nicht abrufbar, Wortlaut vor Livegang "
         "gegenlesen. (4) Wärmepumpen-Förderung: Land Steiermark nimmt laut build/seo/_fakten_2026-10.md derzeit "
         "keine Anträge an (deckt sich mit dem Hinweis auf der Fernwärme-Seite der Energie Steiermark); die FAQ "
-        "zur Stadtförderung sagt das ausdrücklich und muss angepasst werden, sobald sich die Lage ändert. "
+        "zur Stadtförderung sagt das ausdrücklich und muss angepasst werden, sobald sich die Lage ändert. Bund: "
+        "Kesseltausch seit 2.11.2026 neu aufgelegt, 5.000 Euro Pauschale (FAQ am 19.11.2026 angepasst). "
         "(5) Fernwärme-Ausbau (neues Biomasse-Heizwerk, Regionalpresse Juni 2026) nicht übernommen, weil keine "
         "offizielle Quelle abrufbar war. (6) Schilcherland, KEM, Gasnetz, Ortsbildschutz nicht belegt, daher "
         "weggelassen."

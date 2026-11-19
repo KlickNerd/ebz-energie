@@ -39,7 +39,7 @@ ARTICLE = {
         "Kärnten: <b>3.000 €</b> mit Speicher bis 31.12.2026",
     ],
     "date_published": "2025-12-15",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "foerderung",
     "hero_alt": "Beratungsgespräch bei EBZ Energie zur Photovoltaik-Förderung in Österreich 2026",
 
@@ -82,7 +82,7 @@ online und mit Ticketsystem. Das Verfahren war bürokratischer als der Nullsteue
 auf systemdienliche Anlagen mit Speicher ausgerichtet. Diese Richtung soll laut BMWET ab 2027 die
 geplante Systemförderung fortsetzen (Details weiter unten, nicht beschlossen).</p>
 <p>Die wirtschaftliche Betrachtung verschiebt sich damit: Entscheidend ist jetzt die Gesamtrechnung aus
-Landesförderung, Eigenverbrauchsquote und Strompreis. Wer den eigenen Strom nutzt, statt ihn für 6 bis 10 Cent
+Landesförderung, Eigenverbrauchsquote und Strompreis. Wer den eigenen Strom nutzt, statt ihn für rund 6 bis 15 Cent
 einzuspeisen (OeMAG-Marktpreis 2026), spart 25 bis 35 Cent je Kilowattstunde Netzbezug, ganz ohne Bundeszuschuss.</p>
 """),
         ("EAG-Bundesförderung 2026: Sätze und Kategorien", "eag-saetze", f"""
@@ -214,12 +214,13 @@ Burgenland galt Bund vor Land. Den vollständigen Vergleich aller neun Regelwerk
 <p><small>Stand: Oktober 2026. Maßgeblich sind die jeweils gültigen Landesrichtlinien.</small></p>
 """),
         ("Wirtschaftlichkeit 2026: Förderung plus Eigenverbrauch", "wirtschaftlichkeit", f"""
-<p>Lohnt sich Photovoltaik, wenn die Einspeisevergütung sinkt, die Umsatzsteuer wieder gilt und der
+<p>Lohnt sich Photovoltaik, wenn die Einspeisevergütung monatlich schwankt, die Umsatzsteuer wieder gilt und der
 Bundeszuschuss derzeit fehlt? Ja, aber die Rechnung hat sich verschoben. Förderungen dämpfen die
 Anfangskosten, der eigentliche Hebel ist der Eigenverbrauch: Netzstrom kostet 25 bis 35 Cent je
 Kilowattstunde inklusive Netzgebühren und Steuern, die Gestehungskosten des eigenen Solarstroms lagen im
 Call 2026 dank Förderung oft nur bei 6 bis 8 Cent. Der OeMAG-Marktpreis
-für eingespeisten Strom lag im Juli 2026 bei 6,146 Cent und im September 2026 bei 10,168 Cent, mehr dazu im Ratgeber
+für eingespeisten Strom lag im Juli 2026 bei 6,146 Cent, im September 2026 bei 10,168 Cent und im Oktober 2026 bei
+14,874 Cent, mehr dazu im Ratgeber
 {a('/einspeisetarif-fuer-photovoltaik/', 'Einspeisetarif für Photovoltaik')}.</p>
 <p>Genau deshalb förderte der Bund den Speicher 2026 mit 150 Euro je kWh, und auch die für 2027 geplante
 Systemförderung setzt laut BMWET auf Speicher mit intelligenter Steuerung: Er hebt den Eigenverbrauch von

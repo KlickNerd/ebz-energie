@@ -161,7 +161,7 @@ def build():
         C.problem_compare(
             eyebrow="Das kostet Sie bares Geld",
             h2="Ohne EMS arbeitet jede Komponente für sich",
-            intro=("Jede Kilowattstunde, die Sie mittags für 10,168 Cent (OeMAG-Marktpreis September 2026) einspeisen "
+            intro=("Jede Kilowattstunde, die Sie mittags für 14,874 Cent (OeMAG-Marktpreis Oktober 2026) einspeisen "
                    "und abends für 28 Cent zurückkaufen, ist ein Verlustgeschäft. Ohne Steuerung lädt der Speicher zur "
                    "falschen Zeit, die Wärmepumpe läuft nachts, das E-Auto zieht zum vollen Tarif."),
             bars=[
@@ -442,7 +442,8 @@ def _footnote():
       <p class="form-note">*Richtwerte, abhängig von Anlage, Verbrauch und Tarif. Eigenverbrauchsquoten auf
       Basis typischer Anlagen mit Speicher und flexiblen Verbrauchern, EMS-Kosten für marktübliche Systeme
       inklusive Installation, Ersparnis-Beispiel mit 2.000 kWh verschobenem Verbrauch und 28 ct je kWh.
-      OeMAG-Marktpreis September 2026: 10,168 ct je kWh (Juli 2026: 6,146 ct; der Wert schwankt monatlich).
+      OeMAG-Marktpreis Oktober 2026: 14,874 ct je kWh, Stand November 2026 (September 2026: 10,168 ct, Juli 2026:
+      6,146 ct; der Wert schwankt monatlich).
       Förderangaben laut Leitfaden des Klima- und Energiefonds (Juni 2026), Ausblick 2027 laut BMWET,
       maßgeblich sind die offiziellen Förderbedingungen. Fachlich geprüft von {AUTHOR},
       {AUTHOR_ROLE}.</p>

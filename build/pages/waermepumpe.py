@@ -10,10 +10,11 @@ SEO/GEO-Briefing build/seo/waermepumpe.json (Stand 2026-10-09): Primaer
 Keyword, Lautstaerke/Aufstellort, Kuehlen, Hersteller (iDM, Ochsner, Lambda als
 Beispiele), Rechenbeispiel Stromverbrauch, Klagenfurt/Graz.
 
-WICHTIG (Faktenblatt 9.10.2026): Bundesfoerderung 2026 (Sanierungsoffensive,
-Sauber Heizen fuer Alle) ist ausgeschoepft, keine neuen Registrierungen. Keine
-"bis zu 7.500 EUR vom Bund"-Aussage als verfuegbar. Landesfoerderungen und
-Oeko-Sonderausgabenpauschale laufen, 2027 offen.
+WICHTIG (Faktenblatt, Stand 19.11.2026): Bund Kesseltausch seit 2.11.2026 neu
+aufgelegt, Waermepumpe 5.000 EUR Pauschale (+5.000 EUR Bohrbonus, +2.500 EUR
+Solarthermie ab 6 m2), Registrierung bis 31.12.2026 oder bis Budget aufgebraucht.
+Die 7.500 EUR gehoerten zur frueheren Aktion 2026 (nur Historie). Sauber Heizen
+fuer Alle bleibt geschlossen. Kaernten 3.000 EUR, Steiermark derzeit keine Antraege.
 Quelle der Live-Seite bereinigt: "90 %"-Claim, Gedankenstriche, Emojis,
 unbelegte Superlative, "ganz Oesterreich" als Montagegebiet.
 """
@@ -37,10 +38,13 @@ FAQ = [
      "Installation, im Altbau mit Anpassungen 15.000 bis 28.000 Euro, Erdwärme oder Grundwasser 22.000 bis 40.000 "
      "Euro (Stand Oktober 2026). Den Festpreis erhalten Sie nach der Vor-Ort-Prüfung."),
     ("Wie hoch ist die Förderung für eine Wärmepumpe 2026?",
-     "Die Bundesförderung 2026 (Kesseltausch bis 7.500 Euro, Sauber Heizen für Alle bis 100 Prozent) ist seit Herbst "
-     "2026 ausgeschöpft, neue Registrierungen sind nicht möglich. Das Land Kärnten zahlt 2026 eine Pauschale von "
-     "3.000 Euro für den Umstieg auf eine Wärmepumpe im Eigenheim. Die Steiermark nimmt für neue Wärmepumpen derzeit "
-     "keine Förderanträge an. Ob 2027 ein neues Bundesprogramm kommt, ist offen (Stand Oktober 2026)."),
+     "Der Bund hat den Kesseltausch am 2. November 2026 neu aufgelegt: 5.000 Euro Pauschale für eine Wärmepumpe, "
+     "die eine Öl-, Gas- oder Kohleheizung ersetzt, plus 5.000 Euro bei Erdwärme oder Grundwasser (Bohrung, Brunnen) "
+     "und plus 2.500 Euro mit thermischer Solaranlage ab 6 m². Registrierung bis 31. Dezember 2026 oder bis das "
+     "Budget aufgebraucht ist, vorher ist eine Energieberatung des Landes nötig. Das Land Kärnten zahlt 2026 "
+     "zusätzlich eine Pauschale von 3.000 Euro für den Umstieg auf eine Wärmepumpe im Eigenheim, zusammen also bis "
+     "8.000 Euro*. Die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an. In der ersten Aktion "
+     "2026 waren es beim Bund bis zu 7.500 Euro (Stand November 2026)."),
     ("Funktioniert eine Wärmepumpe auch im Altbau, und wann macht sie keinen Sinn?",
      "Ja, meistens. Bis 55 Grad Vorlauf arbeitet eine moderne Wärmepumpe effizient, große alte Heizkörper sind oft "
      "überdimensioniert und deshalb geeignet. Brauchen Heizkörper dauerhaft 60 bis 70 Grad, hilft eine "
@@ -74,7 +78,7 @@ FAQ = [
      "Inspektion für 150 bis 400 Euro. Die Garantiebedingungen des Herstellers weisen wir im Angebot aus."),
     ("Wie lange dauert der Einbau?",
      "Die Montage vor Ort dauert 2 bis 4 Tage inklusive Demontage der alten Heizung. Davor liegen Beratung, "
-     "Vor-Ort-Prüfung, Festpreisangebot und die Förderanträge beim Land."),
+     "Vor-Ort-Prüfung, Festpreisangebot und der Landesantrag; beim Kesseltausch des Bundes helfen wir bei Registrierung und Antrag."),
 ]
 
 
@@ -221,22 +225,29 @@ def build():
         ).replace('<section class="section"', '<section id="kosten" class="section"', 1),
         C.media_text(
             eyebrow="Förderung 2026",
-            h2="Förderung 2026: Bund ausgeschöpft, Kärnten zahlt 3.000 €, Steiermark pausiert",
+            h2="Förderung 2026: Bund zahlt 5.000 €, Kärnten 3.000 €, Steiermark pausiert",
             paragraphs=[
-                ("Die Bundesförderung 2026 für den Heizungstausch (Sanierungsoffensive mit Kesseltausch bis 7.500 €, "
-                 "Sauber Heizen für Alle bis 100 %) ist seit Herbst 2026 ausgeschöpft, neue Registrierungen sind nicht "
-                 "möglich; ob 2027 ein neues Bundesprogramm kommt, ist offen (Quelle: umweltfoerderung.at, Stand "
-                 "Oktober 2026). Wer bereits registriert ist, kann noch beantragen."),
+                ("Der Bund hat den Kesseltausch (Sanierungsoffensive) am 2. November 2026 neu aufgelegt: 5.000 € "
+                 "Pauschale für eine Wärmepumpe, die eine fossile Heizung ersetzt, plus 5.000 € bei Sole- oder "
+                 "Wasser-Wasser-Wärmepumpen mit Bohrung oder Brunnen und plus 2.500 € mit thermischer Solaranlage ab "
+                 "6 m² (Photovoltaik zählt nicht). Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht "
+                 "ist, gefördert werden Leistungen ab 7. Oktober 2026. Vor der Registrierung steht eine Energieberatung "
+                 "des Landes, danach bleiben 9 Monate für Umsetzung und Antrag. Fernwärme hat Vorrang, die "
+                 "Vorlauftemperatur darf höchstens 55 Grad betragen, bei Kältemitteln mit einem GWP von 150 bis 750 "
+                 "werden 20 % abgezogen; eine Einkommensprüfung gibt es nicht (Quelle: sanierungsoffensive.gv.at, "
+                 "Stand November 2026). In der ersten Aktion 2026 waren es bis zu 7.500 €, Sauber Heizen für Alle "
+                 "bleibt geschlossen."),
                 ("Bei den Ländern ist die Lage unterschiedlich: Kärnten zahlt 2026 eine Pauschale von 3.000 € für den "
-                 "Umstieg auf eine Wärmepumpe im Eigenheim (plus 1.500 € mit thermischer Solaranlage). Die Steiermark "
-                 "nimmt für neue Wärmepumpen derzeit keine Förderanträge an. Wer seine Bundesförderung noch ausbezahlt bekommt, setzt "
+                 "Umstieg auf eine Wärmepumpe im Eigenheim (plus 1.500 € mit thermischer Solaranlage), kombinierbar mit "
+                 "dem Bund: zusammen bis 8.000 €*. Die Steiermark "
+                 "nimmt für neue Wärmepumpen derzeit keine Förderanträge an. Wer die Bundesförderung ausbezahlt bekommt, setzt "
                  "zusätzlich fünf Jahre lang je 400 € Öko-Sonderausgabenpauschale ab. Wir prüfen vor jedem Angebot den "
                  "Budgetstand und übernehmen die Anträge."),
             ],
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Wärmepumpenförderung am Tisch",
             bullets=[
-                "Bund 2026: Kesseltausch bis 7.500 € galt bis zur Ausschöpfung, aktuell keine neuen Registrierungen",
+                "Bund: Kesseltausch 5.000 € Pauschale für die Wärmepumpe, Registrierung bis 31.12.2026 oder bis das Budget aufgebraucht ist",
                 a("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen im Vergleich") + ": Kärnten 3.000 € Pauschale, Steiermark derzeit keine Anträge für neue Wärmepumpen",
                 a("/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/", "Öko-Sonderausgabenpauschale") + ": 5 Jahre je 400 € bei ausbezahlter Bundesförderung und über 2.000 € Restkosten",
                 a("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung 2026 im Detail") + ": alle Programme für Kärnten und die Steiermark",
@@ -357,7 +368,7 @@ def build():
             alt="EBZ Energie, Ihr Wärmepumpen-Fachbetrieb: Team aus Villach neben einer Luft-Wärmepumpe",
             bullets=[
                 "Zertifizierte Fachkräfte: Sanitär und Elektro fachgerecht in einem Projekt",
-                "Förderung komplett abgewickelt: Landesantrag, Fristen, Endabrechnung",
+                "Förderung begleitet: Landesantrag, Unterstützung beim Kesseltausch, Fristen, Endabrechnung",
                 "Finanzierung mit 0 € Anzahlung und fixer Rate, Eigentum ab Tag 1",
             ],
             cta=("kontakt", "Vor-Ort-Termin vereinbaren"),
@@ -395,7 +406,7 @@ def build():
              ("/funktionsweise-einer-waermepumpe/", "So funktioniert eine Wärmepumpe"),
              ("/heizen-mit-waermepumpe/", "Heizen mit Wärmepumpe"),
              ("/photovoltaik-fuer-waermepumpe/", "Photovoltaik für die Wärmepumpe"),
-             ("/sanierungsoffensive-2026/", "Sanierungsoffensive 2026: was galt"),
+             ("/sanierungsoffensive-2026/", "Sanierungsoffensive und Kesseltausch 2026"),
              ("ems", "EMS für Wärmepumpe und PV"),
              ("finanzierung", "Wärmepumpe finanzieren"),
              ("referenzen", "Referenzen")],
@@ -425,9 +436,10 @@ def _footnote():
     return ("""
   <section class="section--tight section" style="padding-bottom:40px">
     <div class="wrap">
-      <p class="form-note">*Richtwerte 2026 für Österreich aus unseren Ratgebern, vor Förderung, Stand Oktober 2026.
+      <p class="form-note">*Richtwerte 2026 für Österreich aus unseren Ratgebern, vor Förderung, Stand November 2026.
       Beispielhaus mit 12.000 kWh Wärmebedarf, Jahresarbeitszahl 4, Strompreis 0,30 €/kWh. Förderlage laut
-      umweltfoerderung.at (Bundesprogramme 2026 ausgeschöpft), Landesförderungen Kärnten und Steiermark sowie
+      sanierungsoffensive.gv.at (Kesseltausch, Neuauflage ab 2.11.2026; Bund und Land zusammen höchstens die
+      Investitionskosten), Landesförderungen Kärnten und Steiermark sowie
       KPC-Betriebsförderung nach Stand der Richtlinien, laufend aktualisiert im Ratgeber. Tatsächliche Kosten,
       Ersparnis und Förderhöhe hängen von Gebäude, Heizsystem, Wärmequelle und Programmbudget ab. Fachlich geprüft
       von Mario Zintl, Geschäftsführung EBZ Energie GmbH.</p>

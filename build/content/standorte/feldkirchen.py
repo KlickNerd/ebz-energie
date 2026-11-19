@@ -247,8 +247,8 @@ ORT = {
          "Derzeit weist die Stadtgemeinde Feldkirchen kein eigenes Programm für Photovoltaik, Speicher oder "
          "Heizungstausch aus (Stand Oktober 2026). Eine frühere Gemeindeaktion für den Ausstieg aus fossilen "
          "Heizungen mit bis zu 1.500 Euro ist beendet. Für Photovoltaik gilt die Landespauschale Kärnten, ab 2027 plant "
-         "der Bund laut BMWET eine Systemförderung für Speicher. Bei der Wärmepumpe ist die Bundesförderung derzeit ausgeschöpft; was das Land Kärnten für den "
-         "Heizungstausch aktuell zahlt, prüfen wir vor jedem Angebot."),
+         "der Bund laut BMWET eine Systemförderung für Speicher. Bei der Wärmepumpe zahlt der Bund seit der Neuauflage des Kesseltauschs im November 2026 wieder 5.000 Euro "
+         "Pauschale; was das Land Kärnten für den Heizungstausch aktuell zahlt, prüfen wir vor jedem Angebot."),
         ("Ist hier Feldkirchen in Kärnten oder Feldkirchen bei Graz gemeint, und kommen Sie in den ganzen Bezirk?",
          "Gemeint ist Feldkirchen in Kärnten, die Bezirkshauptstadt mit der Postleitzahl 9560, nicht Feldkirchen bei "
          "Graz in der Steiermark und nicht Feldkirchen an der Donau in Oberösterreich. Wir beraten und montieren im "

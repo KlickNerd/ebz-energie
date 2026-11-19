@@ -32,7 +32,7 @@ ARTICLE = {
         "Dauer: <b>Wochen bis Monate</b>",
     ],
     "date_published": "2026-07-03",
-    "date_modified": "2026-10-09",
+    "date_modified": "2026-11-19",
     "hero_img": "gewerbe_dach",
     "hero_alt": "Großes Dach mit Photovoltaikanlage als Erzeuger einer neu gegründeten Energiegemeinschaft",
 
@@ -117,8 +117,8 @@ Rechtsformen stellt die Koordinationsstelle für Energiegemeinschaften kostenlos
      "Graz). Danach werden die Zählpunkte über das EDA-Portal angemeldet, jedes Mitglied bestätigt die "
      "Datenfreigabe im eigenen Kundenportal."),
     ("Preise und Aufteilungsschlüssel festlegen",
-     "Einspeisepreis über dem OeMAG-Marktpreis im Jahresmittel (2026: 6,146 Cent im Juli bis 10,168 Cent im "
-     "September), Bezugspreis unter dem "
+     "Einspeisepreis über dem OeMAG-Marktpreis im Jahresmittel (die Monatswerte 2026 reichten von 6,146 Cent im "
+     "Juli bis 14,874 Cent im Oktober), Bezugspreis unter dem "
      "Arbeitspreis der Lieferanten, typisch 8 bis 12 Cent Einspeisung und 12 bis 16 Cent Bezug. Die "
      "Differenz deckt die Gemeinschaftskosten. Dynamische Aufteilung nach tatsächlichem Verbrauch ist für "
      "die meisten Gemeinschaften effizienter als feste Prozentsätze."),
@@ -262,8 +262,8 @@ Planung bis zur Installation.</p>
          "28 Prozent (regionale EEG). Österreichweites Teilen ist als Bürgerenergiegemeinschaft möglich, dann aber "
          "ohne Netzentgelt-Rabatt und ohne Abgabenbefreiung."),
         ("Welche Preise soll die Gemeinschaft festlegen?",
-         "Der Einspeisepreis sollte über dem OeMAG-Marktpreis im Jahresmittel liegen (2026: 6,146 Cent im Juli bis "
-         "10,168 Cent im September), der "
+         "Der Einspeisepreis sollte über dem OeMAG-Marktpreis im Jahresmittel liegen (die Monatswerte 2026 reichten von "
+         "6,146 Cent im Juli bis 14,874 Cent im Oktober), der "
          "Bezugspreis unter dem Arbeitspreis der Lieferanten. Typisch sind 8 bis 12 Cent Einspeisung und 12 bis "
          "16 Cent Bezug. Die Differenz deckt Plattform und Verwaltung."),
         ("Welche technische Basis brauche ich?",

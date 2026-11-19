@@ -10,6 +10,7 @@ Förderstand am 21.10.2026 an offiziellen Quellen geprüft:
   EMS: klimafonds.gv.at/foerderung/energiemanagement-haushalte-2026/ (Status "Laufend", bis 15.04.2027, 12:00 Uhr).
   Kärnten: ktn.gv.at am 21.10.2026 nicht erreichbar, Aussage "kein eigenes Programm" daher vorsichtig formuliert.
 OeMAG-Wert auf September 2026 (10,168 ct) ergänzt, Beispielrechnung mit beiden Monatswerten neu gerechnet.
+19.11.2026: OeMAG Oktober 2026 (14,874 ct) als aktueller Wert, Beispielrechnung mit Spanne Juli bis Oktober neu gerechnet.
 """
 
 import os
@@ -25,7 +26,7 @@ ARTICLE = {
     "path": "/wallbox-foerderung-kosten/",
     "title": "Wallbox 2026: Kosten und Förderung bis 300 € | EBZ Energie",
     "description": ("Wallbox mit Installation: 1.200 bis 3.500 €. Bund eingestellt, Steiermark 30 % bis "
-                    "300 €, EMS-Förderung bis 600 €. Mit PV-Überschuss 100 km für 1 bis 2 €."),
+                    "300 €, EMS-Förderung bis 600 €. Mit PV-Überschuss 100 km für 1 bis 3 €."),
     "eyebrow": "E-Mobilität · Förderung",
     "crumb_label": "Wallbox: Förderung und Kosten",
     "h1": "Wallbox 2026: Kosten von 1.200 bis 3.500 Euro und welche Förderung es noch gibt",
@@ -39,7 +40,7 @@ ARTICLE = {
         "Gesamtkosten: <b>1.200 bis 3.500 €</b>",
     ],
     "date_published": "2026-09-10",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_eigenheim",
     "hero_alt": "Einfamilienhaus mit Photovoltaikanlage, deren Sonnenstrom über die Wallbox ins E-Auto fließt",
 
@@ -52,13 +53,13 @@ ARTICLE = {
         "Über die Energiemanagement-Förderung des Klimafonds sind bis zu 600 Euro für ein EMS möglich, das "
         "Wallbox, PV-Anlage oder Speicher steuert. Registrierung vor der Rechnung, längstens bis 15. April 2027.",
         "Wallbox und Installation kosten im Einfamilienhaus meist 1.200 bis 3.500 Euro*. Mit PV-Überschuss "
-        "kosten 100 Kilometer rund 1 bis 2 Euro statt rund 11 Euro mit dem Benziner.",
+        "kosten 100 Kilometer rund 1 bis 3 Euro statt rund 11 Euro mit dem Benziner.",
     ],
     "kpis": [
         ("1.200 bis 3.500 €", "Wallbox mit Installation im Einfamilienhaus*"),
         ("300 €", "maximal vom Land Steiermark"),
         ("600 €", "maximal EMS-Förderung für Haushalte"),
-        ("1 bis 2 €", "für 100 km mit PV-Überschuss*"),
+        ("1 bis 3 €", "für 100 km mit PV-Überschuss*"),
     ],
 
     "sections": [
@@ -189,8 +190,8 @@ hängt von Gerät, Leitungsweg und Zählerplatz ab und steht nach dem Vor-Ort-Ch
         ("Laden mit Sonnenstrom: So rechnet sich die Wallbox", "pv-ueberschuss", f"""
 <p>Der größte finanzielle Vorteil entsteht, wenn die Wallbox mit Ihrer eigenen Photovoltaikanlage verbunden ist.
 Überschüssiger Sonnenstrom bringt bei der Einspeisung nur den
-{a('/oemag-einspeisetarif/', 'OeMAG-Marktpreis')}: Im September 2026 waren das 10,168 Cent je Kilowattstunde,
-im Juli 6,146 Cent (Stand Oktober 2026, der Wert schwankt monatlich). Im eigenen Auto ersetzt dieselbe
+{a('/oemag-einspeisetarif/', 'OeMAG-Marktpreis')}: Im Oktober 2026 waren das 14,874 Cent je Kilowattstunde,
+im September 10,168 Cent, im Juli 6,146 Cent (Stand November 2026, der Wert schwankt monatlich). Im eigenen Auto ersetzt dieselbe
 Kilowattstunde Benzin oder teuren Ladestrom.</p>
 {A.table(
     ["Was kosten 100 Kilometer?", "Annahme*", "Kosten"],
@@ -198,13 +199,13 @@ Kilowattstunde Benzin oder teuren Ladestrom.</p>
         ["Benziner", "7 Liter zu 1,60 €", "11,20 €"],
         ["E-Auto am Schnelllader", "18 kWh zu 0,59 €", "10,60 €"],
         ["E-Auto mit Haushaltsstrom", "18 kWh zu 0,28 €", "5,00 €"],
-        ["E-Auto mit PV-Überschuss", "18 kWh, bewertet mit der entgangenen Einspeisung von 6 bis 10 ct", "1,10 bis 1,80 €"],
+        ["E-Auto mit PV-Überschuss", "18 kWh, bewertet mit der entgangenen Einspeisung von 6 bis 15 ct", "1,10 bis 2,70 €"],
     ],
     hl_cols=(2,),
 )}
 <p>Bei 12.000 Kilometern im Jahr braucht ein Elektroauto rund 2.200 Kilowattstunden. Laden Sie davon die Hälfte
-mit PV-Überschuss, sparen Sie gegenüber reinem Haushaltsstrom rund 200 bis 240 Euro und gegenüber dem Benziner
-über 900 Euro pro Jahr*. In Kombination mit einem {a('/dynamischer-stromtarif/', 'dynamischen Stromtarif')}
+mit PV-Überschuss, sparen Sie gegenüber reinem Haushaltsstrom rund 140 bis 240 Euro und gegenüber dem Benziner
+rund 870 bis 970 Euro pro Jahr*. In Kombination mit einem {a('/dynamischer-stromtarif/', 'dynamischen Stromtarif')}
 lädt die Wallbox die restliche Energie in den günstigsten Stunden.</p>
 {A.box("Wer tagsüber arbeitet und das Auto nur abends zu Hause hat, nutzt den PV-Überschuss vor allem am "
        "Wochenende. Ein " + a('batteriespeicher', 'Batteriespeicher') + " kann einen Teil puffern, ersetzt aber "
@@ -212,7 +213,7 @@ lädt die Wallbox die restliche Energie in den günstigsten Stunden.</p>
        label="Gut zu wissen:")}
 <p><small>*Beispielrechnung mit Richtwerten: Kompaktwagen, E-Auto mit 18 kWh je 100 km, Schnelllader 0,59 € je
 kWh, Haushaltsstrom 0,28 € je kWh, PV-Überschuss bewertet mit dem OeMAG-Marktpreis von rund 6 Cent (Juli 2026)
-bis rund 10 Cent (September 2026). Ihr Ergebnis hängt von Fahrprofil, Tarif und Anlage ab.</small></p>
+bis rund 15 Cent (Oktober 2026). Ihr Ergebnis hängt von Fahrprofil, Tarif und Anlage ab.</small></p>
 """),
         ("So läuft die Installation ab", "ablauf", f"""
 {A.steps([
@@ -279,7 +280,7 @@ noch keine PV-Anlage hat, findet die Grundlagen auf der Seite {a('photovoltaik',
          "Die Wallbox erfährt vom Wechselrichter oder Energiemanagementsystem, wie viel Sonnenstrom gerade übrig "
          "ist, und passt die Ladeleistung laufend an. Mit Phasenumschaltung startet das Laden schon bei rund "
          "1,4 kW Überschuss, ohne Umschaltung meist erst über 4 kW. So lädt das Auto mit Strom, der sonst für 6 "
-         "bis 10 Cent eingespeist würde."),
+         "bis 15 Cent eingespeist würde."),
         ("Muss ich die Wallbox beim Netzbetreiber melden?",
          "Ja, Ladeeinrichtungen werden beim Netzbetreiber gemeldet, in der Steiermark ist die Kopie dieser Meldung "
          "auch Teil der Förderunterlagen. Das übernimmt der Elektrofachbetrieb, bei EBZ Energie ist die Meldung im "

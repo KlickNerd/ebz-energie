@@ -5,6 +5,7 @@ Das Rechenbeispiel der Quelle nutzt die Fördersätze 2025; eine zweite Rechnung
 (EAG-Novelle 2026, Kärntner Landespauschale) wurde ergänzt.
 Stand ab 23.10.2026: letzter EAG-Call lief 8. bis 22.10.2026, Bund derzeit nicht beantragbar; dritte
 Spalte "aktuell" (nur Kaernten 3.000 EUR) ergaenzt, reine Arithmetik aus den Beispielwerten.
+19.11.2026: Einspeisespanne an OeMAG 2026 angepasst (Juli 6,146 ct bis Oktober 14,874 ct).
 """
 
 import os
@@ -34,13 +35,13 @@ ARTICLE = {
         "Eigenverbrauch: <b>30 auf 70 %+</b>",
     ],
     "date_published": "2025-12-05",
-    "date_modified": "2026-10-21",
+    "date_modified": "2026-11-19",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage mit Ost-West-Ausrichtung auf einem Einfamilienhaus in Kärnten",
 
     "tldr": [
-        "Die Einspeisevergütung liegt oft nur bei 4 bis 8 Cent je kWh, der Bezugspreis inklusive Netzentgelten "
-        "und Abgaben bei 33 bis 36 Cent*. Diese Schere macht den Eigenverbrauch zum entscheidenden Hebel.",
+        "Die Einspeisevergütung schwankt: Der OeMAG-Marktpreis lag 2026 zwischen 6,146 Cent (Juli) und 14,874 Cent "
+        "(Oktober) je kWh, der Bezugspreis inklusive Netzentgelten und Abgaben bei 33 bis 36 Cent*. Diese Schere macht den Eigenverbrauch zum entscheidenden Hebel.",
         "Ohne Speicher nutzt ein Haushalt rund 30 Prozent seines Solarstroms selbst, mit Speicher 70 Prozent "
         "und mehr. Faustformel für die Auslegung: 1 kWp Modulleistung zu 1 kWh Speicherkapazität.",
         "Rechenbeispiel Kärnten: 10 kWp und 10 kWh für 19.995 Euro brutto, rund 8.500 Euro Förderung von Bund und "
@@ -173,8 +174,8 @@ Im Systemverbund ist er der Hebel, der die teuren Netzbezugskosten eliminiert. D
   <li><b>Strompreisentwicklung:</b> Viele Bestandskunden zahlen inklusive Netzgebühren, Steuern und Abgaben
   33 bis 36 Cent je kWh*. Für den Netzausbau erwarten Fachleute mittelfristig steigende Netzentgelte. Jede
   vermiedene Kilowattstunde wirkt dann doppelt.</li>
-  <li><b>Einspeisung:</b> Je niedriger die Vergütung, desto mehr lohnt der Eigenverbrauch. Bei 4 bis 8 Cent
-  Einspeisung und über 30 Cent Bezug ist der Speicher der entscheidende Faktor.</li>
+  <li><b>Einspeisung:</b> Je niedriger die Vergütung, desto mehr lohnt der Eigenverbrauch. Bei 6 bis 15 Cent
+  Einspeisung (OeMAG 2026) und über 30 Cent Bezug ist der Speicher der entscheidende Faktor.</li>
   <li><b>Garantien und Lebensdauer:</b> Speicher auf LFP-Basis (Lithium-Eisenphosphat) gelten als sicher und
   langlebig, mit 10 Jahren Herstellergarantie und 15 bis 20 Jahren technischer Lebensdauer.</li>
   <li><b>Förderung und Timing:</b> Der letzte EAG-Call 2026 endete am 22. Oktober 2026, derzeit gibt es keinen
@@ -243,7 +244,7 @@ kann die Amortisation um Jahre verlängern.</p>
          "abzudecken, ohne überdimensionierte Kapazität zu bezahlen."),
         ("Lohnt sich ein Speicher, wenn die Einspeisevergütung sinkt?",
          "Ja, dann erst recht. Je niedriger die Einspeisevergütung und je höher der Bezugspreis inklusive "
-         "Netzkosten, desto mehr rechnet sich der Speicher. Bei 4 bis 8 Cent Einspeisung und über 30 Cent Bezug "
+         "Netzkosten, desto mehr rechnet sich der Speicher. Bei 6 bis 15 Cent Einspeisung (OeMAG 2026) und über 30 Cent Bezug "
          "ist der Eigenverbrauch der entscheidende wirtschaftliche Faktor."),
         ("Was kostet eine 10-kWp-Anlage mit Speicher?",
          "Bei EBZ Energie liegt der Richtpreis für 10 kWp mit Speicher bei rund 15.000 bis 22.000 Euro vor "
