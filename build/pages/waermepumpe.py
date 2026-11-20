@@ -40,8 +40,7 @@ FAQ = [
     ("Wie hoch ist die Förderung für eine Wärmepumpe 2026?",
      "Der Bund hat den Kesseltausch am 2. November 2026 neu aufgelegt: 5.000 Euro Pauschale für eine Wärmepumpe, "
      "die eine Öl-, Gas- oder Kohleheizung ersetzt, plus 5.000 Euro bei Erdwärme oder Grundwasser (Bohrung, Brunnen) "
-     "und plus 2.500 Euro mit thermischer Solaranlage ab 6 m². Registrierung bis 31. Dezember 2026 oder bis das "
-     "Budget aufgebraucht ist, vorher ist eine Energieberatung des Landes nötig. Das Land Kärnten zahlt 2026 "
+     "und plus 2.500 Euro mit thermischer Solaranlage ab 6 m². Registrierung, solange das Budget reicht, vorher ist eine Energieberatung des Landes nötig. Das Land Kärnten zahlt 2026 "
      "zusätzlich eine Pauschale von 3.000 Euro für den Umstieg auf eine Wärmepumpe im Eigenheim, zusammen also bis "
      "8.000 Euro*. Die Steiermark nimmt für neue Wärmepumpen derzeit keine Förderanträge an. In der ersten Aktion "
      "2026 waren es beim Bund bis zu 7.500 Euro (Stand November 2026)."),
@@ -230,8 +229,8 @@ def build():
                 ("Der Bund hat den Kesseltausch (Sanierungsoffensive) am 2. November 2026 neu aufgelegt: 5.000 € "
                  "Pauschale für eine Wärmepumpe, die eine fossile Heizung ersetzt, plus 5.000 € bei Sole- oder "
                  "Wasser-Wasser-Wärmepumpen mit Bohrung oder Brunnen und plus 2.500 € mit thermischer Solaranlage ab "
-                 "6 m² (Photovoltaik zählt nicht). Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht "
-                 "ist, gefördert werden Leistungen ab 7. Oktober 2026. Vor der Registrierung steht eine Energieberatung "
+                 "6 m² (Photovoltaik zählt nicht). Registrierung, solange das Budget reicht "
+                 "(aktuelle Frist auf unserer Förderseite), gefördert werden Leistungen ab 7. Oktober 2026. Vor der Registrierung steht eine Energieberatung "
                  "des Landes, danach bleiben 9 Monate für Umsetzung und Antrag. Fernwärme hat Vorrang, die "
                  "Vorlauftemperatur darf höchstens 55 Grad betragen, bei Kältemitteln mit einem GWP von 150 bis 750 "
                  "werden 20 % abgezogen; eine Einkommensprüfung gibt es nicht (Quelle: sanierungsoffensive.gv.at, "
@@ -247,7 +246,7 @@ def build():
             img=IMG["foerderung"],
             alt="Beratungsgespräch zur Wärmepumpenförderung am Tisch",
             bullets=[
-                "Bund: Kesseltausch 5.000 € Pauschale für die Wärmepumpe, Registrierung bis 31.12.2026 oder bis das Budget aufgebraucht ist",
+                "Bund: Kesseltausch 5.000 € Pauschale für die Wärmepumpe, Registrierung, solange das Budget reicht",
                 a("/landesfoerderungen-fuer-die-waermepumpe/", "Landesförderungen im Vergleich") + ": Kärnten 3.000 € Pauschale, Steiermark derzeit keine Anträge für neue Wärmepumpen",
                 a("/waermepumpe-steuerlich-absetzen-die-oeko-sonderausgabenpauschale-2026/", "Öko-Sonderausgabenpauschale") + ": 5 Jahre je 400 € bei ausbezahlter Bundesförderung und über 2.000 € Restkosten",
                 a("/waermepumpenfoerderung-in-oesterreich/", "Wärmepumpenförderung 2026 im Detail") + ": alle Programme für Kärnten und die Steiermark",

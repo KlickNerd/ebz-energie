@@ -447,7 +447,7 @@ def build():
             alt="Beratungsgespräch zur Förderung für Photovoltaik und Wärmepumpe mit Unterlagen am Tisch",
             bullets=[
                 "Bund: Investitionszuschuss für 2026 abgeschlossen, Systemförderung ab 2027 geplant",
-                "Bund Wärmepumpe: Kesseltausch 5.000 € Pauschale, Registrierung bis 31.12.2026 oder bis das Budget aufgebraucht ist",
+                "Bund Wärmepumpe: Kesseltausch 5.000 € Pauschale, Registrierung, solange das Budget reicht",
                 "Land Steiermark: keine PV-Pauschale, für neue Wärmepumpen derzeit keine Anträge",
                 "Stadt Graz: kein Programm für Einfamilienhaus, Speicher oder Wärmepumpe",
                 a("foerderung_steiermark", "PV-Förderung Steiermark im Detail"),

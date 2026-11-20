@@ -163,8 +163,8 @@ def build():
                  "Speicher ist für 2026 ausgeschöpft beziehungsweise abgeschlossen; neue Anlagen bekommen derzeit "
                  "keinen Bundeszuschuss."),
                 ("Energiemanagement fördert der Klimafonds mit 50 % bis 600 €. Für Wärmepumpen läuft seit 2. November 2026 "
-                 "wieder der Kesseltausch des Bundes mit 5.000 € Pauschale (Registrierung bis 31. Dezember 2026 oder bis "
-                 "das Budget aufgebraucht ist); Kärnten zahlt zusätzlich 3.000 € Landespauschale, die Steiermark nimmt für neue "
+                 "wieder der Kesseltausch des Bundes mit 5.000 € Pauschale (Registrierung, solange das Budget "
+                 "reicht); Kärnten zahlt zusätzlich 3.000 € Landespauschale, die Steiermark nimmt für neue "
                  "Wärmepumpen derzeit keine Anträge an. Ab 2027 plant der Bund laut BMWET eine "
                  "Systemförderung für Speicher mit intelligenter Steuerung, deshalb planen wir jetzt mit Speicher "
                  "und Energiemanagement. "

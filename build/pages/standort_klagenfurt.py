@@ -131,8 +131,8 @@ FAQ = [
      "am besten zusammen mit Photovoltaik. Wir rechnen Ihnen das für Ihr Haus durch."),
     ("Welche Förderung gibt es für eine Wärmepumpe in Klagenfurt?",
      "Der Bund zahlt seit der Neuauflage des Kesseltauschs im November 2026 wieder 5.000 Euro Pauschale, wenn die "
-     "Wärmepumpe eine fossile Heizung ersetzt und kein Fernwärmeanschluss möglich ist; Registrierung bis 31. Dezember "
-     "2026 oder bis das Budget aufgebraucht ist. Das Land Kärnten zahlt 2026 zusätzlich eine Pauschale von 3.000 Euro "
+     "Wärmepumpe eine fossile Heizung ersetzt und kein Fernwärmeanschluss möglich ist; die Registrierung läuft, solange das Budget "
+     "reicht. Das Land Kärnten zahlt 2026 zusätzlich eine Pauschale von 3.000 Euro "
      "für den Wechsel zur Wärmepumpe im Eigenheim, zusammen also bis 8.000 Euro*; ob "
      "das Budget reicht und welche Voraussetzungen für Ihr Haus gelten, klären wir vor dem Angebot. Die PV-Anlage dazu wird "
      "getrennt gefördert. Der aktuelle Stand steht auf unserer Förderseite, eine erste Zahl liefert der Förderrechner."),

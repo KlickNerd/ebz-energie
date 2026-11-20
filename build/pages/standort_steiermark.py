@@ -186,8 +186,8 @@ FAQ = [
     ("Welche Förderung gibt es 2026 für eine Wärmepumpe in der Steiermark?",
      "Vor allem vom Bund: Der Kesseltausch ist seit 2. November 2026 neu aufgelegt und zahlt 5.000 Euro Pauschale, "
      "wenn die Wärmepumpe eine fossile Heizung ersetzt, plus 5.000 Euro bei Erdwärme oder Grundwasser und plus "
-     "2.500 Euro mit thermischer Solaranlage; Registrierung bis 31. Dezember 2026 oder bis das Budget aufgebraucht "
-     "ist (Stand November 2026). Das Land Steiermark "
+     "2.500 Euro mit thermischer Solaranlage; die Registrierung läuft, solange das Budget "
+     "reicht (Stand November 2026). Das Land Steiermark "
      "nimmt für den Umstieg von einer fossilen Heizung auf eine Wärmepumpe derzeit keine Anträge an. Offen ist das "
      "Landesprogramm für den Tausch mindestens 15 Jahre alter Wärmepumpen und Biomassekessel in Ein- und "
      "Zweifamilienhäusern, mit höchstens 30 Prozent der förderungsfähigen Investitionskosten und begrenztem Budget. "
