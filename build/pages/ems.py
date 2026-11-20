@@ -354,9 +354,11 @@ def build():
                  "Börsenstrompreis möglich. Das EMS lädt Speicher und E-Auto in günstigen Stunden und meidet die "
                  "teuren, ab 2027 kommen regelbare Netztarife dazu. Beides zählt als Option für die fünfjährige "
                  "Betriebsverpflichtung der Klimafonds-Förderung."),
-                ("Was auch ein EMS nicht im Haus unterbringt, muss nicht für wenige Cent ins Netz: In einer "
-                 "Energiegemeinschaft teilen Sie den Überschuss mit Nachbarn, im Nahbereich mit bis zu 57 % weniger "
-                 "Netzentgelt für die Bezieher. Und mit Vehicle-to-Home (V2H) / bidirektionalem Laden wird das "
+                ("Was auch ein EMS nicht im Haus unterbringt, muss nicht zum schwankenden Marktpreis ins Netz: In einer "
+                 + a("eg", "Energiegemeinschaft") + " teilen Sie den Überschuss mit Nachbarn; in einer lokalen "
+                 "Erneuerbare-Energie-Gemeinschaft zahlen die Bezieher 2026 bis zu 57 % weniger Netzentgelt. Seit "
+                 "Oktober 2026 geht das auch per " + a("/peer-to-peer-strom/", "Peer-to-Peer-Vertrag") + " direkt "
+                 "mit einem anderen Haushalt. Und mit Vehicle-to-Home (V2H) / bidirektionalem Laden wird das "
                  "E-Auto selbst zum Speicher. Ein gut gewähltes EMS steuert das alles aus einer Oberfläche."),
             ],
             img=IMG["ems_app"],
@@ -364,7 +366,7 @@ def build():
             bullets=[
                 a("/smart-meter/", "Smart Meter") + ": Voraussetzung für stundengenaue Abrechnung",
                 a("/dynamischer-stromtarif/", "Dynamischer Tarif") + ": Börsenpreis statt Fixpreis, automatisch genutzt",
-                a("eg_privat", "Energiegemeinschaft") + ": Überschuss teilen, Rabatt nur im Nahbereich",
+                a("eg_privat", "Energiegemeinschaft mit PV-Anlage") + ": Überschuss teilen, Netzentgelt-Rabatt nur im Nahbereich",
             ],
             cta=("eg_privat", "Zur Energiegemeinschaft"),
             reverse=True,

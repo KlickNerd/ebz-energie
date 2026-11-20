@@ -4,7 +4,9 @@
 Quelle: Live-LP /energiegemeinschaften-gewerbe/ (freigegebene Inhalte), der Pillar-Ratgeber
 /energiegemeinschaft/, die Cluster-Artikel /energiegemeinschaft-gruenden/ und /energiegemeinschaft-kosten/
 (Gruendungskosten, Mindestgroesse, Rechtsform), build/seo/_fakten_2026-10.md (OeMAG Oktober 2026:
-14,874 ct, Verlauf Juli 6,146 ct) und das SEO/GEO-Briefing build/seo/eg_gewerbe.{json,md} (Primaer "Energiegemeinschaft gruenden").
+14,874 ct, Verlauf Juli 6,146 ct) und das SEO/GEO-Briefing build/seo/eg_gewerbe.{json,md}. Seit 20.11.2026 kommerziell auf "Energiegemeinschaft fuer
+Betriebe und Gemeinden" ausgerichtet; "Energiegemeinschaft gruenden" gehoert dem Ratgeber /energiegemeinschaft-gruenden/
+(320 Suchen, Kannibalisierung), der hier fuer den Ablauf verlinkt ist.
 
 Abgrenzung: Diese LP = Energiegemeinschaft gruenden LASSEN (Leistungsumfang, Kosten, Dauer fuer Betriebe
 und Gemeinden). Der Ratgeber /energiegemeinschaft-gruenden/ = selbst gruenden, Schritt fuer Schritt (verlinkt).
@@ -15,6 +17,9 @@ Mindererloes, Vorteil kommt aus Netzentgelt, Planbarkeit und Abnehmer-Ersparnis.
 Pflicht (README): Netzentgelt-Rabatt 57 % lokal / 28 % regional, Netzebene 4/5 bis 64 %, NUR im
 Nahbereich; oesterreichweit = Buergerenergiegemeinschaft ohne Rabatt. energyfamily nur als Text-Badge.
 Gemeinde-Beispiel ohne erfundene Zahlen.
+ElWG (Faktenliste, Abschnitt "VERBINDLICH AB 20.11.2026"): Rabatt Oktober bis Dezember 2026 nur fuer EEG-Mitglieder,
+BEG/P2P/EVA im Nahbereich voraussichtlich ab 1.1.2027 (Hoehe legt die E-Control fest); netzuebergreifend voraussichtlich
+ab April 2027, bis dahin nur Zaehlpunkte beim selben Netzbetreiber. Abgabenbefreiung nur EEG.
 """
 
 from common import IMG, NAP, AUTHOR, AUTHOR_ROLE, faq_jsonld, u, a, write_page, load_reviews
@@ -22,9 +27,9 @@ from layout import page
 import components as C
 
 PATH = "/leistungen/energiegemeinschaft-gewerbe/"
-TITLE = "Energiegemeinschaft gründen: Betriebe und Gemeinden | EBZ"
-DESC = ("Energiegemeinschaft gründen lassen: EBZ plant für Betriebe und Gemeinden Anlage, Rechtsform, "
-        "Netzanmeldung und Abrechnung. Verein ab 50 €, 2 bis 8 € je Monat.")
+TITLE = "Energiegemeinschaft für Betriebe und Gemeinden | EBZ Energie"
+DESC = ("Energiegemeinschaft für Betriebe, Landwirtschaft und Gemeinden: EBZ plant PV-Anlage, Rechtsform, "
+        "Netzanmeldung und Abrechnung. Verein ab 50 €.")
 
 OEMAG_OKT = "14,874"   # aktueller Wert, Stand November 2026
 OEMAG_SEPT = "10,168"
@@ -44,7 +49,9 @@ FAQ = [
      "An einer Erneuerbaren-Energie-Gemeinschaft dürfen nur kleine und mittlere Unternehmen nach KMU-Definition (WKO) "
      "teilnehmen, also bis 250 Mitarbeiter, und nur, wenn die Teilnahme nicht ihre gewerbliche Haupttätigkeit ist. "
      "Große Unternehmen nutzen die Bürgerenergiegemeinschaft (BEG, auch Großunternehmen) oder seit Oktober 2026 "
-     "Peer-to-Peer-Verträge, beides ohne Abgabenbefreiung."),
+     "Peer-to-Peer-Verträge, beides ohne Abgabenbefreiung. Einen Netzentgelt-Rabatt im Nahbereich sieht die neue "
+     "Netzentgelt-Verordnung für diese Modelle voraussichtlich ab 1. Jänner 2027 vor, die Höhe legt die E-Control fest; "
+     "bis dahin bekommen ihn nur EEG-Mitglieder."),
     ("Welche Förderung gibt es für die Gründung (Klima- und Energiefonds)?",
      "Der Klima- und Energiefonds hat Konzept- und Aufbauphase von Energiegemeinschaften über eigene Förder-Calls "
      "unterstützt; ob aktuell ein Call offen ist, prüfen wir für Ihr Projekt (Stand Oktober 2026). Verlässlich "
@@ -58,8 +65,11 @@ FAQ = [
      "Gewinn ausgerichtet sein, der Nutzen muss bei den Mitgliedern bleiben (Gemeinnützigkeit im weiteren Sinn)."),
     ("Kann ein Betrieb Strom zwischen mehreren eigenen Standorten teilen (Eigenversorgungsanlage, BEG)?",
      "Ja. Seit dem ElWG gibt es die Eigenversorgungsanlage (EVA, mehrere eigene Standorte): Ein Unternehmen "
-     "versorgt seine Filialen oder Hallen mit dem Strom einer eigenen Anlage über das öffentliche Netz. Liegen die "
-     "Standorte weit auseinander, ist die Bürgerenergiegemeinschaft der Weg, dann ohne Netzentgelt-Rabatt."),
+     "versorgt seine Filialen oder Hallen im Nahbereich mit dem Strom einer eigenen Anlage über das öffentliche "
+     "Netz, ohne eigene Rechtsform. Einen Netzentgelt-Rabatt für die EVA sieht die neue Netzentgelt-Verordnung "
+     "voraussichtlich ab 1. Jänner 2027 vor, die Abgabenbefreiung ist derzeit nur für die EEG geregelt. Liegen die "
+     "Standorte weit auseinander, ist die Bürgerenergiegemeinschaft der Weg, dann ohne Netzentgelt-Rabatt; über "
+     "mehrere Netzbetreiber hinweg laut Koordinationsstelle voraussichtlich ab April 2027."),
     ("Wie lange dauert es von der Idee bis zum Betrieb?",
      "Die Potenzialanalyse dauert 2 bis 3 Wochen, Modell und Rechtsform 2 bis 4 Wochen, Anlage und Anmeldung "
      "beim Netzbetreiber 4 bis 12 Wochen. Registrierung als Marktpartner und Betreibervertrag sind kostenlos, die "
@@ -69,9 +79,11 @@ FAQ = [
      f"statt des monatlich schwankenden OeMAG-Marktpreises ({OEMAG_JULI} ct im Juli, {OEMAG_OKT} ct im Oktober "
      "2026). Ein EG-Preis von 10 oder 12 ct* liegt damit je nach Monat über oder unter dem Marktpreis, im Oktober 2026 "
      "klar darunter; dafür ist er planbar. Werktags bezieht "
-     "der Betrieb bei Bedarf EG-Strom mit reduziertem Netzentgelt, auf Netzebene 4/5 bis zu 64 Prozent weniger."),
+     "der Betrieb bei Bedarf EG-Strom, in der EEG mit reduziertem Netzentgelt, auf Netzebene 4/5 bis zu 64 Prozent weniger."),
     ("Können Mehrparteienhäuser teilnehmen?",
-     "Ja. Im Gebäude teilt eine Gemeinschaftliche Erzeugungsanlage (GEA) den Strom ohne Netzentgelt auf die "
+     "Ja. Im Gebäude teilt eine "
+     + a("/gemeinschaftliche-erzeugungsanlage/", "Gemeinschaftliche Erzeugungsanlage (GEA)")
+     + " den Strom ohne Netzentgelt auf die "
      "Wohnungen auf, zusätzlich kann das Haus an einer EEG teilnehmen, um Überschuss an die Nachbarschaft zu "
      "verkaufen. Für Hausverwaltungen übernehmen wir Planung und Betreibermodell."),
 ]
@@ -104,8 +116,8 @@ def body():
     rating, count, reviews = load_reviews()
     body = "".join([
         C.hero(
-            eyebrow="Energiegemeinschaft gründen lassen · Gewerbe, Gemeinden, Hausverwaltungen",
-            h1="Energiegemeinschaft gründen für Betriebe und Gemeinden: Ihr Dach kann mehr als Eigenverbrauch",
+            eyebrow="Energiegemeinschaft für Gewerbe, Gemeinden, Hausverwaltungen · Kärnten und Steiermark",
+            h1="Energiegemeinschaft für Betriebe und Gemeinden: Ihr Dach kann mehr als Eigenverbrauch",
             lead=("Werktags verbraucht Ihr Betrieb den Sonnenstrom selbst, am Wochenende geht er zum monatlich "
                   "schwankenden OeMAG-Marktpreis ins Netz. In einer Energiegemeinschaft versorgt dieser Überschuss die "
                   "Gemeinde, die Siedlung oder den Betrieb nebenan, zu einem Preis, den Sie mitbestimmen. EBZ Energie "
@@ -132,16 +144,26 @@ def body():
             h2="Was ist eine Energiegemeinschaft für Betriebe und Gemeinden?",
             paragraphs=[
                 ("Eine Energiegemeinschaft ist ein Zusammenschluss von mindestens zwei Teilnehmern, die Strom aus "
-                 "erneuerbaren Quellen über das öffentliche Netz teilen. Im Nahbereich sinkt das Netzentgelt um bis zu "
-                 "57 Prozent (lokal), 28 Prozent (regional) oder 64 Prozent auf Netzebene 4/5. Die Gründung als Verein "
+                 "erneuerbaren Quellen über das öffentliche Netz teilen. In einer Erneuerbare-Energie-Gemeinschaft (EEG) "
+                 "sinkt das Netzentgelt im Nahbereich um 57 Prozent (lokal), 28 Prozent (regional) oder 64 Prozent bei "
+                 "ausschließlicher Teilnahme auf Netzebene 4/5. Die Gründung als Verein "
                  "kostet 50 bis 150 Euro, die Abrechnung 2 bis 8 Euro je Zählpunkt und Monat (Quellen: E-Control "
-                 "SNE-VO, energiegemeinschaften.gv.at, Stand Oktober 2026)."),
-                ("Vier Modelle stehen zur Wahl: die Erneuerbare-Energie-Gemeinschaft (EEG) im Nahbereich für Gemeinden, "
-                 "Vereine, Haushalte und KMU bis 250 Mitarbeiter; die Bürgerenergiegemeinschaft (BEG, auch "
-                 "Großunternehmen) österreichweit ohne Rabatt; die Gemeinschaftliche Erzeugungsanlage (GEA) im "
-                 "Mehrparteienhaus; und seit dem ElWG die Eigenversorgungsanlage (EVA, mehrere eigene Standorte) für "
-                 "Betriebe mit Filialen. Der Netzbetreiber ordnet je Viertelstunde zu, nur die zugeordnete Menge "
-                 "bekommt EG-Preis und Rabatt. Für Betriebe und Gemeinden zählt deshalb vor allem der Lastgang."),
+                 "SNE-VO, energiegemeinschaften.gv.at, Stand November 2026)."),
+                ("Seit dem ElWG (1. Oktober 2026) gibt es fünf Modelle: die Erneuerbare-Energie-Gemeinschaft (EEG) im "
+                 "Nahbereich für Gemeinden, Vereine, Haushalte und KMU bis 250 Mitarbeiter; die "
+                 + a("/buergerenergiegemeinschaft/", "Bürgerenergiegemeinschaft (BEG, auch Großunternehmen)")
+                 + ", die sich über mehrere Netzgebiete erstrecken "
+                 "darf; die Gemeinschaftliche Erzeugungsanlage (GEA) im Mehrparteienhaus; den "
+                 + a("/peer-to-peer-strom/", "Peer-to-Peer-Vertrag")
+                 + " zwischen zwei Zählpunkten ohne Verein; und die Eigenversorgungsanlage (EVA, mehrere eigene Standorte) "
+                 "für Betriebe mit Filialen. Je Zählpunkt sind bis zu fünf Modelle möglich. Den Netzentgelt-Rabatt "
+                 "bekommen von Oktober bis Dezember 2026 nur EEG-Mitglieder, für BEG, Peer-to-Peer und EVA im "
+                 "Nahbereich ist er voraussichtlich ab 1. Jänner 2027 vorgesehen (Höhe legt die E-Control fest). In der "
+                 "Übergangsphase gehen neue Zuordnungen nur mit Zählpunkten beim selben Netzbetreiber, netzübergreifend "
+                 "laut Koordinationsstelle voraussichtlich ab April 2027. Der Netzbetreiber ordnet je Viertelstunde zu, "
+                 "nur die zugeordnete Menge bekommt EG-Preis und Rabatt. Für Betriebe und Gemeinden zählt deshalb vor "
+                 "allem der Lastgang. Mehr zu den Modellen im Leitartikel "
+                 + a("eg", "Energiegemeinschaft: Modelle und ElWG") + "."),
             ],
         ),
         C.audience_split(
@@ -183,11 +205,11 @@ def body():
                    "Die Nahbereichsabfrage je Zählpunkt übernehmen wir bei Kärnten Netz und Energienetze Steiermark."),
             cards=[
                 {"ic": "⌂", "title": "Netzebene 7: Niederspannung",
-                 "text": "Haushalte und kleine Betriebe. Am selben Trafo (lokal) minus 57 % Netzentgelt, am selben Umspannwerk (regional) minus 28 %. In der EEG entfallen zusätzlich Elektrizitätsabgabe und Erneuerbaren-Förderbeitrag."},
+                 "text": "Haushalte und kleine Betriebe. Am selben Trafo (lokal) minus 57 % Netzentgelt, am selben Umspannwerk (regional) minus 28 %. In der EEG entfällt zusätzlich die Elektrizitätsabgabe (2026 befristet 0,82 ct je kWh für Betriebe und 0,1 ct für Haushalte, ab 2027 wieder 1,5 ct); den Erneuerbaren-Förderbeitrag setzt die Bundesregierung 2027 für alle Stromkunden aus."},
                 {"ic": "◎", "title": "Netzebene 6: Trafostation",
                  "text": "Betriebe mit eigener Trafo-Anbindung. Die Zuordnung zu lokal oder regional trifft der Netzbetreiber anhand der Zählpunktnummer, nicht anhand der Adresse."},
                 {"ic": "◇", "title": "Netzebene 4/5: Mittelspannung",
-                 "text": "Bei ausschließlicher Teilnahme auf diesen Ebenen bis zu 64 % Abschlag auf den Arbeitspreis des Netzentgelts. Relevant für größere Betriebe und Industrieareale.",
+                 "text": "Bei ausschließlicher Teilnahme auf diesen Ebenen in der EEG bis zu 64 % Abschlag auf den Arbeitspreis des Netzentgelts. Relevant für größere Betriebe und Industrieareale.",
                  "link_key": "/energiegemeinschaft-netzkosten/", "link_text": "Netzkosten im Detail"},
             ],
         ),
@@ -213,7 +235,7 @@ def body():
         ).replace('<section class="section">', '<section class="section" id="beispiel">', 1),
         C.steps_section(
             eyebrow="Gründen lassen",
-            h2="Energiegemeinschaft gründen in 6 Schritten: Verein, ebUtilities, Betreibervertrag, EDA, Teilnehmer, Start",
+            h2="Gründung mit EBZ in 6 Schritten: Verein, ebUtilities, Betreibervertrag, EDA, Teilnehmer, Start",
             steps=[
                 ("Potenzialanalyse und Mitglieder",
                  "Dachflächen, Lastgänge und Nahbereich aller Zählpunkte. Gesetzlich mindestens 2 Mitglieder, 5 Zählpunkte (Praxiswert) planen wir als Untergrenze.",
@@ -383,7 +405,15 @@ def body():
       <p class="form-note">*Beispielkonditionen (EG-Preis 10 bzw. 12 ct je kWh), jede Gemeinschaft legt ihre Preise selbst
       fest. OeMAG-Marktpreis Oktober 2026: {OEMAG_OKT} ct je kWh (Stand November 2026, Quelle oem-ag.at); im September
       lag er bei {OEMAG_SEPT} ct, im Juli 2026 bei {OEMAG_JULI} ct, der Wert schwankt monatlich. Netzentgelt-Abschlag (lokal 57 %, regional 28 %, Netzebene 4/5
-      bis 64 %) und Abgabenbefreiung gelten nur für die zugeordnete Menge und nur im Nahbereich. Gründungs- und
+      bis 64 %, Werte der geltenden SNE-VO) und Abgabenbefreiung gelten derzeit nur für Mitglieder einer
+      Erneuerbare-Energie-Gemeinschaft, nur für die zugeordnete Menge und nur im Nahbereich; die Höhe ab 2027 legt die
+      E-Control neu fest (laut E-Control-Entwurf für 2027 49 % lokal, 22 % bzw. 58 % regional, Entwurf). Elektrizitätsabgabe
+      2026 befristet 0,82 ct je kWh für Unternehmen und 0,1 ct für Haushalte, ab 2027 wieder 1,5 ct; Erneuerbaren-Förderbeitrag
+      und -pauschale 2027 laut Bundesregierung ausgesetzt (Quellen:
+      <a href="https://www.parlament.gv.at/aktuelles/news/Nationalrat-beschliesst-Senkung-der-Elektrizitaetsabgabe" target="_blank" rel="noopener">Parlament</a>,
+      <a href="https://www.bmf.gv.at/presse/pressemeldungen/2026/november-2026/oekostrompauschale.html" target="_blank" rel="noopener">BMF</a>).
+      ElWG-Übergangsphase laut Koordinationsstelle energiegemeinschaften.gv.at (FAQ zum ElWG),
+      Stand November 2026. Gründungs- und
       Abrechnungskosten sind marktübliche Spannen. Die belastbare Zahl für Ihren Standort liefert die Potenzialanalyse.
       Keine Garantie, keine Rechts- oder Steuerberatung. Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>

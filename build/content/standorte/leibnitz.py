@@ -82,7 +82,10 @@ ORT = {
              "also viel Geschoßwohnbau. Im ganzen Bezirk sind es 29.568 Wohngebäude mit 44.836 Wohnungen, das Umland "
              "von Wagna bis ins Weinland besteht überwiegend aus Ein- und Zweifamilienhäusern mit eigenem Dach. Für "
              "das Eigenheim planen wir die klassische Dachanlage mit Speicher, im Mehrparteienhaus prüfen wir eine "
-             "gemeinschaftliche Anlage oder eine " + a("eg_privat", "Energiegemeinschaft") + "."),
+             + a("/gemeinschaftliche-erzeugungsanlage/", "gemeinschaftliche Erzeugungsanlage") + " oder eine "
+             + a("eg_privat", "Energiegemeinschaft") + ". Welche Gemeinschaften es in Leibnitz und der "
+             "Südsteiermark gibt, steht im Ratgeber "
+             + a("/energiegemeinschaft-steiermark/#bezirke", "Energiegemeinschaft in der Steiermark") + "."),
             ("Eine Anlage mit rund 10 kWp und Speicher kostet typischerweise rund 15.000 bis 22.000 Euro vor "
              "Förderung*, die Amortisation liegt typisch bei 4 bis 6 Jahren*. Wie viel davon in Leibnitz bei Ihnen "
              "ankommt, hängt vom Verbrauch ab: Mit Wärmepumpe oder E-Auto nutzen Sie mehr Strom selbst, ohne große "

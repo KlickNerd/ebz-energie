@@ -128,7 +128,10 @@ ORT = {
              "darf, und schickt ein Netzzutrittsangebot. Geht die gewünschte Leistung nicht, sichert Kärnten Netz "
              "zumindest eine Einspeisung in Höhe Ihres Strombezugsrechts zu; als Alternativen nennt der "
              "Netzbetreiber einen anderen Anschlusspunkt oder eine dynamische Leistungsregelung. Vor der "
-             "Inbetriebnahme folgt die Fertigstellungsmeldung durch den konzessionierten Elektriker."),
+             "Inbetriebnahme folgt die Fertigstellungsmeldung durch den konzessionierten Elektriker. Für den "
+             "Überschuss brauchen Sie einen Abnehmer, etwa die OeMAG oder eine Energiegemeinschaft; welche "
+             "Gemeinschaften im Bezirk Völkermarkt arbeiten, steht im Ratgeber "
+             + a("/energiegemeinschaft-kaernten/#regionen", "Energiegemeinschaften in den Kärntner Regionen") + "."),
             ("In Völkermarkt wird das Netz gerade erneuert: Kärnten Netz investiert nach eigenen Angaben rund "
              "2,7 Millionen Euro in das Ortsnetz der Stadt, mit 36 erneuerten Trafostationen, 8,9 Kilometern "
              "Mittelspannungskabel und 33,7 Kilometern Niederspannungskabel (Unternehmensmeldung Juni 2025). Im "
@@ -243,9 +246,11 @@ ORT = {
          "Völkermarkt haben wir nicht. Für die Erstberatung kommen wir zu Ihnen, sie ist kostenlos und "
          "unverbindlich."),
         ("Kann ich in Völkermarkt Sonnenstrom in einer Energiegemeinschaft teilen?",
-         "Ja. Energiegemeinschaften sind österreichweit möglich. Teilen Sie den Strom im Nahbereich, sinken die "
-         "Netzentgelte um bis zu 57 Prozent (lokal) oder 28 Prozent (regional); beim österreichweiten Teilen in "
-         "einer Bürgerenergiegemeinschaft gibt es diesen Rabatt nicht. Der e5-Auditbericht der Stadtgemeinde "
+         "Ja. Teilen Sie den Strom im Nahbereich in einer Erneuerbare-Energie-Gemeinschaft, sinken die "
+         "Netzentgelte um bis zu 57 Prozent (lokal) oder 28 Prozent (regional). Eine Bürgerenergiegemeinschaft darf "
+         "sich über ganz Österreich erstrecken, bekommt österreichweit aber keinen Rabatt; in der Übergangsphase seit Oktober "
+         "2026 lassen sich neue Zuordnungen laut Koordinationsstelle nur mit Zählpunkten beim selben Netzbetreiber "
+         "umsetzen, netzübergreifend voraussichtlich ab April 2027. Der e5-Auditbericht der Stadtgemeinde "
          "Völkermarkt nennt Energiegemeinschaften ausdrücklich als Weg, Strom aus Photovoltaik stärker vor Ort zu "
          "nutzen. Die Zuordnung der Zählpunkte läuft über Kärnten Netz."),
     ],
@@ -271,6 +276,8 @@ ORT = {
         ("Land Kärnten, Netzwerk Energieberatung: Vor-Ort-Energiecheck (Folder, PDF)",
          "https://voelkermarkt.gv.at/fileadmin/voelkermarkt/03-Buergerservice/Energie_und_Umwelt/e5/e5_Download-Vor-Ort-Energiecheck.pdf"),
         ("Kelag: Wärmepumpen-Prämie", "https://www.kelag.at/privatkunden/ubersicht-zur-warmepumpe.htm"),
+        ("Österreichische Koordinationsstelle für Energiegemeinschaften: FAQ zum ElWG",
+         "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
     ],
     "notizen": (
         "Faktenfragen fuer den Kunden / offene Punkte: "

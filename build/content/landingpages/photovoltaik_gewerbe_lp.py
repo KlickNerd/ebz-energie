@@ -201,7 +201,8 @@ LP = {
         ("Wie sieht die steuerliche Behandlung einer Gewerbe-PV-Anlage aus?",
          "Die Anlage ist Betriebsvermögen und wird über die Nutzungsdauer abgeschrieben, laufende Kosten sind "
          "Betriebsausgaben, die Vorsteuer ist abziehbar. Selbst erzeugter und verbrauchter Strom ist von der "
-         "Elektrizitätsabgabe befreit. Die Details klären Sie mit Ihrer Steuerberatung, wir liefern die Zahlen."),
+         "Elektrizitätsabgabe befreit (für Unternehmen 2026 befristet 0,82 Cent je kWh, ab 2027 wieder 1,5 Cent). "
+         "Die Details klären Sie mit Ihrer Steuerberatung, wir liefern die Zahlen."),
         ("Können wir die Anlage finanzieren statt kaufen?",
          "Ja. Bei EBZ Energie gehört die Anlage ab dem ersten Tag Ihrem Unternehmen. Wer die Liquidität im Betrieb "
          "behalten will, finanziert zur fixen Rate mit 0 € Anzahlung; Abschreibung und Vorsteuerabzug laufen wie beim "

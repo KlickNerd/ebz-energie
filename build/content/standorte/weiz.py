@@ -132,7 +132,8 @@ ORT = {
             ("Energiegemeinschaften",
              "In der Stadt Weiz gibt es zwei regionale Gemeinschaften, getrennt nach Umspannwerk: EnErGie Werk Weiz "
              "für den Süden, Region Umspannwerk WEIZnord für den Norden. "
-             + a("eg_privat", "So funktioniert die Energiegemeinschaft") + "."),
+             + a("eg_privat", "So funktioniert die Energiegemeinschaft") + "; Gemeinschaften rund um Weiz und "
+             "Gleisdorf im " + a("/energiegemeinschaft-steiermark/#bezirke", "Ratgeber Energiegemeinschaft Steiermark") + "."),
             ("Neutrale Energieberatung",
              "Energieagentur W.E.I.Z. im Innovationszentrum Weiz, anerkannte Energieberatungsstelle des Landes "
              "Steiermark."),

@@ -7,7 +7,7 @@ Statikreport), "mehr als 100 Projekte" (jetzt 300+), Gedankenstriche.
 SEO/GEO-Ueberarbeitung Oktober 2026 nach build/seo/pv_gewerbe.{json,md}:
 EAG-Kategorien C/D (Faktenblatt _fakten_2026-10.md), Kosten je kWp 700 bis 1.300 EUR*
 (Marktrichtwert aus _geo.md), Stromgestehungskosten rechnerisch*, Elektrizitaetsabgabe
-1,5 ct (aus EG-Seiten), Steuer nur allgemein mit Hinweis Steuerberatung, Flachdach-Abschnitt,
+fuer Unternehmen 2026 befristet 0,82 ct, ab 2027 wieder 1,5 ct (Faktenliste 20.11.2026, Parlament), Steuer nur allgemein mit Hinweis Steuerberatung, Flachdach-Abschnitt,
 Agri-PV nur als FAQ. Contracting nur als Abgrenzung, nicht als Angebot.
 """
 
@@ -42,7 +42,8 @@ FAQ = [
     ("Sind gewerbliche PV-Anlagen steuerfrei und wie werden sie abgeschrieben?",
      "Steuerfrei nicht, aber steuerlich günstig: Die Anlage ist Betriebsvermögen und wird über die Nutzungsdauer "
      "abgeschrieben, laufende Kosten sind Betriebsausgaben, die Vorsteuer ist abziehbar. Selbst erzeugter und "
-     "verbrauchter Strom ist von der Elektrizitätsabgabe (1,5 Cent je kWh) befreit, Einspeiseerlöse sind "
+     "verbrauchter Strom ist von der Elektrizitätsabgabe befreit (für Unternehmen 2026 befristet 0,82 Cent je kWh, "
+     "ab 2027 wieder 1,5 Cent), Einspeiseerlöse sind "
      "Betriebseinnahmen. Bei gemischter Nutzung (Hof und Wohnhaus) wird aufgeteilt. Details mit Ihrer Steuerberatung."),
     ("Brauche ich als PV-Betreiber eine Gewerbeanmeldung?",
      "Für die Anlage auf dem eigenen Betriebsgebäude nicht, sie ist Teil Ihres Betriebs. Private Betreiber mit "
@@ -120,7 +121,7 @@ def _tax_section():
         rows=[
             ("Anschaffung", "Betriebsvermögen, Abschreibung über die Nutzungsdauer, Vorsteuer abziehbar"),
             ("Laufende Kosten", "Wartung, Versicherung, Monitoring sind Betriebsausgaben"),
-            ("Eigenstrom", "selbst erzeugt und verbraucht: befreit von der Elektrizitätsabgabe (1,5 ct je kWh)"),
+            ("Eigenstrom", "selbst erzeugt und verbraucht: befreit von der Elektrizitätsabgabe (für Unternehmen 2026 befristet 0,82 ct je kWh, ab 2027 wieder 1,5 ct)"),
             ("Einspeiseerlöse", "Betriebseinnahmen zum OeMAG-Marktpreis oder Lieferantentarif"),
             ("Gemischte Nutzung", "Hof und Wohnhaus, Betrieb und Privat: Aufteilung nach Verbrauchsanteil"),
             ("Förderung", "Zuschüsse wie die EMS-Förderung mindern die Anschaffungskosten"),
@@ -307,8 +308,10 @@ def build():
                  "mit intelligenter Steuerung, beantragt nach der Installation; Höhe und Kriterien sind offen. Wer jetzt "
                  "plant, plant deshalb sinnvoll mit Gewerbespeicher und Energiemanagement."),
                 ("Für das EMS erhalten Betriebe 30 Prozent, maximal 20.000 Euro je Standort, Antrag vor der "
-                 "Bestellung. Auf selbst erzeugten und verbrauchten Strom entfällt die Elektrizitätsabgabe von "
-                 "1,5 Cent je kWh. "
+                 "Bestellung. Auf selbst erzeugten und verbrauchten Strom entfällt die Elektrizitätsabgabe: für "
+                 "Unternehmen 2026 befristet 0,82 Cent je kWh, ab 2027 wieder der Normalsatz von 1,5 Cent (Quelle: "
+                 '<a href="https://www.parlament.gv.at/aktuelles/news/Nationalrat-beschliesst-Senkung-der-Elektrizitaetsabgabe" '
+                 'target="_blank" rel="noopener">Parlamentskorrespondenz zur Senkung der Elektrizitätsabgabe</a>). '
                  "Welche Fristen gerade laufen, steht tagesaktuell auf unserer Förderseite; wir prüfen sie für Ihr Projekt "
                  "und stellen die Anträge."),
             ],

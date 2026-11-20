@@ -207,8 +207,9 @@ ORT = {
          "nicht mit Geld rechnen, das es nicht gibt."),
         ("Für Häuser in Trofaiach, St. Michael, Niklasdorf und den anderen Gemeinden des Bezirks prüfen wir die "
          "Gemeindeförderung einzeln. Wer Strom mit Nachbarn teilen will: Die KEM Murraum Leoben führt den PV-Ausbau "
-         "und Energiegemeinschaften als eigene Maßnahme. Wie das Teilen funktioniert, "
-         "steht im Ratgeber " + a("/energiegemeinschaft-steiermark/", "Energiegemeinschaft in der Steiermark") + "."),
+         "und Energiegemeinschaften als eigene Maßnahme. Wie das Teilen funktioniert und welche Gemeinschaft im "
+         "Liesingtal arbeitet, steht im Ratgeber "
+         + a("/energiegemeinschaft-steiermark/#bezirke", "Energiegemeinschaft in der Steiermark") + "."),
     ],
 
     "referenzen": {

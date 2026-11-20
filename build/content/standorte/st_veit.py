@@ -132,7 +132,8 @@ ORT = {
             ("Energiegemeinschaft",
              "Die Stadt nennt die Förderung lokaler und regionaler Energiegemeinschaften als Ziel bis 2040. Wie Sie "
              "Überschussstrom mit Nachbarn teilen, steht auf unserer Seite zur "
-             + a("eg_privat", "Energiegemeinschaft") + "."),
+             + a("eg_privat", "Energiegemeinschaft") + ", welche Gemeinschaften im Bezirk St. Veit arbeiten, im "
+             "Ratgeber " + a("/energiegemeinschaft-kaernten/#regionen", "Energiegemeinschaft in Kärnten") + "."),
         ],
     },
 
@@ -282,9 +283,12 @@ ORT = {
          "zertifizierte Fachkräfte."),
         ("Kann ich Sonnenstrom in St. Veit an der Glan mit Nachbarn teilen?",
          "Ja, über eine Energiegemeinschaft. Die Stadt St. Veit nennt die Förderung lokaler und regionaler "
-         "Energiegemeinschaften als Ziel in ihrem Klimaneutralitätsfahrplan. Im Nahbereich sinken die Netzentgelte "
-         "für den geteilten Strom um bis zu 57 Prozent (lokal) oder 28 Prozent (regional). Österreichweit ist das "
-         "Teilen als Bürgerenergiegemeinschaft möglich, dann ohne diesen Rabatt. Wir planen Ihre Anlage so, dass "
+         "Energiegemeinschaften als Ziel in ihrem Klimaneutralitätsfahrplan. In einer lokalen oder regionalen "
+         "Erneuerbare-Energie-Gemeinschaft sinkt das Netzentgelt für den geteilten Strom 2026 um bis zu 57 Prozent "
+         "(lokal) oder 28 Prozent (regional), die Werte ab 2027 legt die E-Control neu fest. Eine "
+         "Bürgerenergiegemeinschaft darf sich über ganz Österreich erstrecken, dann ohne diesen Rabatt; "
+         "netzübergreifend lassen sich neue Zuordnungen laut Koordinationsstelle voraussichtlich ab April 2027 "
+         "umsetzen, bis dahin nur mit Zählpunkten beim selben Netzbetreiber. Wir planen Ihre Anlage so, dass "
          "Überschüsse sinnvoll geteilt werden können."),
     ],
 
@@ -316,6 +320,8 @@ ORT = {
          "https://www.statistik.at/blickgem/G0402/g20527.pdf"),
         ("Statistik Austria: Gebäude nach Bauperiode, Gebäude- und Wohnungszählung 2021 (PDF)",
          "https://www.statistik.at/blickgem/G0403/g20527.pdf"),
+        ("Österreichische Koordinationsstelle für Energiegemeinschaften: FAQ zum ElWG",
+         "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
     ],
 
     "notizen": (

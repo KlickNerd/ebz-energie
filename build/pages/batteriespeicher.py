@@ -153,7 +153,9 @@ def build():
             intro=("Ein Batteriespeicher hebt den Eigenverbrauch einer PV-Anlage von rund 30 auf 60 bis 80 %*. Bei "
                    "Netzstrompreisen von rund 30 bis 35 Cent je kWh und einer Einspeisevergütung von 14,874 Cent "
                    "(OeMAG-Marktpreis Oktober 2026, im Juli 6,146 Cent) lohnt sich ein Speicher ab etwa 5 kWp PV-Leistung und 3.500 kWh "
-                   "Jahresverbrauch (Stand Oktober 2026). *Richtwerte, abhängig vom Lastprofil."),
+                   "Jahresverbrauch (Stand Oktober 2026). Was auch der volle Speicher nicht aufnimmt, können Sie in einer "
+                   + a("eg_privat", "Energiegemeinschaft mit Ihrer PV-Anlage") + " an Nachbarn weitergeben, statt es "
+                   "nur einzuspeisen. *Richtwerte, abhängig vom Lastprofil."),
             bars=[
                 ("Eigenverbrauch ohne Speicher", 30, "bad", "rund 30 %*"),
                 ("Eigenverbrauch mit passendem Speicher", 80, "good", "bis zu 80 %*"),

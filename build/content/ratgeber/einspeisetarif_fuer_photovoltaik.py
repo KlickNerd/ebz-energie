@@ -38,7 +38,7 @@ ARTICLE = {
         "Steuerfrei: <b>bis 12.500 kWh</b> pro Jahr",
     ],
     "date_published": "2025-06-20",
-    "date_modified": "2026-11-19",
+    "date_modified": "2026-11-20",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Hausdach bei Sonnenschein: Einspeisetarif für überschüssigen Solarstrom",
 
@@ -51,8 +51,8 @@ ARTICLE = {
         "den Einspeisetarif aber fast immer an einen Strombezugsvertrag mit Bindung und teils Grundgebühr.",
         "Eigenverbrauch schlägt jeden Tarif: Eine selbst genutzte Kilowattstunde spart rund 32 Cent Netzbezug, "
         "eine eingespeiste bringt rund 4 bis 15 Cent. Speicher, Wärmepumpe und E-Auto sind der größere Hebel.",
-        "Energiegemeinschaften sind die Alternative: Der Preis wird in der Gemeinschaft vereinbart, im Nahbereich "
-        "sinken zusätzlich die Netzentgelte um bis zu 57 Prozent.",
+        "Energiegemeinschaften sind die Alternative: Der Preis wird in der Gemeinschaft vereinbart, in einer lokalen "
+        "Erneuerbare-Energie-Gemeinschaft sinken zusätzlich die Netzentgelte um bis zu 57 Prozent.",
         "Einnahmen aus der Einspeisung sind für Privatpersonen bis 12.500 kWh pro Jahr einkommensteuerfrei "
         "(Anlagen bis 35 kWp). Der Nullsteuersatz bei der Anschaffung ist seit 1. April 2025 ausgelaufen.",
     ],
@@ -94,7 +94,7 @@ Wirtschaftlichkeit.</p>
     [
         ["Selbst verbraucht (direkt)", "rund 32 ct gespart", "Verbrauch in die Sonnenstunden legen"],
         ["Selbst verbraucht (aus dem Speicher)", "rund 32 ct gespart, abzüglich Speicherverluste", "Batteriespeicher, Eigenverbrauch 60 bis 80 %"],
-        ["In der Energiegemeinschaft verkauft", "vereinbarter Preis, plus Netzentgelt-Rabatt im Nahbereich", "lokale oder regionale EG"],
+        ["In der Energiegemeinschaft verkauft", "vereinbarter Preis, plus Netzentgelt-Rabatt in der EEG im Nahbereich", "lokale oder regionale EEG"],
         ["Ins Netz eingespeist", "rund 4 bis 15 ct Vergütung", "OeMAG oder Versorger, Tarifvergleich"],
     ],
     hl_cols=(1,),
@@ -147,7 +147,7 @@ Sie betreiben möchten. Die Übersicht zeigt die fünf Modelle mit ihren Konditi
         ["Direktvermarktung", "Erlös an der Börse abzüglich Dienstleisterentgelt",
          "Zugang zum Großhandelsmarkt", "vor allem für größere Anlagen und Betriebe sinnvoll"],
         ["Energiegemeinschaft", "in der Gemeinschaft vereinbarter Preis",
-         "fixer, planbarer Preis unter dem Bezugspreis, Netzentgelt-Rabatt im Nahbereich", "Gründung oder Beitritt nötig, Abrechnung über Plattform"],
+         "fixer, planbarer Preis unter dem Bezugspreis, Netzentgelt-Rabatt in der EEG im Nahbereich", "Gründung oder Beitritt nötig, Abrechnung über Plattform"],
     ],
     hl_cols=(1,),
 )}
@@ -206,7 +206,12 @@ bekommt als bei der Einspeisung, hängt vom Monat ab, denn der OeMAG-Marktpreis 
 <p>Im Nahbereich kommt ein zweiter Vorteil dazu: Für Strom, der in einer lokalen Erneuerbare-Energie-
 Gemeinschaft im selben Netzabschnitt verbraucht wird, sinken die Netzentgelte um bis zu 57 Prozent,
 regional um 28 Prozent, auf Netzebene 4 und 5 um bis zu 64 Prozent. Beim österreichweiten Teilen in einer
-Bürgerenergiegemeinschaft gibt es diesen Rabatt nicht, der vereinbarte Preis gilt aber trotzdem. Die
+{a('/buergerenergiegemeinschaft/', 'Bürgerenergiegemeinschaft')} gibt es diesen Rabatt nicht, der vereinbarte Preis gilt aber trotzdem. In der
+Übergangsphase nach dem Elektrizitätswirtschaftsgesetz (ElWG) lassen sich neue Zuordnungen laut
+Koordinationsstelle vorübergehend nur mit Zählpunkten beim selben Netzbetreiber umsetzen, netzübergreifend
+(etwa Kärnten und Wien) voraussichtlich ab April 2027. Seit Oktober 2026 ist außerdem der
+{a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag')} möglich, ein direkter Verkauf an einen Nachbarn ohne Verein; den Netzentgelt-Rabatt bekommen bis Ende 2026 aber
+nur Mitglieder einer EEG, Peer-to-Peer im Nahbereich nach heutigem Stand ab 1. Jänner 2027. Die
 Abrechnung übernimmt eine Plattform wie energyfamily. Was Sie konkret sparen, rechnet der
 {a('eg_rechner', 'EG-Rechner')} aus. Details zur OeMAG in der Energiegemeinschaft finden Sie im Ratgeber
 {a('/oemag-einspeisetarif/', 'OeMAG-Einspeisetarif und Energiegemeinschaft')}.</p>
@@ -254,7 +259,7 @@ Unternehmerisch tätige Betreiber können weiterhin die Vorsteuer abziehen.</p>
         ("Fazit: Erst Eigenverbrauch, dann Tarif", "fazit", f"""
 <p>Der Einspeisetarif für Photovoltaik hat sich vom Subventionsmodell zum Marktinstrument gewandelt. Der
 OeMAG-Marktpreis schwankte 2026 zwischen 6,146 Cent (Juli, Untergrenze) und 14,874 Cent (Oktober), private
-Anbieter zahlen 4 bis 11 Cent mit Bindung, Energiegemeinschaften vereinbaren fixe Preise und sparen im Nahbereich Netzentgelte.
+Anbieter zahlen 4 bis 11 Cent mit Bindung, Energiegemeinschaften vereinbaren fixe Preise und sparen als EEG im Nahbereich Netzentgelte.
 Der größte Hebel bleibt aber der Eigenverbrauch: Jede selbst genutzte Kilowattstunde ist mit rund 32 Cent
 je nach Monat zwei- bis fünfmal so viel wert wie eine an die OeMAG verkaufte. Planen Sie die Anlage darauf, holen Sie sich für den
 Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
@@ -271,7 +276,7 @@ Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
         "grid": [
             ("Eigenverbrauch zuerst", "Speicher, Wärmepumpe und Wallbox so geplant, dass wenig Überschuss bleibt."),
             ("Netzzutritt und Förderung", "Zählpunkt, Landesförderantrag und Fertigstellungsmeldung aus einer Hand."),
-            ("Energiegemeinschaft", "Beitritt oder Gründung, Abrechnung über Plattform, österreichweit möglich."),
+            ("Energiegemeinschaft", "Beitritt oder Gründung, Abrechnung über Plattform, netzübergreifend voraussichtlich ab April 2027."),
             ("Ehrliche Zahlen", "Tarifvergleich mit Ihrer tatsächlichen Einspeisemenge, keine Lockangebote."),
         ],
     },
@@ -304,9 +309,10 @@ Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
         ("Was bringt eine Energiegemeinschaft im Vergleich zur Einspeisung?",
          "In der Energiegemeinschaft wird der Preis intern fix vereinbart und ist damit planbar, während der "
          "OeMAG-Marktpreis monatlich schwankt (2026 zwischen 6,146 und 14,874 Cent). Ob der Erzeuger mehr bekommt "
-         "als bei der Einspeisung, hängt deshalb vom Monat ab; der Abnehmer zahlt meist weniger als beim Versorger. Im Nahbereich sinken zusätzlich die "
-         "Netzentgelte um bis zu 57 Prozent (regional 28 Prozent). Österreichweites Teilen ist als "
-         "Bürgerenergiegemeinschaft möglich, dann ohne Netzentgelt-Rabatt."),
+         "als bei der Einspeisung, hängt deshalb vom Monat ab; der Abnehmer zahlt meist weniger als beim Versorger. In einer "
+         "lokalen EEG sinken zusätzlich die Netzentgelte um bis zu 57 Prozent (regional 28 Prozent). "
+         "Österreichweites Teilen ist als Bürgerenergiegemeinschaft möglich, dann ohne Netzentgelt-Rabatt und über "
+         "mehrere Netzbetreiber laut Koordinationsstelle voraussichtlich erst ab April 2027."),
         ("Muss ich Einnahmen aus der Einspeisung versteuern?",
          "Für Privatpersonen sind Einnahmen aus bis zu 12.500 kWh Einspeisung pro Jahr einkommensteuerfrei, "
          "wenn die Anlage höchstens 35 kWp Engpassleistung hat. Nur die Menge darüber ist steuerpflichtig. Die "
@@ -325,6 +331,8 @@ Rest den passenden Abnehmer und vergleichen Sie einmal im Jahr.</p>
     "sources": [
         ("OeMAG: Abwicklungsstelle für Ökostrom, Marktpreis", "https://www.oemag.at/"),
         ("E-Control: Tarifkalkulator und Regulierung", "https://www.e-control.at/"),
+        ("Koordinationsstelle: FAQs zum ElWG", "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
+        ("Koordinationsstelle: Peer-to-Peer-Vertrag", "https://energiegemeinschaften.gv.at/peer-to-peer/"),
     ],
     "related": [
         ("marktpreis", "OeMAG-Marktpreis 2026: aktuelle Entwicklung"),

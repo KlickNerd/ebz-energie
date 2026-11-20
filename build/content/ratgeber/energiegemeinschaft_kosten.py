@@ -31,7 +31,7 @@ ARTICLE = {
         "<b>3 Rechnungen:</b> Netz, Lieferant, EG",
     ],
     "date_published": "2026-08-25",
-    "date_modified": "2026-11-19",
+    "date_modified": "2026-11-20",
     "hero_img": "gen_detail",
     "hero_alt": "Montagedetail einer Photovoltaikanlage, deren Überschuss in einer Energiegemeinschaft abgerechnet wird",
 
@@ -47,6 +47,9 @@ ARTICLE = {
         "monatlich in einer App zusammen.",
         "Bei typisch 100 bis 300 Euro Jahresvorteil bleibt nach Abzug von 25 bis 100 Euro Kosten ein klares "
         "Plus, sofern die Zuordnungsquote stimmt.",
+        "Seit dem ElWG (1. Oktober 2026) unterscheiden sich die Kosten je Modell: EEG und "
+        "Bürgerenergiegemeinschaft brauchen eine Rechtsform, der Peer-to-Peer-Vertrag nicht. Netzentgelt-Rabatt "
+        "und Abgabenbefreiung gibt es bis Ende 2026 nur in der EEG.",
     ],
     "kpis": [
         ("0 €", "Einrichtungsgebühr bei den meisten Gemeinschaften"),
@@ -102,7 +105,38 @@ unterschreiben.</p>
 <p><small>*Beispielwerte innerhalb der marktüblichen Spannen (2 bis 8 Euro je Monat, 0,5 bis 2 Cent je kWh).
 Die tatsächlichen Konditionen legt jede Gemeinschaft selbst fest.</small></p>
 """),
-        ("Wie die Abrechnung technisch funktioniert", "abrechnung", f"""
+        ("Kosten je Modell nach dem ElWG", "elwg-modelle", f"""
+<p>Seit 1. Oktober 2026 regelt das Elektrizitätswirtschaftsgesetz (ElWG) fünf Modelle für gemeinsam genutzten
+Strom. Für die Kosten zählen zwei Fragen: Braucht das Modell eine eigene Rechtsform, und gibt es den
+Netzentgelt-Rabatt und die Abgabenbefreiung? Die Antworten unterscheiden sich deutlich.</p>
+{A.table(
+    ["Modell", "Organisation und Gründung", "Netzentgelt-Rabatt*", "Abgabenbefreiung"],
+    [
+        ["Erneuerbare-Energie-Gemeinschaft (EEG)", "Rechtsform nötig (Verein, Genossenschaft u. a.)",
+         "schon 2026: lokal minus 57 %, regional minus 28 %, nur Netzebene 4 und 5 minus 64 %",
+         "ja: Elektrizitätsabgabe entfällt (2026 für Haushalte befristet 0,1 ct, ab 2027 wieder 1,5 ct), Förderbeitrag entfällt (2027 laut Bundesregierung für alle ausgesetzt)"],
+        ["Bürgerenergiegemeinschaft (BEG)", "Rechtsform nötig, auch große Unternehmen als Mitglieder möglich",
+         "im Nahbereich nach heutigem Stand ab 1.1.2027, österreichweit keiner", "derzeit nein"],
+        ["Peer-to-Peer-Vertrag (P2P)", "keine Rechtsform, Vertrag zwischen mindestens zwei Zählpunkten, Verkauf oder Schenkung",
+         "im Nahbereich nach heutigem Stand ab 1.1.2027", "nicht geregelt"],
+        ["Eigenversorgungsanlage (EVA)", "keine Rechtsform, dieselbe Person an mehreren Standorten",
+         "im Nahbereich nach heutigem Stand ab 1.1.2027", "nicht geregelt"],
+        ["Gemeinschaftliche Erzeugungsanlage (GEA)", "Betreiber im selben Gebäude, gleiche Hauptleitung",
+         "Reduktion im Standortbereich per Verordnung, voraussichtlich ab April 2027", "offen"],
+    ],
+)}
+<p>Für die Kosten heißt das: Wer nur mit einem Nachbarn teilen will, braucht mit dem
+{a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag')} keinen Verein und keine Vereinsgründung, verzichtet aber mindestens bis Ende 2026 auf den Netzentgelt-Rabatt und
+kann nicht mit der Abgabenbefreiung rechnen. In der Übergangsphase funktioniert er zudem nur mit Zählpunkten
+beim selben Netzbetreiber. Wirtschaftlich bleibt die EEG im Nahbereich das stärkste Modell, die Gebühren von 2 bis
+8 Euro im Monat sind dort meist schnell verdient. Die Modelle im Detail erklärt der
+{a('/energiegemeinschaft/#elwg', 'Leitartikel zur Energiegemeinschaft im Abschnitt ElWG')}.</p>
+<p><small>*Abschlag auf den Arbeitspreis von Netznutzungs- und Netzverlustentgelt. Die Werte für die EEG stammen
+aus der geltenden Verordnung; welche Abschläge ab 2027 gelten, legt die E-Control per Verordnung fest (laut
+E-Control-Entwurf für 2027 49 % lokal, 22 % bzw. 58 % regional, Entwurf). Quelle: Koordinationsstelle für
+Energiegemeinschaften, Stand November 2026; Abgaben laut Parlament und BMF.</small></p>
+"""),
+        ("Abrechnung in der Energiegemeinschaft: So funktioniert sie technisch", "abrechnung", f"""
 <p>Die Abrechnung einer Energiegemeinschaft läuft in drei Schritten, von denen Sie nur den letzten sehen.
 Der Strom fließt physisch wie bisher durchs Netz. Neu ist nur die Zuordnung per Smart Meter und die
 Abrechnung zum EG-Preis.</p>
@@ -129,9 +163,10 @@ Abrechnung zum EG-Preis.</p>
    "Gutschriften und Rechnungen. Rest wie gewohnt über Netzbetreiber und Lieferant.")}
 """),
         ("Die drei Rechnungen nach dem Beitritt", "drei-rechnungen", f"""
-<p><b>Netzbetreiber:</b> Die Netzrechnung weist den EG-Bezug gesondert mit reduziertem Netznutzungs- und
-Netzverlustentgelt aus, bei Erneuerbaren-Energie-Gemeinschaften zusätzlich ohne Elektrizitätsabgabe und
-Förderbeitrag. Die Grundpauschale bleibt unverändert. Welche Positionen genau sinken, steht im Artikel
+<p><b>Netzbetreiber:</b> Die Netzrechnung weist den EG-Bezug gesondert aus, in einer lokalen oder regionalen
+Erneuerbare-Energie-Gemeinschaft mit reduziertem Netznutzungs- und Netzverlustentgelt und zusätzlich ohne
+Elektrizitätsabgabe und Förderbeitrag. Für Bürgerenergiegemeinschaften und Peer-to-Peer-Verträge im Nahbereich ist
+der reduzierte Netztarif nach heutigem Stand erst ab 1. Jänner 2027 vorgesehen. Die Grundpauschale bleibt unverändert. Welche Positionen genau sinken, steht im Artikel
 {a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.</p>
 <p><b>Lieferant:</b> Ihr Stromlieferant verrechnet nur noch den Reststrom, der nicht aus der Gemeinschaft kam.
 Die Energiemenge auf dieser Rechnung sinkt entsprechend. Wer einen Tarif mit Mindestabnahme oder
@@ -145,7 +180,7 @@ Umsatzsteuer ab, größere Gemeinschaften mit.</p>
        "kurze Kündigungsfrist.",
        primary=("kontakt", "Kostenlose Erstberatung"), secondary=("eg_rechner", "Ersparnis berechnen"))}
 """),
-        ("Was bei der Preisfestlegung zu beachten ist", "preise", f"""
+        ("Strompreis in der Energiegemeinschaft: Was bei der Preisfestlegung zu beachten ist", "preise", f"""
 <p>Die Gemeinschaft legt Einspeise- und Bezugspreis selbst fest. Drei Regeln haben sich bewährt. Erstens:
 Der Einspeisepreis sollte über dem OeMAG-Marktpreis im Jahresmittel liegen (2026 schwankte er zwischen 6,146 Cent
 im Juli und 14,874 Cent im Oktober), sonst fehlt der Anreiz für Erzeuger. Zweitens: Der Bezugspreis sollte unter dem Arbeitspreis der gängigen Lieferanten
@@ -160,9 +195,12 @@ Gemeinschaftskosten.</p>
     ],
     hl_cols=(2,),
 )}
-<p>Wie sich das gegen den OeMAG-Tarif rechnet, zeigt der Artikel
+<p>Welche Bezugs- und Einspeisepreise konkrete Gemeinschaften verlangen, zeigt der
+{a('/energiegemeinschaft-vergleich/', 'Energiegemeinschaft-Vergleich mit Tarifen und Gebühren')}. Wie sich das
+gegen den OeMAG-Tarif rechnet, zeigt der Artikel
 {a('/oemag-einspeisetarif/', 'OeMAG-Einspeisetarif 2026')}. Wer die Anlage über EBZ plant, bekommt die
-Preise der Gemeinschaft im Erstgespräch genannt, nicht erst im Vertrag.</p>
+Preise der Gemeinschaft im Erstgespräch genannt, nicht erst im Vertrag. Wie Aufnahme und Abrechnung bei uns
+ablaufen, beschreibt die Seite {a('eg_privat', 'Energiegemeinschaft mit EBZ für Privathaushalte')}.</p>
 <p><small>*Beispielwerte aus dem Markt. Jede Gemeinschaft legt ihre Preise selbst fest, die Konditionen von
 EBZ erfahren Sie im Erstgespräch.</small></p>
 """),
@@ -224,7 +262,7 @@ Beitritt kennen.</p>
          "Ja, drei: vom Netzbetreiber (mit reduziertem EG-Anteil), vom Lieferanten (Reststrom) und von der "
          "Gemeinschaft (EG-Strom). Plattformen wie energyfamily fassen die Gemeinschaftsrechnung in einer App "
          "zusammen."),
-        ("Welche Preise sind in einer Energiegemeinschaft üblich?",
+        ("Wie hoch ist der Strompreis in einer Energiegemeinschaft?",
          "Typisch sind 8 bis 12 Cent Einspeisung und 12 bis 16 Cent Bezug je Kilowattstunde. Der Einspeisepreis "
          "liegt damit innerhalb der Spanne des OeMAG-Marktpreises, der 2026 zwischen 6,146 Cent (Juli) und 14,874 Cent "
          "(Oktober) schwankte, je nach Monat also darüber oder darunter, ist aber fix vereinbart; der Bezugspreis liegt unter dem "
@@ -233,6 +271,11 @@ Beitritt kennen.</p>
          "Das hängt von der Rechtsform der Gemeinschaft ab. Vereine unter der Kleinunternehmergrenze rechnen ohne "
          "Umsatzsteuer ab, größere Gemeinschaften weisen sie aus. Für Privatpersonen als Erzeuger gilt bis "
          "12.500 kWh und 35 kWp die Einkommensteuerbefreiung. Keine Steuerberatung."),
+        ("Was kostet ein Peer-to-Peer-Vertrag nach dem ElWG?",
+         "Für den Peer-to-Peer-Vertrag brauchen Sie keine Rechtsform, also keinen Verein und keine Vereinsgründung; "
+         "die Vertragspartner regeln Preis oder Schenkung selbst. Nötig sind Smart Meter und die Anmeldung beim "
+         "Netzbetreiber. Den Netzentgelt-Rabatt gibt es dafür nach heutigem Stand erst ab 1. Jänner 2027 im "
+         "Nahbereich, eine Abgabenbefreiung ist nicht geregelt."),
         ("Lohnt sich die Gemeinschaft trotz Gebühr?",
          "Bei 25 bis 100 Euro Kosten und typisch 100 bis 300 Euro Vorteil im Jahr ja. Kritisch wird es erst, "
          "wenn die Gebühr über 30 Prozent des erwarteten Vorteils liegt, etwa bei sehr geringer Zuordnungsquote. "
@@ -248,7 +291,16 @@ Beitritt kennen.</p>
         ("Koordinationsstelle: Ratgeber Rechtsformen (PDF)",
          "https://energiegemeinschaften.gv.at/wp-content/uploads/sites/19/2023/01/Ratgeber-Rechtsformen-Erneuerbare-Energie-Gemeinschaften.pdf"),
         ("E-Control: Energiegemeinschaften", "https://www.e-control.at/energiegemeinschaften"),
+        ("Koordinationsstelle: FAQs zum ElWG", "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
+        ("Koordinationsstelle: Peer-to-Peer-Vertrag", "https://energiegemeinschaften.gv.at/peer-to-peer/"),
+        ("Koordinationsstelle: Bürgerenergiegemeinschaft", "https://energiegemeinschaften.gv.at/buergerenergiegemeinschaft/"),
+        ("Koordinationsstelle: Gemeinschaftliche Erzeugungsanlagen",
+         "https://energiegemeinschaften.gv.at/gemeinschaftliche-erzeugungsanlagen/"),
         ("energyfamily", "https://www.energyfamily.at/"),
+        ("Parlament: Nationalrat beschließt Senkung der Elektrizitätsabgabe",
+         "https://www.parlament.gv.at/aktuelles/news/Nationalrat-beschliesst-Senkung-der-Elektrizitaetsabgabe"),
+        ("BMF: Aussetzung von Ökostrompauschale und Förderbeitrag 2027",
+         "https://www.bmf.gv.at/presse/pressemeldungen/2026/november-2026/oekostrompauschale.html"),
     ],
     "related": [
         ("/energiegemeinschaft-netzkosten/", "Netzkosten: Was in der Energiegemeinschaft günstiger wird"),

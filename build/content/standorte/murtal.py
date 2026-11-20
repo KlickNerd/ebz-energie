@@ -244,8 +244,9 @@ ORT = {
         ("Unabhängige Beratung gibt es vor Ort: Judenburg nennt die Energieagentur Obersteiermark in Zeltweg als "
          "regionale Beratungs- und Einreichstelle für Förderungen. Sie betreut auch die Klima- und "
          "Energie-Modellregion Murtal, die den Eigenverbrauch aus PV-Anlagen und den Fernwärmeausbau als eigene "
-         "Maßnahmen führt. Wer Strom mit Nachbarn teilen will, findet die Grundlagen im Ratgeber "
-         + a("/energiegemeinschaft-steiermark/", "Energiegemeinschaft in der Steiermark") + "."),
+         "Maßnahmen führt. Wer Strom mit Nachbarn teilen will, findet die Grundlagen und die Gemeinschaft im "
+         "Aichfeld im Ratgeber "
+         + a("/energiegemeinschaft-steiermark/#bezirke", "Energiegemeinschaft in der Steiermark") + "."),
     ],
 
     "referenzen": {

@@ -104,7 +104,8 @@ def build():
                 ("Eine Photovoltaikanlage (kurz PV-Anlage) wandelt Sonnenlicht in Strom um. Sie besteht aus "
                  "Solarmodulen, einem Wechselrichter, dem Montagesystem und einem Zählpunkt beim Netzbetreiber. Die "
                  "Module erzeugen Gleichstrom, der Wechselrichter macht daraus Wechselstrom für Haushalt oder "
-                 "Betrieb. Überschuss wird gespeichert oder eingespeist."),
+                 "Betrieb. Überschuss wird gespeichert, eingespeist oder in einer "
+                 + a("eg_privat", "Energiegemeinschaft mit Nachbarn") + " geteilt."),
                 ("Typische Anlage von EBZ Energie: Glas-Glas-Module (auf Wunsch bifazial, sie nutzen auch Licht "
                  "von der Rückseite), ein Hybridwechselrichter, der den Batteriespeicher gleich mitsteuert, und "
                  "Komponenten von Herstellern wie Huawei, Fronius oder BYD, je nach Projekt. Ein Monitoring zeigt "
@@ -165,7 +166,9 @@ def build():
             eyebrow="Warum sich der Umstieg jetzt lohnt",
             h2="Weniger zukaufen, mehr Unabhängigkeit",
             intro=("Netzstrom kostet rund 30 bis 35 ct je kWh, eingespeister Solarstrom bringt im OeMAG-Marktpreismodell "
-                   "14,874 ct (Oktober 2026, im Juli waren es 6,146 ct). Was Sie selbst erzeugen und verbrauchen, müssen Sie nicht teuer aus "
+                   "14,874 ct (Oktober 2026, im Juli waren es 6,146 ct). Seit Oktober 2026 können Sie Überschuss auch per "
+                   + a("/peer-to-peer-strom/", "Peer-to-Peer-Vertrag direkt an einen anderen Haushalt verkaufen")
+                   + ", in der Übergangsphase nur im selben Netzgebiet. Was Sie selbst erzeugen und verbrauchen, müssen Sie nicht teuer aus "
                    "dem Netz kaufen.*"),
             bars=[
                 ("Stromkosten ohne eigene Anlage", 100, "bad", "voller Netzbezug"),

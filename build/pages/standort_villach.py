@@ -234,7 +234,11 @@ def build():
                 ("Deshalb planen wir Speicher, Notstrom oder Ersatzstrom und Wallbox als Teile eines Systems mit. "
                  "Die Wallbox lädt Ihr E-Auto bevorzugt mit Überschuss vom Dach, das Energiemanagement steuert "
                  "alles automatisch. Mit Notstromfunktion bleibt Ihr Zuhause in Villach auch bei einem "
-                 "Stromausfall versorgt."),
+                 "Stromausfall versorgt. Was dann noch übrig bleibt, können Sie in einer Energiegemeinschaft "
+                 "weitergeben: wie das in Villach funktioniert, steht im Ratgeber "
+                 + a("/energiegemeinschaft-villach-klagenfurt/", "Energiegemeinschaft Villach und Klagenfurt")
+                 + ", welche Gemeinschaften es in den Kärntner Regionen gibt, im "
+                 + a("/energiegemeinschaft-kaernten/#regionen", "Überblick Energiegemeinschaft Kärnten") + "."),
             ],
             img=IMG["speicher"],
             alt="Batteriespeicher einer Photovoltaikanlage im Technikraum",

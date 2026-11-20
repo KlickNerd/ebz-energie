@@ -30,27 +30,28 @@ ARTICLE = {
         "EBZ übernimmt die Suche in <b>1 Werktag</b>",
     ],
     "date_published": "2026-08-15",
-    "date_modified": "2026-09-24",
+    "date_modified": "2026-11-20",
     "hero_img": "gen_detail",
     "hero_alt": "Monteur prüft Photovoltaikmodule auf einem Dach, im Hintergrund weitere Häuser der Siedlung",
 
     "tldr": [
-        "Eine Energiegemeinschaft muss mit Ihrem Zählpunkt im selben Nahbereich liegen: lokal (gleicher Trafo, "
-        "minus 57 Prozent Netzentgelt) oder regional (gleiches Umspannwerk, minus 28 Prozent). Die Entfernung in "
-        "Kilometern ist zweitrangig.",
+        "Für den Netzentgelt-Rabatt muss eine Erneuerbare-Energie-Gemeinschaft (EEG) mit Ihrem Zählpunkt im selben "
+        "Nahbereich liegen: lokal (gleicher Trafo, minus 57 Prozent Netzentgelt) oder regional (gleiches "
+        "Umspannwerk, minus 28 Prozent). Die Entfernung in Kilometern ist zweitrangig.",
         "Österreich zählt über 11.000 Energiegemeinschaften, davon mehr als 5.500 Erneuerbare-Energie-Gemeinschaften. "
         "In fast jedem Umspannwerksbereich Kärntens und der Steiermark gibt es mindestens eine.",
         "Drei Wege führen zur passenden Gemeinschaft: Nahbereichsabfrage beim Netzbetreiber, Plattformen wie "
         "energyfamily (rund 330 Gemeinschaften, rund 15.000 Nutzer), Gemeinde und regionale Energieberatung.",
-        "Gibt es keine im Nahbereich: regional ausweichen, selbst gründen oder österreichweit als "
-        "Bürgerenergiegemeinschaft teilen (dann ohne Netzentgelt-Abschlag).",
+        "Gibt es keine im Nahbereich: regional ausweichen, selbst gründen, mit dem Nachbarn einen "
+        "Peer-to-Peer-Vertrag schließen oder österreichweit als Bürgerenergiegemeinschaft teilen (ohne "
+        "Netzentgelt-Abschlag, über mehrere Netzbetreiber laut Koordinationsstelle voraussichtlich ab April 2027).",
         "In Kärnten und der Steiermark übernimmt EBZ Energie die Suche: Wir prüfen Ihren Zählpunkt innerhalb eines "
         "Werktags und nennen Ihnen die Gemeinschaften, die infrage kommen.",
     ],
     "kpis": [
         ("11.000+", "Energiegemeinschaften in Österreich"),
         ("5.500+", "davon Erneuerbare-Energie-Gemeinschaften"),
-        ("57 % / 28 %", "Netzentgelt-Abschlag lokal / regional"),
+        ("57 % / 28 %", "Netzentgelt-Abschlag lokal / regional in der EEG"),
         ("1 Werktag", "Nahbereichsabfrage bei EBZ"),
     ],
 
@@ -66,12 +67,16 @@ liegen, eine im Nachbarort innerhalb. Die Zuordnung kennt nur der Netzbetreiber.
     [
         ["Lokal", "selber Trafo (Niederspannung)", "minus 57 %", "Ortschaft, Siedlung, Gewerbegebiet"],
         ["Regional", "selbes Umspannwerk (Mittelspannung)", "minus 28 %", "Gemeinde, Tal, Bezirksteil"],
-        ["Österreichweit (BEG)", "keine Netzbindung", "kein Abschlag", "Verwandte oder Freunde in anderen Bundesländern"],
+        ["Österreichweit (BEG)", "mehrere Netzgebiete möglich", "kein Abschlag",
+         "Verwandte in anderen Bundesländern, netzübergreifend voraussichtlich ab April 2027"],
     ],
     hl_cols=(2,),
 )}
-<p><small>*Abschlag auf den Arbeitspreis des Netznutzungs- und Netzverlustentgelts, Stand 2026 (E-Control).
-Details im Artikel {a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.</small></p>
+<p><small>*Abschlag auf den Arbeitspreis des Netznutzungs- und Netzverlustentgelts für Mitglieder lokaler und
+regionaler EEGs, Werte der geltenden Verordnung (Stand November 2026). Lokale und regionale
+Bürgerenergiegemeinschaften und Peer-to-Peer-Verträge sollen nach heutigem Stand ab 1. Jänner 2027 einen
+Abschlag erhalten, dessen Höhe die E-Control festlegt. Details im Artikel
+{a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.</small></p>
 <p>Österreich zählt inzwischen mehr als 11.000 Energiegemeinschaften, davon über 5.500
 Erneuerbare-Energie-Gemeinschaften. Statistisch liegt damit in fast jedem Umspannwerksbereich Kärntens und der
 Steiermark mindestens eine aktive Gemeinschaft. Die Frage ist nur, wie Sie sie finden.</p>
@@ -92,7 +97,8 @@ Zählpunkts prüfen, ob eine davon im Nahbereich liegt. energyfamily betreut run
 15.000 registrierten Nutzern und ist der Abrechnungspartner von EBZ. Weitere Anlaufstellen sind die Angebote der
 Landesenergieversorger (Kelag, Energie Steiermark) und regionale Genossenschaften. Der Vorteil der Plattformsuche:
 Sie bekommen nicht nur die Gemeinschaft, sondern auch die Abrechnung. Der Nachteil: Jede Plattform zeigt nur ihre
-eigenen Gemeinschaften.</p>
+eigenen Gemeinschaften. Bezugspreise, Gebühren und Bindungen mehrerer Anbieter nebeneinander zeigt der
+{a('/energiegemeinschaft-vergleich/', 'Energiegemeinschaft-Vergleich')}.</p>
 {A.table(
     ["Suchweg", "Vorteil", "Grenze"],
     [
@@ -111,7 +117,8 @@ bei Google auftaucht, aber die Gemeinde kennt sie. Fragen Sie am Gemeindeamt nac
 oder kontaktieren Sie die Koordinationsstelle für Energiegemeinschaften (energiegemeinschaften.gv.at), die regionale
 Ansprechpartner vermittelt. In der Steiermark sind zusätzlich die Energieagentur und die Klima- und
 Energiemodellregionen gute Anlaufstellen. Regionale Details finden Sie in den Artikeln
-{a('/energiegemeinschaft-kaernten/', 'Energiegemeinschaft Kärnten')} und
+{a('/energiegemeinschaft-kaernten/', 'Energiegemeinschaft Kärnten')},
+{a('/energiegemeinschaft-villach-klagenfurt/', 'Energiegemeinschaft in Villach und Klagenfurt')} und
 {a('/energiegemeinschaft-steiermark/', 'Energiegemeinschaft Steiermark')}.</p>
 {A.cta("Wir finden Ihre Energiegemeinschaft in Kärnten und der Steiermark",
        "Schicken Sie uns Ihre Zählpunktnummer. Wir prüfen den Nahbereich und sagen Ihnen, welche Gemeinschaft passt "
@@ -134,20 +141,29 @@ Energiemodellregionen gute Anlaufstellen. Regionale Details finden Sie in den Ar
 """),
         ("Wenn es keine passende Gemeinschaft gibt", "keine-gemeinschaft", f"""
 <p>In ländlichen Lagen, an kleinen Trafos oder in neuen Siedlungen kann es sein, dass noch keine Gemeinschaft im
-Nahbereich aktiv ist. Dann gibt es drei Optionen. Die regionale Ebene erweitert den Suchradius auf das Umspannwerk,
+Nahbereich aktiv ist. Dann gibt es vier Optionen. Die regionale Ebene erweitert den Suchradius auf das Umspannwerk,
 mit kleinerem Netzentgelt-Abschlag (28 statt 57 Prozent), aber deutlich mehr potenziellen Mitgliedern. Oder Sie
 gründen selbst, zusammen mit Nachbarn, dem Betrieb nebenan oder der Gemeinde. Der Aufwand ist überschaubar, wenn
 eine Plattform die Abrechnung übernimmt, die Schritte stehen im Artikel
-{a('/energiegemeinschaft-gruenden/', 'Energiegemeinschaft gründen')}.</p>
-<p>Die dritte Option ist die Bürgerenergiegemeinschaft: Sie funktioniert österreichweit, also auch mit der Tante in
-Wien oder dem Bruder in Linz, allerdings ohne den Netzentgelt-Abschlag, der an den Nahbereich gebunden ist. EBZ
-bündelt Interessenten aus demselben Nahbereich, startet neue Gemeinschaften, sobald genug Erzeuger und Abnehmer
-zusammenkommen, und bietet das österreichweite Teilen über energyfamily an.</p>
+{a('/energiegemeinschaft-gruenden/', 'Energiegemeinschaft gründen')}, Beispiele mit Nachbarn und Familie im Ratgeber
+{a('/energiegemeinschaft-privat/', 'Energiegemeinschaft privat')}.</p>
+<p>Seit 1. Oktober 2026 gibt es mit dem Elektrizitätswirtschaftsgesetz (ElWG) eine dritte Option: den
+{a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag')}. Er verbindet mindestens zwei Zählpunkte direkt, etwa Ihren und den des Nachbarn, ohne
+Verein oder Genossenschaft. In der Übergangsphase geht das nur mit Zählpunkten beim selben Netzbetreiber, und den
+Netzentgelt-Rabatt bekommt der Vertrag nach heutigem Stand erst ab 1. Jänner 2027 im Nahbereich. Die Modelle des
+ElWG im Überblick erklärt der {a('/energiegemeinschaft/#elwg', 'Leitartikel zur Energiegemeinschaft')}.</p>
+<p>Die vierte Option ist die {a('/buergerenergiegemeinschaft/', 'Bürgerenergiegemeinschaft')}: Sie darf sich über ganz Österreich erstrecken, also auch
+auf die Tante in Wien oder den Bruder in Linz, allerdings ohne den Netzentgelt-Abschlag, der an den Nahbereich
+gebunden ist. In der Übergangsphase seit Oktober 2026 lassen sich neue Zuordnungen laut Koordinationsstelle
+vorübergehend nur mit Zählpunkten beim selben Netzbetreiber umsetzen, netzübergreifend (etwa Kärnten und Wien)
+voraussichtlich ab April 2027. EBZ bündelt Interessenten aus demselben Nahbereich, startet neue Gemeinschaften,
+sobald genug Erzeuger und Abnehmer zusammenkommen, und bietet das österreichweite Teilen über energyfamily an.</p>
 """),
         ("Fazit: Energiegemeinschaft finden", "fazit", f"""
 <p>Die Suche beginnt nicht bei Google, sondern bei Ihrer Zählpunktnummer. Wer den Nahbereich kennt, findet über
 Plattform, Gemeinde oder Fachbetrieb schnell die passende Gemeinschaft. Und wo keine ist, lässt sich eine gründen
-oder österreichweit teilen, in Kärnten und der Steiermark mit EBZ als Partner. Wie der
+oder österreichweit teilen (über mehrere Netzbetreiber voraussichtlich ab April 2027), in Kärnten und der
+Steiermark mit EBZ als Partner. Wie der
 {a('/energiegemeinschaft-beitreten/', 'Beitritt')} danach abläuft, steht im nächsten Artikel.</p>
 {A.cta("Zählpunkt schicken, Gemeinschaft finden",
        "Die Nahbereichsabfrage dauert bei uns einen Werktag. Danach wissen Sie, wo Sie mitmachen können.",
@@ -165,7 +181,7 @@ oder österreichweit teilen, in Kärnten und der Steiermark mit EBZ als Partner.
         "grid": [
             ("Nahbereich in 1 Werktag", "Wir fragen Trafo und Umspannwerk zu Ihrem Zählpunkt ab."),
             ("Passende Gemeinschaft", "Bestehende EG im Nahbereich oder Neugründung mit Nachbarn und Gemeinde."),
-            ("Österreichweit teilen", "Bürgerenergiegemeinschaft für Abnehmer außerhalb des Nahbereichs."),
+            ("Österreichweit teilen", "Bürgerenergiegemeinschaft außerhalb des Nahbereichs, netzübergreifend voraussichtlich ab April 2027."),
             ("Abrechnung inklusive", "Zählpunktfreigabe, Aufnahme und monatliche Abrechnung über energyfamily."),
         ],
     },
@@ -183,16 +199,24 @@ oder österreichweit teilen, in Kärnten und der Steiermark mit EBZ als Partner.
          "Eine 33-stellige Kennung, die mit AT beginnt und jeden Stromanschluss eindeutig identifiziert. Sie steht "
          "auf der Netzrechnung, auf der Jahresabrechnung und im Kundenportal des Netzbetreibers."),
         ("Kann ich an einer Energiegemeinschaft im Nachbarort teilnehmen?",
-         "Ja, wenn der Nachbarort am selben Umspannwerk hängt (Regionalbereich). Dann gilt der Netzentgelt-Abschlag "
-         "von 28 Prozent. Für den Abschlag von 57 Prozent müssen Sie am selben Trafo hängen, was über Ortsgrenzen "
+         "Ja, wenn der Nachbarort am selben Umspannwerk hängt (Regionalbereich). Dann gilt in einer EEG der "
+         "Netzentgelt-Abschlag von 28 Prozent. Für den Abschlag von 57 Prozent müssen Sie am selben Trafo hängen, was über Ortsgrenzen "
          "hinweg selten ist."),
         ("Kann ich Strom mit Verwandten in einem anderen Bundesland teilen?",
-         "Ja, über eine Bürgerenergiegemeinschaft, die österreichweit funktioniert. Den Netzentgelt-Abschlag gibt es "
-         "dann nicht, weil er an den Nahbereich gebunden ist. EBZ bietet diese Variante über energyfamily an."),
+         "Ja, über eine Bürgerenergiegemeinschaft, die sich über ganz Österreich erstrecken darf. Den "
+         "Netzentgelt-Abschlag gibt es dann nicht, weil er an den Nahbereich gebunden ist. Liegen die Zählpunkte bei "
+         "verschiedenen Netzbetreibern, etwa in Kärnten und Wien, ist das laut Koordinationsstelle voraussichtlich "
+         "erst ab April 2027 möglich. EBZ bietet diese Variante über energyfamily an."),
         ("Was mache ich, wenn es in meinem Nahbereich keine Gemeinschaft gibt?",
-         "Entweder auf den Regionalbereich ausweichen, selbst gründen oder österreichweit als "
-         "Bürgerenergiegemeinschaft teilen. EBZ sammelt Interessenten je Nahbereich und startet neue Gemeinschaften, "
+         "Entweder auf den Regionalbereich ausweichen, selbst gründen, mit einem Nachbarn beim selben Netzbetreiber "
+         "einen Peer-to-Peer-Vertrag schließen oder österreichweit als Bürgerenergiegemeinschaft teilen. EBZ sammelt Interessenten je Nahbereich und startet neue Gemeinschaften, "
          "sobald Erzeuger und Abnehmer zusammenkommen."),
+        ("Was ändert das ElWG bei der Suche nach einer Energiegemeinschaft?",
+         "Seit 1. Oktober 2026 gibt es fünf Modelle: GEA, EEG, BEG, Peer-to-Peer-Vertrag und Eigenversorgungsanlage, "
+         "ein Zählpunkt darf an bis zu fünf teilnehmen. Bis Ende 2026 bekommen nur Mitglieder lokaler und regionaler "
+         "EEGs den Netzentgelt-Rabatt, deshalb bleibt der Nahbereich das wichtigste Suchkriterium. Neue Zuordnungen "
+         "gehen in der Übergangsphase nur mit Zählpunkten beim selben Netzbetreiber, netzübergreifend voraussichtlich "
+         "ab April 2027."),
         ("Wie viele Energiegemeinschaften gibt es in Österreich?",
          "Mehr als 11.000, davon über 5.500 Erneuerbare-Energie-Gemeinschaften (Stand August 2026). Statistisch "
          "liegt damit in fast jedem Umspannwerksbereich Kärntens und der Steiermark mindestens eine aktive "
@@ -208,6 +232,9 @@ oder österreichweit teilen, in Kärnten und der Steiermark mit EBZ als Partner.
         ("EVN / Netz NÖ: Schritte und Quick-Check (Beispiel)",
          "https://www.evn.at/home/energiegemeinschaften/schritte-zur-energiegemeinschaft"),
         ("energyfamily: Plattform", "https://www.energyfamily.at/"),
+        ("Koordinationsstelle: FAQs zum ElWG", "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
+        ("Koordinationsstelle: Peer-to-Peer-Vertrag", "https://energiegemeinschaften.gv.at/peer-to-peer/"),
+        ("Koordinationsstelle: Bürgerenergiegemeinschaft", "https://energiegemeinschaften.gv.at/buergerenergiegemeinschaft/"),
     ],
     "related": [
         ("/energiegemeinschaft-beitreten/", "Energiegemeinschaft beitreten"),

@@ -184,7 +184,9 @@ ORT = {
              "Netzbetreiber nennt das eine unverbindliche Momentaufnahme und prüft jede Anfrage einzeln; ein Verbot "
              "neuer Dachanlagen ist es nicht. Es bedeutet aber, dass der Netzbetreiber vorgeben kann, wie viel Leistung "
              "Sie einspeisen dürfen. Wir planen deshalb mit " + a("batteriespeicher", "Speicher") + ", Warmwasser, "
-             "Wärmepumpe und " + a("ems", "Energiemanagement") + " so, dass möglichst viel Strom im Haus bleibt."),
+             "Wärmepumpe und " + a("ems", "Energiemanagement") + " so, dass möglichst viel Strom im Haus bleibt. "
+             "Welche Energiegemeinschaften an den Umspannwerken Feldbach und Halbenrain arbeiten, steht im "
+             "Ratgeber " + a("/energiegemeinschaft-steiermark/#bezirke", "Energiegemeinschaft in der Steiermark") + "."),
         ],
         "bullets": [
             "PV auf Dach oder Fassade: schriftliche Mitteilung an die Gemeinde vor Baubeginn",

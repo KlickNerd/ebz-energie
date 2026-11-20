@@ -30,24 +30,24 @@ ARTICLE = {
         "Beratung <b>vor Ort</b>",
     ],
     "date_published": "2026-08-10",
-    "date_modified": "2026-11-19",
+    "date_modified": "2026-11-20",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Wohnhausdach in Villach mit Blick über die Stadt",
 
     "tldr": [
         "In Villach und Klagenfurt ist die Dichte an PV-Anlagen und Abnehmern hoch. Das ist ideal für lokale "
-        "Energiegemeinschaften am selben Trafo mit dem vollen Netzentgelt-Abschlag von 57 Prozent.",
+        "Erneuerbare-Energie-Gemeinschaften (EEG) am selben Trafo mit dem vollen Netzentgelt-Abschlag von 57 Prozent.",
         "Sie brauchen keine eigene Anlage: Mieter, Wohnungseigentümer und Betriebe können als Abnehmer beitreten und "
         "günstigen Solarstrom aus der Nachbarschaft beziehen, typisch 120 bis 150 Euro Ersparnis im Jahr*.",
         "Erzeuger mit 10 kWp bekommen einen fixen EG-Preis*: Bei niedrigem OeMAG-Tarif wie im Juli 2026 (6,146 ct) "
         "bringt das im Beispiel bis zu 250 Euro Mehrerlös* im Jahr, bei hohem Tarif wie im Oktober 2026 (14,874 ct) "
         "zahlt die OeMAG mehr.",
-        "EBZ Energie nimmt Sie direkt vor Ort auf, übernimmt die Zählpunktfreigabe bei der Kärnten Netz und rechnet "
-        "über energyfamily ab. Start ab dem Folgemonat nach der Anmeldung.",
+        "EBZ Energie nimmt Sie direkt vor Ort auf, übernimmt die Zählpunktfreigabe beim Netzbetreiber (Kärnten Netz, "
+        "im Stadtgebiet Klagenfurt die Energie Klagenfurt GmbH) und rechnet über energyfamily ab. Start ab dem Folgemonat nach der Anmeldung.",
     ],
     "kpis": [
         ("~4 bis 5 ct", "Netzentgelt-Ersparnis je EG-kWh, lokal*"),
-        ("1,5 ct", "Elektrizitätsabgabe entfällt je kWh"),
+        ("1,5 ct", "Elektrizitätsabgabe ab 2027 je kWh, entfällt in der EEG (2026: 0,1 ct)"),
         ("10 ct*", "fixer EG-Preis Erzeuger, OeMAG 2026: 6,146 bis 14,874 ct"),
         ("0 €", "Wechselkosten, Lieferant bleibt"),
     ],
@@ -57,7 +57,8 @@ ARTICLE = {
 <p>Beide Städte haben, was eine Energiegemeinschaft braucht: viele Dächer mit PV, viele Haushalte ohne PV und eine
 Netzstruktur, in der ganze Siedlungen an einem Trafo hängen. Im Villacher Stadtgebiet und in den Umlandgemeinden
 Wernberg, Finkenstein oder Velden sind in den letzten Jahren hunderte Anlagen entstanden, viele davon von uns gebaut
-(siehe {a('pv_villach', 'Photovoltaik in Villach')}). Sie alle speisen mittags Überschuss ein, der im selben Moment
+(siehe {a('pv_villach', 'Photovoltaik in Villach')}, {a('pv_klagenfurt', 'Photovoltaik in Klagenfurt')} und
+unsere {a('referenzen', 'Referenzprojekte')}). Sie alle speisen mittags Überschuss ein, der im selben Moment
 von den Nachbarn aus dem Netz bezogen wird. Die Energiegemeinschaft macht aus dieser zufälligen Gleichzeitigkeit ein
 Geschäft zwischen Nachbarn.</p>
 <p>Schon im Juni 2024 hat EBZ-Gründer Mario Zintl in einem Interview mit Villach im Fokus angekündigt, eine
@@ -65,7 +66,7 @@ Energiegemeinschaft mit einem attraktiven Cent-Preis für Einspeiser und Abnehme
 Leistung mit unserem Abrechnungspartner energyfamily verfügbar.</p>
 {A.net([
     ("☀", "PV-Erzeuger", "speist den Überschuss tagsüber ins Ortsnetz ein"),
-    ("◎", "Smart Meter", "misst Viertelstundenwerte, die Kärnten Netz ordnet zu"),
+    ("◎", "Smart Meter", "misst Viertelstundenwerte, der Netzbetreiber ordnet zu"),
     ("⌂", "Abnehmer in der Nähe", "Haushalte, Betriebe, Gemeinde beziehen mit reduziertem Netzentgelt"),
     ("€", "Rest wie gewohnt", "nicht zugeordnete Mengen laufen über OeMAG und Lieferant"),
 ], "Abrechnung über die Plattform",
@@ -73,17 +74,25 @@ Leistung mit unserem Abrechnungspartner energyfamily verfügbar.</p>
    "wie bisher durchs Netz, neu ist nur die Zuordnung per Smart Meter.")}
 """),
         ("Was Sie in Villach und Klagenfurt konkret sparen", "ersparnis", f"""
-<p>Der Hebel liegt in der Netzebene. Wer mit den anderen Teilnehmern am selben Trafo hängt, zahlt für den EG-Strom
-57 Prozent weniger Netznutzungs- und Netzverlustentgelt und keine Elektrizitätsabgabe. In dicht bebauten Stadtteilen
+<p>Der Hebel liegt in der Netzebene. Wer in einer Erneuerbare-Energie-Gemeinschaft mit den anderen Teilnehmern am
+selben Trafo hängt, zahlt für den EG-Strom 57 Prozent weniger Netznutzungs- und Netzverlustentgelt und keine
+Elektrizitätsabgabe (2026 für Haushalte befristet 0,1 Cent, ab 2027 wieder 1,5 Cent je kWh; den
+Erneuerbaren-Förderbeitrag setzt die Bundesregierung 2027 für alle aus). In dicht bebauten Stadtteilen
 wie Villach-Lind, Völkendorf, Landskron oder in Klagenfurt-Waidmannsdorf, Viktring und St. Peter ist diese
 Konstellation häufig. In den Umlandgemeinden geht es meist auf die regionale Ebene (selbes Umspannwerk, minus
 28 Prozent), was immer noch deutlich besser ist als der Normaltarif. Die Details je Position stehen im Artikel
 {a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.</p>
+<p>Seit 1. Oktober 2026 gilt das Elektrizitätswirtschaftsgesetz (ElWG) mit fünf Modellen, darunter neben der EEG
+auch die {a('/buergerenergiegemeinschaft/', 'Bürgerenergiegemeinschaft (BEG)')} und der
+{a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag')}. Bis Ende 2026 bekommen aber nur
+Mitglieder lokaler und regionaler EEGs den reduzierten Netztarif; BEG und Peer-to-Peer im Nahbereich sollen ihn
+nach heutigem Stand ab 1. Jänner 2027 erhalten, die Höhe legt dann die E-Control fest. Wie die Modelle sich
+unterscheiden, erklärt der {a('/energiegemeinschaft/#elwg', 'Leitartikel zur Energiegemeinschaft')}.</p>
 {A.table(
     ["Rolle", "Annahmen*", "Vorteil im Jahr*"],
     [
         ["Abnehmer ohne PV", "3.500 kWh Verbrauch, 40 % aus der Gemeinschaft, 14 ct EG-Preis statt 17 ct Lieferant, "
-         "plus Netz- und Abgabenersparnis", "rund 120 bis 150 €"],
+         "plus Netz- und Abgabenersparnis (Elektrizitätsabgabe Stand 2027)", "rund 130 € vor Mitgliedsbeitrag"],
         ["Erzeuger mit 10 kWp", "Überschuss zum fixen EG-Preis statt zum schwankenden OeMAG-Tarif (Juli 2026: 6,146 ct, Oktober 2026: 14,874 ct)",
          "bis 250 € Mehrerlös beim Juli-Wert, beim Oktober-Wert weniger als bei der OeMAG"],
     ],
@@ -99,7 +108,8 @@ Gemeinschaft legt ihre Preise selbst fest, die Konditionen nennen wir im Erstges
 Villach oder Klagenfurt zur Miete wohnen, eine Eigentumswohnung ohne Dachzugang haben oder einen Betrieb mit
 Tagesverbrauch führen, sind Sie für jede Gemeinschaft ein wertvolles Mitglied. Sie bekommen günstigeren Strom aus
 der Nachbarschaft, der Erzeuger bekommt einen planbaren Preis, und beide sparen Netzentgelt. Den Ablauf für
-Abnehmer beschreibt unser Artikel {a('/energiegemeinschaft-beitreten/', 'Energiegemeinschaft beitreten')}.</p>
+Abnehmer beschreibt unser Artikel {a('/energiegemeinschaft-beitreten/', 'Energiegemeinschaft beitreten')}, was
+EBZ dabei übernimmt, die Seite {a('eg_privat', 'Energiegemeinschaft mit EBZ für Privathaushalte')}.</p>
 {A.box("Sie brauchen nur einen eigenen Zählpunkt und einen Smart Meter mit Viertelstundenwerten. Ihr "
        "Lieferantenvertrag, egal ob Kelag oder ein anderer Anbieter, bleibt unverändert.", label="Voraussetzung:")}
 """),
@@ -112,7 +122,8 @@ Abnehmer beschreibt unser Artikel {a('/energiegemeinschaft-beitreten/', 'Energie
      "Wir besprechen Ihre Rolle (Erzeuger, Abnehmer oder beides), die Preise der Gemeinschaft und die "
      "Kündigungsbedingungen."),
     ("Zählpunktfreigabe",
-     "Im Kundenportal der Kärnten Netz geben Sie die Viertelstundenwerte für die Gemeinschaft frei. Wir zeigen Ihnen "
+     "Im Kundenportal Ihres Netzbetreibers (Kärnten Netz, im Stadtgebiet Klagenfurt die Energie Klagenfurt "
+     "GmbH) geben Sie die Viertelstundenwerte für die Gemeinschaft frei. Wir zeigen Ihnen "
      "die Klicks."),
     ("Start im Folgemonat",
      "Nach der Anmeldung im EDA-Portal wird Ihr Strom ab dem nächsten Monatsersten zugeordnet. Die Abrechnung sehen "
@@ -127,7 +138,7 @@ Abnehmer beschreibt unser Artikel {a('/energiegemeinschaft-beitreten/', 'Energie
 <p>Gewerbebetriebe mit großen Dächern in den Gewerbegebieten von Villach-Süd, St. Magdalen, Klagenfurt-Ost oder
 entlang der Südautobahn sind die idealen Erzeuger für eine Energiegemeinschaft: hoher Ertrag, tagsüber selbst
 Verbrauch, am Wochenende Überschuss für die Nachbarschaft. Hausverwaltungen können Mehrparteienhäuser als
-gemeinschaftliche Erzeugungsanlage organisieren und zusätzlich an einer EEG teilnehmen. Gemeinden im Bezirk
+{a('/gemeinschaftliche-erzeugungsanlage/', 'gemeinschaftliche Erzeugungsanlage')} organisieren und zusätzlich an einer EEG teilnehmen. Gemeinden im Bezirk
 Villach-Land und Klagenfurt-Land nutzen Gemeinschaften, um Schulen, Kläranlagen und Bauhöfe mit Bürgerstrom zu
 versorgen. Für diese Fälle haben wir eine eigene Seite:
 {a('eg_gewerbe', 'Energiegemeinschaft für Gewerbe und Gemeinden')}.</p>
@@ -168,7 +179,7 @@ der Artikel {a('/energiegemeinschaft-kaernten/', 'Energiegemeinschaft Kärnten')
         ("Kann ich als Mieter in Klagenfurt mitmachen?",
          "Ja. Sie brauchen nur einen eigenen Zählpunkt mit Smart Meter. Als Abnehmer beziehen Sie den Anteil Ihres "
          "Stroms, der zeitgleich in der Gemeinschaft erzeugt wird, zum EG-Preis und sparen Netzentgelt und Abgaben, "
-         "im Beispiel rund 120 bis 150 Euro im Jahr."),
+         "im Beispiel rund 130 Euro im Jahr vor Mitgliedsbeitrag (Abgaben Stand 2027)."),
         ("Welche Stadtteile von Villach liegen im selben Nahbereich?",
          "Das lässt sich nicht pauschal sagen, weil der Nahbereich am Trafo und am Umspannwerk hängt, nicht an der "
          "Stadtteilgrenze. Die Kärnten Netz ordnet jeden Zählpunkt bei der Anmeldung zu. Wir übernehmen diese Abfrage "
@@ -184,9 +195,16 @@ der Artikel {a('/energiegemeinschaft-kaernten/', 'Energiegemeinschaft Kärnten')
          "zugeordnet. Vom Erstgespräch bis zur ersten zugeordneten Kilowattstunde vergehen in der Regel vier bis acht "
          "Wochen."),
         ("Kann ich Strom mit Verwandten außerhalb von Villach teilen?",
-         "Ja, über eine Bürgerenergiegemeinschaft funktioniert das österreichweit, zum Beispiel mit der Familie in "
-         "Wien. Der Netzentgelt-Abschlag von 57 oder 28 Prozent gilt dann nicht, weil er an den Nahbereich gebunden "
-         "ist. EBZ bietet beide Varianten an."),
+         "Ja, eine Bürgerenergiegemeinschaft darf sich über ganz Österreich erstrecken, zum Beispiel bis zur Familie "
+         "in Wien. Der Netzentgelt-Abschlag von 57 oder 28 Prozent gilt dann nicht, weil er an den Nahbereich "
+         "gebunden ist. In der Übergangsphase seit Oktober 2026 lassen sich neue Zuordnungen laut Koordinationsstelle "
+         "nur mit Zählpunkten beim selben Netzbetreiber umsetzen, netzübergreifend (etwa Kärnten und Wien) "
+         "voraussichtlich ab April 2027. EBZ bietet beide Varianten an."),
+        ("Was ändert das ElWG für Energiegemeinschaften in Villach und Klagenfurt?",
+         "Seit 1. Oktober 2026 gibt es fünf Modelle: GEA, EEG, BEG, Peer-to-Peer-Vertrag und Eigenversorgungsanlage, "
+         "ein Zählpunkt darf an bis zu fünf teilnehmen. Den Netzentgelt-Rabatt bekommen bis Ende 2026 nur Mitglieder "
+         "lokaler und regionaler EEGs, BEG und Peer-to-Peer im Nahbereich nach heutigem Stand ab 1. Jänner 2027. "
+         "Für Villach und Klagenfurt bleibt die lokale EEG am selben Trafo deshalb die wirtschaftlichste Lösung."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant und errichtet Photovoltaik-, "
@@ -198,6 +216,12 @@ der Artikel {a('/energiegemeinschaft-kaernten/', 'Energiegemeinschaft Kärnten')
          "https://www.villachimfokus.at/photovoltaik-immer-mehr-werden-zum-selbstversorger/"),
         ("E-Control: Energiegemeinschaften", "https://www.e-control.at/energiegemeinschaften"),
         ("energiegemeinschaften.gv.at: FAQs", "https://energiegemeinschaften.gv.at/faqs/"),
+        ("Koordinationsstelle: FAQs zum ElWG", "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
+        ("Koordinationsstelle: Bürgerenergiegemeinschaft", "https://energiegemeinschaften.gv.at/buergerenergiegemeinschaft/"),
+        ("Parlament: Nationalrat beschließt Senkung der Elektrizitätsabgabe",
+         "https://www.parlament.gv.at/aktuelles/news/Nationalrat-beschliesst-Senkung-der-Elektrizitaetsabgabe"),
+        ("BMF: Aussetzung von Ökostrompauschale und Förderbeitrag 2027",
+         "https://www.bmf.gv.at/presse/pressemeldungen/2026/november-2026/oekostrompauschale.html"),
     ],
     "related": [
         ("/energiegemeinschaft-kaernten/", "Energiegemeinschaft Kärnten: Überblick"),

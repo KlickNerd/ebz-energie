@@ -152,7 +152,8 @@ Einspeisestunden folgt: Im Juli 2026 lag er bei 6,146 Cent je Kilowattstunde, we
 wegen des vielen Solarstroms niedrig waren, im September 2026 bei 10,168 Cent und im Oktober 2026 bei
 14,874 Cent (Stand November 2026). Genau diese günstigen Mittagsstunden sind beim dynamischen
 Bezugstarif Ihr Vorteil. Die Konsequenz für PV-Haushalte: möglichst viel selbst verbrauchen, den Rest
-über den Speicher in den Abend retten und Zukauf in die günstigen Stunden legen. Mehr dazu im
+über den Speicher in den Abend retten, Überschuss in einer {a('eg', 'Energiegemeinschaft')} oder per
+{a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag')} an andere Haushalte weitergeben und Zukauf in die günstigen Stunden legen. Mehr dazu im
 {a('/marktpreis-2026/', 'Marktpreis-Überblick 2026')}.</p>
 """),
         ("Fazit", "fazit", f"""

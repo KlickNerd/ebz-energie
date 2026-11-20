@@ -77,7 +77,9 @@ ORT = {
              "nach eigenen Angaben rund 220.000 Euro eingespart. Zwei eigene Energiegemeinschaften verteilen den "
              "Strom auf die städtischen Betriebe. Dasselbe Prinzip funktioniert im Kleinen: Strom vom eigenen Dach "
              "selbst nutzen, speichern und den Rest in einer "
-             + a("eg_privat", "Energiegemeinschaft") + " teilen."),
+             + a("eg_privat", "Energiegemeinschaft") + " teilen. Welche Gemeinschaften es in Oberkärnten "
+             "und im Mölltal gibt, steht im Ratgeber "
+             + a("/energiegemeinschaft-kaernten/#regionen", "Energiegemeinschaft in Kärnten") + "."),
             ("Bei der Wärme ist Spittal ein Sonderfall, den man kennen muss. Im Stadtgebiet betreibt die Kelag "
              "Energie &amp; Wärme ein Fernwärmenetz, das laut Kelag zu rund 98 Prozent mit Biomasse gespeist wird. "
              "Wo eine Leitung vor dem Haus liegt, ist der Anschluss oft die einfachste Lösung. Wo keine liegt, also "

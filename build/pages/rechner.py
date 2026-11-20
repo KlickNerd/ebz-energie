@@ -10,6 +10,13 @@ OeMAG-Marktpreis: Rechenwert bleibt September 2026 = 10,168 ct (build/seo/_fakte
 Bewusst NICHT auf 14,874 umgestellt (19.11.2026): Die Rechner setzen einen Monatswert als Jahreswert an; mit dem
 Oktober-Hoechstwert wuerde der EG-Rechner bei den Default-Werten einen negativen Gesamtvorteil zeigen und der
 PV-Rechner die Einspeisung um rund 46 % zu hoch bewerten. Entscheidung offen (siehe Bericht).
+ElWG (Faktenliste, Abschnitt "VERBINDLICH AB 20.11.2026"): Der EG-Rechner bildet die EEG ab (Rabatt 2026 nur EEG,
+BEG/P2P/EVA voraussichtlich ab 1.1.2027, netzuebergreifend voraussichtlich ab April 2027); nur Texte angepasst,
+Rechenlogik unveraendert.
+Abgaben (Faktenliste, Abschnitt "Elektrizitaetsabgabe und Erneuerbaren-Foerderbeitrag", 20.11.2026): Der EG-Rechner rechnet
+mit Stand 2027: Elektrizitaetsabgabe wieder Normalsatz 1,5 ct (2026 befristet 0,1 ct Haushalte, 0,82 ct Unternehmen),
+Erneuerbaren-Foerderbeitrag 2027 laut Bundesregierung ausgesetzt (FOERDERBEITRAG = 0). Beispielzahlen neu gerechnet.
+Netzrabatte 57/28/64 % = geltende SNE-VO bis Ende 2026; E-Control-Entwurf 2027: 49 % lokal, 22 % bzw. 58 % regional.
 SEO/GEO-Briefings: build/seo/solarrechner.{json,md} (Primaer "pv rechner
 oesterreich") und build/seo/eg_rechner.{json,md} (Primaer "energiegemeinschaft rechner").
 Alter Slug /ebz-solarrechner/ -> 301 auf /solarrechner/ (build/redirects.txt).
@@ -26,8 +33,8 @@ OEMAG_OKT_STR = "14,874"   # aktueller Monatswert (Stand November 2026), nur Tex
 ERTRAG_KWP = 1000       # kWh je kWp und Jahr, Rechenwert Kaernten/Steiermark
 M2_KWP = 5.5            # m2 Dachflaeche je kWp
 NETZ_NE7 = 8.7          # ct/kWh Netznutzung 8 + Netzverlust 0,7, Netzebene 7 (Richtwerte Ratgeber Netzkosten)
-E_ABGABE = 1.5          # ct/kWh Elektrizitaetsabgabe, entfaellt in der EEG
-FOERDERBEITRAG = 1.0    # ct/kWh Erneuerbaren-Foerderbeitrag (Richtwert), entfaellt in der EEG
+E_ABGABE = 1.5          # ct/kWh Elektrizitaetsabgabe, entfaellt in der EEG; Normalsatz ab 2027 (2026 befristet 0,1 ct Haushalte, 0,82 ct Unternehmen)
+FOERDERBEITRAG = 0.0    # ct/kWh Erneuerbaren-Foerderbeitrag: 2027 laut Bundesregierung ausgesetzt (BMF 15.11.2026), daher 0
 EG_EINSP = 10.0         # ct/kWh Beispiel EG-Einspeisepreis*
 EG_BEZUG = 14.0         # ct/kWh Beispiel EG-Bezugspreis*
 LIEFERANT = 17.0        # ct/kWh Beispiel Energiepreis Lieferant*
@@ -475,15 +482,15 @@ EG_RESULT = f"""
   </div>
   <p class="calc__note" id="e-hinweis"></p>
   <a class="btn btn--primary btn--lg" id="e-cta" href="/kontakt/">Energiegemeinschaft in meiner Nähe anfragen</a>
-  <a class="btn btn--light" href="/leistungen/energiegemeinschaft/">So funktioniert der Beitritt</a>
+  <a class="btn btn--light" href="/leistungen/energiegemeinschaft/">Energiegemeinschaft mit PV-Anlage</a>
   <p class="calc__note">*Richtwerte mit Beispielkonditionen. Die echten Preise legt die jeweilige Gemeinschaft fest, den Nahbereich prüft der Netzbetreiber.</p>
 """
 
 EG_ASSUMPTIONS = [
     f"Einspeisung in der Gemeinschaft {EG_EINSP:g} ct je kWh (Beispiel, änderbar) gegenüber dem OeMAG-Marktpreis, im Rechner änderbar (Vorgabe {OEMAG_STR} ct, September 2026; Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct). Liegt der EG-Preis unter dem Marktpreis, wird die Differenz negativ ausgewiesen.",
     f"Bezug in der Gemeinschaft {EG_BEZUG:g} ct je kWh (Beispiel, änderbar) statt rund {LIEFERANT:g} ct Energiepreis beim Lieferanten.",
-    f"Netznutzungs- und Netzverlustentgelt zusammen rund {_ct(NETZ_NE7)} ct je kWh (Netzebene 7): minus 57 % lokal, minus 28 % regional, minus 64 % bei ausschließlicher Teilnahme auf Netzebene 4/5, kein Abschlag österreichweit (SNE-VO, E-Control).",
-    f"Elektrizitätsabgabe {_ct(E_ABGABE)} ct und Erneuerbaren-Förderbeitrag rund {_ct(FOERDERBEITRAG)} ct je kWh entfallen für Strom aus Erneuerbare-Energie-Gemeinschaften (nicht in der Bürgerenergiegemeinschaft).",
+    f"Netznutzungs- und Netzverlustentgelt zusammen rund {_ct(NETZ_NE7)} ct je kWh (Netzebene 7): minus 57 % lokal, minus 28 % regional, minus 64 % bei ausschließlicher Teilnahme auf Netzebene 4/5, kein Abschlag österreichweit. Das sind die Werte der geltenden SNE-VO (E-Control) bis Ende 2026 für Mitglieder einer Erneuerbare-Energie-Gemeinschaft; laut E-Control-Entwurf fallen sie 2027 niedriger aus (49 % lokal, 22 % regional, Entwurf). Für Bürgerenergiegemeinschaft, Peer-to-Peer und Eigenversorgung im Nahbereich ist ein Rabatt voraussichtlich ab 1. Jänner 2027 vorgesehen, die Höhe legt die E-Control fest.",
+    f"Elektrizitätsabgabe {_ct(E_ABGABE)} ct je kWh (Normalsatz ab 2027) entfällt für Strom aus Erneuerbare-Energie-Gemeinschaften (nicht in der Bürgerenergiegemeinschaft, für Peer-to-Peer nicht geregelt). 2026 gilt für Haushalte befristet 0,1 ct, für Unternehmen 0,82 ct, der Vorteil ist 2026 also kleiner. Den Erneuerbaren-Förderbeitrag setzt die Bundesregierung 2027 für alle Stromkunden aus, er ist deshalb kein EEG-Vorteil mehr und nicht eingerechnet.",
     "Zuordnungsquote: Nur zeitgleich erzeugter und verbrauchter Strom wird zugeordnet; typisch 25 bis 60 %, mit Speicher oder Energiemanagement mehr.",
     "Mitgliedsbeitrag 4 € pro Monat (Beispiel der Abrechnungsplattform), einmalige Kosten nicht eingerechnet. Umsatzsteuer 20 % nicht berücksichtigt, Haushalte sparen brutto entsprechend mehr.",
 ]
@@ -516,7 +523,7 @@ EG_JS = r"""
     $("e-gesamt").textContent=sgn(gesamt);
     var hint="";
     if(zugU>0 && einsp<OEMAG){ hint="Hinweis: Ihr EG-Einspeisepreis liegt unter dem eingegebenen OeMAG-Marktpreis von "+OEMAG.toLocaleString("de-DE")+" ct. Der Vorteil kommt dann aus Bezug und Netzentgelt; der Marktpreis schwankt monatlich (2026 zwischen 6,146 und 14,874 ct), der EG-Preis ist fix vereinbart."; }
-    if(bereich==="at"){ hint+=(hint?" ":"")+"Österreichweit teilen ist möglich, der Netzentgelt-Rabatt und die Abgabenbefreiung gelten aber nur im Nahbereich."; }
+    if(bereich==="at"){ hint+=(hint?" ":"")+"Österreichweit teilen sieht das ElWG über eine Bürgerenergiegemeinschaft vor, über mehrere Netzbetreiber hinweg laut Koordinationsstelle voraussichtlich ab April 2027. Netzentgelt-Rabatt und Abgabenbefreiung gibt es dafür nicht, sie gelten nur im Nahbereich in der Erneuerbare-Energie-Gemeinschaft."; }
     $("e-hinweis").textContent=hint;
     var cta=$("e-cta"); var base=cta.getAttribute("href").split("?")[0];
     cta.setAttribute("href", base+"?anliegen="+encodeURIComponent("EG-Rechner: "+ueb+" kWh Überschuss, "+bez+" kWh Bezug, "+bereich+", Richtwert "+Math.round(gesamt)+" €/Jahr"));
@@ -528,9 +535,10 @@ EG_JS = r"""
 
 EG_FAQ = [
     ("Wie viel bringt eine Energiegemeinschaft pro Jahr?",
-     "Als Abnehmer sparen Sie auf jede zugeordnete Kilowattstunde rund 10 ct* (günstigerer Energiepreis, 57 Prozent weniger Netzentgelt "
-     "lokal, keine Elektrizitätsabgabe und kein Förderbeitrag). Ein 4-Personen-Haushalt mit 4.725 kWh und 50 Prozent Zuordnung kommt so auf "
-     "rund 200 € im Jahr nach Beitrag*, ein 1-Personen-Haushalt auf rund 55 €*. Laut Erfahrungsberichten liegen Haushalte bei 100 bis 300 € im Jahr."),
+     "Als Abnehmer sparen Sie auf jede zugeordnete Kilowattstunde rund 9,5 ct* (günstigerer Energiepreis, 57 Prozent weniger Netzentgelt "
+     "lokal, keine Elektrizitätsabgabe von 1,5 ct, Stand 2027). Ein 4-Personen-Haushalt mit 4.725 kWh und 50 Prozent Zuordnung kommt so auf "
+     "rund 175 € im Jahr nach Beitrag*, ein 1-Personen-Haushalt auf rund 43 €*. 2026 ist der Abgabenvorteil für Haushalte kleiner, weil die "
+     "Elektrizitätsabgabe befristet nur 0,1 ct beträgt. Laut Erfahrungsberichten liegen Haushalte bei 100 bis 300 € im Jahr."),
     ("Wie hoch ist der Strompreis in einer Energiegemeinschaft?",
      f"Den Energiepreis legt jede Gemeinschaft selbst fest, der EG-Preis 8 bis 12 ct ist für Erzeuger üblich, Abnehmer zahlen typisch 12 bis "
      f"14 ct* statt rund {LIEFERANT:g} ct beim Lieferanten. Dazu kommen Netzentgelt (im Nahbereich reduziert), Abgaben (in der EEG befreit) "
@@ -551,9 +559,19 @@ EG_FAQ = [
      "Erzeugung und Verbrauch zählt. Bei einem Haushalt mit PV und Abendverbrauch sind das oft nur 25 Prozent, mit Wärmepumpe, E-Auto, Homeoffice "
      "oder Energiemanagement 40 bis 60 Prozent. Der Rest läuft wie bisher über Lieferant und OeMAG."),
     ("Kann ich meinen Solarstrom an den Nachbarn verkaufen?",
-     "Ja, über eine Erneuerbare-Energie-Gemeinschaft im Nahbereich oder seit 1. Oktober 2026 per Peer-to-Peer-Vertrag direkt an eine Person, "
-     "auch ohne Verein. Den Netzentgelt-Rabatt gibt es in beiden Fällen nur im Nahbereich, österreichweites Teilen läuft als "
-     "Bürgerenergiegemeinschaft ohne Netzrabatt."),
+     "Ja, über eine Erneuerbare-Energie-Gemeinschaft im Nahbereich oder seit Oktober 2026 per "
+     + a("/peer-to-peer-strom/", "Peer-to-Peer-Vertrag") + " direkt an eine Person, "
+     "auch ohne Verein (in der Übergangsphase nur mit Zählpunkten beim selben Netzbetreiber). Den Netzentgelt-Rabatt bekommen von Oktober "
+     "bis Dezember 2026 nur Mitglieder lokaler und regionaler EEGs; für Peer-to-Peer im Nahbereich ist er voraussichtlich ab 1. Jänner 2027 "
+     "vorgesehen, die Höhe legt die E-Control fest. Österreichweites Teilen läuft als Bürgerenergiegemeinschaft ohne Netzrabatt, über mehrere "
+     "Netzbetreiber hinweg laut Koordinationsstelle voraussichtlich ab April 2027."),
+    ("Was ändert das ElWG für die Rechnung?",
+     "Seit 1. Oktober 2026 kennt das Elektrizitätswirtschaftsgesetz fünf Modelle: Gemeinschaftliche Erzeugungsanlage, "
+     "Erneuerbare-Energie-Gemeinschaft (EEG), Bürgerenergiegemeinschaft, Peer-to-Peer-Vertrag und Eigenversorgungsanlage; ein Zählpunkt "
+     "darf an bis zu fünf davon teilnehmen. Der Rechner bildet die EEG ab, denn nur dort gibt es 2026 den reduzierten Netzarbeitspreis "
+     "(57 Prozent lokal, 28 Prozent regional, 64 Prozent auf Netzebene 4/5) und die Abgabenbefreiung. Die Abschläge ab 2027 legt die "
+     "E-Control per Verordnung neu fest, laut E-Control-Entwurf für 2027 49 Prozent lokal, 22 bzw. 58 Prozent regional (Entwurf); "
+     "der Rechner rechnet bis dahin mit den geltenden Werten."),
     ("Welche Nachteile hat eine Energiegemeinschaft?",
      "Der Vorteil hängt an der Zuordnungsquote, der Rabatt gilt nur im Nahbereich, die Zählpunktanmeldung dauert bis zum Monatsersten, und der "
      "EG-Preis kann in einzelnen Monaten unter dem OeMAG-Marktpreis liegen. Dazu kommen 2 bis 8 € Beitrag im Monat. Alle sieben Punkte bewertet der "
@@ -577,8 +595,8 @@ def _eg_detail_rows():
         ("Arbeitspreis ct/kWh (Energie)", f"{LIEFERANT:g} ct*", f"{EG_BEZUG:g} ct* (EG-Preis)", f"{LIEFERANT - EG_BEZUG:g} ct"),
         ("Netznutzungsentgelt (bis 57 % lokal, 28 % regional, 64 % Netzebene 4/5)", "8 ct", "3,44 ct (lokal, minus 57 %)", "4,56 ct"),
         ("Netzverlustentgelt", "0,7 ct", "0,30 ct (minus 57 %)", "0,40 ct"),
-        ("Elektrizitätsabgabe", f"{_ct(E_ABGABE)} ct", "0 ct (EEG befreit)", f"{_ct(E_ABGABE)} ct"),
-        ("Erneuerbaren-Förderbeitrag", f"rund {FOERDERBEITRAG:g} ct", "0 ct (EEG befreit)", f"rund {FOERDERBEITRAG:g} ct"),
+        ("Elektrizitätsabgabe (Normalsatz ab 2027; 2026 Haushalte befristet 0,1 ct)", f"{_ct(E_ABGABE)} ct", "0 ct (EEG befreit)", f"{_ct(E_ABGABE)} ct"),
+        ("Erneuerbaren-Förderbeitrag", "0 ct (2027 laut Bundesregierung ausgesetzt)", "0 ct", "0 ct"),
         ("Summe je zugeordneter kWh (netto)", f"rund {LIEFERANT + NETZ_NE7 + E_ABGABE + FOERDERBEITRAG:.1f} ct".replace(".", ","),
          f"rund {EG_BEZUG + netz_l:.1f} ct".replace(".", ","), f"<b>rund {LIEFERANT - EG_BEZUG + NETZ_NE7 - netz_l + E_ABGABE + FOERDERBEITRAG:.1f} ct</b>".replace(".", ",")),
         ("Umsatzsteuer 20 %", "auf alles", "auf alles", "Ersparnis brutto plus 20 %"),
@@ -609,14 +627,16 @@ def _eg_page():
                  f"nutzt die Netzentgelte laut SNE-VO der E-Control und den OeMAG-Marktpreis {OEMAG_STR} ct (September 2026, Stand Oktober 2026)."),
                 ("Die häufigste Frage lautet schlicht: Energiegemeinschaft lohnt sich? Die ehrliche Antwort hängt an drei Zahlen: der "
                  "Zuordnungsquote (Gleichzeitigkeit von Erzeugung und Verbrauch), dem Nahbereich (Netzebene und Rabatt) und dem Abstand "
-                 "zwischen EG-Preis und Marktpreis. Beispielwerte sind mit Sternchen markiert, die echten Konditionen legt jede Gemeinschaft fest."),
+                 "zwischen EG-Preis und Marktpreis. Beispielwerte sind mit Sternchen markiert, die echten Konditionen legt jede Gemeinschaft fest. "
+                 "Welche Modelle es seit dem ElWG gibt und wo der Rabatt gilt, erklärt der Leitartikel "
+                 + a("eg", "Energiegemeinschaft") + "."),
             ],
         ),
         _table_section(
             eyebrow="Energiegemeinschaft Netzkosten Ersparnis je Netzebene",
             h2="So rechnet der Energiegemeinschaft-Rechner: Zuordnungsquote, EG-Preis, Netzentgelt",
             intro=("Jede Position im Ergebnis folgt einer offenen Annahme. Quellen: E-Control (SNE-VO, Preisportal), oem-ag.at, Ratgeber "
-                   "Netzkosten und Kosten von EBZ. Stand Oktober 2026."),
+                   "Netzkosten und Kosten von EBZ, Parlament und BMF (Abgaben). Stand November 2026, Abgaben mit Stand 2027."),
             headers=["Größe", "Rechenwert", "Herkunft"],
             rows=[
                 ("Zuordnungsquote", "Vorgabe 50 %, 10 bis 100 % wählbar; zugeordnet = Überschuss bzw. Netzbezug mal Quote",
@@ -625,10 +645,12 @@ def _eg_page():
                  f"OeMAG-Marktpreis September 2026 (Juli: {OEMAG_JULI_STR} ct, Oktober: {OEMAG_OKT_STR} ct), oem-ag.at"),
                 ("Bezugspreis / Reststrom vom Lieferanten", f"{EG_BEZUG:g} ct* EG-Bezug gegenüber {LIEFERANT:g} ct* Energiepreis Lieferant",
                  "marktübliche Spannen, E-Control Preisportal"),
-                ("Netznutzungsentgelt und Netzverlustentgelt", f"{_ct(NETZ_NE7)} ct je kWh (Netzebene 7: 8 + 0,7); minus 57 % lokal, 28 % regional, 64 % Netzebene 4/5, 0 % österreichweit",
-                 "SNE-VO (E-Control), Ratgeber Netzkosten"),
-                ("Elektrizitätsabgabe und Erneuerbaren-Förderbeitrag", f"{_ct(E_ABGABE)} ct + rund {_ct(FOERDERBEITRAG)} ct entfallen in der EEG, nicht in der BEG",
-                 "Elektrizitätsabgabegesetz, EAG"),
+                ("Netznutzungsentgelt und Netzverlustentgelt", f"{_ct(NETZ_NE7)} ct je kWh (Netzebene 7: 8 + 0,7); in der EEG minus 57 % lokal, 28 % regional, 64 % Netzebene 4/5, 0 % österreichweit",
+                 "geltende SNE-VO (E-Control) bis Ende 2026, Ratgeber Netzkosten; laut E-Control-Entwurf 2027 niedriger (49 % lokal, 22 % regional), Höhe legt die E-Control fest"),
+                ("Elektrizitätsabgabe", f"{_ct(E_ABGABE)} ct (Normalsatz ab 2027) entfällt in der EEG, nicht in der BEG; 2026 befristet 0,1 ct Haushalte, 0,82 ct Unternehmen",
+                 "Elektrizitätsabgabegesetz, Nationalratsbeschluss Dezember 2025 (Parlament)"),
+                ("Erneuerbaren-Förderbeitrag", "nicht eingerechnet: 2027 laut Bundesregierung für alle Stromkunden ausgesetzt, daher kein EEG-Vorteil",
+                 "BMF, Pressemeldung November 2026"),
                 ("Mitgliedsbeitrag (€/Jahr)", f"{BEITRAG} €* (4 € je Monat)", "Beispiel der Abrechnungsplattform, marktüblich 2 bis 8 € je Monat"),
                 ("Nicht eingerechnet", "Umsatzsteuer 20 %, Einrichtungskosten, Eigendeckung durch eigenen Speicher, Peer-to-Peer-Verträge",
                  "konservative Rechnung; Vergleich: Benefit-Tool energiegemeinschaften.gv.at"),
@@ -644,7 +666,8 @@ def _eg_page():
                      "Beitrag*", "Vorteil pro Jahr*"],
             rows=_eg_examples(),
             note=(f"*Beispielkonditionen: EG-Bezug {EG_BEZUG:g} ct statt {LIEFERANT:g} ct, Netzentgelt {_ct(NETZ_NE7)} ct minus 57 %, Elektrizitätsabgabe "
-                  f"{_ct(E_ABGABE)} ct und Förderbeitrag rund {_ct(FOERDERBEITRAG)} ct entfallen, Beitrag {BEITRAG} € im Jahr, netto ohne Umsatzsteuer. "
+                  f"{_ct(E_ABGABE)} ct entfällt (Stand 2027; 2026 für Haushalte befristet 0,1 ct, für Betriebe 0,82 ct), Erneuerbaren-Förderbeitrag 2027 laut "
+                  f"Bundesregierung ausgesetzt und daher nicht eingerechnet, Beitrag {BEITRAG} € im Jahr, netto ohne Umsatzsteuer. "
                   "Mit eigener PV-Anlage (etwa 10 kWp, 4.000 kWh Überschuss, 50 % zugeordnet) kommt die Einspeise-Differenz dazu: Bei 10 ct* ist sie gegenüber dem Marktpreis September 2026 leicht negativ (rund minus 3 €), "
                   f"gegenüber dem Oktober-Wert von {OEMAG_OKT_STR} ct deutlich (rund minus 97 €, aufs Jahr hochgerechnet)."),
             anchor="beispiele",
@@ -654,7 +677,7 @@ def _eg_page():
             eyebrow="Energiegemeinschaft Strompreis im Detail",
             h2="Bisher vs. mit Energiegemeinschaft: die Rechnung je Kilowattstunde",
             intro=("Was ein Haushalt je bezogener Kilowattstunde zahlt, bisher beim Lieferanten und mit zugeordnetem EG-Strom in einer lokalen "
-                   "Erneuerbare-Energie-Gemeinschaft. Netzebene 7, Richtwerte 2026, netto."),
+                   "Erneuerbare-Energie-Gemeinschaft. Netzebene 7, Netzentgelt-Rabatt laut SNE-VO bis Ende 2026, Abgaben Stand 2027, netto."),
             headers=["Position", "Bisher (Lieferant)", "Mit Energiegemeinschaft (lokal)", "Ersparnis"],
             rows=_eg_detail_rows(),
             note=("Richtwerte laut Ratgeber " + a("/energiegemeinschaft-netzkosten/", "Netzkosten in der Energiegemeinschaft") + " und "
@@ -666,11 +689,11 @@ def _eg_page():
                 "title": "Energiegemeinschaft Vorteile ohne eigene PV-Anlage: lohnt sich das?",
                 "dark": True,
                 "items": [
-                    "Ja, als Abnehmer: rund 10 ct* Ersparnis je zugeordneter kWh aus Energiepreis, Netzentgelt und Abgaben",
+                    "Ja, als Abnehmer: rund 9,5 ct* Ersparnis je zugeordneter kWh aus Energiepreis, Netzentgelt und Elektrizitätsabgabe (Stand 2027)",
                     "Keine Investition, kein Lieferantenwechsel, Kündigungsfrist ein bis drei Monate",
                     "Je mehr Tagesverbrauch (Homeoffice, Wärmepumpe, E-Auto), desto höher die Zuordnung",
                     "Rabatt nur im Nahbereich: Nahbereichsabfrage beim Netzbetreiber zuerst",
-                    a("eg_privat", "So treten Sie einer Gemeinschaft bei"),
+                    a("eg_privat", "Energiegemeinschaft mit PV-Anlage in Ihrer Nähe"),
                 ],
             },
             right={
@@ -687,7 +710,9 @@ def _eg_page():
         ),
         C.faq_section(EG_FAQ),
         C.linkgrid_section("Weiterlesen", [
-            ("eg_privat", "Energiegemeinschaft beitreten"),
+            ("eg_privat", "Energiegemeinschaft mit PV-Anlage"),
+            ("/energiegemeinschaft-beitreten/", "Energiegemeinschaft beitreten: Ablauf"),
+            ("/energiegemeinschaft-vergleich/", "Energiegemeinschaften im Vergleich"),
             ("eg_gewerbe", "Energiegemeinschaft für Betriebe und Gemeinden"),
             ("/energiegemeinschaft-kosten/", "Kosten und Abrechnung"),
             ("/energiegemeinschaft-netzkosten/", "Netzentgelt-Rabatt nach Netzebene"),
@@ -705,8 +730,12 @@ def _eg_page():
   <section class="section--tight" style="padding-bottom:40px">
     <div class="wrap">
       <p class="form-note">*Beispielkonditionen und Richtwerte, kein Angebot. OeMAG-Marktpreis September 2026: {OEMAG_STR} ct je kWh
-      (Rechenwert, oem-ag.at); Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct (Stand November 2026). Netzentgelt-Abschlag und Abgabenbefreiung nur für die zugeordnete
-      Menge und nur im Nahbereich (lokal 57 %, regional 28 %, Netzebene 4/5 bis 64 %), Richtwerte laut SNE-VO (E-Control) 2026.
+      (Rechenwert, oem-ag.at); Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct (Stand November 2026). Netzentgelt-Abschlag und Abgabenbefreiung derzeit nur für Mitglieder
+      einer Erneuerbare-Energie-Gemeinschaft, nur für die zugeordnete Menge und nur im Nahbereich (lokal 57 %, regional 28 %,
+      Netzebene 4/5 bis 64 %), Werte der geltenden SNE-VO (E-Control); ElWG-Übergangsphase laut Koordinationsstelle
+      energiegemeinschaften.gv.at (FAQ zum ElWG), Stand November 2026. Abgaben mit Stand 2027: Elektrizitätsabgabe 1,5 ct
+      (2026 befristet 0,1 ct für Haushalte, 0,82 ct für Unternehmen), Erneuerbaren-Förderbeitrag 2027 laut Bundesregierung ausgesetzt.
+      Quellen Abgaben: <a href="https://www.parlament.gv.at/aktuelles/news/Nationalrat-beschliesst-Senkung-der-Elektrizitaetsabgabe" rel="noopener" target="_blank">Parlament: Senkung der Elektrizitätsabgabe</a>, <a href="https://www.bmf.gv.at/presse/pressemeldungen/2026/november-2026/oekostrompauschale.html" rel="noopener" target="_blank">BMF: Aussetzung Ökostrompauschale und Förderbeitrag 2027</a>.
       Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>
   </section>""",

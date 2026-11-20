@@ -37,7 +37,7 @@ ARTICLE = {
         "Letzter EAG-Call: <b>bis 22.10.2026</b>, beendet",
     ],
     "date_published": "2025-12-10",
-    "date_modified": "2026-11-19",
+    "date_modified": "2026-11-20",
     "hero_img": "pv_efh",
     "hero_alt": "Photovoltaikanlage von EBZ Energie auf einem Wohnhausdach in Kärnten",
 
@@ -116,8 +116,11 @@ Energie, sondern in der Vermeidung von Zukauf: Ihre PV-Anlage ist keine Einnahme
 Einspeisevergütungen, sondern eine Sparbüchse für Ihre Betriebskosten.</p>
 {A.box("Wer Überschuss lieber an Nachbarn oder Familie verkauft als an die OeMAG, findet in der "
        + a('eg', 'Energiegemeinschaft') + " eine Alternative: Der Einspeisepreis wird fix vereinbart, typisch "
-       "8 bis 12 Cent*, statt monatlich zu schwanken (je nach Monat liegt er damit über oder unter dem OeMAG-Wert); zusätzlich sparen Mitglieder im Nahbereich bis zu 57 Prozent der Netzentgelte "
-       "(siehe " + a('/energiegemeinschaft-netzkosten/', 'Netzkosten in der Energiegemeinschaft') + ").",
+       "8 bis 12 Cent*, statt monatlich zu schwanken (je nach Monat liegt er damit über oder unter dem OeMAG-Wert); zusätzlich zahlen Ihre Abnehmer "
+       "in einer lokalen Erneuerbare-Energie-Gemeinschaft 2026 bis zu 57 Prozent weniger Netzentgelt, ab 2027 legt die E-Control die Werte neu fest "
+       "(siehe " + a('/energiegemeinschaft-netzkosten/', 'Netzkosten in der Energiegemeinschaft') + "). Seit Oktober 2026 geht der Verkauf auch per "
+       + a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag direkt an einen anderen Haushalt') + ", in der Übergangsphase nur im selben Netzgebiet. "
+       "Was das für Ihren Überschuss bringt, zeigt der " + a('eg_rechner', 'Energiegemeinschaft-Rechner') + ".",
        label="Alternative:")}
 <p><small>*Richtwerte für Haushaltskunden inklusive Netzentgelte, Abgaben und Steuern. Der tatsächliche
 Bezugspreis hängt von Lieferant, Tarif und Netzgebiet ab.</small></p>
@@ -268,7 +271,9 @@ Speicher je nach Dach bei rund 15.000 bis 22.000 Euro vor Förderung, die Amorti
          "mit intelligentem Speicher ab 1. November 2026 sollen laut BMWET dort beantragbar sein."),
         ("Gibt es Alternativen zur OeMAG-Einspeisung?",
          "Ja. In einer Energiegemeinschaft verkaufen Sie Überschuss an Nachbarn oder Familie zu einem fix "
-         "vereinbarten Preis, typischerweise 8 bis 12 Cent (Beispielwerte), und sparen im Nahbereich bis zu 57 Prozent der Netzentgelte. Der OeMAG-Vertrag "
+         "vereinbarten Preis, typischerweise 8 bis 12 Cent (Beispielwerte); in einer lokalen Erneuerbare-Energie-Gemeinschaft zahlen die Abnehmer 2026 "
+         "zusätzlich bis zu 57 Prozent weniger Netzentgelt. Seit Oktober 2026 ist auch ein Peer-to-Peer-Vertrag direkt mit einem anderen Haushalt "
+         "möglich, vorerst nur beim selben Netzbetreiber. Der OeMAG-Vertrag "
          "bleibt als Auffangnetz für den Rest bestehen. Auch andere Lieferanten bieten Einspeisetarife an."),
         ("Wie oft ändert sich der Marktpreis?",
          "Der OeMAG-Marktpreis wird seit Jänner 2024 monatlich im Nachhinein festgelegt. Die Ober- und "

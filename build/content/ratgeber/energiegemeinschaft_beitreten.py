@@ -30,7 +30,7 @@ ARTICLE = {
         "Kündbar <b>monatlich bis quartalsweise</b>",
     ],
     "date_published": "2026-08-10",
-    "date_modified": "2026-11-19",
+    "date_modified": "2026-11-20",
     "hero_img": "team_quer",
     "hero_alt": "Team von EBZ Energie berät zum Beitritt in eine Energiegemeinschaft",
 
@@ -39,13 +39,16 @@ ARTICLE = {
         "Betriebe, Vereine, Gemeinden. Eine PV-Anlage ist nicht nötig.",
         "Der Ablauf: passende Gemeinschaft im Nahbereich finden, Mitgliedsvertrag unterschreiben, Zählpunkt im "
         "Netzbetreiber-Portal freigeben, Start im Folgemonat. In Summe vier bis acht Wochen.",
-        "Abnehmer sparen beim EG-Strom Netzentgelt (28 bis 57 Prozent) und Abgaben, Erzeuger bekommen einen fix "
+        "In einer lokalen oder regionalen EEG sparen Abnehmer beim EG-Strom Netzentgelt (28 bis 57 Prozent) und "
+        "Abgaben, Erzeuger bekommen einen fix "
         "vereinbarten EG-Preis statt des monatlich schwankenden OeMAG-Tarifs (Juli 2026: 6,146 Cent, Oktober 2026: "
         "14,874 Cent). Je nach Monat liegt der EG-Preis darüber oder darunter, dafür ist er planbar. Der Lieferantenvertrag bleibt bestehen.",
         "Kosten: meist 2 bis 8 Euro Mitgliedsbeitrag im Monat, keine Einrichtungsgebühr, Kündigungsfrist ein bis "
         "drei Monate.",
         "EBZ Energie nimmt Kunden in Kärnten und der Steiermark auf und erledigt die Schritte beim Netzbetreiber mit. "
-        "Strom teilen über den Nahbereich hinaus geht österreichweit als Bürgerenergiegemeinschaft.",
+        "Eine Bürgerenergiegemeinschaft darf sich über ganz Österreich erstrecken (ohne Netzentgelt-Rabatt); "
+        "mit Zählpunkten bei verschiedenen Netzbetreibern geht das laut Koordinationsstelle voraussichtlich erst "
+        "ab April 2027.",
     ],
     "kpis": [
         ("11.000+", "Energiegemeinschaften in Österreich"),
@@ -89,8 +92,20 @@ Wie eine Gemeinschaft grundsätzlich funktioniert, erklärt der {a('eg', 'Leitar
        "Netzbetreiber Viertelstundenwerte, das sogenannte Opt-in. Wer früher ein Opt-out gewählt hat, muss das im "
        "Kundenportal rückgängig machen.")}
 <p>Passt der Nahbereich nicht, etwa weil Sie Strom mit Verwandten in einem anderen Bundesland teilen wollen, bleibt
-die Bürgerenergiegemeinschaft: Sie funktioniert österreichweit, allerdings ohne den Netzentgelt-Abschlag, der an
-den Nahbereich gebunden ist. EBZ bietet beide Varianten an.</p>
+die {a('/buergerenergiegemeinschaft/', 'Bürgerenergiegemeinschaft')}: Sie darf sich über ganz Österreich erstrecken, allerdings ohne den
+Netzentgelt-Abschlag, der an den Nahbereich gebunden ist. In der Übergangsphase seit Oktober 2026 lassen sich neue
+Zuordnungen laut Koordinationsstelle vorübergehend nur mit Zählpunkten beim selben Netzbetreiber umsetzen,
+netzübergreifend (etwa Kärnten und Wien) voraussichtlich ab April 2027. EBZ bietet beide Varianten an.</p>
+<h3>Was das ElWG am Beitritt ändert</h3>
+<p>Seit 1. Oktober 2026 regelt das Elektrizitätswirtschaftsgesetz (ElWG) fünf Modelle:
+{a('/gemeinschaftliche-erzeugungsanlage/', 'gemeinschaftliche Erzeugungsanlage')}, Erneuerbare-Energie-Gemeinschaft
+(EEG), Bürgerenergiegemeinschaft (BEG), {a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag')}
+und Eigenversorgungsanlage. Mit einem Zählpunkt können Sie an bis zu fünf davon gleichzeitig teilnehmen. Der
+Beitritt zu einer EEG läuft wie unten beschrieben. Wichtig für die Rechnung: Von Oktober bis Dezember 2026 bekommen
+nur Mitglieder lokaler und regionaler EEGs den reduzierten Netzarbeitspreis. Lokale und regionale BEG und
+Peer-to-Peer-Verträge sollen ihn nach heutigem Stand ab 1. Jänner 2027 erhalten, die Höhe legt dann die E-Control
+fest. Die Unterschiede der Modelle erklärt der
+{a('/energiegemeinschaft/#elwg', 'Leitartikel im Abschnitt zum ElWG')}.</p>
 """),
         ("Der Ablauf in vier Schritten", "ablauf", f"""
 {A.steps([
@@ -101,9 +116,10 @@ den Nahbereich gebunden ist. EBZ bietet beide Varianten an.</p>
     ("Mitgliedsvertrag und Preise",
      "Sie erhalten die Teilnahmebedingungen: Einspeisepreis (falls Sie Erzeuger sind), Bezugspreis, Mitgliedsbeitrag, "
      "Kündigungsfrist, Aufteilungsschlüssel (statisch oder dynamisch). Lesen Sie besonders den Aufteilungsschlüssel, "
-     "er bestimmt, wie viel EG-Strom Ihnen zugeordnet wird."),
+     "er bestimmt, wie viel EG-Strom Ihnen zugeordnet wird. Preise und Gebühren mehrerer Gemeinschaften stellt der "
+     + a('/energiegemeinschaft-vergleich/', 'Energiegemeinschaft-Vergleich') + " gegenüber."),
     ("Zählpunkt freigeben",
-     "Im Kundenportal Ihres Netzbetreibers (Kärnten Netz, Energienetze Steiermark, Stromnetz Graz) bestätigen Sie "
+     "Im Kundenportal Ihres Netzbetreibers (Kärnten Netz, Energie Klagenfurt, Energienetze Steiermark, Stromnetz Graz) bestätigen Sie "
      "die Teilnahmeanfrage der Gemeinschaft und die Datenfreigabe. Das ist ein gesetzlich vorgeschriebener Schritt, "
      "die Gemeinschaft kann ihn nicht für Sie erledigen."),
     ("Start und Abrechnung",
@@ -127,12 +143,15 @@ den Nahbereich gebunden ist. EBZ bietet beide Varianten an.</p>
         ("Was der Beitritt für Abnehmer bringt", "abnehmer", f"""
 <p>Als reiner Stromkunde ohne PV-Anlage profitieren Sie dreifach. Erstens zahlen Sie für den EG-Anteil den
 Gemeinschaftspreis, der meist unter dem Arbeitspreis Ihres Lieferanten liegt (im Beispiel unseres Rechners
-14 Cent*). Zweitens sparen Sie auf diesen Anteil 28 bis 57 Prozent des Netznutzungs- und Netzverlustentgelts.
-Drittens entfallen bei einer Erneuerbaren-Energie-Gemeinschaft die Elektrizitätsabgabe von 1,5 Cent und der
-Erneuerbaren-Förderbeitrag. Wie viel EG-Strom Ihnen zugeordnet wird, hängt von Ihrem Verbrauchsprofil ab: Wer
+14 Cent*). Zweitens sparen Sie in einer lokalen oder regionalen EEG auf diesen Anteil 28 bis 57 Prozent des
+Netznutzungs- und Netzverlustentgelts.
+Drittens entfällt bei einer Erneuerbaren-Energie-Gemeinschaft die Elektrizitätsabgabe: 2026 für Haushalte befristet
+nur 0,1 Cent, ab 2027 wieder 1,5 Cent je kWh. Den Erneuerbaren-Förderbeitrag setzt die Bundesregierung 2027 für alle
+Stromkunden aus, er ist dann kein Vorteil der Gemeinschaft mehr. Wie viel EG-Strom Ihnen zugeordnet wird, hängt von Ihrem Verbrauchsprofil ab: Wer
 tagsüber verbraucht (Homeoffice, Wärmepumpe, E-Auto am Wochenende) bekommt mehr als ein Haushalt, der nur abends
 zuhause ist. Die Rechnung je Position steht im Artikel
-{a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.</p>
+{a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}, Beispiele für Haushalte mit
+Nachbarn oder Familie im Ratgeber {a('/energiegemeinschaft-privat/', 'Energiegemeinschaft privat')}.</p>
 """),
         ("Was der Beitritt für Erzeuger bringt", "erzeuger", f"""
 <p>Als PV-Besitzer verkaufen Sie den Überschuss zum EG-Einspeisepreis, typisch zwischen 8 und 12 Cent*, der in der
@@ -161,8 +180,10 @@ der Artikel {a('/energiegemeinschaft-kosten/', 'Was eine Energiegemeinschaft kos
 <p>Der Beitritt ist unkompliziert, in wenigen Wochen erledigt und ohne Wechsel des Lieferanten möglich. Entscheidend
 sind drei Dinge: der richtige Nahbereich, aktivierte Viertelstundenwerte und ein fairer Aufteilungsschlüssel. Wer das
 im Blick hat, spart ab dem ersten Monat. Regionale Details finden Sie in den Artikeln
-{a('/energiegemeinschaft-kaernten/', 'Energiegemeinschaft Kärnten')} und
-{a('/energiegemeinschaft-steiermark/', 'Energiegemeinschaft Steiermark')}.</p>
+{a('/energiegemeinschaft-kaernten/', 'Energiegemeinschaft Kärnten')},
+{a('/energiegemeinschaft-villach-klagenfurt/', 'Energiegemeinschaft Villach und Klagenfurt')} und
+{a('/energiegemeinschaft-steiermark/', 'Energiegemeinschaft Steiermark')}. Was Ihr Haushalt im Jahr spart,
+zeigt der {a('eg_rechner', 'Energiegemeinschaft-Rechner')}.</p>
 {A.cta("In vier Schritten zur Energiegemeinschaft",
        "Erstgespräch, Gemeinschaft wählen, Zählpunkt freigeben, starten. EBZ begleitet Sie in Kärnten und der "
        "Steiermark durch jeden Schritt.",
@@ -205,14 +226,24 @@ im Blick hat, spart ab dem ersten Monat. Regionale Details finden Sie in den Art
          "Typisch sind zwei bis acht Euro Mitgliedsbeitrag im Monat oder ein kleiner Aufschlag je Kilowattstunde. "
          "Einrichtungsgebühren sind unüblich. Die Kündigungsfrist liegt meist bei einem bis drei Monaten."),
         ("Kann ich in mehreren Energiegemeinschaften gleichzeitig sein?",
-         "Ja, die Mehrfachteilnahme erlaubt bis zu fünf Gemeinschaften je Zählpunkt, mit Teilnahmefaktoren, die "
-         "festlegen, welcher Anteil in welche Gemeinschaft geht. Für Privathaushalte reicht üblicherweise eine."),
+         "Ja. Seit dem ElWG kann jeder Zählpunkt an bis zu fünf Bürgerenergie-Modellen gleichzeitig teilnehmen, "
+         "etwa an einer EEG und einem Peer-to-Peer-Vertrag. Teilnahmefaktoren legen fest, welcher Anteil wohin "
+         "geht, zusammen höchstens 100 Prozent, änderbar einmal täglich. Für Privathaushalte reicht üblicherweise "
+         "eine Gemeinschaft."),
         ("Was passiert, wenn ich umziehe?",
          "Der Zählpunkt gehört zur Adresse. Beim Umzug wird der alte Zählpunkt abgemeldet. Am neuen Wohnort prüfen "
          "Sie, ob die Gemeinschaft dort noch im Nahbereich liegt, sonst treten Sie einer anderen bei."),
         ("Kann ich auch beitreten, wenn die Gemeinschaft nicht in meinem Nahbereich liegt?",
-         "Ja, als Bürgerenergiegemeinschaft funktioniert das Stromteilen österreichweit, zum Beispiel mit Verwandten "
-         "in einem anderen Bundesland. Der Netzentgelt-Abschlag von 28 bis 57 Prozent gilt dann aber nicht."),
+         "Ja, eine Bürgerenergiegemeinschaft darf sich über ganz Österreich erstrecken, zum Beispiel mit Verwandten "
+         "in einem anderen Bundesland. Der Netzentgelt-Abschlag von 28 bis 57 Prozent gilt dann aber nicht. In der "
+         "Übergangsphase gehen neue Zuordnungen laut Koordinationsstelle nur mit Zählpunkten beim selben "
+         "Netzbetreiber, netzübergreifend voraussichtlich ab April 2027."),
+        ("Was ändert das ElWG für den Beitritt?",
+         "Seit 1. Oktober 2026 gibt es fünf Modelle: GEA, EEG, BEG, Peer-to-Peer-Vertrag und Eigenversorgungsanlage. "
+         "Der Beitritt zur EEG läuft wie bisher. Bis Ende 2026 bekommen nur Mitglieder lokaler und regionaler EEGs "
+         "den Netzentgelt-Rabatt, BEG und Peer-to-Peer im Nahbereich nach heutigem Stand ab 1. Jänner 2027. Die "
+         "Befreiung von Elektrizitätsabgabe und Förderbeitrag gilt derzeit nur in der EEG; 2027 zählt davon nur die "
+         "Elektrizitätsabgabe (1,5 Cent), weil die Bundesregierung den Förderbeitrag für alle aussetzt."),
     ],
 
     "author_note": ("Mario Zintl führt die EBZ Energie GmbH in Villach. Sein Team plant und errichtet Photovoltaik-, "
@@ -224,6 +255,13 @@ im Blick hat, spart ab dem ersten Monat. Regionale Details finden Sie in den Art
         ("E-Control: Energiegemeinschaften", "https://www.e-control.at/energiegemeinschaften"),
         ("energyfamily: Schritte zur Teilnahme", "https://www.energyfamily.at/schritte-zur-teilnahme"),
         ("Koordinationsstelle: FAQs", "https://energiegemeinschaften.gv.at/faqs/"),
+        ("Koordinationsstelle: FAQs zum ElWG", "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
+        ("Koordinationsstelle: Mehrfachteilnahme", "https://energiegemeinschaften.gv.at/mehrfachteilnahme/"),
+        ("Koordinationsstelle: Bürgerenergiegemeinschaft", "https://energiegemeinschaften.gv.at/buergerenergiegemeinschaft/"),
+        ("Parlament: Nationalrat beschließt Senkung der Elektrizitätsabgabe",
+         "https://www.parlament.gv.at/aktuelles/news/Nationalrat-beschliesst-Senkung-der-Elektrizitaetsabgabe"),
+        ("BMF: Aussetzung von Ökostrompauschale und Förderbeitrag 2027",
+         "https://www.bmf.gv.at/presse/pressemeldungen/2026/november-2026/oekostrompauschale.html"),
     ],
     "related": [
         ("/energiegemeinschaft-finden/", "Energiegemeinschaft finden"),

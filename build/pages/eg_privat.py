@@ -4,7 +4,9 @@ Quellen: Live-LPs /leistungen/energiegemeinschaft/ und /energiegemeinschaften/ (
 Inhalte), der Pillar-Ratgeber /energiegemeinschaft/ (ElWG-Aenderungen ab 1.10.2026), die Ratgeber
 /energiegemeinschaft-beitreten/ (Mehrfachteilnahme, Teilnahmefaktor) und /energiegemeinschaft-finden/
 (Nahbereichsabfrage), build/seo/_fakten_2026-10.md (OeMAG Oktober 2026: 14,874 ct, Verlauf Juli 6,146 ct) und das
-SEO/GEO-Briefing build/seo/eg_privat.{json,md} (Primaer "Energiegemeinschaft beitreten").
+SEO/GEO-Briefing build/seo/eg_privat.{json,md}. Seit 20.11.2026 kommerziell ausgerichtet ("Energiegemeinschaft mit
+PV-Anlage", PV-Anlage plus Anbindung); "Energiegemeinschaft beitreten" gehoert dem Ratgeber /energiegemeinschaft-beitreten/
+(Kannibalisierung), der hier im Fliesstext verlinkt ist.
 
 Rechenbeispiel mit Beispielwerten 10 ct / 14 ct / 4 EUR je Monat (alle mit Sternchen). Ehrlich
 dargestellt: Bei 10 ct* EG-Preis liegt der Erzeugererloes derzeit unter dem OeMAG-Marktpreis von
@@ -14,6 +16,9 @@ und Bezug, der EG-Preis ist planbar.
 
 Pflicht (README): Netzentgelt-Rabatt 57 % lokal / 28 % regional NUR im Nahbereich,
 oesterreichweit = Buergerenergiegemeinschaft ohne Rabatt. energyfamily nur als Text-Badge.
+ElWG (Faktenliste, Abschnitt "VERBINDLICH AB 20.11.2026"): Rabatt Oktober bis Dezember 2026 nur fuer EEG-Mitglieder,
+BEG/P2P/EVA im Nahbereich voraussichtlich ab 1.1.2027 (Hoehe legt die E-Control fest); netzuebergreifend bzw.
+oesterreichweit voraussichtlich ab April 2027, bis dahin nur Zaehlpunkte beim selben Netzbetreiber. Abgabenbefreiung nur EEG.
 """
 
 from common import IMG, NAP, AUTHOR, AUTHOR_ROLE, faq_jsonld, u, a, write_page, load_reviews
@@ -21,9 +26,9 @@ from layout import page
 import components as C
 
 PATH = "/leistungen/energiegemeinschaft/"
-TITLE = "Energiegemeinschaft beitreten: Strom teilen | EBZ Energie"
-DESC = ("Energiegemeinschaft beitreten: bis zu 57 % weniger Netzentgelt im Nahbereich, fixer EG-Preis statt "
-        "schwankendem OeMAG-Marktpreis. Beitritt in 4 Schritten.")
+TITLE = "Energiegemeinschaft mit PV-Anlage | EBZ Kärnten, Steiermark"
+DESC = ("Energiegemeinschaft mit EBZ: PV-Anlage planen, montieren und an eine Gemeinschaft anbinden. In der "
+        "lokalen EEG bis zu 57 % weniger Netzentgelt.")
 
 OEMAG_OKT = "14,874"   # aktueller Wert, Stand November 2026
 OEMAG_SEPT = "10,168"
@@ -37,43 +42,51 @@ FAQ = [
      "zum Monatsersten wirksam wird."),
     ("Wie hoch ist der Strompreis in einer Energiegemeinschaft?",
      "Den Energiepreis legt jede Gemeinschaft selbst fest, üblich sind 8 bis 14 ct/kWh.* Dazu kommen für Abnehmer "
-     "im Nahbereich das um 57 Prozent (lokal) oder 28 Prozent (regional) reduzierte Netznutzungsentgelt, keine "
-     "Elektrizitätsabgabe und kein Erneuerbaren-Förderbeitrag. Gegenüber einem Haushaltstarif mit rund 17 ct* "
-     "Energiepreis plus vollem Netzentgelt sparen Abnehmer auf die zugeordnete Menge rund 10 ct je kWh.*"),
+     "einer Erneuerbare-Energie-Gemeinschaft (EEG) im Nahbereich das um 57 Prozent (lokal) oder 28 Prozent (regional) reduzierte Netznutzungsentgelt "
+     "und keine Elektrizitätsabgabe (ab 2027 wieder 1,5 ct je kWh, 2026 für Haushalte befristet 0,1 ct). Gegenüber einem Haushaltstarif mit rund 17 ct* "
+     "Energiepreis plus vollem Netzentgelt sparen Abnehmer auf die zugeordnete Menge rund 9,5 ct je kWh (Abgaben Stand 2027).*"),
     ("Lohnt sich das Einspeisen in die Gemeinschaft noch, wenn der OeMAG-Marktpreis bei 14,874 ct liegt?",
      "Ehrliche Antwort: Bei einem EG-Preis von 10 ct* nicht über den Preis, denn der liegt unter dem "
      "OeMAG-Marktpreis von 14,874 ct (Oktober 2026). Im Juli waren es 6,146 ct, im September 10,168 ct: Der Marktpreis "
      "schwankt monatlich stark, der EG-Preis ist fix vereinbart und planbar. Dazu kommt Ihr eigener Vorteil als Abnehmer "
      "(im Nahbereich mit Netzentgelt-Rabatt), und Ihr Strom bleibt im Ort."),
     ("Kann ich mehreren Energiegemeinschaften beitreten (Mehrfachteilnahme, Teilnahmefaktor)?",
-     "Ja. Die Mehrfachteilnahme erlaubt bis zu fünf Gemeinschaften je Zählpunkt, ein Teilnahmefaktor legt fest, "
-     "welcher Anteil in welche Gemeinschaft geht. Für Privathaushalte reicht meist eine, sinnvoll wird es etwa bei "
-     "einer lokalen EEG plus einer Bürgerenergiegemeinschaft mit Verwandten."),
+     "Ja. Seit dem ElWG darf jeder Zählpunkt an bis zu fünf Bürgerenergie-Modellen teilnehmen, ein Teilnahmefaktor "
+     "(in Summe höchstens 100 Prozent) legt fest, welcher Anteil wohin geht. Für Privathaushalte reicht meist eine "
+     "Gemeinschaft, sinnvoll wird es etwa bei einer lokalen EEG plus einer Bürgerenergiegemeinschaft mit Verwandten. "
+     "Liegen die Zählpunkte bei verschiedenen Netzbetreibern, ist das laut Koordinationsstelle voraussichtlich erst "
+     "ab April 2027 umsetzbar."),
     ("Welche Änderungen gelten für Energiegemeinschaften ab Oktober 2026?",
-     "Mit 1. Oktober 2026 gelten die Bestimmungen des neuen Elektrizitätswirtschaftsgesetzes (ElWG): "
-     "Peer-to-Peer-Verträge erlauben Stromverkauf oder Schenkung direkt an eine Person ohne Verein, "
-     "Bürgerenergiegemeinschaften und Peer-to-Peer bekommen im Nahbereich ebenfalls den Netzentgelt-Abschlag, "
-     "und für Einspeiser über 20 kW kommt ein Versorgungsinfrastrukturbeitrag von durchschnittlich 0,05 ct je kWh. "
-     "Bestehende Gemeinschaften laufen weiter. Offen ist die Netzentgeltstruktur ab 1. Jänner 2027, die die "
-     "E-Control per Verordnung neu festlegen kann."),
+     "Seit 1. Oktober 2026 gilt das neue Elektrizitätswirtschaftsgesetz (ElWG) mit fünf Modellen: Gemeinschaftliche "
+     "Erzeugungsanlage (GEA), Erneuerbare-Energie-Gemeinschaft (EEG), Bürgerenergiegemeinschaft (BEG), "
+     "Peer-to-Peer-Vertrag (Verkauf oder Schenkung direkt an eine Person, ohne Verein) und Eigenversorgungsanlage "
+     "(EVA). Den reduzierten Netzarbeitspreis bekommen von Oktober bis Dezember 2026 nur Mitglieder lokaler und "
+     "regionaler EEGs; für BEG, Peer-to-Peer und EVA im Nahbereich ist er mit der neuen Netzentgelt-Verordnung "
+     "voraussichtlich ab 1. Jänner 2027 vorgesehen, die Höhe legt die E-Control fest. In der Übergangsphase lassen "
+     "sich neue Zuordnungen nur mit Zählpunkten beim selben Netzbetreiber umsetzen, netzübergreifend voraussichtlich "
+     "ab April 2027. Für Einspeiser über 20 kW kommt ein Versorgungsinfrastrukturbeitrag von durchschnittlich "
+     "0,05 ct je kWh. Bestehende Gemeinschaften werden ins neue System übergeführt."),
     ("Wie finde ich eine Energiegemeinschaft in meiner Nähe?",
      "Über die Nahbereichsabfrage beim Netzbetreiber (Kärnten Netz, Energie Klagenfurt, Energienetze Steiermark, "
      "Stromnetz Graz) mit Ihrer Zählpunktnummer, über die energiegemeinschaften.gv.at Landkarte, über Plattformen wie "
      "energyfamily oder Ihre Gemeinde. EBZ erledigt die Abfrage in einem Werktag."),
     ("Ist Strom teilen mit Nachbarn in Österreich erlaubt?",
      "Ja. PV Strom mit Nachbarn teilen ist seit 2021 über Erneuerbare-Energie-Gemeinschaften erlaubt und seit "
-     "1. Oktober 2026 auch per Peer-to-Peer-Vertrag ohne Verein. Der Strom fließt über das öffentliche Netz, der "
-     "Netzbetreiber ordnet ihn viertelstundengenau zu. Auch Verwandte in einem anderen Bundesland können Strom "
-     "beziehen, dann über eine Bürgerenergiegemeinschaft ohne Netzentgelt-Rabatt."),
+     "Oktober 2026 auch per Peer-to-Peer-Vertrag ohne Verein. Der Strom fließt über das öffentliche Netz, der "
+     "Netzbetreiber ordnet ihn viertelstundengenau zu. Auch Verwandte in einem anderen Bundesland sollen Strom "
+     "beziehen können, dann über eine Bürgerenergiegemeinschaft ohne Netzentgelt-Rabatt. In der Übergangsphase "
+     "seit Oktober 2026 geht das laut Koordinationsstelle aber nur mit Zählpunkten beim selben Netzbetreiber, "
+     "netzübergreifend (etwa Kärnten und Wien) voraussichtlich ab April 2027."),
     ("Woran erkenne ich eine gute Energiegemeinschaft im Vergleich?",
-     "Ob Energiegemeinschaft Anbieter wie Kelag oder Energie Steiermark, Verein im Ort oder Plattform: Achten Sie auf "
+     "Ob Energiegemeinschaft Anbieter wie Kelag oder Energie Steiermark, Verein im Ort oder Plattform (Preise und Gebühren im "
+     + a("/energiegemeinschaft-vergleich/", "Vergleich der Energiegemeinschaften") + "): Achten Sie auf "
      "einen fixen EG-Preis, der nicht an den OeMAG-Marktpreis gekoppelt ist, null Einrichtungs- und Austrittsgebühr, "
      "eine Kündigungsfrist von höchstens drei Monaten, monatliche Abrechnung mit App und eine Nahbereichsprüfung vor "
      "der Unterschrift. Ein Rabatt für österreichweites Teilen ist ein Versprechen, das niemand halten kann."),
     ("Welche Voraussetzungen brauche ich?",
      "Einen eigenen Zählpunkt (33-stellig, beginnt mit AT), einen Smart Meter mit aktivierten Viertelstundenwerten "
-     "(Smart Meter Opt-in im Kundenportal, ein früheres Opt-out muss zurück) und für den Rabatt einen Anschluss im "
-     "Nahbereich. Eine eigene PV-Anlage brauchen Sie nicht, Abnehmer sind willkommen."),
+     "(Smart Meter Opt-in im Kundenportal, ein früheres Opt-out muss zurück) und für den Rabatt derzeit die "
+     "Mitgliedschaft in einer EEG mit Anschluss im Nahbereich. Eine eigene PV-Anlage brauchen Sie nicht, Abnehmer sind willkommen."),
 ]
 
 
@@ -90,9 +103,9 @@ def _rechenbeispiel():
         ("Netznutzungsentgelt minus 57 % (lokal) auf 1.000 kWh Bezug",
          "<b>rund 50 €</b>",
          "<b>rund 50 €</b>"),
-        ("Elektrizitätsabgabe 1,5 ct und Erneuerbaren-Förderbeitrag rund 1 ct entfallen",
-         "<b>rund 25 €</b>",
-         "<b>rund 25 €</b>"),
+        ("Elektrizitätsabgabe 1,5 ct entfällt (Stand 2027)",
+         "<b>rund 15 €</b>",
+         "<b>rund 15 €</b>"),
         ("Energiepreis 14 ct* statt 17 ct* beim Lieferanten",
          "<b>rund 30 €</b>",
          "<b>rund 30 €</b>"),
@@ -100,8 +113,8 @@ def _rechenbeispiel():
          "minus 48 €",
          "minus 48 €"),
         ("Netto im Jahr",
-         "<b>rund 57 €</b> sicher aus dem Bezug, dazu die Einspeise-Differenz je nach Marktpreis (siehe oben)*",
-         "<b>rund 57 €</b>, bei 2.000 kWh Zuordnung rund 160 €"),
+         "<b>rund 47 €</b> sicher aus dem Bezug, dazu die Einspeise-Differenz je nach Marktpreis (siehe oben)*",
+         "<b>rund 47 €</b>, bei 2.000 kWh Zuordnung rund 140 €"),
     ]
     trs = "".join(
         f"<tr><td>{p}</td><td class=\"hl\">{m}</td><td class=\"hl\">{o}</td></tr>" for p, m, o in rows
@@ -114,7 +127,8 @@ def _rechenbeispiel():
       <p class="lead center eg-reveal" style="max-width:72ch;margin-inline:auto">Vergünstigt wird nur Strom,
       der in derselben Viertelstunde erzeugt und verbraucht wird (Zuordnungsquote: etwa 25 % ohne Tagesverbrauch,
       40 bis 60 % mit Wärmepumpe, E-Auto oder Homeoffice*). Zuteilung statisch oder dynamisch nach dem Schlüssel
-      der Gemeinschaft.</p>
+      der Gemeinschaft. Wo die Grenzen liegen, bewertet der Ratgeber
+      {a('/energiegemeinschaft-nachteile/', 'Nachteile einer Energiegemeinschaft')}.</p>
       <div class="art-tablewrap eg-reveal" style="margin-top:32px">
         <table class="art-table">
           <thead><tr><th>Position</th><th>Haushalt mit 10-kWp-Anlage</th><th>Haushalt ohne PV-Anlage</th></tr></thead>
@@ -123,6 +137,8 @@ def _rechenbeispiel():
       </div>
       <p class="form-note center eg-reveal" style="margin-top:18px">*Beispielkonditionen: Einspeisung 10 bzw. 12 ct,
       Bezug 14 ct, Beitrag 4 € je Monat, Lieferantenpreis 17 ct, Netznutzung 8 ct, Netzverlust 0,7 ct (Richtwerte 2026).
+      Abgaben mit Stand 2027: Elektrizitätsabgabe 1,5 ct (2026 für Haushalte befristet 0,1 ct, dann rund 1 € statt 15 €),
+      den Erneuerbaren-Förderbeitrag setzt die Bundesregierung 2027 für alle Stromkunden aus, er ist daher nicht eingerechnet.
       OeMAG-Marktpreis 2026: {OEMAG_JULI} ct im Juli, {OEMAG_SEPT} ct im September, {OEMAG_OKT} ct im Oktober. Die Spanne
       rechnet den Juli- und den Oktober-Wert aufs ganze Jahr hoch und zeigt nur die Bandbreite; die OeMAG vergütet
       jeden Monat zum jeweiligen Marktpreis.
@@ -140,12 +156,13 @@ def body():
     rating, count, reviews = load_reviews()
     body = "".join([
         C.hero(
-            eyebrow="Energiegemeinschaft für Privathaushalte · Kärnten, Steiermark, österreichweit",
-            h1="Energiegemeinschaft beitreten: Solarstrom mit Nachbarn teilen und bis zu 57 % Netzentgelt sparen",
+            eyebrow="Energiegemeinschaft für Privathaushalte · PV-Anlage und Anbindung · Kärnten, Steiermark",
+            h1="Energiegemeinschaft mit eigener PV-Anlage: Solarstrom im Ort teilen und in der lokalen EEG bis zu 57 % Netzentgelt sparen",
             lead=(f"Der OeMAG-Marktpreis schwankt monatlich: {OEMAG_JULI} Cent im Juli, {OEMAG_OKT} Cent im "
                   "Oktober 2026. In einer Energiegemeinschaft verkaufen Sie Ihren Überschuss zu einem fix vereinbarten "
-                  "Preis an Haushalte in der Nähe, und wer bezieht, zahlt im Nahbereich bis zu 57 % weniger Netzentgelt. "
-                  "EBZ prüft Ihren Nahbereich und erledigt die Schritte beim Netzbetreiber."),
+                  "Preis an Haushalte in der Nähe, und wer in einer lokalen Erneuerbare-Energie-Gemeinschaft bezieht, zahlt "
+                  "bis zu 57 % weniger Netzentgelt. EBZ plant und montiert Ihre PV-Anlage, prüft den Nahbereich und "
+                  "erledigt die Anmeldung beim Netzbetreiber."),
             badges=[("bis zu 57 %", "weniger Netzentgelt lokal"),
                     ("Fixer EG-Preis*", "statt schwankendem OeMAG-Marktpreis"),
                     ("Kein Wechsel", "Lieferant bleibt")],
@@ -153,7 +170,7 @@ def body():
             img_alt="Ortschaft mit Photovoltaik auf mehreren Dächern, typisches Netzgebiet einer lokalen Energiegemeinschaft",
             float_num=rating,
             float_label=f"aus {count} Google Bewertungen" if count else "auf Google",
-            cta_primary=("kontakt", "Energiegemeinschaft beitreten"),
+            cta_primary=("kontakt", "Energiegemeinschaft anfragen"),
             cta_secondary=("#rechenbeispiel", "Was bringt mir das?"),
         ),
         C.kpis([
@@ -164,19 +181,25 @@ def body():
         ]),
         C.text_block(
             eyebrow="Kurz erklärt",
-            h2="Was ist eine Energiegemeinschaft und wer kann beitreten?",
+            h2="Was ist eine Energiegemeinschaft und wer kann teilnehmen?",
             paragraphs=[
                 ("Eine Energiegemeinschaft ist ein Zusammenschluss von mindestens zwei Teilnehmern, die Solarstrom "
-                 "über das öffentliche Netz teilen. Im Nahbereich sinken die Netzentgelte um bis zu 57 Prozent (lokal) "
-                 "oder 28 Prozent (regional), österreichweit teilen Bürgerenergiegemeinschaften ohne Rabatt. "
-                 "Voraussetzung ist ein Smart Meter mit Viertelstundenwerten (Quellen: E-Control SNE-VO, "
-                 "energiegemeinschaften.gv.at, Stand Oktober 2026)."),
+                 "über das öffentliche Netz teilen. In einer Erneuerbare-Energie-Gemeinschaft (EEG) sinken die "
+                 "Netzentgelte im Nahbereich um 57 Prozent (lokal) oder 28 Prozent (regional). "
+                 "Bürgerenergiegemeinschaften dürfen sich über ganz Österreich erstrecken, bekommen dafür aber keinen "
+                 "Rabatt; netzübergreifend sind neue Zuordnungen laut Koordinationsstelle voraussichtlich ab April 2027 "
+                 "möglich. Voraussetzung ist ein Smart Meter mit Viertelstundenwerten (Quellen: E-Control SNE-VO, "
+                 "energiegemeinschaften.gv.at, Stand November 2026)."),
                 ("Beitreten können Haushalte, Mieter mit eigenem Zählpunkt, Gemeinden, Vereine und kleine und "
                  "mittlere Unternehmen. Die Modelle: Erneuerbare-Energie-Gemeinschaft (EEG) im Nahbereich, "
-                 "Bürgerenergiegemeinschaft (BEG) österreichweit, Gemeinschaftliche Erzeugungsanlage (GEA) im "
-                 "Mehrparteienhaus, seit 1. Oktober 2026 der Peer-to-Peer-Vertrag (P2P) zwischen zwei Personen und "
+                 "Bürgerenergiegemeinschaft (BEG) österreichweit, "
+                 + a("/gemeinschaftliche-erzeugungsanlage/", "Gemeinschaftliche Erzeugungsanlage (GEA)") + " im "
+                 "Mehrparteienhaus, seit 1. Oktober 2026 der "
+                 + a("/peer-to-peer-strom/", "Peer-to-Peer-Vertrag (P2P)") + " zwischen zwei Personen und "
                  "die Eigenversorgungsanlage (EVA) für mehrere eigene Standorte. Ein Zählpunkt darf per "
-                 "Mehrfachteilnahme (bis zu 5 Gemeinschaften) mit Teilnahmefaktor in mehreren Gemeinschaften sein."),
+                 "Mehrfachteilnahme an bis zu 5 Modellen teilnehmen, mit Teilnahmefaktor in Summe höchstens 100 %. "
+                 "Wie der Beitritt abläuft, welche Unterlagen Sie brauchen und wie lange es dauert, erklärt der Ratgeber "
+                 + a("/energiegemeinschaft-beitreten/", "Energiegemeinschaft beitreten: Ablauf und Dauer") + "."),
             ],
         ),
         C.split_section(
@@ -195,27 +218,29 @@ def body():
                 "title": "Ich habe keine PV-Anlage: Solarstrom aus der Nachbarschaft beziehen",
                 "items": [
                     "EG-Preis unter dem üblichen Arbeitspreis Ihres Lieferanten, typisch 14 ct*",
-                    "Bis zu 57 % weniger Netznutzungsentgelt auf den EG-Strom (lokal)",
-                    "Elektrizitätsabgabe von 1,5 ct je kWh und Erneuerbaren-Förderbeitrag entfallen in der EEG",
+                    "Bis zu 57 % weniger Netznutzungsentgelt auf den EG-Strom (lokale EEG)",
+                    "Elektrizitätsabgabe entfällt in der EEG (ab 2027 wieder 1,5 ct je kWh, 2026 für Haushalte befristet 0,1 ct)",
                     "Keine Investition, kurze Kündigungsfrist, auch für Mieter mit eigenem Zählpunkt",
-                    "Richtwert: plus 80 bis 200 € im Jahr, je nach Tagesverbrauch**",
+                    "Richtwert: plus 60 bis 220 € im Jahr, je nach Tagesverbrauch**",
                 ],
-                "note": "**Richtwerte aus unserem Rechner mit Beispielkonditionen, lokale EEG, Zuordnung 60 %. Ihr Wert hängt von Verbrauchsprofil, Netzebene und Gemeinschaft ab.",
+                "note": "**Richtwerte aus unserem Rechner mit Beispielkonditionen, lokale EEG, Zuordnung 60 %, 1- bis 4-Personen-Haushalt (1.927 bis 4.725 kWh), Abgaben Stand 2027. Ihr Wert hängt von Verbrauchsprofil, Netzebene und Gemeinschaft ab.",
             },
         ),
         C.problem_compare(
             eyebrow="Wo der Vorteil entsteht",
             h2="Der sichere Vorteil liegt beim Bezug: Netzentgelt und Abgaben je Kilowattstunde",
             intro=("Je bezogener Kilowattstunde zahlen Sie neben dem Energiepreis rund 8 ct Netznutzungsentgelt, 0,7 ct "
-                   "Netzverlustentgelt, 1,5 ct Elektrizitätsabgabe und rund 1 ct Erneuerbaren-Förderbeitrag (Richtwerte "
-                   "2026, Netzebene 7). In der lokalen EEG sinken die Netzentgelte um 57 Prozent, die Abgaben entfallen."),
+                   "Netzverlustentgelt und ab 2027 wieder 1,5 ct Elektrizitätsabgabe (2026 für Haushalte befristet 0,1 ct; "
+                   "Netzebene 7, Richtwerte). Den Erneuerbaren-Förderbeitrag setzt die Bundesregierung 2027 für alle "
+                   "Stromkunden aus, er ist deshalb kein EEG-Vorteil mehr. In der lokalen EEG sinken die Netzentgelte um "
+                   "57 Prozent (geltende SNE-VO), die Elektrizitätsabgabe entfällt."),
             bars=[
-                ("Netzentgelt und Abgaben je kWh beim Lieferanten", 100, "bad", "rund 11,2 ct"),
-                ("Netzentgelt und Abgaben je kWh in der lokalen EEG", 33, "good", "rund 3,7 ct"),
+                ("Netzentgelt und Abgaben je kWh beim Lieferanten (Stand 2027)", 100, "bad", "rund 10,2 ct"),
+                ("Netzentgelt und Abgaben je kWh in der lokalen EEG", 36, "good", "rund 3,7 ct"),
             ],
             aside=("Ihre Vorteile auf einen Blick", [
                 ("◇", "Bis zu 57 % weniger Netzentgelt", "Netznutzungs- und Netzverlustentgelt sinken um 57 % (lokal) oder 28 % (regional)."),
-                ("✓", "Abgaben entfallen", "Elektrizitätsabgabe (1,5 ct je kWh) und Erneuerbaren-Förderbeitrag fallen in der EEG weg."),
+                ("✓", "Elektrizitätsabgabe entfällt", "In der EEG fällt die Elektrizitätsabgabe weg: ab 2027 wieder 1,5 ct je kWh, 2026 für Haushalte befristet 0,1 ct."),
                 ("€", "Planbarer Erzeugerpreis", f"EG-Preis fix statt Marktpreis, der 2026 zwischen {OEMAG_JULI} ct (Juli) und {OEMAG_OKT} ct (Oktober) schwankte."),
                 ("⌂", "Kein Wechsel, kein Risiko", "Lieferant und OeMAG-Vertrag bleiben, Kündigungsfrist 1 bis 3 Monate, keine Einrichtungsgebühr."),
             ]),
@@ -223,22 +248,25 @@ def body():
         _rechenbeispiel(),
         C.media_text(
             eyebrow="Nahbereich (lokal/regional) oder österreichweit",
-            h2="Strom teilen geht in ganz Österreich, der Netzentgelt-Rabatt nur im Nahbereich",
+            h2="Nahbereich oder ganz Österreich: wo der Netzentgelt-Rabatt gilt",
             paragraphs=[
                 ("Ob Ihre Gemeinschaft lokal oder regional ist, bestimmt nicht die Gemeindegrenze, sondern der "
                  "Netzanschluss auf Netzebene 7 / 6 / 4-5: Hängen Erzeuger und Abnehmer an derselben Trafostation, "
-                 "gilt der lokale Abschlag von 57 %. Teilen sie sich nur das Umspannwerk, sind es 28 %. Der "
+                 "gilt in der EEG der lokale Abschlag von 57 %. Teilen sie sich nur das Umspannwerk, sind es 28 %. Der "
                  "Netzbetreiber entscheidet das anhand der Zählpunktnummer, diese Nahbereichsabfrage übernehmen wir."),
-                ("Sie möchten Ihren Sonnenstrom lieber der Tante in Wien zukommen lassen? Auch das geht, über eine "
-                 "Bürgerenergiegemeinschaft oder seit 1. Oktober 2026 per Peer-to-Peer-Vertrag. Den Netzentgelt-Rabatt "
-                 "und die Abgabenbefreiung gibt es dafür nicht, weil der Strom die übergeordneten Netzebenen nutzt."),
+                ("Sie möchten Ihren Sonnenstrom lieber der Tante in Wien zukommen lassen? Das sieht das ElWG über eine "
+                 + a("/buergerenergiegemeinschaft/", "Bürgerenergiegemeinschaft") + " oder einen Peer-to-Peer-Vertrag vor. In der Übergangsphase seit Oktober 2026 "
+                 "lassen sich neue Zuordnungen laut Koordinationsstelle aber vorübergehend nur mit Zählpunkten beim "
+                 "selben Netzbetreiber umsetzen, netzübergreifend (etwa Kärnten und Wien) voraussichtlich ab April 2027. "
+                 "Einen Netzentgelt-Rabatt gibt es dafür auch dann nicht, weil der Strom die übergeordneten Netzebenen "
+                 "nutzt, und die Abgabenbefreiung gilt nur in der EEG."),
             ],
             img=IMG["gen_eigenheim"],
             alt="Einfamilienhaus mit Photovoltaikanlage, Erzeuger in einer lokalen Energiegemeinschaft",
             bullets=[
-                "Lokal (selber Trafo): minus 57 % Netzentgelt, Abgaben entfallen",
-                "Regional (selbes Umspannwerk): minus 28 % Netzentgelt, Abgaben entfallen",
-                "Österreichweit (Bürgerenergiegemeinschaft, Peer-to-Peer): Teilen ja, Rabatt nein",
+                "Lokal (selber Trafo): in der EEG minus 57 % Netzentgelt, Abgaben entfallen",
+                "Regional (selbes Umspannwerk): in der EEG minus 28 % Netzentgelt, Abgaben entfallen",
+                "Österreichweit (Bürgerenergiegemeinschaft): Teilen ja, netzübergreifend voraussichtlich ab April 2027, Rabatt nein",
             ],
             reverse=True,
             cta=("/energiegemeinschaft-privat/", "Ratgeber: Energiegemeinschaft privat"),
@@ -247,8 +275,11 @@ def body():
             eyebrow="Energiegemeinschaft in der Nähe finden",
             h2="Energiegemeinschaft in Kärnten, der Steiermark oder in Ihrer Nähe finden",
             intro=("Eine Energiegemeinschaft mit Nachbarn findet man selten über Google, weil Nähe den Netzanschluss meint, "
-                   "nicht die Landkarte. Drei Wege führen zur passenden Gemeinschaft in Villach, Klagenfurt, im Lavanttal "
-                   "oder in Graz."),
+                   "nicht die Landkarte. Drei Wege führen zur passenden Gemeinschaft in "
+                   + a("/energiegemeinschaft-villach-klagenfurt/", "Villach und Klagenfurt") + ", im Lavanttal "
+                   "oder in Graz. Netzbetreiber und Besonderheiten der Länder stehen in den Ratgebern "
+                   + a("/energiegemeinschaft-kaernten/", "Energiegemeinschaft Kärnten") + " und "
+                   + a("/energiegemeinschaft-steiermark/", "Energiegemeinschaft Steiermark") + "."),
             cards=[
                 {"ic": "◎", "title": "Nahbereichsabfrage Kärnten Netz / Energie Klagenfurt",
                  "text": "Mit Ihrer Zählpunktnummer liefert der Netzbetreiber die Kennung Ihres Lokal- und Regionalbereichs, in der Steiermark die Energienetze Steiermark und Stromnetz Graz. Das sagt verbindlich, welche Gemeinschaften passen.",
@@ -265,12 +296,17 @@ def body():
             h2="Was sich durch das ElWG ändert und was gleich bleibt",
             intro=("Mit 1. Oktober 2026 gelten die Bestimmungen des neuen Elektrizitätswirtschaftsgesetzes zur "
                    "gemeinsamen Energienutzung. Bestehende Gemeinschaften laufen weiter und werden ins neue System "
-                   "übergeführt (Quelle: Koordinationsstelle energiegemeinschaften.gv.at, Stand Oktober 2026)."),
+                   "übergeführt (Quelle: Koordinationsstelle, "
+                   '<a href="https://energiegemeinschaften.gv.at/faqs-zum-elwg/" target="_blank" rel="noopener">FAQ zum ElWG</a>'
+                   ", Stand November 2026)."),
             rows=[
-                ("Peer-to-Peer-Verträge", "Strom direkt an eine Person verkaufen oder verschenken, ohne Verein; Betreiber bis 30 kW werden nicht zum Lieferanten"),
-                ("Rabatt für BEG und P2P", "Wer sich auf einen Nahbereich beschränkt, bekommt den Netzentgelt-Abschlag auch in diesen Modellen"),
+                ("Fünf Modelle", "GEA im Mehrparteienhaus, EEG, Bürgerenergiegemeinschaft (BEG), Peer-to-Peer-Vertrag (P2P) und Eigenversorgungsanlage (EVA); je Zählpunkt bis zu 5 Modelle, Teilnahmefaktor in Summe höchstens 100 %"),
+                ("Peer-to-Peer-Verträge", "Strom direkt an eine Person verkaufen oder verschenken, ohne Verein; Betreiber bis 30 kW werden nicht zum Lieferanten; in der Übergangsphase nur beim selben Netzbetreiber"),
+                ("Netzentgelt-Rabatt 2026", "Von Oktober bis Dezember 2026 nur für Mitglieder lokaler und regionaler EEGs; für BEG, P2P und EVA im Nahbereich voraussichtlich ab 1. Jänner 2027"),
+                ("Übergangsphase", "Neue Zuordnungen vorübergehend nur mit Zählpunkten beim selben Netzbetreiber, netzübergreifend und österreichweit voraussichtlich ab April 2027"),
+                ("Abgaben", "Elektrizitätsabgabe und Erneuerbaren-Förderbeitrag entfallen nur in der EEG, für P2P und EVA ist das nicht geregelt. 2027 setzt die Bundesregierung den Förderbeitrag für alle aus, die Elektrizitätsabgabe steigt wieder auf 1,5 ct (2026 Haushalte 0,1 ct): Der Abgabenvorteil der EEG liegt dann bei rund 1,5 ct je kWh"),
                 ("Versorgungsinfrastrukturbeitrag", "Nur für Einspeiser über 20 kW, durchschnittlich 0,05 ct je kWh; für Einfamilienhäuser nicht relevant"),
-                ("Netzentgelte ab 1. Jänner 2027", "Die E-Control kann die Abschläge per Verordnung (SNE-VO) neu festlegen; ob 57 und 28 % bleiben, ist offen"),
+                ("Netzentgelte ab 1. Jänner 2027", "Die Abschläge legt die E-Control per Verordnung (SNE-VO) neu fest; laut E-Control-Entwurf für 2027 49 % lokal, 22 % bzw. 58 % regional (Entwurf)"),
                 ("Registrierung", "Gemeinschaft als Marktpartner bei ebUtilities, Zählpunkte über das EDA-Portal mit Gemeinschafts-ID; erledigt EBZ"),
                 ("Rechtsform und Kosten", "Verein oder Genossenschaft, für Peer-to-Peer keine; Mitgliedsbeitrag typisch 2 bis 8 € je Monat, keine Einrichtungsgebühr"),
                 ("Ihre Voraussetzungen", "Eigener Zählpunkt, Smart Meter Opt-in für Viertelstundenwerte, für den Rabatt ein Anschluss im Nahbereich"),
@@ -349,7 +385,7 @@ def body():
         C.reviews_slider(reviews, rating, count),
         C.steps_section(
             eyebrow="So einfach geht es",
-            h2="Energiegemeinschaft beitreten in 4 Schritten (4 bis 8 Wochen)",
+            h2="Mit EBZ in die Energiegemeinschaft: 4 Schritte, 4 bis 8 Wochen",
             steps=[
                 ("Eignung prüfen",
                  "Sie nennen uns PLZ, Zählpunktnummer, PV-Leistung und Verbrauch. Wir fragen den Nahbereich beim Netzbetreiber ab und sagen, ob eine lokale oder regionale Gemeinschaft passt.",
@@ -390,7 +426,7 @@ def body():
             "Mit eigener PV zum starken Teil der Gemeinschaft",
             ("Kostenlose Erstberatung, ehrliche Zahlen und ein Team aus Villach, das Planung, Montage und "
              "EG-Anbindung aus einer Hand übernimmt."),
-            cta=("kontakt", "Energiegemeinschaft beitreten"),
+            cta=("kontakt", "Energiegemeinschaft anfragen"),
             trust=[(f"{NAP['rating']} auf Google", True), ("Lieferant bleibt", False),
                    ("Start in 4 bis 8 Wochen", False), ("Kündigungsfrist 1 bis 3 Monate", False)],
         ),
@@ -401,8 +437,10 @@ def body():
       jede Gemeinschaft legt ihre Konditionen selbst fest. OeMAG-Marktpreis Oktober 2026: {OEMAG_OKT} ct je kWh
       (Stand November 2026, Quelle oem-ag.at); im September lag er bei {OEMAG_SEPT} ct, im Juli 2026 bei {OEMAG_JULI} ct,
       der Wert schwankt monatlich.
-      Netzentgelt-Abschlag und Abgabenbefreiung gelten nur für die zugeordnete Menge und nur im Nahbereich (lokal 57 %,
-      regional 28 %), Richtwerte Netzentgelte laut SNE-VO (E-Control) 2026. Keine Garantie, keine Steuerberatung.
+      Netzentgelt-Abschlag und Abgabenbefreiung gelten derzeit nur für Mitglieder einer Erneuerbare-Energie-Gemeinschaft,
+      nur für die zugeordnete Menge und nur im Nahbereich (lokal 57 %, regional 28 %, Werte der geltenden SNE-VO der
+      E-Control); die Höhe ab 2027 legt die E-Control neu fest. Abgaben: Elektrizitätsabgabe 2026 befristet 0,1 ct für Haushalte, ab 2027 wieder 1,5 ct; Erneuerbaren-Förderbeitrag 2027 laut Bundesregierung ausgesetzt (Quellen: <a href="https://www.parlament.gv.at/aktuelles/news/Nationalrat-beschliesst-Senkung-der-Elektrizitaetsabgabe" target="_blank" rel="noopener">Parlament</a>, <a href="https://www.bmf.gv.at/presse/pressemeldungen/2026/november-2026/oekostrompauschale.html" target="_blank" rel="noopener">BMF</a>). ElWG-Übergangsphase laut Koordinationsstelle
+      energiegemeinschaften.gv.at (FAQ zum ElWG), Stand November 2026. Keine Garantie, keine Steuerberatung.
       Fachlich geprüft von {AUTHOR}, {AUTHOR_ROLE}.</p>
     </div>
   </section>""",

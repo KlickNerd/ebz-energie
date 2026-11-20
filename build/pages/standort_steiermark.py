@@ -50,6 +50,8 @@ LOKALE FAKTEN, alle am 10.10.2026 selbst abgerufen:
   Umspannwerk regional), neue Modelle Peer-to-Peer und Eigenversorgung seit Oktober 2026:
   https://www.e-netze.at/Strom/Energiegemeinschaften/ ; Anlaufstelle Energieagentur Steiermark:
   https://www.technik.steiermark.at/cms/ziel/165889217/DE/ . Rabattsaetze 57/28 % laut build/pages/README.md.
+  ElWG-Stand 20.11.2026 (Faktenliste, energiegemeinschaften.gv.at/faqs-zum-elwg/): Rabatt 2026 nur EEG, P2P/EVA/BEG im
+  Nahbereich voraussichtlich ab 1.1.2027; netzuebergreifend (auch Stromnetz Graz und Landesnetz) voraussichtlich ab April 2027.
 - Energieberatung Land Steiermark (produktunabhaengig): https://www.technik.steiermark.at/cms/ziel/82233481/DE/
 
 BEWUSST WEGGELASSEN (keine selbst abgerufene offizielle Quelle): Sonnenstunden und Ertrag je kWp fuer die
@@ -109,6 +111,8 @@ QUELLEN = [
      "https://www.technik.steiermark.at/oekofonds"),
     ("Land Steiermark: Energiegemeinschaften, Anlaufstelle Energieagentur Steiermark",
      "https://www.technik.steiermark.at/cms/ziel/165889217/DE/"),
+    ("Österreichische Koordinationsstelle für Energiegemeinschaften: FAQ zum ElWG",
+     "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
 ]
 
 # Bezirke im Montagegebiet: (Slug-Key oder None, Titel, Text). Orte sind die groesseren Gemeinden des Bezirks.
@@ -195,7 +199,8 @@ FAQ = [
     ("Kann ich meinen Sonnenstrom in der Steiermark in einer Energiegemeinschaft teilen?",
      "Ja. Im Nahbereich sinkt das Netzentgelt in einer Erneuerbare-Energie-Gemeinschaft um bis zu 57 Prozent (lokal) "
      "oder 28 Prozent (regional). Österreichweit funktioniert es über die Bürgerenergiegemeinschaft, dann ohne diesen "
-     "Rabatt. Ob zwei Zählpunkte im selben Nahbereich liegen, zeigt im Landesnetz der Quick Check im Serviceportal "
+     "Rabatt; neue Zuordnungen über mehrere Netzbetreiber hinweg sind laut Koordinationsstelle voraussichtlich ab "
+     "April 2027 möglich, bis dahin nur mit Zählpunkten beim selben Netzbetreiber. Ob zwei Zählpunkte im selben Nahbereich liegen, zeigt im Landesnetz der Quick Check im Serviceportal "
      "der Energienetze Steiermark."),
     ("EBZ Energie sitzt in Villach: In welchen steirischen Bezirken montieren Sie?",
      "In Graz, Graz-Umgebung, Leibnitz, Deutschlandsberg, Voitsberg, Weiz, im Murtal, in Leoben und in der "
@@ -440,20 +445,27 @@ def build():
                 ("Überschuss, den Sie nicht selbst verbrauchen, können Sie in einer Energiegemeinschaft an Nachbarn, "
                  "Familie oder Betriebe weitergeben. In der Erneuerbare-Energie-Gemeinschaft sinkt das Netzentgelt im "
                  "Nahbereich um bis zu 57 Prozent (lokal, dieselbe Trafostation) oder 28 Prozent (regional, dasselbe "
-                 "Umspannwerk). Österreichweit, etwa mit der Tochter in Wien, geht es über die "
-                 "Bürgerenergiegemeinschaft, dann ohne diesen Rabatt."),
+                 "Umspannwerk; Werte 2026, ab 2027 legt die E-Control die Höhe neu fest). Österreichweit, etwa mit der Tochter in Wien, geht es über die "
+                 "Bürgerenergiegemeinschaft, dann ohne diesen Rabatt. In der Übergangsphase seit Oktober 2026 lassen "
+                 "sich neue Zuordnungen laut Koordinationsstelle aber nur mit Zählpunkten beim selben Netzbetreiber "
+                 "umsetzen, netzübergreifend (etwa Steiermark und Wien, aber auch Stromnetz Graz und Landesnetz) "
+                 "voraussichtlich ab April 2027."),
                 ("Der Nahbereich wird innerhalb eines Netzgebiets bestimmt. Im Serviceportal der Energienetze "
                  "Steiermark zeigt ein Quick Check, ob zwei Zählpunkte lokal oder regional verbunden sind. Seit "
-                 "Oktober 2026 lassen sich auch Peer-to-Peer-Verträge (Strom direkt an einen anderen Haushalt, ohne "
-                 "Verein) und die Eigenversorgung mehrerer eigener Standorte registrieren. Das Land hat bei der "
+                 "Oktober 2026 lassen sich auch " + a("/peer-to-peer-strom/", "Peer-to-Peer-Verträge") + " (Strom direkt "
+                 "an einen anderen Haushalt, ohne Verein) und die Eigenversorgung mehrerer eigener Standorte registrieren; den Netzentgelt-Rabatt "
+                 "bekommen bis Jahresende 2026 aber nur Mitglieder einer Erneuerbare-Energie-Gemeinschaft, für diese "
+                 "Modelle ist er voraussichtlich ab 1. Jänner 2027 vorgesehen. Das Land hat bei der "
                  "Energieagentur Steiermark eine Anlaufstelle für Energiegemeinschaften eingerichtet; EBZ Energie "
-                 "rechnet über die Plattform energyfamily ab."),
+                 "rechnet über die Plattform energyfamily ab. Welche Gemeinschaften in Graz, im Murtal, in Weiz "
+                 "oder in der Südoststeiermark arbeiten, steht im Ratgeber "
+                 + a("/energiegemeinschaft-steiermark/#bezirke", "Energiegemeinschaften in den steirischen Regionen") + "."),
             ],
             img=IMG["eg_drohne"],
             alt="Wohngebiet aus der Luft, Symbolbild für das Netzgebiet einer lokalen Energiegemeinschaft",
             bullets=[
-                "Bis zu 57 % (lokal) oder 28 % (regional) weniger Netzentgelt, nur im Nahbereich",
-                "Österreichweit über die Bürgerenergiegemeinschaft, ohne Netzentgelt-Rabatt",
+                "Bis zu 57 % (lokal) oder 28 % (regional) weniger Netzentgelt in der EEG, nur im Nahbereich",
+                "Österreichweit über die Bürgerenergiegemeinschaft, ohne Netzentgelt-Rabatt, netzübergreifend voraussichtlich ab April 2027",
                 "Quick Check im Serviceportal der Energienetze Steiermark zeigt den Nahbereich",
                 a("/energiegemeinschaft-steiermark/", "Ratgeber: Energiegemeinschaft Steiermark"),
             ],

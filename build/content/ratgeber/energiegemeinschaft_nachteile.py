@@ -17,8 +17,8 @@ ARTICLE = {
     "slug": "energiegemeinschaft-nachteile",
     "path": "/energiegemeinschaft-nachteile/",
     "title": "Energiegemeinschaft: 7 Nachteile ehrlich bewertet | EBZ",
-    "description": ("Nachteile einer Energiegemeinschaft: Ersparnis nur auf zugeordnete 25 bis 60 %, 2 bis 8 € "
-                    "Gebühr im Monat, Smart-Meter-Pflicht, Nahbereich. Wann es sich lohnt."),
+    "description": ("Nachteile einer Energiegemeinschaft: nur 25 bis 60 % des Verbrauchs vergünstigt, 2 bis 8 € "
+                    "Gebühr im Monat, Smart Meter, Nahbereich, Rabatt 2026 nur EEG."),
     "eyebrow": "Energiegemeinschaft · Nachteile",
     "crumb_label": "Nachteile",
     "h1": "Energiegemeinschaft: 7 Nachteile ehrlich bewertet und wie Sie sie klein halten",
@@ -29,10 +29,10 @@ ARTICLE = {
         "Ersparnis nur auf <b>25 bis 60 %</b> des Verbrauchs",
         "Gebühr: <b>2 bis 8 €</b> je Monat",
         "<b>Smart Meter</b> mit 15-min-Werten Pflicht",
-        "Rabatt nur im <b>Nahbereich</b>",
+        "Rabatt 2026 nur in der <b>EEG im Nahbereich</b>",
     ],
     "date_published": "2026-07-22",
-    "date_modified": "2026-11-19",
+    "date_modified": "2026-11-20",
     "hero_img": "gen_hero",
     "hero_alt": "Photovoltaikanlage auf einem Hausdach, Ausgangspunkt für die Abwägung einer Energiegemeinschaft",
 
@@ -42,8 +42,10 @@ ARTICLE = {
         "Homeoffice 40 bis 60 Prozent.",
         "Die Teilnahme kostet 2 bis 8 Euro je Zählpunkt und Monat, also 25 bis 100 Euro im Jahr. Dem stehen "
         "laut Erfahrungsberichten typisch 100 bis 300 Euro Vorteil gegenüber, bei geringer Zuordnung weniger.",
-        "Technische und räumliche Hürden: Smart Meter mit Viertelstundenwerten bei allen Beteiligten, "
-        "Netzentgelt-Abschlag nur im Nahbereich (selber Trafo oder Umspannwerk), keine Großunternehmen in der EEG.",
+        "Technische, räumliche und rechtliche Hürden: Smart Meter mit Viertelstundenwerten bei allen Beteiligten, "
+        "Netzentgelt-Abschlag nur im Nahbereich (selber Trafo oder Umspannwerk) und bis Ende 2026 nur für "
+        "Mitglieder einer EEG, keine Großunternehmen in der EEG. Strom über mehrere Netzgebiete teilen, etwa "
+        "von Kärnten nach Wien, geht laut Koordinationsstelle voraussichtlich erst ab April 2027.",
         "Nach dem Beitritt gibt es drei Rechnungen statt einer. Vertragsfallen wie Jahresbindung oder "
         "Austrittsgebühren lassen sich vermeiden, wenn Sie vier Angaben vor der Unterschrift prüfen.",
         "Für Erzeuger mit PV ist die Gemeinschaft attraktiv, weil sie dem Überschuss einen fixen Preis von typisch "
@@ -67,8 +69,10 @@ können, hier die Gegenüberstellung, jeweils mit der Zahl dahinter:</p>
     [
         ["Günstigerer Strom: EG-Bezugspreis typisch 12 bis 16 ct statt 12 bis 20 ct netto beim Lieferanten",
          "Gilt nur für die zugeordnete Menge, typisch 25 bis 60 % des Verbrauchs"],
-        ["Netzentgelt minus 57 % (lokal) oder 28 % (regional), E-Abgabe und Förderbeitrag entfallen",
-         "Nur im Nahbereich, Grundpauschale und Leistungspreis bleiben"],
+        ["In der EEG: Netzentgelt minus 57 % (lokal) oder 28 % (regional), E-Abgabe entfällt (ab 2027 wieder 1,5 ct)",
+         "Nur im Nahbereich und bis Ende 2026 nur in der EEG, Grundpauschale und Leistungspreis bleiben"],
+        ["Strom österreichweit teilen, etwa mit Familie in Wien (Bürgerenergiegemeinschaft, Peer-to-Peer)",
+         "Ohne Netzentgelt-Rabatt und ohne Abgabenbefreiung, netzübergreifend voraussichtlich erst ab April 2027"],
         ["Fixer Preis für PV-Überschuss: 8 bis 12 ct statt schwankendem OeMAG-Tarif (Juli 2026: 6,146 ct, Oktober 2026: 14,874 ct)",
          "Nur für den zeitgleich verbrauchten Anteil, der Rest bleibt beim OeMAG-Tarif; bei hohem Marktpreis zahlt die OeMAG mehr"],
         ["Lieferant und OeMAG-Vertrag bleiben, Austritt mit 1 bis 3 Monaten Frist",
@@ -86,21 +90,24 @@ Menge zu, die in der Gemeinschaft gleichzeitig erzeugt und verbraucht wird. Wird
 aber mittags erzeugt, passt wenig zusammen. Ein Haushalt mit 4.000 kWh Jahresverbrauch, der tagsüber
 nicht zuhause ist, bekommt etwa 1.000 kWh zugeordnet, eine Zuordnungsquote von 25 Prozent. Mit
 Wärmepumpe, E-Auto oder Homeoffice sind 40 bis 60 Prozent erreichbar.</p>
-<p>Was das in Euro bedeutet: Bei Richtwerten von 8 Cent Netznutzung, 0,7 Cent Netzverlust, 1,5 Cent
-Elektrizitätsabgabe und 1 Cent Förderbeitrag spart eine lokale EEG rund 7,5 Cent je zugeordneter
-Kilowattstunde aus Netz und Abgaben. Kommt ein EG-Preis von 14 Cent* statt 17 Cent* Lieferantenpreis dazu,
-sind es rund 10,5 Cent. Bei 1.000 kWh Zuordnung also rund 105 Euro* im Jahr, bei 2.400 kWh rund 250 Euro*.
+<p>Was das in Euro bedeutet: Bei Richtwerten von 8 Cent Netznutzung, 0,7 Cent Netzverlust und 1,5 Cent
+Elektrizitätsabgabe (Stand 2027; den Erneuerbaren-Förderbeitrag setzt die Bundesregierung 2027 für alle aus)
+spart eine lokale EEG rund 6,5 Cent je zugeordneter Kilowattstunde aus Netz und Abgaben. Kommt ein EG-Preis
+von 14 Cent* statt 17 Cent* Lieferantenpreis dazu, sind es rund 9,5 Cent. Bei 1.000 kWh Zuordnung also rund
+95 Euro* im Jahr, bei 2.400 kWh rund 225 Euro*. 2026 ist der Abgabenteil ähnlich klein, weil die
+Elektrizitätsabgabe für Haushalte befristet nur 0,1 Cent beträgt.
 Die Rechnung Position für Position steht im Artikel
 {a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.</p>
 {A.box("Der Netzentgelt-Abschlag ist kein Rabatt auf die ganze Stromrechnung. Alles, was Sie außerhalb der "
        "Gemeinschaft vom Lieferanten beziehen, wird weiterhin zum vollen Tarif verrechnet. Entscheidend ist "
        "deshalb nicht der Prozentsatz, sondern die zugeordnete Menge.", label="Wichtig:")}
-<p><small>*Richtwerte 2026 für Netzentgelt und Abgaben laut E-Control, EG-Preis und Lieferantenpreis sind
-Beispielwerte. Jede Gemeinschaft legt ihre Preise selbst fest.</small></p>
+<p><small>*Richtwerte 2026 für das Netzentgelt laut E-Control, Abgaben Stand 2027 (Parlament, BMF), EG-Preis
+und Lieferantenpreis sind Beispielwerte. Jede Gemeinschaft legt ihre Preise selbst fest.</small></p>
 """),
         ("Nachteil 2 und 3: Aufwand und laufende Kosten", "aufwand-kosten", f"""
-<p><b>Organisatorischer Aufwand:</b> Eine Energiegemeinschaft braucht eine Rechtsform (etwa einen Verein),
-eine Registrierung als Marktteilnehmer bei ebutilities, einen Vertrag mit dem Netzbetreiber und eine
+<p><b>Organisatorischer Aufwand:</b> Eine EEG oder Bürgerenergiegemeinschaft braucht eine Rechtsform (etwa
+einen Verein oder eine Genossenschaft; die Genossenschaft kostet in der Gründung mehr und verlangt eine
+jährliche Mitgliedschaft im Revisionsverband), eine Registrierung als Marktteilnehmer bei ebutilities, einen Vertrag mit dem Netzbetreiber und eine
 korrekte Abrechnung der viertelstündlich zugeordneten Mengen. Das ist machbar, aber Arbeit. Wer sie
 nicht selbst leisten will, tritt einer bestehenden Gemeinschaft bei (über 11.000 gibt es in Österreich)
 oder nutzt eine Plattform, die Verwaltung und Abrechnung übernimmt. Was auf Gründer zukommt, steht im
@@ -114,7 +121,7 @@ Artikel {a('/energiegemeinschaft-kosten/', 'Energiegemeinschaft: Kosten und Abre
 {A.box_dark("Faustregel vor dem Beitritt",
     "Liegt die jährliche Gebühr über 30 Prozent Ihres erwarteten Vorteils, passt die Gemeinschaft nicht zu "
     "Ihrem Verbrauchsprofil. Dann lohnt sich ein anderes Gebührenmodell oder eine andere Gemeinschaft. Der "
-    "Energiegemeinschaft-Rechner zeigt den erwarteten Jahresvorteil mit Ihren Zahlen.")}
+    + a('eg_rechner', 'Energiegemeinschaft-Rechner') + " zeigt den erwarteten Jahresvorteil mit Ihren Zahlen.")}
 """),
         ("Nachteil 4 und 5: Technische und räumliche Voraussetzungen", "voraussetzungen", f"""
 <p><b>Smart Meter mit Viertelstundenwerten:</b> Alle Beteiligten brauchen einen Smart Meter, der 15-Minuten-Werte
@@ -123,11 +130,14 @@ standardmäßig sendet der Zähler aber nur Tageswerte. Das Opt-in aktivieren Si
 Netzbetreibers, es dauert wenige Tage. Wer früher aus Datenschutzgründen ein Opt-out gewählt hat, muss das
 rückgängig machen. Ohne Viertelstundenwerte ist keine Zuordnung möglich.</p>
 <p><b>Nahbereich:</b> Den Netzentgelt-Abschlag gibt es nur, wenn Erzeuger und Abnehmer am selben Trafo
-(lokal, minus 57 Prozent) oder am selben Umspannwerk (regional, minus 28 Prozent) hängen. Das schränkt die
-Auswahl ein: Nicht in jeder Gemeinde gibt es eine passende Gemeinschaft, und ob Ihr Anschluss dazugehört,
-entscheidet der Netzbetreiber anhand der Zählpunktnummer, nicht die Postleitzahl. Strom teilen ist zwar
-österreichweit möglich, etwa mit Verwandten in Wien, aber als Bürgerenergiegemeinschaft ohne Rabatt und
-ohne Abgabenbefreiung. Hinzu kommt: Große Unternehmen ab 250 Mitarbeitern dürfen an einer
+(lokal, minus 57 Prozent) oder am selben Umspannwerk (regional, minus 28 Prozent) hängen, und bis Ende 2026
+nur in einer Erneuerbare-Energie-Gemeinschaft. Das schränkt die Auswahl ein: Nicht in jeder Gemeinde gibt es
+eine passende Gemeinschaft, und ob Ihr Anschluss dazugehört, entscheidet der Netzbetreiber anhand der
+Zählpunktnummer, nicht die Postleitzahl. Eine {a('/buergerenergiegemeinschaft/', 'Bürgerenergiegemeinschaft')} darf sich zwar über ganz Österreich
+erstrecken, etwa mit Verwandten in Wien, aber ohne Rabatt und ohne Abgabenbefreiung. Dazu kommt die
+Übergangsphase: Seit Oktober 2026 lassen sich neue Zuordnungen laut Koordinationsstelle vorübergehend nur mit
+Zählpunkten beim selben Netzbetreiber umsetzen, netzübergreifend (etwa Kärnten und Wien) voraussichtlich ab
+April 2027. Hinzu kommt: Große Unternehmen ab 250 Mitarbeitern dürfen an einer
 Erneuerbaren-Energie-Gemeinschaft nicht teilnehmen. Wie Sie eine Gemeinschaft im richtigen Nahbereich
 finden, steht im Artikel {a('/energiegemeinschaft-finden/', 'Energiegemeinschaft finden')}.</p>
 """),
@@ -145,6 +155,8 @@ weniger Bezugsmenge noch rechnet.</p>
   <li><b>Kopplungen</b> an ein bestimmtes Stromprodukt oder Konto desselben Anbieters.</li>
   <li><b>Gebühren für den Austritt</b> oder die Zählpunktabmeldung, die es bei seriösen Gemeinschaften nicht gibt.</li>
 </ul>
+<p>Wie Bezugspreise, Gebühren und Bindungen bei mehreren Anbietern konkret aussehen, zeigt der
+{a('/energiegemeinschaft-vergleich/', 'Energiegemeinschaft-Vergleich')}.</p>
 <p>Ein wirtschaftliches Risiko besteht darüber hinaus nicht: Der Lieferantenvertrag bleibt bestehen, nicht
 zugeordnete Mengen werden wie bisher abgerechnet, und Sie können mit ein bis drei Monaten Frist austreten.
 Den Ablauf beschreibt der Artikel {a('/energiegemeinschaft-beitreten/', 'Energiegemeinschaft beitreten')}.</p>
@@ -153,16 +165,41 @@ Den Ablauf beschreibt der Artikel {a('/energiegemeinschaft-beitreten/', 'Energie
        "und ob sich die Gemeinschaft für Sie rechnet.",
        primary=("kontakt", "Kostenlose Beratung"), secondary=("eg_rechner", "Ersparnis berechnen"))}
 """),
-        ("Nachteil 7: Der Rechtsrahmen ist im Umbruch", "rechtsrahmen", f"""
-<p>Mit 1. Oktober 2026 löst das Elektrizitätswirtschaftsgesetz (ElWG) die bisherigen Regeln des
-Erneuerbaren-Ausbau-Gesetzes ab. Bestehende Gemeinschaften laufen weiter und werden übergeführt, doch
-welche Marktprozesse die Netzbetreiber zum Stichtag bereitstellen, ist laut Koordinationsstelle noch
-offen. Ab 1. Jänner 2027 gilt zudem eine neue Netzentgeltstruktur: Das ElWG ermächtigt die E-Control,
-die Abschläge per Verordnung neu festzulegen. Ob die 57 und 28 Prozent bleiben, ist nicht bekannt.</p>
-<p>Für die Entscheidung heißt das: Rechnen Sie mit den heutigen Werten, aber planen Sie nicht mit einer
-Erhöhung. Positiv ist, dass Bürgerenergiegemeinschaften und Peer-to-Peer-Verträge ab Oktober 2026 im
-Nahbereich ebenfalls den reduzierten Netztarif erhalten und die Abgabenbefreiung ausdrücklich bei der
-Erneuerbaren-Energie-Gemeinschaft bleibt. Sie bleibt damit das wirtschaftlich stärkste Modell.</p>
+        ("Nachteil 7: Rechtsrahmen im Umbruch, Übergangsphase bis 2027", "rechtsrahmen", f"""
+<p>Seit 1. Oktober 2026 gilt das Elektrizitätswirtschaftsgesetz (ElWG) statt der bisherigen Regeln des
+Erneuerbaren-Ausbau-Gesetzes. Es kennt fünf Modelle:
+{a('/gemeinschaftliche-erzeugungsanlage/', 'gemeinschaftliche Erzeugungsanlage (GEA)')},
+Erneuerbare-Energie-Gemeinschaft (EEG), Bürgerenergiegemeinschaft (BEG),
+{a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag (P2P)')} und
+Eigenversorgungsanlage (EVA). Mit jedem Zählpunkt können Sie an bis zu fünf Modellen gleichzeitig
+teilnehmen. Bestehende Gemeinschaften wurden ins neue System übergeführt. Die neuen Möglichkeiten klingen
+gut, in der Übergangsphase haben sie aber fünf Haken:</p>
+<ul>
+  <li><b>Rabatt bis Ende 2026 nur in der EEG:</b> Von Oktober bis Dezember 2026 bekommen nur Mitglieder
+  lokaler und regionaler Erneuerbare-Energie-Gemeinschaften den reduzierten Netzarbeitspreis (minus
+  57 Prozent lokal, minus 28 Prozent regional, minus 64 Prozent bei ausschließlich Netzebene 4 und 5). Lokale
+  und regionale BEG, P2P-Verträge und Eigenversorgungsanlagen sollen ihn nach heutigem Stand erst mit der
+  neuen Systemnutzungsentgelte-Verordnung ab 1. Jänner 2027 erhalten.</li>
+  <li><b>Abschläge ab 2027 voraussichtlich niedriger:</b> Wie hoch die Abschläge ab 2027 sind, legt die
+  E-Control per Verordnung fest. Laut E-Control-Entwurf für 2027 sind 49 Prozent lokal und 22 bzw. 58 Prozent
+  regional vorgesehen (Entwurf).</li>
+  <li><b>Österreichweit erst ab April 2027:</b> Seit Oktober 2026 lassen sich neue Zuordnungen laut
+  Koordinationsstelle vorübergehend nur mit Zählpunkten beim selben Netzbetreiber umsetzen. Strom über
+  mehrere Netzgebiete teilen, etwa zwischen Kärnten und Wien, wird voraussichtlich erst ab April 2027
+  möglich.</li>
+  <li><b>Abgabenbefreiung nur in der EEG:</b> Der Entfall von Elektrizitätsabgabe und
+  Erneuerbaren-Förderbeitrag gilt derzeit nur für die EEG. Für Peer-to-Peer-Verträge und
+  Eigenversorgungsanlagen ist er nicht geregelt.</li>
+  <li><b>Abgabenvorteil schrumpft:</b> Die Elektrizitätsabgabe beträgt 2026 für Haushalte befristet nur
+  0,1 Cent je kWh, ab 2027 wieder 1,5 Cent. Den Erneuerbaren-Förderbeitrag setzt die Bundesregierung 2027 für
+  alle Stromkunden aus, er ist dann kein Vorteil der EEG mehr. Früher genannte 2,5 Cent Abgabenersparnis je
+  kWh stimmen deshalb weder 2026 noch 2027; 2027 sind es rund 1,5 Cent.</li>
+</ul>
+<p>Für die Entscheidung heißt das: Rechnen Sie mit den heutigen Werten der EEG, planen Sie für 2027 eher mit
+etwas niedrigeren Abschlägen und nicht mit einer Erhöhung. Erwarten Sie vom Peer-to-Peer-Vertrag oder vom österreichweiten Teilen vor 2027 keinen
+Netzentgelt-Vorteil. Die EEG im Nahbereich bleibt damit das wirtschaftlich stärkste Modell. Was die fünf
+Modelle im Einzelnen unterscheidet, erklärt der
+{a('/energiegemeinschaft/#elwg', 'Leitartikel im Abschnitt zum ElWG')}.</p>
 """),
         ("Für wen es sich trotzdem lohnt und wie Sie die Nachteile klein halten", "lohnt-sich", f"""
 <p>Für Erzeuger mit einer {a('photovoltaik', 'PV-Anlage')} ist eine Energiegemeinschaft in der Regel attraktiv,
@@ -171,7 +208,9 @@ kündigen. Der OeMAG-Tarif schwankte 2026 zwischen 6,146 Cent (Juli) und 14,874 
 Überschuss und 60 Prozent Zuordnung bringen 4.200 kWh zu 10 Cent* 420 Euro im Jahr, bei der OeMAG wären es, den
 jeweiligen Monatswert aufs Jahr hochgerechnet, 258 bis 625 Euro. Der Erzeugervorteil ist also nicht garantiert; verlässlich ist der Vorteil beim
 eigenen Bezug abends und im Winter. Reine Abnehmer profitieren
-ebenfalls, aber weniger stark, und am meisten, wenn sie tagsüber verbrauchen.</p>
+ebenfalls, aber weniger stark, und am meisten, wenn sie tagsüber verbrauchen. Wie Haushalte mit Nachbarn
+oder Familie starten, zeigt der Ratgeber
+{a('/energiegemeinschaft-privat/', 'Energiegemeinschaft für Privathaushalte')}.</p>
 <p>Der Hebel gegen den größten Nachteil ist Technik. Ein {a('batteriespeicher', 'Speicher')} verschiebt
 Überschuss in die Abendstunden, in denen Abnehmer in der Gemeinschaft mehr brauchen. Ein
 Energiemanagementsystem legt steuerbare Lasten wie Wärmepumpe oder Wallbox in die Erzeugungszeiten und
@@ -184,7 +223,8 @@ und die Teilnahme an einer Energiegemeinschaft ist dort eine der zulässigen Bet
         ["PV-Anlage, Überschuss, Nahbereich mit Abnehmern", "Beitreten: planbarer Erlös, geringes Risiko, OeMAG bleibt als Auffangnetz"],
         ["Kein PV, Tagesverbrauch (Wärmepumpe, Homeoffice, E-Auto)", "Beitreten: hohe Zuordnungsquote, Netz und Abgaben gespart"],
         ["Kein PV, nur Abendverbrauch, Pauschalgebühr", "Genau rechnen: Gebühr je kWh wählen oder abwarten"],
-        ["Verwandte außerhalb des Nahbereichs", "Teilen möglich, aber ohne Rabatt: eher Peer-to-Peer ab Oktober 2026"],
+        ["Verwandte außerhalb des Nahbereichs", "Teilen als BEG oder Peer-to-Peer möglich, aber ohne Rabatt; "
+         "bei einem anderen Netzbetreiber voraussichtlich erst ab April 2027"],
         ["Großunternehmen ab 250 Mitarbeitern", "EEG nicht möglich, Bürgerenergiegemeinschaft prüfen"],
     ],
 )}
@@ -195,8 +235,11 @@ und die Teilnahme an einer Energiegemeinschaft ist dort eine der zulässigen Bet
 zugeordnete Menge gilt, Gebühren von 25 bis 100 Euro im Jahr, Smart-Meter-Pflicht, Nahbereich und drei
 Rechnungen. Wer die Zuordnungsquote realistisch einschätzt, das Gebührenmodell zum Verbrauchsprofil
 wählt und den Vertrag vor der Unterschrift prüft, hält das Risiko gering. Mit einer eigenen PV-Anlage, einem
-Speicher und einem Energiemanagementsystem verschieben Sie die Bilanz klar zu Ihren Gunsten. Wir beraten
-Sie ehrlich, ob und wie sich der Schritt für Sie lohnt.</p>
+Speicher und einem Energiemanagementsystem verschieben Sie die Bilanz klar zu Ihren Gunsten. Bis Ende 2026
+gilt dabei: Den Netzentgelt-Rabatt gibt es nur in der EEG im Nahbereich, das österreichweite Teilen folgt
+voraussichtlich ab April 2027. Wie solche Anlagen in der Praxis aussehen, zeigen unsere
+{a('referenzen', 'Referenzprojekte mit PV und Speicher')}. Wir beraten Sie ehrlich, ob und wie sich der
+Schritt für Sie lohnt.</p>
 {A.cta("Nachteile minimieren, Vorteile maximieren",
        "Wir zeigen Ihnen kostenlos, wie Sie mit PV, Speicher und Energiemanagement das Beste aus einer "
        "Energiegemeinschaft holen, und sagen ehrlich, wenn sie sich bei Ihnen nicht rechnet.",
@@ -225,9 +268,15 @@ Sie ehrlich, ob und wie sich der Schritt für Sie lohnt.</p>
          "Erstens gilt die Ersparnis nur für den zeitgleich erzeugten und verbrauchten Anteil, bei einem Haushalt "
          "ohne Tagesverbrauch etwa 25 Prozent. Zweitens kostet die Teilnahme 2 bis 8 Euro je Monat. Dazu kommen "
          "Smart-Meter-Pflicht, Nahbereich, drei Rechnungen und bei einer Gründung der organisatorische Aufwand."),
+        ("Welche Vor- und Nachteile hat eine Energiegemeinschaft?",
+         "Vorteile: günstigerer Strom für den zugeordneten Anteil, in einer lokalen EEG bis zu 57 Prozent weniger "
+         "Netzentgelt (Arbeitspreis) und keine Elektrizitätsabgabe, ein fixer Preis für PV-Überschuss, Lieferant "
+         "und OeMAG-Vertrag bleiben. Nachteile: Ersparnis nur auf 25 bis 60 Prozent des Verbrauchs, 25 bis 100 "
+         "Euro Gebühr im Jahr, Smart-Meter-Pflicht, Nahbereich, drei Rechnungen und eine Übergangsphase, in der "
+         "bis Ende 2026 nur die EEG den Netzentgelt-Rabatt bekommt."),
         ("Lohnt sich eine Energiegemeinschaft für reine Verbraucher?",
-         "Ja, wenn der Verbrauch tagsüber anfällt. Abnehmer sparen auf den EG-Strom rund 7,5 Cent je "
-         "Kilowattstunde aus Netz und Abgaben (lokale EEG, Richtwerte 2026) plus die Differenz zum "
+         "Ja, wenn der Verbrauch tagsüber anfällt. Abnehmer sparen auf den EG-Strom rund 6 bis 6,5 Cent je "
+         "Kilowattstunde aus Netz und Abgaben (lokale EEG, Richtwerte 2026 und 2027) plus die Differenz zum "
          "Lieferantenpreis. Wer nur abends zuhause ist, bekommt wenig zugeordnet und sollte die Gebühr gegen den "
          "Vorteil rechnen."),
         ("Warum schwankt die Ersparnis?",
@@ -245,9 +294,18 @@ Sie ehrlich, ob und wie sich der Schritt für Sie lohnt.</p>
          "außerdem in Monaten, in denen der OeMAG-Marktpreis über dem EG-Preis liegt (Oktober 2026: 14,874 Cent), für "
          "die zugeordnete Menge weniger als bei der OeMAG."),
         ("Was ist mit der Energiegemeinschaft nach dem ElWG?",
-         "Bestehende Gemeinschaften laufen ab 1. Oktober 2026 im neuen Rechtsrahmen weiter. Ab 1. Jänner 2027 "
-         "kann die E-Control die Netzentgelt-Abschläge per Verordnung neu festlegen, ob sich die 57 und 28 "
-         "Prozent ändern, ist offen. Die Abgabenbefreiung bleibt der Erneuerbaren-Energie-Gemeinschaft vorbehalten."),
+         "Seit 1. Oktober 2026 gilt das ElWG mit fünf Modellen (GEA, EEG, BEG, Peer-to-Peer-Vertrag, "
+         "Eigenversorgungsanlage), bestehende Gemeinschaften wurden übergeführt. Bis Ende 2026 bekommen nur "
+         "Mitglieder lokaler und regionaler EEGs den Netzentgelt-Rabatt, BEG und Peer-to-Peer im Nahbereich nach "
+         "heutigem Stand ab 1. Jänner 2027, die Höhe legt dann die E-Control fest. Teilen über mehrere Netzgebiete "
+         "ist laut Koordinationsstelle voraussichtlich ab April 2027 möglich, die Abgabenbefreiung gilt derzeit nur "
+         "für die EEG."),
+        ("Kann man seinen Photovoltaik-Strom verschenken?",
+         "Ja. Seit Oktober 2026 erlaubt das ElWG Peer-to-Peer-Verträge zwischen mindestens zwei Zählpunkten, "
+         "ausdrücklich als Verkauf oder als Schenkung, ohne Verein, aber mit Smart Meter. In der Übergangsphase "
+         "geht das nur mit Zählpunkten beim selben Netzbetreiber, netzübergreifend voraussichtlich ab April 2027. "
+         "Einen Netzentgelt-Rabatt gibt es dafür frühestens ab 2027 im Nahbereich, eine Abgabenbefreiung ist "
+         "nicht geregelt."),
         ("Wie kann ich die Nachteile minimieren?",
          "Mit einer gut dimensionierten PV-Anlage, einem Speicher und einem Energiemanagementsystem, das "
          "Erzeugung und Verbrauch aufeinander abstimmt. Dazu: Gebührenmodell zum Verbrauchsprofil wählen, "
@@ -262,8 +320,15 @@ Sie ehrlich, ob und wie sich der Schritt für Sie lohnt.</p>
     "sources": [
         ("E-Control: Energiegemeinschaften", "https://www.e-control.at/energiegemeinschaften"),
         ("Koordinationsstelle: FAQs zum ElWG", "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
+        ("Koordinationsstelle: Peer-to-Peer-Vertrag", "https://energiegemeinschaften.gv.at/peer-to-peer/"),
+        ("Koordinationsstelle: Bürgerenergiegemeinschaft", "https://energiegemeinschaften.gv.at/buergerenergiegemeinschaft/"),
+        ("Koordinationsstelle: Mehrfachteilnahme", "https://energiegemeinschaften.gv.at/mehrfachteilnahme/"),
         ("Koordinationsstelle: FAQs", "https://energiegemeinschaften.gv.at/faqs/"),
         ("OeMAG: Marktpreis", "https://www.oem-ag.at/marktpreis"),
+        ("Parlament: Nationalrat beschließt Senkung der Elektrizitätsabgabe",
+         "https://www.parlament.gv.at/aktuelles/news/Nationalrat-beschliesst-Senkung-der-Elektrizitaetsabgabe"),
+        ("BMF: Aussetzung von Ökostrompauschale und Förderbeitrag 2027",
+         "https://www.bmf.gv.at/presse/pressemeldungen/2026/november-2026/oekostrompauschale.html"),
         ("oesterreich.gv.at", "https://www.oesterreich.gv.at/"),
     ],
     "related": [

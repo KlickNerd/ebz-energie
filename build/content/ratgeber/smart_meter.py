@@ -131,7 +131,8 @@ kommunikationsfähig sein, der Smart Meter ist dafür der Ausgangspunkt. Details
   {a('ems', 'Energiemanagementsystem')} lässt sich der Eigenverbrauch Ihrer Photovoltaikanlage deutlich
   steigern, weil Speicher, Wärmepumpe und Wallbox automatisch in sonnenreiche Stunden gelegt werden.</li>
   <li><b>Grundlage für die Energiegemeinschaft:</b> Auch das Teilen von Strom in einer
-  {a('eg', 'Energiegemeinschaft')} setzt einen Smart Meter mit Viertelstundenwerten voraus, weil nur so
+  {a('eg', 'Energiegemeinschaft')} oder per {a('/peer-to-peer-strom/', 'Peer-to-Peer-Vertrag mit einem anderen Haushalt')}
+  setzt einen Smart Meter mit Viertelstundenwerten voraus, weil nur so
   zugeordnet werden kann, wer wann welchen Strom bezogen hat.</li>
 </ul>
 {A.net([

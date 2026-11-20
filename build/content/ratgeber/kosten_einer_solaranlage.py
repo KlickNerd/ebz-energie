@@ -122,7 +122,9 @@ und Förderanträge Teil des Pakets.</p>
 Rest fließt zu rund 6 bis 15 Cent je Kilowattstunde ins Netz, während der Bezug aus dem Netz rund 32 Cent
 kostet. Ein {a('batteriespeicher', 'Batteriespeicher')} verschiebt den Mittagsüberschuss in den Abend
 und hebt den Eigenverbrauch auf 60 bis 80 Prozent. Für 5.000 bis 9.000 Euro Aufpreis sinkt die
-Stromrechnung damit um bis zu 85 Prozent.</p>
+Stromrechnung damit um bis zu 85 Prozent. Was danach noch übrig bleibt, können Sie in einer
+{a('eg', 'Energiegemeinschaft')} teilen; welche Tarife die Anbieter dafür zahlen, zeigt der
+{a('/energiegemeinschaft-vergleich/', 'Vergleich der Energiegemeinschaften')}.</p>
 <p>Die Kapazität sollte zum Verbrauch passen: Ein Speicher mit 5 kWh deckt den Nachtbedarf im Sommer,
 wer eine Wärmepumpe betreibt oder ein E-Auto lädt, greift eher zu 10 kWh. Als Faustregel gilt das
 Verhältnis 1:1, also 10 kWh Speicher zu 10 kWp Leistung. Ein zu großer Speicher wird im Winter nie

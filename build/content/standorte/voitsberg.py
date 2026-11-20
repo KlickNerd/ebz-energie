@@ -147,7 +147,12 @@ ORT = {
              "Lankowitz, Edelschrott und St. Martin am Wöllmißberg die Stadtwerke Köflach. Bei den Stadtwerken "
              "Voitsberg läuft es so: Ausführungsmeldung durch den Elektroinstallateur, Netzprüfung, "
              "Zählpunktnummer und eine auf 12 Monate befristete Netzzusage, nach der Montage die "
-             "Fertigstellungsmeldung und der Netzzugangsvertrag."),
+             "Fertigstellungsmeldung und der Netzzugangsvertrag. Der Netzbetreiber zählt auch für "
+             "Energiegemeinschaften: In der Übergangsphase seit Oktober 2026 lassen sich neue Zuordnungen laut "
+             "Koordinationsstelle nur mit Zählpunkten beim selben Netzbetreiber umsetzen, netzübergreifend "
+             "voraussichtlich ab April 2027. Welche Gemeinschaft im Netz der Stadtwerke Voitsberg arbeitet, "
+             "steht im Ratgeber "
+             + a("/energiegemeinschaft-steiermark/#bezirke", "Energiegemeinschaft in der Steiermark") + "."),
         ],
         "bullets": [
             "Mitteilung an die Gemeinde statt Bauverfahren (PV auf Dach und Fassade)",
@@ -304,6 +309,8 @@ ORT = {
         ("Klima- und Energiefonds: Klima- und Energie-Modellregion KEM WEST",
          "https://orte-von-morgen.at/ort/kem-west/?place-id=6212"),
         ("Energie-Erlebnispark Zangtal", "https://energie-erlebnispark.at/"),
+        ("Österreichische Koordinationsstelle für Energiegemeinschaften: FAQ zum ElWG",
+         "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
     ],
 
     "notizen": (

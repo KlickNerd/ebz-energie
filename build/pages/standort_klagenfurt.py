@@ -215,6 +215,13 @@ def build():
                  "der Verteilernetzbetreiber. Zu welchem Netz Ihre Adresse in Krumpendorf, Ebenthal oder Maria Saal "
                  "gehört, zeigt die Netzgebietskarte der Stadtwerke oder ein Blick auf Ihre Stromrechnung. Wir "
                  "klären das beim ersten Termin."),
+                ("Das Netzgebiet zählt auch für Energiegemeinschaften: In der Übergangsphase seit Oktober 2026 "
+                 "lassen sich neue Zuordnungen laut Koordinationsstelle nur mit Zählpunkten beim selben "
+                 "Netzbetreiber umsetzen, eine Gemeinschaft über Stadtnetz und Kärnten-Netz-Gebiet hinweg "
+                 "voraussichtlich ab April 2027. Welche regionalen Gemeinschaften es im Netz der Stadtwerke gibt, "
+                 "steht im Ratgeber "
+                 + a("/energiegemeinschaft-villach-klagenfurt/", "Energiegemeinschaft Villach und Klagenfurt")
+                 + " und in der " + a("/energiegemeinschaft-kaernten/#regionen", "Übersicht der Kärntner Regionen") + "."),
             ],
             img=IMG["gen_detail"],
             alt="Montagedetail einer Photovoltaikanlage: Modulklemmen und Unterkonstruktion auf einem Ziegeldach (Symbolbild)",
@@ -277,7 +284,7 @@ def build():
                 "bullets": [
                     "Referenz Krumpendorf: 25 kWp und 25 kWh Speicher, in 4 Tagen montiert",
                     "Auslegung nach Lastprofil, hoher Eigenverbrauch am Tag",
-                    "Strom im Haus teilen: gemeinschaftliche Erzeugungsanlage oder Energiegemeinschaft",
+                    "Strom im Haus teilen: " + a("/gemeinschaftliche-erzeugungsanlage/", "gemeinschaftliche Erzeugungsanlage") + " oder Energiegemeinschaft",
                 ],
                 "cta": ("pv_gewerbe", "Photovoltaik für Gewerbe"),
             },

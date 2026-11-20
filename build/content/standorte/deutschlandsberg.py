@@ -70,8 +70,10 @@ ORT = {
              "Deutschlandsberg derzeit 0,0 MW freie Einspeisekapazität aus (Stand 1. Juli 2026, unverbindliche "
              "Momentaufnahme). Wir legen Anlagen in Deutschlandsberg deshalb auf Eigenverbrauch aus: mit "
              + a("batteriespeicher", "Batteriespeicher") + ", " + a("waermepumpe", "Wärmepumpe") + " und "
-             + a("ems", "Energiemanagement") + ". Überschüsse können Sie in einer "
-             + a("eg_privat", "Energiegemeinschaft") + " teilen."),
+             + a("ems", "Energiemanagement") + ". Was trotzdem ins Netz geht, können Sie in einer "
+             + a("eg_privat", "Energiegemeinschaft") + " teilen; welche Gemeinschaft am Umspannwerk "
+             "Deutschlandsberg arbeitet, steht im Ratgeber "
+             + a("/energiegemeinschaft-steiermark/#bezirke", "Energiegemeinschaften in den steirischen Regionen") + "."),
         ],
     },
 

@@ -139,7 +139,10 @@ ORT = {
              "anderen Kärntner Umspannwerken steht dieser Wert bei 0 MVA. Das ist eine gute Ausgangslage, entscheidet "
              "aber nicht über Ihren einzelnen Hausanschluss: Maßgeblich bleibt die Netzberechnung für Ihren Zählpunkt. "
              "Bei Häusern und Höfen mit langer Zuleitung planen wir deshalb "
-             + a("batteriespeicher", "Speicher") + " und Leistungsregelung von Anfang an mit."),
+             + a("batteriespeicher", "Speicher") + " und Leistungsregelung von Anfang an mit. Was Sie nicht "
+             "selbst verbrauchen, können Sie auch in einer Energiegemeinschaft teilen; welche es im Raum "
+             "Feldkirchen gibt, steht im Ratgeber "
+             + a("/energiegemeinschaft-kaernten/#regionen", "Energiegemeinschaft in Kärnten") + "."),
         ],
         "bullets": [
             "Baumitteilung an die Stadtgemeinde Feldkirchen, nach der Montage die Bauvollendungsmeldung",

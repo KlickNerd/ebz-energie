@@ -59,8 +59,12 @@ FAQ = [
      "Der Montageschwerpunkt liegt in Kärnten und der Steiermark, von Villach über Klagenfurt, Spittal und "
      "Wolfsberg bis Graz. Referenzprojekte gibt es in 6 Bundesländern."),
     ("Was bringt mir eine Energiegemeinschaft?",
-     "Sie teilen Ihren Strom mit Nachbarn oder Verwandten, statt ihn günstig einzuspeisen. Im Nahbereich sparen Sie "
-     "zusätzlich beim Netzentgelt. Österreichweites Teilen ist ebenfalls möglich, dann ohne Netzentgelt-Rabatt."),
+     "Sie teilen Ihren Strom mit Nachbarn oder Verwandten, statt ihn günstig einzuspeisen. In einer lokalen oder "
+     "regionalen Erneuerbare-Energie-Gemeinschaft zahlen die Bezieher zusätzlich weniger Netzentgelt, 2026 bis zu "
+     "57 Prozent im Lokalbereich; die Werte ab 2027 legt die E-Control neu fest. Seit dem ElWG (Oktober 2026) gibt es "
+     "fünf Modelle, darunter Bürgerenergiegemeinschaft und Peer-to-Peer-Vertrag. Teilen über Netzgrenzen hinweg, "
+     "etwa mit Familie in Wien, ist laut Koordinationsstelle voraussichtlich ab April 2027 möglich, dann ohne "
+     "Netzentgelt-Rabatt."),
     ("Kann ich die Anlage finanzieren?",
      "Ja, mit einer fairen Finanzierung ab 147 € im Monat inklusive Speicher*. Die Anlage gehört Ihnen ab dem "
      "ersten Tag, mit voller Förderung für Privatpersonen, 0 € Anzahlung und fixer Rate."),
@@ -111,8 +115,8 @@ def build():
                  "title": "Energiemanagement", "text": "Ein System steuert Anlage, Speicher, Wärmepumpe und Wallbox automatisch, mit Monitoring per App.",
                  "link_key": "ems", "link_text": "Energiemanagement"},
                 {"img": IMG["eg_drohne"], "alt": "Wohngebiet aus der Luft",
-                 "title": "Energiegemeinschaft", "text": "Strom mit Nachbarn oder Verwandten teilen und beim Netzentgelt sparen. Österreichweit möglich.",
-                 "link_key": "eg_privat", "link_text": "Energiegemeinschaft beitreten"},
+                 "title": "Energiegemeinschaft", "text": "Überschuss mit Nachbarn oder Familie teilen, statt ihn nur einzuspeisen. In lokalen und regionalen Erneuerbare-Energie-Gemeinschaften sinkt zusätzlich das Netzentgelt.",
+                 "link_key": "eg_privat", "link_text": "Energiegemeinschaft mit PV-Anlage"},
                 {"img": IMG["balkon"], "alt": "Balkonkraftwerk an einem Geländer",
                  "title": "Balkonkraftwerk und Wallbox", "text": "Der einfache Einstieg für Mieter und die Ladelösung für Ihr E-Auto.",
                  "link_key": "balkonkraftwerke", "link_text": "Balkonkraftwerk"},
@@ -266,7 +270,7 @@ def build():
              ("foerderung_kaernten", "PV-Förderung Kärnten 2026"),
              ("foerderung_steiermark", "PV-Förderung Steiermark"),
              ("solarrechner", "PV-Rechner"),
-             ("eg_privat", "Energiegemeinschaft beitreten"),
+             ("eg_privat", "Energiegemeinschaft mit PV-Anlage"),
              ("finanzierung", "Finanzierung ab 147 €/Monat"),
              ("referenzen", "Referenzen")],
         ),

@@ -34,7 +34,7 @@ ARTICLE = {
         "EG-Einspeisung: <b>8 bis 12 ct</b>",
     ],
     "date_published": "2026-08-20",
-    "date_modified": "2026-11-19",
+    "date_modified": "2026-11-20",
     "hero_img": "pv_card",
     "hero_alt": "Photovoltaikanlage, deren Überschuss zum OeMAG-Marktpreis oder in einer Energiegemeinschaft vergütet wird",
 
@@ -51,7 +51,8 @@ ARTICLE = {
         "bleibt als Auffangnetz bestehen.",
         "Ob der Erzeuger mehr bekommt als bei der OeMAG, hängt vom Monat ab: Gegenüber dem Juli-Wert bringt ein "
         "EG-Preis von 10 Cent* ein Plus, gegenüber dem September-Wert nicht und gegenüber dem Oktober-Wert ein Minus. Verlässlich sind der Bezugsvorteil "
-        "(bis zu 57 Prozent weniger Netzentgelt im Nahbereich) und die Planbarkeit. EBZ Energie kombiniert PV, "
+        "(in einer lokalen Erneuerbare-Energie-Gemeinschaft bis zu 57 Prozent weniger Netzentgelt) und die "
+        "Planbarkeit. EBZ Energie kombiniert PV, "
         "Speicher, Energiemanagement und Energiegemeinschaft in Kärnten und der Steiermark.",
     ],
     "kpis": [
@@ -134,7 +135,7 @@ Energiegemeinschaft teilt diese Spanne zwischen Erzeuger und Abnehmer auf. Liegt
 September 2026 (10,168 Cent) oder Oktober 2026 (14,874 Cent) auf oder über dem EG-Einspeisepreis von 10 Cent*,
 bringt die Gemeinschaft dem Erzeuger keinen Mehrerlös, im Oktober sogar weniger als die OeMAG.
 Der Vorteil der Gemeinschaft liegt dann beim Abnehmer (Bezugspreis unter dem Lieferantentarif,
-Netzentgelt-Rabatt im Nahbereich) und in der Planbarkeit: Der EG-Preis ist fix vereinbart, der OeMAG-Tarif
+Netzentgelt-Rabatt in der EEG im Nahbereich) und in der Planbarkeit: Der EG-Preis ist fix vereinbart, der OeMAG-Tarif
 schwankt monatlich. Der Vergleich der Optionen im Überblick:</p>
 {A.table(
     ["Option", "Preis je kWh Überschuss", "Bindung", "Risiko"],
@@ -160,11 +161,15 @@ fix vereinbarten Preis, was sie nicht abnimmt, läuft wie bisher.</p>
        "420 Euro im Jahr. Bei der OeMAG wären es je nach Monatswert 258 Euro (Juli 2026: 6,146 Cent) bis "
        "625 Euro (Oktober 2026: 14,874 Cent). Der Erzeugervorteil hängt also vom Marktpreis ab und kann sich in "
        "Monaten mit hohem Tarif ins Gegenteil drehen; dafür ist der EG-Preis fix und planbar. Verlässlich ist der Abnehmervorteil in den Stunden, in denen Sie "
-       "selbst aus der Gemeinschaft beziehen: bis zu 57 Prozent weniger Netzentgelt und keine "
-       "Elektrizitätsabgabe im Nahbereich.", label="Beispiel:")}
-<p>Der Netzentgelt-Abschlag gilt nur im Nahbereich, also am selben Trafo oder Umspannwerk. Wie er sich
-zusammensetzt, steht im Artikel {a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.
-Wie sich das mit Ihren Zahlen rechnet, zeigt der {a('eg_rechner', 'Energiegemeinschaft-Rechner')}.</p>
+       "selbst aus der Gemeinschaft beziehen: in einer lokalen EEG bis zu 57 Prozent weniger Netzentgelt und "
+       "keine Elektrizitätsabgabe.", label="Beispiel:")}
+<p>Der Netzentgelt-Abschlag gilt nur im Nahbereich, also am selben Trafo oder Umspannwerk, und bis Ende 2026 nur
+für Mitglieder einer Erneuerbare-Energie-Gemeinschaft. Bürgerenergiegemeinschaften und Peer-to-Peer-Verträge
+sollen ihn im Nahbereich nach heutigem Stand ab 1. Jänner 2027 erhalten, die Höhe legt die E-Control fest.
+Wie er sich zusammensetzt, steht im Artikel {a('/energiegemeinschaft-netzkosten/', 'Energiegemeinschaft und Netzkosten')}.
+Wie sich das mit Ihren Zahlen rechnet, zeigt der {a('eg_rechner', 'Energiegemeinschaft-Rechner')}, welche
+Einspeise- und Bezugspreise bestehende Gemeinschaften zahlen, der
+{a('/energiegemeinschaft-vergleich/', 'Energiegemeinschaft-Vergleich')}.</p>
 {A.cta("Ein planbarer Preis für Ihren Überschuss",
        "EBZ nimmt Sie in Kärnten und der Steiermark in eine Energiegemeinschaft auf. Ihr OeMAG-Vertrag "
        "bleibt als Auffangnetz bestehen.",
@@ -226,8 +231,8 @@ macht Sie unabhängiger von der Börse. Die OeMAG bleibt im Hintergrund für all
         ("Wie viel mehr bringt eine Energiegemeinschaft gegenüber der OeMAG?",
          "Das hängt vom Monat ab. Typische EG-Einspeisepreise liegen bei 8 bis 12 Cent (Beispielwerte). Gegenüber "
          "dem Juli-Wert der OeMAG von 6,146 Cent ist das ein Plus, gegenüber dem September-Wert von 10,168 Cent "
-         "kaum und gegenüber dem Oktober-Wert von 14,874 Cent nicht. Verlässlich sind der fixe Preis, der Bezugsvorteil mit bis zu 57 Prozent weniger Netzentgelt im "
-         "Nahbereich und die wegfallende Elektrizitätsabgabe."),
+         "kaum und gegenüber dem Oktober-Wert von 14,874 Cent nicht. Verlässlich sind der fixe Preis, der Bezugsvorteil mit bis zu 57 Prozent weniger Netzentgelt in "
+         "einer lokalen EEG und die wegfallende Elektrizitätsabgabe."),
         ("Ist ein Einspeisevertrag beim Lieferanten besser als die OeMAG?",
          "Diese Tarife liegen meist bei 5 bis 12 Cent und damit je nach Monat über oder unter der OeMAG, sie sind "
          "aber häufig an den Bezugstarif "

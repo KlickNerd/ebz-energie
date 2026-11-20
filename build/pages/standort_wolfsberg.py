@@ -173,8 +173,9 @@ def build():
             h2="Ohne Speicher rund 30 %, mit Speicher bis zu 80 % Eigenverbrauch",
             intro=("Ohne Speicher nutzen Sie typischerweise nur etwa 30 Prozent Ihres Solarstroms selbst, weil "
                    "die meiste Energie mittags entsteht, wenn der Verbrauch im Haushalt gering ist. Der Rest geht "
-                   "zum OeMAG-Marktpreis ins Netz (Oktober 2026: 14,874 Cent je kWh). Ein Speicher hebt den "
-                   "Eigenverbrauch auf bis zu 80 Prozent."),
+                   "zum OeMAG-Marktpreis ins Netz (Oktober 2026: 14,874 Cent je kWh) oder an Nachbarn in einer "
+                   + a("/energiegemeinschaft-kaernten/#regionen", "Energiegemeinschaft im Lavanttal")
+                   + ". Ein Speicher hebt den Eigenverbrauch auf bis zu 80 Prozent."),
             bars=[
                 ("Eigenverbrauch ohne Speicher", 30, "bad", "rund 30 %*"),
                 ("Eigenverbrauch mit Speicher", 80, "good", "bis zu 80 %*"),

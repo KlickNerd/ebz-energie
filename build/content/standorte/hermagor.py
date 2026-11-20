@@ -235,7 +235,8 @@ ORT = {
          "Hermagor. Wer Überschussstrom im Ort weitergeben möchte, kann sich die Erneuerbare Energiegemeinschaft "
          "Wulfenia ansehen, die die Stadtgemeinde mit sechs Betrieben gegründet hat und die laut Stadtgemeinde auch "
          "Haushalte aufnehmen will. Wie das Modell funktioniert, steht auf der Seite "
-         + a("eg_privat", "Energiegemeinschaft für Private") + "."),
+         + a("eg_privat", "Energiegemeinschaft für Private") + ", weitere Gemeinschaften in Kärnten listet "
+         "der Ratgeber " + a("/energiegemeinschaft-kaernten/#regionen", "Energiegemeinschaften in den Kärntner Regionen") + "."),
     ],
     "referenzen": {
         "h2": "Referenzen aus Kärnten: die nächstgelegenen Projekte",

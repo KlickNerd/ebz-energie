@@ -112,6 +112,8 @@ QUELLEN = [
      "https://www.e-netze.at/Strom/Erzeugungsanlagen/Default.aspx"),
     ("Stadt Graz: Umweltförderungen",
      "https://www.graz.at/cms/ziel/7882683/DE"),
+    ("Österreichische Koordinationsstelle für Energiegemeinschaften: FAQ zum ElWG",
+     "https://energiegemeinschaften.gv.at/faqs-zum-elwg/"),
 ]
 
 FAQ = [
@@ -343,7 +345,12 @@ def build():
                 ("Im Grazer Stadtgebiet betreibt die Stromnetz Graz das Verteilernetz, außerhalb ist es in der Regel "
                  "die Energienetze Steiermark GmbH. Den Unterschied merken Sie beim Antrag: Jeder Netzbetreiber hat "
                  "sein eigenes Portal und eigene Formulare. Welcher für Ihre Adresse zuständig ist, steht auf Ihrer "
-                 "Stromrechnung; wir klären es beim ersten Termin."),
+                 "Stromrechnung; wir klären es beim ersten Termin. Das Netzgebiet zählt auch für "
+                 "Energiegemeinschaften: In der Übergangsphase seit Oktober 2026 lassen sich neue Zuordnungen laut "
+                 "Koordinationsstelle nur mit Zählpunkten beim selben Netzbetreiber umsetzen, eine Gemeinschaft "
+                 "über Stadtnetz und Landesnetz hinweg voraussichtlich ab April 2027. Welche Gemeinschaften es in "
+                 "Graz und Graz-Umgebung gibt, steht im Ratgeber "
+                 + a("/energiegemeinschaft-steiermark/#bezirke", "Energiegemeinschaft in der Steiermark") + "."),
                 (f"Bei den Energienetzen Steiermark läuft es in fünf Schritten (Stand {STAND}): Einspeisezählpunkt im "
                  "Einspeiserportal beantragen, Netzbeurteilung mit Netzanschlusskonzept abwarten, Anlage nach diesem "
                  "Konzept errichten, Installationsdokument durch ein konzessioniertes Elektrounternehmen einreichen, "
