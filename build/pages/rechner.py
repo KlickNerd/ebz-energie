@@ -138,8 +138,11 @@ SOLAR_FORM = """
   <div class="field"><label for="s-preis">Ihr Strompreis (ct/kWh)</label>
     <input id="s-preis" type="number" min="10" max="60" step="0.5" value="28" inputmode="decimal">
     <p class="calc__hint">Österreich-Durchschnitt rund 28 ct je kWh inklusive Netz und Abgaben (E-Control).</p></div>
+  <div class="field"><label for="s-oemag">OeMAG-Marktpreis für die Einspeisung (ct/kWh)</label>
+    <input id="s-oemag" type="number" min="0" max="40" step="0.001" value="__OEMAG__" inputmode="decimal">
+    <p class="calc__hint">Vorgabe: __OEMAG_STR__ ct (September 2026). Der Wert schwankt monatlich, 2026 zwischen __JULI__ ct (Juli) und __OKT__ ct (Oktober). Aktuell auf oem-ag.at.</p></div>
   <p class="form-note">Der PV-Rechner läuft nur in Ihrem Browser, es werden keine Daten übertragen. Kostenlos, ohne Anmeldung.</p>
-"""
+""".replace("__OEMAG__", str(OEMAG)).replace("__OEMAG_STR__", OEMAG_STR).replace("__JULI__", OEMAG_JULI_STR).replace("__OKT__", OEMAG_OKT_STR)
 
 SOLAR_RESULT = f"""
   <h3>Ihr Richtwert</h3>
@@ -154,7 +157,7 @@ SOLAR_RESULT = f"""
     <div><b id="s-amort">0 Jahre</b><span>Amortisation ohne Förderung*</span></div>
     <div><b id="s-foerder">0 Jahre</b><span>Amortisation mit Landespauschale Kärnten (3.000 €, nur mit Speicher)*</span></div>
     <div><b id="s-rate">0 €</b><span>Finanzierung pro Monat*</span></div>
-    <div><b id="s-einsp">0 €</b><span>Einspeisung zu {OEMAG_STR} ct (OeMAG, Sept. 2026)*</span></div>
+    <div><b id="s-einsp">0 €</b><span>Einspeisung zum OeMAG-Marktpreis*</span></div>
   </div>
   <a class="btn btn--primary btn--lg" id="s-cta" href="/kontakt/">Dieses Ergebnis kostenlos prüfen lassen</a>
   <a class="btn btn--light" href="/finanzierung/">Finanzierung ansehen</a>
@@ -165,7 +168,7 @@ SOLAR_ASSUMPTIONS = [
     "Jahresertrag rund 1.000 kWh je kWp in Kärnten und der Steiermark bei Südausrichtung (Richtwert 950 bis 1.100), Ost-West minus 10 %, nur Ost oder nur West minus 15 %.",
     "Anlagengröße: etwa 1 kWp je 1.000 kWh Jahresverbrauch, mindestens 5 kWp, höchstens 30 kWp. Dachfläche rund 5,5 m² je kWp.",
     "Eigenverbrauchsquote: ohne Speicher rund 30 % (Betrieb 50 %), mit Speicher bis zu 70 % (Betrieb 80 %). Mehr geht nur mit Energiemanagement.",
-    f"Einspeisung des Überschusses zum OeMAG-Marktpreis von {OEMAG_STR} ct je kWh (Rechenwert September 2026; Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct, der Wert schwankt monatlich).",
+    f"Einspeisung des Überschusses zum OeMAG-Marktpreis, im Rechner änderbar. Vorgabe {OEMAG_STR} ct je kWh (September 2026); Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct, der Wert schwankt monatlich (oem-ag.at).",
     "Richtpreis: 10 kWp mit Speicher rund 15.000 bis 22.000 € vor Förderung, ohne Speicher rund 10.000 bis 15.000 €; linear skaliert.",
     "Förderung: Der Investitionszuschuss des Bundes für PV und Speicher ist für 2026 abgeschlossen und wird nicht abgezogen. Getrennt ausgewiesen ist die Landespauschale Kärnten von 3.000 € (Neuanlage ab 5 kWp mit neuem Speicher ab 5 kWh). Ab 2027 plant der Bund laut BMWET eine Systemförderung für Speicher mit intelligenter Steuerung, Höhe offen.",
     "Finanzierung: fixe Rate über 25 Jahre, Richtwert aus den Beispielen des Finanzierungspartners (ab 102 € für 15.000 €, ab 164 € für 25.000 €), linear skaliert. Rate abhängig von Angebot und Laufzeit.",
@@ -174,7 +177,7 @@ SOLAR_ASSUMPTIONS = [
 
 SOLAR_JS = r"""
 (function(){
-  var OEMAG=__OEMAG__, M2=__M2__, KTN=__KTN__, AUS={sued:1,ostwest:0.9,einseitig:0.85};
+  var OEMAG0=__OEMAG__, M2=__M2__, KTN=__KTN__, AUS={sued:1,ostwest:0.9,einseitig:0.85};
   var $=function(id){return document.getElementById(id);};
   var eur=function(v){return Math.round(v).toLocaleString("de-DE")+" €";};
   var kwh=function(v){return Math.round(v).toLocaleString("de-DE")+" kWh";};
@@ -183,6 +186,7 @@ SOLAR_JS = r"""
     var gewerbe=$("s-typ").value==="gewerbe", speicher=$("s-speicher").value==="1";
     var aus=AUS[$("s-ausrichtung").value]||1;
     var preis=Math.max(10,Math.min(60,+$("s-preis").value||28))/100;
+    var oe=$("s-oemag"), OEMAG=oe&&oe.value!==""?Math.max(0,Math.min(40,+oe.value||0)):OEMAG0;
     var kwp=Math.max(5,Math.min(30,Math.round(verbrauch/1000*2)/2));
     var ertrag=kwp*1000*aus;
     var quote=speicher?(gewerbe?0.8:0.7):(gewerbe?0.5:0.3);
@@ -210,7 +214,7 @@ SOLAR_JS = r"""
     var cta=$("s-cta"); var base=cta.getAttribute("href").split("?")[0];
     cta.setAttribute("href", base+"?anliegen="+encodeURIComponent("PV-Rechner: "+verbrauch+" kWh, "+kwp+" kWp"+(speicher?" mit Speicher":" ohne Speicher")+", Richtwert "+Math.round(ersparnis)+" €/Jahr"));
   }
-  ["s-verbrauch","s-typ","s-ausrichtung","s-speicher","s-preis"].forEach(function(id){ var el=$(id); if(el){ el.addEventListener("input",calc); el.addEventListener("change",calc);} });
+  ["s-verbrauch","s-typ","s-ausrichtung","s-speicher","s-preis","s-oemag"].forEach(function(id){ var el=$(id); if(el){ el.addEventListener("input",calc); el.addEventListener("change",calc);} });
   if($("s-verbrauch")) calc();
 })();
 """.replace("__OEMAG__", str(OEMAG)).replace("__M2__", str(M2_KWP)).replace("__KTN__", str(KTN_PAUSCHALE))
@@ -454,6 +458,9 @@ EG_FORM = f"""
     <div><label for="e-einsp">EG-Einspeisepreis (ct/kWh)*</label><input id="e-einsp" type="number" min="0" max="30" step="0.5" value="{EG_EINSP:g}" inputmode="decimal"></div>
     <div><label for="e-bezugpreis">EG-Bezugspreis (ct/kWh)*</label><input id="e-bezugpreis" type="number" min="0" max="40" step="0.5" value="{EG_BEZUG:g}" inputmode="decimal"></div>
   </div>
+  <div class="field"><label for="e-oemag">Vergleich: OeMAG-Marktpreis (ct/kWh)</label>
+    <input id="e-oemag" type="number" min="0" max="40" step="0.001" value="{OEMAG}" inputmode="decimal">
+    <p class="calc__hint">Was Sie ohne Gemeinschaft für die Einspeisung bekämen. Vorgabe: {OEMAG_STR} ct (September 2026). 2026 schwankte der Wert zwischen {OEMAG_JULI_STR} ct (Juli) und {OEMAG_OKT_STR} ct (Oktober), aktuell auf oem-ag.at.</p></div>
   <p class="form-note">*Beispielkonditionen: {EG_EINSP:g} ct Einspeisung, {EG_BEZUG:g} ct Bezug, 4 € Beitrag pro Monat. Jede Gemeinschaft legt ihre Preise selbst fest. Der Rechner läuft nur in Ihrem Browser.</p>
 """
 
@@ -461,7 +468,7 @@ EG_RESULT = f"""
   <h3>Ihr Richtwert</h3>
   <p class="calc__big"><span id="e-gesamt">0 €</span><small>Vorteil pro Jahr nach Beitrag*</small></p>
   <div class="calc__grid">
-    <div><b id="e-mehr">0 €</b><span>Einspeisung: EG-Preis gegenüber OeMAG {OEMAG_STR} ct (Sept. 2026)*</span></div>
+    <div><b id="e-mehr">0 €</b><span>Einspeisung: EG-Preis gegenüber OeMAG-Marktpreis*</span></div>
     <div><b id="e-bezugv">0 €</b><span>Ersparnis Bezug (Energiepreis + Netzentgelt + Abgaben)*</span></div>
     <div><b id="e-zug">0 kWh</b><span>zugeordnete kWh pro Jahr</span></div>
     <div><b id="e-beitrag">{BEITRAG} €</b><span>Jahresbeitrag Plattform*</span></div>
@@ -473,7 +480,7 @@ EG_RESULT = f"""
 """
 
 EG_ASSUMPTIONS = [
-    f"Einspeisung in der Gemeinschaft {EG_EINSP:g} ct je kWh (Beispiel, änderbar) gegenüber OeMAG-Marktpreis {OEMAG_STR} ct (Rechenwert September 2026; Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct). Liegt der EG-Preis unter dem Marktpreis, wird die Differenz negativ ausgewiesen.",
+    f"Einspeisung in der Gemeinschaft {EG_EINSP:g} ct je kWh (Beispiel, änderbar) gegenüber dem OeMAG-Marktpreis, im Rechner änderbar (Vorgabe {OEMAG_STR} ct, September 2026; Juli 2026: {OEMAG_JULI_STR} ct, Oktober 2026: {OEMAG_OKT_STR} ct). Liegt der EG-Preis unter dem Marktpreis, wird die Differenz negativ ausgewiesen.",
     f"Bezug in der Gemeinschaft {EG_BEZUG:g} ct je kWh (Beispiel, änderbar) statt rund {LIEFERANT:g} ct Energiepreis beim Lieferanten.",
     f"Netznutzungs- und Netzverlustentgelt zusammen rund {_ct(NETZ_NE7)} ct je kWh (Netzebene 7): minus 57 % lokal, minus 28 % regional, minus 64 % bei ausschließlicher Teilnahme auf Netzebene 4/5, kein Abschlag österreichweit (SNE-VO, E-Control).",
     f"Elektrizitätsabgabe {_ct(E_ABGABE)} ct und Erneuerbaren-Förderbeitrag rund {_ct(FOERDERBEITRAG)} ct je kWh entfallen für Strom aus Erneuerbare-Energie-Gemeinschaften (nicht in der Bürgerenergiegemeinschaft).",
@@ -483,7 +490,7 @@ EG_ASSUMPTIONS = [
 
 EG_JS = r"""
 (function(){
-  var OEMAG=__OEMAG__, NETZ=__NETZ__, ABG=__ABG__, LIEF=__LIEF__, BEITRAG=__BEITRAG__;
+  var OEMAG0=__OEMAG__, NETZ=__NETZ__, ABG=__ABG__, LIEF=__LIEF__, BEITRAG=__BEITRAG__;
   var RAB={lokal:0.57,regional:0.28,ne45:0.64,at:0};
   var $=function(id){return document.getElementById(id);};
   var eur=function(v){return Math.round(v).toLocaleString("de-DE")+" €";};
@@ -493,6 +500,7 @@ EG_JS = r"""
     var quote=Math.max(10,Math.min(100,+$("e-quote").value||50))/100;
     var einsp=Math.max(0,Math.min(30,+$("e-einsp").value||0));
     var bezp=Math.max(0,Math.min(40,+$("e-bezugpreis").value||0));
+    var oe=$("e-oemag"), OEMAG=oe&&oe.value!==""?Math.max(0,Math.min(40,+oe.value||0)):OEMAG0;
     var ueb=rolle==="abnehmer"?0:Math.max(0,+$("e-ueberschuss").value||0);
     var bez=rolle==="erzeuger"?0:Math.max(0,+$("e-bezug").value||0);
     $("e-ueberschuss").disabled=rolle==="abnehmer"; $("e-bezug").disabled=rolle==="erzeuger";
@@ -507,13 +515,13 @@ EG_JS = r"""
     $("e-beitrag").textContent=eur(BEITRAG);
     $("e-gesamt").textContent=sgn(gesamt);
     var hint="";
-    if(zugU>0 && einsp<OEMAG){ hint="Hinweis: Ihr EG-Einspeisepreis liegt unter dem OeMAG-Marktpreis von "+OEMAG.toLocaleString("de-DE")+" ct (September 2026). Der Vorteil kommt dann aus Bezug und Netzentgelt; im Juli 2026 lag der Marktpreis bei 6,146 ct, im Oktober 2026 bei 14,874 ct, er schwankt monatlich."; }
+    if(zugU>0 && einsp<OEMAG){ hint="Hinweis: Ihr EG-Einspeisepreis liegt unter dem eingegebenen OeMAG-Marktpreis von "+OEMAG.toLocaleString("de-DE")+" ct. Der Vorteil kommt dann aus Bezug und Netzentgelt; der Marktpreis schwankt monatlich (2026 zwischen 6,146 und 14,874 ct), der EG-Preis ist fix vereinbart."; }
     if(bereich==="at"){ hint+=(hint?" ":"")+"Österreichweit teilen ist möglich, der Netzentgelt-Rabatt und die Abgabenbefreiung gelten aber nur im Nahbereich."; }
     $("e-hinweis").textContent=hint;
     var cta=$("e-cta"); var base=cta.getAttribute("href").split("?")[0];
     cta.setAttribute("href", base+"?anliegen="+encodeURIComponent("EG-Rechner: "+ueb+" kWh Überschuss, "+bez+" kWh Bezug, "+bereich+", Richtwert "+Math.round(gesamt)+" €/Jahr"));
   }
-  ["e-rolle","e-ueberschuss","e-bezug","e-bereich","e-quote","e-einsp","e-bezugpreis"].forEach(function(id){ var el=$(id); if(el){ el.addEventListener("input",calc); el.addEventListener("change",calc);} });
+  ["e-rolle","e-ueberschuss","e-bezug","e-bereich","e-quote","e-einsp","e-bezugpreis","e-oemag"].forEach(function(id){ var el=$(id); if(el){ el.addEventListener("input",calc); el.addEventListener("change",calc);} });
   if($("e-rolle")) calc();
 })();
 """.replace("__OEMAG__", str(OEMAG)).replace("__NETZ__", str(NETZ_NE7)).replace("__ABG__", str(E_ABGABE + FOERDERBEITRAG)).replace("__LIEF__", str(LIEFERANT)).replace("__BEITRAG__", str(BEITRAG))

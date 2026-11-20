@@ -83,6 +83,9 @@
     <div><label for="e-einsp">EG-Einspeisepreis (ct/kWh)*</label><input id="e-einsp" type="number" min="0" max="30" step="0.5" value="10" inputmode="decimal"></div>
     <div><label for="e-bezugpreis">EG-Bezugspreis (ct/kWh)*</label><input id="e-bezugpreis" type="number" min="0" max="40" step="0.5" value="14" inputmode="decimal"></div>
   </div>
+  <div class="field"><label for="e-oemag">Vergleich: OeMAG-Marktpreis (ct/kWh)</label>
+    <input id="e-oemag" type="number" min="0" max="40" step="0.001" value="10.168" inputmode="decimal">
+    <p class="calc__hint">Was Sie ohne Gemeinschaft für die Einspeisung bekämen. Vorgabe: 10,168 ct (September 2026). 2026 schwankte der Wert zwischen 6,146 ct (Juli) und 14,874 ct (Oktober), aktuell auf oem-ag.at.</p></div>
   <p class="form-note">*Beispielkonditionen: 10 ct Einspeisung, 14 ct Bezug, 4 € Beitrag pro Monat. Jede Gemeinschaft legt ihre Preise selbst fest. Der Rechner läuft nur in Ihrem Browser.</p>
 </form>
         <div>
@@ -90,7 +93,7 @@
   <h3>Ihr Richtwert</h3>
   <p class="calc__big"><span id="e-gesamt">0 €</span><small>Vorteil pro Jahr nach Beitrag*</small></p>
   <div class="calc__grid">
-    <div><b id="e-mehr">0 €</b><span>Einspeisung: EG-Preis gegenüber OeMAG 10,168 ct (Sept. 2026)*</span></div>
+    <div><b id="e-mehr">0 €</b><span>Einspeisung: EG-Preis gegenüber OeMAG-Marktpreis*</span></div>
     <div><b id="e-bezugv">0 €</b><span>Ersparnis Bezug (Energiepreis + Netzentgelt + Abgaben)*</span></div>
     <div><b id="e-zug">0 kWh</b><span>zugeordnete kWh pro Jahr</span></div>
     <div><b id="e-beitrag">48 €</b><span>Jahresbeitrag Plattform*</span></div>
@@ -100,14 +103,14 @@
   <a class="btn btn--light" href="/leistungen/energiegemeinschaft/">So funktioniert der Beitritt</a>
   <p class="calc__note">*Richtwerte mit Beispielkonditionen. Die echten Preise legt die jeweilige Gemeinschaft fest, den Nahbereich prüft der Netzbetreiber.</p>
 </div>
-          <details class="calc__assume"><summary>Annahmen und Richtwerte*</summary><ul><li>Einspeisung in der Gemeinschaft 10 ct je kWh (Beispiel, änderbar) gegenüber OeMAG-Marktpreis 10,168 ct (Rechenwert September 2026; Juli 2026: 6,146 ct, Oktober 2026: 14,874 ct). Liegt der EG-Preis unter dem Marktpreis, wird die Differenz negativ ausgewiesen.</li><li>Bezug in der Gemeinschaft 14 ct je kWh (Beispiel, änderbar) statt rund 17 ct Energiepreis beim Lieferanten.</li><li>Netznutzungs- und Netzverlustentgelt zusammen rund 8,7 ct je kWh (Netzebene 7): minus 57 % lokal, minus 28 % regional, minus 64 % bei ausschließlicher Teilnahme auf Netzebene 4/5, kein Abschlag österreichweit (SNE-VO, E-Control).</li><li>Elektrizitätsabgabe 1,5 ct und Erneuerbaren-Förderbeitrag rund 1 ct je kWh entfallen für Strom aus Erneuerbare-Energie-Gemeinschaften (nicht in der Bürgerenergiegemeinschaft).</li><li>Zuordnungsquote: Nur zeitgleich erzeugter und verbrauchter Strom wird zugeordnet; typisch 25 bis 60 %, mit Speicher oder Energiemanagement mehr.</li><li>Mitgliedsbeitrag 4 € pro Monat (Beispiel der Abrechnungsplattform), einmalige Kosten nicht eingerechnet. Umsatzsteuer 20 % nicht berücksichtigt, Haushalte sparen brutto entsprechend mehr.</li></ul></details>
+          <details class="calc__assume"><summary>Annahmen und Richtwerte*</summary><ul><li>Einspeisung in der Gemeinschaft 10 ct je kWh (Beispiel, änderbar) gegenüber dem OeMAG-Marktpreis, im Rechner änderbar (Vorgabe 10,168 ct, September 2026; Juli 2026: 6,146 ct, Oktober 2026: 14,874 ct). Liegt der EG-Preis unter dem Marktpreis, wird die Differenz negativ ausgewiesen.</li><li>Bezug in der Gemeinschaft 14 ct je kWh (Beispiel, änderbar) statt rund 17 ct Energiepreis beim Lieferanten.</li><li>Netznutzungs- und Netzverlustentgelt zusammen rund 8,7 ct je kWh (Netzebene 7): minus 57 % lokal, minus 28 % regional, minus 64 % bei ausschließlicher Teilnahme auf Netzebene 4/5, kein Abschlag österreichweit (SNE-VO, E-Control).</li><li>Elektrizitätsabgabe 1,5 ct und Erneuerbaren-Förderbeitrag rund 1 ct je kWh entfallen für Strom aus Erneuerbare-Energie-Gemeinschaften (nicht in der Bürgerenergiegemeinschaft).</li><li>Zuordnungsquote: Nur zeitgleich erzeugter und verbrauchter Strom wird zugeordnet; typisch 25 bis 60 %, mit Speicher oder Energiemanagement mehr.</li><li>Mitgliedsbeitrag 4 € pro Monat (Beispiel der Abrechnungsplattform), einmalige Kosten nicht eingerechnet. Umsatzsteuer 20 % nicht berücksichtigt, Haushalte sparen brutto entsprechend mehr.</li></ul></details>
         </div>
       </div>
     </div>
   </section>
   <script>
 (function(){
-  var OEMAG=10.168, NETZ=8.7, ABG=2.5, LIEF=17.0, BEITRAG=48;
+  var OEMAG0=10.168, NETZ=8.7, ABG=2.5, LIEF=17.0, BEITRAG=48;
   var RAB={lokal:0.57,regional:0.28,ne45:0.64,at:0};
   var $=function(id){return document.getElementById(id);};
   var eur=function(v){return Math.round(v).toLocaleString("de-DE")+" €";};
@@ -117,6 +120,7 @@
     var quote=Math.max(10,Math.min(100,+$("e-quote").value||50))/100;
     var einsp=Math.max(0,Math.min(30,+$("e-einsp").value||0));
     var bezp=Math.max(0,Math.min(40,+$("e-bezugpreis").value||0));
+    var oe=$("e-oemag"), OEMAG=oe&&oe.value!==""?Math.max(0,Math.min(40,+oe.value||0)):OEMAG0;
     var ueb=rolle==="abnehmer"?0:Math.max(0,+$("e-ueberschuss").value||0);
     var bez=rolle==="erzeuger"?0:Math.max(0,+$("e-bezug").value||0);
     $("e-ueberschuss").disabled=rolle==="abnehmer"; $("e-bezug").disabled=rolle==="erzeuger";
@@ -131,13 +135,13 @@
     $("e-beitrag").textContent=eur(BEITRAG);
     $("e-gesamt").textContent=sgn(gesamt);
     var hint="";
-    if(zugU>0 && einsp<OEMAG){ hint="Hinweis: Ihr EG-Einspeisepreis liegt unter dem OeMAG-Marktpreis von "+OEMAG.toLocaleString("de-DE")+" ct (September 2026). Der Vorteil kommt dann aus Bezug und Netzentgelt; im Juli 2026 lag der Marktpreis bei 6,146 ct, im Oktober 2026 bei 14,874 ct, er schwankt monatlich."; }
+    if(zugU>0 && einsp<OEMAG){ hint="Hinweis: Ihr EG-Einspeisepreis liegt unter dem eingegebenen OeMAG-Marktpreis von "+OEMAG.toLocaleString("de-DE")+" ct. Der Vorteil kommt dann aus Bezug und Netzentgelt; der Marktpreis schwankt monatlich (2026 zwischen 6,146 und 14,874 ct), der EG-Preis ist fix vereinbart."; }
     if(bereich==="at"){ hint+=(hint?" ":"")+"Österreichweit teilen ist möglich, der Netzentgelt-Rabatt und die Abgabenbefreiung gelten aber nur im Nahbereich."; }
     $("e-hinweis").textContent=hint;
     var cta=$("e-cta"); var base=cta.getAttribute("href").split("?")[0];
     cta.setAttribute("href", base+"?anliegen="+encodeURIComponent("EG-Rechner: "+ueb+" kWh Überschuss, "+bez+" kWh Bezug, "+bereich+", Richtwert "+Math.round(gesamt)+" €/Jahr"));
   }
-  ["e-rolle","e-ueberschuss","e-bezug","e-bereich","e-quote","e-einsp","e-bezugpreis"].forEach(function(id){ var el=$(id); if(el){ el.addEventListener("input",calc); el.addEventListener("change",calc);} });
+  ["e-rolle","e-ueberschuss","e-bezug","e-bereich","e-quote","e-einsp","e-bezugpreis","e-oemag"].forEach(function(id){ var el=$(id); if(el){ el.addEventListener("input",calc); el.addEventListener("change",calc);} });
   if($("e-rolle")) calc();
 })();
 </script>
